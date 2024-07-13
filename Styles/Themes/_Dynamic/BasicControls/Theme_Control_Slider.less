@@ -1,0 +1,162 @@
+/*#region SLIDER */
+
+/*slider value box display*/
+.theme-entry .dragdealer .handle
+{
+    min-width: 2rem;
+    min-height: 2rem;
+}
+
+.theme-entry .slider_value_display
+{
+    color: @Tooltip-Text-Color;
+    background: @Tooltip-Background-Color;
+    ;
+}
+
+.theme-entry .slider_value_display.bottom:after
+{
+    border-color: transparent transparent @Tooltip-Background-Color @Tooltip-Background-Color;
+}
+
+.theme-entry .slider_value_display.top:after
+{
+    border-color: @Tooltip-Background-Color @Tooltip-Background-Color transparent transparent;
+}
+
+/*rail start/end point*/
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_start,
+.theme-entry .Slider-rail .Slider-rail-start,
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_end,
+.theme-entry .Slider-rail .Slider-rail-end
+{
+    position: absolute;
+    top: 0;
+    width: 0.8rem;
+    height: 2.0rem;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+
+/*rail start*/
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_start,
+.theme-entry .Slider-rail .Slider-rail-start
+{
+    left: 0.6rem;
+}
+
+/*rail end*/
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_end,
+.theme-entry .Slider-rail .Slider-rail-end
+{
+    right: 0.6rem;
+}
+
+/*rail*/
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_inner,
+.theme-entry .Slider-rail .Slider-rail-inner
+{
+    left: 0.6rem;
+    right: 0.6rem;
+    background-repeat: repeat-x;
+    height: 2.0rem;
+}
+
+/*thumb*/
+.theme-entry .ajax__slider_h_handle,
+.theme-entry .Slider-rail a.Slider
+{
+    width: 2.0rem;
+    height: 2.0rem;
+    cursor: default;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+/*state - hover*/
+.theme-entry .ajax__slider_h_handle:hover,
+.theme-entry .Slider-rail a.Slider:hover
+{
+    border-color: @Slider-Handle-Hover-Border-Color;
+    background-color: @Slider-Handle-Hover-Background-Color;
+}
+
+/*state - focus*/
+.theme-entry .ajax__slider_h_handle:focus,
+.theme-entry .Slider-rail a.Slider:focus,
+.theme-entry .ajax__slider_h_handle:active,
+.theme-entry .Slider-rail a.Slider:active
+{
+    border-color: @Slider-Handle-Focus-Border-Color;
+    background-color: @Slider-Handle-Focus-Background-Color;
+}
+
+/*State - normal/disabled*/
+.theme-entry .ajax__slider_h_handle,
+.theme-entry .Slider-rail a.Slider,
+.theme-entry .ajax__slider_h_handle.disabled:hover,
+.theme-entry .ajax__slider_h_handle.disabled:focus,
+.theme-entry .ajax__slider_h_handle.disabled:active,
+.theme-entry .Slider-rail.disabled a.Slider:hover,
+.theme-entry .Slider-rail.disabled a.Slider:focus,
+.theme-entry .Slider-rail.disabled a.Slider:active
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: @Slider-Handle-Disabled-Border-Color;
+    background-color: @Slider-Handle-Disabled-Background-Color;
+}
+
+/*State - read-only */
+.theme-entry .ajax__slider_h_handle.read-only,
+.theme-entry .ajax__slider_h_handle.read-only:hover,
+.theme-entry .ajax__slider_h_handle.read-only:focus,
+.theme-entry .ajax__slider_h_handle.read-only:active,
+.theme-entry .ajax__slider_h_handle.read-only.disabled,
+.theme-entry .ajax__slider_h_handle.read-only.disabled:hover,
+.theme-entry .ajax__slider_h_handle.read-only.disabled:focus,
+.theme-entry .ajax__slider_h_handle.read-only.disabled:active,
+.theme-entry .slider-control.read-only a.Slider,
+.theme-entry .slider-control.read-only a.Slider:hover,
+.theme-entry .slider-control.read-only a.Slider:focus
+{
+    background-image: none;
+    background-color: @Input-Disabled-Background-Color;
+    border-color: @Input-Disabled-Border-Color;
+    border-width: 2px;
+    opacity: 1;
+}
+
+/*State - disabled */
+
+.theme-entry .ajax__slider_h_handle.disabled,
+.theme-entry .ajax__slider_h_handle.disabled:hover,
+.theme-entry .ajax__slider_h_handle.disabled:focus,
+.theme-entry .ajax__slider_h_handle.disabled:active,
+.theme-entry .slider-control .Slider-rail.disabled a.Slider,
+.theme-entry .slider-control .Slider-rail.disabled a.Slider:hover,
+.theme-entry .slider-control .Slider-rail.disabled a.Slider:focus
+{
+    opacity: 0.7;
+}
+
+/* stops the cursor from showing the I-bar when hover & doesn't add to the height of the slider*/
+.theme-entry .ajax__slider_textbox
+{
+    display: none;
+}
+
+.theme-entry .editor-cell > .sliderWrapper
+{
+    height: 2.0rem;
+}
+
+.theme-entry .ajax__slider_h_rail,
+.theme-entry .Slider-rail /* Designtime specific */
+{
+    height: 2.0rem;
+}
+
+/*#endregion SLIDER */

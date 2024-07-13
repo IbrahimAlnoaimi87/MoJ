@@ -1,0 +1,51 @@
+/* Theme: Lithium */
+/* Author: Lewis Garmston */
+/* Date: 20/02/2014 */
+
+/*#region TABS SCROLLING */
+.theme-entry .tab-box.tabs-top ul.tab-box-tabs {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+/*#endregion TABS SCROLLING */
+
+/*#region SINGLE COLUMN VIEWS*/
+.theme-entry .panel-body-wrapper > div > table,
+.theme-entry .panel-body-wrapper > div > table > tbody,
+.theme-entry .panel-body-wrapper > div > table > tbody > tr,
+.theme-entry .panel-body-wrapper > div > table > tbody > tr > td {
+    display: block !important;
+    width: auto!important;
+}
+
+.theme-entry .form .row .view {
+    display: block !important;
+    width: auto !important;
+}
+
+    .theme-entry .form > .row > .view .innerpanel {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        margin-top: 12px !important;
+        margin-bottom: 12px !important; /*hardcoded as I can't get what was set in the designer for form padding*/
+    }
+
+/*#endregion SINGLE COLUMN VIEWS*/
+
+/*#region TOOLBAR BUTTONS - icon only*/
+.theme-entry a.toolbar-button span.button-text {
+    display: none;
+}
+
+/*#endregion*/
+
+/*#region LISTVIEW GRID*/
+/*Comment needed!!! allows the filter controls to wrap onto another line*/
+
+/*filter*/
+.quickSearch.filter {
+    white-space:normal;
+}
+
+/*#endregion*/

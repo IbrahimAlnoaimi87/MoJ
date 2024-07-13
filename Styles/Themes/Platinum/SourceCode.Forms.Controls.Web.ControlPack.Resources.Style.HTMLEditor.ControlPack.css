@@ -1,0 +1,99 @@
+﻿/* RichTextThemeStart */
+.theme-entry .RadEditor .reToolbarWrapper span.split_arrow:hover,
+.theme-entry .RadEditor .reToolbarWrapper .sub-wrapper:hover,
+.theme-entry .RadEditor .reToolbarWrapper span.InsertFormElement:hover,
+.theme-entry .RadEditor .reToolbarWrapper span.InsertTable:hover,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color:hover,
+.theme-entry .rich-text-dropdown-item-container .rich-text-overflow-item-arrow:hover
+{
+	background-color: #E1E1E1;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.expanded .stylewrapper
+{
+	border-color: #ADAE9C;
+}
+
+.theme-entry .reTlbVertical .reTool_text:hover,
+.theme-entry .reDropDownBody .reTlbVertical ul li a:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reTool_selected
+{
+	background-color: #E1E1E1;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper .reGrip.grip_last
+{
+    border-color: #E1E1E1;
+}
+
+.theme-entry .RadEditor .reToolbar li a:hover
+{
+	background-color:  #E1E1E1;
+}
+
+/* edit mode area */
+.theme-entry .reEditorModes ul li a:hover
+{
+	background-color: #FFFFFF;
+}
+/* selected edit mode highligted */
+.theme-entry .RadEditor .reEditorModesCell .reMode_selected
+{
+	background-color: #FFFFFF;
+}
+/* color for hover over the overflow items */
+.theme-entry .rich-text-overflow-tool-item-position-base:hover
+{
+	background-color: #E1E1E1;
+}
+
+.theme-entry .Default.RadEditor,
+.theme-entry .Default.RadEditor .reModule,
+.theme-entry .Default.RadEditor .reWrapper
+{
+	border-color: #adae9c;
+	background-color: #e4e7dd;
+	color: #343e41;
+	background: #e4e7dd; /* Old browsers */
+	background: -moz-linear-gradient(top, #fefefe 0%, #e4e7dd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#e4e7dd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fefefe 0%,#e4e7dd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fefefe 0%,#e4e7dd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fefefe 0%,#e4e7dd 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fefefe 0%,#e4e7dd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e4e7dd',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .Default.reWrapper,
+.theme-entry .Default.RadEditor .reContentCell,
+.theme-entry .Default.reColorPicker,
+.theme-entry .Default.reInsertTable,
+.theme-entry .Default.reDropDownBody,
+.theme-entry .Default.reCustomLinks a:hover
+{
+	border: 1px solid #adae9c;
+}
+
+.theme-entry .reMode_selected.reMode_hover span,
+.theme-entry .reMode_hover span
+{
+	color: #343e41;
+}
+
+.theme-entry .reMode_hover:hover
+{
+	background-color: #89bf2d;
+}
+
+.theme-entry .reMode_selected.reMode_hover:hover
+{
+	background-color: transparent;
+}
+
+.theme-entry .Default.RadEditor,
+.theme-entry .Default.RadEditor .reModule,
+.theme-entry .Default.RadEditor .reEditorModes,
+.theme-entry .Default.RadEditor .reWrapper
+{
+	background-color: #eeeeee;
+}

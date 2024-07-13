@@ -1,0 +1,537 @@
+.ico {
+  background-image: url("../Images/Icons/Default16px.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+.ico.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+  height: 32px;
+  width: 32px;
+}
+.ico.large {
+  background-image: url("../Images/Icons/Default64px.png");
+  height: 64px;
+  width: 64px;
+}
+.ico.icon-add {
+  background-image: url("../Images/Icons/Add16.png");
+}
+.ico.icon-delete {
+  background-image: url("../Images/Icons/Delete16.png");
+}
+.ico.icon-delete-all {
+  background-image: url("../Images/Icons/DeleteAll16.png");
+}
+.ico.icon-edit {
+  background-image: url("../Images/Icons/Edit16.png");
+}
+.ico.icon-refresh {
+  background-image: url("../Images/Icons/Refresh16.png");
+}
+.ico.icon-remove {
+  background-image: url("../Images/Icons/Remove16.png");
+}
+.ico.icon-remove-all {
+  background-image: url("../Images/Icons/RemoveAll16.png");
+}
+.ico.icon-error {
+  background-image: url("../Images/Icons/Error16.png");
+}
+.ico.icon-error.medium {
+  background-image: url("../Images/Icons/Error32.png");
+}
+.ico.icon-error.large {
+  background-image: url("../Images/Icons/Error64.png");
+}
+.ico.icon-info {
+  background-image: url("../Images/Icons/Info16.png");
+}
+.ico.icon-info.medium {
+  background-image: url("../Images/Icons/Info32.png");
+}
+.ico.icon-info.large {
+  background-image: url("../Images/Icons/Info64.png");
+}
+.ico.icon-question {
+  background-image: url("../Images/Icons/Question16.png");
+}
+.ico.icon-question.medium {
+  background-image: url("../Images/Icons/Question32.png");
+}
+.ico.icon-question.large {
+  background-image: url("../Images/Icons/Question64.png");
+}
+.ico.icon-warning {
+  background-image: url("../Images/Icons/Warning16.png");
+}
+.ico.icon-warning.medium {
+  background-image: url("../Images/Icons/Warning32.png");
+}
+.ico.icon-warning.large {
+  background-image: url("../Images/Icons/Warning64.png");
+}
+.ico.icon-action {
+  background-image: url("../Images/Icons/Actions16.png");
+}
+.ico.icon-action.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-condition {
+  background-image: url("../Images/Icons/Conditions16.png");
+}
+.ico.icon-condition.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-conditional-style {
+  background-image: url("../Images/Icons/ConditionalStyle16.png");
+}
+.ico.icon-conditional-style.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-control {
+  background-image: url("../Images/Icons/Control16.png");
+}
+.ico.icon-control.medium {
+  background-image: url("../Images/Icons/Control32.png");
+}
+.ico.icon-control-event {
+  background-image: url("../Images/Icons/ControlEvent16.png");
+}
+.ico.icon-control-event.medium {
+  background-image: url("../Images/Icons/ControlEvent32.png");
+}
+.ico.icon-control-method {
+  background-image: url("../Images/Icons/ControlMethod16.png");
+}
+.ico.icon-control-method.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-control-method-parameter {
+  background-image: url("../Images/Icons/ControlMethodParameter16.png");
+}
+.ico.icon-control-method-parameter.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-control-property {
+  background-image: url("../Images/Icons/ControlProperty16.png");
+}
+.ico.icon-control-property.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-event {
+  background-image: url("../Images/Icons/Event16.png");
+}
+.ico.icon-event.medium {
+  background-image: url("../Images/Icons/Event32.png");
+}
+.ico.icon-expression {
+  background-image: url("../Images/Icons/Expression16.png");
+}
+.ico.icon-expression.medium {
+  background-image: url("../Images/Icons/Expression32.png");
+}
+.ico.icon-field {
+  background-image: url("../Images/Icons/Field16.png");
+}
+.ico.icon-field.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-filter {
+  background-image: url("../Images/Icons/Filter16.png");
+}
+.ico.icon-filter.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-form {
+  background-image: url("../Images/Icons/Form16.png");
+}
+.ico.icon-form.medium {
+  background-image: url("../Images/Icons/Form32.png");
+}
+.ico.icon-process {
+  background-image: url("../Images/Icons/Process16.png");
+}
+.ico.icon-process.medium {
+  background-image: url("../Images/Icons/Process32.png");
+}
+.ico.icon-smartobject {
+  background-image: url("../Images/Icons/SmartObject16.png");
+}
+.ico.icon-smartobject.medium {
+  background-image: url("../Images/Icons/SmartObject32.png");
+}
+.ico.icon-view {
+  background-image: url("../Images/Icons/View16.png");
+}
+.ico.icon-view.medium {
+  background-image: url("../Images/Icons/View32.png");
+}
+.ico.icon-conditional-style-error {
+  background-image: url("../Images/Icons/ConditionalStyle_Error16.png");
+}
+.ico.icon-conditional-style-error.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-expression-error {
+  background-image: url("../Images/Icons/ExpressionError16.png");
+}
+.ico.icon-expression-error.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-sub-form {
+  background-image: url("../Images/Icons/SubFormGeneric16.png");
+}
+.ico.icon-sub-form.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-calendar-control {
+  background-image: url("../Images/Icons/CalendarControl16.png");
+}
+.ico.icon-calendar-control.medium {
+  background-image: url("../Images/Icons/CalendarControl32.png");
+}
+.ico.icon-checkbox-control {
+  background-image: url("../Images/Icons/CheckBoxControl16.png");
+}
+.ico.icon-checkbox-control.medium {
+  background-image: url("../Images/Icons/CheckBoxControl32.png");
+}
+.ico.icon-checkboxlist-control {
+  background-image: url("../Images/Icons/CheckBoxListControl16.png");
+}
+.ico.icon-checkboxlist-control.medium {
+  background-image: url("../Images/Icons/CheckBoxListControl32.png");
+}
+.ico.icon-content-control {
+  background-image: url("../Images/Icons/ContentControl16.png");
+}
+.ico.icon-content-control.medium {
+  background-image: url("../Images/Icons/ContentControl32.png");
+}
+.ico.icon-picker-control {
+  background-image: url("../Images/Icons/PickerToolbarControl16.png");
+}
+.ico.icon-picker-control.medium {
+  background-image: url("../Images/Icons/PickerToolbarControl32.png");
+}
+.ico.icon-toolbar-button-control {
+  background-image: url("../Images/Icons/ToolbarButtonControl16.png");
+}
+.ico.icon-toolbar-button-control.medium {
+  background-image: url("../Images/Icons/ToolbarButtonControl32.png");
+}
+.ico.icon-button-control {
+  background-image: url("../Images/Icons/ButtonControl16.png");
+}
+.ico.icon-button-control.medium {
+  background-image: url("../Images/Icons/ButtonControl32.png");
+}
+.ico.icon-hyperlink-control {
+  background-image: url("../Images/Icons/HyperlinkControl16.png");
+}
+.ico.icon-hyperlink-control.medium {
+  background-image: url("../Images/Icons/HyperlinkControl32.png");
+}
+.ico.icon-multiselect-control {
+  background-image: url("../Images/Icons/MultiSelectControl16.png");
+}
+.ico.icon-multiselect-control.medium {
+  background-image: url("../Images/Icons/MultiSelectControl32.png");
+}
+.ico.icon-image-attachment-control {
+  background-image: url("../Images/Icons/ImageAttachmentControl16.png");
+}
+.ico.icon-image-attachment-control.medium {
+  background-image: url("../Images/Icons/ImageAttachmentControl32.png");
+}
+.ico.icon-file-attachment-control {
+  background-image: url("../Images/Icons/FileAttachmentControl16.png");
+}
+.ico.icon-file-attachment-control.medium {
+  background-image: url("../Images/Icons/FileAttachmentControl32.png");
+}
+.ico.icon-tree-control {
+  background-image: url("../Images/Icons/TreeControl16.png");
+}
+.ico.icon-tree-control.medium {
+  background-image: url("../Images/Icons/TreeControl32.png");
+}
+.ico.icon-datalabel-control {
+  background-image: url("../Images/Icons/DataLabelControl16.png");
+}
+.ico.icon-datalabel-control.medium {
+  background-image: url("../Images/Icons/DataLabelControl32.png");
+}
+.ico.icon-label-control {
+  background-image: url("../Images/Icons/Label16.png");
+}
+.ico.icon-label-control.medium {
+  background-image: url("../Images/Icons/Label32.png");
+}
+.ico.icon-lookup-control {
+  background-image: url("../Images/Icons/Lookup16.png");
+}
+.ico.icon-lookup-control.medium {
+  background-image: url("../Images/Icons/Lookup32.png");
+}
+.ico.icon-pdf-control {
+  background-image: url("../Images/Icons/PDFcontrol16.png");
+}
+.ico.icon-pdf-control.medium {
+  background-image: url("../Images/Icons/PDFcontrol32.png");
+}
+.ico.icon-table-control {
+  background-image: url("../Images/Icons/TableControl16.png");
+}
+.ico.icon-table-control.medium {
+  background-image: url("../Images/Icons/TableControl32.png");
+}
+.ico.icon-toolbar-control {
+  background-image: url("../Images/Icons/ToolbarControl16.png");
+}
+.ico.icon-toolbar-control.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-textbox-control {
+  background-image: url("../Images/Icons/TextBox16.png");
+}
+.ico.icon-textbox-control.medium {
+  background-image: url("../Images/Icons/TextBox32.png");
+}
+.ico.icon-textarea-control {
+  background-image: url("../Images/Icons/TextAreaControl16.png");
+}
+.ico.icon-textarea-control.medium {
+  background-image: url("../Images/Icons/TextAreaControl32.png");
+}
+.ico.icon-radiobutton-control {
+  background-image: url("../Images/Icons/RadioButton.png");
+}
+.ico.icon-radiobutton-control.medium {
+  background-image: url("../Images/Icons/RadioButton32.png");
+}
+.ico.icon-slider-control {
+  background-image: url("../Images/Icons/Slider16.png");
+}
+.ico.icon-slider-control.medium {
+  background-image: url("../Images/Icons/Slider32.png");
+}
+.ico.icon-rating-control {
+  background-image: url("../Images/Icons/Rating16.png");
+}
+.ico.icon-rating-control.medium {
+  background-image: url("../Images/Icons/Rating32.png");
+}
+.ico.icon-dropdown-control {
+  background-image: url("../Images/Icons/DropDownList16.png");
+}
+.ico.icon-dropdown-control.medium {
+  background-image: url("../Images/Icons/DropdownList32.png");
+}
+.ico.icon-smartobject-method {
+  background-image: url("../Images/Icons/SmartObjectMethod16.png");
+}
+.ico.icon-smartobject-method.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-smartobject-property {
+  background-image: url("../Images/Icons/SmartObjectProperties16.png");
+}
+.ico.icon-smartobject-property.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-smartobject-method-parameter {
+  background-image: url("../Images/Icons/SmartObjectMethodParameter16.png");
+}
+.ico.icon-smartobject-method-parameter.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-service-instance {
+  background-image: url("../Images/Icons/ServiceInstance16.png");
+}
+.ico.icon-service-instance.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-service-object {
+  background-image: url("../Images/Icons/ServiceObject16.png");
+}
+.ico.icon-service-object.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-service-object-browser {
+  background-image: url("../Images/Icons/ServiceObjectBrowser16.png");
+}
+.ico.icon-service-object-browser.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-service-object-method {
+  background-image: url("../Images/Icons/ServiceMethod16.png");
+}
+.ico.icon-service-object-method.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-service-object-method-parameter {
+  background-image: url("../Images/Icons/ServiceObjectMethodParameter16.png");
+}
+.ico.icon-service-object-method-parameter.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-service-object-method-property {
+  background-image: url("../Images/Icons/ServiceObjectMethodProperties16.png");
+}
+.ico.icon-service-object-method-property.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-service-object-servicetype {
+  background-image: url("../Images/Icons/SmartObjectServiceType16px.png");
+}
+.ico.icon-service-object-servicetype.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-form-event {
+  background-image: url("../Images/Icons/FormEvent16.png");
+}
+.ico.icon-form-event.medium {
+  background-image: url("../Images/Icons/FormEvent32.png");
+}
+.ico.icon-form-error {
+  background-image: url("../Images/Icons/FormError16.png");
+}
+.ico.icon-form-error.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-form-parameter {
+  background-image: url("../Images/Icons/FormParameter16.png");
+}
+.ico.icon-form-parameter.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-form-state {
+  background-image: url("../Images/Icons/FormState16.png");
+}
+.ico.icon-form-state.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-form-state-error {
+  background-image: url("../Images/Icons/FormStateError16.png");
+}
+.ico.icon-form-state-error.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-view-event {
+  background-image: url("../Images/Icons/ViewEvent16.png");
+}
+.ico.icon-view-event.medium {
+  background-image: url("../Images/Icons/ViewEvent32.png");
+}
+.ico.icon-view-error {
+  background-image: url("../Images/Icons/ViewsError16.png");
+}
+.ico.icon-view-error.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-view-method {
+  background-image: url("../Images/Icons/ViewMethod16.png");
+}
+.ico.icon-view-method.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-content-view {
+  background-image: url("../Images/Icons/ContentView16.png");
+}
+.ico.icon-content-view.medium {
+  background-image: url("../Images/Icons/ContentView32.png");
+}
+.ico.icon-item-view {
+  background-image: url("../Images/Icons/ItemView16.png");
+}
+.ico.icon-item-view.medium {
+  background-image: url("../Images/Icons/ItemView32.png");
+}
+.ico.icon-list-view {
+  background-image: url("../Images/Icons/ListView16.png");
+}
+.ico.icon-list-view.medium {
+  background-image: url("../Images/Icons/ListView32.png");
+}
+.ico.icon-workflow-view {
+  background-image: url("../Images/Icons/WorkflowView16.png");
+}
+.ico.icon-workflow-view.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-process-instance {
+  background-image: url("../Images/Icons/ProcessInstance16.png");
+}
+.ico.icon-process-instance.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-process-data-field {
+  background-image: url("../Images/Icons/ProcessDataField16.png");
+}
+.ico.icon-process-data-field.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-process-xml-field {
+  background-image: url("../Images/Icons/ProcessXmlField16.png");
+}
+.ico.icon-process-xml-field.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-workflow-actions {
+  background-image: url("../Images/Icons/WorkflowActions16.png");
+}
+.ico.icon-workflow-actions.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-form-checked-out {
+  background-image: url("../Images/Icons/FormCheckOut16.png");
+}
+.ico.icon-form-checked-out.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-form-checked-out-user {
+  background-image: url("../Images/Icons/FormCheckOutUser16.png");
+}
+.ico.icon-form-checked-out-user.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-view-checked-out {
+  background-image: url("../Images/Icons/Default16px.png");
+}
+.ico.icon-view-checked-out.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-view-checked-out-user {
+  background-image: url("../Images/Icons/Default16px.png");
+}
+.ico.icon-view-checked-out-user.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-list-view-checked-out {
+  background-image: url("../Images/Icons/ListCheckOut16.png");
+}
+.ico.icon-list-view-checked-out.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-list-view-checked-out-user {
+  background-image: url("../Images/Icons/ListCheckOutByOtherUser16.png");
+}
+.ico.icon-list-view-checked-out-user.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-item-view-checked-out {
+  background-image: url("../Images/Icons/ItemViewCheckOut16.png");
+}
+.ico.icon-item-view-checked-out.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}
+.ico.icon-item-view-checked-out-user {
+  background-image: url("../Images/Icons/ItemViewCheckOutUser16.png");
+}
+.ico.icon-item-view-checked-out-user.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+}

@@ -1,0 +1,30 @@
+<div class="PART-section-container navigation-item-container {AlignmentIndicatorClass} {DisabledMarker} {HiddenMarker}" data-id="{DataId}" data-options='{Options}'>
+	<a class="PART-clickable  navigation-clickarea {IsLinkVisible}" href="{NavigationUrl}" title="{MenuItemText}">
+		<span class="navigation-clickable-table navigation-highlightarea">
+			<span class="layout-table-full-width">
+				<span class="layout-cell-full-width">
+					<span class="navigation-link-table layout-table-full-width {CustomCSSClassRightAlign}">
+						<span class="layout-cell">
+							<span class="navigation-icon-container">
+								<span class="PART-custom-icon navigation-item-icon {CustomCSSClass}"></span>
+							</span>
+						</span>
+						<span class="navigation-link-container navigation-clickable layout-cell-full-width">
+							<span class="navigation-item-text-container layout-cell-full-width ">
+								<span class="PART-display-text navigation-item-text" title="{MenuItemTooltip}">{MenuItemText}</span>
+							</span>
+						</span>
+					</span>
+				</span>
+				<span class="layout-cell">
+					<span class="navigation-right-section INJECT-loading {ImportantMarker}">
+						<span class="absolute-centered ">
+							<span class="PART-section-count navigation-count INJECT-count-visibility"></span>
+							<span class="absolute-centered clickable-icon navigation-right-icon"></span>
+						</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</a>
+</div>

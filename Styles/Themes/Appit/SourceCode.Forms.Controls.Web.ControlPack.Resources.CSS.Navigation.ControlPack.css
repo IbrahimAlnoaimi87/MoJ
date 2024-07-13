@@ -1,0 +1,420 @@
+﻿div.navigation-push-container {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%;
+}
+div.navigation-push-container div.form.navigation-push-form {
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  -moz-transition: left linear 0.25s;
+  -o-transition: left linear 0.25s;
+  -webkit-transition: left linear 0.25s;
+  transition: left linear 0.25s;
+}
+div.navigation-push-container div.form.navigation-push-form div.navigation-column-container,
+div.navigation-push-container div.form.navigation-push-form div.navigation-column-sibling {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+div.navigation-push-container div.form.navigation-push-form div.navigation-column-container {
+  position: relative;
+  right: 0;
+  left: auto;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+  /* theme: "minimal-dark" */
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-allitems {
+  background-color: #1A3856;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-control-container.minimized {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-topbar-clickarea {
+  display: inline-block;
+  width: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-toplogo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  min-width: 3.2rem;
+  width: 20rem;
+  /*height: 3.2rem;*/
+  height: 6rem;
+  min-height: 3.2rem;
+  background-position: left center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url("SignIn/AppitLogo180.png");
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-topbar-display {
+  display: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-minimized-sizer {
+  width: 6rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-control-container {
+  background-color: #1A3856;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-container.main-menu .navigation-scrollable .navigation {
+  max-height: calc(100% - 60px);
+  height: calc(100% - 60px);
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-usermenu {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  background-color: #5B595D;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-usermenu.closed .usermenu-header {
+  border-top: 1px solid #49474A;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-usermenu .usermenu-section-container {
+  padding: 0.7rem 1.3rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .usermenu-bottom {
+  text-transform: uppercase;
+  color: #959496;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .usermenu-header {
+  border-bottom: 1px solid #49474A;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .usermenu-footer {
+  border-top: 1px solid #49474A;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .usermenu-picture {
+  background-image: url('Navigation/Avatar.png');
+  border: 2px solid white;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation a,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Open-Sans Regular, Segoe UI Regular, Helvetica;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container {
+  padding: 0.25rem 0;
+  padding: 0;
+  position: relative;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container > .navigation-clickarea {
+  height: 3.2rem;
+  line-height: 3.2rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled) .navigation-highlightarea:hover {
+  background-color: #0aadde;
+  border-radius: 0.4rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled) .navigation-highlightarea:hover .navigation-section-separator {
+  /*display: block;*/
+  display: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled) .navigation-highlightarea:hover .navigation-right-section .navigation-count:empty {
+  display: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled) .navigation-highlightarea:hover .navigation-right-section .navigation-count:empty ~ .clickable-icon {
+  display: inline-block;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled).active-menuitem .navigation-highlightarea {
+  background-color: #0aadde;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled).active-menuitem .navigation-highlightarea .navigation-section-separator {
+  /*display: block;*/
+  display: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled).active-menuitem .navigation-highlightarea .navigation-right-section .navigation-count:empty {
+  display: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled).active-menuitem .navigation-highlightarea .navigation-right-section .navigation-count:empty ~ .clickable-icon {
+  display: inline-block;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled).active-menuitem:not(.loading) .clickable-icon {
+  display: inline-block;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled).active-menuitem:not(.loading) .navigation-count {
+  display: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled) .navigation-right-section .clickable-icon {
+  display: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled) .navigation-right-section:hover .clickable-icon {
+  display: inline-block;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled) .navigation-right-section:hover .navigation-count {
+  display: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container:not(.disabled) .navigation-right-section:hover.loading {
+  background-image: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container .loading {
+  background-image: url('RuntimeTheme/LoadingAnimation40.gif');
+  background-size: 1.6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container.disabled {
+  font-style: italic;
+  opacity: 0.9;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container.disabled .navigation-highlightarea {
+  cursor: default;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container.disabled .navigation-highlightarea .clickable-icon {
+  display: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container.disabled .navigation-highlightarea .navigation-count {
+  display: inline-block;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container .navigation-clickarea {
+  display: block;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container .navigation-section-separator {
+  display: none;
+  background-color: #b4dcf1;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-icon {
+  vertical-align: middle;
+  margin-left: 2.2rem;
+  margin-right: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-count.important > span {
+  height: 1.6rem;
+  min-width: 1.6rem;
+  line-height: 1.4rem;
+  background-color: #bf360c;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-header {
+  padding-top: 2rem;
+  min-height: initial;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-header .navigation-item {
+  display: block;
+  /*float: left;*/
+  width: auto;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-right: 0.8rem;
+  margin-left: 2.2rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-header .navigation-header-bar {
+  content: "";
+  /*display: block;*/
+  display: none;
+  height: 100%;
+  /*border-bottom: 1px solid @headerTextColor;*/
+  overflow: hidden;
+  margin-right: 22px;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.container-message,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation a.container-message {
+  color: #959496;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-items-container {
+  /*background-color: rgba(48,46,49, 1);
+		box-shadow: inset 0 2px 10px rgba(0,0,0,.4);*/
+  padding-top: 0.2rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .highlightarea,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-highlightarea {
+  border: 1px solid transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .highlightarea.focused,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-highlightarea.focused {
+  border: 1px solid #b4dcf1;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .active-menuitem .navigation-link-container .highlightarea,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .active-menuitem .navigation-link-container .navigation-highlightarea,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .active-menuitem .navigation-clickarea.navigation-highlightarea {
+  background-color: #0aadde;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem {
+  padding-left: 0;
+  line-height: 25px;
+  min-height: 25px;
+  position: relative;
+  display: block;
+  border: none;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem .highlightarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem .highlightarea .layout-cell-full-width {
+  padding-left: 2.2rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem .highlightarea:hover {
+  background-color: #0aadde;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem.active-menuitem .highlightarea {
+  background-color: #0aadde;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem.active-menuitem .highlightarea:hover {
+  border: 1px solid #b4dcf1;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem:focus .highlightarea {
+  border: 1px solid #b4dcf1;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem span {
+  -moz-transition: color linear 0.15s;
+  -o-transition: color linear 0.15s;
+  -webkit-transition: color linear 0.15s;
+  transition: color linear 0.15s;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem span.data-field {
+  font-size: 1.2rem;
+  width: auto;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem:hover span,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem.active-menuitem span {
+  color: #fff;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem:focus .navigation-highlightarea,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem:active .navigation-highlightarea {
+  border: 1px solid;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem:focus.active-menuitem .navigation-highlightarea,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem:active.active-menuitem .navigation-highlightarea {
+  color: #fff;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem.temporary.remove .highlightarea {
+  position: absolute;
+  -moz-transition: opacity linear 0.15s;
+  -o-transition: opacity linear 0.15s;
+  -webkit-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+  opacity: 0;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-dataitem-options {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-dataitem-options.overcapacity .navigation-dataitem-container-options .dataitem-option.addlink {
+  margin-left: 15px;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-dataitem-container-options {
+  position: relative;
+  display: table;
+  margin: auto;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem-option {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0 1.6rem;
+  margin: 0 0.2rem;
+  border: 1px solid #959496;
+  background-color: transparent;
+  font-style: italic;
+  -moz-transition: background-color linear 0.15s;
+  -o-transition: background-color linear 0.15s;
+  -webkit-transition: background-color linear 0.15s;
+  transition: background-color linear 0.15s;
+  border-radius: 3px;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem-option:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #0aadde;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem-option:hover .dataitem {
+  color: #fff;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem-option:hover .navigation-addlink {
+  color: #fff;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem-option:focus,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem-option:active {
+  border-color: #b4dcf1;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dataitem-option .link-icon-container {
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .dropdown-container a {
+  padding: 0;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .morelink span,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .addlink span {
+  line-height: 2rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.navigation-loadmore,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.navigation-addlink {
+  color: #959496;
+  font-size: 1.2rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.navigation-loadmore:hover,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.navigation-addlink:hover {
+  color: #fff;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-right-icon {
+  background-image: url('Navigation/ShowDetailArrow16_white.png');
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-expand-collapse-sprite {
+  background-image: url('Navigation/TPItemExpandCollapse16_Sprite.png');
+  background-repeat: no-repeat;
+  display: block;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .Expand {
+  width: 16px;
+  height: 16px;
+  background-position: -16px -16px;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .Collapse {
+  width: 16px;
+  height: 16px;
+  background-position: -64px -16px;
+}
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  /* ^.theme-entry .... for desktop devices */
+  .theme-entry .navigation-control-container .usermenu-picture {
+    background-image: url('Navigation/Avatar@2x.png');
+  }
+  .theme-entry .navigation-right-icon {
+    background-image: url('Navigation/ShowDetailArrow16_white@2x.png');
+  }
+  .theme-entry .navigation-item-count.loading {
+    background-image: url('RuntimeTheme/LoadingAnimation40@2x.gif');
+    background-size: 1.6rem;
+  }
+  .theme-entry .navigation-expand-collapse-sprite {
+    background-image: url('Navigation/TPItemExpandCollapse16_Sprite@2x.png');
+    background-repeat: no-repeat;
+    display: block;
+  }
+  .theme-entry .Expand {
+    width: 32px;
+    height: 32px;
+    background-position: -32px -32px;
+  }
+  .theme-entry .Collapse {
+    width: 32px;
+    height: 32px;
+    background-position: -128px -32px;
+  }
+}

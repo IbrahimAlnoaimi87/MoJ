@@ -1,0 +1,272 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../../Designer_Variables.less";
+
+ul.target-rule
+{
+    list-style: none;
+}
+
+.mappings-input
+{
+    &.input-control.select-box .input-control-body
+    {
+        right: 23px;
+    }
+
+    &.input-control.select-box .input-control-buttons a
+    {
+        height: 22px;
+        width: 22px;
+    }
+
+    .drop-text.watermark
+    {
+        min-width: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .styling-outer-wrapper
+    {
+        min-height: 24px;
+    }
+}
+
+
+li.disabled a
+{
+    color: #999;
+}
+
+.mappings-input .input-control.select-box .input-control-buttons a.dropdown
+{
+    border: 0px;
+    min-height: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.mappings-input .input-control.select-box .input-control-buttons a.dropdown span,
+.mappings-input .input-control.select-box .input-control-buttons a.dropdown span span,
+.mappings-input .input-control.select-box a.input-control
+{
+    min-height: 18px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.mappings-input a.input-control,
+.mappings-input input[type="text"].input-control
+{
+    min-height: 20px;
+    height: 20px;
+    line-height: 19px;
+    padding: 0;
+}
+
+.mappings-input .drop-item,
+.mappings-input .drop-object,
+.mappings-input .drop-text
+{
+    min-height: 18px;
+    height: 18px;
+    line-height: 14px;
+    vertical-align: middle;
+}
+
+.drop-textbox
+{
+    padding: 1px;
+    width: 9999px;
+}
+
+//LG: Ideally remove this  - or put it in forms.less - as it is generic
+.input-control .input-control-wrapper
+{
+    overflow-x: hidden;
+}
+
+//#region mapping screen layout for controls within a list item aka ".droplabel"
+
+@DropLabelNormalWidth: 250px;
+@DropLabelFlatListWidth: 120px;
+@TreeLevelIndent: 18px;
+
+
+
+li.dropLabel
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 28px;
+	
+	&.children
+	{
+		//Workflow open / start actions the SMO is mappable flex layout does not work due to the child tree
+		display: block;
+		> .mappings-input
+		{
+			position: absolute;
+			left: @DropLabelNormalWidth;
+			top: 3px;
+			right: 0px;
+
+
+			.target-rule-level-1 &
+			{
+				left: @DropLabelNormalWidth - (@TreeLevelIndent * 1);
+			}
+
+			.target-rule-level-2 &
+			{
+				left: @DropLabelNormalWidth - (@TreeLevelIndent * 2);
+			}
+
+			.target-rule-level-3 &
+			{
+				left: @DropLabelNormalWidth - (@TreeLevelIndent * 3);
+			}
+
+			.target-rule-level-4 &
+			{
+				left: @DropLabelNormalWidth - (@TreeLevelIndent * 4);
+			}
+		}
+	}
+
+    label, a
+    {
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+    }
+
+    label
+    {
+        overflow: hidden; //needed to prevent scrollbars appearing in ie11 - BUG: 729924
+    }
+
+    > label,
+    > span
+    {
+        flex-shrink: 0;
+        width: @DropLabelNormalWidth; //makes sure all of the label line up (if properties names are different lengths)
+        .target-rule-level-0 &
+        {
+            width: @DropLabelNormalWidth - (@TreeLevelIndent * 1);
+        }
+
+        .target-rule-level-1 &
+        {
+            width: @DropLabelNormalWidth - (@TreeLevelIndent * 2);
+        }
+
+        .target-rule-level-2 &
+        {
+            width: @DropLabelNormalWidth - (@TreeLevelIndent * 3);
+        }
+
+        .target-rule-level-3 &
+        {
+            width: @DropLabelNormalWidth - (@TreeLevelIndent * 4);
+        }
+
+        .target-rule-level-4 &
+        {
+            width: @DropLabelNormalWidth - (@TreeLevelIndent * 5);
+        }
+    }
+
+    > .mappings-input
+    {
+        flex-grow: 1;
+        /*Stop the content pusing the bounds of the mapping input out to fit contents but rather scroll the input contents with flex layout.*/
+        min-width: 0;
+
+        > .input-control
+        {
+            min-width: 0;
+            overflow-x: hidden;
+        }
+
+        /*StartWF WF Name Input*/
+        &.input-control > .input-control-m
+        {
+            width: 100%;
+        }
+    }
+
+
+    &.multi-line
+    {
+        height: 60px;
+    }
+}
+
+li.dropLabelLast
+{
+    height: 25px;
+}
+
+/*Tree with no children - flat list*/
+.tree > .target-rule > li.dropLabel
+{
+    > label,
+    > span
+    {
+        width: @DropLabelFlatListWidth;
+    }
+}
+
+//#endregion
+.mappingValue
+{
+    height: 30px;
+}
+
+li.required .mappings-input
+{
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+td.mappingLabelRequired
+{
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 100% 6px;
+    background-color: transparent;
+}
+
+//Rule Mapping screen - required inputs
+li.required .mappings-input,
+td.mappingLabelRequired
+{
+    background-image: url("../../../../Styles/Platinum/Images/Forms/required_field_orange_line.png");
+}
+
+
+/* Checkbox Tree Styling - used in Rules Designer mapping screens */
+.target-tree.checkbox li a,
+.target-tree.checkbox li span
+{
+    padding-left: 41px;
+    background-size: 16px 16px;
+}
+
+/* Collapsed Root Styling */
+.target-tree.collapsed-root li.root
+{
+    background: none;
+    padding-left: 0;
+}
+
+.target-tree.collapsed-root li.root > a,
+.target-tree.collapsed-root li.root > span
+{
+    display: none;
+}

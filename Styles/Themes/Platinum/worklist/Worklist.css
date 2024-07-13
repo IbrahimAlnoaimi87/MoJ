@@ -1,0 +1,2513 @@
+﻿/* -------------------- Top Test Section ---------------------------- */
+
+/* -------------------- Top Test Section End ---------------------------- */
+
+.styled-select select 
+{
+   background: transparent;
+   /*width: 370px;*/
+   width:100%;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 16px;
+   -webkit-appearance: none;
+   height:18px;
+
+   border:1px solid #dee3dd;
+}
+
+.styled-select 
+{
+   /*width: 370px;*/
+   width:100%;
+   height: 16px;
+   overflow: hidden;
+   background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Default16px.png")%>') no-repeat right white;
+   /*border:1px solid #dee3dd;*/
+}
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+	background-color: #acaf9c;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month-year {
+	width: 100%;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 49%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+input.WorklistItemCheckbox
+{
+	
+}
+
+/*div.navigation-panel-header-c 
+{
+	background: #F9F9F9;
+	background: -moz-linear-gradient(top, #F9F9F9 0%, #DFE4D7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F9F9F9), color-stop(100%,#DFE4D7));
+	background: -webkit-linear-gradient(top, #F9F9F9 0%,#DFE4D7 100%);
+	background: -o-linear-gradient(top, #F9F9F9 0%,#DFE4D7 100%);
+	background: -ms-linear-gradient(top, #F9F9F9 0%,#DFE4D7 100%);
+	background: linear-gradient(to bottom, #F9F9F9 0%,#DFE4D7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 );
+	border: solid 1px white;
+	height: 20px;
+	padding: 0 5px;
+}*/
+
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	/*width:460px;*/
+	width: 100%;
+	border: 1px solid gray;
+}
+
+div.SourceCodeFormsControlsWorklist button
+{
+	cursor:pointer;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup
+{
+	background:white;
+	width:160px;
+	border:1px solid #aaaaaa;
+	z-index:999;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable
+{
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow
+{
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRowHidden
+{
+	visibility:hidden;
+	display:none;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDLeft
+{
+	width:30px;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRight
+{
+	width:130px;
+	border:1px solid #e0e0e0;
+	vertical-align:middle;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRightAction
+{
+	width:130px;
+	vertical-align:middle;
+	border-left:1px solid #e0e0e0;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRightActionItem
+{
+	background: #e0e0e0;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRightActionItem a
+{
+	display:inline-block;
+	text-decoration:none;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDLeft div.PopupWorklistTableTDLeftImage
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.OpenForm16.png")%>') no-repeat transparent center;
+	text-align:center;
+	background-size: 16px 16px;
+	width:30px;
+	height:30px;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDLeft div.PopupWorklistTableTDLeftImageViewFlow
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.ViewFlow16.png")%>') no-repeat transparent center;
+	text-align:center;
+	background-size: 16px 16px;
+	width:30px;
+	height:30px;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDLeft div.PopupWorklistTableTDLeftImageComments
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Comment16_1.png")%>') no-repeat transparent center;
+	text-align:center;
+	background-size: 16px 16px;
+	width:30px;
+	height:30px;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRight div.PopupWorklistTableTDReleaseImage
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.release16.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width:30px;
+	height:30px;
+	display:table-cell;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRight div.PopupWorklistTableTDSleepImage
+{
+	background-position-y:center;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.sleep16.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width:30px;
+	height:27px;
+	display:table-cell;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRight div.PopupWorklistTableTDRedirectImage
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Redirect16.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width:30px;
+	height:30px;
+	display:table-cell;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRight div.PopupWorklistTableTDDelegateImage
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Share16.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width:30px;
+	height:30px;
+	display:table-cell;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRight div.PopupWorklistTableTDRightText
+{
+	padding-left:10px;
+	display:table-cell;
+	vertical-align:middle;
+	width:130px;
+	height:30px;
+	color:black;
+	cursor:pointer;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRight div.PopupWorklistTableTDRightText:hover
+{
+	padding-left:10px;
+	display:table-cell;
+	vertical-align:middle;
+	width:130px;
+	height:30px;
+	color:black;
+	cursor:pointer;
+	background: #e1edc9 !important;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRightAction div.PopupWorklistTableTDRightTextAction
+{
+	padding-left:10px;
+	display:table-cell !important;
+	vertical-align:middle;
+	width: 130px;
+	height:30px;
+	color:black;
+	cursor:pointer;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRightAction div.PopupWorklistTableTDRightTextAction:hover
+{
+	padding-left:10px;
+	display:table-cell !important;
+	vertical-align:middle;
+	width: 130px;
+	height:30px;
+	color:black;
+	cursor:pointer;
+	background: #e1edc9 !important;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable a.ActionLink
+{
+	text-decoration: none !important;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable a.ActionLink:hover
+{
+	text-decoration: none !important;
+	background: #e0e0e0 !important;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDLeft div.PopupWorklistTableTDLeftFurtherAction
+{
+	text-align:center;
+	background-size: 16px 16px;
+	width:30px;
+	height:30px;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRight div.PopupWorklistTableTDRightFurtherAction
+{
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	height:30px;
+	color:black;
+	text-align:left;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRight div.PopupWorklistTableTDRightFurtherAction a
+{
+	display:inline-block;
+}
+
+div.SourceCodeFormsControlsWorklist div.popup table.PopupWorklistTable tr.PopupWorklistTableRow td.PopupWorklistTableTDRight div.PopupWorklistTableTDRightAction
+{
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	height:30px;
+	color:black;
+	text-align:left;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable
+{
+	height: 100%;
+	width: 100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow
+{
+	width: 100%;
+	height: 22px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	border-collapse:collapse;
+	height:20px;
+	border-spacing:0px;
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow
+{
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions
+{
+
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions td.OptionSelectBorder
+{
+	border-style:solid;
+	border-color:#acaf9c;
+	border-width:1px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions td.OptionSelectBorderRefresh
+{
+	border:1px solid transparent;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions td.OptionSelectBorderOff
+{
+	border:1px solid transparent !important;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions input.SearchInput
+{
+	border: 1px solid white;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Search16.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width: 18px; 
+	height: 18px; 
+	cursor: pointer;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions input.CheckboxInput
+{
+	border: 1px solid white;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.MultiSelect16_3.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width: 18px; 
+	height: 18px; 
+	cursor: pointer;
+}
+
+/*div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions input.FilterInput
+{
+	border: 1px solid white;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Filter16.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width: 18px; 
+	height: 18px; 
+	cursor: pointer;
+}*/
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions input.RefreshInput
+{
+	border: 1px solid transparent;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.SyncToned_2.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width: 18px; 
+	height: 18px;
+	cursor: pointer; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions input.RefreshInputGray
+{
+	opacity: 0.4;
+	filter: alpha(opacity=40); /* msie */
+
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions input.SearchInputOff
+{
+	border: 1px solid transparent;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Search16.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width: 18px; 
+	height: 18px; 
+	cursor: pointer; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions input.CheckboxInputOff
+{
+	border: 1px solid transparent;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.MultiSelect16_3.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width: 18px; 
+	height: 18px; 
+	cursor: pointer; 
+}
+
+/*div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions input.FilterInputOff
+{
+	border: 1px solid transparent;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Filter16.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width: 18px; 
+	height: 18px; 
+	cursor: pointer; 
+}*/
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow table.SelectWorklistOptions input.RefreshInputLoading
+{
+	border: 1px solid transparent;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.loading.gif")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width: 18px; 
+	height: 18px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRowTD
+{
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:7px;
+	font-weight:bold;
+	font-size:11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #343E41;
+	width:50%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight
+{
+	text-align:right;
+	font-weight:bold;
+	padding-right:1px;
+	width:50%;
+}
+
+input.searchButton
+{
+	border: 1px solid white;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Search16.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	width: 18px; 
+	height: 18px;
+	cursor: pointer;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 32px;
+	border-top: 1px solid gray; 
+	background: #f5f5f5;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow div.SearchSectionDisplayTable2
+{
+	float:right;
+    width: 50%;
+	display:table;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow div.SearchSectionDisplayTable div.SearchSectionDisplayTableRow2
+{
+	width:100%;
+	display:table-row;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow div.SearchSectionDisplayTable div.SearchSectionDisplayTableRow div.SearchSectionDisplayTableCell2
+{
+	width:100%;
+	display:table-cell;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow div.SearchSectionDisplayTable
+{
+	width:100%;
+	display:table;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow div.SearchSectionDisplayTable div.SearchSectionDisplayTableRow
+{
+	width:100%;
+	display:table-row;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow div.SearchSectionDisplayTable div.SearchSectionDisplayTableRow div.SearchSectionDisplayTableCell
+{
+	width:100%;
+	display:table-cell;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow div.SearchSectionDisplayTable div.SearchSectionDisplayTableRow div.SearchSectionDisplayTableCell div.SearchSectionDisplayInline
+{
+	width:100%;
+	display:inline;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow div.SearchSectionDisplayTable div.SearchSectionDisplayTableRow div.SearchSectionDisplayTableCell div.SearchSectionDisplayInline table.SearchSectionMainTable
+{
+	width:100%;
+	margin-top:3px;
+	background-color:#f5f5f5;
+}
+
+div.SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SearchTD
+{
+	/*width:20px;*/
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #343E41;
+	/*padding-left:9px;*/
+}
+
+div.SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SearchTD div.SearchDiv
+{
+	/*display:inline;*/
+	/*padding-left:12px;*/
+
+}
+
+div.SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SpaceTD
+{
+	width:3px;
+}
+
+div.SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SearchBoxTD
+{
+	border-style:solid solid solid solid;
+	border-color:#acaf9c;
+	border-width:1px;
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SearchBoxTD input.SearchInputBox
+{
+	outline-color:#98dc28;
+	/*width:320px;*/
+	width:100%;
+	border:1px solid #dee3dd;
+	height:18px;
+	padding:0px;
+	/*padding-left:1px;*/
+	/*position:relative;*/
+	box-sizing: border-box;
+	 -webkit-box-sizing:border-box;
+	 -moz-box-sizing: border-box;
+}
+
+div.SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SearchActionTD
+{
+	border-style:solid;
+	border-color:#acaf9c;
+	border-width:1px;
+	text-align:center;
+}
+
+div.SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SearchClearTD
+{
+	text-align:center;
+	border-style:solid;
+	border-color:#acaf9c;
+	border-width:1px;
+}
+
+div.SourceCodeFormsControlsWorklist table.MatchFilterTable
+{
+	width:100%;
+	margin-top:3px;
+	margin-bottom:3px;
+	background-color:#f5f5f5;
+}
+
+div.SourceCodeFormsControlsWorklist table.MatchFilterTable td.MatchTD
+{
+
+}
+
+div.SourceCodeFormsControlsWorklist table.MatchFilterTable td.MatchTD div.MatchDiv
+{
+	display:inline;
+	padding-left:12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #343E41;
+}
+
+div.SourceCodeFormsControlsWorklist table.MatchFilterTable td.SpaceTD
+{
+	width:3px;
+}
+
+div.SourceCodeFormsControlsWorklist table.MatchFilterTable td.DropDownTD
+{
+	border-style:solid solid solid solid;
+	border-color:#acaf9c;
+	border-width:1px;
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.SearchSectionMainTable select.MatchSelectSearchType
+{
+	outline-color:#98dc28;
+	height:16px;
+	line-height:12px;
+	overflow:Visible;
+	font-size:100%;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	color:#343E41;
+	width:100%;
+
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+}
+
+input.SearchSelectExpanded
+{
+	height: 16px; 
+	width: 16px;
+	margin-right:0px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:0px;
+	background: gray;
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:3px;
+	padding-bottom:0px;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.PDCollapse.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	cursor:pointer;
+}
+
+input.SearchSelect
+{
+	height: 16px;
+	width: 16px;
+	margin-right:0px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:0px;
+	background: gray;
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.PDExpand.png")%>') no-repeat transparent center;
+	background-size: 16px 16px;
+	cursor:pointer;
+}
+
+input.SearchClear
+{
+	height: 18px;
+	width: 18px;
+	margin-right:0px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:1px solid white;
+	background: gray;
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.ClearIcon.png")%>') no-repeat transparent center; 
+	background-position:center;
+	cursor:pointer;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow
+{
+	width: 100%;
+	height: 400px;
+	border: 1px solid gray;
+	background: White;
+	padding:0px;
+	margin:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow table.WorkListItemTableHeader
+{
+	background: #E8E8E8;
+	border:1px solid black;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow table.WorkListItemTableHeader th
+{
+	border:1px solid black;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv
+{
+	width: 100%;
+	height: 400px;
+	overflow-y: auto;
+	padding:0px;
+	margin:0px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable div.loadmore a
+{
+   color:gray;
+   text-decoration:none;
+   font-weight:bold;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable div.loadmore:hover
+{
+
+	background: #e1edc9;
+	
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistLoadMoreSectionRow td.WorklistLoadMoreSectionRowTD
+{
+	width:100%;
+	height:15px;
+	text-align:center;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistLoadMoreSectionRow td.WorklistLoadMoreSectionRowTD a.LoadMoreHyperlink
+{
+	color:#608d0c;
+	text-align:center;
+	font-size: 11px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItemGrid
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItemGrid  table.WorkListItemGrid
+{
+	width:100%;
+	height: 40px; 
+	cursor:pointer;
+	background-color:white;
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: White;
+	border-collapse: separate;
+}
+
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItemGrid  table.WorkListItemGrid thead.testHeader
+{
+    background-color: #E0E0E0;
+    text-align:left;
+}
+
+
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem:hover
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #d5d6ce;
+	border-bottom:1px solid #d5d6ce;
+	background: #e1edc9;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable
+{
+	width:100%;
+	margin-top: 9px;
+	margin-bottom: 10px;
+	margin-right: 0%;
+}
+
+/*div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.GridEven 
+{
+	background: #f5f5f5;
+}*/
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne
+{
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableCheckbox
+{
+	text-align:center;
+	width: 3%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTablePriority
+{
+	text-align:center;
+	width: 6%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTablePriority div.PriorityImageDiv
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.BlueIndicator.png")%>') no-repeat 0 0 transparent;
+	background-size: 11px 11px;
+	height:11px;
+	width:11px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowTwo td.WorklistTableOverdue div.OverdueImageDiv
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.ExclimationIcon.png")%>') no-repeat 0 0 transparent;
+	background-size: 11px 11px;
+	height:11px;
+	width:11px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableSelectArrow div.SelectArrowImageDiv
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Arrow.png")%>') no-repeat 0 0 transparent;
+	background-size: 7px 7px;
+	height:7px;
+	width:7px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility:hidden;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableEventName
+{
+	text-align:left;
+	width: 70%;
+	font-weight:bold;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableEventDate
+{
+	text-align:right;
+	width: 30%;
+	color: #4f7216; 
+}
+
+	div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableFolio {
+		text-align: left;
+		width:20%;
+		font-size: 12px;
+	}
+
+	div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistProcessName {
+		text-align: left;
+		width:30%;
+		font-size: 12px;
+		/*padding-left: 2%;*/
+	}
+
+	div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableActivityName {
+		text-align: left;
+		width:30%;
+		font-size: 12px;
+		/*padding-left: 2%;*/
+	}
+
+	div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableStatus {
+		text-align: left;
+		width: 1%;
+		font-size: 12px;
+		/*padding-left: 2%;*/
+	}
+	
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableSelectArrow
+{
+	width: 6%;
+	text-align:center;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowTwo td.WorklistTableFolio
+{
+	text-align:left;
+	width: 70%;
+	font-size: 12px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowTwo td.WorklistTableWorkflowName
+{
+	text-align:right;
+	width: 30%;
+	color: #4f7216;    
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowTwo
+{
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #e1edc9;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableSelectArrow div.SelectArrowImageDiv
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Arrow.png")%>') no-repeat 0 0 transparent;
+	background-size: 7px 7px;
+	height:7px;
+	width:7px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility:visible;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableSelectArrow div.SelectArrowImageDiv
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Arrow.png")%>') no-repeat 0 0 transparent;
+	background-size: 7px 7px;
+	height:7px;
+	width:7px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility:visible;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem:hover table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableSelectArrow div.SelectArrowImageDiv
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Arrow.png")%>') no-repeat 0 0 transparent;
+	background-size: 7px 7px;
+	height:7px;
+	width:7px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility:visible;
+}
+
+
+
+/* Twilight Theme */
+/*
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	width:460px;
+	border: 1px solid #16a4d4;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	background: -webkit-gradient(linear, left bottom, left top, from(#0c85af), to(#15a1d0));
+	border-collapse:collapse;
+	height:23px;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12px;
+	color:black;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#37b3dd), to(#51d0fb));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorderOff
+{
+	border:1px solid transparent !important;
+	background:transparent;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #16a4d4; 
+	background: -webkit-gradient(linear, left bottom, left top, from(#0c85af), to(#15a1d0));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchWordingTD
+{
+	width: 11%;
+	padding-left:5px;
+	color:black; 
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder div.ButtonSearchSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#37b3dd), to(#51d0fb));
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchClearSelectBorder div.ButtonSearchClearSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#37b3dd), to(#51d0fb));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #16a4d4;
+	border-bottom:1px solid #16a4d4;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #c4e9f5;  
+} */
+/* End of Twilight Theme */
+
+/* Sun Theme */
+/*
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	width:460px;
+	border: 1px solid #f0ac00;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	background: -webkit-gradient(linear, left bottom, left top, from(#fede7c), to(#ffefbe));
+	border-collapse:collapse;
+	height:23px;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12px;
+	color:black;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#eec850), to(#f9df8c));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorderOff
+{
+	border:1px solid transparent !important;
+	background:transparent;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #f0ac00; 
+	background: -webkit-gradient(linear, left bottom, left top, from(#fede7c), to(#ffefbe));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchWordingTD
+{
+	width: 11%;
+	padding-left:5px;
+	color:black; 
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder div.ButtonSearchSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#eec850), to(#f9df8c));
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchClearSelectBorder div.ButtonSearchClearSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#eec850), to(#f9df8c));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #f0ac00;
+	border-bottom:1px solid #f0ac00;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #feebaf;  
+} */
+/* End of Sun Theme */
+
+
+/* Sky Theme */
+/*
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	width:460px;
+	border: 1px solid #bcc2d2;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	background: -webkit-gradient(linear, left bottom, left top, from(#dee4f4), to(#f5f8ff));
+	border-collapse:collapse;
+	height:23px;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12px;
+	color:black;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#ebeff9), to(#fdfdff));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorderOff
+{
+	border:1px solid transparent !important;
+	background:transparent;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #bcc2d2; 
+	background: -webkit-gradient(linear, left bottom, left top, from(#dee4f4), to(#f5f8ff));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchWordingTD
+{
+	width: 11%;
+	padding-left:5px;
+	color:black; 
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder div.ButtonSearchSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#ebeff9), to(#fdfdff));
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchClearSelectBorder div.ButtonSearchClearSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#ebeff9), to(#fdfdff));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #bcc2d2;
+	border-bottom:1px solid #bcc2d2;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #dbe1f2;  
+} */
+/* End of Sky Theme */
+
+/* Sharepoint 2013 Theme */
+/*
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	width:460px;
+	border: 1px solid white;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	background: -webkit-gradient(linear, left bottom, left top, from(#ebeee7), to(#f8f8f7));
+	border-collapse:collapse;
+	height:23px;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12px;
+	color:#777777;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#e5e8df), to(#cdd1c2));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorderOff
+{
+	border:1px solid transparent !important;
+	background:transparent;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #e8e3e7; 
+	background: -webkit-gradient(linear, left bottom, left top, from(#ebeee7), to(#f8f8f7));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchWordingTD
+{
+	width: 11%;
+	padding-left:5px;
+	color:#777777; 
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder div.ButtonSearchSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#e5e8df), to(#cdd1c2));
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchClearSelectBorder div.ButtonSearchClearSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#e5e8df), to(#cdd1c2));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #d3eef7;  
+} 
+*/
+/* End of Sharepoint 2013 Theme */
+
+/* Sharepoint 2010 Theme */
+/*
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	width:460px;
+	border: 1px solid #e8e3e7;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	background: -webkit-gradient(linear, left bottom, left top, from(#fcfcfc), to(#fcfcfc));
+	border-collapse:collapse;
+	height:23px;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12px;
+	color:black;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#d2ecfd), to(#e9f6ff));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorderOff
+{
+	border:1px solid transparent !important;
+	background:transparent;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #e8e3e7; 
+	background: -webkit-gradient(linear, left bottom, left top, from(#fcfcfc), to(#fcfcfc));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchWordingTD
+{
+	width: 11%;
+	padding-left:5px;
+	color:black; 
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder div.ButtonSearchSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#d2ecfd), to(#e9f6ff));
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchClearSelectBorder div.ButtonSearchClearSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#d2ecfd), to(#e9f6ff));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #e8e3e7;
+	border-bottom:1px solid #e8e3e7;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #d3eef7;  
+}
+*/
+/* End of Sharepoint 2010 Theme */
+
+/* Platinum Theme */
+/*
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	width:460px;
+	border: 1px solid #adae9c;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	background: -webkit-gradient(linear, left bottom, left top, from(#ebeee7), to(#f9f9f8));
+	border-collapse:collapse;
+	height:23px;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12px;
+	color:black;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#e5e8df), to(#cdd1c2));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorderOff
+{
+	border:1px solid transparent !important;
+	background:transparent;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #270809; 
+	background: -webkit-gradient(linear, left bottom, left top, from(#ebeee7), to(#f9f9f8));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchWordingTD
+{
+	width: 11%;
+	padding-left:5px;
+	color:black; 
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder div.ButtonSearchSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#e5e8df), to(#cdd1c2));
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchClearSelectBorder div.ButtonSearchClearSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline;
+	background: -webkit-gradient(linear, left bottom, left top, from(#e5e8df), to(#cdd1c2));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #adae9c;
+	border-bottom:1px solid #adae9c;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #d6e3b0;  
+} */
+/* End of Platinum Theme */
+
+/* Leaf Theme */
+/*
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	width:460px;
+	border: 1px solid #809200;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	background: -webkit-gradient(linear, left bottom, left top, from(#596300), to(#728101));
+	border-collapse:collapse;
+	height:23px;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12px;
+	color:white;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:inline;
+	background:#97a801;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorderOff
+{
+	border:1px solid transparent !important;
+	background:transparent;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #270809; 
+	background: -webkit-gradient(linear, left bottom, left top, from(#596300), to(#728101));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchWordingTD
+{
+	width: 11%;
+	padding-left:5px;
+	color:white; 
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder div.ButtonSearchSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+	display:inline;
+	background:#97a801;
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchClearSelectBorder div.ButtonSearchClearSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline;
+	background:#97a801;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #809200;
+	border-bottom:1px solid #809200;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #bfc87f;  
+}  */
+/* End of Leaf Theme */
+
+/* Granite Theme */
+/*
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	width:460px;
+	border: 1px solid #474747;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	background: -webkit-gradient(linear, left bottom, left top, from(#181818), to(#474747));
+	border-collapse:collapse;
+	height:23px;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12px;
+	color:white;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:inline;
+	background:#277ae3;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorderOff
+{
+	border:1px solid transparent !important;
+	background:transparent;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #270809; 
+	background: -webkit-gradient(linear, left bottom, left top, from(#181818), to(#474747));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchWordingTD
+{
+	width: 11%;
+	padding-left:5px;
+	color:white; 
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder div.ButtonSearchSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+	display:inline;
+	background:#277ae3;
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchClearSelectBorder div.ButtonSearchClearSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline;
+	background:#277ae3;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #474747;
+	border-bottom:1px solid #474747;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #d3eef7;  
+} */
+
+/* End of Granite Theme */
+
+
+/* Burgundy Theme */
+/*
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	width:460px;
+	border: 1px solid #270809;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	background: -webkit-gradient(linear, left bottom, left top, from(#59070e), to(#860e15));
+	border-collapse:collapse;
+	height:23px;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12px;
+	color:white;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:inline;
+	background:#8d1018;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorderOff
+{
+	border:1px solid transparent !important;
+	background:transparent;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #270809; 
+	background: -webkit-gradient(linear, left bottom, left top, from(#59070e), to(#860e15));
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchWordingTD
+{
+	width: 11%;
+	padding-left:5px;
+	color:white; 
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder div.ButtonSearchSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+	display:inline;
+	background:#8d1018;
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchClearSelectBorder div.ButtonSearchClearSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline;
+	background:#8d1018;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #8e0f1a;
+	border-bottom:1px solid #8e0f1a;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #de898e;  
+}  */
+
+/* End of Burgundy Theme */
+
+/*
+	Platinum Theme
+div.SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	width:460px;
+	border: 1px solid gray;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable
+{
+	height: 100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow
+{
+	width: 100%;
+	height: 25px;
+	border-radius: 2px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable
+{
+	background: -webkit-gradient(linear, left bottom, left top, from(#e1e2da), to(#f5f5f5));
+	border-collapse:collapse;
+	height:23px;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow table.WorklistHeaderTable tr.WorklistHeaderTableRow
+{
+
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRowTD
+{
+
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable div.WhiteBorderDiv
+{
+	border: 1px solid white;
+	background: white;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderLeft
+{
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight
+{
+	text-align:right;
+	font-weight:bold;
+	padding-right:1px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight button.searchButton
+{
+	height: 16px;
+	width: 16px;  
+	margin-left:0px;
+	margin-top:2px;
+	margin-bottom:2px;
+	border:0px;
+	background: gray;
+	padding:0px;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Search16.png")%>') no-repeat 0 0 transparent;
+	background-size: 100% 100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder
+{
+	margin-right:5px;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+	border-top: 1px solid gray;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:0px;
+	padding-right:0px; 
+	display:inline;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorderOff
+{
+	border:1px solid transparent !important;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:inline;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight div.ButtonSelectBorder div.ButtonSelectWhiteBorderOff
+{
+	border:1px solid transparent !important;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight button.checkboxButton
+{
+	height: 16px;
+	width: 16px;
+	margin-left:0px;
+	margin-top:2px;
+	margin-bottom:2px;
+	border:0px;
+	background: gray;
+	padding:0px; 
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.MultiSelect16_3.png")%>') no-repeat 0 0 transparent;
+	background-size: 100% 100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight button.filterButton
+{
+	height: 16px;
+	width: 16px;
+	margin-left:0px;
+	margin-top:2px;
+	margin-bottom:2px;
+	border:0px;
+	background: gray;
+	padding:0px;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Filter16.png")%>') no-repeat 0 0 transparent;
+	background-size: 100% 100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistHeaderRow td.WorklistHeaderRight button.refreshButton
+{
+	height: 16px;
+	width: 16px;
+	margin-right:0px;
+	margin-left:0px;
+	margin-top:2px;
+	margin-bottom:2px;
+	border:0px;
+	background: gray;
+	padding:0px;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.SyncToned_2.png")%>') no-repeat 0 0 transparent;
+	background-size: 100% 100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid gray; 
+	background: #f5f5f5;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow span.SearchWordingSpan
+{
+	padding-left:5px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow input.SearchBoxInput
+{
+	width:100%;
+	outline: none;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable
+{
+	border-collapse:collapse;
+	width:100%;
+	border-spacing:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable tr
+{
+	padding:0px;
+	margin:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable tr td
+{
+	padding:0px;
+	margin:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable button.SearchSelect
+{
+	height: 15px;
+	width: 15px;
+	margin-right:5px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:0px;
+	background: gray;
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Default16px.png")%>') no-repeat 0 0 transparent;
+	background-size: 100% 100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable button.SearchMagnifier
+{
+	height: 16px;
+	width: 16px;
+	margin-right:0px;
+	margin-left:0px;
+	margin-top:auto;
+	margin-bottom:auto;
+	border:0px;
+	background: gray;
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Search16.png")%>') no-repeat 0 0 transparent;
+	background-size: 100% 100%;
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder
+{
+	margin-right:5px;
+	margin-left:3px;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+	border-top: 1px solid gray;
+	padding-top:4px;
+	padding-bottom:2px;
+	padding-left:0px;
+	padding-right:0px; 
+	display:inline;
+}
+
+div.SourceCodeFormsControlsWorklist div.ButtonSearchSelectBorder div.ButtonSearchSelectWhiteBorder
+{
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	padding-top:3px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+	display:inline;
+	background:#e6e7e1;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable button.SearchClear
+{
+	height: 21px;
+	width: 21px;
+	margin-right:0px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:0px;
+	background: gray;
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Default16px.png")%>') no-repeat 0 0 transparent;
+	background-size: 100% 100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchWordingTD
+{
+	width: 11%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchSelectTD
+{
+	width: 4%;
+	text-align:center;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchBoxInputTD
+{
+	width:71%; 
+	text-align:right;
+	border-right:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchMagnifierTD
+{
+	width:8%;
+	text-align:left;
+	border-left:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow table.SearchSectionTable td.SearchClearTD
+{
+	width:6%;
+	text-align:left;
+	border-left:0px;
+	margin-left:0px;
+	padding-left:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow
+{
+	width: 100%;
+	height: 400px;
+	border: 1px solid gray;
+	background: White;
+	padding:0px;
+	margin:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv
+{
+	width: 100%;
+	height: 400px;
+	overflow-y: scroll;
+	padding:0px;
+	margin:0px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv::-webkit-scrollbar 
+{
+	width: 16px;
+	height: 16px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv::-webkit-scrollbar-button:start:decrement
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Default16px.png")%>') no-repeat center;
+}
+	
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv::-webkit-scrollbar-button:end:increment  
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Default16px.png")%>') no-repeat center;
+}
+			 
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv::-webkit-scrollbar-track-piece  
+{
+	background-color: #f0f0f0;
+}
+			 
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv::-webkit-scrollbar-thumb:vertical 
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Default16px.png")%>') no-repeat center;
+	background-size: 100% 35px;
+	border:1px solid gray;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem
+{
+	width:100%;
+	cursor:pointer;
+	border-top:1px solid #d5d6ce;
+	border-bottom:1px solid #d5d6ce;
+	background-color:White;
+	height: 40px; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable
+{
+	width:98%;
+	margin-top: 9px;
+	margin-bottom: 10px;
+	margin-left: 2%;
+	margin-right: 0%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne
+{
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableCheckbox
+{
+	text-align:center;
+	width: 3%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTablePriority
+{
+	text-align:center;
+	width: 6%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTablePriority div.PriorityImageDiv
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Default16px.png")%>') no-repeat 0 0 transparent;
+	background-size: 100% 100%;
+	height:15px;
+	width:15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableSelectArrow div.SelectArrowImageDiv
+{
+	background: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Worklist.Worklist.Resources.Style.Default16px.png")%>') no-repeat 0 0 transparent;
+	background-size: 100% 100%;
+	height:15px;
+	width:15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableEventName
+{
+	text-align:left;
+	width: 50%;
+	font-weight:bold;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableEventDate
+{
+	text-align:right;
+	width: 30%;
+	color: #4f7216; 
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableSelectArrow
+{
+	width: 6%;
+	text-align:center;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowTwo td.WorklistTableFolio
+{
+	text-align:left;
+	width: 50%;
+	color: #d3d5db; 
+	font-size: 12px;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowTwo td.WorklistTableWorkflowName
+{
+	text-align:right;
+	width: 30%;
+	color: #4f7216;    
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowTwo
+{
+	width:100%;
+}
+
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.SelectedDivBackground
+{
+	background: #e1edc9;
+} */
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+﻿#autoGenerate_popUp div.layoutSection, 
+#autoGenerate_popUp label.createView, 
+#autoGenerate_popUp div.viewName,
+#formLayoutSection,
+#viewLayoutSection
+{
+	float: left;
+}
+
+html[dir=rtl] #autoGenerate_popup div.layoutSection, 
+html[dir=rtl] #autoGenerate_popup label.createView, 
+html[dir=rtl] #autoGenerate_popup div.viewName,
+html[dir=rtl] #formLayoutSection,
+html[dir=rtl] #viewLayoutSection
+{
+	float: right;
+}
+
+#autoGenerate_popUp label.createView
+{
+	margin: 0;
+}
+
+#formLayoutSection
+{
+	width: 40%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 4px;
+}
+
+html[dir=rtl] #formLayoutSection
+{
+	padding-left: 4px;
+	padding-right: 0;
+}
+
+#formCreationOptions
+{
+	margin-left:155px;
+}
+
+#formNameOptions
+{
+	margin-left:16px;
+}
+
+html[dir=rtl] #formCreationOptions
+{
+	margin-left:0;
+	margin-right:155px;
+}
+
+html[dir=rtl] #formLayoutSection
+{
+	margin-left: 4px;
+	margin-left: 0;
+	width: 350px;
+}
+
+html[dir=rtl] #formNameOptions
+{
+	margin-left:0;
+	margin-right:16px;
+}
+
+html[dir=rtl] #formCreationOptions ul.input-control-group
+{
+	overflow:visible;
+}
+
+html[dir=rtl] #formCreationOptions ul.input-control-group li
+{
+	height:20px;
+}
+
+#viewLayoutSection
+{
+	width: 60%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 4px;
+	padding-left: 50px;
+}
+
+html[dir=rtl] #viewLayoutSection
+{
+	padding-left:0;
+	padding-right:50px;
+}
+
+#viewLayoutSection .input-control.checkbox .input-control-text
+{
+	white-space: pre-line;
+	margin-left: 0;
+
+}
+
+#viewLayoutSection .input-control.checkbox .input-control-img
+{
+	margin-right: 1px;
+}

@@ -1,0 +1,10 @@
+/*#region TABLE CONTROL*/
+
+/*view designer, table control cell, mostly design-time only?*/
+
+.theme-entry .editor-cell {
+  overflow: hidden;
+  vertical-align: top;
+}
+/*#endregion TABLE CONTROL*/
+

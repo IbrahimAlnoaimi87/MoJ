@@ -1,0 +1,55 @@
+//#region RESETS
+
+
+.theme-entry .panel > .panel-body{
+    //override core.less default to white
+    //TODO: move the white out of core.less into corelegacy.less.
+    background-color: transparent;
+}
+
+//#endregion RESETS
+
+
+.theme-entry .panel > .panel-body
+{
+    border: none;
+    border-radius: 0 0 @View-Border-Radius-Bottom @View-Border-Radius-Bottom; /* round only the bottom corners */
+}
+
+.theme-entry .panel.with-header.without-toolbar > .panel-body,
+.theme-entry .panel.without-header.with-toolbar > .panel-body
+{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.theme-entry .panel.with-footer > .panel-body
+{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.theme-entry .panel.collapsed > .panel-header,
+.theme-entry .grid.collapsed > .grid-header
+{
+    border-radius: @View-Border-Radius-Top;
+}
+
+.theme-entry .grid-header-wrapper .grid-header-controls
+{
+    height: auto; /*override - base - hardcoded 20px*/
+}
+
+.theme-entry .grid-header-wrapper .grid-header-controls a,
+.theme-entry .panel-header-wrapper .panel-header-controls a
+{
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.theme-entry .grid-header-wrapper .grid-header-controls a.collapse-vertical,
+.theme-entry .panel-header-wrapper .panel-header-controls a.collapse-vertical
+{
+    outline: none;
+}

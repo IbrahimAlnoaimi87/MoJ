@@ -1,0 +1,930 @@
+﻿.modalizer.invisible-modalizer {
+  display: none !important;
+}
+.ajaxLoader {
+  background-image: url(RuntimeTheme/LoadingPage40_ffffff.gif) !important;
+}
+.base2.base1.modalizer .ajaxLoader,
+.base2.base1.modalizer .base0.base1.ajaxLoader {
+  /* Form Level Modalizer & Spinner */
+  background-image: url(RuntimeTheme/LoadingPage40_787878.gif) !important;
+}
+
+html.workspace .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList
+{
+   font-size: 1.5rem;
+}
+
+/* Re-enable overflow on tables */
+html.workspace .theme-entry .SFC.SourceCode-Forms-Controls-Web-Table
+{
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+html.workspace {
+  /*Mobile mode*/
+  /*end mobile mode*/
+  /* Firefox specific hack, tbody doesn't fill table by default */
+  /* The workspace shows an error tooltip if the connection is lost during refresh, this is undesirable */
+  /* button reset */
+}
+html.workspace div.runtime-content > div.hide-for-mobile {
+  display: none !important;
+}
+html.workspace div.mobile-mode {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  background-color: #000000;
+  position: relative;
+}
+html.workspace div.mobile-mode table.mobile-selection {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+html.workspace div.mobile-mode td.mobile-mode-logo {
+  height: 50px;
+  width: 50px;
+  background-image: url('workspace/WindowsLogo50.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+html.workspace div.mobile-mode span.mobile-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding-right: 20px;
+}
+html.workspace div.mobile-mode table.mobile-title-region {
+  width: auto;
+  position: relative;
+  margin: auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #414141;
+}
+html.workspace div.mobile-mode div.mobile-text {
+  font-weight: bold;
+  color: #ffffff;
+  padding: 5px;
+}
+html.workspace table.mobile-app-table div.mobile-bullit-container {
+  background-image: url('RuntimeTheme/Default20.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+  margin: 5px 20px 5px 6px;
+}
+html.workspace.workspace-oof .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .usermenu-picture:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px #fff solid;
+  border-radius: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  background-color: #3e3c3f;
+  background-image: url('workspace/OOFIndicator16_White.png');
+  background-position: 50%;
+}
+html.workspace.workspace-main body {
+  background-color: #f8f8f8 !important;
+}
+html.workspace.workspace-fluidform {
+  /*Make any form fluid height - add "worskape-fluidlayout" to html tag*/
+  /*#region FORM FLUID HEIGHT */
+  display: block;
+  height: 100% !important;
+  overflow: hidden;
+  margin: 0 !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.workspace.workspace-fluidform > body,
+html.workspace.workspace-fluidform > body > form,
+html.workspace.workspace-fluidform > body > form > .runtime-content,
+html.workspace.workspace-fluidform > body > form > .runtime-content > .runtime-form {
+  display: block;
+  height: 100% !important;
+  overflow: hidden;
+  margin: 0 !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.workspace.workspace-fluidviews {
+  /*#endregion */
+  /*Make any view fluid height - add "workspace-fluidviews" to html tag*/
+  /*#region VIEW FLUID HEIGHT */
+}
+html.workspace.workspace-fluidviews > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel,
+html.workspace.workspace-fluidviews > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel,
+html.workspace.workspace-fluidviews > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body,
+html.workspace.workspace-fluidviews > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m,
+html.workspace.workspace-fluidviews > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c,
+html.workspace.workspace-fluidviews > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper,
+html.workspace.workspace-fluidviews > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  overflow: hidden;
+}
+    html.workspace.workspace-main.mozilla > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout,
+    html.workspace.workspace-main.ie9 > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout,
+    html.workspace.workspace-main.ie10 > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout
+    {
+        /*display: block !important;*/
+    }
+        html.workspace.workspace-main.mozilla > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout,
+        html.workspace.workspace-main.ie9 > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout,
+        html.workspace.workspace-main.ie10 > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout
+        {
+            height: 100%;
+        }
+/*html.workspace.workspace-main.mozilla > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > table > tbody > tr:first-child,
+html.workspace.workspace-main.ie9 > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > table > tbody > tr:first-child,
+html.workspace.workspace-main.ie10 > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > table > tbody > tr:first-child {
+  display: table-row;
+}
+html.workspace.workspace-main.mozilla > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > table > tbody > tr:first-child > td:first-child,
+html.workspace.workspace-main.ie9 > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > table > tbody > tr:first-child > td:first-child,
+html.workspace.workspace-main.ie10 > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > table > tbody > tr:first-child > td:first-child {
+  display: table-cell;
+}*/
+html.workspace.workspace-main {
+  /* Hide the modalizer from worklist so we don't get the 'double spinner' problem */
+  /*#endregion */
+  /* Layout for the main menu of the workspace and the "More" panels (thin panels to the right of the menu) */
+  /* "More" panels holds things like the task list, the apps tree, etc)*/
+  /*#region PRIMARY NAVIGATION LAYOUT*/
+  /* Set the row in the primary hosting form to fuild height */
+  /* Navigation, AppsList & TaskList */
+  /*#endregion*/
+  /* Second Row: TaskCard stackedpanel & home page view */
+  /* Third Row: Hide this row since it contains only form lagic elements */
+  /*Main Workspace menu*/
+  /*#region NAV MENU LAYOUT*/
+  /* Ensure navigation control has 100% height */
+  /*#endregion*/
+  /*Layout for the task card, including bottom menu for actions/redirect etc and the surrounding background*/
+  /*#region TASK CARD*/
+  /*#region FLUID HEIGHT */
+  /* Fluid layout for Task Card */
+  /*Jan: Theres a lot of duplication here, not sure why - no comments to tell me why either?*/
+  /* Why is this different to the next block of selectors? */
+  /* Remove unwanted padding in the table data around the task card */
+  /* Remove the inherited background color from the panel-body */
+  /* Table in which the action bar and command buttons sits */
+}
+html.workspace.workspace-main .SourceCode-Forms-Controls-Web-ControlPack-StackedContent .overlayLoader .loadMessage:before {
+  display: block;
+  content: "";
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-image: url('RuntimeTheme/LoadingPage40_ececec.gif');
+  margin-bottom: 10px;
+}
+html.workspace.workspace-main .modalizer.modal-element {
+  display: none;
+}
+html.workspace.workspace-main .SourceCode-Forms-Controls-Web-ControlPack-StackedContent .overlayLoader {
+  background-color: #ececec;
+}
+html.workspace.workspace-main .SourceCode-Forms-Controls-Web-ControlPack-StackedContent .overlayLoader .loadMessage {
+  color: #ececec;
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: auto !important;
+  height: auto;
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) {
+    width: 384px !important;
+    right: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+/* drop-shadow */
+html.workspace.workspace-main .runtime-content:after
+{
+    content: "";
+    position: absolute;
+    left: 374px;
+    top: 0px;
+    height:100%;
+    width:10px;
+    background-color:transparent;
+    box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.2);
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view {
+  display: block;
+  float: left;
+  height: 100%;
+  width: auto !important;
+  position: relative;
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view > div.innerpanel,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view > div.innerpanel > .panel,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view > div.innerpanel > .panel > .panel-body,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view > div.innerpanel > .panel > .panel-body > .panel-body-m,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div
+{
+  display: block;
+  height: 100%;
+  width: auto;
+  right: auto;
+}
+
+    html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout
+    {
+        height: 100%;
+        display: -ms-grid;
+        display: grid;
+
+        -ms-grid-rows: 1fr 0px !important;
+        grid-template-rows: 1fr 0px !important;
+    }
+
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel, 
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel, 
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body, 
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m, 
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c, 
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper, 
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div 
+{
+  display: block;
+  height: 100%;
+  width: auto;
+  right: auto;
+  padding: 0 !important;
+}
+
+    html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout
+    {
+        height: 100%;
+        display: -ms-grid;
+        display: grid;
+    }
+        html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout > .editor-cell
+        {
+            padding: 0px !important;
+        }
+
+
+
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:not(:first-child) {
+  display: block;
+  float: left;
+  height: 100%;
+  width: auto !important;
+  position: relative;
+  /*Task List control - shown when clicking "More" in the inbox*/
+  /* Task List Control Container - Set to fluid height */
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:not(:first-child) > div.innerpanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  height: auto;
+  width: auto;
+  overflow: visible;
+  /* Set the one of the tables in the task list to fixed with so that the parent elements wrap around it*/
+}
+/*add box shadow to outer panel(task and forms) and side of navigation panel*/
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child
+{
+    z-index: 1;
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:first-child > div.innerpanel
+{
+    -webkit-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.25);
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:not(:first-child) > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout {
+  display: -ms-grid;
+  display: grid;
+  height: 100% !important;
+  padding: 0 !important;
+  width: 324px!important;
+  /* Set all the child elements to fluid height for the task list  */
+}
+
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view:not(:first-child) > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout
+{
+  width: 324px;
+}
+    html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout > .editor-cell[row='1']
+    {
+        height: 47px;
+    }
+
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout
+{
+    height: 100%;
+}
+html.workspace.workspace-main:not(.ie11) > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout
+{
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+html.workspace.workspace-main.ie11 > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout
+{
+    height: 100%;
+}
+    html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout 
+    {
+        -ms-grid-rows: 47px 1fr !important;
+        grid-template-rows: 47px 1fr !important;
+    }
+
+        html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout > .editor-cell[row='2'],
+        html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout > .editor-cell[row='2'] > .SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist[name="Worklist"],
+        html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout > .editor-cell[row='2'] > .SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist[name="Worklist"] > div,
+        html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(2) > .view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout > .editor-cell[row='2'] > .SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist[name="Worklist"] > div > div
+        {
+            height: 100% !important; /* Overrides inline style */
+        }
+html.workspace.workspace-main .view.workspace-tasklist .ControlPack-Worklist[name="Worklist"] .searchBar {
+    position: absolute;
+    display: block !important; /* To override the inline styling */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+}
+html.workspace.workspace-main .view.workspace-tasklist .ControlPack-Worklist[name="Worklist"] .WorklistItemSectionCell {
+    position: absolute;
+    display: block;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+}
+html.workspace.workspace-main .view.workspace-tasklist .ControlPack-Worklist[name="Worklist"] .nav-container {
+    position: absolute;
+    display: block;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(3),
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(4) {
+  left: 384px;
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(1) {
+  display: none;
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(4) {
+  height: auto !important;
+  background-color: transparent;
+  bottom: 0;
+  top: auto;
+  /* back to video button */
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(4) .SFC.SourceCode-Forms-Controls-Web-Button[name="btnBackToVideo"] {
+  font-family: 'Open-Sans Regular', 'Segoe UI Regular', 'Helvetica';
+  font-size: 1.3rem;
+  color: #bdc8cd;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  border: none;
+  padding: 0;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-image: none;
+  outline: none;
+  box-shadow: none;
+}
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(4) .SFC.SourceCode-Forms-Controls-Web-Button[name="btnBackToVideo"]:hover,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(4) .SFC.SourceCode-Forms-Controls-Web-Button[name="btnBackToVideo"]:active,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(4) .SFC.SourceCode-Forms-Controls-Web-Button[name="btnBackToVideo"]:focus {
+  outline: none;
+  box-shadow: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -webkit-animation: none;
+  animation: none;
+}
+html.workspace.workspace-main div.SourceCode-Forms-Controls-Web-ControlPack-Navigation,
+html.workspace.workspace-main div.SourceCode-Forms-Controls-Web-ControlPack-Navigation > .stylewrapper,
+html.workspace.workspace-main div.SourceCode-Forms-Controls-Web-ControlPack-Navigation > .stylewrapper > .navigation-control-container {
+  max-height: 100% !important;
+  height: 100% !important;
+}
+html.workspace.workspace-main .SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-item-container .loading {
+  background-image: url(RuntimeTheme/LoadingPage40_787878.gif) !important;
+}
+html.workspace.workspace-main div.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-topbar {
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #003870; /* --globalNav-background-color */
+  background-color: #003870; /* --globalNav-background-color */
+  color: #ffffff; /* --globalNav-text-color */
+}
+html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.workspace-toplogo {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom:-1px;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-image: url('workspace/WorkspaceLogo60.png');
+  background-position: center;
+}
+html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.workspace-toplogo:hover,
+html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-logo-clickarea.Selected span.workspace-toplogo:hover
+{
+  background-image: url('workspace/AppSwitcher_Hover60.png');
+}
+
+html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-topbar-clickarea {
+  width: 310px;
+  background-color: #003870; /* --globalNav-background-color */
+  border: none;
+}
+html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-logo-clickarea.Selected
+{
+  border-bottom: 2px solid #f8f8f8;
+}
+
+html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-logo-clickarea.Selected span.workspace-toplogo {
+  background-image: url('workspace/AppSwitcher_Selected60.png');
+  background-color: #302e31;
+}
+
+html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.navigation-topbar-display {
+  font-size: 2.4rem;
+  color: #ffffff; /* --globalNav-text-color */
+  vertical-align: middle;
+  width: auto;
+  text-decoration: none;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  padding-left: 1.7rem;
+}
+
+html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.navigation-topbar-display.medium-font
+{
+    font-size: 2.1rem;
+}
+
+html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.navigation-topbar-display.small-font
+{
+    font-size: 1.8rem;
+}
+
+/*Simple scrollbar*/
+.theme-entry .simplebar-track {
+    margin: 5px;
+}
+
+.theme-entry .simplebar-scrollbar::before {
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+.theme-entry .simplebar-scrollbar.simplebar-visible::before {
+    background-color: rgb(0, 0, 0, 0.85);
+}
+
+/* #region MESSAGE PANEL */
+
+html.workspace .message-panel
+{
+    background-color: #fff;
+}
+
+    html.workspace .message-panel .message-panel-row
+    {
+        max-width: 32rem;
+    }
+
+    html.workspace .message-panel .message-panel-row:nth-child(2)
+    {
+        padding: .7rem 0 .6rem 0;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    html.workspace .message-panel .message-panel-row:nth-child(3)
+    {
+        padding: 1.6rem 0 5.2rem 0;
+    }
+
+        .ic-blockedurl
+        {
+            margin: auto;
+            background-position: center center;
+        }
+        
+        html.workspace H1
+        {
+           color: #858a8a;
+           font-size: 1.5rem;
+        }
+
+        html.workspace .message-panel
+        {
+            color: #858a8a;
+            font-size: 1.3rem;            
+        }
+
+        html.workspace .message-panel-body
+        {
+            max-width: 28rem;
+        }
+
+        .SourceCode-Forms-Controls-Web-ControlPack-StackedContent a.Hyperlink
+        {            
+            text-decoration: none;
+        }
+        
+        .SourceCode-Forms-Controls-Web-ControlPack-StackedContent a.secondary,
+        .SourceCode-Forms-Controls-Web-ControlPack-StackedContent a.secondary:hover
+        {
+            color: #858a8a;
+            text-decoration: underline;
+        }
+
+/* #endregion */
+
+/*Images - normal-dpi*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+
+    .ic-blockedurl
+    {
+        background-image: url("workspace/BlockedURL48.png");
+    }
+
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) 
+{
+    html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.workspace-toplogo 
+    {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      border: none;
+      padding: 0;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-size: 60px;
+      background-image: url('workspace/WorkspaceLogo60@2x.png');
+      background-position: center;
+    }
+
+    html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation span.workspace-toplogo:hover,
+    html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-logo-clickarea.Selected span.workspace-toplogo:hover
+    {
+      background-image: url('workspace/AppSwitcher_Hover60@2x.png');
+    }
+
+    html.workspace.workspace-main div.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .navigation-topbar-clickarea.Selected span.workspace-toplogo
+    {
+      background-image: url('workspace/AppSwitcher_Selected60@2x.png');
+      background-color: #302e31;
+    }
+
+    .workspace-navmenu .main-menu .UserSettingsIcon,
+    .workspace-navmenu .navigation-usermenu .UserSettingsIcon 
+    {
+      background-image: url('workspace/Settings16@2x.png');
+    }
+    .workspace-navmenu .navigation-usermenu .navigation-highlightarea:hover .UserSettingsIcon
+    {
+      background-image: url('workspace/Settings_Hover16@2x.png');
+    }
+    .workspace-navmenu .navigation-usermenu .active-menuitem .navigation-highlightarea .UserSettingsIcon {
+      background-image: url('workspace/Settings16_White@2x.png');
+    }
+
+    .ic-blockedurl
+    {
+        background-image: url("workspace/BlockedURL48@2x.png");
+    }
+}
+
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(3) > .formcontrol,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(3) > .formcontrol > .innerpanel,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(3) > .formcontrol > .innerpanel > .Grid-Layout,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(3) > .formcontrol > .innerpanel > .Grid-Layout > .editor-cell,
+html.workspace.workspace-main > body > form > .runtime-content > .runtime-form > .form > .row:nth-child(3) > .formcontrol > .innerpanel > .Grid-Layout > .editor-cell > div,
+html.workspace.workspace-main workspace-taskcard > body > form > .runtime-content > .runtime-form > div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100% !important;
+}
+html.workspace.workspace-main [id="00000000-0000-0000-0000-000000000000_c2929768-b437-a349-50f2-20e8a9f50e53_Table"] > .editor-cell {
+  padding: 0 !important;
+}
+html.workspace.workspace-main div[id="1911519c-4142-476b-8866-96e4a18a0065_0ae83402-e7dc-d6d6-13bd-6451463cb161_8064ab7d-0108-d09e-d82c-244c9c21262a_624c6c2c-2fc6-4899-a8cb-b900dd7bfc6f"] > .panel-body {
+  background-color: transparent;
+}
+html.workspace.workspace-main [id="8064ab7d-0108-d09e-d82c-244c9c21262a_c7c4a7ff-2087-123a-b9df-dcd554a88cf1_Table"] .editor-cell {
+  padding: 0 !important;
+}
+html.workspace.workspace-main #b0bebd73-50ee-4bc3-8f35-d65aa1efd477_0ee1f7ab-3191-3671-5831-5a08f7b379ae .search-item-text .highlight {
+  background-color: #ff0 !important;
+  color: #2196f3 !important;
+}
+html.workspace .workspace-close-button {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  overflow: visible;
+  position: absolute;
+  background-color: #302e31;
+  background-image: url(workspace/DialogButtons16_close_white.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center center;
+  min-width: 0;
+  min-height: 0;
+  border: none;
+  padding: 0;
+}
+html.workspace .workspace-close-button:hover,
+html.workspace .workspace-close-button:active,
+html.workspace .workspace-close-button:focus {
+  min-width: 0;
+  min-height: 0;
+}
+html.workspace .workspace-close-button:hover {
+  background-image: url(workspace/close_hover16.png);
+}
+html.workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseTasks"] {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  overflow: visible;
+  position: absolute;
+  background-image: url(workspace/close16.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center center;
+  min-width: 0;
+  min-height: 0;
+  border: none;
+  padding: 0;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 55%;
+  right: 3.5rem;
+}
+html[dir=rtl].workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseTasks"] {
+    left:3.5rem;
+    right:auto;
+}
+html.workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseTasks"]:hover,
+html.workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseTasks"]:active,
+html.workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseTasks"]:focus {
+  min-width: 0;
+  min-height: 0;
+}
+html.workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseTasks"]:hover {
+  background-image: url(workspace/close_hover16.png);
+}
+html.workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseApps"] {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  overflow: visible;
+  position: absolute;
+  background-image: url(workspace/close16.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center center;
+  min-width: 0;
+  min-height: 0;
+  border: none;
+  padding: 0;
+  top: 1.4rem;
+  right: 1.0rem;
+}
+html[dir=rtl].workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseApps"] {
+    left:3.5rem;
+    right:auto;
+}
+html.workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseApps"]:hover,
+html.workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseApps"]:active,
+html.workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseApps"]:focus {
+  min-width: 0;
+  min-height: 0;
+}
+html.workspace a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCloseApps"]:hover {
+    background-image: url(workspace/close_hover16.png);
+}
+html.workspace div.RefreshErrorTooltip {
+  visibility: hidden;
+}
+html.workspace .SourceCode-Forms-Controls-Web-Button.workspace-button-reset {
+  background-image: none;
+  outline: none;
+  background: none;
+  border: none;
+  min-height: 0;
+  min-width: 0;
+  max-height: none;
+  max-width: none;
+  line-height: normal;
+  padding: 0;
+  box-shadow: none;
+}
+html.workspace .SourceCode-Forms-Controls-Web-Button.workspace-button-reset:hover,
+html.workspace .SourceCode-Forms-Controls-Web-Button.workspace-button-reset:active,
+html.workspace .SourceCode-Forms-Controls-Web-Button.workspace-button-reset:focus {
+  background: none;
+  outline: none;
+  border: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -webkit-animation: none;
+  animation: none;
+}
+
+html.workspace.workspace-main .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView .populating-indicator
+{
+    display: none !important; /* To ensure spinner is not rendered */
+}
+/*#endregion */
+/*Main menu icons*/
+/*#region NAV MENU images */
+/*Jan: These aren't using the standard classes, and aren't @2x responsive*/
+.TaskPanel16_Sprite {
+  background-image: url('workspace/TaskPanel16_Sprite.png');
+  background-repeat: no-repeat;
+  display: block;
+}
+.Inbox16 {
+  width: 16px;
+  height: 16px;
+  background-position: -16px -16px;
+}
+.History16 {
+  width: 16px;
+  height: 16px;
+  background-position: -64px -16px;
+}
+.Task16 {
+  width: 16px;
+  height: 16px;
+  background-position: -64px -16px;
+}
+.Application16 {
+  width: 16px;
+  height: 16px;
+  background-position: -160px -16px;
+}
+.Dashboard16 {
+  width: 16px;
+  height: 16px;
+  background-position: -208px -16px;
+}
+.Reports16 {
+  width: 16px;
+  height: 16px;
+  background-position: -208px -16px;
+}
+.Analyze16 {
+  width: 16px;
+  height: 16px;
+  background-position: -208px -16px;
+}
+span.workspace-userbutton-icon {
+  background-image: url('https://placehold.it/16x16/AABBCC');
+  background-position: right 1.0rem center;
+  background-repeat: no-repeat;
+}
+span.workspace-settings-icon {
+  background-image: url('https://placehold.it/16x16/AABBCC');
+}
+.navigation-control-container.minimized span.workspace-toplogo {
+  width: 50px;
+}
+.workspace-navmenu .main-menu,
+.workspace-navmenu .navigation-usermenu {
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.workspace-navmenu .main-menu .UserSettingsIcon,
+.workspace-navmenu .navigation-usermenu .UserSettingsIcon {
+  background-image: url('workspace/Settings16.png');
+}
+.workspace-navmenu .navigation-usermenu .navigation-highlightarea:hover .UserSettingsIcon
+{
+  background-image: url('workspace/Settings_Hover16.png');
+}
+.workspace-navmenu .navigation-usermenu .active-menuitem .navigation-highlightarea .UserSettingsIcon {
+  background-image: url('workspace/Settings16_White.png');
+}
+/*#endregion End Nav Menu images */
+/* Demo CSS for In Progress Page todo: move this*/
+html.workspace-inprogress > body > form > .runtime-content > .runtime-form > .form {
+  background-color: #6b8793 !important;
+  background-image: url('workspace/Overlay_DarkBlue@2x.png');
+  background-size: 1656px;
+  background-position: center center;
+}
+    html.workspace-inprogress > body > form > .runtime-content > .runtime-form > .form,
+    html.workspace-inprogress > body > form > .runtime-content > .runtime-form > .form > .row,
+    html.workspace-inprogress > body > form > .runtime-content > .runtime-form > .form > .row > .formcontrol,
+    html.workspace-inprogress > body > form > .runtime-content > .runtime-form > .form > .row > .formcontrol > .innerpanel,
+    html.workspace-inprogress > body > form > .runtime-content > .runtime-form > .form > .row > .formcontrol > .innerpanel > .Grid-Layout,
+    html.workspace-inprogress > body > form > .runtime-content > .runtime-form > .form > .row > .formcontrol > .innerpanel > .Grid-Layout > .editor-cell[row='2'][col='2'] > .Grid-Layout
+    {
+        height: 100%;
+    }
+        html.workspace-inprogress > body > form > .runtime-content > .runtime-form > .form > .row > .formcontrol > .innerpanel > .Grid-Layout > .editor-cell[row='2'][col='2'] > .Grid-Layout > .editor-cell[row='1']
+        {
+            height: 26px;
+        }
+html.workspace-inprogress .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlSection"] {
+  font-size: 24px !important;
+  color: #ffffff;
+}
+html.workspace-inprogress .inprogress-image {
+  background-image: url('workspace/UnderConstruction200.gif');
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+html.workspace-inprogress > body > form > .runtime-content > .runtime-form > .form > .row > .formcontrol > .innerpanel > .Grid-Layout > .editor-cell[row='2'][col='2'] > .Grid-Layout > .editor-cell[row='2']
+{
+    height: 200px;
+}
+html.workspace-inprogress > body > form > .runtime-content > .runtime-form > .form > .row > .formcontrol > .innerpanel > .Grid-Layout > .editor-cell[row='2'][col='2'] > .Grid-Layout > .editor-cell.lastrow
+{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+html.workspace-inprogress .SFC.SourceCode-Forms-Controls-Web-Label[name="lblInProgress"] {
+  font-size: 12px;
+  color: #ffffff;
+  font-style: italic;
+  margin-top: 15px;
+}
+/* Move to Worklist Css */
+html.workspace-tasklist .ControlPack-Worklist .nav-container input.RefreshInput {
+  border: none;
+  margin: 0;
+}
+html.workspace-tasklist .ControlPack-Worklist .nav-container {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+ 
+html.workspace .SFC.SourceCode-Forms-Controls-Web-Table
+{
+   position: unset;
+} 

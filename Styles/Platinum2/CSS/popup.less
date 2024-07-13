@@ -1,0 +1,865 @@
+﻿/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+
+.popup
+{
+    position: absolute;
+    box-shadow: 0px 2px 30px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    & > .popup-header,
+    & > .popup-footer
+    {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    & > .popup-body
+    {
+        flex-grow: 1;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #propertyConfig_DisplayTemplatePanel_Container
+    {
+        .input-control .input-control-m-c,
+        .input-control-content
+        {
+            border: none;
+        }
+
+        .input-control .input-control-wrapper
+        {
+            padding-top: 3px;
+        }
+    }
+
+
+    #ConditionGrid
+    {
+        .grid-header
+        {
+            border: none;
+        }
+
+        .grid-header-wrapper
+        {
+            height: @Grid-header-Height - 2px; // Header borders removed, must still line up with the context browser header
+        }
+
+        .grid-header-text
+        {
+            height: @Grid-header-Height - 2px; // Header borders removed, must still line up with the context browser header
+            line-height: @Grid-header-Height - 2px; // Header borders removed, must still line up with the context browser header
+            color: @Panel-Header-Text-Color;
+            font-weight: normal;
+        }
+    }
+
+    .grid-header-wrapper,
+    .grid-column-headers-wrapper,
+    .panel-header
+    {
+        background-color: @Background-Color-2;
+    }
+    // grouping these differently because they are different types of elements.
+    .grid-body,
+    .grid .grid-body-content
+    {
+        border: none;
+    }
+
+    #EBExpressionHeaderPanel.panel > .panel-body,
+    #EBExpressionsPanel.panel > .panel-body,
+    #EBExpressionPreviewPanel.panel > .panel-body,
+    #StyleBuilderFormatContentPane .panel > .panel-body, // This is a Pane with child panels
+    #StyleBuilderConditionsPanelTop.panel > .panel-body,
+    #ConditionWidgetPC .panel > .panel-body // This is a Pane with child panels
+    {
+        border: none;
+    }
+
+    .tabs-top #StyleBuilderTabBody.tab-box-body // full dialog tabs dont require borders
+    {
+        border: none;
+    }
+}
+
+//#region Header
+
+.popup-header
+{
+    background-color: @Popup-Background-Color; /* Old browsers */
+    border-style: solid;
+    border-color: @Popup-Border-Color;
+    border-width: 0px;
+    height: @Popup-Header-Height;
+}
+
+.popup-header-c
+{
+    height: @Popup-Header-Height;
+}
+
+.popup-header-wrapper
+{
+    height: @Popup-Header-Height;
+}
+
+.popup-header-wrapper > .wrapper
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.popup-header-text
+{
+    color: @Popup-Header-Text-Color;
+    float: left;
+    font-weight: bold;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: default;
+    flex-grow: 1;
+    order: 1;
+
+    html[dir=rtl] &
+    {
+        order: 2;
+        text-align: right;
+    }
+}
+
+.popup-header-buttons
+{
+    order: 2;
+
+    html[dir=rtl] &
+    {
+        order: 1;
+    }
+}
+
+.popup-header-button-bar
+{
+    position: relative;
+    overflow: hidden;
+    width: auto;
+}
+
+.popup-header-button-bar-wrapper
+{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    html[dir=rtl] &
+    {
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+.popup-header-buttons a
+{
+    display: block;
+    text-decoration: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    //Spacers between min/max/restore buttons
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    html[dir=rtl] &
+    {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    //LG: not sure why this is needed.
+    span
+    {
+        width: 16px;
+        height: 16px;
+        display: block;
+    }
+}
+
+//#endregion Header
+
+
+//#region body
+.popup-body
+{
+    //FLEX-LAYOUT
+    /*position: absolute;	
+    top: @Popup-Header-Height;
+    left: 0;
+    right: 0;
+    bottom: @Popup-Footer-Height;*/
+    overflow: hidden;
+    background-color: @Popup-Background-Color; /* Old browsers */
+    border-style: solid;
+    border-color: @Popup-Border-Color;
+    border-width: 0px;
+
+    .wizard-step-content
+    {
+        background-color: @Popup-Background-Color; /* Prevent bleedthrough */
+    }
+}
+
+.popup-body-c
+{
+    position: absolute;
+    overflow: hidden;
+    top: 0px; /*LG: Edge to edge*/
+    bottom: 0px; /*LG: Edge to edge*/
+    left: 0px; /*LG: Edge to edge*/
+    right: 0px; /*LG: Edge to edge*/
+}
+
+.popup-footer
+{
+    //FLEX-LAYOUT
+    /*position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
+    background-color: @Popup-Background-Color; /* Old browsers */
+    height: @Popup-Footer-Height;
+}
+
+.popup-footer-c
+{
+    background-color: @Popup-Background-Color;
+    border-style: solid;
+    border-color: @Popup-Border-Color;
+    border-width: 0px; /*LG: Edge to edge*/
+    padding: 0px 0px; /*LG: Edge to edge*/
+    /*Center the buttons vertically within the footer*/
+    height: @Popup-Footer-Height;
+    line-height: @Popup-Footer-Height;
+    /*Make the footer buttons span all the way across*/
+    float: none;
+
+    .button-bar
+    {
+        display: block;
+        height: 100%;
+        line-height: normal;
+        vertical-align: middle;
+
+        .button-bar-wrapper
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+        }
+
+        .button-group
+        {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            float: none;
+
+            &.left
+            {
+                justify-content: flex-start;
+            }
+
+            &.right
+            {
+                justify-content: flex-end;
+            }
+        }
+
+        .button
+        {
+            float: none;
+            display: inline-block;
+        }
+    }
+}
+
+
+.popup-footer-r
+{
+    display: none;
+}
+
+.popup .popup-footer .button-bar-wrapper
+{
+    .button-group.left a.button
+    {
+        margin: 10px 0 10px 10px;
+        height: 34px;
+        width: 34px;
+        min-width: 34px;
+        max-width: 34px;
+
+        & > .button-wrapper
+        {
+            height: 32px;
+        }
+
+        html[dir=rtl] &
+        {
+            margin: 10px 10px 10px 0;
+        }
+    }
+
+    .button-group.right a.button
+    {
+        margin: 10px 10px 10px 0;
+        height: 34px;
+        line-height: 32px;
+
+        & > .button-wrapper
+        {
+            height: 32px;
+        }
+
+        html[dir=rtl] &
+        {
+            margin: 10px 0 10px 10px;
+        }
+    }
+}
+
+.popup-body-content
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .panel-body-wrapper > .scroll-wrapper
+    {
+        padding: 10px;
+        box-sizing: border-box;
+
+        .tree
+        {
+            margin-left: -5px;
+        }
+    }
+    /* Remove double margin in Picture Picker dialog*/
+    #imagePropertyConfig_contentPanel .panel-body-wrapper > .scroll-wrapper
+    {
+        padding: 0px;
+    }
+    /* Prevent potential double margins by nested scroll-wrappers*/
+    #DependencyWarningPopupMessage & .scroll-wrapper .scroll-wrapper > *
+    {
+        padding: 0px;
+    }
+}
+
+/* Padding for Rules State*/
+#pgAddState_popUp .panel-body-wrapper
+{
+    padding: 10px;
+}
+
+.popup.no-buttons .popup-body
+{
+    //FLEX-LAYOUT
+    /*bottom: 8px;*/
+}
+
+.popup.no-buttons .popup-footer
+{
+    display: none;
+}
+
+
+
+/* Message Box Content Styling */
+.message-box-content
+{
+    min-height: 101px;
+    background-color: transparent;
+
+    > .panel.full
+    {
+        width: auto;
+        height: 100%;
+    }
+
+    &.confirmation > .panel > .panel-body
+    {
+        padding: 20px;
+    }
+}
+
+.popup.dialog
+{
+    &.auto-scale-height
+    {
+        .message-box-content
+        {
+            min-height: auto;
+        }
+
+        .lyt-messagebox-layout
+        {
+            height: auto !important;
+        }
+
+        height: auto !important;
+
+        .popup-body-c
+        {
+            position: relative;
+        }
+    }
+
+    &.simple-message-content
+    {
+        .lyt-messagebox-layout .message
+        {
+            display: flex;
+            align-items: center;
+            min-height: 32px;
+            width: 100%; /* HACK for IE to prevent wrapping*/
+        }
+    }
+}
+
+#AutomaticChangesMustBeCommittedPopup
+{
+    .lyt-messagebox-layout .message
+    {
+        display: block;
+    }
+}
+
+.lyt-messagebox-layout
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .icon
+    {
+        flex-shrink: 0;
+        flex-grow: 0;
+        background-repeat: no-repeat;
+        background-size: 32px 32px;
+        height: 32px;
+        width: 32px;
+        padding: 0px 5px; //fix incorrect top bottom padding on exception messages
+    }
+
+    .message
+    {
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+}
+
+@Exception-Message_Left_Margin: 42px;
+
+.message-box-content.confirmation .lyt-messagebox-layout .icon
+{
+    display: none;
+}
+
+/* ExceptionBox Styling */
+.exceptionMessage
+{
+    height: 96px;
+    overflow: auto;
+}
+
+.exceptionDivider
+{
+    background-color: #c0c0c0;
+    border-color: #f8f8f8;
+    border-style: solid;
+    border-width: 1px 0;
+    height: 1px;
+    margin: 2px 0px 2px @Exception-Message_Left_Margin;
+}
+
+.exceptionDetails
+{
+    max-height: 240px; /*header + root + 10 items = 12 * 20 */
+    overflow: auto;
+    margin-left: @Exception-Message_Left_Margin;
+}
+
+.exceptionDetails > ul.exception
+{
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+.exceptionDetails > ul li > pre
+{
+    color: #808080;
+    display: inline;
+    white-space: pre-wrap; /* CSS3 */
+    white-space: -moz-pre-wrap; /* Mozilla, ca. 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    -ms-word-wrap: break-word;
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+/* Dependency Notifier Popup */
+#DependencyNotifierDependencyContainer
+{
+    margin: 3px 0px 3px 1px;
+    padding: 0px;
+}
+
+#DependencyNotifierDependencyContainer ul
+{
+    padding: 0 0 0 18px;
+    margin: 0px;
+}
+
+#DependencyNotifierDependencyContainer li
+{
+    display: block;
+    padding: 3px 0px 3px 0px;
+    margin: 3px;
+    clear: both;
+}
+
+#DependencyNotifierDependencyContainer li > span
+{
+    display: table-cell;
+    padding: 0px 9px;
+    vertical-align: middle;
+}
+
+#DependencyNotifierDependencyContainer li i.ico
+{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#DependencyNotifierDependencyContainer .categorySectionsHeading
+{
+    font-weight: bold;
+}
+
+#rbKeepOrRemoveDependenciesGroup
+{
+    margin-top: 9px;
+    margin-left: 27px;
+    white-space: normal;
+}
+
+#DependencyWarningPopupMessage .notifier-title-message
+{
+    word-wrap: break-word;
+    padding: 9px;
+}
+
+#DependencyWarningPopupMessage .notifier-choice-message
+{
+    padding-top: 9px;
+}
+
+#DependencyWarningPopupMessage .notifier-footer
+{
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+}
+
+#DependencyWarningPopupMessage .notifier-footer.hidden
+{
+    display: none;
+    height: 0;
+}
+
+#DependencyWarningPopupMessage .notifier-confirmation-message
+{
+    padding-top: 9px;
+}
+
+#DependencyWarningPopupMessage .notifier-confirmation
+{
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+}
+
+#DependencyWarningPopupMessage .notifier-confirmation.hidden
+{
+    display: none;
+    height: 0;
+}
+
+#DependencyNotifierListPanelContainer
+{
+    word-wrap: break-word;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+#DependencyWarningPopup.no-content
+{
+    height: 100%;
+    padding: 6px;
+    background-color: #FFF;
+}
+
+/* CheckInOut Dialog */
+#CheckInOutDialog
+{
+    .checkinout-dialog-message
+    {
+        min-height: 32px;
+        display: flex;
+        align-items: center;
+        /*776888 - IE 11, wrap the message. Cannot just use width or Chrome then has a visual ghost.*/
+        max-width: 578px;
+    }
+
+    .checkinout-dialog-detail
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-height: 220px; /* 11 x 20px ( 1 root and 10 children)*/
+        overflow: auto;
+
+        ul
+        {
+            margin: 0;
+            padding: 0;
+            /* fixes list-style-type:none not applying correctly if the content is hidden in IE11 / Edge https://bugs.jqueryui.com/ticket/8844*/
+            list-style-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+
+            .ico
+            {
+                vertical-align: middle;
+            }
+        }
+
+        > ul > li
+        {
+            padding-left: 0;
+        }
+
+        li
+        {
+            display: block;
+            min-height: 20px;
+            line-height: 20px;
+            padding: 0 0 0 18px;
+            margin: 0 0 0 0;
+            clear: both;
+        }
+    }
+
+    .panel-body
+    {
+        // override from 10px because of the checkbox
+        padding-bottom: 3px;
+    }
+
+    .popup-body-content .panel .scroll-wrapper > .lyt-messagebox-layout
+    {
+        // avoid double padding
+        padding: 0px;
+    }
+}
+
+/* #region Custom Code Warning Dialog */
+#CustomCodeWarningDialog
+{
+    .message-box-content.confirmation > .panel > .panel-body
+    {
+        //Clear original popup dialog padding
+        padding: 0px;
+    }
+
+    .popup-footer a.button
+    {
+        text-transform:uppercase;
+    }
+
+    .message
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 21px;
+
+        div
+        {
+            align-self: center;
+            letter-spacing: 0;
+            color: #4E5758;
+            text-align: center;
+            font-size: 12px;
+            line-height: 17px;
+        }
+
+        .customcodewarning-dialog-title
+        {
+            font-size: 24px;
+            line-height: 33px;
+            margin-bottom: 20px;
+        }
+
+        .customcodewarning-dialog-image
+        {
+            width: 400px;
+            height: 204px;
+            background-image: url(../Images/Diagram/CustomCodeIllustration.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .customcodewarning-dialog-details
+        {
+            width: 272px;
+            height: 34px;
+        }
+
+        .customcodewarning-dialog-moreinfo
+        {
+            display: flex;
+            flex-direction: column;
+            background: #F8F8F8 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+            opacity: 1;
+            padding-top: 20px;
+            padding-bottom: 18px;
+            padding-left: 32px;
+            padding-right: 32px;
+            margin-top: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            .title
+            {
+                font-weight: bold;
+                height: 24px;
+            }
+
+            .detail, .link
+            {
+                text-align: center;
+                font-weight: normal;
+            }
+        }
+
+        .customcodewarning-dialog-accept-option
+        {
+            align-self: flex-start;
+            margin-left: 20px;
+            margin-bottom: 15px;
+
+            .input-control-text
+            {
+                margin-left: 8px;
+                margin-top: -1px; //Align the text more center with the checkbox
+
+                &::after
+                {
+                    content: '*';
+                    color: #B71C1C;
+                }
+            }
+        }
+    }
+}
+/* #endregoin*/
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('popup_images.less');
+}
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('popup_images.less');
+}
+//#region Animations
+.popup.intro
+{
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+}
+
+.popup:not(.intro)
+{
+    opacity: 1.0;
+    transform: scale(1.0) translateY(0px);
+    transition: transform 0.25s, opacity 0.25s;
+}
+
+.popup.exit
+{
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+    transition: transform 0.25s, opacity 0.25s;
+}
+//#endregion
+/*#region LG: Cheeky changes*/
+/*Remove the left and right border of the white panel inside a dialog*/
+.popup-body-content > .scroll-wrapper > .panel > .panel-body
+{
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.popup-closing-modal.hidden
+{
+    display: none;
+}
+
+.popup-closing-modal
+{
+    display: block;
+    opacity:0.01;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+/*#endregion*/

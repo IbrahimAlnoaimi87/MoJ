@@ -1,0 +1,912 @@
+/* Theme: Dynamic */
+/* Author: Lewis Garmston */
+/* Date: 06/08/2020 */
+
+/*#region TYPOGRAPHY*/
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark, /*override - core*/
+.theme-entry .input-control-watermark /*override - core*/
+{
+	font-size: 1.2rem;
+}
+
+/*#endregion TYPOGRAPHY */
+
+/*#region GENERIC CONTROL STYLES */
+
+/*Generic TextBox dimensions and watermarks for all types of control*/
+
+.theme-entry .input-control a.input-control,
+.theme-entry .spinner /*non-standard*/
+{
+	height: @__Input-Inner-Height; /*affects the dropdown control watermark*/
+}
+
+.theme-entry .input-control.watermark a.input-control,
+.theme-entry .input-control.watermark a.input-control span
+{
+	font-size:inherit;
+}
+
+/*#endregion GENERIC CONTROL STYLES */
+
+/*#region ALL INPUT CONTROLS*/
+
+/*#region resets*/
+
+
+/*#endregion*/
+
+/*single row height items*/
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .spinner /*non-standard*/
+{
+	min-height: @__Input-Height;
+}
+
+
+//for checkboxes and radio buttons
+.theme-entry label.input-control
+{
+	//display: inline-flex; //instead of inline-block
+	//align-items: center;
+
+	.input-control-img
+	{
+		//height of img is 18 on desktop
+		//height of img is 24 on mobile
+	}
+
+	.input-control-text
+	{
+		line-height: 1.8rem; //height of img is 18 on desktop
+
+		.mobile & 
+		{
+			line-height: 2.4rem; //height of img is 24 on mobile
+		}
+	}
+}
+
+/* vertically centered text to checkbox/radio button */
+.theme-entry label.input-control 
+
+/*Checkbox/Radiobutton list designtime issue: WI 503853*/
+.theme-entry .stack-container .stack label.input-control
+{
+	clear: both;
+}
+
+/*Watermark*/
+.theme-entry .input-control-watermark
+{
+	line-height: @__Input-Height;
+	/*desktop.height*/
+}
+
+/*#endregion ALL INPUT CONTROLS*/
+
+/* ***** SPECIFIC CONTROLS ***** */
+
+
+/*#region LABEL*/
+
+
+.theme-entry .form-field .form-field-label
+{
+	line-height:@__Input-Height;
+}
+
+//used in view filter dialog (name of filter)
+.theme-entry .dialog .form-field label.form-field-label
+{
+	padding-left: 0px;
+	padding-top: 0px;
+}
+
+/*#endregion LABEL*/
+
+/*#region TEXTBOX CONTROL */
+
+.theme-entry input[type=text].input-control,
+.theme-entry input[type=password].input-control
+{
+	height: @__Input-Height;
+}
+
+/* Legacy textbox control styling */
+.theme-entry .input-control.text-input .input-control-wrapper input[type=text].input-control,
+.theme-entry .input-control.text-input .input-control-wrapper input[type=password].input-control
+{
+	height: @__Input-Inner-Height;
+}
+
+/*#endregion TEXTBOX */
+
+/*#region DROPTEXTBOX CONTROL */
+.theme-entry .drop-textbox
+{
+	padding: @Control-Inset-Narrow-Vertical-Spacing @Control-Inset-Narrow-Horizontal-Spacing;
+	height: @__Input-Inner-Height;
+}
+
+
+/*#endregion DROPTEXTBOX*/
+
+
+/*#region SELECT BOX */
+
+/*this element has the focus border*/
+
+.theme-entry .input-control .input-control-m-c, //for autocomplete
+.theme-entry .input-control.select-box .input-control-m-c
+{
+	min-height: @__Input-Height !important;
+}
+
+.theme-entry .input-control .input-control-watermark, //for autocomplete
+.theme-entry .input-control.select-box .input-control-watermark,
+.theme-entry .input-control.select-box div.editable-area,
+.theme-entry .input-control.select-box input[type=text]
+{
+	height: @__Input-Inner-Height;
+	line-height:  @__Input-Inner-Height;
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a
+{
+	width: @__Input-Height;
+	height: @__Input-Inner-Height;
+	line-height: 1.2rem; //for the elipsis
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a span
+{
+	font-size: 2.0rem; //for the elipsis
+}
+
+/*#endregion SELECT BOX */
+
+/*#region DROPDOWN */
+
+/*#endregion DROPDOWN */
+
+/*#region PICKER */
+
+.theme-entry .input-control.select-box .input-control-buttons a.picker-resolve
+{
+	width: @__Input-Height; //make a square (almost!)
+}
+
+.theme-entry .dialog#PickerSearchDialog
+{
+	min-height: 48.8rem; /*necessary for bundling*/
+}
+
+.theme-entry .picker-search-grid.grid.full
+{
+	min-height: 28.2rem; /*necessary for bundling*/
+}
+
+.theme-entry .dialog#PickerSearchDialog .popup-body
+{
+	top: 4.6rem;
+}
+
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control .input-control-wrapper,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box input[type=text],
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box .input-control-m-c,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box .input-control-watermark,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box div.editable-area
+{
+	height: 6.4rem !important;
+}
+
+//.theme-entry .dialog#PickerSearchDialog .form-field .form-field-element-wrapper .ps-choice-wrapper
+.theme-entry .dialog#PickerSearchDialog .form-field .form-field-element-wrapper .ps-choice-wrapper
+{
+	display: flex; //override core.less
+
+	.picker
+	{
+		height: auto; //override theme_control_picker.less "div.picker: 2.4rem" ?
+	}
+}
+
+.theme-entry .dialog#PickerSearchDialog .form-field .form-field-element-wrapper .ps-choice-wrapper .ps-choice-button
+{
+	margin-right: @Between-Control-Spacing;
+}
+
+// .theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker
+// {
+// 	width: ~"calc(100% - 8.3rem)";
+// }
+
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper > .picker .input-control.select-box .input-control-watermark
+{
+	line-height: 3rem !important;
+}
+.theme-entry .dialog#PickerSearchDialog a.toolbar-button span
+{
+	line-height: 2.6rem;
+}
+
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper > .picker .input-control.select-box div.editable-area
+{
+	line-height: 2rem;
+}
+
+.theme-entry .input-control.select-box.picker-input .input-control-watermark,
+.theme-entry .input-control.select-box.picker-input div.editable-area,
+.theme-entry .input-control.select-box.picker-input input[type=text],
+.theme-entry .id-picker-search .input-control.select-box input[type=text]
+{
+	height: @__Input-Inner-Height; //needs to be 2.1rem?
+	line-height: @__Input-Inner-Height; //needs to be 2.1rem?
+}
+
+.theme-entry .input-control.select-box.picker-input[data-maxrows="1"] div.editable-area
+{
+	height: @__Input-Inner-Height !important; //needs to be 2.1rem? On the picker control there are inline styles applied directly to the textbox which are overriding this height with height:15px
+}
+
+.theme-entry .id-picker-search .input-control.select-box .input-control-watermark
+{
+	line-height: @__Input-Height;
+}
+
+/*#endregion PICKER*/
+
+/*#region CHECKBOX + RADIO */
+
+.theme-entry .grid-content-cell-wrapper .checkbox-outer-panel .input-control.checkbox
+{
+	min-width:2.2rem;
+}
+
+/*#endregion*/
+
+/*#region TOOLBAR */
+
+/*default height*/
+.theme-entry .toolbar,
+.theme-entry .toolbars.single .toolbar /*override - base*/
+{
+	min-height: 2.4rem;
+}
+
+.theme-entry .toolbar table td
+{
+	height: 3.0rem;
+}
+
+/*#endregion TOOLBAR */
+
+/*#region TOOLBAR ICON BUTTONS*/
+
+.theme-entry a.toolbar-button span.button-icon
+{
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+/*#region dark icon-buttons*/
+/*used by worklist control, and others*/
+
+.theme-entry .grid-header a.toolbar-button,
+.theme-entry .panel-header a.toolbar-button
+{
+	width: 2.4rem;
+	height: 2.4rem;
+	line-height: 2.4rem;
+}
+
+/*#endregion*/
+
+/*#endregion TOOLBAR BUTTON ICONS */
+
+/*#region TOOLBAR BUTTON*/
+
+.theme-entry a.toolbar-button,
+.theme-entry a.toolbar-button span.button-text
+{
+	padding: 0;
+	min-height: 3.0rem;
+	line-height: 2.6rem;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+//ensure there is space between toolbar buttons
+.theme-entry a.toolbar-button
+{
+	padding: 0px @Control-Inset-Horizontal-Spacing;
+
+	html[dir=ltr] & {
+		margin-left: @Between-Control-Spacing;
+		&:first-child
+		{
+			margin-left: 0px;
+		}
+	}
+
+	html[dir=rtl] &{
+		margin-right: @Between-Control-Spacing;
+		&:first-child
+		{
+			margin-left: 0px;
+		}
+	}
+}
+
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button
+{
+	min-height: 4rem;
+}
+
+.theme-entry a.toolbar-button:not(.style-aware) .button-icon,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:not(.style-aware) .button-icon
+{
+	width: 1.6rem;
+	height: 1.6rem;
+	float: none;
+	display: inline-block;
+}
+
+/*#endregion TOOLBAR BUTTON*/
+
+
+
+
+
+/*#region CONTEXT TREE DRAGGABLES */
+
+.theme-entry .ui-draggable-dragging
+{
+	font-size: 1.2rem;
+}
+
+.theme-entry .tree.ui-draggable-dragging li
+{
+	padding-left: 0;
+}
+
+/*#endregion CONTEXT TREE DRAGGABLES */
+
+/*#region VIEW PANEL*/
+
+.theme-entry .grid-header-wrapper,
+.theme-entry .panel-header,
+.theme-entry .panel-header-c,
+.theme-entry .panel-header-wrapper
+
+{
+	height: 3.0rem;
+	line-height: 3.0rem;
+	min-height: 3.0rem;
+}
+
+#pgWizard .theme-entry .grid-header-wrapper .inline-editable,
+#pgWizard .theme-entry .panel-header-wrapper .inline-editable,
+.theme-entry .grid-header-wrapper .grid-header-text,
+.theme-entry .panel-header-wrapper .panel-header-text
+{
+	height: 2.4rem; /*needed for perfect vertical middle*/
+	font-size: 1.2rem;
+	line-height: 2.4rem;
+}
+
+.theme-entry .dialog.error-message:not(.runtime-message) .panel-header-text, /*Error Message dialog override */
+.theme-entry .dialog.info-message:not(.runtime-message) .panel-header-text
+{
+	padding-left: 0.1rem;
+}
+
+.theme-entry .dialog.runtime-message .panel-header-text, /*Message box override*/
+.theme-entry .dialog.error-message .panel-header-text,
+.theme-entry .dialog.info-message .panel-header-text
+{
+	font-size: 1.5rem;
+}
+
+
+/*#endregion VIEW PANEL*/
+
+/*#region GENERIC TOOLBAR*/
+
+/*SingleToolbar*/
+.theme-entry .toolbars.single,
+.theme-entry .toolbar-wrapper /*generic control*/
+{
+	min-height: 3.0rem;
+}
+
+.theme-entry .panel.with-header.without-toolbar.full > .panel-body, 
+.theme-entry .panel.without-header.with-toolbar.full > .panel-body
+{
+	top:3.0rem;
+}
+/*DoubleToolbar*/
+.theme-entry .panel.with-header.with-toolbar.full > .panel-body, 
+.theme-entry .panel.without-header.with-double-toolbar.full > .panel-body
+{
+	top:6.0rem;
+}
+
+.theme-entry .grid-header-wrapper .grid-header-controls a,
+.theme-entry .panel-header-wrapper .panel-header-controls a
+{
+	margin: 0.0rem;
+	width: 1.6rem;
+	height: 1.6rem;
+
+	html[dir=ltr] & {
+
+		margin-left: @Between-Control-Spacing;
+	}
+
+	html[dir=rtl] & {
+
+		margin-right: @Between-Control-Spacing;
+	}
+}
+
+/*#endregion GENERIC TOOLBAR*/
+
+/*#region GRID CONTROL*/
+
+/*#region main structure*/
+
+.theme-entry .grid.with-aggregation.full .grid-body,
+.theme-entry .grid.with-footer.full .grid-body
+{
+	bottom: 3.0rem; /*body needs to make space for footer*/
+}
+
+.theme-entry .grid.full .grid-body-content
+{
+	top: 3.0rem; /*make room for the grid headers*/
+}
+
+/*#endregion*/
+
+/*#region grid headers - header row style*/
+
+/* grid header row */
+.theme-entry .grid table.grid-column-header-table td
+{
+	height: 3.0rem !important; /*override - inline*/
+}
+
+/*Grid sort indicator CSS element.*/
+.theme-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper:before,
+.theme-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper:before
+{
+	height: 1.6rem;
+	margin-top: -0.8rem;
+	width: 1.6rem;
+}
+
+.mozilla .theme-entry .grid .grid-column-header-text
+{
+	line-height: 20px;
+}
+
+/*#endregion */
+
+/*#region grid body */
+
+.theme-entry .grid.with-header.with-toolbar.full .grid-body, 
+.theme-entry .grid.without-header.with-double-toolbar.full .grid-body
+{
+	top:6.1rem;
+}
+
+/*#endregion*/
+
+/*#region toolbar sizes*/
+
+.theme-entry .full.without-toolbar.with-header.grid .grid-body,
+.theme-entry .full.with-toolbar.without-header.grid .grid-body
+{
+	top: 3.0rem; /*make room for the toolbar*/
+}
+
+/*#endregion*/
+
+/*#region grid Filter*/
+
+.theme-entry .filterContainer
+{
+	line-height: 3.0rem; /*ensures inline-controls wrap on smaller*/
+}
+
+.theme-entry .filterContainer .quickSearch,
+.theme-entry .filterContainer .filterChosen
+{
+	min-height: 3.0rem;
+}
+
+.theme-entry .filterContainer .filterLabel
+{
+	line-height: 3.0rem;
+}
+
+/*BUG FIX: set the minimum width to something sensible, otherwise the dropdown collapses to the size of the selected item which might be small*/
+.theme-entry .filterContainer .input-control.dropdown-box
+{
+	min-width: 12.0rem; /*override - base - 40px hardcoded*/
+}
+
+/*BUG FIX: Make the search criteria text input behave/display like all other textboxes (Techincal Debt warning: Item logged) */
+.theme-entry .filterContainer .quickSearch .filterTxt .input-control .input-control-wrapper
+{
+	min-height:2.2rem;
+}
+
+.theme-entry .filterContainer .quickSearch .filterTxt .input-control .input-control-m-c
+{
+	//background-color: #fff;
+	background-color: @Input-Background-Color; //this is transparent
+	border-radius: 2px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.theme-entry .filterContainer .quickSearch .filterTxt  .input-control input[type=text].input-control
+{
+	//background-color: transparent;
+	background-color: @Input-Background-Color;
+	height: 2.2rem;
+	padding-bottom: 0;
+}
+
+.theme-entry .filterContainer .filterTxt
+{
+	width: 9.8rem;
+}
+
+/*#endregion*/
+
+/*#region rows - content*/
+
+/*content cells*/
+.theme-entry .grid .grid-content-cell-wrapper
+{
+	padding: 0.5rem 0.6rem; /*the headers have a 2px border and a 4px padding*/
+}
+
+.theme-entry.runtime-form .grid .grid-content-cell-wrapper
+{
+	padding: 0; /*moved padding to span to avoid highlight shadows from being cut off*/
+}
+
+/*#endregion*/
+
+/*#region paging control structure*/
+
+.theme-entry .grid .grid-footer .toolbar
+{
+	text-align:center;
+}
+
+.theme-entry .grid .grid-footer .toolbar .toolbar-wrapper
+{
+	position: relative;
+	top: 0;
+	left: 50%;
+	height: 3.0rem;
+	overflow:visible;
+	width: 0;
+}
+
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbar .toolbar-wrapper
+{
+	left: auto;
+	right: 50%;
+}
+
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button
+{
+	position: absolute;
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-first
+{
+	right: 7.0rem;
+}
+
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-left
+{
+	right: 2.2rem;
+}
+
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-first
+{
+	left: 7.0rem;
+	right: auto;
+}
+
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-left
+{
+	left: 2.2rem;
+	right: auto;
+}
+
+
+.theme-entry .grid-footer .grid-paging-control 
+{
+	line-height: 2.2rem; /* hack to make footer paging control to be centered vertically*/
+	display: inline-block;
+	left: -2.1rem;
+	padding: 2px 0;
+	width: auto;
+	height: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin:0;
+}
+
+.theme-entry .grid .grid-footer .grid-paging-control .text-input.input-control
+{
+	margin-top:0.1rem; /* ensure vertical alignment */
+}
+
+.theme-entry .grid-footer .grid-paging-control .text-input.input-control .input-control-wrapper
+{
+	min-height:2.2rem;
+}
+
+.theme-entry .grid-footer .grid-paging-control .text-input.input-control input
+{
+	height:2.2rem;
+}
+
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-right
+{
+	left: 2.2rem;
+}
+
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-last
+{
+	left: 7.0rem;
+}
+
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-right
+{
+	left: auto;
+	right: 2.2rem;
+}
+
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-last
+{
+	left: auto;
+	right: 7.0rem;
+}
+
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button
+{
+	 -moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+/*#endregion*/
+
+/*#region specific grid instances */
+
+.theme-entry #filterNameList table.grid-content-table td
+{
+	height:3.2rem;
+	vertical-align: middle;
+}
+
+/* Replace the 'x' text with an icon to indicate current default filter */
+.theme-entry #filterNameList table.grid-content-table td:last-child label
+{
+	display: inline-block;
+	height:1.6rem;
+	margin-top:0.2rem; /* help vertically align icon */
+	width:1.6rem;
+}
+
+/*#endregion*/
+
+/*#endregion GRID CONTROL*/
+
+/*#region FORM FIELDS*/
+
+.theme-entry .form-field > label.form-field-label
+{
+	line-height: 2.4rem;
+}
+
+/*#endregion FORM FIELDS*/
+
+/*#region POPUP / DIALOG */
+
+/*#region header*/
+
+.theme-entry .dialog .popup-header
+{
+	height: 3.6rem;
+	line-height: 3.6rem;
+}
+
+.theme-entry .dialog .popup-header-buttons a
+{
+	margin-top:0.2rem; /* better alignment with header text */
+}
+
+.theme-entry .popup-header-button-bar,
+.theme-entry .popup-header-button-bar-wrapper
+{
+	height:20px; /* override core */
+	width:inherit; /* override core */
+}
+
+.theme-entry .popup-header-buttons a span
+{
+	height:17px; /* override core */
+}
+
+/*#endregion*/
+
+/*#region main structure*/
+
+.theme-entry .dialog .popup-body
+{
+	top: 3.6rem;
+	bottom: 5.2rem;
+}
+
+/*#endregion*/
+
+/*#region footer*/
+
+.theme-entry .dialog .popup-footer
+{
+	height: 5.2rem; /*3.2 + 10px bottom and top*/
+	line-height: 5.2rem;
+}
+
+/*#endregion*/
+
+/*#region specific dialogs */
+
+.theme-entry .dialog#ConditionWidgetDialog .grouping-button 
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	width: 2.4rem;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region iBUTTON  - info button*/
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help
+{
+	width: 3.2rem;
+}
+
+/*#endregion*/
+
+/*#region HYPERLINK CONTROL */
+
+.theme-entry .grid .edit-template-row a.Hyperlink, 
+.theme-entry .grid .edit-template-row a.Hyperlink-NotSet, 
+.theme-entry .grid .edit-template-row a.Hyperlink-NotSet.disabled
+{
+	line-height:2.4rem;
+}
+
+.theme-entry .grid .edit-template-row .hyperlinkTopCenterPanel, 
+.theme-entry .grid .edit-template-row .hyperlinkTopRightPanel
+{
+	top:0.3rem;
+}
+
+/*#endregion*/
+
+/*#region RATING CONTROL */
+
+.theme-entry .ratingStar
+{
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+/*#endregion RATING CONTROL */
+
+
+/*#region SPINNER CONTROL */
+/*Found in the datetime picker (calendar) - an up/down textbox*/
+
+.theme-entry .spinner .spinner-inputs .spinner-input-wrapper,
+.theme-entry .calendar-outline .timepicker-content .spinner .spinner-input-wrapper
+{
+	height: 2.4rem!important; /*override - inline style*/
+}
+
+.theme-entry .spinner .spinner-inputs .spinner-text-input
+{
+	line-height: 2.0rem;
+}
+.theme-entry .spinner .spinner-inputs .spinner-delimiter
+{
+	line-height: 2.0rem;
+}
+
+.theme-entry .spinner .spinner-buttons
+{
+	width: 2.4rem;
+}
+
+.theme-entry .spinner .spinner-buttons .spinner-down-button-wrapper,
+.theme-entry .spinner .spinner-buttons .spinner-up-button-wrapper
+{
+	height: 1.2rem;
+}
+
+/*#endregion SPINNER CONTROL */
+
+/*#region CALENDAR POPUP*/
+
+.theme-entry .popup.id-calendar-control-popup.type-date-time
+{
+	min-height: 42.8rem;
+}
+
+.theme-entry .top-calendar-left, 
+.theme-entry .top-calendar-right
+{
+	width:1.6rem;
+}
+
+/*#endregion*/
+
+/*#region VIEW - DESIGN TIME */
+
+/* view name hoverable */
+#pgOuterPanel.theme-entry .view-name
+{
+	
+}
+
+#pgOuterPanel.theme-entry .theme-entry .panel-header-wrapper,
+#pgOuterPanel.theme-entry .grid-header-wrapper > .wrapper
+{
+	line-height: 3.0rem; /*needed for when there is no view title set (the expand button must show) */
+}
+
+// Superlfuous, padding is dealt with in the Theme_Control_Panel.less file.
+// view collapse button alignment 
+// #pgOuterPanel.theme-entry .panel-header-wrapper .panel-header-controls, 
+// #pgOuterPanel.theme-entry .grid-header-wrapper .grid-header-controls
+// {
+// 	padding-right:0.2rem;
+// }
+
+/*#endregion VIEW - DESIGN TIME */
+
+
+
+

@@ -1,0 +1,105 @@
+
+//#region RESETS
+
+
+.theme-entry .input-control.token-input,
+.theme-entry .input-control.token-input .input-control-content,
+.theme-entry .token-input .token-input-editor-area
+{
+	min-height:2.2rem;
+}
+
+
+//smartfield
+.theme-entry .token-input .token-input-editor-area
+{
+	line-height: normal; //2.2rem;
+}
+
+
+.theme-entry .token-input.single-line .token-input-editor-area
+{
+    height: auto;
+    
+    vertical-align: middle;
+
+    min-height:@__Input-Inner-Height;
+    max-height:@__Input-Inner-Height;
+    line-height: @__Input-Inner-Height;
+
+    .mobile &
+    {
+        min-height:@__Input-Inner-Height;
+        max-height:@__Input-Inner-Height;
+        line-height: @__Input-Inner-Height;
+    }
+}
+
+
+
+
+.theme-entry .token-input .entity 
+{
+    display:inline-flex !important; //override inline display of inline-block
+    align-items: center;
+    min-height: @Main-Text-Size;
+
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+
+    margin: auto 2px; //override core.less
+    margin-top: -1px; //horrible hack to get the entities centered vertically, as vertical align middle was only doing half the job.
+    vertical-align: middle; //makes sure this smartfield is vertically in the middle of the textbox its inside.
+    line-height: normal;
+
+    .entity-text
+    {
+        
+        background-color: transparent;
+        color: inherit;
+
+        height:auto; //overrride base
+        min-height: @Main-Text-Size;
+
+        line-height: normal;
+
+       
+    }
+
+    //only if it has an icon, do we go flex 
+    &.icon .entity-text
+    {
+        display:flex;
+        align-items: center;
+        padding-left: @Control-Inset-Narrow-Horizontal-Spacing;
+        padding-right: @Control-Inset-Narrow-Horizontal-Spacing;
+
+        background-image: none;
+
+        &:before
+        {
+            content: '';
+            width: 16px;
+            height: 16px;
+            display:block;
+            margin-right: @Control-Inset-Narrow-Horizontal-Spacing;
+
+            .mobile & 
+            {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+//#endregion RESETS
+
+.theme-entry .drop-item, //listview, filters, advanced filter droppable field
+.theme-entry .token-input .entity //listview, filters, basic filter droppable.
+{
+    background-color: @SmartField-Background-Color;
+    color: @SmartField-Text-Color;
+    height: auto;
+    border-radius: @Control-Rounding;
+}

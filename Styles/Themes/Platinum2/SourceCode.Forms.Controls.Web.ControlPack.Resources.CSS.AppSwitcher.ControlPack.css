@@ -1,0 +1,238 @@
+﻿.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container {
+  height: 100%;
+  position: absolute;
+  top: 61px;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-main-list {
+  color: #ffffff !important;
+  position: relative;
+  margin-top: 0.5rem;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item {
+  line-height: 2.7rem;
+  vertical-align: middle;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item.currentapp {
+  border: 1px solid #ffffff;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item.currentapp .appswitcher-icon {
+  margin-top: 24px;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item .appswitcher-item a {
+  font-size: 1.3rem;
+  color: #ffffff !important;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item .appswitcher-icon {
+  display: inline-block;
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #003870; /* --globalNav-background-color */
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+  margin-top: 0.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item .appswitcher-icon {
+    background-image: url('Workspace/WorkspaceLogo60.png');
+  }
+}
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item .appswitcher-icon {
+    background-image: url('Workspace/WorkspaceLogo60@2x.png');
+  }
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item .appswitcher-icon-SystemApp {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item .appswitcher-icon-SystemApp {
+    background-image: url('Workspace/WorkspaceLogo60.png');
+  }
+}
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item .appswitcher-icon-SystemApp {
+    background-image: url('Workspace/WorkspaceLogo60@2x.png');
+  }
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item .appswitcher-appdisplay {
+  display: inline-block;
+  font-size: 1.5rem !important;
+  top: -2px;
+  position: relative;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item:hover {
+  background-color: #ffffff !important;
+  color: #2196f3;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item.selected {
+  background-color: #2196f3 !important;
+  color: #ffffff;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item.selected .appswitcher-icon {
+  background-color: #2196f3;
+}
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item.selected .appswitcher-icon {
+    background-image: url('Workspace/K2Logo_Alt32.png');
+  }
+}
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item.selected .appswitcher-icon {
+    background-image: url('Workspace/K2Logo_Alt32@2x.png');
+  }
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item.selected .appswitcher-icon-SystemApp {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #2196f3;
+}
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item.selected .appswitcher-icon-SystemApp {
+    background-image: url('Workspace/K2Logo_Alt32.png');
+  }
+}
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-container .appswitcher-item.selected .appswitcher-icon-SystemApp {
+    background-image: url('Workspace/K2Logo_Alt32@2x.png');
+  }
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-category-title-container {
+  display: inline-flex;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 0px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-category-title-container .appswitcher-category-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 100%;
+  color: #76797e;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-category-title-container .category-title-SITES {
+  border-top: 1px solid #dfdfdf;
+  padding-top: 2rem;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-category-title-container .category-title-SITES.emptyworkspaces {
+  border-top: none;
+  padding-top: 0;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-category-title-container .appswitcher-main-close {
+  width: 2.4rem;
+  height: 2.4rem;
+  overflow: visible;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: right;
+  right: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-category-title-container .appswitcher-main-close {
+    background-image: url(workspace/Close16.png);
+  }
+}
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-category-title-container .appswitcher-main-close {
+    background-image: url('Workspace/Close16@2x.png');
+  }
+}
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-category-title-container .appswitcher-main-close:hover {
+    background-image: url(workspace/Close_Hover16.png);
+  }
+}
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-category-title-container .appswitcher-main-close:hover {
+    background-image: url(workspace/Close_Hover16@2x.png);
+  }
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list {
+  margin-top: 0.5rem;
+  max-height: 31.0rem;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list .appswitcher-workspace-item {
+  line-height: 2.4rem;
+  vertical-align: middle;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list .appswitcher-workspace-item .appswitcher-workspace-icon {
+  display: inline-block;
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #003870;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+  margin-top: 0.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list .appswitcher-workspace-item .appswitcher-workspace-icon {
+    background-image: url('Workspace/WorkspaceLogo60.png');
+  }
+}
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list .appswitcher-workspace-item .appswitcher-workspace-icon {
+    background-image: url('Workspace/WorkspaceLogo60@2x.png');
+  }
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list .appswitcher-workspace-item .appswitcher-workspace-display {
+  display: inline-block;
+  font-size: 1.5rem !important;
+  top: 3px;
+  position: relative;
+  text-overflow: ellipsis;
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 2.4rem;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list .appswitcher-workspace-item:hover {
+  background-color: #ffffff !important;
+  color: #2196f3;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list .appswitcher-workspace-item.selected {
+  background-color: #2196f3 !important;
+  color: #ffffff;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list .appswitcher-workspace-item.selected .appswitcher-workspace-icon {
+  background-color:#003870; /* --globalNav-background-color */
+}
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list .appswitcher-workspace-item.selected .appswitcher-workspace-icon {
+    background-image: url('Workspace/K2Logo_Alt32.png');
+  }
+}
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-workspaces-list .appswitcher-workspace-item.selected .appswitcher-workspace-icon {
+    background-image: url('Workspace/K2Logo_Alt32@2x.png');
+  }
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-loadmorebtn {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #2196f3;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-loadmorebtn:hover {
+  color: #29b6f6;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation .appswitcher-workspaces-container .appswitcher-loadmorebtn:focus {
+  border: 1px solid #2196f3;
+}

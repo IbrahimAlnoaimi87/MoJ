@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+		  <RowDefinition row="1" cssSelector=".icon.icon-set-contextbrowser.icon-size16.ic-{iconname}"/> <!-- normal -->
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1">Activities16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="2">
+            <Rows>
+              <Row number="1">Associations16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="3">
+            <Rows>
+              <Row number="1">CategoryServer16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="4">
+            <Rows>
+              <Row number="1">ConversionFunction16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="5">
+            <Rows>
+              <Row number="1">DataField16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="6">
+            <Rows>
+              <Row number="1">DefaultClientEvent16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="7">
+            <Rows>
+              <Row number="1">Environments16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="8">
+            <Rows>
+              <Row number="1">EventInstanceRootNode16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="9">
+            <Rows>
+              <Row number="1">ExchangeEvent16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="10">
+            <Rows>
+              <Row number="1">FieldsTab16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="11">
+            <Rows>
+              <Row number="1">FixedFields16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="12">
+            <Rows>
+              <Row number="1">FixedFieldsVariable16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="13">
+            <Rows>
+              <Row number="1">Functions16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="14">
+            <Rows>
+              <Row number="1">MailServer16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="15">
+            <Rows>
+              <Row number="1">ProcessDefinitionFile16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="16">
+            <Rows>
+              <Row number="1">ProcessInstance16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="17">
+            <Rows>
+              <Row number="1">References16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="18">
+            <Rows>
+              <Row number="1">Refresh16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="19">
+            <Rows>
+              <Row number="1">ServiceObject16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="20">
+            <Rows>
+              <Row number="1">ServiceObjectMethod16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="21">
+            <Rows>
+              <Row number="1">ServiceType16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="22">
+            <Rows>
+              <Row number="1">SmartObject16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="23">
+            <Rows>
+              <Row number="1">Today16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="24">
+            <Rows>
+              <Row number="1">WorkflowManagementServer16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="25">
+            <Rows>
+              <Row number="1">WorkflowServer16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="26">
+            <Rows>
+              <Row number="1">WorkflowWebServices16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="27">
+            <Rows>
+              <Row number="1">WorkspaceUrl16.png</Row>
+            </Rows>
+          </Column>
+		  
+		 <Column number="28">
+            <Rows>
+              <Row number="1">Recent16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="29">
+            <Rows>
+              <Row number="1">Tomorrow16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="30">
+            <Rows>
+              <Row number="1">Absolute16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="31">
+            <Rows>
+              <Row number="1">AddDateFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="32">
+            <Rows>
+              <Row number="1">AddTimeFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="33">
+            <Rows>
+              <Row number="1">And16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="34">
+            <Rows>
+              <Row number="1">Average16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="35">
+            <Rows>
+              <Row number="1">Contains16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="36">
+            <Rows>
+              <Row number="1">DateFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="37">
+            <Rows>
+              <Row number="1">Empty16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="38">
+            <Rows>
+              <Row number="1">ExcelFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="39">
+            <Rows>
+              <Row number="1">False16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="40">
+            <Rows>
+              <Row number="1">FileFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="41">
+            <Rows>
+              <Row number="1">FirstItem16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="42">
+            <Rows>
+              <Row number="1">FormatNumber16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="43">
+            <Rows>
+              <Row number="1">GenerateGUID16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="44">
+            <Rows>
+              <Row number="1">GetEmailsForSharepoint16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="45">
+            <Rows>
+              <Row number="1">GetSharepointGroups16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="46">
+            <Rows>
+              <Row number="1">GetSharepointUsers16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="47">
+            <Rows>
+              <Row number="1">GetWordContent16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="48">
+            <Rows>
+              <Row number="1">Hyperlink16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="49">
+            <Rows>
+              <Row number="1">If16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="50">
+            <Rows>
+              <Row number="1">IndexItem16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="51">
+            <Rows>
+              <Row number="1">Insert16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="52">
+            <Rows>
+              <Row number="1">LastItem16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="53">
+            <Rows>
+              <Row number="1">Length16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="54">
+            <Rows>
+              <Row number="1">Maximum16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="55">
+            <Rows>
+              <Row number="1">Minimum16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="56">
+            <Rows>
+              <Row number="1">Not16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="57">
+            <Rows>
+              <Row number="1">NumbersFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="58">
+            <Rows>
+              <Row number="1">Or16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="59">
+            <Rows>
+              <Row number="1">Power16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="60">
+            <Rows>
+              <Row number="1">RandomFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="61">
+            <Rows>
+              <Row number="1">RegularExpressionFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="62">
+            <Rows>
+              <Row number="1">RootFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="63">
+            <Rows>
+              <Row number="1">RoundDown16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="64">
+            <Rows>
+              <Row number="1">RoundUp16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="65">
+            <Rows>
+              <Row number="1">SearchFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="66">
+            <Rows>
+              <Row number="1">SquareFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="67">
+            <Rows>
+              <Row number="1">SubractDateFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="68">
+            <Rows>
+              <Row number="1">SumFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="69">
+            <Rows>
+              <Row number="1">TextFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="70">
+            <Rows>
+              <Row number="1">ToLower16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="71">
+            <Rows>
+              <Row number="1">ToSharepointClaimsUser16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="72">
+            <Rows>
+              <Row number="1">ToSharepointClaimsUsers16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="73">
+            <Rows>
+              <Row number="1">ToUpper16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="74">
+            <Rows>
+              <Row number="1">Trim16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="75">
+            <Rows>
+              <Row number="1">True16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="76">
+            <Rows>
+              <Row number="1">UpdateDataField16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="77">
+            <Rows>
+              <Row number="1">UrlFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="78">
+            <Rows>
+              <Row number="1">WeekNumber16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="79">
+            <Rows>
+              <Row number="1">Xor16.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="80">
+            <Rows>
+              <Row number="1">Yesterday16.png</Row>
+            </Rows>
+          </Column>
+
+		  <Column number="81">
+            <Rows>
+              <Row number="1">SaveResult16_White.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="82">
+            <Rows>
+              <Row number="1">SaveResult16.png</Row>
+            </Rows>
+          </Column>
+
+		  <Column number="83">
+            <Rows>
+              <Row number="1">SaveFunction16_White.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="84">
+            <Rows>
+              <Row number="1">SaveFunction16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="85">
+            <Rows>
+			  <Row number="1">Refresh_White16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="86">
+            <Rows>
+			  <Row number="1">Redirect_White16.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="87">
+            <Rows>
+			  <Row number="1">Infinite16.png</Row>
+            </Rows>
+          </Column>
+		  
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="8,0,0,8">
+        <CssBackgroundImageFolder>ContextBrowser/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/ContextBrowser/ContextBrowser16.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/ContextBrowser16.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

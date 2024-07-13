@@ -1,0 +1,740 @@
+﻿.full-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.bold-fontfamily {
+    font-family: 'Open Sans Bold', 'Segoe UI Semibold', "HelveticaNeue-Medium", "sans-serif" !important;
+}
+
+/* -- fix for user card in user settings --- 
+    Issue starts in ControlPackBase.css setting position: relative via selector .theme-entry .SFC.  In this particular case
+    this doesn't work for the layout for this section in IE11 so we specifically override it and make it statc.
+    The one good thing about iFrames in this case is that it will isolate this CSS selector.
+*/
+html.ie11.workspace .theme-entry .SFC.SourceCode-Forms-Controls-Web-Table
+{
+   position: static;
+} 
+
+.workspace.workspace-usersettings {
+    /* #region Custom styling for smartforms */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    /* #endregion */
+    /* region popupManager fixes */
+    /* end region */
+}
+
+    .workspace.workspace-usersettings body {
+        overflow: hidden !important;
+        /* Smartforms adds overflow-y: auto on body element leading to scrollbar */
+    }
+
+        .workspace.workspace-usersettings html,
+        .workspace.workspace-usersettings body,
+        .workspace.workspace-usersettings body > form,
+        .workspace.workspace-usersettings .runtime-content,
+        .workspace.workspace-usersettings .runtime-form,
+        .workspace.workspace-usersettings .form {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+    .workspace.workspace-usersettings .runtime-content {
+        margin: 0 !important;
+        /* override inline style */
+    }
+
+    .workspace.workspace-usersettings .form {
+        padding: 0;
+        display: block;
+        background-color: #fdfdfd !important; /* Overrides inherited !important */
+    }
+
+        .workspace.workspace-usersettings .form .row {
+            display: block;
+        }
+
+        .workspace.workspace-usersettings .form .row:nth-child(4) {
+            overflow-y: auto;
+        }
+
+            .workspace.workspace-usersettings .form .row .view {
+                background-color: #fdfdfd;
+            }
+
+                .workspace.workspace-usersettings .form .row .view .panel-body {
+                    background-color: #fdfdfd;
+                }
+
+[name='tblWorkspaceControls'] > .editor-cell[row='1'][col='1']
+{
+    display:none;
+}
+
+.workspace.workspace-usersettings .theme-entry .editor-cell
+{
+    padding: 0;
+}
+
+    .workspace.workspace-usersettings .row:first-child {
+        display: none !important;
+    }
+
+    .workspace.workspace-usersettings .row:nth-child(2) {
+        text-align: left;
+    }
+
+        .workspace.workspace-usersettings .row:nth-child(2) .formcontrol {
+            margin: 0 !important;
+            /* override inline style */
+        }
+
+            .workspace.workspace-usersettings .row:nth-child(2) .formcontrol .innerpanel {
+                position: relative;
+                height: 106px;
+                background-color: #ececec !important;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                border-bottom: 1px solid #CDCDCD;
+            }
+
+                .workspace.workspace-usersettings .row:nth-child(2) .formcontrol .innerpanel > .SourceCode-Forms-Controls-Web-Table
+                {
+                    width: 100% !important;
+                    height: 100%;
+                    -ms-grid-columns: 1fr auto !important;
+                    grid-template-columns: 1fr auto !important;
+                }
+
+                    .workspace.workspace-usersettings .row:nth-child(2) .formcontrol .innerpanel > .SourceCode-Forms-Controls-Web-Table > .editor-cell
+                    {
+                        vertical-align: middle;
+                        align-content: center;
+                        align-items: center;
+                    }
+
+
+                .workspace.workspace-usersettings .row:nth-child(2) .formcontrol .innerpanel .SourceCode-Forms-Controls-Web-ControlPack-UserCard {
+                    height: inherit !important;
+                }
+
+                    .workspace.workspace-usersettings .row:nth-child(2) .formcontrol .innerpanel .SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-avatar {
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 40px;
+                        background-color: #f8f8f8;
+                        box-sizing: border-box;
+                        border: solid 3px #4e5758;
+                        background-image: url('workspace/EmptyAvatar_Alt32@2x.png');
+                        background-size: 60px;
+                        background-position: 50%;
+                    }
+
+                    .workspace.workspace-usersettings .row:nth-child(2) .formcontrol .innerpanel .SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-displayname {
+                        font-size: 2.4rem;
+                        color: #37474f;
+                    }
+
+                    .workspace.workspace-usersettings .row:nth-child(2) .formcontrol .innerpanel .SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-email {
+                        font-size: 1.5rem;
+                        color: #717171;
+                    }
+
+    .workspace.workspace-usersettings .row:nth-child(3),
+    .workspace.workspace-usersettings .row:nth-child(4) {
+        height: calc(100% - 106px) !important;
+        position: relative;
+        max-width: 768px;
+        width: 50%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+        .workspace.workspace-usersettings .row:nth-child(3):after {
+            content: ' ';
+            position: absolute;
+            top: 40px;
+            bottom: 40px;
+            right: 0;
+            width: 1px;
+            background-color: #CDCDCD;
+        }
+
+        .workspace.workspace-usersettings .row:nth-child(3) .view {
+            width: calc(100% - 8.1rem) !important;
+            display: block;
+            padding-right: 4rem;
+            padding-top: 3rem;
+            padding-left: 4rem;
+        }
+
+            .workspace.workspace-usersettings .row:nth-child(3) .view .dropdown-box {
+                padding-left: 3.2rem;
+                width: calc(100% - 3.2rem) !important;
+                /*override inline style */
+            }
+
+            .workspace.workspace-usersettings .row:nth-child(3) .view .input-control.select-box {
+                background: #fdfdfd;
+            }
+
+                .workspace.workspace-usersettings .row:nth-child(3) .view .input-control.select-box .styling-outer-wrapper {
+                    background-color: #fff;
+                }
+
+        .workspace.workspace-usersettings .row:nth-child(4) .view:first-child {
+            padding-bottom: 4rem;
+            padding-top: 3rem;
+        }
+
+        .workspace.workspace-usersettings .row:nth-child(4) .view {
+            margin: 0 !important;
+            /* override inline styles */
+            overflow: auto;
+            display: block;
+            position: relative;
+            width: calc(100% - 8.1rem) !important;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
+            .workspace.workspace-usersettings .row:nth-child(4) .view > .innerpanel > .panel {
+                position: relative;
+                height: 100%;
+                width: 100%;
+            }
+
+                .workspace.workspace-usersettings .row:nth-child(4) .view > .innerpanel > .panel .panel-body {
+                    background-color: inherit;
+                }
+
+                .workspace.workspace-usersettings .row:nth-child(4) .view > .innerpanel > .panel .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table
+                {
+                    top: 1.0rem;
+                }
+
+    .workspace.workspace-usersettings .theme-entry label.input-control.radio .input-control-text {
+        padding-left: 1.2rem;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: #37474f;
+    }
+
+/* Default Workspace Radio-Button - Ellipsis Fix */
+#f40d89c9-5ef1-484b-8bca-416fb04696aa_3879fae6-b3f9-d264-87ad-cb6aee76a10e {
+    display: block;
+}
+
+    #f40d89c9-5ef1-484b-8bca-416fb04696aa_3879fae6-b3f9-d264-87ad-cb6aee76a10e .input-control.radio {
+        width: auto;
+        display: flex;
+    }
+
+    #f40d89c9-5ef1-484b-8bca-416fb04696aa_3879fae6-b3f9-d264-87ad-cb6aee76a10e .input-control-img {
+        padding-left: 4px;
+    }
+
+    #f40d89c9-5ef1-484b-8bca-416fb04696aa_3879fae6-b3f9-d264-87ad-cb6aee76a10e .input-control-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        box-sizing: border-box;
+    }
+/* END*/
+
+.workspace.workspace-usersettings .theme-entry label.input-control.radio .input-control-img {
+    height: 19px;
+}
+
+.workspace.workspace-usersettings .modalizer,
+.workspace.workspace-usersettings .ajaxloader {
+    display: none !important;
+}
+
+.workspace.workspace-usersettings .popupManager:empty {
+    display: none;
+}
+
+.workspace.workspace-usersettings .popupManager {
+    height: 100% !important;
+    width: 100% !important;
+    /* a lot of inline styling here, so many !importants required */
+}
+
+    .workspace.workspace-usersettings .popupManager .popup.dialog {
+        background-color: #fff;
+        padding: 0;
+        left: 50% !important;
+        top: 50% !important;
+        right: auto !important;
+        bottom: auto !important;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+        .workspace.workspace-usersettings .popupManager .popup.dialog iframe {
+            overflow-y: hidden;
+        }
+
+            .workspace.workspace-usersettings .popupManager .popup.dialog iframe::-webkit-scrollbar {
+                display: none;
+            }
+
+        .workspace.workspace-usersettings .popupManager .popup.dialog .popup-body {
+            bottom: 0;
+            padding: 0;
+        }
+
+        .workspace.workspace-usersettings .popupManager .popup.dialog .popup-header {
+            left: .5rem;
+            right: .5rem;
+        }
+
+            .workspace.workspace-usersettings .popupManager .popup.dialog .popup-header .maximize {
+                display: none !important;
+                pointer-events: none;
+            }
+
+.workspace.workspace-usersettings .form,
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label,
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-DataLabel,
+.workspace.workspace-usersettings a.SFC.SourceCode-Forms-Controls-Web-Button {
+    font-family: 'Open-Sans Regular', 'Segoe UI Regular', 'Helvetica';
+    font-size: 1.5rem;
+}
+
+.workspace.workspace-usersettings .description-text {
+    color: #8e8c8f;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.workspace.workspace-usersettings .radio-description {
+    color: #8e8c8f;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    display: block;
+    width: 100%;
+    padding: 0;
+    padding-left: 3.2rem;
+    padding-bottom: 1.0rem;
+}
+
+.workspace.workspace-usersettings .view span.SourceCode-Forms-Controls-Web-Label[name="lblInOfficeDescription"] {
+    color: #8e8c8f;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    display: block;
+    width: 100%;
+    padding: 0;
+    padding-left: 3.2rem;
+    padding-bottom: 1.0rem;
+}
+
+.workspace.workspace-usersettings .view span.SFC.SourceCode-Forms-Controls-Web-Label[name="lblAutoLoginDescription"] {
+    color: #8e8c8f;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    padding-bottom: 0;
+    line-height: 1.5rem;
+    padding-top: 0;
+}
+
+.workspace.workspace-usersettings .view span.SourceCode-Forms-Controls-Web-Label[name="lbOOFDescription"] {
+    color: #8e8c8f;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    display: block;
+    width: 100%;
+    padding: 0;
+    padding-left: 3.2rem;
+    padding-bottom: 1.0rem;
+    padding-bottom: 1.3rem;
+}
+
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lbInOffice"],
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lbOutOfOffice"] {
+    padding-right: 1.5rem;
+}
+
+.workspace.workspace-usersettings .view:not(.workspace-redirect-view) .workspace-redirect-table {
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    border-color: #CDCDCD;
+    margin-left: 3.2rem;
+    height: 6.4rem;
+    max-width: 300px;
+    width: calc(100% - 3.2rem) !important;
+    /* override smartforms inline styling */
+}
+
+    .workspace.workspace-usersettings .view:not(.workspace-redirect-view) .workspace-redirect-table .SourceCode-Forms-Controls-Web-Button {
+        margin: .5rem 0;
+        text-decoration: underline;
+        color: #3cb0df;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+.workspace.workspace-usersettings .workspace-redirect-table.clearbackground {
+    background-color: transparent;
+}
+
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lbSelectUserDescription"] {
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+    max-width: calc(100% - 3.2rem);
+}
+
+.workspace.workspace-usersettings a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnRemoveAll"] {
+    padding-right: .5rem;
+}
+
+.workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] {
+    background-color: #F0F0F0;
+    margin: 1.0rem 0;
+    margin-top: 1.4rem;
+    height: auto !important;
+}
+
+    .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .stylewrapper {
+        height: auto !important;
+    }
+
+    .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .genericitem {
+        border: 1px solid #CDCDCD;
+        cursor: default;
+    }
+
+        .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .genericitem .title,
+        .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .genericitem .title > span {
+            color: #6B7785;
+        }
+
+        .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .genericitem .description,
+        .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .genericitem .description > span {
+            color: #4caf50;
+            font-size: 1.3rem;
+        }
+
+        .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .genericitem .property1 span {
+            padding-right: 1rem;
+            color: #3cb0df;
+            font-size: 1.3rem;
+            cursor: pointer;
+            left: auto;
+            max-width: calc(100% - 1rem);
+        }
+
+        .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .genericitem .item-image {
+            z-index: auto;
+        }
+
+    .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] div.scrollWrapperDiv {
+        height: auto !important;
+        /* override inline style */
+    }
+
+    .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] a,
+    .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] span {
+        font-family: 'Open-Sans Regular', 'Segoe UI Regular', 'Helvetica';
+        font-size: 1.5rem;
+    }
+
+    .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .image-cell {
+        width: 40px;
+        padding: .5rem;
+        text-align: center;
+    }
+
+    .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .item-image {
+        padding: 0;
+        height: 32px;
+        width: 32px;
+        background-size: 32px 32px;
+        background-repeat: no-repeat;
+        background-image: url('SecurityLabels/ActiveDirectoryProvider32.png');
+    }
+
+    .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .PropertiesMain {
+        padding-left: 0;
+    }
+
+.workspace.workspace-usersettings .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="ctlShareUser"] {
+    padding-left: 3.2rem;
+}
+
+.workspace.workspace-usersettings .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-avatar {
+    background-image: url('workspace/Avatar32.png');
+    background-position: bottom;
+    background-size: 32px;
+}
+
+.workspace.workspace-usersettings div.SourceCode-Forms-Controls-Web-ControlPack-ListBox[name="List Box"] .selected {
+    background-color: #3cb0df;
+    color: #fff;
+}
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lbSpinner"] {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-repeat: no-repeat;
+    background-size: 3.0rem;
+    background-position: center;
+    background-image: url('RuntimeTheme/LoadingAnimation_Dark40.gif');
+}
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="dlSpinnerMessage"] {
+    padding-top: 0;
+}
+
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lblOOFTitle"],
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lblAutoLogin"] {
+    text-transform: uppercase;
+    font-family: 'Open Sans Bold', 'Segoe UI Semibold', "HelveticaNeue-Medium", "sans-serif" !important;
+    font-size: 1.7rem;
+    padding-bottom: .2rem;
+}
+
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lblDefaultWorkspace"],
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lblLoadingWorkspaces"] {
+    font-family: 'Open Sans Bold', 'Segoe UI Semibold', "HelveticaNeue-Medium", "sans-serif" !important;
+    font-size: 1.7rem;
+}
+
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lblDefaultWorkspaceDescription"],
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lblAutoLoginDescription"] {
+    color: #8e8c8f;
+    line-height: 1.3rem;
+    font-size: 1.3rem;
+    text-overflow: initial;
+    white-space: normal;
+}
+
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lblDefaultWorkspaceDescription"] {
+    padding-top: 0;
+}
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblCurrentWorkspace"] {
+    padding-bottom: .6rem;
+}
+
+.workspace.workspace-usersettings span.SFC.SourceCode-Forms-Controls-Web-Label[name="lblOOFTitle"] {
+    padding-bottom: 1.0rem;
+}
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-DataLabel[name="dlDefaultWorkspaceName"] {
+    color: #8e8c8f;
+    display: block;
+    width: 100%;
+    padding: 0;
+    padding-left: 3.2rem;
+    padding-bottom: 1.0rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblLoadingSpinner"] {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-image: url('RuntimeTheme/LoadingPage40_ececec.gif');
+    margin: auto;
+}
+
+    .workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblLoadingSpinner"].hidden,
+    .workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblLoadingIcon"].hidden {
+        display: none;
+    }
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblLoadingIcon"],
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblSuccessIcon"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    margin-right: .4rem;
+    margin-top: .4rem;
+}
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblLoadingIcon"] {
+    background-image: url('workspace/LoadingControl16_ffffff.gif');
+}
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblSuccessIcon"] {
+    background-image: url('workspace/Loaded16.png');
+}
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-DataLabel[name="dlLoadingDisplay"],
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-DataLabel[name="dlLoadedDisplay"] {
+    font-size: 1.3rem;
+}
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-DataLabel[name="dlLoadingDisplay"] {
+    color: #37474f;
+}
+
+.workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-DataLabel[name="dlLoadedDisplay"] {
+    color: #4caf50;
+}
+
+.workspace.workspace-usersettings .workspace-redirect-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+    .workspace.workspace-usersettings .workspace-redirect-view .innerpanel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .workspace.workspace-usersettings .workspace-redirect-view .panel[name="Redirect"] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 50rem;
+        min-width: 30rem;
+        -moz-transform: translateY(-50%) translateX(-50%);
+        -ms-transform: translateY(-50%) translateX(-50%);
+        -o-transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
+        height: auto !important;
+        /* width: auto !important; */ /* [903010] width doesn't need to be set to auto anymore as it is causing the popup Form to have reduced width */
+        display: inline-block;
+        border-radius: 3px;
+        border: 1px solid #d5d5d5;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    }
+
+        .workspace.workspace-usersettings .workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody .genericitem {
+            border-top: 1px solid #D5D5D5;
+        }
+
+        .workspace.workspace-usersettings .workspace-redirect-view .panel[name="Redirect"] .panel-body {
+            background-color: #fff;
+            padding: .5rem 1rem;
+        }
+
+        .workspace.workspace-usersettings .workspace-redirect-view .panel[name="Redirect"] a.command-button {
+            color: #FFFFFF;
+            border-color: transparent;
+            vertical-align: 2px;
+            border-radius: 3px;
+            -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .workspace.workspace-usersettings .workspace-redirect-view .panel[name="Redirect"] a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnClose"] {
+            position: absolute;
+            right: .5rem;
+            top: .5rem;
+            display: block;
+            overflow: visible;
+            background-color: #fff;
+            background-image: url(RuntimeTheme/DialogButtons16_Sprite.png);
+            background-position: -112px -16px;
+            width: 16px;
+            height: 16px;
+            background-size: 194px 144px;
+            background-repeat: no-repeat;
+            padding: .5rem;
+        }
+
+            .workspace.workspace-usersettings .workspace-redirect-view .panel[name="Redirect"] a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnClose"]:hover {
+                background-color: #fff;
+            }
+
+            .workspace.workspace-usersettings .workspace-redirect-view .panel[name="Redirect"] a.SFC.SourceCode-Forms-Controls-Web-Button[name="btnClose"].hidden {
+                display: none;
+            }
+
+        .workspace.workspace-usersettings .workspace-redirect-view .panel[name="Redirect"] .redirect-search-bar-bordercontainer {
+            position: relative;
+            border: 1px solid #d5d5d5;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+    .workspace.workspace-usersettings .workspace-redirect-view .panel-toolbars {
+        display: none;
+    }
+
+.workspace.workspace-usersettings .workspaces-k2logo {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-image: url('workspace/WorkspacesK2Logo16.png');
+}
+
+@media only screen and (min-width: 1100px) {
+    .workspace.workspace-usersettings .form {
+        text-align: center;
+    }
+
+    .workspace.workspace-usersettings .row:nth-child(3),
+    .workspace.workspace-usersettings .row:nth-child(4) {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+    .workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lbSpinner"] {
+        background-image: url('RuntimeTheme/LoadingAnimation_Dark40@2x.gif');
+    }
+
+    .workspace.workspace-usersettings .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="ctlLabelsGrid"] .item-image {
+        background-image: url('SecurityLabels/ActiveDirectoryProvider32.png');
+    }
+
+    .workspace.workspace-usersettings .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-avatar {
+        background-image: url('workspace/Avatar32@2x.png');
+    }
+
+    .workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblLoadingSpinner"] {
+        background-image: url('RuntimeTheme/LoadingPage40_ececec@2x.gif');
+    }
+
+    .workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblLoadingIcon"] {
+        background-image: url('workspace/LoadingControl16_ffffff@2x.gif');
+    }
+
+    .workspace.workspace-usersettings span.SourceCode-Forms-Controls-Web-Label[name="lblSuccessIcon"] {
+        background-image: url('workspace/Loaded16@2x.png');
+    }
+
+    .workspace.workspace-usersettings .workspaces-k2logo {
+        background-image: url('workspace/WorkspacesK2Logo16@2x.png');
+    }
+}

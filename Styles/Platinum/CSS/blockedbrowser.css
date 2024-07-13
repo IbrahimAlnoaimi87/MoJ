@@ -1,0 +1,185 @@
+﻿body
+{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.blockedbrowser-outer-panel,
+.blockedbrowser-left-panel,
+.blockedbrowser-middle-panel,
+.blockedbrowser-right-panel
+{
+	height: 361px;
+}
+
+.blockedbrowser-outer-panel,
+.blockedbrowser-help-link 
+{
+	position: absolute;
+}
+
+.blockedbrowser-outer-panel
+{
+	left: 50%;
+	margin-left: -330px;
+	margin-top: -180px;
+	top: 50%;
+	width: 660px;
+}
+
+.blockedbrowser-left-panel,
+.blockedbrowser-middle-panel,
+.blockedbrowser-right-panel,
+.blockedbrowser-k2-smartforms-logo,
+.browser-not-supported-heading,
+.browser-not-supported-text,
+.blockedbrowser-safari-name,
+.blockedbrowser-ie-name,
+.blockedbrowser-edge-name,
+.blockedbrowser-chrome-name,
+.blockedbrowser-firefox-name
+{
+	position: relative;
+}
+
+.blockedbrowser-left-panel,
+.blockedbrowser-middle-panel,
+.blockedbrowser-right-panel
+{
+	float: left;
+}
+
+.blockedbrowser-left-panel,
+.blockedbrowser-right-panel
+{
+	width: 8px;
+}
+
+.blockedbrowser-left-panel
+{
+	background-image: url("../Images/BlockedBrowser/BG-BorderLeft.png");
+}
+
+.blockedbrowser-middle-panel
+{
+	background-image: url("../Images/BlockedBrowser/BG-Repeater.png");
+	width: 644px;
+}
+
+.blockedbrowser-right-panel
+{
+	background-image: url("../Images/BlockedBrowser/BG-BorderRight.png");
+}
+
+.blockedbrowser-k2-smartforms-logo
+{
+	padding-top: 42px;
+}
+
+.blockedbrowser-k2-smartforms-logo img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.browser-not-supported-heading,
+.browser-not-supported-text,
+.blockedbrowser-safari-name,
+.blockedbrowser-ie-name,
+.blockedbrowser-edge-name,
+.blockedbrowser-chrome-name,
+.blockedbrowser-firefox-name,
+.blockedbrowser-help-link
+{
+	text-align: center;
+}
+
+.browser-not-supported-heading,
+.blockedbrowser-help-link,
+.blockedbrowser-help-anchor:link 
+{
+	color: #464646;
+}
+
+.browser-not-supported-heading
+{
+	font-size: 21px;
+	padding-top: 30px;
+}
+
+.browser-not-supported-text,
+.blockedbrowser-safari-name,
+.blockedbrowser-ie-name,
+.blockedbrowser-edge-name,
+.blockedbrowser-chrome-name,
+.blockedbrowser-firefox-name
+{
+	font-size: 14px;
+}
+
+.browser-not-supported-text
+{
+	color: #7A7A7A;
+	padding-left: 84px;
+	padding-right: 84px;
+	padding-top: 6px;
+}
+
+.blockedbrowser-safari-name,
+.blockedbrowser-ie-name,
+.blockedbrowser-edge-name,
+.blockedbrowser-chrome-name,
+.blockedbrowser-firefox-name
+{
+	color: #393939;
+}
+
+.blockedbrowser-ie-name
+{
+	padding-top: 24px;
+}
+
+.blockedbrowser-firefox-name,
+.blockedbrowser-safari-name,
+.blockedbrowser-edge-name
+{
+	padding-top: 9px;
+}
+
+.blockedbrowser-chrome-name
+{
+	padding-top: 12px;
+}
+
+.blockedbrowser-help-link
+{
+	bottom: 0;
+	font-size: 9px;
+	left: 0;
+	padding-bottom: 6px;
+	right: 0;
+}
+
+.mobile .blockedbrowser-safari-name,
+.mobile .blockedbrowser-ie-name,
+.mobile .blockedbrowser-edge-name,
+.mobile .blockedbrowser-chrome-name,
+.mobile .blockedbrowser-firefox-name
+{
+	display:none;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.cm-help-link
+{
+	font-size: 14px;
+}
+
+#cmContainer *
+{
+	font-family: Helvetica, sans-serif;
+}

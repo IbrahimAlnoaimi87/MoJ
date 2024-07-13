@@ -1,0 +1,16 @@
+﻿.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-hover,
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-focus,
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-active
+{
+	background-color: #c4e9f5;
+}
+
+.theme-entry ul.autocomplete-menu
+{
+	outline: 1px solid #ababab;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-AutoComplete .input-control input[type="text"].ui-autocomplete-loading
+{
+	background-image: url('LoadingAnimation_Grey16.gif');
+}

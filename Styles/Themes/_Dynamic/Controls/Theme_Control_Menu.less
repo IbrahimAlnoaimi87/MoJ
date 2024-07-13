@@ -1,0 +1,67 @@
+
+//These classes are used for the Picker control's popup menu. 
+//Not used elsewhere in runtime as far as we can tell.
+
+
+.theme-entry .menu
+{
+    border-color: @Menu-Border-Color;
+    background-color: @Menu-Background-Color;
+    backdrop-filter: @Menu-Background-Effect; 
+    background-image: none; //core.less puts a repeating image slice for a Lithium colored bar down the left side of the popup menu. 
+   
+    -moz-box-shadow: @Menu-Shadow;
+    -webkit-box-shadow: @Menu-Shadow;
+    box-shadow: @Menu-Shadow;
+    /*background-image: url("menu_bg.png");*/
+
+    border-radius: @Menu-Rounding;
+
+    li
+    {
+        border: solid 1px transparent;
+        padding: 1px !important; //override core.less bad code for hover!
+
+        span 
+        {
+            color: @Menu-Text-Color;
+        }
+
+        //hover
+        &:hover
+        {
+            background: @Menu-Item-Hover-Background-Color;
+            color: @Menu-Item-Hover-Text-Color;
+
+        }
+
+        //focus
+        &.active
+        {
+
+            border-color: @Menu-Item-Focus-Border-Color;
+        }
+
+
+        //Separator
+        &.seperator 
+        {
+            &:hover{
+                border: solid 1px transparent; //override core.less bad code for hover!
+            }
+            span
+            {
+                border-color: @Menu-Item-Separator-Line-Color;
+                border-top-width:0px;
+                border-bottom-width: 1px;
+            }
+        }
+    }
+}
+
+.theme-entry .menu a.menu-item
+{
+    padding: @Control-Inset-Vertical-Spacing @Control-Inset-Horizontal-Spacing;
+    color: inherit;
+}
+

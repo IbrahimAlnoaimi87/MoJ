@@ -1,0 +1,109 @@
+
+// view designer, table control cell, mostly design-time only?
+.theme-entry .editor-cell
+{
+    overflow: hidden;
+    vertical-align: top;
+}
+
+
+
+//#region Default Padding
+
+
+
+.theme-entry 
+{
+    ////User-Dropped Table controls
+    //  Note: only has top and bottom padding. We don't add left/right padding so that nested table controls
+    //        don't add more and more left padding, making it hard to use a table control as a pure layout control
+    //        as stuff within the table won't align left with say a heading outside the table.
+    .editor-cell 
+    {
+        padding-left: ~"calc(@{Between-Control-Spacing} /2);";
+        padding-right: ~"calc(@{Between-Control-Spacing} /2);";
+        padding-top: ~"calc(@{Between-Control-Spacing} /2);";
+        padding-bottom: ~"calc(@{Between-Control-Spacing} /2);";
+
+        &[col='1']{
+            padding-left: 0px;
+        }
+
+        &.lastcellinrow{
+            padding-right: 0px;
+        }
+
+        &[row='1']{
+            padding-top: 0px;
+        }
+
+        &.lastrow{
+            padding-bottom: 0px;
+        }
+    }
+
+     
+
+
+    //#region ROOT TABLE OF A VIEW 
+
+    //the root table has padding as a view instance has a border and the content should be away from the border by default.
+    //please see the Onenote spec for "Topic: Dynamic Theme Table Padding" for full requirements. 
+
+    //"root-table" - this class is added by Table Control (c#)
+    .root-table.Grid-Layout,  //(runtime) grid layout table controls
+    .root-table.editor-grid   //(designtime) grid layout table controls
+    {
+        //As per the spec, the edge cells should use the Block Spacing values
+        //to move them away from the edges of the view.
+        & > .editor-cell
+        {
+            &[col='1']{
+                padding-left: @Block-Inset-Horizontal-Spacing;
+            }
+
+            &.lastcellinrow{
+                padding-right: @Block-Inset-Horizontal-Spacing;
+            }
+
+            &[row='1']{
+                padding-top: @Block-Inset-Vertical-Spacing;
+            }
+
+            &.lastrow{
+                padding-bottom: @Block-Inset-Vertical-Spacing;
+            }
+        }
+    }
+
+
+
+    //Mobile get rid of default padding on root tablw
+
+    //"root-table" - this class is added by Table Control (c#)
+    .mobile & .root-table.Grid-Layout,  //(runtime) grid layout table controls
+    .mobile & .root-table.editor-grid   //(designtime) grid layout table controls
+    {
+        //As per the spec, the edge cells should use the Block Spacing values
+        //to move them away from the edges of the view.
+        & > .editor-cell
+        {
+            &[col='1']
+            {
+                padding-left: 0px;
+            }
+
+            &.lastcellinrow
+            {
+                padding-right: 0px;
+            }
+        }
+    }
+    
+    //#endregion ROOT TABLE OF A VIEW 
+    
+}
+
+
+//#endregion Default Padding
+

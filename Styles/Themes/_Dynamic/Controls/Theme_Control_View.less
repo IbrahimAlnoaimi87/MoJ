@@ -1,0 +1,45 @@
+/*#region VIEW*/
+
+
+.theme-entry 
+{
+    .view,          //runtime
+    .view-canvas    //designtime
+    {
+        //The main background has to be applied to the innerpanel and NOT the view element
+        //because when Form Padding is applied (form property), margins are added to the ".innerpanel", not the ".view" element.
+        & > .innerpanel
+        {
+            border-radius: @View-Rounding;
+        }
+    }
+}
+
+.theme-entry .view .innerpanel > .grid,
+.theme-entry .view .innerpanel > .panel,
+.theme-entry .view-canvas > .grid, /* Design time grid */
+.theme-entry .view-canvas > .panel /* Design time panel */
+{
+    background-color: @View-Background-Color;
+    border-radius: @View-Rounding;
+}
+
+
+.theme-entry .view .innerpanel > .grid.with-footer > .grid-footer > .toolbars > .toolbar:last-child{
+    border-bottom-left-radius: @View-Rounding;
+    border-bottom-right-radius: @View-Rounding;
+}
+
+.theme-entry .view .innerpanel > .grid.with-header > .grid-header {
+    border-top-left-radius: @View-Rounding;
+    border-top-right-radius: @View-Rounding;
+}
+
+
+.theme-entry .view-canvas > .panel .panel-header-wrapper
+{
+    /*top align the view title - item view only, list views use grids and are already top aligned*/
+    //align-items: flex-start;
+}
+
+/*#endregion VIEW*/

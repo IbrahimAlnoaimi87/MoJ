@@ -1,0 +1,119 @@
+﻿html.management.smartobject-definition .row:nth-child(2) .panel-body-wrapper > div > .Grid-Layout > .editor-cell[row='1']
+{
+    padding: 0;
+}
+
+html.management.smartobject-definition .row:nth-child(2) .panel-body-wrapper > div > .Grid-Layout > .editor-cell[row='2']
+{
+    display: none;
+}
+
+html.management.smartobject-definition .management-flextables
+{
+    display: flex;
+    flex-direction: row;
+}
+
+    html.management.smartobject-definition .management-flextables:first-child
+    {
+        padding-top: 0;
+    }
+
+    html.management.smartobject-definition .management-flextables .management-flextable
+    {
+        display: flex;
+        flex-direction: column;
+        padding: .2rem;
+        box-sizing: border-box;
+    }
+
+        html.management.smartobject-definition .management-flextables .management-flextable:first-child
+        {
+            padding-left: 0;
+        }
+
+        html.management.smartobject-definition .management-flextables .management-flextable:last-child
+        {
+            padding-right: 0;
+        }
+
+        html.management.smartobject-definition .management-flextables .management-flextable
+        {
+            width: 33.333333%;
+        }    
+
+        html.management.smartobject-definition .management-flextable .management-flexrow
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+            html.management.smartobject-definition .management-flextable .management-flexrow:last-child
+            {
+                border-style: solid;
+                border-color: #e9e9e9;
+                border-width: 0 0 1px 0;
+            }
+
+        html.management.smartobject-definition .management-flextable .management-flexrow .management-flexcell-title
+        {
+            background-color: #f8f8f8;
+            border-style: solid;
+            border-color: #e9e9e9;
+            border-width: 1px 1px 0 1px;
+            text-align: right;
+            text-transform: uppercase;
+            padding: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 33.333333%;
+        }
+
+            html.management.smartobject-definition .management-flextable .management-flexrow .management-flexcell-title span
+            {
+                color: rgba(55, 71, 79, .75);
+            }
+
+        html.management.smartobject-definition .management-flextable .management-flexrow .management-flexcell-value
+        {
+            background-color: #fdfdfd;
+            border-style: solid;
+            border-color: #e9e9e9;
+            border-width: 1px 1px 0 0;
+            text-align: left;
+            padding: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 66.666667%;            
+        }
+
+            html.management.smartobject-definition .management-flextable .management-flexrow .management-flexcell-value span
+            {
+                color: rgb(55, 71, 79);            
+            }
+
+            html.management.smartobject-definition .management-flextable .management-flexrow .management-flexcell-value a
+            {
+                color: rgb(2, 136, 209);
+                display: inline-block;
+                text-decoration: none;
+            }
+
+                html.management.smartobject-definition .management-flextable .management-flexrow .management-flexcell-value a:hover
+                {
+                    color: #3aabe8;
+                }
+
+html.management.smartobject-definition .runtime-form.theme-entry .formcontrol
+    {
+        margin-bottom: 0 !important; /*override inline styling*/
+        margin-top: 1rem !important; /*override inline styling*/
+    }
+
+html.management.smartobject-definition .runtime-form.theme-entry .form > div:nth-child(2) > div
+    {
+        margin-bottom: 0 !important; /*override inline styling*/
+    }

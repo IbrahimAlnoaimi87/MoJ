@@ -1,0 +1,973 @@
+﻿.theme-entry .form
+{
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+}
+
+.theme-entry .panel > .panel-body
+{
+    background-color: transparent;
+}
+
+/*Not sure which page in managament this is targeting*/
+.theme-entry div[Name="Management.Main Area Item2"] .Grid-Layout > .editor-cell.lastrow
+{
+    padding: 0;
+}
+
+/* drop-shadow */
+.runtime-content:after
+{
+    content: "";
+    position: absolute;
+    left: 374px;
+    top: 0px;
+    height:100%;
+    width:10px;
+    background-color:transparent;
+    box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.2);
+}
+
+html[dir=rtl] .runtime-content:after {
+    left: auto;
+    right: 374px;
+    box-shadow: -3px 0px 3px 0px rgba(0,0,0,0.2);
+}
+
+.theme-entry span.SFC[name="ManagementLogo"]
+{
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.management-logo
+{
+    background-size: 168px 32px;
+    background-image: url('workspace/WorkspaceLogo60.png');
+}
+
+.management-logo-container
+{
+    display: table;
+    width: 100%;
+    background-color: #003870; /* --globalNav-background-color */
+    text-decoration: none;
+}
+
+    .management-logo-container a.management-text
+    {
+        display: table-cell;
+        font-size: 2.4rem;
+        color: #ffffff; /* --globalNav-text-color */
+        vertical-align: middle;
+        padding-left: 1.8rem;
+        width: 100%;
+        text-decoration: none;
+        font-family: 'Open-Sans Regular','Segoe UI Regular','Helvetica';
+    }
+
+    .management-logo-container span.management-logo
+    {
+        display: table-cell;
+        width: 60px;
+        min-width: 60px;
+        height: 60px;
+        border: none;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-image: url('workspace/WorkspaceLogo60.png');
+    }
+
+        .management-logo-container span.management-logo.selected
+        {
+            background-image: url('workspace/AppSwitcher_Selected60.png')
+        }
+
+        .management-logo-container span.management-logo:hover
+        {
+            background-image: url('workspace/AppSwitcher_Hover60.png');
+        }
+
+/* Fluid Layout */
+.theme-entry form
+{
+    overflow: hidden;
+}
+
+html,
+body,
+#form1,
+.runtime-form,
+.runtime-content,
+.runtime-form > .form,
+.runtime-form > .form .view,
+.runtime-form > .form .view > .innerpanel,
+.runtime-form > .form .view > .innerpanel > .visible.panel,
+.runtime-form > .form .view > .innerpanel > .visible.panel.without-header > .panel-body,
+.runtime-form > .form .view > .innerpanel > .visible.panel > .panel-body > .panel-body-m,
+.runtime-form > .form .view > .innerpanel > .visible.panel > .panel-body > .panel-body-m > .panel-body-m-c,
+.runtime-form > .form .view .panel-body-wrapper,
+.runtime-form > .form .view .panel-body-wrapper > div,
+.runtime-form > .form .view .panel-body-wrapper > div > .Grid-Layout
+{
+    height: 100%;
+}
+
+    .ie11 .runtime-form > .form .view .panel-body-wrapper > div > .Grid-Layout
+    {
+        -ms-grid-rows: 1fr !important;
+        grid-template-rows: 1fr !important;
+    }
+
+    .theme-entry .view .innerpanel > .grid,
+    .theme-entry .view .innerpanel > .panel,
+    .theme-entry .view-canvas > .grid,
+    .theme-entry .view-canvas > .panel[Name="Management.Main Area Item2"]
+    {
+        box-shadow: none;
+    }
+
+.runtime-form > .form > .row:last-child > .view:last-child
+{
+    background-color: white;
+}
+
+.runtime-form > .form > .row:last-child,
+.runtime-form > .form .view > .innerpanel > .visible.panel.with-header > .panel-body
+{
+    height: 100%;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView
+{
+    height: calc(100% - 120px) !important;
+}
+
+.panel[Name="Management.Main Area Item1"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-StackedContent[name="Content"]
+{
+    height: 100% !important;
+}
+
+/* Tree */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selectable .header:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected .header:hover
+{
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView div.header.selected,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected > .content > .header
+{
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper
+{
+    background-color: transparent;
+    border: none;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node-container
+{
+    padding-top: 0;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node-container.first
+{
+    margin: 2rem 0;
+    padding-left: 2.2rem;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] span
+{
+    display: inline-block;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView li, .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView span
+{
+    color: #4e5758;
+    font-size: 1.5rem;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.collapsed .expander, .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node .expander
+{
+    background-image: none;
+}
+
+.sfc-treeview.populating-indicator
+{
+    visibility: hidden !important;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node > .content
+{
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node > .content > .expander-container
+    {
+        vertical-align: top;
+        margin-top: 8px;
+    }
+
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node > .content > .expander-container > .expander
+    {
+        margin-top: -4px;
+        min-width: 16px;
+        padding-right: 0;
+    }
+
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node > .content > .header
+    {
+        cursor: pointer;
+        border: none;
+        max-width: calc(100% - 16px);
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+/* Collapsed Expander States */
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.collapsed > .content > .expander-container > .expander
+{
+    background-image: url('K2Sites_Management/Images/TreeArrowCollapsed16@2x.png');
+    background-size: 16px;
+}
+
+/* NOTE! Order matters here.  Hover first so that selected state can override it */
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.collapsed > .content:hover > .expander-container > .expander
+{
+    background-image: url('K2Sites_Management/Images/TreeArrowCollapsed_Hover16@2x.png');
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node > .content:hover
+{
+    margin-left: -100%;
+    padding-left: 100%;
+    background-color: #FFF;
+}
+
+html[dir=rtl] .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node > .content:hover {
+    margin-left: -6%;
+    padding-left: 0%;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.selected > .content
+{
+    margin-left: -100%;
+    padding-left: 100%;
+    background-color: #0a85ff; /* --nx-blue-50 */
+}
+
+html[dir=rtl] .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.selected > .content {
+    margin-left: -6%;
+    padding-left: 0%;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.collapsed.selected > .content > .expander-container > .expander
+{
+    background-image: url('K2Sites_Management/Images/TreeArrowClosed16@2x.png');
+}
+
+/* Expand Expander States */
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.expanded > .content > .expander-container > .expander
+{
+    background-image: url('K2Sites_Management/Images/TreeArrowExpanded16@2x.png');
+    background-size: 16px;
+}
+
+/* NOTE! Order matters here.  Hover first so that selected state can override it */
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.expanded > .content:hover > .expander-container > .expander
+{
+    background-image: url('K2Sites_Management/Images/TreeArrowExpanded_Hover16@2x.png');
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.expanded.selected > .content > .expander-container > .expander
+{
+    background-image: url('K2Sites_Management/Images/TreeArrowExpanded_Selected16@2x.png');
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node > .content > .header > .image-container
+{
+    padding: 0 .6rem;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 0.3REM;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.dashboardNode .content span.image-container.show > span
+{
+        padding-left: 7px;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node > .content > .header > .image-container > .image
+{
+    background-size: 16px;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node:before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    left: .3rem;
+    width: 1.6rem;
+    height: 2.1rem;
+    padding-left: .5rem;
+    visibility: hidden;
+    background-image: url('RuntimeTheme/LoadingControl20_f5f5f5@2x.gif');
+    background-size: 16px;
+    background-position: left 2px top 4px;
+    background-repeat: no-repeat;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.populating:before
+{
+    visibility: visible;
+}
+
+        .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.selectable > .content:hover .text
+        {
+            color: #2196f3;
+        }
+
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.selected > .content > .header > .text
+    {
+        color: #fff;
+    }
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.empty .expander:before
+{
+    border: none;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .text.with-image
+{
+    padding-top: 0;
+    overflow: hidden;
+    max-width: calc(100% - 3.8REM);
+    width: 100%;
+    display: inline-block;
+    white-space: normal;
+    word-wrap: break-word;
+    position: relative;
+    margin-top:1px;
+}
+
+/* Injected Dashboard node's image */
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView ul.node-container.root li.dashboardNode div.content div.header span.image-container span.image
+{
+    background-image: url('K2Sites_Management/Images/Dashboard16.png');
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView ul.node-container.root li.dashboardNode div.content:hover div.header span.image-container span.image
+{
+    background-image: url('K2Sites_Management/Images/Dashboard_Hover16@2x.png');
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView ul.node-container.root li.dashboardNode.selected div.content div.header span.image-container span.image
+{
+    background-image: url('K2Sites_Management/Images/Dashboard_Selected16@2x.png');
+}
+
+div.tree-context-menu
+{
+    height: 24px !important;
+    width: 135px !important;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 0 0 0 0 !important;
+}
+
+    div.tree-context-menu .menu-action-icon.refresh
+    {
+        width: 16px !important;
+        height: 24px !important;
+        background-size: 16px 16px !important;
+        background-position: 50% 50% !important;
+        margin-right: 4px !important;
+    }
+
+    div.tree-context-menu .menu-action-text:after
+    {
+        content: " Menu";
+    }
+
+    div.tree-context-menu .menu-action-text
+    {
+        font-size: 1.5rem !important;
+        color: #454256 !important;
+    }
+
+    div.tree-context-menu .menu-action a
+    {
+        line-height: 24px !important;
+    }
+
+        div.tree-context-menu .menu-action a:hover
+        {
+            background-color: #0F7AB5 !important;
+        }
+
+            div.tree-context-menu .menu-action a:hover .menu-action-text
+            {
+                color: #ffffff !important;
+            }
+
+
+/* User Card */
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-avatar
+{
+    min-width: 32px !important;
+    min-height: 32px !important;
+    background-size: 28px;
+    background-image: url('Workspace/Avatar32@2x.png') !important;
+    background-color: transparent !important;
+    background-position: 2px 6px;
+    border-radius: 32px !important;
+    border: 2px solid #4F5758 !important;
+    box-shadow: none !important;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"]
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] .stylewrapper
+    {
+        overflow: hidden;
+        position: relative;
+        left: 0;
+        width: 100%;
+        right: 0;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+        padding-right: 0.9rem;
+        padding-left: 7px;
+        border-radius: 0 !important;
+    }
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] .usercard-email
+    {
+        display: none;
+    }
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] .usercard-avatar-parent
+    {
+        padding-top: .4rem;
+    }
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] .usercard-displayname
+    {
+        color: #4e5758 !important;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: "Open-Sans Regular", "Segoe UI", Helvetica;
+    }
+
+        .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] .usercard-displayname::selection
+        {
+            color: #ffffff;
+            background-color: rgb(26, 142, 191);
+        }
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] .usercard-text.usercard-link
+    {
+        color: #4e5758 !important;
+    }
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] .usercard-details-parent
+    {
+        padding-left: 10px;
+    }
+/* Body */
+
+/*Make sure the padding is removed for the cells in the last row of all tables*/
+/*Note that this can be done in smartforms now, using format dialog*/
+.theme-entry .Grid-Layout > .editor-cell.lastrow
+{
+    padding: 0;
+}
+/* Content Panel Spinner */
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-StackedContent[name="Content"] .overlayLoader
+{
+    background-color: #ffffff;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-StackedContent[name="Content"] .loaderDiv
+{
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    background-image: url("RuntimeTheme/LoadingPage40_ffffff.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-StackedContent[name="Content"] .loadMessage
+{
+    display: none;
+}
+/* User Panel */
+
+div.user-menu
+{
+    padding-right: 10px;
+}
+
+    div.user-menu > div.panel[name="Management.Main Area Item5"]
+    {
+        display: none;
+    }
+
+    div.user-menu:hover > div.panel[name="Management.Main Area Item5"]
+    {
+        display: block;
+        width: 300px;
+        position: absolute;
+        left: 20px;
+        z-index: 1;
+        margin-top: -150px;
+    }
+
+    div.user-menu:hover > span
+    {
+        color: #ffffff;
+    }
+
+div.panel[name="Management.Main Area Item5"] .panel-body
+{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+    div.panel[name="Management.Main Area Item5"] .panel-body > div
+    {
+        background-color: #FFFFFF;
+    }
+
+    div.panel[name="Management.Main Area Item5"] .panel-body .panel-body-t
+    {
+        left: 25px;
+        margin-top: 100px;
+        width: 20px;
+        height: 20px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+    }
+
+    div.panel[name="Management.Main Area Item5"] .panel-body .panel-body-m
+    {
+        padding-bottom: 8px;
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+
+div.panel[name="Management.Main Area Item5"] span
+{
+    font-family: "Open-Sans Regular", "Segoe UI", Helvetica;
+    font-size: 1.6rem;
+    color: #313841;
+}
+
+div.panel[name="Management.Main Area Item5"] tr > td
+{
+    vertical-align: middle;
+}
+
+div.panel[name="Management.Main Area Item5"] tr:first-child
+{
+    text-align: center;
+}
+
+    div.panel[name="Management.Main Area Item5"] tr:first-child > td
+    {
+        padding: 0;
+    }
+
+div.panel[name="Management.Main Area Item5"] tr:hover
+{
+    background-color: #3CB0DF;
+}
+
+div.panel[name="Management.Main Area Item5"] tr:first-child:hover
+{
+    background-color: inherit;
+}
+
+div.panel[name="Management.Main Area Item5"] tr:hover span, div.panel[name="Management.Main Area Item5"] tr:hover a.Hyperlink
+{
+    color: #ffffff;
+}
+
+div.panel[name="Management.Main Area Item5"] tr:first-child:hover span
+{
+    color: inherit;
+}
+
+div.panel[name="Management.Main Area Item5"] tr:hover, div.panel[name="Management.Main Area Item5"] tr:hover *
+{
+    cursor: pointer;
+}
+
+div.panel[name="Management.Main Area Item5"] tr:first-child:hover, div.panel[name="Management.Main Area Item5"] tr:first-child:hover *
+{
+    cursor: default;
+}
+
+div.panel[name="Management.Main Area Item5"] span[name="SignoutIcon"]
+{
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    float: left;
+    margin: 5px 0 5px 10px;
+    background-repeat: no-repeat;
+    background-image: url("K2Sites_Management/Images/Logout20.png");
+}
+
+div.panel[name="Management.Main Area Item5"] tr:hover span[name="SignoutIcon"]
+{
+    background-image: url("K2Sites_Management/Images/Logout20_White.png");
+}
+
+div.panel[name="Management.Main Area Item5"] a.Hyperlink
+{
+    font-family: "Open-Sans Regular", "Segoe UI", Helvetica;
+    font-size: 1.6rem;
+    color: #313841;
+    text-decoration: none;
+    margin-right: 10px;
+}
+/* Tree Context Menu */
+
+div.tree-context-menu
+{
+    height: 32px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.theme-entry div.tree-context-menu li a
+{
+    text-decoration: none;
+    display: block;
+    width: inherit;
+}
+
+.theme-entry div.tree-context-menu span
+{
+    font-family: "Open-Sans Regular", "Segoe UI", Helvetica;
+    font-size: 1.6rem;
+}
+
+div.tree-context-menu ul.menu-actions
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.menu-action a
+{
+    padding: 0 8px;
+}
+
+    .menu-action a:hover
+    {
+        background-color: #3CB0DF;
+    }
+
+        .menu-action a:hover span.menu-action-text
+        {
+            color: #ffffff;
+        }
+
+.menu-action-text
+{
+    display: block;
+    text-align: left;
+}
+
+.menu-action-icon
+{
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    display: block;
+    text-align: left;
+    float: left;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+}
+
+    .menu-action-icon.refresh
+    {
+        background-image: url("K2Sites_Management/Images/Refresh20.png");
+    }
+
+.menu-action a:hover .menu-action-icon.refresh
+{
+    background-image: url("K2Sites_Management/Images/Refresh20_White.png");
+}
+
+
+/*LOGOUT*/
+
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] > div > div > div.layout-cell-full-width.usercard-details-parent > a
+{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-image: url("K2Sites_Management/Images/Ellipses16@2x.png");
+    background-size: 16px 16px;
+    pointer-events: none;
+}
+
+html[dir=rtl] .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] > div > div > div.layout-cell-full-width.usercard-details-parent > a {
+    right: auto;
+    left: 11px;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] > div > div > div.layout-cell-full-width.usercard-details-parent:hover > a
+{
+    background-image: url("K2Sites_Management/Images/Ellipses_Hover16@2x.png");
+}
+
+    /* top: 50% is not working in IE, let's just set the top properly since the height of this element won't change */
+    .msie .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] > div > div > div.layout-cell-full-width.usercard-details-parent > a
+    {
+        top: 30px;
+    }
+
+.userCardHelpLogOut
+{
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    border-radius: 2px;
+    display: none;
+    position: absolute;
+    width: 90px;
+    height: 69px;
+    background-color: #e3e3e3;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    z-index: 2; /* ensurse card popup is on top off content */
+}
+    .userCardHelpLogOut div:first-of-type
+    {
+        margin-bottom: 1px;
+    }
+
+    .userCardHelpLogOut div
+    {
+        background-color: #ffffff;
+        height: 34px;
+        line-height: 34px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+        .userCardHelpLogOut div span
+        {
+            display: block;
+            font-size: 24px;
+            font-size: 1.5rem;
+        }
+
+        .userCardHelpLogOut div:hover span
+        {
+            background-color: rgba(2, 136, 209, .1);
+            cursor: pointer;
+        }
+
+        .userCardHelpLogOut div:focus
+        {
+            outline: none;
+            border: 1px #0288d1 solid;
+            padding: 0;
+        }
+
+            .userCardHelpLogOut div:focus span
+            {
+                margin-top: -1px;
+            }
+
+    .userCardHelpLogOut:after
+    {
+        content: "";
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        position: absolute;
+        border-top: 7px solid #fff;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard[name="userCard"] .stylewrapper:hover,
+.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-avatar
+{
+    cursor: pointer;
+}
+
+/*END LOGOUT*/
+
+
+
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .menu-action-icon.refresh
+    {
+        background-image: url("K2Sites_Management/Images/Refresh20@2x.png");
+    }
+
+    .menu-action a:hover .menu-action-icon.refresh
+    {
+        background-image: url("K2Sites_Management/Images/Refresh20_White@2x.png");
+    }
+
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-Content-Content.spinwheel
+    {
+        background-image: url("K2Sites_Management/Images/LoadingAnimation_Light40@2x.gif");
+    }
+
+    .SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.collapsed > .content > .expander-container > .expander
+    {
+        background-image: url('K2Sites_Management/Images/TreeArrowClosed16@2x.png');
+        background-size: 16px;
+    }
+
+    .SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .node.expanded > .content > .expander-container > .expander
+    {
+        background-image: url('K2Sites_Management/Images/TreeArrowOpen16@2x.png');
+        background-size: 16px;
+    }
+
+    .management-logo-container span.management-logo
+    {
+        background-image: url('workspace/WorkspaceLogo60@2x.png');
+    }
+
+        .management-logo-container span.management-logo.selected
+        {
+            background-image: url('workspace/AppSwitcher_Selected60@2x.png')
+        }
+
+        .management-logo-container span.management-logo:hover
+        {
+            background-image: url('workspace/AppSwitcher_Hover60@2x.png')
+        }
+}
+/* Smartphones (portrait and landscape) ----------- */
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+/* Portrait */
+only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2),
+/* Portrait */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+/* Landscape */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
+/* Portrait */
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+/* Landscape */
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3),
+/* Portrait */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait),
+/* Landscape */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
+/* ----------- Galaxy S3 ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2),
+/* Portrait */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait),
+/* Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- Galaxy S4 ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+/* Portrait */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+/* Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape),
+/* ----------- Galaxy S5 ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+/* Portrait */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+/* Landscape */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape),
+/* ----------- HTC One ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3), screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait), screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) only screen and (min-device-width: 320px) and (max-device-width: 480px),
+/*only screen and (min-width : 321px), only screen and (max-width : 320px),*/
+only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+/*only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2),*/
+/*only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)*/
+{
+    /* Styles */
+    span[name='labelNotSupported'], div.runtime-form div.row:nth-child(4), div.runtime-form div.row:nth-child(4) .view
+    {
+        display: block !important;
+    }
+
+    div.runtime-form div.row:last-child
+    {
+        display: none;
+    }
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node-container.root
+{
+    display: block;
+}
+
+html > body.theme-entry > div.modalizer
+{
+    display: none;
+}

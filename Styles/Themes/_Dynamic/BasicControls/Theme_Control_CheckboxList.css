@@ -1,0 +1,10 @@
+/*#region CHECKBOX LIST*/
+
+.theme-entry .multi-select-outer-panel .input-control.radio .input-control-text {
+  display: table-cell;
+  white-space: normal;
+  /*multi-line text will appear as a block to the right of the radio button*/
+
+}
+/*#endregion*/
+

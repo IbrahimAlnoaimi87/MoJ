@@ -1,0 +1,77 @@
+
+//Purpose: Variables found in this file will NOT be converted to css variables for pro-developers to use.
+//         these are defined once, and used by advanced variables by reference.
+
+
+//#region Base Variables (no css vars for these)
+
+
+@_Shadow-level-3:  2px 2px 15px rgba(0,0,0,0.15); //Something being dragged (needs to feel above everything else)
+@_Shadow-level-2: 2px 2px 15px rgba(0,0,0,0.15); //Popup Menus, A shadow on something not being dragged
+@_Shadow-level-1: 1px 1px 5px rgba(0,0,0,0.4); //A shadow on a toolbar - Htmleditor
+
+@_Transparent: desaturate(rgba(0,0,0,0.0), 100%);
+
+@_Error-Color: @UD-Error-Color;
+@_Warning-Color: #FFC107;
+
+
+
+
+//#endregion Base Color Variables
+
+
+//#region Input Sizing
+
+@__Input-Border-Width: 1px;
+@__Input-Height: ~"calc(@{Main-Text-Size} + (2 * @{Control-Inset-Vertical-Spacing}))"; //2.4rem
+@__Input-Inner-Height: ~"calc(@{Main-Text-Size} + (2 * @{Control-Inset-Vertical-Spacing}) - (2 * @{__Input-Border-Width}))"; //2.2rem
+
+//#endregion Input Sizing
+
+//#region CONSTANTS
+
+//Background - Hover - bg color change on a hover - list items, buttons, etc, subtle background changes.
+@_CONTRAST_HOVER_BG_ON_DARK: 10%;
+@_CONTRAST_HOVER_BG_ON_LIGHT: 10%;
+
+//Text - standard contrast relative to background color
+@_CONTRAST_TEXT_ON_LIGHT: 62%; //62% gives us AAA accessiblity contrast on white backgrounds
+@_CONTRAST_TEXT_ON_DARK: 62%;
+
+//Text - readonly - standard contrast relative to background color
+@_CONTRAST_TEXT_READONLY_ON_LIGHT: 60%;
+@_CONTRAST_TEXT_READONLY_ON_LIGHT: 60%;
+
+//Text - disabled - standard contrast relative to background color
+@_CONTRAST_TEXT_DISABLED_ON_DARK: 30%;
+@_CONTRAST_TEXT_DISABLED_ON_LIGHT: 30%;
+
+
+//Border - readonly - standard contrast of border to background color
+@_CONTRAST_BORDER_READONLY_ON_DARK:  10%;
+@_CONTRAST_BORDER_READONLY_ON_LIGHT:  20%;
+
+
+//Background - Input normal - standard contrast relative to background color
+@_CONTRAST_INPUT_BG_ON_DARK: 15%;
+@_CONTRAST_INPUT_BG_ON_LIGHT: 15%;
+
+//Normal Prominence Buttons -  Background of button contrast with container background.
+@_CONTRAST_NORMAL_BUTTON_BG_ON_DARK: 40%;
+@_CONTRAST_NORMAL_BUTTON_BG_ON_LIGHT: 30%;
+
+
+//Border - disabled - standard contrast relative to background color
+@_CONTRAST_BORDER_DISABLED_ON_DARK: 30%;
+@_CONTRAST_BORDER_DISABLED_ON_LIGHT: 30%;
+
+//how much red to mix into the border of a element/control in error.
+@_ERROR_BORDER_MIX: 70%;
+@_ERROR_BACKGROUND_MIX: 10%;
+
+
+//Make sure borders don't become luminous when brightening
+@_BORDER_DESATURATION: 30%;
+
+//#endregion CONSTANTS

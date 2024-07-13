@@ -1,0 +1,50 @@
+﻿/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+.pane-container
+{
+    height: 100%;
+    position: relative;
+}
+
+.pane-container .pane,
+.pane-container .divider
+{
+    position: absolute;
+}
+
+.pane-container.horizontal > .pane,
+.pane-container.horizontal > .divider
+{
+    bottom: 0;
+    top: 0;
+}
+
+.pane-container.vertical > .pane,
+.pane-container.vertical > .divider
+{
+    left: 0;
+    right: 0;
+}
+
+.pane.dark
+{
+    color: @Main-Text-Color-Dark;
+}
+
+/*#region LG Cheeky changes*/
+
+// FIX: toolbar buttons from the states panel can be seen underneath the normal rules toolbar
+// the background color fixes this.
+#pgWizard_pgRulesStep > .pane-container > .pane
+{
+    background-color: @Panel-Background-Color;
+}
+
+//vdToolboxPaneContainer
+
+/*#endregion*/

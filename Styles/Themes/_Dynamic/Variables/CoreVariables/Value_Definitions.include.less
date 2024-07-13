@@ -1,0 +1,125 @@
+//PURPOSE: CoreVariables are variables that we want to expose as css-variables to professional designers/developers.
+//         unlike colors, these variables do not change based on what container they are in.
+//         Expected types of variables - fonts, layout spacing, rounding, etc.
+//         these will be good candidates for giving UI in the Style Profile Designer.
+
+//#region Core Colors
+
+
+//Base colors that can be changed for each Color Scheme 
+//All variables in Value_Definitions.less files will use these named variables to derive their colors.
+//No variable here can be deleted, as Value_Definitions.less files may be using it.
+@UD-Main-Accent-Color: rgb(0,171,240);
+@UD-Content-Background-Color: rgb(255,255,255);
+@UD-Panel-Background-Color: rgb(242, 242, 242); 
+@UD-Error-Color: rgb(183,28,28); //user can define this in style profile designer advanced colors panel.
+
+//#endregion Core Colors
+
+
+//#region Typography Variables
+//Note - requires webfonts to be loaded.
+
+@Main-Text-Size: 1.2rem; //this needs to be a css variable, which is why its here. the font size is used for css Calc() operations.
+
+//Used throughout for body text, and the default for headings.
+@Main-Font-Family: "Open Sans Regular", Helvetica, sans-serif;
+//Used for headings
+@Heading-Font-Family: "Segoe UI Semi-Light", "Helvetica Light", sans-serif;
+//Used for Buttons, toolbar buttons that have text (typically slightly more bold looking)
+@Button-Font-Family: "Segoe UI", "HelveticaNeue-Medium", Helvetica, sans-serif;
+
+
+@Page-Title-Text-Size: 3.6rem;
+@Page-Subtitle-Text-Size: 2.4rem;
+@Heading1-Text-Size: 3.2rem;
+@Heading2-Text-Size: 2.4rem;
+@Heading3-Text-Size: 1.8rem;
+@Heading4-Text-Size: 1.6rem;
+@Input-Label-Text-Size: 1.4rem;
+
+//#endregion Typography Variables
+
+//#region Rounding
+
+//rounding levels
+@Popover-Rounding: 5px;
+@Control-Rounding: 3px;
+@Panel-Rounding: 3px;
+
+@View-Rounding: @Panel-Rounding;
+@Menu-Rounding: @Popover-Rounding;
+@Dialog-Rounding: @Popover-Rounding;
+
+@Input-Rounding: @Control-Rounding;
+@Button-Rounding: @Control-Rounding;
+@Calendar-Item-Rounding: @Button-Rounding;
+@Tooltip-Rounding: @Control-Rounding;
+@Tree-Item-Rounding: @Control-Rounding;
+@Chart-Rounding: @Panel-Rounding;
+@Tab-Rounding: @Control-Rounding;
+
+
+//#endregion Rounding
+
+//#region Effects 
+
+@Menu-Background-Effect: none;
+@Dialog-Background-Effect: none;
+
+//#endregion Effects 
+
+//#region SPACING / SPATIAL DENSITY
+//  these are layout variables that follow professtional design norms similar to this:
+//  https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
+//  https://material.io/design/layout/spacing-methods.html#spacing (material design spacing approach)
+//  The goal is to use few different sizes of spacings within a UI.
+//  The initial values should make the UI feel airy 
+//  (but we had to keep them the same values as the Lithium Theme, due to dialogs having fixed heights
+//   and any change to the heights of components within the dialogs would cause unwanted scrollbars)
+
+
+//Content - Large content area e.g. view, tab, panel, etc 
+//The distance from the edge of a content container (e.g. view, tab, panel, etc) 
+//that content inside it (like text, buttons, etc) should start.
+@Content-Inset-Spacing: 2.0rem;
+@Content-Inset-Vertical-Spacing: @Content-Inset-Spacing;
+@Content-Inset-Horizontal-Spacing: @Content-Inset-Spacing;
+
+
+//Block - a paragraph, a list-item tile, a view/webpart. The major sections of stuff in a content area (form).
+// this applies to the root table of a view as this is a block.
+// this is squish spacing (i.e. the space above/below is less than the left-right spacing).
+@Block-Inset-Spacing: 1.0rem;
+@Block-Inset-Vertical-Spacing: @Block-Inset-Spacing;
+@Block-Inset-Horizontal-Spacing: @Block-Inset-Spacing;
+//the vertical space between blocks in a content area.
+//e.g. the space between paragraphs in a page of text, e.g. the space between views on a page of stacked views.
+@Between-Block-Spacing: 1.0rem;
+
+
+//Control - a button, textbox etc
+// the spacing within the control before text or other content starts. 
+// this is squish spacing (i.e. the space above/below is less than the left-right spacing).
+@Control-Inset-Spacing: 1.0rem;
+@Control-Inset-Vertical-Spacing: (@Control-Inset-Spacing / 2) + 0.2rem; //added 0.2rem to make sure buttons are the same size as before.
+@Control-Inset-Horizontal-Spacing: @Control-Inset-Spacing;
+//the standard spacing between buttons, or breadcrumbs or other controls horizontally next to each other
+//that look inline (could be inline/flex/absolute technically, its what they look like visually).
+@Between-Control-Spacing: 0.4rem;
+
+
+//for textboxes, tree items etc.
+@Control-Inset-Narrow-Spacing: 0.4rem;
+@Control-Inset-Narrow-Vertical-Spacing: (@Control-Inset-Narrow-Spacing / 2);
+@Control-Inset-Narrow-Horizontal-Spacing: @Control-Inset-Narrow-Spacing;
+
+
+//#endregion SPACING / SPATIAL DENSITY
+
+//#region Toolbar button icon colors
+@Button-Icon-Highlight-Color: #00ABF0; //blue
+@Button-Icon-Destructive-Color: #B71C1C; //red
+@Button-Icon-Base-Color: #333333; //dark grey
+@Button-Icon-Base-Secondary-Color: #A5A5A5; //light grey
+//#endregion Toolbar button icon colors

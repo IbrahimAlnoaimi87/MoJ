@@ -1,0 +1,1567 @@
+﻿html.management-fluidform > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table
+{
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*#region GENERAL: FLUID HEIGHT */
+
+html.management-fluidform
+{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    html.management-fluidform > body,
+    html.management-fluidform > body > form,
+    html.management-fluidform > body > form > .runtime-content,
+    html.management-fluidform > body > form > .runtime-content > .runtime-form,
+    html.management-fluidform > body > form > .runtime-content > .runtime-form > .form
+    {
+        display: block;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    overflow: hidden;
+}
+
+html.smarobjectservices .theme-entry .editor-cell,
+html.smarobjectservices .theme-entry .editor-cell[col='1'],
+html.smarobjectservices .theme-entry .editor-cell.lastcellinrow,
+html.smarobjectservices .theme-entry .Grid-Layout > .editor-cell[row='1'],
+html.smarobjectservices .theme-entry .Grid-Layout > .editor-cell.lastrow
+{
+    padding: 0;
+}
+
+/*#endregion*/
+
+html.smarobjectservices .theme-entry .base0.ajaxLoader.modal-element
+{
+    background-color: transparent;
+}
+
+/*#region CONTROL: SHAREPOINT HYPERLINK */
+
+html.smarobjectservices .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink
+{
+    right: auto;
+    color: #0288d1;
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Segoe UI';
+    font-size: 1.2rem;
+}
+
+    html.smarobjectservices .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink > div > a.Hyperlink
+    {
+        text-decoration: none;
+        color: #0288d1;
+    }
+
+/*#endregion*/
+
+/*#region CONTROL: RADIOBUTTON LABEL */
+
+html.smarobjectservices label.input-control.radio .input-control-text
+{
+    color: #4e5758;
+}
+
+/*#endregion*/
+
+/*#region Toggle CHECKBOX */
+
+/* Initial State of a checkbox - unchecked - enabled*/
+html.smarobjectservices .theme-entry label.input-control.checkbox.toggle .input-control-img
+{
+    background-image: url('K2Sites_Management/Images/ToggleButtons32.png');
+    background-size: 480px;
+    background-position: -16px -16px;
+    width: 32px;
+    height: 32px;
+}
+
+/*State - unchecked - hovered */
+html.smarobjectservices .theme-entry label.input-control.checkbox.toggle:hover .input-control-img
+{
+    background-position: -64px -16px;
+}
+
+/*State - unchecked - focused */
+html.smarobjectservices .theme-entry label.input-control.checkbox.toggle:focus .input-control-img
+{
+    background-position: -112px -16px;
+}
+
+/*State - unchecked - focused and hovered*/
+html.smarobjectservices .theme-entry label.input-control.checkbox.toggle:focus:hover .input-control-img
+{
+    background-position: -160px -16px;
+}
+
+/*State - unchecked - disabled */
+html.smarobjectservices .theme-entry label.input-control.checkbox.disabled.toggle .input-control-img
+{
+    background-position: -208px -16px;
+}
+
+/*State - checked - enabled*/
+html.smarobjectservices .theme-entry label.input-control.checkbox.checked.toggle .input-control-img
+{
+    background-position: -256px -16px;
+}
+
+/*State - checked - hovered*/
+html.smarobjectservices .theme-entry label.input-control.checkbox.checked.toggle:hover .input-control-img
+{
+    background-position: -304px -16px;
+}
+
+/*State - checked - focused*/
+html.smarobjectservices .theme-entry label.input-control.checkbox.checked.toggle:focus .input-control-img
+{
+    background-position: -352px -16px;
+}
+
+/*State - checked - focused hovered*/
+html.smarobjectservices .theme-entry label.input-control.checkbox.checked.toggle:focus:hover .input-control-img
+{
+    background-position: -400px -16px;
+}
+
+/*State - checked - disabled*/
+html.smarobjectservices .theme-entry label.input-control.checkbox.checked.disabled.toggle .input-control-img
+{
+    background-position: -448px -16px;
+}
+/*#endregion CHECKBOX*/
+
+/*#region FORM: SMARTOBJECT SERVICES */
+
+html.smartobjectservices [name='txtCorsUrl']
+{
+    margin-left: 10px !important;
+}
+
+html.smartobjectservices div[id="92a96c1e-53b5-48bc-bbbe-b0b5e5eac74b"] .row:nth-child(2) > .view:nth-child(1)
+{
+    margin-top: -15px !important;
+}
+
+html.smartobjectservices div[id="92a96c1e-53b5-48bc-bbbe-b0b5e5eac74b"] .row:nth-child(3) > .view:nth-child(1)
+{
+    margin-top: -5px !important;
+}
+
+html.smartobjectservices div[id="92a96c1e-53b5-48bc-bbbe-b0b5e5eac74b"] .row:nth-child(4) > .view:nth-child(1)
+{
+    margin-top: -15px !important;
+}
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList,
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList
+{
+    height: auto !important; /* override inline 100% (control logic) */
+}
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv,
+    html.smartobjectservices div[id="92a96c1e-53b5-48bc-bbbe-b0b5e5eac74b"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv,
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv
+    {
+        min-height: 31px;
+        max-height: 150px;
+        background: #FFFFFF;
+    }
+
+html.smartobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv,
+html.smartobjectservices div[id="92a96c1e-53b5-48bc-bbbe-b0b5e5eac74b"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv,
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv
+{
+    max-height: 149px;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_GenericExpenseGridItemMainRow .deleteItem
+{
+    opacity: 1;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PropertiesMain
+{
+    width: 100%;
+    padding: 0rem;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Property2DynamicRight
+{
+    width: 100%;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell .item-image
+{
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell .item-image.smartobject-base
+    {
+        background-image: url('FileTypes/SmartObject20.png');
+        background-position: center;
+        z-index: auto;
+    }
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .indicator1
+{
+    display: block;
+    height: 16px;
+    width: 16px;
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding: .9rem 1rem;
+}
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .indicator1.smartobject-edit
+    {
+        background-image: url('Toolbar/Edit20.png');
+        background-position: center;
+    }
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn
+{
+    display: none;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Property2DynamicRight
+{
+    padding-right: 30px;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .title span
+{
+    right: auto;
+    color: #4e5758;
+    font-weight: bold;
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Segoe UI';
+    font-size: 1.2rem;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .description span
+{
+    color: #5b595d;
+    display: inline-block;
+    position: absolute;
+    white-space: initial;
+    font-size: 1rem;
+    color: #888f96;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem
+{
+    border-top: none;
+    border-bottom: solid 1px;
+    border-color: #cccccc;
+    width: 100%;
+}
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.lastItem
+    {
+        border-bottom: none;
+    }
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList
+{
+    /*border: none;
+    padding-bottom: 6px;*/
+}
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.empty .scrollWrapperDiv
+    {
+        border: none;
+    }
+
+    /*
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv
+    {
+        border: solid 1px;
+        border-color: #cccccc;
+        box-sizing: border-box;
+    }
+*/
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList div.title
+    {
+        line-height: 16px;
+    }
+
+        html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList div.title:before
+        {
+            font-size: 1.2rem;
+        }
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList div.description
+    {
+        line-height: 13px;
+    }
+
+        html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList div.description:before
+        {
+            font-size: 1rem;
+            position: relative;
+        }
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv div.watermark,
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv div.watermark
+    {
+        position: relative;
+        left: 0px;
+        top: 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv div.watermark
+    {
+        height: 44px;
+    }
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv div.watermark 
+    {
+        height: 34px;
+    }
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .watermarkwrapper .middleText,
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .watermarkwrapper .middleText 
+    {
+        color: #888f96;
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] [id="599884f7-99e3-4541-98e2-3d0511f93b33_980b80ea-88e1-b80d-75fb-c444cb0f3437_Table"] .picture-control-inline
+{
+    padding: .4rem 1rem 1rem;
+}
+
+/*Remove padding from OData Manageemtn Form*/
+html.smarobjectservices #ff92687b-4a67-4cef-85b5-af9a8cc562ae,
+html.smarobjectservices [id='5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0']
+{
+    padding: 0 !important;
+}
+
+    /*Remove padding from Views under OData Manageemtn Form*/
+    html.smarobjectservices #ff92687b-4a67-4cef-85b5-af9a8cc562ae .row .view,
+    html.smarobjectservices [id='5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0'] .row .view
+    {
+        margin-bottom: 0 !important; /*override inline style*/
+        margin-top: 0 !important; /*override inline style*/
+    }
+
+    /*Add margin to all children (Views) of OData Management Form except the first one (API Banner) and third one (second API Banner)*/
+    html.smarobjectservices #ff92687b-4a67-4cef-85b5-af9a8cc562ae .row:nth-child(3),
+    html.smarobjectservices #ff92687b-4a67-4cef-85b5-af9a8cc562ae .row:nth-child(2),
+    html.smarobjectservices [id='5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0'] .row:not(:first-child)
+    {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    html.smarobjectservices #ff92687b-4a67-4cef-85b5-af9a8cc562ae [id="497639b1-7814-61c9-00d3-91dcb7f8caed_a08a9d49-a0f3-4d84-bba2-79f2d04a2685_Table"] .input-control.checkbox span.input-control-text
+    {
+        padding-left: 1rem;
+    }
+
+    html.smarobjectservices #ff92687b-4a67-4cef-85b5-af9a8cc562ae .SourceCode-Forms-Controls-Web-RadioButton .input-control-text
+    {
+        padding-left: 1rem;
+    }
+
+/*Banner background color*/
+html.smarobjectservices [id="8dcae842-b1b7-c53a-99b8-28c63e2c986d_01ee6892-d813-cb02-7db5-4f6a4cbd8445_Table"]
+{
+    background-color: #a8aa2f;
+}
+
+html.smarobjectservices [id="11a6eed1-6ef2-4d36-9f82-6feaef7a6ed2_671b57fa-bcf4-49f2-9f8d-8f79082fd1eb_Table"]
+{
+    background-color: #4db6ac;
+}
+
+html.smartobjectservices div[id='92a96c1e-53b5-48bc-bbbe-b0b5e5eac74b']
+{
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+    html.smartobjectservices div[id='92a96c1e-53b5-48bc-bbbe-b0b5e5eac74b'] .view
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    html.smartobjectservices div[id='92a96c1e-53b5-48bc-bbbe-b0b5e5eac74b'] [name='dlAPIHeader1']
+    {
+        font-size: 1.8rem;
+        font-family: 'Open-Sans Regular';
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #6b7785;
+        vertical-align: middle;
+        padding-left: 64px;
+        padding-top: 20px !important;
+        width: 100%;
+        text-decoration: none;
+        margin-left: 0;
+        margin-right: 0;
+        min-height: 65px;
+        height: 65px;
+        padding-top: 18px;
+        background-image: url('K2Sites_Management/Images/API_Selected24.png');
+        background-repeat: no-repeat;
+        background-position: 20px 20px;
+    }
+
+html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'],
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'],
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table']
+{
+    width: calc(100% - 50px);
+}
+
+    html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] [name='dlHeader1'],
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='dlAPIAdministratorsHeader1']
+    {
+        font-size: 1.5rem;
+        font-family: 'Open-Sans Regular';
+        font-weight: bold;
+        color: #6b7785;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+    html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] [name='dlAuthMethodsHeader'],
+    html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] [name='dlAADConsentHeader'],
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='dlDomainsAllowedHeader']
+    {
+        font-size: 1.2rem;
+        font-family: 'Open-Sans Regular';
+        font-weight: bold;
+        color: #6b7785;
+    }
+
+    html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] [name='dlHeader1Description'],
+    html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] [name='dlAADConsentDescription'],
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='dlAPIAdministratorsDescription']
+    {
+        font-size: 1.2rem;
+        font-family: 'Open-Sans Regular';
+        color: #888f96;
+        padding-top: 0;
+    }
+
+    html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] [name='dlAADConsentDescription']
+    {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] .checkbox
+    {
+        padding-top: 5px;
+    }
+
+        html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] .checkbox .input-control-text
+        {
+            font-size: 1.2rem;
+            font-family: 'Open-Sans Regular';
+            color: #b7babb;
+        }
+
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='dlApiAdministratorsNotice']
+    {
+        padding: 10px 10px 10px 60px;
+        font-size: 1.1rem;
+        font-family: 'Open-Sans Regular';
+        color: #be7e30;
+        line-height: 1.5rem;
+        background-color: #f9e9cf;
+        border-radius: 2px;
+        max-width: 700px;
+        min-width: 400px;
+        background-image: url('K2Sites_Management/Images/Notice32.png');
+        background-repeat: no-repeat;
+        background-position: 10px 10px;
+    }
+
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='2'][col='2']
+    {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'],
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'],
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table']
+    {
+        -ms-grid-columns: 45px 1fr !important;
+        grid-template-columns: 45px 1fr !important;
+    }
+
+        html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] > .editor-cell[col='1'][row='1']
+        {
+            background-image: url('K2Sites_Management/Images/APIAauthentication24.png');
+            background-repeat: no-repeat;
+            background-position: 20px 25px;
+        }
+
+   
+
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] > .editor-cell[col='1'][row='1']
+    {
+        background-image: url('K2Sites_Management/Images/APIAdministrators24.png');
+        background-repeat: no-repeat;
+        background-position: 20px 25px;
+    }
+
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] > .editor-cell[col='2'][row='3'],
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] > .editor-cell[col='2'][row='3']
+    {
+        padding-bottom: 2px !important;
+    }
+
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] > .editor-cell[col='2'][row='4'] > .Grid-Layout,
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] > .editor-cell[col='2'][row='4'] > .Grid-Layout
+    {
+        table-layout: auto !important;
+        display: block !important;
+    }
+
+        html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] > .editor-cell[col='2'][row='4'] > .Grid-Layout > .editor-cell
+        {
+            width: 450px !important;
+        }
+
+        html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] > .editor-cell[col='2'][row='4'] > .Grid-Layout > .editor-cell
+        {
+            padding: 1rem 0 1rem 0 !important;
+            width: 460px !important;
+        }
+
+
+    html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] [name='sphlLearnMore'],
+    html.smartobjectservices [id='1fdd5e90-6d46-d476-d3c1-42e356753c01_11c90b25-f11a-901e-89eb-438423b1acac_Table'] [name='sphlLearnMore2'],
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='sphlLearnMore'],
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='sphlLearnMore']
+    {
+        padding-left: 10px;
+        padding-top: 2px;
+        margin-top: -3px;
+    }
+
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .loading[name='gncIncludedList'],
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .loading[name='gncExcludedList'],
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .empty[name='gncIncludedList'],
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .empty[name='gncExcludedList'],
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .loading[name='glAdministrators'],
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .loading[name='glDomainsAllowed'],
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .empty[name='glAdministrators'],
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .empty[name='glDomainsAllowed']
+    {
+        border: dashed 1px #ddd !important;
+        min-height: 3.4rem;
+        height: auto;
+        width: 450px !important;
+        border-radius: 2px;
+        max-height: 79px;
+    }
+
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .PropertiesMain.table-cell,
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .PropertiesMain.table-cell,
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .PropertiesMain.table-cell,
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .PropertiesMain.table-cell
+    {
+        padding: 0 !important;
+    }
+
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'],
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'],
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'],
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed']
+    {
+        border: solid 1px #ddd;
+        min-height: 34px;
+        width: 450px !important;
+        border-radius: 2px;
+        max-height: 150px;
+    }
+
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators']
+    {
+        height: calc(100% - 3px) !important;
+    }
+
+        html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem,
+        html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem,
+        html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem,
+        html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem
+        {
+            border: 1px solid #ddd;
+            background-color: #f8f8f8;
+            border-radius: 2px;
+            padding: 0 9px;
+            height: 34px;
+        }
+
+        html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem
+        {
+            border-width: 0 0 1px 0;
+        }
+
+        html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem:only-child 
+        {
+            border-width: 0;
+        }
+
+        html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem
+        {
+            margin: -1px -1px 0 -1px;
+        }
+
+            html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem .PART_TitlteDescriptionDynamicLeft,
+            html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem .PART_TitlteDescriptionDynamicLeft,
+            html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem .PART_TitlteDescriptionDynamicLeft,
+            html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem .PART_TitlteDescriptionDynamicLeft
+            {
+                width: 400px !important;
+            }
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] div.genericitem,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] div.genericitem
+{
+    height: 44px;
+    padding: 0;
+    border: 0;
+}
+
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem .item-image,
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem .item-image
+{
+    background-image: url(K2Sites_Management/Images/UserManagement16.png);
+    background-position: 0px 10px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    width: 24px;
+    padding: 0.5rem 0;
+}
+
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem .item-image
+{
+    background-image: url(K2Sites_Management/Images/WebUrl16.png);
+    z-index: auto;
+}
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem:hover .item-image,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem:hover .item-image
+{
+    background-image: url(K2Sites_Management/Images/SmartObject_Hover16@2x.png) !important;
+    z-index: auto;
+}
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem.selected:hover .item-image,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem.selected:hover .item-image
+{
+    background-image: url(K2Sites_Management/Images/SmartObject_Selected16@2x.png) !important;
+    z-index: auto;
+}
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem.selected .item-image,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem.selected .item-image
+{
+    background-image: url(K2Sites_Management/Images/SmartObject_Selected16@2x.png) !important;
+    z-index: auto;
+}
+
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem:hover .item-image
+{
+    background-image: url(K2Sites_Management/Images/UserManagement_Hover16.png);
+}
+
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem:hover .item-image
+{
+    background-image: url(K2Sites_Management/Images/WebUrl_Hover16.png);
+    z-index: auto;
+}
+
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem.selected .item-image
+{
+    background-image: url(K2Sites_Management/Images/UserManagement_Selected16.png);
+}
+
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem.selected .item-image
+{
+    background-image: url(K2Sites_Management/Images/WebUrl_Selected16.png);
+    z-index: auto;
+}
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem div.title span,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem div.description span,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem div.title span,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem div.description span,
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem div.title span,
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem div.title span
+{
+    color: #6b7785;
+    font-family: 'Open-Sans Regular';
+    font-size: 1.2rem;
+}
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem:hover,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem:hover div.title span,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem:hover div.description span,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem:hover,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem:hover div.title span,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem:hover div.description span,
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem:hover,
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem:hover div.title span,
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem:hover,
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem:hover div.title span
+{
+    background-color: #fff;
+    color: #2196f3;
+}
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem.selected,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem.selected div.title,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem.selected div.title span,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncIncludedList'] .genericitem.selected div.description span,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem.selected,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem.selected div.title,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem.selected div.title span,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] [name='gncExcludedList'] .genericitem.selected div.description span,
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem.selected,
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem.selected div.title,
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] .genericitem.selected div.title span,
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem.selected,
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem.selected div.title,
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] [name='glDomainsAllowed'] .genericitem.selected div.title span
+{
+    background-color: #2196f3;
+    color: #fff;
+}
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] .SFC.SourceCode-Forms-Controls-Web-Button,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] .SFC.SourceCode-Forms-Controls-Web-Button,
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='4'] .SFC.SourceCode-Forms-Controls-Web-Button,
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .editor-cell[row='4'] .SFC.SourceCode-Forms-Controls-Web-Button
+{
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    min-width: 24px;
+    min-height: 24px;
+    border: none;
+    box-shadow: none;
+}
+
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='4'] .Grid-Layout:nth-child(1) > .editor-cell[row='1'],
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .editor-cell[row='4'] .Grid-Layout:nth-child(1) > .editor-cell[row='1']
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='btnIncRefresh'],
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='btnExcRefresh'],
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='picIncAdd'],
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='picExcAdd'],
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='picIncDelete'],
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='picExcDelete']
+{
+    margin: 1rem 0 2rem 0;
+}
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='picIncDelete'],
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='picExcDelete']
+{
+    padding-right: 0;
+}
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='btnIncRefresh'],
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='btnExcRefresh'],
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='4'] [name='btnRefresh'],
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .editor-cell[row='4'] [name='btnRefresh']
+{
+    background-image: url(K2Sites_Management/Images/Refresh24.png);
+    float: left;
+    border-color: rgba(255,255,255,0) !important;
+    color: rgba(255,255,255,1);
+    -moz-animation: none;
+    -o-animation: none;
+    -webkit-animation: none;
+    animation: none;
+}
+
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='btnIncRefresh']:hover,
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='btnExcRefresh']:hover,
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='4'] [name='btnRefresh']:hover,
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .editor-cell[row='4'] [name='btnRefresh']:hover
+    {
+        background-image: url(K2Sites_Management/Images/Refresh_Hover24.png);
+    }
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='picIncAdd'],
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='picExcAdd'],
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='4'] [name='btnAdd'],
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .editor-cell[row='4'] [name='btnAdd']
+{
+    background-image: url(K2Sites_Management/Images/AddButton24.png);
+    border-color: rgba(255,255,255,0) !important;
+    color: rgba(255,255,255,1);
+    -moz-animation: none;
+    -o-animation: none;
+    -webkit-animation: none;
+    animation: none;
+}
+
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='4'] [name='btnAdd'],
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .editor-cell[row='4'] [name='btnAdd']
+{
+    margin-left: 175px;
+}
+
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='picIncAdd']:hover,
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='picExcAdd']:hover,
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='4'] [name='btnAdd']:hover,
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .editor-cell[row='4'] [name='btnAdd']:hover
+    {
+        background-image: url(K2Sites_Management/Images/AddButton_Hover24.png);
+    }
+
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='picIncDelete'],
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='picExcDelete'],
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='picIncDelete'].disabled,
+html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='picExcDelete'].disabled,
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='4'] [name='btnRemove'],
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .editor-cell[row='4'] [name='btnRemove'],
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='4'] [name='btnRemove'].disabled,
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .editor-cell[row='4'] [name='btnRemove'].disabled
+{
+    background-image: url(K2Sites_Management/Images/Bin24.png);
+    justify-self: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    border-color: rgba(255,255,255,0) !important;
+    color: rgba(255,255,255,1);
+    -moz-animation: none;
+    -o-animation: none;
+    -webkit-animation: none;
+    animation: none;
+}
+
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='picIncDelete'].disabled:hover:active,
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='picExcDelete'].disabled:hover:active,
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='picIncDelete'].disabled:hover:focus,
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='picExcDelete'].disabled:hover:focus
+    {
+        padding-right: 0 !important;
+    }
+
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='2'] [name='picIncDelete']:not(.disabled):hover,
+    html.smarobjectservices [id='599884f7-99e3-4541-98e2-3d0511f93b33_ab740e56-3bc4-7318-d5b8-965103526b45_Table'] .editor-cell[row='3'] [name='picExcDelete']:not(.disabled):hover,
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] .editor-cell[row='4'] [name='btnRemove']:not(.disabled):hover,
+    html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_713e89d9-9e91-828e-25cc-d7852212132a_Table'] .editor-cell[row='4'] [name='btnRemove']:not(.disabled):hover
+    {
+        background-image: url(K2Sites_Management/Images/Bin_Hover24.png);
+    }
+
+html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] div.watermark
+{
+    position: absolute;
+    display: block;
+    top: 1.5rem;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 200px;
+    text-align: center;
+    left: calc(50% - 100px);
+    color: #888f96;
+}
+
+    html.smartobjectservices [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_d98f223f-7486-afaf-ef2d-beb994530694_Table'] [name='glAdministrators'] div.watermark div.watermarkwrapper div.middleText
+    {
+        color: #888f96 !important;
+        font-style: italic;
+    }
+
+
+html.smarobjectservices [id='b1046697-9e39-f5db-3f1f-a3d89847762f_187ea8f4-367c-0a15-b15d-5bfe00ee29d9_Table'] .editor-cell[row='2']
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+html.smarobjectservices [id="8dcae842-b1b7-c53a-99b8-28c63e2c986d_01ee6892-d813-cb02-7db5-4f6a4cbd8445_Table"],
+html.smarobjectservices [id="11a6eed1-6ef2-4d36-9f82-6feaef7a6ed2_671b57fa-bcf4-49f2-9f8d-8f79082fd1eb_Table"]
+{
+    -ms-grid-columns: 65px 1fr !important;
+    grid-template-columns: 65px 1fr !important;
+}
+
+html.smarobjectservices [id="8dcae842-b1b7-c53a-99b8-28c63e2c986d_01ee6892-d813-cb02-7db5-4f6a4cbd8445_Table"] > .editor-cell[col='1'],
+html.smarobjectservices [id="11a6eed1-6ef2-4d36-9f82-6feaef7a6ed2_671b57fa-bcf4-49f2-9f8d-8f79082fd1eb_Table"] > .editor-cell[col='1']
+{
+    min-width: 65px !important;
+}
+
+    html.smarobjectservices [id="8dcae842-b1b7-c53a-99b8-28c63e2c986d_01ee6892-d813-cb02-7db5-4f6a4cbd8445_Table"] > .editor-cell,
+    html.smarobjectservices [id="11a6eed1-6ef2-4d36-9f82-6feaef7a6ed2_671b57fa-bcf4-49f2-9f8d-8f79082fd1eb_Table"] > .editor-cell
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        height: 6rem;
+    }
+
+html.smarobjectservices [id="25b00a69-4413-4b2d-867e-e21abf587c78_c6f7aeb5-a752-ef2b-4ec4-1d3bbe0faeee_Table"],
+html.smarobjectservices [id="73b153b8-2532-40b9-b7cd-ce7682e6ae5c_09f2b83b-b939-4f5a-8189-8412cab0683d_Table"]
+{
+    -ms-grid-columns: 40px 1fr !important;
+    grid-template-columns: 40px 1fr !important;
+}
+
+html.smarobjectservices [id="25b00a69-4413-4b2d-867e-e21abf587c78_c6f7aeb5-a752-ef2b-4ec4-1d3bbe0faeee_Table"] > .editor-cell,
+html.smarobjectservices [id="73b153b8-2532-40b9-b7cd-ce7682e6ae5c_09f2b83b-b939-4f5a-8189-8412cab0683d_Table"] > .editor-cell
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+html.smarobjectservices [id="8dcae842-b1b7-c53a-99b8-28c63e2c986d_01ee6892-d813-cb02-7db5-4f6a4cbd8445_Table"] img:nth-child(2),
+html.smarobjectservices [id="11a6eed1-6ef2-4d36-9f82-6feaef7a6ed2_671b57fa-bcf4-49f2-9f8d-8f79082fd1eb_Table"] img:nth-child(2)
+{
+    margin-top: 2.9rem;
+    margin-left: 1rem;
+    padding: 0;
+}
+
+    html.smarobjectservices [id="8dcae842-b1b7-c53a-99b8-28c63e2c986d_01ee6892-d813-cb02-7db5-4f6a4cbd8445_Table"] img:nth-child(2):hover,
+    html.smarobjectservices [id="11a6eed1-6ef2-4d36-9f82-6feaef7a6ed2_671b57fa-bcf4-49f2-9f8d-8f79082fd1eb_Table"] img:nth-child(2):hover
+    {
+        content: url('K2Sites_Management/Images/K2PreviewTag_Hover72.png');
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+    }
+
+html.smarobjectservices div[id='ff92687b-4a67-4cef-85b5-af9a8cc562ae'] [name='Learn more Hyperlink'],
+html.smarobjectservices div[id='5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0'] [name='Learn more Hyperlink']
+{
+    margin-top: -2px;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] [name='smo api icon']
+{
+    background-image: url(K2Sites_Management/Images/Odata_Selected24.png);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: 0px 0;
+    margin-right: 20px;
+}
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='smo api icon']
+{
+    background-image: url(K2Sites_Management/Images/REST_Selected24.png);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: 0px 0;
+    margin-right: 20px;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .focus,
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .focus
+{
+    outline-color: rgba(255, 255, 255, 1) !important;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="BannerTitle"],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="BannerTitle"]
+{
+    font-size: 1.8rem;
+    font-family: "Open-Sans Regular";
+    color: #ffffff;
+    padding-top: 2.0rem;
+    padding-bottom: 0;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^="BannerDescription"],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^="BannerDescription"]
+{
+    font-size: 1.2rem;
+    font-family: "Open-Sans Regular";
+    font-weight: normal;
+    color: #f0f1b6;
+    padding-top: 0rem;
+    padding-bottom: 2.0rem;
+    pointer-events: none;
+}
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^="BannerDescription"]
+{
+    color: #caf8f4;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.checkbox-outer-panel,
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] div.checkbox-outer-panel
+{
+    margin-top: 5px !important;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlHeader2"],
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlHeader2_datalimits"],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlHeader2"]
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6b7785;
+    padding-bottom: 0;
+    padding-top: 2.5rem;
+}
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlHeader2"]
+{
+    padding-top: 2rem !important;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlHeader2"]
+{
+    padding-bottom: 1rem;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlHeader2_first"]
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6b7785;
+    padding-bottom: 0;
+    padding-top: 5;
+}
+
+html.smarobjectservices [id='ff92687b-4a67-4cef-85b5-af9a8cc562ae'] .row:nth-child(5) .Grid-Layout(1) .Grid-Layout
+{
+    margin-left: 3rem;
+}
+
+html.smartobjectservices [id='92a96c1e-53b5-48bc-bbbe-b0b5e5eac74b'] [id='e01b5e56-8657-7b9f-6ee5-f9717c5caa71_0adda9ab-949e-3a77-d53e-8f058ebf8dd1_Table'],
+html.smarobjectservices [id='5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0'] [id='b1046697-9e39-f5db-3f1f-a3d89847762f_187ea8f4-367c-0a15-b15d-5bfe00ee29d9_Table']
+{
+    width: 500px;
+}
+
+html.smarobjectservices [id='ff92687b-4a67-4cef-85b5-af9a8cc562ae'] .row:nth-child(3) .Grid-Layout > .editor-cell[col='2'],
+html.smarobjectservices [id='5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0'] .row:nth-child(2) .Grid-Layout > .editor-cell[col='2']
+{
+    padding-left: 5px !important;
+}
+
+html.smarobjectservices [id='5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0'] .row:nth-child(3)
+{
+    margin-left: 54px;
+}
+
+html.smarobjectservices [id='ff92687b-4a67-4cef-85b5-af9a8cc562ae'] .row:nth-child(n+4):nth-child(-n+6)
+{
+    margin-left: 65px;
+}
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"]
+{
+    margin-left: 1px;
+}
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"] .editor-cell[row='2'][col='1'],
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"] .editor-cell[row='3'][col='1'],
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"] .editor-cell[row='4'][col='1'],
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"] .editor-cell[row='5'][col='1'],
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"] .editor-cell[row='6'][col='1']
+    {
+        border: 1px solid #ddd !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        padding: 0 10px 0 10px;
+    }
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"] .editor-cell[row='2'][col='1']
+    {
+        border-top: 1px solid #ddd !important;
+        border-bottom: 1px solid #ddd !important;
+        padding: 10px !important;
+    }
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"] .editor-cell[row='3'][col='1']
+    {
+        padding-top: 2px !important;
+    }
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"] .editor-cell[row='5'][col='1']
+    {
+        padding-top: 12px !important;
+    }
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"] .editor-cell[row='6'][col='1']
+    {
+        padding-bottom: 10px !important;
+        border-bottom: 1px solid #ddd !important;
+    }
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [id="8a1a89cb-a33d-4075-ba82-ca9d8c24153f_1fee9036-3b64-4723-aae6-9810e31249d9_Table"] .editor-cell[row='2'][col='1']
+    {
+        border: 1px solid #ddd;
+        background-color: #f8f8f8;
+    }
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .input-control.select-box.dropdown-box,
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name='dlUrlVersionLabel']
+{
+    float: right;
+}
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name='dlUrlVersionLabel']
+{
+    margin-right: 5px;
+}
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-Label[name='lblWFApiUrlHeader']
+{
+    flex-grow:1;
+}
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .input-control.select-box.dropdown-box
+{
+    order:1;
+}
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-Label[name='lblWFApiUrlHeader'],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^='dlSwaggerUrlHeader'],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^='dlBaseUrl'],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name='dlCORSHeader']
+{
+    font-family: 'Open-Sans Regular';
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6b7785;
+}
+
+html.smarobjectservices div[id='ff92687b-4a67-4cef-85b5-af9a8cc562ae'] [name='Metadata URL Text Box'],
+html.smarobjectservices div[id='ff92687b-4a67-4cef-85b5-af9a8cc562ae'] [name='Record Limit'],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='Metadata URL Text Box Swagger'],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='Metadata URL Text Box WF']
+{
+    font-family: 'Open-Sans Regular';
+    font-size: 1.2rem;
+    color: #98a0a9;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+html.smarobjectservices div[id='ff92687b-4a67-4cef-85b5-af9a8cc562ae'] .row:nth-child(6) .Grid-Layout:nth-child(1) > .editor-cell[row='3'] > .checkbox-outer-panel
+{
+    margin-top: 0 !important;
+}
+
+html.smarobjectservices div[id='ff92687b-4a67-4cef-85b5-af9a8cc562ae'] .row:nth-child(6) .Grid-Layout:nth-child(1) > .editor-cell[row='3'] > .textbox-dimensions-wrapper
+{
+    margin-top: -9px;
+}
+
+html.smarobjectservices div[id='ff92687b-4a67-4cef-85b5-af9a8cc562ae'] [name='Copy Link'] a,
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='Copy Link'] a,
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='Copy Link Swagger'] a
+{
+    background-image: url(K2Sites_Management/Images/CopyURL16.png);
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 5px 5px;
+}
+
+    html.smarobjectservices div[id='ff92687b-4a67-4cef-85b5-af9a8cc562ae'] [name='Copy Link'] a:hover,
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='Copy Link'] a:hover,
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='Copy Link Swagger'] a:hover
+    {
+        background-image: url(K2Sites_Management/Images/CopyURL_Hover16.png);
+    }
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='SwaggerOpenLink'] a
+{
+    background-image: url(K2Sites_Management/Images/ExternalURL16.png);
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 5px 5px;
+}
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='SwaggerOpenLink'] a:hover
+    {
+        background-image: url(K2Sites_Management/Images/ExternalURL_Hover16.png);
+    }
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='SwaggerDownload'] a
+{
+    background-image: url(K2Sites_Management/Images/Download_Alt16.png);
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 5px 5px;
+}
+
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] [name='SwaggerDownload'] a:hover
+    {
+        background-image: url(K2Sites_Management/Images/Download_Hover16.png);
+    }
+
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^="dlDescription"],
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^="dlSwaggerDescription"],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^="dlDescription"],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^="dlSwaggerDescription"],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^="dlCORSDescription"],
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^="dlEnableEndpointDescription"]
+{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #888f96;
+    padding: 0 0 1rem 0 !important;
+    pointer-events: none;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name^="dlRBLDescription"]
+{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #888f96;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    margin-top: 0;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .row:nth-child(6),
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .row:nth-child(4)
+{
+    /*margin-bottom: 60px !important;*/
+}
+
+/*
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .row:nth-child(7),
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .row:nth-child(5)
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    max-height: 60px;
+    background-color: #eee;
+    margin-left: 0;
+}
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .row:nth-child(7) .formcontrol .innerpanel:nth-child(1),
+    html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .row:nth-child(5) .formcontrol .innerpanel:nth-child(1)
+    {
+        margin-right: 10px !important;
+        display: block;
+        float: right;
+        margin-top: 5px;
+    }
+*/
+html.smarobjectservices [id="25b00a69-4413-4b2d-867e-e21abf587c78_c6f7aeb5-a752-ef2b-4ec4-1d3bbe0faeee_Table"] img:hover
+{
+    content: url('K2Sites_Management/Images/K2PreviewTag_Hover58.png');
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] [id="25b00a69-4413-4b2d-867e-e21abf587c78_c6f7aeb5-a752-ef2b-4ec4-1d3bbe0faeee_Table"] .stack-container .stack
+{
+    padding: 0rem;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] [id="25b00a69-4413-4b2d-867e-e21abf587c78_c6f7aeb5-a752-ef2b-4ec4-1d3bbe0faeee_Table"] .multi-select-box-list-item:nth-child(1)
+{
+    padding-top: 0rem;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] [id="25b00a69-4413-4b2d-867e-e21abf587c78_c6f7aeb5-a752-ef2b-4ec4-1d3bbe0faeee_Table"] .multi-select-box-list-item:nth-child(2)
+{
+    padding-top: .7rem;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-Button
+{
+    margin-top: .2rem;
+    margin-bottom: .3rem;
+}
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-Button[name$="Refresh Button"]
+    {
+        width: 12rem;
+    }
+
+
+        html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-Button[name$="Refresh Button"].loading:before,
+        html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-Button[name="btnApplyChanges"].loading:before
+        {
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-image: url('K2Sites_Management/Images/LoadingButtonControl16.gif');
+            background-repeat: no-repeat;
+            background-size: 16px;
+            position: absolute;
+            left: 5.4rem;
+            top: 50%;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-Button[name="btnApplyChanges"].loading:before
+    {
+        left: 5rem !important;
+    }
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-Button[name$="Refresh Button"] .success
+    {
+        width: 16px;
+        height: 16px;
+        background-size: 16px;
+        left: 5.1rem;
+    }
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-Button[name="btnApplyChanges"]
+    {
+        margin-left: 2.2rem;
+    }
+
+html.smarobjectservices div[id="5eb42036-91a3-4a1f-9ee5-0ff90be7c4d0"] .SFC.SourceCode-Forms-Controls-Web-Button[name="btnApplyChanges"]
+{
+    margin-left: 0.2rem;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-Button.success[name="btnApplyChanges"]
+{
+    background-color: #636f80;
+    background-image: url('K2Sites_Management/Images/SuccessButtonControl16.gif');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .success
+{
+    background-image: url('K2Sites_Management/Images/SuccessButtonControl16.gif');
+}
+
+html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name$="ErrorDL"]
+{
+    width: 23rem;
+    top: 10px;
+    height: 16px;
+    color: #b21e27;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    top: 8px;
+}
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name$="ErrorDL"]:before
+    {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-image: url('K2Sites_Management/Images/Error16.png');
+        background-repeat: no-repeat;
+        background-size: 16px;
+        position: absolute;
+        left: 10px;
+        top: 11px;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+.theme-entry div[name="Category Tree"].SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected > .content > .header,
+.theme-entry div[name="Category Tree"].SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected > .content > .header:hover
+{
+    background-color: #bfeafb !important;
+    border: 1px solid #7dc5eb !important;
+}
+
+.theme-entry div[name="Category Tree"].SourceCode-Forms-Controls-Web-ControlPack-TreeView .node > .content > .header:hover
+{
+    background-color: #e5f3fa !important;
+    border: 1px solid #7dc5eb !important;
+}
+
+
+/*#endregion*/
+/*#region OTHER STUFF */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+/* Portrait */
+only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2),
+/* Portrait */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+/* Landscape */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
+/* Portrait */
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+/* Landscape */
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3),
+/* Portrait */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait),
+/* Landscape */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
+/* ----------- Galaxy S3 ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2),
+/* Portrait */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait),
+/* Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- Galaxy S4 ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+/* Portrait */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+/* Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape),
+/* ----------- Galaxy S5 ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+/* Portrait */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+/* Landscape */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape),
+/* ----------- HTC One ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3), screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait), screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) only screen and (min-device-width: 320px) and (max-device-width: 480px),
+/*only screen and (min-width : 321px), only screen and (max-width : 320px),*/
+only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+/*only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2),*/
+/*only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)*/
+{
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell .item-image.smartobject-base
+    {
+        background-image: url('FileTypes/SmartObject20@2x.png');
+        z-index: auto;
+    }
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .indicator1.smartobject-edit
+    {
+        background-image: url('Toolbar/Edit20@2x.png');
+    }
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-Button[name$="Refresh Button"].loading:before
+    {
+        background-image: url('K2Sites_Management/Images/LoadingButtonControl16@2x.gif');
+    }
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .success
+    {
+        background-image: url('K2Sites_Management/Images/SuccessButtonControl16@2x.gif');
+    }
+
+    html.smarobjectservices div[id="ff92687b-4a67-4cef-85b5-af9a8cc562ae"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name$="ErrorDL"]:before
+    {
+        background-image: url('K2Sites_Management/Images/Error16@2x.png');
+    }
+
+    html.smarobjectservices .theme-entry label.input-control.checkbox .input-control-img
+    {
+        background-image: url('K2Sites_Management/Images/ToggleButtons32@2x.png');
+    }
+
+    html.smarobjectservices [id="8dcae842-b1b7-c53a-99b8-28c63e2c986d_01ee6892-d813-cb02-7db5-4f6a4cbd8445_Table"] img:nth-child(2):hover,
+    html.smarobjectservices [id="11a6eed1-6ef2-4d36-9f82-6feaef7a6ed2_671b57fa-bcf4-49f2-9f8d-8f79082fd1eb_Table"] img:nth-child(2):hover
+    {
+        content: url('K2Sites_Management/Images/K2PreviewTag_Hover72@2x.png');
+    }
+
+    html.smarobjectservices [id="25b00a69-4413-4b2d-867e-e21abf587c78_c6f7aeb5-a752-ef2b-4ec4-1d3bbe0faeee_Table"] img:hover
+    {
+        content: url('K2Sites_Management/Images/K2PreviewTag_Hover58@2x.png');
+    }
+}
+/*#endregion */
+
+/*#region Simple scrollbar*/
+html.smarobjectservices .simplebar-track {
+    margin: 5px;
+}
+
+html.smarobjectservices .simplebar-scrollbar::before {
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+html.smarobjectservices .simplebar-scrollbar.simplebar-visible::before {
+    background-color: rgb(0, 0, 0, 0.85);
+}
+/*#endregion */

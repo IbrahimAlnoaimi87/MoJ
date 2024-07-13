@@ -1,0 +1,92 @@
+/*#region RADIO BUTTON*/
+
+.theme-entry .input-control.radio.style-aware {
+    border: 1px dotted transparent;
+    display: inline-flex;
+    min-width: 2.2rem;
+    outline: 0.1rem dotted transparent;
+
+    svg {
+        height: 1.8rem;
+        flex: none;
+        margin: 0.3rem;
+        cursor: pointer;
+
+        .svg-radio-btn-circle {
+            stroke: var(--radio-border-color);
+            fill: var(--radio-background-color);
+        }
+
+        .svg-radio-btn-checked {
+            fill: var(--radio-background-color);
+        }
+    }
+
+    &.checked {
+        .svg-radio-btn-checked {
+            fill: var(--radio-checked-color);
+        }
+
+        &.disabled {
+            .svg-radio-btn-checked {
+                fill: var(--radio-disabled-checked-color);
+            }
+        }
+
+        &.read-only {
+            .svg-radio-btn-checked {
+                fill: var(--radio-readonly-checked-color);
+            }
+        }
+    }
+
+    &.disabled {
+        cursor: default;
+
+        .svg-radio-btn-circle {
+            stroke: var(--radio-disabled-border-color);
+            fill: var(--radio-disabled-background-color);
+        }
+
+        .svg-radio-btn-checked {
+            fill: none;
+        }
+    }
+
+    &.read-only {
+        cursor: default;
+
+        .svg-radio-btn-circle {
+            stroke: var(--radio-readonly-border-color);
+            fill: var(--radio-readonly-background-color);
+        }
+
+        .svg-radio-btn-checked {
+            fill: none;
+        }
+    }
+
+    .input-control-img {
+        .mobile & {
+            display: none;
+            width: 0px;
+            height: 0px;
+        }
+    }
+
+    .input-control-text {
+        flex: 1;
+        padding-left: @Between-Control-Spacing;
+        line-height: @__Input-Height;
+
+        &:empty {
+            display: none;
+        }
+
+        .mobile & {
+            line-height: 2.4rem; //height of img is 24 on mobile
+        }
+    }
+}
+
+/*#endregion RADIO BUTTON*/

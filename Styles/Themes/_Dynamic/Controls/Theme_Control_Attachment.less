@@ -1,0 +1,227 @@
+/*#region ATTACHMENT / PICTURE ATTACHMENT */
+
+/*#region resets*/
+.theme-entry .file-wrapper
+{
+    height: auto !important;
+    /*override - inline*/
+}
+
+//overridding general.css (SourceCode.Forms.Web.Controls)
+.theme-entry .file-watermark{
+    color: inherit !important; //has to be important, because of nasty css in general.css that hasn't been changed. 
+}
+/*#endregion*/
+
+
+/*file progress control */
+.theme-entry .file-progress
+{
+    fill: @Loader-Progress-Background-Color; //no var
+}
+
+/*state - normal*/
+.theme-entry .file-wrapper
+{
+    border-width: 1px;
+    border-style: dashed;
+    //border-color: rgba(0,0,0,0.25);
+    background-color: @File-Upload-Empty-Background-Color;
+    border-color: @File-Upload-Empty-Border-Color;
+    -moz-border-radius: @Input-Rounding;
+    -ms-border-radius: @Input-Rounding;
+    -webkit-border-radius: @Input-Rounding;
+    border-radius: @Input-Rounding;
+
+    &:hover
+    { /*file attachment control*/
+        background-color: @File-Upload-Empty-Hover-Background-Color; 
+    }
+
+    .file-watermark
+    {
+        color: @File-Upload-Watermark-Text-Color !important; //override web.controls base - due to !important (bad code)
+    } 
+
+    //focus
+    &.active
+    {
+        border-color: @File-Upload-Focus-Border-Color !important;
+    }
+
+    //disabled
+    &.disabled-attachment{
+        //reset general.css (SourceCode.Forms.Web.Controls)
+        opacity: 1.0;
+        pointer-events: none;
+        background-color: @File-Upload-Disabled-Background-Color;
+        border-color: @File-Upload-Disabled-Border-Color;
+        color: @File-Upload-Disabled-Text-Color;
+    }
+
+    //uploaded
+    &.uploaded
+    {
+        border-width: 1px;
+        border-style: solid;
+        //border-color: rgba(0,0,0,0.25);
+        background-color: @File-Upload-Background-Color;
+        border-color: @File-Upload-Border-Color;
+        color: @File-Upload-Text-Color;
+
+        //height chanegs between states
+        -moz-transition: height linear 0.15s;
+        -ms-transition: height linear 0.15s;
+        -o-transition: height linear 0.15s;
+        -webkit-transition: height linear 0.15s;
+        transition: height linear 0.15s;
+
+        &:hover
+        {
+            background-color: @File-Upload-Hover-Background-Color;
+            border-color: @File-Upload-Hover-Border-Color;
+            color: @File-Upload-Hover-Text-Color;
+        }
+
+        //Focus beats hover for border (on all controls)
+        &.active
+        {
+            border-color: @File-Upload-Focus-Border-Color;
+        }
+    }
+
+
+    &.borderless,
+    &.uploaded.borderless
+    {
+        border-color: transparent;
+    }
+}
+
+
+.webkit.safari .theme-entry .file-wrapper
+{
+    box-sizing: content-box;
+}
+
+/*state - uploading*/
+.theme-entry .file-progress-wrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: auto !important;
+    /*override - inline*/
+}
+
+.theme-entry .file-progress-wrapper > svg
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1.0rem;
+    margin-left: -1.0rem;
+}
+
+//the track (grey) is the first circle in the svg
+.theme-entry .file-progress-wrapper > svg circle:nth-child(1)
+{
+    fill: @Loader-Track-Background-Color !important;
+}
+
+//the white bordered circle in the middle 
+.theme-entry .file-wrapper
+{
+    .file-progress-wrapper > svg circle:nth-child(4), //image upload
+    .file-progress-wrapper > svg circle:nth-child(5) //file upload
+    {
+        stroke: @File-Upload-Background-Color !important;
+        fill: @Loader-Track-Background-Color !important;
+    }
+
+    &:hover .file-progress-wrapper > svg circle:nth-child(4), //image upload
+    &:hover .file-progress-wrapper > svg circle:nth-child(5) //file upload
+    {
+        stroke: @File-Upload-Hover-Background-Color !important;
+        fill: @Loader-Track-Background-Color !important;
+    }
+}
+
+//the bright green progress seem to be the other circles in the svg
+.theme-entry .file-progress-wrapper > svg circle
+{
+    fill: @Loader-Progress-Background-Color !important;
+}
+
+
+//the gaps between the segements of the circular progress
+.theme-entry .file-progress-wrapper > svg line
+{
+    display:none!important; //aesthetic choice for Dynamic Theme
+}
+
+.theme-entry .file-tn-cell img
+{
+    display: block;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+}
+
+.theme-entry .file-info.file-ellipsis
+{
+    color: inherit;
+}
+
+
+//#region Error
+
+.theme-entry td.file-tn-cell
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.theme-entry .file-error:before
+{
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: ~"calc(50% - 2rem)";
+    top: ~"calc(50% - 2rem)";
+    /*for error icon*/
+}
+
+.theme-entry .file-error .file-thumbnail-error
+{
+    display: none !important; /*override - inline*/ /*this is a hard-coded image!!*/
+}
+
+/*IE cannot absolutely position an element inside a parent td cell - Revert to old styling*/
+.theme-entry .file-error
+{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+//#endregion Error
+
+/*Editable List Display */
+.theme-entry a.fileImage.static
+{
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.5rem 0.6rem;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*#endregion ATTACHMENT / PICTURE ATTACHMENT */

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-edittoolbox_popover16.icon-size16.ic-{iconname}"/> <!-- normal -->
+          <RowDefinition row="2" cssSelector=".icon.icon-set-edittoolbox_popover16.icon-size16.ic-{iconname}.hover"/> <!-- hover -->
+          <RowDefinition row="3" cssSelector=".icon.icon-set-edittoolbox_popover16.icon-size16.ic-{iconname}.disabled"/> <!-- Disabled -->
+		  
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1">Edit16.png</Row>
+              <Row number="2" cssname="Function">Edit_Hover16.png</Row>
+              <Row number="3">Edit_Disabled16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="2">   
+            <Rows>  
+              <Row number="1">Favourites16.png</Row>
+              <Row number="2" cssname="Fields">Favourites_Hover16.png</Row>
+              <Row number="3">Favourites_Disabled16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="3">   
+            <Rows>  
+              <Row number="1">Help16.png</Row>
+              <Row number="2" cssname="SmartObject">Help_Hover16.png</Row>
+              <Row number="3">Help_Disabled16.png</Row>
+            </Rows> 
+          </Column>         
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="8,0,0,8">
+        <CssBackgroundImageFolder>EditToolbox/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/EditToolbox/EditToolbox_Popover16.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/EditToolbox_Popover16.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

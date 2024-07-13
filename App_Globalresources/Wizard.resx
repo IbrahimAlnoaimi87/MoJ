@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddActionInfoText" xml:space="preserve">
+    <value>Add a New Action</value>
+  </data>
+  <data name="AddActionText" xml:space="preserve">
+    <value>Add Action</value>
+  </data>
+  <data name="AddMenuInfoText" xml:space="preserve">
+    <value>Add top level Menu</value>
+  </data>
+  <data name="AddMenuText" xml:space="preserve">
+    <value>Add Menu</value>
+  </data>
+  <data name="AddSubmenuInfoText" xml:space="preserve">
+    <value>Add a SubMenu</value>
+  </data>
+  <data name="AddSubmenuText" xml:space="preserve">
+    <value>Add SubMenu</value>
+  </data>
+  <data name="AppDesignerActionText" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="AppDesignerNavStrucText" xml:space="preserve">
+    <value>Navigation Structure</value>
+  </data>
+  <data name="CategoryLabel" xml:space="preserve">
+    <value>Category:</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="EditActionInfoText" xml:space="preserve">
+    <value>Edit selected Action</value>
+  </data>
+  <data name="EditActionText" xml:space="preserve">
+    <value>Edit Action</value>
+  </data>
+  <data name="EditMenuInfoText" xml:space="preserve">
+    <value>Edit selected top level Menu</value>
+  </data>
+  <data name="EditMenuText" xml:space="preserve">
+    <value>Edit Menu</value>
+  </data>
+  <data name="MoveDownInfoText" xml:space="preserve">
+    <value>Move selected item down inside the same level</value>
+  </data>
+  <data name="MoveDownText" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="MoveUpInfoText" xml:space="preserve">
+    <value>Move selected item up inside the same level</value>
+  </data>
+  <data name="MoveUpText" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="NameLabel" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="FormText" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="RemoveActionInfoText" xml:space="preserve">
+    <value>Remove selected Action</value>
+  </data>
+  <data name="RemoveActionText" xml:space="preserve">
+    <value>Remove Action</value>
+  </data>
+  <data name="RemoveMenuInfoText" xml:space="preserve">
+    <value>Remove selected Menu/SubMenu</value>
+  </data>
+  <data name="RemoveMenuText" xml:space="preserve">
+    <value>Remove Menu</value>
+  </data>
+  <data name="SaveActionLabel" xml:space="preserve">
+    <value>Save Action:</value>
+  </data>
+  <data name="SaveOptionsText" xml:space="preserve">
+    <value>Save Options</value>
+  </data>
+  <data name="TypeText" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="DescriptionText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="NameText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="TypeLabel" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="ActionsStepText" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="DetailsStepText" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="FinishedStepText" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="IntroductionStepText" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="SaveOptionsStepText" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>this is the text which appears on an Cancel button [designtime]  [location: insert table on to a form/view pop up]</comment>
+  </data>
+  <data name="OKText" xml:space="preserve">
+    <value>OK</value>
+    <comment>this is the text which appears on an OK button [designtime] [location: insert table on to a form/view pop up]</comment>
+  </data>
+  <data name="ShowIntroPageText" xml:space="preserve">
+    <value>Show this step the next time you create a new {0}.</value>
+  </data>
+  <data name="ViewText" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Asynchronous" xml:space="preserve">
+    <value>asynchronously</value>
+  </data>
+  <data name="AsynchronousGroup" xml:space="preserve">
+    <value>then start the following asynchronously</value>
+    <comment>this text is displayed when a group of rules is created and there is no order in which they execute. ie. asynchronously [designtime] [location: rule designer]</comment>
+  </data>
+  <data name="Single" xml:space="preserve">
+    <value>also</value>
+  </data>
+  <data name="SingleGroup" xml:space="preserve">
+    <value>then complete the following in a batch</value>
+    <comment>this text is displayed when a group of rules is created and they are executed as batch job [designtime] [location: rule designer]</comment>
+  </data>
+  <data name="Synchronous" xml:space="preserve">
+    <value>then</value>
+  </data>
+  <data name="SynchronousGroup" xml:space="preserve">
+    <value>then complete the following one after another</value>
+    <comment>this text is displayed when a group of rules is created and the order in which they execute is one after another [designtime] [location: rule designer]</comment>
+  </data>
+  <data name="BaseStateText" xml:space="preserve">
+    <value>(BaseState)</value>
+  </data>
+  <data name="ObjectDescriptionWatermarkText" xml:space="preserve">
+    <value>Describe what this {0} will be used for</value>
+    <comment>when creating a new object, the user is prompted to provide a description [eg: Type a description for this Category] [designtime] </comment>
+  </data>
+  <data name="ObjectNameWatermarkText" xml:space="preserve">
+    <value>Name this {0}</value>
+    <comment>when creating a new object, the user is prompted to provide a name for it [eg: Type a name for this Category] [designtime]</comment>
+  </data>
+  <data name="ObjectSelectWatermarkTextCategoryIndefiniteSingular" xml:space="preserve">
+    <value>Select a category</value>
+  </data>
+  <data name="SmartObjectText" xml:space="preserve">
+    <value>SmartObject</value>
+  </data>
+  <data name="AsynchronousGroupDescription" xml:space="preserve">
+    <value>All actions will execute asynchronously - any action after this group will start while the actions in this group is busy executing.</value>
+  </data>
+  <data name="Parallel" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="ParallelGroup" xml:space="preserve">
+    <value>then complete the following concurrently</value>
+    <comment>this text is displayed when a group of rules is created and they all execute at the same time [designtime] [location: rule designer]</comment>
+  </data>
+  <data name="ParallelGroupDescription" xml:space="preserve">
+    <value>All actions will execute concurrently - any actions after this group will only start once all actions in the group is complete.</value>
+  </data>
+  <data name="SingleGroupDescription" xml:space="preserve">
+    <value>All the Actions are grouped in a single execution packet, and the runtime executes the packet in a batch on the server.</value>
+  </data>
+  <data name="SynchronousGroupDescription" xml:space="preserve">
+    <value>The first Action will execute, when the Action completes, the next Action will start execution.</value>
+  </data>
+  <data name="ObjectDescriptionWatermarkTextCategorySingular" xml:space="preserve">
+    <value>Describe what this Category will be used for</value>
+    <comment>when creating a new Category, the user is prompted to provide a description [eg: Type a description for this Category] [designtime] </comment>
+  </data>
+  <data name="ObjectDescriptionWatermarkTextSmartFormSingular" xml:space="preserve">
+    <value>Describe this Form</value>
+    <comment>when creating a new Form object, the user is prompted to provide a description [eg: Type a description for this Form] [designtime] </comment>
+  </data>
+  <data name="ObjectDescriptionWatermarkTextSmartObjectMethodText" xml:space="preserve">
+    <value>Describe what this Method does</value>
+    <comment>when creating a new Method, the user is prompted to provide a description [eg: Type a description for this Method] [designtime] </comment>
+  </data>
+  <data name="ObjectDescriptionWatermarkTextSmartObjectPropertyText" xml:space="preserve">
+    <value>Describe what this Property might contain</value>
+    <comment>when creating a new Property, the user is prompted to provide a description [eg: Type a description for this Property] [designtime] </comment>
+  </data>
+  <data name="ObjectDescriptionWatermarkTextSmartObjectSingular" xml:space="preserve">
+    <value>Describe what this SmartObject is used for</value>
+    <comment>when creating a new SmartObject, the user is prompted to provide a description [eg: Type a description for this SmartObject] [designtime] </comment>
+  </data>
+  <data name="ObjectDescriptionWatermarkTextSmartViewSingular" xml:space="preserve">
+    <value>Describe what is in this View</value>
+    <comment>when creating a new View object, the user is prompted to provide a description [eg: Type a description for this View] [designtime] </comment>
+  </data>
+  <data name="ObjectNameWatermarkTextCategorySingular" xml:space="preserve">
+    <value>Name this Category</value>
+    <comment>when creating a new object, the user is prompted to provide a name for it [eg: Type a name for this Category] [designtime]</comment>
+  </data>
+  <data name="ObjectNameWatermarkTextSmartFormSingular" xml:space="preserve">
+    <value>Give this Form a friendly name</value>
+    <comment>when creating a new object, the user is prompted to provide a name for it [eg: Type a name for this Category] [designtime]</comment>
+  </data>
+  <data name="ObjectNameWatermarkTextSmartObjectMethodParameterText" xml:space="preserve">
+    <value>Name this Parameter</value>
+    <comment>when creating a new object, the user is prompted to provide a name for it [eg: Type a name for this Category] [designtime]</comment>
+  </data>
+  <data name="ObjectNameWatermarkTextSmartObjectMethodText" xml:space="preserve">
+    <value>Name this Method</value>
+    <comment>when creating a new object, the user is prompted to provide a name for it [eg: Type a name for this Category] [designtime]</comment>
+  </data>
+  <data name="ObjectNameWatermarkTextSmartObjectPropertyText" xml:space="preserve">
+    <value>Name for this Property</value>
+    <comment>when creating a new object, the user is prompted to provide a name for it [eg: Type a name for this Category] [designtime]</comment>
+  </data>
+  <data name="ObjectNameWatermarkTextSmartObjectSingular" xml:space="preserve">
+    <value>Give this SmartObject a friendly name</value>
+    <comment>when creating a new object, the user is prompted to provide a name for it [eg: Type a name for this Category] [designtime]</comment>
+  </data>
+  <data name="ObjectNameWatermarkTextSmartViewSingular" xml:space="preserve">
+    <value>Give this View a friendly name</value>
+    <comment>when creating a new object, the user is prompted to provide a name for it [eg: Type a name for this Category] [designtime]</comment>
+  </data>
+  <data name="ObjectSelectDragWatermarkTextCategoryIndefiniteSingular" xml:space="preserve">
+    <value>Select a category</value>
+    <comment>Choose or drag a category[designtime]</comment>
+  </data>
+  <data name="ObjectSelectDragWatermarkTextSmartObjectIndefiniteSingular" xml:space="preserve">
+    <value>Select a SmartObject</value>
+    <comment>Choose or drag a SmartObject[designtime]</comment>
+  </data>
+  <data name="ObjectNoViewRightsWatermarkTextCategoryIndefiniteSingular" xml:space="preserve">
+    <value>You do not have view rights to the category</value>
+    <comment>No view rights to the category [designtime]</comment>
+  </data>
+</root>

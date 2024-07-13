@@ -1,0 +1,20 @@
+﻿<div class='toolContainer'>
+	<div class='toolWrapper'>
+		<ul class='toolList'>
+			<li class='toolRow toolLabelRow displayLabel'>
+				<span class='label'>{displayLabel}</span>
+			</li>
+			<li class='toolRow toolDisplayRow'></li>
+			<li class='toolRow toolLabelRow urlLabel'>
+				<span class='label'>{urlLabel}</span>
+			</li>
+			<li class='toolRow toolUrlRow'></li>
+			<li class='toolRow toolLabelRow targetLabel'>
+				<span class='label'>{targetLabel}</span>
+			</li>
+			<li class='toolRow toolTargetRow'>
+				<select class='target'></select>
+			</li>
+		</ul>
+	</div>
+</div>

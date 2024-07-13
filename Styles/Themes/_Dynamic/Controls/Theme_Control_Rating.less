@@ -1,0 +1,143 @@
+/*#region RATING CONTROL */
+.theme-entry .ratingWrapper
+{
+    padding: 0px;
+    height: auto; 
+   
+    & > a
+    {
+        display:flex;
+        align-items: center;
+    }
+
+
+    .styling-inner-wrapper
+    {
+        height: @__Input-Inner-Height; //we use inner height as a 1px border is applied to ratingWrapper
+    }
+}
+
+.theme-entry .ratingStar {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 0 !important; /* override base - keeps spacing for wrapping rating controls */
+    margin-bottom: 0px !important;
+    margin-right: 0.3rem !important;
+
+    &:last-child {
+        margin-right: 0px !important;
+    }
+
+    svg {
+        display: block;
+    }
+
+    &.emptyRatingStar {
+
+        svg {
+            .svg-rating-filled {
+                fill: transparent;
+            }
+
+            .svg-rating-default {
+                fill: var(--ratings-border-color);
+            }
+        }
+    }
+
+    &.hoveredRatingStar,
+    &.savedRatingStar,
+    &.filledRatingStar {
+
+        svg {
+            .svg-rating-filled {
+                fill: var(--ratings-checked-color);
+            }
+
+            .svg-rating-default {
+                fill: transparent;
+            }
+        }
+    }
+}
+
+.theme-entry .ratingWrapper.disabled *,
+.theme-entry .ratingWrapper.read-only *
+{
+    cursor: default;
+}
+
+.theme-entry .ratingWrapper {
+
+    &.disabled {
+
+        .ratingStar {
+
+            &.emptyRatingStar {
+
+                svg {
+                    .svg-rating-filled {
+                        fill: transparent;
+                    }
+
+                    .svg-rating-default {
+                        fill: var(--ratings-disabled-border-color);
+                    }
+                }
+            }
+
+            &.hoveredRatingStar,
+            &.savedRatingStar,
+            &.filledRatingStar {
+
+                svg {
+                    .svg-rating-filled {
+                        fill: var(--ratings-disabled-checked-color);
+                    }
+
+                    .svg-rating-default {
+                        fill: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    &.read-only {
+
+        .ratingStar {
+
+            &.emptyRatingStar {
+
+                svg {
+                    .svg-rating-filled {
+                        fill: transparent;
+                    }
+
+                    .svg-rating-default {
+                        fill: var(--ratings-readonly-border-color);
+                    }
+                }
+            }
+
+            &.hoveredRatingStar,
+            &.savedRatingStar,
+            &.filledRatingStar {
+
+                svg {
+                    .svg-rating-filled {
+                        fill: var(--ratings-readonly-checked-color);
+                    }
+
+                    .svg-rating-default {
+                        fill: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+/*#endregion RATING CONTROL */

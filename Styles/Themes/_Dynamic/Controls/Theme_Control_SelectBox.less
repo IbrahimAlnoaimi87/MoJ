@@ -1,0 +1,453 @@
+/*#region SELECT BOX */
+
+/*Notes - select-box is any input control with a  button(s) to the right of the text entry */
+/*      - It includes the PICKER, CALENDAR, DROPDOWN AND OTHERS*/
+/*      - It is also used in the worklist control, which has non-standard css classes (at the time of dev)*/
+
+//#region resets
+
+
+.theme-entry .input-control.select-box
+{
+    background-color: transparent; //override core.less
+}
+
+.theme-entry .input-control.select-box .input-control-body
+{
+    position: relative; /*override - base*/
+    width: auto; /*push the buttons right - cannot be 100% otherwise ie will stretch to max-width*/
+}
+
+.theme-entry .input-control.select-box.double-buttons .input-control-body
+{
+    height: inherit;
+    right: auto;
+    margin-right: auto;
+    /*override - base*/
+    /*override - base*/
+}
+
+//no border for input-control-m-c as the input-control-bdy has the borders
+.theme-entry .input-control.select-box.double-buttons.picker-input .input-control-m-c{
+    border-right-width: 0px;
+}
+
+//this horific css is in core.less and so had to be overridden here
+.theme-entry .styling-outer-wrapper .input-control-m, 
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c, 
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper, 
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper input, 
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper a 
+{
+    background-color: transparent; //override core.less
+}
+
+
+.theme-entry .input-control-buttons {
+    //override core.less default to white
+    //TODO: move the white out of core.less into corelegacy.less.
+    background-color: @Input-Background-Color;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark, 
+.theme-entry .input-control-watermark
+{
+    //override core.less default to #ececec and !Important!
+    //TODO: move the white out of core.less into corelegacy.less.
+    color: @Input-Watermark-Text-Color;
+}
+
+.theme-entry .input-control.select-box .input-control-body{
+    //when a background is applied using the format dialog, this element and the inner textbox have an inline style applied.
+    //only the textbox is needed to honor the background-color. This element's background breaches the rounded corners, so its overridden.
+    background-color: transparent!important; 
+}
+
+//#endregion resets
+
+
+//NOTE: We have to use .input-control-m-c for border as this is what the format dialog uses when changing the border.
+
+.theme-entry .input-control.select-box 
+{
+    border-collapse: separate;
+    display: table; // Fix for 890614, inline-table adds extra space underneath a picker control, causing misalignments.
+    width: 100%;
+
+    .input-control-m-c
+    {
+        border: 1px solid @Input-Border-Color;
+        //make sure the rounded borders clip the textbox inside a picker control, 
+        //as the textbox element has its background changes when a user uses the format dialog. 
+        overflow: hidden; 
+        border-radius: @Input-Rounding;
+    }
+
+    &:not(.hide-buttons)
+    {
+        .input-control-m-c
+        {
+            html[dir=ltr] &
+            {
+                border-radius: @Input-Rounding 0 0 @Input-Rounding;
+                border-right-width: 0 !important; /* override - inline */
+            }
+
+            html[dir=rtl] &
+            {
+                border-left-width: 0 !important; /* override - inline */
+                border-radius: 0 @Input-Rounding @Input-Rounding 0;
+            }
+        }
+    }
+
+    
+
+    .input-control-buttons
+    {
+        border-style: solid;
+        border-color: @Input-Border-Color;
+        position: static; /*override - base*/
+        width: 1px; /*take up minimal space, must use 1px and not 0px for webkit*/
+        overflow: hidden;
+
+        html[dir=ltr] &
+        {
+            border-radius: 0 @Input-Rounding @Input-Rounding 0;
+            border-width: 1px 1px 1px 0;
+        }
+
+        html[dir=rtl] &
+        {
+            border-radius: @Input-Rounding 0 0 @Input-Rounding;
+            border-width: 1px 0 1px 1px;
+        }
+    }
+
+    .input-control-m-c, 
+    .input-control-buttons
+    {
+        //override core.less default to white
+        //TODO: move the white out of core.less into corelegacy.less.
+        background-color: @Input-Background-Color;
+    }
+
+    &.disabled
+    {
+        .input-control-m-c, 
+        .input-control-buttons
+        {
+            background-color: @Input-Disabled-Background-Color;
+            border-color: @Input-Disabled-Border-Color;
+        }
+    }
+
+    &.read-only, 
+    &.read-only.active
+    {
+        .input-control-m-c, 
+        .input-control-buttons
+        {
+            background-color: @Input-ReadOnly-Background-Color;
+            border-color: @Input-ReadOnly-Border-Color;
+        }
+    }
+
+    &.active 
+    {
+        .input-control-m-c, 
+        .input-control-buttons
+        {
+            border-color: @Input-Focus-Border-Color;
+        }
+    }
+
+    &.invalid,
+    &.invalid.active
+    {
+        .input-control-m-c, 
+        .input-control-buttons
+        {
+            background-color: @Input-Error-Background-Color;
+            border-color: @Input-Error-Border-Color !important;  /*important will overide user configured styles */
+        }
+    }
+}
+
+.theme-entry .grid-toolbars .toolbar-wrapper .input-control.select-box
+{
+    display: inline-table; // Fix for 947084, bring back inline-table for this control for grid headers where it should be positioned inline.
+}
+
+.theme-entry .input-control.select-box .styling-outer-wrapper
+{
+    position: relative;
+    display: table-row;
+}
+
+.theme-entry .input-control.select-box .input-control-body,
+.theme-entry .input-control.select-box .input-control-buttons
+{
+    right: auto; /*override - base*/
+    display: table-cell;
+    position: relative !important; /* override inline */
+    vertical-align: middle;
+    white-space: nowrap;
+    /*make sure the buttons are inline*/
+    /*override - base*/
+}
+
+
+.theme-entry .input-control.select-box .input-control-m
+{
+    display: table;
+    height: inherit;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.theme-entry .input-control.select-box .input-control-m .input-control-wrapper
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*this element has the focus border*/
+.theme-entry .input-control.select-box .input-control-body, 
+.theme-entry .input-control.select-box .input-control-m-c
+{
+    height: 100%;
+    min-height: 100%;
+    /*auto height will respect the line-height, setting the height to 3.2rem will stop the top border from showing*/
+    overflow: hidden; /*BUG FIX: when the control was active the top border wasn't showing*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.theme-entry .input-control.select-box .input-control-watermark,
+.theme-entry .input-control.select-box div.editable-area,
+.theme-entry .input-control.select-box input[type=text]
+{
+    border-width: 0;
+    padding: 0;
+    padding-left: @Control-Inset-Horizontal-Spacing;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+
+html[dir=rtl] .theme-entry .input-control.select-box .input-control-watermark,
+html[dir=rtl] .theme-entry .input-control.select-box div.editable-area,
+html[dir=rtl] .theme-entry .input-control.select-box input[type=text]
+{
+    padding: 0;
+    padding-right: @Control-Inset-Horizontal-Spacing;
+    text-align: right;
+}
+
+.theme-entry .input-control.select-box input[type=text]
+{
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+
+.theme-entry .input-control.select-box{
+     input[type=text], 
+     &.read-only a.input-control //dropdown with value
+     {
+        color: @Input-Text-Color;
+     }
+
+     &.invalid input[type=text],
+     &.read-only a.input-control //dropdown with value
+     {
+        color: @Input-Error-Text-Color;
+     }
+
+     &.disabled input[type=text],
+     &.read-only a.input-control //dropdown with value
+     {
+        color: @Input-Disabled-Text-Color;
+     }
+
+     &.read-only input[type=text],
+     &.read-only a.input-control //dropdown with value
+     {
+        color: @Input-ReadOnly-Text-Color;
+     }
+
+     
+}
+
+.theme-entry .input-control.select-box .input-control-watermark
+{
+    position: absolute;
+}
+
+
+//Input buttons (buttons at the end of the input (within the input), search, dropdown arrow, resolve etc.
+.theme-entry .input-control.select-box .input-control-buttons a
+{    
+    background-color: transparent;
+    border: solid 1px transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: @Input-Button-Text-Color;
+    display: inline-block;
+    
+    text-decoration: none;
+    vertical-align: top;
+
+    & > span
+    {
+        border-width: 1px;
+    }
+
+    float: none;
+    html[dir="rtl"] &
+    {
+        float: none;
+    }
+
+    background-color: @Input-Button-Background-Color;
+    border-color: @Input-Button-Border-Color;
+    color: @Input-Button-Text-Color;
+
+
+    &:focus
+    {
+        background-color: @Input-Button-Focus-Background-Color;
+        border-color: @Input-Button-Focus-Border-Color;
+        color: @Input-Button-Focus-Text-Color;
+
+    }
+    
+    &:hover 
+    {
+        background-color: @Input-Button-Hover-Background-Color;
+        border-color: @Input-Button-Hover-Border-Color;
+        color: @Input-Button-Hover-Text-Color;
+    }
+    &:focus
+    {
+        border-color: @Input-Button-Focus-Border-Color;
+    }
+}
+
+.theme-entry .input-control.select-box
+{
+    &.disabled
+    { 
+        .input-control-buttons a,
+        .input-control-buttons a:hover,
+        .input-control-buttons a:focus
+        {
+            background-color: @Input-Disabled-Background-Color;
+            border-color: transparent;
+            color: @Input-Disabled-Text-Color;
+        }
+    }
+
+    &.read-only
+    { 
+        .input-control-buttons a,
+        .input-control-buttons a:hover,
+        .input-control-buttons a:focus
+        {
+            background-color: transparent;
+            border-color: transparent;
+            color: @Input-ReadOnly-Text-Color;
+        }
+    }
+}
+
+
+//icon element within a control button
+.theme-entry .input-control.select-box .input-control-buttons a > span
+{
+    //center the icon within the button.
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    color: @Input-Button-Text-Color;
+    text-align: center; 
+    
+    //icon element within a control button
+    span
+    {
+        display:block;
+        height: 16px;
+        width: 16px;
+
+        .mobile &
+        {
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+
+//ellipsis button
+.theme-entry .input-control.select-box .input-control-buttons 
+{
+    a.ellipsis > span span 
+    {
+        color: @Input-Button-Text-Color;
+        text-align: center;
+        font-weight: bold;
+    }
+    a.ellipsis:hover > span span
+    {
+        color: @Input-Button-Hover-Text-Color;
+    }
+
+    a.ellipsis:focus > span span
+    {
+        color: @Input-Button-Focus-Text-Color;
+    }
+
+    a.ellipsis > span span
+    {
+        //half the icon height! important as there is an inline style from js!
+        //-2px is finessing as the font made it look slightly off center
+        line-height: ((16px / 2) - 2px) !important; 
+
+        .mobile &
+        {
+            //half the icon height! important as there is an inline style from js!
+            line-height: (20px / 2) !important; 
+        }
+    }
+}
+
+
+/* Design-time */
+#pgWizard .theme-entry .form-control > .input-control.select-box,
+#StyleBuilderPreviewPanelContentWrapper.theme-entry > #StyleBuilderPreviewPanelContent > .input-control.select-box
+{
+    display: table;
+}
+
+#StyleBuilderPreviewPanelContentWrapper.theme-entry > #StyleBuilderPreviewPanelContent > .input-control.select-box .input-control-wrapper
+{
+    overflow: hidden;
+}
+
+
+//Design Time Overrides - messy.
+#pgWizard .theme-entry .input-control.select-box .input-control-buttons,
+#pgWizard .theme-entry .input-control-buttons.twisty-button,
+#StyleBuilderPreviewPanelContentWrapper.theme-entry .input-control.select-box .input-control-buttons
+{
+    background-color: @Input-Button-Background-Color;
+}
+
+/*#endregion SELECT BOX */

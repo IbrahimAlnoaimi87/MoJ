@@ -1,0 +1,6 @@
+﻿<a class="PART-AppUrl" data-selectedvalue="{url}" title="{tooltip}" href="javascript:void(0);">
+  <div class="appswitcher-item">
+    <div class="PART-AppIcon appswitcher-icon appswitcher-icon-{type}"></div>
+    <div class="PART-AppDisplay appswitcher-appdisplay">{display}</div>
+  </div>
+</a>

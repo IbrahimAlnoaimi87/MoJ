@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Delete" xml:space="preserve">
+    <value>Confirm delete</value>
+    <comment>Delete Msg Heading</comment>
+  </data>
+  <data name="heading_FUNCTIONS" xml:space="preserve">
+    <value>Functions</value>
+  </data>
+  <data name="heading_GreenOpt" xml:space="preserve">
+    <value>Top binder setup</value>
+    <comment>The Label for the green popup</comment>
+  </data>
+  <data name="lblAfter" xml:space="preserve">
+    <value>After</value>
+    <comment>label</comment>
+  </data>
+  <data name="lblApply" xml:space="preserve">
+    <value>Apply</value>
+    <comment>button</comment>
+  </data>
+  <data name="lblAvail" xml:space="preserve">
+    <value>Available fields for mapping</value>
+  </data>
+  <data name="lblBind" xml:space="preserve">
+    <value>Bind</value>
+    <comment>label</comment>
+  </data>
+  <data name="lblCancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>button</comment>
+  </data>
+  <data name="lblClearF" xml:space="preserve">
+    <value>Clear Field</value>
+  </data>
+  <data name="lblDelete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>button</comment>
+  </data>
+  <data name="lblDeleteQ" xml:space="preserve">
+    <value>Are you sure you want to delete ?</value>
+    <comment>Delete Msq Question</comment>
+  </data>
+  <data name="lblDisabledControl" xml:space="preserve">
+    <value>Control is disabled</value>
+    <comment>Message for all controls</comment>
+  </data>
+  <data name="lblDTransfer" xml:space="preserve">
+    <value>Transfer Data</value>
+  </data>
+  <data name="lblExecute" xml:space="preserve">
+    <value>Execute</value>
+    <comment>label</comment>
+  </data>
+  <data name="lblFunction" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="lblListClick" xml:space="preserve">
+    <value>List OnClick Event</value>
+  </data>
+  <data name="lblNewBinding" xml:space="preserve">
+    <value>New binding</value>
+    <comment>button</comment>
+  </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>No</value>
+    <comment>Delete Q No</comment>
+  </data>
+  <data name="lblOk" xml:space="preserve">
+    <value>OK</value>
+    <comment>button</comment>
+  </data>
+  <data name="lblOptional" xml:space="preserve">
+    <value>Optional</value>
+    <comment>Optional text</comment>
+  </data>
+  <data name="lblRequired" xml:space="preserve">
+    <value>Required</value>
+    <comment>Required text</comment>
+  </data>
+  <data name="lblTo" xml:space="preserve">
+    <value>To</value>
+    <comment>label</comment>
+  </data>
+  <data name="lblYes" xml:space="preserve">
+    <value>Yes</value>
+    <comment>Delete Q Yes</comment>
+  </data>
+  <data name="msgEnsure" xml:space="preserve">
+    <value>Ensure all required properties are mapped</value>
+  </data>
+  <data name="msgRec" xml:space="preserve">
+    <value>This will cause a recursive binding with {0} and method {1}</value>
+  </data>
+  <data name="optPleaseSelectDestinationFunctions" xml:space="preserve">
+    <value>Please select a value</value>
+    <comment>DestinationFunctions</comment>
+  </data>
+  <data name="optPleaseSelectRightCombo" xml:space="preserve">
+    <value>Please select a value</value>
+    <comment>Right Combo box</comment>
+  </data>
+  <data name="optPleaseSelectSourceFunctions" xml:space="preserve">
+    <value>Please select a value</value>
+    <comment>Avail (left combo)</comment>
+  </data>
+</root>

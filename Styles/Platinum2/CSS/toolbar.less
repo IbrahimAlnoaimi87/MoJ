@@ -1,0 +1,571 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+.toolbars
+{
+    border: solid 1px @Toolbar-Border-Color;
+    position: relative;
+    overflow: hidden;
+}
+
+    .toolbars.single
+    {
+        min-height: @Toolbar-Height;
+    }
+
+    .toolbars.double
+    {
+        height: @Toolbar-Height + @Toolbar-Height + 1px; //extra px for separator
+    }
+
+    .toolbars.triple
+    {
+        height: @Toolbar-Height + @Toolbar-Height + @Toolbar-Height + 1px; //extra px for separator
+    }
+
+/* Toolbar Styling */
+.toolbar
+{
+    min-height: @Toolbar-Height;
+    position: relative;
+}
+
+    .toolbar.hidden
+    {
+        display: none;
+    }
+
+.toolbar-c
+{
+    min-height: @Toolbar-Height - 2px;
+}
+
+.toolbar-wrapper
+{
+    overflow: hidden;
+    border: solid 1px @Toolbar-Inset-Border-Color;
+    min-height: @Toolbar-Height - 2px;
+}
+
+/* Need fixed height for overflow on these toolbars to function correctly */
+#AppStudioToolbar .toolbar-wrapper,
+#pgTableToolbar .toolbar-wrapper,
+#FormLayoutTopToolbar .toolbar-wrapper,
+#OrderContainer .toolbar-wrapper,
+#FilterContainer .toolbar-wrapper,
+#RuleMappingWizard .toolbar-wrapper
+{
+    height: @Toolbar-Height - 2px;
+
+    /*Built-in designer toolbars should not be style-aware*/
+    svg
+    {
+        display: none;
+    }
+}
+
+/* Single Toolbar Styling */
+.toolbars.single .toolbar
+{
+    height: @Toolbar-Height;
+}
+
+.toolbars.single .toolbar .toolbar-wrapper
+{
+    background: @Toolbar-Background-Color-1; /* Old browsers  */
+}
+
+/* Double Toolbar Styling */
+.toolbars.double .toolbar
+{
+    border-top: solid 1px @Toolbar-Separator-Color;
+}
+
+    .toolbars.double .toolbar:first-child
+    {
+        border-top-width: 0;
+    }
+
+    .toolbars.double .toolbar .toolbar-wrapper
+    {
+        background: @Toolbar-Background-Color-1; /* Old browsers */
+    }
+
+    .toolbars.double .toolbar:first-child .toolbar-wrapper
+    {
+        background: @Toolbar-Background-Color-2; /* Old browsers */
+    }
+
+
+/* Override Toolbar Styling */
+.toolbars.single.bottom-docked
+{
+    border-top-width: 0;
+}
+
+    .toolbars.single.bottom-docked .toolbar .toolbar-wrapper
+    {
+        background: @Toolbar-Background-Color-1; /* Old browsers */
+    }
+
+/* Toolbar Buttons Styling */
+a.toolbar-button
+{
+    text-decoration: none;
+    color: #343E41;
+    display: block;
+    float: left;
+    height: @Toolbar-Height - 2px;
+}
+
+html[dir=rtl] a.toolbar-button
+{
+    float: right;
+}
+
+a.toolbar-button.error .button-icon::after
+{
+    -moz-animation: fadein 0.25s;
+    -o-animation: fadein 0.25s;
+    -webkit-animation: fadein 0.25s;
+    animation: fadein 0.25s;
+    background: url(../Images/Icons/Badges/Error16.png) no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 12px;
+    top: 0;
+}
+
+//used by the ToolbarButton control
+.toolbar-button-wrapper
+{
+    white-space: nowrap;
+}
+
+a.toolbar-button.toolbar-button-inline
+{
+    float: none;
+    display: table-cell;
+    line-height: normal;
+    height: inherit;
+    vertical-align: middle;
+}
+
+//NOTE: On focus.
+//All focus states for buttons are aachieved with .focus class rather than :focus.
+//this is becuase buttons should not *look* like they are focussed clicked with the *mouse*
+//but should only look focussed when tabbing with the keyboard. K2button widget achieves this.
+a.toolbar-button
+{
+    &:focus,
+    &:active
+    {
+        outline: none;
+    }
+}
+
+a.toolbar-button span
+{
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: inherit;
+}
+
+html[dir=rtl] a.toolbar-button span
+{
+    float: right;
+}
+
+a.toolbar-button.toolbar-button-inline span
+{
+    float: none;
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+a.toolbar-button span.button-c
+{
+    border: solid 1px transparent;
+    padding: 0 2px;
+    display: table-cell;
+    vertical-align: middle;
+    height: inherit;
+    box-sizing: border-box;
+}
+
+a.toolbar-button.style-builder-controls span.button-c
+{
+    height: auto;
+}
+
+a.toolbar-button span.button-l,
+a.toolbar-button span.button-r
+{
+    display: none;
+}
+
+a.toolbar-button:hover:not(.disabled),
+a.toolbar-button:active:not(.disabled)
+{
+    background-color: @Button-Hover-Background-Color-1;
+}
+
+//toggled on (for toggle buttons only)
+a.toolbar-button.selected
+{
+    background-color: rgba(0,0,0,0.05);
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+a.toolbar-button.focus:not(.disabled) span.button-c
+{
+    border-color: @Button-Focus-Border-Color;
+}
+
+a.toolbar-button.selected span.button-c
+{
+}
+
+a.toolbar-button.disabled,
+a.toolbar-button.disabled:hover,
+a.toolbar-button.disabled.focus,
+a.toolbar-button.disabled:active
+{
+    cursor: default;
+    background: transparent;
+    border-color: transparent;
+    filter: inherit;
+}
+
+a.toolbar-button.disabled span,
+a.toolbar-button.disabled:hover span,
+a.toolbar-button.disabled.focus span,
+a.toolbar-button.disabled:active span
+{
+    cursor: default;
+}
+
+a.toolbar-button.disabled span.button-c,
+a.toolbar-button.disabled:hover span.button-c,
+a.toolbar-button.disabled.focus span.button-c,
+a.toolbar-button.disabled:active span.button-c
+{
+    border: solid 1px transparent;
+}
+
+a.toolbar-button.disabled span.button-icon,
+a.toolbar-button.disabled:hover span.button-icon,
+a.toolbar-button.disabled.focus span.button-icon,
+a.toolbar-button.disabled:active span.button-icon,
+a.toolbar-button.disabled span.button-text,
+a.toolbar-button.disabled:hover span.button-text,
+a.toolbar-button.disabled.focus span.button-text,
+a.toolbar-button.disabled:active span.button-text
+{
+    cursor: default;
+    opacity: 0.3;
+}
+
+
+a.toolbar-button.overflow.disabled span.button-icon,
+a.toolbar-button.overflow.disabled:hover span.button-icon,
+a.toolbar-button.overflow.disabled.focus span.button-icon,
+a.toolbar-button.overflow.disabled:active span.button-icon,
+a.toolbar-button.overflow.disabled span.button-text,
+a.toolbar-button.overflow.disabled:hover span.button-text,
+a.toolbar-button.overflow.disabled.focus span.button-text,
+a.toolbar-button.overflow.disabled:active span.button-text
+{
+    visibility: hidden; //hide overflow buttons when disabled, to reduce clutter.
+}
+
+
+
+a.toolbar-button span.button-icon
+{
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+    position: relative;
+}
+
+a.toolbar-button span.button-text
+{
+    line-height: 18px;
+    padding: 0 3px;
+}
+
+a.toolbar-button.toolbar-button-inline span.button-text
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a.toolbar-button.hidden
+{
+    display: none;
+}
+
+/* Toolbar Divider Styling */
+.toolbar-divider
+{
+    //background: transparent url(../Images/Toolbar/toolbar_divider.png) no-repeat 0 -2px;
+    float: left;
+    height: @Toolbar-Height - 2px;
+    width: 3px;
+}
+
+html[dir=rtl] .toolbar-divider
+{
+    float: right;
+}
+
+.toolbar-divider.hidden
+{
+    display: none;
+}
+
+/*************************************************************************************/
+
+/* Toolbar Labels */
+.toolbar-label
+{
+    float: left;
+    line-height: @Toolbar-Height - 2px;
+    margin-top: 1px;
+    padding-left: 5px;
+}
+
+.toolbar.bottom-aligned .toolbar-label
+{
+    margin-top: 1px;
+}
+
+/* Toolbar Controls Grouping */
+.toolbar-control-wrapper
+{
+    float: left;
+    height: @Toolbar-Height - 2px;
+}
+
+html[dir=rtl] .toolbar-control-wrapper
+{
+    float: right;
+}
+
+.toolbar-controls-group
+{
+    float: left;
+    //height: @Toolbar-Height - 2px;
+    border-left: solid 1px rgba(0,0,0,0.05);
+}
+
+html[dir=rtl] .toolbar-controls-group
+{
+    float: right;
+}
+
+.toolbar-controls-group:first-child,
+.toolbar-controls-group.first
+{
+    padding-left: 0;
+    border-left: none;
+}
+
+html[dir=rtl] .toolbar-controls-group:first-child,
+html[dir=rtl] .toolbar-controls-group.first
+{
+    padding-left: 3px;
+    padding-right: 0;
+}
+
+.toolbar-controls-group-label
+{
+    float: left;
+    line-height: 19px;
+    height: @Toolbar-Height - 2px;
+    padding: 0 5px;
+}
+
+html[dir=rtl] .toolbar-controls-group-label
+{
+    float: right;
+}
+
+.toolbar-button span.button-down
+{
+    background-image: url(../Images/Arrows/black_arrow_down.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 15px;
+}
+
+.toolbar-button.disabled span.button-down
+{
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)"; /*IE8*/
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('toolbar_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('toolbar_images.less');
+}
+
+
+
+/* Toolbar Overflow Button */
+a.toolbar-button.overflow
+{
+    float: right;
+}
+
+html[dir=rtl] a.toolbar-button.overflow
+{
+    float: left;
+}
+
+a.toolbar-button.overflow .button-icon
+{
+    background: url(../Images/Arrows/OverflowArrow.png) no-repeat 50% 0;
+    height: 6px;
+    margin: 5px 1px;
+    width: 7px;
+}
+
+a.toolbar-button.overflow:hover .button-icon
+{
+    background-position: 50% -6px;
+}
+
+a.toolbar-button.overflow.disabled .button-icon,
+a.toolbar-button.overflow.disabled:hover .button-icon
+{
+    background-position: 50% -12px;
+}
+
+
+
+/* Floating Toolbar */
+.toolbar.floating
+{
+    border: solid 1px #adae9c;
+    position: relative;
+    height: 22px;
+    float: left;
+}
+
+    .toolbar.floating .toolbar-wrapper
+    {
+        background: #f5f5f1; /* Old browsers */
+        border: solid 1px @Toolbar-Inset-Border-Color;
+        height: 20px;
+    }
+
+
+/* Toolbar As Header Implementation (Hack) */
+.toolbar strong.header
+{
+    line-height: 19px;
+    padding: 0 0 0 7px;
+}
+
+.single-button-toolbar-wrapper
+{
+    float: left;
+    width: 28px;
+    margin-bottom: 3px;
+}
+
+html[dir=rtl] .single-button-toolbar-wrapper
+{
+    float: right;
+}
+
+
+
+/* Button Element Styling */
+button.toolbar-button {
+    background: none;
+    border: solid 0px transparent;
+    height: 20px;
+
+    span,
+    .icon {
+        cursor: pointer;
+        display: block;
+        float: left;
+        height: inherit;
+    }
+
+    .button-icon {
+        height: 18px;
+        width: 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 16px 16px;
+        position: relative;
+        flex-grow: 0;
+    }
+
+    .button-text {
+        line-height: 18px;
+        padding: 0 3px;
+    }
+
+    .button-down {
+        background-image: url(../Images/Arrows/black_arrow_down.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        width: 15px;
+    }
+}
+
+button.toolbar-button.selected,
+button.toolbar-button:hover,
+button.toolbar-button.focus,
+button.toolbar-button:active {
+    background: @Button-Hover-Background-Color-1; /* Old browsers */
+    border: solid 0px transparent;
+    color: #343E41;
+}
+
+    button.toolbar-button .ico
+    {
+        vertical-align: middle;
+    }
+
+/*#region LG: Cheeky Changes*/
+
+//differentiate the layout toolbars from the toolbox etc.
+#editorCanvasPane .toolbars.single, //view
+#FormDesignerLayoutPaneContainer .toolbars.double //form
+{
+    background-color: #eee;
+}
+
+
+
+/*#endregion LG: Cheeky Changes*/

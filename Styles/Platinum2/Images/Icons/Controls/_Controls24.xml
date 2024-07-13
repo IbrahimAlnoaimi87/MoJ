@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-controls.icon-size24.ic-{iconname}"/> <!-- normal -->
+          <RowDefinition row="2" cssSelector=".icon.icon-set-controls.icon-size24.ic-{iconname}.hover"/> <!-- hover -->
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1" cssname="autoguid">Back24.png</Row>
+              <Row number="2" cssname="autoguid">Back_Hover24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="2">   
+            <Rows>  
+              <Row number="1" cssname="autonumber">Forward24.png</Row>
+              <Row number="2" cssname="autonumber">Forward_Hover24.png</Row>
+            </Rows> 
+          </Column>   
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="12,0,0,12">
+        <CssBackgroundImageFolder>Controls/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/Controls/Controls24.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/Controls24.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

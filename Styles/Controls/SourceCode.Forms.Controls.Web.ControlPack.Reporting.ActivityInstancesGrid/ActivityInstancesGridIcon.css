@@ -1,0 +1,128 @@
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  /* View Designer: While dragging and dropping control on to the canvas*/
+  
+  a.ui-draggable-dragging.activityinstancesgrid-control,
+  /* Runtime: List View filter dragging*/ .theme-entry a.icon.ui-draggable-dragging.activityinstancesgrid-control,
+  /* View Designer: Configure Data Source popup for list controls the 'Parent Control' dropdown*/ .drop-menu.icon-control ul.drop-menu a.activityinstancesgrid-control,
+  /* Rule Designer: Action configuration target mappings tree*/ .input-control.icon-control.activityinstancesgrid-control .input-control-icon,
+  .input-control.icon-control.activityinstancesgrid-control .input-control-wrapper,
+  /* View/Form Designer: Droppable control's list on the left and the change control popup list*/ .toolboxitem.activityinstancesgrid-control,
+  /* Rules Designer: Popup of Specify edit state for controls action*/ .grid .grid-content-cell.icon.activityinstancesgrid-control,
+  /* Rule Designer: Action hot spot context menu*/ .menu a.menu-item.activityinstancesgrid-control span.menu-item-icon,
+  /* Rules Designer:  Action configuration mappings screens context trees*/ .tree li.activityinstancesgrid-control > a,
+  .tree li.activityinstancesgrid-control > span,
+  .tree li.activityinstancesgrid-control.children > a,
+  .tree li.activityinstancesgrid-control.children.open > a,
+  .tree li.activityinstancesgrid-control.children.closed > a,
+  .tree li.activityinstancesgrid-control.children > span,
+  .tree li.activityinstancesgrid-control.children.open > span,
+  .tree li.activityinstancesgrid-control.children.closed > span,
+  /* Runtime: List View filter context tree*/ .theme-entry .tree li.activityinstancesgrid-control > a.activityinstancesgrid-control,
+  .theme-entry .tree li.activityinstancesgrid-control.children.open > a.activityinstancesgrid-control,
+  .theme-entry .tree li.activityinstancesgrid-control.children.closed > a.activityinstancesgrid-control,
+  /* Rules Designer: Select controls to validate popup of the View passes validation condition*/ .grid .grid-content-cell.icon.control-activityinstancesgrid,
+  .input-control.checkbox .icon-control .activityinstancesgrid-control > span,
+  /* View/Form Designer: Dependencies popup when deleting a control that is referenced*/ .ico.icon-activityinstancesgrid-control {
+    background-image: url('Images/ActivityInstancesGrid16.png');
+  }
+  /* Form Designer: While dragging and dropping control on to the canvas*/
+  
+  a.ui-draggable-dragging.canvasDragGhost.activityinstancesgrid-control,
+  /* View/Form Designer: At top of properties panel when control is selected on the canvas*/ .icon.icon-size32.activityinstancesgrid-control,
+  .ico.icon-activityinstancesgrid-control.medium {
+    background-image: url('Images/ActivityInstancesGrid32.png');
+  }
+  /* Form Designer: Selection tree when control is in error*/
+  
+  .tree li a.activityinstancesgrid-control.error {
+    background-image: url('Images/ActivityInstancesGrid_Error16.png') !important;
+  }
+  /* View/Form Designer: Conditional Styles popup where control has been dropped in a condition*/
+  
+  /* Runtime: List View Advanced Filter Drop items */
+  
+  .input-control .drop-object.drop-item.activityinstancesgrid-control,
+  /* View/Form Designer:  Conditional Styles Left side of expression*/ .input-control .drop-item.activityinstancesgrid-control,
+  /* Rules Designer: Action configuration target mappings screens where the control has been dropped*/ .token-input .entity.icon.activityinstancesgrid-control,
+  /* Runtime: List View Filter Drop items*/ .theme-entry .token-input .entity.icon.activityinstancesgrid-control span.entity-text,
+  /* Rules Designer: Navigate to Form action in the URL preview*/ #FormNavigatePreviewPanel .token.activityinstancesgrid-control,
+  /* Rules Designer: Navigate to URL action widget tokens*/ #BrowserNavigatePC .token.activityinstancesgrid-control {
+    background-image: url('Images/ActivityInstancesGrid_Selected14.png');
+  }
+  /* Runtime: List View Advanced Filter Drop items */
+  
+  .theme-entry .input-control .drop-object.drop-item.activityinstancesgrid-control,
+  /* Runtime: List View Filter Drop items */ .theme-entry .token-input .entity.icon.activityinstancesgrid-control span.entity-text,
+  /* Runtime: List View filter context tree *//* Runtime: List View filter dragging*/ .theme-entry a.icon.ui-draggable-dragging.activityinstancesgrid-control,
+  .theme-entry .tree li.activityinstancesgrid-control > a.activityinstancesgrid-control,
+  .theme-entry .tree li.activityinstancesgrid-control.children.open > a.activityinstancesgrid-control,
+  .theme-entry .tree li.activityinstancesgrid-control.children.closed > a.activityinstancesgrid-control {
+    background-position-y: 50%;
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  /* View Designer: While dragging and dropping control on to the canvas*/
+  
+  a.ui-draggable-dragging.activityinstancesgrid-control,
+  /* Runtime: List View filter dragging*/ .theme-entry a.icon.ui-draggable-dragging.activityinstancesgrid-control,
+  /* View Designer: Configure Data Source popup for list controls the 'Parent Control' dropdown*/ .drop-menu.icon-control ul.drop-menu a.activityinstancesgrid-control,
+  /* Rule Designer: Action configuration target mappings tree*/ .input-control.icon-control.activityinstancesgrid-control .input-control-icon,
+  .input-control.icon-control.activityinstancesgrid-control .input-control-wrapper,
+  /* View/Form Designer: Droppable control's list on the left and the change control popup list*/ .toolboxitem.activityinstancesgrid-control,
+  /* Rules Designer: Popup of Specify edit state for controls action*/ .grid .grid-content-cell.icon.activityinstancesgrid-control,
+  /* Rule Designer: Action hot spot context menu*/ .menu a.menu-item.activityinstancesgrid-control span.menu-item-icon,
+  /* Rules Designer:  Action configuration mappings screens context trees*/ .tree li.activityinstancesgrid-control > a,
+  .tree li.activityinstancesgrid-control > span,
+  .tree li.activityinstancesgrid-control.children > a,
+  .tree li.activityinstancesgrid-control.children.open > a,
+  .tree li.activityinstancesgrid-control.children.closed > a,
+  .tree li.activityinstancesgrid-control.children > span,
+  .tree li.activityinstancesgrid-control.children.open > span,
+  .tree li.activityinstancesgrid-control.children.closed > span,
+  /* Runtime: List View filter context tree*/ .theme-entry .tree li.activityinstancesgrid-control > a.activityinstancesgrid-control,
+  .theme-entry .tree li.activityinstancesgrid-control.children.open > a.activityinstancesgrid-control,
+  .theme-entry .tree li.activityinstancesgrid-control.children.closed > a.activityinstancesgrid-control,
+  /* Rules Designer: Select controls to validate popup of the View passes validation condition*/ .grid .grid-content-cell.icon.control-activityinstancesgrid,
+  .input-control.checkbox .icon-control .activityinstancesgrid-control > span,
+  /* View/Form Designer: Dependencies popup when deleting a control that is referenced*/ .ico.icon-activityinstancesgrid-control {
+    background-image: url('Images/ActivityInstancesGrid16@2x.png');
+  }
+  /* Form Designer: While dragging and dropping control on to the canvas*/
+  
+  a.ui-draggable-dragging.canvasDragGhost.activityinstancesgrid-control,
+  /* View/Form Designer: At top of properties panel when control is selected on the canvas*/ .icon.icon-size32.activityinstancesgrid-control,
+  .ico.icon-activityinstancesgrid-control.medium {
+    background-image: url('Images/ActivityInstancesGrid32@2x.png');
+  }
+  /* Form Designer: Selection tree when control is in error*/
+  
+  .tree li a.activityinstancesgrid-control.error {
+    background-image: url('Images/ActivityInstancesGrid_Error16@2x.png') !important;
+  }
+  /* View/Form Designer: Conditional Styles popup where control has been dropped in a condition*/
+  
+  /* Runtime: List View Advanced Filter Drop items */
+  
+  .input-control .drop-object.drop-item.activityinstancesgrid-control,
+  /* View/Form Designer:  Conditional Styles Left side of expression*/ .input-control .drop-item.activityinstancesgrid-control,
+  /* Rules Designer: Action configuration target mappings screens where the control has been dropped*/ .token-input .entity.icon.activityinstancesgrid-control,
+  /* Runtime: List View Filter Drop items*/ .theme-entry .token-input .entity.icon.activityinstancesgrid-control span.entity-text,
+  /* Rules Designer: Navigate to Form action in the URL preview*/ #FormNavigatePreviewPanel .token.activityinstancesgrid-control,
+  /* Rules Designer: Navigate to URL action widget tokens*/ #BrowserNavigatePC .token.activityinstancesgrid-control {
+    background-image: url('Images/ActivityInstancesGrid_Selected14@2x.png');
+  }
+  /* Runtime: List View Advanced Filter Drop items */
+  
+  .theme-entry .input-control .drop-object.drop-item.activityinstancesgrid-control,
+  /* Runtime: List View Filter Drop items */ .theme-entry .token-input .entity.icon.activityinstancesgrid-control span.entity-text,
+  /* Runtime: List View filter context tree *//* Runtime: List View filter dragging*/ .theme-entry a.icon.ui-draggable-dragging.activityinstancesgrid-control,
+  .theme-entry .tree li.activityinstancesgrid-control > a.activityinstancesgrid-control,
+  .theme-entry .tree li.activityinstancesgrid-control.children.open > a.activityinstancesgrid-control,
+  .theme-entry .tree li.activityinstancesgrid-control.children.closed > a.activityinstancesgrid-control {
+    background-position-y: 50%;
+  }
+}

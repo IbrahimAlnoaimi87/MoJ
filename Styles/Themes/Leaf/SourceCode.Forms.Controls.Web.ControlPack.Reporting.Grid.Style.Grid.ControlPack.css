@@ -1,0 +1,206 @@
+/* RadGrid Styling */
+/* footer (design time) */
+.theme-entry .StandardGrid.designtime .radgrid1-footer .toolbar-wrapper
+{
+	border-color: transparent;
+}
+
+/* footer (design time) */
+.theme-entry .StandardGrid.designtime .report-grid-footer-container
+{
+	border-color: #809200 #424800 #424800 #809200;
+	background: #738201; /* Old browsers */
+	background: -moz-linear-gradient(top, #738201 0%, #424800 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#738201), color-stop(100%,#424800)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #738201 0%,#424800 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #738201 0%,#424800 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #738201 0%,#424800 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #738201 0%,#424800 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#738201', endColorstr='#424800',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .StandardGrid .report-grid-footer-container,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-first,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-prev,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-next,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-last,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-page-input,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-page-label,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-first,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-prev,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-first,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-next,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-last,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-page-label,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-page-input
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#738201', endColorstr='#424800',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .UserPerfHeader
+{
+	font-weight: bold !important;
+}
+
+.theme-entry .UserPerfSubHeader 
+{
+	color: #CCCCCC !important;
+}
+
+.theme-entry .radgrid-grid-column-header-text
+{
+	color: #ffffff;
+}
+
+.theme-entry .StandardGrid .rgDetailTable .rgAltRow td,
+.theme-entry .StandardGrid .rgDetailTable .rgRow td
+{
+	padding-left: 6px;
+}
+
+.theme-entry .radgrid-gridheader
+{
+	border-color: #809200 #424800 #424800 #809200;
+	background: #738201; /* Old browsers */
+	background: -moz-linear-gradient(top, #738201 0%, #424800 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#738201), color-stop(100%,#424800)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #738201 0%,#424800 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #738201 0%,#424800 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #738201 0%,#424800 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #738201 0%,#424800 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#738201', endColorstr='#424800',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .radgrid-footer
+{
+	border-color: #809200 #424800 #424800 #809200;
+	background: #738201; /* Old browsers */
+	background: -moz-linear-gradient(top, #738201 0%, #424800 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#738201), color-stop(100%,#424800)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #738201 0%,#424800 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #738201 0%,#424800 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #738201 0%,#424800 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #738201 0%,#424800 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#738201', endColorstr='#424800',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .radgrid-grid-column-header-cell.sorting:hover
+{
+	border-color: #b2ca00;
+	background: #b4cc00; /* Old browsers */
+	background: -moz-linear-gradient(top, #b4cc00 0%, #7d8902 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4cc00), color-stop(100%,#7d8902)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #b4cc00 0%,#7d8902 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #b4cc00 0%,#7d8902 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #b4cc00 0%,#7d8902 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #b4cc00 0%,#7d8902 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4cc00', endColorstr='#7d8902',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .radgrid-altrowLayout
+{
+	background-color: #eceed8;
+}
+
+.theme-entry .radgrid-rowLayout
+{
+	background-color: #ffffff;
+}
+
+.theme-entry .StandardGrid .rgDetailTable 
+{
+	border-color: #424800;
+}
+
+.theme-entry .radgrid-grid-column-headers-wrapper
+{
+	border-color: #809200 #424800 #424800 #809200;
+}
+
+.theme-entry .radgrid-rowLayout:hover.radgrid-selectedItem,
+.theme-entry .radgrid-altrowLayout:hover.radgrid-selectedItem
+{
+	background-color: #bfc87f;
+}
+
+.theme-entry .radgrid-rowLayout:active,
+.theme-entry .radgrid-rowLayout:hover,
+.theme-entry .radgrid-altrowLayout:active,
+.theme-entry .radgrid-altrowLayout:hover
+{
+	background-color: #d2d8a5;
+}
+
+.theme-entry .radgrid-selectedItem 
+{
+	background-color: #bfc87f;
+	outline: 1px dotted #b2ca00;
+}
+
+.theme-entry .radgrid-tableMain
+{
+	border-color: #809200 #424800 #424800 #809200;
+}
+
+.theme-entry .radgrid-grid-column-header-text,
+.theme-entry .radgrid-gridheader a,
+.theme-entry .radgrid a,
+.theme-entry .radgrid-tableMain .radgrid-divPage,
+.theme-entry .radgrid-tableMain tr.radgrid-footer .radgrid-footer .toolbar-wrapper
+{
+	color: #ffffff;
+}
+
+.theme-entry .StandardGrid .buttonPrev:hover
+{
+	background-image: url(paging_arrows_single_left_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonPrev,
+.theme-entry .StandardGrid .buttonPrev.disabled:hover
+{
+	background-image: url(paging_arrows_single_left_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonFirstPage:hover
+{
+	background-image: url(paging_arrows_double_left_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonFirstPage,
+.theme-entry .StandardGrid .buttonFirstPage.disabled:hover
+{
+	background-image: url(paging_arrows_double_left_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonLastPage,
+.theme-entry .StandardGrid .buttonLastPage.disabled:hover
+{
+	background-image: url(paging_arrows_double_right_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonNext:hover
+{
+	background-image: url(paging_arrows_single_right_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonNext,
+.theme-entry .StandardGrid .buttonNext.disabled:hover
+{
+	background-image: url(paging_arrows_single_right_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonLastPage:hover
+{
+	background-image: url(paging_arrows_double_right_hover.png);
+}
+
+.theme-entry .StandardGrid .rgSortAsc
+{
+	background-image: url(sort_ascending_normal.png);
+}
+
+.theme-entry .StandardGrid .rgSortDesc
+{
+	background-image: url(sort_descending_normal.png);
+}

@@ -1,0 +1,21 @@
+<div class='PART-clickarea layout-table usercard'>
+	<div class='layout-cell usercard-avatar-parent'>
+		<span class='PART-avatar usercard-avatar'></span>
+	</div>
+	<div class='layout-cell-full-width usercard-details-parent'>
+		<div class='PART-displayname usercard-text usercard-displayname'></div>
+		<div class='PART-email usercard-text usercard-email'></div>
+		<a class='PART-linktext PART-link-clickarea usercard-text usercard-link hidden'></a>
+    <div class='PART-linkdescription usercard-text usercard-link-description hidden'></div>
+	</div>
+	<div class='PART-overlay usercard-overlay hidden'>
+		<div class='PART-loading-container usercard-overlay-container hidden'>
+			<div class='usercard-loading-spinner'></div>
+			<span class='PART-loading-text usercard-overlay-text'>{LoadingText}</span>
+		</div>
+		<div class='PART-retry-container usercard-overlay-container hidden'>
+			<a class='PART-retry-clickarea usercard-retry-icon usercard-clickable' href='javascript:void(0)'></a>
+			<span class='PART-retry-error usercard-overlay-text'></span>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,251 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		Main Concierge screen for designer - with K2 logo and new file buttons*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+.login-status {
+  text-align: right;
+  line-height: 30px;
+  padding: 0 5px;
+  font-weight: 700;
+}
+.content-overview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 25px;
+  right: 400px;
+  overflow: hidden;
+  padding: 5px;
+}
+.content-button-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  right: 400px;
+  overflow: hidden;
+}
+.content-button-bar a:first-child {
+  margin-left: 0;
+}
+.getting-started-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  overflow: hidden;
+}
+#getting_started_panel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* The XHTML structure to which the following CSS is applied will
+   eventually replace the current styling & structure of the Panelbox
+   control */
+
+.tmp-panel-box-t,
+.tmp-panel-box-m,
+.tmp-panel-box-b {
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.tmp-panel-box-t,
+.tmp-panel-box-tl,
+.tmp-panel-box-tc,
+.tmp-panel-box-tr {
+  top: 0;
+  height: 24px;
+}
+.tmp-panel-box-tl,
+.tmp-panel-box-tc,
+.tmp-panel-box-tr {
+  position: absolute;
+  overflow: hidden;
+  background-color: transparent;
+}
+.tmp-panel-box-tl {
+  left: 0;
+  width: 5px;
+  background-position: -5px 0;
+  background-repeat: no-repeat;
+  background-image: url("../Images/TitleBar/titlebar_corners.png");
+}
+.tmp-panel-box-tc {
+  left: 5px;
+  right: 5px;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  background-image: url("../Images/TitleBar/titlebar_repeater.png");
+}
+.tmp-panel-box-tr {
+  right: 0;
+  width: 5px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../Images/TitleBar/titlebar_corners.png");
+}
+.tmp-panel-box-m {
+  position: absolute;
+  top: 24px;
+  bottom: 3px;
+  overflow: hidden;
+}
+.tmp-panel-box-ml,
+.tmp-panel-box-mc,
+.tmp-panel-box-mr {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.tmp-panel-box-ml {
+  left: 0;
+  width: 3px;
+  background-position: 0 0;
+  background-repeat: repeat-y;
+  background-image: url("../Images/Panels/panel_left_border.png");
+}
+.tmp-panel-box-mc {
+  left: 3px;
+  right: 3px;
+  background-color: white;
+}
+.tmp-panel-box-mr {
+  right: 0;
+  width: 3px;
+  background-position: 100% 0;
+  background-repeat: repeat-y;
+  background-image: url("../Images/Panels/panel_right_border.png");
+}
+.tmp-panel-box-b,
+.tmp-panel-box-bl,
+.tmp-panel-box-bc,
+.tmp-panel-box-br {
+  bottom: 0;
+  height: 3px;
+}
+.tmp-panel-box-bl,
+.tmp-panel-box-bc,
+.tmp-panel-box-br {
+  position: absolute;
+  overflow: hidden;
+}
+.tmp-panel-box-bl,
+.tmp-panel-box-br {
+  width: 3px;
+  background-repeat: no-repeat;
+}
+.tmp-panel-box-bl {
+  left: 0;
+  background-position: 0 -2px;
+  background-image: url("../Images/Panels/panel_bottom_left_corner.png");
+}
+.tmp-panel-box-bc {
+  left: 3px;
+  right: 3px;
+  background-position: 0 -2px;
+  background-repeat: repeat-x;
+  background-image: url("../Images/Panels/panel_bottom_border.png");
+}
+.tmp-panel-box-br {
+  bottom: 0;
+  right: 0;
+  background-position: 100% -2px;
+  background-image: url("../Images/Panels/panel_bottom_right_corner.png");
+}
+.tmp-panel-box-header {
+  font-weight: 700;
+  line-height: 24px;
+}
+ul.tmp-option-select-list {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.tmp-option-select-list input {
+  display: none;
+}
+ul.tmp-option-select-list li {
+  margin: 2px 0 0 0;
+  padding: 0;
+}
+ul.tmp-option-select-list a {
+  display: block;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: #343e41;
+  outline: none;
+}
+ul.tmp-option-select-list a .option-l,
+ul.tmp-option-select-list a .option-c,
+ul.tmp-option-select-list a .option-r {
+  display: block;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+ul.tmp-option-select-list a .option-l {
+  width: 5px;
+  background: transparent url("../Images/OptionSelectBox/selection_highlight_states_left_corners.png") no-repeat 0 50px;
+}
+ul.tmp-option-select-list a .option-c {
+  left: 5px;
+  right: 5px;
+  background: transparent url("../Images/OptionSelectBox/selection_highlight_states_repeater.png") repeat-x 0 50px;
+}
+ul.tmp-option-select-list a .option-r {
+  width: 5px;
+  right: 0;
+  background: transparent url("../Images/OptionSelectBox/selection_highlight_states_right_corners.png") no-repeat 0 50px;
+}
+ul.tmp-option-select-list a .icon {
+  display: block;
+  float: left;
+  margin: 5px 5px 5px 0;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url("../Images/Icons/PlayPreviewAppl32.png");
+}
+ul.tmp-option-select-list a .title {
+  display: block;
+  font-weight: 700;
+  margin-top: 5px;
+}
+ul.tmp-option-select-list a:hover .option-l,
+ul.tmp-option-select-list a:hover .option-c,
+ul.tmp-option-select-list a:hover .option-r {
+  background-position: 0 0;
+}
+ul.tmp-option-select-list a:active .option-l,
+ul.tmp-option-select-list a:active .option-c,
+ul.tmp-option-select-list a:active .option-r,
+ul.tmp-option-select-list a.selected .option-l,
+ul.tmp-option-select-list a.selected .option-c,
+ul.tmp-option-select-list a.selected .option-r {
+  background-position: 0 -50px;
+}
+.content-overview ul {
+  height: 128px;
+  background: transparent url(../Images/Diagram/Diagram_128_complete.png) no-repeat 0 0;
+}
+.content-overview ul li {
+  display: none;
+}

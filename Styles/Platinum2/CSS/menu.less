@@ -1,0 +1,294 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+//MENU BARS
+.menu-bar
+{
+    height: 24px;
+    padding-left: 5px;
+    background: transparent url("../Images/Toolbar/toolbar_left_corner.png") no-repeat 0 100%;
+}
+
+.menu-bar-wrapper
+{
+    padding-right: 5px;
+    height: 24px;
+    background: transparent url("../Images/Toolbar/toolbar_right_slide.png") no-repeat 100% 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.menu-bar a.menu-bar-button
+{
+    display: block;
+    margin: 1px 0;
+    width: auto;
+    height: 22px;
+    background: transparent url("../Images/Toolbar/toolbar_button_left_corner.png") no-repeat 0 22px;
+    text-decoration: none;
+    padding-left: 5px;
+    float: left;
+    color: #343e41;
+    cursor: pointer;
+}
+
+.menu-bar a.menu-bar-button > span
+{
+    background: transparent url("../Images/Toolbar/toolbar_button_right_slide.png") no-repeat 100% 22px;
+    padding-right: 5px;
+    height: 22px;
+    display: block;
+    cursor: pointer;
+}
+
+a.menu-bar-button span.menu-bar-button-text
+{
+    display: block;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+.menu-bar a.menu-bar-button:hover,
+.menu-bar a.menu-bar-button:focus,
+.menu-bar a.menu-bar-button.active
+{
+    background-position: 0 0;
+}
+
+.menu-bar a.menu-bar-button:hover > span,
+.menu-bar a.menu-bar-button:focus > span,
+.menu-bar a.menu-bar-button.active > span
+{
+    background-position: 100% 0;
+}
+
+
+// MENU POPUPS
+
+.menu
+{
+    background-color: #f0f0f0;
+    background-attachment: local;
+    -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    max-width: 85%; /* Allow for space either side of menus to accept user click for hiding */
+    //padding: 2px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu-shadow
+{
+    display: none; //Deprecated in favour of normal box shadow.
+}
+
+.menu ul
+{
+    list-style: none outside none;
+    background: transparent none repeat scroll 0;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li
+{
+    display: block;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 100%;
+    padding: 1px;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.menu li:hover
+{
+    background: @Context-Item-Hover-Background-Color;
+}
+
+.menu li.selected
+{
+    background: @Context-Item-Selected-Background-Color;
+}
+
+.menu li.disabled,
+.menu li.disabled:hover
+{
+    background-color: transparent;
+    border: none;
+    color: @Main-Text-Color;
+    cursor: default;
+    opacity: 0.3;
+    padding: 1px;
+}
+
+.menu li.seperator
+{
+    font-size: 1px;
+    line-height: 1px;
+}
+
+.menu li.seperator:hover
+{
+    background: none;
+    border: none;
+}
+
+.menu li.seperator span
+{
+    border-top: 1px solid @Context-Separator-Border-Color;
+    display: block;
+    font-size: 1px;
+    line-height: 1px;
+    margin: 2px 3px;
+    overflow: hidden;
+}
+
+.menu a.menu-item
+{
+    color: @Main-Text-Color;
+    cursor: pointer;
+    display: block;
+    line-height: 16px;
+    outline: 0 none invert;
+    padding: 3px 21px 3px 3px;
+    text-decoration: none;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu li.selected a.menu-item {
+    color: @Context-Item-Selected-Text-Color;
+}
+
+html[dir=rtl] .menu a.menu-item
+{
+    padding: 3px 3px 3px 21px;
+}
+
+.menu a.checkmenu-item,
+.menu a.radiomenu-item
+{
+    color: @Main-Text-Color;
+    cursor: pointer;
+    display: block;
+    line-height: 16px;
+    outline: 0 none invert;
+    padding: 3px 21px 3px 1px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    html[dir=rtl] &
+    {
+        padding: 3px 1px 3px 21px;
+    }
+
+    label.input-control.checkbox .input-control-text
+    {
+        margin-left: 10px;
+
+        html[dir=rtl] &
+        {
+            margin-left: 1px; /* reset */
+            margin-right: 10px;
+        }
+    }
+}
+
+
+.menu a.menu-item.children
+{
+    background-color: transparent;
+    background-image: url(../Images/Arrows/black_arrow_right.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right center;
+}
+
+.menu a.menu-item.checked
+{
+    background-image: url(../Images/Icons/Yes16.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right center;
+}
+
+.menu a.menu-item span.menu-item-icon
+{
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0 none;
+    height: 16px;
+    margin: 0 8px 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+    display: block;
+    float: left;
+}
+
+html[dir=rtl] .menu a.menu-item span.menu-item-icon
+{
+    float: right;
+    margin: 0 0 0 8px;
+}
+
+.menu a.menu-item .menu-item-text
+{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.menu li.disabled a.menu-item,
+.menu li.disabled:hover a.menu-item
+{
+    cursor: default;
+}
+
+.menu a.menu-item.disabled
+{
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)"; /*IE8*/
+    cursor: default;
+}
+
+.menu a.menu-item span.menu-item-icon
+{
+    background-size: 16px 16px; /*needed for resolution icons in media query*/
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('menu_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('menu_images.less');
+}

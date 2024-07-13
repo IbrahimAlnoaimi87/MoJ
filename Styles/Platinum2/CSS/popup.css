@@ -1,0 +1,745 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+.popup {
+  position: absolute;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.popup > .popup-header,
+.popup > .popup-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.popup > .popup-body {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+.popup #propertyConfig_DisplayTemplatePanel_Container .input-control .input-control-m-c,
+.popup #propertyConfig_DisplayTemplatePanel_Container .input-control-content {
+  border: none;
+}
+.popup #propertyConfig_DisplayTemplatePanel_Container .input-control .input-control-wrapper {
+  padding-top: 3px;
+}
+.popup #ConditionGrid .grid-header {
+  border: none;
+}
+.popup #ConditionGrid .grid-header-wrapper {
+  height: 22px;
+}
+.popup #ConditionGrid .grid-header-text {
+  height: 22px;
+  line-height: 22px;
+  color: #343e41;
+  font-weight: normal;
+}
+.popup .grid-header-wrapper,
+.popup .grid-column-headers-wrapper,
+.popup .panel-header {
+  background-color: #ececec;
+}
+.popup .grid-body,
+.popup .grid .grid-body-content {
+  border: none;
+}
+.popup #EBExpressionHeaderPanel.panel > .panel-body,
+.popup #EBExpressionsPanel.panel > .panel-body,
+.popup #EBExpressionPreviewPanel.panel > .panel-body,
+.popup #StyleBuilderFormatContentPane .panel > .panel-body,
+.popup #StyleBuilderConditionsPanelTop.panel > .panel-body,
+.popup #ConditionWidgetPC .panel > .panel-body {
+  border: none;
+}
+.popup .tabs-top #StyleBuilderTabBody.tab-box-body {
+  border: none;
+}
+.popup-header {
+  background-color: #f8f8f8;
+  /* Old browsers */
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px;
+  height: 46px;
+}
+.popup-header-c {
+  height: 46px;
+}
+.popup-header-wrapper {
+  height: 46px;
+}
+.popup-header-wrapper > .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.popup-header-text {
+  color: inherit;
+  float: left;
+  font-weight: bold;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: default;
+  flex-grow: 1;
+  order: 1;
+}
+html[dir=rtl] .popup-header-text {
+  order: 2;
+  text-align: right;
+}
+.popup-header-buttons {
+  order: 2;
+}
+html[dir=rtl] .popup-header-buttons {
+  order: 1;
+}
+.popup-header-button-bar {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+}
+.popup-header-button-bar-wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+html[dir=rtl] .popup-header-button-bar-wrapper {
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.popup-header-buttons a {
+  display: block;
+  text-decoration: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 16px 16px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+html[dir=rtl] .popup-header-buttons a {
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.popup-header-buttons a span {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+.popup-body {
+  /*position: absolute;	
+    top: @Popup-Header-Height;
+    left: 0;
+    right: 0;
+    bottom: @Popup-Footer-Height;*/
+  overflow: hidden;
+  background-color: #f8f8f8;
+  /* Old browsers */
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px;
+}
+.popup-body .wizard-step-content {
+  background-color: #f8f8f8;
+  /* Prevent bleedthrough */
+
+}
+.popup-body-c {
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  /*LG: Edge to edge*/
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  /*LG: Edge to edge*/
+
+}
+.popup-footer {
+  /*position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
+  background-color: #f8f8f8;
+  /* Old browsers */
+  height: 54px;
+}
+.popup-footer-c {
+  background-color: #f8f8f8;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px;
+  /*LG: Edge to edge*/
+  padding: 0px 0px;
+  /*Center the buttons vertically within the footer*/
+  height: 54px;
+  line-height: 54px;
+  /*Make the footer buttons span all the way across*/
+  float: none;
+}
+.popup-footer-c .button-bar {
+  display: block;
+  height: 100%;
+  line-height: normal;
+  vertical-align: middle;
+}
+.popup-footer-c .button-bar .button-bar-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.popup-footer-c .button-bar .button-group {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  float: none;
+}
+.popup-footer-c .button-bar .button-group.left {
+  justify-content: flex-start;
+}
+.popup-footer-c .button-bar .button-group.right {
+  justify-content: flex-end;
+}
+.popup-footer-c .button-bar .button {
+  float: none;
+  display: inline-block;
+}
+.popup-footer-r {
+  display: none;
+}
+.popup .popup-footer .button-bar-wrapper .button-group.left a.button {
+  margin: 10px 0 10px 10px;
+  height: 34px;
+  width: 34px;
+  min-width: 34px;
+  max-width: 34px;
+}
+.popup .popup-footer .button-bar-wrapper .button-group.left a.button > .button-wrapper {
+  height: 32px;
+}
+html[dir=rtl] .popup .popup-footer .button-bar-wrapper .button-group.left a.button {
+  margin: 10px 10px 10px 0;
+}
+.popup .popup-footer .button-bar-wrapper .button-group.right a.button {
+  margin: 10px 10px 10px 0;
+  height: 34px;
+  line-height: 32px;
+}
+.popup .popup-footer .button-bar-wrapper .button-group.right a.button > .button-wrapper {
+  height: 32px;
+}
+html[dir=rtl] .popup .popup-footer .button-bar-wrapper .button-group.right a.button {
+  margin: 10px 0 10px 10px;
+}
+.popup-body-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Remove double margin in Picture Picker dialog*/
+
+  /* Prevent potential double margins by nested scroll-wrappers*/
+
+}
+.popup-body-content .panel-body-wrapper > .scroll-wrapper {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.popup-body-content .panel-body-wrapper > .scroll-wrapper .tree {
+  margin-left: -5px;
+}
+.popup-body-content #imagePropertyConfig_contentPanel .panel-body-wrapper > .scroll-wrapper {
+  padding: 0px;
+}
+#DependencyWarningPopupMessage .popup-body-content .scroll-wrapper .scroll-wrapper > * {
+  padding: 0px;
+}
+/* Padding for Rules State*/
+
+#pgAddState_popUp .panel-body-wrapper {
+  padding: 10px;
+}
+.popup.no-buttons .popup-footer {
+  display: none;
+}
+/* Message Box Content Styling */
+
+.message-box-content {
+  min-height: 101px;
+  background-color: transparent;
+}
+.message-box-content > .panel.full {
+  width: auto;
+  height: 100%;
+}
+.message-box-content.confirmation > .panel > .panel-body {
+  padding: 20px;
+}
+.popup.dialog.auto-scale-height {
+  height: auto !important;
+}
+.popup.dialog.auto-scale-height .message-box-content {
+  min-height: auto;
+}
+.popup.dialog.auto-scale-height .lyt-messagebox-layout {
+  height: auto !important;
+}
+.popup.dialog.auto-scale-height .popup-body-c {
+  position: relative;
+}
+.popup.dialog.simple-message-content .lyt-messagebox-layout .message {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  width: 100%;
+  /* HACK for IE to prevent wrapping*/
+
+}
+#AutomaticChangesMustBeCommittedPopup .lyt-messagebox-layout .message {
+  display: block;
+}
+.lyt-messagebox-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.lyt-messagebox-layout .icon {
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  padding: 0px 5px;
+}
+.lyt-messagebox-layout .message {
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+.message-box-content.confirmation .lyt-messagebox-layout .icon {
+  display: none;
+}
+/* ExceptionBox Styling */
+
+.exceptionMessage {
+  height: 96px;
+  overflow: auto;
+}
+.exceptionDivider {
+  background-color: silver;
+  border-color: #f8f8f8;
+  border-style: solid;
+  border-width: 1px 0;
+  height: 1px;
+  margin: 2px 0px 2px 42px;
+}
+.exceptionDetails {
+  max-height: 240px;
+  /*header + root + 10 items = 12 * 20 */
+  overflow: auto;
+  margin-left: 42px;
+}
+.exceptionDetails > ul.exception {
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+.exceptionDetails > ul li > pre {
+  color: gray;
+  display: inline;
+  white-space: pre-wrap;
+  /* CSS3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, ca. 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+
+}
+/* Dependency Notifier Popup */
+
+#DependencyNotifierDependencyContainer {
+  margin: 3px 0px 3px 1px;
+  padding: 0px;
+}
+#DependencyNotifierDependencyContainer ul {
+  padding: 0 0 0 18px;
+  margin: 0px;
+}
+#DependencyNotifierDependencyContainer li {
+  display: block;
+  padding: 3px 0px 3px 0px;
+  margin: 3px;
+  clear: both;
+}
+#DependencyNotifierDependencyContainer li > span {
+  display: table-cell;
+  padding: 0px 9px;
+  vertical-align: middle;
+}
+#DependencyNotifierDependencyContainer li i.ico {
+  vertical-align: middle;
+  display: table-cell;
+}
+#DependencyNotifierDependencyContainer .categorySectionsHeading {
+  font-weight: bold;
+}
+#rbKeepOrRemoveDependenciesGroup {
+  margin-top: 9px;
+  margin-left: 27px;
+  white-space: normal;
+}
+#DependencyWarningPopupMessage .notifier-title-message {
+  word-wrap: break-word;
+  padding: 9px;
+}
+#DependencyWarningPopupMessage .notifier-choice-message {
+  padding-top: 9px;
+}
+#DependencyWarningPopupMessage .notifier-footer {
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+}
+#DependencyWarningPopupMessage .notifier-footer.hidden {
+  display: none;
+  height: 0;
+}
+#DependencyWarningPopupMessage .notifier-confirmation-message {
+  padding-top: 9px;
+}
+#DependencyWarningPopupMessage .notifier-confirmation {
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+}
+#DependencyWarningPopupMessage .notifier-confirmation.hidden {
+  display: none;
+  height: 0;
+}
+#DependencyNotifierListPanelContainer {
+  word-wrap: break-word;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+#DependencyWarningPopup.no-content {
+  height: 100%;
+  padding: 6px;
+  background-color: white;
+}
+/* CheckInOut Dialog */
+
+#CheckInOutDialog .checkinout-dialog-message {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  /*776888 - IE 11, wrap the message. Cannot just use width or Chrome then has a visual ghost.*/
+  max-width: 578px;
+}
+#CheckInOutDialog .checkinout-dialog-detail {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-height: 220px;
+  /* 11 x 20px ( 1 root and 10 children)*/
+  overflow: auto;
+}
+#CheckInOutDialog .checkinout-dialog-detail ul {
+  margin: 0;
+  padding: 0;
+  /* fixes list-style-type:none not applying correctly if the content is hidden in IE11 / Edge https://bugs.jqueryui.com/ticket/8844*/
+  list-style-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+}
+#CheckInOutDialog .checkinout-dialog-detail ul .ico {
+  vertical-align: middle;
+}
+#CheckInOutDialog .checkinout-dialog-detail > ul > li {
+  padding-left: 0;
+}
+#CheckInOutDialog .checkinout-dialog-detail li {
+  display: block;
+  min-height: 20px;
+  line-height: 20px;
+  padding: 0 0 0 18px;
+  margin: 0 0 0 0;
+  clear: both;
+}
+#CheckInOutDialog .panel-body {
+  padding-bottom: 3px;
+}
+#CheckInOutDialog .popup-body-content .panel .scroll-wrapper > .lyt-messagebox-layout {
+  padding: 0px;
+}
+/* #region Custom Code Warning Dialog */
+
+#CustomCodeWarningDialog .message-box-content.confirmation > .panel > .panel-body {
+  padding: 0px;
+}
+#CustomCodeWarningDialog .popup-footer a.button {
+  text-transform: uppercase;
+}
+#CustomCodeWarningDialog .message {
+  display: flex;
+  flex-direction: column;
+  padding-top: 21px;
+}
+#CustomCodeWarningDialog .message div {
+  align-self: center;
+  letter-spacing: 0;
+  color: #4e5758;
+  text-align: center;
+  font-size: 12px;
+  line-height: 17px;
+}
+#CustomCodeWarningDialog .message .customcodewarning-dialog-title {
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 20px;
+}
+#CustomCodeWarningDialog .message .customcodewarning-dialog-image {
+  width: 400px;
+  height: 204px;
+  background-image: url(../Images/Diagram/CustomCodeIllustration.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#CustomCodeWarningDialog .message .customcodewarning-dialog-details {
+  width: 272px;
+  height: 34px;
+}
+#CustomCodeWarningDialog .message .customcodewarning-dialog-moreinfo {
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#CustomCodeWarningDialog .message .customcodewarning-dialog-moreinfo .title {
+  font-weight: bold;
+  height: 24px;
+}
+#CustomCodeWarningDialog .message .customcodewarning-dialog-moreinfo .detail,
+#CustomCodeWarningDialog .message .customcodewarning-dialog-moreinfo .link {
+  text-align: center;
+  font-weight: normal;
+}
+#CustomCodeWarningDialog .message .customcodewarning-dialog-accept-option {
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+#CustomCodeWarningDialog .message .customcodewarning-dialog-accept-option .input-control-text {
+  margin-left: 8px;
+  margin-top: -1px;
+}
+#CustomCodeWarningDialog .message .customcodewarning-dialog-accept-option .input-control-text::after {
+  content: '*';
+  color: #b71c1c;
+}
+/* #endregoin*/
+
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .message-box-content.info .icon {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt32.png");
+  }
+  .message-box-content.warning .icon {
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling32.png");
+  }
+  .message-box-content.error .icon {
+    background-image: url("../Images/Icons/Management/Error32.png");
+  }
+  .message-box-content.confirmation .icon {
+    background-image: none;
+  }
+  .message-box-content.sign-in .icon {
+    background-image: url("../Images/Icons/Ribbon/Lock32.png");
+  }
+  /* DIALOG CONTROL BOX - NORMAL STATES */
+  
+  .popup-header-buttons a.close,
+  .popup-header-buttons a.close.only,
+  .popup-header-buttons a.close:only-child,
+  .popup-header-buttons a.close.last,
+  .popup-header-buttons a.close:last-child {
+    background-image: url("../Images/Icons/Runtime/HeaderClose16.png");
+  }
+  .popup-header-buttons a.minimize,
+  .popup-header-buttons a.minimize:first-child {
+    background-image: url("../Images/Icons/Runtime/HeaderMinimize16.png");
+  }
+  .popup-header-buttons a.maximize,
+  .popup-header-buttons a.maximize:first-child,
+  .popup-header-buttons a.maximize.first {
+    background-image: url("../Images/Icons/Runtime/HeaderMaximize16.png");
+  }
+  .popup-header-buttons a.restore,
+  .popup-header-buttons a.restore:first-child,
+  .popup-header-buttons a.restore.first {
+    background-image: url("../Images/Icons/Runtime/HeaderWindow16.png");
+  }
+  /* DIALOG CONTROL BOX - HOVER STATES */
+  
+  .popup-header-buttons a.close:hover,
+  .popup-header-buttons a.close.only:hover,
+  .popup-header-buttons a.close:only-child:hover,
+  .popup-header-buttons a.close.last:hover,
+  .popup-header-buttons a.close:last-child:hover {
+    background-image: url("../Images/Icons/Runtime/HeaderClose_Hover16.png");
+  }
+  .popup-header-buttons a.minimize:hover,
+  .popup-header-buttons a.minimize:first-child:hover {
+    background-image: url("../Images/Icons/Runtime/HeaderMinimize_Hover16.png");
+  }
+  .popup-header-buttons a.maximize:hover,
+  .popup-header-buttons a.maximize:first-child:hover,
+  .popup-header-buttons a.maximize.first:hover {
+    background-image: url("../Images/Icons/Runtime/HeaderMaximize_Hover16.png");
+  }
+  .popup-header-buttons a.restore:hover,
+  .popup-header-buttons a.restore:first-child:hover,
+  .popup-header-buttons a.restore.first:hover {
+    background-image: url("../Images/Icons/Runtime/HeaderWindow_Hover16.png");
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .message-box-content.info .icon {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt32@2x.png");
+  }
+  .message-box-content.warning .icon {
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling32@2x.png");
+  }
+  .message-box-content.error .icon {
+    background-image: url("../Images/Icons/Management/Error32@2x.png");
+  }
+  .message-box-content.confirmation .icon {
+    background-image: none;
+  }
+  .message-box-content.sign-in .icon {
+    background-image: url("../Images/Icons/Ribbon/Lock32@2x.png");
+  }
+  /* DIALOG CONTROL BOX - NORMAL STATES */
+  
+  .popup-header-buttons a.close,
+  .popup-header-buttons a.close.only,
+  .popup-header-buttons a.close:only-child,
+  .popup-header-buttons a.close.last,
+  .popup-header-buttons a.close:last-child {
+    background-image: url("../Images/Icons/Runtime/HeaderClose16@2x.png");
+  }
+  .popup-header-buttons a.minimize,
+  .popup-header-buttons a.minimize:first-child {
+    background-image: url("../Images/Icons/Runtime/HeaderMinimize16@2x.png");
+  }
+  .popup-header-buttons a.maximize,
+  .popup-header-buttons a.maximize:first-child,
+  .popup-header-buttons a.maximize.first {
+    background-image: url("../Images/Icons/Runtime/HeaderMaximize16@2x.png");
+  }
+  .popup-header-buttons a.restore,
+  .popup-header-buttons a.restore:first-child,
+  .popup-header-buttons a.restore.first {
+    background-image: url("../Images/Icons/Runtime/HeaderWindow16@2x.png");
+  }
+  /* DIALOG CONTROL BOX - HOVER STATES */
+  
+  .popup-header-buttons a.close:hover,
+  .popup-header-buttons a.close.only:hover,
+  .popup-header-buttons a.close:only-child:hover,
+  .popup-header-buttons a.close.last:hover,
+  .popup-header-buttons a.close:last-child:hover {
+    background-image: url("../Images/Icons/Runtime/HeaderClose_Hover16@2x.png");
+  }
+  .popup-header-buttons a.minimize:hover,
+  .popup-header-buttons a.minimize:first-child:hover {
+    background-image: url("../Images/Icons/Runtime/HeaderMinimize_Hover16@2x.png");
+  }
+  .popup-header-buttons a.maximize:hover,
+  .popup-header-buttons a.maximize:first-child:hover,
+  .popup-header-buttons a.maximize.first:hover {
+    background-image: url("../Images/Icons/Runtime/HeaderMaximize_Hover16@2x.png");
+  }
+  .popup-header-buttons a.restore:hover,
+  .popup-header-buttons a.restore:first-child:hover,
+  .popup-header-buttons a.restore.first:hover {
+    background-image: url("../Images/Icons/Runtime/HeaderWindow_Hover16@2x.png");
+  }
+}
+.popup.intro {
+  opacity: 0;
+  transform: scale(0.95) translateY(10px);
+}
+.popup:not(.intro) {
+  opacity: 1;
+  transform: scale(1) translateY(0px);
+  transition: transform 0.25s, opacity 0.25s;
+}
+.popup.exit {
+  opacity: 0;
+  transform: scale(0.95) translateY(10px);
+  transition: transform 0.25s, opacity 0.25s;
+}
+/*#region LG: Cheeky changes*/
+
+/*Remove the left and right border of the white panel inside a dialog*/
+
+.popup-body-content > .scroll-wrapper > .panel > .panel-body {
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+.popup-closing-modal.hidden {
+  display: none;
+}
+.popup-closing-modal {
+  display: block;
+  opacity: 0.01;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/*#endregion*/
+

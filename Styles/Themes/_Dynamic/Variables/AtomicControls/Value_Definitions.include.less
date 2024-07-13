@@ -1,0 +1,1022 @@
+
+//Parameter passed in from Variables_Dynamic.less. This is the color these Atomic controls will be ontop of.
+//This is guaranteed to be an opaque color (not a transparency of any kind)
+@_Background-Color : @___Background-Color;
+
+// Overlays to get resulting colors:
+//      Use this: 
+//      mix(fadein(@TopColor,100%), @BottomColor, alpha(@TopColor)*100%);
+//      rather than: 
+//      overlay(@TopColor, @BottomColor);
+
+
+//#region TYPOGRAPHY
+
+    //Error Text Color is used in places like: Credentials popup
+    @_lightbg_Error-Text-Color: @_Error-Color;
+    @_darkbg_Error-Text-Color: lighten(@_Error-Color,30%);
+    @Error-Text-Color: contrast(@_Background-Color, @_darkbg_Error-Text-Color, @_lightbg_Error-Text-Color, 43%);
+
+//#endregion TYPOGRAPHY
+
+//#region TEXT STYLES 
+
+    //Normal
+    @_lightbg_Normal-Text-Color: darken(@_Background-Color,70%);
+    @_darkbg_Normal-Text-Color: lighten(@_Background-Color,70%);
+    @Normal-Text-Color: contrast(@_Background-Color, @_lightbg_Normal-Text-Color, @_darkbg_Normal-Text-Color, 43%);
+
+
+    @Description-Text-Color: @Normal-Text-Color;
+    @Paragraph-Text-Color: @Normal-Text-Color;
+
+    //Page Title
+    @_lightbg_Page-Title-Text-Color: darken(mix(@_Background-Color, @UD-Main-Accent-Color, 20%), 40%);
+    @_darkbg_Page-Title-Text-Color: lighten(mix(@_Background-Color, @UD-Main-Accent-Color, 20%), 40%);
+    @Page-Title-Text-Color: contrast(@_Background-Color,  @_darkbg_Page-Title-Text-Color, @_lightbg_Page-Title-Text-Color, 43%); 
+
+    //Page Sub-title
+    @_lightbg_Page-Subtitle-Text-Color: darken(mix(@_Background-Color, @UD-Main-Accent-Color, 40%), 30%);
+    @_darkbg_Page-Subtitle-Text-Color: lighten(mix(@_Background-Color, @UD-Main-Accent-Color, 40%), 30%);
+    @Page-Subtitle-Text-Color: contrast(@_Background-Color,  @_darkbg_Page-Subtitle-Text-Color, @_lightbg_Page-Subtitle-Text-Color, 43%); 
+
+    //Headings
+    @_lightbg_Heading1-Text-Color: darken(mix(@_Background-Color, @UD-Main-Accent-Color, 20%), 40%);
+    @_darkbg_Heading1-Text-Color: lighten(mix(@_Background-Color, @UD-Main-Accent-Color, 20%), 40%);
+    @Heading1-Text-Color: contrast(@_Background-Color,  @_darkbg_Heading1-Text-Color, @_lightbg_Heading1-Text-Color, 43%); 
+
+    @_lightbg_Heading2-Text-Color: darken(mix(@_Background-Color, @UD-Main-Accent-Color, 20%), 40%);
+    @_darkbg_Heading2-Text-Color: lighten(mix(@_Background-Color, @UD-Main-Accent-Color, 20%), 40%);
+    @Heading2-Text-Color: contrast(@_Background-Color,  @_darkbg_Heading2-Text-Color, @_lightbg_Heading2-Text-Color, 43%); 
+    
+    @_lightbg_Heading3-Text-Color: darken(mix(@_Background-Color, @UD-Main-Accent-Color, 20%), 40%);
+    @_darkbg_Heading3-Text-Color: lighten(mix(@_Background-Color, @UD-Main-Accent-Color, 20%), 40%);
+    @Heading3-Text-Color: contrast(@_Background-Color,  @_darkbg_Heading3-Text-Color, @_lightbg_Heading3-Text-Color, 43%); 
+    
+    @_lightbg_Heading4-Text-Color: darken(mix(@_Background-Color, @UD-Main-Accent-Color, 20%), 40%);
+    @_darkbg_Heading4-Text-Color: lighten(mix(@_Background-Color, @UD-Main-Accent-Color, 20%), 40%);
+    @Heading4-Text-Color: contrast(@_Background-Color,  @_darkbg_Heading4-Text-Color, @_lightbg_Heading4-Text-Color, 43%); 
+
+    //Used for Labels (a label Text Style like "Heading1")
+    //Also controls like checkbox/radiobutton with built-in labels.
+    @Input-Label-Text-Color: inherit; 
+    @Input-Label-Disabled-Text-Color: fadeout(@Normal-Text-Color, 20%); 
+    
+//#endregion TEXT STYLES 
+
+//#region INPUTS 
+    // this includes textboxes, dropdowns, lists, tile-lists etc - 
+    // i.e. any (traditionally) white box the user has to input or select something within
+    // Checkbox/Radio labels etc should not use the Input-Background-Color and Input-Text-Color however. 
+    // Checkbox/radio squares/circles (the bit that is clicked on) can use the variables however (assuming they are SVG rather than png images) 
+
+    //Normal
+    //we desaturate to in case the background is say dark green, any lightened values we don't want to be luminous.
+    @_darkbg_Input-Background-Color: lighten(@_Background-Color, @_CONTRAST_INPUT_BG_ON_DARK);
+    @_lightbg_Input-Background-Color: lighten(@_Background-Color, @_CONTRAST_INPUT_BG_ON_LIGHT);
+    @Input-Background-Color: contrast(@_Background-Color, @_darkbg_Input-Background-Color, @_lightbg_Input-Background-Color, 43%);
+    @_Actual_Input-Background-Color: mix(fadein(@Input-Background-Color,100%), @_Background-Color, alpha(@Input-Background-Color)*100%);
+    @_darkbg_Input-Border-Color: desaturate(lighten(@_Actual_Input-Background-Color, 30%), @_BORDER_DESATURATION);
+    @_lightbg_Input-Border-Color: desaturate(darken(@_Actual_Input-Background-Color, 30%), @_BORDER_DESATURATION);
+    @Input-Border-Color: contrast(@_Actual_Input-Background-Color, @_darkbg_Input-Border-Color , @_lightbg_Input-Border-Color ,43%);
+    @_Actual_Input-Border-Color: mix(fadein(@Input-Border-Color,100%), @_Actual_Input-Background-Color, alpha(@Input-Border-Color)*100%);
+    @_darkbg_Input-Text-Color: lighten(@_Actual_Input-Background-Color, 60%);
+    @_lightbg_Input-Text-Color: darken(@_Actual_Input-Background-Color, 60%);
+    @Input-Text-Color: contrast(@_Actual_Input-Background-Color, @_darkbg_Input-Text-Color , @_lightbg_Input-Text-Color, 43%);
+    @_Actual_Input-Text-Color: mix(fadein(@Input-Text-Color,100%), @_Actual_Input-Background-Color, alpha(@Input-Text-Color)*100%);
+    @Input-Watermark-Text-Color: fadeout(@Input-Text-Color, 50%); 
+
+    //Focus
+    @Input-Focus-Border-Color: @UD-Main-Accent-Color; //#2196f3
+
+    //Disabled
+    @Input-Disabled-Background-Color: fadeout(@Input-Background-Color, 40%); 
+    @_Actual_Input-Disabled-Background-Color: mix(fadein(@Input-Disabled-Background-Color,100%), @_Background-Color, alpha(@Input-Disabled-Background-Color)*100%);
+    @_darkbg_Input-Disabled-Border-Color: lighten(@_Actual_Input-Disabled-Background-Color, @_CONTRAST_BORDER_DISABLED_ON_DARK);
+    @_lightbg_Input-Disabled-Border-Color: darken(@_Actual_Input-Disabled-Background-Color, @_CONTRAST_BORDER_DISABLED_ON_LIGHT);
+    @Input-Disabled-Border-Color: contrast(@_Actual_Input-Disabled-Background-Color, @_darkbg_Input-Disabled-Border-Color, @_lightbg_Input-Disabled-Border-Color, 43%); 
+    @_darkbg_Input-Disabled-Text-Color: lighten(@_Actual_Input-Disabled-Background-Color, 30%);
+    @_lightbg_Input-Disabled-Text-Color: darken(@_Actual_Input-Disabled-Background-Color, 30%);
+    @Input-Disabled-Text-Color: contrast(@_Actual_Input-Disabled-Background-Color, @_darkbg_Input-Disabled-Text-Color, @_lightbg_Input-Disabled-Text-Color, 43%); 
+    
+    //Readonly
+    @Input-ReadOnly-Background-Color: fadeout(@Input-Background-Color, 40%); 
+    @_Actual_Input-ReadOnly-Background-Color: mix(fadein(@Input-ReadOnly-Background-Color,100%), @_Background-Color, alpha(@Input-ReadOnly-Background-Color)*100%);
+    @_darkbg_Input-ReadOnly-Border-Color: lighten(@_Actual_Input-ReadOnly-Background-Color, @_CONTRAST_BORDER_READONLY_ON_DARK);
+    @_lightbg_Input-ReadOnly-Border-Color: darken(@_Actual_Input-ReadOnly-Background-Color, @_CONTRAST_BORDER_READONLY_ON_LIGHT);
+    @Input-ReadOnly-Border-Color: contrast(@_Actual_Input-ReadOnly-Background-Color, @_darkbg_Input-ReadOnly-Border-Color, @_lightbg_Input-ReadOnly-Border-Color, 43%); 
+    @_darkbg_Input-ReadOnly-Text-Color: lighten(@_Actual_Input-ReadOnly-Background-Color, 60%);
+    @_lightbg_Input-ReadOnly-Text-Color: darken(@_Actual_Input-ReadOnly-Background-Color, 60%);
+    @Input-ReadOnly-Text-Color: contrast(@_Actual_Input-ReadOnly-Background-Color, @_darkbg_Input-ReadOnly-Text-Color, @_lightbg_Input-ReadOnly-Text-Color, 43%); 
+
+    //Labels
+    //See Input-Label-Text-Color
+
+    //Error
+    @Input-Error-Background-Color: mix(@_Error-Color, @_Actual_Input-Background-Color, @_ERROR_BACKGROUND_MIX); 
+    @_Actual_Input-Error-Background-Color: mix(fadein(@Input-Error-Background-Color,100%), @_Background-Color, alpha(@Input-Error-Background-Color)*100%);
+    @_darkbg_Input-Error-Border-Color: mix(@_Error-Color,lighten(@_Actual_Input-Error-Background-Color, 10%),@_ERROR_BORDER_MIX);
+    @_lightbg_Input-Error-Border-Color: mix(@_Error-Color,darken(@_Actual_Input-Error-Background-Color, 20%),@_ERROR_BORDER_MIX);
+    @Input-Error-Border-Color: contrast(@_Actual_Input-Error-Background-Color, @_darkbg_Input-Error-Border-Color, @_lightbg_Input-Error-Border-Color, 43%);
+    @_darkbg_Input-Error-Text-Color: lighten(@_Actual_Input-Error-Background-Color, 60%);
+    @_lightbg_Input-Error-Text-Color: darken(@_Actual_Input-Error-Background-Color, 60%);
+    @Input-Error-Text-Color: contrast(@_Actual_Input-Error-Background-Color, @_darkbg_Input-Error-Text-Color, @_lightbg_Input-Error-Text-Color, 43%);
+    @Input-Error-Watermark-Text-Color: fadeout(@Input-Error-Text-Color, 50%); 
+
+    //Text Highlights (highlight text with keyboard/mouse)
+    @Input-Text-Highlight-Background-Color: @UD-Main-Accent-Color; //#2196f3
+    @_darkbg_Input-Text-Highlight-Background-Color: lighten(@Input-Text-Highlight-Background-Color, 70%);
+    @_lightbg_Input-Text-Highlight-Background-Color: darken(@Input-Text-Highlight-Background-Color, 70%);
+    @Input-Text-Highlight-Text-Color: contrast(@Input-Text-Highlight-Background-Color, @_darkbg_Input-Text-Highlight-Background-Color, @_lightbg_Input-Text-Highlight-Background-Color, 43%);
+
+
+    //Select Box Buttons, and Worklist header buttons
+    //Buttons at the end of an input box (like a selectbox control - dropdown, search, ellipsis etc etc), 
+    //these variables should be used for buttons that appear within the input, like search, clear search, dropdown arrow, ellipsis etc.
+    @Input-Button-Background-Color: @_Transparent;
+    @_Actual_Input-Button-Background-Color: mix(fadein(@Input-Button-Background-Color,100%), @_Actual_Input-Background-Color, alpha(@Input-Button-Background-Color)*100%);
+    @Input-Button-Border-Color: @_Transparent;
+    @_darkbg_Input-Button-Text-Color: lighten(@_Actual_Input-Button-Background-Color, 60%);
+    @_lightbg_Input-Button-Text-Color: darken(@_Actual_Input-Button-Background-Color, 60%);
+    @Input-Button-Text-Color: contrast(@_Actual_Input-Button-Background-Color, @_darkbg_Input-Button-Text-Color, @_lightbg_Input-Button-Text-Color, 43%);
+    
+    //Hover
+    @Input-Button-Hover-Background-Color: @UD-Main-Accent-Color;
+    @_Actual_Input-Button-Hover-Background-Color:  mix(fadein(@Input-Button-Hover-Background-Color,100%), @_Actual_Input-Background-Color, alpha(@Input-Button-Hover-Background-Color)*100%);
+    @Input-Button-Hover-Border-Color: @_Transparent;
+    @_darkbg_Input-Button-Hover-Text-Color: lighten(@_Actual_Input-Button-Hover-Background-Color, 60%);
+    @_lightbg_Input-Button-Hover-Text-Color: darken(@_Actual_Input-Button-Hover-Background-Color, 60%);
+    @Input-Button-Hover-Text-Color: contrast(@_Actual_Input-Button-Hover-Background-Color, @_darkbg_Input-Button-Hover-Text-Color, @_lightbg_Input-Button-Hover-Text-Color, 43%); 
+    
+    //Focus
+    @Input-Button-Focus-Background-Color: @Input-Button-Background-Color;
+    @_Actual_Input-Button-Focus-Background-Color: mix(fadein(@Input-Button-Focus-Background-Color,100%), @_Actual_Input-Background-Color, alpha(@Input-Button-Focus-Background-Color)*100%);
+    @Input-Button-Focus-Border-Color: @UD-Main-Accent-Color;
+    @_darkbg_Input-Button-Focus-Text-Color: lighten(@_Actual_Input-Button-Focus-Background-Color, 60%);
+    @_lightbg_Input-Button-Focus-Text-Color: darken(@_Actual_Input-Button-Focus-Background-Color, 60%);
+    @Input-Button-Focus-Text-Color: contrast(@_Actual_Input-Button-Focus-Background-Color, @_darkbg_Input-Button-Focus-Text-Color, @_lightbg_Input-Button-Focus-Text-Color, 43%); 
+
+
+    //Toggled on
+    @Input-Button-ToggleOn-Background-Color: @UD-Main-Accent-Color;
+    @_Actual_Input-Button-ToggleOn-Background-Color:     mix(fadein(@Input-Button-ToggleOn-Background-Color,100%), @_Actual_Input-Background-Color, alpha(@Input-Button-ToggleOn-Background-Color)*100%);
+    @_darkbg_Input-Button-ToggleOn-Text-Color: lighten(@_Actual_Input-Button-ToggleOn-Background-Color, 60%);
+    @_lightbg_Input-Button-ToggleOn-Text-Color: darken(@_Actual_Input-Button-ToggleOn-Background-Color, 60%);
+    @Input-Button-ToggleOn-Text-Color: contrast(@_Actual_Input-Button-ToggleOn-Background-Color, @_darkbg_Input-Button-ToggleOn-Text-Color, @_lightbg_Input-Button-ToggleOn-Text-Color, 43%); 
+
+
+    @_darkbg_Required-Indicator-Background-Color: lighten(@_Error-Color, 30%);
+    @_lightbg_Required-Indicator-Background-Color: @_Error-Color;
+    @Required-Indicator-Background-Color: contrast(@_Background-Color,  @_darkbg_Required-Indicator-Background-Color,  @_lightbg_Required-Indicator-Background-Color, 43%);
+
+//#endregion INPUTS 
+
+//#region TOOLBARS
+    //toolbars appear at the top of listviews, at the top of detail views, and within some filter/sort popup dialogs.
+
+    //Normal
+    @Toolbar-Button-Background-Color: @_Transparent;
+    @_Actual_Toolbar-Button-Background-Color: mix(fadein(@Toolbar-Button-Background-Color,100%), @_Background-Color, alpha(@Toolbar-Button-Background-Color)*100%);
+    @_lightbg_Toolbar-Button-Text-Color: darken(@_Actual_Toolbar-Button-Background-Color, 70%);
+    @_darkbg_Toolbar-Button-Text-Color: lighten(@_Actual_Toolbar-Button-Background-Color, 70%);
+    @Toolbar-Button-Text-Color: contrast(@_Actual_Toolbar-Button-Background-Color, @_darkbg_Toolbar-Button-Text-Color, @_lightbg_Toolbar-Button-Text-Color, 43%); 
+    @Toolbar-Button-Border-Color: @_Transparent;
+
+    
+    //Hover
+    @_lightbg_Toolbar-Button-Hover-Background-Color: darken(@_Background-Color,@_CONTRAST_HOVER_BG_ON_LIGHT); //TODO: Make this a mix of the main accent color?
+    @_darkbg_Toolbar-Button-Hover-Background-Color: lighten(@_Background-Color,@_CONTRAST_HOVER_BG_ON_DARK);
+    @Toolbar-Button-Hover-Background-Color: contrast(@_Background-Color, @_lightbg_Toolbar-Button-Hover-Background-Color, @_darkbg_Toolbar-Button-Hover-Background-Color, 43%); //#2196f3 Primary Action Button
+    @_Actual_Toolbar-Button-Hover-Background-Color: mix(fadein(@Toolbar-Button-Hover-Background-Color,100%), @_Background-Color, alpha(@Toolbar-Button-Hover-Background-Color)*100%);
+    @_lightbg_Toolbar-Button-Hover-Text-Color: darken(@_Actual_Toolbar-Button-Hover-Background-Color, 50%);
+    @_darkbg_Toolbar-Button-Hover-Text-Color: lighten(@_Actual_Toolbar-Button-Hover-Background-Color, 70%);
+    @Toolbar-Button-Hover-Text-Color: contrast(@Toolbar-Button-Hover-Background-Color,@_darkbg_Toolbar-Button-Hover-Text-Color,@_lightbg_Toolbar-Button-Hover-Text-Color, 43%); //#ffffff normal buttons, elipsis buttons - normal state
+    @Toolbar-Button-Hover-Border-Color: @Toolbar-Button-Hover-Background-Color; 
+
+
+    //Focus
+    @Toolbar-Button-Focus-Background-Color: @Toolbar-Button-Background-Color;
+    @_Actual_Toolbar-Button-Focus-Background-Color: mix(fadein(@Toolbar-Button-Focus-Background-Color,100%), @_Background-Color, alpha(@Toolbar-Button-Focus-Background-Color)*100%);
+    @Toolbar-Button-Focus-Border-Color: @UD-Main-Accent-Color; //note - toolbar buttons don't seem to use this.
+    @_lightbg_Toolbar-Button-Focus-Text-Color: darken(@_Actual_Toolbar-Button-Focus-Background-Color, 70%);
+    @_darkbg_Toolbar-Button-Focus-Text-Color: lighten(@_Actual_Toolbar-Button-Focus-Background-Color, 70%);
+    @Toolbar-Button-Focus-Text-Color: contrast(@_Actual_Toolbar-Button-Focus-Background-Color, @_darkbg_Toolbar-Button-Focus-Text-Color, @_lightbg_Toolbar-Button-Focus-Text-Color, 43%); //#4e5758
+
+    //Selected - for toggle on/off buttons
+    @Toolbar-Button-Toggle-Background-Color: @UD-Main-Accent-Color; //#2196f3
+    
+    
+    //Disabled
+    @Toolbar-Button-Disabled-Background-Color: @_Transparent;
+    @_Actual_Toolbar-Button-Disabled-Background-Color: mix(fadein(@Toolbar-Button-Disabled-Background-Color,100%), @_Background-Color, alpha(@Toolbar-Button-Disabled-Background-Color)*100%);
+    @_lightbg_Toolbar-Button-Disabled-Text-Color: darken(@_Actual_Toolbar-Button-Disabled-Background-Color, @_CONTRAST_TEXT_DISABLED_ON_LIGHT);
+    @_darkbg_Toolbar-Button-Disabled-Text-Color: lighten(@_Actual_Toolbar-Button-Disabled-Background-Color, @_CONTRAST_TEXT_DISABLED_ON_DARK);
+    @Toolbar-Button-Disabled-Text-Color: contrast(@_Actual_Toolbar-Button-Disabled-Background-Color,@_darkbg_Toolbar-Button-Disabled-Text-Color,@_lightbg_Toolbar-Button-Disabled-Text-Color, 43%); 
+    @Toolbar-Button-Disabled-Border-Color: @Toolbar-Button-Disabled-Background-Color; 
+
+    
+
+//#endregion TOOLBARS
+ 
+//#region SLIDERS 
+    //not limited to the slider control, these styles can be used for any future controls that needs slider (volume, brightness, saturation etc etc)
+    
+     //Rail - Normal
+     @_darkbg_Slider-Rail-Background-Color: desaturate(lighten(@_Background-Color, 20%), @_BORDER_DESATURATION);
+     @_lightbg_Slider-Rail-Background-Color: desaturate(darken(@_Background-Color, 20%), @_BORDER_DESATURATION);
+     @Slider-Rail-Background-Color: contrast(@_Background-Color, @_darkbg_Slider-Rail-Background-Color , @_lightbg_Slider-Rail-Background-Color ,43%);
+     @_Actual_Slider-Rail-Background-Color: mix(fadein(@Slider-Rail-Background-Color,100%), @_Background-Color, alpha(@Slider-Rail-Background-Color)*100%);
+     @Slider-Rail-Border-Color: @_Transparent;
+     @_Actual_Slider-Rail-Border-Color: mix(fadein(@Slider-Rail-Border-Color,100%), @_Actual_Slider-Rail-Background-Color, alpha(@Slider-Rail-Border-Color)*100%);
+ 
+
+    //Handle - Normal
+    @_darkbg_Slider-Handle-Background-Color: @_Actual_Input-Border-Color; 
+    @_lightbg_Slider-Handle-Background-Color: lighten(@_Actual_Input-Border-Color, 30%); 
+    @Slider-Handle-Background-Color: contrast(@_Actual_Slider-Rail-Background-Color, @_darkbg_Slider-Handle-Background-Color , @_lightbg_Slider-Handle-Background-Color, 83%); 
+    @_Actual_Slider-Handle-Background-Color: mix(fadein(@Slider-Handle-Background-Color,100%), @_Background-Color, alpha(@Slider-Handle-Background-Color)*100%);
+    @Slider-Handle-Border-Color: @_Transparent;
+
+
+    //Handle - Hover
+    @Slider-Handle-Hover-Background-Color: @UD-Main-Accent-Color;
+    @_Actual_Slider-Handle-Hover-Background-Color: mix(fadein(@Slider-Handle-Hover-Background-Color,100%), @_Background-Color, alpha(@Slider-Handle-Hover-Background-Color)*100%);
+    @Slider-Handle-Hover-Border-Color: @_Transparent;
+
+    //Handle - Disabled
+    @Slider-Handle-Disabled-Background-Color: @_Actual_Input-Disabled-Background-Color; 
+    @_Actual_Slider-Handle-Disabled-Background-Color: mix(fadein(@Slider-Handle-Disabled-Background-Color,100%), @_Background-Color, alpha(@Slider-Handle-Disabled-Background-Color)*100%);
+    @_darkbg_Slider-Handle-Disabled-Border-Color: lighten(@_Actual_Slider-Handle-Disabled-Background-Color, @_CONTRAST_BORDER_DISABLED_ON_DARK);
+    @_lightbg_Slider-Handle-Disabled-Border-Color: darken(@_Actual_Slider-Handle-Disabled-Background-Color, @_CONTRAST_BORDER_DISABLED_ON_LIGHT);
+    @Slider-Handle-Disabled-Border-Color: contrast(@_Actual_Slider-Handle-Disabled-Background-Color, @_darkbg_Slider-Handle-Disabled-Border-Color, @_lightbg_Slider-Handle-Disabled-Border-Color, 43%); 
+    
+    //Handle - Readonly
+    @Slider-Handle-ReadOnly-Background-Color:  @_Actual_Slider-Rail-Background-Color; //should look unmovable 
+    @Slider-Handle-ReadOnly-Border-Color: @_Actual_Slider-Rail-Border-Color;//should look unmovable, so blending in with rail
+    
+
+    //Handle - Focus
+    @Slider-Handle-Focus-Background-Color: @UD-Main-Accent-Color;
+    @_Actual_Slider-Handle-Focus-Background-Color: mix(fadein(@Slider-Handle-Focus-Background-Color,100%), @_Background-Color, alpha(@Slider-Handle-Focus-Background-Color)*100%);
+    @_darkbg_Slider-Handle-Focus-Border-Color: lighten(@_Actual_Slider-Handle-Focus-Background-Color, 10%);
+    @_lightbg_Slider-Handle-Focus-Border-Color: darken(@_Actual_Slider-Handle-Focus-Background-Color, 10%);
+    @Slider-Handle-Focus-Border-Color: contrast(@_Actual_Slider-Handle-Focus-Background-Color, @_darkbg_Slider-Handle-Focus-Border-Color, @_lightbg_Slider-Handle-Focus-Border-Color, 43%); 
+    
+   
+    //Misc.
+    @Slider-Handle-Shadow: @_Shadow-level-1;
+
+
+//#endregion SLIDERS
+
+//#region UPLOADERS
+    //note these variables should be used for any control where you have to drop/onto or fill in with a file.
+    //covers all types of upload control where there is a dotted border and then gets filled in when the file is uploaded
+    //this should be mostly the same as inputs, but with an empty look (transparent background) when no content (no file).
+
+    //Filled
+    @File-Upload-Background-Color: @_Transparent;    
+    @_Actual_File-Upload-Background-Color: mix(fadein(@File-Upload-Background-Color,100%), @_Background-Color, alpha(@File-Upload-Background-Color)*100%);
+    
+    @_darkbg_File-Upload-Border-Color: lighten(@_Actual_File-Upload-Background-Color, 30%);
+    @_lightbg_File-Upload-Border-Color: darken(@_Actual_File-Upload-Background-Color, 30%);
+    @File-Upload-Border-Color: contrast(@_Actual_File-Upload-Background-Color, @_darkbg_File-Upload-Border-Color, @_lightbg_File-Upload-Border-Color, 43%);
+    
+    @_darkbg_File-Upload-Text-Color: lighten(@_Actual_File-Upload-Background-Color, 60%);
+    @_lightbg_File-Upload-Text-Color: darken(@_Actual_File-Upload-Background-Color, 60%);
+    @File-Upload-Text-Color: contrast(@_Actual_File-Upload-Background-Color, @_darkbg_File-Upload-Text-Color, @_lightbg_File-Upload-Text-Color, 43%);
+    
+
+    //Focus
+    @File-Upload-Focus-Border-Color: @Input-Focus-Border-Color;
+
+    //Empty (Normal)
+    @File-Upload-Empty-Background-Color: @_Transparent;
+    @_Actual_File-Upload-Empty-Background-Color: mix(fadein(@File-Upload-Empty-Background-Color,100%), @_Background-Color, alpha(@File-Upload-Empty-Background-Color)*100%);
+    @_darkbg_File-Upload-Empty-Border-Color: lighten(@_Actual_File-Upload-Background-Color, 30%);
+    @_lightbg_File-Upload-Empty-Border-Color: darken(@_Actual_File-Upload-Background-Color, 30%);
+    @File-Upload-Empty-Border-Color: contrast(@_Actual_File-Upload-Empty-Background-Color, @_darkbg_File-Upload-Empty-Border-Color, @_lightbg_File-Upload-Empty-Border-Color, 43%);
+    @_darkbg_File-Upload-Empty-Text-Color: lighten(@_Actual_File-Upload-Empty-Background-Color, 60%);
+    @_lightbg_File-Upload-Empty-Text-Color: darken(@_Actual_File-Upload-Empty-Background-Color, 60%);
+    @File-Upload-Empty-Text-Color: contrast(@_Actual_File-Upload-Empty-Background-Color, @_darkbg_File-Upload-Empty-Text-Color, @_lightbg_File-Upload-Empty-Text-Color, 43%);
+    @File-Upload-Watermark-Text-Color: fadeout(@File-Upload-Empty-Text-Color,50%);
+    //Empty Hover
+    @_darkbg_File-Upload-Empty-Hover-Background-Color: lighten(@_Actual_File-Upload-Empty-Background-Color, 20%);
+    @_lightbg_File-Upload-Empty-Hover-Background-Color: darken(@_Actual_File-Upload-Empty-Background-Color, 20%);
+    @File-Upload-Empty-Hover-Background-Color: contrast(@_Actual_File-Upload-Empty-Background-Color, @_darkbg_File-Upload-Empty-Hover-Background-Color, @_lightbg_File-Upload-Empty-Hover-Background-Color, 43%);
+
+    //Hover
+    @File-Upload-Hover-Background-Color: @_Transparent;
+    @_Actual_File-Upload-Hover-Background-Color: mix(fadein(@File-Upload-Hover-Background-Color,100%), @_Background-Color, alpha(@File-Upload-Hover-Background-Color)*100%);
+    @_darkbg_File-Upload-Hover-Border-Color: lighten(@_Actual_File-Upload-Background-Color, 30%);
+    @_lightbg_File-Upload-Hover-Border-Color: darken(@_Actual_File-Upload-Background-Color, 30%);
+    @File-Upload-Hover-Border-Color: contrast(@_Actual_File-Upload-Hover-Background-Color, @_darkbg_File-Upload-Hover-Border-Color, @_lightbg_File-Upload-Hover-Border-Color, 43%);
+    @_darkbg_File-Upload-Hover-Text-Color: lighten(@_Actual_File-Upload-Background-Color, @_CONTRAST_TEXT_ON_DARK);
+    @_lightbg_File-Upload-Hover-Text-Color: darken(@_Actual_File-Upload-Background-Color, @_CONTRAST_TEXT_ON_LIGHT);
+    @File-Upload-Hover-Text-Color: contrast(@_Actual_File-Upload-Hover-Background-Color, @_darkbg_File-Upload-Hover-Text-Color, @_lightbg_File-Upload-Hover-Text-Color, 43%);
+
+    //Disabled
+    @File-Upload-Disabled-Background-Color: fadeout(@File-Upload-Background-Color, 40%);
+    @_Actual_File-Upload-Disabled-Background-Color:  mix(fadein(@File-Upload-Disabled-Background-Color,100%), @_Background-Color, alpha(@File-Upload-Disabled-Background-Color)*100%);
+    @_darkbg_File-Upload-Disabled-Border-Color: lighten(@_Actual_File-Upload-Disabled-Background-Color, 30%);
+    @_lightbg_File-Upload-Disabled-Border-Color: darken(@_Actual_File-Upload-Disabled-Background-Color, 30%);
+    @File-Upload-Disabled-Border-Color: contrast(@_Actual_File-Upload-Disabled-Background-Color, @_darkbg_File-Upload-Disabled-Border-Color, @_lightbg_File-Upload-Disabled-Border-Color, 43%); 
+    @_darkbg_File-Upload-Disabled-Text-Color: lighten(@_Actual_File-Upload-Disabled-Background-Color, 30%);
+    @_lightbg_File-Upload-Disabled-Text-Color: darken(@_Actual_File-Upload-Disabled-Background-Color, 30%);
+    @File-Upload-Disabled-Text-Color: contrast(@_Actual_File-Upload-Disabled-Background-Color, @_darkbg_File-Upload-Disabled-Text-Color, @_lightbg_File-Upload-Disabled-Text-Color, 43%); 
+    
+
+//#endregion UPLOADERS
+
+//#region PROGRESS LOADERS
+    //for progress bars and loading indicators. e.g. spinners, file upload, picture upload, syncing.
+
+    // this background color will almost always be the same color as the page.
+    // only really used for the gaps between the segmented uploading circle in file upload control
+    // as the SVG for the segmented circle was not constructed for different page background colors
+    // it assumed the background of the page is always white, and used white lines to make it look like the circles are segmented.
+
+    @_darkbg_Loader-Track-Background-Color: lighten(@_Background-Color, 20%);
+    @_lightbg_Loader-Track-Background-Color: lighten(@_Background-Color, 20%);
+
+    //the track/unfilled part of a progress bar, or the accent to a spinner.
+    @Loader-Track-Background-Color: contrast(@_Background-Color, @_darkbg_Loader-Track-Background-Color, @_darkbg_Loader-Track-Background-Color, 43%);
+    @Loader-Progress-Background-Color: @UD-Main-Accent-Color; //the completed-so-far bit
+
+
+//#endregion PROGRESS LOADERS
+
+//#region BUTTON - NORMAL
+
+    //the normal button background color must pop on the background its on.
+    //we desaturate so that if the background color is a dark green, the normal button doesn't become luminous green!
+    @_lightbg_Button-Background-Color: desaturate(darken(@_Background-Color,@_CONTRAST_NORMAL_BUTTON_BG_ON_LIGHT), @_BORDER_DESATURATION); 
+    @_darkbg_Button-Background-Color: desaturate(lighten(@_Background-Color,@_CONTRAST_NORMAL_BUTTON_BG_ON_DARK), @_BORDER_DESATURATION);
+    @Button-Background-Color: contrast(@_Background-Color, @_lightbg_Button-Background-Color, @_darkbg_Button-Background-Color, 43%); //#2196f3 Primary Action Button
+    @_Actual_Button-Background-Color: mix(fadein(@Button-Background-Color,100%), @_Background-Color, alpha(@Button-Background-Color)*100%);
+    @_lightbg_Button-Text-Color: darken(@_Actual_Button-Background-Color, @_CONTRAST_TEXT_ON_LIGHT);
+    @_darkbg_Button-Text-Color: lighten(@_Actual_Button-Background-Color, @_CONTRAST_TEXT_ON_DARK);
+    @Button-Text-Color: contrast(@Button-Background-Color,@_darkbg_Button-Text-Color,@_lightbg_Button-Text-Color, 43%); //#ffffff normal buttons, elipsis buttons - normal state
+    @Button-Border-Color: @Button-Background-Color; 
+
+    //Hover
+    @_lightbg_Button-Hover-Background-Color: darken(@Button-Background-Color,@_CONTRAST_HOVER_BG_ON_LIGHT); //TODO: Make this a mix of the main accent color?
+    @_darkbg_Button-Hover-Background-Color: lighten(@Button-Background-Color,@_CONTRAST_HOVER_BG_ON_DARK);
+    @Button-Hover-Background-Color: contrast(@Button-Background-Color,@_darkbg_Button-Hover-Background-Color,@_lightbg_Button-Hover-Background-Color, 43%); //#29b6f6
+    @Button-Hover-Border-Color:  @Button-Hover-Background-Color; 
+    @Button-Hover-Text-Color: @Button-Text-Color;
+
+    //Focus
+    @Button-Focus-Background-Color: @Button-Background-Color; 
+    @_lightbg_Button-Focus-Border-Color: @UD-Main-Accent-Color; //NOTE: the light/dark variant of the accent color is to make sure th focus border stands out against whatever the bg color of the button is.
+    @_darkbg_Button-Focus-Border-Color: darken(@UD-Main-Accent-Color, 10%);
+    @Button-Focus-Border-Color: contrast(@Button-Focus-Background-Color,@_darkbg_Button-Focus-Border-Color,@_lightbg_Button-Focus-Border-Color, 43%); 
+    @_lightbg_Button-Focus-Text-Color: desaturate(darken(@Button-Focus-Background-Color, 50%), 50%);
+    @_darkbg_Button-Focus-Text-Color: desaturate(lighten(@Button-Focus-Background-Color, 50%), 50%);
+    @Button-Focus-Text-Color: contrast(@Button-Focus-Background-Color,@_darkbg_Button-Focus-Text-Color,@_lightbg_Button-Focus-Text-Color, 43%); 
+    @Button-Focus-Shadow-Color: none;
+
+    //Focus+Hover
+    //these shouldn't be needed, as the border should only change on focus, and background should only change on hover.
+    @Button-Hover-Focus-Background-Color: @Button-Hover-Background-Color; 
+    @Button-Hover-Focus-Border-Color: @Button-Focus-Border-Color; 
+
+    //Disabled
+    @Button-Disabled-Background-Color: @Button-Background-Color;
+    @_lightbg_Button-Disabled-Text-Color: darken(@Button-Disabled-Background-Color, 50%);
+    @_darkbg_Button-Disabled-Text-Color: lighten(@Button-Disabled-Background-Color, 50%);
+    @Button-Disabled-Text-Color: contrast(@Button-Disabled-Background-Color,@_darkbg_Button-Disabled-Text-Color,@_lightbg_Button-Disabled-Text-Color, 43%); 
+    @Button-Disabled-Border-Color: @Button-Disabled-Background-Color; 
+
+    //Overall
+    @Button-Shadow-Color: none;
+
+//#endregion BUTTON - NORMAL
+
+//#region BUTTON - PRIMARY
+    @_lightbg_Primary-Button-Background-Color: darken(@UD-Main-Accent-Color,10%); //if the background clashes with UD-Accent-Color
+    @_darkbg_Primary-Button-Background-Color: @UD-Main-Accent-Color; 
+    //dark_bg is first, because in most cases we want it to be this color (i.e. straight-forward UD-Main-Accent-Color
+    @Primary-Button-Background-Color: contrast(@_Background-Color, @_darkbg_Primary-Button-Background-Color, @_lightbg_Primary-Button-Background-Color, 13%);
+    @_Actual_Primary-Button-Background-Color: mix(fadein(@Primary-Button-Background-Color,100%), @_Background-Color, alpha(@Primary-Button-Background-Color)*100%);
+    @Primary-Button-Border-Color: @Primary-Button-Background-Color;
+    @_lightbg_Primary-Button-Text-Color: desaturate(darken(@_Actual_Primary-Button-Background-Color, 60%),50%);
+    @_darkbg_Primary-Button-Text-Color: desaturate(lighten(@_Actual_Primary-Button-Background-Color, 60%),50%);
+    @Primary-Button-Text-Color: contrast(@_Actual_Primary-Button-Background-Color, @_lightbg_Primary-Button-Text-Color, @_darkbg_Primary-Button-Text-Color, 43%); //79% makes the text white on a main accent bg
+
+    //hover
+    @Primary-Button-Hover-Background-Color:  lighten(@Primary-Button-Background-Color,@_CONTRAST_HOVER_BG_ON_LIGHT);
+    @Primary-Button-Hover-Border-Color:  @Primary-Button-Hover-Background-Color;
+    @Primary-Button-Hover-Text-Color: @Primary-Button-Text-Color; //OOPSIE
+
+    //focus
+    @Primary-Button-Focus-Background-Color: @Primary-Button-Background-Color;
+    @_Actual_Primary-Button-Focus-Background-Color: mix(fadein(@Primary-Button-Focus-Background-Color,100%), @_Background-Color, alpha(@Primary-Button-Focus-Background-Color)*100%);
+    @_lightbg_Primary-Button-Focus-Border-Color:  @UD-Main-Accent-Color; 
+    @_darkbg_Primary-Button-Focus-Border-Color: lighten(@UD-Main-Accent-Color, 40%);
+    @Primary-Button-Focus-Border-Color: contrast(@_Actual_Primary-Button-Focus-Background-Color, @_lightbg_Primary-Button-Focus-Border-Color, @_darkbg_Primary-Button-Focus-Border-Color, 80%);
+    //Focus - color relationships must be the same as "normal" state for primary button 
+    @_lightbg_Primary-Button-Focus-Text-Color: darken(@Primary-Button-Focus-Background-Color, 60%);
+    @_darkbg_Primary-Button-Focus-Text-Color: lighten(@Primary-Button-Focus-Background-Color, 40%);
+    @Primary-Button-Focus-Text-Color: contrast(@_Actual_Primary-Button-Focus-Background-Color, @_lightbg_Primary-Button-Focus-Text-Color, @_darkbg_Primary-Button-Focus-Text-Color, 80%);
+
+//#endregion BUTTON - PRIMARY
+
+//#region BUTTON - QUIET
+
+    @Quiet-Button-Background-Color: @_Transparent; 
+    @_Actual_Quiet-Button-Background-Color:  mix(fadein(@Quiet-Button-Background-Color,100%), @_Background-Color, alpha(@Quiet-Button-Background-Color)*100%);
+    
+    //we desaturate so that if the background color is a dark green, the normal button doesn't become luminous green!
+    @_lightbg_Quiet-Button-Border-Color: desaturate(darken(@_Actual_Quiet-Button-Background-Color,50%), 50%);
+    @_darkbg_Quiet-Button-Border-Color: desaturate(lighten(@_Actual_Quiet-Button-Background-Color,50%), 50%);
+    @Quiet-Button-Border-Color: contrast(@_Actual_Quiet-Button-Background-Color, @_darkbg_Quiet-Button-Border-Color, @_lightbg_Quiet-Button-Border-Color, 43%);
+
+    @_lightbg_Quiet-Button-Text-Color: @Quiet-Button-Border-Color;
+    @_darkbg_Quiet-Button-Text-Color: @Quiet-Button-Border-Color;
+    @Quiet-Button-Text-Color: contrast(@_Actual_Quiet-Button-Background-Color, @_darkbg_Quiet-Button-Text-Color, @_darkbg_Quiet-Button-Text-Color, 43%);
+
+    //Hover
+    @_Quiet-Button-Background-Faded: fadeout(@Quiet-Button-Text-Color,80%);
+    @Quiet-Button-Hover-Background-Color: mix(fadein(@_Quiet-Button-Background-Faded,100%), @Quiet-Button-Background-Color, alpha(@_Quiet-Button-Background-Faded)*100%);
+    @Quiet-Button-Hover-Border-Color: @Quiet-Button-Border-Color;
+    @Quiet-Button-Hover-Text-Color: @Quiet-Button-Text-Color;
+
+    //Focus
+    @Quiet-Button-Focus-Background-Color: @Quiet-Button-Background-Color;
+    @_Actual_Quiet-Button-Focus-Background-Color: mix(fadein(@Quiet-Button-Focus-Background-Color,100%), @_Background-Color, alpha(@Quiet-Button-Focus-Background-Color)*100%);
+    @_lightbg_Quiet-Button-Focus-Border-Color:  @UD-Main-Accent-Color;
+    @_darkbg_Quiet-Button-Focus-Border-Color: lighten(@UD-Main-Accent-Color, 20%);
+    @Quiet-Button-Focus-Border-Color: contrast(@Quiet-Button-Focus-Background-Color, @_darkbg_Quiet-Button-Focus-Border-Color, @_lightbg_Quiet-Button-Focus-Border-Color, 20%);
+    @Quiet-Button-Focus-Text-Color: @Quiet-Button-Text-Color; 
+
+    //Disabled - nothing changes as buttons are made 50% transparent by core.less
+    @Quiet-Button-Disabled-Background-Color: @Quiet-Button-Background-Color;  
+    @Quiet-Button-Disabled-Border-Color: @Quiet-Button-Border-Color;  
+    @Quiet-Button-Disabled-Text-Color: @Quiet-Button-Text-Color;  
+
+//#endregion BUTTON - QUIET
+
+//#region BUTTON - DESTRUCTIVE
+
+    @Destructive-Button-Background-Color: @_Error-Color;
+    @_Actual_Destructive-Button-Background-Color: mix(fadein(@Destructive-Button-Background-Color,100%), @_Background-Color, alpha(@Destructive-Button-Background-Color)*100%);
+    @Destructive-Button-Border-Color: @Destructive-Button-Background-Color;
+    @_lightbg_Destructive-Button-Text-Color: darken(@_Actual_Destructive-Button-Background-Color, 60%);
+    @_darkbg_Destructive-Button-Text-Color: lighten(@_Actual_Destructive-Button-Background-Color, 60%);
+    @Destructive-Button-Text-Color: contrast(@_Actual_Destructive-Button-Background-Color, @_lightbg_Destructive-Button-Text-Color, @_darkbg_Destructive-Button-Text-Color, 80%);
+
+    //hover
+    @Destructive-Button-Hover-Background-Color: lighten(desaturate(@Destructive-Button-Background-Color,0.7192%),13.7255%);
+    @Destructive-Button-Hover-Border-Color:  @Destructive-Button-Hover-Background-Color;
+    @Destructive-Button-Hover-Text-Color: @Destructive-Button-Text-Color; 
+
+    //focus
+    @Destructive-Button-Focus-Background-Color: @Destructive-Button-Background-Color;
+    @_Actual_Destructive-Button-Focus-Background-Color: mix(fadein(@Destructive-Button-Focus-Background-Color,100%), @_Background-Color, alpha(@Destructive-Button-Focus-Background-Color)*100%);
+    @_lightbg_Destructive-Button-Focus-Border-Color:  @UD-Main-Accent-Color; 
+    @_darkbg_Destructive-Button-Focus-Border-Color: lighten(@UD-Main-Accent-Color, 40%);
+    @Destructive-Button-Focus-Border-Color: contrast(@_Actual_Destructive-Button-Focus-Background-Color, @_lightbg_Destructive-Button-Focus-Border-Color, @_darkbg_Destructive-Button-Focus-Border-Color, 80%);
+    //Focus - color relationships must be the same as "normal" state for Destructive button 
+    @Destructive-Button-Focus-Text-Color: @Destructive-Button-Text-Color; 
+//#endregion BUTTON - DESTRUCTIVE
+
+//#region BUTTON - HELP
+
+    //Normal
+   
+    @Help-Button-Background-Color: @_Transparent;
+    @_Actual_Help-Button-Background-Color: mix(fadein(@Help-Button-Background-Color,100%), @_Background-Color, alpha(@Help-Button-Background-Color)*100%);
+    @Help-Button-Border-Color: @Help-Button-Background-Color; 
+
+    //Focus
+    @Help-Button-Focus-Background-Color: @_Transparent;
+    @_lightbg_Help-Button-Focus-Border-Color: @UD-Main-Accent-Color; //NOTE: the light/dark variant of the accent color is to make sure th focus border stands out against whatever the bg color of the button is.
+    @_darkbg_Help-Button-Focus-Border-Color: darken(@UD-Main-Accent-Color, 10%);
+    @Help-Button-Focus-Border-Color: contrast(@Help-Button-Focus-Background-Color,@_darkbg_Help-Button-Focus-Border-Color,@_lightbg_Help-Button-Focus-Border-Color, 43%); 
+
+//#endregion BUTTON - HELP
+
+//#region ICON BUTTON
+    // note: an Icon button is a just an icon by itself which is a button (no border or background)
+    // think of buttons in android and iOS that are just a button, or the hamburger or undo/redo buttons in workflow designer.
+
+    @Icon-Button-Hover-Background-Color-2: @_Transparent; //Icon and text color should change - Html editor
+    @Icon-Button-Hover-Background-Color: @_Transparent; //Icon and text color should change - worklist
+
+//#endregion ICON BUTTON 
+
+//#region HYPERLINKS
+
+    @Hyperlink-Text-Color: @UD-Main-Accent-Color; //#2196f3
+    @Hyperlink-Disabled-Text-Color: lighten(desaturate(spin(@Hyperlink-Text-Color,-7),87.3436%),21.3725%); //#bfc1c2
+    @Hyperlink-Focus-Border-Color: mix(fadein(@UD-Main-Accent-Color,100%), @_Background-Color, alpha(@UD-Main-Accent-Color)*100%);
+
+//#endregion HYPERLINKS
+
+//#region SMARTFIELDS
+    //SmartFields are dragged from the context browser.
+    //they only appear in runtime themes in the list view's filtering config dialog.
+    //SmartFields do not have separate colors for functions/smartobject properties/etc yet
+    //Example of use:
+    // * listview -  filters, advanced filter droppable field (from context browser)
+    // * listview, filters, basic filter droppable (from context browser)
+
+    @_darkbg_SmartField-Background-Color: lighten(@_Actual_Input-Background-Color, 60%);
+    @_lightbg_SmartField-Background-Color: darken(@_Actual_Input-Background-Color, 60%);
+    @SmartField-Background-Color: contrast(@_Actual_Input-Background-Color, @_darkbg_SmartField-Background-Color, @_lightbg_SmartField-Background-Color, 43%);
+    @_Actual_SmartField-Background-Color: mix(fadein(@SmartField-Background-Color,100%), @_Actual_Input-Background-Color, alpha(@SmartField-Background-Color)*100%);
+    
+    @_darkbg_SmartField-Text-Color: lighten(@_Actual_SmartField-Background-Color, 60%);
+    @_lightbg_SmartField-Text-Color: darken(@_Actual_SmartField-Background-Color, 60%);
+    @SmartField-Text-Color: contrast(@_Actual_SmartField-Background-Color, @_darkbg_SmartField-Text-Color, @_lightbg_SmartField-Text-Color, 43%);
+
+
+//#endregion SMARTFIELDS
+
+//#region CALENDAR
+    //variable meanings
+    //item  - a date/day that the user selects in  calendar. 
+    //today - the date/day in amongst the other days thats slightly highlighted as its today's date.
+
+    @Calendar-Background-Color: @Popover-Background-Color;//to keep it inline with @Menu-Background-Color
+    @_Actual_Calendar-Background-Color:  @Calendar-Background-Color;
+    @_darkbg_Calendar-Text-Color: lighten(@Calendar-Background-Color, 60%);
+    @_lightbg_Calendar-Text-Color: darken(@Calendar-Background-Color, 60%);
+    @Calendar-Text-Color: contrast(@Calendar-Background-Color, @_lightbg_Calendar-Text-Color, @_darkbg_Calendar-Text-Color , 43%);
+    
+
+    @_darkbg_Calendar-Week-Divider-Color: lighten(@Calendar-Background-Color, 10%);
+    @_lightbg_Calendar-Week-Divider-Color: darken(@Calendar-Background-Color, 20%);
+    @Calendar-Separator-Line-Color: contrast(@Calendar-Background-Color, @_darkbg_Calendar-Week-Divider-Color, @_lightbg_Calendar-Week-Divider-Color, 43%);
+
+    //Item - Normal
+    @Calendar-Item-Background-Color: @_Transparent;
+    @_Actual_Calendar-Item-Background-Color: mix(fadein(@Calendar-Item-Background-Color,100%), @Calendar-Background-Color, alpha(@Calendar-Item-Background-Color)*100%);
+    @Calendar-Item-Border-Color: @_Transparent;
+    @_darkbg_Calendar-Item-Text-Color: lighten(@Calendar-Background-Color, 50%);
+    @_lightbg_Calendar-Item-Text-Color: darken(@Calendar-Background-Color, 50%);
+    @Calendar-Item-Text-Color: contrast(@Calendar-Background-Color, @_lightbg_Calendar-Item-Text-Color, @_darkbg_Calendar-Item-Text-Color , 85%);
+
+    //Item - disabled
+    @Calendar-Item-Disabled-Text-Color: fadeout(@Calendar-Item-Text-Color, 30%);   //for days not in this month
+    
+    //Item - hover
+    @_darkbg_Calendar-Item-Hover-Background-Color: lighten(@_Actual_Calendar-Item-Background-Color, 10%);
+    @_lightbg_Calendar-Item-Hover-Background-Color: darken(@_Actual_Calendar-Item-Background-Color, 10%);
+    @Calendar-Item-Hover-Background-Color: contrast(@_Actual_Calendar-Item-Background-Color,@_darkbg_Calendar-Item-Hover-Background-Color,   @_lightbg_Calendar-Item-Hover-Background-Color, 43% );
+    @_darkbg_Calendar-Item-Hover-Text-Color: lighten(@_Actual_Calendar-Item-Background-Color, 50%);
+    @_lightbg_Calendar-Item-Hover-Text-Color: darken(@_Actual_Calendar-Item-Background-Color, 50%);
+    @Calendar-Item-Hover-Text-Color: contrast(@_Actual_Calendar-Item-Background-Color,@_darkbg_Calendar-Item-Hover-Text-Color,   @_lightbg_Calendar-Item-Hover-Text-Color, 43% );
+    @Calendar-Item-Hover-Border-Color: @Calendar-Item-Hover-Background-Color;
+    
+    //Headers
+    @Calendar-Day-Header-Text-Color: fadeout(@Calendar-Text-Color, 60%); //the M T W T T headers above the days
+
+    //Navigation Button - Normal
+    @Calendar-Navigation-Button-Background-Color: @_Transparent; 
+    @_Actual_Calendar-Navigation-Button-Background-Color:   mix(fadein(@Calendar-Navigation-Button-Background-Color,100%), @Calendar-Background-Color, alpha(@Calendar-Navigation-Button-Background-Color)*100%);
+    @_darkbg_Calendar-Navigation-Button-Border-Color: lighten(@_Actual_Calendar-Navigation-Button-Background-Color, 20%);
+    @_lightbg_Calendar-Navigation-Button-Border-Color: darken(@_Actual_Calendar-Navigation-Button-Background-Color, 20%);
+    @Calendar-Navigation-Button-Border-Color: contrast(@_Actual_Calendar-Navigation-Button-Background-Color, @_darkbg_Calendar-Navigation-Button-Border-Color, @_lightbg_Calendar-Navigation-Button-Border-Color, 43%);
+    @_darkbg_Calendar-Navigation-Button-Text-Color: lighten(@_Actual_Calendar-Navigation-Button-Background-Color, 60%);
+    @_lightbg_Calendar-Navigation-Button-Text-Color: darken(@_Actual_Calendar-Navigation-Button-Background-Color, 60%);
+    @Calendar-Navigation-Button-Text-Color: contrast(@_Actual_Calendar-Navigation-Button-Background-Color, @_darkbg_Calendar-Navigation-Button-Text-Color, @_lightbg_Calendar-Navigation-Button-Text-Color, 43%);
+
+    //Navigation Button - Hover
+    @Calendar-Navigation-Button-Hover-Background-Color: @UD-Main-Accent-Color; 
+    @_Actual_Calendar-Navigation-Button-Hover-Background-Color: mix(fadein(@Calendar-Navigation-Button-Hover-Background-Color,100%), @Calendar-Background-Color, alpha(@Calendar-Navigation-Button-Hover-Background-Color)*100%);
+    @Calendar-Navigation-Button-Hover-Border-Color: @Calendar-Navigation-Button-Hover-Background-Color;
+    @_darkbg_Calendar-Navigation-Button-Hover-Text-Color: lighten(@_Actual_Calendar-Navigation-Button-Hover-Background-Color, 60%);
+    @_lightbg_Calendar-Navigation-Button-Hover-Text-Color: darken(@_Actual_Calendar-Navigation-Button-Hover-Background-Color, 60%);
+    @Calendar-Navigation-Button-Hover-Text-Color: contrast(@_Actual_Calendar-Navigation-Button-Hover-Background-Color, @_darkbg_Calendar-Navigation-Button-Hover-Text-Color, @_lightbg_Calendar-Navigation-Button-Hover-Text-Color, 43%);
+
+    //Today (a minor border)
+    @_darkbg_Calendar-Today-Border-Color: lighten(@_Actual_Calendar-Background-Color, 20%);
+    @_lightbg_Calendar-Today-Border-Color: darken(@_Actual_Calendar-Background-Color, 20%);
+    @Calendar-Today-Border-Color: contrast(@_Actual_Calendar-Background-Color, @_darkbg_Calendar-Today-Border-Color, @_lightbg_Calendar-Today-Border-Color, 43%);
+
+    //Selected
+    @Calendar-Selected-Item-Background-Color: @UD-Main-Accent-Color;
+    @Calendar-Selected-Item-Border-Color: @Calendar-Selected-Item-Background-Color;
+    @_darkbg_Calendar-Selected-Item-Text-Color: lighten(@Calendar-Selected-Item-Background-Color, 60);
+    @_lightbg_Calendar-Selected-Item-Text-Color: darken(@Calendar-Selected-Item-Background-Color, 60);
+    @Calendar-Selected-Item-Text-Color: contrast(@Calendar-Selected-Item-Background-Color, @_darkbg_Calendar-Selected-Item-Text-Color, @_lightbg_Calendar-Selected-Item-Text-Color, 40%);
+
+    //Misc
+    @Calendar-Shadow: @_Shadow-level-1;
+
+//#endregion CALENDAR
+
+//#region PILLS
+
+    //Pills are similar to smartfield-blobs that represent the items dragged in from a context browser
+    // or a user picker control - typically rounded rects with a grey or blue background.
+    //items with ".entity" will use these, including Out-of-Office users in worklist control.
+    
+    //Normal
+    @_darkbg_Pill-Background-Color: fadeout(lighten(@_Actual_Input-Background-Color, 20%), 60%);
+    @_lightbg_Pill-Background-Color: fadeout(darken(@_Actual_Input-Background-Color, 20%), 60%);
+    @Pill-Background-Color: contrast(@_Actual_Input-Background-Color, @_darkbg_Pill-Background-Color, @_lightbg_Pill-Background-Color, 43%);
+    @_Actual_Pill-Background-Color: mix(fadein(@Pill-Background-Color,100%), @_Actual_Input-Background-Color, alpha(@Pill-Background-Color)*100%);
+    @_darkbg_Pill-Text-Color: lighten(@UD-Main-Accent-Color, 30%);
+    @_lightbg_Pill-Text-Color: darken(@UD-Main-Accent-Color, 20%);
+    @Pill-Text-Color: contrast(@_Actual_Pill-Background-Color, @_darkbg_Pill-Text-Color, @_lightbg_Pill-Text-Color, 43%);
+
+    //Selected
+    @Pill-Selected-Background-Color: @UD-Main-Accent-Color; 
+    @_Actual_Pill-Selected-Background-Color: mix(fadein(@Pill-Selected-Background-Color,100%), @_Actual_Input-Background-Color, alpha(@Pill-Selected-Background-Color)*100%);
+    @_darkbg_Pill-Selected-Text-Color : lighten(@Pill-Selected-Background-Color, @_CONTRAST_TEXT_ON_DARK); 
+    @_lightbg_Pill-Selected-Text-Color : darken(@Pill-Selected-Background-Color, @_CONTRAST_TEXT_ON_LIGHT); 
+    @Pill-Selected-Text-Color: contrast(@_Actual_Pill-Selected-Background-Color, @_darkbg_Pill-Selected-Text-Color, @_lightbg_Pill-Selected-Text-Color, 43%);
+
+    //Error (not resolved)
+    @Pill-Error-Background-Color: fadeout(mix(@_Error-Color, @_Actual_Pill-Background-Color, 50%), 60%); 
+    @_Actual_Pill-Error-Background-Color: mix(fadein(@Pill-Error-Background-Color,100%), @_Actual_Input-Background-Color, alpha(@Pill-Error-Background-Color)*100%);
+    @_darkbg_Pill-Error-Text-Color : lighten(@_Error-Color, 10%); 
+    @_lightbg_Pill-Error-Text-Color : darken(@_Error-Color, 10%); 
+    @Pill-Error-Text-Color: contrast(@_Actual_Pill-Error-Background-Color, @_darkbg_Pill-Error-Text-Color, @_lightbg_Pill-Error-Text-Color, 43%);
+
+
+//#endregion PILLS
+
+//#region TOOLTIPS
+
+    //Normal Tooltip
+    @Tooltip-Background-Color: @_Actual_Form-Background-Color;
+    @_darkbg_Tooltip-Border-Color: lighten(@_Actual_Form-Background-Color, 20%);
+    @_lightbg_Tooltip-Border-Color: darken(@_Actual_Form-Background-Color, 20%);
+    @Tooltip-Border-Color: contrast(@_Actual_Form-Background-Color, @_darkbg_Tooltip-Border-Color, @_lightbg_Tooltip-Border-Color, 43%);
+    @_darkbg_Tooltip-Text-Color: lighten(@Tooltip-Background-Color, 60%);
+    @_lightbg_Tooltip-Text-Color: darken(@Tooltip-Background-Color, 60%);
+    @Tooltip-Text-Color: contrast(@Tooltip-Background-Color, @_darkbg_Tooltip-Text-Color, @_lightbg_Tooltip-Text-Color, 43%);
+
+    //Error Tooltip (validation on textboxes/inputs)
+    @Tooltip-Error-Background-Color: @_Error-Color;
+    @Tooltip-Error-Border-Color: @Tooltip-Error-Background-Color;
+    @_darkbg_Tooltip-Error-Text-Color: lighten(@Tooltip-Error-Background-Color, 60%);
+    @_lightbg_Tooltip-Error-Text-Color: darken(@Tooltip-Error-Background-Color, 60%);
+    @Tooltip-Error-Text-Color: contrast(@Tooltip-Error-Background-Color, @_darkbg_Tooltip-Error-Text-Color, @_lightbg_Tooltip-Error-Text-Color, 43%);
+
+    //general
+    @Tooltip-Shadow: @_Shadow-level-1;
+
+//#endregion TOOLTIPS
+
+//#region TREE ITEMS
+    //hover
+    @Tree-Item-Hover-Background-Color: fadeout(@UD-Main-Accent-Color, 80%); 
+    @_Actual_Tree-Item-Hover-Background-Color: mix(fadein(@Tree-Item-Hover-Background-Color,100%), @_Actual_Input-Background-Color, alpha(@Tree-Item-Hover-Background-Color)*100%);
+    @_darkbg_Tree-Item-Hover-Text-Color: lighten(@_Actual_Tree-Item-Hover-Background-Color,60%);
+    @_lightbg_Tree-Item-Hover-Text-Color: darken(@_Actual_Tree-Item-Hover-Background-Color,60%);
+    @Tree-Item-Hover-Text-Color: contrast(@_Actual_Tree-Item-Hover-Background-Color,@_darkbg_Tree-Item-Hover-Text-Color, @_lightbg_Tree-Item-Hover-Text-Color,43%);
+    @Tree-Item-Hover-Border-Color: @_Actual_Tree-Item-Hover-Background-Color; 
+
+    //selected
+    @Tree-Item-Selected-Background-Color: @UD-Main-Accent-Color;
+    @_Actual_Tree-Item-Selected-Background-Color:  mix(fadein(@Tree-Item-Selected-Background-Color,100%), @_Actual_Input-Background-Color, alpha(@Tree-Item-Selected-Background-Color)*100%);
+    @_darkbg_Tree-Item-Selected-Text-Color: lighten(@_Actual_Tree-Item-Selected-Background-Color,60%);
+    @_lightbg_Tree-Item-Selected-Text-Color: darken(@_Actual_Tree-Item-Selected-Background-Color,60%);
+    @Tree-Item-Selected-Text-Color: contrast(@_Actual_Tree-Item-Selected-Background-Color,@_darkbg_Tree-Item-Selected-Text-Color, @_lightbg_Tree-Item-Selected-Text-Color,43%);
+    @Tree-Item-Selected-Border-Color: @_Actual_Tree-Item-Selected-Background-Color;
+
+
+    //Focus
+    @Tree-Item-Focus-Border-Color: @Input-Focus-Border-Color;
+
+//#endregion TREE ITEMS
+
+//#region CHARTS
+
+
+    @_darkbg_Chart-Background-Color: lighten(@_Background-Color, 10%);
+    @_lightbg_Chart-Background-Color: lighten(@_Background-Color, 10%);
+    @Chart-Background-Color: contrast(@_Background-Color, @_darkbg_Chart-Background-Color, @_lightbg_Chart-Background-Color, 43%);
+    @_Actual_Chart-Background-Color: mix(fadein(@Chart-Background-Color,100%), @_Background-Color, alpha(@Chart-Background-Color)*100%);
+    @_darkbg_Chart-Border-Color: desaturate(lighten(@_Actual_Chart-Background-Color, 30%), @_BORDER_DESATURATION);
+    @_lightbg_Chart-Border-Color: desaturate(darken(@_Actual_Chart-Background-Color, 30%), @_BORDER_DESATURATION);
+    @Chart-Border-Color: contrast(@_Actual_Chart-Background-Color, @_darkbg_Chart-Border-Color , @_lightbg_Chart-Border-Color ,43%);
+
+    @Chart-Header-Background-Color: @_Transparent;
+    @_Actual_Chart-Header-Background-Color: mix(fadein(@Chart-Background-Color,100%), @_Background-Color, alpha(@Chart-Background-Color)*100%);
+
+    @_lightbg_Chart-Title-Text-Color: darken(@_Actual_Chart-Header-Background-Color, 70%);
+    @_darkbg_Chart-Title-Text-Color: lighten(@_Actual_Chart-Header-Background-Color, 70%);
+    @Chart-Title-Text-Color: contrast(@_Actual_Chart-Header-Background-Color, @_lightbg_Chart-Title-Text-Color, @_darkbg_Chart-Title-Text-Color, 43%);
+
+    @_lightbg_Chart-Label-Text-Color: darken(@_Actual_Chart-Background-Color, 70%);
+    @_darkbg_Chart-Label-Text-Color: lighten(@_Actual_Chart-Background-Color, 70%);
+    @Chart-Label-Text-Color: contrast(@_Actual_Chart-Background-Color, @_lightbg_Chart-Label-Text-Color, @_darkbg_Chart-Label-Text-Color, 43%);
+
+    @Chart-Series-0: desaturate(spin(@UD-Main-Accent-Color, 0), 0%);
+    @Chart-Series-1: desaturate(spin(@UD-Main-Accent-Color, 180), 0%);
+    @Chart-Series-2: desaturate(spin(@UD-Main-Accent-Color, 110), 0%);
+    @Chart-Series-3: desaturate(spin(@UD-Main-Accent-Color, 0), 40%);
+    @Chart-Series-4: desaturate(spin(@UD-Main-Accent-Color, 180), 40%);
+    @Chart-Series-5: desaturate(spin(@UD-Main-Accent-Color, 110), 40%);
+    @Chart-Series-6: desaturate(spin(@UD-Main-Accent-Color, 0), 70%);
+    @Chart-Series-7: desaturate(spin(@UD-Main-Accent-Color, 180), 70%);
+    @Chart-Series-8: desaturate(spin(@UD-Main-Accent-Color, 110), 70%); 
+    @Chart-Series-9: desaturate(spin(@UD-Main-Accent-Color, 0), 90%);
+    @Chart-Series-10: desaturate(spin(@UD-Main-Accent-Color, 180), 90%);
+    @Chart-Series-11: desaturate(spin(@UD-Main-Accent-Color, 110), 90%);
+
+//#endregion CHARTS
+
+//#region BADGES 
+
+@Badge-Error-Background-Color: @_Error-Color;
+@Badge-Warning-Background-Color: @_Warning-Color;
+
+//#endregion BADGES 
+
+//#region SEARCH 
+
+@Search-Highlight-Background-Color: #FFDB00;
+@Search-Highlight-Background-Color-1: #FFDB00; //Used as gradient
+@Search-Highlight-Text-Color: darken(@Search-Highlight-Background-Color, 80%);
+
+//#endregion SEARCH
+
+//#region LISTS
+
+    //For ListViews, Generic Lists, Worklists and other types of selectable AND focusable lists
+    //On White bg, in OOF, Heading bar with "recents" in add user search. WorklistPickers, A heading in the list for groups of items
+
+    @List-Background-Color: @Input-Background-Color;
+    @_Actual_List-Background-Color: mix(fadein(@List-Background-Color,100%), @_Background-Color, alpha(@List-Background-Color)*100%);
+    
+    //List border  - only used for list controls, not for list views.
+    @_darkbg_List-Border-Color: desaturate(lighten(@_Actual_List-Background-Color, 30%), 30%);
+    @_lightbg_List-Border-Color: desaturate(darken(@_Actual_List-Background-Color, 30%), 30%);
+    @List-Border-Color: contrast(@_Actual_List-Background-Color, @_darkbg_List-Border-Color , @_lightbg_List-Border-Color ,43%);
+   
+    //List Error (for listbox, multi-choice etc, not listviews)
+    @List-Error-Background-Color: mix(@_Error-Color, @_Actual_List-Background-Color, @_ERROR_BACKGROUND_MIX); 
+    @_Actual_List-Error-Background-Color: mix(fadein(@List-Error-Background-Color,100%), @_Background-Color, alpha(@List-Error-Background-Color)*100%);
+    @_darkbg_List-Error-Border-Color: mix(@_Error-Color,lighten(@_Actual_List-Error-Background-Color, 10%),@_ERROR_BORDER_MIX);
+    @_lightbg_List-Error-Border-Color: mix(@_Error-Color,darken(@_Actual_List-Error-Background-Color, 20%),@_ERROR_BORDER_MIX);
+    @List-Error-Border-Color: contrast(@_Actual_List-Error-Background-Color, @_darkbg_List-Error-Border-Color, @_lightbg_List-Error-Border-Color, 43%);
+    @_darkbg_List-Error-Text-Color: lighten(@_Actual_List-Error-Background-Color, 10%);
+    @_lightbg_List-Error-Text-Color: darken(@_Actual_List-Error-Background-Color, 20%);
+    @List-Error-Text-Color: contrast(@_Actual_List-Error-Background-Color, @_darkbg_List-Error-Text-Color, @_lightbg_List-Error-Text-Color, 43%);
+
+
+    //List Readonly (for listbox, choice, etc)
+    @List-ReadOnly-Background-Color: fadeout(@List-Background-Color, 40%); 
+    @_Actual_List_ReadOnly-Background-Color:     mix(fadein(@List-ReadOnly-Background-Color,100%), @_Background-Color, alpha(@List-ReadOnly-Background-Color)*100%);
+    @_darkbg_List-ReadOnly-Border-Color: lighten(@_Actual_List_ReadOnly-Background-Color, 10%);
+    @_lightbg_List-ReadOnly-Border-Color: darken(@_Actual_List_ReadOnly-Background-Color, 20%);
+    @List-ReadOnly-Border-Color: contrast(@_Actual_List_ReadOnly-Background-Color, @_darkbg_List-ReadOnly-Border-Color, @_lightbg_List-ReadOnly-Border-Color, 43%); 
+    @_darkbg_List-ReadOnly-Text-Color: lighten(@_Actual_List_ReadOnly-Background-Color, 60%);
+    @_lightbg_List-ReadOnly-Text-Color: darken(@_Actual_List_ReadOnly-Background-Color, 60%);
+    @List-ReadOnly-Text-Color: contrast(@_Actual_List_ReadOnly-Background-Color, @_darkbg_List-ReadOnly-Text-Color, @_lightbg_List-ReadOnly-Text-Color, 43%); 
+
+
+    //Column headers
+    @_darkbg_List-Column-Header-Background-Color: lighten(@_Actual_List-Background-Color, 10%);
+    @_lightbg_List-Column-Header-Background-Color: darken(@_Actual_List-Background-Color, 6%);
+    @List-Column-Header-Background-Color: contrast(@_Actual_List-Background-Color, @_darkbg_List-Column-Header-Background-Color, @_lightbg_List-Column-Header-Background-Color, 43%);
+    @_Actual_List-Column-Header-Background-Color :  mix(fadein(@List-Column-Header-Background-Color,100%), @_Actual_List-Background-Color, alpha(@List-Column-Header-Background-Color)*100%);
+    @_lightbg_List-Column-Header-Text-Color:  darken(@_Actual_List-Column-Header-Background-Color,40%);
+    @_darkbg_List-Column-Header-Text-Color:  lighten(@_Actual_List-Column-Header-Background-Color,40%);
+    @List-Column-Header-Text-Color: contrast(@_Actual_List-Column-Header-Background-Color, @_darkbg_List-Column-Header-Text-Color, @_lightbg_List-Column-Header-Text-Color, 43%); //#a2a2a2
+    @List-Column-Header-Border-Color: darken(@List-Column-Header-Background-Color,10.5882%);
+    
+    //Column headers - misc
+    @List-Column-Header-Divider-Color: lighten(@List-Column-Header-Background-Color,50%);
+    @List-Column-Header-Focus-Border-Color: @UD-Main-Accent-Color;
+
+    //Misc
+    @List-Add-Row-Background-Color: @_Transparent; //Should be hyperlink 1 or 2 on transparent background. Add a row to a editable grid, worklist load more
+   
+    //List Item - Normal
+    @List-Item-Background-Color: @_Transparent;
+    @_Actual_List-Item-Background-Color: mix(fadein(@List-Item-Background-Color,100%), @_Actual_List-Background-Color, alpha(@List-Item-Background-Color)*100%);
+    @_lightbg_List-Item-Text-Color: darken(@_Actual_List-Item-Background-Color, 60%);
+    @_darkbg_List-Item-Text-Color: lighten(@_Actual_List-Item-Background-Color, 60%);
+    @List-Item-Text-Color: contrast(@_Actual_List-Item-Background-Color, @_darkbg_List-Item-Text-Color, @_lightbg_List-Item-Text-Color, 43%);
+    @List-Item-Description-Text-Color: inherit; //Generic List Control Uses this
+
+    //List Item - Zebra
+    @_darkbg_List-Item-Zebra-Background-Color: lighten(@_Actual_List-Item-Background-Color, 5%);
+    @_lightbg_List-Item-Zebra-Background-Color: darken(@_Actual_List-Item-Background-Color, 5%);
+    @List-Item-Background-Color-Odd-Zebra: @List-Item-Background-Color; 
+    @List-Item-Background-Color-Even-Zebra: contrast(@_Actual_List-Item-Background-Color, @_darkbg_List-Item-Zebra-Background-Color, @_lightbg_List-Item-Zebra-Background-Color, 43%); 
+    
+    //List Item - Hover
+    @_darkbg_List-Item-Hover-Background-Color: fadeout(@UD-Main-Accent-Color, 70%); 
+    @_lightbg_List-Item-Hover-Background-Color: fadeout(@UD-Main-Accent-Color, 80%); 
+    @List-Item-Hover-Background-Color: contrast(@_Actual_List-Item-Background-Color, @_lightbg_List-Item-Hover-Background-Color, @_darkbg_List-Item-Hover-Background-Color, 43%);
+    @_Actual_List-Item-Hover-Background-Color: mix(fadein(@List-Item-Hover-Background-Color,100%), @_Actual_List-Background-Color, alpha(@List-Item-Hover-Background-Color)*100%);
+    @_darkbg_List-Item-Hover-Text-Color: lighten(@_Actual_List-Item-Hover-Background-Color, 60%);
+    @_lightbg_List-Item-Hover-Text-Color: darken(@_Actual_List-Item-Hover-Background-Color, 60%);
+    @List-Item-Hover-Text-Color: contrast(@_Actual_List-Item-Hover-Background-Color, @_darkbg_List-Item-Hover-Text-Color, @_lightbg_List-Item-Hover-Text-Color, 43%);
+    @List-Item-Hover-Border-Color: lighten(desaturate(@UD-Main-Accent-Color, 30.9201%),39.2157%); //#E4EFF8
+
+
+    //List item - Focus
+    @List-Item-Focus-Border-Color: @UD-Main-Accent-Color; 
+
+
+    //List Item - Error
+    @List-Item-Error-Border-Color: @_Error-Color; //#dddddd
+
+    //List Item - Selected
+    @List-Item-Selected-Background-Color: @UD-Main-Accent-Color; 
+    @_Actual_List-Item-Selected-Background-Color :  mix(fadein(@List-Item-Selected-Background-Color,100%), @_Actual_List-Background-Color, alpha(@List-Item-Selected-Background-Color)*100%);
+    @_lightbg_List-Item-Selected-Text-Color: darken(@_Actual_List-Item-Selected-Background-Color, 60%);
+    @_darkbg_List-Item-Selected-Text-Color: lighten(@_Actual_List-Item-Selected-Background-Color, 60%);
+    @List-Item-Selected-Text-Color: contrast(@_Actual_List-Item-Selected-Background-Color, @_darkbg_List-Item-Selected-Text-Color, @_lightbg_List-Item-Selected-Text-Color, 43%);
+    @List-Item-Selected-Border-Color: @UD-Main-Accent-Color; 
+
+    
+    //List Action Button (often a "Add new" button)
+    @_darkbg_List-Action-Button-Background-Color : lighten(@_Actual_List-Item-Background-Color, 10%);
+    @_lightbg_List-Action-Button-Background-Color : darken(@_Actual_List-Item-Background-Color, 10%);
+    @List-Action-Button-Background-Color: contrast(@_Actual_List-Item-Background-Color, @_darkbg_List-Action-Button-Background-Color, @_lightbg_List-Action-Button-Background-Color, 43%);
+    @_Actual_List-Action-Button-Background-Color: mix(fadein(@List-Action-Button-Background-Color,100%), @_Actual_List-Item-Background-Color, alpha(@List-Action-Button-Background-Color)*100%);
+    
+    @_darkbg_List-Action-Button-Text-Color: lighten(@_Actual_List-Action-Button-Background-Color, 60%);
+    @_lightbg_List-Action-Button-Text-Color: darken(@_Actual_List-Action-Button-Background-Color, 60%);
+    @List-Action-Button-Text-Color: contrast(@_Actual_List-Action-Button-Background-Color, @_darkbg_List-Action-Button-Text-Color, @_lightbg_List-Action-Button-Text-Color, 43%);
+    
+    //List action Button  - hover
+    @_darkbg_List-Action-Button-Hover-Background-Color: lighten(@List-Action-Button-Background-Color, 10%);
+    @_lightbg_List-Action-Button-Hover-Background-Color: darken(@List-Action-Button-Background-Color, 10%);
+    @List-Action-Button-Hover-Background-Color: contrast(@_Actual_List-Action-Button-Background-Color, @_darkbg_List-Action-Button-Hover-Background-Color, @_lightbg_List-Action-Button-Hover-Background-Color, 43%);
+    @_Actual_List-Action-Button-Hover-Background-Color: mix(fadein(@List-Action-Button-Hover-Background-Color,100%), @_Actual_List-Item-Background-Color, alpha(@List-Action-Button-Hover-Background-Color)*100%);
+
+    @_darkbg_List-Action-Button-Hover-Text-Color: lighten(@_Actual_List-Action-Button-Hover-Background-Color, 60%);
+    @_lightbg_List-Action-Button-Hover-Text-Color: darken(@_Actual_List-Action-Button-Hover-Background-Color, 60%);
+    @List-Action-Button-Hover-Text-Color: contrast(@_Actual_List-Action-Button-Hover-Background-Color, @_darkbg_List-Action-Button-Hover-Text-Color, @_lightbg_List-Action-Button-Hover-Text-Color, 43%);
+
+
+    //Footer/Summary
+    @List-Summary-Background-Color: @List-Background-Color;
+    @List-Summary-Separator-Line-Color: darken(@List-Summary-Background-Color,10%);
+    @List-Footer-Inset-Shadow-Color: rgba(0, 0, 0, 0.165); // List View Agregate rows (Add Count, Sum rows to a view)
+
+  
+
+//#endregion LISTS
+
+//#region TAB - NORMAL
+
+
+    //Normal
+    @Tab-Background-Color: @_Transparent; 
+    @_Actual_Tab-Background-Color:   mix(fadein(@Tab-Background-Color,100%), @_Background-Color, alpha(@Tab-Background-Color)*100%);
+    @_darkbg_Tab-Text-Color: lighten(@_Actual_Tab-Background-Color,60%); //#ffffff
+    @_lightbg_Tab-Text-Color: darken(@_Actual_Tab-Background-Color,60%); //#ffffff
+    @Tab-Text-Color: contrast(@_Actual_Tab-Background-Color,@_darkbg_Tab-Text-Color, @_lightbg_Tab-Text-Color,43%); //#858a8a WFD Filter Panel Tab Style;
+   
+    //Focus
+    @Tab-Focus-Border-Color: @UD-Main-Accent-Color;
+
+    //Hover
+    @Tab-Hover-Background-Color: @_Transparent; 
+    @_Actual_Tab-Hover-Background-Color: mix(fadein(@Tab-Hover-Background-Color,100%), @_Background-Color, alpha(@Tab-Hover-Background-Color)*100%);
+    @_darkbg_Tab-Hover-Text-Color: lighten(@_Actual_Tab-Hover-Background-Color, @_CONTRAST_TEXT_ON_DARK); 
+    @_lightbg_Tab-Hover-Text-Color: darken(@_Actual_Tab-Hover-Background-Color, @_CONTRAST_TEXT_ON_LIGHT); 
+    @Tab-Hover-Text-Color: contrast(@_Actual_Tab-Hover-Background-Color,@_darkbg_Tab-Hover-Text-Color, @_lightbg_Tab-Hover-Text-Color,43%); 
+    
+    //Selected
+    //Note: if the form color is transparent or the form color is set to the same color as the page, 
+    //then its possible that the _background-color and tab-panel-background-color will be the same (params into this file)
+    //in that scenario, the selected tab will be the same color as the background.
+    @Tab-Selected-Background-Color: @Tab-Body-Background-Color;
+    @_Actual_Tab-Selected-Background-Color: mix(fadein(@Tab-Selected-Background-Color,100%), @_Background-Color, alpha(@Tab-Selected-Background-Color)*100%);
+    @_darkbg_Tab-Selected-Text-Color: lighten(@_Actual_Tab-Selected-Background-Color, @_CONTRAST_TEXT_ON_DARK);
+    @_lightbg_Tab-Selected-Text-Color: darken(@_Actual_Tab-Selected-Background-Color, @_CONTRAST_TEXT_ON_LIGHT);
+    @Tab-Selected-Text-Color: contrast( @_Actual_Tab-Selected-Background-Color,@_darkbg_Tab-Selected-Text-Color, @_lightbg_Tab-Selected-Text-Color,43%);
+
+    //Tab Body
+    @_darkbg_Tab-Body-Background-Color: lighten(@_Background-Color,20%); 
+    @_lightbg_Tab-Body-Background-Color: darken(@_Background-Color,10%); 
+    @Tab-Body-Background-Color: contrast(@_Background-Color,@_darkbg_Tab-Body-Background-Color, @_lightbg_Tab-Body-Background-Color,43%); 
+    @_Actual_Tab-Body-Background-Color: mix(fadein(@Tab-Body-Background-Color,100%), @_Background-Color, alpha(@Tab-Body-Background-Color)*100%);
+
+    //Disabled
+    @Tab-Disabled-Background-Color: @Tab-Background-Color;
+    @Tab-Disabled-Text-Color: darken(@Tab-Disabled-Background-Color,20%); 
+
+
+//#endregion TAB - NORMAL
+
+//#region TAB - MAIN (Form tabs)
+
+ //in that scenario, the selected tab will be the same color as the background.
+ @Main-Tab-Selected-Background-Color: @_Actual_Form-Background-Color;
+ @_Actual_Main-Tab-Selected-Background-Color: mix(fadein(@Main-Tab-Selected-Background-Color,100%), @_Background-Color, alpha(@Main-Tab-Selected-Background-Color)*100%);
+ @_darkbg_Main-Tab-Selected-Text-Color: lighten(@_Actual_Main-Tab-Selected-Background-Color, @_CONTRAST_TEXT_ON_DARK);
+ @_lightbg_Main-Tab-Selected-Text-Color: darken(@_Actual_Main-Tab-Selected-Background-Color, @_CONTRAST_TEXT_ON_LIGHT);
+ @Main-Tab-Selected-Text-Color: contrast( @_Actual_Main-Tab-Selected-Background-Color,@_darkbg_Main-Tab-Selected-Text-Color, @_lightbg_Main-Tab-Selected-Text-Color,43%);
+
+//#endregion TAB - MAIN (Form tabs)
+
+//#region TAB - SEGMENTED
+
+//a style of tab - used within the Rich Text control (design, preview, html tabs)
+//and by the upcoming "tab control"
+//example:
+//https://developer.apple.com/design/human-interface-guidelines/ios/controls/segmented-controls/
+
+
+
+//Tabs Bar
+
+@_darkbg_Segmented-Tab-Bar-Background-Color: @_Background-Color; 
+@_lightbg_Segmented-Tab-Bar-Background-Color: desaturate(darken(@_Background-Color, 10%), 20%); 
+
+@Segmented-Tab-Bar-Background-Color: contrast(@_Background-Color, @_darkbg_Segmented-Tab-Bar-Background-Color, @_lightbg_Segmented-Tab-Bar-Background-Color, 43%);
+@_Actual_Segmented-Tab-Bar-Background-Color:  mix(fadein(@Segmented-Tab-Bar-Background-Color,100%), @_Background-Color, alpha(@Segmented-Tab-Bar-Background-Color)*100%);
+@_lightbg_Segmented-Tab-Bar-Border-Color: darken(@_Actual_Segmented-Tab-Bar-Background-Color, 20%);
+@_darkbg_Segmented-Tab-Bar-Border-Color: lighten(@_Actual_Segmented-Tab-Bar-Background-Color, 20%);
+@Segmented-Tab-Bar-Border-Color: contrast(@_Actual_Segmented-Tab-Bar-Background-Color, @_darkbg_Segmented-Tab-Bar-Border-Color, @_lightbg_Segmented-Tab-Bar-Border-Color, 43%);
+
+//Tab - Normal
+@Segmented-Tab-Background-Color: @_Transparent; 
+@_Actual_Segmented-Tab-Background-Color:   mix(fadein(@Segmented-Tab-Background-Color,100%), @_Actual_Segmented-Tab-Bar-Background-Color, alpha(@Segmented-Tab-Background-Color)*100%);
+@_darkbg_Segmented-Tab-Text-Color: lighten(@_Actual_Segmented-Tab-Background-Color,60%); 
+@_lightbg_Segmented-Tab-Text-Color: darken(@_Actual_Segmented-Tab-Background-Color,60%); 
+@Segmented-Tab-Text-Color: contrast(@_Actual_Segmented-Tab-Background-Color,@_darkbg_Segmented-Tab-Text-Color, @_lightbg_Segmented-Tab-Text-Color,43%); 
+
+//Tab - Hover
+@_lightbg_Segmented-Tab-Hover-Background-Color: darken(@_Actual_Segmented-Tab-Background-Color, 5%);
+@_darkbg_Segmented-Tab-Hover-Background-Color: lighten(@_Actual_Segmented-Tab-Background-Color, 10%);
+@Segmented-Tab-Hover-Background-Color: contrast(@_Actual_Segmented-Tab-Background-Color, @_darkbg_Segmented-Tab-Hover-Background-Color, @_lightbg_Segmented-Tab-Hover-Background-Color, 43%);
+@_Actual_Segmented-Tab-Hover-Background-Color: mix(fadein(@Segmented-Tab-Hover-Background-Color,100%), @_Actual_Segmented-Tab-Bar-Background-Color, alpha(@Segmented-Tab-Hover-Background-Color)*100%);
+@_darkbg_Segmented-Tab-Hover-Text-Color: lighten(@_Actual_Segmented-Tab-Hover-Background-Color,60%); 
+@_lightbg_Segmented-Tab-Hover-Text-Color: darken(@_Actual_Segmented-Tab-Hover-Background-Color,60%); 
+@Segmented-Tab-Hover-Text-Color: contrast(@_Actual_Segmented-Tab-Hover-Background-Color, @_darkbg_Segmented-Tab-Hover-Text-Color, @_lightbg_Segmented-Tab-Hover-Text-Color, 43%); 
+
+
+//Tab - Selected
+@_lightbg_Segmented-Tab-Selected-Background-Color: @_Background-Color; //CONST
+@_darkbg_Segmented-Tab-Selected-Background-Color: lighten(@_Actual_Segmented-Tab-Bar-Background-Color, 20%);
+@Segmented-Tab-Selected-Background-Color: contrast(@_Actual_Segmented-Tab-Bar-Background-Color, @_darkbg_Segmented-Tab-Selected-Background-Color, @_lightbg_Segmented-Tab-Selected-Background-Color, 43%);
+@_Actual_Segmented-Tab-Selected-Background-Color: mix(fadein(@Segmented-Tab-Selected-Background-Color,100%), @_Actual_Segmented-Tab-Bar-Background-Color, alpha(@Segmented-Tab-Selected-Background-Color)*100%);
+
+@_lightbg_Segmented-Tab-Selected-Text-Color: darken(@_Actual_Segmented-Tab-Selected-Background-Color, 60%);
+@_darkbg_Segmented-Tab-Selected-Text-Color: lighten(@_Actual_Segmented-Tab-Selected-Background-Color, 60%);
+@Segmented-Tab-Selected-Text-Color: contrast(@_Actual_Segmented-Tab-Selected-Background-Color, @_darkbg_Segmented-Tab-Selected-Text-Color, @_lightbg_Segmented-Tab-Selected-Text-Color, 43%);
+
+@Segmented-Tab-Selected-Border-Color: @Segmented-Tab-Selected-Text-Color;
+
+
+//Disabled
+@Segmented-Tab-Disabled-Background-Color: @Segmented-Tab-Background-Color;
+@Segmented-Tab-Disabled-Text-Color: darken(@Segmented-Tab-Disabled-Background-Color,20%);
+
+//#endregion TAB - SEGMENTED
+
+
+//#region RADIOBUTTON
+
+@Radio-Border-Color: @Input-Border-Color;
+@Radio-Background-Color: @Input-Background-Color;
+@Radio-Disabled-Border-Color: fadeout(@Radio-Border-Color, 60%);
+@Radio-Disabled-Background-Color: fadeout(@Radio-Background-Color, 60%);
+@Radio-ReadOnly-Border-Color: fadeout(@Radio-Border-Color, 40%);
+@Radio-ReadOnly-Background-Color: fadeout(@Radio-Background-Color, 40%);
+@Radio-Checked-Color: @Input-Text-Highlight-Background-Color;
+@Radio-Disabled-Checked-Color: fadeout(@Radio-Checked-Color, 60%);
+@Radio-ReadOnly-Checked-Color: fadeout(@Radio-Checked-Color, 40%);
+
+//#endregion RADIOBUTTON
+
+//#region CHECKBOX
+
+@Checkbox-Border-Color: @Input-Border-Color;
+@Checkbox-Background-Color: @Input-Background-Color;
+@Checkbox-Disabled-Border-Color: fadeout(@Checkbox-Border-Color, 60%);
+@Checkbox-Disabled-Background-Color: fadeout(@Checkbox-Background-Color, 60%);
+@Checkbox-ReadOnly-Border-Color: fadeout(@Checkbox-Border-Color, 40%);
+@Checkbox-ReadOnly-Background-Color: fadeout(@Checkbox-Background-Color, 40%);
+@Checkbox-Checked-Color: @Input-Text-Highlight-Background-Color;
+@Checkbox-Disabled-Checked-Color: fadeout(@Checkbox-Checked-Color, 60%);
+@Checkbox-ReadOnly-Checked-Color: fadeout(@Checkbox-Checked-Color, 40%);
+
+//#endregion TAB - CHECKBOX
+
+//#region RATINGS
+
+@Ratings-Border-Color: @Input-Border-Color;
+@Ratings-Checked-Color: @UD-Main-Accent-Color;
+@Ratings-Disabled-Border-Color: fadeout(@Ratings-Border-Color, 60%);
+@Ratings-Disabled-Checked-Color: fadeout(@Ratings-Checked-Color, 60%);
+@Ratings-ReadOnly-Border-Color: fadeout(@Ratings-Border-Color, 40%);
+@Ratings-ReadOnly-Checked-Color: fadeout(@Ratings-Checked-Color, 40%);
+
+//#endregion RATINGS
+
+//#region TOOLBAR BUTTON
+
+@Toolbar-Button-Icon-Highlight-Color: @Button-Icon-Highlight-Color;
+@Toolbar-Button-Icon-Destructive-Color: @Button-Icon-Destructive-Color;
+@Toolbar-Button-Icon-Base-Color: @Button-Icon-Base-Color;
+@Toolbar-Button-Icon-Base-Secondary-Color: @Button-Icon-Base-Secondary-Color;
+
+//#endregion TOOLBAR BUTTON
+

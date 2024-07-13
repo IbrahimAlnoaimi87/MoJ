@@ -1,0 +1,66 @@
+
+.theme-entry .SFC.hidden,
+.theme-entry .SFC .hidden,
+.theme-entry > form > div > .grid .grid-content-cell-wrapper > *.SFC.hidden,
+.theme-entry .SFCDimensionsWrapper.hidden,
+.workflowContainer .tree li.hidden {
+  display: none;
+}
+.theme-entry .SFC .stylewrapper {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.theme-entry .SFC {
+  overflow: hidden;
+  position: relative;
+}
+.theme-entry .SFC div.text-input .input-control-watermark {
+  text-align: start;
+}
+.theme-entry .SFC .disable-overlay {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  border-style: none;
+  opacity: 0.01;
+}
+.theme-entry .SFC.disabled .disable-overlay,
+.theme-entry .SFC.preview .disable-overlay,
+.theme-entry .SFC.preview .disable-overlay .condtional-format-preview .disable-overlay {
+  bottom: 0px;
+  right: 0px;
+}
+.theme-entry .SFC.disabled {
+  opacity: 0.5;
+}
+.layoutTable {
+  display: inline-table;
+  width: 100%;
+  height: 100%;
+}
+.layoutRow {
+  display: table-row;
+}
+.layoutCell {
+  display: table-cell;
+}
+.workflowTreeContainer .highlight {
+  display: inline-block;
+}
+.theme-entry .workflowTreeContainer .highlight {
+  display: inline-block;
+}
+/*Simple scrollbar*/
+
+.theme-entry .simplebar-track {
+  margin: 5px;
+}
+.theme-entry .simplebar-scrollbar::before {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.theme-entry .simplebar-scrollbar.simplebar-visible::before {
+  background-color: rgba(0, 0, 0, 0.85);
+}

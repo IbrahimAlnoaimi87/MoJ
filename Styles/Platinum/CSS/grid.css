@@ -1,0 +1,1703 @@
+﻿.grid
+{
+    position: relative;
+}
+
+.grid.full
+{
+    height: 100%;
+}
+
+/* Grid Header Styling */
+.grid-header
+{
+    border:solid 1px #adae9c;
+    height: 22px;
+}
+
+.grid-header-wrapper
+{
+    background: #f9f9f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+    border:solid 1px #fff;
+    height:20px;
+}
+
+.ie8 .grid-header-wrapper,
+.ie9 .grid-header-wrapper
+{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+}
+
+.grid-header-wrapper .grid-header-text
+{
+    cursor: default;
+    float: left;
+    font-weight: 700;
+    height:20px;
+    line-height: 20px;
+    padding: 0 5px;
+}
+
+html[dir=rtl] .grid-header-wrapper .grid-header-text
+{
+    float:right;
+}
+
+.grid.full .grid-header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.grid.without-header .grid-header
+{
+    display: none;
+}
+
+/* Grid Header Controls Styling */
+.grid .grid-header-controls
+{
+    background:none;
+    float: right;
+    height: 20px;
+    padding: 0 0 0 3px;
+}
+
+.grid .grid-header-controls a
+{
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 15px;
+    margin:2px;
+    width: 15px;
+}
+
+.grid .grid-header-controls a span
+{
+    display: none;
+}
+
+.grid .grid-header-controls a.collapse-horizontal
+{
+    background-image: url(../Images/Arrows/black_arrow_left.png);
+}
+.grid .grid-header-controls a.collapse-horizontal:hover
+{
+    background-image: url(../Images/Arrows/green_arrow_left.png);
+}
+
+.grid .grid-header-controls a.expand-horizontal
+{
+    background-image: url(../Images/Arrows/black_arrow_right.png);
+}
+.grid .grid-header-controls a.expand-horizontal:hover
+{
+    background-image: url(../Images/Arrows/green_arrow_right.png);
+}
+
+/* Grid Toolbars Styling */
+.grid-toolbars
+{
+    overflow: hidden;
+}
+
+.grid.without-toolbar .grid-toolbars
+{
+    display: none;
+}
+
+.grid.full .grid-toolbars
+{
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.grid.without-header.full .grid-toolbars
+{
+    top: 0;
+}
+
+.grid.with-header.with-toolbar .grid-toolbars .toolbars,
+.grid.with-header.with-double-toolbar .grid-toolbars .toolbars
+{
+    border-top-width:0;
+}
+
+.grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper
+{
+    background: #dfe4d7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dfe4d7 0%, #f9f9f9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfe4d7), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dfe4d7 0%,#f9f9f9 100%); /* W3C */
+}
+
+.ie8 .grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper,
+.ie9 .grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper
+{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe4d7', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+}
+
+.grid.with-header .grid-toolbars .toolbars.double .toolbar:first-child .toolbar-wrapper
+{
+    background:#e1e4d9;
+}
+
+/* Grid Body Styling */
+.grid .grid-body
+{
+    border:solid 1px #adae9c;
+    margin-top: 3px;
+    position: relative;
+}
+
+.grid.without-header.without-toolbar .grid-body
+{
+    margin-top: 0;
+}
+
+.grid.full .grid-body
+{
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+}
+
+.grid.without-header.without-toolbar.full .grid-body
+{
+    top: 0;
+}
+
+.grid.with-header.without-toolbar.full .grid-body, .grid.without-header.with-toolbar.full .grid-body
+{
+    top: 27px;
+}
+
+.grid.with-header.with-toolbar.full .grid-body, .grid.without-header.with-double-toolbar.full .grid-body
+{
+    top: 50px;
+}
+
+.grid.with-header.with-double-toolbar.full .grid-body, .grid.without-header.with-triple-toolbar.full .grid-body
+{
+    top: 73px;
+}
+
+.grid.with-aggregation.full .grid-body, .grid.with-footer.full .grid-body
+{
+    bottom: 24px;
+}
+
+.grid.with-aggregation.with-footer.full .grid-body
+{
+    bottom: 27px;
+}
+
+.grid .grid-content-cell.icon.form.loading,
+.grid .grid-content-cell.icon.view.loading,
+.grid .grid-content-cell.icon.list-view.loading,
+.grid .grid-content-cell.icon.item-view.loading,
+.grid .grid-content-cell.icon.form.checked-out.loading,
+.grid .grid-content-cell.icon.view.checked-out.loading,
+.grid .grid-content-cell.icon.list-view.checked-out.loading,
+.grid .grid-content-cell.icon.item-view.checked-out.loading
+{
+    background-image:url(../Images/Loaders/PreloaderGreen_16px.gif);
+}
+
+/* Grid Column Headers Styling */
+.grid .grid-column-headers
+{
+    border-bottom:solid 1px #adae9c;
+    min-height: 22px;
+}
+
+.grid.full .grid-column-headers
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.grid .grid-column-headers-wrapper
+{
+    background: #f9f9f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+    border:solid 1px #fff;
+    min-height: 20px;
+    position: relative;
+    height: 100%;
+}
+
+.ie8 .grid .grid-column-headers-wrapper,
+.ie9 .grid .grid-column-headers-wrapper
+{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+}
+
+.grid table.grid-column-header-table
+{
+    position:absolute;
+    top:0;
+    left:0;
+    outline: none;
+}
+
+html[dir=rtl] .grid table.grid-column-header-table
+{
+    left:auto;
+    right:0;
+}
+
+.grid table.grid-column-header-table,
+.grid table.grid-content-table,
+.grid table.grid-summary-content-table
+{
+    table-layout:fixed;
+    width:100%;
+}
+
+.grid table.grid-content-table:focus
+{
+    outline: none;
+}
+
+.grid table.grid-column-header-table, 
+.grid table.grid-column-header-table tr, 
+.grid table.grid-column-header-table td
+{
+    min-height: 20px;
+    height: 100%;
+}
+
+.grid table.grid-column-header-table td
+{
+    padding: 0;
+}
+
+.grid table.grid-column-header-table .hidden,
+.grid table.grid-content-table .hidden
+{
+    display: none;
+}
+
+.grid table.grid-content-table tr.inactive
+{
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+
+.grid .grid-column-header-cell
+{
+    cursor: default;
+    height: 100%;
+    min-height: 20px;
+    position: relative;
+    padding: 0 4px 0 2px;
+}
+
+.grid .grid-column-header-cell-wrapper
+{
+    display: table;
+    height: 100%;
+    min-height: 20px;
+    width: inherit;
+}
+
+.grid .grid-column-header-cell-content 
+{
+    display: table-cell;
+    min-height: 20px;
+    vertical-align: middle;
+    width: inherit;
+}
+
+.grid table.grid-column-header-table td:hover,
+.sfg-header-td:hover
+{
+    background: #fefefe; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fefefe 0%, #ebece5 50%, #ccd0c1 51%, #e6e9e0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(50%,#ebece5), color-stop(51%,#ccd0c1), color-stop(100%,#e6e9e0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* W3C */
+}
+
+.ie8 .grid table.grid-column-header-table td:hover,
+.ie9 .grid table.grid-column-header-table td:hover,
+.ie9 .sfg-header-td:hover
+{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e6e9e0',GradientType=0 ); /* IE6-9 */
+}
+
+.grid td.not-sortable .grid-column-header-cell:hover, 
+.grid table.grid-column-header-table.not-sortable .grid-column-header-cell:hover
+{
+    background: none;
+}
+
+.sfg-header-td .grid-column-header-cell-wrapper
+{
+    width: 100%;
+}
+
+.grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper,
+.sfg-header-td.asc .grid-column-header-cell-wrapper
+{
+    background: url(../Images/Arrows/lightgrey_small_arrow_up.gif) no-repeat 50% 1px;
+}
+
+.grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper,
+.sfg-header-td.desc .grid-column-header-cell-wrapper
+{
+    background: url(../Images/Arrows/lightgrey_small_arrow_down.gif) no-repeat 50% 1px;
+}
+
+.grid .grid-column-header-cell.asc:hover .grid-column-header-cell-wrapper,
+.sfg-header-td.asc .grid-column-header-cell-wrapper:hover
+{
+    background-image: url(../Images/Arrows/grey_small_arrow_up.gif);
+}
+
+.grid .grid-column-header-cell.desc:hover .grid-column-header-cell-wrapper,
+.sfg-header-td.desc .grid-column-header-cell-wrapper:hover
+{
+    background-image: url(../Images/Arrows/grey_small_arrow_down.gif);
+}
+
+.grid .grid-column-header-text,
+.sfg-header-td
+{
+    cursor: default;
+    line-height:19px;
+    overflow: hidden;
+    position: relative;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: inherit;
+}
+
+.sfg-header-td
+{
+    padding-left: 2px;
+}
+
+.sfg .sfg-header-td .grid-column-header-divider
+{
+    cursor:default;
+}
+
+.grid .grid-column-header-divider
+{
+    cursor:col-resize;
+    min-height: 20px;
+    width: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: transparent url(../Images/Grid/grid_column_header_divider.png) no-repeat 50% 50%;
+    border-color: transparent;
+}
+
+html[dir=rtl] .grid .grid-column-header-divider
+{
+    left:0;
+    right: auto;
+}
+
+.grid table.grid-column-header-table td.last .grid-column-header-divider
+{
+    display: none;
+}
+
+.grid table.grid-column-header-table td.not-resizable .grid-column-header-divider
+{
+    cursor:default;
+}
+
+.grid a.grid-column-header-button
+{
+    display: none;
+    height: 20px;
+    width: 14px;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    overflow: hidden;
+    background: transparent url(../Images/Grid/grid_column_header_button.png) no-repeat 0 50%;
+}
+
+.grid a.grid-column-header-button span
+{
+    display: block;
+    height: 20px;
+    width: 14px;
+    background: transparent url(../Images/Arrows/black_arrow_down.gif) no-repeat 5px 50%;
+}
+
+.grid .grid-column-header-cell:hover a.grid-column-header-button
+{
+    display: block;
+}
+
+.grid .grid-column-header-cell .input-control.checkbox
+{
+    margin-right: 2px;
+}
+
+/* Grid Content Styling */
+.grid .grid-body-content
+{
+    background:#fff;
+    border:solid 1px #fff;
+    position: relative;
+}
+
+.grid.full .grid-body-content
+{
+    position: absolute;
+    top: 23px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.grid .grid-body-content-wrapper
+{
+    position: relative;
+}
+
+.grid.full .grid-body-content-wrapper
+{
+    overflow: auto;
+    height: 100%;
+}
+
+.grid table.grid-content-table tr
+{
+    min-height: 23px;
+}
+
+.sfg-table
+{
+    table-layout: fixed;
+}
+
+.sfg-row
+{
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+    user-select: none;
+}
+
+.sfg-body-td
+{
+    padding: 1px 2px 1px 1px;
+    height: 22px;
+    cursor: default;
+}
+
+.sfg-row.even td, 
+.grid table.grid-content-table tr.even td,
+.grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row) td
+{
+    background-color: #f5f5f5;
+}
+
+.sfg-row.highlight-on-hover:hover td,
+.grid table.grid-content-table tr:hover td,
+.grid table.grid-content-table.zebra-stripes tr:hover:not(.action-row) td
+{
+    background-color: #d6e3b0;
+}
+
+.sfg-row.selected td,
+.grid table.grid-content-table tr.selected td,
+.grid table.grid-content-table.zebra-stripes tr.selected:nth-child(odd):not(.action-row) td,
+.grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row) td
+{
+    background-color: #e4efc3;
+}
+.grid table.grid-content-table tbody tr.highlighted
+{
+    outline: dotted 1px #87c41f;
+}
+
+.grid table.grid-content-table td
+{
+    padding: 0;
+    vertical-align: top;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.grid table.grid-content-table td.left-align
+{
+    text-align:left;
+}
+.grid table.grid-content-table td.center-align
+{
+    text-align:center;
+}
+.grid table.grid-content-table td.right-align
+{
+    text-align:right;
+}
+.grid table.grid-content-table td.hidden
+{
+    display: none;
+}
+
+.grid .grid-content-cell
+{
+    text-align: inherit;
+    cursor: default;
+    padding: 5px 2px;
+}
+
+.sfg-body-td>span
+{
+    display: block;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 1px;
+}
+
+.grid.with-rownumbering .grid-content-table td:first-child, 
+.grid-aggregation-content-table td:first-child
+{
+    background-color: #dcded8;
+}
+
+.grid-aggregation-content-table td:first-child
+{
+    width: 56px !important;
+}
+
+.grid.with-rownumbering .grid-column-header-table td:first-child, 
+.grid.with-rownumbering .grid-content-table td:first-child
+{
+    text-align: right;
+}
+
+.grid .grid-content-cell.numeric
+{
+    text-align: right;
+}
+
+.grid .grid-content-cell.icon
+{
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+}
+
+html[dir=rtl] .grid .grid-content-cell.icon
+{
+    background-position: 99% 3px;
+    padding-left: 2px;
+    padding-right: 22px;
+}
+
+.grid table.grid-content-table tr.nowrap,
+.grid table.grid-content-table tr.nowrap td
+{
+    /*height: 23px;*/
+}
+
+.grid table.grid-content-table tr.nowrap td
+{
+    overflow:hidden;
+}
+
+.grid table.grid-content-table tr.nowrap .grid-content-cell
+{
+    overflow:hidden;
+}
+
+.grid table.grid-content-table tr.nowrap .grid-content-cell-wrapper,
+.grid table.grid-content-table .grid-content-cell-wrapper,
+.grid .categorySectionsList .radiobox-button-text
+{
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.grid .grid-content-cell.edit-mode
+{
+    padding: 1px 2px 1px 1px;
+}
+
+.sfg-body-td.checkradio-cell,
+.grid .grid-content-cell.checkradio-cell
+{
+    padding: 1px 2px 1px 1px;
+    text-align: center;
+}
+
+.grid .grid-content-cell.checkradio-cell .input-control.checkbox
+{
+    margin-right: 2px;
+}
+
+.grid table.grid-content-table td.empty-grid
+{
+    color: #aaa;
+    width:100%;
+}
+
+/* Grid Action Row Styling */
+.grid table.grid-content-table td.action-row
+{
+    color: #aaa;
+}
+
+.grid table.grid-content-table td.action-row a:focus
+{
+    outline: none;
+}
+
+.sfg .action-row:focus
+{
+    outline: #98dc28 1px dotted;
+}
+
+.sfg .action-row
+{
+    padding-left: 1px;
+}
+
+.sfg .action-row,
+.grid table.grid-content-table td.action-row a.action-row
+{
+    color: #aaa;
+    text-decoration: none;
+}
+
+.grid table.grid-content-table td.action-row, 
+.grid table.grid-content-table td.empty-grid
+{
+    background-color: inherit !important;
+}
+
+.grid.with-rownumbering table.grid-content-table td.action-row
+{
+    text-align: left !important;
+    width: inherit !important;
+}
+
+/* Grid Footer Styling */
+.grid .grid-footer
+{
+    height: 23px;
+    position: relative;
+}
+
+.grid.with-aggregation.with-footer .grid-footer
+{
+    margin-top: 3px;
+}
+
+.grid.with-aggregation.with-footer .grid-footer .toolbars
+{
+    border-top-width:1px;
+}
+
+.grid.with-footer .grid-footer
+{
+    display: block;
+}
+
+.grid .grid-footer .toolbars
+{
+    border-top-width:0;
+}
+
+.grid.with-footer.full .grid-footer
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.grid.without-footer .grid-footer
+{
+    display: none;
+}
+
+/* Grid Aggregation Styling */
+.grid.with-aggregation .grid-aggregation
+{
+    border:solid 1px #adae9c;
+    border-top-width:0;
+}
+
+.grid.with-aggregation.full .grid-aggregation
+{
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+}
+
+.grid.without-aggregation .grid-aggregation
+{
+    display: none;
+}
+
+.grid-aggregation-header
+{
+    height: 22px;
+}
+
+.grid-aggregation-header-c
+{
+    background: #f9f9f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+    border:solid 1px #fff;
+    height:20px;
+}
+
+.ie8 .grid-aggregation-header-c,
+.ie9 .grid-aggregation-header-c
+{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+}
+
+.grid-aggregation-header-arrow
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 20px;
+    position: absolute;
+    width: 7px;
+    right: 5px;
+}
+
+.grid-aggregation.collapsed .grid-aggregation-header-arrow
+{
+    background-image: url(../Images/Arrows/black_arrow_up.gif);
+}
+
+.grid-aggregation.expanded .grid-aggregation-header-arrow
+{
+    background-image: url(../Images/Arrows/black_arrow_down.gif);
+}
+
+.grid-aggregation-header-link
+{
+    display:block;
+    height:20px;
+}
+
+.grid-aggregation.expanded .grid-aggregation-header-link
+{
+    left: 0;
+    right: 0;
+}
+
+.grid-aggregation-header-text
+{
+    font-weight: 700;
+    line-height: 20px;
+    padding-left: 5px;
+    color: #343e41;
+}
+
+.grid-aggregation .grid-aggregation-content
+{
+    border-top:solid 1px #adae9c;
+}
+
+.grid-aggregation.collapsed .grid-aggregation-content
+{
+    display: none;
+}
+
+.grid-aggregation-content-m
+{
+    border:solid 1px #fff;
+}
+
+.grid-aggregation-content-table
+{
+    background-color: #FFF;
+    width: 100%;
+}
+
+.grid-aggregation-content-table td
+{
+    padding: 5px;
+    text-align: right;
+}
+
+/* Grid Summary Styling */
+.grid.with-summary .grid-summary
+{
+    background-color:#fff;
+    border:solid 1px #adae9c;
+    border-top-width:0;
+}
+
+.grid.with-summary.full .grid-summary
+{
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+}
+
+.grid.without-summary .grid-summary
+{
+    display: none;
+}
+
+.grid-summary .grid-summary-item
+{
+    border-top:solid 1px #adae9c;
+}
+
+.grid-summary .grid-summary-item:first-child
+{
+    border-top:none;
+}
+
+.grid-summary .grid-summary-item-wrapper
+{
+    border:solid 1px #fff;
+}
+
+.grid-summary .grid-summary-content-table
+{
+    
+}
+
+/* Grid Footer Paging Control Styling */
+.grid .grid-paging-control-text
+{
+    float: left;
+    padding: 0 3px;
+    line-height: 20px;
+}
+
+.grid .grid-paging-control .input-control.text-input
+{
+    width: 40px;
+    float: left;
+}
+
+.grid .grid-paging-control .input-control.text-input input
+{
+    text-align: right;
+}
+
+/* Grid Column Divider Styling */
+.grid-column-drag-divider
+{
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    width: 3px;
+    cursor: col-resize;
+}
+
+/* Grid Column Hidden Styling */
+.grid-hidden-column
+{
+    display: none;
+}
+
+/* Grid with hidden column headers */
+.grid.hide-column-headers .grid-column-headers
+{
+    display: none;
+}
+
+.grid.full.hide-column-headers .grid-body-content
+{
+    top: 0;
+}
+
+/* Grid Cell Icon Styling */
+.grid .grid-content-cell.icon.user
+{
+    background-image: url(../Images/Icons/User16.png);
+}
+
+.grid .grid-content-cell.icon.parameter
+{
+    background-image: url(../Images/Icons/FormParameter16.png);
+}
+
+.grid .grid-content-cell.icon.group
+{
+    background-image: url(../Images/Icons/Groups16.png);
+}
+
+.grid .grid-content-cell.icon.role
+{
+    background-image: url(../Images/Icons/Roles16.png);
+}
+
+/* Grid Cell Icon Styling - Objects */
+.grid .grid-content-cell.icon.smartobject
+{
+    background-image: url(../Images/Icons/SmartObject16.png);
+}
+
+.grid .grid-content-cell.icon.smartobject-composite
+{
+    background-image: url(../Images/Icons/CompositeSmartObject16.png);
+}
+
+.grid .grid-content-cell.icon.view
+{
+    background-image: url(../Images/Icons/View16.png);
+}
+
+.grid .grid-content-cell.icon.state
+{
+    background-image: url(../Images/Icons/FormState16.png);
+}
+
+.grid .grid-content-cell.icon.item-view
+{
+    background-image: url(../Images/Icons/ItemView16.png);
+}
+
+.grid .grid-content-cell.icon.capturelist-view
+{
+    background-image: url(../Images/Icons/CaptureList16.png);
+}
+
+.grid .grid-content-cell.icon.list-view
+{
+    background-image: url(../Images/Icons/ListView16.png);
+}
+
+.grid .grid-content-cell.icon.content-view
+{
+    background-image: url(../Images/Icons/ContentView16.png);
+}
+
+.grid .grid-content-cell.icon.form
+{
+    background-image: url(../Images/Icons/SmartForm16.png);
+}
+
+.grid .grid-content-cell.icon.report
+{
+    background-image: url(../Images/Icons/Report16.png);
+}
+
+.grid .grid-content-cell.icon.application
+{
+    background-image: url(../Images/Icons/Application16.png);
+}
+
+.grid .grid-content-cell.icon.workflow
+{
+    background-image: url(../Images/Icons/Process16.png);
+}
+
+.grid .grid-content-cell.icon.smartfunction
+{
+    background-image: url(../Images/Icons/SmartFunctiont16.png);
+}
+
+.grid .grid-content-cell.icon.category
+{
+    background-image: url(../Images/Icons/FolderClosed16.png);
+}
+
+.grid .grid-content-cell.icon.subform
+{
+    background-image: url(../Images/Icons/SubFormGeneric16.png);
+}
+
+/* Grid Cell Icon Styling - Datatypes */
+.grid .grid-content-cell.icon,
+.grid .grid-content-cell.icon.default
+{
+    background-image: url(../Images/Icons/Default16px.png);
+}
+
+.grid .grid-content-cell.icon.auto-guid, 
+.grid .grid-content-cell.icon.autoguid
+{
+    background-image: url(../Images/Icons/AutoGuid16.png);
+}
+
+.grid .grid-content-cell.icon.auto-number, 
+.grid .grid-content-cell.icon.autonumber
+{
+    background-image: url(../Images/Icons/AutoNumber16.png);
+}
+
+.grid .grid-content-cell.icon.date-time, 
+.grid .grid-content-cell.icon.datetime
+{
+    background-image: url(../Images/Icons/DateTime16.png);
+}
+ 
+.grid .grid-content-cell.icon.date
+{
+    background-image: url(../Images/Icons/Date16.png);
+}
+
+.grid .grid-content-cell.icon.decimal
+{
+    background-image: url(../Images/Icons/Decimal16.png);
+}
+
+.grid .grid-content-cell.icon.file
+{
+    background-image: url(../Images/Icons/File16.png);
+}
+
+.grid .grid-content-cell.icon.guid
+{
+    background-image: url(../Images/Icons/Guid16.png);
+}
+
+.grid .grid-content-cell.icon.hyperlink
+{
+    background-image: url(../Images/Icons/Hyperlink16.png);
+}
+
+.grid .grid-content-cell.icon.image
+{
+    background-image: url(../Images/Icons/Image16.png);
+}
+
+.grid .grid-content-cell.icon.memo
+{
+    background-image: url(../Images/Icons/Memo16.png);
+}
+
+.grid .grid-content-cell.icon.multi-value, 
+.grid .grid-content-cell.icon.multivalue
+{
+    background-image: url(../Images/Icons/MultiValue16.png);
+}
+
+.grid .grid-content-cell.icon.number
+{
+    background-image: url(../Images/Icons/Number16.png);
+}
+
+.grid .grid-content-cell.icon.text
+{
+    background-image: url(../Images/Icons/Text16.png);
+}
+
+.grid .grid-content-cell.icon.time
+{
+    background-image: url(../Images/Icons/Time16.png);
+}
+
+.grid .grid-content-cell.icon.xml
+{
+    background-image: url(../Images/Icons/XML16.png);
+}
+
+.grid .grid-content-cell.icon.yesno
+{
+    background-image: url(../Images/Icons/Boolean16.png);
+}
+
+.grid .grid-content-cell.icon.service-instance
+{
+    background-image: url(../Images/Icons/ServiceInstance16.png);
+}
+
+.grid .grid-content-cell.icon.service-object
+{
+    background-image: url(../Images/Icons/ServiceObject16.png);
+}
+
+.grid .grid-content-cell.icon.service-method
+{
+    background-image: url(../Images/Icons/ServiceMethod16.png);
+}
+
+.grid .grid-content-cell.icon.form-event
+{
+    background-image: url(../Images/Icons/FormEvent16.png);
+}
+
+.grid .grid-content-cell.icon.view-event
+{
+    background-image: url(../Images/Icons/ViewEvent16.png);
+}
+
+.grid .grid-content-cell.icon.form-event.disabled-rule
+{
+    background-image: url(../Images/Icons/DisablePageRule16.png);
+}
+
+.grid .grid-content-cell.icon.view-event.disabled-rule
+{
+    background-image: url(../Images/Icons/DisableRule.png);
+}
+
+.grid .grid-content-cell.icon.form-event-error.disabled-rule
+{
+    background-image: url(../Images/Icons/DisablePageRule16Error.png);
+}
+
+.grid .grid-content-cell.icon.view-event-error.disabled-rule
+{
+    background-image: url(../Images/Icons/DisableRuleError.png);
+}
+
+.grid .grid-content-cell.icon.form-event-error
+{
+    background-image: url(../Images/Icons/FormRuleError16.png);
+}
+
+.grid .grid-content-cell.icon.view-event-error
+{
+    background-image: url(../Images/Icons/RuleError16.png);
+}
+
+.grid .grid-content-cell.icon.conditional-style-error
+{
+    background-image: url(../Images/Icons/ConditionalStyle_Error16.png);
+}
+
+.grid .grid-content-cell.icon.conditional-style
+{
+    background-image: url(../Images/Icons/ConditionalStyle16.png);
+}
+
+.grid .grid-content-cell.icon.form-state
+{
+    background-image: url(../Images/Icons/FormState16.png);
+}
+
+.grid .grid-content-cell.icon.smartobject-method
+{
+    background-image: url(../Images/Icons/SmartObjectMethod16.png);
+}
+
+.grid .grid-content-cell.icon.smartobject-property
+{
+    background-image: url(../Images/Icons/SmartObjectProperties16.png);
+}
+
+.grid .grid-content-cell.icon.smartobject-method-parameter
+{
+    background-image: url(../Images/Icons/SmartObjectMethodParameter16.png);
+}
+
+.grid .grid-content-cell.icon.service-object-property
+{
+    background-image: url(../Images/Icons/ServiceObjectMethodProperties16.png);
+}
+
+.grid .grid-content-cell.icon.service-method-input-property
+{
+    background-image: url(../Images/Icons/InputServiceProperty16.png);
+}
+
+.grid .grid-content-cell.icon.service-method-return-property
+{
+    background-image: url(../Images/Icons/ReturnServiceProperty16.png);
+}
+
+.grid .grid-content-cell.icon.specific-value
+{
+    background-image: url(../Images/Icons/SpecificValues16.png);
+}
+
+.grid .grid-content-cell.icon.system-value
+{
+    background-image: url(../Images/Icons/SystemValues16.png);
+}
+
+.grid .grid-content-cell.icon.service-object-method-parameter
+{
+    background-image: url(../Images/Icons/ServiceObjectMethodParameter16.png);
+}
+
+/* Grid Cell Icon Styling - Expressions */
+.grid .grid-content-cell.icon.expression
+{
+    background-image: url(../Images/Icons/Expression16.png);
+}
+
+.grid .grid-content-cell.icon.expression-error
+{
+    background-image: url(../Images/Icons/ExpressionError16.png);
+}
+
+/* Grid Cell Icon Styling - Validation */
+.grid .grid-content-cell.icon.control,
+.grid .grid-content-cell.icon.control-generic
+{
+    background-image: url(../Images/Icons/Control16.png);
+}
+
+.grid .grid-content-cell.icon.control-error
+{
+    background-image: url(../Images/Icons/Control_Error16.png);
+}
+
+/* Grid Cell Icon Styling - Errors & Warnings */
+.grid .grid-content-cell.icon.error
+{
+    background-image: url(../Images/Icons/Error16.png);
+}
+
+.grid .grid-content-cell.icon.warning
+{
+    background-image: url(../Images/Icons/Warning16.png);
+}
+
+.grid .grid-content-cell.icon.form-state.error
+{
+    background-image: url(../Images/Icons/FormState_Error16.png);
+}
+
+/* Grid Control Icons */
+.grid .grid-content-cell.icon.control-button
+{
+    background-image: url(../Images/Icons/ButtonControl16.png);
+}
+
+.grid .grid-content-cell.icon.control-table
+{
+    background-image: url(../Images/Icons/TableControl16.png);
+}
+
+.grid .grid-content-cell.icon.control-listtable
+{
+    background-image: url(../Images/Icons/TableControl16.png);
+}
+
+.grid .grid-content-cell.icon.control-toolbartable
+{
+    background-image: url(../Images/Icons/TableControl16.png);
+}
+
+.grid .grid-content-cell.icon.control-checkbox
+{
+    background-image: url(../Images/Icons/CheckBoxControl16.png);
+}
+
+.grid .grid-content-cell.icon.control-textbox
+{
+    background-image: url(../Images/Icons/TextBoxControl16.png);
+}
+
+.grid .grid-content-cell.icon.control-calendar
+{
+    background-image: url(../Images/Icons/Calendar16.png);
+}
+
+.grid .grid-content-cell.icon.control-multiselectcheckbox
+{
+    background-image: url(../Images/Icons/MultiSelectCheckboxes16.png);
+}
+
+.grid .grid-content-cell.icon.control-datalabel
+{
+    background-image: url(../Images/Icons/DataLabelControl16.png);
+}
+
+.grid .grid-content-cell.icon.control-dropdown
+{
+    background-image: url(../Images/Icons/DropDownList16.png);
+}
+
+.grid .grid-content-cell.icon.control-hyperlink
+{
+    background-image: url(../Images/Icons/Hyperlink16.png);
+}
+
+.grid .grid-content-cell.icon.control-filepostback,
+.grid .grid-content-cell.icon.control-file
+{
+    background-image: url(../Images/Icons/File16.png);
+}
+
+.grid .grid-content-cell.icon.control-imagepostback,
+.grid .grid-content-cell.icon.control-image
+{
+    background-image: url(../Images/Icons/Image16.png);
+}
+
+.grid .grid-content-cell.icon.control-listdisplay
+{
+    background-image: url(../Images/Icons/ListDisplay16.png);
+}
+
+.grid .grid-content-cell.icon.control-lookup
+{
+    background-image: url(../Images/Icons/Lookup16.png);
+}
+
+.grid .grid-content-cell.icon.control-picture
+{
+    background-image: url(../Images/Icons/Picture16_02.png);
+}
+
+.grid .grid-content-cell.icon.control-radiobuttonlist
+{
+    background-image: url(../Images/Icons/RadioButtonList16.png);
+}
+
+.grid .grid-content-cell.icon.control-radiobutton
+{
+    background-image: url(../Images/Icons/RadioButton.png);
+}
+
+.grid .grid-content-cell.icon.control-radiobuttongroup
+{
+    background-image: url(../Images/Icons/RadioButtonGroup.png);
+}
+
+.grid .grid-content-cell.icon.control-rating
+{
+    background-image: url(../Images/Icons/Rating16.png);
+}
+
+.grid .grid-content-cell.icon.control-slider
+{
+    background-image: url(../Images/Icons/SliderControl16.png);
+}
+
+.grid .grid-content-cell.icon.control-listheading
+{
+    background-image: url(../Images/Icons/ListHeadings16.png);
+}
+
+.grid .grid-content-cell.icon.control-associationheading
+{
+    background-image: url(../Images/Icons/AssociationHeading16_2.png);
+}
+
+.grid .grid-content-cell.icon.control-textarea
+{
+    background-image: url(../Images/Icons/TextBoxControl16.png);
+}
+
+.grid .grid-content-cell.icon.control-toolbarbutton
+{
+    background-image: url(../Images/Icons/ToolbarButtonControl16.png);
+}
+
+.grid .grid-content-cell.icon.control-tree
+{
+    background-image: url(../Images/Icons/Tree16.png);
+}
+
+.grid .grid-content-cell.icon.controlevent
+{
+    background-image: url(../Images/Icons/ControlEvent16.png);
+}
+.grid .grid-content-cell.icon.control-label
+{
+        background-image: url("../Images/Icons/Label16_02.png");
+}
+
+.grid .grid-content-cell.icon.control-picker
+{
+    background-image: url(../Images/Icons/Picker16.png);
+}
+
+/* Grid Edit & Display Templates Section */
+.grid .grid-edit-templates,
+.grid .grid-display-templates
+{
+    display: none;
+}
+
+/* Grid Multiline Icon Styling (Used in the SO Designer Methods Grid) */
+.grid .grid-content-cell-wrapper .multiline-cell-icon
+{
+    background-repeat:no-repeat;
+    line-height:16px;
+    margin-top:4px;
+    padding-left:22px;
+}
+
+.grid .grid-content-cell-wrapper .multiline-cell-icon:first-child
+{
+    margin-top:0;	
+}
+
+.grid .grid-content-cell-wrapper .multiline-cell-icon.service-method
+{
+    background-image: url(../Images/Icons/ServiceMethod16.png);
+}
+
+.grid .grid-content-cell-wrapper .multiline-cell-icon.service-instance
+{
+    background-image: url(../Images/Icons/ServiceInstance16.png);
+}
+
+/* Grid Cell Icon Styling - Patterns */
+.grid .grid-content-cell.icon.pattern
+{
+    background-image: url(../Images/Icons/pattern_2b.png);
+}
+
+/* Grid Cell Icon Styling - File Types */
+.grid .grid-content-cell.icon.document-generic
+{
+    background-image: url(../Images/Icons/GenericFileDoc16.png);
+}
+
+.grid .grid-content-cell.icon.document-avi
+{
+    background-image: url(../Images/Icons/Avi16.png);
+}
+
+.grid .grid-content-cell.icon.document-mov
+{
+    background-image: url(../Images/Icons/MOV16.png);
+}
+
+.grid .grid-content-cell.icon.document-wmv
+{
+    background-image: url(../Images/Icons/WMV16.png);
+}
+
+.grid .grid-content-cell.icon.document-bmp
+{
+    background-image: url(../Images/Icons/BMP16.png);
+}
+
+.grid .grid-content-cell.icon.document-gif
+{
+    background-image: url(../Images/Icons/GIF16.png);
+}
+
+.grid .grid-content-cell.icon.document-png
+{
+    background-image: url(../Images/Icons/PNG16.png);
+}
+
+.grid .grid-content-cell.icon.document-chm
+{
+    background-image: url(../Images/Icons/HLP16.png);
+}
+
+.grid .grid-content-cell.icon.document-csv
+{
+    background-image: url(../Images/Icons/CSV_16.png);
+}
+
+.grid .grid-content-cell.icon.document-doc
+{
+    background-image: url(../Images/Icons/Docs16.png);
+}
+
+.grid .grid-content-cell.icon.document-htm
+{
+    background-image: url(../Images/Icons/HTM16.png);
+}
+
+.grid .grid-content-cell.icon.document-html
+{
+    background-image: url(../Images/Icons/HTML16.png);
+}
+
+.grid .grid-content-cell.icon.document-mp3
+{
+    background-image: url(../Images/Icons/MP316.png);
+}
+
+.grid .grid-content-cell.icon.document-wav
+{
+    background-image: url(../Images/Icons/WAV16.png);
+}
+
+.grid .grid-content-cell.icon.document-wma
+{
+    background-image: url(../Images/Icons/WMA16.png);
+}
+
+.grid .grid-content-cell.icon.document-one
+{
+    background-image: url(../Images/Icons/One16.png);
+}
+
+.grid .grid-content-cell.icon.document-pdf
+{
+    background-image: url(../Images/Icons/Pdf16.png);
+}
+
+.grid .grid-content-cell.icon.document-ppt
+{
+    background-image: url(../Images/Icons/PPT16.png);
+}
+
+.grid .grid-content-cell.icon.document-pps
+{
+    background-image: url(../Images/Icons/PPS16.png);
+}
+
+.grid .grid-content-cell.icon.document-txt
+{
+    background-image: url(../Images/Icons/TextDoc16.png);
+}
+
+.grid .grid-content-cell.icon.document-xls
+{
+    background-image: url(../Images/Icons/XLS16.png);
+}
+
+.grid .grid-content-cell.icon.document-xsn
+{
+    background-image: url(../Images/Icons/XSN16.png);
+}
+
+.grid .grid-content-cell.icon.document-zip
+{
+    background-image: url(../Images/Icons/Zip16.png);
+}
+
+.grid .grid-content-cell.icon.user-account
+{
+    background-image: url(../Images/Icons/UserAccount16.png);
+}
+
+.grid .grid-content-cell.icon.invoice
+{
+    background-image: url(../Images/Icons/Invoice16.png);
+}
+
+.grid .grid-content-cell.icon.view-flow
+{
+    background-image: url(../Images/Icons/ViewFlow16.png);
+}
+
+/* Sandbox icons */
+.grid .grid-content-cell.icon.item-view.checked-out
+{
+    background-image: url(../Images/Icons/ItemViewCheckOut16.png);
+}
+
+.grid .grid-content-cell.icon.capturelist-view.checked-out
+{
+    background-image: url(../Images/Icons/CaptureListCheckOut16.png);
+}
+
+.grid .grid-content-cell.icon.list-view.checked-out
+{
+    background-image: url(../Images/Icons/ListCheckOut16.png);
+}
+
+.grid .grid-content-cell.icon.item-view.checked-out-user
+{
+    background-image: url(../Images/Icons/ItemViewCheckOutUser16.png);
+}
+
+.grid .grid-content-cell.icon.capturelist-view.checked-out-user
+{
+    background-image: url(../Images/Icons/CaptureListCheckOutByOtherUser16.png);
+}
+
+.grid .grid-content-cell.icon.list-view.checked-out-user
+{
+    background-image: url(../Images/Icons/ListCheckOutByOtherUser16.png);
+}
+
+.grid .grid-content-cell.icon.form.checked-out
+{
+    background-image: url(../Images/Icons/FormCheckOut16.png);
+}
+
+.grid .grid-content-cell.icon.form.checked-out-user
+{
+    background-image: url(../Images/Icons/FormCheckOutUser16.png);
+}
+
+.grid .grid-content-cell.icon.workflow.workflow-shared
+{
+    background-image: url(../Images/Icons/ProcessShared16.png);
+}
+
+.grid .grid-content-cell.icon.workflow.workflow-locked
+{
+    background-image: url(../Images/Icons/UnlockProcess16.png);
+}
+
+.grid .grid-content-cell.icon.workflow.workflow-deployed
+{
+    background-image: url(../Images/Icons/DeployedWorkflow16.png);
+}
+
+/* Collapsed Display */
+.grid.collapsed .grid-toolbars,
+.grid.collapsed .grid-body,
+.grid.collapsed .grid-summary,
+.grid.collapsed .grid-footer
+{
+    display:none;
+}
+
+.no-drop .grid-body-content td div,
+.no-drop .grid-body-content td div a,
+.no-drop .grid-column-headers tr,
+.no-drop .grid-column-headers td div
+{
+    cursor: no-drop !important;
+}
+

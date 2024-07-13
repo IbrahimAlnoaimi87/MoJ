@@ -1,0 +1,87 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+#autoGenerate_popUp div.layoutSection,
+#autoGenerate_popUp label.createView,
+#autoGenerate_popUp div.viewName,
+#formLayoutSection,
+#viewLayoutSection {
+  float: left;
+}
+html[dir=rtl] #autoGenerate_popup div.layoutSection,
+html[dir=rtl] #autoGenerate_popup label.createView,
+html[dir=rtl] #autoGenerate_popup div.viewName,
+html[dir=rtl] #formLayoutSection,
+html[dir=rtl] #viewLayoutSection {
+  float: right;
+}
+#autoGenerate_popUp label.createView {
+  margin: 0;
+}
+#formLayoutSection {
+  width: 40%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 4px;
+  margin-top: -3px;
+}
+html[dir=rtl] #formLayoutSection {
+  padding-left: 4px;
+  padding-right: 0;
+}
+#formCreationOptions {
+  margin-left: 155px;
+}
+#formNameOptions {
+  margin-left: 16px;
+}
+html[dir=rtl] #formCreationOptions {
+  margin-left: 0;
+  margin-right: 155px;
+}
+html[dir=rtl] #formLayoutSection {
+  margin-left: 4px;
+  margin-left: 0;
+  width: 350px;
+}
+html[dir=rtl] #formNameOptions {
+  margin-left: 0;
+  margin-right: 16px;
+}
+html[dir=rtl] #formCreationOptions ul.input-control-group {
+  overflow: visible;
+}
+html[dir=rtl] #formCreationOptions ul.input-control-group li {
+  height: 20px;
+}
+#viewLayoutSection {
+  width: 60%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: -3px;
+  padding-left: 50px;
+}
+html[dir=rtl] #viewLayoutSection {
+  padding-left: 0;
+  padding-right: 50px;
+}
+#viewLayoutSection .input-control.checkbox .input-control-text {
+  white-space: pre-line;
+  margin-left: 0;
+}
+#viewLayoutSection .input-control.checkbox .input-control-img {
+  margin-right: 1px;
+}
+#agCreateForm_base {
+  font-weight: 700;
+  margin-top: 1px;
+  margin-left: -2px;
+}

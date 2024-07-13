@@ -1,0 +1,98 @@
+﻿<div class="PART_GenericExpenseGridItemMain table relative STYLE_fontfamily">
+	<div class="PART_GenericExpenseGridItemMainRow table-row">
+		<div class="PART_ImageCell table-cell">
+			<div class="ImageTable table">
+				<div class="ImageTableRow table-row">
+					<div class="PART_ImageDiv table-cell">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="PART_TitlteDescriptionDynamicLeft table-cell hide">
+			<div class="TitleDescriptionDynamicLeftTable table">
+				<div class="PART_TitleDescriptionDynamicLeftTableRow table-row">
+					<div class="PART_TitleDiv table-cell">
+						<span class="PART_ClickTitle">
+							{Title}
+						</span>
+					</div>
+				</div>
+				<div class="PART_TitleDescriptionDynamicLeftTableRow table-row">
+					<div class="PART_DescriptionDiv table-cell">
+						<span  class="PART_ClickDescription">
+							{Description}
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="PropertiesMain table-cell">
+			<div class="PropertiesTitleProperty1Table table">
+				<div class="PART_PropertiesTitleProperty1TableRow table-row">
+					<div class="PART_TitleDiv table-cell">
+						<span class="PART_ClickTitle">
+							{Title}
+						</span>
+					</div>
+					<div class="PART_Property1Div table-cell">
+						<div class="PART_PropertyClickable">
+							{Property1}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="PropertiesDescriptionProperty2Table table">
+				<div class="PART_PropertiesTitleProperty1TableRow table-row">
+					<div class="PART_DescriptionDiv table-cell">
+						<span  class="PART_ClickDescription">
+							{Description}
+						</span>
+					</div>
+					<div class="PART_Property2Div table-cell">
+						<span class="PART_ClickProperty2">
+							{Property2}
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="PART_Property1Property2DynamicRight table-cell hide">
+			<div class="Property1Property2DynamicRightTable table">
+				<div class="PART_Property1Property2DynamicRightTableRow table-row">
+					<div class="PART_Property1Div table-cell">
+						<div class="PART_PropertyClickable">
+							{Property1}
+						</div>
+					</div>
+				</div>
+				<div class="PART_Property1Property2DynamicRightTableRow table-row">
+					<div class="PART_Property2Div table-cell">
+						<div class="PART_PropertyClickable">
+							<span class="PART_ClickProperty2">
+								{Property2}
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="PART_IndicatorsTableMain table-cell">
+			<div class="IndicatorsTable table">
+				<div class="IndicatorsTableMainRow table-row">
+					<div class="PART_Indicator1Div table-cell">
+						{Indicator1}
+					</div>
+					<div class="PART_Indicator2Div table-cell">
+						{Indicator2}
+					</div>
+					<div class="PART_Indicator3Div table-cell">
+						{Indicator3}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="SelectionButtonHover">
+		<div class="PART_ClickArea"></div>
+	</div>
+</div>

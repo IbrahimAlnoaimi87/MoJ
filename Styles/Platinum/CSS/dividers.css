@@ -1,0 +1,80 @@
+﻿.vertical-divider
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 3px;
+	background: transparent url(../Images/Dividers/vertical_expander_dots.png) no-repeat center center;
+	overflow: hidden;
+	cursor: w-resize;
+}
+
+.horizontal-divider
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: transparent url(../Images/Dividers/horizontal_expander_dots.png) no-repeat center center;
+	overflow: hidden;
+	cursor: n-resize;
+}
+
+.horizontal-spacer
+{
+	height: 3px;
+}
+
+.vertical-spacer
+{
+	width: 3px;
+}
+
+.ghost
+{
+	background-color: #86be58;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+
+.divider.ui-draggable-dragging
+{
+	background-color: #86be58;
+}
+
+/* Divider Base Styling */
+.divider
+{
+	position:relative;	
+}
+
+.divider.horizontal
+{
+	height:3px;
+}
+
+.divider.vertical
+{
+	width:3px;
+}
+
+.divider.draggable
+{
+	background-position:50% 50%;
+	background-repeat:no-repeat;	
+}
+
+.divider.draggable.horizontal
+{
+	background-image:url(../Images/Dividers/horizontal_expander_dots.png);
+	cursor:n-resize;
+}
+
+.divider.draggable.vertical
+{
+	background-image:url(../Images/Dividers/vertical_expander_dots.png);
+	cursor:w-resize;
+}
+

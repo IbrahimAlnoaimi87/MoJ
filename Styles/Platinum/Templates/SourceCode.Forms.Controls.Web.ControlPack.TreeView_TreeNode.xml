@@ -1,0 +1,15 @@
+<li class="node">
+	<div class="content">
+		<span class="PART-expander-clickable-area expander-container">
+			<span class="expander"></span>
+		</span>
+		{PART-SF-CheckBox}
+		<div class="PART-header-clickable-area header">
+			<span class="image-container">
+				<span class="image"></span>
+			</span>
+			<span title="{header-text}" class="text {if-icon-shown}">{header-text}</span>
+		</div>
+	</div>
+  {node-container}
+</li>

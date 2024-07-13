@@ -1,0 +1,108 @@
+/*#region TOOLBAR BUTTON*/
+
+.theme-entry a.toolbar-button
+{
+    border-width: 0;
+    padding-right: 2.0rem;
+    padding-left: 2.0rem;
+    //color: #c2ccdb;
+    color: @Toolbar-Button-Text-Color; //main text colour, much darker?
+    font-family: "Segoe UI", "HelveticaNeue-Medium", Helvetica, sans-serif;
+}
+
+.theme-entry a.toolbar-button span,
+.theme-entry a.toolbar-button.toolbar-button-inline span
+{
+    display: inline-block;
+    //color: #636e7e;
+    color: @Toolbar-Button-Text-Color;
+    vertical-align: middle;
+    font-family: "Segoe UI", "HelveticaNeue-Medium", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 2.8rem;
+}
+
+.theme-entry #filterNameList a.toolbar-button span.button-c span.button-text,
+.theme-entry #FilterTab_Content a.toolbar-button span.button-c span.button-text,
+.theme-entry #OrderTab_Content a.toolbar-button span.button-c span.button-text,
+.theme-entry #ConditionGrid a.toolbar-button span.button-c span.button-text
+{
+    margin-top: 0;
+}
+
+.theme-entry a.toolbar-button span.button-c,
+.theme-entry a.toolbar-button.disabled span.button-c,
+.theme-entry a.toolbar-button.disabled:hover span.button-c
+{
+    border-width: 0; /* override core/base styling */
+    padding-right: 0; /* override core/base styling */
+}
+
+.theme-entry a.toolbar-button span.button-text
+{
+    padding: 0 0.3rem;
+    white-space: pre;
+}
+
+.theme-entry a.toolbar-button span.button-text,
+.theme-entry a.toolbar-button:not(.style-aware) span.button-c span.button-icon
+{
+    display: inline-block;
+}
+
+.theme-entry a.toolbar-button.style-aware span.button-c span.button-icon
+{
+    display: none;
+}
+
+.theme-entry a.toolbar-button span.button-c span.button-text
+{
+    margin-top: 0;
+    line-height: 3rem;
+}
+
+.theme-entry a.toolbar-button span.button-c span.button-text:empty
+{
+    display: none;
+}
+
+.theme-entry a.toolbar-button * + span.button-text
+{
+    margin-left: 0.6rem;
+}
+
+.theme-entry a.toolbar-button:focus
+{
+    //outline: 0px dotted #3cb0df;
+    outline: 0px dotted @Toolbar-Button-Focus-Border-Color;
+}
+
+.theme-entry a.toolbar-button.selected,
+.theme-entry a.toolbar-button:hover,
+.theme-entry a.toolbar-button:focus,
+.theme-entry a.toolbar-button:active,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:hover,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:focus,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:active
+{
+    //border-color: #f9f9f9;
+    border-color: @Toolbar-Button-Focus-Border-Color; //this is a darkish blue?
+    //background-color: #f9f9f9;
+    background-color: @Toolbar-Button-Hover-Background-Color; //also @Toolbar-Button-Focus-Background-Color
+    //color: #343e41;
+    color: @Toolbar-Button-Hover-Text-Color;
+    /* whitish */
+    /*#7f8c9e;*/
+}
+
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.disabled:hover,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.disabled:focus,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.disabled:active
+{
+    border-color: @Toolbar-Button-Hover-Border-Color;
+    background: @Toolbar-Button-Hover-Background-Color;
+}
+
+/*#endregion TOOLBAR BUTTON*/

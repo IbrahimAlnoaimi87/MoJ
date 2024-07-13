@@ -1,0 +1,65 @@
+/*#region TOOLBAR ICON BUTTONS*/
+
+.theme-entry a.toolbar-button span.button-icon
+{
+    left: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/*#region light icon-buttons*/
+/*used by standard toolbars, toolbar buttons, richtext control*/
+
+
+/*#endregion*/
+
+/*#region dark icon-buttons*/
+/*used by worklist control, and others*/
+/* Lewis & Nazz unable to verify where these toolbar-button classes are used 2020/10 */
+.theme-entry .grid-header a.toolbar-button,
+.theme-entry .panel-header a.toolbar-button
+{
+    border-style: dotted;
+    border-width: 1px;
+    border-color: @View-Header-Button-Border-Color;
+    -moz-background-size: 16px 16px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.theme-entry .grid-header a.toolbar-button:hover,
+.theme-entry .panel-header a.toolbar-button:hover
+{
+    background-color: @View-Header-Button-Hover-Background-Color;
+}
+
+/*toggle style*/
+.theme-entry .grid-header a.toolbar-button.selected,
+.theme-entry .panel-header a.toolbar-button.selected,
+.theme-entry .grid-header a.toolbar-button.selected:hover,
+.theme-entry .panel-header a.toolbar-button.selected:hover
+{
+    background-color: @View-Header-Button-Checked-Background-Color;
+}
+
+
+/*Async/animated button style*/
+.theme-entry .grid-header a.toolbar-button.loading,
+.theme-entry .panel-header a.toolbar-button.loading,
+.theme-entry .grid-header a.toolbar-button.loading:hover,
+.theme-entry .panel-header a.toolbar-button.loading:hover
+{
+    background-color: transparent;
+    border-color: transparent; /*make sure the border or background don't spin with css animation*/
+}
+
+
+/*#endregion*/
+
+/*#endregion TOOLBAR BUTTON ICONS */

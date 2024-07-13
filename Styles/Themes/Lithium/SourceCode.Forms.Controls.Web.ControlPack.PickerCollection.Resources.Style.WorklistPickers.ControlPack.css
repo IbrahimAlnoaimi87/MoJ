@@ -1,0 +1,3634 @@
+/* HACK: this is necessary because when CSS file is combined, it automatically inject non-css text (sample below) and invalidate first selector in each file 
+# File: /Designer/Styles/Themes/SharePoint 2013/SourceCode.Forms.Controls.Web.ControlPack.Timer.Resources.Style.Timer.ControlPack.css
+*/
+.fake-selector
+{
+}
+
+/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+/*Theme@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    /* #region IMAGE DESKTOP */
+
+    .theme-entry #picker-collection-share-add-icon
+    {
+        background-image: url(Toolbar/Add16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry #picker-collection-share-remove-icon
+    {
+        background-image: url(Toolbar/Remove16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry #picker-collection-add-user-icon,
+    .theme-entry #picker-collection-share-icon
+    {
+        background-image: url(Management/Share40.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .theme-entry #picker-collection-add-user-icon
+    {
+        background-image: url(Management/Share40.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .theme-entry #picker-collection-add-user-search-icon
+    {
+        background-image: url(Toolbar/Search16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        height: 16px;
+        width: 16px;
+    }
+
+    .theme-entry #picker-collection-add-user-search-remove-icon
+    {
+        background-image: url(Toolbar/ClearIcon16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 16px;
+        width: 16px;
+    }
+
+    .theme-entry #picker-collection-redirect-icon
+    {
+        background-image: url(Management/Redirect40.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .theme-entry #picker-collection-sleep-icon
+    {
+        background-image: url(Management/Sleep40.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-down,
+    .theme-entry .picker-collection-add-user-advanced-search-option-label-expander-down
+    {
+        background-image: url(RuntimeTheme/PDExpand16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-position: 0px 0px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-up,
+    .theme-entry .picker-collection-add-user-advanced-search-option-label-expander-up
+    {
+        background-image: url(RuntimeTheme/PDCollapse16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-position: 0px 0px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .theme-entry .picker-collection-grid-row-user-image, /* redirect, share picker user search */
+    .theme-entry .oof-delegated-user-list-row-user-image /* worklist control - OOF */
+    {
+        background-image: url(Management/User16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .theme-entry .worklistUserLookupIcon,
+    .theme-entry .editableUserLookupIcon,
+    .theme-entry #worklistAddUserPickerUserLookup > span
+    {
+        background-image: url(Toolbar/Search16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+        .theme-entry .worklistUserLookupIcon:hover,
+        .theme-entry .editableUserLookupIcon:hover,
+        .theme-entry .worklistUserLookupIconWrapper:hover .worklistUserLookupIcon,
+        .theme-entry .editableUserLookupIconWrapper:hover .editableUserLookupIcon
+        {
+            background-image: url(Toolbar/Search16White.png);
+            -moz-background-size: 16px;
+            background-size: 16px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+    .theme-entry .worklistUserLookupClearIcon,
+    .theme-entry .editableUserLookupRemoveIcon
+    {
+        background-image: url(Toolbar/ClearIcon16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+        .theme-entry .worklistUserLookupClearIcon:hover,
+        .theme-entry .worklistUserLookupClearIconWrapper:hover .worklistUserLookupClearIcon,
+        .theme-entry .editableUserLookupRemoveIcon:hover,
+        .theme-entry .editableUserLookupRemoveIconWrapper:hover .editableUserLookupRemoveIcon
+        {
+            background-image: url(Toolbar/ClearIconsWhite16.png);
+            -moz-background-size: 16px;
+            background-size: 16px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+    .theme-entry .worklist-filter-date-picker-calender-icon,
+    .theme-entry .worklist-filter-date-picker-calender-icon
+    {
+        background: url(RuntimeTheme/Date16.png) no-repeat 0 0 transparent;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    /* #endregion IMAGE DESKTOP */
+
+    /* #region IMAGE MOBILE */
+
+    .mobile .theme-entry #picker-collection-share-add-icon
+    {
+        background-image: url(Toolbar/Add20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry #picker-collection-share-remove-icon
+    {
+        background-image: url(Toolbar/Remove20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-icon,
+    .mobile .theme-entry #picker-collection-share-icon
+    {
+        background-image: url(Management/Share40.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-icon
+    {
+        background-image: url(Management/Share40.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .mobile .theme-entry .worklistUserLookupIcon,
+    .mobile .theme-entry .editableUserLookupIcon
+    {
+        background-image: url(Toolbar/Search20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .mobile .theme-entry .worklistUserLookupClearIcon,
+    .mobile .theme-entry .editableUserLookupRemoveIcon
+    {
+        background-image: url(Toolbar/ClearIcon20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry #picker-collection-redirect-icon
+    {
+        background-image: url(Management/Redirect40.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .mobile .theme-entry #picker-collection-sleep-icon
+    {
+        background-image: url(Management/Sleep40.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-up,
+    .mobile .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-down,
+    .mobile .theme-entry .picker-collection-add-user-advanced-search-option-label-expander-up,
+    .mobile .theme-entry .picker-collection-add-user-advanced-search-option-label-expander-down
+    {
+        background-image: url(RuntimeTheme/PDCombined20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-up
+    {
+        background-position: 0px 6px;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-down
+    {
+        background-position: 0px -15px;
+    }
+
+    .mobile .theme-entry .picker-collection-grid-row-user-image, /* worklist control - redirect, share picker user search */
+    .mobile .theme-entry .oof-delegated-user-list-row-user-image /* worklist control - OOF */
+    {
+        background-image: url(Management/User20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile .theme-entry .worklist-filter-date-picker-calender-icon,
+    .mobile .theme-entry .worklist-filter-date-picker-calender-icon
+    {
+        background: url(Toolbox/Date20.png) no-repeat 0 0 transparent;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    /* #endregion IMAGE MOBILE */
+}
+
+/* Images@2x - hi-dpi */
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    /* #region IMAGE DESKTOP */
+    .theme-entry #picker-collection-share-add-icon
+    {
+        background-image: url(Toolbar/Add20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry #picker-collection-share-remove-icon
+    {
+        background-image: url(Toolbar/Remove20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry #picker-collection-add-user-icon,
+    .theme-entry #picker-collection-share-icon
+    {
+        background-image: url(Management/Share40@2x.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .theme-entry #picker-collection-add-user-icon
+    {
+        background-image: url(Management/Share40@2x.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .theme-entry .worklistUserLookupIcon,
+    .theme-entry .editableUserLookupIcon
+    {
+        background-image: url(Toolbar/Search20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry .worklistUserLookupClearIcon,
+    .theme-entry .editableUserLookupRemoveIcon
+    {
+        background-image: url(Toolbar/ClearIcon20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry .worklistUserLookupClearIconWrapper:hover .worklistUserLookupClearIcon,
+    .theme-entry .editableUserLookupRemoveIconWrapper:hover .editableUserLookupRemoveIcon
+    {
+        background-image: url(Toolbar/ClearIconsWhite20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry #picker-collection-redirect-icon
+    {
+        background-image: url(Management/Redirect40@2x.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .theme-entry #picker-collection-sleep-icon
+    {
+        background-image: url(Management/Sleep40@2x.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-up,
+    .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-down,
+    .theme-entry .picker-collection-add-user-advanced-search-option-label-expander-up,
+    .theme-entry .picker-collection-add-user-advanced-search-option-label-expander-down
+    {
+        background-image: url(RuntimeTheme/PDCombined20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-up
+    {
+        background-position: -2px 5px;
+    }
+
+    .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-down
+    {
+        background-position: 0px -18px;
+    }
+
+    .theme-entry .picker-collection-grid-row-user-image, /* worklist control - redirect, share picker user search */
+    .theme-entry .oof-delegated-user-list-row-user-image /* worklist control - OOF */
+    {
+        background-image: url(Management/User20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .theme-entry #worklistAddUserPickerUserLookup > span,
+    .theme-entry .editableUserLookupIcon
+    {
+        background: url(Toolbar/Search20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .worklist-filter-date-picker-calender-icon,
+    .theme-entry .worklist-filter-date-picker-calender-icon
+    {
+        background: url(RuntimeTheme/Date20@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    /*#region TAB CONTROL */
+
+    
+    /* #endregion IMAGE DESKTOP */
+
+    /* #region IMAGE MOBILE */
+    .mobile .theme-entry #picker-collection-share-add-icon
+    {
+        background-image: url(Toolbar/Add20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry #picker-collection-share-remove-icon
+    {
+        background-image: url(Toolbar/Remove20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-icon,
+    .mobile .theme-entry #picker-collection-share-icon
+    {
+        background-image: url(Management/Share40@2x.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-icon
+    {
+        background-image: url(Management/Share40@2x.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .mobile .theme-entry .worklistUserLookupIcon,
+    .mobile .theme-entry .editableUserLookupIcon
+    {
+        background-image: url(Toolbar/Search20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .mobile .theme-entry .worklistUserLookupClearIcon,
+    .mobile .theme-entry .editableUserLookupRemoveIcon
+    {
+        background-image: url(Toolbar/ClearIcon20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .mobile .theme-entry .worklistUserLookupClearIconWrapper:hover .worklistUserLookupClearIcon,
+    .mobile .theme-entry .editableUserLookupRemoveIconWrapper:hover .editableUserLookupRemoveIcon
+    {
+        background-image: url(Toolbar/ClearIconsWhite20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry #picker-collection-redirect-icon
+    {
+        background-image: url(Management/Redirect40@2x.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .mobile .theme-entry #picker-collection-sleep-icon
+    {
+        background-image: url(Management/Sleep40@2x.png);
+        -moz-background-size: 40px;
+        background-size: 40px;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-up,
+    .mobile .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-down,
+    .mobile .theme-entry .picker-collection-add-user-advanced-search-option-label-expander-up,
+    .mobile .theme-entry .picker-collection-add-user-advanced-search-option-label-expander-down
+    {
+        background-image: url(RuntimeTheme/PDCombined20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-down
+    {
+        background-position: 0px -18px;
+    }
+
+    .mobile .theme-entry .picker-collection-grid-row-user-image, /* worklist control - redirect, share picker user search */
+    .mobile .theme-entry .oof-delegated-user-list-row-user-image /* worklist control - OOF */
+    {
+        background-image: url(Management/User20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile .theme-entry #worklistAddUserPickerUserLookup > span,
+    .mobile .theme-entry .editableUserLookupIcon
+    {
+        background: url(Toolbar/Search20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-filter-date-picker-calender-icon,
+    .mobile .theme-entry .worklist-filter-date-picker-calender-icon
+    {
+        background: url(RuntimeTheme/Date20@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    /*#region TAB CONTROL */
+    
+    /* #endregion IMAGE MOBILE */
+}
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* IE ONLY */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) 
+{
+    .theme-entry div.searchBar div.input-control-wrapper
+    {
+        height: 22px;
+    }
+}
+
+/* #region DESKTOP */
+
+.theme-entry .picker-collection-search-outer-wrapper
+{
+    height: 3.2rem;
+    border: 0 solid #ffffff;
+    background-color: #ffffff;
+    /* height: 2.4rem */
+}
+
+.theme-entry .picker-collection-add-user-search-text-field-wrapper
+{
+    border-radius: 0.2rem 0 0 0.2rem;
+    border-right-width: 0 !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.theme-entry .editableUserLookupIconWrapper:hover, /* worklist OOF dialog user lookup icon */
+.theme-entry .editableUserLookupIconWrapper:focus,
+.theme-entry .editableUserLookupIconWrapper:hover .editableUserLookupIcon,
+.theme-entry .editableUserLookupIconWrapper:focus .editableUserLookupIcon,
+.theme-entry .editableUserLookupRemoveIconWrapper:hover, /* worklist OOF dialog user lookup clear icon */
+.theme-entry .editableUserLookupRemoveIconWrapper:focus,
+.theme-entry .editableUserLookupRemoveIconWrapper:hover .editableUserLookupRemoveIcon,
+.theme-entry .editableUserLookupRemoveIconWrapper:focus .editableUserLookupRemoveIcon,
+.theme-entry .worklistUserLookupIconWrapper:hover, /* worklist redirect, share picker lookup icon */
+.theme-entry .worklistUserLookupIconWrapper:focus,
+.theme-entry .worklistUserLookupClearIconWrapper:hover, /* worklist redirect, share picker lookup clear icon */
+.theme-entry .worklistUserLookupClearIconWrapper:focus,
+.theme-entry .worklist-execute-search-icon:hover, /* worklist search lookup icon*/
+.theme-entry .worklist-execute-search-icon:focus,
+.theme-entry .worklist-execute-search-icon:hover .searchAdvBtn,
+.theme-entry .worklist-execute-search-icon:focus .searchAdvBtn,
+.theme-entry .worklist-search-clear-outer-wrapper:hover, /*worklist search clear icon*/
+.theme-entry .worklist-search-clear-outer-wrapper:focus,
+.theme-entry .worklist-search-clear-outer-wrapper:hover .SearchClear,
+.theme-entry .worklist-search-clear-outer-wrapper:focus .SearchClear
+{
+    background-color: #3cb0df;
+    border-color: #3cb0df;
+}
+
+.theme-entry #picker-collection-share-add-icon,
+.theme-entry #picker-collection-share-remove-icon
+{
+    left: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.theme-entry #picker-collection-share-operation-box-header
+{
+    overflow: hidden;
+    height: auto;
+    border-width: 0;
+    border-style: none;
+    background-color: #dedfde;
+    min-height: 3.0rem;
+}
+
+.theme-entry #picker-collection-add-user-operation-box-body
+{
+    background-color: #ffffff; /*background to all rows*/
+}
+
+.theme-entry .picker-collection-grid-row
+{
+    border: 1px solid transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .theme-entry .picker-collection-grid-row:hover,
+    .theme-entry .picker-collection-grid-row.even:hover,
+    .theme-entry .oof-delegated-user-list-body .oof-delegated-user-list-row:hover
+    {
+        background-color: #bfeafb;
+    }
+
+    .theme-entry .picker-collection-grid-row.selected,
+    .theme-entry .picker-collection-grid-row.even.selected
+    {
+        background-color: #7fd5f7;
+        color: #00abf0;
+        border-right-color: #3cb0df;
+    }
+
+    .theme-entry .picker-collection-grid-row.selected
+    {
+        border-style: dotted;
+        border-top-color: #3cb0df;
+        border-bottom-color: #3cb0df;
+    }
+
+.theme-entry #addOOFException .highlight
+{
+    display: inline;
+    background-color: yellow;
+}
+
+.theme-entry .picker-collection-search-text-highlight
+{
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    margin-left: -0.1rem;
+    margin-right: -0.1rem;
+    border-radius: 0.2rem;
+    background: linear-gradient(to bottom, #fff200 0%,#ffdb00 100%);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.6);
+}
+
+.ie9 .theme-entry .picker-collection-search-text-highlight,
+.ie10 .theme-entry .picker-collection-search-text-highlight
+{
+    box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.4);
+}
+
+.theme-entry #picker-collection-sleep-container .input-control.radio.focus
+{
+    outline: 1px dotted #00abf0;
+    border: 1px solid transparent;
+}
+
+/* sleep picker - basic radio button */
+.picker-collection-sleep-operation-box-basic-options-container li.SleepListItem
+{
+    height: 2.4rem;
+    margin-bottom: 0;
+}
+/* sleep picker -- basic radio button list */
+.theme-entry #picker-collection-popup-root .picker-collection-sleep-operation-box-basic-options-outer-container .picker-collection-sleep-operation-box-basic-options-container ul
+{
+    margin-top: 0.5rem;
+}
+
+/* redirect picker search textbox */
+.theme-entry .picker-collection-search-outer-wrapper #picker-collection-add-user-search-text-field
+{
+    height: 2.4rem;
+}
+
+.theme-entry .picker-collection-remove-container,
+.theme-entry #picker-collection-add-user-advanced-search-dropdown-match-wrapper,
+.theme-entry #picker-collection-add-user-advanced-search-dropdown-label-wrapper
+{
+    margin-right: 0;
+}
+
+.msie .theme-entry .picker-collection-remove-container,
+.msie .theme-entry #picker-collection-add-user-advanced-search-dropdown-match-wrapper,
+.msie .theme-entry #picker-collection-add-user-advanced-search-dropdown-label-wrapper
+{
+    margin-right: -0.4rem;
+}
+
+.theme-entry .picker-collection-search-icon-cell #picker-collection-add-user-search-icon-outer, /* search icon wrapper */
+.theme-entry .picker-collection-remove-container #picker-collection-add-user-search-remove /* remove icon wrapper */
+{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.theme-entry .picker-collection-search-icon-cell #picker-collection-add-user-search-icon, /* search icon */
+.theme-entry .picker-collection-remove-container #picker-collection-add-user-search-remove-icon /* remove icon */
+{
+    top: 0.4rem;
+    left: 0.4rem;
+}
+
+.theme-entry .picker-collection-search-expander-cell .picker-collection-expander-container
+{
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.theme-entry #picker-collection-add-user-operation-box .picker-collection-grid-row,
+.theme-entry #picker-collection-share-operation-box .picker-collection-grid-row
+{
+    height: 4.0rem;
+    min-height: 0;
+}
+
+.theme-entry .oof-delegated-user-list-row
+{
+    position: relative;
+}
+
+.theme-entry .oof-delegated-user-list-row-user-name
+{
+    position: absolute;
+    top: 1.5rem;
+}
+
+/*#region DIALOG - general layout*/
+
+/* need bigger picker to accomodate with Lithium components */
+.theme-entry #picker-collection-add-user-popup-root
+{
+    width: 600px !important; /* override - inline -  popup manager */
+    height: 450px !important; /* override - inline -popup manager */
+    min-height: 32.0rem;
+}
+
+/* sleep picker popup */
+.theme-entry #picker-collection-popup-root
+{
+    width: 47.0rem !important; /* override -- inline -- popup manager */
+    height: 38.0rem !important; /* override -- inline -- popup manager */
+}
+
+    .theme-entry #picker-collection-popup-root .popup-header-text,
+    .theme-entry #picker-collection-add-user-popup-root .popup-header-text
+    {
+        cursor: default;
+    }
+
+    .theme-entry #picker-collection-popup-root #picker-collection-sleep-container,
+    .theme-entry #picker-collection-add-user-popup-root #picker-collection-add-container,
+    .theme-entry #picker-collection-popup-root #picker-collection-share-container
+    {
+        display: table;
+        width: 100%;
+        margin-bottom: 5px; /*gap between table and button area in the dialog*/
+        border-collapse: collapse;
+    }
+
+    .theme-entry #picker-collection-add-user-popup-root #picker-collection-add-base-position,
+    .theme-entry #picker-collection-popup-root #picker-collection-sleep-base-position
+    {
+        display: table-row;
+    }
+
+.theme-entry #picker-collection-add-user-popup-root #picker-collection-add-base-position
+{
+    width: 100%;
+    display: inline-block;
+}
+
+
+.theme-entry #picker-collection-popup-root #picker-collection-sleep-layout-left,
+.theme-entry #picker-collection-popup-root #picker-collection-sleep-layout-right,
+.theme-entry #picker-collection-add-user-popup-root #picker-collection-add-user-layout-left,
+.theme-entry #picker-collection-add-user-popup-root #picker-collection-add-user-layout-right,
+.theme-entry #picker-collection-popup-root #picker-collection-layout-left,
+.theme-entry #picker-collection-popup-root #picker-collection-layout-right
+{
+    display: table-cell;
+    vertical-align: top;
+}
+
+/* big icon on the left*/
+.theme-entry #picker-collection-sleep-icon,
+.theme-entry #picker-collection-redirect-icon,
+.theme-entry #picker-collection-share-icon
+{
+    margin: 0.5rem;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    width: 40px; /*size of image*/
+    height: 40px; /*size of image*/
+    display: inline-block;
+}
+
+
+.theme-entry #picker-collection-add-user-container .picker-collection-search-criteria-cell 
+{
+    width: 41.0rem;
+}
+
+.mozilla .theme-entry #picker-collection-add-user-container .picker-collection-search-criteria-cell,
+.msie .theme-entry #picker-collection-add-user-container .picker-collection-search-criteria-cell 
+{
+    width: 41.1rem;
+}
+
+.theme-entry #picker-collection-add-user-layout-right
+{
+    width: 100%;
+}
+
+.theme-entry .picker-collection-lookup-cell 
+{
+    left: 16.8rem;
+    bottom: auto;
+    top: 0.8rem;
+}
+
+.msie .theme-entry .picker-collection-lookup-cell 
+{
+    left: 16.9rem;
+}
+/*#endregion DIALOG - general layout*/
+
+/*#region DIALOG - SHARE*/
+/* note: #picker-collection-popup-root is the name of the popup*/
+
+.theme-entry #DisplayValueConfigPicker .popup-body-content
+{
+    background-color: #FFFFFF;
+}
+
+/* grid area for displaying user info */
+.theme-entry #picker-collection-share-operation-box-body
+{
+    background-color: #fff;
+    border: none; /*normally the border of the list*/
+    border-top: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 3.1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding-left: 5rem;
+}
+
+/*#endregion SHARE DIALOG*/
+
+/*#region DIALOG - SLEEP */
+
+.theme-entry .picker-collection-sleep-operation-box-date-options-container
+{
+    margin-top: 1rem;
+}
+
+.theme-entry #picker-collection-popup-root .sleep-date .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control
+{
+    width: 35.0rem;
+}
+
+.theme-entry .picker-collection-sleep-operation-box-basic-options-container li
+{
+    height: 30px; /* override -- core */
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+/* picker root container */
+.theme-entry #picker-collection-popup-root .scroll-wrapper
+{
+    overflow: hidden;
+}
+
+/*box holding the sleep radio options*/
+.theme-entry #picker-collection-sleep-header
+{
+    float: none !important; /* override -- core -- float:right */
+    line-height: 2.2rem;
+    width: 100%;
+    height: 22px;
+    margin-top: 0.3rem 0.2rem 0.3rem 1.0rem;
+}
+
+    .theme-entry #picker-collection-sleep-header span
+    {
+        padding-left: 5px;
+        cursor: default;
+    }
+
+.theme-entry #picker-collection-sleep-operation-box
+{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.theme-entry .picker-collection-sleep-operation-box-basic-options-container
+{
+    margin-top: 0;
+}
+
+.theme-entry #picker-collection-sleep-operation-box .input-control.radio
+{
+    display: block; /* override -- core */
+    top: 0.3rem;
+    left: 0.5rem;
+}
+
+.theme-entry #picker-collection-popup-root .picker-collection-sleep-operation-box-basic-options-container ul
+{
+    list-style: none;
+    padding-left: 30px; /*width of radio button*/
+    margin: 0px;
+    top: auto; /* override -- core */
+    position: static; /* override -- core */
+}
+
+.theme-entry .picker-collection-sleep-operation-box-basic-options-outer-container /* basic section */
+{
+    width: 38.0rem;
+}
+
+.theme-entry .picker-collection-sleep-operation-box-date-options-outer-container /* date section */
+{
+    position: static;
+    width: 38.0rem;
+}
+
+
+.theme-entry #picker-collection-popup-root.moz .picker-collection-sleep-operation-box-date-options-outer-container,
+.theme-entry #picker-collection-popup-root.ie .picker-collection-sleep-operation-box-date-options-outer-container
+{
+    position: relative;
+}
+
+.picker-collection-sleep-operation-box-date-options-container .datapicker-right
+{
+    margin-left: 0;
+}
+
+/*#endregion DIALOG- SLEEP*/
+
+/*#region DIALOG - REDIRECT*/
+
+.theme-entry #picker-collection-add-user-search-display-text,
+.theme-entry #picker-collection-add-user-advanced-search-string-display-text
+{
+    padding-left: 1.5rem;
+}
+
+.theme-entry #picker-collection-add-user-advanced-search-label-display-text
+{
+    padding-left: 0.5rem;
+}
+
+/*uses #picker-collection-add-user as the naming convention*/
+
+.theme-entry #picker-collection-add-user-search-text-field-wrapper
+{
+    position: relative;
+    width: 100%;
+}
+
+/*#endregion*/
+
+/*#region DIALOG - SHARE/DELEGATE*/
+/*uses #picker-collection-share-add as the naming convention*/
+
+
+/* header with "Share with" text */
+.theme-entry #picker-collection-share-header
+{
+    line-height: 2.2rem;
+    height: 22px;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    float: none;
+}
+
+    /* header "Share with" text */
+    .theme-entry #picker-collection-share-header span
+    {
+        padding-left: 0.5rem;
+    }
+
+
+/* grid area including header */
+.theme-entry #picker-collection-share-operation-box
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    top: 2.5rem;
+    bottom: 0;
+    left: 5.5rem;
+    right: 0;
+    border: 1px solid #adae9c;
+}
+
+/* use of ID to override Core.css */
+.theme-entry #picker-collection-share-add-button,
+.theme-entry #picker-collection-share-remove-button
+{
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.theme-entry #picker-collection-share-operation-box-header .picker-collection-share-grid-header-label
+{
+    line-height: 3.0rem; /* override -- core */
+    padding-left: 0.5rem;
+}
+
+/* the toolbar where add, remove button resides */
+.theme-entry #picker-collection-share-operation-box-header
+{
+    height: 2.2rem;
+    min-height: 3.0rem;
+}
+
+/* adjust add, remove button icon and text vertical position */
+.theme-entry .picker-collection-share-toolbar-button span
+{
+    line-height: 2.8rem;
+}
+
+.theme-entry #picker-collection-share-operation-box-body
+{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    top: 3.0rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    border-top: 1px solid #adae9c;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.theme-entry #picker-collection-share-base-position
+{
+    width: 100%;
+    display: inline-block;
+}
+
+/*#endregion DIALOG - SHARE/DELEGATE*/
+
+/*#region DIALOG - FILTERS */
+
+/* filter popup needs bigger size to accomodate with Lithium components */
+.theme-entry #FilterConfig_secondPageOutside
+{
+    height: 38rem !important; /* override -- inline -- popup manager */
+    width: 85.0rem !important; /* override --inline -- popup manager */
+}
+
+    /* asc desc arrow for the grid header */
+    .theme-entry #FilterConfig_secondPageOutside .grid-column-header-cell-wrapper::before
+    {
+        right: 0.5rem;
+    }
+
+.theme-entry #FilterConfig_secondPageInternal #SortBody
+{
+    background-color: #efefef !important; /* override -- base */
+}
+
+.theme-entry #SortBody
+{
+    padding: 0;
+}
+
+.theme-entry #FilterConfig_FilterPanel,
+.theme-entry #FilterConfig_ColumnPanel
+{
+    min-height: 10.0rem !important; /* override - inline */
+}
+
+.theme-entry #FilterConfig_secondPage
+{
+    overflow: hidden;
+}
+
+    .theme-entry #FilterConfig_secondPage .scroll-wrapper
+    {
+        overflow: hidden;
+    }
+
+    /* filter dialog tab box styling */
+    .theme-entry #FilterConfig_secondPage .tab-box,
+    .theme-entry #FilterConfig_secondPage .tab-box .tab-box-body-m
+    {
+        height: 100%; /* scale the tab box to take up all the space */
+    }
+
+        .theme-entry #FilterConfig_secondPage .tab-box #SortBody.tab-box-body
+        {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 3.0rem !important;
+            height: 27.0rem;
+        }
+
+/* filter dialog tab styling */
+.theme-entry #FilterConfig_secondPageOutside .tab-box ul.tab-box-tabs a.tab .tab-text
+{
+    height: 3.0rem;
+    padding-left: 0.3rem;
+}
+
+.theme-entry #FilterConfig_secondPageInternal .tab-text
+{
+    opacity: 1.0;
+}
+
+.theme-entry #FilterConfig_secondPageInternal .tab-box .tab-box-body-m
+{
+    padding-left: 0;
+}
+
+.theme-entry #FilterConfig_secondPage .tab
+{
+    border: 1px solid transparent;
+}
+
+.theme-entry #FilterConfig_secondPage .tab:hover .tab-wrapper
+{
+    border: 1px solid transparent;
+}
+
+.theme-entry #FilterConfig_secondPage .tab.selected
+{
+    background-color: #e6e6e6;
+}
+
+.theme-entry #FilterConfig_secondPage .toolbar
+{
+    margin: 0;
+}
+
+.theme-entry #FilterConfig_secondPage .grid
+{
+    padding: 0;
+}
+
+.theme-entry #FilterConfig_secondPage .tab-icon
+{
+    margin: 0;
+}
+
+/* filter dialog grid styling*/
+.theme-entry #FilterConfig_secondPage .grid,
+.theme-entry #FilterConfig_secondPage .grid .grid-body
+{
+    height: 100%; /* allow the grid to scale */
+}
+
+    /* grid row container */
+    .theme-entry #FilterConfig_secondPage .grid .grid-body-content
+    {
+        position: absolute;
+        top: 3.3rem;
+        bottom: 1.3rem;
+        left: 0;
+        right: 0;
+        max-height: none !important; /* override -- embedded resource */
+    }
+/* grid container */
+.theme-entry #FilterConfig_secondPageInternal .filter-body-content
+{
+    max-height: none !important; /* override -- inline -- filter config cs */
+    position: absolute;
+    height: auto;
+    top: 3.0rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.theme-entry #FilterConfig_secondPage .grid .grid-content-cell-wrapper
+{
+    padding: 2px; /* override theme default (edit-mode not used on cells of this dialog's grid) */
+}
+
+/* Filter Picker styling */
+.theme-entry #FilterConfig_FilterPanel .toolbar,
+.theme-entry #FilterConfig_ColumnPanel .toolbar
+{
+}
+
+    .theme-entry #FilterConfig_ColumnPanel .toolbar + *
+    {
+        max-height: none !important; /* override - inline */
+        position: absolute;
+        top: 3.0rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+/* overrides hover state */
+.theme-entry #FilterConfig_FilterPanel .grid-column-header-cell:hover
+{
+    background: transparent;
+}
+
+/*#endregion DIALOG - FILTERS */
+
+/*#region SEARCH BAR */
+
+/* search text field */
+.theme-entry #picker-collection-add-user-search-text-field
+{
+    width: 100%;
+    height: 1.2rem;
+    line-height: normal;
+    padding-top: 0.4rem;
+    padding-left: 0.3rem;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: 1px solid transparent;
+}
+
+.theme-entry .picker-collection-remove-container
+{
+    margin-left: 0; /* override -- core */
+}
+
+.theme-entry .picker-collection-icon-theme-color
+{
+    color: #343e41;
+    background: #fefefe;
+}
+
+/* upper pane "search" text */
+.theme-entry #picker-collection-add-user-search-display-text
+{
+    padding: 0 5rem 0 0.5rem;
+}
+
+.theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-down,
+.theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-up
+{
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.theme-entry #picker-collection-add-user-search-icon-outer
+{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: static;
+    margin-right: 0;
+}
+
+.theme-entry #picker-collection-add-user-search-remove
+{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 1px solid #fff;
+    border-left-color: transparent;
+}
+
+.theme-entry #picker-collection-add-user-search-icon
+{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 0.7rem;
+    left: 0.7rem;
+    display: inline-block;
+}
+
+.theme-entry #picker-collection-add-user-search-remove-icon
+{
+    display: inline-block;
+    height: 21px;
+    width: 22px;
+    position: static;
+}
+
+/* advanced search area */
+.theme-entry #picker-collection-add-user-advanced-search-string-display-text
+{
+    padding-left: 0.5rem;
+}
+
+
+/* default is line height value but needs to force set height here to remove unwanted extra space below the label section */
+.theme-entry #picker-collection-add-user-advanced-search-label
+{
+    /*height: 14px;*/
+}
+
+    /* K2 style dropdown for advanced string search */
+    .theme-entry #picker-collection-add-user-advanced-search-label .input-control.select-box.dropdown-box,
+    .theme-entry .picker-collection-add-user-advanced-search-option-label-expander-down
+    {
+        width: 342px;
+        display: inline-block;
+        position: relative;
+    }
+
+/*layout for main search box row*/
+.theme-entry .picker-collection-search-label-cell
+{
+    width: 50px;
+}
+
+.theme-entry .picker-collection-search-expander-cell
+{
+    width: 15px;
+}
+
+.theme-entry .picker-collection-search-criteria-cell
+{
+    width: 100%;
+}
+
+/* expander arrow to toggle label dropdown */
+.theme-entry .picker-collection-add-user-advanced-search-option-label-expander-down,
+.theme-entry .picker-collection-add-user-advanced-search-option-label-expander-up
+{
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* upper pane "match" text */
+.theme-entry #picker-collection-add-user-search-label-display-text
+{
+    padding-left: 0.5rem;
+    padding-right: 2.0rem;
+}
+
+/*#endregion SEARCH AREA*/
+
+.theme-entry .picker-collection-grid-column-header-divider
+{
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    width: 3px;
+    height: 16px;
+    display: inline-block;
+    float: left;
+}
+
+/* big icon for share picker TODO need to be dynamic */
+.theme-entry #picker-collection-add-user-icon
+{
+    margin: 0.5rem; /* override -core */
+    background-repeat: no-repeat; /* override -core */
+    background-position: 0% 0%; /* override -core */
+    width: 40px; /* override -core */
+    height: 40px; /* override -core */
+    display: inline-block; /* override -core */
+}
+
+/* search pane */
+.theme-entry #picker-collection-add-user-upper-pane
+{
+    position: static;
+    margin-top: 0.3rem;
+    background: none;
+}
+
+    /* remove link indicator UI effect from <a> tag in search pane */
+    .theme-entry #picker-collection-add-user-upper-pane a
+    {
+        text-decoration: none;
+    }
+
+.theme-entry .picker-collection-expander-container
+{
+    margin-right: 1.0rem;
+}
+
+/* search textbox wrapper */
+.theme-entry .picker-collection-search-outer-wrapper
+{
+    margin-right: 0;
+}
+
+.theme-entry #picker-collection-add-user-advanced-search-dropdown-match-wrapper
+{
+    margin-top: 0.3rem;
+}
+
+.theme-entry #picker-collection-add-user-advanced-search-dropdown-label-wrapper
+{
+    margin-top: 0.5rem;
+}
+
+.theme-entry .picker-collection-search-top
+{
+    margin-top: 0.5rem;
+}
+
+.theme-entry .picker-collection-search-bottom
+{
+    margin-bottom: 0.5rem;
+}
+
+
+/* redirect dialog - grid area including header */
+.theme-entry #picker-collection-add-user-operation-box
+{
+    left: 0px; /* override -- core */
+    margin-right: 0;
+    width: 100%;
+}
+
+
+.theme-entry .oof-delegated-user-list-header,
+.theme-entry #picker-collection-add-user-operation-box-header /* header for search results list */
+{
+    height: auto;
+    width: auto; /* override -- core */
+    background-color: #dedfde;
+    color: #8e98a7;
+    text-transform: uppercase;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    border-style: solid;
+    border-width: 1px;
+}
+
+    /* header for searh results - "Recents" */
+    .theme-entry #picker-collection-add-user-operation-box-header span
+    {
+        padding-left: 0.5rem;
+        line-height: 2.2rem;
+        cursor: default;
+        opacity: 0.7;
+        font-size: 1.2rem;
+    }
+
+.theme-entry #picker-collection-add-user-search-display-text,
+.theme-entry #picker-collection-add-user-advanced-search-string-display-text,
+.theme-entry #picker-collection-add-user-advanced-search-label-display-text,
+.theme-entry #picker-collection-share-header .picker-collection-text-theme-color
+{
+    cursor: default;
+    white-space: nowrap;
+}
+
+.theme-entry a.picker-collection-button-disabled:hover
+{
+    background: none !important;
+}
+
+/*#region SEARCH RESULTS GRID - redirect*/
+
+/* grid area for displaying user info */
+.theme-entry #picker-collection-add-user-container #picker-collection-add-user-operation-box-body,
+.theme-entry #picker-collection-add-user-container.collapsed #picker-collection-add-user-operation-box-body
+{
+    margin-left: 0;
+    top: 2.3rem;
+}
+
+/* add user picker user grid */
+.theme-entry #picker-collection-add-user-container.collapsed #picker-collection-add-user-operation-box
+{
+    position: absolute;
+    top: 3.8rem;
+    bottom: 0;
+    left: 1.2rem;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+.theme-entry #picker-collection-add-user-container #picker-collection-add-user-operation-box
+{
+    position: absolute;
+    top: 10.0rem;
+    bottom: 0;
+    left: 1.2rem;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+
+/* row for displaying user info */
+.theme-entry .picker-collection-grid-row
+{
+    min-height: 0;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    padding: 0;
+}
+
+.theme-entry .oof-delegated-user-list-row:nth-child(even),
+.theme-entry .picker-collection-grid-row.even
+{
+    background-color: #f5f5f5;
+}
+
+.theme-entry .picker-collection-grid-row-user-image
+{
+    top: 1px;
+    left: 11px;
+}
+
+.theme-entry .picker-collection-grid-row .picker-collection-grid-row-user-display-name
+{
+    padding-top: 0;
+    padding-left: 1.5rem;
+    margin-top: -1.8rem;
+    width: 80%;
+}
+
+.theme-entry .picker-collection-grid-row .picker-collection-grid-row-user-email
+{
+    color: rgb(49, 56, 65);
+    opacity: 0.5;
+    margin-top: -2.2rem;
+    padding-left: 3.5rem;
+    width: 80%;
+}
+
+/*#endregion SEARCH RESULTS GRID - redirect*/
+
+.theme-entry .worklist-filter-date-picker-calender-icon
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Choose Date picker */
+
+.theme-entry #worklist-control-filter-date-range
+{
+    width: 35.0rem !important; /* override -- inline (popup manager) */
+    height: 20.0rem !important; /* override -- inline (popup manager) */
+}
+
+.theme-entry #worklist-control-filter-date-range .dropdown-box
+{
+    width: auto;
+}
+
+.theme-entry #worklist-control-filter-date-range .specific-date
+{
+    padding: 0 0 0.5rem 0;
+}
+
+.theme-entry #date-picker-background
+{
+    background-color: transparent;
+}
+
+.theme-entry #picker-collection-add-user-container .userLookupRow.highlight_focus .worklistUserLookupTextbox
+{
+    border-color: #00abf0;
+}
+
+/* #region OOF */
+.theme-entry .oof-box
+{
+    background-color: transparent;
+}
+
+/* search textbox (focus) */
+
+
+.theme-entry .highlight_focus .worklistUserLookupTextbox
+{
+    border-color: #00abf0;
+    border-style: solid none solid solid;
+    border-width: 0.1rem 0 0.1rem 0.1rem;
+}
+
+.theme-entry .highlight_focus .worklistUserLookupIconWrapper
+{
+    border-color: #00abf0;
+    border-style: solid none solid none;
+    border-width: 0.1rem 0 0.1rem 0;
+}
+
+.theme-entry .highlight_focus .worklistUserLookupClearIconWrapper
+{
+    border-color: #00abf0;
+    border-style: solid solid solid none;
+    border-width: 0.1rem 0.1rem 0.1rem 0;
+}
+
+/* search textbox */
+.theme-entry #OOFConfig #oof-delegate-picker-box .oof-td.delegatedUserLookupCell
+{
+    padding-left: 0.3rem;
+    height: 2.5rem;
+}
+
+.theme-entry #oof-delegate-picker-box .styling-right
+{
+    width: 1px;
+}
+
+
+.theme-entry #OOFGrid .OOFDelegatedUserLookup .styling-left,
+.theme-entry #OOFExceptionContext .OOFExceptionSearchUserLookupBox .styling-left
+{
+    border-left: solid 1px #e6e6e6;
+    border-top: solid 1px #e6e6e6;
+    border-bottom: solid 1px #e6e6e6;
+    height: 1.2rem;
+    line-height: normal;
+    padding-top: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.theme-entry #OOFGrid .delegatedUserLookupCell
+{
+    width: 100%;
+}
+
+.theme-entry #OOFGrid .delegatedUserRemoveCell
+{
+    padding-right: 0.5rem;
+}
+
+
+/* search remove icon wrapper */
+.theme-entry .pickerCollectionOOFDelegatedUserRemoveAll
+{
+    border-top: solid 1px #e6e6e6;
+    border-bottom: solid 1px #e6e6e6;
+    border-right: solid 1px #e6e6e6;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+.theme-entry #picker-collection-add-user-container .picker-collection-add-user-search-remove
+{
+    border-top: solid 1px #e6e6e6;
+    border-bottom: solid 1px #e6e6e6;
+    border-right: solid 1px #e6e6e6;
+    border-left-width: 0;
+    width: 2.4rem;
+    height: 2.2rem;
+}
+
+.theme-entry #OOFConfig .oof-td
+{
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.theme-entry #OOFGrid .oof-label
+{
+    padding-left: 1.5rem;
+}
+
+/* label text */
+.theme-entry #OOFGrid .oof-status-row .oof-label
+{
+    padding-left: 0.5rem;
+}
+
+.theme-entry #OOFGrid .toolbar
+{
+    margin-bottom: 0;
+}
+
+.theme-entry #OOFGrid .OOFExceptionText
+{
+    font-size: 1.2rem;
+}
+
+.theme-entry #oof-options.disabled:before
+{
+    top: 7.3rem;
+}
+
+/* exception grid */
+.theme-entry #addOOFException .oof-td-field
+{
+    padding-right: 0;
+}
+
+.msie .theme-entry #addOOFException .oof-td-field,
+.mozilla .theme-entry #addOOFException .oof-td-field
+{
+    padding-left: 0.5rem;
+}
+
+.theme-entry #addOOFException .workflowContainer
+{
+    right: 0;
+}
+
+.msie .theme-entry #addOOFException .workflowContainer,
+.mozilla .theme-entry #addOOFException .workflowContainer
+{
+    left: 0.5rem;
+}
+
+
+.theme-entry #addOOFException .OOFExceptionTable input
+{
+    color: #313841;
+    font-size: 12px;
+    font-family: "Segoe UI Semibold", "HelveticaNeue-Medium", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Rule Name, Filter, Users row */
+.theme-entry .oof-exception-filter-row,
+.theme-entry .userLookupRow,
+.theme-entry .oof-exception-name-row
+{
+    height: 2.7rem;
+}
+
+.theme-entry #addOOFException .editableUserLookupRemoveIconWrapper
+{
+    right: 0;
+}
+
+.msie .theme-entry .OOFExceptionUserLookupTable .editableLookupContainer,
+.mozilla .theme-entry .OOFExceptionUserLookupTable .editableLookupContainer
+{
+    left: 0.5rem;
+}
+
+.theme-entry #addOOFException .editableUserLookupIconWrapper
+{
+    right: 2.5rem;
+}
+
+.theme-entry #addOOFException .editableUserLookupTextbox
+{
+    right: 4.9rem;
+}
+
+.msie .theme-entry #addOOFException .editableUserLookupTextbox
+{
+    left: 0;
+}
+
+.msie .theme-entry .OOFExceptionUserLookupTable
+{
+    top: -0.5rem;
+}
+
+
+.theme-entry #addOOFException .workflowContainer
+{
+    
+}
+
+.msie .theme-entry #addOOFException .workflowContainer
+{
+    height: 16.0rem;
+}
+
+.mozilla .theme-entry #addOOFException .workflowContainer
+{
+    bottom: 1rem;
+}
+
+.theme-entry #OOFGrid .OOFExceptionGridContainer
+{
+    
+}
+
+.theme-entry #OOFGrid .OOFExceptionGridContainer .grid-body
+{
+    /* override base */
+    position: static;
+}
+
+.theme-entry #OOFGrid .OOFExceptionGridContainer .scroll-wrapper
+{
+    height: 10.8rem;
+    
+}
+
+.theme-entry .mozilla #addOOFException .editableUserLookupTextbox,
+.theme-entry .msie #addOOFException .editableUserLookupTextbox
+{
+    left: 0;
+}
+
+/* configure exception picker */
+.theme-entry #addOOFException .workflowContainer
+{
+    background-color: #fff;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid #e6e6e6;
+}
+
+.theme-entry #OOFExceptionContext .OOFExceptionUserLookupTable .delegatedUserLookupCell
+{
+    padding-right: 0;
+    padding-left: 0.3rem;
+    height: 2.5rem;
+}
+
+.theme-entry #OOFExceptionContext .OOFExceptionUserLookupTable .delegatedUserRemoveCell
+{
+    padding-right: 1.8rem;
+    padding-left: 0;
+}
+
+.theme-entry #OOFExceptionContext .userLookupRow .oof-label
+{
+    padding-right: 2.2rem;
+}
+
+.theme-entry .OOFExceptionUserLookupTable .editableLookupContainer
+{
+    position: absolute;
+    top: auto;
+    bottom: 3.1rem;
+    left: 0;
+    right: 0;
+}
+
+.theme-entry #OOFGrid .oof-delegate-user-lookup
+{
+    width: 100%;
+}
+
+.theme-entry .editableUserLookupContainer
+{
+    top: 0;
+    left: 0.2rem;
+}
+
+.theme-entry .editableUserLookupTextbox
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 5.3rem;
+    width: auto;
+    height: 1.8rem;
+    border-top: solid 1px #e6e6e6;
+    border-left: solid 1px #e6e6e6;
+    border-bottom: solid 1px #e6e6e6;
+    padding-left: 0.3rem;
+    padding-top: 0.6rem;
+    background-color: #fff;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.theme-entry .editableUserLookupIconWrapper,
+.theme-entry .moz .editableUserLookupIconWrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 3.0rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-top: solid 1px #e6e6e6;
+    border-bottom: solid 1px #e6e6e6;
+    background-color: #fff;
+}
+
+.theme-entry .editableUserLookupIcon,
+.theme-entry .editableUserLookupRemoveIcon
+{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.theme-entry .editableUserLookupRemoveIconWrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0.5rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-top: solid 1px #e6e6e6;
+    border-bottom: solid 1px #e6e6e6;
+    border-right: solid 1px #e6e6e6;
+    background-color: #fff;
+}
+
+.theme-entry .editableUserLookupFocused .editableUserLookupTextbox
+{
+    border-top: solid 1px #00abf0;
+    border-left: solid 1px #00abf0;
+    border-bottom: solid 1px #00abf0;
+}
+
+.theme-entry .editableUserLookupFocused .editableUserLookupIconWrapper
+{
+    border-top: solid 1px #00abf0;
+    border-bottom: solid 1px #00abf0;
+}
+
+.theme-entry .editableUserLookupFocused .editableUserLookupRemoveIconWrapper
+{
+    border-top: solid 1px #00abf0;
+    border-right: solid 1px #00abf0;
+    border-bottom: solid 1px #00abf0;
+}
+
+.theme-entry .OOFUserLookupUsername.selected
+{
+    background-color: #7fd5f7;
+}
+
+.theme-entry .OOFExceptionName:focus,
+.theme-entry .OOFExceptionFilter:focus
+{
+    border: 1px solid #00abf0;
+}
+
+.mozilla .theme-entry #addOOFException .editableUserLookupTextbox
+{
+    left: 0;
+}
+
+/* #endregion OOF */
+
+/* #region USER LOOKUP */
+
+.theme-entry .ie .worklistUserLookupTextboxWrapper,
+.theme-entry .moz .worklistUserLookupTextboxWrapper
+{
+    left: -0.1rem;
+}
+
+.theme-entry .worklistUserLookupTextbox,
+.theme-entry .moz .worklistUserLookupTextbox,
+.theme-entry .ie .worklistUserLookupTextbox
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.1rem;
+    right: 4.7rem;
+    height: 2.2rem;
+    width: calc(100% - 5.0rem);
+    padding-left: 3px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.theme-entry .moz .worklistUserLookupTextbox
+{
+    width: calc(100% - 3.0rem);
+}
+
+.webkit.safari .theme-entry .worklistUserLookupTextbox
+{
+    left: -0.3rem;
+    right: 4.4rem;
+    width: auto;
+}
+
+.theme-entry #picker-collection-add-user-popup-root.moz .worklistUserLookupTextbox
+{
+    left: 0.1rem;
+}
+
+.theme-entry #picker-collection-add-user-popup-root.moz .worklistUserLookupIconWrapper
+{
+    right: auto;
+    left: 36.0rem;
+}
+
+.theme-entry #picker-collection-add-user-popup-root.ie .worklistUserLookupIconWrapper
+{
+    right: auto;
+    left: 36.6rem;
+}
+
+.theme-entry #picker-collection-add-user-popup-root .userLookupRow
+{
+    line-height: 1.9rem;
+}
+
+.theme-entry .worklistUserLookupIconWrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 2.6rem;
+    border-top: 0.1rem solid #e6e6e6;
+    border-bottom: 0.1rem solid #e6e6e6;
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent;
+}
+
+.msie .theme-entry .worklistUserLookupClearIconWrapper 
+{
+    left: 39rem;
+}
+
+.theme-entry .moz .worklistUserLookupClearIconWrapper
+{
+    left: auto;
+}
+
+.theme-entry .worklistUserLookupClearIconWrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0.1rem;
+    border-top: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 0px none transparent;
+}
+
+.mozilla .theme-entry .worklistUserLookupClearIconWrapper 
+{
+    right: 0;
+}
+
+.theme-entry .worklistUserLookupIconWrapper,
+.theme-entry .worklistUserLookupClearIconWrapper,
+.theme-entry .worklistUserLookupIcon,
+.theme-entry .worklistUserLookupClearIcon
+{
+    width: 24px;
+    height: 22px;
+    display: inline-block;
+}
+
+.theme-entry .worklistUserLookupIconWrapper,
+.theme-entry .worklistUserLookupClearIconWrapper
+{
+    background-color: #fff;
+}
+
+
+/* #endregion USER LOOKUP */
+
+/* #region OOF DELEGATE USER */
+/* hide the DialogSeparater.png so that it won't conflict with grid top & bottom border */
+.theme-entry #worklistOOFDialogDelegatedUsers .popup-header,
+.theme-entry #worklistOOFDialogDelegatedUsers .popup-footer
+{
+    background-image: none;
+}
+
+/* #endregion OOF DELEGATE USER */
+
+
+/* #region FILTER PICKER */
+
+/* specific date input field */
+.theme-entry #worklist-control-filter-date-range .specific-date .input-control.styling-font
+{
+    line-height: normal;
+}
+
+/* border around calendar icon (invalid) */
+.theme-entry #worklist-control-filter-date-range .date-range-picker-container .invalid .styling-right.styling-inner-wrapper
+{
+    border-color: rgba(178,30,40,0.4);
+}
+
+/* border around calendar icon (invalid + focus) */
+.theme-entry #worklist-control-filter-date-range .date-range-picker-container .invalid.active .styling-right.styling-inner-wrapper
+{
+    border-color: #b21e28;
+}
+
+/* border around calendar icon (disabled) */
+.theme-entry #worklist-control-filter-date-range .date-range-picker-container .disabled .styling-right.styling-inner-wrapper,
+.theme-entry #worklist-control-filter-date-range .date-range-picker-container .invalid.disabled .styling-right.styling-inner-wrapper
+{
+    border-color: #e6e6e6;
+}
+
+/* relative date dropdown text */
+.theme-entry #worklist-control-filter-date-range .relative-date .input-control.styling-font span
+{
+    line-height: 2.4rem;
+}
+
+
+/* #endregion FILTER PICKER */
+
+/* #region RTL layout */
+
+/*worklist item indicator cell*/
+html[dir=rtl] .theme-entry .worklist-filter-date-picker-calender-icon
+{
+    right: inherit;
+    left: 0;
+}
+
+html[dir=rtl] .theme-entry .grid .grid-column-header-cell .grid-column-header-text
+{
+    padding-left: 3.0rem;
+    padding-right: 0rem;
+}
+
+/* asc desc arrow for the grid header */
+html[dir=rtl] .theme-entry #FilterConfig_secondPageOutside .grid-column-header-cell-wrapper::before
+{
+    left: 0.5rem;
+    right: inherit;
+}
+
+html[dir=rtl] .theme-entry .editableUserLookupRemoveIconWrapper
+{
+    border-top: solid 1px #e6e6e6;
+    border-bottom: solid 1px #e6e6e6;
+    border-left: solid 1px #e6e6e6;
+    border-right: inherit;
+    background-color: #fff;
+}
+
+html[dir=rtl] .theme-entry .delegatedUserLookupCell .editableUserLookupContainer
+{
+    right: -2px;
+    left: 5px;
+}
+
+/* upper pane "search" text */
+html[dir=rtl] .theme-entry #picker-collection-add-user-search-display-text
+{
+    padding: 0 0.5rem 0 5rem;
+}
+
+html[dir=rtl] .theme-entry .userLookupRow .picker-collection-lookup-cell
+{
+    right: 0px;
+    left: 0px;
+}
+
+html[dir=rtl] .theme-entry .picker-collection-expander-container
+{
+    margin-left: 1.0rem;
+    margin-right: 0rem;
+}
+
+/* header for searh results - "Recents" */
+html[dir=rtl] .theme-entry #picker-collection-add-user-operation-box-header span
+{
+    padding-left: 0rem;
+    padding-right: 0.5rem;
+}
+
+html[dir=rtl] .theme-entry #picker-collection-add-user-container #picker-collection-add-user-operation-box
+{
+    right: 1.2rem;
+    left: 0rem;
+}
+
+html[dir=rtl] .theme-entry #picker-collection-add-user-layout-right #picker-collection-add-user-operation-box
+{
+    margin: 4px 44px 3px 0px;
+}
+
+.theme-entry #picker-collection-add-user-popup-root #picker-collection-add-user-layout-left
+{
+    float: inherit;
+}
+
+html[dir=rtl] .theme-entry .worklistUserLookupClearIconWrapper
+{
+    border-left: 1px solid #e6e6e6;
+    border-right: 0px none transparent;
+}
+
+html[dir=rtl] .picker-collection-lookup-cell .worklistUserLookupClearIconWrapper
+{
+    right: 386px;
+    left: 0;
+}
+
+html[dir=rtl] .picker-collection-lookup-cell .worklistUserLookupIconWrapper
+{
+    right: 362px;
+    left: 0;
+}
+
+html[dir=rtl] .theme-entry #picker-collection-add-user-container .picker-collection-grid-row-user-email
+{
+    right: 3.3rem;
+    left: initial;
+}
+
+html[dir=rtl] .theme-entry .picker-collection-grid-row .picker-collection-grid-row-user-display-name
+{
+    right: 34px;
+    left: inherit;
+}
+
+html[dir=rtl] .theme-entry .editableUserLookupTextbox
+{
+    border-top: solid 1px #e6e6e6;
+    border-right: solid 1px #e6e6e6;
+    border-left: inherit;
+    border-bottom: solid 1px #e6e6e6;
+}
+
+html[dir=rtl] .theme-entry .editableUserLookupFocused .editableUserLookupRemoveIconWrapper
+{
+    border-top: solid 1px #00abf0;
+    border-left: solid 1px #00abf0;
+    border-right: inherit;
+    border-bottom: solid 1px #00abf0;
+}
+
+html[dir=rtl] .theme-entry .editableUserLookupFocused .editableUserLookupTextbox
+{
+    border-top: solid 1px #00abf0;
+    border-right: solid 1px #00abf0;
+    border-left: inherit;
+    border-bottom: solid 1px #00abf0;
+}
+
+html[dir=rtl] .theme-entry .highlight_focus .worklistUserLookupClearIconWrapper
+{
+    border-color: #00abf0;
+    border-style: solid none solid solid;
+    border-width: 0.1rem 0 0.1rem 0.1rem;
+}
+
+html[dir=rtl] .theme-entry .highlight_focus .worklistUserLookupTextbox
+{
+    border-color: #00abf0;
+    border-style: solid solid solid none;
+    border-width: 0.1rem 0.1rem 0.1rem 0;
+}
+
+/* Share Task region */
+html[dir=rtl] .theme-entry #picker-collection-share-operation-box
+{
+    right: 5.5rem;
+    left: 0;
+}
+
+/* Sleep Task region */
+html[dir=rtl] .theme-entry #picker-collection-sleep-header span
+{
+    padding-right: 5px;
+    padding-left: 0;
+}
+
+html[dir=rtl] .theme-entry #picker-collection-sleep-operation-box .input-control.radio
+{
+    right: 0.5rem;
+    left: 0;
+}
+
+/* #endregion RTL layout */
+
+/* #endregion DESKTOP */
+
+/* #region TOUCH */
+
+/* #region FILTER PICKER */
+
+/* relative date dropdown text */
+.mobile .theme-entry #worklist-control-filter-date-range .relative-date .input-control.styling-font
+{
+    line-height: 3.2rem;
+}
+
+/* #endregion FILTER PICKER */
+
+/* exception rule picker */
+.mobile .theme-entry #addOOFException .workflowContainer
+{
+    min-height: 0;
+}
+
+.mobile .theme-entry #OOFExceptionContext
+{
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.mobile .theme-entry #addOOFException .OOFExceptionTable
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile .theme-entry .oof-exception-filter-row,
+.mobile .theme-entry .userLookupRow,
+.mobile .theme-entry .oof-exception-name-row
+{
+    height: 3.6rem;
+}
+
+.mobile .theme-entry .oof-exception-workflow-row
+{
+    height: auto;
+}
+
+/* Name, Filter, Users label */
+.mobile .theme-entry #addOOFException .oof-label
+{
+    position: relative;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+/* Users label */
+.mobile .theme-entry #addOOFException .userLookupRow .oof-label
+{
+    padding-bottom: 0;
+}
+
+/* Process tree label */
+.mobile .theme-entry #addOOFException .oof-exception-workflow-row .oof-label
+{
+    vertical-align: top;
+}
+
+.mobile .theme-entry #addOOFException .oof-td.oof-td-field
+{
+    position: relative;
+    vertical-align: middle;
+}
+
+.mobile .theme-entry .OOFExceptionUserLookupTable .editableLookupContainer
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
+/* user lookup textbox section */
+.mobile .theme-entry #addOOFException .editableUserLookupTextbox
+{
+    right: 6.1rem;
+}
+
+.mobile .theme-entry #addOOFException .editableUserLookupIconWrapper
+{
+    right: 3.1rem;
+}
+
+.mobile .theme-entry #addOOFException .editableUserLookupRemoveIconWrapper
+{
+    right: 0;
+}
+
+/*single row height items*/
+.mobile .theme-entry .picker-collection-search-outer-wrapper
+{
+    height: 3.2rem;
+}
+
+.mobile .theme-entry .picker-collection-add-user-search-text-field-wrapper
+{
+    min-height: 3.2rem !important; /*override - inline style*/
+}
+
+.mobile .theme-entry #picker-collection-share-add-icon,
+.mobile .theme-entry #picker-collection-share-remove-icon,
+.mobile .theme-entry #picker-collection-share-add-icon
+{
+    width: 2.0rem;
+    height: 2.0rem;
+}
+
+.mobile .theme-entry #picker-collection-share-remove-button
+{
+    width: 11.0rem;
+    padding-left: 1.0rem;
+}
+
+.mobile .theme-entry #picker-collection-share-operation-box-header
+{
+    min-height: 5.2rem;
+}
+
+.mobile .theme-entry #picker-collection-add-user-operation-box-body,
+.mobile .theme-entry #picker-collection-add-user-container.collapsed #picker-collection-add-user-operation-box-body
+{
+    top: 2.4rem;
+}
+
+/* user grid when expanded (i.e. advance search section is shown)*/
+.mobile .theme-entry #picker-collection-add-user-container #picker-collection-add-user-operation-box
+{
+    top: 12.0rem;
+}
+
+/* user gird when collapsed (i.e. advance search section is hidden) */
+.mobile .theme-entry #picker-collection-add-user-container.collapsed #picker-collection-add-user-operation-box
+{
+    top: 4.2rem;
+}
+
+/* advanced search text */
+.mobile .theme-entry #picker-collection-add-user-search-display-text
+{
+    padding-left: 0.5rem;
+}
+
+/* focus state for user search textbox */
+.mobile .theme-entry .highlight_focus .worklistUserLookupTextbox
+{
+    border-color: #00abf0;
+    border-style: solid none solid solid;
+    border-width: 0.1rem 0 0.1rem 0.1rem;
+}
+/* focus state for user search lookup icon */
+.mobile .theme-entry .highlight_focus .worklistUserLookupIconWrapper
+{
+    border-color: #00abf0;
+    border-style: solid none solid none;
+    border-width: 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+/* focus state for user search clear icon */
+.mobile .theme-entry .highlight_focus .worklistUserLookupClearIconWrapper
+{
+    border-color: #00abf0;
+    border-style: solid solid solid none;
+    border-width: 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+
+.mobile .theme-entry #worklistAddUserPickerUserLookup > span
+{
+    height: 3.0rem;
+    width: 3.0rem;
+}
+
+.mobile .theme-entry #FilterConfig_secondPageOutside
+{
+    width: 100% !important;
+    height: 43.3rem !important;
+}
+
+/* choose date picker */
+.mobile .theme-entry #worklist-control-filter-date-range
+{
+    height: 30.0rem !important; /* override -- inline (popup manager) */
+}
+
+.mobile .theme-entry .worklist-filter-date-picker-calender-icon
+{
+    width: 32px;
+    height: 32px;
+    background-position: center;
+}
+
+.mobile .theme-entry #picker-collection-share-header /* share picker "shared with" text */
+{
+    margin-left: 0.5rem;
+}
+
+/* sleep picker - radio button img */
+.mobile .theme-entry #picker-collection-sleep-container .SleepListItem .input-control-img
+{
+    margin: 0.3rem 0 0 0;
+}
+
+
+/* #region FILTER PICKER */
+.mobile .theme-entry #FilterConfig_secondPage .grid .grid-column-header-table
+{
+    width: 100% !important; /* override -- inline width:100px */
+}
+
+/* tab */
+.mobile .theme-entry #FilterConfig_secondPageInternal .tab-box ul.tab-box-tabs a.tab,
+.mobile .theme-entry #FilterConfig_secondPageInternal .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper,
+.mobile .theme-entry #FilterConfig_secondPageInternal .tab-box ul.tab-box-tabs a.selected.tab:hover .tab-wrapper
+{
+    height: 4.8rem;
+}
+
+/* tab text */
+.mobile .theme-entry #FilterConfig_secondPageOutside .tab-box ul.tab-box-tabs a.tab .tab-text
+{
+    height: 4.8rem;
+}
+
+/* body */
+.mobile .theme-entry #FilterConfig_secondPageInternal .filter-body-content,
+.mobile .theme-entry #FilterConfig_ColumnPanel .toolbar + *
+{
+    top: 4.8rem;
+}
+
+/* inner body */
+.mobile .theme-entry #FilterConfig_secondPage .tab-box #SortBody.tab-box-body
+{
+    top: 4.8rem !important; /* override -- base */
+}
+
+/* content area */
+.mobile .theme-entry #FilterConfig_secondPage .grid .grid-body-content
+{
+    top: 4.4rem;
+    bottom: 1.3rem;
+}
+
+/* #region RTL Touch layout */
+
+html[dir=rtl].mobile .theme-entry #FilterConfig_secondPageInternal .tab-box ul.tab-box-tabs a.tab
+{
+    height: inherit;
+}
+
+html[dir=rtl].mobile .theme-entry #FilterConfig_secondPageInternal li
+{
+    height: inherit;
+}
+
+/* editable user lookup clear icon */
+html[dir=rtl].mobile .theme-entry .editableUserLookupIconWrapper
+{
+    left: 4.0rem;
+    right: initial;
+}
+
+html[dir=rtl].mobile .theme-entry .editableUserLookupRemoveIconWrapper
+{
+    left: 0.9rem;
+    right: initial;
+}
+
+html[dir=rtl].mobile .theme-entry #addOOFException .editableUserLookupRemoveIconWrapper
+{
+    left: 0;
+    right: initial;
+}
+
+html[dir=rtl].mobile .theme-entry #addOOFException .editableUserLookupIconWrapper
+{
+    left: 3.1rem;
+    right: initial;
+}
+
+html[dir=rtl].mobile .theme-entry #addOOFException .editableUserLookupTextbox
+{
+    left: 6.1rem;
+    right: inherit;
+}
+
+/* #region User Lookup */
+html[dir=rtl].mobile .theme-entry .picker-collection-lookup-cell
+{
+    right: 19.3rem;
+    left: 0;
+}
+
+html[dir=rtl].mobile .theme-entry .worklistUserLookupIconWrapper
+{
+    right: auto;
+    left: 3.1rem;
+}
+
+html[dir=rtl].mobile .theme-entry .worklistUserLookupClearIconWrapper
+{
+    right: auto;
+    left: 0;
+}
+
+html[dir=rtl].mobile .theme-entry #picker-collection-add-user-advanced-search-string-display-text
+{
+    padding-left: 0rem;
+}
+
+/* #endregion RTL Touch layout */
+
+/* #endregion FILTER PICKER */
+
+/* search, remove icon wrapper */
+.mobile .theme-entry .picker-collection-search-icon-cell #picker-collection-add-user-search-icon-outer,
+.mobile .theme-entry .picker-collection-remove-container #picker-collection-add-user-search-remove
+{
+    height: 3.2rem;
+    width: 3.2rem;
+}
+/* search, remove icon */
+.mobile .theme-entry .picker-collection-search-icon-cell #picker-collection-add-user-search-icon,
+.mobile .theme-entry .picker-collection-remove-container #picker-collection-add-user-search-remove-icon
+{
+    height: 20px;
+    width: 20px;
+    top: 6px;
+    left: 6px;
+}
+
+.mobile .theme-entry .picker-collection-search-criteria-cell
+{
+    padding-top: 0.5rem;
+}
+
+.mobile .theme-entry #picker-collection-add-user-search-text-field
+{
+    height: 3.0rem;
+}
+
+.mobile .theme-entry #picker-collection-add-user-advanced-search-dropdown-label-wrapper
+{
+    margin-top: 0;
+}
+
+/* redirect picker - search remove icon wrapper */
+.mobile .theme-entry #picker-collection-add-user-search-remove
+{
+    top: 0.1rem;
+}
+
+/* redirect, share picker - user search text field */
+.mobile .theme-entry .picker-collection-search-outer-wrapper #picker-collection-add-user-search-text-field
+{
+    height: 3.2rem;
+}
+
+.mobile .theme-entry #picker-collection-add-user-container .worklistAddUserPickerUserLookup
+{
+    border-radius: 2px 0 0 2px;
+}
+
+
+.mobile .theme-entry #picker-collection-add-user-operation-box .picker-collection-grid-row,
+.mobile .theme-entry #picker-collection-share-operation-box .picker-collection-grid-row
+{
+    height: 5.0rem;
+}
+
+/* sleep picker - radio button */
+.mobile .picker-collection-sleep-operation-box-basic-options-container li.SleepListItem
+{
+    height: 3.0rem;
+}
+
+/* worklist share picker add, remove button */
+.mobile .theme-entry #picker-collection-share-add-button,
+.mobile .theme-entry #picker-collection-share-remove-button
+{
+    width: 12.0rem;
+}
+
+/* 'shared with' text*/
+.mobile .theme-entry #picker-collection-share-header span
+{
+    padding-left: 0;
+}
+
+/* share picker grid body */
+.mobile .theme-entry #picker-collection-share-operation-box-body
+{
+    top: 5.0rem;
+}
+
+.mobile .theme-entry .picker-collection-grid-row-user-image
+{
+    top: 1rem;
+}
+
+.mobile .theme-entry .picker-collection-grid-row .picker-collection-grid-row-user-display-name
+{
+    margin-top: -0.4rem;
+}
+
+.mobile .theme-entry .picker-collection-grid-row .picker-collection-grid-row-user-email
+{
+    margin-top: -1.5rem;
+    padding-left: 4rem;
+}
+
+.mobile .theme-entry #OOFConfig
+{
+    width: 100% !important; /* override -- inline popup manager */
+    height: 500px !important; /* override -- inline popup manager */
+}
+
+/* editable user lookup clear icon */
+.mobile .theme-entry .editableUserLookupRemoveIcon
+{
+    width: 24px;
+    height: 24px;
+}
+
+.mobile .theme-entry .editableUserLookupTextbox
+{
+    height: 3.0rem;
+    line-height: 3.0rem;
+    padding-top: 0;
+    position: absolute;
+    top: 0;
+    display: inline-block;
+}
+
+.mobile .theme-entry .editableUserLookupIconWrapper,
+.mobile .theme-entry .editableUserLookupIcon,
+.mobile .theme-entry .editableUserLookupRemoveIconWrapper,
+.mobile .theme-entry .editableUserLookupRemoveIcon
+{
+    height: 3.0rem;
+    width: 3.0rem;
+}
+
+.mobile .theme-entry #addOOFException .OOFExceptionTable input
+{
+    font-size: 1.6rem;
+}
+
+.mobile .theme-entry .OOFExceptionName,
+.mobile .theme-entry .OOFExceptionFilter
+{
+    -webkit-appearance: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+/* grid toolbar */
+.mobile .theme-entry #OOFGrid .toolbar
+{
+    position: static;
+}
+
+.mobile .theme-entry .editableUserLookupContainer
+{
+    position: relative;
+    top: -1.8rem;
+    left: 0;
+}
+
+.mobile .theme-entry #OOFConfig .scroll-wrapper
+{
+    position: static;
+}
+
+
+/* grid body container */
+.mobile .theme-entry #OOFGrid .OOFExceptionGridContainer
+{
+    position: static;
+}
+
+.mobile .theme-entry .OOFExceptionWrapper
+{
+    position: relative;
+    bottom: 1.0rem;
+}
+/* grid main body part */
+.mobile .theme-entry #OOFGrid .OOFExceptionGridContainer .grid-body-content-wrapper
+{
+    position: static;
+}
+
+.mobile .theme-entry #OOFGrid .OOFExceptionGridContainer .grid-body-content
+{
+    position: static;
+}
+
+/* configure exception picker */
+.mobile .theme-entry #addOOFException .scroll-wrapper
+{
+    height: 100%;
+}
+
+
+.mobile .theme-entry #addOOFException .oof-td-field
+{
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.mobile .theme-entry #addOOFException .workflowContainer
+{
+    position: absolute;
+    top: 0.2rem;
+    bottom: 0.2rem;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+.mobile .theme-entry .OOFExceptionUserLookupTable
+{
+    position: absolute;
+    top: 0.2rem;
+    bottom: 0;
+    left: 0;
+    right: 0rem;
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+}
+
+.mobile .theme-entry #OOFExceptionContext .OOFExceptionUserLookupTable .delegatedUserLookupCell
+{
+    height: auto;
+}
+
+.mobile .theme-entry .editableUserLookupRemoveIconWrapper,
+.mobile .theme-entry .editableUserLookupIconWrapper
+{
+    position: absolute;
+    display: inline-block;
+}
+
+/* #region User Lookup */
+.mobile .theme-entry .picker-collection-lookup-cell
+{
+    position: absolute;
+    top: 0.6rem;
+    bottom: 29.0rem;
+    left: 19.3rem;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
+.mobile .theme-entry .worklistUserLookupTextboxWrapper
+{
+    left: 0.2rem;
+}
+
+.mobile.safari .theme-entry .worklistUserLookupTextboxWrapper
+{
+    left: 0.7rem;
+}
+
+.mobile .theme-entry .picker-collection-expander-container
+{
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.mobile .theme-entry .search-expander,
+.mobile .theme-entry .picker-collection-expander-container
+{
+    width: 3.0rem;
+    height: 3.0rem;
+    display: block;
+}
+
+
+.mobile .theme-entry .search-expander
+{
+    position: relative;
+}
+
+
+.mobile .theme-entry .picker-collection-search-label-cell
+{
+    height: auto;
+}
+
+.mobile .theme-entry #picker-collection-add-user-advanced-search-dropdown-match-wrapper
+{
+    margin-top: 0;
+}
+
+.mobile .theme-entry .worklistUserLookupTextbox
+{
+    height: 3.0rem;
+    -webkit-appearance: none;
+    border-radius: 0;
+    vertical-align: middle;
+}
+
+.mobile .theme-entry .worklistUserLookupIconWrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 3.1rem;
+}
+
+
+.mobile .theme-entry .worklistUserLookupClearIconWrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+}
+
+.mobile .theme-entry .worklistUserLookupIconWrapper,
+.mobile .theme-entry .worklistUserLookupClearIconWrapper,
+.mobile .theme-entry .worklistUserLookupIcon,
+.mobile .theme-entry .worklistUserLookupClearIcon
+{
+    width: 32px;
+    height: 30px;
+    display: inline-block;
+}
+
+.mobile .theme-entry #picker-collection-add-user-container .userLookupRow 
+{
+    height: 2.7rem;
+}
+
+/* exception grid label */
+.mobile .theme-entry #OOFGrid .OOFExceptionWrapper
+{
+    display: none;
+}
+
+.mobile .theme-entry #OOFGrid .oof-delegate-user-lookup
+{
+    position: static;
+}
+
+/* #endregion User Lookup */
+
+/* #region OOF Delegate User */
+.mobile .theme-entry .oof-delegated-user-list-row
+{
+    position: relative;
+}
+
+.mobile .theme-entry .oof-delegated-user-list-row-user-image
+{
+    position: absolute;
+    top: 1.0rem;
+    left: 1.0rem;
+}
+
+.mobile .theme-entry .oof-delegated-user-list-row-user-name
+{
+    position: absolute;
+    top: 1.0rem;
+    left: 3.0rem;
+}
+/* #endregion OOF Delegate User */
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+    .mobile .theme-entry #picker-collection-popup-root.popup.dialog, /* sleep picker */
+    .mobile .theme-entry #picker-collection-add-user-popup-root.popup.dialog /* add user picker*/
+    {
+        width: 100% !important; /* override -- inline -- popup manager */
+        height: 100% !important; /* override -- inline -- popup manager */
+    }
+
+    .mobile .theme-entry #OOFConfig /* OOF picker */
+    {
+        width: 100% !important; /* override -- inline -- popup manager */
+        /*height: 500px !important;*/ /* override -- inline -- popup manager */
+    }
+
+    .mobile .theme-entry #OOFConfig .scroll-wrapper
+    {
+        overflow: auto;
+    }
+
+    .mobile .theme-entry #FilterConfig_secondPage
+    {
+        overflow: hidden;
+    }
+
+    .mobile .theme-entry .picker-collection-sleep-operation-box-date-options-outer-container.sleep-date /* date container */
+    {
+        position: relative;
+        width: 38.0rem;
+        bottom: 15.6rem;
+        left: 10.0rem;
+        float: right;
+    }
+
+    .mobile .theme-entry #picker-collection-popup-root .sleep-date .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control.lookup-box
+    {
+        width: 23.0rem;
+    }
+
+    .mobile .picker-collection-sleep-operation-box-basic-options-container li.SleepListItem
+    {
+        height: 3.4rem;
+    }
+
+    /* this ensure the icon is not displayed for portrait and it needs to be here because on-screen keyboard will ignore portrait css */
+    .mobile .theme-entry #picker-collection-redirect-icon, /* redirect picker icon */
+    .mobile .theme-entry #picker-collection-share-icon,
+    .mobile .theme-entry #picker-collection-add-user-icon
+    {
+        display: none;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-upper-pane
+    {
+        left: 0;
+    }
+
+    .mobile .theme-entry .picker-collection-grid-row
+    {
+        position: relative;
+    }
+
+    .mobile .theme-entry .picker-collection-search-icon-cell #picker-collection-add-user-search-icon,
+    .mobile .theme-entry .picker-collection-remove-container #picker-collection-add-user-search-remove-icon
+    {
+        top: 0.6rem;
+        left: 0.6rem;
+    }
+
+    .mobile .theme-entry .picker-collection-search-outer-wrapper #picker-collection-add-user-search-text-field
+    {
+        height: 3.2rem;
+    }
+
+    .mobile .theme-entry .picker-collection-search-icon-cell #picker-collection-add-user-search-icon-outer,
+    .mobile .theme-entry .picker-collection-remove-container #picker-collection-add-user-search-remove
+    {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-operation-box .picker-collection-grid-row
+    {
+        height: 5.0rem;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-operation-box-body .picker-collection-grid-row-user-display-name
+    {
+        left: 4.0rem;
+    }
+
+    .mobile .theme-entry #picker-collection-share-header
+    {
+        margin-left: 0;
+    }
+
+        /* "Shared with" text node */
+        .mobile .theme-entry #picker-collection-share-header .picker-collection-text-theme-color
+        {
+            padding-left: 0;
+        }
+
+
+    .mobile .theme-entry div#picker-collection-share-operation-box-body.expanded
+    {
+        height: 5.0rem;
+    }
+
+    /* 'I am' text for OOF status */
+    .mobile .theme-entry .oof-status-text
+    {
+        display: none;
+    }
+
+    /* OOF picker -- status labels */
+    .mobile .theme-entry #OOFGrid #oof-status-box td.oof-label
+    {
+        width: auto;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* #region user lookup */
+    .mobile .theme-entry #picker-collection-add-user-upper-pane .userLookupRow
+    {
+        height: 3.2rem;
+    }
+
+    .mobile .theme-entry .worklistUserLookupTextbox
+    {
+        height: 3.0rem;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+
+    .mobile .theme-entry .worklistUserLookupIconWrapper
+    {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: auto;
+        right: 3.2rem;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .mobile .theme-entry .worklistUserLookupClearIconWrapper
+    {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        border-top: 1px solid #e6e6e6;
+        border-right: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .mobile .theme-entry .worklistUserLookupIconWrapper,
+    .mobile .theme-entry .worklistUserLookupClearIconWrapper,
+    .mobile .theme-entry .worklistUserLookupIcon,
+    .mobile .theme-entry .worklistUserLookupClearIcon
+    {
+        width: 32px;
+        height: 30px;
+        display: inline-block;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-container .search-expander
+    {
+        position: relative;
+        top: -0.2rem;
+        left: 0;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-container.collapsed .search-expander
+    {
+        position: relative;
+        top: -0.2rem;
+        left: 0.6rem;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-up
+    {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-down
+    {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+
+    .mobile .theme-entry #OOFGrid .disabled .OOFExceptionWrapper.oof-label,
+    .mobile .theme-entry #OOFGrid .OOFExceptionWrapper.oof-label
+    {
+        display: none;
+    }
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+    .mobile .theme-entry .worklistUserLookupTextboxWrapper
+    {
+        left: 0.4rem;
+    }
+
+    /*remove the main icon column - left */
+    .mobile .theme-entry #picker-collection-popup-root #picker-collection-sleep-layout-left
+    {
+        display: none !important; /*override - control*/
+    }
+
+    .mobile .theme-entry #picker-collection-layout-right,
+    .mobile .theme-entry #picker-collection-popup-root #picker-collection-layout-right
+    {
+        display: block !important;
+        width: 100%;
+    }
+
+    .mobile .theme-entry #picker-collection-share-operation-box
+    {
+        padding-left: 0;
+        margin-left: 0;
+        left: 0;
+    }
+
+    /* this ensure the icon is not displayed for portrait */
+    .mobile .theme-entry div#picker-collection-redirect-icon, /* redirect picker icon */
+    .mobile .theme-entry div#picker-collection-share-icon /* share picker icon */
+    {
+        display: none;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-search-display-text,
+    .mobile .theme-entry #picker-collection-add-user-advanced-search-string-display-text,
+    .mobile .theme-entry #picker-collection-add-user-advanced-search-label-display-text
+    {
+        padding-left: 0;
+    }
+
+    .mobile .theme-entry .picker-collection-search-label-cell
+    {
+        white-space: nowrap;
+    }
+
+    /* grid box in Redirect, Add User picker */
+    .mobile .theme-entry #picker-collection-add-user-container .picker-collection-grid-row-user-email
+    {
+        white-space: nowrap;
+        display: inline-block;
+        top: 1.0rem;
+        left: 4.0rem;
+        position: absolute;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-upper-pane
+    {
+        left: 0;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-advanced-search-label-display-text
+    {
+        left: 0;
+    }
+
+    .mobile .theme-entry .picker-collection-search-icon-cell #picker-collection-add-user-search-icon-outer,
+    .mobile .theme-entry .picker-collection-remove-container #picker-collection-add-user-search-remove
+    {
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-operation-box .picker-collection-grid-row
+    {
+        height: 5.2rem;
+    }
+
+    .mobile .theme-entry #picker-collection-add-base-position #picker-collection-add-user-operation-box
+    {
+        top: 12.5rem;
+        left: 0;
+        margin-left: 0;
+    }
+
+    /* making selector more specific to prevent override from Lithium control pack picker styling */
+    .mobile .theme-entry #picker-collection-popup-root.popup.dialog, /* sleep picker */
+    .mobile .theme-entry #picker-collection-add-user-popup-root.popup.dialog /* add user picker*/
+    {
+        width: 100% !important; /* override -- inline -- popup manager */
+        height: 100% !important; /* override -- inline -- popup manager */
+    }
+
+    .mobile .theme-entry #picker-collection-sleep-operation-box .picker-collection-sleep-operation-box-basic-options-outer-container,
+    .mobile .theme-entry #picker-collection-sleep-operation-box .picker-collection-sleep-operation-box-date-options-outer-container
+    {
+        width: 90%;
+    }
+
+    .mobile .theme-entry #picker-collection-sleep-header.picker-collection-header-theme-color /* "Select a sleep option" text wrapper node */
+    {
+        margin-left: 0;
+    }
+
+    .mobile .theme-entry #picker-collection-sleep-header span.picker-collection-text-theme-color /* actual text node */
+    {
+        padding-left: 0;
+    }
+
+    .mobile .theme-entry .picker-collection-sleep-operation-box-date-options-outer-container.sleep-date /* date section */
+    {
+        float: none;
+        margin-top: 1.5rem;
+        position: static;
+        width: 38.0rem;
+    }
+
+    .mobile .theme-entry #picker-collection-sleep-layout-right, /* sleep picker right section */
+    .mobile .theme-entry #picker-collection-add-user-layout-right /* add user picker right section */
+    {
+        width: 100%;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-operation-box-body,
+    .mobile .theme-entry #picker-collection-add-user-container.collapsed #picker-collection-add-user-operation-box-body
+    {
+        top: 2.4rem;
+    }
+
+    /* user grid for redirect, add user picker */
+    .mobile .theme-entry #picker-collection-add-user-container.collapsed #picker-collection-add-user-operation-box
+    {
+        margin-left: 0;
+        top: 4.2rem;
+    }
+
+    .mobile .theme-entry #picker-collection-popup-root .sleep-date .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control
+    {
+        width: 22.0rem !important; /* override */
+    }
+
+    .mobile .theme-entry #picker-collection-share-header.picker-collection-header-theme-color /* text node wrapper */
+    {
+        padding-left: 0.5rem;
+    }
+
+    .mobile .theme-entry #picker-collection-share-header span.picker-collection-text-theme-color /* "Shared with" text node */
+    {
+        padding-left: 0;
+    }
+
+    .mobile .theme-entry #picker-collection-share-add-button,
+    .mobile .theme-entry #picker-collection-share-remove-button
+    {
+        width: auto;
+        padding-left: 1.5rem;
+    }
+
+    .mobile .theme-entry #OOFExceptionContext .OOFExceptionUserLookupTable .delegatedUserLookupCell
+    {
+        height: 2.7rem;
+    }
+
+    .mobile .theme-entry .editableUserLookupTextbox
+    {
+        right: 6.0rem;
+    }
+
+    .mobile .theme-entry .OOFExceptionContext .userLookupRow .oof-user-lookup-label
+    {
+        top: 41.0rem;
+    }
+
+    .mobile .theme-entry .worklistUserLookupTextbox
+    {
+        left: -0.8rem;
+    }
+
+    /* action menu popup for portrait is displayed at the bottom of the screen */
+    .mobile .theme-entry .worklist-action-popup
+    {
+        position: absolute;
+        top: auto !important; /* override -- inline (worklist.js) */
+        bottom: 0;
+        left: 0 !important; /* override -- inline (worklist.js) */
+        right: 0;
+        width: auto;
+        height: auto !important; /* override -- inline (worklist.js) */
+    }
+
+    /* In the office status radio wrapper */
+    .mobile .theme-entry .OOFStatusInOfficeWrapper
+    {
+        position: relative;
+    }
+
+    /* Out of office status radio wrapper */
+    .mobile .theme-entry .OOFStatusOutOfOfficeWrapper
+    {
+        position: relative;
+    }
+
+
+    .mobile .theme-entry #OOFGrid .OOFExceptionGridContainer
+    {
+        top: 19.6rem;
+    }
+}
+
+/* Microsoft Nokia Devices - Orientation Targeting */
+@media only screen and (max-width : 480px) and (orientation:portrait)
+{
+    .mobile .theme-entry #picker-collection-add-user-popup-root.ie .worklistUserLookupIconWrapper
+    {
+        right: auto;
+        left: 4.6rem;
+    }
+}
+
+@media only screen and (max-width : 480px) and (orientation:landscape)
+{
+    .mobile .theme-entry #picker-collection-add-user-popup-root.ie .worklistUserLookupIconWrapper
+    {
+        right: auto;
+        left: 20.6rem;
+    }
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+    .mobile .theme-entry .picker-collection-sleep-operation-box-date-options-outer-container.sleep-date
+    {
+        right: 5.5rem;
+        left: auto;
+        width: 22rem;
+    }
+
+    .mobile .theme-entry .picker-collection-sleep-operation-box-basic-options-outer-container
+    {
+        width: 22rem;
+    }
+    /* sleep picker left pane (icon only) */
+    .mobile .theme-entry #picker-collection-popup-root #picker-collection-sleep-layout-left
+    {
+        width: 5.0rem;
+    }
+
+    /* share picker add/remove button */
+    .mobile .theme-entry #picker-collection-share-add-button,
+    .mobile .theme-entry #picker-collection-share-remove-button
+    {
+        width: 12.0rem;
+        left: 6.2rem;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-container .picker-collection-search-criteria-cell 
+    {
+        width: 42.2rem;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-advanced-search-dropdown-match-wrapper,
+    .mobile .theme-entry #picker-collection-add-user-advanced-search-dropdown-label-wrapper
+    {
+        margin-left: 0.5rem;
+    }
+
+    .mobile .theme-entry #picker-collection-share-header .picker-collection-text-theme-color
+    {
+        margin-left: 1.0rem;
+    }
+
+    .mobile .theme-entry #picker-collection-redirect-icon,
+    .mobile .theme-entry #picker-collection-share-icon,
+    .mobile .theme-entry #picker-collection-add-user-icon
+    {
+        margin: 0.5rem 1.5rem 0.5rem 0.5rem;
+        display: inline-block;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-advanced-search-string-display-text
+    {
+        padding-left: 0;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-advanced-search-label-display-text
+    {
+        position: relative;
+        left: -0.5rem;
+    }
+
+    .mobile .theme-entry .picker-collection-remove-container,
+    .mobile #picker-collection-add-user-advanced-search-dropdown-match-wrapper,
+    .mobile #picker-collection-add-user-advanced-search-dropdown-label-wrapper
+    {
+        margin-right: 0;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-search-display-text
+    {
+        padding-left: 0;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-container .picker-collection-grid-row-user-email
+    {
+        left: 4.0rem;
+    }
+
+    .mobile .theme-entry #picker-collection-share-operation-box
+    {
+        left: 6.3rem;
+    }
+
+    .mobile .theme-entry #oof-delegate-picker-box
+    {
+    
+    }
+
+    .mobile .theme-entry .worklistUserLookupTextbox
+    {
+        left: 1.0rem !important;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-container #picker-collection-add-user-operation-box
+    {
+        margin-left: 0;
+        left: 6.0rem;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-container.collapsed #picker-collection-add-user-operation-box
+    {
+        top: 4.7rem;
+        left: 6.0rem;
+    }
+
+    /* landscape only - force user to scroll to give more space to process tree box */
+    .mobile .theme-entry #addOOFException .scroll-wrapper
+    {
+        overflow: auto;
+    }
+    /* landscape only - give enough space for process tree box */
+    .mobile .theme-entry .oof-exception-workflow-row
+    {
+        height: 15rem;
+    }
+
+    /* In the office status radio wrapper */
+    .mobile .theme-entry .OOFStatusInOfficeWrapper
+    {
+        display: inline-block;
+    }
+
+    /* Out of office status radio wrapper */
+    .mobile .theme-entry .OOFStatusOutOfOfficeWrapper
+    {
+        display: inline-block;
+    }
+
+    .mobile .theme-entry #OOFGrid .toolbar
+    {
+        height: 5.2rem;
+    }
+
+    .mobile .theme-entry #OOFGrid .OOFExceptionGridContainer
+    {
+        top: 16.2rem;
+    }
+}
+
+/* #region ANDROID ON SCREENKEY BOARD */
+/* Android specific when on-screen keyboard is shown, portait media query is ignored and landscape css is applied when it shouldn't be. Override it here */
+@media only screen and (max-width : 360px)
+{
+    .mobile .theme-entry #picker-collection-redirect-icon:not(*:root),
+    .mobile .theme-entry #picker-collection-add-user-icon:not(*:root),
+    .mobile .theme-entry #picker-collection-add-user-layout-left
+    {
+        display: none;
+    }
+
+    .mobile .theme-entry #picker-collection-add-user-layout-right, /* redirect, add user picker */
+    .mobile .theme-entry #picker-collection-layout-right /* share picker */
+    {
+        width: 100%;
+    }
+
+    /* worklist main - search icons */
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchBoxTD .SearchClear
+    {
+        top: 0;
+        left: 0;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchBar > table
+    {
+        width: 100% !important; /* override -- inline */
+        float: none !important; /* override -- inline */
+        margin: 0.5rem 0 0.5rem 0 !important; /* override -- inline */
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .searchBar > table > tbody > tr > td:first-child
+    {
+        display: none;
+    }
+
+    .mobile .theme-entry .worklistUserLookupTextbox
+    {
+        left: -5.5rem !important;
+        width: calc(100% - 1.3rem);
+    }
+
+    .mobile .theme-entry #picker-collection-add-base-position #picker-collection-add-user-operation-box
+    {
+        margin-left: 0;
+    }
+}
+/* #endregion ANDROID ON SCREENKEY BOARD */
+
+/*#endregion RESPONSIVE BREAKING POINTS */

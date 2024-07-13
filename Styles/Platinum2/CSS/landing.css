@@ -1,0 +1,116 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+.landing-top-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  overflow: hidden;
+}
+.landing-top-box-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 24px;
+  overflow: hidden;
+}
+.landing-top-box-header-l {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  overflow: hidden;
+  background: transparent url(../Images/TitleBar/titlebar_left_corners.png) no-repeat left top;
+}
+.landing-top-box-header-c {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  bottom: 0;
+  right: 4px;
+  overflow: hidden;
+  background: transparent url(../Images/TitleBar/titlebar_repeater.png) repeat-x left top;
+}
+.landing-top-box-header-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  overflow: hidden;
+  background: transparent url(../Images/TitleBar/titlebar_right_corners.png) no-repeat right top;
+}
+.landing-step-box-header-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 0 3px;
+}
+.landing-top-box-body {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.landing-top-box-body-l,
+.landing-top-box-body-r {
+  display: none;
+}
+.landing-top-box-body-c {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.landing-top-box-footer {
+  display: none;
+}
+/* Landing Main Box Styling */
+
+.landing-main-box {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.landing-main-box-header,
+.landing-main-box-footer {
+  display: none;
+}
+.landing-main-box-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.landing-main-box-body-l,
+.landing-main-box-body-r {
+  display: none;
+}
+.landing-main-box-body-c {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

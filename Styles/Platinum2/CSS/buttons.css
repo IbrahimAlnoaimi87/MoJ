@@ -1,0 +1,617 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+.clear {
+  /* Generic container (e.g. <div></div>) for floating buttons */
+  overflow: hidden;
+  width: 100%;
+}
+a.button {
+  color: #4e5758;
+  display: inline-block;
+  height: 25px;
+  line-height: 23px;
+  text-decoration: none;
+  min-width: 80px;
+  background-color: transparent;
+}
+a.button.disabled {
+  pointer-events: none;
+}
+a.button.loading {
+  pointer-events: none;
+}
+a.button.complete {
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.01);
+  transition: background-color 0.01s 1s linear;
+}
+.button.inline-button {
+  display: inline-block;
+  float: none;
+  height: auto;
+}
+a.dropbutton {
+  display: block;
+  height: 15px;
+  width: 15px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  /*background-size: 15px 60px;*/
+
+}
+a.dropbutton:hover {
+  background-position: 50% -15px;
+}
+/* The button has been pressed, should display arrow upwards */
+
+a.dropbutton.active {
+  background-position: 50% -30px;
+}
+a.dropbutton.active:hover {
+  background-position: 50% -45px;
+}
+.gradient-box {
+  height: 14px;
+  background: #fefefe;
+  /* Old browsers */
+  border: solid 1px white;
+}
+a.clearbutton {
+  display: block;
+  height: 11px;
+  width: 11px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+a.clearbutton:hover {
+  background-position: 50% -11px;
+}
+a.clearbutton.active {
+  background-position: 50% -22px;
+}
+a.clearbutton.active:hover {
+  background-position: 50% -11px;
+}
+a.button .button-wrapper {
+  background-color: #f8f8f8;
+  border: solid 1px transparent;
+  /*set the size ready for color changes later*/
+  display: block;
+  height: 23px;
+  cursor: pointer;
+  color: #4e5758;
+  text-transform: uppercase;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+}
+a.button.disabled .button-wrapper {
+  background-color: #f8f8f8;
+}
+a.button.inline-button .button-wrapper {
+  height: auto;
+}
+a.button span.button-text {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 5px;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+a.button.inline-button span.button-text {
+  padding: 5px 5px;
+}
+a.button:active,
+a.button:focus {
+  outline: none;
+}
+a.button:hover,
+a.button:hover:active,
+a.button.focus:hover {
+  outline: none;
+}
+a.button:hover .button-wrapper,
+a.button:hover:active .button-wrapper,
+a.button.focus:hover .button-wrapper {
+  color: white;
+  background-color: #29b6f6;
+}
+a.button.focus .button-wrapper {
+  border: #1b7ecd solid 1px;
+  color: #4e5758;
+}
+a.button.disabled,
+a.button.disabled:hover,
+a.button.disabled.focus,
+a.button.disabled:active {
+  cursor: default;
+  color: inherit;
+}
+a.button.disabled .button-text,
+a.button.disabled:hover .button-text,
+a.button.disabled.focus .button-text,
+a.button.disabled:active .button-text {
+  cursor: default;
+  border-color: inherit;
+}
+a.button.disabled .button-wrapper,
+a.button.disabled:hover .button-wrapper,
+a.button.disabled.focus .button-wrapper,
+a.button.disabled:active .button-wrapper {
+  cursor: default;
+  opacity: 0.5;
+  color: #4e5758;
+  background-color: #f8f8f8;
+}
+a.button.save,
+a.button.help {
+  color: white;
+  height: 25px;
+  width: 25px;
+  min-width: 25px;
+  max-width: 25px;
+  padding: 0;
+  filter: none;
+}
+.button.save.dark.mono {
+  opacity: 0.8;
+  transition: opacity 0.15s linear;
+}
+.button.save.dark.mono:hover {
+  opacity: 1;
+}
+.button.save.dark.mono.disabled {
+  opacity: 0;
+}
+a.button.save .button-text,
+a.button.help .button-text {
+  display: none;
+}
+a.button.save .button-wrapper,
+a.button.help .button-wrapper {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+a.button.save.focus .button-wrapper,
+a.button.help.focus .button-wrapper {
+  border: solid 1px #4778c7;
+  background-color: transparent;
+}
+a.button.save:hover .button-wrapper,
+a.button.help:hover .button-wrapper {
+  background-color: transparent;
+}
+a.button.save.disabled,
+a.button.help.disabled,
+a.button.save.disabled:hover,
+a.button.help.disabled:hover,
+a.button.save.disabled.focus,
+a.button.help.disabled.focus {
+  opacity: 0.5;
+}
+.button.buttonstyle-icon {
+  color: white;
+  height: 25px;
+  width: 25px;
+  min-width: 25px;
+  max-width: 25px;
+  padding: 0;
+}
+.button.buttonstyle-icon .button-wrapper {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.button.buttonstyle-icon.focus .button-wrapper {
+  background-color: transparent;
+}
+.button.buttonstyle-icon:hover .button-wrapper {
+  background-color: transparent;
+}
+.button.buttonstyle-icon.disabled .button-wrapper {
+  background-color: transparent;
+}
+.button.buttonstyle-icon:hover:active .button-wrapper,
+.button.buttonstyle-icon.focus:hover .button-wrapper {
+  background-color: transparent;
+}
+.button.buttonstyle-primary {
+  min-width: 80px;
+}
+.button.buttonstyle-primary .button-wrapper {
+  color: white;
+  background-color: #2196f3;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.15s;
+}
+.button.buttonstyle-primary.focus .button-wrapper {
+  background-color: #2196f3;
+  border-color: #1b7ecd;
+  color: white;
+}
+.button.buttonstyle-primary:hover .button-wrapper {
+  background-color: #29b6f6;
+}
+.button.buttonstyle-primary.disabled .button-wrapper {
+  background-color: #bfc1c2;
+  color: #f0f0f1;
+}
+.button.save.mono.complete {
+  transition-duration: 0s !important;
+}
+.button.finish.loading .button-wrapper {
+  color: transparent;
+  background-size: 16px 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.button.finish.complete .button-wrapper {
+  color: transparent;
+  background-size: 16px 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.button.save.loading {
+  animation-name: buttons_fadescale;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes buttons_fadescale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.85);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+a.button.lookup {
+  min-width: 30px;
+}
+a.button.lookup .button-wrapper {
+  min-width: 27px;
+}
+a.button.clearsearch,
+a.button.filter {
+  min-width: 20px;
+  max-width: 20px;
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+}
+html[dir=rtl] a.button.clearsearch,
+html[dir=rtl] a.button.filter {
+  margin-left: 0;
+  margin-right: 3px;
+}
+a.button.clearsearch:hover,
+a.button.filter:hover {
+  background: #deeffd;
+}
+a.button.clearsearch .button-text,
+a.button.filter .button-text {
+  display: none;
+}
+a.button.clearsearch.disabled,
+a.button.filter.disabled {
+  cursor: default;
+}
+a.button.clearsearch.disabled .button-wrapper,
+a.button.filter.disabled .button-wrapper {
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.5;
+  height: 18px;
+}
+a.button.clearsearch .button-wrapper,
+a.button.filter .button-wrapper {
+  filter: none;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* Button Bar Styling */
+
+.button-bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  /*LG: Changes this to 'visible' so that shadow is not clipped*/
+
+}
+/* Button Group Styling */
+
+.button-group {
+  width: auto;
+}
+.button-group.left {
+  float: left;
+}
+.button-group.left a.button {
+  margin: 0 3px 0 0;
+}
+.button-group.right {
+  float: right;
+  margin-right: 0;
+}
+.button-group.right a.button {
+  margin: 0 0 0 3px;
+}
+/* Prevent hover styles while editing a list view in the view settings dialog for the sorting button when the view canvas has been cleared*/
+
+#vdbtnSortOptions.disabled,
+#vdbtnSortOptions.disabled .button-wrapper,
+#vdbtnSortOptions.disabled .button-wrapper:hover {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #fefefe;
+  color: #343e41;
+}
+/* Prevent hover styles while editing a list view in the view settings dialog for the filter button when the view canvas has been cleared*/
+
+#vdbtnFilterOptions.disabled,
+#vdbtnFilterOptions.disabled .button-wrapper,
+#vdbtnFilterOptions.disabled .button-wrapper:hover {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #fefefe;
+  color: #343e41;
+}
+/* Button Element Styling */
+
+button,
+button[disabled],
+button[disabled]:hover {
+  border: solid 1px #adae9c;
+  background: #fefefe;
+  color: #343e41;
+  cursor: pointer;
+  height: 25px;
+  min-width: 60px;
+  padding: 0 5px;
+}
+button:hover {
+  background: #29b6f6;
+  color: white;
+}
+button:active,
+button.focus {
+  background: #feffff;
+  border: #1b7ecd solid 1px;
+  color: #343e41;
+  outline: none;
+}
+button[disabled],
+button[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  a.dropbutton {
+    background-image: url("../Images/Buttons/ShowHideButton.png");
+  }
+  a.clearbutton {
+    background-image: url("../Images/Buttons/ClearSearchButton.png");
+  }
+  .button.save span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Save16.png");
+  }
+  .button.save:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Save_Hover16.png");
+  }
+  .button.save.dark.mono span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Save_Alt16.png");
+  }
+  .button.save.dark.mono:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Save_Alt16.png");
+  }
+  .button.leftpaneltoggle span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/ExpandPanel16.png");
+  }
+  .button.leftpaneltoggle:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/ExpandPanel_Hover16.png");
+  }
+  .button.leftpaneltoggle.st-toggle-on span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/CollapsePanel16.png");
+  }
+  .button.leftpaneltoggle.st-toggle-on:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/CollapsePanel_Hover16.png");
+  }
+  .button.leftpaneltoggle.dark span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/ExpandPanel_Alt16.png");
+  }
+  .button.leftpaneltoggle.dark:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/ExpandPanel_Hover_Alt16.png");
+  }
+  .button.leftpaneltoggle.dark.st-toggle-on span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/CollapsePanel_Alt16.png");
+  }
+  .button.leftpaneltoggle.dark.st-toggle-on:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/CollapsePanel_Hover_Alt16.png");
+  }
+  a.button.help span.button-wrapper {
+    background-image: url("../Images/Icons/EditToolbox/Help16.png");
+  }
+  a.button.help:hover:not(.disabled) span.button-wrapper {
+    background-image: url("../Images/Icons/EditToolbox/Help_Hover16.png");
+  }
+  a.button.externalLink span.button-text::after {
+    background-image: url("../Images/Icons/Management/ExternalLink_Dark16.png");
+  }
+  a.button.externalLink:hover:not(.disabled) span.button-text::after {
+    background-image: url("../Images/Icons/Management/ExternalLink_Alt16.png");
+  }
+  a.button.finish.loading .button-wrapper {
+    background-image: url("../Images/Icons/Animated/LoadingControl_f8f8f8_16.gif");
+  }
+  a.button.finish.complete .button-wrapper {
+    background-image: url("../Images/Icons/Dropdownset/SelectedRowIndicator16.png");
+  }
+  a.button.finish.buttonstyle-primary.loading .button-wrapper {
+    background-image: url("../Images/Icons/Animated/LoadingControl_2196f3_16.gif");
+  }
+  a.button.finish.buttonstyle-primary.complete .button-wrapper {
+    background-image: url("../Images/Icons/Dropdownset/SelectedRowIndicator_Hover16.png");
+  }
+  a.button.clearsearch span.button-wrapper,
+  a.button.clearsearch:hover span.button-wrapper,
+  a.button.clearsearch:hover:active span.button-wrapper,
+  a.button.clearsearch:hover:focus span.button-wrapper {
+    background-image: url("../Images/Icons/ClearSearch16.png");
+  }
+  a.button.clearsearch.disabled span.button-wrapper,
+  a.button.clearsearch.disabled:hover span.button-wrapper,
+  a.button.clearsearch.disabled:hover:focus span.button-wrapper,
+  a.button.clearsearch.disabled:hover:active span.button-wrapper,
+  a.button.clearsearch.disabled:focus span.button-wrapper,
+  a.button.clearsearch.disabled:active span.button-wrapper {
+    background-image: url("../Images/Icons/ClearSearch16.png");
+  }
+  a.button.filter span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Filter16.png");
+  }
+  a.button.filter.menu-active span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Filter16.png");
+  }
+  a.button.filter.active span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Filter_Modified16.png");
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  a.dropbutton {
+    background-image: url("../Images/Buttons/ShowHideButton@2x.png");
+  }
+  a.clearbutton {
+    background-image: url("../Images/Buttons/ClearSearchButton@2x.png");
+  }
+  .button.save span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Save16@2x.png");
+  }
+  .button.save:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Save_Hover16@2x.png");
+  }
+  .button.save.dark.mono span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Save_Alt16@2x.png");
+  }
+  .button.save.dark.mono:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Save_Alt16@2x.png");
+  }
+  .button.leftpaneltoggle span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/ExpandPanel16@2x.png");
+  }
+  .button.leftpaneltoggle:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/ExpandPanel_Hover16@2x.png");
+  }
+  .button.leftpaneltoggle.st-toggle-on span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/CollapsePanel16@2x.png");
+  }
+  .button.leftpaneltoggle.st-toggle-on:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/CollapsePanel_Hover16@2x.png");
+  }
+  .button.leftpaneltoggle.dark span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/ExpandPanel_Alt16@2x.png");
+  }
+  .button.leftpaneltoggle.dark:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/ExpandPanel_Hover_Alt16@2x.png");
+  }
+  .button.leftpaneltoggle.dark.st-toggle-on span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/CollapsePanel_Alt16@2x.png");
+  }
+  .button.leftpaneltoggle.dark.st-toggle-on:hover span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/CollapsePanel_Hover_Alt16@2x.png");
+  }
+  a.button.help span.button-wrapper {
+    background-image: url("../Images/Icons/EditToolbox/Help16@2x.png");
+  }
+  a.button.help:hover:not(.disabled) span.button-wrapper {
+    background-image: url("../Images/Icons/EditToolbox/Help_Hover16@2x.png");
+  }
+  a.button.externalLink span.button-text::after {
+    background-image: url("../Images/Icons/Management/ExternalLink_Dark16@2x.png");
+  }
+  a.button.externalLink:hover:not(.disabled) span.button-text::after {
+    background-image: url("../Images/Icons/Management/ExternalLink_Alt16@2x.png");
+  }
+  a.button.finish.loading .button-wrapper {
+    background-image: url("../Images/Icons/Animated/LoadingControl_f8f8f8_16@2x.gif");
+  }
+  a.button.finish.complete .button-wrapper {
+    background-image: url("../Images/Icons/Dropdownset/SelectedRowIndicator16@2x.png");
+  }
+  a.button.finish.buttonstyle-primary.loading .button-wrapper {
+    background-image: url("../Images/Icons/Animated/LoadingControl_2196f3_16@2x.gif");
+  }
+  a.button.finish.buttonstyle-primary.complete .button-wrapper {
+    background-image: url("../Images/Icons/Dropdownset/SelectedRowIndicator_Hover16@2x.png");
+  }
+  a.button.clearsearch span.button-wrapper,
+  a.button.clearsearch:hover span.button-wrapper,
+  a.button.clearsearch:hover:active span.button-wrapper,
+  a.button.clearsearch:hover:focus span.button-wrapper {
+    background-image: url("../Images/Icons/ClearSearch16@2x.png");
+  }
+  a.button.clearsearch.disabled span.button-wrapper,
+  a.button.clearsearch.disabled:hover span.button-wrapper,
+  a.button.clearsearch.disabled:hover:focus span.button-wrapper,
+  a.button.clearsearch.disabled:hover:active span.button-wrapper,
+  a.button.clearsearch.disabled:focus span.button-wrapper,
+  a.button.clearsearch.disabled:active span.button-wrapper {
+    background-image: url("../Images/Icons/ClearSearch16@2x.png");
+  }
+  a.button.filter span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Filter16@2x.png");
+  }
+  a.button.filter.menu-active span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Filter16@2x.png");
+  }
+  a.button.filter.active span.button-wrapper {
+    background-image: url("../Images/Icons/Toolbar/Filter_Modified16@2x.png");
+  }
+}
+/*#region LG Cheeky changes*/
+
+a.button.filter .button-wrapper,
+a.button.clearsearch .button-wrapper {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/*#endregion*/
+

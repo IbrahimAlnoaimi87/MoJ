@@ -1,0 +1,1603 @@
+#picker-collection-add-user-search-text-field:hover
+{
+	border: none;
+}
+
+#picker-collection-share-remove-icon
+{
+	background-image: url(pickerCollection/deleteblue16.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding-left: 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .picker-collection-grid-column-header-divider
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	float: none;
+	margin: 0;
+}
+
+.theme-entry .picker-collection-share-toolbar-button
+{
+	height: auto;
+	line-height: normal;
+	float: none;
+}
+
+.theme-entry .picker-collection-share-toolbar-button span
+{
+	line-height: normal;
+}
+
+#picker-collection-share-add-button
+{
+	width: 50px;
+	height: 30px;
+	padding-left: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#picker-collection-share-remove-button
+{
+	position: relative;
+	top: 0;
+	left: 10px;
+	height: 30px;
+	padding-left: 0;
+}
+
+#picker-collection-add-user-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	margin: 0;
+}
+
+#picker-collection-add-user-upper-pane a
+{
+	text-decoration: none;
+}
+
+.theme-entry .picker-collection-remove-container
+{
+	margin-right: 4px;
+}
+
+.theme-entry .picker-collection-search-outer-wrapper
+{
+	position: relative;
+}
+
+.theme-entry #picker-collection-add-user-advanced-search-dropdown-match-wrapper
+{
+	margin-top: 1px;
+}
+
+.theme-entry .picker-collection-search-top
+{
+	margin-top: 0;
+}
+
+.theme-entry .picker-collection-search-bottom
+{
+	margin-bottom: 0;
+}
+
+#picker-collection-add-user-search-text-field
+{
+	width: 100%;
+	height: 20px;
+	position: relative;
+	top: 0;
+	padding-left: 3px;
+	border: none;
+}
+
+	#picker-collection-add-user-search-text-field:focus
+	{
+		border: none;
+	}
+
+#picker-collection-add-user-search-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	left: 2px;
+	top: 2px;
+}
+
+#picker-collection-add-user-advanced-search-string-display-text
+{
+	padding-left: 5px;
+}
+
+#picker-collection-add-user-advanced-search .input-control.select-box.dropdown-box
+{
+	width: 357px;
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	left: 29px;
+	height: 30px;
+}
+
+#picker-collection-add-user-advanced-search-label
+{
+	height: auto;
+}
+
+#picker-collection-add-user-advanced-search-label-display-text
+{
+	padding-left: 5px;
+}
+
+#picker-collection-add-user-advanced-search-label .input-control.select-box.dropdown-box
+{
+	width: 357px;
+	display: inline-block;
+	position: relative;
+	top: 6px;
+	left: 34px;
+}
+
+.theme-entry .picker-collection-add-user-advanced-search-option-label-expander-up
+{
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -9px;
+}
+
+.theme-entry .picker-collection-add-user-advanced-search-option-label-expander-down
+{
+	background-repeat: no-repeat;
+	background-position: 0 -15px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -9px;
+}
+
+#picker-collection-add-user-search-label-display-text
+{
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+	top: 0;
+}
+
+.theme-entry #picker-collection-add-user-operation-box-header span
+{
+	cursor: default;
+	font-size: 11px;
+	padding-left: 0;
+}
+
+.theme-entry #picker-collection-add-user-search-display-text,
+.theme-entry #picker-collection-add-user-advanced-search-string-display-text,
+.theme-entry #picker-collection-add-user-advanced-search-label-display-text,
+.theme-entry #picker-collection-share-header .picker-collection-text-theme-color
+{
+	cursor: default;
+}
+
+.theme-entry a.picker-collection-button-disabled:hover
+{
+	background: none !important;
+}
+
+/* grid area for displaying user info */
+.theme-entry #picker-collection-add-user-operation-box-body,
+.theme-entry #picker-collection-add-user-container.collapsed #picker-collection-add-user-operation-box-body,
+.theme-entry .oof-delegated-user-list-body
+{
+	border-color: transparent;
+	margin-left: 0;
+}
+
+/* add user picker user grid */
+.theme-entry #picker-collection-add-user-container #picker-collection-add-user-operation-box
+{
+	top: 90px;
+	margin: 0;
+}
+
+.theme-entry #picker-collection-add-user-container.collapsed #picker-collection-add-user-operation-box
+{
+	top: 32px;
+}
+
+.theme-entry .picker-collection-grid-row:hover,
+.theme-entry .picker-collection-grid-row.selected
+{
+	cursor: pointer;
+}
+
+#picker-collection-add-user-popup-root .popup-header-text
+{
+	cursor: default;
+}
+
+.picker-collection-sleep-operation-box-basic-options-container li
+{
+	height: auto;
+}
+
+#picker-collection-sleep-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	margin: 5px;
+}
+
+#picker-collection-sleep-layout-left
+{
+	height: 5px;
+}
+
+#picker-collection-sleep-layout-right
+{
+	width: 90%;
+	float: right;
+}
+
+#picker-collection-sleep-header span
+{
+	cursor: default;
+	font-size: 11px;
+	position: relative;
+	padding-left: 0;
+}
+
+#picker-collection-sleep-operation-box
+{
+	float: none;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+	#picker-collection-sleep-operation-box .input-control.radio
+	{
+		margin-top: 7px;
+		margin-left: 3px;
+	}
+
+.theme-entry #picker-collection-popup-root.webkit .picker-collection-sleep-operation-box-basic-options-container ul
+{
+	list-style: none;
+	position: relative;
+	top: -3px;
+	left: -15px;
+	margin: 0;
+}
+
+#picker-collection-popup-root.ie .picker-collection-sleep-operation-box-basic-options-container ul,
+#picker-collection-popup-root.moz .picker-collection-sleep-operation-box-basic-options-container ul
+{
+	list-style: none;
+	position: relative;
+	top: -14px;
+	left: -15px;
+}
+
+#picker-collection-popup-root.moz .picker-collection-sleep-operation-box-date-options-outer-container,
+#picker-collection-popup-root.ie .picker-collection-sleep-operation-box-date-options-outer-container
+{
+	position: relative;
+	top: -8px;
+}
+
+.theme-entry #picker-collection-popup-root.webkit .picker-collection-sleep-operation-box-date-options-outer-container .input-control.radio
+{
+	position: relative;
+	top: -7px;
+	left: 0;
+}
+
+#picker-collection-popup-root.moz .picker-collection-sleep-operation-box-date-options-outer-container .input-control.radio,
+#picker-collection-popup-root.ie .picker-collection-sleep-operation-box-date-options-outer-container .input-control.radio
+{
+	position: relative;
+	top: -12px;
+	left: -1px;
+}
+
+#picker-collection-popup-root .popup-header-text
+{
+	cursor: default;
+}
+
+#picker-collection-popup-root.ie .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control,
+#picker-collection-popup-root.webkit .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control
+{
+	width: 343px;
+	position: relative;
+}
+
+#picker-collection-popup-root.moz .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control
+{
+	width: 323px;
+	position: relative;
+}
+
+.picker-collection-sleep-operation-box-date-options-container .datapicker-right
+{
+	margin-left: 0;
+}
+
+#FilterConfig_FilterPanel .toolbar,
+#FilterConfig_ColumnPanel .toolbar
+{
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.theme-entry .worklist-filter-date-picker-calender-icon
+{
+	background: url("../Sharepoint 2013/Images/Icons/datepicker16.png") no-repeat 0 0 transparent;
+	background-position: 2px 1px;
+	display: block;
+	text-indent: -9999px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 20px;
+	height: 16px;
+	margin: 3px 2px;
+}
+
+#picker-collection-popup-root.moz .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control,
+#picker-collection-popup-root.ie .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control
+{
+	top: 0;
+}
+
+#picker-collection-popup-root.moz .picker-collection-sleep-operation-box-basic-options-container li,
+#picker-collection-popup-root.ie .picker-collection-sleep-operation-box-basic-options-container li
+{
+	height: 40px;
+}
+
+#picker-collection-add-user-search-text-field-wrapper
+{
+	position: relative;
+	width: 100%;
+}
+
+.theme-entry .picker-collection-expander-container
+{
+	display: block;
+	margin-top: 0;
+	margin-right: 0;
+	height: 20px;
+	width: 20px;
+}
+
+.theme-entry .search-expander
+{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+#picker-collection-share-header span
+{
+	font-size: 11px;
+	padding-left: 0;
+}
+
+.theme-entry .popup .picker-collection-header-theme-color
+{
+	line-height: inherit;
+	margin: 0;
+}
+
+.theme-entry .picker-collection-header-theme-color .picker-collection-text-theme-color
+{
+	position: relative;
+	top: 5px;
+	color: #0072c6;
+}
+
+.theme-entry .picker-collection-header-theme-color .picker-collection-share-toolbar-button:hover .picker-collection-text-theme-color
+{
+	color: #004d85;
+}
+
+#picker-collection-share-add-icon
+{
+	background-image: url(pickerCollection/addbtn.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding-left: 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .picker-collection-grid-row.selected
+{
+	background-color: #cde6f7;
+}
+
+.theme-entry .oof-delegated-user-list-row:hover,
+.theme-entry .picker-collection-grid-row:hover
+{
+	background-color: #e7f7ff;
+}
+
+.theme-entry #picker-collection-share-operation-box-header
+{
+	float: none;
+	width: auto;
+	height: 25px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #DBDBDB;
+}
+
+.theme-entry #picker-collection-share-operation-box
+{
+	margin: 0;
+}
+
+.theme-entry #picker-collection-share-operation-box-body
+{
+	top: 36px;
+	border: none;
+}
+
+.theme-entry .oof-delegated-user-list-row-user-name
+{
+	top: 11px;
+}
+
+.theme-entry .oof-delegated-user-list-row-user-image,
+.theme-entry .picker-collection-grid-row-user-image
+{
+	background-image: url(PickerCollection/UserSP2013.png);
+	top: 9px;
+}
+
+.theme-entry .picker-collection-grid-row-user-display-name
+{
+	color: #4C8BE9;
+	padding-top: 0;
+}
+
+
+/* #region CP WORKLIST CUSTOM STYLE */
+/* CP popup style to remove dialog's top gray part */
+#picker-collection-popup-root .popup-body,
+#picker-collection-add-user-popup-root .popup-body,
+#worklistOOFDialogDelegatedUsers .popup-body,
+#OOFConfig .popup-body,
+#addOOFException .popup-body
+{
+	border-top: 0 solid #fff;
+}
+
+.theme-entry #OOFConfig .popup-body .popup-body-c
+{
+	bottom: 2px;
+}
+
+#picker-collection-popup-root .popup-header-text,
+#picker-collection-add-user-popup-root .popup-header-text,
+#worklistOOFDialogDelegatedUsers .popup-header-text,
+#OOFConfig .popup-header-text,
+#addOOFException .popup-header-text
+{
+	background-color: #fff;
+	font-size: 18px;
+	padding-top: 5px;
+}
+
+#picker-collection-popup-root .popup-header-buttons,
+#picker-collection-add-user-popup-root .popup-header-buttons,
+#worklistOOFDialogDelegatedUsers .popup-header-buttons,
+#OOFConfig .popup-header-buttons,
+#addOOFException .popup-header-buttons
+{
+	background-color: #fff;
+}
+
+/* #endregion CP WORKLIST CUSTOM STYLE */
+
+#picker-collection-popup-root .popup-footer-c,
+#picker-collection-add-user-popup-root .popup-footer-c,
+#worklistOOFDialogDelegatedUsers .popup-footer-c,
+#OOFConfig .popup-footer-c,
+#addOOFException .popup-footer-c
+{
+	border-top: 1px solid #DBDBDB !important;
+}
+
+#picker-collection-add-user-upper-pane
+{
+	height: 28px;
+}
+
+.msie .theme-entry #addOOFException .editableUserLookupTextbox, 
+.mozilla .theme-entry #addOOFException .editableUserLookupTextbox
+{
+	left: 0;
+}
+
+.msie .theme-entry #addOOFException .workflowContainer
+{
+	left: 5px;
+}
+
+.msie .theme-entry #addOOFException .oof-td-field,
+.mozilla .theme-entry #addOOFException .oof-td-field
+{
+	padding-left: 5px;
+}
+
+.theme-entry .ie .picker-collection-lookup-cell
+{
+	left: 118px;
+}
+
+.theme-entry .ie .worklistUserLookupClearIconWrapper
+{
+	left: 334px;
+}
+
+.chrome .theme-entry .worklistUserLookupClearIconWrapper
+{
+	left: 333px;
+}
+
+.theme-entry .ie .worklistUserLookupIconWrapper
+{
+	left: 313px;
+}
+
+.theme-entry #picker-collection-add-user-upper-pane
+{
+	padding-bottom: 5px;
+	width: auto;
+	margin-top: 0;
+	left: 0;
+}
+
+.theme-entry #picker-collection-add-user-container .picker-collection-search-criteria-cell 
+{
+	width: 358px;
+}
+
+.theme-entry #picker-collection-add-user-upper-pane .picker-collection-search-criteria-expander
+{
+	background-position: center;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	position: static;
+}
+
+.theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-down
+{
+	background-image: url(arrow_down_normal.png);
+}
+
+.theme-entry #picker-collection-add-user-upper-pane .picker-collection-add-user-search-option-expander-up
+{
+	background-image: url(arrow_up_normal.png);
+}
+
+.theme-entry #picker-collection-add-user-operation-box-header
+{
+	border-bottom: 1px solid #DBDBDB;
+	border-style: none;
+	border-width: 0;
+}
+
+
+#picker-collection-add-user-basic-search a
+{
+	text-decoration: none;
+}
+
+#picker-collection-add-user-search-text-field::-ms-clear
+{
+	width: 0;
+	height: 0;
+}
+
+
+#worklistAddUserPickerUserLookup
+{
+	border-right-color: transparent;
+}
+
+
+#picker-collection-add-user-search-icon-outer
+{
+	display: inline-block;
+	width: 22px;
+	height: 23px;
+	position: relative;
+	top: 0;
+	border-top: 1px solid #acaf9c;
+	border-bottom: 1px solid #acaf9c;
+	margin-left: 4px;
+}
+
+#picker-collection-add-user-search-remove
+{
+	position: relative;
+	border-top: 1px solid #acaf9c;
+	border-bottom: 1px solid #acaf9c;
+	border-right: 1px solid #acaf9c;
+	border-left-width: 0;
+	border-left-style: none;
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	top: 0;
+	left: 0;
+	margin-right: 5px;
+}
+
+#picker-collection-add-user-advanced-search .input-control.select-box.dropdown-box .input-control-m-c.styling-inner-wrapper,
+#picker-collection-add-user-advanced-search .input-control-buttons a.dropdown.styling-inner-wrapper
+{
+	height: 27px;
+}
+
+	#picker-collection-add-user-advanced-search .input-control-buttons a.dropdown.styling-inner-wrapper span span
+	{
+		position: relative;
+		top: 3px;
+	}
+
+#picker-collection-add-user-advanced-search .input-control-body .styling-inner-wrapper .input-control-wrapper a span
+{
+	position: relative;
+	top: 3px;
+}
+
+#picker-collection-add-user-advanced-search-string-display-text,
+#picker-collection-add-user-advanced-search-label-display-text
+{
+	position: relative;
+	padding-left: 0;
+}
+
+.picker-collection-search-label-cell
+{
+	min-width: 100px;
+	max-width: 100px;
+	white-space: nowrap;
+}
+
+.picker-collection-search-expander-cell, .picker-collection-search-expander-cell-empty
+{
+	width: 15px;
+}
+
+.theme-entry .search-expander:hover
+{
+	background-color: #e6f2fa;
+}
+
+.theme-entry .picker-collection-search-expander-cell:hover
+{
+	background-color: transparent;
+}
+
+.picker-collection-search-criteria-cell
+{
+	width: 100%;
+}
+
+#picker-collection-add-user-popup-root,
+#picker-collection-popup-root
+{
+	height: 380px !important;
+}
+
+	#picker-collection-popup-root.webkit
+	{
+		height: 340px !important;
+	}
+
+.picker-collection-sleep-operation-box-date-options-outer-container
+{
+	position: relative;
+	top: 0;
+}
+
+.picker-collection-sleep-operation-box-basic-options-container ul
+{
+	list-style: none;
+	position: relative;
+	left: -20px;
+	top: -10px;
+}
+
+#picker-collection-sleep-operation-box-date-options-container .calendar-control .input-control-body
+{
+	width: 430px;
+	position: relative;
+	left: 20px;
+}
+
+#picker-collection-sleep-operation-box-date-options-container .calendar-control .input-control-buttons
+{
+	top: 2px;
+}
+
+#picker-collection-sleep-operation-box-date-options-container .calendar-control .input-control-wrapper input
+{
+	height: 25px;
+}
+
+#picker-collection-sleep-operation-box-date-options-container .calendar-control .input-control-watermark
+{
+	top: 3px;
+}
+
+#picker-collection-grid-layout-settings-move-item-right-icon
+{
+	background-image: url(Platinum/pickerCollection/ArrowRight32.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+	top: 150px;
+	left: 10px;
+	position: absolute;
+}
+
+#picker-collection-grid-layout-settings-move-item-left-icon
+{
+	background-image: url(Platinum/pickerCollection/ArrowLeft32.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+	top: 190px;
+	left: 10px;
+	position: absolute;
+}
+
+#picker-collection-grid-layout-settings-move-down-icon
+{
+	background-image: url(Platinum/pickerCollection/ArrowDown16.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	left: 5px;
+	top: 3px;
+}
+
+#picker-collection-grid-layout-settings-move-up-icon
+{
+	background-image: url(Platinum/pickerCollection/ArrowUp16.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	left: 5px;
+	top: 3px;
+}
+
+#tabsfull
+{
+	background-color: #FFFFFF;
+}
+
+.theme-entry #FilterConfig_secondPageInternal a.tab:hover .tab-wrapper,
+.theme-entry #FilterConfig_secondPageInternal a.tab:focus .tab-wrapper
+{
+	background: #eff7ff !important; /* overrides important selector in SharePoint 2013.css (line 5510) */
+}
+
+.theme-entry #FilterConfig_secondPageInternal a.tab.selected,
+.theme-entry #FilterConfig_secondPageInternal a.tab.selected:hover .tab-wrapper,
+.theme-entry #FilterConfig_secondPageInternal a.tab.selected:focus .tab-wrapper
+{
+	background: white !important; /* overrides important selector in SharePoint 2013.css (line 5492) */
+}
+
+.theme-entry #FilterConfig_secondPageInternal .tab-box a.tab .tab-text
+{
+	color: #ababab;
+}
+
+.theme-entry #FilterConfig_secondPageInternal .tab-box a.tab.selected .tab-text
+{
+	color: #31869c;
+}
+
+.theme-entry #FilterConfig_secondPageInternal a.tab:hover .tab-text,
+.theme-entry #FilterConfig_secondPageInternal a.tab:focus .tab-text
+{
+	color: #636563;
+}
+
+#FilterConfig_secondPageOutside .tab
+{
+	border-color: #FFFFFF;
+}
+
+#FilterConfig_secondPageOutside .designTimeOnly .tab
+{
+	border-color: #adae9c;
+}
+
+#FilterConfig_secondPageOutside .tab-box-body
+{
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+#FilterConfig_secondPageOutside .designTimeOnly .tab-box-body
+{
+	border-top-style: none;
+	border-top-width: 0;
+}
+
+#FilterConfig_secondPageOutside .input-control.datepicker
+{
+	cursor: default;
+}
+
+.theme-entry .filterPickerHeader
+{
+	background-color: #FFFFFF;
+	font-size: 18px;
+}
+
+.theme-entry .filterPickerMainBody
+{
+	border-width: 0 1px !important;
+}
+
+.theme-entry .filterPickerHeaderBody
+{
+	background-color: #FFFFFF !important;
+}
+
+#picker-collection-layout-left,
+#picker-collection-layout-right
+{
+	width: auto;
+	float: none;
+}
+
+#picker-collection-share-icon
+{
+	width: 0;
+	height: 0;
+	float: none;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	margin: 5px;
+}
+
+.theme-entry #picker-collection-share-header,
+.theme-entry #picker-collection-sleep-header
+{
+	line-height: normal;
+	float: none;
+	margin: 0;
+}
+
+#picker-collection-add-user-layout-left
+{
+	width: 0;
+	float: left;
+}
+
+#picker-collection-add-user-layout-right
+{
+	width: 100%;
+	float: right;
+}
+
+.theme-entry .picker-collection-search-label-cell
+{
+	width: 50px;
+	height: 28px;
+}
+
+.theme-entry .picker-collection-search-criteria-cell
+{
+	width: 100%;
+}
+
+.theme-entry .picker-collection-add-user-advanced-search-option-label-expander-up,
+.theme-entry .picker-collection-add-user-advanced-search-option-label-expander-down
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	vertical-align: baseline;
+	position: relative;
+	top: 0;
+}
+
+#picker-collection-redirect-icon,
+#picker-collection-sleep-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	margin: 0;
+}
+
+#picker-collection-sleep-layout-left,
+#picker-collection-sleep-layout-right
+{
+	width: auto;
+	float: none;
+}
+
+#picker-collection-sleep-operation-box .input-control.radio,
+.picker-collection-sleep-operation-box-date-options-outer-container .input-control.radio
+{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control
+{
+	width: auto;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.theme-entry .picker-collection-share-toolbar-button.picker-collection-button-disabled:hover .picker-collection-text-theme-color
+{
+	color: #0072c6;
+}
+
+.theme-entry #worklist-control-filter-date-range
+{
+	width: 310px !important;
+	height: 240px !important;
+}
+
+.theme-entry #worklist-control-filter-date-range .specific-date
+{
+    padding: 0 0 10px 0;
+}
+
+#picker-collection-popup-root a.toolbar-button:hover
+{
+	border: 1px solid #92c0e0;
+	background: #e6f2fa;
+	filter: none;
+}
+
+#picker-collection-popup-root a.picker-collection-button-disabled
+{
+	cursor: default;
+	background: none !important;
+}
+
+.theme-entry #picker-collection-sleep-operation-box .input-control.disabled .input-control-m-c
+{
+	border-color: #aeaeda !important;
+}
+
+#addOOFException .popup-body-content,
+#OOFConfig .popup-body-content
+{
+	border: 1px solid transparent;
+}
+
+#OOFGrid .toolbar
+{
+	border: 1px solid transparent;
+}
+
+#OOFConfig .scroll-wrapper
+{
+	overflow: hidden;
+}
+
+#OOFConfig .popup-footer-c
+{
+	border-color: transparent;
+}
+
+#OOFConfig .popup-body-content
+{
+	border-color: transparent;
+}
+
+#OOFGrid .oof-box
+{
+	border: 1px solid #ababab;
+	padding-bottom: 6px;
+}
+
+.theme-entry #OOFGrid .OOFExceptionText
+{
+	font-size: 13px;
+}
+
+
+#OOFExceptionGrid
+{
+	bottom: 5px;
+}
+
+#OOFGrid .OOFDelegatedUserLookup .search
+{
+	height: 21px;
+}
+
+#OOFExceptionContext .OOFExceptionSearchUserLookupBox .input-control-body.styling-left
+{
+	border: solid 1px #adae9c;
+	line-height: 21px;
+	height: 21px;
+	border-right-style: none;
+}
+
+.theme-entry .userLookupRow.highlight_focus .worklistUserLookupIconWrapper,
+.theme-entry .editableUserLookupFocused .editableUserLookupIconWrapper
+{
+	border-top-color: #2a8dd4;
+	border-bottom-color: #2a8dd4;
+}
+
+.theme-entry .userLookupRow.highlight_focus .worklistUserLookupClearIconWrapper,
+.theme-entry .editableUserLookupFocused .editableUserLookupRemoveIconWrapper
+{
+	border-top-color: #2a8dd4;
+	border-bottom-color: #2a8dd4;
+	border-right-color: #2a8dd4;
+}
+
+.theme-entry .highlight_hover .worklistUserLookupIconWrapper
+{
+	border-top-color: #92c0e0;
+	border-bottom-color: #92c0e0;
+}
+
+.theme-entry .highlight_hover .worklistUserLookupClearIconWrapper
+{
+	border-top-color: #92c0e0;
+	border-bottom-color: #92c0e0;
+	border-right-color: #92c0e0;
+}
+
+.theme-entry .editableUserLookupContainer
+{
+	margin-top: 7px;
+}
+
+.theme-entry .userLookupRow.highlight_focus .worklistUserLookupTextbox,
+.theme-entry .editableUserLookupFocused .editableUserLookupTextbox,
+.theme-entry #OOFExceptionContext .SFC.OOFExceptionName:focus,
+.theme-entry #workflowSearchBox.SFC:focus
+{
+	border-color: #2a8dd4;
+}
+
+.theme-entry .highlight_hover .worklistUserLookupTextbox,
+.theme-entry .highlight_hover .editableUserLookupTextbox,
+.theme-entry #OOFExceptionContext .OOFExceptionName:hover,
+.theme-entry #workflowSearchBox:hover
+{
+	border-color: #92c0e0;
+}
+
+#picker-collection-add-user-container .userLookupRow.highlight_hover .search,
+#picker-collection-add-user-container tr.userLookupRow.highlight_focus .search
+{
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+
+#OOFGrid .OOFDelegatedUserLookup .defaultBorderColor,
+#OOFExceptionContext .defaultBorderColor
+{
+	border-color: #ababab;
+}
+
+#OOFGrid .OOFDelegatedUserLookup #picker-collection-add-user-search-remove-icon,
+#OOFExceptionContext .OOFExceptionSearchUserLookupBox #picker-collection-add-user-search-remove-icon
+{
+	top: 2px;
+	left: 3px;
+}
+
+#OOFGrid .pickerCollectionOOFDelegatedUserRemoveAll
+{
+	height: 21px;
+	line-height: 21px;
+	width: 23px;
+	border: 1px solid #acaf9c;
+	border-left-color: transparent;
+	border-left-width: 0;
+	border-left-style: none;
+	margin-right: 5px;
+}
+
+#OOFExceptionContext .pickerCollectionOOFDelegatedUserRemoveAll
+{
+	height: 21px;
+	line-height: 21px;
+	width: 23px;
+	border: 1px solid #acaf9c;
+	border-left-color: transparent;
+	border-left-width: 0;
+	border-left-style: none;
+	margin-right: 0;
+}
+
+	#OOFGrid .pickerCollectionOOFDelegatedUserRemoveAll:hover,
+	#OOFGrid .pickerCollectionOOFDelegatedUserRemoveAll:focus,
+	#OOFExceptionContext .pickerCollectionOOFDelegatedUserRemoveAll:hover,
+	#OOFExceptionContext .pickerCollectionOOFDelegatedUserRemoveAll:focus
+	{
+		background-color: #e6f2fa;
+	}
+
+#addOOFException .popup-footer-c
+{
+	border-color: transparent;
+}
+
+#addOOFException .popup-body-content
+{
+	border-color: transparent;
+}
+
+.theme-entry #addOOFException .OOFExceptionTable input
+{
+	font-size: 13px;
+	font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+}
+
+#OOFGrid .OOFDelegatedUserLookup .search > span > span
+{
+	background-image: url(worklist/Search16.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	left: 0;
+	top: 4px;
+}
+
+#OOFGrid .OOFDelegatedUserLookup .search,
+#OOFExceptionContext .OOFExceptionSearchUserLookupBox .search
+{
+	margin-right: 0;
+	border-right-color: transparent;
+	border-right-width: 0;
+	width: 23px;
+}
+
+#OOFGrid .OOFDelegatedUserLookup .input-control-body.styling-left
+{
+	border: solid 1px #adae9c;
+	height: 21px;
+	line-height: 21px;
+	border-right: solid 0 transparent;
+}
+
+#OOFConfig .oof-td.delegatedUserLookupCell
+{
+	padding-right: 0;
+}
+
+#OOFConfig .oof-td.delegatedUserRemoveCell
+{
+	width: 20px;
+	padding: 0;
+}
+
+.theme-entry .OOFExceptionUserLookupTable
+{
+	left: 5px;
+}
+
+.theme-entry #addOOFException .workflowContainer
+{
+	border: 1px solid #adae9c;
+	left: 5px;
+}
+
+.theme-entry #addOOFException .editableUserLookupRemoveIconWrapper
+{
+	right: 25px;
+}
+
+.theme-entry #addOOFException .editableUserLookupIconWrapper
+{
+	right: 48px;
+}
+
+.theme-entry #addOOFException .editableUserLookupTextbox
+{
+	right: 70px;
+}
+
+.msie .theme-entry #addOOFException .workflowContainer
+{
+	height: 143px;
+}
+
+#addOOFException .activity
+{
+	border: 1px solid #adae9c;
+}
+
+#addOOFException .oof-td-field.delegatedUserRemoveCell
+{
+	padding-left: 0;
+	width: 20px;
+}
+
+.theme-entry #OOFExceptionContext .oof-td.delegatedUserLookupCell
+{
+	padding-right: 0;
+	padding-top: 0;
+	height: 35px;
+}
+
+#OOFExceptionContext .OOFExceptionUserLookupTable .oof-td-label
+{
+	padding-right: 20px;
+}
+
+/*user textbox in OOF and OOF Exception pickers*/
+.popup .delegatedUserLookupCell .OOFUserLookupUsername.selected
+{
+	background: #cde6f7;
+}
+
+.popup .delegatedUserLookupCell .OOFUserLookupUsername:hover
+{
+	background: #e7f7ff;
+}
+
+.theme-entry .editableUserLookupTextbox
+{
+	right: 51px;
+	width: auto;
+	height: 17px;
+	border-style: solid solid solid solid;
+	border-color: #ababab;
+	border-width: 1px 0 1px 1px;
+	padding-left: 3px;
+	padding-top: 4px;
+	background-color: #fff;
+}
+
+.theme-entry .editableUserLookupIconWrapper
+{
+	border-top: solid 1px #ababab;
+	border-bottom: solid 1px #ababab;
+}
+
+.theme-entry .editableUserLookupIconWrapper,
+.theme-entry .editableUserLookupIcon,
+.theme-entry .editableUserLookupRemoveIconWrapper,
+.theme-entry .editableUserLookupRemoveIcon
+{
+	width: 22px;
+	height: 21px;
+}
+
+.theme-entry .editableUserLookupRemoveIcon
+{
+	height: 20px;
+}
+
+.theme-entry .editableUserLookupIcon
+{
+	background-image: url(worklist/Search16.png);
+}
+
+.theme-entry .editableUserLookupRemoveIcon
+{
+	background-image: url(worklist/Clear16.png);
+}
+
+.theme-entry .editableUserLookupIconWrapper,
+.theme-entry .editableUserLookupRemoveIconWrapper,
+.theme-entry .worklistUserLookupIconWrapper,
+.theme-entry .worklistUserLookupClearIconWrapper
+{
+	background-color: transparent;
+	filter: none;
+}
+
+	.theme-entry .editableUserLookupIconWrapper:hover,
+	.theme-entry .editableUserLookupIconWrapper:focus,
+	.theme-entry .editableUserLookupRemoveIconWrapper:hover,
+	.theme-entry .editableUserLookupRemoveIconWrapper:focus,
+	.theme-entry .worklistUserLookupIconWrapper:hover,
+	.theme-entry .worklistUserLookupIconWrapper:focus,
+	.theme-entry .worklistUserLookupClearIconWrapper:hover,
+	.theme-entry .worklistUserLookupClearIconWrapper:focus
+	{
+		background: #eaf6ff;
+		filter: none;
+	}
+
+.theme-entry .editableUserLookupRemoveIconWrapper,
+.theme-entry .worklistUserLookupClearIconWrapper
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: auto;
+	right: 6px;
+	border-top: solid 1px #ababab;
+	border-bottom: solid 1px #ababab;
+	border-right: solid 1px #ababab;
+	background-color: #fff;
+}
+
+.theme-entry #addOOFException .highlight
+{
+	background-color: yellow;
+	display: inline;
+}
+
+/* #region OOF Grid */
+
+.theme-entry #OOFExceptionGrid .scroll-wrapper
+{
+	height: 100px;
+}
+
+.theme-entry #addOOFException .oof-td-field
+{
+	padding-left: 5px;
+}
+
+.theme-entry .oof-exception-filter-row,
+.theme-entry .userLookupRow, .oof-exception-name-row
+{
+	height: 28px;
+}
+
+/* #endregion OOF Grid */
+
+/* #region user lookup */
+.theme-entry .picker-collection-lookup-cell
+{
+	top: 3px;
+	left: 118px;
+}
+
+.theme-entry .moz .picker-collection-lookup-cell
+{
+	top: 2px;
+}
+
+.theme-entry .worklistUserLookupTextbox,
+.theme-entry .moz .worklistUserLookupTextbox,
+.theme-entry .ie .worklistUserLookupTextbox
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 2px;
+	right: 0;
+	height: 21px;
+	width: 309px;
+	padding-left: 3px;
+	border-style: solid none solid solid;
+	border-width: 1px 0 1px 1px;
+	border-color: #ababab;
+}
+
+.theme-entry .worklistUserLookupIconWrapper
+{
+	left: 313px;
+	border-style: solid none solid none;
+	border-width: 1px 0 1px 0;
+	border-color: #ababab;
+}
+
+.theme-entry .worklistUserLookupClearIconWrapper,
+.theme-entry .moz .worklistUserLookupClearIconWrapper
+{
+	left: 334px;
+	border-style: solid solid solid none;
+	border-width: 1px 1px 1px 0;
+	border-color: #ababab;
+}
+
+.theme-entry .worklistUserLookupIconWrapper,
+.theme-entry .worklistUserLookupClearIconWrapper,
+.theme-entry .worklistUserLookupIcon,
+.theme-entry .worklistUserLookupClearIcon
+{
+	width: 21px;
+	height: 21px;
+}
+
+.chrome .theme-entry .worklistUserLookupClearIcon
+{
+	height: 20px;
+}
+
+.theme-entry .worklistUserLookupIcon
+{
+	background-repeat: no-repeat;
+	background-position: 2px 3px;
+	display: inline-block;
+	background-image: url(worklist/Search16.png);
+}
+
+.theme-entry .worklistUserLookupClearIcon
+{
+	background-repeat: no-repeat;
+	background-position: 2px;
+	display: inline-block;
+	background-image: url(worklist/Clear16.png);
+}
+
+.theme-entry .picker-collection-search-expander-cell
+{
+	width: 15px;
+}
+
+.theme-entry .editableUserLookupIconWrapper,
+.theme-entry .moz .editableUserLookupIconWrapper
+{
+	right: 29px;
+}
+
+.theme-entry .moz .editableUserLookupRemoveIconWrapper,
+.theme-entry .moz .worklistUserLookupClearIconWrapper
+{
+	right: 7px;
+}
+
+.theme-entry .moz .worklistUserLookupIconWrapper
+{
+	left: 314px;
+}
+
+.chrome .theme-entry .picker-collection-search-section .input-control.select-box .input-control-buttons
+{
+	position: relative;
+	right: 1px;
+	float: right;
+}
+/* #endregion user lookup */
+
+/* #region RTL layout */
+
+html[dir=rtl] .editableUserLookupRemoveIconWrapper
+{
+	border-right: none;
+	border-left: solid 1px #acaf9c;
+	left: 7px;
+}
+
+html[dir=rtl] .theme-entry .editableUserLookupTextbox
+{
+	border-right-width: 1px;
+	border-left-width: 0;
+}
+
+html[dir=rtl] #addOOFException .editableUserLookupIconWrapper
+{
+	left: 43px;
+}
+
+html[dir=rtl] .theme-entry .worklistUserLookupClearIconWrapper
+{
+	border-right: none;
+	border-left: 1px solid #ababab;
+	right: 336px;
+}
+
+html[dir=rtl] .worklistUserLookupIconWrapper
+{
+	right: 315px;
+}
+
+html[dir=rtl] .theme-entry .userLookupRow .worklistUserLookupTextbox
+{
+	border-left: none;
+	border-right: 1px solid #ababab;
+	right: 4px;
+}
+
+html[dir=rtl] .theme-entry #picker-collection-add-user-upper-pane
+{
+	right: 0;
+}
+
+html[dir=rtl] .theme-entry #picker-collection-share-header,
+html[dir=rtl] .theme-entry #picker-collection-sleep-header
+{
+	float: none;
+}
+
+html[dir=rtl].chrome .theme-entry .picker-collection-search-section .input-control.select-box .input-control-buttons
+{
+	position: relative;
+	left: 1px;
+	right: 0;
+	float: left;
+}
+
+html[dir=rtl] #picker-collection-share-add-button
+{
+	right: 0;
+	padding-right: 0;
+}
+
+html[dir=rtl] #picker-collection-share-remove-button
+{
+	right: 10px;
+}
+/* #endregion RTL layout */
+
+/* #region FILTER SORT PICKER */
+
+.theme-entry #FilterConfig_secondPage .tab
+{
+    border: 1px solid transparent;
+}
+
+.theme-entry #FilterConfig_secondPage .tab:hover .tab-wrapper
+{
+    border: 1px solid transparent;
+}
+
+/* #endregion FILTER SORT PICKER */

@@ -1,0 +1,89 @@
+﻿/* Button Styling */
+.theme-entry .button-wrapper a.button,
+.theme-entry .button-wrapper.disabled a.button,
+.theme-entry .button-wrapper.disabled a.button:hover,
+.theme-entry .button-wrapper.disabled a.button:focus,
+.theme-entry .button-wrapper.disabled a.button:active,
+.theme-entry .button-wrapper.disabled a.button:hover:focus .button-wrapper,
+.theme-entry .button-wrapper.disabled a.button:hover:active .button-wrapper,
+.theme-entry .button-wrapper a.button:hover,
+.theme-entry a.button:hover:focus .button-wrapper,
+.theme-entry a.button:hover:active .button-wrapper,
+.theme-entry a.button:focus .button-wrapper,
+.theme-entry a.button:active .button-wrapper,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:active, 
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled, 
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover, 
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active
+{
+	filter:none;
+}
+
+/* Toolbar Styling */
+.theme-entry .toolbar-wrapper,
+.theme-entry .toolbars.single .toolbar .toolbar-wrapper,
+.theme-entry .toolbars.double .toolbar .toolbar-wrapper,
+.theme-entry .toolbars.double .toolbar:first-child .toolbar-wrapper,
+.theme-entry a.toolbar-button.selected,
+.theme-entry a.toolbar-button:hover,
+.theme-entry a.toolbar-button:focus,
+.theme-entry a.toolbar-button:active
+{
+	filter:none;
+}
+
+/* Form Styling */
+.theme-entry .input-control.select-box .input-control-buttons a,
+.theme-entry .input-control.select-box .input-control-buttons a:hover,
+.theme-entry .input-control.select-box .input-control-buttons a:focus,
+.theme-entry .input-control.select-box.disabled .input-control-buttons a,
+.theme-entry .input-control.select-box.disabled .input-control-buttons a:hover,
+.theme-entry .input-control.select-box.disabled .input-control-buttons a:focus,
+.theme-entry .input-control.select-box .input-control-buttons a:active,
+.theme-entry .input-control.select-box.active .input-control-buttons a,
+.theme-entry .input-control.select-box.active .input-control-buttons:hover a,
+.theme-entry .input-control.select-box.active .input-control-buttons:focus a ,
+.theme-entry .input-control.select-box.active .input-control-buttons:active a
+{
+	filter:none;
+}
+
+/* Panel Styling */
+.theme-entry .panel-header-c,
+.theme-entry .panel.with-header.with-toolbar > .panel-header .panel-header-c,
+.theme-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars .toolbar-wrapper,
+.theme-entry .panel.with-header.with-double-toolbar > .panel-toolbars .toolbars .toolbar-wrapper
+{
+	filter:none;
+}
+
+/* Grid Styling */
+.theme-entry .grid-header-wrapper,
+.theme-entry .grid td.not-sortable .grid-column-header-cell:hover,
+.theme-entry .grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper,
+.theme-entry .grid.with-header .grid-toolbars .toolbars.double .toolbar .toolbar-wrapper,
+.theme-entry .grid .grid-column-headers-wrapper,
+.theme-entry .grid table.grid-column-header-table td:hover,
+.theme-entry .grid-aggregation-header-c
+{
+	filter:none;
+}
+
+/* Popup Styling */
+.theme-entry .popup-header,
+.theme-entry .popup-body
+{
+	filter:none;
+}
+
+/* Tab Styling */
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper,
+.theme-entry .tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper,
+.theme-entry .tab-box.with-header .tab-box-header-c
+{
+	filter:none;
+}

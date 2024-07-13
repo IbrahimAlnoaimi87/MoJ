@@ -1,0 +1,1241 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+.grid {
+  position: relative;
+}
+.grid.full {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.grid.full > .grid-header,
+.grid.full > .grid-toolbar,
+.grid.full > .grid-footer {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.grid.full > .grid-body {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.grid.full .grid-header,
+.grid.full .grid-toolbars,
+.grid.full .grid-body,
+.grid.full .grid-footer {
+  overflow: hidden;
+}
+.grid.full .grid.with-footer {
+  display: block;
+}
+.grid.full.without-header .grid-header,
+.grid.full.without-toolbar .grid-toolbars,
+.grid.full.without-footer .grid-footer {
+  display: none;
+}
+.grid.full.empty .grid-content-table {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.grid.full.empty td.empty-grid {
+  vertical-align: top;
+  text-align: left;
+}
+.grid.full.empty html[dir=rtl] td.empty-grid {
+  text-align: right;
+}
+.grid.full .grid-body .grid-body-content tbody tr.empty-grid td.empty-grid .grid-content-cell {
+  padding: 10px;
+}
+/* Grid Header Styling */
+
+.grid-header {
+  border: solid 1px transparent;
+  height: 24px;
+  box-sizing: border-box;
+}
+.grid-header-wrapper {
+  background: #f8f8f8;
+  /* Old browsers */
+  height: 22px;
+  box-sizing: border-box;
+}
+.grid.dark .grid-header-wrapper {
+  background-color: transparent;
+}
+.grid-header-text {
+  cursor: default;
+  float: left;
+  font-weight: 700;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 5px;
+}
+.grid.dark .grid-header-text {
+  padding: 0px;
+}
+html[dir=rtl] .grid-header-text {
+  float: right;
+}
+/* Grid Header Controls Styling */
+
+.grid-header-controls {
+  background: none;
+  float: right;
+  height: 22px;
+  padding: 0 0 0 3px;
+}
+.grid-header-controls a {
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  height: 15px;
+  margin: 2px;
+  width: 15px;
+}
+.grid-header-controls a span {
+  display: none;
+}
+.grid .grid-header-controls a.collapse-horizontal {
+  background-image: url(../Images/Arrows/black_arrow_left.png);
+}
+.grid .grid-header-controls a.collapse-horizontal:hover {
+  background-image: url(../Images/Arrows/green_arrow_left.png);
+}
+.grid .grid-header-controls a.expand-horizontal {
+  background-image: url(../Images/Arrows/black_arrow_right.png);
+}
+.grid .grid-header-controls a.expand-horizontal:hover {
+  background-image: url(../Images/Arrows/green_arrow_right.png);
+}
+/* Grid Toolbars Styling */
+
+.grid-toolbars {
+  overflow: hidden;
+}
+.grid.dark .grid-toolbars {
+  background-color: #f8f8f8;
+}
+.grid.with-header.with-toolbar .grid-toolbars .toolbars,
+.grid.with-header.with-double-toolbar .grid-toolbars .toolbars {
+  border-top-width: 0;
+}
+.grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper {
+  background-color: transparent;
+}
+.grid.with-header .grid-toolbars .toolbars.double .toolbar:first-child .toolbar-wrapper {
+  background-color: #e1e4d9;
+}
+/* Grid Body Styling */
+
+.grid-body {
+  border-top: solid 1px #e5e5e5;
+  border-bottom: solid 1px #e5e5e5;
+  position: relative;
+}
+.grid.dark .grid-body {
+  border-top: none;
+  border-bottom: none;
+}
+.grid.without-header.without-toolbar .grid-body {
+  margin-top: 0;
+}
+.grid .grid-content-cell.icon.form.loading,
+.grid .grid-content-cell.icon.view.loading,
+.grid .grid-content-cell.icon.list-view.loading,
+.grid .grid-content-cell.icon.item-view.loading,
+.grid .grid-content-cell.icon.form.checked-out.loading,
+.grid .grid-content-cell.icon.view.checked-out.loading,
+.grid .grid-content-cell.icon.list-view.checked-out.loading,
+.grid .grid-content-cell.icon.item-view.checked-out.loading {
+  background-image: url(../Images/Loaders/PreloaderGreen_16px.gif);
+}
+/* Grid Column Headers Styling */
+
+.grid .grid-column-headers {
+  border-bottom: solid 1px #e5e5e5;
+  min-height: 22px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+.grid.full .grid-column-headers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.grid-column-headers-wrapper {
+  background-color: #ececec;
+  border: solid 1px transparent;
+  min-height: 22px;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+.grid.dark .grid-column-headers-wrapper {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.grid.dark .grid-column-headers-wrapper td {
+  color: rgba(255, 255, 255, 0.6);
+}
+.grid table.grid-column-header-table {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+html[dir=rtl] .grid table.grid-column-header-table {
+  left: auto;
+  right: 0;
+}
+.grid table.grid-column-header-table,
+.grid table.grid-content-table,
+.grid table.grid-summary-content-table {
+  table-layout: fixed;
+  width: 100%;
+}
+.grid table.grid-content-table:focus {
+  outline: none;
+}
+.grid table.grid-column-header-table,
+.grid table.grid-column-header-table tr,
+.grid table.grid-column-header-table td {
+  min-height: 20px;
+  height: 100%;
+}
+.grid table.grid-column-header-table td {
+  padding: 0;
+}
+.grid table.grid-column-header-table .hidden,
+.grid table.grid-content-table .hidden {
+  display: none;
+}
+.grid table.grid-content-table tr.inactive {
+  opacity: 0.5;
+}
+.grid .grid-column-header-cell,
+.grid .grid-column-header-cell-wrapper,
+.grid .grid-column-header-cell-content {
+  min-height: 20px;
+}
+.grid .grid-column-header-cell,
+.grid .grid-column-header-cell-wrapper {
+  height: 100%;
+}
+.grid .grid-column-header-cell {
+  cursor: default;
+  position: relative;
+  padding: 0 4px 0 2px;
+}
+.grid .grid-column-header-cell-wrapper {
+  display: table;
+  width: inherit;
+}
+.grid .grid-column-header-cell-content {
+  display: table-cell;
+  vertical-align: middle;
+  width: inherit;
+}
+.grid table.grid-column-header-table td:hover,
+.sfg-header-td:hover {
+  background-color: #deeffd;
+  /* Old browsers */
+
+}
+.grid.dark table.grid-column-header-table td:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.grid td.not-sortable .grid-column-header-cell:hover,
+.grid table.grid-column-header-table.not-sortable .grid-column-header-cell:hover {
+  background: none;
+}
+.sfg-header-td .grid-column-header-cell-wrapper {
+  width: 100%;
+}
+.grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper,
+.sfg-header-td.asc .grid-column-header-cell-wrapper {
+  background: url(../Images/Arrows/lightgrey_small_arrow_up.gif) no-repeat 50% 1px;
+}
+.grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper,
+.sfg-header-td.desc .grid-column-header-cell-wrapper {
+  background: url(../Images/Arrows/lightgrey_small_arrow_down.gif) no-repeat 50% 1px;
+}
+.grid .grid-column-header-cell.asc:hover .grid-column-header-cell-wrapper,
+.sfg-header-td.asc .grid-column-header-cell-wrapper:hover {
+  background-image: url(../Images/Arrows/grey_small_arrow_up.gif);
+}
+.grid .grid-column-header-cell.desc:hover .grid-column-header-cell-wrapper,
+.sfg-header-td.desc .grid-column-header-cell-wrapper:hover {
+  background-image: url(../Images/Arrows/grey_small_arrow_down.gif);
+}
+.grid .grid-column-header-text,
+.sfg-header-td {
+  cursor: default;
+  line-height: 19px;
+  overflow: hidden;
+  position: relative;
+  -moz-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: inherit;
+}
+.sfg-header-td {
+  padding-left: 2px;
+}
+.sfg .sfg-header-td .grid-column-header-divider {
+  cursor: default;
+}
+.grid-column-header-divider {
+  cursor: col-resize;
+  min-height: 20px;
+  width: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transition: background-color 0.15s linear;
+}
+.grid-column-header-divider:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+html[dir=rtl] .grid-column-header-divider {
+  left: 0;
+  right: auto;
+}
+.grid-column-header-table td.last .grid-column-header-divider {
+  display: none;
+}
+.grid-column-header-table td.not-resizable .grid-column-header-divider {
+  cursor: default;
+}
+.grid a.grid-column-header-button {
+  display: none;
+  height: 20px;
+  width: 14px;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  overflow: hidden;
+  background: transparent url(../Images/Grid/grid_column_header_button.png) no-repeat 0 50%;
+}
+.grid a.grid-column-header-button span {
+  display: block;
+  height: 20px;
+  width: 14px;
+  background: transparent url(../Images/Arrows/black_arrow_down.gif) no-repeat 5px 50%;
+}
+.grid .grid-column-header-cell:hover a.grid-column-header-button {
+  display: block;
+}
+.grid .grid-column-header-cell .input-control.checkbox {
+  margin-right: 2px;
+}
+/* Grid Content Styling */
+
+.grid .grid-body-content {
+  background: white;
+  border: solid 1px white;
+  position: relative;
+}
+.grid.full .grid-body-content {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.grid .grid-body-content-wrapper {
+  position: relative;
+}
+.grid.full .grid-body-content-wrapper {
+  overflow: auto;
+  height: 100%;
+}
+.grid table.grid-content-table tr {
+  min-height: 23px;
+}
+.sfg-table {
+  table-layout: fixed;
+}
+.sfg-row {
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+  user-select: none;
+}
+.sfg-body-td {
+  padding: 1px 2px 1px 1px;
+  height: 23px;
+  cursor: default;
+}
+.sfg-row.even td,
+.grid table.grid-content-table tr.even td,
+.grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row) td {
+  background-color: whitesmoke;
+}
+.sfg-row.highlight-on-hover:hover:not(.selected) td,
+.grid table.grid-content-table tr:hover:not(.selected) td,
+.grid table.grid-content-table.zebra-stripes tr:hover:not(.action-row):not(.selected) td {
+  background-color: #deeffd;
+}
+.sfg-row.selected td,
+.grid table.grid-content-table tr.selected td,
+.grid table.grid-content-table.zebra-stripes tr.selected:nth-child(odd):not(.action-row) td,
+.grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row) td {
+  background-color: #2196f3;
+  color: white;
+}
+.sfg-row.selected td .token-input-editor-area,
+.grid table.grid-content-table tr.selected td .token-input-editor-area,
+.grid table.grid-content-table.zebra-stripes tr.selected:nth-child(odd):not(.action-row) td .token-input-editor-area,
+.grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row) td .token-input-editor-area {
+  /* TFS 767501 - The input textbox won't be highlighted so it should not change to highlight text color */
+  color: #4e5758;
+}
+.grid table.grid-content-table td {
+  padding: 0;
+  vertical-align: top;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.grid table.grid-content-table td.left-align {
+  text-align: left;
+}
+.grid table.grid-content-table td.center-align {
+  text-align: center;
+}
+.grid table.grid-content-table td.right-align {
+  text-align: right;
+}
+.grid table.grid-content-table td.hidden {
+  display: none;
+}
+.grid .grid-content-cell {
+  text-align: inherit;
+  cursor: default;
+  padding: 5px 2px;
+}
+.sfg-body-td > span {
+  display: block;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 1px;
+}
+.grid.with-rownumbering .grid-content-table td:first-child,
+.grid-aggregation-content-table td:first-child {
+  background-color: #dcded8;
+}
+.grid-aggregation-content-table td:first-child {
+  width: 56px !important;
+}
+.grid.with-rownumbering .grid-column-header-table td:first-child,
+.grid.with-rownumbering .grid-content-table td:first-child {
+  text-align: right;
+}
+.grid .grid-content-cell.numeric {
+  text-align: right;
+}
+.grid .grid-content-cell.inline-icon {
+  display: flex;
+  padding-left: 3px;
+}
+.grid .grid-content-cell.inline-icon .grid-content-cell-wrapper {
+  padding-left: 3px;
+}
+.grid .grid-content-cell.icon {
+  padding-left: 22px;
+  background-repeat: no-repeat;
+  background-position: 3px 50%;
+  /*  
+        For grid, we would like to display text in the cell of the grid to be one line without wrapping to the next. 
+        When the text overflow the cell, we would like to shorten it with ellipse. 
+
+        Because in icons.less, .icon is defined with display:inline-block, it messes up with the width of the cell when the text in the cell overflows.
+        Thus we need to override it back to be block to ensure the width does not go over the width of the cell. (see TFS 719218)
+    */
+  display: block;
+}
+html[dir=rtl] .grid .grid-content-cell.icon {
+  background-position: 99% 3px;
+  padding-left: 2px;
+  padding-right: 22px;
+}
+html[dir=rtl] .grid .grid-content-cell.icon .grid-content-cell-wrapper {
+  padding-right: 8px;
+}
+.grid table.grid-content-table tr.nowrap td {
+  overflow: hidden;
+}
+.grid table.grid-content-table tr.nowrap .grid-content-cell {
+  overflow: hidden;
+}
+.grid table.grid-content-table tr.nowrap .grid-content-cell-wrapper,
+.grid table.grid-content-table .grid-content-cell-wrapper,
+.grid table.grid-content-table .grid-content-cell-wrapper .service-method,
+.grid .categorySectionsList .radiobox-button-text {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.grid .grid-content-cell.edit-mode {
+  padding: 1px 2px 1px 1px;
+}
+.sfg-body-td.checkradio-cell,
+.grid .grid-content-cell.checkradio-cell {
+  padding: 1px 2px 1px 1px;
+  text-align: center;
+}
+.grid .grid-content-cell.checkradio-cell .input-control.checkbox {
+  margin-right: 2px;
+}
+.grid table.grid-content-table td.empty-grid {
+  color: #aaaaaa;
+  width: 100%;
+}
+/* Grid Action Row Styling */
+
+.grid table.grid-content-table td.action-row {
+  color: #aaaaaa;
+}
+.grid table.grid-content-table td.action-row a:focus {
+  outline: none;
+}
+.sfg .action-row:focus {
+  outline: #1b7ecd 1px dotted;
+}
+.sfg .action-row {
+  padding-left: 1px;
+}
+.sfg .action-row,
+.grid table.grid-content-table td.action-row a.action-row {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+.grid table.grid-content-table td.action-row,
+.grid table.grid-content-table td.empty-grid {
+  background-color: inherit !important;
+}
+.grid.with-rownumbering table.grid-content-table td.action-row {
+  text-align: left !important;
+  width: inherit !important;
+}
+/* Grid Footer Styling */
+
+.grid-footer {
+  height: 23px;
+  position: relative;
+}
+.grid.dark .grid-footer {
+  background-color: white;
+}
+.grid.with-aggregation.with-footer .grid-footer {
+  margin-top: 3px;
+}
+.grid.with-aggregation.with-footer .grid-footer .toolbars {
+  border-top-width: 1px;
+}
+.grid.with-footer .grid-footer {
+  display: block;
+}
+.grid .grid-footer .toolbars {
+  border-top-width: 0;
+}
+/* Grid Aggregation Styling */
+
+.grid.with-aggregation .grid-aggregation {
+  border: solid 1px #adae9c;
+  border-top-width: 0;
+}
+.grid.with-aggregation.full .grid-aggregation {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+.grid.without-aggregation .grid-aggregation {
+  display: none;
+}
+.grid-aggregation-header {
+  height: 22px;
+}
+.grid-aggregation-header-c {
+  background: #f9f9f9;
+  /* Old browsers */
+  height: 22px;
+}
+.grid-aggregation-header-arrow {
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 22px;
+  position: absolute;
+  width: 7px;
+  right: 5px;
+}
+.grid-aggregation.collapsed .grid-aggregation-header-arrow {
+  background-image: url(../Images/Arrows/black_arrow_up.gif);
+}
+.grid-aggregation.expanded .grid-aggregation-header-arrow {
+  background-image: url(../Images/Arrows/black_arrow_down.gif);
+}
+.grid-aggregation-header-link {
+  display: block;
+  height: 22px;
+}
+.grid-aggregation.expanded .grid-aggregation-header-link {
+  left: 0;
+  right: 0;
+}
+.grid-aggregation-header-text {
+  font-weight: 700;
+  line-height: 22px;
+  padding-left: 5px;
+  color: #343e41;
+}
+.grid-aggregation .grid-aggregation-content {
+  border-top: solid 1px #adae9c;
+}
+.grid-aggregation.collapsed .grid-aggregation-content {
+  display: none;
+}
+.grid-aggregation-content-m {
+  border: solid 1px white;
+}
+.grid-aggregation-content-table {
+  background-color: white;
+  width: 100%;
+}
+.grid-aggregation-content-table td {
+  padding: 5px;
+  text-align: right;
+}
+/* Grid Summary Styling */
+
+.grid.with-summary .grid-summary {
+  background-color: white;
+  border: solid 1px #adae9c;
+  border-top-width: 0;
+}
+.grid.with-summary.full .grid-summary {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+.grid.without-summary .grid-summary {
+  display: none;
+}
+.grid-summary .grid-summary-item {
+  border-top: solid 1px #adae9c;
+}
+.grid-summary .grid-summary-item:first-child {
+  border-top: none;
+}
+.grid-summary .grid-summary-item-wrapper {
+  border: solid 1px white;
+}
+/* Grid Footer Paging Control Styling */
+
+.grid .grid-paging-control-text {
+  float: left;
+  padding: 0 3px;
+  line-height: 20px;
+}
+.grid .grid-paging-control .input-control.text-input {
+  width: 40px;
+  float: left;
+}
+.grid .grid-paging-control .input-control.text-input input {
+  text-align: right;
+}
+/* Grid Column Divider Styling */
+
+.grid-column-drag-divider {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  width: 3px;
+  cursor: col-resize;
+}
+/* Grid Column Hidden Styling */
+
+.grid-hidden-column {
+  display: none;
+}
+/* Grid with hidden column headers */
+
+.grid.hide-column-headers .grid-column-headers {
+  display: none;
+}
+.grid.full.hide-column-headers .grid-body-content {
+  top: 0;
+}
+/* Grid Edit & Display Templates Section */
+
+.grid .grid-edit-templates,
+.grid .grid-display-templates {
+  display: none;
+}
+.grid .grid-content-cell.icon,
+.grid .grid-content-cell-wrapper .multiline-cell-icon {
+  background-size: 16px 16px;
+  /*important for multiresolution*/
+
+}
+/* Grid Multiline Icon Styling (Used in the SO Designer Methods Grid) */
+
+.grid .grid-content-cell-wrapper .multiline-cell-icon {
+  background-repeat: no-repeat;
+  line-height: 16px;
+  margin-top: 4px;
+  padding-left: 22px;
+}
+.grid .grid-content-cell-wrapper .multiline-cell-icon:first-child {
+  margin-top: 0;
+}
+/* Collapsed Display */
+
+.grid.collapsed .grid-toolbars,
+.grid.collapsed .grid-body,
+.grid.collapsed .grid-summary,
+.grid.collapsed .grid-footer {
+  display: none;
+}
+.no-drop .grid-body-content td div,
+.no-drop .grid-body-content td div a,
+.no-drop .grid-column-headers tr,
+.no-drop .grid-column-headers td div {
+  cursor: no-drop !important;
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  /* Grid Cell Icon Styling */
+  
+  .grid-content-cell.icon {
+    /* Grid Cell Icon Styling - Datatypes */
+    background-image: url("../Images/Icons/Default16px.png");
+    /* Grid Cell Icon Styling - Expressions */
+  
+    /* Grid Cell Icon Styling - Errors & Warnings */
+  
+    /* Grid Control Icons */
+  
+    /* Grid Cell Icon Styling - Patterns */
+  
+    /* Grid Cell Icon Styling - File Types */
+  
+  }
+  .grid-content-cell.icon.default {
+    background-image: url("../Images/Icons/Default16px.png");
+  }
+  .grid-content-cell.icon.control-error {
+    background-image: url("../Images/Icons/Toolbox/Controls_Error16.png");
+  }
+  .grid-content-cell.icon.user {
+    background-image: url("../Images/Icons/Management/User16.png");
+  }
+  .grid-content-cell.icon.parameter {
+    background-image: url("../Images/Icons/Toolbox/Parameter16.png");
+  }
+  .grid-content-cell.icon.group {
+    background-image: url("../Images/Icons/Management/Groups16.png");
+  }
+  .grid-content-cell.icon.role {
+    background-image: url("../Images/Icons/Management/Roles16.png");
+  }
+  .grid-content-cell.icon.state {
+    background-image: url("../Images/Icons/Rules/State16.png");
+  }
+  tr.selected .grid-content-cell.icon.state {
+    background-image: url("../Images/Icons/Rules/State_Selected16.png");
+  }
+  .grid-content-cell.icon.application {
+    background-image: url("../Images/Icons/FileTypes/K2Project16.png");
+  }
+  .grid-content-cell.icon.smartfunction {
+    background-image: url("../Images/Icons/DataTypes/Functions16.png");
+  }
+  .grid-content-cell.icon.subform {
+    background-image: url("../Images/Icons/FileTypes/Form16.png");
+  }
+  .grid-content-cell.icon.service-instance {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+  .grid-content-cell.icon.service-object {
+    background-image: url("../Images/Icons/Management/ServiceObject16.png");
+  }
+  .grid-content-cell.icon.service-method {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .grid-content-cell.icon.form-event {
+    background-image: url("../Images/Icons/Rules/Rule16.png");
+  }
+  .grid-content-cell.icon.form-event.disabled-rule {
+    background-image: url("../Images/Icons/Rules/Rule_Disabled16.png");
+  }
+  .grid-content-cell.icon.form-event.error,
+  .grid-content-cell.icon.form-event-error {
+    background-image: url("../Images/Icons/Rules/Rule_Error16.png");
+  }
+  .grid-content-cell.icon.form-event.error.disabled-rule,
+  .grid-content-cell.icon.form-event-error.disabled-rule {
+    background-image: url("../Images/Icons/Badges/Disable_Error16.png");
+  }
+  .grid-content-cell.icon.view-event {
+    background-image: url("../Images/Icons/Rules/Rule16.png");
+  }
+  .grid-content-cell.icon.view-event.disabled-rule {
+    background-image: url("../Images/Icons/Rules/Rule_Disabled16.png");
+  }
+  .grid-content-cell.icon.view-event.error,
+  .grid-content-cell.icon.view-event-error {
+    background-image: url("../Images/Icons/Rules/Rule_Error16.png");
+  }
+  .grid-content-cell.icon.view-event.error.disabled-rule,
+  .grid-content-cell.icon.view-event-error.disabled-rule {
+    background-image: url("../Images/Icons/Badges/Disable_Error16.png");
+  }
+  .grid-content-cell.icon.conditional-style-error {
+    background-image: url("../Images/Icons/Badges/ConditionalStyling_Error16.png");
+  }
+  .grid-content-cell.icon.conditional-style {
+    background-image: url("../Images/Icons/Toolbox/ConditionalStyling16.png");
+  }
+  .grid-content-cell.icon.form-state {
+    background-image: url("../Images/Icons/Rules/State16.png");
+  }
+  tr.selected .grid-content-cell.icon.form-state {
+    background-image: url("../Images/Icons/Rules/State_Selected16.png");
+  }
+  .grid-content-cell.icon.smartobject-method {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .grid-content-cell.icon.smartobject-property {
+    background-image: url("../Images/Icons/Ribbon/Properties16.png");
+  }
+  .grid-content-cell.icon.smartobject-method-parameter {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .grid-content-cell.icon.service-object-property {
+    background-image: url("../Images/Icons/Ribbon/Properties16.png");
+  }
+  .grid-content-cell.icon.service-method-input-property {
+    background-image: url("../Images/Icons/Ribbon/Properties16.png");
+  }
+  .grid-content-cell.icon.service-method-return-property {
+    background-image: url("../Images/Icons/Ribbon/Properties16.png");
+  }
+  .grid-content-cell.icon.specific-value {
+    background-image: url("../Images/Icons/DataTypes/MultiValue16.png");
+  }
+  .grid-content-cell.icon.system-value {
+    background-image: url("../Images/Icons/DataTypes/MultiValue16.png");
+  }
+  .grid-content-cell.icon.service-object-method-parameter {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .grid-content-cell.icon.expression {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction16.png");
+  }
+  .grid-content-cell.icon.expression-error {
+    background-image: url("../Images/Icons/Badges/RegularExpressionFunctionError16.png");
+  }
+  .grid-content-cell.icon.error {
+    background-image: url("../Images/Icons/Ribbon/Error16.png");
+  }
+  .grid-content-cell.icon.warning {
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling16.png");
+  }
+  .grid-content-cell.icon.form-state.error {
+    background-image: url("../Images/Icons/Rules/State_Error16.png");
+  }
+  tr.selected .grid-content-cell.icon.form-state.error {
+    background-image: url("../Images/Icons/Rules/State_Selected_Error16.png");
+  }
+  .grid-content-cell.icon.control-toolbartable {
+    background-image: url("../Images/Icons/Toolbox/Table16.png");
+  }
+  .grid-content-cell.icon.control-imagepostback,
+  .grid-content-cell.icon.control-image {
+    background-image: url("../Images/Icons/DataTypes/Image16.png");
+  }
+  .grid-content-cell.icon.control-tree {
+    background-image: url("../Images/Icons/Toolbox/Context16.png");
+  }
+  .grid-content-cell.icon.controlevent {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .grid-content-cell.icon.pattern {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction16.png");
+  }
+  .grid-content-cell.icon.document-generic {
+    background-image: url("../Images/Icons/FileTypes/TextDoc16.png");
+  }
+  .grid-content-cell.icon.document-avi {
+    background-image: url("../Images/Icons/FileTypes/Avi16.png");
+  }
+  .grid-content-cell.icon.document-mov {
+    background-image: url("../Images/Icons/FileTypes/MOV16.png");
+  }
+  .grid-content-cell.icon.document-wmv {
+    background-image: url("../Images/Icons/FileTypes/WMV16.png");
+  }
+  .grid-content-cell.icon.document-bmp {
+    background-image: url("../Images/Icons/FileTypes/BMP16.png");
+  }
+  .grid-content-cell.icon.document-gif {
+    background-image: url("../Images/Icons/FileTypes/GIF16.png");
+  }
+  .grid-content-cell.icon.document-png {
+    background-image: url("../Images/Icons/FileTypes/PNG16.png");
+  }
+  .grid-content-cell.icon.document-chm {
+    background-image: url("../Images/Icons/FileTypes/HLP16.png");
+  }
+  .grid-content-cell.icon.document-csv {
+    background-image: url("../Images/Icons/FileTypes/CSV_16.png");
+  }
+  .grid-content-cell.icon.document-doc {
+    background-image: url("../Images/Icons/FileTypes/Docs16.png");
+  }
+  .grid-content-cell.icon.document-htm {
+    background-image: url("../Images/Icons/FileTypes/HTM16.png");
+  }
+  .grid-content-cell.icon.document-html {
+    background-image: url("../Images/Icons/FileTypes/HTML16.png");
+  }
+  .grid-content-cell.icon.document-mp3 {
+    background-image: url("../Images/Icons/FileTypes/MP316.png");
+  }
+  .grid-content-cell.icon.document-wav {
+    background-image: url("../Images/Icons/FileTypes/WAV16.png");
+  }
+  .grid-content-cell.icon.document-wma {
+    background-image: url("../Images/Icons/FileTypes/WMA16.png");
+  }
+  .grid-content-cell.icon.document-one {
+    background-image: url("../Images/Icons/FileTypes/One16.png");
+  }
+  .grid-content-cell.icon.document-pdf {
+    background-image: url("../Images/Icons/FileTypes/Pdf16.png");
+  }
+  .grid-content-cell.icon.document-ppt {
+    background-image: url("../Images/Icons/FileTypes/PPT16.png");
+  }
+  .grid-content-cell.icon.document-pps {
+    background-image: url("../Images/Icons/FileTypes/PPS16.png");
+  }
+  .grid-content-cell.icon.document-txt {
+    background-image: url("../Images/Icons/FileTypes/TextDoc16.png");
+  }
+  .grid-content-cell.icon.document-xls {
+    background-image: url("../Images/Icons/FileTypes/XLS16.png");
+  }
+  .grid-content-cell.icon.document-xsn {
+    background-image: url("../Images/Icons/FileTypes/XSN16.png");
+  }
+  .grid-content-cell.icon.document-zip {
+    background-image: url("../Images/Icons/FileTypes/Zip16.png");
+  }
+  .grid-content-cell.icon.user-account {
+    background-image: url("../Images/Icons/Management/Claims16.png");
+  }
+  .grid-content-cell.icon.invoice {
+    background-image: url("../Images/Icons/Toolbar/Document16.png");
+  }
+  .grid-content-cell.icon.view-flow {
+    background-image: url("../Images/Icons/Management/ViewFlow16.png");
+  }
+  .grid .grid-content-cell-wrapper .multiline-cell-icon.service-method {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .grid .grid-content-cell-wrapper .multiline-cell-icon.service-instance {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  /* Grid Cell Icon Styling */
+  
+  .grid-content-cell.icon {
+    /* Grid Cell Icon Styling - Datatypes */
+    background-image: url("../Images/Icons/Default16px@2x.png");
+    /* Grid Cell Icon Styling - Expressions */
+  
+    /* Grid Cell Icon Styling - Errors & Warnings */
+  
+    /* Grid Control Icons */
+  
+    /* Grid Cell Icon Styling - Patterns */
+  
+    /* Grid Cell Icon Styling - File Types */
+  
+  }
+  .grid-content-cell.icon.default {
+    background-image: url("../Images/Icons/Default16px@2x.png");
+  }
+  .grid-content-cell.icon.control-error {
+    background-image: url("../Images/Icons/Toolbox/Controls_Error16@2x.png");
+  }
+  .grid-content-cell.icon.user {
+    background-image: url("../Images/Icons/Management/User16@2x.png");
+  }
+  .grid-content-cell.icon.parameter {
+    background-image: url("../Images/Icons/Toolbox/Parameter16@2x.png");
+  }
+  .grid-content-cell.icon.group {
+    background-image: url("../Images/Icons/Management/Groups16@2x.png");
+  }
+  .grid-content-cell.icon.role {
+    background-image: url("../Images/Icons/Management/Roles16@2x.png");
+  }
+  .grid-content-cell.icon.state {
+    background-image: url("../Images/Icons/Rules/State16@2x.png");
+  }
+  tr.selected .grid-content-cell.icon.state {
+    background-image: url("../Images/Icons/Rules/State_Selected16@2x.png");
+  }
+  .grid-content-cell.icon.application {
+    background-image: url("../Images/Icons/FileTypes/K2Project16@2x.png");
+  }
+  .grid-content-cell.icon.smartfunction {
+    background-image: url("../Images/Icons/DataTypes/Functions16@2x.png");
+  }
+  .grid-content-cell.icon.subform {
+    background-image: url("../Images/Icons/FileTypes/Form16@2x.png");
+  }
+  .grid-content-cell.icon.service-instance {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+  .grid-content-cell.icon.service-object {
+    background-image: url("../Images/Icons/Management/ServiceObject16@2x.png");
+  }
+  .grid-content-cell.icon.service-method {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .grid-content-cell.icon.form-event {
+    background-image: url("../Images/Icons/Rules/Rule16@2x.png");
+  }
+  .grid-content-cell.icon.form-event.disabled-rule {
+    background-image: url("../Images/Icons/Rules/Rule_Disabled16@2x.png");
+  }
+  .grid-content-cell.icon.form-event.error,
+  .grid-content-cell.icon.form-event-error {
+    background-image: url("../Images/Icons/Rules/Rule_Error16@2x.png");
+  }
+  .grid-content-cell.icon.form-event.error.disabled-rule,
+  .grid-content-cell.icon.form-event-error.disabled-rule {
+    background-image: url("../Images/Icons/Badges/Disable_Error16.png");
+  }
+  .grid-content-cell.icon.view-event {
+    background-image: url("../Images/Icons/Rules/Rule16@2x.png");
+  }
+  .grid-content-cell.icon.view-event.disabled-rule {
+    background-image: url("../Images/Icons/Rules/Rule_Disabled16@2x.png");
+  }
+  .grid-content-cell.icon.view-event.error,
+  .grid-content-cell.icon.view-event-error {
+    background-image: url("../Images/Icons/Rules/Rule_Error16@2x.png");
+  }
+  .grid-content-cell.icon.view-event.error.disabled-rule,
+  .grid-content-cell.icon.view-event-error.disabled-rule {
+    background-image: url("../Images/Icons/Badges/Disable_Error16.png");
+  }
+  .grid-content-cell.icon.conditional-style-error {
+    background-image: url("../Images/Icons/Badges/ConditionalStyling_Error16@2x.png");
+  }
+  .grid-content-cell.icon.conditional-style {
+    background-image: url("../Images/Icons/Toolbox/ConditionalStyling16@2x.png");
+  }
+  .grid-content-cell.icon.form-state {
+    background-image: url("../Images/Icons/Rules/State16@2x.png");
+  }
+  tr.selected .grid-content-cell.icon.form-state {
+    background-image: url("../Images/Icons/Rules/State_Selected16@2x.png");
+  }
+  .grid-content-cell.icon.smartobject-method {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .grid-content-cell.icon.smartobject-property {
+    background-image: url("../Images/Icons/Ribbon/Properties16@2x.png");
+  }
+  .grid-content-cell.icon.smartobject-method-parameter {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .grid-content-cell.icon.service-object-property {
+    background-image: url("../Images/Icons/Ribbon/Properties16@2x.png");
+  }
+  .grid-content-cell.icon.service-method-input-property {
+    background-image: url("../Images/Icons/Ribbon/Properties16@2x.png");
+  }
+  .grid-content-cell.icon.service-method-return-property {
+    background-image: url("../Images/Icons/Ribbon/Properties16@2x.png");
+  }
+  .grid-content-cell.icon.specific-value {
+    background-image: url("../Images/Icons/DataTypes/MultiValue16@2x.png");
+  }
+  .grid-content-cell.icon.system-value {
+    background-image: url("../Images/Icons/DataTypes/MultiValue16@2x.png");
+  }
+  .grid-content-cell.icon.service-object-method-parameter {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .grid-content-cell.icon.expression {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction16@2x.png");
+  }
+  .grid-content-cell.icon.expression-error {
+    background-image: url("../Images/Icons/Badges/RegularExpressionFunctionError16@2x.png");
+  }
+  .grid-content-cell.icon.error {
+    background-image: url("../Images/Icons/Ribbon/Error16@2x.png");
+  }
+  .grid-content-cell.icon.warning {
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling16@2x.png");
+  }
+  .grid-content-cell.icon.form-state.error {
+    background-image: url("../Images/Icons/Rules/State_Error16@2x.png");
+  }
+  tr.selected .grid-content-cell.icon.form-state.error {
+    background-image: url("../Images/Icons/Rules/State_Selected_Error16@2x.png");
+  }
+  .grid-content-cell.icon.control-toolbartable {
+    background-image: url("../Images/Icons/Toolbox/Table16@2x.png");
+  }
+  .grid-content-cell.icon.control-imagepostback,
+  .grid-content-cell.icon.control-image {
+    background-image: url("../Images/Icons/DataTypes/Image16@2x.png");
+  }
+  .grid-content-cell.icon.control-tree {
+    background-image: url("../Images/Icons/Toolbox/Context16@2x.png");
+  }
+  .grid-content-cell.icon.controlevent {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .grid-content-cell.icon.pattern {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction16@2x.png");
+  }
+  .grid-content-cell.icon.document-generic {
+    background-image: url("../Images/Icons/FileTypes/TextDoc16@2x.png");
+  }
+  .grid-content-cell.icon.document-avi {
+    background-image: url("../Images/Icons/FileTypes/Avi16@2x.png");
+  }
+  .grid-content-cell.icon.document-mov {
+    background-image: url("../Images/Icons/FileTypes/MOV16@2x.png");
+  }
+  .grid-content-cell.icon.document-wmv {
+    background-image: url("../Images/Icons/FileTypes/WMV16@2x.png");
+  }
+  .grid-content-cell.icon.document-bmp {
+    background-image: url("../Images/Icons/FileTypes/BMP16@2x.png");
+  }
+  .grid-content-cell.icon.document-gif {
+    background-image: url("../Images/Icons/FileTypes/GIF16@2x.png");
+  }
+  .grid-content-cell.icon.document-png {
+    background-image: url("../Images/Icons/FileTypes/PNG16@2x.png");
+  }
+  .grid-content-cell.icon.document-chm {
+    background-image: url("../Images/Icons/FileTypes/HLP16@2x.png");
+  }
+  .grid-content-cell.icon.document-csv {
+    background-image: url("../Images/Icons/FileTypes/CSV_16@2x.png");
+  }
+  .grid-content-cell.icon.document-doc {
+    background-image: url("../Images/Icons/FileTypes/Docs16@2x.png");
+  }
+  .grid-content-cell.icon.document-htm {
+    background-image: url("../Images/Icons/FileTypes/HTM16@2x.png");
+  }
+  .grid-content-cell.icon.document-html {
+    background-image: url("../Images/Icons/FileTypes/HTML16@2x.png");
+  }
+  .grid-content-cell.icon.document-mp3 {
+    background-image: url("../Images/Icons/FileTypes/MP316@2x.png");
+  }
+  .grid-content-cell.icon.document-wav {
+    background-image: url("../Images/Icons/FileTypes/WAV16@2x.png");
+  }
+  .grid-content-cell.icon.document-wma {
+    background-image: url("../Images/Icons/FileTypes/WMA16@2x.png");
+  }
+  .grid-content-cell.icon.document-one {
+    background-image: url("../Images/Icons/FileTypes/One16@2x.png");
+  }
+  .grid-content-cell.icon.document-pdf {
+    background-image: url("../Images/Icons/FileTypes/Pdf16@2x.png");
+  }
+  .grid-content-cell.icon.document-ppt {
+    background-image: url("../Images/Icons/FileTypes/PPT16@2x.png");
+  }
+  .grid-content-cell.icon.document-pps {
+    background-image: url("../Images/Icons/FileTypes/PPS16@2x.png");
+  }
+  .grid-content-cell.icon.document-txt {
+    background-image: url("../Images/Icons/FileTypes/TextDoc16@2x.png");
+  }
+  .grid-content-cell.icon.document-xls {
+    background-image: url("../Images/Icons/FileTypes/XLS16@2x.png");
+  }
+  .grid-content-cell.icon.document-xsn {
+    background-image: url("../Images/Icons/FileTypes/XSN16@2x.png");
+  }
+  .grid-content-cell.icon.document-zip {
+    background-image: url("../Images/Icons/FileTypes/Zip16@2x.png");
+  }
+  .grid-content-cell.icon.user-account {
+    background-image: url("../Images/Icons/Management/Claims16@2x.png");
+  }
+  .grid-content-cell.icon.invoice {
+    background-image: url("../Images/Icons/Toolbar/Document16@2x.png");
+  }
+  .grid-content-cell.icon.view-flow {
+    background-image: url("../Images/Icons/Management/ViewFlow16@2x.png");
+  }
+  .grid .grid-content-cell-wrapper .multiline-cell-icon.service-method {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .grid .grid-content-cell-wrapper .multiline-cell-icon.service-instance {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+}
+/*#region cheeky changes */
+
+#pgRulesTabContent.grid .grid-body {
+  border-bottom: solid 0px transparent;
+}
+/*#endregion*/
+

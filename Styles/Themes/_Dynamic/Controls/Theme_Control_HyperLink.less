@@ -1,0 +1,61 @@
+/*#region HYPERLINK */
+
+.theme-entry a,
+.theme-entry a:visited
+{
+    -moz-tap-highlight-color: transparent; //no var
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; //no var
+    /* For some Androids */
+}
+
+/*#endregion HYPERLINK */
+
+
+/*#region HYPERLINK CONTROL */
+.theme-entry .hyperlinkTopLeftPanel.hide-browser-highlight
+{
+    border-width: 0;
+}
+
+// notset means disabled. Check hyperlink.cs file
+.theme-entry a.Hyperlink {
+    color: @Hyperlink-Text-Color;
+}
+
+.theme-entry a.Hyperlink-NotSet,
+.theme-entry a.Hyperlink-NotSet.disabled
+{
+    border-width: 0;
+    text-decoration: underline;
+}
+
+
+.theme-entry a.Hyperlink-NotSet
+{
+    color: @Hyperlink-Text-Color;
+}
+
+.theme-entry a.Hyperlink-NotSet.disabled
+{
+    color: @Hyperlink-Disabled-Text-Color;
+}
+
+
+.theme-entry a.Hyperlink-NotSet.disabled
+{
+    cursor: default;
+}
+
+.theme-entry .hyperlinkTopCenterPanel,
+.theme-entry .hyperlinkTopRightPanel
+{
+    top: -0.1rem; /*align hyperlink edit and delete buttons with hyperlink*/
+}
+
+.theme-entry .hyperlinkTopLeftPanel
+{
+    margin-right: 0.2rem;
+}
+
+/*#endregion HYPERLINK CONTROL */

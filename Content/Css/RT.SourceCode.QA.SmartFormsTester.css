@@ -1,0 +1,1360 @@
+/*!
+ SourceCode.QA.SmartFormsTester.SmartFormsTester.SmartFormsTester.css (Embedded resource)
+*/
+/* MinifyError
+(1129,109): run-time error CSS1062: Expected semicolon or closing curly-brace, found '%'
+ */
+/* Rules Designer:  Action configuration mappings screens context trees (1) */
+.tree li.sourcecode-qa-smartformstester-smartformstester-control > a,
+.tree li.sourcecode-qa-smartformstester-smartformstester-control > span,
+.tree li.sourcecode-qa-smartformstester-smartformstester-control.children > a,
+.tree li.sourcecode-qa-smartformstester-smartformstester-control.children.open > a,
+.tree li.sourcecode-qa-smartformstester-smartformstester-control.children.closed > a,
+.tree li.sourcecode-qa-smartformstester-smartformstester-control.children > span,
+/* Rules Designer: Action configuration target mappings screens where the control has been dropped (2) */
+.token-input .entity.icon.sourcecode-qa-smartformstester-smartformstester-control .entity-text,
+/* Rules Designer: Navigate to Form action in the URL preview (3) */
+#FormNavigatePreviewPanel .token.sourcecode-qa-smartformstester-smartformstester-control,
+/* View/Form Designer: Droppable control's list on the right and the change control popup list(4) */
+.toolboxitem.sourcecode-qa-smartformstester-smartformstester-control,
+/* Runtime: List View filter mappings popup target dropped control (5) */
+.theme-entry .drop-item.sourcecode-qa-smartformstester-smartformstester-control,
+/* Runtime: List View filter mappings popup context tree (6) */
+.theme-entry .tree li.sourcecode-qa-smartformstester-smartformstester-control > a,
+.theme-entry .tree li.sourcecode-qa-smartformstester-smartformstester-control.children.open > a,
+.theme-entry .tree li.sourcecode-qa-smartformstester-smartformstester-control.children.closed > a,
+.theme-entry .tree li.sourcecode-qa-smartformstester-smartformstester-control > span,
+/* Rule Designer: Action hot spot context menu (7) */
+.menu a.menu-item.control-sourcecode-qa-smartformstester-smartformstester span.menu-item-icon,
+/* Rule Designer: Action configuration target mappings tree (8) */
+.input-control.icon-control.sourcecode-qa-smartformstester-smartformstester-control .input-control-icon,
+/* Rule Designer: Transfer data action configuration target mappings screen dropped item (9) */
+.drop-item.sourcecode-qa-smartformstester-smartformstester-control,
+/*  View Designer: While dragging and dropping control on to the canvas (10) */
+a.ui-draggable-dragging.sourcecode-qa-smartformstester-smartformstester-control
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-smartform-picker-option.form
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-row,
+.smartforms-tester-control-assertion-popup-content-assertions-row,
+.smartforms-tester-control-breakpoint-popup-content-breakpoints-row,
+.smartforms-tester-control-variable-popup-content-variables-row
+{
+	display: -webkit-box;
+	display: flex;
+	display: -ms-flexbox;
+	-ms-flex: 1;
+	flex: 1;
+	height: 22px;
+}
+
+#SFTester_FormLookupField
+{
+	padding-top: 3px;
+	padding-bottom: 4px;
+	padding-right: 10px;
+	padding-left: 6px;
+}
+
+.smartforms-tester-control-assertion-popup-content-toolbar,
+.smartforms-tester-control-breakpoint-popup-content-toolbar,
+.smartforms-tester-control-variable-popup-content-toolbar,
+.smartforms-tester-control-report-popup-content-toolbar
+{
+	margin-top: 0px;
+	padding-left: 10px;
+}
+
+.smartforms-tester-control-action-groupbox-div
+{
+	padding: 0px 10px 10px 10px;
+}
+
+.smartforms-tester-control-assertion-popup-content-assertions-groupbox-div,
+.smartforms-tester-control-breakpoint-popup-content-breakpoints-groupbox-div
+{
+	width: 99.7%;
+	position: relative;
+	top: 32px;
+	bottom: 2px;
+}
+
+.smartforms-tester-control-iframe-div
+{
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.smartforms-tester-control-variable-popup-content-variables-groupbox-div
+{
+	margin-right: 2px;
+}
+
+.smartforms-tester-control-variable-popup-content-variables-steps label
+{
+	padding-top: 2px;
+}
+
+.smartforms-tester-control-variable-popup-content-variables-row-name-label
+{
+	margin-right: 3px;
+}
+
+.smartforms-tester-control-action-groupbox
+{
+	padding-left: 15px !important;
+}
+
+.smartforms-tester-control-variables-popup-content
+{
+	overflow: hidden;
+}
+
+.smartforms-tester-control,
+.smartforms-tester-control-action-groupbox,
+.smartforms-tester-control-assertion-popup-content-assertions-groupbox,
+.smartforms-tester-control-breakpoint-popup-content-breakpoints-groupbox,
+.smartforms-tester-control-variable-popup-content-variables-groupbox
+{
+	background-color: #EFEFDF;
+	border: 1px solid darkgray !important;
+}
+
+div[id*=actionRow] .input-control,
+div[id*=assertionRow] .input-control,
+div[id*=variableRow] .input-control,
+div[id*=breakpointRow] .input-control,
+.smartforms-tester-control-control-text-input-text
+{
+	margin-left: 2px;
+	margin-right: 2px;
+	height: 20px;
+}
+
+.smartforms-tester-control-breakpoint-popup-content-breakpoints-row-control-value-text
+{
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
+.smartforms-tester-control-control-text-input-text
+{
+	text-align: center;
+}
+
+.smartforms-tester-control-action-toolbar,
+.smartforms-tester-control-menu-toolbar,
+.smartforms-tester-control-assertion-popup-content-toolbar,
+.smartforms-tester-control-breakpoint-popup-content-toolbar,
+.smartforms-tester-control-variable-popup-content-toolbar,
+.smartforms-tester-control-report-popup-content-toolbar
+{
+	margin-bottom: 5px;
+}
+
+.smartforms-tester-control-testcase-popup-content-toolbar,
+.smartforms-tester-control-testcase-popup-content-toolbar-header
+{
+	border: 1px solid lightgray !important;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.smartforms-tester-control-testcase-popup-content-toolbar-header
+{
+	top: 30px;
+}
+
+.smartforms-tester-control-file-popup-content
+{
+	background-color: white;
+}
+
+.context-menu span.menu-item-icon
+{
+	margin-left: -4px !important;
+}
+
+.smartforms-tester-control-status-bar-text-label,
+.smartforms-tester-control-menu-toolbar-text-label,
+.smartforms-tester-control-menu-toolbar-text-label-test-name,
+.smartforms-tester-control-menu-toolbar-text-label-divider
+{
+	font-family: 'Segoe UI' !important;
+	color: white !important;
+	padding-left: 5px;
+}
+
+.smartforms-tester-control-status-bar-text-icon
+{
+	width: 16px;
+	height: 16px;
+}
+
+.smartforms-tester-control-status-bar-text
+{
+	display: flex;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 7px;
+}
+
+.smartforms-tester-control-menu-toolbar-save
+{
+	background-color: white !important;
+	background-position-x: -1px !important;
+	border-radius: 3px;
+	margin: 6px !important;
+}
+
+.smartforms-tester-control-menu-toolbar-new
+{
+	background-color: transparent !important;
+	background-position-x: -1px !important;
+	border-radius: 3px;
+	margin: 6px !important;
+}
+
+	.smartforms-tester-control-menu-toolbar-save,
+	.smartforms-tester-control-status-bar-text.save .smartforms-tester-control-status-bar-text-icon
+	{
+		background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource0.png?_gv=1083082561-20240220-160908);
+	}
+
+
+.smartforms-tester-control-status-bar-text.open .smartforms-tester-control-status-bar-text-icon
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource1.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-test-settings-context-menu a.menu-item.logonfail.on span.menu-item-icon
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource2.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-test-settings-context-menu a.menu-item.logonfail.off span.menu-item-icon
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource3.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-test-settings-context-menu a.menu-item.testcase.off span.menu-item-icon
+{
+	opacity: 0.6;
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource4.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-test-settings-context-menu a.menu-item.testcase.on span.menu-item-icon
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource4.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-test-settings-context-menu a.menu-item.parameters span.menu-item-icon
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource5.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-toolbar button,
+.smartforms-tester-control-menu-toolbar button,
+.smartforms-tester-control-assertion-popup-content-toolbar button,
+.smartforms-tester-control-breakpoint-popup-content-toolbar button,
+.smartforms-tester-control-variable-popup-content-toolbar button,
+.smartforms-tester-control-test-button,
+.smartforms-tester-control-report-popup-content-toolbar button
+{
+	margin-left: 5px;
+	margin-top: 4px;
+	background-repeat: no-repeat;
+	border: 1px solid transparent;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+	-ms-flex: 1;
+	flex: 1;
+	line-height: 15px;
+	background-position: 0;
+}
+
+.smartforms-tester-control-test-case-button
+{
+	margin-left: 5px;
+	background-repeat: no-repeat;
+	border: 1px solid transparent;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+	line-height: 15px;
+	background-position: 0;
+}
+
+	.smartforms-tester-control-action-toolbar button:not(.disabled):hover,
+	.smartforms-tester-control-menu-toolbar button:not(.disabled):hover,
+	.smartforms-tester-control-assertion-popup-content-toolbar button:not(.disabled):hover,
+	.smartforms-tester-control-breakpoint-popup-content-toolbar button:not(.disabled):hover,
+	.smartforms-tester-control-variable-popup-content-toolbar button:not(.disabled):hover,
+	.smartforms-tester-control-test-case-button:not(.disabled):hover,
+	.smartforms-tester-control-test-button:not(.disabled):hover,
+	.smartforms-tester-control-report-popup-content-toolbar button:not(.disabled):hover
+	{
+		border: 1px solid lightgray !important;
+		border-radius: 3px;
+	}
+
+.smartforms-tester-control-menu-toolbar,
+.smartforms-tester-control-action-toolbar,
+.smartforms-tester-control-assertion-popup-content-toolbar,
+.smartforms-tester-control-breakpoint-popup-content-toolbar,
+.smartforms-tester-control-variable-popup-content-toolbar,
+.smartforms-tester-control-status-bar,
+.smartforms-tester-control-report-popup-content-toolbar
+{
+	background: #4E5758;
+}
+
+.smartforms-tester-control-menu-toolbar
+{
+	border-bottom: 1px solid darkgray;
+}
+
+.smartforms-tester-control-action-toolbar
+{
+	border-bottom: 1px solid darkgray;
+	border-top: 1px solid darkgray;
+}
+
+.smartforms-tester-control-status-bar
+{
+	border-top: 1px solid darkgray;
+}
+
+.smartforms-tester-control-assertion-popup-content-toolbar,
+.smartforms-tester-control-breakpoint-popup-content-toolbar,
+.smartforms-tester-control-variable-popup-content-toolbar,
+.smartforms-tester-control-report-popup-content-toolbar
+{
+	border: 1px solid darkgray;
+}
+
+#SFTesterTestCaseGrid .grid-body,
+#SFTester_EditTestGrid .grid-body
+{
+	overflow-y: auto;
+}
+
+.smartforms-tester-control-control-action-text-lookup-file-form-upload-form
+{
+	opacity: 0.1;
+}
+
+.smartforms-tester-control button.disabled,
+.smartforms-tester-control-test-button.disabled,
+.smartforms-tester-control-assertion-button.disabled,
+.smartforms-tester-control-breakpoint-button.disabled,
+.smartforms-tester-control-variable-button.disabled
+{
+	opacity: 0.4;
+	cursor: default;
+}
+
+.smartforms-tester-control-menu-toolbar-text-label,
+.smartforms-tester-control-menu-toolbar-text-label-divider
+{
+	cursor: default;
+}
+
+.smartforms-tester-control-menu-toolbar-text
+{
+	height: inherit;
+	width: 50%;
+	float: right;
+}
+
+.smartforms-tester-control-menu-toolbar-text-label,
+.smartforms-tester-control-menu-toolbar-text-label-divider,
+.smartforms-tester-control-menu-toolbar-text-label-test-name
+{
+	margin-top: 0px;
+	margin-right: 5px;
+	line-height: 26px;
+	vertical-align: middle;
+}
+
+.smartforms-tester-control-menu-toolbar-text-label-test-name:empty
+{
+	width: calc(100% - 118px);
+	text-align: right;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.smartforms-tester-control-menu-toolbar-text-label-test-name
+{
+	width: calc(100% - 130px);
+	text-align: right;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.smartforms-tester-control button,
+.smartforms-tester-control-test-case-button,
+.smartforms-tester-control-menu-toolbar-text-label-test-name,
+.smartforms-tester-control-test-button,
+.smartforms-tester-control-assertion-button,
+.smartforms-tester-control-breakpoint-button,
+.smartforms-tester-control-variable-button
+{
+	cursor: pointer;
+}
+
+.smartforms-tester-control-menu-toolbar-text-label-test-name:empty
+{
+	cursor: default;
+}
+
+.smartforms-tester-control-testcase-popup-content-toolbar,
+.smartforms-tester-control-testcase-popup-content-toolbar-header,
+.smartforms-tester-control-test-case-status-text,
+.smartforms-tester-control-test-status-text
+{
+	padding-left: 5px;
+	cursor: default;
+}
+
+.smartforms-tester-control-testcase-popup-content-scroll-wrapper
+{
+	top: 64px;
+	position: relative;
+}
+
+.smartforms-tester-control-testcase-popup-content-testcases
+{
+	top: 64px;
+}
+
+.smartforms-tester-control-testcase-popup-content-toolbar-header span
+{
+	position: relative;
+}
+
+.smartforms-tester-control-assertion-popup-content-groupbox,
+.smartforms-tester-control-breakpoint-popup-content-groupbox,
+.smartforms-tester-control-variable-popup-content-groupbox
+{
+	position: relative;
+	top: 35px;
+	margin: 5px !important;
+}
+
+.smartforms-tester-control-test-case-status-text
+{
+	padding: 5px;
+	vertical-align: middle;
+	top: 1px !important;
+	position: relative;
+}
+
+.smartforms-tester-control-menu-toolbar-new,
+.smartforms-tester-control-action-toolbar-add,
+.smartforms-tester-control-assertion-popup-content-toolbar-add,
+.smartforms-tester-control-breakpoint-popup-content-toolbar-add,
+.smartforms-tester-control-variable-popup-content-toolbar-add
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource6.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-toolbar-reset,
+.smartforms-tester-control-breakpoint-popup-content-toolbar-refresh
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource7.png?_gv=1083082561-20240220-160908);
+	background-size: contain;
+}
+
+.smartforms-tester-control-action-toolbar-move-up,
+.smartforms-tester-control-assertion-popup-content-toolbar-move-up
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource8.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-toolbar-settings
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource9.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-report
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource10.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-toolbar-move-down,
+.smartforms-tester-control-assertion-popup-content-toolbar-move-down
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource11.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-test-case-refresh,
+.smartforms-tester-control-test-refresh
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource12.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control .hidden
+{
+	display: none;
+}
+
+.smartforms-tester-control-action-toolbar .smartforms-tester-button-text,
+.smartforms-tester-control-assertion-popup-content-toolbar .smartforms-tester-button-text,
+.smartforms-tester-control-breakpoint-popup-content-toolbar .smartforms-tester-button-text,
+.smartforms-tester-control-variable-popup-content-toolbar .smartforms-tester-button-text,
+.smartforms-tester-control-test-case-remove-text.smartforms-tester-button-text,
+#SFTester_EditTestGrid.smartforms-tester-button-text,
+.smartforms-tester-control-report-popup-content-toolbar .smartforms-tester-button-text
+{
+	padding-left: 15px;
+	vertical-align: middle;
+	font-family: 'Segoe UI';
+	color: white;
+}
+
+.smartforms-tester-button-text
+{
+	font-family: 'Segoe UI' !important;
+	color: white !important;
+}
+
+.remove-variable
+{
+	width: 15px;
+	height: 10px;
+	margin-top: 4px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.smartforms-tester-control-action-toolbar-remove,
+.smartforms-tester-control-assertion-popup-content-toolbar-remove,
+.smartforms-tester-control-breakpoint-popup-content-toolbar-remove,
+.smartforms-tester-control-variable-popup-content-toolbar-remove,
+.smartforms-tester-control-test-case-remove,
+.smartforms-tester-control-test-remove,
+.remove-variable
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource13.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-test-edit
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource14.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-row
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: white;
+	height: 22px;
+}
+
+.smartforms-tester-control-action-toolbar-run,
+.smartforms-tester-control-breakpoint-popup-content-toolbar-continue
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource15.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-toolbar-pause
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource16.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-toolbar-next,
+.smartforms-tester-control-breakpoint-popup-content-toolbar-next
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource17.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-toolbar-stop,
+.smartforms-tester-control-breakpoint-popup-content-toolbar-stop
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource18.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-toolbar-watch
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource19.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-control-action-text-input-helper-icon,
+.smartforms-tester-control-assertion-popup-content-text-input-helper-icon,
+.smartforms-tester-control-custom-lookup-helper-icon,
+.smartforms-tester-control-assertion-custom-lookup-helper-icon,
+.smartforms-tester-control-breakpoint-custom-lookup-helper-icon,
+.smartforms-tester-control-variable-custom-lookup-helper-icon
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource20.png?_gv=1083082561-20240220-160908);
+	margin-top: 2px;
+}
+
+.smartforms-tester-control-assertion-popup-content-text-input-helper-icon,
+.smartforms-tester-control-custom-lookup-helper-icon,
+.smartforms-tester-control-assertion-custom-lookup-helper-icon,
+.smartforms-tester-control-breakpoint-custom-lookup-helper-icon,
+.smartforms-tester-control-variable-custom-lookup-helper-icon
+{
+	cursor: pointer;
+}
+
+.smartforms-tester-control-reports-report-area-performance-overall
+{
+	width: 50%;
+	height: 100%;
+}
+
+.smartforms-tester-control-reports-report-area-performance-individual
+{
+	width: 100%;
+	height: 50%;
+}
+
+.smartforms-tester-input-parameter
+{
+	display: flex;
+	-ms-flex: 1;
+	flex: 1;
+	margin-bottom: 5px;
+}
+
+.smartforms-tester-control-input-mappings-popup-mappings,
+.smartforms-tester-control-file-popup-content
+{
+	padding: 5px;
+}
+
+.smartforms-tester-input-parameter-text
+{
+	width: 30%;
+	border-right: #D47D25 2px solid;
+	margin-right: 2px;
+	height: 18px;
+	margin-top: 2px;
+}
+
+.smartforms-tester-input-parameter-value
+{
+	width: 70%;
+}
+
+div.smartforms-tester-control-report-popup-content-toolbar .smartforms-tester-button-text
+{
+	padding: 0 !important;
+}
+
+.smartforms-tester-control-reports-report-area
+{
+	width: 100%;
+	height: 50%;
+	display: -webkit-box;
+	display: flex;
+	display: -ms-flexbox;
+	-ms-flex: 1;
+}
+
+.smartforms-tester-report-sub-text
+{
+	color: #DFE5ED !important;
+	font-family: 'Segoe UI';
+}
+
+	.smartforms-tester-report-sub-text:not(.divider):hover
+	{
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+.smartforms-tester-control-reports-report-area-results
+{
+	width: 50%;
+	height: 100%;
+}
+
+.smartforms-tester-control-action-scroll-wrapper,
+.smartforms-tester-control-assertion-popup-content-assertions-scroll-wrapper,
+.smartforms-tester-control-breakpoint-popup-content-assertions-scroll-wrapper,
+.smartforms-tester-control-variable-popup-content-variables-scroll-wrapper,
+.smartforms-tester-control-testcase-popup-content-scroll-wrapper,
+.smartforms-tester-control-breakpoints-rule-panel-scroll-wrapper,
+.smartforms-tester-control-breakpoint-popup-content-breakpoints-scroll-wrapper
+{
+	overflow-y: auto;
+	background-color: white;
+}
+
+.k-tooltip
+{
+	padding: 10px;
+	background-color: white !important;
+	color: gray;
+	border-radius: 5px !important;
+}
+
+.smartforms-tester-control-reports-report-area
+{
+	overflow-y: hidden;
+	background-color: white;
+}
+
+.smartforms-tester-control-breakpoints-rule-panel-scroll-wrapper
+{
+	height: calc(100% - 18px);
+}
+
+.smartforms-tester-control-action-row.selected,
+.smartforms-tester-control-assertion-popup-content-assertions-row.selected,
+.smartforms-tester-control-breakpoint-popup-content-breakpoints-row.selected,
+.smartforms-tester-control-variable-popup-content-variables-row.selected
+{
+	background-color: #DFE5ED !important;
+}
+
+.smartforms-tester-control-action-row-break
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource18.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-left: 1px;
+}
+
+.step-row.break
+{
+	background-color: lavender !important;
+}
+
+.smartforms-tester-control-action-row-result.not-run
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource21.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+	margin-top: 2px;
+}
+
+.smartforms-tester-control-action-row-result.running
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource.gif?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+	margin-top: 2px;
+}
+
+.smartforms-tester-control-action-row-result.paused
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource16.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+	margin-top: 2px;
+}
+
+.smartforms-tester-control-action-row-result.pass
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource22.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+	margin-top: 1px;
+}
+
+.smartforms-tester-control-action-row-result.fail
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource23.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+	margin-top: 2px;
+}
+
+.smartforms-tester-delay-popup-contents-spinner .spinner-text-input
+{
+	width: 100% !important;
+}
+
+.smartforms-tester-control-status-bar-text.error .smartforms-tester-control-status-bar-text-icon
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource23.png?_gv=1083082561-20240220-160908);
+}
+
+.smartforms-tester-control-action-row-break.off
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource24.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-left: 1px;
+}
+
+.smartforms-tester-control-action-row-assertion
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource25.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position: center;
+	outline: none;
+}
+
+	.smartforms-tester-control-action-row-assertion.off
+	{
+		opacity: 0.6;
+		background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource25.png?_gv=1083082561-20240220-160908);
+		background-repeat: no-repeat;
+		border: none;
+		background-color: transparent;
+		background-position: center;
+		outline: none;
+	}
+
+.smartforms-tester-control-action-row-delay
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource26.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position: center;
+	outline: none;
+}
+
+	.smartforms-tester-control-action-row-delay.off
+	{
+		opacity: 0.6;
+		background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource26.png?_gv=1083082561-20240220-160908);
+		background-repeat: no-repeat;
+		border: none;
+		background-color: transparent;
+		background-position: center;
+		outline: none;
+	}
+
+.smartforms-tester-control-action-row-print.off
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource27.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+}
+
+#SFTester_FormLookupField .form-field-element-wrapper,
+#SFTester_TestSuiteSmOLookup .form-field-element-wrapper
+{
+	margin-left: 68px !important;
+}
+
+#SFTester_FormLookupField .form-field-label,
+.smartforms-tester-control-action-groupbox legend,
+.smartforms-tester-control-assertion-popup-content-assertions-groupbox legend,
+.smartforms-tester-control-breakpoint-popup-content-breakpoints-groupbox legend,
+.smartforms-tester-control-variable-popup-content-variables-groupbox legend,
+#SFTesterTestCaseGrid .smartforms-tester-button-text,
+#SFTester_EditTestGrid .smartforms-tester-button-text
+{
+	color: black !important;
+	font-family: 'Segoe UI';
+}
+
+.smartforms-tester-control-action-groupbox
+{
+	background-color: white;
+	margin: 7px 0px 0px 10px;
+}
+
+.smartforms-tester-control-assertion-popup-content-assertions-groupbox,
+.smartforms-tester-control-breakpoint-popup-content-breakpoints-groupbox,
+.smartforms-tester-control-variable-popup-content-variables-groupbox
+{
+	background-color: white;
+	margin-left: 4px !important;
+}
+
+.step-row
+{
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+div#Test_Settings_Parameters
+{
+	height: calc(100% - 22px);
+	border: 1px solid gray;
+	padding: 10px;
+	background-color: white;
+}
+
+.parameter-div:not(:first-child)
+{
+	margin-top: 3px;
+}
+
+label.parameter-label
+{
+	width: 150px !important;
+	overflow: hidden;
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+input.parameter-input
+{
+	width: calc(100% - 160px);
+	margin-left: 3px;
+	padding-left: 3px;
+	outline: none;
+}
+
+	input.parameter-input:focus
+	{
+		border: 1px solid #98dc28;
+		width: calc(100% - 161px);
+		margin-left: 3px;
+		padding: 2px 2px 2px 4px;
+		outline: none;
+	}
+
+.parameter-input::-webkit-input-placeholder
+{
+	font-style: italic;
+}
+
+.parameter-input::-moz-placeholder
+{
+	font-style: italic;
+}
+
+.parameter-input:-ms-input-placeholder
+{
+	font-style: italic;
+	color: lightgray;
+	opacity: 0.6;
+}
+
+.step-overlay
+{
+	pointer-events: none;
+}
+
+.smartforms-tester-control-iframe
+{
+	background-color: white;
+	border: 1px solid darkgray;
+}
+
+.smartforms-tester-control-action-row-print
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource28.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+}
+
+.smartforms-tester-control-action-row-testcase.off
+{
+	opacity: 0.6;
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource4.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+}
+
+.smartforms-tester-control-action-row-variables.off
+{
+	opacity: 0.6;
+}
+
+.context-menu
+{
+	z-index: 999999;
+}
+
+.smartforms-tester-control-action-row-variables,
+.smartforms-tester-control-assertions-variable-context-menu a.menu-item.variable span.menu-item-icon,
+.smartforms-tester-control-assertion-popup-content-assertions-row-control-static-value input[readonly=readonly]
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource29.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+}
+
+.smartforms-tester-control-assertion-popup-content-assertions-row-control-static-value input[readonly=readonly]
+{
+	padding-left: 20px !important;
+	background-color: transparent !important;
+	cursor: default !important;
+}
+
+.smartforms-tester-control-assertion-popup-content-assertions-row-control-static-value .input-control-wrapper
+{
+	overflow: hidden;
+	display: flex;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.smartforms-tester-control-assertion-popup-content-assertions-scroll-wrapper.loading,
+.smartforms-tester-control-variable-popup-content-variables-scroll-wrapper.loading,
+.smartforms-tester-control-breakpoint-popup-content-breakpoints-scroll-wrapper.loading,
+.smartforms-tester-control-testcase-popup-content.loading,
+.smartforms-tester-control-action-scroll-wrapper.loading,
+.row-loader
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource0.gif?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position: center;
+	outline: none;
+}
+
+span.drop-header-text
+{
+	vertical-align: middle;
+	line-height: 20px;
+	padding-left: 5px;
+	padding-right: 3px;
+	cursor: default;
+}
+
+.smartforms-tester-control-testcase-popup-content.loading
+{
+	background-color: white !important;
+}
+
+	.smartforms-tester-control-testcase-popup-content.loading *
+	{
+		display: none;
+	}
+
+.row-loader
+{
+	margin-top: 2px;
+}
+
+.smartforms-tester-control-action-row-testcase
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource4.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+}
+
+.smartforms-tester-control-assertion-popup-content,
+.smartforms-tester-control-variable-popup-content,
+.smartforms-tester-control-breakpoint-popup-content,
+.smartforms-tester-control-testcase-popup-content,
+.smartforms-tester-control-menu-toolbar-file-edit-popup-contents,
+.smartforms-tester-control-report-popup-content
+{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.smartforms-tester-control-testcase-popup-content,
+.smartforms-tester-control-menu-toolbar-file-edit-popup-contents
+{
+	background-color: white;
+}
+
+.smartforms-tester-control-assertion-popup-content,
+.smartforms-tester-control-breakpoint-popup-content,
+.smartforms-tester-control-variable-popup-content,
+.smartforms-tester-control-report-popup-content
+{
+	background-color: #EFEFDF;
+}
+
+	.smartforms-tester-control-assertion-popup-content,
+	.smartforms-tester-control-assertion-popup-content > div,
+	.smartforms-tester-control-breakpoint-popup-content,
+	.smartforms-tester-control-breakpoint-popup-content > div,
+	.smartforms-tester-control-variable-popup-content,
+	.smartforms-tester-control-variable-popup-content > div
+	{
+		position: absolute;
+	}
+
+.smartforms-tester-control-delay-popup-content
+{
+	height: 100%;
+	background-color: white;
+}
+
+.smartforms-tester-control-menu-toolbar-file
+{
+	background-image: url(<%= WebResource("SourceCode.QA.SmartFormsTester.Icons.menu-toggle-icon--#DFE5ED.png")%>);
+	background-repeat: no-repeat;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: absolute;
+}
+
+#SFTester_InputMappingPopupContent
+{
+	overflow: hidden;
+}
+
+.smartforms-tester-delay-popup-contents-spinner .spinner-inputs
+{
+	width: 150px;
+}
+
+.smartforms-tester-delay-popup-contents-spinner .spinner-input-wrapper,
+.smartforms-tester-delay-popup-contents-spinner .spinner-text-input
+{
+	width: 148px;
+}
+
+.smartforms-tester-control-delay-popup-content
+{
+	padding: 10px;
+	display: flex;
+	-ms-flex: 1;
+	flex: 1;
+	overflow: hidden;
+}
+
+.smartforms-tester-delay-popup-contents-spinner-text
+{
+	margin-right: 10px;
+	line-height: 17px;
+}
+
+div[id*=DelayPopup] .scroll-wrapper,
+#SFTester_File_SaveAsPopup .scroll-wrapper
+{
+	overflow: hidden;
+}
+
+.smartforms-tester-control-file-popup-description-input,
+.smartforms-tester-control-file-popup-name-input,
+.smartforms-tester-control-file-popup-test-suite-input + .select-box
+{
+	margin: 5px 10px 5px 0px;
+}
+
+.test-case-drop
+{
+	width: 200px;
+	margin-left: 5px;
+}
+
+.smartforms-tester-control-breakpoints-rule-panel
+{
+	min-width: 0px;
+	width: calc(30% - 30px);
+	height: calc(100% - 16px);
+	background-color: white;
+	position: absolute;
+	bottom: 0px;
+	margin-left: 4px !important;
+	margin-bottom: 3px !important;
+	border: 1px solid darkgray !important;
+}
+
+.smartforms-tester-control-breakpoint-rule-line
+{
+	margin-bottom: 3px;
+	display: -webkit-box;
+	display: flex;
+	display: -ms-flexbox;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.flex
+{
+	display: -webkit-box;
+	display: flex;
+	display: -ms-flexbox;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.smartforms-tester-control-breakpoint-rule
+{
+	margin-top: 10px;
+}
+
+.smartforms-tester-control-breakpoint-rule-location-header
+{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+	.smartforms-tester-control-breakpoint-rule-location-header.form
+	{
+		background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource30.png?_gv=1083082561-20240220-160908);
+		background-repeat: no-repeat;
+		border: 1px solid darkgray;
+		background-position-y: center;
+		outline: none;
+		padding-left: 24px;
+		line-height: 21px;
+		background-color: lightgrey;
+		background-position-x: 4px;
+		font-weight: bold;
+	}
+
+	.smartforms-tester-control-breakpoint-rule-location-header.view
+	{
+		background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource31.png?_gv=1083082561-20240220-160908);
+		background-repeat: no-repeat;
+		border: 1px solid darkgray;
+		background-position-y: center;
+		outline: none;
+		padding-left: 24px;
+		line-height: 21px;
+		background-color: lightgrey;
+		background-position-x: 4px;
+		font-weight: bold;
+	}
+
+	.smartforms-tester-control-breakpoint-rule-location-header.sub
+	{
+		background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource32.png?_gv=1083082561-20240220-160908);
+		background-repeat: no-repeat;
+		border: 1px solid darkgray;
+		background-position-y: center;
+		outline: none;
+		padding-left: 24px;
+		line-height: 21px;
+		background-color: lightgrey;
+		background-position-x: 4px;
+		font-weight: bold;
+	}
+
+.smartforms-tester-control-breakpoints-rule-section
+{
+	width: 30%;
+}
+
+.smartforms-tester-control-breakpoint-rule-line-comment
+{
+	background-image: url(RT.SourceCode.QA.SmartFormsTesterResources/webresource33.png?_gv=1083082561-20240220-160908);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-position-y: center;
+	outline: none;
+	padding-left: 22px;
+	line-height: 21px;
+	width: 16px;
+	height: 16px;
+	margin-left: 10px;
+}
+
+	.smartforms-tester-control-breakpoint-rule-line-comment.hidden
+	{
+		display: none;
+	}
+
+.smartforms-tester-control-breakpoint-rule.disabled,
+.smartforms-tester-control-breakpoint-rule.disabled .smartforms-tester-control-breakpoint-rule-line-text,
+.smartforms-tester-control-breakpoint-rule:not(.disabled) .smartforms-tester-control-breakpoint-rule-line-text.disabled
+{
+	opacity: 0.6;
+}
+
+.smartforms-tester-control-breakpoint-rule,
+.smartforms-tester-control-breakpoint-rule .smartforms-tester-control-breakpoint-rule-line-text,
+.smartforms-tester-control-breakpoint-rule-location-header
+{
+	cursor: default;
+}
+
+.smartforms-tester-control-breakpoint-rule-location
+{
+	padding-bottom: 10px;
+}
+
+.smartforms-tester-control-breakpoint-rule-line:first-child
+{
+	font-weight: bold;
+}
+
+.smartforms-tester-control-breakpoints-body
+{
+	display: flex;
+	height: calc(100% - 35px);
+	top: 35px;
+	width: 100%;
+}
+
+.smartforms-tester-control-breakpoint-popup-content-breakpoints-groupbox-div
+{
+	height: calc(100% - 5px);
+	top: 0px;
+	width: 70%;
+}
+
+.smartforms-tester-control-breakpoint-rule-direct-panel-header,
+.smartforms-tester-control-breakpoint-rule-indirect-panel-header
+{
+	line-height: 15px;
+	background-color: whitesmoke;
+	border: 1px solid darkgray;
+	border-bottom-color: transparent;
+	padding-left: 5px;
+	cursor: default;
+}
+
+.smartforms-tester-control-breakpoint-rule-direct-panel-body,
+.smartforms-tester-control-breakpoint-rule-indirect-panel-body
+{
+	background-color: darkgrey;
+}
+

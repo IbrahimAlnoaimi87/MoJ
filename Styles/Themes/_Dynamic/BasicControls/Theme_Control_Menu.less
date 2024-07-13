@@ -1,0 +1,42 @@
+/*#region MENU */
+.theme-entry .menu
+{
+    //border-color: #aaa;
+    border-color: @Menu-Border-Color;
+    //background-color: #fff;
+    background-color: @Menu-Background-Color;
+    background-position: -23px 0;
+    background-repeat: repeat-y;
+    -moz-box-shadow: @Menu-Shadow;
+    -webkit-box-shadow: @Menu-Shadow;
+    box-shadow: @Menu-Shadow;
+    /*background-image: url("menu_bg.png");*/
+}
+
+.theme-entry .menu li:hover,
+.theme-entry .menu li.active
+{
+    border-color: @Menu-Item-Hover-Border-Color;
+    background: @Menu-Item-Hover-Background-Color;
+}
+
+.theme-entry .menu li:hover span,
+.theme-entry .menu li.active span
+{
+    color: @Menu-Text-Color;
+}
+
+.theme-entry .menu li.seperator span
+{
+    //border-color: #E0E0E0 #E0E0E0 #fff #fff;
+    border-color: @Menu-Item-Separator-Line-Color @Menu-Item-Separator-Line-Color @Menu-Item-Separator-Line-Color-2 @Menu-Item-Separator-Line-Color-2;
+    background-color: @Menu-Item-Separator-Background-Color;
+}
+
+.theme-entry .menu a.menu-item
+{
+    padding: 0.9rem 2.3rem 1.0rem 0.3rem;
+    color: @Menu-Item-Hyperlink-Text-Color;
+}
+
+/*#endregion MENU */

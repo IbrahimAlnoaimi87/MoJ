@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-togglebuttons.icon-size{iconsize}.ic-{iconname}"/>
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1" cssname="toggle">ToggleNormal32.png</Row>
+              <Row number="2" cssname="toggle">ToggleSelected32.png</Row>
+              <Row number="3" cssname="toggle">ToggleHover32.png</Row>
+              <Row number="4" cssname="toggle">ToggleFocus32.png</Row>
+              <Row number="5" cssname="toggle">ToggleHoverFocus32.png</Row>
+              <Row number="6" cssname="toggle">ToggleDisabled32.png</Row>
+            </Rows>
+          </Column>
+          <Column number="2">
+            <Rows>
+              <Row number="1" cssname="toggle_selected">ToggleSelected32.png</Row>
+              <Row number="2" cssname="toggle_selected">ToggleSelected32.png</Row>
+              <Row number="3" cssname="toggle_selected">ToggleSelectedHover32.png</Row>
+              <Row number="4" cssname="toggle_selected">ToggleSelectedFocus32.png</Row>
+              <Row number="5" cssname="toggle_selected">ToggleSelectedHoverFocus32.png</Row>
+              <Row number="6" cssname="toggle_selected">ToggleSelectedDisabled32.png</Row>
+            </Rows>
+          </Column>
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="16,0,0,16">
+        <CssBackgroundImageFolder>Toolbar/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/Buttons/ToggleButtons32.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/ToggleButtons32.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

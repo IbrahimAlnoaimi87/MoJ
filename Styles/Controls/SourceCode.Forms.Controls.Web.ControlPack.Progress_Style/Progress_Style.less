@@ -1,0 +1,341 @@
+﻿@_stepColorWhite: #FFFFFF;
+@_stepColorLightGray: #D9D9D9;
+@_stepColorDarkGray: #ADADAD;
+@_stepColorLightBlue: #3CB0DF;
+@_stepColorDarkBlue: #636F80;
+@_stepColorLightRed: #F44336;
+@_stepColorDarkRed: #B71C1C;
+
+@_fontColor: #707070;
+@_fontFamily: Segoe UI, Regular;
+@_fontSize: 14px;
+@_fontAlignment: center;
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl
+{
+    .stylewrapper
+    {
+        .container.metro
+        {
+            .step-container
+            {
+                .step-area
+                {
+                    color: @_fontColor;
+                    font-family: @_fontFamily;
+                    font-size: @_fontSize;
+                    text-align: @_fontAlignment;
+
+                    .step-item
+                    {
+                        .connector-left,
+                        .connector-right
+                        {
+                            background-color: @_stepColorDarkGray;
+                        }
+
+                        .step
+                        {
+                            background-color: @_stepColorWhite;
+                            border-color: @_stepColorDarkGray;
+
+                            &:hover
+                            {
+                                background-color: @_stepColorLightBlue;
+                                border-color: @_stepColorLightBlue;
+                            }
+
+                            &:focus
+                            {
+                                border-color: @_stepColorLightBlue;
+                            }
+                        }
+                    }
+
+                    .step-title
+                    {
+                        .title
+                        {
+                            color: @_fontColor;
+                            font-family: @_fontFamily;
+                            font-size: @_fontSize;
+                            text-align: @_fontAlignment;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:not(.disabled)
+    {
+        .stylewrapper
+        {
+            .step-container
+            {
+                &.inprogress
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .step
+                            {
+                                background-color: @_stepColorDarkBlue;
+                                border-color: @_stepColorDarkBlue;
+                            }
+                        }
+                    }
+                }
+
+                &.completed
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .step
+                            {
+                                background-color: @_stepColorDarkBlue;
+                                border-color: @_stepColorDarkBlue;
+                            }
+                        }
+                    }
+                }
+
+                &.last-completed
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .connector-left
+                            {
+                                background-color: @_stepColorDarkBlue;
+                            }
+                        }
+                    }
+                }
+
+                &.next-completed
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .connector-right
+                            {
+                                background-color: @_stepColorDarkBlue;
+                            }
+                        }
+                    }
+                }
+
+                &.paused
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .step
+                            {
+                                background-color: @_stepColorDarkGray;
+                                border-color: @_stepColorDarkGray;
+                            }
+                        }
+                    }
+                }
+
+                &.error
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .step
+                            {
+                                background-color: @_stepColorDarkRed;
+                                border-color: @_stepColorDarkRed;
+
+                                &:hover
+                                {
+                                    background-color: @_stepColorLightRed;
+                                    border-color: @_stepColorLightRed;
+                                }
+
+                                &:focus
+                                {
+                                    border-color: @_stepColorLightRed;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.error.selected
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .step
+                            {
+                                background-color: @_stepColorLightRed;
+                                border-color: @_stepColorLightRed;
+                            }
+                        }
+                    }
+                }
+
+                &.selected
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .step
+                            {
+                                background-color: @_stepColorLightBlue;
+                                border-color: @_stepColorLightBlue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.disabled
+    {
+        .stylewrapper
+        {
+            .container.metro
+            {
+                .step-container
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .connector-left,
+                            .connector-right
+                            {
+                                background-color: @_stepColorLightGray;
+                            }
+
+                            .step
+                            {
+                                background-color: @_stepColorLightGray;
+                                border-color: @_stepColorLightGray;
+                            }
+
+                            &:hover
+                            {
+                                border-color: @_stepColorLightGray;
+                            }
+
+                            &:focus
+                            {
+                                border-color: @_stepColorLightGray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl
+    {
+        &:not(.disabled)
+        {
+            .container.metro
+            {
+                .step-container
+                {
+                    &.inprogress
+                    {
+                        .step
+                        {
+                            background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Play10.png');
+                        }
+                    }
+
+                    &.completed
+                    {
+                        .step
+                        {
+                            background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Complete10.png');
+                        }
+                    }
+
+                    &.paused
+                    {
+                        .step
+                        {
+                            background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Pause10.png');
+                        }
+                    }
+
+                    &.error
+                    {
+                        .step
+                        {
+                            background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Error10.png');
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl
+    {
+        &:not(.disabled)
+        {
+            .container.metro
+            {
+                .step-container
+                {
+                    &.inprogress
+                    {
+                        .step
+                        {
+                            background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Play10@2x.png');
+                        }
+                    }
+
+                    &.completed
+                    {
+                        .step
+                        {
+                            background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Complete10@2x.png');
+                        }
+                    }
+
+                    &.paused
+                    {
+                        .step
+                        {
+                            background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Pause10@2x.png');
+                        }
+                    }
+
+                    &.error
+                    {
+                        .step
+                        {
+                            background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Error10@2x.png');
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

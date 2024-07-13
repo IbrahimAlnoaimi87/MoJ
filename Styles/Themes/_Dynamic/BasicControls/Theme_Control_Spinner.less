@@ -1,0 +1,101 @@
+/*#region SPINNER CONTROL */
+/*Found in the datetime picker (calendar) - an up/down textbox*/
+.theme-entry .spinner
+{
+    //background: #fff;
+    background: @Input-Background-Color;
+    display: table;
+    width: 100%;
+}
+
+.theme-entry .spinner .spinner-inputs,
+.theme-entry .spinner .spinner-buttons
+{
+    right: auto; /*override - base*/
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    /*make sure the buttons are inline*/
+    /*override - base*/
+}
+
+.theme-entry .spinner .spinner-inputs
+{
+    border-width: 0; /* override - base */
+    width: auto; /*push the buttons right - cannot be 100% otherwise ie will stretch to max-width*/
+}
+
+.theme-entry .spinner.active .spinner-inputs
+{
+    //border-color: #3cb0df;
+    border-color: @Input-Focus-Border-Color;
+}
+
+.theme-entry .spinner .spinner-inputs .spinner-input-wrapper,
+.theme-entry .calendar-outline .timepicker-content .spinner .spinner-input-wrapper
+{
+    border: none; /* override - base */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*auto height will respect the line-height, setting the height to 3.2rem will stop the top border from showing*/
+    overflow: hidden; /*BUG FIX: when the control was active the top border wasn't showing*/
+    width: 100%; /* override - base */
+}
+
+.theme-entry .spinner .spinner-inputs .spinner-text-input
+{
+    height: inherit;
+    padding: 0;
+    width: 1.9rem;
+}
+
+.theme-entry .spinner .spinner-inputs .spinner-text-input:last-child
+{
+    width: 2.5rem;
+}
+
+.theme-entry .spinner .spinner-inputs .spinner-delimiter
+{
+    height: inherit;
+    position: static; /* override - base */
+    top: auto; /* override - base */
+}
+
+html[dir=rtl] .theme-entry .spinner .spinner-inputs .spinner-input-wrapper
+{
+    display: inherit;
+    padding-right: 3px;
+}
+
+.theme-entry .spinner .spinner-buttons button
+{
+    //background-color: #fff; //no variable
+    background-color: @Input-Button-Background-Color; //no variable
+    border: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: inherit;
+    width: 100%;
+}
+
+.theme-entry .spinner .spinner-buttons .spinner-up-button
+{
+    border-top-right-radius: 2px;
+}
+
+.theme-entry .spinner .spinner-buttons .spinner-down-button
+{
+    border-bottom-right-radius: 2px;
+}
+
+.theme-entry .spinner .spinner-buttons .spinner-up-button:focus,
+.theme-entry .spinner .spinner-buttons .spinner-down-button:focus
+{
+    //background-color: #3cb0df;
+    background-color: @Input-Button-Focus-Background-Color;
+    outline: none;
+}
+
+/*#endregion SPINNER CONTROL */

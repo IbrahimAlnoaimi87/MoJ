@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-datatypes.icon-size16.ic-{iconname}"/> <!-- normal -->
+          <RowDefinition row="2" cssSelector=".icon.icon-set-datatypes.icon-size16.ic-{iconname}.hover"/> <!-- hover -->
+          <RowDefinition row="3" cssSelector=".icon.icon-set-datatypes.icon-size16.ic-{iconname}.selected"/> <!-- selected -->
+          <RowDefinition row="4" cssSelector=".icon.icon-set-datatypes.icon-size16.ic-{iconname}.watermark"/> <!-- watermark -->
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1" cssname="autoguid">AutoGUID16.png</Row>
+              <Row number="2" cssname="autoguid">AutoGUID_Hover16.png</Row>
+              <Row number="3" cssname="autoguid">AutoGUID_Selected16.png</Row>
+	          <Row number="4" cssname="autoguid">AutoGUID_Watermark16.png</Row>
+            </Rows>
+          </Column>
+          <Column number="2">   
+            <Rows>  
+              <Row number="1" cssname="autonumber">AutoNumber16.png</Row>
+              <Row number="2" cssname="autonumber">AutoNumber_Hover16.png</Row>
+              <Row number="3" cssname="autonumber">AutoNumber_Selected16.png</Row>
+              <Row number="4" cssname="autonumber">AutoNumber_Watermark16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="3">   
+            <Rows>  
+              <Row number="1" cssname="datetime">DateTime16.png</Row>
+              <Row number="2" cssname="datetime">DateTime_Hover16.png</Row>
+              <Row number="3" cssname="datetime">DateTime_Selected16.png</Row>
+              <Row number="4" cssname="datetime">DateTime_Watermark16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="4">   
+            <Rows>  
+              <Row number="1" cssname="decimal">Decimal16.png</Row>
+              <Row number="2" cssname="decimal">Decimal_Hover16.png</Row>
+              <Row number="3" cssname="decimal">Decimal_Selected16.png</Row>
+              <Row number="4" cssname="decimal">Decimal_Watermark16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="5">   
+            <Rows>  
+              <Row number="1" cssname="folderclosed">FolderClosed16.png</Row>
+              <Row number="2" cssname="folderclosed">FolderClosed_Hover16.png</Row>
+              <Row number="3" cssname="folderclosed">FolderClosed_Selected16.png</Row>
+              <Row number="4" cssname="folderclosed">FolderClosed_Watermark16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="6">   
+            <Rows>  
+              <Row number="1" cssname="folderopen">FolderOpen16.png</Row>
+              <Row number="2" cssname="folderopen">FolderOpen_Hover16.png</Row>
+              <Row number="3" cssname="folderopen">FolderOpen_Selected16.png</Row>
+              <Row number="4" cssname="folderopen">FolderOpen_Watermark16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="7">   
+            <Rows>  
+              <Row number="1" cssname="guid">GUID16.png</Row>
+              <Row number="2" cssname="guid">GUID_Hover16.png</Row>
+              <Row number="3" cssname="guid">GUID_Selected16.png</Row>
+              <Row number="4" cssname="guid">GUID_Watermark16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="8">   
+            <Rows>  
+              <Row number="1" cssname="hyperlink">Hyperlink16.png</Row>
+              <Row number="2" cssname="hyperlink">Hyperlink_Hover16.png</Row>
+              <Row number="3" cssname="hyperlink">Hyperlink_Selected16.png</Row>
+              <Row number="4" cssname="hyperlink">Hyperlink_Watermark16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="9">   
+            <Rows>  
+              <Row number="1" cssname="image">Image16.png</Row>
+              <Row number="2" cssname="image">Image_Hover16.png</Row>
+              <Row number="3" cssname="image">Image_Selected16.png</Row>
+              <Row number="4" cssname="image">Image_Watermark16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="10">    
+            <Rows>  
+              <Row number="1" cssname="memo">Memo16.png</Row>
+              <Row number="2" cssname="memo">Memo_Hover16.png</Row>
+              <Row number="3" cssname="memo">Memo_Selected16.png</Row>
+              <Row number="4" cssname="memo">Memo_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="11">    
+            <Rows>  
+              <Row number="1" cssname="multivalue">MultiValue16.png</Row>
+              <Row number="2" cssname="multivalue">MultiValue_Hover16.png</Row>
+              <Row number="3" cssname="multivalue">MultiValue_Selected16.png</Row>
+              <Row number="4" cssname="multivalue">MultiValue_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="12">    
+            <Rows>  
+              <Row number="1" cssname="number">Number16.png</Row>
+              <Row number="2" cssname="number">Number_Hover16.png</Row>
+              <Row number="3" cssname="number">Number_Selected16.png</Row>
+              <Row number="4" cssname="number">Number_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="13">    
+            <Rows>  
+              <Row number="1" cssname="text">Text16.png</Row>
+              <Row number="2" cssname="text">Text_Hover16.png</Row>
+              <Row number="3" cssname="text">Text_Selected16.png</Row>
+              <Row number="4" cssname="text">Text_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="14">    
+            <Rows>  
+              <Row number="1" cssname="yesno">YesNo16.png</Row>
+              <Row number="2" cssname="yesno">YesNo_Hover16.png</Row>
+              <Row number="3" cssname="yesno">YesNo_Selected16.png</Row>
+              <Row number="4" cssname="yesno">YesNo_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="15">    
+            <Rows>  
+              <Row number="1" cssname="date">Date16.png</Row>
+              <Row number="2" cssname="date">Date_Hover16.png</Row>
+              <Row number="3" cssname="date">Date_Selected16.png</Row>
+              <Row number="4" cssname="date">Date_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="16">    
+            <Rows>  
+              <Row number="1" cssname="time">Time16.png</Row>
+              <Row number="2" cssname="time">Time_Hover16.png</Row>
+              <Row number="3" cssname="time">Time_Selected16.png</Row>
+              <Row number="4" cssname="time">Time_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="17">    
+            <Rows>  
+              <Row number="1" cssname="function">Functions16.png</Row>
+              <Row number="2" cssname="function">Functions_Hover16.png</Row>
+              <Row number="3" cssname="function">Functions_Selected16.png</Row>
+              <Row number="4" cssname="function">Functions_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		 <Column number="18">    
+            <Rows>  
+              <Row number="1" cssname="any">Any16.png</Row>
+              <Row number="2" cssname="any">Any_Hover16.png</Row>
+              <Row number="3" cssname="any">Any_Selected16.png</Row>
+              <Row number="4" cssname="any">Any_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+          
+		  <Column number="19">    
+            <Rows>  
+              <Row number="1" cssname="xml">XML16.png</Row>
+              <Row number="2" cssname="xml">XML_Hover16.png</Row>
+              <Row number="3" cssname="XML">XML_Selected16.png</Row>
+              <Row number="4" cssname="XML">XML_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="20">    
+            <Rows>  
+              <Row number="1" cssname="File">File16.png</Row>
+              <Row number="2" cssname="File">File_Hover16.png</Row>
+              <Row number="3" cssname="File">File_Selected16.png</Row>
+              <Row number="4" cssname="File">File_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="21">    
+            <Rows>  
+              <Row number="1" cssname="filetype">FileType16.png</Row>
+              <Row number="2" cssname="filetype">FileType_Hover16.png</Row>
+              <Row number="3" cssname="filetype">FileType_Selected16.png</Row>
+              <Row number="4" cssname="filetype">FileType_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="22">    
+            <Rows>  
+              <Row number="1" cssname="user">User16.png</Row>
+              <Row number="2" cssname="user">User_Hover16.png</Row>
+              <Row number="3" cssname="user">User_Selected16.png</Row>
+              <Row number="4" cssname="user">User_Watermark16.png</Row>
+            </Rows> 
+          </Column>
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="8,0,0,8">
+        <CssBackgroundImageFolder>DataTypes/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/DataTypes/DataTypes16.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/DataTypes16.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

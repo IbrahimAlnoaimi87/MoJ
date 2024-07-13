@@ -1,0 +1,721 @@
+// Theme: Dynamic 
+// Author: Lewis Garmston 
+// Date: 06/08/2020 
+
+//#region RESETS*/
+
+.theme-entry .SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .input-control .input-control-content
+{
+    border-color: @Input-Border-Color;
+    background-color: @Input-Background-Color;
+    /*override - base*/
+    /*override - base*/
+}
+
+.theme-entry .input-control .input-control-m-c
+{
+    padding-left: 0; /*override - base*/
+}
+
+//#endregion RESETS*/
+
+//#region TEXT HIGHLIGHTING */
+.theme-entry *::selection
+{
+    background: @Input-Text-Highlight-Background-Color; /* IE, Chrome */
+    color: @Input-Text-Highlight-Text-Color;
+}
+
+.theme-entry .radio::selection,
+.theme-entry .radio input::selection,
+.theme-entry .radio .input-control-img::selection,
+.theme-entry .radio .input-control-text::selection,
+.theme-entry .checkbox::selection,
+.theme-entry .checkbox input::selection,
+.theme-entry .checkbox .input-control-img::selection,
+.theme-entry .checkbox .input-control-text::selection,
+.theme-entry tr::selection,
+.theme-entry td::selection,
+.theme-entry div::selection
+{
+    background: @Input-Text-Highlight-Background-Color; /* IE, Chrome */
+    color: @Input-Text-Highlight-Text-Color;
+}
+
+.theme-entry .radio.disabled::selection,
+.theme-entry .radio.disabled input::selection,
+.theme-entry .radio.disabled .input-control-img::selection,
+.theme-entry .radio.disabled .input-control-text::selection,
+.theme-entry .checkbox.disabled::selection,
+.theme-entry .checkbox.disabled input::selection,
+.theme-entry .checkbox.disabled .input-control-img::selection,
+.theme-entry .checkbox.disabled .input-control-text::selection
+{
+    background: @Input-Background-Color; /* IE, Chrome */
+    color:@Input-Disabled-Text-Color;
+}
+
+.theme-entry *::-moz-selection
+{
+    background: @Input-Text-Highlight-Background-Color; /* Firefox */
+    color: @Input-Text-Highlight-Text-Color;
+}
+
+// CHECK WITH LEWIS
+.theme-entry .radio::-moz-selection,
+.theme-entry .radio input::-moz-selection,
+.theme-entry .radio .input-control-img::-moz-selection,
+.theme-entry .radio .input-control-text::-moz-selection,
+.theme-entry .checkbox::-moz-selection,
+.theme-entry .checkbox input::-moz-selection,
+.theme-entry .checkbox .input-control-img::-moz-selection,
+.theme-entry .checkbox .input-control-text::-moz-selection
+{
+    
+    background-color: @Input-Text-Highlight-Background-Color; /* Firefox */
+    color: @Input-Text-Highlight-Text-Color;
+}
+
+// CHECK WITH LEWIS
+.theme-entry .radio.disabled::-moz-selection,
+.theme-entry .radio.disabled input::-moz-selection,
+.theme-entry .radio.disabled .input-control-img::-moz-selection,
+.theme-entry .radio.disabled .input-control-text::-moz-selection,
+.theme-entry .checkbox.disabled::-moz-selection,
+.theme-entry .checkbox.disabled input::-moz-selection,
+.theme-entry .checkbox.disabled .input-control-img::-moz-selection,
+.theme-entry .checkbox.disabled .input-control-text::-moz-selection
+{
+    background-color: @Input-Text-Highlight-Background-Color; /* Firefox */
+    color: @Input-Text-Highlight-Text-Color;
+}
+
+//#endregion TEXT HIGHLIGHTING
+
+//#region MAIN STRUCTURE
+
+html
+{
+    /*BUG FIX: Removed - as calendar popovers are no longer attached to their form controls if the form is scrollable*/
+    /*overflow: hidden;*/ /*needed for form to be overflow:auto*/
+}
+
+body.theme-entry > form
+{
+    /*all needed to make the form area scrollable*/
+    /*the body/html cannot be scrollable as the page loading overlays must cover the scrollbars.*/
+    /*BUG FIX: Removed - as calendar popovers are no longer attached to their form controls if the form is scrollable*/
+    /*     this is because the popovers are directly beneath the "body" */
+    /*position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: auto;*/
+}
+
+//#endregion MAIN STRUCTURE*/
+
+//#region Default FORM BACKGROUND*/
+
+
+//DEFAULT FORM BACKGROUND
+#pgInnerPanel #pgTabControl > .tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper, /*Design Time*/
+.theme-entry .tab-box .tab-box-body, /*Runtime*/
+.theme-entry .form
+{
+    background-color: @Form-Background-Color;
+    border-radius: @Panel-Rounding;
+}
+
+
+//DEFAULT PAGE BACKGROUND
+body.theme-entry,
+#pgOuterPanel.theme-entry /*Design Time*/
+{
+    background-color: @Page-Background-Color;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body.theme-entry.runtime-view
+{
+    background-color: @Page-Background-Color;
+}
+
+//DEFAULT FORM LAYOUT
+.theme-entry .form
+{
+    padding:  @Content-Inset-Vertical-Spacing @Content-Inset-Horizontal-Spacing; 
+    
+}
+
+.theme-entry .tab-box .form
+{
+    border-radius: 0px; //the tab body has the background color in this case
+}
+
+.theme-entry .tab-box:not(.hide-tabs) .tab-box-body
+{
+    border-radius: 0px @Panel-Rounding @Panel-Rounding @Panel-Rounding;
+}
+
+//#endregion FORM BACKGROUND*/
+
+//#region FONTS*/
+
+@import (multiple) url('Theme_Fonts.include.less');
+@import (multiple) url('Theme_Typography.include.less');
+
+//#endregion FONTS */
+
+//#region GENERIC CONTROL STYLES */
+
+/*Generic TextBox dimensions and watermarks for all types of control*/
+
+/*height/color*/
+
+.theme-entry input, 
+.theme-entry textarea
+{
+    font-size: inherit;
+}
+
+
+.theme-entry .spinner /*non-standard*/
+{
+    color: @Input-Text-Color;
+}
+
+.theme-entry .input-control a.input-control //dropdown control, with selected item
+{
+    color: inherit; //override the A tag's default blue text color.
+}
+
+/*disabled text boxes*/
+.theme-entry .input-control.disabled a.input-control,
+.theme-entry .input-control.disabled input[type=text],
+.theme-entry .input-control.disabled input[type=password],
+.theme-entry .input-control.disabled textarea,
+.theme-entry .input-control input[type=text][disabled=disabled],
+.theme-entry .input-control input[type=password][disabled=disabled],
+.theme-entry .input-control textarea[disabled=disabled]
+{
+    color: @Input-Disabled-Text-Color;
+}
+
+/*watermarks*/
+.theme-entry .input-control a.input-control span,
+.theme-entry .input-control.watermark a.input-control span,
+.theme-entry .input-control.select-box .input-control-watermark,
+.theme-entry .input-control.select-box div.editable-area, /*make ksure the editable area has the same padding as the watermark*/
+.theme-entry .input-control.select-box input[type=text], /*make ksure the editable area has the same padding as the watermark*/
+.theme-entry .input-control textarea, /*make ksure the editable area has the same padding as the watermark*/
+.theme-entry .input-control-watermark
+{
+    padding-left: @Control-Inset-Horizontal-Spacing;
+}
+
+.theme-entry .input-control.watermark a.input-control,
+.theme-entry .input-control.watermark a.input-control span
+{
+    color: @Input-Watermark-Text-Color;
+    font-style: normal;
+    font-size: inherit;
+    font-family: inherit;
+    /*override - base*/
+    /*override - base*/
+}
+
+.theme-entry .input-control.invalid.watermark a.input-control,
+.theme-entry .input-control.invalid.watermark a.input-control span
+{
+    color: @Input-Error-Watermark-Text-Color;
+}
+
+//#endregion GENERIC CONTROL STYLES */
+
+//#region ALL INPUT CONTROLS*/
+
+//#region resets*/
+
+.theme-entry .input-control .input-control-wrapper
+{
+    text-align:left;
+}
+
+
+.theme-entry .input-control.icon-control .input-control-wrapper
+{
+    padding-left:2.5rem;
+}
+
+#pgWizard .theme-entry .input-control .input-control-wrapper
+{
+    overflow:hidden; /* override - designtime */
+}
+
+//#endregion*/
+
+/*single row height items*/
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .spinner /*non-standard*/
+{
+    height: auto;
+}
+
+// CHECK WITH LEWIS
+/*editable controls (should appear white)*/
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox
+{
+    border-width: 0px;
+    border-style: solid; 
+    background-color: @Input-Background-Color;
+}
+
+/*rounded corners*/
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .input-control-wrapper > textarea,
+.theme-entry .input-control.select-box,
+.theme-entry .spinner /*non-standard*/
+{
+    border-radius: @Input-Rounding;
+}
+
+/*TODO - not sure what this rule is for*/
+.theme-entry label.input-control .input-control-text,
+html[dir=rtl] .theme-entry label.input-control .input-control-text
+{
+    float: none;
+}
+
+/*state - focus highlight*/
+.theme-entry span.textbox-style-wrapper.focus,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.focus,
+.theme-entry .input-control.active .input-control-content,
+.theme-entry .hide-browser-highlight.active
+{
+    border-color: @Input-Focus-Border-Color;
+}
+
+.theme-entry .dialog.id-picker-search .input-control.select-box.picker-input.active .input-control-body
+{
+    border-right-width: 1px !important; /* necessary for right border to display on picker add textfield */
+}
+
+/* reserve some space for outline display */
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item
+{
+    padding:0.1rem;
+}
+
+/* implement outlining for focus to assist alignment & stop jumping between focus & blur */
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.radio.focus,
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.checkbox.focus,
+.theme-entry .checkbox-outer-panel .input-control.checkbox.focus
+{
+    outline-color: @Input-Focus-Border-Color; 
+}
+
+// CHECK WITH LEWIS
+/* checkbox / radio button list - override border implementation with outline when focussed to support alignment */
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.radio, 
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.checkbox, 
+.theme-entry .checkbox-outer-panel .input-control.checkbox
+{
+    outline: 1px dotted transparent;
+}
+
+/* override normal border implementation to support alignment & jumping on hover */
+.theme-entry .hyperlinkTopLeftPanel.hide-browser-highlight.active,
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.radio.active, 
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.checkbox.active, 
+.theme-entry .checkbox-outer-panel .input-control.checkbox.active
+{
+    outline: 1px dotted @Input-Focus-Border-Color; 
+}
+
+
+
+// CHECK WITH LEWIS
+/*state - focus highlight*/
+.theme-entry .picture-control-inline:focus
+{
+    outline: 1px dotted @Input-Focus-Border-Color;
+}
+
+
+
+/*state - invalid*/
+.theme-entry span.textbox-style-wrapper.invalid,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.invalid,
+.theme-entry .input-control.control-group-container.invalid .input-control-m-c,
+.theme-entry .SourceCode-Forms-Controls-Web-Label.invalid,
+.theme-entry .SourceCode-Forms-Controls-Web-DataLabel.invalid,
+.theme-entry .file-wrapper.invalid,
+.theme-entry div.hyperlinkTopLeftPanel.invalid,
+.theme-entry .picker .input-control.invalid .input-control-m-c,
+.theme-entry .input-control.invalid textarea
+{
+    background-color: @Input-Error-Background-Color;
+    border-color: @Input-Error-Border-Color !important;  /*important will overide user configured styles */
+}
+
+.theme-entry .input-control.invalid
+{
+    color: @Input-Error-Text-Color;
+}
+
+
+/* state -- invalid -- override red border */
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.invalid.watermark, 
+.theme-entry .input-control.invalid .input-control-watermark
+{
+    color: @Input-Error-Watermark-Text-Color !important;
+}
+
+.theme-entry span.textbox-style-wrapper.invalid:focus,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.invalid:focus,
+.theme-entry .input-control.invalid .input-control-m-c:focus,
+.theme-entry .SourceCode-Forms-Controls-Web-Label.invalid:focus,
+.theme-entry .SourceCode-Forms-Controls-Web-DataLabel.invalid:focus,
+.theme-entry .file-wrapper-wrapper.invalid:focus,
+.theme-entry div.hyperlinkTopLeftPanel.invalid:focus,
+.theme-entry .picker .input-control.invalid .input-control-m-c:focus,
+.theme-entry .input-control.control-group-container.invalid .input-control-m-c:focus,
+.theme-entry .input-control.text-input.invalid.active .input-control-m-c
+{
+    border:1px solid @Input-Error-Border-Color !important; /*!important only to ensure radiobutton group has correct border colour*/
+}
+
+
+
+/*state - disabled/preview*/
+.theme-entry span.textbox-style-wrapper.disabled,
+.theme-entry span.textbox-style-wrapper.preview,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.disabled,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.preview,
+.theme-entry .input-control.disabled .input-control-m-c
+{
+    border-color: @Input-Disabled-Border-Color !important; /*important will overide user configured styles */
+}
+
+/*Watermark*/
+.theme-entry .input-control-watermark
+{
+    bottom: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: text;
+    left: 0;
+    overflow: hidden;
+    padding-top: 0;
+    position: absolute;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    right: 0;
+    text-overflow: ellipsis;
+    top: 0;
+    white-space: nowrap;
+    /*indent is acheived with padding*/
+    /*needed for text-overflow*/
+    /*needed for text-overflow*/
+    /*override - base*/
+}
+
+/*List Control Overrides (checklist/radiolist)*/
+.theme-entry .multi-select-outer-panel .input-control-watermark
+{
+    position: static;
+    padding-top: 0;
+    /*overide for the list controls*/
+}
+
+.theme-entry .multi-select-outer-panel .input-control-watermark
+	{
+        padding-left: @Control-Inset-Horizontal-Spacing;
+
+        html[dir=rtl] &
+        {
+            padding-right: @Control-Inset-Horizontal-Spacing;
+        }
+    }
+
+/*List Control Overrides (checklist/radiolist)*/
+.theme-entry div.multi-select-box-list-item label.input-control
+{
+    display: block; /*makes the checkbox or radio box full width*/
+}
+
+.theme-entry .multi-select-outer-panel.borderless .multi-select-box-list-item label.input-control
+{
+    padding-left:0;
+}
+
+.theme-entry span.multi-select-box-list-item
+{
+    display:inline-block; /* inline multi-select item */
+}
+
+//#endregion ALL INPUT CONTROLS*/
+
+//#region MODAL SCREENS*/
+
+.theme-entry .modalizer,
+.theme-entry .k2-overlay.k2-modal-overlay
+{
+    background-image: none;
+}
+
+//#endregion*/
+
+//#region SPECIFIC CONTROLS*/
+
+//Control related styles can be define in the corresponding partial file, the style can be migrated gradually.
+@import (multiple) url('Controls/Theme_Control_Button.less');
+@import (multiple) url('Controls/Theme_Control_Label.less');
+@import (multiple) url('Controls/Theme_Control_Textbox.less');
+@import (multiple) url('Controls/Theme_Control_DropTextbox.less');
+@import (multiple) url('Controls/Theme_Control_HyperLink.less');
+@import (multiple) url('Controls/Theme_Control_RadioButton.less');
+@import (multiple) url('Controls/Theme_Control_SelectBox.less');
+@import (multiple) url('Controls/Theme_Control_Lookup.less');
+@import (multiple) url('Controls/Theme_Control_Dropdown.less');
+@import (multiple) url('Controls/Theme_Control_Smartfields.less');
+@import (multiple) url('Controls/Theme_Control_Picker.less');
+@import (multiple) url('Controls/Theme_Control_Checkbox.less');
+@import (multiple) url('Controls/Theme_Control_CheckboxList.less');
+@import (multiple) url('Controls/Theme_Control_Toolbar.less');
+@import (multiple) url('Controls/Theme_Control_Panel.less');
+@import (multiple) url('Controls/Theme_Control_ToolbarIconButtons.less');
+@import (multiple) url('Controls/Theme_Control_ToolbarButton.less');
+@import (multiple) url('Controls/Theme_Control_View.less');
+@import (multiple) url('Controls/Theme_Control_Table.less');
+@import (multiple) url('Controls/Theme_Control_Datepicker.less');
+@import (multiple) url('Controls/Theme_Control_Tree.less');
+@import (multiple) url('Controls/Theme_Control_ViewPanel.less');
+@import (multiple) url('Controls/Theme_Control_Grid.less');
+@import (multiple) url('Controls/Theme_Control_FormFields.less');
+@import (multiple) url('Controls/Theme_Control_PopupDialog.less');
+@import (multiple) url('Controls/Theme_Control_InfoButton.less');
+@import (multiple) url('Controls/Theme_Control_Menu.less');
+@import (multiple) url('Controls/Theme_Control_Tabs.less');
+@import (multiple) url('Controls/Theme_Control_Spinner.less');
+@import (multiple) url('Controls/Theme_Control_Calendar.less');
+@import (multiple) url('Controls/Theme_Control_Rating.less');
+@import (multiple) url('Controls/Theme_Control_Slider.less');
+@import (multiple) url('Controls/Theme_Control_HyperLink.less');
+@import (multiple) url('Controls/Theme_Control_Tooltip.less');
+@import (multiple) url('Controls/Theme_Control_Attachment.less');
+
+//removed EllipsesButton
+//removed GenericToolbar
+
+//#endregion SPECIFIC CONTROLS*/
+
+//#region SEARCH TEXT HIGHLIGHTING */
+
+.theme-entry .wrapAround
+{
+    background: #fff200;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    margin-left: -0.1rem;
+    margin-right: -0.1rem;
+    border-radius: 0.2rem;
+    background: linear-gradient(to bottom, #fff200 0%,#ffdb00 100%);
+    /*color: #ffdb00;*/
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.6);
+}
+
+//#endregion*/
+
+//#region LOADING ICONS */
+
+.theme-entry .ajaxLoader /* General AJAX Loader Spinner */
+{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.theme-entry .base2.base1.modalizer /* Form Level Modalizer */
+{
+    background-color: rgba(0,0,0,0.5);
+    background-image: none; /* override core styling */
+    z-index: 2;
+}
+
+.theme-entry .base0.modal-element.ajaxLoader /* View Level Modalizer & Spinner */
+{
+    background-color: rgba(239,239,239,0.7);
+}
+
+.theme-entry .control-loading,
+.theme-entry .input-control.icon-control.loading .input-control-wrapper
+{
+    background-image: url(RuntimeTheme/LoadingAnimation_Dark16.gif) !important;
+    -moz-background-size: 16px;
+    background-size:16px;
+}
+
+//#endregion LOADING ICONS */
+
+//#region Workflow Strip*/
+//this is the workflow control that gets automatically added to forms when its being used for a task.
+
+#WorkflowStrip.theme-entry
+{
+    margin-bottom:1.2rem !important; /* override inline */
+}
+
+.runtime-form.theme-entry + #WorkflowStrip.theme-entry
+{
+    margin-top:1.2rem !important; /* override inline */
+    margin-bottom:0 !important; /* override inline */
+}
+
+#WorkflowStrip.theme-entry .panel .panel-header-text
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#WorkflowStrip.theme-entry .panel-header-text
+{     
+    color: @Heading4-Text-Color;
+    font-size: @Heading4-Text-Size;
+}
+
+.theme-entry .workflow-view 
+{
+    padding: @Content-Inset-Vertical-Spacing @Content-Inset-Horizontal-Spacing;
+    
+    .panel-header-controls{
+        display:none; //workflow strip is not collapsable
+    }
+
+    table.root-table{
+        tbody > tr:first-child > .editor-cell{
+            padding-top: @Between-Control-Spacing;
+        }
+    }
+}
+//#endregion*/
+
+//#region CONTEXT TREE DRAGGABLES */
+
+.theme-entry > a.ui-draggable-dragging
+{
+    height: 2.2rem;
+    padding-left: @Control-Inset-Narrow-Horizontal-Spacing;
+    padding-right: @Control-Inset-Narrow-Horizontal-Spacing;
+    padding-top: @Control-Inset-Narrow-Vertical-Spacing;
+    padding-bottom: @Control-Inset-Narrow-Vertical-Spacing;
+    background-repeat: no-repeat;
+    background-position: 0.55rem center;
+    background-color:@SmartField-Background-Color;
+    color: @SmartField-Text-Color;
+    border-radius: @Control-Rounding;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+    text-decoration: none;
+    line-height: 2.2rem;
+
+    display:flex;
+    align-items: center;
+
+    &:before
+    {
+        content: '';
+        display: block;
+        height: 16px;
+        width: 16px;
+
+        margin-right: @Between-Control-Spacing;
+
+        .mobile &
+        {
+            height: 20px;
+            width: 20px;
+    
+        }
+    }
+}
+
+//#endregion CONTEXT TREE DRAGGABLES */
+
+
+// CHECK WITH LEWIS
+/* ***** DESIGN TIME OVERRIDES ***** */
+#pgWizard .form-control:not(.table-control):not(.label-control):not(.datalabel-control)
+{
+    border: 1px solid transparent;
+}
+
+//#region TABS - DESIGN TIME */
+
+// CHECK WITH LEWIS
+#pgWizard .view-canvas
+{
+    border-color: transparent;
+}
+
+#pgOuterPanel.theme-entry #pgTabControl
+{
+    overflow: visible;
+}
+
+#pgWizard .theme-entry #pgTabControl .tab-box ul.tab-box-tabs a.tab .tab-control.tab-remove
+{
+    display:inline-block;
+    float:none;
+    margin-top:0; /* vertically align close button */
+}
+
+/*content area of tab*/
+
+//#endregion TABS - DESIGN TIME */
+
+//#region VIEW - DESIGN TIME */
+
+#pgOuterPanel.theme-entry .panel-canvas > .grid,
+#pgOuterPanel.theme-entry .panel-canvas > .panel
+{
+    border-width:0; /* override designtime */
+}
+
+
+#pgOuterPanel.theme-entry .theme-entry .panel-header-wrapper,
+#pgOuterPanel.theme-entry .grid-header-wrapper > .wrapper
+{
+    overflow: visible;
+    line-height: 5.2rem; /*needed for when there is no view title set (the expand button must show) */
+}
+
+
+#pgOuterPanel.theme-entry .view-canvas table.editor-table
+{
+    border-width:0; /* override designer scoped styling */
+}
+
+/* view content - removing padding from toolbar editor cells */
+#pgOuterPanel.theme-entry .view-canvas .editor-cell.toolbar
+{
+    padding:0;
+}
+
+// CHECK WITH LEWIS
+/* Remove gradient from the designtime styling */
+#pgOuterPanel.theme-entry .grid .grid-toolbars .toolbars .toolbar .toolbar-wrapper
+{
+    background:transparent !important;
+    border-bottom-width:0;
+}
+
+//#endregion VIEW - DESIGN TIME */

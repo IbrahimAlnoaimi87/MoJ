@@ -1,0 +1,156 @@
+.testa
+{
+
+}
+
+.theme-entry .StandardChart 
+{
+	background-color:#F7F5F6;
+}
+
+.theme-entry .StandardChart .series0ActivityInstances
+{
+	stroke: #0478cd;
+	fill: #0478cd;
+}
+
+.theme-entry .StandardChart .series1ActivityInstances
+{
+	stroke: #00485B;
+	fill: #00485B;
+}
+
+.theme-entry .StandardChart .series2ActivityInstances
+{
+	stroke: #288054;
+	fill: #288054;
+}
+
+.theme-entry .StandardChart .series3ActivityInstances
+{
+	stroke: #767956;
+	fill: #767956;
+}
+
+.theme-entry .StandardChart .series4ActivityInstances
+{
+	stroke: #ED0033;
+	fill: #ED0033;
+}
+
+.theme-entry .StandardChart .series5ActivityInstances
+{
+	stroke: #682a7a;
+	fill: #682a7a;
+}
+
+.theme-entry .StandardChart .series6ActivityInstances
+{
+	stroke: #83c9fc;
+	fill: #83c9fc;
+}
+
+.theme-entry .StandardChart .series7ActivityInstances
+{
+	stroke: #499eb4;
+	fill: #499eb4;
+}
+
+.theme-entry .StandardChart .series8ActivityInstances
+{
+	stroke: #66c495;
+	fill: #66c495;
+}
+
+.theme-entry .StandardChart .series9ActivityInstances
+{
+	stroke: #Aaac8f;
+	fill: #Aaac8f;
+}
+
+.theme-entry .StandardChart .series10ActivityInstances
+{
+	stroke: #Ff3f68;
+	fill: #Ff3f68;
+}
+
+.theme-entry .StandardChart .series11ActivityInstances
+{
+	stroke: #A354ba;
+	fill: #A354ba;
+}
+
+.theme-entry .StandardChart .series12ActivityInstances
+{
+	stroke: #0478cd;
+	fill: #0478cd;
+}
+
+.theme-entry .StandardChart .series13ActivityInstances
+{
+	stroke: #00485b;
+	fill: #00485b;
+}
+
+.theme-entry .StandardChart .series14ActivityInstances
+{
+	stroke: #288054;
+	fill: #288054;
+}
+
+
+.theme-entry .k-tooltip
+{
+	border-color: #cde6f7 !important;
+}
+
+.theme-entry .StandardChart .k-chart
+{
+	background-color: transparent;
+	margin-top: -5px;
+}
+
+.theme-entry .StandardChart.designtime .radhtmlcharttitle
+{
+	font-size: 18px !important;
+	font-weight: normal !important;
+	margin-left: 2px !important; /* Need to ovveride styling*/
+}
+
+.theme-entry .StandardChart.designtime .radhtmlchartsubtitle
+{
+	font-size: 12px !important;
+}
+
+.theme-entry .StandardChart.designtime .marginPlaceHolder
+{
+	margin-top: 14px;
+	margin-bottom: 41px;
+}
+
+.theme-entry .StandardChart.preview .marginPlaceHolder.preview
+{
+	margin-top: 20px;
+	margin-bottom: 47px;
+}
+
+.theme-entry .StandardChart .radhtmlchartsubtitle
+{
+	fill:#CCCCCC;
+	color:#CCCCCC;
+}
+
+.theme-entry .StandardChart.designtime .k-chart
+{
+	margin-top: 0px;
+}
+
+.theme-entry .SFC.StandardChart.designtime .header-wrapper,
+.theme-entry .SFC.StandardChart.preview .header-wrapper
+{
+	position: absolute;
+	top: 10px;
+	bottom: 0;
+	left: 5px;
+	right: 0;
+}

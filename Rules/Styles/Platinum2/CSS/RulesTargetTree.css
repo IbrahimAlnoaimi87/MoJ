@@ -1,0 +1,185 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+ul.target-rule {
+  list-style: none;
+}
+.mappings-input.input-control.select-box .input-control-body {
+  right: 23px;
+}
+.mappings-input.input-control.select-box .input-control-buttons a {
+  height: 22px;
+  width: 22px;
+}
+.mappings-input .drop-text.watermark {
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.mappings-input .styling-outer-wrapper {
+  min-height: 24px;
+}
+li.disabled a {
+  color: #999999;
+}
+.mappings-input .input-control.select-box .input-control-buttons a.dropdown {
+  border: 0px;
+  min-height: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.mappings-input .input-control.select-box .input-control-buttons a.dropdown span,
+.mappings-input .input-control.select-box .input-control-buttons a.dropdown span span,
+.mappings-input .input-control.select-box a.input-control {
+  min-height: 18px;
+  height: 18px;
+  line-height: 18px;
+}
+.mappings-input a.input-control,
+.mappings-input input[type="text"].input-control {
+  min-height: 20px;
+  height: 20px;
+  line-height: 19px;
+  padding: 0;
+}
+.mappings-input .drop-item,
+.mappings-input .drop-object,
+.mappings-input .drop-text {
+  min-height: 18px;
+  height: 18px;
+  line-height: 14px;
+  vertical-align: middle;
+}
+.drop-textbox {
+  padding: 1px;
+  width: 9999px;
+}
+.input-control .input-control-wrapper {
+  overflow-x: hidden;
+}
+li.dropLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 28px;
+}
+li.dropLabel.children {
+  display: block;
+}
+li.dropLabel.children > .mappings-input {
+  position: absolute;
+  left: 250px;
+  top: 3px;
+  right: 0px;
+}
+.target-rule-level-1 li.dropLabel.children > .mappings-input {
+  left: 232px;
+}
+.target-rule-level-2 li.dropLabel.children > .mappings-input {
+  left: 214px;
+}
+.target-rule-level-3 li.dropLabel.children > .mappings-input {
+  left: 196px;
+}
+.target-rule-level-4 li.dropLabel.children > .mappings-input {
+  left: 178px;
+}
+li.dropLabel label,
+li.dropLabel a {
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+li.dropLabel label {
+  overflow: hidden;
+}
+li.dropLabel > label,
+li.dropLabel > span {
+  flex-shrink: 0;
+  width: 250px;
+}
+.target-rule-level-0 li.dropLabel > label,
+.target-rule-level-0 li.dropLabel > span {
+  width: 232px;
+}
+.target-rule-level-1 li.dropLabel > label,
+.target-rule-level-1 li.dropLabel > span {
+  width: 214px;
+}
+.target-rule-level-2 li.dropLabel > label,
+.target-rule-level-2 li.dropLabel > span {
+  width: 196px;
+}
+.target-rule-level-3 li.dropLabel > label,
+.target-rule-level-3 li.dropLabel > span {
+  width: 178px;
+}
+.target-rule-level-4 li.dropLabel > label,
+.target-rule-level-4 li.dropLabel > span {
+  width: 160px;
+}
+li.dropLabel > .mappings-input {
+  flex-grow: 1;
+  /*Stop the content pusing the bounds of the mapping input out to fit contents but rather scroll the input contents with flex layout.*/
+  min-width: 0;
+  /*StartWF WF Name Input*/
+
+}
+li.dropLabel > .mappings-input > .input-control {
+  min-width: 0;
+  overflow-x: hidden;
+}
+li.dropLabel > .mappings-input.input-control > .input-control-m {
+  width: 100%;
+}
+li.dropLabel.multi-line {
+  height: 60px;
+}
+li.dropLabelLast {
+  height: 25px;
+}
+/*Tree with no children - flat list*/
+
+.tree > .target-rule > li.dropLabel > label,
+.tree > .target-rule > li.dropLabel > span {
+  width: 120px;
+}
+.mappingValue {
+  height: 30px;
+}
+li.required .mappings-input {
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+td.mappingLabelRequired {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 100% 6px;
+  background-color: transparent;
+}
+li.required .mappings-input,
+td.mappingLabelRequired {
+  background-image: url("../../../../Styles/Platinum/Images/Forms/required_field_orange_line.png");
+}
+/* Checkbox Tree Styling - used in Rules Designer mapping screens */
+
+.target-tree.checkbox li a,
+.target-tree.checkbox li span {
+  padding-left: 41px;
+  background-size: 16px 16px;
+}
+/* Collapsed Root Styling */
+
+.target-tree.collapsed-root li.root {
+  background: none;
+  padding-left: 0;
+}
+.target-tree.collapsed-root li.root > a,
+.target-tree.collapsed-root li.root > span {
+  display: none;
+}

@@ -1,0 +1,172 @@
+html.workspace-taskcard .toggle-button:nth-child(1) label.input-control.radio .input-control-img{
+background-position: -12px -12px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(1) label.input-control.radio:hover .input-control-img{
+background-position: -12px -48px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(1) label.input-control.checked .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(1) label.input-control.checked:hover .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(1) input[type=radio]:checked + label{
+background-position: -12px -84px;
+}
+
+.icon.icon-set-togglebuttons.icon-size24.ic-actionsdisabled.disabled{
+background-position: -12px -120px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(2) label.input-control.radio .input-control-img{
+background-position: -48px -12px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(2) label.input-control.radio:hover .input-control-img{
+background-position: -48px -48px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(2) label.input-control.checked .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(2) label.input-control.checked:hover .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(2) input[type=radio]:checked + label{
+background-position: -48px -84px;
+}
+
+.icon.icon-set-togglebuttons.icon-size24.ic-redirectdisabled.disabled{
+background-position: -48px -120px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(3) label.input-control.radio .input-control-img{
+background-position: -84px -12px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(3) label.input-control.radio:hover .input-control-img{
+background-position: -84px -48px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(3) label.input-control.checked .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(3) label.input-control.checked:hover .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(3) input[type=radio]:checked + label{
+background-position: -84px -84px;
+}
+
+.icon.icon-set-togglebuttons.icon-size24.ic-sharedisabled.disabled{
+background-position: -84px -120px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(4) label.input-control.radio .input-control-img{
+background-position: -120px -12px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(4) label.input-control.radio:hover .input-control-img{
+background-position: -120px -48px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(4) label.input-control.checked .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(4) label.input-control.checked:hover .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(4) input[type=radio]:checked + label{
+background-position: -120px -84px;
+}
+
+.icon.icon-set-togglebuttons.icon-size24.ic-sleepdisabled.disabled{
+background-position: -120px -120px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(5) label.input-control.radio .input-control-img{
+background-position: -156px -12px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(5) label.input-control.radio:hover .input-control-img{
+background-position: -156px -48px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(5) label.input-control.checked .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(5) label.input-control.checked:hover .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(5) input[type=radio]:checked + label{
+background-position: -156px -84px;
+}
+
+.icon.icon-set-togglebuttons.icon-size24.ic-releasedisabled.disabled{
+background-position: -156px -120px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(6) label.input-control.radio .input-control-img{
+background-position: -192px -12px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(6) label.input-control.radio:hover .input-control-img{
+background-position: -192px -48px;
+}
+
+html.workspace-taskcard .toggle-button:nth-child(6) label.input-control.checked .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(6) label.input-control.checked:hover .input-control-img,
+html.workspace-taskcard .toggle-button:nth-child(6) input[type=radio]:checked + label{
+background-position: -192px -84px;
+}
+
+.icon.icon-set-togglebuttons.icon-size24.ic-formdisabled.disabled{
+background-position: -192px -120px;
+}
+
+html.workspace-taskcard .command-button a[name='btnCopy']{
+background-position: -12px -12px;
+}
+
+html.workspace-taskcard .command-button:hover a[name='btnCopy']{
+background-position: -12px -48px;
+}
+
+html.workspace-taskcard .command-button:active a[name='btnCopy']{
+background-position: -12px -84px;
+}
+
+.icon.icon-set-commandbuttons.icon-size24.ic-btnCopy.disabled{
+background-position: -12px -120px;
+}
+
+html.workspace-taskcard .command-button a[name='btnEmail']{
+background-position: -48px -12px;
+}
+
+html.workspace-taskcard .command-button:hover a[name='btnEmail']{
+background-position: -48px -48px;
+}
+
+html.workspace-taskcard .command-button:active a[name='btnEmail']{
+background-position: -48px -84px;
+}
+
+.icon.icon-set-commandbuttons.icon-size24.ic-btnEmail.disabled{
+background-position: -48px -120px;
+}
+
+html.workspace-taskcard .command-button a[name='btnOpen']{
+background-position: -84px -12px;
+}
+
+html.workspace-taskcard .command-button:hover a[name='btnOpen']{
+background-position: -84px -48px;
+}
+
+html.workspace-taskcard .command-button:active a[name='btnOpen']{
+background-position: -84px -84px;
+}
+
+.icon.icon-set-commandbuttons.icon-size24.ic-btnOpen.disabled{
+background-position: -84px -120px;
+}
+
+html.workspace-taskcard .command-button a[name='btnViewFlow']{
+background-position: -120px -12px;
+}
+
+html.workspace-taskcard .command-button:hover a[name='btnViewFlow']{
+background-position: -120px -48px;
+}
+
+html.workspace-taskcard .command-button:active a[name='btnViewFlow']{
+background-position: -120px -84px;
+}
+
+.icon.icon-set-commandbuttons.icon-size24.ic-btnViewFlow.disabled{
+background-position: -120px -120px;
+}
+

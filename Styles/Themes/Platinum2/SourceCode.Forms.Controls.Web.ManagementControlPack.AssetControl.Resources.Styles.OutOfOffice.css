@@ -1,0 +1,14 @@
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glExceptions"] .PropertiesMain
+{
+    padding-right: 30px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glExceptions"] .PART_TitlteDescriptionDynamicLeft
+{
+    padding: 20px 5px;
+}
+
+.theme-entry > .form > .row:last-child > .formcontrol
+{
+    overflow: hidden;
+}

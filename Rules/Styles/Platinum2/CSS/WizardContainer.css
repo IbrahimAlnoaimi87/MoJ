@@ -1,0 +1,52 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		Covers the Left Tree/Search panel */
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+#wizardContainerLoading,
+#wizardContainerWrapper {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#wizardContainerLoading {
+  background-color: white;
+}
+.wizardContainer {
+  height: 100%;
+  width: 100%;
+}
+/* Mapping screen */
+
+table.mappingTable {
+  width: 100%;
+}
+td.mappingLabel {
+  width: 280px;
+}
+.lyt-rw-toolbox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.lyt-rw-searchrow {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.lyt-rw-contentrow {
+  flex-grow: 1;
+  position: relative;
+}
+.lyt-rw-searchrow .search-box:not(.active) .input-control-m-c {
+  border-color: transparent;
+}
+.lyt-rw-contentrow {
+  border-top: solid 1px #e5e5e5;
+  box-sizing: border-box;
+}

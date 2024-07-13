@@ -1,0 +1,836 @@
+
+//local variables for now, as we don't want to use the global spacing just yet.
+ @_Content-Inset-Horizontal-Spacing: 1rem; // @Content-Inset-Horizontal-Spacing
+ @_Content-Inset-Vertical-Spacing: 1rem;  // @Content-Inset-Vertical-Spacing
+
+/*#region resets*/
+.theme-entry .popup-header,
+.theme-entry .popup-footer,
+.theme-entry .popup-body,
+.theme-entry .popup-body .popup-body-c,
+.theme-entry .popup-footer .popup-footer-c
+{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    border: none;
+    background-color: transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.theme-entry .popup
+{
+    /*The sizes were designed for plat1 size controls - see "specific popups" for new sizes */
+    /*height: auto!important;*/ /*override - inline*/ /*cannot 'important' this, as this is the prop set by the user in the "open-form" action*/
+    /*width: auto!important;*/ /*override - inline*/
+
+    border-radius: @Dialog-Rounding;
+}
+
+.theme-entry .popup .panel:not(.full) .panel-body,
+.theme-entry .popup .panel:not(.full) .panel-body-m
+{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+/*#endregion resets - end*/
+
+/*#region messagebox override*/
+.theme-entry .popup.dialog.error-message:not(.runtime-message) .panel .panel-body,
+.theme-entry .popup.dialog.error-message:not(.runtime-message) .panel .panel-body-m,
+.theme-entry .popup.dialog.error-message:not(.runtime-message) .panel.full .panel-body-m,
+.theme-entry .popup.dialog.warning-message:not(.runtime-message) .panel .panel-body,
+.theme-entry .popup.dialog.warning-message:not(.runtime-message) .panel .panel-body-m,
+.theme-entry .popup.dialog.warning-message:not(.runtime-message) .panel.full .panel-body-m,
+.theme-entry .popup.dialog.info-message:not(.runtime-message) .panel .panel-body,
+.theme-entry .popup.dialog.info-message:not(.runtime-message) .panel .panel-body-m,
+.theme-entry .popup.dialog.info-message:not(.runtime-message) .panel.full .panel-body-m,
+.theme-entry .popup.dialog.confirmation-message:not(.runtime-message) .panel .panel-body,
+.theme-entry .popup.dialog.confirmation-message:not(.runtime-message) .panel .panel-body-m,
+.theme-entry .popup.dialog.confirmation-message:not(.runtime-message) .panel.full .panel-body-m
+{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+/*#endregion*/
+
+/*#region main structure*/
+
+.theme-entry .popup,
+.theme-entry .dialog
+{
+    z-index: 2;
+    background-color: @Dialog-Background-Color;
+    backdrop-filter: @Dialog-Background-Effect;
+    box-shadow: @Dialog-Shadow;
+    /*above any other z-indexes, like the paging control*/
+
+    border-radius: @Popover-Rounding;
+}
+
+.theme-entry .dialog
+{
+    display: block;
+}
+
+.theme-entry .dialog .popup-header,
+.theme-entry .dialog .popup-body,
+.theme-entry .dialog .popup-footer
+{
+    display: block;
+}
+
+.theme-entry .popup-header-l, 
+.theme-entry .popup-header-r, 
+.theme-entry .popup-body-l, 
+.theme-entry .popup-body-r, 
+.theme-entry .popup-footer-l, 
+.theme-entry .popup-footer-r{
+    display:none; //these are legacy elements used by old themes.
+} 
+
+.theme-entry .popup-header-c, 
+.theme-entry .popup-footer-c 
+{
+    display:inline-block; 
+} 
+
+.theme-entry .dialog .popup-header > .popup-header-c,
+.theme-entry .dialog .popup-footer > .popup-footer-c
+{
+    width: 100%;
+    height: auto;
+}
+
+.theme-entry .dialog .popup-body > .popup-body-c
+{
+    width: 100%;
+    height: 100%;
+}
+
+.theme-entry .dialog .popup-header > .popup-header-c
+{
+    vertical-align: middle; /*title and control button vertically middle of header*/
+}
+
+.theme-entry .dialog .popup-body
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: @_Content-Inset-Horizontal-Spacing;
+    padding-right: @_Content-Inset-Horizontal-Spacing;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.theme-entry .dialog.no-buttons .popup-body
+{
+    bottom: @_Content-Inset-Vertical-Spacing;
+}
+
+.theme-entry .popup-header,
+.theme-entry .popup-footer
+{
+    position: absolute;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: auto;
+    left: @_Content-Inset-Horizontal-Spacing;
+    right: @_Content-Inset-Horizontal-Spacing;
+}
+
+.theme-entry .popup-header,
+.theme-entry .popup-footer{
+    border-color: @Dialog-Separator-Line-Color;
+    border-style: solid;
+    border-width: 0px;
+    box-sizing: border-box; //ensure that the header/footer don't get taller on account of the border.
+}
+
+.theme-entry .popup-header{
+    border-bottom-width: 1px;
+}
+
+.theme-entry .popup-footer{
+    border-top-width: 1px;
+}
+
+.theme-entry .popup-header
+{
+    top: 0;
+}
+
+.theme-entry .popup-footer
+{
+    bottom: 0;
+}
+
+
+/*#endregion*/
+
+/*#region dialog overrides for message boxes - height of popup will expand with content to a max height and then a scrollbar will appear*/
+
+.theme-entry .dialog.error-message:not(.runtime-message) .popup-body,
+.theme-entry .dialog.warning-message:not(.runtime-message) .popup-body,
+.theme-entry .dialog.info-message:not(.runtime-message) .popup-body,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-body
+{
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+
+.theme-entry .dialog.error-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.error-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.warning-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.warning-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.info-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.info-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-footer
+{
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: 0 1.0rem;
+}
+
+.theme-entry .dialog.error-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.warning-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.info-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-header
+{
+    top: auto;
+}
+
+.theme-entry .dialog.error-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.warning-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.info-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-footer
+{
+    bottom: auto;
+}
+
+/*#endregion*/
+
+/*#region header*/
+
+.theme-entry .dialog .popup-header,
+.theme-entry .dialog .popup-footer
+{
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.theme-entry .dialog .popup-header-c,
+.theme-entry .dialog .popup-header-wrapper
+{
+    height: 100%;
+    cursor: default;
+    /*to fill the 5.2rem hieght of the header*/
+}
+
+.theme-entry .dialog .popup-header-c
+{
+    line-height: normal;
+}
+
+.theme-entry .dialog .popup-header-wrapper
+{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.theme-entry .dialog .popup-header-wrapper > .wrapper
+{
+    display: table-row;
+}
+
+.theme-entry .dialog .popup-header-wrapper > .wrapper > div
+{
+    position: static;
+    right: auto;
+    left: auto;
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    /*override - base*/
+    /*override - base*/
+    /*override - base*/
+}
+
+.theme-entry .dialog .popup-header-text
+{
+    right: auto !important;
+    display: inline;
+    float: none;
+    padding-left: 0;
+    padding-top: 0.1rem;
+    color: inherit;
+    line-height: normal;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    width: auto;
+    /*override - base*/
+    /*override - base*/
+    /*override - base*/
+    /*override - inline*/
+    /*very dark blue/black*/
+}
+
+.theme-entry .dialog .popup-header-buttons
+{
+    width: 30px;
+}
+
+.theme-entry .dialog.sub-view .popup-header-buttons,
+.theme-entry .dialog.sub-form .popup-header-buttons
+{
+    width: 52px;
+}
+
+/*#endregion*/
+
+/*#region content*/
+
+.theme-entry .dialog .panel > .panel-body
+{
+    padding: 0;
+    /*not text related*/
+}
+
+.theme-entry .dialog.id-hyperlink-config .panel > .panel-body
+{
+    padding: 0.8rem 0;
+}
+
+.theme-entry .dialog.sub-view iframe.runtime-popup
+{
+    //background: #efefef;
+    background: @Dialog-Background-Color;
+}
+
+/*#endregion*/
+
+/*#region footer*/
+
+.theme-entry .dialog .popup-footer
+{
+    margin-top: 1.0rem; /*spacer between horiz rule and popup content*/
+}
+
+.theme-entry .dialog .popup-footer
+{
+    background-position: top;
+}
+
+.theme-entry .dialog .popup-footer .popup-footer-c
+{
+    float: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 0;
+    vertical-align: middle;
+    /*bug - 3px was  being added to the bottom of this*/
+    /*not font dependent*/
+    /*override 3px around the buttons*/
+}
+
+.theme-entry .dialog .popup-footer-c
+{
+    float: none;
+    padding: 0;
+    background-color: transparent;
+    text-align: right;
+    /*override - base*/
+}
+
+html[dir=rtl] .theme-entry .dialog .popup-footer-c
+{
+    text-align: left;
+}
+
+.theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button
+{
+    display: inline-block;
+    float: none;
+    margin-left: @Between-Control-Spacing;
+}
+
+html[dir=rtl] .theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button
+{
+    margin-right: @Between-Control-Spacing;
+    margin-left: 0;
+}
+
+.theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button.help
+{
+    float: left;
+    margin-left: 0;
+}
+
+html[dir=rtl] .theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button.help
+{
+    float: right;
+    margin-right: 0;
+}
+/*#endregion*/
+
+/*#region controlbox*/
+
+.theme-entry .dialog .popup-header-buttons a
+{
+    margin-left: 1.0rem;
+}
+
+html[dir="rtl"] .theme-entry .dialog .popup-header-buttons a
+{
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+/*#endregion*/
+
+/*#region specific popups */
+/*override assigned sizes on dialogs*/
+
+/* User Filters List Dialog */
+.theme-entry .dialog#listFilterNamePopup
+{
+    /*min-height:100px;*/
+    height: auto !important; /*override - inline*/
+}
+
+/* Filter & Sort Configuration Dialog*/
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog
+{
+}
+
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog .form-field
+{
+    display: block;
+}
+
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog .form-field > label.form-field-label
+{
+    display: block;
+    float: left;
+}
+
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog .form-field > .form-field-element-wrapper
+{
+    display: block;
+    margin-left: 14.7rem;
+}
+
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog .tab-box.full .tab-box-body-m,
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog #FilterPanel .panel-body-m
+{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog .grid.full,
+.theme-entry .dialog#ConditionWidgetDialog .grid.full
+{
+    height: 100%;
+}
+
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog #FilterTopPane
+{
+    position: relative !important; /*override - inline*/
+}
+
+.theme-entry .dialog#ConditionWidgetDialog .grouping-button
+{
+    text-align: center;
+}
+
+.theme-entry .dialog#ConditionWidgetDialog .expression-dropdown-container
+{
+    width: 8.0rem;
+}
+
+/* Picker Search Dialog */
+.theme-entry .dialog#PickerSearchDialog .form-field + .form-field .form-field-element-wrapper > *:first-child
+{
+    margin-top: 0.5rem;
+}
+
+.theme-entry .dialog#PickerSearchDialog .form-field > label.form-field-label
+{
+    display: none; /*cheeky change - remove the labels*/
+}
+
+.theme-entry .dialog#PickerSearchDialog .input-control.select-box.picker-input .input-control-body
+{
+    width: 100%;
+}
+
+.theme-entry .dialog#PickerSearchDialog .picker-input .editable-area span.entity,
+.theme-entry .dialog#PickerSearchDialog .picker-input .editable-area span.spacer
+{
+    white-space: normal;
+}
+
+.theme-entry .dialog#PickerSearchDialog .picker-input .editable-area
+{
+    line-height: normal;
+}
+
+/* Hyperlink Configuration Dialog */
+.theme-entry .dialog.id-hyperlink-config .input-control .input-control-m-c
+{
+    margin-left: 0.1rem; /*space between required label border and textfield*/
+}
+
+
+
+
+//#region Message Box Dialogs
+
+
+//message box dialog - title and content overlap in mobile and desktop if we don't override this.
+.theme-entry .dialog .message-box-content .panel-body
+{
+    position:relative; //override core
+    top: 0px; //override touch.less for .panel.full  (message dialog shouldn't have been a panel.full)
+
+    & > .panel-body-m 
+    {
+        position:relative;
+    }
+}
+
+.theme-entry .dialog.error-message:not(.runtime-message),
+.theme-entry .dialog.warning-message:not(.runtime-message),
+.theme-entry .dialog.info-message:not(.runtime-message),
+.theme-entry .dialog.confirmation-message:not(.runtime-message)
+{
+    height: auto !important;
+}
+
+/*Confirmation message box - override panel header style when in a message box*/
+.theme-entry .message-box-content .panel
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 1.2rem;
+}
+
+.theme-entry .dialog.error-message .message-box-content .panel, /*runtime-message override*/
+.theme-entry .dialog.warning-message .message-box-content .panel,
+.theme-entry .dialog.info-message .message-box-content .panel,
+.theme-entry .dialog.confirmation-message .message-box-content .panel,
+.theme-entry .dialog.runtime-message .message-box-content .panel
+{
+    padding-top: 0;
+}
+
+html[dir=rtl] .theme-entry .message-box-content > .panel.full
+{
+    margin-left: 49px;
+    margin-right: 0px;
+}
+
+.theme-entry .message-box-content .panel-header
+{
+    height: auto;
+}
+
+.theme-entry .message-box-content .panel-header-c
+{
+    min-height: 0;
+}
+
+.theme-entry .message-box-content .panel-header-wrapper
+{
+    height: auto;
+    line-height: normal; /*override the base 5.2*/
+}
+
+
+.theme-entry .message-box-content .panel-header-text
+{
+    padding: 0;
+    color: @Dialog-Header-Text-Color;
+    font-weight: bold;
+}
+
+.theme-entry .message-box-content .panel-header-wrapper,
+.theme-entry .message-box-content .panel-header-wrapper .panel-header-text
+{
+    overflow: visible; /*override - theme*/
+}
+
+.theme-entry .popup .message-box-content .panel-body,
+.theme-entry .message-box-content .panel.full .panel-body /*override - core*/
+{
+    top: @Between-Block-Spacing;
+    padding-top: 0;
+    background-color: transparent;
+}
+
+.theme-entry .popup.dialog.runtime-message .message-box-content .scroll-wrapper
+{
+    padding-right: 0.5rem;
+}
+
+.theme-entry .dialog.runtime-message.size-large .message-box-content .panel.full:not(.without-header) .panel-body
+{
+    margin-bottom: 0.8rem;
+    background-color: transparent;
+}
+
+.theme-entry .dialog.runtime-message.size-medium .message-box-content .panel.full:not(.without-header) .panel-body
+{
+    margin-bottom: 0.8rem;
+    background-color: transparent;
+}
+
+.theme-entry .dialog.runtime-message.size-small .message-box-content .panel.full:not(.without-header) .panel-body
+{
+    margin-bottom: 0.8rem;
+    background-color: transparent;
+}
+
+.theme-entry .dialog.runtime-message .message-box-content .panel.full.without-header .panel-body
+{
+    top: 1.2rem;
+    margin-bottom: 0.8rem;
+    background-color: transparent;
+}
+
+.theme-entry .popup .message-box-content .panel-body-m-c
+{
+    padding: 0.2rem 0.2rem 0 0;
+}
+
+.theme-entry .dialog .message-box-content .panel-header div
+{
+    background: none;
+}
+
+.theme-entry .dialog .message-box-content .panel-header-text
+{
+    padding-top: 1.2rem;
+}
+
+.theme-entry .dialog.runtime-message .panel-header-text, /*Message box override*/
+.theme-entry .dialog.error-message .panel-header-text,
+.theme-entry .dialog.info-message .panel-header-text
+{
+    text-shadow: none;
+}
+
+.theme-entry .popup.dialog.error-message:not(.runtime-message) .message-box-content .panel-body-m-c, /*override for message boxes*/
+.theme-entry .popup.dialog.warning-message:not(.runtime-message) .message-box-content .panel-body-m-c,
+.theme-entry .popup.dialog.info-message:not(.runtime-message) .message-box-content .panel-body-m-c,
+.theme-entry .popup.dialog.confirmation-message:not(.runtime-message) .message-box-content .panel-body-m-c
+{
+    margin: 1.6rem 0 0.6rem;
+    max-height: 16.0rem;
+    overflow: auto;
+}
+
+/*messagebox icon positioning*/
+.theme-entry .message-box-content > .panel.full,
+.theme-entry .message-box-content.confirmation > .panel.full
+{
+    margin-left: 4.9rem; /*linked to image size*/
+}
+
+.theme-entry .message-box-content:before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    top: 0.5rem;
+    left: 0;
+}
+
+.theme-entry .dialog.error-message:not(.runtime-message) .message-box-content, /*override for message boxes*/
+.theme-entry .dialog.warning-message:not(.runtime-message) .message-box-content,
+.theme-entry .dialog.info-message:not(.runtime-message) .message-box-content,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .message-box-content
+{
+    min-height: 4.9rem;
+}
+
+//endregion Message boxes
+
+
+
+/*region credentials popup dialog */
+/* to show login popup, run following code in console:
+SourceCode.Forms.ExceptionHandler._showAuthLoginPopup()
+*/
+
+.theme-entry .dialog.credentialsPopupDialog
+{
+    height: 254px;
+}
+
+.theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-label
+{
+    width: 140px;
+}
+
+.theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-element-wrapper
+{
+    margin-left: 147px;
+}
+
+html[dir=rtl] .theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-element-wrapper
+{
+    margin-right: 147px;
+}
+
+.theme-entry .dialog.credentialsPopupDialog .SignInForm
+{
+    height: 186px;
+}
+
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field
+{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field:first-child
+{
+    margin-top: 0.5rem;
+}
+
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > label.form-field-label
+{
+    display: block;
+    float: left;
+}
+
+html[dir=rtl] .theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > label.form-field-label
+{
+    float: right;
+}
+
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > .form-field-element-wrapper
+{
+    display: block;
+    margin-left: 147px;
+}
+
+html[dir=rtl] .theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > .form-field-element-wrapper
+{
+    margin-left: 0;
+    margin-right: 147px;
+}
+
+.theme-entry .dialog.credentialsPopupDialog .credentialsRequiredReason
+{
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.theme-entry .dialog.credentialsPopupDialog .credentialsRequiredReason.loginFailed
+{
+    color: @Error-Text-Color;
+}
+
+/*#endregion*/
+
+/*as the popups are now fluid height, set the grid height */
+.theme-entry .dialog .full.grid
+{
+    height: auto;
+}
+
+//#region CREDENTIALS DIALOG
+
+.theme-entry .dialog.credentialsPopupDialog .credentialsRequiredReason{
+    padding-left: 0px; //override core.less
+    height: auto; //override core.less
+    line-height: 2.5;
+}
+
+
+//#endregion CREDENTIALS DIALOG
+
+
+//#region DIALOG PANELS
+
+
+.theme-entry 
+{   
+    .dialog //we want to remove the padding in panel headings when in a dialog - list view filters dialog look silly otherwise.
+    {
+        .grid-header-wrapper,
+        .panel-header-wrapper 
+        {
+            .grid-header-text, 
+            .panel-header-text
+            {
+                html[dir=ltr] &
+                {
+                    padding-left: 0px;
+                }
+                html[dir=rtl] &
+                {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+//#endregion DIALOG PANELS
+
+
+//#region LIST VIEW FILTER DIALOG 
+
+.theme-entry #RuntimeFilterOrderWidgetDialog{
+
+    .mapping-content-section
+    {
+        padding-left: @Block-Inset-Horizontal-Spacing;
+        box-sizing: border-box;
+    }
+
+    .mapping-tree-section
+    {
+        padding-left: @Block-Inset-Horizontal-Spacing;
+        padding-right: @Block-Inset-Horizontal-Spacing;
+        box-sizing: border-box;
+    }
+
+
+
+}
+
+//#endregion

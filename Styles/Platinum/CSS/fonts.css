@@ -1,0 +1,38 @@
+﻿body, td, li, p, textarea, input[type=text], input.text, select, option, button
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #343e41;
+}
+
+body, textarea, input[type=text], input.text, select, option, button
+{
+    font-size: 11px;
+}
+
+h1, h2, h3, h4
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #4F6F18;
+    margin-top: 0;
+}
+
+h1
+{
+    font-size: 14px;
+}
+
+h1.error
+{
+    color: #343e41;
+}
+
+h2.error
+{
+    color: #e9310d;
+}
+
+a,
+a:visited
+{
+	color:#7bb625;
+}

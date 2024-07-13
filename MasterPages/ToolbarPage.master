@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Generic.master" AutoEventWireup="true" Inherits="SourceCode.Forms.MasterPages.ToolbarPage" CodeBehind="ToolbarPage.master.cs" %>
+
+<asp:content ID="PageContentPlaceHolder1" contentplaceholderid="PageContent" runat="server">
+        <div class="common-top-box">
+        <div class="common-top-box-header">
+            <div class="common-top-box-header-l"></div>
+            <div class="common-top-box-header-c">
+                <div class="common-step-box-header-text"><asp:ContentPlaceHolder ID="ContentHeader" runat="server" /></div>
+            </div>
+            <div class="common-top-box-header-r"></div>
+        </div>
+        <div class="common-top-box-body">
+            <div class="common-top-box-body-l"></div>
+            <div class="common-top-box-body-c">
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="MenubarPlaceHolder" runat="server" />
+                </div>
+            </div>
+            <div class="common-top-box-body-r"></div>
+        </div>
+        <div class="common-top-box-footer">
+            <div class="common-top-box-footer-l"></div>
+            <div class="common-top-box-footer-c"></div>
+            <div class="common-top-box-footer-r"></div>
+        </div>
+    </div>
+    <div class="common-main-box">
+        <div class="common-main-box-header">
+            <div class="common-main-box-header-l"></div>
+            <div class="common-main-box-header-c"></div>
+            <div class="common-main-box-header-r"></div>
+        </div>
+        <div class="common-main-box-body">
+            <div class="common-main-box-body-l"></div>
+            <div class="common-main-box-body-c">
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="BodyPlaceHolder" runat="server" />
+                </div>
+            </div>
+            <div class="common-main-box-body-r"></div>
+        </div>
+        <div class="common-main-box-footer">
+            <div class="common-main-box-footer-l"></div>
+            <div class="common-main-box-footer-c"></div>
+            <div class="common-main-box-footer-r"></div>
+        </div>
+    </div>
+</asp:content>

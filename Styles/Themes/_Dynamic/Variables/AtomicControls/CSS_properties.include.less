@@ -1,0 +1,626 @@
+&
+{
+    //#region TYPOGRAPHY
+    
+        --error-text-color: @Error-Text-Color;
+
+        color: var(--normal-text-color); //the only line of actual CSS output by this file.
+
+    //#endregion TYPOGRAPHY
+
+    //#region TEXT STYLES 
+
+        //Normal
+        --normal-text-color: @Normal-Text-Color;
+        --description-text-color: @Description-Text-Color;
+        --paragraph-text-color: @Paragraph-Text-Color;
+
+        //Page Title
+        --page-title-text-color: @Page-Title-Text-Color;
+
+        //Page Sub-Title
+        --page-subtitle-text-color: @Page-Subtitle-Text-Color;
+
+        //Headings
+        --heading1-text-color: @Heading1-Text-Color;
+        --heading2-text-color: @Heading2-Text-Color;
+        --heading3-text-color: @Heading3-Text-Color;
+        --heading4-text-color: @Heading4-Text-Color;
+
+    //#endregion TEXT STYLES 
+
+    //#region INPUTS
+        // this includes textboxes, dropdowns, lists, tile-lists etc - 
+        // i.e. any (traditionally) white box the user has to input or select something within
+
+        //Normal
+        --input-background-color: @Input-Background-Color;
+        --input-border-color: @Input-Border-Color;
+        --input-text-color: @Input-Text-Color;
+        --input-watermark-text-color: @Input-Watermark-Text-Color;
+
+        //Disabled
+        --input-disabled-background-color: @Input-Disabled-Background-Color;
+        --input-disabled-border-color: @Input-Disabled-Border-Color;
+        --input-disabled-text-color: @Input-Disabled-Text-Color;
+        
+        //ReadOnly
+        --input-readonly-background-color: @Input-ReadOnly-Background-Color;
+        --input-readonly-border-color: @Input-ReadOnly-Border-Color;
+        --input-readonly-text-color: @Input-ReadOnly-Text-Color;
+
+
+        //Labels
+        --input-label-text-color: @Input-Label-Text-Color;
+        --input-label-disabled-text-color: @Input-Label-Disabled-Text-Color;
+        
+        //Error
+        --input-error-watermark-text-color: @Input-Error-Watermark-Text-Color;
+        --input-error-background-color: @Input-Error-Background-Color;
+        --input-error-border-color: @Input-Error-Border-Color;
+        --input-error-text-color: @Input-Error-Text-Color;
+        
+
+        //Highlights
+        --input-text-highlight-background-color: @Input-Text-Highlight-Background-Color;
+        --input-text-highlight-text-color: @Input-Text-Highlight-Text-Color;
+
+        //BUG - check how much duplication is in worklistpickers for @input-border-color - terrible css!
+        --input-focus-border-color: @Input-Focus-Border-Color;
+
+        //note: "input button" is the button at the end of a textbox or the dropdown arrow button at the end of a dropdown.
+        // or the series of buttons at the end of a picker control.
+        --input-button-background-color: @Input-Button-Background-Color;
+        --input-button-border-color: @Input-Button-Border-Color;
+        --input-button-text-color: @Input-Button-Text-Color;
+      
+        //hover
+        --input-button-hover-background-color: @Input-Button-Hover-Background-Color;
+        --input-button-hover-border-color: @Input-Button-Hover-Border-Color;
+        --input-button-hover-text-color: @Input-Button-Hover-Text-Color;
+
+        //focus
+        --input-button-focus-background-color: @Input-Button-Focus-Background-Color;
+        --input-button-focus-border-color: @Input-Button-Focus-Border-Color;
+        --input-button-focus-text-color: @Input-Button-Focus-Text-Color;
+
+        //toggleOn
+        --input-button-toggleon-background-color: @Input-Button-ToggleOn-Background-Color;
+        --input-button-toggleon-text-color: @Input-Button-ToggleOn-Text-Color;
+
+        //misc
+        --required-indicator-background-color: @Required-Indicator-Background-Color;
+     
+
+    //#endregion INPUTS
+
+    //#region TOOLBAR
+
+        //Normal
+        --toolbar-button-background-color: @Toolbar-Button-Background-Color;
+        --toolbar-button-text-color: @Toolbar-Button-Text-Color;
+        --toolbar-button-border-color: @Toolbar-Button-Border-Color;
+        
+        //Hover
+        --toolbar-button-hover-background-color: @Toolbar-Button-Hover-Background-Color;
+        --toolbar-button-hover-border-color: @Toolbar-Button-Hover-Border-Color;
+        --toolbar-button-hover-text-color: @Toolbar-Button-Hover-Text-Color;
+
+        //Focus
+        --toolbar-button-focus-background-color: @Toolbar-Button-Focus-Background-Color;
+        --toolbar-button-focus-border-color: @Toolbar-Button-Focus-Border-Color;
+        --toolbar-button-focus-text-color: @Toolbar-Button-Focus-Text-Color;
+        
+        //Selected - toggle buttons
+        --toolbar-button-toggle-background-color: @Toolbar-Button-Toggle-Background-Color;
+
+        //Disabled
+        --toolbar-button-disabled-background-color: @Toolbar-Button-Disabled-Background-Color;
+        --toolbar-button-disabled-border-color: @Toolbar-Button-Disabled-Border-Color;
+        --toolbar-button-disabled-text-color: @Toolbar-Button-Disabled-Text-Color;
+
+    //#endregion TOOLBAR
+
+    //#region SLIDERS
+    
+        --slider-handle-background-color: @Slider-Handle-Background-Color;
+        --slider-handle-border-color: @Slider-Handle-Border-Color;
+
+        --slider-handle-hover-background-color: @Slider-Handle-Hover-Background-Color;
+        --slider-handle-hover-background-color: @Slider-Handle-Hover-Background-Color;
+        --slider-handle-hover-border-color: @Slider-Handle-Hover-Border-Color;
+        
+        --slider-handle-disabled-background-color: @Slider-Handle-Disabled-Background-Color;
+        --slider-handle-disabled-border-color: @Slider-Handle-Disabled-Border-Color;
+        
+        --slider-handle-readonly-background-color: @Slider-Handle-ReadOnly-Background-Color;
+        --slider-handle-readonly-border-color: @Slider-Handle-ReadOnly-Border-Color;
+        
+        --slider-handle-focus-background-color: @Slider-Handle-Focus-Background-Color;
+        --slider-handle-focus-border-color: @Slider-Handle-Focus-Border-Color;
+
+        
+        --slider-rail-border-color: @Slider-Rail-Border-Color;
+        --slider-rail-background-color: @Slider-Rail-Background-Color;
+        
+
+        --slider-handle-shadow: @Slider-Handle-Shadow;
+
+    //#endregion SLIDERS
+
+    //#region UPLOADERS
+        //note these variables should be used for any control where you have to drop/onto or fill in with a file.
+
+        //Normal
+        --file-upload-background-color: @File-Upload-Background-Color;
+        --file-upload-border-color: @File-Upload-Border-Color;
+        --file-upload-text-color: @File-Upload-Text-Color;
+
+        //empty
+        --file-upload-empty-background-color: @File-Upload-Empty-Background-Color;
+        --file-upload-empty-border-color: @File-Upload-Empty-Border-Color;
+        --file-upload-empty-text-color: @File-Upload-Empty-Text-Color;
+        --file-upload-watermark-text-color : @File-Upload-Watermark-Text-Color;
+        --file-upload-empty-hover-background-color: @File-Upload-Empty-Hover-Background-Color;
+
+        //Focus
+        --file-upload-focus-border-color: @File-Upload-Focus-Border-Color;
+
+        //Hover
+        --file-upload-hover-background-color: @File-Upload-Hover-Background-Color;
+        --file-upload-hover-border-color: @File-Upload-Hover-Border-Color;
+        --file-upload-hover-text-color: @File-Upload-Hover-Text-Color;
+
+        //Disabled
+        --file-upload-disabled-background-color: @File-Upload-Disabled-Background-Color;
+        --file-upload-disabled-border-color: @File-Upload-Disabled-Border-Color;
+        --file-upload-disabled-text-color: @File-Upload-Disabled-Text-Color;
+
+    //#endregion UPLOADERS
+
+    //#region PROGRESS LOADERS
+
+        --loader-track-background-color: @Loader-Track-Background-Color; 
+        --loader-progress-background-color : @Loader-Progress-Background-Color; 
+
+    //#endregion PROGRESS LOADERS
+
+    //#region BUTTON - NORMAL
+
+        --button-background-color: @Button-Background-Color;
+        --button-border-color: @Button-Border-Color;
+        --button-text-color: @Button-Text-Color;
+
+        //Hover
+        --button-hover-background-color: @Button-Hover-Background-Color;
+        --button-hover-border-color: @Button-Hover-Border-Color;
+        --button-hover-text-color: @Button-Hover-Text-Color;
+
+        //Focus
+        --button-focus-background-color: @Button-Focus-Background-Color;
+        --button-focus-border-color: @Button-Focus-Border-Color;
+        --button-focus-text-color: @Button-Focus-Text-Color;
+        --button-focus-shadow-color: @Button-Focus-Shadow-Color;
+        
+        //Focus+Hover
+        //these shouldn't be needed, as the border should only change on focus, and background should only change on hover.
+        --button-hover-focus-background-color: @Button-Hover-Focus-Background-Color;
+        --button-hover-focus-border-color: @Button-Hover-Focus-Border-Color;
+        
+        //Disabled
+        --button-disabled-background-color: @Button-Disabled-Background-Color;
+        --button-disabled-border-color: @Button-Disabled-Border-Color;
+        --button-disabled-text-color: @Button-Disabled-Text-Color;
+
+        //Overall
+        --button-shadow-color: @Button-Shadow-Color;
+    
+    //#endregion BUTTON - NORMAL
+
+    //#region BUTTON - PRIMARY
+
+        --primary-button-background-color: @Primary-Button-Background-Color;
+        --primary-button-border-color: @Primary-Button-Border-Color;
+        --primary-button-text-color: @Primary-Button-Text-Color;
+
+        //Hover
+        --primary-button-hover-background-color: @Primary-Button-Hover-Background-Color;
+        --primary-button-hover-border-color: @Primary-Button-Hover-Border-Color;
+        --primary-button-hover-text-color: @Primary-Button-Hover-Text-Color;
+
+        //Focus
+        --primary-button-focus-background-color: @Primary-Button-Focus-Background-Color;
+        --primary-button-focus-border-color: @Primary-Button-Focus-Border-Color;
+        --primary-button-focus-text-color: @Primary-Button-Focus-Text-Color;
+    
+    //#endregion BUTTON - PRIMARY
+
+    //#region BUTTON - QUIET
+
+        --quiet-button-background-color: @Quiet-Button-Background-Color;
+        --quiet-button-border-color: @Quiet-Button-Border-Color;
+        --quiet-button-text-color: @Quiet-Button-Text-Color;
+
+        //Hover
+        --quiet-button-hover-background-color: @Quiet-Button-Hover-Background-Color;
+        --quiet-button-hover-border-color: @Quiet-Button-Hover-Border-Color;
+        --quiet-button-hover-text-color: @Quiet-Button-Hover-Text-Color;
+
+        //Focus
+        --quiet-button-focus-background-color: @Quiet-Button-Focus-Background-Color;
+        --quiet-button-focus-border-color: @Quiet-Button-Focus-Border-Color;
+        --quiet-button-focus-text-color: @Quiet-Button-Focus-Text-Color;
+
+        //Disabled
+        --quiet-button-disabled-background-color: @Quiet-Button-Disabled-Background-Color;
+        --quiet-button-disabled-border-color: @Quiet-Button-Disabled-Border-Color;
+        --quiet-button-disabled-text-color: @Quiet-Button-Disabled-Text-Color;
+
+    //#endregion BUTTON - QUIET
+
+    //#region BUTTON - DESTRUCTIVE
+
+        --destructive-button-background-color: @Destructive-Button-Background-Color;
+        --destructive-button-border-color: @Destructive-Button-Border-Color;
+        --destructive-button-text-color: @Destructive-Button-Text-Color;
+
+        //Hover
+        --destructive-button-hover-background-color: @Destructive-Button-Hover-Background-Color;
+        --destructive-button-hover-border-color: @Destructive-Button-Hover-Border-Color;
+        --destructive-button-hover-text-color: @Destructive-Button-Hover-Text-Color;
+
+        //Focus
+        --destructive-button-focus-background-color: @Destructive-Button-Focus-Background-Color;
+        --destructive-button-focus-border-color: @Destructive-Button-Focus-Border-Color;
+        --destructive-button-focus-text-color: @Destructive-Button-Focus-Text-Color;
+
+    //#endregion BUTTON - DESTRUCTIVE
+
+    //#region BUTTON - HELP
+        //these are specific "i" buttons that appear at the bottom of dialogs (mostly in design time) 
+        //that link to web help documents
+
+        --help-button-background-color: @Help-Button-Background-Color;
+        --help-button-border-color: @Help-Button-Border-Color;
+
+        //Focus
+        --help-button-focus-background-color : @Help-Button-Focus-Background-Color;
+        --help-button-focus-border-color : @Help-Button-Focus-Border-Color;
+
+    //#endregion BUTTON - HELP
+
+    //#region ICON BUTTON
+
+        // note: an Icon button is a just an icon by itself which is a button (no border or background)
+        // think of buttons in android and iOS that are just a button, or the hamburger or undo/redo buttons in workflow designer.
+
+        --icon-button-hover-background-color-2: @Icon-Button-Hover-Background-Color-2;
+        --icon-button-hover-background-color: @Icon-Button-Hover-Background-Color;
+
+        //Old
+        //--infobutton-gradient-color-start: @Infobutton-Gradient-Color-Start;
+        //--infobutton-gradient-color-end: @Infobutton-Gradient-Color-End;
+    
+    //#endregion ICON BUTTON
+    
+    //#region HYPERLINKS
+    
+        --hyperlink-text-color: @Hyperlink-Text-Color;
+        --hyperlink-disabled-text-color: @Hyperlink-Disabled-Text-Color;
+        --hyperlink-focus-border-color: @Hyperlink-Focus-Border-Color;
+
+    //#endregion HYPERLINKS
+
+    //#region SMARTFIELDS
+    
+        --smartfield-background-color: @SmartField-Background-Color;
+        --smartfield-text-color: @SmartField-Text-Color;
+
+    //#endregion SMARTFIELDS
+
+    //#region CALENDAR
+
+        --calendar-background-color: @Calendar-Background-Color;
+        --calendar-text-color: @Calendar-Text-Color;
+        --calendar-shadow: @Calendar-Shadow;
+    
+        //separators in the calendar layout
+        --calendar-separator-line-color: @Calendar-Separator-Line-Color;
+
+        //Item
+        --calendar-item-background-color: @Calendar-Item-Background-Color;
+        --calendar-item-border-color: @Calendar-Item-Border-Color;
+        --calendar-item-text-color: @Calendar-Item-Text-Color;
+
+        //Item - disabled
+        --calendar-item-disabled-text-color: @Calendar-Item-Disabled-Text-Color;
+
+        //Item - Hover
+        --calendar-item-hover-background-color: @Calendar-Item-Hover-Background-Color;
+        --calendar-item-hover-border-color: @Calendar-Item-Hover-Border-Color;
+        --calendar-item-hover-text-color: @Calendar-Item-Hover-Text-Color;
+
+
+        //Headers
+        --calendar-day-header-text-color: @Calendar-Day-Header-Text-Color;
+
+        //Navigation Button
+        --calendar-navigation-button-background-color: @Calendar-Navigation-Button-Background-Color;
+        --calendar-navigation-button-border-color: @Calendar-Navigation-Button-Border-Color;
+        --calendar-navigation-button-text-color: @Calendar-Navigation-Button-Text-Color;
+        --calendar-navigation-button-hover-background-color: @Calendar-Navigation-Button-Hover-Background-Color;
+        --calendar-navigation-button-hover-border-color: @Calendar-Navigation-Button-Hover-Border-Color;
+        --calendar-navigation-button-hover-text-color: @Calendar-Navigation-Button-Hover-Text-Color;
+
+        //today state
+        --calendar-today-border-color : @Calendar-Today-Border-Color;
+
+        //Selected
+        --calendar-selected-item-background-color: @Calendar-Selected-Item-Background-Color;
+        --calendar-selected-item-border-color: @Calendar-Selected-Item-Border-Color;
+        --calendar-selected-item-text-color: @Calendar-Selected-Item-Text-Color;
+
+        //Navigation
+        --calendar-navigation-button-background-color: @Calendar-Navigation-Button-Background-Color;
+        --calendar-navigation-button-hover-background-color: @Calendar-Navigation-Button-Hover-Background-Color;
+        --calendar-navigation-button-hover-text-color: @Calendar-Navigation-Button-Hover-Text-Color;
+        
+   
+
+    //#endregion CALENDAR
+
+    //#region PILLS
+    
+        --pill-background-color: @Pill-Background-Color;
+        --pill-text-color: @Pill-Text-Color;
+
+        --pill-selected-background-color: @Pill-Selected-Background-Color;
+        --pill-selected-text-color: @Pill-Selected-Text-Color;
+
+        --pill-error-background-color: @Pill-Error-Background-Color;
+        --pill-error-text-color: @Pill-Error-Text-Color;
+
+    //#endregion PILLS
+
+    //#region TOOLTIPS
+
+        //normal
+        --tooltip-background-color : @Tooltip-Background-Color;
+        --tooltip-border-color : @Tooltip-Border-Color;
+        --tooltip-text-color: @Tooltip-Text-Color;
+       
+
+        //Error
+        --tooltip-error-background-color: @Tooltip-Error-Background-Color;
+        --tooltip-error-border-color: @Tooltip-Error-Border-Color;
+        --tooltip-error-text-color: @Tooltip-Error-Text-Color;
+
+        //misc
+        --tooltip-shadow: @Tooltip-Shadow;
+ 
+
+    //#endregion TOOLTIPS
+
+    //#region TREE ITEMS
+
+    --tree-item-hover-background-color : @Tree-Item-Hover-Background-Color;
+    --tree-item-hover-border-color : @Tree-Item-Hover-Border-Color;
+    --tree-item-hover-text-color : @Tree-Item-Hover-Text-Color;
+
+    --tree-item-selected-background-color : @Tree-Item-Selected-Background-Color;
+    --tree-item-selected-border-color : @Tree-Item-Selected-Border-Color;
+    --tree-item-selected-text-color : @Tree-Item-Selected-Text-Color;
+
+     //Focus
+     --tree-item-focus-border-color : @Tree-Item-Focus-Border-Color; 
+
+     //Misc
+     --tree-item-rounding : @Tree-Item-Rounding;
+
+
+    //#endregion TREE ITEMS
+
+    //#region CHARTS
+
+    --chart-background-color: @Chart-Background-Color;
+    --chart-border-color: @Chart-Border-Color;
+
+
+    --chart-header-background-color: @Chart-Header-Background-Color;
+    --chart-title-text-color: @Chart-Title-Text-Color;
+
+    --chart-label-text-color: @Chart-Label-Text-Color;
+
+    --chart-series-0: @Chart-Series-0;
+    --chart-series-1: @Chart-Series-1;
+    --chart-series-2: @Chart-Series-2;
+    --chart-series-3: @Chart-Series-3;
+    --chart-series-4: @Chart-Series-4;
+    --chart-series-5: @Chart-Series-5;
+    --chart-series-6: @Chart-Series-6;
+    --chart-series-7: @Chart-Series-7;
+    --chart-series-8: @Chart-Series-8;
+    --chart-series-9: @Chart-Series-9;
+    --chart-series-10: @Chart-Series-10;
+    --chart-series-11: @Chart-Series-11;
+
+
+    //#endregion CHARTS
+
+    //#region BADGES
+
+    --badge-error-background-color: @Badge-Error-Background-Color;
+    --badge-warning-background-color: @Badge-Warning-Background-Color;
+
+    //#endregion BADGES
+
+    //#region SEARCH
+
+    --search-highlight-background-color: @Search-Highlight-Background-Color;
+    --search-highlight-background-color-1: @Search-Highlight-Background-Color-1;
+    --search-highlight-text-color: @Search-Highlight-Text-Color;
+    
+    //#endregion SEARCH
+    
+    //#region LISTS
+
+    --list-background-color: @List-Background-Color;
+    --list-border-color: @List-Border-Color;
+
+    //error
+    --list-error-background-color : @List-Error-Background-Color;
+    --list-error-border-color: @List-Error-Border-Color;
+    --list-error-text-color : @List-Error-Text-Color;
+
+    //readonly
+    --list-readonly-background-color : @List-ReadOnly-Background-Color;
+    --list-readonly-border-color: @List-ReadOnly-Border-Color;
+    --list-readonly-text-color : @List-ReadOnly-Text-Color;
+
+    //column headers
+    --list-column-header-background-color: @List-Column-Header-Background-Color;
+    --list-column-header-text-color: @List-Column-Header-Text-Color;
+    --list-column-header-border-color: @List-Column-Header-Border-Color;
+    --list-column-header-divider-color: @List-Column-Header-Divider-Color;
+    --list-column-header-focus-border-color: @List-Column-Header-Focus-Border-Color;
+
+    --list-add-row-background-color: @List-Add-Row-Background-Color;
+ 
+
+    //List item - Normal
+    --list-item-background-color: @List-Item-Background-Color;
+    --list-item-background-color-odd-zebra: @List-Item-Background-Color-Odd-Zebra;
+    --list-item-background-color-even-zebra: @List-Item-Background-Color-Even-Zebra;
+    --list-item-text-color: @List-Item-Text-Color;
+    --list-item-description-text-color: @List-Item-Description-Text-Color;
+    
+    //List Item - Hover
+    --list-item-hover-background-color: @List-Item-Hover-Background-Color;
+    --list-item-hover-border-color: @List-Item-Hover-Border-Color;
+    --list-item-hover-text-color: @List-Item-Hover-Text-Color;
+    
+    //List Item - Focus
+    --list-item-focus-border-color: @List-Item-Focus-Border-Color;
+    
+    --list-item-error-border-color: @List-Item-Error-Border-Color;
+    
+    //List Item - Selected
+
+    --list-item-selected-background-color: @List-Item-Selected-Background-Color;
+    --list-item-selected-border-color: @List-Item-Selected-Border-Color;
+    --list-item-selected-text-color: @List-Item-Selected-Text-Color;
+
+    //Footer - Misc
+    --list-footer-inset-shadow-color: @List-Footer-Inset-Shadow-Color;
+   
+    //Action Button
+    --list-action-button-background-color: @List-Action-Button-Background-Color;
+    --list-action-button-text-color: @List-Action-Button-Text-Color;
+    --list-action-button-hover-background-color: @List-Action-Button-Hover-Background-Color;
+    --list-action-button-hover-text-color: @List-Action-Button-Hover-Text-Color;
+
+    //Summary info (aggregates etc)
+    --list-summary-background-color: @List-Summary-Background-Color;
+    --list-summary-separator-line-color: @List-Summary-Separator-Line-Color;
+
+    //#endregion LISTS
+
+    //#region TABS - NORMAL
+
+
+    --tab-background-color: @Tab-Background-Color;
+    --tab-text-color: @Tab-Text-Color;
+    
+
+    --tab-focus-border-color: @Tab-Focus-Border-Color;
+
+    --tab-hover-background-color: @Tab-Hover-Background-Color;
+    --tab-hover-text-color: @Tab-Hover-Text-Color;
+
+    --tab-disabled-background-color: @Tab-Disabled-Background-Color;
+    --tab-disabled-background-color : @Tab-Disabled-Background-Color;
+    --tab-disabled-text-color: @Tab-Disabled-Text-Color;
+   
+    --tab-selected-background-color: @Tab-Selected-Background-Color;
+    --tab-selected-text-color: @Tab-Selected-Text-Color;
+
+    --main-tab-selected-background-color: @Main-Tab-Selected-Background-Color;
+    --main-tab-selected-text-color: @Main-Tab-Selected-Text-Color;
+   
+    --tab-body-background-color: @Tab-Body-Background-Color;
+
+
+    //#endregion TABS - NORMAL
+
+    //#region TABS - SEGMENTED
+
+
+    --segmented-tab-bar-background-color: @Segmented-Tab-Bar-Background-Color;
+    --segmented-tab-bar-border-color: @Segmented-Tab-Bar-Border-Color;
+
+    --segmented-tab-background-color: @Segmented-Tab-Background-Color;
+    --segmented-tab-text-color: @Segmented-Tab-Text-Color;
+    --segmented-tab-selected-text-color: @Segmented-Tab-Selected-Text-Color;
+
+    --segmented-tab-hover-background-color: @Segmented-Tab-Hover-Background-Color;
+    --segmented-tab-hover-text-color: @Segmented-Tab-Hover-Text-Color;
+
+    --segmented-tab-disabled-background-color: @Segmented-Tab-Disabled-Background-Color;
+    --segmented-tab-disabled-background-color : @Segmented-Tab-Disabled-Background-Color;
+    --segmented-tab-disabled-text-color: @Segmented-Tab-Disabled-Text-Color;
+   
+    --segmented-tab-selected-background-color: @Segmented-Tab-Selected-Background-Color;
+    --segmented-tab-selected-border-color: @Segmented-Tab-Selected-Border-Color;
+
+   
+
+    //#endregion TABS - SEGMENTED
+
+    //#region RATINGS
+
+    --ratings-border-color: @Ratings-Border-Color;
+    --ratings-checked-color: @Ratings-Checked-Color;
+    --ratings-disabled-border-color: @Ratings-Disabled-Border-Color;
+    --ratings-disabled-checked-color: @Ratings-Disabled-Checked-Color;
+    --ratings-readonly-border-color: @Ratings-ReadOnly-Border-Color;
+    --ratings-readonly-checked-color: @Ratings-ReadOnly-Checked-Color;
+
+    //#endregion RATINGS
+
+    //#region RADIOBUTTON
+
+    --radio-border-color: @Radio-Border-Color;
+    --radio-background-color: @Radio-Background-Color;
+    --radio-checked-color: @Radio-Checked-Color;
+    --radio-disabled-border-color: @Radio-Disabled-Border-Color;
+    --radio-disabled-background-color: @Radio-Disabled-Background-Color;
+    --radio-readonly-border-color: @Radio-ReadOnly-Border-Color;
+    --radio-readonly-background-color: @Radio-ReadOnly-Background-Color;
+    --radio-disabled-checked-color: @Radio-Disabled-Checked-Color;
+    --radio-readonly-checked-color: @Radio-ReadOnly-Checked-Color;
+
+    //#endregion RADIOBUTTON
+    
+    //#region CHECKBOX
+
+    --checkbox-border-color: @Checkbox-Border-Color;
+    --checkbox-background-color: @Checkbox-Background-Color;
+    --checkbox-checked-color: @Checkbox-Checked-Color;
+    --checkbox-disabled-border-color: @Checkbox-Disabled-Border-Color;
+    --checkbox-disabled-background-color: @Checkbox-Disabled-Background-Color;
+    --checkbox-readonly-border-color: @Checkbox-ReadOnly-Border-Color;
+    --checkbox-readonly-background-color: @Checkbox-ReadOnly-Background-Color;
+    --checkbox-disabled-checked-color: @Checkbox-Disabled-Checked-Color;
+    --checkbox-readonly-checked-color: @Checkbox-ReadOnly-Checked-Color;
+
+    //#endregion CHECKBOX
+    
+    //#region TOOLBAR BUTTON
+
+    --toolbar-button-icon-highlight-color: @Toolbar-Button-Icon-Highlight-Color;
+    --toolbar-button-icon-destructive-color: @Toolbar-Button-Icon-Destructive-Color;
+    --toolbar-button-icon-base-secondary-color: @Toolbar-Button-Icon-Base-Secondary-Color;
+    --toolbar-button-icon-base-color: @Toolbar-Button-Icon-Base-Color;
+
+    //#endregion TOOLBAR BUTTON
+}

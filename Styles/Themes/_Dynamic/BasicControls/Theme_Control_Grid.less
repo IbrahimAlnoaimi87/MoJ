@@ -1,0 +1,532 @@
+/*#region GRID CONTROL*/
+
+/*#region reset*/
+.theme-entry .grid .grid-body,
+.theme-entry .grid-header,
+.theme-entry .grid .grid-column-headers,
+.theme-entry .grid .grid-column-headers-wrapper,
+.theme-entry .grid .grid-column-header-divider
+{
+    border: none;
+}
+
+.theme-entry .grid table.grid-content-table > tbody > tr,
+.theme-entry .grid table.grid-content-table > tr,
+.theme-entry .grid table.grid-content-table tr.nowrap td
+{
+    height: auto; /*override - base*/
+}
+
+/*when wrpping is turned on on the column header text*/
+.theme-entry div.grid-column-header-text.LabelWrap
+{
+    height: auto; /*override - base*/ /*this selector does not need div in it!*/
+}
+
+.theme-entry .grid .grid-column-header-text
+{
+    line-height: normal; /*override - base - 19px*/
+    /*BUG FIX: Needed to prevent the bottom of "g" or "q" characters from being cut off in chrome*/
+}
+/*#endregion*/
+
+/*#region main structure*/
+
+.theme-entry .grid .grid-body-content
+{
+    //background-color: transparent; /*override - base*/
+    background-color: @List-Item-Background-Color; /*override - base*/
+    border-color: transparent; /*override - base*/
+    border-width: 0;
+}
+
+/*#endregion*/
+
+/*#region grid headers - header row style*/
+
+.theme-entry .grid .grid-column-headers
+{
+    //background-color: #e6e6e6;
+    background-color: @List-Column-Header-Background-Color;
+}
+
+.theme-entry .grid .grid-column-headers div,
+.theme-entry .grid .grid-column-headers span
+{
+    //color: #6b7785; /*light blue - darker*/
+    color: @List-Column-Header-Text-Color;
+    text-transform: uppercase;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.theme-entry .grid .grid-column-headers-wrapper
+{
+    background: transparent; /* Old browsers */
+}
+
+/*header divider*/
+.theme-entry .grid .grid-column-header-divider
+{
+    width: 0.3rem;
+    background-color: @List-Column-Header-Divider-Color;
+    opacity: 0;
+    filter: ~"alpha(opacity=0)";
+    -moz-transition: opacity linear 0.15s;
+    -ms-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+}
+
+.theme-entry .grid .grid-column-header-divider:hover,
+.theme-entry .grid .grid-column-header-divider.ui-draggable-dragging
+{
+    width: 0.3rem;
+    //background-color: white;
+    background-color: @List-Column-Header-Divider-Color; //shouldn't there be a dedicated draggable colour variable?
+    opacity: 0.5;
+    filter: ~"alpha(opacity=0.5)";
+    -moz-transition: opacity linear 0.15s;
+    -ms-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+}
+
+.theme-entry .grid .grid-column-header-table
+{
+    border-collapse: separate; /*so that focus green dotted isn't missing an edge*/
+}
+
+.theme-entry .grid table.grid-column-header-table td
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px dotted transparent;
+}
+
+.theme-entry .grid table.grid-column-header-table td.focus
+{
+    //border-color: #3cb0df;
+    border-color: @List-Column-Header-Focus-Border-Color;
+}
+
+.theme-entry .grid table.grid-column-header-table td:hover
+{
+    background-image: none;
+}
+
+/*The text gets cut off when the column header has text that's wrapping on a listview.*/
+.theme-entry .grid .grid-column-header-cell,
+.theme-entry .grid .grid-column-header-cell .grid-column-header-cell-wrapper
+{
+    height: auto;
+    position: relative;
+}
+
+/*#endregion */
+
+/*#region grid header - sorting/hover*/
+
+/*sorting indicator*/
+.theme-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper,
+.theme-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper
+{
+    background-image: none;
+    width: 100%;
+}
+
+/*.theme-entry .radgrid-grid-column-header-text tr th,*/
+.theme-entry .grid .grid-column-header-cell .grid-column-header-text
+{
+    opacity: 0.7;
+    filter: ~"alpha(opacity=70)";
+    -moz-transition: opacity linear 0.15s;
+    -ms-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+}
+
+/*.theme-entry .radgrid-grid-column-header-text tr th,*/
+.theme-entry .grid .grid-column-header-cell:hover .grid-column-header-text
+{
+    opacity: 1;
+    filter: ~"alpha(opacity=100)";
+    -moz-transition: opacity linear 0.15s;
+    -ms-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+}
+
+.theme-entry .grid .grid-column-header-cell.asc .grid-column-header-text,
+.theme-entry .grid .grid-column-header-cell.desc .grid-column-header-text
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 3.0rem;
+    background-repeat: no-repeat;
+    /*make space for the up/down arrow, while allowing the ellipsis to show*/
+}
+
+.theme-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper:before,
+.theme-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper:before
+{
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+/*#endregion*/
+
+/*#region action item*/
+.theme-entry .grid-content-table a.action-row:focus,
+.theme-entry .runtime-list-item a:focus
+{
+    //outline: 1px dotted #3cb0df;
+    outline: 1px dotted @List-Column-Header-Focus-Border-Color;
+}
+/*#endregion*/
+
+/*#region grid Filter*/
+.theme-entry .grid.with-header .grid-toolbars .filterContainer .filter
+{
+    display: inline-block;
+    margin-left: 1.0rem;
+    /*same as view indent*/
+}
+
+.theme-entry .filterContainer
+{
+    line-height: 5.2rem; /*ensures inline-controls wrap on smaller*/
+}
+
+.theme-entry .filterContainer .searchDdl
+{
+    width: auto; /*override - base*/
+}
+
+.theme-entry .filterContainer .quickSearch,
+.theme-entry .filterContainer .filterChosen
+{
+    min-width: 0px !important;
+    line-height: normal;
+    /*filter large*/
+    /*override - inline*/
+}
+
+.theme-entry .filterContainer .filterLabel
+{
+    margin-left: 0; /* override custom control styling*/
+    margin-right: 0.5rem;
+}
+
+/*BUG FIX: set the minimum width to something sensible, otherwise the dropdown collapses to the size of the selected item which might be small*/
+.theme-entry .filterContainer .input-control.dropdown-box
+{
+    min-width: 12.0rem; /*override - base - 40px hardcoded*/
+}
+
+/*#endregion*/
+
+/*#region rows - content*/
+
+/*content cells*/
+.theme-entry .grid .grid-body-content-wrapper
+{
+    background-color: #ffffff; /*background to all rows*/
+}
+
+.theme-entry .grid.without-footer.without-summary .grid-body-content-wrapper
+{
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+}
+
+.theme-entry .grid .grid-content-cell
+{
+    width: 100%;
+    min-height: 2.2rem;
+}
+
+/*content cell - text truncation*/
+/*ensure that ellipsis are used for non-wrapping overflowing cells*/
+/*override - should be in base*/
+.theme-entry span.runtime-list-item
+{
+    overflow: hidden;
+    width: 100%;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.theme-entry.runtime-form span.runtime-list-item-wrap,
+.theme-entry.runtime-form span.runtime-list-item
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5rem 0.6rem; /*the headers have a 2px border and a 6px padding moved from .theme-entry .grid .grid-content-cell-wrapper to ensure highlight shadow doesn't get cut off*/
+}
+
+/*#region row state - even/odd rows*/
+.theme-entry .grid table.grid-content-table tr.even > td
+{
+    background-color: #f5f5f5;
+}
+/*#endregion*/
+
+/*#region row state - normal*/
+
+.theme-entry .grid-content-table tbody tr > td
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    box-sizing: border-box;
+    /*make sure all rows (even non-selected) have border width, so that text doesn't jump when selected*/
+}
+
+/*#endregion*/
+
+/*#region row state - hover */
+
+.theme-entry .grid table.grid-content-table tr:hover > td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover > td
+{
+    background-color: #bfeafb;
+}
+
+/*override other special rows, which have a different hover state*/
+.theme-entry .grid .grid-content-table tr.action-row:hover > td.action-row,
+.theme-entry .grid .grid-content-table tr.empty-grid:hover > td,
+.theme-entry .grid table.grid-content-table tr.empty-grid > td
+{ /*override - core */
+    background-color: transparent;
+}
+
+/*#endregion*/
+
+/*#region row state - selected*/
+/*note:  .WorklistItemGridRow is used to get the row, as the rows contain further tables in simple worklist mode */
+
+.theme-entry .grid table.grid-content-table tr.selected > td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row) > td
+{
+    background-color: @List-Item-Selected-Background-Color ;// #7fd5f7;
+    //color: #00abf0;
+    color: @List-Item-Selected-Text-Color;
+}
+
+.theme-entry .grid-content-table tbody tr.highlighted > td,
+.theme-entry .grid-content-table tbody tr.highlighted > td.first,
+.theme-entry .grid-content-table tbody tr.highlighted > td.last
+{
+    border-style: dotted;
+    //border-top-color: #3cb0df;
+    border-top-color: @List-Item-Selected-Border-Color;
+    //border-bottom-color: #3cb0df;
+    border-bottom-color: @List-Item-Selected-Border-Color;
+}
+
+.theme-entry .grid-content-table tbody tr.highlighted > td
+{
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.theme-entry .grid-content-table tbody tr.highlighted > td.first,
+.theme-entry .grid-content-table tbody tr.highlighted > td:first-child
+{
+    //border-left-color: #3cb0df;
+    border-left-color: @List-Item-Selected-Border-Color;
+}
+
+.theme-entry .grid-content-table tbody tr.highlighted > td.last,
+.theme-entry .grid-content-table tbody tr.highlighted > td:last-child
+{
+    //border-right-color: #3cb0df;
+    border-right-color: @List-Item-Selected-Border-Color;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region Count/Sum rows*/
+
+/*Row containing count or sum information*/
+.theme-entry .grid.with-summary .grid-summary
+{
+    border: none;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden; /*hide the parts of the box-shadow overlapping the view box-shadow*/
+}
+
+.theme-entry .grid-summary .grid-summary-item
+{
+    //background-color: #dedfde;
+    background-color: @List-Summary-Background-Color;
+    border-color: transparent;
+    //border-bottom-color: rgb(188, 196, 205);
+    border-bottom-color: @List-Summary-Separator-Line-Color;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.theme-entry .grid-summary .grid-summary-item-wrapper
+{
+    border: none; /*override - base*/
+}
+
+.theme-entry.runtime-form .grid .grid-summary-item .grid-content-cell-wrapper > .SourceCode-Forms-Controls-Web-Label,
+.theme-entry.runtime-form .grid .grid-summary-item .grid-content-cell-wrapper > .SourceCode-Forms-Controls-Web-DataLabel
+{
+    padding: 0.5rem 0.6rem;
+}
+
+/*#endregion*/
+
+/*#region empty grid item */
+/*must come after all row item state rules*/
+
+.theme-entry .grid-content-table tbody tr.highlighted.empty-grid td.empty-grid
+{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.theme-entry td.empty-grid
+{
+    text-align: center;
+    font-style: italic;
+}
+
+/*#endregion*/
+
+/*#region Grid Footer */
+.theme-entry .grid .grid-footer .toolbar
+{
+    border-radius: 0 0 4px 4px;
+}
+/*#endregion*/
+
+/*#region paging control structure*/
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button
+{
+    position: relative;
+}
+
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-right
+{
+    float: right;
+}
+
+.theme-entry .grid-footer .grid-paging-control
+{
+    position: absolute;
+    bottom: 0;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.0rem;
+}
+
+.theme-entry .grid-footer .grid-paging-control > *,
+.theme-entry .grid .grid-paging-control .text-input.input-control,
+html[dir=rtl] .theme-entry .grid-footer .grid-paging-control .text-input.input-control
+{
+    display: inline-block;
+    float: none;
+}
+
+.theme-entry .grid .grid-paging-control .text-input.input-control
+{
+    width: auto;
+}
+
+.theme-entry .grid-footer .grid-paging-control .grid-paging-control-text
+{
+    display: none;
+}
+
+.theme-entry .grid .grid-paging-control .text-input.input-control input,
+html[dir=rtl] .theme-entry .grid .grid-paging-control .text-input.input-control input
+{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    width: 4.0rem;
+    border-radius: 4px;
+    vertical-align: top;
+    text-align: center;
+}
+
+/*#endregion*/
+
+/*#region add new row button*/
+
+.theme-entry .grid table.grid-content-table td.action-row .grid-content-cell-wrapper
+{
+    text-align: center;
+}
+
+.theme-entry .grid table.grid-content-table td.action-row a.action-row
+{
+    display: inline-block;
+    padding: 0.7rem 1.5rem 0.9rem 1.5rem;
+    border-radius: 4px;
+    background-color: rgb(230,230,230);
+}
+
+.theme-entry .grid table.grid-content-table td.action-row:hover a.action-row, /*the click event is on the cell*/
+.theme-entry .grid table.grid-content-table td.action-row a.action-row:hover,
+.theme-entry .grid table.grid-content-table td.action-row a.action-row:focus
+{
+    background-color: #3cb0df;
+    color: white;
+}
+
+/*#endregion*/
+
+/*#region specific grid instances */
+
+.theme-entry #filterNameList.grid
+{
+    height: 100%;
+}
+
+.theme-entry #filterNameList .grid-column-headers
+{
+    display: none;
+}
+
+.theme-entry #filterNameList .grid-body-content
+{
+    top: 0;
+}
+
+.theme-entry #filterNameList table.grid-content-table td .grid-content-cell
+{
+    display: table-cell;
+}
+
+/*#endregion*/
+
+/*#endregion GRID*/

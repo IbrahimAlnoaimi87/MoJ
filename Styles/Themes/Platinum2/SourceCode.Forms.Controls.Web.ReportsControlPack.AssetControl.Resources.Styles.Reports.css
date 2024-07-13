@@ -1,0 +1,1755 @@
+﻿/*Report header*/
+.theme-entry .base1,
+.theme-entry .base2
+{
+    background-color: transparent !important;   /* Ensure modalizer is not visible */
+    opacity: 0;                                 /* Ensures there's no flash on Report Refresh*/
+}
+
+html.workspace.workspace-activityDetail .theme-entry .base1,
+html.workspace.workspace-activityDetail .theme-entry .base2
+{
+    background-color: #fff !important;  /* should be removed once Zack's latest spinner changes have been implemented */
+    opacity: 1;
+}
+
+.theme-entry .base0
+{
+    background-color: #fff !important; /* overrides another !important */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericChart .ajaxLoader
+{
+    background-color: #fff !important; /* overrides another !important */
+}
+
+/* Re-enable overflow on tables */
+html.workspace .theme-entry .SFC.SourceCode-Forms-Controls-Web-Table
+{
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+html.workspace.workspace-processtype .loadMessage
+{
+    height: 40px;
+    width: 40px;
+    background-size: 40px;
+    background-image: url('RuntimeTheme/LoadingPage40_ffffff.gif');
+    background-repeat: no-repeat;
+    text-indent: 99999px;
+}
+
+html.workspace.workspace-reports .checkbox-outer-panel .input-control.checkbox.focus
+{
+    outline-color: transparent;
+}
+
+html.workspace.workspace-reports div.noData-overlay
+{
+    height: auto !important;
+    width: auto !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    border: 1px dotted #ececec !important;
+    background-color: #fcfcfc !important;
+}
+
+    html.workspace.workspace-reports .GenericChartContainer div.noData-overlay p.noData-overlay-message
+    {
+        width: auto;
+        display: block;        
+        position: absolute !important;        
+        top: 50%;
+        left: 50%;
+        margin: 0 auto;
+        text-align: center;
+        transform: translate(-50%, -50%) !important;
+        font-style: italic;
+        color: #8E8C8F;
+    }
+
+    html.workspace.workspace-reports .GenericChartContainer div.noData-overlay p.noData-overlay-message:before
+    {
+        content: ' ';
+        display: block;
+        height: 40px;
+        width: 40px;
+        background-size: 40px;
+        background-image: url('Reports/Images/NoData40.png');
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        padding-bottom: .5rem;
+    }
+
+html.workspace.workspace-reports .form
+{
+    padding: 0 !important;
+}
+
+    html.workspace.workspace-reports .form .Grid-Layout .editor-cell
+    {
+        padding: 0;
+    }
+
+    html.workspace.workspace-reports .form span.SourceCode-Forms-Controls-Web-Label,
+    html.workspace.workspace-reports .form span.SourceCode-Forms-Controls-Web-DataLabel
+    {
+        padding: 0;
+    }
+
+    html.workspace.workspace-reports .form span[name='lblChartPeriod']
+    {
+        padding: 0.4rem;
+    }
+
+    html.workspace.workspace-reports .form span[name='lblStatsTable']
+    {
+        width: 100%;
+    }
+
+    html.workspace.workspace-reports .form span[name='dlFlexBar'],
+    html.workspace.workspace-reports .form .sub-status
+    {
+        margin-top: 2.6rem;
+    }
+
+    html.workspace.workspace-reports .form span[name='dlFlexTable']
+    {
+        margin-top: 2rem;
+    }
+
+    html.workspace.workspace-processOverview .form .row:not(:first-child),
+    html.workspace.workspace-processtype  .form .row:not(:first-child),
+    html.workspace.workspace-processInstanceDetail .form .row:not(:first-child),
+    html.workspace.workspace-activityInstanceDetail .form .row:not(:first-child),
+    html.workspace-processInstanceDataAudit .form .row:not(:first-child),
+    html.workspace.workspace-userOverview .form .row:not(:first-child)
+    {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    html.workspace.workspace-reports .form svg text
+    {
+        font-family: 'Open-Sans Regular', 'Segoe UI Regular', Helvetica, Helvetica, sans-serif !important;
+    }
+
+html.workspace.workspace-reports button.link-button
+{
+    background: none !important;
+    border: none;
+    color: #0288d1;
+    padding: 0 !important;
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+html.workspace.workspace-reports td.editor-cell > span > button
+{
+    background: none !important;
+    border: none;
+    color: inherit;
+    padding: 0 !important;
+    font: inherit;
+    cursor: pointer;
+}
+
+html.workspace.workspace-reports .runtime-list-item
+{
+    color: #37474f;
+    padding: 0.7rem 0.6rem;
+    line-height: 1.6rem;
+}
+
+html.workspace.workspace-reports .filterContainer .filterLabel
+{
+    color: #8e8c8f;
+}
+
+html.workspace.workspace-reports .theme-entry .grid .grid-column-header-cell .grid-column-header-text
+{
+    color: #37474f;
+    opacity: 0.75;
+    font-weight: bold;
+}
+
+html.workspace.workspace-reports h1
+{
+    font-family: 'Open-Sans Regular', 'Segoe UI Regular', Helvetica, Helvetica, sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+}
+
+html.workspace.workspace-reports h2,
+html.workspace.workspace-reports h3,
+html.workspace.workspace-reports [name='lblProcessFolio']
+{
+    font-family: 'Open-Sans Regular', 'Segoe UI Regular', Helvetica, Helvetica, sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 0 .3rem 0;
+    font-size: 2.4rem;
+}
+
+html.workspace.workspace-reports h4,
+html.workspace.workspace-reports h5
+{
+    font-family: 'Open-Sans Regular', 'Segoe UI Regular', Helvetica, Helvetica, sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+html.workspace.workspace-userOverview td.editor-cell.droptarget h3
+{
+	overflow: hidden;
+    text-overflow: ellipsis;
+	text-align: center;
+    position: relative;
+    white-space: nowrap;
+    display: block;
+    margin: 0 1rem;
+}
+
+html.workspace.workspace-reports [name='lblReportBreadcrumb'] a,
+html.workspace.workspace-reports [name='lblReportBreadcrumb'] > span
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+html.workspace.workspace-reports [name='lblTitle'],
+html.workspace.workspace-reports [name='lblViewTitle'],
+html.workspace.workspace-reports [name='lblViewTitle'],
+html.workspace.workspace-reports [name='lblByPriority'],
+html.workspace.workspace-reports [name='lblByActivity'],
+html.workspace.workspace-reports [name='lblByProcessType'],
+html.workspace.workspace-reports [name='lblRelatedProcesses']
+{
+    color: #518098;
+    margin-top: 1.75rem;
+}
+
+html.workspace.workspace-reports [name='lblProcessFolio']
+{
+    color: #518098;
+    margin-top: 0.55rem;
+    margin-bottom: 1.3rem;
+    overflow: visible;
+}
+
+html.workspace.workspace-reports [name='lblSelectedDateRangeDisplay']
+{
+    color: #717171;
+    font-size: 1.5rem;
+    padding-left: 0.2rem;
+}
+
+html.workspace.workspace-reports [name='lblActualDateRangeDisplay'],
+html.workspace.workspace-reports [name='lblActualDataRangeDisplay']
+{
+    color: #518098;
+    font-size: 1.5rem;
+}
+
+html.workspace.workspace-reports table:not(.report-header) a[href]:not(.input-control):not(.SourceCode-Forms-Controls-Web-Button):not(.LoadMoreHyperlink):not(.dropdown)
+{
+    color: #0288d1;
+    text-decoration: none;
+}
+
+    html.workspace.workspace-reports table:not(.report-header) a[href]:not(.input-control):not(.SourceCode-Forms-Controls-Web-Button):not(.LoadMoreHyperlink):not(.dropdown):hover,
+    html.workspace.workspace-reports .theme-entry table.report-header a.toolbar-button:focus,
+    html.workspace.workspace-reports .theme-entry table.report-header a.toolbar-button:active
+    {
+        color: #3aabe8;
+        background-color: transparent;
+    }
+
+html.workspace.workspace-reports .report-header a[href]
+{
+    color: #c7ecff;
+}
+
+    html.workspace.workspace-reports .report-header a[href]:hover
+    {
+        color: #e6fcff;
+    }
+
+html.workspace.workspace-reports .report-header
+{
+    background-color: #003870; /* should follow the same color as nx-globalNav-background-color variable from https://help.nintex.com/en-US/HELP_DOC/rebranding/variables.css [942657] */
+    min-height: 12.5rem;
+}
+    
+    html.workspace.workspace-reports .report-header > .editor-cell
+    {
+        padding-top: 1.6rem;
+    }
+
+html.workspace.workspace-userOverview .row:nth-child(3) .Grid-Layout .editor-cell[row='2']
+{
+    height: 27.5rem;
+}
+
+html.workspace.workspace-userOverview .row:nth-child(3) .Grid-Layout .editor-cell[row='2']:not(.lastcellinrow)
+{
+    padding-right: 0.5rem;
+}
+
+    html.workspace.workspace-reports .SourceCodeFormsControlsWorklist .table-header-colgroup col:first-child,
+    html.workspace.workspace-reports .SourceCodeFormsControlsWorklist .table-body-colgroup col:first-child
+    {
+        width: 0 !important; /* Overrides inline styling */
+    }
+
+    html.workspace.workspace-reports .report-header > .editor-cell.lastcellinrow
+    {
+        padding-right: 1rem;
+    }
+
+html.workspace.workspace-reports .report-header > .editor-cell.lastrow
+{
+    vertical-align: bottom;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+}
+
+    html.workspace.workspace .report-header .editor-cell.lastrow > div:last-of-type.Grid-Layout > .editor-cell
+    {
+        vertical-align: middle;
+        line-height: 3rem;
+    }
+
+    html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='1'] .toolbar-button,
+    html.workspace.workspace-activityInstanceDetail .toolbar .toolbar-button.generic
+    {
+        vertical-align: middle;
+        background-color: transparent;
+        min-height:2.2rem;
+        padding: 0;
+    }
+
+        html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='1'] .toolbar-button .button-l,
+        html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='1'] .toolbar-button .button-c,
+        html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='1'] .toolbar-button .button-r,
+        html.workspace.workspace-activityInstanceDetail .toolbar .toolbar-button.generic .button-l,
+        html.workspace.workspace-activityInstanceDetail .toolbar .toolbar-button.generic .button-c,
+        html.workspace.workspace-activityInstanceDetail .toolbar .toolbar-button.generic .button-r
+        {
+            min-height: 22px;
+            height: 22px;
+            width: 72px;
+            display: inline-block;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 72px 22px;
+        }
+
+        html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='1'] .toolbar-button:hover .button-l,
+        html.workspace.workspace-activityInstanceDetail .toolbar .toolbar-button.generic:hover .button-l
+        {
+            opacity: 0;
+        }
+
+        html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='1'] .toolbar-button:hover .button-c,
+        html.workspace.workspace-activityInstanceDetail .toolbar .toolbar-button.generic:hover .button-c
+        {
+            opacity: 1;
+        }
+
+        html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='1'] .toolbar-button .button-c .button-icon,
+        html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='1'] .toolbar-button .button-c .button-text,
+        html.workspace.workspace-activityInstanceDetail .toolbar .toolbar-button.generic .button-c .button-icon,
+        html.workspace.workspace-activityInstanceDetail .toolbar .toolbar-button.generic .button-c .button-text
+        {
+            display: none;
+        }
+
+html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button,
+html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type
+{
+    padding: 0;
+    margin-left: 0.8rem;
+}
+
+html.workspace.workspace-processInstanceDetail .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button,
+html.workspace.workspace-activityInstanceDetail .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button,
+html.workspace.workspace-processInstanceDetail .report-header .report-subtitlebar .toolbar-button:last-of-type,
+html.workspace.workspace-activityInstanceDetail .report-header .report-subtitlebar .toolbar-button:last-of-type
+{
+    margin: 0;
+}
+
+html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button,
+html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type
+{
+    background-color: transparent;
+}
+
+html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button,
+html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type
+{
+    background-color: transparent;
+    position: relative;
+    height: 16px;
+    width: 16px;
+}
+
+    html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button .button-l,
+    html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button .button-c,
+    html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button .button-r,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type .button-l,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type .button-c,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type .button-r
+    {
+        padding-top: 1px;
+        height: 16px;
+        width: 16px;
+        display: inline-block;
+        position: absolute;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        left: 0;
+    }
+
+    html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button .button-l,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type .button-l
+    {
+        background-image: url('Reports/Images/Refresh16.png');
+        opacity: 1;
+    }
+
+    html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button .button-c,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type .button-c
+    {
+        background-image: url('Reports/Images/Refresh_Hover16.png');
+        opacity: 0;
+    }
+
+        html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button .button-c .button-icon,
+        html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button .button-c .button-text,
+        html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type .button-c .button-icon,
+        html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type .button-c .button-text
+        {
+            display: none;
+        }
+
+    html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button .button-r,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type .button-r
+    {
+        background-image: url('Reports/Images/Refresh16.gif');
+        opacity: 0;
+    }
+
+    html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button:hover .button-l,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type:hover .button-l
+    {
+        opacity: 0;
+    }
+
+    html.workspace.workspace-reports .report-header .report-titlebar .editor-cell[col='2'] .toolbar-button:hover .button-c,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type:hover .button-c
+    {
+        opacity: 1;
+    }
+
+    html.workspace.workspace-reports .report-header .report-titlebar .toolbar-button.AnimatedRefresh:hover .button-l,
+    html.workspace.workspace-reports .report-header .report-titlebar .toolbar-button.AnimatedRefresh:hover .button-c,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button.AnimatedRefresh:hover .button-l,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button.AnimatedRefresh:hover .button-c
+    {
+        opacity: 0;
+    }
+
+    html.workspace.workspace-reports .report-header .report-titlebar .toolbar-button.AnimatedRefresh:hover .button-r,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button.AnimatedRefresh:hover .button-r
+    {
+        opacity: 1;
+    }
+
+    html.workspace.workspace-reports .report-header span
+    {
+        color: #fff;
+        padding: 0;
+    }
+
+    html.workspace.workspace-reports .report-header .input-control > span
+    {
+        color: #343e41;
+    }
+
+    html.workspace.workspace-reports .report-header [name='lblSeparator'],
+    html.workspace.workspace-reports .report-header [name='lblSeparator2'],
+    html.workspace.workspace-reports .report-header [name='lblFilters']
+    {
+        opacity: 0.75;
+    }
+
+    html.workspace.workspace-reports .report-header span[name='lblReportBreadcrumb']
+    {
+        padding-bottom: 1px;
+        margin: 0 0.9rem 0 0.9rem;
+	    overflow: visible;
+        padding: 0.4rem 0;
+    }
+
+    html.workspace.workspace-reports .report-header span[name='lblReportBreadcrumb'] .no-processes
+    {
+        font-style: italic;
+        margin: 0;
+
+        /* Needed since this is in a nested span */
+        padding: inherit;
+        overflow: inherit;
+        padding-right: 0.5rem;
+        text-indent: 0.5rem;
+    }
+
+    html.workspace.workspace-reports .report-header span[name='lblReportTitle']
+    {
+        font-weight: 100;
+        padding: 0;
+        margin: 0.5rem 1rem 0.3rem 1rem;
+        vertical-align: middle;
+    }
+
+    html.workspace.workspace-reports .report-header span[name='lblSelectedFilters']
+    {
+        line-height: 1;
+    }
+
+    html.workspace.workspace-reports .report-header span[name='lblReportSubtitle']
+    {
+        font-size: 2.4rem;
+        margin: 0 1rem 0.8rem 1rem;
+        opacity: .75;
+    }
+
+    html.workspace.workspace-reports .report-header span[name='lblReportSubtitle'] i
+    {
+        padding-right: 0.5rem;
+        text-indent: 0.5rem;
+    }
+
+    html.workspace.workspace-reports .report-header span[name='lblReportSubtitle'] .no-processes
+    {
+        font-style: italic;
+        margin:0;
+
+        /* Needed since this is in a nested span */
+        opacity: inherit;
+        font-size: inherit;
+        padding-right: 0.5rem;
+        text-indent: 0.5rem;
+    }
+
+    html.workspace.workspace-reports .report-header span[name='hdlDynamicReportTitle']
+    {
+        position: absolute;
+        top: 0;
+        padding: 2rem;
+    }
+
+    html.workspace.workspace-reports .report-header span[name='lblDateRange']
+    {
+        padding: 0.4rem 1rem;
+        opacity: 0.75;
+    }
+
+    html.workspace.workspace-reports .report-header .input-control-m-c
+    {
+        min-height: 100% !important;
+    }
+
+    html.workspace.workspace-reports .report-header a[name='btnReset'],
+    html.workspace.workspace-reports .report-header a[name='btnSelectedFilters'],
+    html.workspace.workspace-reports div[name='EmptyFilterSelectionAreaItem'] a[name='btnAddFilter']
+    {
+        background-color: transparent;
+        border: none;
+        color: #c7ecff;
+        min-height: auto;
+        background-image: none;
+        /* override base button style */
+        box-shadow: none;
+        /* override base button style */
+        outline: none;
+        /* override base button style */
+        -moz-animation: none;
+        -o-animation: none;
+        -webkit-animation: none;
+        animation: none;
+        min-width: 0rem;
+        padding: 0 0.7rem;
+    }
+
+    html.workspace.workspace-reports .report-header a[name='btnReset']:hover,
+    html.workspace.workspace-reports .report-header a[name='btnSelectedFilters']:hover
+    {
+        color: #e6fcff;
+    }
+
+    html.workspace.workspace-reports div[name='EmptyFilterSelectionAreaItem'] a[name='btnAddFilter']
+    {
+        color: #0288d1;
+        line-height: 1;
+        padding: 1rem .7rem;
+    }
+
+    html.workspace.workspace-reports div[name='EmptyFilterSelectionAreaItem'] a[name='btnAddFilter']:hover
+    {
+        color: #3aabe8;
+    }
+
+    html.workspace.workspace-reports .report-header h2
+    {
+        font-weight: normal;
+        font-size: 2.4rem;
+        color: #518098;
+        padding: 0;
+        margin: 0;
+    }
+
+    html.workspace.workspace-userOverview .report-header span[name='lblUserAvatar']
+    {
+        display: inline-block;
+        height: 3.2rem;
+        width: 3.2rem;
+        margin: 0 0 0.9rem 1rem;
+        border-radius: 3.2rem;
+        border: 2px solid white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        background-image: url('Navigation/Avatar.png');
+        background-position: center;
+        background-size: 3.2rem;
+    }
+
+    html.workspace.workspace-reports .report-header table#2d35f092-b673-68b4-d4d1-003d7447a672_2aa01381-7510-93b7-adb8-4c528f35b38d,
+    html.workspace.workspace-reports .report-header table#e43292f0-e9ec-ce16-cd73-8788c015d28c_beb725c2-79d4-5b7b-125e-b18f6a7fad6b
+    {
+        background-color: #fff;
+    }
+
+    /*Not entirely sure what this is for*/
+    html.workspace.workspace-reports .report-header .Grid-Layout:nth-child(1) .editor-cell[row='1'] > img
+    {
+        vertical-align: middle;
+    }
+
+html.workspace.workspace-reports .report-flexbar
+{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+    html.workspace.workspace-reports .report-flexbar .report-stat-title
+    {
+        font-weight: 600;
+        text-align: left;
+        -ms-word-break: normal;
+        word-break: normal;
+        color: #5b595d;
+    }
+
+    html.workspace.workspace-reports .report-flexbar .report-stat-value
+    {
+        text-align: right;
+        min-height: 5rem;
+        color: #5b595d;
+    }
+
+    html.workspace.workspace-reports .report-flexbar .report-stat
+    {
+        text-align: center;
+        padding-right: .5rem;
+        box-sizing: border-box;
+    }
+
+        html.workspace.workspace-reports .report-flexbar .report-stat > div
+        {
+            background-color: #f8f8f8;
+            min-height: 6rem; 
+            border: 1px solid #e9e9e9;
+            border-radius: 2px;
+            max-height: 6rem;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        html.workspace.workspace-reports .report-flexbar .report-stat span
+        {
+            vertical-align: middle;
+            padding-left: .5rem;
+            padding-right: .5rem;
+            display: inline-block;
+        }
+
+        html.workspace.workspace-reports .report-flexbar .report-stat .report-stat-value a
+        {
+            color: #0288d1;
+            text-decoration: none;
+        }
+
+            html.workspace.workspace-reports .report-flexbar .report-stat .report-stat-value a:hover
+            {
+                color: #3aabe8;
+            }
+
+    html.workspace.workspace-reports .report-flexbar.cell-2 .report-stat
+    {
+        width: 50%;
+    }
+
+        html.workspace.workspace-reports .report-flexbar.cell-2 .report-stat span.report-stat-value
+        {
+            font-size: 3.6rem;
+            padding-top: 0.5rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-2 .report-stat-title
+        {
+            font-size: 1.5rem;
+        }
+
+    html.workspace.workspace-reports .report-flexbar.cell-3 .report-stat
+    {
+        width: 33.33333333%;
+    }
+
+        html.workspace.workspace-reports .report-flexbar.cell-3 .report-stat span.report-stat-value
+        {
+            font-size: 3.6rem;
+            padding-top: 0.5rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-3 .report-stat span.report-stat-value.datetime-label
+        {
+            font-size: 2.4rem;
+            line-height: 5rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-3 .report-stat-title
+        {
+            font-size: 1.5rem;
+        }
+
+    html.workspace.workspace-reports .report-flexbar.cell-4 .report-stat
+    {
+        width: 25%;
+    }
+
+        html.workspace.workspace-reports .report-flexbar.cell-4 .report-stat span.report-stat-value
+        {
+            font-size: 3.0rem;
+            padding-top: 0.8rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-4 .report-stat-title
+        {
+            font-size: 1.2rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-4 .report-stat span.report-stat-value.datetime-label
+        {
+            font-size: 2.4rem;
+            line-height: 4rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-4 .report-stat-title.datetime-label
+        {
+            font-size: 1.1rem;
+        }
+
+    html.workspace.workspace-reports .report-flexbar.cell-5 .report-stat
+    {
+        width: 20%;
+    }
+
+        html.workspace.workspace-reports .report-flexbar.cell-5 .report-stat span.report-stat-value
+        {
+            font-size: 3.0rem;
+            padding-top: 0.8rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-5 .report-stat-title
+        {
+            font-size: 1.2rem;
+        }
+
+    html.workspace.workspace-reports .report-flexbar.cell-6 .report-stat
+    {
+        width: 16.66666667%;
+    }
+
+        html.workspace.workspace-reports .report-flexbar.cell-6 .report-stat span.report-stat-value
+        {
+            font-size: 2.8rem;
+            padding-top: 1rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-6 .report-stat span.report-stat-value.datetime-label
+        {
+            font-size: 1.8rem;
+            line-height: 4rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-6 .report-stat-title
+        {
+            font-size: 1.1rem;
+        }
+
+    html.workspace.workspace-reports .report-flexbar .report-stat:last-child
+    {
+        padding-right: 0px;
+    }
+
+html.workspace.workspace-reports .report-flextables
+{
+    display: flex;
+    flex-direction: row;
+}
+
+    html.workspace.workspace-reports .report-flextables .report-flextable
+    {
+        display: flex;
+        flex-direction: column;
+        padding-right: .5rem;
+        box-sizing: border-box;
+    }
+
+        html.workspace.workspace-reports .report-flextables .report-flextable:last-child
+        {
+            padding-right: 0;
+        }
+
+        html.workspace.workspace-reports .report-flextables .report-flextable.cell-4
+        {
+            width: 50%;
+        }
+        
+        html.workspace.workspace-reports .report-flextables .report-flextable.cell-6
+        {
+            width: 33.333333%;
+        }    
+
+        html.workspace.workspace-reports .report-flextables .report-flextable.cell-8
+        {
+            width: 25%;
+        }        
+        
+        html.workspace.workspace-reports .report-flextables .report-flextable.cell-10
+        {
+            width: 20%
+        }           
+        
+        html.workspace.workspace-reports .report-flextables .report-flextable.cell-12
+        {
+            width: 16.66666667%;
+        }
+
+        html.workspace.workspace-reports .report-flextable .report-flexrow
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+            html.workspace.workspace-reports .report-flextable .report-flexrow:last-child
+            {
+                border-style: solid;
+                border-color: #e9e9e9;
+                border-width: 0 0 1px 0;
+            }
+
+        html.workspace.workspace-reports .report-flextable .report-flexrow .report-flexcell-title
+        {
+            background-color: #f8f8f8;
+            border-style: solid;
+            border-color: #e9e9e9;
+            border-width: 1px 1px 0 1px;
+            text-align: right;
+            text-transform: uppercase;
+            padding: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 33.333333%;
+        }
+
+            html.workspace.workspace-reports .report-flextable .report-flexrow .report-flexcell-title span
+            {
+                color: rgba(55, 71, 79, .75);
+            }
+
+        html.workspace.workspace-reports .report-flextable .report-flexrow .report-flexcell-value
+        {
+            background-color: #fdfdfd;
+            border-style: solid;
+            border-color: #e9e9e9;
+            border-width: 1px 1px 0 0;
+            text-align: left;
+            padding: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 66.666667%;            
+        }
+
+            html.workspace.workspace-reports .report-flextable .report-flexrow .report-flexcell-value span
+            {
+                color: rgb(55, 71, 79);            
+            }
+
+            html.workspace.workspace-reports .report-flextable .report-flexrow .report-flexcell-value a
+            {
+                color: rgb(2, 136, 209);
+                display: inline-block;
+                text-decoration: none;
+            }
+
+                html.workspace.workspace-reports .report-flextable .report-flexrow .report-flexcell-value a:hover
+                {
+                    color: #3aabe8;
+                }
+
+html.workspace.workspace-reports .report-flextables:nth-child(2)
+{
+    margin-top: 2rem;
+}
+
+html.workspace.workspace-reports span[name='dlSubStats'],
+html.workspace.workspace-reports span[name='dlReportHeader']
+{
+    white-space: normal;
+    text-align: left;
+}
+
+    html.workspace.workspace-reports span[name='dlSubStats'] .sub-status,
+    html.workspace.workspace-reports span[name='dlReportHeader'] .sub-status
+    {
+        font-size: 1.8rem;
+    }
+
+        html.workspace.workspace-reports span[name='dlSubStats'] .sub-status div.sub-status-cell,
+        html.workspace.workspace-reports span[name='dlReportHeader'] .sub-status div.sub-status-cell
+        {
+            display: inline-block;
+            padding-right: 2rem;
+        }
+
+            html.workspace.workspace-reports span[name='dlSubStats'] .sub-status div.sub-status-cell .label,
+            html.workspace.workspace-reports span[name='dlReportHeader'] .sub-status div.sub-status-cell .label
+            {
+                font-size: 1.8rem;
+                color: #717171;
+            }
+
+            html.workspace.workspace-reports span[name='dlSubStats'] .sub-status div.sub-status-cell .value,
+            html.workspace.workspace-reports span[name='dlReportHeader'] .sub-status div.sub-status-cell .value
+            {
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: #5b595d;
+                padding: 0 1rem;
+            }
+
+            html.workspace.workspace-reports span[name='dlSubStats'] .sub-status div.sub-status-cell.pos-right,
+            html.workspace.workspace-reports span[name='dlReportHeader'] .sub-status div.sub-status-cell.pos-right
+            {
+                float: right;
+            }
+
+html.workspace.workspace-reports .grid .grid-toolbars .quickSearch.filter
+{
+    float: right;
+}
+
+html.workspace.workspace-reports .grid .grid-toolbars .toolbar-wrapper
+{
+    background-color: #fff;
+}
+
+    html.workspace.workspace-reports .dialog .grid .grid-toolbars .toolbar-wrapper
+    {
+        background-color: #dedfde;
+    }
+
+html.workspace.workspace-reports .grid .grid-toolbars .filterContainer
+{
+    background-color: #f8f8f8;
+    padding: .5rem 1.5rem;
+}
+
+html.workspace.workspace-reports .grid .grid-column-headers,
+html.workspace.workspace-reports .grid .grid-footer .toolbar
+{
+    background-color: #ececec;
+}
+
+html.workspace.workspace-reports .grid table.grid-column-header-table div.grid-column-header-text,
+html.workspace.workspace-reports .grid table.grid-content-table tr > td
+{
+    text-align: left !important;
+}
+
+    html.workspace.workspace-reports .grid table.grid-content-table tr > td,
+    html.workspace.workspace-reports .grid table.grid-content-table tr > td:last-child
+    {
+        border-left: 1px solid #ececec;
+    }
+
+    html.workspace.workspace-reports .grid table.grid-content-table tr > td:last-child
+    {
+        border-right: 1px solid #ececec;
+    }
+
+        html.workspace.workspace-reports .grid table.grid-content-table tr > td button,
+        html.workspace.workspace-reports .grid table.grid-content-table tr > td:last-child button
+        {
+            background: none !important;
+            border: none;
+            color: #0288d1;
+            padding: 0 !important;
+            font: inherit;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+html.workspace.workspace-reports .grid table.grid-content-table tr.empty-grid > td.empty-grid
+{
+    text-align: center !important;
+}
+
+html.workspace.workspace-reports .grid table.grid-content-table tr td
+{
+    border-top: 0;
+    border-bottom: 0;
+}
+
+html.workspace.workspace-reports .grid table.grid-content-table tr.even td,
+html.workspace.workspace-reports .grid table.grid-content-table tr:nth-child(odd):not(.action-row) td
+{
+    background-color: #fdfdfd;
+}
+
+html.workspace.workspace-reports .grid table.grid-content-table tr:hover > td
+{
+    background-color: #e5f3fa !important;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+html.workspace.workspace-reports .grid table.grid-content-table tr.selected:hover > td,
+html.workspace.workspace-reports .grid table.grid-content-table tr.selected:hover > td span,
+html.workspace.workspace-reports .grid table.grid-content-table tr.selected:hover > td a
+{
+    color: rgb(107, 119, 133);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+html.workspace.workspace-reports .grid-content-table tbody tr.selected > td
+{
+    background-color: #cce7f6;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+html.workspace.workspace-reports .ddl-activities > tbody > tr:not(:first-child) > td
+{
+    padding: 0;
+}
+
+html.workspace.workspace-reports .ddl-activities div.SourceCode-Forms-Controls-Web-ControlPack-ListBox
+{
+    background-color: #ffffff;
+}
+
+    html.workspace.workspace-reports .ddl-activities div.SourceCode-Forms-Controls-Web-ControlPack-ListBox div.stylewrapper > div > div > div.listwrapper > div.optionwrapper > div
+    {
+        border: 1px solid #e9e9e9;
+        background-color: #f8f8f8;
+        font-size: 1.5rem;
+        color: #37474f;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+        border-radius: 2px;
+        margin-bottom: 4px;
+        cursor: pointer;
+        padding-left: 10px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+        html.workspace.workspace-reports .ddl-activities div.SourceCode-Forms-Controls-Web-ControlPack-ListBox div.stylewrapper > div > div > div.listwrapper > div.optionwrapper > div:hover
+        {
+            background-color: rgba(2, 136, 209, 0.25);
+            border: 1px solid rgba(2, 136, 209, 0.25);
+        }
+
+        html.workspace.workspace-reports .ddl-activities div.SourceCode-Forms-Controls-Web-ControlPack-ListBox div.stylewrapper > div > div > div.listwrapper > div.optionwrapper > div.selected
+        {
+            background-color: #0288d1;
+            color: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+html.workspace.workspace-processtype .form > .row:first-of-type,
+html.workspace.workspace-userOverview .form > .row:first-of-type,
+html.workspace.workspace-processOverview .form > .row:first-of-type
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #003870; /* --globalNav-background-color */
+}
+
+html.workspace.workspace-processInstanceDetail .form > .row:first-of-type,
+html.workspace.workspace-activityInstanceDetail .form > .row:first-of-type,
+html.workspace-processInstanceDataAudit .form > .row:first-of-type
+{
+    padding-left: 1rem;
+    padding-right: 0.9rem;
+    background-color: #003870; /* --globalNav-background-color */
+}
+
+html.workspace.workspace-processInstanceDetail .panel-toolbars,
+html.workspace.workspace-activityInstanceDetail .panel-toolbars
+{
+    display: none;
+}
+
+html.workspace.workspace-activityInstanceDetail.workspace-dialog
+{
+    padding-top: 1rem;
+}
+
+    html.workspace.workspace-activityInstanceDetail.workspace-dialog .form .row
+    {
+        padding-right: 1.9rem;
+        padding-left: 1.9rem;
+    }
+
+    html.workspace.workspace-activityInstanceDetail.workspace-dialog .form .row:first-of-type
+    {
+        background-color: transparent;
+    }
+
+    html.workspace.workspace-activityInstanceDetail.workspace-dialog a[name='btnDataAudit']
+    {
+        background-color: transparent;
+        border: none;
+        color: #0288d1;
+        min-height: auto;
+        /*line-height: 1;*/
+        background-image: none;
+        /* override base button style */
+        box-shadow: none;
+        /* override base button style */
+        outline: none;
+        /* override base button style */
+        -moz-animation: none;
+        -o-animation: none;
+        -webkit-animation: none;
+        animation: none;
+        min-width: 0rem;
+        padding: 0;
+    }
+
+        html.workspace.workspace-activityInstanceDetail.workspace-dialog a[name='btnDataAudit']:hover
+        {
+            color: #3aabe8;
+        }
+
+    html.workspace.workspace-activityInstanceDetail.workspace-dialog .panel-toolbars
+    {
+        display: block;
+    }
+
+        html.workspace.workspace-activityInstanceDetail.workspace-dialog .panel-toolbars .toolbar
+        {
+            background-color: transparent;
+        }
+
+    html.workspace.workspace-activityInstanceDetail.workspace-dialog [name='lblEventName']
+    {
+        vertical-align: middle;
+        font-family: 'Open-Sans Regular', 'Segoe UI Regular', Helvetica, Helvetica, sans-serif;
+        font-weight: 100;
+        margin: 0 1rem 0 0;
+        padding: 0;
+        font-size: 1.8rem;
+        color: #518098;
+        font-weight: 600;
+    }
+
+    html.workspace.workspace-activityInstanceDetail.workspace-dialog [name='lblViewTitle'] > h3,
+    html.workspace.workspace-activityInstanceDetail.workspace-dialog [name='lblTitle'] > h3
+    {
+        font-family: 'Open-Sans Regular', 'Segoe UI Regular', Helvetica, Helvetica, sans-serif;
+        font-weight: 100;
+        margin: 0;
+        padding: 0;
+        font-size: 1.8rem;
+        color: #518098;
+        font-weight: 600;
+    }
+
+html.workspace.workspace-processInstanceDetail [name='dlReportHeader'] .sub-status,
+html.workspace.workspace-activityInstanceDetail [name='dlReportHeader'] .sub-status
+{
+    margin-top: 0;
+}
+
+    html.workspace.workspace-processInstanceDetail [name='dlReportHeader'] .sub-status div.sub-status-cell > span,
+    html.workspace.workspace-activityInstanceDetail [name='dlReportHeader'] .sub-status div.sub-status-cell > span
+    {
+        font-size: 1.4rem;
+    }
+    
+html.workspace.workspace-processtype .row.activities-list
+{
+    overflow: hidden;
+}
+
+    html.chrome.workspace.workspace-processtype .row.activities-list /* set element height in Chrome */
+    {
+        height: 90.6rem;
+    }
+
+    html.mozilla.workspace.workspace-processtype .row.activities-list /* set element height in Firefox */
+    {
+        height: 92.9rem;
+    }
+
+    html.msie.workspace.workspace-processtype .row.activities-list /* set element height in Internet Explorer */
+    {
+        height: 91.4rem;
+    }
+
+    html.msie.workspace.workspace-activityDetail body /* removes overflow in IE as body element adds scrollbars on View refresh */
+    {
+        overflow: hidden !important;  /* overrides inline styling */
+    }
+
+    html.workspace.workspace-processtype .row.activities-list .view:first-child .innerpanel
+    {
+        margin: 0 !important; /* overrides inline styling */
+    }
+
+        html.workspace.workspace-processtype .row.activities-list .view:first-child .innerpanel .Grid-Layout
+        {
+            -ms-grid-columns: 240px 1fr !important;
+            grid-template-columns: 240px 1fr !important;
+        }
+
+            html.workspace.workspace-processtype .row.activities-list .view:first-child .innerpanel .Grid-Layout > .editor-cell[row='2'][col='1']
+            {
+                background-color: #ececec;
+                border-radius: 2px;
+            }
+
+            html.workspace.workspace-processtype .row.activities-list .view:first-child .innerpanel .Grid-Layout > .editor-cell[row='2'] .input-control.select-box
+            {
+                margin: 10px 15px;
+            }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper
+    {
+        background-color: #ececec;
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .PropertiesMain
+    {
+        padding: 0.3rem 1rem;
+        width: 18.6rem;
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .PropertiesMain .PART_TitleDiv
+    {
+        line-height: 2rem;
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem
+    {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #f8f8f8;
+        border: 1px #dfdfdf solid;
+        border-radius: 2px;
+        margin: 4px;
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem .title > span,
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem.selected .title > span,
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem:hover .title > span
+    {
+        color: #37474f;
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem.selected
+    {
+        background-color: #f8f8f8;
+        border: 1px #dfdfdf solid;
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem:hover
+    {
+        background-color: #d7ecf7;
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem .PropertiesDescriptionProperty2Table
+    {
+        display: none;
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem.selected .indicator1.selected-row-indicator
+    {
+        display: block;
+        height: 16px;
+        width: 16px;
+        background-image: url('Reports/Images/SelectedRowIndicator16.png');
+        background-position: center;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        /*margin-left: -1.1rem;*/
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem .indicator1.selected-row-indicator
+    {
+        display: none;
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .watermarkwrapper .middleText
+    {
+        line-height: 74rem;
+    }
+
+    html.workspace.workspace-activityDetail .form .row
+    {
+        padding-right: 0;
+        padding-left: 1.5rem;
+    }
+
+        html.workspace.workspace-activityDetail .form .row:nth-child(2),
+        html.workspace.workspace-activityDetail .form .row:nth-child(3)
+        {
+            padding-right: .2rem;
+        }
+
+    html.workspace.workspace-activityDetail .view .grid-toolbars
+    {
+        height: 4rem;
+        border-left: 1px #e9e9e9 solid;
+        border-right: 1px #e9e9e9 solid;
+    }
+
+        html.workspace.workspace-activityDetail .view .grid-toolbars .toolbars .toolbar:first-child
+        {
+            display: none;
+        }
+        
+    html.workspace.workspace-activityDetail .row:nth-child(2) .view,
+    html.workspace.workspace-activityDetail .row:nth-child(3) .view
+    {
+        border-left: 1px #e9e9e9 solid;
+        border-right: 1px #e9e9e9 solid;        
+    }
+
+        html.workspace.workspace-activityDetail .row:nth-child(2) .view
+        {
+            margin-top: -3px !important; /* overrides inline style */
+        }
+
+    html.workspace.workspace-activityDetail .row:nth-child(2) .view .innerpanel,
+    html.workspace.workspace-activityDetail .row:nth-child(3) .view .innerpanel
+    {
+        padding: 0 1rem;
+    }
+
+    html.workspace.workspace-activityDetail .row:nth-child(2) .view .innerpanel .Grid-Layout .editor-cell[row='1']
+    {
+        padding-top: 1rem;
+    }
+
+html.workspace.workspace-userOverview
+{
+    /*Worklist Custom CSS*/
+    /*END Worklist Custom CSS*/
+}
+
+    html.workspace.workspace-userOverview [name='lblStatsTable']
+    {
+        margin-top: 3rem;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist div.WorklistItemSectionCell
+    {
+        border-bottom: 1px solid #ececec;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist div.WorklistItemSectionCell td.WorklistTableSelectGridArrow
+    {
+        width: auto !important;
+        cursor: pointer;
+        position: relative !important;
+        display: table-cell !important;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .RefreshInput.worklist-btn.OptionSelectBorderOff
+    {
+        background-image: url(ContextBrowser/Refresh16.png) !important;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist td.WorklistItemGridCell > span
+    {
+        color: #37474f;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .nav tr
+    {
+        background-color: #F8F8F8 !important;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .nav input[type=button]:hover
+    {
+        background-color: #F8F8F8 !important;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .WorkListItemTableHeader
+    {
+        background-color: #ececec !important;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .WorkListItemTableHeader th
+    {
+        padding: 0 4px;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .WorkListItemTableHeader span.worklist-grid-column-header-cell-text
+    {
+        color: #37474f;
+        opacity: 0.75;
+        font-weight: bold;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .worklist-grid-even
+    {
+        background-color: #fdfdfd !important;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .WorkListGridTableBody td.WorklistItemIcons
+    {
+        border-left: 1px solid #ececec;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .WorkListGridTableBody tr:hover > td
+    {
+        background-color: #e5f3fa !important;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .WorkListGridTableBody tr:hover > .WorklistItemGridCell
+    {
+        border-right: #FFFFFF thin solid;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .WorklistItemGridRow.SelectedDivBackground td
+    {
+        background-color: #cce7f6;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .WorkListGridTableBody tr .WorklistItemGridCell
+    {
+        border-right: 1px solid #ececec;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .WorkListGridTableBody tr td
+    {
+        padding: 0 4px;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .WatermarkText
+    {
+        background-color: inherit !important;
+    }
+
+    html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .LoadMoreHyperlink
+    {
+        background-color: rgb(230,230,230);
+        color: #aaa;
+    }
+
+        html.workspace.workspace-userOverview .SourceCodeFormsControlsWorklist .LoadMoreHyperlink:hover
+        {
+            background-color: #3cb0df;
+            color: #FFF;
+        }
+
+html.workspace.workspace-dialog body
+{
+    background-color: #fff !important;
+}
+
+html.workspace .picker-collection-search-section
+{
+    table-layout: auto;
+    width: 100%;
+}
+
+html.workspace.workspace-filterSelection body.theme-entry
+{
+    background-color: transparent;
+}
+
+html.workspace.workspace-filterSelection [name='ProcessesTree']
+{
+    border: 1px solid #999999;
+}
+
+    html.workspace.workspace-filterSelection .filter-wrapper > .editor-cell[row='1']
+    {
+        padding: 0;
+    }
+
+        html.workspace.workspace-filterSelection .filter-wrapper > .editor-cell[row='1'][col='1'] .Grid-Layout > .editor-cell
+        {
+            padding-right: 0;
+        }
+
+html.workspace.workspace-dialog .Reports-Popup-Footer
+{
+    /* This is a floating footer under a css grid thus unset the column and row lines */
+    grid-column-start:unset !important;
+    grid-column-end:unset !important;
+    grid-row-start:unset !important;
+    grid-row-end: unset !important;
+    -ms-grid-column:1 !important;
+    -ms-grid-row:1 !important;
+    
+    height: 42px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #ececec;
+    z-index: 3;
+    align-content: flex-end;
+}
+
+    .Reports-Popup-Footer.editor-cell:not(.lastcellinrow)
+    {
+        width: 0;
+    }
+
+    .Reports-Popup-Footer.editor-cell
+    {
+        width: 100%;
+        padding-bottom: 0px !important; /* Overrides specific selector styling */
+        padding-top: 0px;
+    }
+
+        .Reports-Popup-Footer.editor-cell.lastcellinrow a
+        {
+            margin-right: 1rem !important; /* Overrides inline styling */
+            float: right;
+            position: relative;
+            top: 0px;
+            display: inline-block;
+            align-self: flex-end;
+        }
+
+            .Reports-Popup-Footer.editor-cell.lastcellinrow a:first-of-type
+            {
+                margin-right: 1.4rem !important; /* Overrides inline styling */
+                order: 1;
+            }
+
+    html.workspace.workspace-dialog .Grid-Layout .editor-cell:has(span[name='lblDates'])
+    {
+        padding-left: 0.5rem;
+    }
+    
+html.workspace.workspace-reports span[name='lblEmptyFilter']
+{
+    text-align:center;
+}
+
+    html.workspace.workspace-reports span[name='lblEmptyFilter']
+    {
+        width: 200px;
+        display: inline-block;
+    }
+
+    html.workspace.workspace-reports span[name='lblEmptyFilter'] .image
+    {
+        background-repeat: no-repeat;
+        background-image: url('Reports/Images/EmptyFilter64.png');
+        background-position: center;
+        width: 64px;
+        height: 64px;
+        background-size: 64px;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    html.workspace.workspace-reports span[name='lblEmptyFilter'] .title,
+    html.workspace.workspace-reports span[name='lblEmptyFilter'] .description 
+    {
+        font-family: 'Open-Sans Regular', 'Segoe UI Regular', Helvetica, Helvetica, sans-serif;
+        color: #5b595d;
+    }
+
+    html.workspace.workspace-reports span[name='lblEmptyFilter'] .title
+    {
+        font-weight: bold;
+        font-size: 1.4rem;
+        display: block;
+    }
+
+    html.workspace.workspace-reports span[name='lblEmptyFilter'] hr
+    {
+        border: 1px solid #ddd;
+        margin: 1rem 0 .7rem 0;
+    }
+
+    html.workspace.workspace-reports span[name='lblEmptyFilter'] .description
+    {
+        font-size: 1.2rem;
+    }
+
+html.workspace.workspace-reports div[name='EmptyFilterSelectionAreaItem'] 
+{
+    position: absolute;
+    left: 0;
+    top: 132px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html.workspace.workspace-reports div[name='EmptyFilterSelectionAreaItem'] .panel-body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
+@media screen and (max-width: 1496px)
+{
+        html.workspace.workspace-reports .report-flexbar.cell-6 .report-stat span.report-stat-value.datetime-label
+        {
+            font-size: 1.5rem;
+        }
+}
+
+@media screen and (max-width: 1346px)
+{
+        html.workspace.workspace-reports .report-flexbar.cell-6 .report-stat span.report-stat-value.datetime-label
+        {
+            font-size: 1.3rem;
+        }
+}
+
+@media screen and (max-width: 1036px)
+{
+        html.workspace.workspace-reports .report-flexbar.cell-6 .report-stat span.report-stat-value.datetime-label
+        {
+            font-size: 1.1rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-3 .report-stat span.report-stat-value.datetime-label
+        {
+            font-size: 2.0rem;
+        }
+
+        html.workspace.workspace-reports .report-flexbar.cell-6 .report-stat-title.datetime-label
+        {
+            font-size: 0.9rem;
+        }
+}
+
+@media screen and (max-width: 1010px)
+{
+    html.workspace.workspace-reports.workspace-processInstanceDetail span[name='dlSubStats'] .sub-status div.sub-status-cell.pos-right
+    {
+        width: 100%;
+        float: none;
+        margin-top: 1.5rem;
+    }
+
+        html.workspace.workspace-reports.workspace-processInstanceDetail span[name='dlSubStats'] .sub-status div.sub-status-cell.pos-right span
+        {
+            padding: 0;
+        }
+}
+
+@media screen and (max-width: 800px)
+{
+    html.workspace.workspace-reports.workspace-activityInstanceDetail span[name='dlSubStats'] .sub-status div.sub-status-cell.pos-right
+    {
+        width: 100%;
+        float: none;
+        margin-top: 1.5rem;
+    }
+
+        html.workspace.workspace-reports.workspace-activityInstanceDetail span[name='dlSubStats'] .sub-status div.sub-status-cell.pos-right span
+        {
+            padding: 0;
+        }
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type .button-icon
+    {
+        background-image: url('Reports/Images/Refresh16@2x.png');
+    }
+
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type:hover .button-icon
+    {
+        background-image: url('Reports/Images/Refresh_Hover16@2x.png');
+    }
+
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type.AnimatedRefresh .button-icon,
+    html.workspace.workspace-reports .report-header .report-subtitlebar .toolbar-button:last-of-type.AnimatedRefresh:hover .button-icon
+    {
+        background-image: url('Reports/Images/Refresh16@2x.gif');
+    }
+
+    html.workspace.workspace-reports [name='gelActivitiesList'].SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem.selected .indicator1.selected-row-indicator
+    {
+        background-image: url('Reports/Images/SelectedRowIndicator16@2x.png');
+    }
+
+    html.workspace.workspace-reports .GenericChartContainer div.noData-overlay p.noData-overlay-message:before
+    {
+        background-image: url('Reports/Images/NoData40@2x.png');
+    }
+
+    html.workspace.workspace-userOverview .report-header span[name='lblUserAvatar']
+    {
+        background-image: url('Navigation/Avatar@2x.png');
+    }
+
+    html.workspace.workspace-reports span[name='lblEmptyFilter'] .image
+    {
+        background-image: url('Reports/Images/EmptyFilter64@2x.png');
+    }
+}

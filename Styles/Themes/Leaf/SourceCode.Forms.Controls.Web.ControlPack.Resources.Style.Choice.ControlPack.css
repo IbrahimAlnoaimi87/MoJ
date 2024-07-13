@@ -1,0 +1,5 @@
+﻿.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice label.input-control.checkbox.focus,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice label.input-control.radio.focus
+{
+	border: 1px dotted #b5ce00;
+}

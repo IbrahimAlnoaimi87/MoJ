@@ -1,0 +1,515 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		Covers the Left Tree/Search panel */
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+.navigation-panel {
+  position: relative;
+}
+.navigation-panel.full {
+  height: 100%;
+}
+.lyt-category-explorer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.lyt-category-explorer .lyt-category-explorer-searchpane {
+  flex-grow: 0;
+}
+.lyt-category-explorer .lyt-category-explorer-content {
+  flex-grow: 1;
+  position: relative;
+}
+.lyt-category-explorer .lyt-category-explorer-footer {
+  flex-grow: 0;
+}
+.lyt-category-explorer .explorer-content-outer,
+.lyt-category-explorer .grid {
+  height: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: auto;
+  overflow: hidden;
+  left: 0px;
+  right: 0px;
+}
+.lyt-category-explorer .explorer-content-outer {
+  border-top: solid 1px #e5e5e5;
+}
+.lyt-category-explorer .scroll-wrapper {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: auto;
+  height: auto;
+  right: 0px;
+}
+.lyt-category-explorer .search-box:not(.active) .input-control-m-c {
+  border-color: transparent;
+}
+.lyt-category-explorer ul.tree {
+  margin-left: -3px;
+  padding: 10px;
+}
+.lyt-category-explorer ul.tree li > a {
+  display: inline-block;
+  min-height: 20px;
+  line-height: 20px;
+  background-position: 2px 2px;
+  width: calc(100% - 20px);
+  min-width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  float: none;
+  -webkit-padding-before: 0px;
+  -webkit-padding-after: 0px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
+.navigation-panel .input-control.large {
+  min-height: 30px;
+}
+.navigation-panel .input-control.large .input-control-wrapper {
+  min-height: 30px;
+  line-height: 30px;
+}
+.navigation-panel .input-control.large .input-control-watermark {
+  line-height: 30px;
+  height: 30px;
+  padding: 0px 10px;
+}
+.navigation-panel .input-control.large input[type="text"] {
+  padding-left: 10px;
+}
+/* AppStudio RTL overrides*/
+
+html[dir=rtl] #BottomFilterMenuPanel .panel-body-wrapper > * > * {
+  margin: 3px 5px 0 3px !important;
+}
+#BottomFilterMenuPanel a {
+  display: inline-block;
+}
+.nav-filter-button {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  height: 30px;
+  line-height: 30px;
+  margin: 0px;
+}
+html[dir=ltr] .nav-filter-button {
+  padding-left: 10px;
+}
+html[dir=rtl] .nav-filter-button {
+  padding-right: 10px;
+}
+.nav-filter-button label {
+  display: block;
+  flex-grow: 0;
+}
+.nav-filter-button a {
+  display: block;
+  flex-grow: 1;
+}
+/* Navigation Panel Header Styling */
+
+.navigation-panel-header {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  position: relative;
+  box-sizing: border-box;
+  height: 30px;
+  color: white;
+}
+.navigation-panel-header-c {
+  background: #0052a3;
+  height: 30px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+html[dir=rtl] .navigation-panel-header-c {
+  text-align: right;
+}
+.navigation-panel-header-text {
+  display: none;
+}
+.navigation-panel-header-controls {
+  height: 30px;
+}
+html[dir=rtl] .navigation-panel-header-controls {
+  background-position: 100% 50%;
+  float: left;
+  padding: 0 3px 0 0;
+}
+html[dir=rtl] .navigation-panel-header-controls a {
+  float: right;
+}
+.navigation-panel-header-controls a span {
+  display: none;
+}
+.navigation-panel-header-controls a {
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center center;
+  height: 26px;
+  width: 26px;
+  display: inline-block;
+  border: solid 1px transparent;
+  box-sizing: border-box;
+}
+.navigation-panel-header-controls a:focus {
+  border-color: #1b7ecd;
+}
+.navigation-panel-header-controls a.collapse {
+  background-color: rgba(29, 165, 243, 0.9);
+}
+.navigation-panel-header-controls a.collapse:hover {
+  background-color: #1da5f3;
+}
+.navigation-panel-header-controls a.expand {
+  background-color: transparent;
+}
+/* Navigation Panel Body Styling */
+
+.navigation-panel-body .navigation-panel-body-t .navigation-panel-body-m .navigation-panel-body-b {
+  position: relative;
+}
+.navigation-panel-body {
+  border: solid 1px #adae9c;
+}
+.navigation-panel.full .navigation-panel-body {
+  position: absolute;
+  top: 30px;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+}
+.navigation-panel.full.without-header .navigation-panel-body {
+  top: 0px;
+}
+.navigation-panel-body-m {
+  padding-left: 3px;
+}
+.navigation-panel-body-m-c {
+  position: relative;
+  padding-right: 3px;
+  height: 100%;
+}
+.navigation-panel.full .navigation-panel-body-t,
+.navigation-panel.full .navigation-panel-body-m,
+.navigation-panel.full .navigation-panel-body-b {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.navigation-panel.full .navigation-panel-body-m {
+  top: 3px;
+  bottom: 3px;
+}
+.navigation-panel-body-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+/* Navigation Panel View Styling */
+
+.navigation-panel-view {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+/* Navigation Panel Footer Styling */
+
+.navigation-panel-footer {
+  border: 1px solid #adae9c;
+  position: relative;
+  height: 22px;
+}
+.navigation-panel.full .navigation-panel-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.navigation-panel-footer-c {
+  background: #dfe4d7;
+  /* Old browsers */
+  border: solid 1px white;
+  height: 20px;
+}
+.navigation-panel-footer-wrapper {
+  height: 20px;
+}
+.navigation-panel-footer-controls {
+  height: 20px;
+}
+.navigation-panel-footer-controls.overflown {
+  right: 46px;
+}
+.navigation-panel-footer-controls ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+.navigation-panel-footer-controls ul li {
+  margin: 0;
+  display: block;
+  float: left;
+}
+.navigation-panel-footer-controls a {
+  margin-left: 1px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding-left: 2px;
+  background: url(../Images/Toolbar/toolbar_button_left_corner_squared.png) no-repeat 0 20px;
+}
+.navigation-panel-footer-controls a:hover {
+  background-position: 0 0;
+}
+.navigation-panel-footer-controls a.active {
+  background-position: 0 -20px;
+}
+.navigation-panel-footer-controls a .a {
+  display: block;
+  height: 20px;
+  padding-right: 2px;
+  background: url(../Images/Toolbar/toolbar_button_right_slide_squared.png) no-repeat 100% 20px;
+}
+.navigation-panel-footer-controls a:hover .a {
+  background-position: 100% 0;
+}
+.navigation-panel-footer-controls a.active .a {
+  background-position: 100% -20px;
+}
+.navigation-panel-footer-controls a .b {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: block;
+  height: 20px;
+}
+.navigation-panel-footer-controls a .c {
+  display: none;
+}
+.navigation-panel-footer-commands {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  padding: 0 0 0 3px;
+  background: url(../Images/TitleBar/titlebar_divider.png) no-repeat 0 50%;
+}
+.navigation-panel-footer-commands a {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  float: left;
+}
+.navigation-panel-footer-commands a.scroll-left {
+  background-image: url(../Images/Arrows/black_arrow_left.png);
+}
+.navigation-panel-footer-commands a.scroll-left:hover {
+  background-image: url(../Images/Arrows/green_arrow_left.png);
+}
+.navigation-panel-footer-commands a.scroll-left.disabled,
+.navigation-panel-footer-commands a.scroll-left.disabled:hover {
+  background-image: url(../Images/Arrows/grey_arrow_left.gif);
+}
+.navigation-panel-footer-commands a.scroll-right {
+  background-image: url(../Images/Arrows/black_arrow_right.png);
+}
+.navigation-panel-footer-commands a.scroll-right:hover {
+  background-image: url(../Images/Arrows/green_arrow_right.png);
+}
+.navigation-panel-footer-commands a span {
+  display: none;
+}
+.navigation-panel-footer-commands .divider {
+  display: block;
+  width: 3px;
+  height: 20px;
+  background: url(../Images/TitleBar/titlebar_divider.png) no-repeat 0 50%;
+  float: left;
+}
+/* Collapsed Navigation Panel Styling */
+
+.navigation-panel.collapsed {
+  width: 30px;
+}
+.navigation-panel.collapsed .navigation-panel-header-text,
+.navigation-panel.collapsed .navigation-panel-view {
+  visibility: hidden;
+  position: absolute;
+}
+.navigation-panel.collapsed .navigation-panel-header-controls {
+  background: none;
+}
+/* Navigation Panel Shim Styling */
+
+.navigation-divider-shim {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.navigation-panel input[type=text]::-ms-clear {
+  display: none;
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  /* Button Icon Styling */
+  
+  .navigation-panel .navigation-panel-buttons a.home .b {
+    background-image: url(../Images/Icons/Home16Red.png);
+  }
+  .navigation-panel .navigation-panel-footer-controls a.home .b {
+    background-image: url(../Images/Icons/Home16Red.png);
+  }
+  .navigation-panel .navigation-panel-buttons a.appstudio .b {
+    background-image: url(../Images/Icons/AppStudio16.png);
+  }
+  .navigation-panel .navigation-panel-footer-controls a.appstudio .b {
+    background-image: url(../Images/Icons/AppStudio16.png);
+  }
+  .navigation-panel .navigation-panel-buttons a.management .b {
+    background-image: url(../Images/Icons/Management16.png);
+  }
+  .navigation-panel .navigation-panel-footer-controls a.management .b {
+    background-image: url(../Images/Icons/Management16.png);
+  }
+  .navigation-panel .navigation-panel-header-controls a.collapse {
+    background-image: url(../Images/Icons/Runtime/MenuCollapse16.png);
+  }
+  .navigation-panel .navigation-panel-header-controls a.collapse:hover {
+    background-image: url(../Images/Icons/Runtime/MenuCollapse16.png);
+  }
+  .navigation-panel .navigation-panel-header-controls a.expand {
+    background-image: url(../Images/Icons/Runtime/MenuCollapse16.png);
+  }
+  .navigation-panel .navigation-panel-header-controls a.expand:hover {
+    background-image: url(../Images/Icons/Runtime/MenuCollapse16.png);
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  /* Button Icon Styling */
+  
+  .navigation-panel .navigation-panel-buttons a.home .b {
+    background-image: url(../Images/Icons/Home16Red.png);
+  }
+  .navigation-panel .navigation-panel-footer-controls a.home .b {
+    background-image: url(../Images/Icons/Home16Red.png);
+  }
+  .navigation-panel .navigation-panel-buttons a.appstudio .b {
+    background-image: url(../Images/Icons/AppStudio16.png);
+  }
+  .navigation-panel .navigation-panel-footer-controls a.appstudio .b {
+    background-image: url(../Images/Icons/AppStudio16.png);
+  }
+  .navigation-panel .navigation-panel-buttons a.management .b {
+    background-image: url(../Images/Icons/Management16.png);
+  }
+  .navigation-panel .navigation-panel-footer-controls a.management .b {
+    background-image: url(../Images/Icons/Management16.png);
+  }
+  .navigation-panel .navigation-panel-header-controls a.collapse {
+    background-image: url(../Images/Icons/Runtime/MenuCollapse16@2x.png);
+  }
+  .navigation-panel .navigation-panel-header-controls a.collapse:hover {
+    background-image: url(../Images/Icons/Runtime/MenuCollapse16@2x.png);
+  }
+  .navigation-panel .navigation-panel-header-controls a.expand {
+    background-image: url(../Images/Icons/Runtime/MenuCollapse16@2x.png);
+  }
+  .navigation-panel .navigation-panel-header-controls a.expand:hover {
+    background-image: url(../Images/Icons/Runtime/MenuCollapse16@2x.png);
+  }
+}
+/*#region LG:Cheeky Changes */
+
+.navigation-panel {
+  background-image: none;
+  background-color: transparent;
+}
+.navigation-panel .navigation-panel-header {
+  border-color: transparent;
+}
+.navigation-panel .navigation-panel-header-c {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.navigation-panel .navigation-panel-header-text {
+  padding-left: 0px;
+  /*override*/
+
+}
+.navigation-panel .navigation-panel-body {
+  border-color: transparent;
+  /*remove the green borders*/
+  background-image: none;
+}
+.navigation-panel.full .navigation-panel-body-m {
+  top: 0px;
+  /*override the 3px */
+  bottom: 0px;
+  /*override the 3px */
+
+}
+.navigation-panel .navigation-panel-body-m {
+  padding-left: 0px;
+  /*override the 3px */
+
+}
+.navigation-panel .navigation-panel-body-m-c {
+  padding-right: 0px;
+  /*override the 3px */
+
+}
+#AppStudioSearchFormPanel .panel-body,
+#BottomFilterMenuPanel .panel-body {
+  border-color: transparent;
+  background: transparent;
+  padding: 0px;
+}
+#SearchMatchFF .form-field-label,
+#SearchTextFF .form-field-label,
+#rwSearchTextFF .form-field-label {
+  display: none;
+  /*hide the "Search" and "match" labels: ;*/
+
+}
+#AppStudioNavigationPanel .panel-body {
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+.navigation-panel-buttons,
+.navigation-panel-footer {
+  display: none;
+  height: 0px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-width: 0px;
+}
+#MainNavigationPane > .divider {
+  background-color: #f8f8f8;
+}
+/*#endregion */
+

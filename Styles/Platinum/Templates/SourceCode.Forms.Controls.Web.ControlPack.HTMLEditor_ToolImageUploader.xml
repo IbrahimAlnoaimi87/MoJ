@@ -1,0 +1,8 @@
+﻿<ul class="reToolbar Default">
+	<li class="reGrip grip_first"></li> 
+	<li class="reToolFirstItem">
+		<a title="Image Uploader" class="" href="javascript:void(0);" unselectable="on" data-tool="ImageUploader" tabindex="-1">
+			<span class="imageUploader" unselectable="on"></span>
+		</a>
+	</li>
+</ul>

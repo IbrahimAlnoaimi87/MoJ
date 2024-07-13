@@ -1,0 +1,57 @@
+/*#region DROPTEXTBOX CONTROL */
+/* Textbox control where you can drop controls, SMOs, etc
+Can be found in: List view - Filter config - Add - Advanced - Add condition */
+
+
+
+.theme-entry .drop-textbox
+{
+    box-sizing: border-box;    
+}
+
+.theme-entry .drop-item:not(:empty)
+{
+    display:inline-flex !important; //override inline style
+
+    align-items: center;
+    padding-left: @Control-Inset-Narrow-Horizontal-Spacing !important; //important to override core.less
+    padding-right: @Control-Inset-Narrow-Horizontal-Spacing;
+
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-top: -1px; //horrible hack to get the entities centered vertically, as vertical align middle was only doing half the job.
+
+    background-image: none;
+
+    &:before
+    {
+        content: '';
+        width: 16px;
+        height: 16px;
+        display:block;
+        margin-right: @Control-Inset-Narrow-Horizontal-Spacing;
+
+        .mobile & 
+        {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.theme-entry .drop-item,
+.theme-entry .drop-object,
+.theme-entry .drop-text
+{
+    font-size: inherit;
+}
+
+
+.theme-entry .drop-text
+{
+    background-color: transparent; //override the browser default (input.drop-textbox)
+}
+
+
+/*#endregion DROPTEXTBOX*/
+

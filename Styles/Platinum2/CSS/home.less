@@ -1,0 +1,1040 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import "../../../Designer_Variables.less";
+
+body
+{
+    background: @App-Background-Gradient-1; /* Old browsers */
+    html[dir=rtl] &
+    {
+        text-align: right;
+        direction: rtl;
+    }
+}
+
+/* Home Header Styling */
+.home-header
+{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    height: @App-Titlebar-Height;
+    overflow: hidden;
+    color: @App-Titlebar-Text-Color;
+}
+
+.home-header-c
+{
+    position: relative;
+    height: @App-Titlebar-Height;
+    background-color: @App-Titlebar-Background-1; /* Old browsers */
+}
+
+
+.header-logo
+{
+    /*LG: Updated logos*/
+    display: block;
+    line-height: @App-Titlebar-Height;
+    height: @App-Titlebar-Height;
+    position: absolute;
+
+    html[dir=ltr] &
+    {
+        left: 0px;
+    }
+
+    html[dir=rtl] &
+    {
+        right: 0px;
+    }
+
+    top: 0px;
+
+    a
+    {
+        /*LG: Updated logos*/
+        background-image: url(../Images/K2Logo64.png#betarefresh);
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        height: 16px;
+        width: 16px;
+        display: inline-block;
+        line-height: @App-Titlebar-Height;
+        vertical-align: middle;
+        margin-top: -5px;
+        margin-left: 6px; /*keep it in the same position as workflow designer*/
+    }
+
+    span
+    {
+        display: none;
+    }
+}
+
+
+.header-content
+{
+    height: @App-Titlebar-Height;
+}
+
+.header-system-info
+{
+    display: none;
+}
+
+.header-system-info .wrapper
+{
+    text-align: center;
+    line-height: 44px;
+}
+
+/* Home Content Styling */
+.home-content
+{
+    /*sdfjdjfsdjdsf*/
+    background-color: @Main-Background-Gradient-1; /* Old browsers */
+    position: absolute;
+    top: 38px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+}
+
+
+.home-content-mc
+{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+}
+
+.home-content-mc > .wrapper
+{
+    overflow: visible; //let the logo from the Introduction screen overlap the title.
+}
+
+/* Site Style Overrides */
+body.collapsed-header .home-header
+{
+    display: none !important;
+}
+
+body.collapsed-header .home-content
+{
+    top: 0 !important;
+}
+
+/* SharePoint 2013 Embedded Site Style */
+body.sp2013
+{
+    background: #fff;
+}
+
+body.sp2013 .home-content
+{
+    -moz-box-shadow: inset 0 0 1px 1px #adae9c;
+    -webkit-box-shadow: inset 0 0 1px 1px #adae9c;
+    box-shadow: inset 0 0 1px 1px #adae9c;
+}
+
+/* AppStudio Grid specifics */
+
+#AppStudioGrid.grid
+{
+    height: auto; //override of standard .grid style.
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+#SecurityUI .scroll-wrapper
+{
+    overflow: hidden;
+
+    #securityConfig_frame
+    {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#AppStudioGrid .grid-footer .toolbar-label,
+#AppStudioSearchGrid .grid-footer .toolbar-label
+{
+    margin-right: 20px;
+}
+
+#AppStudioSearchFormPanel tr:first-child .form-field
+{
+    margin-top: 0;
+}
+
+#AppStudioSearchFormPanel tr:last-child td
+{
+    padding-top: 2px;
+}
+
+//#region backbutton / .header-logo transition
+
+@AppBar-Transition-Duration: 0.5s;
+
+.header-logo
+{
+    opacity: 1.0;
+    pointer-events: all;
+    transition: opacity @AppBar-Transition-Duration linear;
+}
+
+.appbar-backbutton-container
+{
+    line-height: @App-Titlebar-Height;
+    height: @App-Titlebar-Height;
+    position: absolute;
+
+    html[dir=ltr] &
+    {
+        left: 0px;
+    }
+
+    html[dir=rtl] &
+    {
+        right: 0px;
+    }
+
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity @AppBar-Transition-Duration linear;
+}
+
+@_BackButton-Height: 24px;
+
+.appbar-backbutton
+{
+    html[dir=ltr] &
+    {
+        margin-left: (@App-Titlebar-Height - @_BackButton-Height)/2;
+    }
+
+    html[dir=rtl] &
+    {
+        margin-right: (@App-Titlebar-Height - @_BackButton-Height)/2;
+    }
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    height: @_BackButton-Height;
+    line-height: @_BackButton-Height;
+    box-sizing: border-box;
+    border: solid 1px rgb(255,255,255);
+    border-radius: 2px;
+    opacity: 0.8;
+    transition: opacity 0.15s linear;
+
+    &:hover
+    {
+        opacity: 1.0;
+    }
+
+    .icon
+    {
+        vertical-align: middle;
+    }
+
+    label
+    {
+        color: rgb(255,255,255);
+        text-transform: uppercase;
+        flex-grow: 1;
+        padding: 0px 5px;
+        cursor: pointer;
+    }
+}
+
+
+.explorer-header
+{
+    position: absolute;
+    pointer-events: none;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity @AppBar-Transition-Duration linear;
+}
+
+.home-header
+{
+    &.showexplorer
+    {
+        .appbar-backbutton-container
+        {
+            opacity: 1.0;
+            pointer-events: all;
+            cursor: pointer;
+        }
+
+        .header-logo
+        {
+            opacity: 0.0;
+            pointer-events: none;
+        }
+
+        .explorer-header
+        {
+            opacity: 1.0;
+            transition-delay: @AppBar-Transition-Duration;
+        }
+    }
+}
+
+//#endregion
+
+
+//#region Designer Avatar Control
+.avatar-control
+{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    //the avatar control at the top right of k2 designer
+    &.main-avatar
+    {
+        display: flex;
+        height: @App-Titlebar-Height;
+        padding: 0px;
+        position: absolute;
+
+        html[dir=ltr] &
+        {
+            right: 0px;
+        }
+
+        html[dir=rtl] &
+        {
+            left: 0px;
+        }
+
+        top: 0px;
+        text-align: right;
+    }
+}
+
+.lyt-avatar-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .avatar-icon
+    {
+        flex-shrink: 0;
+        order: 0;
+    }
+
+    .avatar-name
+    {
+        flex-grow: 1;
+        order: 1;
+
+        html[dir=ltr] &
+        {
+            margin-left: 5px;
+        }
+
+        html[dir=rtl] &
+        {
+            margin-right: 5px;
+        }
+    }
+    //the avatar control at the top right of k2 designer
+    .main-avatar &
+    {
+        .avatar-icon
+        {
+            order: 0;
+        }
+
+        .avatar-name
+        {
+            order: 1;
+        }
+
+        .avatar-name
+        {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}
+
+
+@_AvatarButton-Height: 22px;
+
+.avatar-button
+{
+    transition: color 0.15s linear;
+    color: @Highlight-Color-1; //#7bb625*/
+    line-height: normal;
+    cursor: pointer;
+
+    &:hover
+    {
+        color: @Highlight-Color-2;
+    }
+    //the avatar control at the top right of k2 designer
+    .main-avatar &
+    {
+        padding: 3px 5px;
+        height: @_AvatarButton-Height;
+        line-height: @_AvatarButton-Height;
+        box-sizing: border-box;
+
+        html[dir=ltr] &
+        {
+            margin-right: (@App-Titlebar-Height - @_AvatarButton-Height)/2;
+        }
+
+        html[dir=rtl] &
+        {
+            margin-left: (@App-Titlebar-Height - @_AvatarButton-Height)/2;
+        }
+
+        border-radius: 2px;
+        transition: background-color 0.15s linear;
+        color: @Main-Text-Color-Dark;
+
+        &:hover
+        {
+            background-color: rgba(255,255,255,0.2);
+            color: @Main-Text-Color-Dark;
+        }
+    }
+}
+
+.avatar-icon
+{
+    background-position: center;
+
+    &.personalized
+    {
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+        border-color: white !important;
+
+        &.icon-size16
+        {
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+.avatar-popup
+{
+    background-color: white;
+    width: 200px;
+    min-height: 100px;
+    text-align: center;
+    position: absolute;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+
+    .icon
+    {
+        display: block;
+        margin: 10px auto;
+        background-position: center;
+
+        &.personalized
+        {
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+            border-color: white !important;
+        }
+    }
+
+    .name
+    {
+        font-weight: bold;
+    }
+
+    .button
+    {
+        margin: 5px 5px;
+        max-width: none;
+        display: block;
+    }
+}
+
+.lyt-avatar-text
+{
+    margin-bottom: 10px;
+
+    & > span
+    {
+        display: block;
+        margin: auto;
+    }
+}
+
+.icon.ic-avatarempty
+{
+    border-radius: 100%;
+    border: solid 2px #4e5758;
+
+    &.icon-size16
+    {
+        border-width: 1px;
+    }
+
+    &.icon-size32
+    {
+        border-width: 2px;
+    }
+
+    &.icon-size64
+    {
+        border-width: 3px;
+    }
+
+    &.dark
+    {
+        border-color: rgb(255,255,255);
+    }
+}
+
+
+
+
+
+//#endregion avatar control
+
+/*#region Designer File Tabs */
+.file-tab-container,
+.designer-file-tabs-container
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: @App-Titlebar-Height;
+    line-height: @App-Titlebar-Height;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.file-tab,
+.designer-file-tab
+{
+    position: relative; //so that error badge control can be positioned correctly.
+    height: @App-Titlebar-Height;
+    pointer-events: all;
+    opacity: 1.0;
+    transition: opacity @Designer-Intro-Animation-Duration linear; //duration must be the same as designer.intro
+    &.closed
+    {
+        pointer-events: none;
+        opacity: 0.0;
+        transition: opacity @Designer-Outro-Animation-Duration linear; //there is no outro for designers yet.
+    }
+
+    &.readonly
+    {
+        .name-container
+        {
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+
+
+    .layout
+    {
+        height: @App-Titlebar-Height;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        //can't use "icon-container" as that is a special class that makes the icons within it react to hover etc.
+        .icon-wrapper
+        {
+            width: 30px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .icon
+            {
+                display: block; //testing
+            }
+        }
+
+        .name-container
+        {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            a
+            {
+                display: block;
+                flex-grow: 1;
+                transition: background-color 0.15s; //for hover/unhover
+            }
+
+            label
+            {
+                display: block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                text-align: center;
+            }
+
+            input[type=text]
+            {
+                display: none;
+                padding-top: 0px; //override browser defaults.
+                padding-bottom: 0px; //override browser defaults.
+                margin: 0px; //override browser defaults.
+                &::-ms-clear
+                {
+                    display: none; //remove the IE "X" from the textbox
+                }
+            }
+
+            input[type=text], label
+            {
+                min-width: 50px;
+                max-width: 150px;
+                padding-left: 5px;
+                padding-right: 5px;
+                //transition: width linear 0.01s; //the width property is updated in JS as you type.
+            }
+
+            input[type=text], a
+            {
+                height: 18px; //same as icon height;
+                line-height: 18px; //same as icon height;
+                border-radius: 2px;
+                border: none;
+            }
+        }
+
+        .close-container
+        {
+            width: 30px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+
+            a
+            {
+                display: block;
+                opacity: 0.2;
+                transition: opacity 0.15s linear;
+
+                &:hover
+                {
+                    opacity: 1.0;
+                }
+            }
+
+            .icon
+            {
+                display: block; //testing
+            }
+        }
+    }
+
+    &.editing .layout
+    {
+        .name-container
+        {
+            label
+            {
+                display: none;
+            }
+
+            input[type=text]
+            {
+                display: block;
+            }
+        }
+    }
+
+    &.empty .layout
+    {
+        .name-container
+        {
+            label
+            {
+                font-style: italic;
+            }
+        }
+    }
+}
+
+
+//Dark Color Scheme (used for the designer tabs)
+.file-tab-container.dark
+{
+    .file-tab
+    {
+        background-color: @App-Titlebar-FileTab-Dark;
+
+        .layout
+        {
+            .name-container
+            {
+                a:hover
+                {
+                    background-color: rgba(255,255,255,0.1);
+                }
+
+                label
+                {
+                    color: rgb(255,255,255);
+                }
+
+                input[type=text]
+                {
+                    background-color: rgba(255,255,255,0.2);
+                    color: rgb(255,255,255);
+                }
+            }
+        }
+
+        &.empty .layout
+        {
+            .name-container
+            {
+                label
+                {
+                    color: rgba(255,255,255,0.4);
+                }
+            }
+        }
+    }
+}
+
+
+//light Color Scheme (used for rules tabs and other places)
+.file-tab-container.light
+{
+    .file-tab
+    {
+        background-color: fadeout(@Input-Background-Color, 100%);
+        transition: background-color 0.15s linear;
+        border: 1px solid transparent;
+
+        &:hover
+        {
+            background-color: fadein(@Input-Background-Color, 30%);
+        }
+
+        .layout
+        {
+            .name-container
+            {
+                cursor: text;
+
+                a:hover
+                {
+                    background-color: transparent;
+                }
+
+                label
+                {
+                    color: @Main-Text-Color;
+                    font-weight: bold;
+                }
+
+                input[type=text]
+                {
+                    background-color: transparent;
+                    color: @Main-Text-Color;
+                }
+            }
+        }
+
+        &.empty
+        {
+            background-color: @Input-Background-Color;
+            border-color: @Input-Border-Color;
+
+            .layout
+            {
+                .name-container
+                {
+                    label
+                    {
+                        font-weight: normal;
+                        color: fadeout(@Main-Text-Color, 60%);
+                    }
+                }
+            }
+        }
+
+        &.editing
+        {
+            background-color: @Input-Background-Color;
+            color: @Main-Text-Color;
+            border-color: @Input-Focus-Border-Color;
+        }
+
+        &.readonly
+        {
+            &:hover
+            {
+                background-color: fadeout(@Input-Background-Color, 100%);
+                transition: none;
+            }
+        }
+    }
+
+
+    .file-tab .layout .name-container input[type=text],
+    .file-tab .layout .name-container label
+    {
+        max-width: 300px;
+    }
+
+    .file-tab,
+    .file-tab .layout
+    {
+        height: 26px;
+    }
+}
+
+
+
+/*#endregion */
+
+
+
+//#region breadcrumbs
+@Breadcrumb-Height: 22px;
+@Breadcrumb-Arrow-Width: 10px;
+@Breadcrumb-Background-Color: @Background-Color-4;
+@Breadcrumb-Hover-Background-Color: @Background-Color-4;
+@Breadcrumb-Text-Color: @Main-Text-Color;
+@Breadcrumb-Hover-Text-Color: @Highlight-Color-2;
+
+.breadcrumb + .separator
+{
+    display: none;
+}
+//hide all separtors
+.breadcrumb-disabled
+{
+    padding: 0px 5px;
+    color: @Breadcrumb-Text-Color;
+    font-weight: normal; //override the grid header style.
+    height: @Breadcrumb-Height;
+    line-height: @Breadcrumb-Height;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    vertical-align: top;
+
+    .icon
+    {
+        margin-right: 3px;
+    }
+
+    &.ic-run
+    {
+        color: #a2a2a2;
+    }
+}
+
+.breadcrumb
+{
+    &-disabled.icon.icon-size16, &.icon.icon-size16
+    {
+        background-position: 4px 4px;
+        padding-left: 26px;
+        width: auto;
+        height: auto;
+    }
+}
+
+a.breadcrumb
+{
+    background-color: @Breadcrumb-Background-Color;
+    padding: 0px 5px;
+    display: inline-block;
+    height: @Breadcrumb-Height;
+    line-height: @Breadcrumb-Height;
+
+    html[dir=ltr] &
+    {
+        margin-right: @Breadcrumb-Arrow-Width; //make room for arrow
+    }
+
+    html[dir=rtl] &
+    {
+        margin-left: @Breadcrumb-Arrow-Width; //make room for arrow
+    }
+
+    position: relative; //for breadcrumb arrows to be positioned.
+    font-weight: normal; //override the grid header style.
+    color: @Breadcrumb-Text-Color;
+    transition: background-color 0.15s linear, color 0.15s linear;
+
+    &::after
+    {
+        display: block;
+        content: " ";
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+    }
+
+    html[dir=ltr] &::after
+    {
+        border-right: 0px solid transparent;
+        border-top: (@Breadcrumb-Height/2) solid transparent;
+        border-left: @Breadcrumb-Arrow-Width solid @Breadcrumb-Background-Color;
+        border-bottom: (@Breadcrumb-Height/2) solid transparent;
+        right: -@Breadcrumb-Arrow-Width;
+        transition: border-left-color 0.15s linear;
+    }
+
+    html[dir=rtl] &::after
+    {
+        border-left: 0px solid transparent;
+        border-top: (@Breadcrumb-Height/2) solid transparent;
+        border-right: @Breadcrumb-Arrow-Width solid @Breadcrumb-Background-Color;
+        border-bottom: (@Breadcrumb-Height/2) solid transparent;
+        left: -@Breadcrumb-Arrow-Width;
+        transition: border-right-color 0.15s linear;
+    }
+
+
+    &:not(:first-child)
+    {
+        html[dir=ltr] &
+        {
+            margin-left: 3px; //gap between arrows
+        }
+
+        html[dir=rtl] &
+        {
+            margin-right: 3px;
+        }
+
+        &::before
+        {
+            display: block;
+            position: absolute;
+            top: 0px;
+            content: '';
+            width: 0px;
+            height: 0px;
+        }
+
+        html[dir=ltr] &::before
+        {
+            border-left: @Breadcrumb-Arrow-Width solid transparent;
+            border-top: (@Breadcrumb-Height/2) solid @Breadcrumb-Background-Color;
+            border-bottom: (@Breadcrumb-Height/2) solid @Breadcrumb-Background-Color;
+            border-right: 0px transparent;
+            left: -@Breadcrumb-Arrow-Width;
+            transition: border-top-color 0.15s linear, border-bottom-color 0.15s linear;
+        }
+
+        html[dir=rtl] &::before
+        {
+            border-right: @Breadcrumb-Arrow-Width solid transparent;
+            border-top: (@Breadcrumb-Height/2) solid @Breadcrumb-Background-Color;
+            border-bottom: (@Breadcrumb-Height/2) solid @Breadcrumb-Background-Color;
+            border-left: 0px transparent;
+            right: -@Breadcrumb-Arrow-Width;
+            transition: border-top-color 0.15s linear, border-bottom-color 0.15s linear;
+        }
+    }
+    //breadcrumb hover styles
+    &:hover
+    {
+        color: @Breadcrumb-Hover-Text-Color;
+        background-color: @Breadcrumb-Hover-Background-Color;
+
+        html[dir=ltr] &::after
+        {
+            border-left-color: @Breadcrumb-Hover-Background-Color;
+        }
+
+        html[dir=rtl] &::after
+        {
+            border-right-color: @Breadcrumb-Hover-Background-Color;
+        }
+
+        &:not(:first-child)
+        {
+            html[dir=ltr] &, html[dir=rtl] &
+            {
+                &::before
+                {
+                    border-top-color: @Breadcrumb-Hover-Background-Color;
+                    border-bottom-color: @Breadcrumb-Hover-Background-Color;
+                }
+            }
+        }
+    }
+}
+
+//#endregion
+
+/*#region LG: Cheeky changes */
+
+.home-header
+{
+    top: 0px; /*Remove chrome*/
+    right: 0px; /*Remove chrome*/
+    left: 0px; /*Remove chrome*/
+    line-height: @App-Titlebar-Height;
+    vertical-align: middle;
+}
+
+.home-content
+{
+    top: @App-Titlebar-Height; /*Make Header the same size as Workflow Designer V5*/
+    left: 0px; /*Remove chrome*/
+    right: 0px; /*Remove chrome*/
+    bottom: 0px; /*Remove chrome*/
+}
+
+.home-content-mc
+{
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+}
+
+
+
+/*#endregion */

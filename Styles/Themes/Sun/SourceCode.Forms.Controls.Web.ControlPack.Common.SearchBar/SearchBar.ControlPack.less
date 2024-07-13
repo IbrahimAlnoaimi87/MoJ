@@ -1,0 +1,41 @@
+﻿
+.button-gradient
+{
+	background: #fff0c0;
+    background: -moz-linear-gradient(top, #fff0c0 0%, #fecf40 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff0c0), color-stop(100%,#fecf40));
+    background: -webkit-linear-gradient(top, #fff0c0 0%,#fecf40 100%);
+    background: -o-linear-gradient(top, #fff0c0 0%,#fecf40 100%);
+    background: -ms-linear-gradient(top, #fff0c0 0%,#fecf40 100%);
+    background: linear-gradient(to bottom, #fff0c0 0%,#fecf40 100%);
+    border-color: #f0ac00;
+}
+
+.button-gradient-hover
+{
+	background: #fbe59c;
+    background: -moz-linear-gradient(top, #fbe59c 0%, #e2ab05 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbe59c), color-stop(100%,#e2ab05));
+    background: -webkit-linear-gradient(top, #fbe59c 0%,#e2ab05 100%);
+    background: -o-linear-gradient(top, #fbe59c 0%,#e2ab05 100%);
+    background: -ms-linear-gradient(top, #fbe59c 0%,#e2ab05 100%);
+    background: linear-gradient(to bottom, #fbe59c 0%,#e2ab05 100%);
+}
+
+.theme-entry
+{
+	.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar
+	{
+		.search-button-wrapper,
+		.clear-search-button-wrapper
+		{
+			.button-gradient;
+		}
+
+		.search-button-wrapper:hover,
+		.clear-search-button-wrapper:hover
+		{
+			.button-gradient-hover;
+		}
+	}
+}

@@ -1,0 +1,87 @@
+/* Theme: Lithium */
+/* Author: Neil Craig */
+/* Date: 14/07/2014 */
+/* Purpose: Landscape orientation only*/
+
+/*#region DIALOG POPUPS*/
+/*As simple popups like calendars etc cannot be targetted directly, we have to define their styles first*/
+/*and then override those styles for the diloags again*/
+
+/*#region CALENDAR POPUPS */
+
+.mobile .theme-entry .popup.id-calendar-control-popup.type-date-time
+{
+	min-height: 28.0rem!important;
+}
+
+.mobile .theme-entry .popup.id-calendar-control-popup.type-date-time .top-calendar,
+.mobile .theme-entry .popup.id-calendar-control-popup.type-date-time .calendar-content-outside,
+.mobile .theme-entry .popup.id-calendar-control-popup.type-date-time .today-text
+{
+	width: 28.0rem;
+}
+
+.mobile .theme-entry .popup.id-calendar-control-popup.type-date-time .calendar-content
+{
+	text-align: left;
+}
+
+.mobile .theme-entry .popup.id-calendar-control-popup.type-date-time .timepicker-content
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.mobile .theme-entry .popup.id-calendar-control-popup.type-date-time .timepicker-content .timepicker-spinner-label
+{
+	display: block;
+	text-align: center;
+	margin-bottom: 1.0rem;
+}
+
+.mobile .theme-entry .popup.id-calendar-control-popup.type-date-time .timepicker-content .timepicker-spinner-wrapper
+{
+	margin-bottom: 7.0rem;
+}
+
+/*#endregion*/
+
+/*#region PICKER dialog*/
+
+.mobile .theme-entry .dialog.id-picker-search .popup-header
+{
+	display: none; /* hiding dialog header to generate more real estate */
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .popup-body
+{
+	top: 1rem !important;
+}
+
+.mobile .theme-entry .picker-search-grid.grid.full
+{
+	height: 12.8rem !important; /* ensure the grid takes up the remaining space */
+	min-height: 0;
+}
+
+/*#endregion*/
+
+/*#region FILTER CONFIGURATION */
+
+.mobile .theme-entry .filterContainer .filterTxt
+{
+	width: 22rem;
+}
+
+.mobile .theme-entry .filterContainer .filterChosen.filter
+{
+	margin-top: 0.8rem;
+}
+
+.mobile .theme-entry .filterContainer .quickSearch.filter > a
+{
+	margin-right: 16rem;
+}
+
+/*#endregion*/

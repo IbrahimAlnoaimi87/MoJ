@@ -1,0 +1,274 @@
+﻿/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+/*Theme@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img
+	{
+		background-position: 0 -324px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img
+	{
+		background-position: 0 -352px;
+	}
+
+	/* #region Readonly */
+
+	/* prevent checkbox hover state to change while readonly */
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img
+	{
+		background-position: 0 -156px;
+		cursor: default;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img
+	{
+		background-position: 0 -324px;
+		cursor: default;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img
+	{
+		background-position: 0 -184px;
+		cursor: default;
+	}
+
+
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img
+	{
+		background-position: 0 -156px;
+		cursor: default;
+	}
+
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img
+	{
+		background-position: 0 -324px;
+		cursor: default;
+	}
+
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img
+	{
+		background-position: 0 -184px;
+		cursor: default;
+	}
+
+	/* #endregion Readonly */
+
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img,
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img
+	{
+		background-position: 0 -240px;
+	}
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img
+	{
+		background-position: 0 -240px;
+	}
+
+	/* #region Readonly */
+
+	/* prevent checkbox hover state to change while readonly */
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img
+	{
+		background-position: 0 -156px;
+		cursor: default;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img
+	{
+		background-position: 0 -324px;
+		cursor: default;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img
+	{
+		background-position: 0 -184px;
+		cursor: default;
+	}
+
+
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img
+	{
+		background-position: 0 -184px;
+		cursor: default;
+	}
+
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img
+	{
+		background-position: 0px -422px;
+		cursor: default;
+	}
+
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img
+	{
+		background-position: 0 -252px;
+		cursor: default;
+	}
+
+	/* #endregion Readonly */
+}
+
+/* IE ONLY */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+ {
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .input-control-wrapper.msie .SourceCode-Forms-Controls-Web-TextBox 
+	{
+		height: 22px;
+	}
+}
+
+/* #region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar td.cp-searchbar-cell
+{
+	height: auto; /*override sf toolbar css*/
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .dropdown-td-width 
+{
+	padding-right: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected > .content > .header
+{
+	background-color: #7fd5f7;
+	border-color: #00abf0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly .node.selected > .content > .header:hover
+{
+	background-color: #7fd5f7;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView:not(.disabled) .node > .content > .header:hover
+{
+	background-color: #bfeafb;
+	border-color: #bfeafb;
+	cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.focus > .content > .header
+{
+	border: 1px dotted #bfeafb;
+}
+
+.theme-entry .sfc-treeview.populating-indicator
+{
+	background-image: url("RuntimeTheme/LoadingAnimation_Dark16.gif");
+}
+
+.theme-entry .sfc-treeview.populating-indicator.showSearch
+{
+	top: 39px;
+}
+
+.theme-entry .sfc-treeview.populating-indicator.showSearchExpanded
+{
+	top: 61px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView  .text.with-image
+{
+	padding-top: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .expander
+{
+	top: 0;
+}
+
+.theme-entry .sfc-treeview.populating-indicator.scrollbar
+{
+	right: 19px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper div.search-bar
+{
+	font-size: 1.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper.invalid
+{
+	background-color: #fff3f4;
+	-moz-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	-o-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	-webkit-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	animation: field_validation_pulse linear infinite 2s alternate-reverse; 
+	border-color:rgba(178,30,40,0.4) !important;  /*important will overide user configured styles */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:hover
+{
+	background-color: #bfeafb;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:focus
+{
+	background-color:#7fd5f7;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control.select-box .input-control-buttons
+{
+	right: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control.select-box .input-control-buttons a.dropdown
+{
+    width: 2.4rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .button-wrapper
+{
+	width: 2.4rem;
+}
+
+.msie .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .button-wrapper
+{
+	height: 2.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper .PART_ClearSearchButton
+{
+	width: 2.4rem;
+}
+
+/* In IE11 checkbox image is cut off so we apply this adjusted height value */
+.desktop.msie.ie11 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.checkbox.input-control .input-control-img, .theme-entry input[type=checkbox] + label
+{
+	height: 1.85rem;
+}
+
+/* #endregion DESKTOP*/
+
+/* #region TOUCH */
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* Extra Small Devices */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */

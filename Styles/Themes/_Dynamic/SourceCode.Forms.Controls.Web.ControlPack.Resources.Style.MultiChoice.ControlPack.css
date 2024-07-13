@@ -1,0 +1,422 @@
+/* ^.theme-entry .... for desktop devices */
+
+/* ^.mobile .theme-entry .... for touch devices */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .multiSelectSelect {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+  border: solid 1px transparent;
+  box-sizing: border-box;
+  border-color: var(--list-border-color);
+  background-color: var(--list-background-color);
+  /*Background to the lists*/
+  border-radius: var(--input-rounding);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.invalid .stylewrapper .multiSelectSelect {
+  border-color: var(--list-error-border-color);
+  background-color: var(--list-error-background-color);
+  /*Background to the lists*/
+
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.readonly .stylewrapper .multiSelectSelect {
+  border-color: var(--list-readonly-border-color);
+  background-color: var(--list-readonly-background-color);
+  /*Background to the lists*/
+
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.readonly .stylewrapper .multiSelectSelect {
+  color: var(--list-readonly-text-color);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle {
+  flex-shrink: 0;
+  background-color: var(--list-column-header-background-color);
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: 0px !important;
+  border-top: 0px !important;
+  color: var(--list-column-header-text-color);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: var(--control-inset-vertical-spacing) var(--control-inset-horizontal-spacing);
+  min-height: var(--main-text-size);
+  height: auto;
+  line-height: auto;
+  -webkit-text-overflow: ellipsis !important;
+  -moz-text-overflow: ellipsis !important;
+  -ms-text-overflow: ellipsis !important;
+  -o-text-overflow: ellipsis !important;
+  text-overflow: ellipsis !important;
+  text-shadow: none;
+  white-space: nowrap !important;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle,
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle {
+  height: auto;
+  line-height: auto;
+}
+/* list box part (with header) */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .optionwrapper {
+  border-width: 0 0.1rem 0.1rem 0.1rem;
+  border-color: transparent;
+  position: initial;
+}
+/* list box part (without header) */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .noHeader .optionwrapper {
+  position: initial;
+  height: auto;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .option {
+  padding-left: var(--control-inset-horizontal-spacing);
+  padding-right: var(--control-inset-horizontal-spacing);
+  padding-top: var(--control-inset-vertical-spacing);
+  padding-bottom: var(--control-inset-vertical-spacing);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv {
+  padding-left: var(--control-inset-horizontal-spacing);
+  padding-right: var(--control-inset-horizontal-spacing);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*make sure that the text doesn't move when selected*/
+  border: solid 0.1rem transparent;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:hover {
+  background-color: var(--list-item-hover-background-color);
+  color: var(--list-item-hover-text-color);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:focus {
+  border-color: var(--list-item-focus-border-color);
+  border-style: dotted;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected:hover {
+  background-color: var(--list-item-selected-background-color);
+  color: var(--list-item-selected-text-color);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: auto;
+  left: -1rem;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-width: 0 !important;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonWrapper {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  margin: auto;
+  margin-left: -15px;
+  position: absolute;
+  right: auto;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+  width: 30px;
+}
+/* icons to move item around */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverbtn {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  display: block;
+  margin: calc(var(--between-block-spacing) / 2);
+}
+/*Disabled state*/
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonwrapper > a.disabled {
+  cursor: default;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.invalid,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.invalid {
+  border: 0px solid transparent !important;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.invalid .hidden + .optionwrapper {
+  -moz-border-radius: var(--input-rounding);
+  -webkit-border-radius: var(--input-rounding);
+  border-radius: var(--input-rounding);
+}
+/* region RTL layout */
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonWrapper {
+  margin-left: -0.6rem;
+}
+/* list box part (with header) */
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .optionwrapper {
+  top: calc(var(--main-text-size) + (2* var(--control-inset-vertical-spacing)) + 1px);
+}
+/* list box part (without header) */
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .noHeader .optionwrapper {
+  top: 0;
+}
+/*Theme@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne {
+    background-image: url(RuntimeTheme/AddChevron16.png);
+  }
+  .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll {
+    background-image: url(RuntimeTheme/AddChevron_All16.png);
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack {
+    background-image: url(RuntimeTheme/RemoveChevron16.png);
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack {
+    background-image: url(RuntimeTheme/RemoveChevron_All16.png);
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled {
+    background-image: url(RuntimeTheme/AddChevron_Disabled16.png);
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled {
+    background-image: url(RuntimeTheme/AddChevron_All_Disabled16.png);
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled {
+    background-image: url(RuntimeTheme/RemoveChevron_Disabled16.png);
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled {
+    background-image: url(RuntimeTheme/RemoveChevron_All_Disabled16.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne {
+    background-image: url(RuntimeTheme/AddChevron20.png);
+    background-size: 20px;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll {
+    background-image: url(RuntimeTheme/AddChevron_All20.png);
+    background-size: 20px;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack {
+    background-image: url(RuntimeTheme/RemoveChevron20.png);
+    background-size: 20px;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack {
+    background-image: url(RuntimeTheme/RemoveChevron_All20.png);
+    background-size: 20px;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled {
+    background-image: url(RuntimeTheme/AddChevron_Disabled20.png);
+    background-size: 20px;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled {
+    background-image: url(RuntimeTheme/AddChevron_All_Disabled20.png);
+    background-size: 20px;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled {
+    background-image: url(RuntimeTheme/RemoveChevron_Disabled20.png);
+    background-size: 20px;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled {
+    background-image: url(RuntimeTheme/RemoveChevron_All_Disabled20.png);
+    background-size: 20px;
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne {
+    background-image: url(RuntimeTheme/AddChevron20@2x.png);
+    -moz-background-size: 20px;
+    background-size: 20px;
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll {
+    background-image: url(RuntimeTheme/AddChevron_All20@2x.png);
+    -moz-background-size: 20px;
+    background-size: 20px;
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack {
+    background-image: url(RuntimeTheme/RemoveChevron20@2x.png);
+    -moz-background-size: 20px;
+    background-size: 20px;
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack {
+    background-image: url(RuntimeTheme/RemoveChevron_All20@2x.png);
+    -moz-background-size: 20px;
+    background-size: 20px;
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled {
+    background-image: url(RuntimeTheme/AddChevron_Disabled20@2x.png);
+    -moz-background-size: 20px;
+    background-size: 20px;
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled {
+    background-image: url(RuntimeTheme/AddChevron_All_Disabled20@2x.png);
+    -moz-background-size: 20px;
+    background-size: 20px;
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled {
+    background-image: url(RuntimeTheme/RemoveChevron_Disabled20@2x.png);
+    -moz-background-size: 20px;
+    background-size: 20px;
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled {
+    background-image: url(RuntimeTheme/RemoveChevron_All_Disabled20@2x.png);
+    -moz-background-size: 20px;
+    background-size: 20px;
+  }
+}
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 360px) and (orientation: portrait), only screen and (max-width: 640px) and (orientation: landscape) {
+  
+}
+/* Extra Small Devices - Orientation Targetting */
+
+@media only screen and (max-width: 360px) {
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice {
+    height: auto !important;
+    /* override -- inline */
+  
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper {
+    width: 100%;
+    height: 100% !important;
+    /* override -- inline */
+    position: relative;
+    /* base for the absolute buttons */
+  
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .multiSelectSelect {
+    background-color: var(--list-background-color);
+    /*Background to the lists*/
+    -moz-border-radius: var(--input-rounding);
+    -webkit-border-radius: var(--input-rounding);
+    border-radius: var(--input-rounding);
+    width: 100%;
+  }
+  /* source box */
+  
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .selectSourceWrapper {
+    float: none;
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+  /* destination box */
+  
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .selectDestinationWrapper {
+    float: none;
+    margin-top: 0;
+    position: relative;
+    top: auto;
+    width: 100%;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .selectDestination .optionwrapper {
+    overflow: auto;
+  }
+  /* buttons */
+  
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonWrapper {
+    bottom: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 5rem;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0 !important;
+    /* override -- base */
+    margin-top: -2.5rem;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .selectDestination {
+    margin-left: 0 !important;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll,
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne,
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack,
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack {
+    display: inline-block;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    position: static;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverbtn {
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  
+}
+@media only screen and (max-width: 360px) {
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne {
+    background-image: url(RuntimeTheme/AddChevron_Mobile20.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll {
+    background-image: url(RuntimeTheme/AddChevron_All_Mobile20.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack {
+    background-image: url(RuntimeTheme/RemoveChevron_Mobile20.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack {
+    background-image: url(RuntimeTheme/RemoveChevron_All_Mobile20.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled {
+    background-image: url(RuntimeTheme/AddChevron_Mobile_Disabled20.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled {
+    background-image: url(RuntimeTheme/AddChevron_All_Mobile_Disabled20.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled {
+    background-image: url(RuntimeTheme/RemoveChevron_Mobile_Disabled20.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled {
+    background-image: url(RuntimeTheme/RemoveChevron_All_Mobile_Disabled20.png);
+  }
+}
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne {
+    background-image: url(RuntimeTheme/AddChevron_Mobile20@2x.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll {
+    background-image: url(RuntimeTheme/AddChevron_All_Mobile20@2x.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack {
+    background-image: url(RuntimeTheme/RemoveChevron_Mobile20@2x.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack {
+    background-image: url(RuntimeTheme/RemoveChevron_All_Mobile20@2x.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled {
+    background-image: url(RuntimeTheme/AddChevron_Mobile_Disabled20@2x.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled {
+    background-image: url(RuntimeTheme/AddChevron_All_Mobile_Disabled20@2x.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled {
+    background-image: url(RuntimeTheme/RemoveChevron_Mobile_Disabled20@2x.png);
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled {
+    background-image: url(RuntimeTheme/RemoveChevron_All_Mobile_Disabled20@2x.png);
+  }
+}

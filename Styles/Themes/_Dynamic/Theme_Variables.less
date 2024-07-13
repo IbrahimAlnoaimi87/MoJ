@@ -1,0 +1,22 @@
+//Purpose: Every Theme has a file called "Theme_Variables.less" which the other files import, including control pack controls.
+//         For control pack controls, the "@SourceCode-Runtime-Theme-Variables-File" is automatically injected at compile-time,
+//         by smartform's less compiler, and will contain a path to this file. Please see "SPEC: Controls LESS Theming" for details.
+//Rules:   This file should *ONLY* generated css variable declarations. It should not have any "color, margin, border, font" 
+//         or any other standard properties once compiled.
+
+
+// All LESS Variables are defined as CSS Variables here
+// Custom controls will @import this file to gain access to these variables (using "@SourceCode-Runtime-Theme-Variables-File")
+// Basic controls  will have access to these variables as Theme.less @imports this file at the top.
+// e.g.
+// @Input-Background-Color: --input-background-color;
+// @Input-Border-Color: --input-border-color;
+// 350 more!
+// @Button-Background-Color: --button-background-color;
+@import (multiple) "Variables/BaseVariables.include.less";
+@import (multiple) "Variables/CoreVariables/Declarations.include.less";
+@import (multiple) "Variables/RootContainers/Declarations.include.less";
+@import (multiple) "Variables/ContainerControls/Declarations.include.less";
+@import (multiple) "Variables/AtomicControls/Declarations.include.less";
+
+

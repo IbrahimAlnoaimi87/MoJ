@@ -1,0 +1,334 @@
+/*#region SLIDER */
+
+//reset
+.theme-entry .dragdealer .handle
+{
+    //override core - the h_handle should have the interactive cursor, not the surrounding div,
+    //                as the h_handle is what the user actually must click (click target) to move the slider. 
+
+    cursor: auto; 
+}
+
+
+//needs SFC as extra specifity, as controlpack css (SFC overflow hidden) loads after the dynamic theme.
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-Slider
+{
+    overflow: visible; //override .SFC, and allow shadow to not be clipped.
+}
+
+/*slider value box display*/
+.theme-entry .dragdealer .handle
+{
+    min-width: 2rem;
+    min-height: 2rem;
+}
+
+
+
+//#region Tooltip - Value Popup
+
+@__Tooltip_Border-Width: 0.1rem;
+@___Slider_Arrow_Outer_Height: 0.8rem;
+@___Slider_Arrow_Inner_Height: @___Slider_Arrow_Outer_Height - (@__Tooltip_Border-Width*2);
+
+//adding the extra element for the border!
+.theme-entry .slider_value_display
+{
+
+    
+    &:after, //center of arrow
+    &:before //border of arrow
+    {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        
+        left: 50%;
+        box-sizing: border-box;
+        
+        border-style: solid;
+        transform-origin: 0 0;
+        transform: rotate(0deg); //rotate(-45deg);
+    }
+
+   
+
+    &:before {
+        transform-origin: (@___Slider_Arrow_Outer_Height/2) (@___Slider_Arrow_Outer_Height/2);
+    }
+
+    &:after {
+        transform-origin: (@___Slider_Arrow_Inner_Height/2) (@___Slider_Arrow_Inner_Height/2);
+    }
+   
+    &.top:before, 
+    &.top:after{
+        transform: translateX(-50%) translateY(-100%); 
+    }
+
+    &.bottom:before, 
+    &.bottom:after{
+        transform: translateX(-50%) translateY(100%); 
+    }
+
+    //arrow border
+    &.top:before, 
+    &.bottom:before
+    {
+        border-width: @___Slider_Arrow_Outer_Height; 
+        margin-left:0;
+        box-shadow: none;
+    }
+
+    //arrow inner 
+    &.top:after, 
+    &.bottom:after
+    {
+        border-width: @___Slider_Arrow_Inner_Height; //override core.less
+        margin-left:0;
+        box-shadow: none;
+
+        bottom:0px; //override core.less
+    }
+
+    &.top:before 
+    {
+        top: 0rem;
+    }
+
+    &.bottom:before 
+    {
+        bottom: 0rem;
+    }
+
+   
+
+    &.top:before {
+        top: 0rem ;
+        -moz-box-shadow:none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    &.bottom:before {
+        bottom: 0rem;
+        -moz-box-shadow:none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+
+.theme-entry .slider_value_display
+{
+    color: @Tooltip-Text-Color;
+    background: @Tooltip-Background-Color;
+    border-style:solid;
+    border-width:  @__Tooltip_Border-Width;
+    border-color: @Tooltip-Border-Color;
+
+
+    //top, right, bottom, and left
+    &.bottom:before
+    {
+        border-color:  @Tooltip-Border-Color transparent transparent  transparent ;
+    }
+
+    &.top:before
+    {
+        border-color:  transparent transparent @Tooltip-Border-Color transparent;
+    }
+
+    &.bottom:after
+    {
+        border-color: @Tooltip-Background-Color transparent transparent transparent ;
+    }
+
+    &.top:after
+    {
+        border-color:  transparent transparent @Tooltip-Background-Color transparent;
+    }
+}
+
+
+
+
+//#endregion Tooltip - Value Popup
+
+
+.theme-entry .ajax__slider_h_rail
+{
+    cursor: auto;
+}
+
+/*rail start/end point*/
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_start,
+.theme-entry .Slider-rail .Slider-rail-start,
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_end,
+.theme-entry .Slider-rail .Slider-rail-end
+{
+    position: absolute;
+    top: 0;
+    width: 0.8rem;
+    height: 2.0rem;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-image: none !important;
+}
+
+/*rail start*/
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_start,
+.theme-entry .Slider-rail .Slider-rail-start
+{
+    left: 0.6rem;
+}
+
+/*rail end*/
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_end,
+.theme-entry .Slider-rail .Slider-rail-end
+{
+    right: 0.6rem;
+}
+
+/*rail*/
+
+@___Rail-Height: 0.6rem;
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_inner,
+.theme-entry .Slider-rail .Slider-rail-inner
+{
+    left: 0.6rem;
+    right: 0.6rem;
+    background-repeat: repeat-x;
+    height: @___Rail-Height;
+    background-image: none !important;
+    background-color: @Slider-Rail-Background-Color;
+    border-style: solid;
+    border-width: 1px;
+    border-color: @Slider-Rail-Border-Color;
+    box-sizing: border-box;
+    border-radius: @Input-Rounding;
+    
+    top: 50%;
+    margin-top: -1 * (@___Rail-Height/2);
+}
+
+.theme-entry
+{
+    //rail
+    .Slider-rail.disabled, 
+    .ajax__slider_h_rail.disabled,
+    //handle
+    .ajax__slider_h_handle,
+    .Slider-rail a.Slider
+    {
+        opacity: 1.0; //override general.css
+    }
+}
+
+
+/*thumb*/
+.theme-entry .ajax__slider_h_handle,
+.theme-entry .Slider-rail a.Slider
+{
+    width: 2.0rem;
+    height: 2.0rem;
+    cursor: default;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 100px;
+    box-shadow: @Slider-Handle-Shadow;
+    border-style: solid;
+    border-width: 1px;
+
+    //State - Normal
+    background-image: none; 
+    background-color: @Slider-Handle-Background-Color;
+    border-color: @Slider-Handle-Border-Color;
+
+    //state - hover
+    &:hover
+    {
+        border-color: @Slider-Handle-Hover-Border-Color;
+        background-image: none; 
+        background-color: @Slider-Handle-Hover-Background-Color;
+    }
+
+    //state - focus
+    &:focus, 
+    &:active
+    {
+        border-color: @Slider-Handle-Focus-Border-Color;
+        background-image: none; 
+        background-color: @Slider-Handle-Focus-Background-Color;
+    }
+
+
+    //State - disabled
+    &.disabled
+    {
+        background-image: none;
+        border-color: @Slider-Handle-Disabled-Border-Color;
+        background-color: @Slider-Handle-Disabled-Background-Color;
+
+        pointer-events: none;
+        box-shadow: none;
+        //override core.less
+        opacity: 1.0;
+    }
+
+    //State - readonly
+    &.read-only
+    {
+        background-image: none;
+        border-color: @Slider-Handle-ReadOnly-Border-Color;
+        background-color: @Slider-Handle-ReadOnly-Background-Color;
+
+        pointer-events: none;
+        box-shadow: none;
+        //override core.less
+        opacity: 1.0;
+    }
+}
+
+.theme-entry .ajax__slider_h_handle{
+
+    cursor: pointer; //make sure it looks interactive
+
+    //State - disabled
+    &.disabled
+    {
+        cursor: auto;
+    }
+
+    //State - readonly
+    &.read-only
+    {   
+        cursor: auto;
+    }
+
+}
+
+
+
+/* stops the cursor from showing the I-bar when hover & doesn't add to the height of the slider*/
+.theme-entry .ajax__slider_textbox
+{
+    display: none;
+}
+
+//TODO: this is bad - the slider css is affecting its size based on what container its in.
+//      not good for abstraction.
+.theme-entry .editor-cell > .sliderWrapper
+{
+    height: 2.0rem;
+}
+
+.theme-entry .ajax__slider_h_rail,
+.theme-entry .Slider-rail /* Designtime specific */
+{
+    height: 2.0rem;
+}
+
+/*#endregion SLIDER */

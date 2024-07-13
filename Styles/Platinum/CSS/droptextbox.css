@@ -1,0 +1,546 @@
+﻿.drop-item, .drop-object, .drop-text
+{
+	display: inline-block;
+	line-height: 14px;
+}
+
+.drop-item
+{
+	background-color: #7BB625;
+	background-image: url(../Images/Icons/Document16flat.png);
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	color: #FFF;
+	padding-left: 15px;
+	padding-right: 2px;
+	background-size: contain;
+}
+
+.drop-item.error
+{
+	background-color:#b22222;
+	color:#fff;
+	background-image:url(../Images/Icons/Error16.png);
+}
+
+.drop-text
+{
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	border-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.webkit .drop-text
+{
+	outline: none;
+}
+
+.drop-text.watermark
+{
+	color:#c5c5c5;
+	font-style:italic;
+	min-width:250px;
+}
+
+.drop-textbox
+{
+	padding: 1px;
+}
+
+.drop-item.auto-guid,
+.drop-item.autoguid
+{
+	background-image: url(../Images/Icons/AutoGuid16.png) !important;
+}
+
+.drop-item.auto-number,
+.drop-item.autonumber
+{
+	background-image: url(../Images/Icons/AutoNumber16.png) !important;
+}
+
+.drop-item.date-time
+{
+	background-image: url(../Images/Icons/DateTime16.png) !important;
+}
+
+.drop-item.date
+{
+	background-image: url(../Images/Icons/Date16.png) !important;
+}
+
+.drop-item.time
+{
+	background-image: url(../Images/Icons/Time16.png) !important;
+}
+
+.drop-item.decimal
+{
+	background-image: url(../Images/Icons/Decimal16.png) !important;
+}
+
+.drop-item.file
+{
+	background-image: url(../Images/Icons/File16.png) !important;
+}
+
+.drop-item.guid
+{
+	background-image: url(../Images/Icons/Guid16.png) !important;
+}
+
+.drop-item.hyperlink
+{
+	background-image: url(../Images/Icons/Hyperlink16.png) !important;
+}
+
+.drop-item.memo
+{
+	background-image: url(../Images/Icons/Memo16.png) !important;
+}
+
+.drop-item.multi-value
+{
+	background-image: url(../Images/Icons/MultiValue16.png) !important;
+}
+
+.drop-item.number
+{
+	background-image: url(../Images/Icons/Number16.png) !important;
+}
+
+.drop-item.text
+{
+	background-image: url(../Images/Icons/Text16.png) !important;
+}
+
+.drop-item.xml
+{
+	background-image: url(../Images/Icons/XML16.png) !important;
+}
+
+.drop-item.yesno
+{
+	background-image: url(../Images/Icons/Boolean16.png) !important;
+}
+
+.drop-item.button-control
+{
+	background-image: url(../Images/Icons/ButtonControl16.png) !important;
+}
+
+.drop-item.calendar-control
+{
+	background-image: url(../Images/Icons/CalendarControl16.png) !important;
+}
+
+.drop-item.checkbox-control
+{
+	background-image: url(../Images/Icons/CheckBoxControl16.png) !important;
+}
+
+.drop-item.dropdown-control
+{
+	background-image: url(../Images/Icons/DropDownList16.png) !important;
+}
+
+.drop-item.file-control
+{
+	background-image: url(../Images/Icons/FileAttachmentControl16.png) !important;
+}
+
+.drop-item.listbox-control
+{
+	background-image: url(../Images/Icons/ListBoxControl16.png) !important;
+}
+
+.drop-item.radiobutton-control
+{
+	background-image: url(../Images/Icons/RadioButton.png) !important;
+}
+
+.drop-item.radiobuttongroup-control
+{
+	background-image: url(../Images/Icons/RadioButtonGroup.png) !important;
+}
+
+.drop-item.textbox-control
+{
+	background-image: url(../Images/Icons/TextBoxControl16.png) !important;
+}
+
+.drop-item.picker-control
+{
+	background-image: url(../Images/Icons/PickerToolbar16.png) !important;
+}
+
+.drop-item.datalabel-control
+{
+	background-image: url(../Images/Icons/DataLabelControl16.png) !important;
+}
+
+.drop-item.label-control
+{
+	background-image: url(../Images/Icons/Label16.png) !important;
+}
+
+.drop-item.lookup-control
+{
+	background-image: url(../Images/Icons/LookupControl16.png) !important;
+}
+
+.drop-item.rating-control
+{
+	background-image: url(../Images/Icons/RatingControl16.png) !important;
+}
+
+.drop-item.slider-control
+{
+	background-image: url(../Images/Icons/SliderControl16.png) !important;
+}
+
+.drop-item.table-control
+{
+	background-image: url(../Images/Icons/TableControl16.png) !important;
+}
+
+.drop-item.toolbar-control
+{
+	background-image: url(../Images/Icons/ToolbarControl16.png) !important;
+}
+
+.drop-item.toolbarbutton-control
+{
+	background-image: url(../Images/Icons/ToolbarButtonControl16.png) !important;
+}
+
+.drop-item.toolbartable-control
+{
+	background-image: url(../Images/Icons/ToolbarTable16.png) !important;
+}
+
+.drop-item.listtable-control
+{
+	background-image: url(../Images/Icons/TableList16.png) !important;
+}
+
+.drop-item.tree-control
+{
+	background-image: url(../Images/Icons/TreeControl16.png) !important;
+}
+
+.drop-item.multiselectcheckbox-control
+{
+	background-image: url(../Images/Icons/MultiSelectCheckBoxes16.png) !important;
+}
+
+.drop-item.textarea-control
+{
+	background-image: url(../Images/Icons/TextAreaControl16.png) !important;
+}
+
+.drop-item.imagepostback-control
+{
+	background-image: url(../Images/Icons/Picture16_02.png) !important;
+}
+
+.drop-item.filepostback-control
+{
+	background-image: url(../Images/Icons/FileAttachmentControl16.png) !important;
+}
+
+.drop-item.listdisplay-control
+{
+	background-image: url(../Images/Icons/ListDisplay16.png) !important;
+}
+
+.drop-item.radiobuttonlist-control
+{
+	background-image: url(../Images/Icons/RadioButtonList16.png) !important;
+}
+
+.drop-item.hyperlink-control
+{
+	background-image: url(../Images/Icons/Hyperlink16.png) !important;
+}
+
+.drop-item.image, .drop-item.image-control
+{
+	background-image: url(../Images/Icons/Image16.png) !important;
+}
+
+.drop-item.data-field
+{
+	background-image:url(../Images/Icons/DataField16.png);
+}
+
+.drop-item.xml-field
+{
+	background-image:url(../Images/Icons/XamlField16.png);
+}
+
+.drop-item.expression
+{
+	background-image:url(../Images/Icons/Expression16.png);
+}
+
+.drop-item.text-return
+{
+	background-image:url(../Images/Icons/Return16.png);
+}
+
+.drop-item.text-space
+{
+	background-image:url(../Images/Icons/Space16.png);
+}
+
+.drop-item.text-tab
+{
+	background-image:url(../Images/Icons/Tab16.png);
+}
+
+.drop-item.field
+{
+	background-image:url(../Images/Icons/Field16.png);
+}
+
+.drop-item.smartobject
+{
+	background-image:url(../Images/Icons/SmartObject16.png);
+}
+
+.drop-item.user
+{
+	background-image:url(../Images/Icons/User16.png);
+}
+
+.drop-item.datetime-now
+{
+	background-image:url(../Images/Icons/Now16.png);
+}
+
+.drop-textbox .drop-item
+{
+	background-position: 0 0;
+	color:#fff;
+	padding-left: 20px;
+}
+
+.drop-item.auto-guidFF,
+.drop-item.autoguidFF
+{
+	background-image: url(../Images/Icons/AutoGuidFF16.png) !important;
+}
+
+.drop-item.auto-numberFF,
+.drop-item.autonumberFF
+{
+	background-image: url(../Images/Icons/AutoNumberFF16.png) !important;
+}
+
+.drop-item.date-timeFF
+{
+	background-image: url(../Images/Icons/DateTimeFF16.png) !important;
+}
+
+.drop-item.dateFF
+{
+	background-image: url(../Images/Icons/DateFF16.png) !important;
+}
+
+.drop-item.timeFF
+{
+	background-image: url(../Images/Icons/TimeFF16.png) !important;
+}
+
+.drop-item.decimalFF
+{
+	background-image: url(../Images/Icons/DecimalFF16_v2.png) !important;
+}
+
+.drop-item.fileFF
+{
+	background-image: url(../Images/Icons/FileFF16.png) !important;
+}
+
+.drop-item.guidFF
+{
+	background-image: url(../Images/Icons/GuidFF16.png) !important;
+}
+
+.drop-item.hyperlinkFF
+{
+	background-image: url(../Images/Icons/HyperlinkFF16.png) !important;
+}
+
+.drop-item.imageFF
+{
+	background-image: url(../Images/Icons/ImageFF16.png) !important;
+}
+
+.drop-item.memoFF
+{
+	background-image: url(../Images/Icons/MemoFF16.png) !important;
+}
+
+.drop-item.multi-valueFF
+{
+	background-image: url(../Images/Icons/MultiValueFF16.png) !important;
+}
+
+.drop-item.numberFF
+{
+	background-image: url(../Images/Icons/NumberFF16.png) !important;
+}
+
+.drop-item.textFF
+{
+	background-image: url(../Images/Icons/TextFF16.png) !important;
+}
+
+.drop-item.yesnoFF
+{
+	background-image: url(../Images/Icons/YesNoFF16.png) !important;
+}
+
+.drop-item.environmentField
+{
+	background-image: url(../Images/Icons/EnvironmentField16.png) !important;
+}
+
+.drop-item.ControlProperty
+{
+	background-image: url(../Images/Icons/ControlProperty16.png) !important;
+}
+
+.drop-item.group
+{
+	background-image: url(../Images/Icons/group16.png) !important;
+}
+
+.drop-item.datetime
+{
+	background-image: url(../Images/Icons/DateTime16.png) !important;
+}
+
+.drop-item.mail
+{
+	background-image: url(../Images/Icons/Mail16.png) !important;
+}
+
+.drop-item.rendermode
+{
+	background-image: url(../Images/Icons/RenderMode16.png) !important;
+}
+
+.drop-item.objectproperty.error
+{
+	background-image:url(../Images/Icons/FieldTypes_Error16.png) !important;
+}
+
+.drop-item.control.error
+{
+	background-image:url(../Images/Icons/Control_Error16.png) !important;
+}
+
+.drop-item.viewfield.error
+{
+	background-image:url(../Images/Icons/FieldTypes_Error16.png) !important;
+}
+
+.drop-item.formparameter.error
+{
+	background-image:url(../Images/Icons/FormParameter_Error16.png) !important;
+}
+
+.drop-item.viewparameter.error
+{
+	background-image:url(../Images/Icons/ViewParameter_Error16.png) !important;
+}
+
+.drop-item.expression.error
+{
+	background-image:url(../Images/Icons/ExpressionError16.png) !important;
+}
+
+.drop-item.textFF.error
+{
+	background-image:url(../Images/Icons/TextFF16Error.png) !important;
+}
+
+.drop-item.text.error
+{
+	background-image:url(../Images/Icons/Text16Error.png) !important;
+}
+
+.drop-item.dateFF.error, .drop-item.date.error
+{
+	background-image:url(../Images/Icons/Date16Error.png) !important;
+}
+
+.drop-item.date-timeFF.error, .drop-item.date-time.error
+{
+	background-image:url(../Images/Icons/DateTime16Error.png) !important;
+}
+
+.drop-item.decimalFF.error, .drop-item.decimal.error
+{
+	background-image:url(../Images/Icons/Decimal16Error.png) !important;
+}
+
+.drop-item.fileFF.error, .drop-item.file.error
+{
+	background-image:url(../Images/Icons/File16Error.png) !important;
+}
+
+.drop-item.guidFF.error, .drop-item.guid.error
+{
+	background-image:url(../Images/Icons/Guid16Error.png) !important;
+}
+
+.drop-item.hyperlinkFF.error, .drop-item.hyperlink.error
+{
+	background-image:url(../Images/Icons/Hyperlink16Error.png) !important;
+}
+
+.drop-item.imageFF.error, .drop-item.image.error
+{
+	background-image:url(../Images/Icons/Image16Error.png) !important;
+}
+
+.drop-item.memoFF.error, .drop-item.memo.error
+{
+	background-image:url(../Images/Icons/Memo16Error.png) !important;
+}
+
+.drop-item.multi-valueFF.error, .drop-item.multi-value.error
+{
+	background-image:url(../Images/Icons/MultiValue16Error.png) !important;
+}
+
+.drop-item.numberFF.error, .drop-item.number.error
+{
+	background-image:url(../Images/Icons/Number16Error.png) !important;
+}
+
+.drop-item.timeFF.error, .drop-item.time.error
+{
+	background-image:url(../Images/Icons/Time16Error.png) !important;
+}
+
+.drop-item.auto-numberFF.error, .drop-item.auto-number.error
+{
+	background-image:url(../Images/Icons/AutoNumber16Error.png) !important;
+}
+
+.drop-item.auto-guidFF.error, .drop-item.auto-guid.error
+{
+	background-image:url(../Images/Icons/AutoGuid16Error.png) !important;
+}
+
+.drop-item.booleanFF.error, .drop-item.boolean.error
+{
+	background-image:url(../Images/Icons/Boolean16Error.png) !important;
+}

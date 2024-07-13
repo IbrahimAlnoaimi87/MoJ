@@ -1,0 +1,171 @@
+.theme-entry .UserPerfHeader
+{
+	font-weight: bold !important;
+}
+
+.theme-entry .UserPerfSubHeader 
+{
+	color: #CCCCCC !important;
+}
+
+.theme-entry .radgrid-gridheader a
+{
+	color: black;
+}
+
+.theme-entry .radgrid-gridheader
+{
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top, #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+	border-color: #000;
+}
+
+/* footer top border color */
+.theme-entry .RadGrid .rgPager td
+{
+	border-top: 1px solid #adae9c;
+}
+
+.theme-entry .radgrid-footer
+{
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top, #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+	border-color: #fff;
+	width: 100%;
+}
+
+.theme-entry .radgrid-grid-column-header-cell.sorting:hover
+{
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top, #fefefe 0%, #ebece5 50%, #ccd0c1 51%, #e6e9e0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(50%,#ebece5), color-stop(51%,#ccd0c1), color-stop(100%,#e6e9e0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e6e9e0',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .StandardGrid .rgDetailTable .rgAltRow td,
+.theme-entry .StandardGrid .rgDetailTable .rgRow td
+{
+	padding-left: 6px;
+}
+
+.theme-entry .radgrid-altrowLayout
+{
+	background-color: White;
+	border-bottom: 1px solid #adae9c;
+}
+
+.theme-entry .radgrid-rowLayout
+{
+	background-color: whiteSmoke;
+}
+
+.theme-entry .radgrid-grid-column-headers-wrapper
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #fff #adae9c #adae9c #fff;
+}
+
+.theme-entry .StandardGrid .rgDetailTable 
+{
+	border-color: #adae9c;
+}
+
+.theme-entry .radgrid-rowLayout:active,
+.theme-entry .radgrid-rowLayout:hover,
+.theme-entry .radgrid-altrowLayout:active,
+.theme-entry .radgrid-altrowLayout:hover
+{
+	background-color: #d6e3b0;
+}
+
+.theme-entry .radgrid-rowLayout:hover.radgrid-selectedItem,
+.theme-entry .radgrid-altrowLayout:hover.radgrid-selectedItem
+{
+	background-color: #e4efc3;
+}
+
+.theme-entry .radgrid-selectedItem 
+{
+	background-color: #e4efc3;
+	outline: 1px dotted #87C41F;
+}
+
+.theme-entry .radgrid-tableMain
+{
+	border-color: #adae9c #adae9c #adae9c #adae9c;
+	color: black;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 4px;
+}
+
+.theme-entry .StandardGrid .buttonPrev:hover
+{
+	background-image: url(paging_arrows_single_left_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonPrev,
+.theme-entry .StandardGrid .buttonPrev.disabled:hover
+{
+	background-image: url(paging_arrows_single_left_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonFirstPage:hover
+{
+	background-image: url(paging_arrows_double_left_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonFirstPage,
+.theme-entry .StandardGrid .buttonFirstPage.disabled:hover
+{
+	background-image: url(paging_arrows_double_left_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonLastPage,
+.theme-entry .StandardGrid .buttonLastPage.disabled:hover
+{
+	background-image: url(paging_arrows_double_right_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonNext:hover
+{
+	background-image: url(paging_arrows_single_right_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonNext,
+.theme-entry .StandardGrid .buttonNext.disabled:hover
+{
+	background-image: url(paging_arrows_single_right_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonLastPage:hover
+{
+	background-image: url(paging_arrows_double_right_hover.png);
+}
+
+.theme-entry .StandardGrid .rgSortAsc
+{
+	background-image: url(sort_ascending_normal.png);
+}
+
+.theme-entry .StandardGrid .rgSortDesc
+{
+	background-image: url(sort_descending_normal.png);
+}

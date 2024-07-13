@@ -1,0 +1,416 @@
+﻿/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import "../../../Designer_Variables.less";
+
+/* Undoing the sins of the IE fathers */
+
+/* buttons.css */
+.ie10 .gradient-box,
+.ie10 a.button span.button-wrapper,
+.ie10 a.button.disabled span.button-wrapper,
+.ie10 a.button.disabled:hover span.button-wrapper,
+.ie10 a.button.disabled:focus span.button-wrapper,
+.ie10 a.button.disabled:active span.button-wrapper,
+.ie10 a.button.disabled:hover:focus .button-wrapper,
+.ie10 a.button.disabled:hover:active .button-wrapper,
+.ie10 a.button:hover span.button-wrapper,
+.ie10 a.button:hover:active span.button-wrapper,
+.ie10 a.button:hover:focus span.button-wrapper,
+.ie10 a.button:active span.button-wrapper,
+.ie10 a.button:focus span.button-wrapper,
+.ie10 a.button.save,
+.ie10 a.button.save:hover,
+.ie10 a.button.save.disabled,
+.ie10 a.button.save.disabled:hover,
+.ie10 a.button.save.disabled:focus,
+.ie10 a.button.save.disabled:active,
+.ie10 a.button.help,
+.ie10 a.button.help:hover,
+.ie10 a.button.help:hover:active,
+.ie10 a.button.help:hover:focus,
+.ie10 a.button.clearsearch.disabled,
+.ie10 a.button.clearsearch.disabled:hover,
+.ie10 a.button.clearsearch.disabled:focus,
+.ie10 a.button.clearsearch.disabled:active,
+.ie10 a.button.clearsearch.disabled:hover:focus,
+.ie10 a.button.clearsearch.disabled:hover:active,
+.ie10 a.button.clearsearch,
+.ie10 a.button.clearsearch:hover,
+.ie10 a.button.clearsearch:hover:active,
+.ie10 a.button.clearsearch:hover:focus
+{
+    filter: none;
+}
+
+/* forms.css */
+.ie10 .input-control.select-box .input-control-buttons,
+.ie10 .input-control.select-box.disabled .input-control-buttons,
+.ie10 .input-control.select-box .input-control-buttons a:hover,
+.ie10 .input-control.select-box .input-control-buttons a:focus,
+.ie10 .input-control.select-box.disabled .input-control-buttons a:hover,
+.ie10 .input-control.select-box.disabled .input-control-buttons a:focus,
+.ie10 .input-control.select-box .input-control-buttons a:active,
+.ie10 .input-control.select-box.active .input-control-buttons,
+.ie10 .input-control.select-box.disabled .input-control-buttons a:active,
+.ie10 .input-control.select-box.active.disabled .input-control-buttons a,
+.ie10 .input-control.select-box.disabled .input-control-buttons a > span,
+.ie10 .input-control.select-box.disabled .input-control-buttons:hover a > span,
+.ie10 .input-control.select-box.disabled .input-control-buttons:focus a > span,
+.ie10 .input-control.select-box.disabled .input-control-buttons:active a > span,
+.ie10 .option-select-box label:hover .option-c,
+.ie10 .option-select-box label.selected .option-c,
+.ie10 .option-select-box label.selected:hover .option-c
+{
+    filter: none;
+}
+
+/* grid.css */
+.ie10 .grid-header-wrapper,
+.ie10 .grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper,
+.ie10 .grid .grid-column-headers-wrapper,
+.ie10 .grid .grid-column-header-cell:hover,
+.ie10 .grid-aggregation-header-c
+{
+    filter: none;
+}
+
+/* navpanel.css */
+.ie10 .navigation-panel .navigation-panel-header-c,
+.ie10 .navigation-panel .navigation-panel-buttons a,
+.ie10 .navigation-panel .navigation-panel-buttons a:hover,
+.ie10 .navigation-panel .navigation-panel-buttons a.active,
+.ie10 .navigation-panel .navigation-panel-footer-c
+{
+    filter: none;
+}
+
+/* panels.css */
+.ie10 .panel-header-c,
+.ie10 .panel.with-header.with-toolbar > .panel-toolbars .toolbars.single .toolbar-wrapper,
+.ie10 .details-header,
+.ie10 .details-headerfull
+{
+    filter: none;
+}
+
+/* popup.css */
+.ie10 .popup-header,
+.ie10 .popup-body
+{
+    filter: none;
+}
+
+/* tabs.css */
+.ie10 .tab-box ul.tab-box-tabs a.tab .tab-wrapper,
+.ie10 .tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper,
+.ie10 .tab-box.with-header .tab-box-header-c
+{
+    filter: none;
+}
+
+/* toolbar.css */
+.ie10 .toolbars.single .toolbar .toolbar-wrapper,
+.ie10 .toolbars.double .toolbar .toolbar-wrapper,
+.ie10 .toolbars.double .toolbar:first-child .toolbar-wrapper,
+.ie10 .toolbars.single.bottom-docked .toolbar .toolbar-wrapper,
+.ie10 a.toolbar-button.selected,
+.ie10 a.toolbar-button:hover,
+.ie10 a.toolbar-button:focus,
+.ie10 a.toolbar-button:active,
+.ie10 a.action-row:active,
+.ie10 a.action-row:focus,
+.ie10 .toolbar.floating .toolbar-wrapper
+{
+    filter: none;
+}
+
+/* wizard.css */
+.ie10 .wizard .wizard-header-c,
+.ie10 .wizard .wizard-steptree-c,
+.ie10 .wizard.without-header.with-steptree .wizard-steptree-c,
+.ie10 .wizard-step-content.docked > .grid.full.without-header.with-toolbar .toolbars.single .toolbar-wrapper,
+.ie10 .wizard-step-content.docked > .pane-container > .pane:first-child > .toolbars.single .toolbar-wrapper,
+.ie10 .wizard-step-content.docked > .target-context-canvas > .pane-container > .pane:first-child > .toolbars.single .toolbar-wrapper
+{
+    filter: none;
+}
+
+.categorySectionsList > .section-specifier
+{
+    position: absolute;
+    top: 13px;
+    bottom: 5px;
+    left: 7px;
+    width: 4px;
+    border-top: none;
+    border-bottom: 1px solid @Expanding-Section-Line-Color;
+    border-left: 1px solid @Expanding-Section-Line-Color;
+    border-right: none;
+
+    html[dir=rtl] &
+    {
+        border-left: 1px solid @Expanding-Section-Line-Color;
+        border-right: none;
+    }
+}
+
+.categorySectionsList > div.section-specifier.no-border
+{
+    border: none;
+}
+
+.categorySectionsList
+{
+    padding-bottom: 10px;
+    margin: 1px 5px 0 2px;
+    position: relative;
+}
+
+html[dir=rtl] .categorySectionsList
+{
+    padding-bottom: 10px;
+    margin: 1px 5px 0 2px;
+    position: relative;
+}
+
+.categorySectionsList .radiobox
+{
+    margin-left: 13px;
+    margin-top: 3px;
+}
+
+.categorySectionsList .radiobox-button.disabled-rule
+{
+    .radiobox-button-text
+    {
+        opacity: 0.5;
+    }
+}
+
+.categorySectionsList .categorySectionsHeading
+{
+    margin-left: 18px;
+    padding-top: 1px;
+    display: inline-block;
+
+    &.rules-section
+    {
+        /*display: flex;
+        flex-direction: row;*/
+        align-items: center;
+        font-weight: bold;
+        color: #000;
+
+        .section-label
+        {
+            padding-left: 3px;
+        }
+
+        .section-icon
+        {
+            float:left;
+        }
+    }
+}
+
+.rules-add-button
+{
+    line-height: 20px;
+    padding: 0 0 3px 4px;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+
+    /*html[dir=rtl] &
+    {
+        direction:rtl;
+        text-align: right;
+        padding: 0 15px 3px 4px;
+    }*/
+}
+
+#pgStateGrid,
+#pgRuleList
+{
+    &.grid.full .grid-body .grid-body-content
+    {
+        top: 0;
+        border: 0px;
+    }
+}
+
+//specific styling for when the states panel shows.
+#pgWizard_pgRulesStep > .pane-container > .divider
+{
+    background-color: @Grid-Row-Selected-Background-Color;
+}
+
+#pgRuleList .grid-content-table .grid-content-cell
+{
+    padding-top: 2px;
+}
+
+#pgStateGrid .grid-toolbars .toolbars.single,
+#pgRuleList .grid-toolbars .toolbars.single,
+#pgStateGrid .grid-toolbars .toolbars.single .toolbar,
+#pgRuleList .grid-toolbars .toolbars.single .toolbar
+{
+    height: 26px;
+}
+
+#pgStateGrid,
+#pgRuleList
+{
+    .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper
+    {
+        min-height: 21px;
+        padding-top: 2px;
+    }
+}
+
+//makes sure the gutter is posotioned correctly
+#pgRuleList
+{
+    .grid-content-cell,
+    .grid-content-cell-wrapper
+    {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        box-sizing: border-box;
+    }
+}
+
+
+.lyt-rules-list
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+@_Gutter-Width: 30px;
+@_Expander-Width: 18px;
+@_Gutter-Badge-Width: 10px;
+@_Rule-Item-Height: 22px;
+
+.rules-list-gutter
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: @_Gutter-Width;
+    background-color: @Panel-Background-Color-2;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2);
+
+    html[dir=rtl] &
+    {
+        left: 0px;
+    }
+}
+
+.rules-list-content
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.rules-list-container
+{
+    padding-top: @Standard-Padding-Large;
+    padding-bottom: @Standard-Padding-Large;
+    //this needed to be overridden because the rules list is inside a grid, when it shouldn't be.
+    // and so in a grid's empty state (which this grid never leaves) is to have centered text.
+    text-align: left;
+
+    .categorySectionsList
+    {
+        margin-left: 0px;
+        padding-bottom: 20px;
+    }
+
+    .categorySectionsHeading
+    {
+        html[dir=ltr] &
+        {
+            padding-left: 4px;
+        }
+
+        html[dir=rtl] &
+        {
+            padding-left: 4px;
+        }
+
+        height: @_Rule-Item-Height; //same as radiobutton small height.
+    }
+
+    .categorySectionsHeading
+    {
+        margin-left: @_Gutter-Width + @Standard-Padding-Large;
+        color: #555555;
+    }
+
+    .radiobox,
+    .rules-add-button
+    {
+        margin-left: @_Gutter-Width;
+
+        html[dir=rtl] &
+        {
+            margin-left: @_Gutter-Width;
+            /*margin-right: (@_Gutter-Width - 10);*/
+        }
+    }
+
+    .radiobox ul.input-control-group
+    {
+        padding-left: @Standard-Padding-Large;
+    }
+
+    .section-expander
+    {
+        width: @_Expander-Width;
+        height: @_Expander-Width;
+        left: (@_Gutter-Width - @_Expander-Width) /2;
+        top: 3px;
+        background-position-x: 1px;
+    }
+
+    .section-specifier
+    {
+        top: 16px;
+        left: (@_Gutter-Width/2) - 1;
+        box-sizing: border-box;
+        bottom: 15px;
+
+        html[dir=rtl] &
+        {
+            left: (@_Gutter-Width/2) - 1;
+            /*right: (@_Gutter-Width/2) - 6;*/
+        }
+    }
+
+    .radiobox-button.error::before
+    {
+        position: absolute;
+        background-size: @_Gutter-Badge-Width;
+        height: @_Gutter-Badge-Width;
+        width: @_Gutter-Badge-Width;
+        pointer-events: none;
+        content: '';
+        left: -1*(@_Gutter-Width + @Standard-Padding-Large + 1) + ((@_Gutter-Width - @_Gutter-Badge-Width)/2);
+        top: (@_Rule-Item-Height - @_Gutter-Badge-Width)/2;
+    }
+}

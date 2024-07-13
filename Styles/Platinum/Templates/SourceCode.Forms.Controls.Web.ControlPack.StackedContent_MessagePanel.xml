@@ -1,0 +1,19 @@
+﻿<div class="message-panel hide">
+  <div class="message-panel-content">
+    <div class="message-panel-column">
+      <div class="message-panel-row">
+        <span class="message-panel-icon icon icon-size48 ic-blockedurl"></span>
+      </div>
+      <div class="message-panel-row">
+        <H1 class="message-panel-title">Blocked URL</H1>
+      </div>
+      <div class="message-panel-row">
+        <span class="message-panel-body instruction PART-message-panel-body">{Message}</span>
+        <a class="message-panel-link secondary {Display}" href="{Link}" target="_blank">Learn more...</a>
+      </div>
+      <div class="message-panel-row">
+        <a class="message-panel-button Hyperlink" href="" target="_blank">Open in New Tab</a>
+      </div>
+    </div>
+  </div>
+</div>

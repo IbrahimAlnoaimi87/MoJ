@@ -1,0 +1,68 @@
+/* Theme: Lithium */
+/* Author: Lewis Garmston */
+/* Date: 20/02/2014 */
+
+/* Breaking Points
+	- 480 x 736 width/height - Phones
+	- 800 width - Phablets, Tablets (Touch devices)
+	- 800+ Desktop etc.
+ */
+
+@import url('Platinum2/Theme.css');
+
+@import url('Platinum2/Theme_Animations.css');
+
+@import url('Platinum2/Theme_Fonts.css');
+
+/*Images@2x - hi-dpi*/
+@import url('Platinum2/Theme@2x.css') only screen and 
+	(min-resolution: 1.5dppx), 
+	(min-resolution: 144dpi), 
+	(-webkit-min-device-pixel-ratio: 1.5), 
+	(-o-min-device-pixel-ratio: 3/2);
+
+/*Images - normal*/
+@import url('Platinum2/Theme_Images.css') only screen and 
+	(max-resolution: 1.5dppx), 
+	(max-resolution: 144dpi), 
+	(-webkit-max-device-pixel-ratio: 1.5), 
+	(-o-max-device-pixel-ratio: 3/2);
+
+/*Images@2x - hi-dpi*/
+@import url('Platinum2/Theme_Images@2x.css') only screen and 
+	(min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+	(min-resolution: 144dpi), 
+	(-webkit-min-device-pixel-ratio: 1.5), 
+	(-o-min-device-pixel-ratio: 3/2);
+
+/*Mobile Images - normal - .mobile selector targets touch devices */
+@import url('Platinum2/Theme_Images_Mobile.css') only screen and 
+	(max-resolution: 1.5dppx), 
+	(max-resolution: 144dpi), 
+	(-webkit-max-device-pixel-ratio: 1.5), 
+	(-o-max-device-pixel-ratio: 3/2); 
+
+/*Mobile Images@2x - hi-dpi - .mobile selector targets touch devices */
+@import url('Platinum2/Theme_Images_Mobile@2x.css') only screen and 
+	(min-resolution: 1.5dppx),  /*this is for retina graphics, apple/samsung devices*/
+	(min-resolution: 144dpi),
+	(-webkit-min-device-pixel-ratio: 1.5), 
+	(-o-min-device-pixel-ratio: 3/2); 
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* Large devices, Desktop */
+@import url('Platinum2/Theme_Desktop.css'); /*only screen and (min-width : 800px);*/
+
+/* Mobile (touch) devices, phones & tablets  - .mobile selector targets touch devices */
+@import url('Platinum2/Theme_Touch.css'); 
+
+/* Extra Small Devices, Phones and Smart Phones */
+@import url('Platinum2/Theme_Phone.css') only screen and (max-device-width : 480px) and (orientation:portrait),
+	only screen and (max-device-width : 736px) and (orientation:landscape);
+
+/* Extra Small Devices - Orientation Targetting */
+@import url('Platinum2/Theme_Phone_Portrait.css') only screen and (max-device-width : 480px) and (orientation:portrait);
+@import url('Platinum2/Theme_Phone_Landscape.css') only screen and (max-device-width : 736px) and (orientation:landscape);
+
+/*#endregion RESPONSIVE BREAKING POINTS */

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-radiobuttons.icon-size{iconsize}.ic-{iconname}"/>
+          <RowDefinition row="2" cssSelector=".icon.icon-set-radiobuttons.icon-size{iconsize}.ic-{iconname}.selected"/>
+          <RowDefinition row="3" cssSelector=".icon.icon-set-radiobuttons.icon-size{iconsize}.ic-{iconname}.hover"/>
+          <RowDefinition row="4" cssSelector=".icon.icon-set-radiobuttons.icon-size{iconsize}.ic-{iconname}.focus"/>
+          <RowDefinition row="5" cssSelector=".icon.icon-set-radiobuttons.icon-size{iconsize}.ic-{iconname}.disabled"/>
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1" cssname="unchecked">RadioNormal18.png</Row>
+              <Row number="2" cssname="unchecked">RadioSelected18.png</Row>
+              <Row number="3" cssname="unchecked">RadioHover18.png</Row>
+              <Row number="4" cssname="unchecked">RadioFocus18.png</Row>
+              <Row number="5" cssname="unchecked">RadioDisabled18.png</Row>
+            </Rows>
+          </Column>
+          <Column number="2">
+            <Rows>
+              <Row number="1" cssname="checked">RadioSelected18.png</Row>
+              <Row number="2" cssname="checked">RadioSelected18.png</Row>
+              <Row number="3" cssname="checked">RadioHoverSelected18.png</Row>
+              <Row number="4" cssname="checked">RadioSelectedFocus18.png</Row>
+              <Row number="5" cssname="checked">RadioSelectedDisabled18.png</Row>
+            </Rows>
+          </Column>
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="9,0,0,9">
+        <CssBackgroundImageFolder>Toolbar/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/Buttons/RadioButtons18.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/RadioButtons18.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

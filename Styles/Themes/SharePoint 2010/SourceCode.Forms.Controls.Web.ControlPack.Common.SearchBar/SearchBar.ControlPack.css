@@ -1,0 +1,40 @@
+.button-gradient {
+  background: #f8f4f8;
+  background: -moz-linear-gradient(top, #f8f4f8 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8f4f8), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #f8f4f8 0%, white 100%);
+  background: -o-linear-gradient(top, #f8f4f8 0%, white 100%);
+  background: -ms-linear-gradient(top, #f8f4f8 0%, white 100%);
+  background: linear-gradient(to bottom, #f8f4f8 0%, white 100%);
+  border-color: #e9e4e8;
+}
+.button-gradient-hover {
+  background: #eaf6ff;
+  background: -moz-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaf6ff), color-stop(100%, #bfe4fc));
+  background: -webkit-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+  background: -o-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+  background: -ms-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+  background: linear-gradient(to bottom, #eaf6ff 0%, #bfe4fc 100%);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper {
+  background: #f8f4f8;
+  background: -moz-linear-gradient(top, #f8f4f8 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8f4f8), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #f8f4f8 0%, white 100%);
+  background: -o-linear-gradient(top, #f8f4f8 0%, white 100%);
+  background: -ms-linear-gradient(top, #f8f4f8 0%, white 100%);
+  background: linear-gradient(to bottom, #f8f4f8 0%, white 100%);
+  border-color: #e9e4e8;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper:hover {
+  background: #eaf6ff;
+  background: -moz-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaf6ff), color-stop(100%, #bfe4fc));
+  background: -webkit-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+  background: -o-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+  background: -ms-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+  background: linear-gradient(to bottom, #eaf6ff 0%, #bfe4fc 100%);
+}

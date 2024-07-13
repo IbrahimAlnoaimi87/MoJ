@@ -1,0 +1,20 @@
+﻿.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink a:focus
+{
+	border: 1px dotted #2a8dd4;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.picture:focus
+{
+	outline: 1px dotted #2a8dd4;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink a.disabled,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink a.disabled:hover
+{
+	color: #CCE3F4;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.runtime.input.invalid
+{
+	box-sizing: border-box;
+}

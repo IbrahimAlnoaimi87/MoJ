@@ -1,0 +1,62 @@
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) 
+{
+    html.workspace-taskcard .toggle-button:nth-child(1) label.input-control.radio .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(1) label.input-control.radio:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(1) label.input-control.checked .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(1) label.input-control.checked:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(1) input[type=radio]:checked + label,
+    .icon.icon-set-togglebuttons.icon-size24.ic-actionsdisabled.disabled,
+    html.workspace-taskcard .toggle-button:nth-child(2) label.input-control.radio .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(2) label.input-control.radio:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(2) label.input-control.checked .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(2) label.input-control.checked:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(2) input[type=radio]:checked + label,
+    .icon.icon-set-togglebuttons.icon-size24.ic-redirectdisabled.disabled,
+    html.workspace-taskcard .toggle-button:nth-child(3) label.input-control.radio .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(3) label.input-control.radio:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(3) label.input-control.checked .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(3) label.input-control.checked:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(3) input[type=radio]:checked + label,
+    .icon.icon-set-togglebuttons.icon-size24.ic-sharedisabled.disabled,
+    html.workspace-taskcard .toggle-button:nth-child(4) label.input-control.radio .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(4) label.input-control.radio:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(4) label.input-control.checked .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(4) label.input-control.checked:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(4) input[type=radio]:checked + label,
+    .icon.icon-set-togglebuttons.icon-size24.ic-sleepdisabled.disabled,
+    html.workspace-taskcard .toggle-button:nth-child(5) label.input-control.radio .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(5) label.input-control.radio:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(5) label.input-control.checked .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(5) label.input-control.checked:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(5) input[type=radio]:checked + label,
+    .icon.icon-set-togglebuttons.icon-size24.ic-releasedisabled.disabled,
+    html.workspace-taskcard .toggle-button:nth-child(6) label.input-control.radio .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(6) label.input-control.radio:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(6) label.input-control.checked .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(6) label.input-control.checked:hover .input-control-img,
+    html.workspace-taskcard .toggle-button:nth-child(6) input[type=radio]:checked + label,
+    .icon.icon-set-togglebuttons.icon-size24.ic-formdisabled.disabled {
+        background-image: url('workspace/ToggleButtons24.png');
+        background-size: 216px 144px;
+    }
+
+    html.workspace-taskcard .command-button a[name='btnCopy'],
+    html.workspace-taskcard .command-button:hover a[name='btnCopy'],
+    html.workspace-taskcard .command-button:active a[name='btnCopy'],
+    .icon.icon-set-commandbuttons.icon-size24.ic-btnCopy.disabled,
+    html.workspace-taskcard .command-button a[name='btnEmail'],
+    html.workspace-taskcard .command-button:hover a[name='btnEmail'],
+    html.workspace-taskcard .command-button:active a[name='btnEmail'],
+    .icon.icon-set-commandbuttons.icon-size24.ic-btnEmail.disabled,
+    html.workspace-taskcard .command-button a[name='btnOpen'],
+    html.workspace-taskcard .command-button:hover a[name='btnOpen'],
+    html.workspace-taskcard .command-button:active a[name='btnOpen'],
+    .icon.icon-set-commandbuttons.icon-size24.ic-btnOpen.disabled,
+    html.workspace-taskcard .command-button a[name='btnViewFlow'],
+    html.workspace-taskcard .command-button:hover a[name='btnViewFlow'],
+    html.workspace-taskcard .command-button:active a[name='btnViewFlow'],
+    .icon.icon-set-commandbuttons.icon-size24.ic-btnViewFlow.disabled {
+        background-image: url('workspace/CommandButtons24.png');
+        background-size: 144px 144px;
+    }
+}

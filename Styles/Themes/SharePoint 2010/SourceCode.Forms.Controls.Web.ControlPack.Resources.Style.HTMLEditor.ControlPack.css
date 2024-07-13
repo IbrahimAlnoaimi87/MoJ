@@ -1,0 +1,107 @@
+﻿/* RichTextThemeStart */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.expanded .stylewrapper
+{
+	border-color: #e9e4e8;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModes a:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_selected
+{
+	background-color: #91cdf2;
+}
+
+.theme-entry .Default.RadEditor, 
+.theme-entry .Default.RadEditor .reModule, 
+.theme-entry .Default.RadEditor .reWrapper
+{
+	color: #0f0a06;
+	border-color: #e8e3e7 #bdbdbd #bdbdbd #e8e3e7;
+	background: #fff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #f8f3f7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f8f3f7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f8f3f7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#f8f3f7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#f8f3f7 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#f8f3f7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f3f7',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .Default.reWrapper, 
+.theme-entry .Default.RadEditor .reContentCell, 
+.theme-entry .Default.reColorPicker, 
+.theme-entry .Default.reInsertTable, 
+.theme-entry .Default.reDropDownBody, 
+.theme-entry .Default.reCustomLinks a:hover
+{
+	border: 1px solid #bdbdbd;
+}
+
+/* highlight when tool item is in active state */
+.theme-entry .RadEditor .reToolbarWrapper .reTool_selected
+{
+	background-color: #91cdf2;
+}
+
+/* item group separator */
+.theme-entry .RadEditor .reToolbarWrapper .reGrip.grip_last
+{
+	border-right-color: #c5c5c5;
+}
+
+/* background color when hovering tool item icons */
+.theme-entry .RadEditor .reToolbarWrapper a:hover
+{
+	background-color: #91cdf2;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.split_arrow:hover,
+.theme-entry .RadEditor .reToolbarWrapper .sub-wrapper:hover,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color:hover,
+.theme-entry .rich-text-dropdown-item-container .rich-text-overflow-item-arrow:hover
+{
+	background-color: #91cdf2;
+}
+
+/* color for hover over the overflow items */
+.theme-entry .rich-text-overflow-tool-item-position-base:hover
+{
+	background-color: #91cdf2;
+}
+
+/* selected edit mode text */
+.theme-entry .reMode_selected.reMode_hover span
+{
+	color: #0f0a06;
+}
+/* non-selected edit mode text */
+.theme-entry .reMode_hover span
+{
+	color: #0f0a06;
+}
+
+/* selected edit mode area */
+.theme-entry .reMode_selected.reMode_hover
+{
+	background-color: #91cdf2;
+}
+
+/* edit mode area hover */
+.theme-entry .reMode_hover:hover
+{
+	background-color: #91cdf2;
+}
+
+.theme-entry .reMode_selected.reMode_hover:hover
+{
+	background-color: transparent;
+}
+
+/* tool item that has drop arrow needs explicit hover color to override parent hover style to prevent both item icon and arrow to be highlighted */
+.theme-entry .RadEditor .reToolbar li a:hover .sub-wrapper:hover,
+.theme-entry .RadEditor .reToolbar li a:hover .rich-text-tool-arrow:hover,
+.theme-entry .RadEditor .reToolbar li a:hover .InsertTable:hover 
+{
+	background-color: #91cdf2;
+}
+
+/* RichTextThemeEnd */

@@ -1,0 +1,15 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		ie-old specific tweaks*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+.tmp-panel-box .scroll-wrapper {
+  padding-top: 2px;
+}
+ul.tmp-option-select-list li {
+  margin-top: 1px;
+}

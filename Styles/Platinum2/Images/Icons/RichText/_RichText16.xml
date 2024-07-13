@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-richtext.icon-size16.ic-{iconname}"/> <!-- normal -->
+          <RowDefinition row="2" cssSelector=".icon.icon-set-richtext.icon-size16.ic-{iconname}.hover"/> <!-- hover -->
+          <RowDefinition row="3" cssSelector=".icon.icon-set-richtext.icon-size16.ic-{iconname}.selected"/> <!-- selected -->
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">   
+            <Rows>
+			        <Row number="1" cssname="Bold">Bold16.png</Row>
+              <Row number="2" cssname="Bold">Bold_Hover16.png</Row>
+              <Row number="3" cssname="Bold">Bold_Selected16.png</Row>
+            </Rows> 
+          </Column>   
+		  <Column number="2">   
+            <Rows>  
+              <Row number="1" cssname="Italic">Italic16.png</Row>
+              <Row number="2" cssname="Italic">Italic_Hover16.png</Row>
+              <Row number="3" cssname="Italic">Italic_Selected16.png</Row>
+            </Rows> 
+          </Column>   
+		  <Column number="3">    
+            <Rows>  
+              <Row number="1" cssname="Underline">Underline16.png</Row>
+              <Row number="2" cssname="Underline">Underline_Hover16.png</Row>
+              <Row number="3" cssname="Underline">Underline_Selected16.png</Row>
+            </Rows> 
+          </Column>   
+         <Column number="4">   
+            <Rows>  
+              <Row number="1" cssname="BulletList">BulletList16.png</Row>
+              <Row number="2" cssname="BulletList">BulletList_Hover16.png</Row>
+              <Row number="3" cssname="BulletList">BulletList_Selected16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="5">   
+            <Rows>  
+			  <Row number="1" cssname="Code">Code16.png</Row>
+              <Row number="2" cssname="Code">Code_Hover16.png</Row>
+              <Row number="3" cssname="Code">Code_Selected16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="6">   
+            <Rows>  
+			  <Row number="1" cssname="DecreaseFont">DecreaseFont16.png</Row>
+              <Row number="2" cssname="DecreaseFont">DecreaseFont_Hover16.png</Row>
+              <Row number="3" cssname="DecreaseFont">DecreaseFont_Selected16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="7">   
+            <Rows>
+			  <Row number="1" cssname="DecreaseIndent">DecreaseIndent16.png</Row>
+              <Row number="2" cssname="DecreaseIndent">DecreaseIndent_Hover16.png</Row>
+              <Row number="3" cssname="DecreaseIndent">DecreaseIndent_Selected16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="8">   
+            <Rows>
+			  <Row number="1" cssname="IncreaseFont">IncreaseFont16.png</Row>
+              <Row number="2" cssname="IncreaseFont">IncreaseFont_Hover16.png</Row>
+              <Row number="3" cssname="IncreaseFont">IncreaseFont_Selected16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="9">   
+            <Rows>
+			  <Row number="1" cssname="IncreaseIndent">IncreaseIndent16.png</Row>
+              <Row number="2" cssname="IncreaseIndent">IncreaseIndent_Hover16.png</Row>
+              <Row number="3" cssname="IncreaseIndent">IncreaseIndent_Selected16.png</Row>
+            </Rows> 
+          </Column>   
+          
+          <Column number="10">   
+            <Rows>
+			  <Row number="1" cssname="NumberList">NumberList16.png</Row>
+              <Row number="2" cssname="NumberList">NumberList_Hover16.png</Row>
+              <Row number="3" cssname="NumberList">NumberList_Selected16.png</Row>
+            </Rows> 
+          </Column>   
+          
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="8,0,0,8">
+        <CssBackgroundImageFolder>RichText/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/RichText/RichText16_Sprite.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/RichText16_Sprite.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

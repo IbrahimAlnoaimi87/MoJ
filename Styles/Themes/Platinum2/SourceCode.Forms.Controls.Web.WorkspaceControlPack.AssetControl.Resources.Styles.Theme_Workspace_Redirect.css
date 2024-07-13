@@ -1,0 +1,422 @@
+﻿/*#region REDIRECT PANEL */
+.theme-entry div.workspace-redirect-view,
+html.workspace-taskcard .theme-entry {
+  /* List Styling */
+  /*  .panel-body-wrapper table > tbody > tr:nth-child(2) > td:nth-child(2) >table > tbody */
+}
+.theme-entry div.workspace-redirect-view.hidden,
+html.workspace-taskcard .theme-entry.hidden {
+  display: none;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"],
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] {
+  /* Reposition/Resize background image for Sleep overlay */
+  background-size: 820px 500px;
+  /* Remove generic expense grid footer*/
+  /* Issue with Second Table taking up height after search */
+  /* "Recent" */
+}
+
+    .theme-entry div.workspace-redirect-view .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table .editor-cell,
+    html.workspace-taskcard .theme-entry .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table .editor-cell
+    {
+        padding: 0;
+    }
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .genericitemsfooter,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .genericitemsfooter {
+  display: none !important;
+}
+    .theme-entry div.workspace-redirect-view .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'][col='2'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='1'][col='1'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow[col='1'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow,
+    html.workspace-taskcard .theme-entry .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'][col='2'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='1'][col='1'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow[col='1'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow
+    {
+        font-size: 0;
+    }
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList {
+  /* Generic List Text */
+  /* Generic List Spacing */
+  /* Redirect Button */
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList
+{
+    margin-top: 1.0rem;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.empty,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch
+{
+    border-color: transparent;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name='glSearchResult'] {
+    margin-top: 21px;
+    margin-bottom: 100px;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .title span,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .title span {
+  font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+  font-size: 1.4rem;
+  color: #505858;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .description span,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .description span {
+  font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+  font-size: 1.2rem;
+  color: #a1acb2;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem {
+  background-color: #f8f8f8;
+  padding: 7px;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell.hide ~ .PropertiesMain,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell.hide ~ .PropertiesMain,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList  .PropertiesMain {
+  padding: 0;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PropertiesMain,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PropertiesMain {
+  width: 100%;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Property2DynamicRight,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Property2DynamicRight {
+  width: auto;
+  min-width: 100px;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Div.property1:before,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Div.property1:before {
+  line-height: 3.0rem;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .property1,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .property1 {
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    border-radius: 1px;
+    min-height: 3.2rem;
+    display: block;
+    margin-right: 1.5rem;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .property1
+{
+    width: 120px;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .redirect-user-selection,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .redirect-user-selection
+{
+    background-image: url(workspace/Redirect24.png);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    line-height: 24px;
+    padding-top: 0px;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .stylewrapper.runtime::before,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .stylewrapper.runtime::before
+{
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    top: 106px;
+    left: 150px;
+    content: "Search for a user";
+    z-index: 10;
+    width: 200px;
+    color: #4e5758;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*CSS Spinners in Redirect Dialog*/
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.loading .scrollWrapperDiv::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.loading:not(.empty):not(.nosearch) .scrollWrapperDiv::after { 
+    border: 3px solid rgba(0,0,0,0);
+    border-top: 3px solid rgba(0,0,0,0.25);
+    border-right: 3px solid rgba(0,0,0,0.25);
+    border-left: 3px solid rgba(0,0,0,0.25);
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    animation: workflow-panel-spinner-spin 2s linear infinite;
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    content: " ";
+    z-index: 5;
+} 
+
+@keyframes workflow-panel-spinner-spin
+{ 
+  0% { transform: rotate(0deg); } 
+  100% { transform: rotate(360deg); } 
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .scrollWrapperDiv::before,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .scrollWrapperDiv::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .scrollWrapperDiv::after,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .scrollWrapperDiv::after
+{
+    content: " ";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: calc(50% - 48px);
+    left: calc(50% - 24px);
+    z-index: 4;
+    background-image: url("workspace/User48.png");
+    background-repeat: no-repeat;
+    background-size: 48px;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .stylewrapper.runtime::after,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .stylewrapper.runtime::after
+{
+    content: "Select a user to redirect to";
+    position: absolute;
+    top: 146px;
+    left: 150px;
+    z-index: 10;
+    width: 200px;
+    color: #4e5758;
+    text-align: center;
+    padding-bottom: 10px
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .stylewrapper.runtime::before,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .stylewrapper.runtime::before
+{
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    top: 51px;
+    left: 150px;
+    content: "Recent Items";
+    z-index: 10;
+    width: 200px;
+    color: #4e5758;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .scrollWrapperDiv::before,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .scrollWrapperDiv::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .scrollWrapperDiv::after,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .scrollWrapperDiv::after
+{
+    content: " ";
+    width: 48px;
+    height: 48px;    
+    position: absolute;
+    top: calc(50% - 48px);
+    left: calc(50% - 24px);
+    z-index: 4;
+    background-image: url("workspace/Recent48.png");
+    background-repeat: no-repeat;
+    background-size: 48px;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .stylewrapper.runtime::after,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .stylewrapper.runtime::after
+{
+    content: "There are no recent items available to choose from";
+    white-space: nowrap;
+    position: absolute;
+    top: 83px;
+    left: 150px;
+    margin-left: -80px;
+    z-index: 10;
+    width: 200px;
+    color: #4e5758;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"]:not(.empty)::before,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"]:not(.empty)::before
+{
+    content: "Recent";
+    color: grey;
+    position: absolute;
+    top: -27px;
+    z-index: 10;
+    text-transform: uppercase;
+    left: calc(50% - 24px);
+    font-size: 1.3rem;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .Property1Property2DynamicRightTable.table
+{
+    width: 120px;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_ClickProperty1,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_ClickProperty1 {
+  display: block;
+  background-color: #2196f3;
+  font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+  font-size: 12px;
+  color: #ffffff;
+  vertical-align: 0;
+  border-radius: 1px;
+  width: 100px;
+  text-align: center !important;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  line-height: 3.0rem;
+  height: 3.2rem;
+  width: 120px;
+  cursor: pointer;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_ClickProperty1:hover,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_ClickProperty1:hover
+{
+    background-color: #29b6f6  !important;
+    cursor: pointer;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody {
+  border-radius: 1px;
+  overflow: hidden !important;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody .genericitem,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody .genericitem {
+  background-color: #f8f8f8;
+  border-color: #ffffff;
+  border-top:1px solid #dddddd;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody .genericitem:first-child,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody .genericitem:first-child {
+  border-top: none;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody .genericitem:last-child,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody .genericitem:last-child {
+  border-bottom: none;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .watermark,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .watermark {
+  background-color: transparent;
+  border: none;
+  font-family: "Open-Sans", "Segoe UI", "Helvetica";
+  font-size: 18px;
+  color: #a1acb2;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList:hover *,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList:hover * {
+  cursor: default;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .property1:hover,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .property1:hover {
+  cursor: pointer;
+}
+.theme-entry div.workspace-redirect-view .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlRecentTitle"] .list-title,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlRecentTitle"] .list-title {
+  font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+  font-size: 1.3rem;
+  color: #a1acb2;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlRecentTitle"]
+{
+    margin-top: 115px;
+}
+
+.theme-entry div.workspace-redirect-view .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlTitle"],
+html.workspace-taskcard .theme-entry .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlTitle"] {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0;
+}
+.theme-entry div.workspace-redirect-view .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlTitle"] h1.action-title,
+html.workspace-taskcard .theme-entry .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlTitle"] h1.action-title {
+  font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+  font-size: 2.4rem;
+  color: #37474f;
+  margin-bottom: 0;
+  /*override - browser default*/
+  font-weight: normal;
+  /*override - base*/
+  line-height: 65px;
+  height: 65px;
+}
+.theme-entry div.workspace-redirect-view .task-card-overlay-body h3.list-title,
+html.workspace-taskcard .theme-entry .task-card-overlay-body h3.list-title {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 0;
+  /*override - browser default*/
+  font-weight: normal;
+  /*override - base*/
+}
+/*#endregion*/
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) 
+{
+    html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .redirect-user-selection
+    {
+        background-image: url(workspace/Redirect24@2x.png);
+    }
+
+    html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .scrollWrapperDiv::after
+    {
+        background-image: url("workspace/User48@2x.png");
+    }
+
+    html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .scrollWrapperDiv::after
+    {
+        background-image: url("workspace/Recent48@2x.png");
+    }
+}

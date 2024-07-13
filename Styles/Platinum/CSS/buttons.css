@@ -1,0 +1,837 @@
+.clear
+{
+	/* Generic container (e.g. <div></div>) for floating buttons */
+	overflow: hidden;
+	width: 100%;
+}
+
+a.button
+{
+	color: #343e41;
+	display: block;
+	height: 25px;
+	line-height: 23px;
+	text-decoration: none;
+	float: left;
+	min-width: 60px;
+	position: relative;
+}
+
+html[dir=rtl] a.button
+{
+	float:right;
+}
+
+.button.inline-button
+{
+	display: inline-block;
+	float: none;
+	height:auto;
+}
+
+a.dropbutton
+{ 
+	display: block;	
+	height: 15px;
+	width: 15px;
+	background:url(../Images/Buttons/ShowHideButton.png) no-repeat 50% 0;
+}
+
+a.dropbutton:hover
+{
+	 background-position:50% -15px;
+}
+
+/* The button has been pressed, should display arrow upwards */
+a.dropbutton.active
+{
+	 background-position:50% -30px;
+}
+
+a.dropbutton.active:hover
+{
+	 background-position:50% -45px;
+}
+
+.gradient-box
+{
+	height: 14px;
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #ebece5 50%, #ccd0c1 51%, #e6e9e0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(50%,#ebece5), color-stop(51%,#ccd0c1), color-stop(100%,#e6e9e0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* W3C */
+	border:solid 1px #fff;
+}
+
+.ie8 .gradient-box,
+.ie9 .gradient-box
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e6e9e0',GradientType=0 ); /* IE6-9 */
+}
+
+a.clearbutton
+{ 
+	display: block;	
+	height: 11px;
+	width: 11px;
+	background:url(../Images/Buttons/ClearSearchButton.png) no-repeat 50% 0;   
+}
+
+a.clearbutton:hover
+{
+	background-position:50% -11px;
+}
+
+a.clearbutton.active
+{
+	background-position:50% -22px;
+}
+
+a.clearbutton.active:hover
+{
+	background-position:50% -11px;	
+}
+
+a.button span.button-wrapper,
+a.button.disabled span.button-wrapper, 
+a.button.disabled:hover span.button-wrapper, 
+a.button.disabled:focus span.button-wrapper,
+a.button.disabled:active span.button-wrapper,
+a.button.disabled:hover:focus .button-wrapper,
+a.button.disabled:hover:active .button-wrapper
+{
+	border:solid 1px #adae9c;
+	background: #e4e7dd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #e4e7dd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#e4e7dd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#e4e7dd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#e4e7dd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#e4e7dd 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefefe 0%,#e4e7dd 100%); /* W3C */
+	display: block;
+	height: 23px;
+	cursor: pointer;
+	color: #343e41;
+}
+
+.ie8 a.button span.button-wrapper,
+.ie9 a.button span.button-wrapper,
+.ie8 a.button.disabled span.button-wrapper, 
+.ie9 a.button.disabled span.button-wrapper, 
+.ie8 a.button.disabled:hover span.button-wrapper, 
+.ie9 a.button.disabled:hover span.button-wrapper, 
+.ie8 a.button.disabled:focus span.button-wrapper,
+.ie9 a.button.disabled:focus span.button-wrapper,
+.ie8 a.button.disabled:active span.button-wrapper,
+.ie9 a.button.disabled:active span.button-wrapper,
+.ie8 a.button.disabled:hover:focus .button-wrapper,
+.ie9 a.button.disabled:hover:focus .button-wrapper,
+.ie8 a.button.disabled:hover:active .button-wrapper,
+.ie9 a.button.disabled:hover:active .button-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e4e7dd',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.inline-button span.button-wrapper
+{
+	height:auto;
+}
+
+a.button span.button-text
+{
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	padding:0 5px;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+
+a.button.inline-button span.button-text
+{
+	padding: 5px 5px;
+}
+
+a.button:active, 
+a.button:focus
+{
+	outline: none;
+}
+
+a.button:hover,
+a.button:hover:active, 
+a.button:hover:focus
+{
+	outline: none;
+}
+
+a.button:hover span.button-wrapper,
+a.button:hover:active span.button-wrapper, 
+a.button:hover:focus span.button-wrapper
+{
+	color: #fff;
+	background: #89bf2d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #99dd2b 0%, #89bf2d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99dd2b), color-stop(100%,#89bf2d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #99dd2b 0%,#89bf2d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #99dd2b 0%,#89bf2d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #99dd2b 0%,#89bf2d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #99dd2b 0%,#89bf2d 100%); /* W3C */
+}
+
+.ie8 a.button:hover span.button-wrapper,
+.ie9 a.button:hover span.button-wrapper,
+.ie8 a.button:hover:active span.button-wrapper,
+.ie9 a.button:hover:active span.button-wrapper,
+.ie8 a.button:hover:focus span.button-wrapper,
+.ie9 a.button:hover:focus span.button-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99dd2b', endColorstr='#89bf2d',GradientType=0 ); /* IE6-9 */
+}
+
+a.button:active span.button-wrapper, 
+a.button:focus span.button-wrapper
+{
+	background: #e4e6de; /* Old browsers */
+	background: -moz-linear-gradient(top,  #feffff 0%, #e4e6de 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(100%,#e4e6de)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #feffff 0%,#e4e6de 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #feffff 0%,#e4e6de 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #feffff 0%,#e4e6de 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #feffff 0%,#e4e6de 100%); /* W3C */
+	border: #99dd2b solid 1px;
+	color: #343e41;
+}
+
+.ie8 a.button:active span.button-wrapper,
+.ie9 a.button:active span.button-wrapper,
+.ie8 a.button:focus span.button-wrapper,
+.ie9 a.button:focus span.button-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#e4e6de',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.disabled, 
+a.button.disabled:hover, 
+a.button.disabled:focus,
+a.button.disabled:active
+{
+	cursor: default;
+	color: inherit;
+}
+
+a.button.disabled .button-text, 
+a.button.disabled:hover .button-text, 
+a.button.disabled:focus .button-text,
+a.button.disabled:active .button-text
+{
+	cursor: default;
+	border-color:inherit;
+}
+
+a.button.disabled span.button-wrapper, 
+a.button.disabled:hover span.button-wrapper, 
+a.button.disabled:focus span.button-wrapper,
+a.button.disabled:active span.button-wrapper
+{
+	cursor: default;
+	opacity:0.5;
+	filter: Alpha(opacity=50);
+}
+
+a.button.save
+{
+	background: #e4e7dd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #e4e7dd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#e4e7dd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#e4e7dd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#e4e7dd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#e4e7dd 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefefe 0%,#e4e7dd 100%); /* W3C */
+	min-width: 25px;
+	max-width: 25px;
+	width: 25px;
+}
+
+.ie8 a.button.save,
+.ie9 a.button.save
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e4e7dd',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.save:hover
+{
+	background: #89bf2d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #99dd2b 0%, #89bf2d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99dd2b), color-stop(100%,#89bf2d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #99dd2b 0%,#89bf2d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #99dd2b 0%,#89bf2d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #99dd2b 0%,#89bf2d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #99dd2b 0%,#89bf2d 100%); /* W3C */
+}
+
+.ie8 a.button.save:hover,
+.ie9 a.button.save:hover
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99dd2b', endColorstr='#89bf2d',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.save.disabled,
+a.button.save.disabled:hover,
+a.button.save.disabled:focus,
+a.button.save.disabled:active
+{
+	background: #f2f3ef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f2f3ef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f3ef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f3ef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f2f3ef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f2f3ef 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f2f3ef 100%); /* W3C */
+	cursor:default;
+}
+
+.ie8 a.button.save.disabled,
+.ie9 a.button.save.disabled,
+.ie8 a.button.save.disabled:hover,
+.ie9 a.button.save.disabled:hover,
+.ie8 a.button.save.disabled:focus,
+.ie9 a.button.save.disabled:focus,
+.ie8 a.button.save.disabled:active,
+.ie9 a.button.save.disabled:active
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f3ef',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.save span.button-wrapper
+{
+	filter:none;
+}
+
+a.button.save:hover span.button-wrapper,
+a.button.save:hover:active span.button-wrapper, 
+a.button.save:hover:focus span.button-wrapper,
+a.button.save span.button-wrapper,
+a.button.save.disabled span.button-wrapper
+{
+	background:url(../Images/Icons/Save16.png) no-repeat 50% 50%;
+}
+
+a.button.save.disabled span.button-wrapper,
+a.button.save.disabled:hover span.button-wrapper,
+a.button.save.disabled:focus span.button-wrapper,
+a.button.save.disabled:active span.button-wrapper
+{
+	background:url(../Images/Icons/Save16.png) no-repeat 50% 50%;
+	opacity: 0.5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)"; /*IE8*/
+}
+
+a.button.save .button-text
+{
+	display:none;
+}
+
+a.button.help
+{
+	background: #7aa4e0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7aa4e0 0%, #114095 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7aa4e0), color-stop(100%,#114095)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7aa4e0 0%,#114095 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7aa4e0 0%,#114095 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7aa4e0 0%,#114095 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7aa4e0 0%,#114095 100%); /* W3C */
+	color: #fff;
+	width: 25px;
+	min-width: 25px;
+	max-width: 25px;
+	padding: 0;
+}
+
+.ie8 a.button.help,
+.ie9 a.button.help
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7aa4e0', endColorstr='#114095',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.help span.button-wrapper,
+a.button.help:focus span.button-wrapper,
+a.button.help:active span.button-wrapper,
+a.button.help:hover span.button-wrapper,
+a.button.help:hover:active span.button-wrapper,
+a.button.help:hover:focus span.button-wrapper
+{
+	border:solid 1px #4778c7;
+	filter:none;
+	background:url(../Images/Icons/button_icon.png) no-repeat 50% 50%;
+	height:23px;
+}
+
+a.button.help .button-text
+{
+	display:none;
+}
+
+a.button.help:hover,
+a.button.help:hover:active,
+a.button.help:hover:focus
+{
+	background: #021d4b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #608fd2 0%, #021d4b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#608fd2), color-stop(100%,#021d4b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #608fd2 0%,#021d4b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #608fd2 0%,#021d4b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #608fd2 0%,#021d4b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #608fd2 0%,#021d4b 100%); /* W3C */
+}
+
+.ie8 a.button.help:hover,
+.ie9 a.button.help:hover,
+.ie8 a.button.help:hover:active,
+.ie9 a.button.help:hover:active,
+.ie8 a.button.help:hover:focus,
+.ie9 a.button.help:hover:focus
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#608fd2', endColorstr='#021d4b',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.help.disabled, 
+a.button.help.disabled:hover, 
+a.button.help.disabled:focus
+{
+	opacity: 0.5;
+}
+
+a.button.lookup
+{
+	min-width: 30px;
+}
+
+a.button.lookup .button-wrapper
+{
+	min-width: 27px;
+}
+
+a.button.clearsearch.disabled,
+a.button.clearsearch.disabled:hover,
+a.button.clearsearch.disabled:focus,
+a.button.clearsearch.disabled:active,
+a.button.clearsearch.disabled:hover:focus,
+a.button.clearsearch.disabled:hover:active,
+a.button.clearsearch
+{
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #ebece5 50%, #ccd0c1 51%, #e6e9e0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(50%,#ebece5), color-stop(51%,#ccd0c1), color-stop(100%,#e6e9e0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* W3C */
+	min-width: 20px;
+	max-width: 20px;
+	width: 20px;
+	height:20px;
+	margin-left: 3px;
+}
+
+.ie8 a.button.clearsearch.disabled,
+.ie9 a.button.clearsearch.disabled,
+.ie8 a.button.clearsearch.disabled:hover,
+.ie9 a.button.clearsearch.disabled:hover,
+.ie8 a.button.clearsearch.disabled:focus,
+.ie9 a.button.clearsearch.disabled:focus,
+.ie8 a.button.clearsearch.disabled:active,
+.ie9 a.button.clearsearch.disabled:active,
+.ie8 a.button.clearsearch.disabled:hover:focus,
+.ie9 a.button.clearsearch.disabled:hover:focus,
+.ie8 a.button.clearsearch.disabled:hover:active,
+.ie9 a.button.clearsearch.disabled:hover:active,
+.ie8 a.button.clearsearch,
+.ie9 a.button.clearsearch
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e6e9e0',GradientType=0 ); /* IE6-9 */
+}
+
+html[dir=rtl] a.button.clearsearch.disabled,
+html[dir=rtl] a.button.clearsearch.disabled:hover,
+html[dir=rtl] a.button.clearsearch.disabled:focus,
+html[dir=rtl] a.button.clearsearch.disabled:active,
+html[dir=rtl] a.button.clearsearch.disabled:hover:focus,
+html[dir=rtl] a.button.clearsearch.disabled:hover:active,
+html[dir=rtl] a.button.clearsearch
+{
+	margin-left:0;
+	margin-right:3px;
+}
+
+a.button.clearsearch:hover,
+a.button.clearsearch:hover:active,
+a.button.clearsearch:hover:focus
+{
+	background: #a4e241; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a4e241 0%, #7db619 50%, #59820c 51%, #7daf21 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a4e241), color-stop(50%,#7db619), color-stop(51%,#59820c), color-stop(100%,#7daf21)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a4e241 0%,#7db619 50%,#59820c 51%,#7daf21 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a4e241 0%,#7db619 50%,#59820c 51%,#7daf21 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a4e241 0%,#7db619 50%,#59820c 51%,#7daf21 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a4e241 0%,#7db619 50%,#59820c 51%,#7daf21 100%); /* W3C */
+}
+
+.ie8 a.button.clearsearch:hover,
+.ie9 a.button.clearsearch:hover,
+.ie8 a.button.clearsearch:hover:active,
+.ie9 a.button.clearsearch:hover:active,
+.ie8 a.button.clearsearch:hover:focus,
+.ie9 a.button.clearsearch:hover:focus
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4e241', endColorstr='#7daf21',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.clearsearch.disabled,
+a.button.clearsearch.disabled:hover,
+a.button.clearsearch.disabled:focus,
+a.button.clearsearch.disabled:active,
+a.button.clearsearch.disabled:hover:focus,
+a.button.clearsearch.disabled:hover:active
+{
+	cursor:default;
+}
+
+a.button.clearsearch span.button-wrapper
+{
+	filter:none;
+	height:18px;
+}
+
+a.button.clearsearch span.button-wrapper,
+a.button.clearsearch:hover span.button-wrapper,
+a.button.clearsearch:hover:active span.button-wrapper, 
+a.button.clearsearch:hover:focus span.button-wrapper
+{
+	background:url(../Images/Icons/ClearSearch16.png) no-repeat 50% 50%;
+}
+
+.ie8 a.button.clearsearch span.button-wrapper,
+.ie9 a.button.clearsearch span.button-wrapper,
+.ie8 a.button.clearsearch:hover span.button-wrapper,
+.ie9 a.button.clearsearch:hover span.button-wrapper,
+.ie8 a.button.clearsearch:hover:active span.button-wrapper,
+.ie9 a.button.clearsearch:hover:active span.button-wrapper,
+.ie8 a.button.clearsearch:hover:focus span.button-wrapper, 
+.ie9 a.button.clearsearch:hover:focus span.button-wrapper
+{
+	filter:none;
+	height:18px;
+	background:url(../Images/Icons/ClearSearch16.png) no-repeat 50% 50%;
+}
+
+a.button.clearsearch.disabled span.button-wrapper,
+a.button.clearsearch.disabled:hover span.button-wrapper,
+a.button.clearsearch.disabled:hover:focus span.button-wrapper,
+a.button.clearsearch.disabled:hover:active span.button-wrapper,
+a.button.clearsearch.disabled:focus span.button-wrapper,
+a.button.clearsearch.disabled:active span.button-wrapper
+{
+	background:url(../Images/Icons/ClearSearch16.png) no-repeat 50% 50%;
+	opacity: 0.5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)"; /*IE8*/
+	height:18px;
+}
+
+a.button.clearsearch .button-text
+{
+	display:none;
+}
+
+
+/*Filter Button Styling*/
+a.button.filter.disabled,
+a.button.filter.disabled:hover,
+a.button.filter.disabled:focus,
+a.button.filter.disabled:active,
+a.button.filter.disabled:hover:focus,
+a.button.filter.disabled:hover:active,
+a.button.filter
+{
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #ebece5 50%, #ccd0c1 51%, #e6e9e0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(50%,#ebece5), color-stop(51%,#ccd0c1), color-stop(100%,#e6e9e0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefefe 0%,#ebece5 50%,#ccd0c1 51%,#e6e9e0 100%); /* W3C */
+	min-width: 20px;
+	max-width: 20px;
+	width: 20px;
+	height:20px;
+	margin-left: 3px;
+}
+
+.ie8 a.button.filter.disabled,
+.ie9 a.button.filter.disabled,
+.ie8 a.button.filter.disabled:hover,
+.ie9 a.button.filter.disabled:hover,
+.ie8 a.button.filter.disabled:focus,
+.ie9 a.button.filter.disabled:focus,
+.ie8 a.button.filter.disabled:active,
+.ie9 a.button.filter.disabled:active,
+.ie8 a.button.filter.disabled:hover:focus,
+.ie9 a.button.filter.disabled:hover:focus,
+.ie8 a.button.filter.disabled:hover:active,
+.ie9 a.button.filter.disabled:hover:active,
+.ie8 a.button.filter,
+.ie9 a.button.filter
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e6e9e0',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.filter:hover,
+a.button.filter:hover:active,
+a.button.filter:hover:focus,
+a.button.filter.active
+{
+	background: #a4e241; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a4e241 0%, #7db619 50%, #59820c 51%, #7daf21 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a4e241), color-stop(50%,#7db619), color-stop(51%,#59820c), color-stop(100%,#7daf21)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a4e241 0%,#7db619 50%,#59820c 51%,#7daf21 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a4e241 0%,#7db619 50%,#59820c 51%,#7daf21 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a4e241 0%,#7db619 50%,#59820c 51%,#7daf21 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a4e241 0%,#7db619 50%,#59820c 51%,#7daf21 100%); /* W3C */
+}
+
+.ie8 a.button.filter:hover,
+.ie9 a.button.filter:hover,
+.ie8 a.button.filter:hover:active,
+.ie9 a.button.filter:hover:active,
+.ie8 a.button.filter:hover:focus,
+.ie9 a.button.filter:hover:focus,
+.ie8 a.button.filter.active,
+.ie9 a.button.filter.active
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4e241', endColorstr='#7daf21',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.filter.disabled,
+a.button.filter.disabled:hover,
+a.button.filter.disabled:focus,
+a.button.filter.disabled:active,
+a.button.filter.disabled:hover:focus,
+a.button.filter.disabled:hover:active
+{
+	cursor:default;
+}
+
+a.button.filter span.button-wrapper
+{
+	filter:none;
+	height:18px;
+}
+
+a.button.filter span.button-wrapper,
+a.button.filter:hover:focus span.button-wrapper,
+a.button.filter:hover span.button-wrapper
+{
+	background:url(../Images/Arrows/black_arrow_down.gif) no-repeat 50% 50%;
+}
+
+.ie8 a.button.filter span.button-wrapper,
+.ie9 a.button.filter span.button-wrapper,
+.ie8 a.button.filter:hover:focus span.button-wrapper,
+.ie9 a.button.filter:hover:focus span.button-wrapper,
+.ie8 a.button.filter:hover:active span.button-wrapper,
+.ie9 a.button.filter:hover:active span.button-wrapper,
+.ie8 a.button.filter:hover span.button-wrapper,
+.ie9 a.button.filter:hover span.button-wrapper
+{
+	filter:none;
+	height:18px;
+	background:url(../Images/Arrows/black_arrow_down.gif) no-repeat 50% 50%;
+}
+
+a.button.filter.disabled span.button-wrapper,
+a.button.filter.disabled:hover span.button-wrapper,
+a.button.filter.disabled:focus span.button-wrapper,
+a.button.filter.disabled:hover:focus span.button-wrapper,
+a.button.filter.disabled:active span.button-wrapper,
+a.button.filter.disabled:hover:active span.button-wrapper
+{
+	height:18px;
+	background:url(../Images/Arrows/black_arrow_down.gif) no-repeat 50% 50%;
+	opacity: 0.5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+
+.ie8 a.button.filter.menu-active span.button-wrapper,
+.ie9 a.button.filter.menu-active span.button-wrapper,
+.ie9 a.button.filter.menu-active span.button-wrapper:hover,
+.ie9 a.button.filter.menu-active span.button-wrapper:focus,
+a.button.filter.menu-active span.button-wrapper,
+a.button.filter.menu-active span.button-wrapper:hover,
+a.button.filter.menu-active span.button-wrapper:focus
+{
+	background:url(../Images/Arrows/black_arrow_up.gif) no-repeat 50% 50%;
+}
+
+a.button.filter .button-text
+{
+	display:none;
+}
+
+/* Button Bar Styling */
+.button-bar
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* Button Group Styling */
+.button-group
+{
+	width: auto;
+}
+
+.button-group.left
+{
+	float: left;
+}
+
+.button-group.left a.button
+{
+	margin: 0 3px 0 0;
+}
+
+.button-group.right
+{
+	float: right;
+	margin-right: 0;
+}
+
+.button-group.right a.button
+{
+	margin: 0 0 0 3px;
+}
+
+#vdbtnSortOptions.disabled,
+#vdbtnSortOptions.disabled span.button-wrapper,
+#vdbtnSortOptions.disabled span.button-wrapper:hover
+{
+	cursor: default;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#E4E7DD));
+	background: -moz-linear-gradient(top, #FEFEFE 0%, #EBECE5 50%, #CCD0C1 51%, #E6E9E0 100%);
+	color: #343E41;
+}
+
+.ie8 #vdbtnSortOptions.disabled,
+.ie9 #vdbtnSortOptions.disabled,
+.ie8 #vdbtnSortOptions.disabled span.button-wrapper,
+.ie9 #vdbtnSortOptions.disabled span.button-wrapper,
+.ie8 #vdbtnSortOptions.disabled span.button-wrapper:hover,
+.ie9 #vdbtnSortOptions.disabled span.button-wrapper:hover
+{
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEFEFE', endColorstr='#E4E7DD',GradientType=0 )";
+}
+
+#vdbtnFilterOptions.disabled,
+#vdbtnFilterOptions.disabled span.button-wrapper,
+#vdbtnFilterOptions.disabled span.button-wrapper:hover
+{
+	cursor: default;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#E4E7DD));
+	background: -moz-linear-gradient(top, #FEFEFE 0%, #EBECE5 50%, #CCD0C1 51%, #E6E9E0 100%);
+	color: #343E41;
+}
+
+.ie8 #vdbtnFilterOptions.disabled,
+.ie9 #vdbtnFilterOptions.disabled,
+.ie8 #vdbtnFilterOptions.disabled span.button-wrapper,
+.ie9 #vdbtnFilterOptions.disabled span.button-wrapper,
+.ie8 #vdbtnFilterOptions.disabled span.button-wrapper:hover,
+.ie9 #vdbtnFilterOptions.disabled span.button-wrapper:hover
+{
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEFEFE', endColorstr='#E4E7DD',GradientType=0 )";
+}
+
+/* Button Element Styling */
+button,
+button[disabled],
+button[disabled]:hover
+{
+	border:solid 1px #adae9c;
+	background: -moz-linear-gradient(top,  #fefefe 0%, #e4e7dd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#e4e7dd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#e4e7dd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#e4e7dd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#e4e7dd 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefefe 0%,#e4e7dd 100%); /* W3C */
+	color: #343e41;
+	cursor: pointer;
+	height: 25px;
+	min-width: 60px;
+	padding: 0 5px;
+}
+
+button:hover
+{
+	background: -moz-linear-gradient(top,  #99dd2b 0%, #89bf2d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99dd2b), color-stop(100%,#89bf2d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #99dd2b 0%,#89bf2d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #99dd2b 0%,#89bf2d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #99dd2b 0%,#89bf2d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #99dd2b 0%,#89bf2d 100%); /* W3C */
+	color: #fff;
+}
+
+button:active,
+button:focus
+{
+	background: -moz-linear-gradient(top,  #feffff 0%, #e4e6de 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(100%,#e4e6de)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #feffff 0%,#e4e6de 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #feffff 0%,#e4e6de 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #feffff 0%,#e4e6de 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #feffff 0%,#e4e6de 100%); /* W3C */
+	border: #99dd2b solid 1px;
+	color: #343e41;
+	outline: none;
+}
+
+button[disabled],
+button[disabled]:hover
+{
+	cursor: default;
+	opacity: 0.5;
+}
+
+a.button.warning-state::after,
+button.warning-state::after
+{
+	-moz-animation: fadein 0.25s;
+	-o-animation: fadein 0.25s;
+	-webkit-animation: fadein 0.25s;
+	animation: fadein 0.25s;
+	background: url(../Images/Icons/Warning16.png) no-repeat;
+	background-size: contain;
+	width: 16px;
+	height: 16px;
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -8px;
+}

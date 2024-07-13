@@ -1,0 +1,31 @@
+/*#region RADIO BUTTON*/
+
+.theme-entry .input-control.radio
+{
+    border: 1px dotted transparent;
+    display: table-row;
+    min-width: 2.2rem;
+    outline: 0.1rem dotted transparent;
+}
+
+.theme-entry label.input-control.radio span
+{
+    display: table-cell;
+    vertical-align: top;
+}
+
+.theme-entry label.input-control.radio .input-control-text:empty
+{
+    display: none;
+}
+
+/*#region FIREFOX SPECIFIC */
+.mozilla .theme-entry .input-control.radio input,
+.mozilla .theme-entry .input-control.checkbox input
+{
+    left: -0.1rem; /* Ensure outlining for focus is rendered correctly */
+    opacity: 0;
+}
+/*#endregion*/
+
+/*#endregion RADIO BUTTON*/

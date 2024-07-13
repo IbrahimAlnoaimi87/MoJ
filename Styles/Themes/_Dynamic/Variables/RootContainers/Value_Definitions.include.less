@@ -1,0 +1,56 @@
+
+
+
+//#region PAGE
+
+    //if the form background is transparent, this will return the page backgorund. This varibale should be used for contrasts.
+    @_darkform_Page-Background-Color : mix(@UD-Main-Accent-Color,lighten(@UD-Content-Background-Color, 10%),5%);
+    @_lightform_Page-Background-Color : mix(@UD-Main-Accent-Color,darken(@UD-Content-Background-Color, 30%),5%);
+    @Page-Background-Color: contrast(@UD-Content-Background-Color, @_lightform_Page-Background-Color, @_darkform_Page-Background-Color , 85%);
+   
+    @_Actual_Page-Background-Color: fadein(@Page-Background-Color, 100%);
+
+//#endregion PAGE
+
+//#region FORM
+
+    @Form-Background-Color: @UD-Content-Background-Color; 
+    @_Actual_Form-Background-Color: mix(fadein(@Form-Background-Color,100%), @Page-Background-Color, alpha(@Form-Background-Color)*100%);
+    //Note the compiler issue - https://github.com/gulp-community/gulp-less/issues/243
+    
+//#endregion FORM
+
+//#region DIALOGS
+
+    //note: Dialogs appear in a lightbox (semi-transparent black overlay over the rest of the screen).
+    //      for light forms, the dialog can be the same color, for dark forms we'll need to lighten the dialogs otherwise they might blend into the lightbox.
+    @_darkbg_Dialog-Background-Color: lighten(@_Actual_Form-Background-Color, 20%);
+    @_lightbg_Dialog-Background-Color: @_Actual_Form-Background-Color;
+    @Dialog-Background-Color: contrast(@_Actual_Form-Background-Color, @_darkbg_Dialog-Background-Color, @_lightbg_Dialog-Background-Color, 43%);
+    @_Actual_Dialog-Background-Color: mix(fadein(@Dialog-Background-Color,100%), @_Actual_Form-Background-Color, alpha(@Dialog-Background-Color)*100%);
+    
+
+    //Heading
+    @_darkbg_Dialog-Header-Text-Color: lighten(@_Actual_Dialog-Background-Color, 60%);
+    @_lightbg_Dialog-Header-Text-Color: darken(@_Actual_Dialog-Background-Color, 60%);
+    @Dialog-Header-Text-Color: contrast(@_Actual_Dialog-Background-Color, @_darkbg_Dialog-Header-Text-Color, @_lightbg_Dialog-Header-Text-Color, 43%);
+
+    //separator lines
+    @_darkbg_Dialog-Separator-Line-Color: lighten(@_Actual_Dialog-Background-Color, 35%);
+    @_lightbg_Dialog-Separator-Line-Color: darken(@_Actual_Dialog-Background-Color, 20%);
+    @Dialog-Separator-Line-Color:contrast(@_Actual_Dialog-Background-Color, @_darkbg_Dialog-Separator-Line-Color, @_lightbg_Dialog-Separator-Line-Color, 43%);
+    
+
+    @Dialog-Shadow: @_Shadow-level-2;
+
+//#endregion DIALOGS
+
+
+//#region Popovers (dropdowns, menus, pickers)
+
+    //This should be used as the base background color for dropdowns, context menus, calendar popups and any other popovers.
+    @_darkbg_Popover-Background-Color: lighten(@UD-Content-Background-Color, 20%);
+    @_lightbg_Popover-Background-Color: @UD-Content-Background-Color;
+    @Popover-Background-Color: contrast(@UD-Content-Background-Color, @_darkbg_Popover-Background-Color, @_lightbg_Popover-Background-Color, 43%);
+
+//#endregion Popovers

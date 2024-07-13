@@ -1,0 +1,84 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+
+.token-input .entity,
+.input-control .drop-item, /* This is used for conditional style tokens */
+#BrowserNavigatePC .token /* This is used for rule widget tokens (TFS735813) */
+{
+    cursor: default;
+    margin: 0 2px;
+    cursor: default;
+    display: inline-block;
+    height: 18px;
+    color: @SmartField-Text-Color;
+    line-height: 17px;
+    background-color: @SmartField-Background-Color;
+    border-radius: 2px;
+
+    &.warning,
+    &.warning.error
+    {
+        background-color: #ff8c00;
+        color: @SmartField-Text-Color;
+    }
+
+    &.error,
+    &.missing,
+    &.missing.error
+    {
+        background-color: #b22222;
+        color: @SmartField-Text-Color;
+    }
+}
+
+.token-input .entity
+{
+    .entity-text
+    {
+        display: inline-block;
+        padding-left: 2px;
+        padding-right: 2px;
+        height: 18px;
+    }
+
+    &.icon
+    {
+        background-position: 2px 50%;
+        padding-left: 20px;
+        background-size: 14px 14px;
+        background-repeat: no-repeat;
+    }
+}
+
+.input-control .drop-item, /* This is used for conditional style tokens  */
+#BrowserNavigatePC .token /* This is used for rule widget tokens (TFS756891) */
+{
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 18px;
+    background-position: 2px 50%;
+    padding-left: 20px;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('smartfield_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('smartfield_images.less');
+}

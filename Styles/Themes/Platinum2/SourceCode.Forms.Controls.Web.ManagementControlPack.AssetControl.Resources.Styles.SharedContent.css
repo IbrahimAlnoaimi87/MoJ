@@ -1,0 +1,124 @@
+.theme-entry h1, .theme-entry h2
+{
+    font-family: "Open-Sans", "Segoe UI", "Helvetica";
+}
+
+.theme-entry h1
+{
+    font-size: 1.8rem;
+}
+
+.theme-entry h2
+{
+    font-size: 1.4rem;
+}
+
+.theme-entry .form
+{
+    background-image: none;
+}
+
+.theme-entry div.toolbar-wrapper div.filterContainer
+{
+    margin-left: 10px;
+}
+/*div.grid-column-header-cell-wrapper { margin-left: 4px; } */
+
+.theme-entry div.grid-body > div.grid-column-headers > div > table > tbody > tr > td:first-child > div > div.grid-column-header-cell-wrapper > div > div
+{
+    padding-left: 4px;
+}
+
+.theme-entry .grid table.grid-content-table > tbody > tr > td:first-child
+{
+    padding-left: 10px;
+}
+
+.theme-entry .view .innerpanel > .panel
+{
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.theme-entry .panel > .panel-body
+{
+    background-color: transparent;
+}
+
+div[name="vwWorkingHours.ZoneList"] .grid-content-cell.icon.workinghourzone .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/WorkingHours16.png") !important;
+    background-position: 0 0 !important;
+}
+
+div[name="vwManagementWorkListItem.List"] .grid-content-cell.icon.document-generic .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/TaskList16.png") !important;
+    background-position: 0 0 !important;
+}
+
+div[name="sgridProcessSchedules"] .grid-content-cell.icon.processschedule .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/WorkflowSchedules16.png") !important;
+    background-position: 0 0 !important;
+}
+
+div[name="sgridSmartBoxPermissions"] .grid-content-cell.icon.user .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/SmartBoxSecurity16.png") !important;
+    background-position: 0 0 !important;
+}
+
+div[name="sgridSmartObjectPermissions"] .grid-content-cell.icon.user .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/SmartObjectSecurity16.png") !important;
+    background-position: 0 0 !important;
+}
+
+div[name="Licenses Area Item4"] .grid-content-cell.icon.user .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/User16.png") !important;
+    background-position: 0 0 !important;
+}
+
+div[name="sgridErrorLogs"] .grid-content-cell.icon.processerror .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/Error16.png") !important;
+    background-position: 0 0 !important;
+}
+
+div[name="Manage Claims Area Item"] .grid-content-cell.icon.securitylabels .grid-content-cell-wrapper:before, div[name="Manage Claims Area Item1"] .grid-content-cell.icon.securitylabels .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/Claims16.png") !important;
+    background-position: 0 0 !important;
+}
+
+div[name="Environment.Template.Fields Area Item1"] .grid-content-cell.icon.document-generic .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/Environment16.png") !important;
+    background-position: 0 0 !important;
+}
+
+div[name="Environment.DefaultTemplateEnvironments Area Item"] .grid-content-cell.icon.document-generic .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/EnvironmentLibrary16.png") !important;
+    background-position: 0 0 !important;
+}
+
+div[name="Environment.DefaultPermissions Area Item2"] .grid-content-cell.icon.document-generic .grid-content-cell-wrapper:before
+{
+    background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/DefaultPermissions16.png") !important;
+    background-position: 0 0 !important;
+}
+/*div[name="vwSmartObjects.ServiceInstance"] .grid-content-cell.icon.serviceinstance .grid-content-cell-wrapper:before {     background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/WorkflowSchedules16.png") !important;     background-position: 0 0 !important; }  div[name="vwSmartObjects.ServiceTypeList"] .grid-content-cell.icon.servicetype .grid-content-cell-wrapper:before {     background-image: url("../../Styles/Themes/Platinum2/RecoloredIcons/WorkflowSchedules16.png") !important;     background-position: 0 0 !important; }*/
+
+div.runtime-form.theme-entry
+{ /*overflow-y: auto !important;*/
+    overflow: hidden;
+}
+.management-worklistdelegate div.runtime-form.theme-entry
+{  
+    overflow-y: auto !important;
+}
+/*.theme-entry .view .innerpanel > .grid, .theme-entry .grid-header-wrapper, .theme-entry .panel-header div, .theme-entry .grid-header-wrapper div, .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox, .theme-entry a.SourceCode-Forms-Controls-Web-Button, .theme-entry .grid .grid-footer .toolbar { 	-webkit-border-radius: 0; 	border-radius: 0; 	-moz-box-shadow: 0 0 0 transparent; 	-ms-box-shadow: 0 0 0 transparent; 	-webkit-box-shadow: 0 0 0 transparent; 	box-shadow: 0 0 0 transparent; }*/

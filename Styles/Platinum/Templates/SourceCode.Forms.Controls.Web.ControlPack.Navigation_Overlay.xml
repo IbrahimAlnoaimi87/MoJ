@@ -1,0 +1,6 @@
+﻿<div class="PART-overlay navigation-overlay hidden">
+	<div class="navigation-overlay-container">
+		<div class="PART-olvery-icon navigation-loading-icon"></div>
+		<div class="PART-overlay-text navigation-overlay-text">{DisplayText}</div>
+	</div>
+</div>

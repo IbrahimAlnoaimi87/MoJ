@@ -1,0 +1,388 @@
+/* Grid Cell Icon Styling */
+
+
+.grid-content-cell
+{
+    &.icon
+    {
+        /* Grid Cell Icon Styling - Datatypes */
+        background-image: url("../Images/Icons/Default16px@{res}.png");
+
+        &.default
+        {
+            background-image: url("../Images/Icons/Default16px@{res}.png");
+        }
+
+        &.control-error
+        {
+            background-image: url("../Images/Icons/Toolbox/Controls_Error16@{res}.png");
+        }
+
+        &.user
+        {
+            background-image: url("../Images/Icons/Management/User16@{res}.png");
+        }
+
+        &.parameter
+        {
+            background-image: url("../Images/Icons/Toolbox/Parameter16@{res}.png");
+        }
+
+        &.group
+        {
+            background-image: url("../Images/Icons/Management/Groups16@{res}.png");
+        }
+
+        &.role
+        {
+            background-image: url("../Images/Icons/Management/Roles16@{res}.png");
+        }
+
+        &.state
+        {
+            background-image: url("../Images/Icons/Rules/State16@{res}.png");
+
+            tr.selected &
+            {
+                background-image: url("../Images/Icons/Rules/State_Selected16@{res}.png");
+            }
+        }
+
+
+        &.application
+        {
+            background-image: url("../Images/Icons/FileTypes/K2Project16@{res}.png");
+        }
+
+        &.smartfunction
+        {
+            background-image: url("../Images/Icons/DataTypes/Functions16@{res}.png");
+        }
+
+
+        &.subform
+        {
+            background-image: url("../Images/Icons/FileTypes/Form16@{res}.png");
+        }
+
+        &.service-instance
+        {
+            background-image: url("../Images/Icons/Management/ServiceInstance16@{res}.png");
+        }
+
+        &.service-object
+        {
+            background-image: url("../Images/Icons/Management/ServiceObject16@{res}.png");
+        }
+
+        &.service-method
+        {
+            background-image: url("../Images/Icons/Ribbon/Method16@{res}.png");
+        }
+
+        &.form-event
+        {
+            background-image: url("../Images/Icons/Rules/Rule16@{res}.png");
+
+            &.disabled-rule
+            {
+                background-image: url("../Images/Icons/Rules/Rule_Disabled16@{res}.png");
+            }
+
+            &.error, &-error
+            {
+                background-image: url("../Images/Icons/Rules/Rule_Error16@{res}.png");
+
+                &.disabled-rule
+                {
+                    //in the smaller grid (properties pane in form/view designer) - error wins as a single icon.
+                    background-image: url("../Images/Icons/Badges/Disable_Error16.png");
+                }
+            }
+        }
+
+        &.view-event
+        {
+            background-image: url("../Images/Icons/Rules/Rule16@{res}.png");
+
+            &.disabled-rule
+            {
+                background-image: url("../Images/Icons/Rules/Rule_Disabled16@{res}.png");
+            }
+
+            &.error, &-error
+            {
+                background-image: url("../Images/Icons/Rules/Rule_Error16@{res}.png");
+
+                &.disabled-rule
+                {
+                    //in the smaller grid (properties pane in form/view designer) - error wins as a single icon.
+                    background-image: url("../Images/Icons/Badges/Disable_Error16.png");
+                }
+            }
+        }
+
+
+        &.conditional-style-error
+        {
+            background-image: url("../Images/Icons/Badges/ConditionalStyling_Error16@{res}.png");
+        }
+
+        &.conditional-style
+        {
+            background-image: url("../Images/Icons/Toolbox/ConditionalStyling16@{res}.png");
+        }
+
+        &.form-state
+        {
+            background-image: url("../Images/Icons/Rules/State16@{res}.png");
+
+            tr.selected &
+            {
+                background-image: url("../Images/Icons/Rules/State_Selected16@{res}.png");
+            }
+        }
+
+        &.smartobject-method
+        {
+            background-image: url("../Images/Icons/Ribbon/Method16@{res}.png");
+        }
+
+        &.smartobject-property
+        {
+            background-image: url("../Images/Icons/Ribbon/Properties16@{res}.png");
+        }
+
+        &.smartobject-method-parameter
+        {
+            background-image: url("../Images/Icons/Ribbon/Method16@{res}.png");
+        }
+
+        &.service-object-property
+        {
+            background-image: url("../Images/Icons/Ribbon/Properties16@{res}.png");
+        }
+
+        &.service-method-input-property
+        {
+            background-image: url("../Images/Icons/Ribbon/Properties16@{res}.png");
+        }
+
+        &.service-method-return-property
+        {
+            background-image: url("../Images/Icons/Ribbon/Properties16@{res}.png");
+        }
+
+        &.specific-value
+        {
+            background-image: url("../Images/Icons/DataTypes/MultiValue16@{res}.png");
+        }
+
+        &.system-value
+        {
+            background-image: url("../Images/Icons/DataTypes/MultiValue16@{res}.png");
+        }
+
+        &.service-object-method-parameter
+        {
+            background-image: url("../Images/Icons/Ribbon/Method16@{res}.png");
+        }
+        /* Grid Cell Icon Styling - Expressions */
+        &.expression
+        {
+            background-image: url("../Images/Icons/Functions/RegularExpressionFunction16@{res}.png");
+        }
+
+        &.expression-error
+        {
+            background-image: url("../Images/Icons/Badges/RegularExpressionFunctionError16@{res}.png");
+        }
+        /* Grid Cell Icon Styling - Errors & Warnings */
+        &.error
+        {
+            background-image: url("../Images/Icons/Ribbon/Error16@{res}.png");
+        }
+
+        &.warning
+        {
+            background-image: url("../Images/Icons/Ribbon/ErrorHandling16@{res}.png");
+        }
+
+        &.form-state.error
+        {
+            background-image: url("../Images/Icons/Rules/State_Error16@{res}.png");
+
+            tr.selected &
+            {
+                background-image: url("../Images/Icons/Rules/State_Selected_Error16@{res}.png");
+            }
+        }
+        /* Grid Control Icons */
+        &.control-toolbartable
+        {
+            background-image: url("../Images/Icons/Toolbox/Table16@{res}.png");
+        }
+
+        &.control-imagepostback,
+        &.control-image
+        {
+            background-image: url("../Images/Icons/DataTypes/Image16@{res}.png");
+        }
+
+        &.control-tree
+        {
+            background-image: url("../Images/Icons/Toolbox/Context16@{res}.png");
+        }
+
+        &.controlevent
+        {
+            background-image: url("../Images/Icons/Toolbox/Event16@{res}.png");
+        }
+        /* Grid Cell Icon Styling - Patterns */
+        &.pattern
+        {
+            background-image: url("../Images/Icons/Functions/RegularExpressionFunction16@{res}.png");
+        }
+        /* Grid Cell Icon Styling - File Types */
+        &.document-generic
+        {
+            background-image: url("../Images/Icons/FileTypes/TextDoc16@{res}.png");
+        }
+
+        &.document-avi
+        {
+            background-image: url("../Images/Icons/FileTypes/Avi16@{res}.png");
+        }
+
+        &.document-mov
+        {
+            background-image: url("../Images/Icons/FileTypes/MOV16@{res}.png");
+        }
+
+        &.document-wmv
+        {
+            background-image: url("../Images/Icons/FileTypes/WMV16@{res}.png");
+        }
+
+        &.document-bmp
+        {
+            background-image: url("../Images/Icons/FileTypes/BMP16@{res}.png");
+        }
+
+        &.document-gif
+        {
+            background-image: url("../Images/Icons/FileTypes/GIF16@{res}.png");
+        }
+
+        &.document-png
+        {
+            background-image: url("../Images/Icons/FileTypes/PNG16@{res}.png");
+        }
+
+        &.document-chm
+        {
+            background-image: url("../Images/Icons/FileTypes/HLP16@{res}.png");
+        }
+
+        &.document-csv
+        {
+            background-image: url("../Images/Icons/FileTypes/CSV_16@{res}.png");
+        }
+
+        &.document-doc
+        {
+            background-image: url("../Images/Icons/FileTypes/Docs16@{res}.png");
+        }
+
+        &.document-htm
+        {
+            background-image: url("../Images/Icons/FileTypes/HTM16@{res}.png");
+        }
+
+        &.document-html
+        {
+            background-image: url("../Images/Icons/FileTypes/HTML16@{res}.png");
+        }
+
+        &.document-mp3
+        {
+            background-image: url("../Images/Icons/FileTypes/MP316@{res}.png");
+        }
+
+        &.document-wav
+        {
+            background-image: url("../Images/Icons/FileTypes/WAV16@{res}.png");
+        }
+
+        &.document-wma
+        {
+            background-image: url("../Images/Icons/FileTypes/WMA16@{res}.png");
+        }
+
+        &.document-one
+        {
+            background-image: url("../Images/Icons/FileTypes/One16@{res}.png");
+        }
+
+        &.document-pdf
+        {
+            background-image: url("../Images/Icons/FileTypes/Pdf16@{res}.png");
+        }
+
+        &.document-ppt
+        {
+            background-image: url("../Images/Icons/FileTypes/PPT16@{res}.png");
+        }
+
+        &.document-pps
+        {
+            background-image: url("../Images/Icons/FileTypes/PPS16@{res}.png");
+        }
+
+        &.document-txt
+        {
+            background-image: url("../Images/Icons/FileTypes/TextDoc16@{res}.png");
+        }
+
+        &.document-xls
+        {
+            background-image: url("../Images/Icons/FileTypes/XLS16@{res}.png");
+        }
+
+        &.document-xsn
+        {
+            background-image: url("../Images/Icons/FileTypes/XSN16@{res}.png");
+        }
+
+        &.document-zip
+        {
+            background-image: url("../Images/Icons/FileTypes/Zip16@{res}.png");
+        }
+
+        &.user-account
+        {
+            background-image: url("../Images/Icons/Management/Claims16@{res}.png");
+        }
+
+        &.invoice
+        {
+            background-image: url("../Images/Icons/Toolbar/Document16@{res}.png");
+        }
+
+        &.view-flow
+        {
+            background-image: url("../Images/Icons/Management/ViewFlow16@{res}.png");
+        }
+    }
+}
+
+
+.grid .grid-content-cell-wrapper .multiline-cell-icon.service-method
+{
+    background-image: url("../Images/Icons/Ribbon/Method16@{res}.png");
+}
+
+.grid .grid-content-cell-wrapper .multiline-cell-icon.service-instance
+{
+    background-image: url("../Images/Icons/Management/ServiceInstance16@{res}.png");
+}

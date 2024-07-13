@@ -1,0 +1,213 @@
+
+a.dropbutton
+{
+    background-image: url("../Images/Buttons/ShowHideButton@{res}.png");
+}
+
+a.clearbutton
+{
+    background-image: url("../Images/Buttons/ClearSearchButton@{res}.png");
+}
+
+
+//Save button
+.button.save
+{
+    span.button-wrapper
+    {
+        background-image: url("../Images/Icons/Toolbar/Save16@{res}.png");
+    }
+
+    &:hover
+    {
+        span.button-wrapper
+        {
+            background-image: url("../Images/Icons/Toolbar/Save_Hover16@{res}.png");
+        }
+    }
+}
+
+    .button.save.dark.mono
+    {
+        span.button-wrapper
+        {
+            background-image: url("../Images/Icons/Toolbar/Save_Alt16@{res}.png");
+        }
+
+        &:hover
+        {
+            span.button-wrapper
+            {
+                background-image: url("../Images/Icons/Toolbar/Save_Alt16@{res}.png");
+            }
+        }
+    }
+
+
+
+//toggle panel button
+.button.leftpaneltoggle
+{
+    span.button-wrapper
+    {
+        background-image: url("../Images/Icons/Toolbar/ExpandPanel16@{res}.png");
+    }
+
+    &:hover
+    {
+        span.button-wrapper
+        {
+            background-image: url("../Images/Icons/Toolbar/ExpandPanel_Hover16@{res}.png");
+        }
+    }
+
+    &.st-toggle-on
+    {
+        span.button-wrapper
+        {
+            background-image: url("../Images/Icons/Toolbar/CollapsePanel16@{res}.png");
+        }
+
+        &:hover
+        {
+            span.button-wrapper
+            {
+                background-image: url("../Images/Icons/Toolbar/CollapsePanel_Hover16@{res}.png");
+            }
+        }
+    }
+}
+
+    .button.leftpaneltoggle.dark
+    {
+        span.button-wrapper
+        {
+            background-image: url("../Images/Icons/Toolbar/ExpandPanel_Alt16@{res}.png");
+        }
+
+        &:hover
+        {
+            span.button-wrapper
+            {
+                background-image: url("../Images/Icons/Toolbar/ExpandPanel_Hover_Alt16@{res}.png");
+            }
+        }
+
+        &.st-toggle-on
+        {
+            span.button-wrapper
+            {
+                background-image: url("../Images/Icons/Toolbar/CollapsePanel_Alt16@{res}.png");
+            }
+
+            &:hover
+            {
+                span.button-wrapper
+                {
+                    background-image: url("../Images/Icons/Toolbar/CollapsePanel_Hover_Alt16@{res}.png");
+                }
+            }
+        }
+    }
+
+//help button
+a.button.help span.button-wrapper
+{
+    background-image: url("../Images/Icons/EditToolbox/Help16@{res}.png");
+}
+
+a.button.help:hover:not(.disabled) span.button-wrapper
+{
+    background-image: url("../Images/Icons/EditToolbox/Help_Hover16@{res}.png");
+}
+
+//external link button
+a.button.externalLink span.button-text::after
+{
+    background-image: url("../Images/Icons/Management/ExternalLink_Dark16@{res}.png");
+}
+
+a.button.externalLink:hover:not(.disabled) span.button-text::after
+{
+    background-image: url("../Images/Icons/Management/ExternalLink_Alt16@{res}.png");
+}
+
+
+//finish button
+a.button.finish
+{
+    //Default button (grey button)
+    &.loading
+    {
+        .button-wrapper
+        {
+            background-image: url("../Images/Icons/Animated/LoadingControl_f8f8f8_16@{res}.gif");
+        }
+    }
+
+    &.complete
+    {
+        .button-wrapper
+        {
+            background-image: url("../Images/Icons/Dropdownset/SelectedRowIndicator16@{res}.png");
+        }
+    }
+    //blue primary-cta button
+    &.buttonstyle-primary
+    {
+        &.loading
+        {
+            .button-wrapper
+            {
+                background-image: url("../Images/Icons/Animated/LoadingControl_2196f3_16@{res}.gif");
+            }
+        }
+
+        &.complete
+        {
+            .button-wrapper
+            {
+                background-image: url("../Images/Icons/Dropdownset/SelectedRowIndicator_Hover16@{res}.png");
+            }
+        }
+    }
+}
+
+a.button.clearsearch span.button-wrapper,
+a.button.clearsearch:hover span.button-wrapper,
+a.button.clearsearch:hover:active span.button-wrapper,
+a.button.clearsearch:hover:focus span.button-wrapper
+{
+    background-image: url("../Images/Icons/ClearSearch16@{res}.png");
+}
+
+
+a.button.clearsearch.disabled span.button-wrapper,
+a.button.clearsearch.disabled:hover span.button-wrapper,
+a.button.clearsearch.disabled:hover:focus span.button-wrapper,
+a.button.clearsearch.disabled:hover:active span.button-wrapper,
+a.button.clearsearch.disabled:focus span.button-wrapper,
+a.button.clearsearch.disabled:active span.button-wrapper
+{
+    background-image: url("../Images/Icons/ClearSearch16@{res}.png");
+}
+
+
+a.button.filter
+{
+
+    span.button-wrapper
+    {
+        background-image: url("../Images/Icons/Toolbar/Filter16@{res}.png");
+    }
+
+    &.menu-active span.button-wrapper
+    {
+        background-image: url("../Images/Icons/Toolbar/Filter16@{res}.png");
+    }
+
+    &.active span.button-wrapper
+    {
+        background-image: url("../Images/Icons/Toolbar/Filter_Modified16@{res}.png");
+    }
+}

@@ -1,0 +1,124 @@
+﻿/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import "../../../Designer_Variables.less";
+
+.ico
+{
+    background-image: url("../Images/Icons/Default16px.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 16px;
+    background-size: 16px 16px;
+}
+
+.ico.medium
+{
+    background-image: url("../Images/Icons/Default32px.png");
+    height: 32px;
+    width: 32px;
+    background-size: 32px 32px;
+}
+
+.ico.large
+{
+    background-image: url("../Images/Icons/Default64px.png");
+    height: 64px;
+    width: 64px;
+    background-size: 64px 64px;
+}
+
+.icon
+{
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.icon-size16
+{
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+}
+
+.icon-size18
+{
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px;
+}
+
+.icon-size20
+{
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+}
+
+.icon-size22
+{
+    width: 22px;
+    height: 22px;
+    background-size: 22px 22px;
+}
+
+.icon-size24
+{
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+}
+
+.icon-size30
+{
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+}
+
+.icon-size32
+{
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+}
+
+.icon-size64
+{
+    width: 64px;
+    height: 64px;
+    background-size: 64px 64px;
+}
+
+.icon-size128
+{
+    width: 128px;
+    height: 128px;
+    background-size: 128px 128px;
+}
+
+.icon-size256
+{
+    width: 256px;
+    height: 256px;
+    background-size: 256px 256px;
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('icons_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('icons_images.less');
+}

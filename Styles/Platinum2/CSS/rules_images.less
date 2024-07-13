@@ -1,0 +1,119 @@
+
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+.rulesUl li.form-context,
+.rulesUl.form-context:not(.If) > div.rule-item-wrapper
+{
+    background-image: url("../Images/Icons/FileTypes/Form16@{res}.png");
+}
+
+.rulesUl li.view-context,
+.rulesUl li.control-context,
+.rulesUl.view-context:not(.If) > div.rule-item-wrapper,
+.rulesUl.control-context:not(.If) > div.rule-item-wrapper
+{
+    background-image: url("../Images/Icons/FileTypes/View16@{res}.png");
+}
+
+.rulesUl li.state-context,
+.rulesUl.state-context:not(.If) > div.rule-item-wrapper
+{
+    background-image: url("../Images/Icons/FileTypes/Form16@{res}.png");
+}
+
+.rulesUl li.subform-context,
+.rulesUl.subform-context:not(.If) > div.rule-item-wrapper
+{
+    background-image: url("../Images/Icons/FileTypes/Form16@{res}.png");
+}
+
+.rulesUl li.form-context.in-error,
+.rulesUl.form-context.in-error > div.rule-item-wrapper
+{
+    background-image: url("../Images/Icons/Badges/FormError16@{res}.png");
+}
+
+.rulesUl li.view-context.in-error,
+.rulesUl li.control-context.in-error,
+.rulesUl.view-context.in-error > div.rule-item-wrapper,
+.rulesUl.control-context.in-error > div.rule-item-wrapper
+{
+    background-image: url("../Images/Icons/Badges/ViewError16@{res}.png");
+}
+
+.rulesUl li.state-context.in-error,
+.rulesUl.state-context.in-error > div.rule-item-wrapper
+{
+    background-image: url("../Images/Icons/Badges/FormError16@{res}.png");
+}
+
+.rulesUl li.subform-context.in-error,
+.rulesUl.subform-context.in-error > div.rule-item-wrapper
+{
+    background-image: url("../Images/Icons/FileTypes/Form16@{res}.png");
+}
+
+.rulesUl div.comments
+{
+    background-image: url("../Images/Icons/Toolbar/Comment16@{res}.png");
+}
+
+
+.handler-expander,
+.condition-expander,
+.execution-expander,
+.section-expander
+{
+    background-image: url("../Images/Tree/minus_alt@{res}.gif");
+
+    &.collapsed
+    {
+        background-image: url("../Images/Tree/plus_alt@{res}.gif");
+    }
+}
+
+.categorySectionsList.error .section-expander::after
+{
+    background-image: url("../Images/Icons/Ribbon/Error16@{res}.png");
+}
+
+div.rules-wizard-error
+{
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling16@{res}.png");
+}
+
+
+.divRemove
+{
+    background-image: url("../Images/Icons/Ribbon/Remove16@{res}.png");
+}
+
+.divUpArrow
+{
+    background-image: url("../Images/Icons/Ribbon/MoveUp16@{res}.png");
+}
+
+.divUpArrow.disabled
+{
+    background-image: url("../Images/Icons/Ribbon/MoveDown16@{res}.png");
+}
+
+.RuleMapping
+{
+    background-image: url("../Images/Icons/Ribbon/Properties16@{res}.png");
+}
+
+.rule-action
+{
+    background-image: url("../Images/Icons/Default16px@{res}.png");
+}
+
+#rwTabbedRuleItemSelectorPanel.collapsed .panel-header-controls a.expand
+{
+    background-image: url("../Images/Arrows/black_arrow_right@{res}.png");
+}

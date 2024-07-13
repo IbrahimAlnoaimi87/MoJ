@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Codebehind="Default.master.cs" Inherits="SourceCode.Forms.MasterPages.Default"
+  MasterPageFile="~/MasterPages/Generic.master" %>
+  
+<asp:content ID="PageContentPlaceHolder" contentplaceholderid="PageContent" runat="server">
+    <div class="default-header">
+        <div class="default-header-l"></div>
+        <div class="default-header-c">
+            <div class="default-header-logo">
+                <div class="wrapper"></div>
+            </div>
+            <div class="default-header-content">
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="HeaderContentPlaceHolder" runat="server" />
+                </div>
+            </div>
+            <div class="default-header-divider"></div>
+            <div class="default-header-systeminfo">
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="HeaderSystemContentPlaceHolder" runat="server" />
+                </div>
+            </div>
+        </div>
+        <div class="default-header-r"></div>
+    </div>
+    <div class="default-content">
+        <div class="default-content-t">
+            <div class="default-content-tl"></div>
+            <div class="default-content-tc"></div>
+            <div class="default-content-tr"></div>
+        </div>
+        <div class="default-content-m">
+            <div class="default-content-ml"></div>
+            <div class="default-content-mc">
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server" />
+                </div>
+            </div>
+            <div class="default-content-mr"></div>
+        </div>
+        <div class="default-content-b">
+            <div class="default-content-bl"></div>
+            <div class="default-content-bc"></div>
+            <div class="default-content-br"></div>
+        </div>
+    </div>
+    <div class="default-footer">
+        <div class="default-footer-l"></div>
+        <div class="default-footer-c">
+            <div class="wrapper">
+                <asp:ContentPlaceHolder ID="FooterContentPlaceHolder" runat="server" />
+            </div>
+        </div>
+        <div class="default-footer-r"></div>
+    </div>
+</asp:content>
+<asp:Content ID="PageVariables" ContentPlaceHolderID="PageVariables" runat="server">
+  <asp:ContentPlaceHolder ID="LocalVariables" runat="server">
+  </asp:ContentPlaceHolder>
+</asp:Content>

@@ -1,0 +1,225 @@
+﻿/* #region DETAILS DIALOG UI */
+
+html.management.features-sharepoint-sitecollection .theme-entry .row.details .feature-header .header-image
+{
+    width: 479px;
+    height: 64px;
+    -moz-background-size: 479px 64px;
+    background-size: 479px 64px;
+}
+
+html.management.features-sharepoint-sitecollection .theme-entry .row.details .feature-description
+{
+    padding: 3rem 0 1rem 0;
+}
+
+    html.management.features-sharepoint-sitecollection .theme-entry .row.details .feature-description .description-text:nth-child(1)
+    {
+        display: block;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    html.management.features-sharepoint-sitecollection .theme-entry .row.details .feature-description a
+    {
+        padding-left: .5rem;
+    }
+    
+/* #endregion */
+
+/* #region ACTIVATION DIALOG UI */
+
+/* #region ACTIVATION ROW */
+
+html.management.features-sharepoint-sitecollection .theme-entry .row.activation .Grid-Layout .editor-cell[row='1'] .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlHeader"]
+{
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+html.management.features-sharepoint-sitecollection .theme-entry .row.activation .Grid-Layout .editor-cell.lastrow
+{
+    display: none;
+}
+
+html.management.features-sharepoint-sitecollection .theme-entry .row.activation .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnDetails"]
+{
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    line-height: normal;
+    min-height: 1.6rem;
+    color: #3D95F2;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    background-color: transparent;
+    height: 1.6rem;
+    text-transform: capitalize;
+    margin: 2.5rem 0 0 1rem;
+    padding: 0;
+}
+
+    html.management.features-sharepoint-sitecollection .theme-entry .row.activation .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnDetails"]:hover
+    {
+        color: #29b6f6;
+    }
+
+    html.management.features-sharepoint-sitecollection .theme-entry .row.activation .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnDetails"]:active,
+    html.management.features-sharepoint-sitecollection .theme-entry .row.activation .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnDetails"]:focus
+    {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        animation: unset;
+    }
+
+html.management.features-sharepoint-sitecollection .theme-entry .row.activation span.attention .activation-step .step-buttons
+{
+    display:none;
+    height: 0;
+}
+
+/* #endregion */
+
+/* #region LIST ROW */
+
+html.management.features-sharepoint-sitecollection > body > form > .runtime-content > .runtime-form > .form
+{
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    height: calc(100% - 55px) !important; /* Override fluid height */
+}
+
+    html.management.features-sharepoint-sitecollection .theme-entry .row.details,
+    html.management.features-sharepoint-sitecollection .theme-entry .row.activation,
+    html.management.features-sharepoint-sitecollection .theme-entry .row.list-controls
+    {
+        flex-shrink: 0;
+    }
+
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list
+        {            
+            flex-basis: 25.6rem;
+            flex-shrink: 1;
+            max-height: 25.6rem;
+            min-height: 0;
+        }
+
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list > .view,
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list > .view > .innerpanel,
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list > .view > .innerpanel > .grid,
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list > .view > .innerpanel > .grid > .grid-body
+        {
+            height: 100% !important; /* Apply fluid height */
+        }
+
+            html.management.features-sharepoint-sitecollection .theme-entry .row.list > .view > .innerpanel > .grid > .grid-body > .grid-column-headers
+            {
+                height: 32px;
+            }
+
+                html.management.features-sharepoint-sitecollection .theme-entry .row.list > .view > .innerpanel > .grid > .grid-body > .grid-body-content
+                {
+                    min-height: 32px;
+                    max-height: 25.6rem;
+                    overflow-y: auto;
+                    height: calc(100% - 32px);
+                }
+
+html.management.features-sharepoint-sitecollection .theme-entry .row.list
+{
+    margin: 0 4rem 1rem 6.8rem;
+}
+
+    html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-toolbars
+    {
+        display: none;
+    }
+
+    html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-column-headers
+    {
+        background-color: #FDFDFD;
+        border-bottom: 1px #DDDDDD solid;
+    }
+
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-column-headers .grid-column-header-text
+        {
+            color: #A2A2A2;
+        }
+
+    html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-body
+    {
+        border: 1px #DDDDDD solid;
+        background-color: #FDFDFD;
+    }
+    
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-body .grid-body-content .grid-body-content-wrapper
+        {
+            background-color: #FDFDFD;
+        }
+
+            html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-body .grid-body-content .grid-body-content-wrapper .runtime-list-item
+            {
+                color: #4E5758;
+            }
+
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-body .grid-body-content tr:hover td,
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-body .grid-body-content tr.selected td,
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-body .grid-body-content tr.highlighted td
+        {
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-body .grid-body-content a.site-collection-link
+        {
+            color: #4E5758;
+            text-decoration: none;
+        }
+
+            html.management.features-sharepoint-sitecollection .theme-entry .row.list .grid-body .grid-body-content a.site-collection-link:focus
+            {
+                outline: none;
+            }
+
+html.management.features-sharepoint-sitecollection .theme-entry .row.list-controls
+{
+    margin: 0 4rem 0 6.9rem;
+}
+
+    html.management.features-sharepoint-sitecollection .theme-entry .row.list-controls a.SourceCode-Forms-Controls-Web-Button
+    {
+        margin: 0 4rem 0 0;
+    }
+
+/* #endregion */
+
+html.management.features-sharepoint-sitecollection .theme-entry .row:nth-child(5),
+html.management.features-sharepoint-sitecollection .theme-entry .row:nth-child(6)
+{
+    display: none;
+}
+
+/* #endregion */
+
+/* #region ICONS */
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    html.management.features-sharepoint-sitecollection .theme-entry .row.details .feature-header .header-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/SharePoint%20Site%20Collection%20Lockup.png);
+    }
+}
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    html.management.features-sharepoint-sitecollection .theme-entry .row.details .feature-header .header-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/SharePoint%20Site%20Collection%20Lockup@2x.png);
+    }    
+}
+
+/* #endregion */

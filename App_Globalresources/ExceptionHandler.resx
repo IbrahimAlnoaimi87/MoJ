@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CategoryErrorSource" xml:space="preserve">
+    <value>Get Category failed, the requested Category could not be found.</value>
+  </data>
+  <data name="CategoryErrorType" xml:space="preserve">
+    <value>Invalid Category</value>
+  </data>
+  <data name="DeclaringType" xml:space="preserve">
+    <value>Declaring Type</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>An exception has occurred.</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="MemberType" xml:space="preserve">
+    <value>Member Type</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MethodBase" xml:space="preserve">
+    <value>Method Base</value>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Form" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="FormError" xml:space="preserve">
+    <value>Form could not be Found.</value>
+  </data>
+  <data name="FormErrorSource" xml:space="preserve">
+    <value>Form could not be found. Ensure that the form exists.</value>
+  </data>
+  <data name="FormErrorType" xml:space="preserve">
+    <value>Invalid Form</value>
+  </data>
+  <data name="Forms" xml:space="preserve">
+    <value>Forms</value>
+  </data>
+  <data name="StyleProfile" xml:space="preserve">
+    <value>Style Profile</value>
+  </data>
+  <data name="StyleProfileError" xml:space="preserve">
+    <value>Style Profile could not be Found.</value>
+  </data>
+  <data name="StyleProfileErrorSource" xml:space="preserve">
+    <value>Style profile could not be found. Ensure that the style profile exists.</value>
+  </data>
+  <data name="StyleProfileErrorType" xml:space="preserve">
+    <value>Invalid Style Profile</value>
+  </data>
+  <data name="StyleProfiles" xml:space="preserve">
+    <value>Style Profiles</value>
+  </data>
+  <data name="ProcessError" xml:space="preserve">
+    <value>Workflow could not be Found.</value>
+  </data>
+  <data name="ProcessErrorSource" xml:space="preserve">
+    <value>Get Workflow failed, the requested Workflow could not be found.</value>
+  </data>
+  <data name="ProcessErrorType" xml:space="preserve">
+    <value>Invalid Workflow</value>
+  </data>
+  <data name="ScopeName" xml:space="preserve">
+    <value>Scope Name</value>
+  </data>
+  <data name="SmartObjectError" xml:space="preserve">
+    <value>SmartObject could not be Found.</value>
+  </data>
+  <data name="SmartobjectErrorSource" xml:space="preserve">
+    <value>SmartObject could not be found. Ensure that the SmartObject exists.</value>
+  </data>
+  <data name="SmartobjectErrorType" xml:space="preserve">
+    <value>Invalid SmartObject</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="StackTrace" xml:space="preserve">
+    <value>Stack Trace</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Exception</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ViewError" xml:space="preserve">
+    <value>View could not be Found.</value>
+  </data>
+  <data name="ViewErrorSource" xml:space="preserve">
+    <value>View could not be found. Ensure that the view exists.</value>
+  </data>
+  <data name="ViewErrorType" xml:space="preserve">
+    <value>Invalid View</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Views</value>
+  </data>
+  <data name="WebServerErrorSource" xml:space="preserve">
+    <value>Connection to the Web Service failed, the Web Service is unreachable.</value>
+  </data>
+  <data name="WebServerErrorType" xml:space="preserve">
+    <value>Web Service Error</value>
+  </data>
+  <data name="FormCheckinErrorSource" xml:space="preserve">
+    <value>Get Form failed, the requested Form is not checked in.</value>
+  </data>
+  <data name="ViewCheckinErrorSource" xml:space="preserve">
+    <value>Get View failed, the requested View is not checked in.</value>
+  </data>
+  <data name="FormNotFound" xml:space="preserve">
+    <value>Form '{0}' could not be found.</value>
+  </data>
+  <data name="ViewNotFound" xml:space="preserve">
+    <value>View '{0}' could not be found.</value>
+  </data>
+  <data name="FormNotFoundOrCheckedIn" xml:space="preserve">
+    <value>Form '{0}' could not be found. Ensure that the form exists, that it is checked in, and that you are authorized to run the form and its views.</value>
+  </data>
+  <data name="ViewNotFoundOrCheckedIn" xml:space="preserve">
+    <value>View '{0}' could not be found. Ensure that the view exists, that it is checked in, and that you are authorized to run the view.</value>
+  </data>
+  <data name="CopyDetailsHeaderText" xml:space="preserve">
+    <value>Copy Details</value>
+  </data>
+  <data name="CopyDetailsInstructionsText" xml:space="preserve">
+    <value>Press Ctrl+C on your keyboard to copy the error text:</value>
+  </data>
+  <data name="InvalidOperation" xml:space="preserve">
+    <value>Invalid Operation, argument {0} cannot be null or undefined.</value>
+  </data>
+  <data name="SetRuleMethodError" xml:space="preserve">
+    <value>The method {0} for SetRuleMethod could not be found.</value>
+  </data>
+  <data name="VanityURLError" xml:space="preserve">
+    <value>Vanity URL could not be constructed for {0}.</value>
+  </data>
+  <data name="EnvironmentFieldIdInvalid" xml:space="preserve">
+    <value>The given environment field's id was not in the correct Guid format. {0}</value>
+  </data>
+  <data name="ArgumentTypeShouldBeAnEnum" xml:space="preserve">
+    <value>Argument should be a System.Enum</value>
+  </data>
+  <data name="PleaseLoginHeader" xml:space="preserve">
+    <value>Please log in</value>
+    <comment>Header text for the message popup shown when an external login popup is opened, calling the user to action to login on the separate external popup</comment>
+  </data>
+  <data name="AuthRequiredMessagePart1" xml:space="preserve">
+    <value>We must create a token on your behalf - {0}. Once the token is successfully created, click OK to refresh this page.</value>
+    <comment>First part of the message shown when an external login popup is opened, the "{0}" token will be replaced by a link to open the external login popup, which can be clicked if the initial popup was blocked</comment>
+  </data>
+  <data name="AuthRequiredMessagePart2" xml:space="preserve">
+    <value />
+    <comment>Second part of the message shown when an external login popup is opened, the "{0}" token will be replaced by the display text on the message button, default text is "OK"</comment>
+  </data>
+  <data name="LoginLinkDisplay" xml:space="preserve">
+    <value>click here</value>
+    <comment>The display text for the link stated in the "AuthRequiredMessagePart1" resource above</comment>
+  </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>An unknown error has occurred.</value>
+  </data>
+  <data name="RuntimeLicenseOnlyErrorSource" xml:space="preserve">
+    <value>The installed Runtime license does not permit the modification of SmartForms artifacts.</value>
+  </data>
+  <data name="ErrorDescription" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="ErrorDetails" xml:space="preserve">
+    <value>More Details</value>
+  </data>
+  <data name="ErrorException" xml:space="preserve">
+    <value>Exception Details:</value>
+  </data>
+  <data name="ErrorHeader" xml:space="preserve">
+    <value>Server Error</value>
+  </data>
+  <data name="TableLayoutCorruptedLine1" xml:space="preserve">
+    <value>The layout table is not valid at: row {0}, column {1}.</value>
+    <comment>First line of error message. If for some reason the code that manages the table structure in the view and form designer finds we have created an invalid table layout the error will show. The error will show when the table layout is recalculated.  Some examples are: adding/removing a column/ row, merging a column/ row, selecting a table cell. {0} and {1} will contain a non zero indexed row / column number respectively.</comment>
+  </data>
+  <data name="TableLayoutCorruptedLine2" xml:space="preserve">
+    <value>If you have not saved the view, discard your changes and try again. If you have saved the view, undo your checkout. Otherwise contact Nintex Support.</value>
+    <comment>Second line of error message. If for some reason the code that manages the table structure in the view and form designer finds we have created an invalid table layout the error will show. The error will show when the table layout is recalculated.  Some examples are: adding/removing a column/ row, merging a column/ row, selecting a table cell</comment>
+  </data>
+  <data name="SmartObjectNotFound" xml:space="preserve">
+    <value>SmartObject '{0}' could not be found.</value>
+  </data>
+  <data name="AuthClassNotFound" xml:space="preserve">
+    <value>Class {0} was not found.</value>
+  </data>
+  <data name="WorkflowLockedError" xml:space="preserve">
+    <value>Workflow is locked.</value>
+    <comment>Error shown when the user attempts to edit or move a locked workflow.</comment>
+  </data>
+  <data name="WorkflowLockedErrorSource" xml:space="preserve">
+    <value>The workflow is locked by another user for editing.</value>
+    <comment>Error shown when the user attempts to edit or move a locked workflow.</comment>
+  </data>
+  <data name="WorkflowLockedErrorType" xml:space="preserve">
+    <value>Workflow Locked</value>
+    <comment>Error type for errors that occur when the user attempts to edit or move a locked workflow.</comment>
+  </data>
+  <data name="SiteSettingsError" xml:space="preserve">
+    <value>There was a problem loading site settings. If the issue persists, contact Nintex Support. {0} Click OK to retry.</value>
+    <comment>This error message is shown on site load if the javscript to load settings fails.  This could fail for serveral reasons for example if the IIS site was reset while the user was loading or if authentication failed or if there was a server error. The {0} placeholder will contain line breaks.</comment>
+  </data>
+  <data name="ErrorCommonUnableToPublish" xml:space="preserve">
+    <value>Could not publish SmartObject Definition to server.</value>
+  </data>
+  <data name="ErrorExistingDataCommon" xml:space="preserve">
+    <value>The "{0}" field’s {1} setting cannot be changed unless you delete existing data prior to changing it.</value>
+  </data>
+  <data name="ErrorExistingDataLargerValue" xml:space="preserve">
+    <value>The "{0}" field’s {1} setting cannot be changed unless you delete existing data prior to changing it or specify a larger value.</value>
+  </data>
+  <data name="InvalidReturnUrl" xml:space="preserve">
+    <value>Invalid host in returnURL</value>
+    <comment>The returnUrl querystring value is not valid, or points to a different host.</comment>
+  </data>
+  <data name="SystemViewEditError" xml:space="preserve">
+    <value>Cannot edit system views</value>
+    <comment>Error when system views are edited by user through forms or URL manipulation</comment>
+  </data>
+  <data name="SystemViewErrorSource" xml:space="preserve">
+    <value>Cannot edit system views. Ensure this is not a system view.</value>
+  </data>
+  <data name="SystemViewErrorType" xml:space="preserve">
+    <value>Invalid view to edit</value>
+  </data>
+  <data name="InvalidThemeSpecified" xml:space="preserve">
+    <value>Invalid theme specified</value>
+    <comment>Error when an invalid theme name is requested</comment>
+  </data>
+  <data name="ErrorTextWithCorrelationID" xml:space="preserve">
+    <value>Error. CorrelationID: {0}</value>
+  </data>
+  <data name="GenericMessageWithCorrelationID" xml:space="preserve">
+    <value>An unhandled error has occurred, please contact your administrator with the following ID. CorrelationID: {0}</value>
+  </data>
+  <data name="TitleWithCorrelationID" xml:space="preserve">
+    <value>{0}. CorrelationID: {1}</value>
+  </data>
+</root>

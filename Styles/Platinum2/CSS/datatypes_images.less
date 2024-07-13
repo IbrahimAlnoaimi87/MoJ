@@ -1,0 +1,77 @@
+.mixin-data-type-internal(@datatypeclass;@imageurl)
+{
+    span.field.@{datatypeclass},
+    .grid .grid-content-cell.icon.@{datatypeclass},
+    .drop-menu.icon-control ul.drop-menu a.@{datatypeclass},
+    .input-control.icon-control.@{datatypeclass} .input-control-icon,
+    .input-control.icon-control.@{datatypeclass} .input-control-wrapper,
+    .tree li.@{datatypeclass} > a,
+    .tree li.@{datatypeclass} > span,
+    .readonly-property.@{datatypeclass},
+    a.ui-draggable-dragging.@{datatypeclass},
+    .sfc-field-item.@{datatypeclass},
+    .toolboxitem.@{datatypeclass},
+    ul.sortable li a.icon.@{datatypeclass}
+    {
+        background-image: url( "../Images/Icons/DataTypes/@{imageurl}16@{res}.png");
+    }
+
+    .token-input .entity.icon.@{datatypeclass},
+    .input-control .drop-item.@{datatypeclass},
+    .token.@{datatypeclass} /* This is used for rule widget tokens (TFS756891) */
+    {
+        background-image: url( "../Images/Icons/DataTypes/@{imageurl}_Selected14@{res}.png");
+    }
+
+    .toolboxitem.@{datatypeclass}.invalid,
+    .propertyGridPropertyItem.error .input-control.icon-control.@{datatypeclass} .input-control-wrapper
+    {
+        background-image: url( "../Images/Icons/Badges/@{imageurl}_Error16@{res}.png");
+    }
+}
+
+.mixin-data-type (@datatypeclass;@imageurl)
+{
+    .mixin-data-type-internal(@datatypeclass;@imageurl);
+    /*  
+		FF refers to form field which actually means the runtime source field.  
+		This was used to differentiate mappings of the results coming directly from a smartobject and the result of evaluating the current runtime value of the field linked to the smartobject.  
+		This can only apply to smartobject and smartobject property types.  
+
+		For FileTypes none of those selectors had any value, thus you won't see it in the other *_images.less files.
+
+		It was decided in SFRecolor project to have the same icon for both.
+
+		(TFS 730349 - Output mapping described in this TFS scenario has class with 'FF')
+	*/
+    @datatypeclassFF: ~"@{datatypeclass}FF";
+    .mixin-data-type-internal(@datatypeclassFF;@imageurl);
+}
+
+
+html
+{
+    .mixin-data-type(auto-number;AutoNumber);
+    .mixin-data-type(autonumber;AutoNumber);
+    .mixin-data-type(auto-guid;AutoGUID);
+    .mixin-data-type(autoguid;AutoGUID);
+    .mixin-data-type(guid;GUID);
+    .mixin-data-type(text;Text);
+    .mixin-data-type(number;Number);
+    .mixin-data-type(memo;Memo);
+    .mixin-data-type(decimal;Decimal);
+    .mixin-data-type(yesno;YesNo);
+    .mixin-data-type(datetime;DateTime);
+    .mixin-data-type(date-time;DateTime);
+    .mixin-data-type(image;Image);
+    .mixin-data-type(file;File);
+    .mixin-data-type(hyperlink;Hyperlink);
+    .mixin-data-type(multivalue;MultiValue);
+    .mixin-data-type(multi-value;MultiValue);
+    .mixin-data-type(multivalue-control;MultiValue);
+    .mixin-data-type(date;Date);
+    .mixin-data-type(time;Time);
+    .mixin-data-type(xml;XML);
+    .mixin-data-type(time;Time);
+    .mixin-data-type(type-unknown;Properties);
+}

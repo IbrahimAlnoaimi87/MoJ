@@ -1,0 +1,108 @@
+//Purpose: The filetypes set are for category explorer file icons.
+//         the same icons are used on the windows/mac desktop and in mobile apps, for consistency.
+//         This also should include files like images/documents/video file icons.
+
+
+.mixin-filetypes(@cssclass;@imageurl;@hasStates: false; @hasWorkflowStates: false;)
+{
+    .menu-item.@{cssclass} .menu-item-icon,
+    a.ui-draggable-dragging.@{cssclass},
+    .tree li.@{cssclass} > a,
+    .tree li.@{cssclass} > span,
+    .tree li.closed.@{cssclass} > a,
+    .tree li.closed.@{cssclass} > span,
+    .tree li.open.@{cssclass} > a,
+    .tree li.open.@{cssclass} > span,
+    .grid .grid-content-cell.icon.@{cssclass},
+    #AppStudioIntroPanel .recents-box li.@{cssclass} > a,
+    .menu a.menu-item.@{cssclass} span.menu-item-icon,
+    .panel-header-wrapper .panel-header-icon.@{cssclass}
+    {
+        background-image: url("../Images/Icons/FileTypes/@{imageurl}16@{res}.png");
+    }
+
+    .token-input .entity.icon.@{cssclass}
+    {
+        background-image: url("../Images/Icons/FileTypes/@{imageurl}_Selected14@{res}.png");
+    }
+    //states css is only applied if the file type can have checked-out/in/user/locked file states.
+    .states() when (@hasStates = true)
+    {
+        .tree li.@{cssclass}.checked-out > a,
+        .tree li.@{cssclass}.checked-out > span,
+        .tree li.closed.@{cssclass}.checked-out > a,
+        .tree li.closed.@{cssclass}.checked-out > span,
+        .tree li.open.@{cssclass}.checked-out > a,
+        .tree li.open.@{cssclass}.checked-out > span,
+        .grid .grid-content-cell.icon.@{cssclass}.checked-out,
+        #AppStudioIntroPanel .recents-box li.@{cssclass}.checked-out > a
+        {
+            background-image: url("../Images/Icons/FileTypes/@{imageurl}_CheckOut16@{res}.png");
+        }
+
+        .tree li.@{cssclass}.checked-out-user > a,
+        .tree li.@{cssclass}.checked-out-user > span,
+        .tree li.closed.@{cssclass}.checked-out-user > a,
+        .tree li.closed.@{cssclass}.checked-out-user > span,
+        .tree li.open.@{cssclass}.checked-out-user > a,
+        .tree li.open.@{cssclass}.checked-out-user > span,
+        .grid .grid-content-cell.icon.@{cssclass}.checked-out-user,
+        #AppStudioIntroPanel .recents-box li.@{cssclass}.checked-out-user > a
+        {
+            background-image: url("../Images/Icons/FileTypes/@{imageurl}_UserCheckOut16@{res}.png");
+        }
+    }
+
+    .workflow-states() when (@hasWorkflowStates = true)
+    {
+
+        .tree li.@{cssclass}.@{cssclass}-shared > a,
+        .tree li.@{cssclass}.@{cssclass}-shared > span,
+        .grid .grid-content-cell.icon.@{cssclass}.@{cssclass}-shared,
+        #AppStudioIntroPanel .recents-box li.@{cssclass}.@{cssclass}-shared > a
+        {
+            background-image: url("../Images/Icons/FileTypes/@{imageurl}_Shared16@{res}.png");
+        }
+
+        .tree li.@{cssclass}.@{cssclass}-locked > a,
+        .tree li.@{cssclass}.@{cssclass}-locked > span,
+        .grid .grid-content-cell.icon.@{cssclass}.@{cssclass}-locked,
+        #AppStudioIntroPanel .recents-box li.@{cssclass}.@{cssclass}-locked > a
+        {
+            background-image: url("../Images/Icons/FileTypes/@{imageurl}_Locked16@{res}.png");
+        }
+
+        .tree li.@{cssclass}.@{cssclass}-deployed > a,
+        .tree li.@{cssclass}.@{cssclass}-deployed > span,
+        .grid .grid-content-cell.icon.@{cssclass}.@{cssclass}-deployed,
+        #AppStudioIntroPanel .recents-box li.@{cssclass}.@{cssclass}-deployed > a
+        {
+            background-image: url("../Images/Icons/FileTypes/@{imageurl}_Deployed16@{res}.png");
+        }
+    }
+
+    .states();
+    .workflow-states();
+}
+
+html
+{
+    .mixin-filetypes(smartobject;smartobject);
+    .mixin-filetypes(smartobject-composite;smartobject);
+    .mixin-filetypes(smartobjectFF;smartobject);
+    .mixin-filetypes(view;view;true);
+    .mixin-filetypes(view-list;view;true);
+    .mixin-filetypes(item-view;view;true);
+    .mixin-filetypes(list-view;view;true);
+    .mixin-filetypes(capturelist-view;view;true);
+    .mixin-filetypes(view-capturelist;view;true);
+    .mixin-filetypes(capture-view;view;true);
+    .mixin-filetypes(content-view;view;true);
+    .mixin-filetypes(form;form;true);
+    .mixin-filetypes(styleprofile;styleprofile;true);
+    .mixin-filetypes(workflow;processdefinition;false;true);
+    .mixin-filetypes(folder;folderclosed);
+    .mixin-filetypes(category;folderclosed);
+    .mixin-filetypes(service-object;serviceobject);
+    .mixin-filetypes(service-method;servicemethod);
+}

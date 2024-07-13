@@ -1,0 +1,33 @@
+/* Popup menu styles */
+div.popup-menu
+{
+	position: absolute;
+	min-width: 300px;
+	height: auto;
+	width: auto;
+	overflow: visible;
+}
+
+div.popup-menu-content
+{
+	position: absolute;
+	border:solid 1px #808080;
+	width: auto;
+}
+
+div.popup-menu-content-wrapper
+{
+	-overflow: auto;
+}
+
+div.popup-menu-body
+{
+	overflow: auto;
+	background-color:#fff;
+}
+
+div.popup-menu-body-wrapper
+{
+	overflow: auto;
+	text-align:left;
+}

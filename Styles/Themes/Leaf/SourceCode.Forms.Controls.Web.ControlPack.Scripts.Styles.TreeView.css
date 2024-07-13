@@ -1,0 +1,68 @@
+﻿/* Tree Styling */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected > .content > .header,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly .node.selected > .content > .header:hover
+{
+	background-color: #d9e57f;
+	border-color: #d9e57f;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView:not(.disabled) .node > .content > .header:hover
+{
+	background-color: #bdc67f;
+	border-color: #bdc67f;
+	cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.focus > .content > .header
+{
+	border:1px dotted #bdc67f;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.collapsed > .content > .expander-container > .expander
+{
+	background-image: url("../../Platinum/Images/Tree/plus_alt.gif");
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.expanded > .content > .expander-container > .expander
+{
+	background-image: url("../../Platinum/Images/Tree/minus_alt.gif");
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:hover
+{
+	background-color: #d2d8a5;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:focus
+{
+	background-color:#bfc87f;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .button
+{
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .PART_ExpanderButton
+{
+    margin-left: 1px !important; /*need to specify specifically for expander button on tree search to 1px*/
+    margin-top: 1px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .PART_ClearSearchButton
+{
+    background-position: 5px 4px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .search-options-expander
+{
+    width: 16px;
+    height: 16px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .button-wrapper
+{
+    width: 19px;
+}

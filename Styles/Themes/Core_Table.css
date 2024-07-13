@@ -1,0 +1,56 @@
+/*#region Table control - Responsive property */
+
+/* [922403] When Responsive is Checked, and the Viewport < 450px width,  the Table will stack its cells on top of each other.
+            Note: Responsive break point is based on common widths for Phones, but also common break points for window resizing on desktop browsers. 
+            Example of research: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+*/
+
+@media only screen and (max-width: 450px) {
+  /* override high specificity selector defined in Core.less [891769] to display the table as stacked */
+  
+  .formcontrol .innerpanel > *.SourceCode-Forms-Controls-Web-Table.Grid-Layout.with-responsive {
+    display: flex;
+  }
+  /* override high specificity selector defined in Core.less to display to display the table as stacked */
+  
+  .theme-entry .editor-cell > .Grid-Layout.with-responsive {
+    display: flex;
+  }
+  /* Table controls should be responsive only depend on the control's Responsive property */
+  
+  .theme-entry .Grid-Layout.with-responsive {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* This should match to the .Grid-Layout width */
+    grid-template-columns: unset !important;
+    grid-template-rows: unset !important;
+    -ms-grid-columns: unset !important;
+    -ms-grid-rows: unset !important;
+  }
+  .theme-entry .Grid-Layout.with-responsive > .editor-cell {
+    /* When stacked, the padding left/right of the cells will be overridden with 0px (will need "important"). [922403] */
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    grid-column-start: unset !important;
+    grid-column-end: unset !important;
+    grid-row-start: unset !important;
+    grid-row-end: unset !important;
+    -ms-grid-column: unset !important;
+    -ms-grid-column-span: unset !important;
+    -ms-grid-row: unset !important;
+    -ms-grid-row-span: unset !important;
+    border-left: 0px !important;
+    border-top: 0px !important;
+    border-right: 0px !important;
+    border-bottom: inherit !important;
+  }
+  .theme-entry .Grid-Layout.with-responsive > .editor-cell.lastrow {
+    border-bottom: inherit !important;
+  }
+  .theme-entry .Grid-Layout.with-responsive > .editor-cell.lastrow.lastcellinrow {
+    border-bottom: 0px !important;
+  }
+}
+/*#endregion Table control - Responsive property */
+

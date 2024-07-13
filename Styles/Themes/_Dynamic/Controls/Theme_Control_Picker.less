@@ -1,0 +1,98 @@
+
+/*The picker does not play nice with table layouts and really long values.*/
+
+.theme-entry .input-control.select-box.double-buttons .input-control-m
+{
+    height: 100%;
+}
+
+.theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-body
+{
+    display: block;
+}
+
+.theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-m-c
+{
+    border-radius: 0.2rem;
+}
+
+html[dir=rtl] .theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-m-c
+{
+    border-left-width: 0.1rem !important;
+}
+
+.theme-entry .input-control.select-box.disabled .input-control-buttons
+{
+    background-color : @Input-Button-Background-Color;
+}
+
+.theme-entry .input-control.select-box.picker-input .input-control-buttons
+{
+    vertical-align: top;
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a.picker-search > span span
+{
+    display: block;
+    text-indent: -9999px;
+    /*background-image: url(Toolbar/Search20.png);*/
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a.picker-resolve
+{
+    border-right-width: 1px; //override core.less
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a.picker-resolve > span span
+{
+    display: block;
+    text-indent: -9999px;
+}
+
+
+
+//#region TOKENS/PILLS
+
+.theme-entry .picker-input
+{
+    color: inherit; //override picker.css (base)
+}
+
+.theme-entry .picker-input .editable-area
+{
+    .entity
+    {
+        color: transparent; //remove the semi colon
+        
+        & > span
+        {
+           
+            text-decoration: none;
+            border-radius: @Input-Rounding;
+            padding: 2px 5px;
+
+            background-color: @Pill-Background-Color;
+            color: @Pill-Text-Color;
+
+            &.resolved
+            {
+                //use the base pill styling.
+            }
+
+            &.unresolved
+            {
+                background-color: @Pill-Error-Background-Color;
+                color: @Pill-Error-Text-Color;
+
+                //make sure it looks clickable for suggestions
+                cursor: pointer;
+
+                //remove the oldschool red squiggly
+                background-image: none;
+            }
+        }
+    }
+}
+
+
+//#endregion TOKENS/PILLS

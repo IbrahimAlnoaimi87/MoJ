@@ -1,0 +1,4 @@
+<div class='search-item-container {alternate}' title='{nodePath}'>
+  <span class='search-item-icon {icon}' style='{iconStyle}'></span>
+  <span class='search-item-text'>{text}</span> 
+</div>

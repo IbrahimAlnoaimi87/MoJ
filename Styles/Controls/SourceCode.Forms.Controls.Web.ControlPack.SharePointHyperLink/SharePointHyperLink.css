@@ -1,0 +1,157 @@
+div.controlwrapper.draggable[controltype="SharePointHyperLink"] {
+  box-sizing: content-box;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.hidden {
+  display: none;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink {
+  overflow: hidden;
+  position: relative;
+  background-color: inherit;
+  text-align: left;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.preview .input-control .input-control-m-c {
+  border-color: #eef0ed;
+  cursor: pointer;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink img.disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: default;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .disable-overlay {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  border-style: none;
+  opacity: 0.01;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.disabled .disable-overlay {
+  height: 100%;
+  width: 100%;
+}
+.ie8 .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .disable-overlay,
+.ie-document-mode-8 .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .disable-overlay {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=1)";
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.disabled .disable-overlay,
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.preview .disable-overlay {
+  bottom: 0px;
+  right: 0px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.disabled .disable-overlay,
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.preview .disable-overlay,
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.designtime .disable-overlay {
+  bottom: 0px;
+  right: 0px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.disabled {
+  border-color: #adaeda;
+  opacity: 0.5;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink a:hover {
+  text-decoration: underline;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .input-control input[type=text]:disabled {
+  color: #999999;
+  cursor: default;
+  text-decoration: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .addresstitle.disabled,
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .descriptiontitle.disabled {
+  color: #cccccc;
+  cursor: default;
+  text-decoration: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.picture.disabled:focus {
+  outline: 1px dotted transparent;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.invalid .stylewrapper {
+  border: 0px solid #e7000e;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.invalid {
+  border: 1px solid #e7000e;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .textboxdesc,
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .addresstitle,
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .descriptiontitle {
+  margin-bottom: 2px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink a.disabled,
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink a.disabled:hover {
+  color: #cccccc;
+  cursor: default;
+  text-decoration: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.hidden {
+  display: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.hidden.designtime {
+  display: inline-block;
+  border: 1px solid #999999;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .stylewrapper,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.picture .stylewrapper {
+  padding: 1px;
+  box-sizing: border-box;
+  width: auto;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .stylewrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.picture .stylewrapper {
+  overflow: hidden;
+}
+#StyleBuilderPreviewPanelContentWrapper .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .stylewrapper {
+  width: auto;
+  overflow: hidden;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink img {
+  vertical-align: top;
+  height: auto;
+  width: auto;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .input-control .input-control-m-c,
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .input-control .input-control-content,
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .input-control input[type=text],
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink div {
+  font-style: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  height: auto;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .text-input div {
+  background-color: inherit;
+}
+/* RTL layout */
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .input-control.text-input .input-control-watermark,
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .input-control input[type=text],
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .Hyperlink.read-only {
+  text-align: right;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.sfc-sharepoint-hyperlink-no-image img {
+  /* Stretch to fit control */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+}
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.sfc-sharepoint-hyperlink-no-image img {
+    background-image: url("Images/NoImage48.png");
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.sfc-sharepoint-hyperlink-no-image img {
+    background-image: url("Images/NoImage48@2x.png");
+  }
+}

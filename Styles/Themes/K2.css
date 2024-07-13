@@ -1,0 +1,4440 @@
+body.theme-entry,
+.theme-entry div,
+.theme-entry span,
+.theme-entry td,
+.theme-entry li,
+.theme-entry p,
+.theme-entry textarea,
+.theme-entry input[type=text],
+.theme-entry input.text,
+.theme-entry select,
+.theme-entry option {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #343e41;
+  font-size: 11px;
+}
+.theme-entry h1,
+.theme-entry h2,
+.theme-entry h3,
+.theme-entry h4,
+.theme-entry label {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin-top: 0;
+}
+.theme-entry h1 {
+  font-size: 14px;
+}
+.theme-entry a.action-row:focus {
+  outline-color: #cccccc;
+}
+.theme-entry .wrapAround {
+  background-color: yellow;
+  font: inherit;
+  color: inherit;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .input-control .input-control-m-c,
+.theme-entry .input-control .input-control-content {
+  background-color: White;
+  border-color: #aaad9c;
+}
+.theme-entry .input-control.active .input-control-content {
+  border-color: #98dc28;
+}
+.theme-entry div.parameterPrompt {
+  background: white;
+}
+.theme-entry img.fileImage {
+  border-color: #adae9c;
+  background: white;
+}
+.theme-entry .ghost {
+  background-color: #86be58;
+}
+.theme-entry .divider.ui-draggable-dragging {
+  background-color: #86be58;
+}
+.theme-entry .theme-entry .button-dimensions-wrapper {
+  line-height: normal;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive {
+  color: white;
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+  background-image: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive.preview {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive:hover {
+  background-color: #c4374c;
+  border-color: #c4374c;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive:focus {
+  background-color: #b71c1c;
+  border-color: #6a0909;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive:hover:focus {
+  background-color: #c4374c;
+  border-color: #6a0909;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.preview,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus {
+  color: white;
+  background-image: none;
+  background-color: #bfc1c2;
+  border-color: #bfc1c2;
+  box-shadow: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.designtime.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.preview.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.designtime.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.preview.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus.button-quiet.designtime {
+  color: #bfc1c2;
+  background-color: white;
+  border-color: #bfc1c2;
+  background-image: none;
+  box-shadow: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help {
+  color: white;
+  background: #7aa4e0;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7aa4e0 0%, #114095 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7aa4e0), color-stop(100%, #114095));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7aa4e0 0%, #114095 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7aa4e0 0%, #114095 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7aa4e0 0%, #114095 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7aa4e0 0%, #114095 100%);
+  /* W3C */
+  border-color: #4778c7;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover {
+  background: #021d4b;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #608fd2 0%, #021d4b 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #608fd2), color-stop(100%, #021d4b));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #608fd2 0%, #021d4b 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #608fd2 0%, #021d4b 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #608fd2 0%, #021d4b 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #608fd2 0%, #021d4b 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7aa4e0', endColorstr='#114095', GradientType=0);
+  /* IE6-9 */
+
+}
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#608fd2', endColorstr='#021d4b', GradientType=0);
+  /* IE6-9 */
+
+}
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:active,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7aa4e0', endColorstr='#114095', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry a.toolbar-button.disabled,
+.theme-entry a.toolbar-button.disabled:hover,
+.theme-entry a.toolbar-button.disabled:focus,
+.theme-entry a.toolbar-button.disabled:active {
+  border-color: transparent;
+}
+.theme-entry .form {
+  /*876757 - Default form background color is set to white so that when the page color is set, it does not bleed through to the form color*/
+  background-color: white;
+}
+.theme-entry .input-control input[type=text],
+.theme-entry .input-control input[type=password] {
+  background-color: white;
+}
+.theme-entry .input-control a.input-control {
+  color: #343e41;
+  line-height: 1.2;
+}
+.theme-entry .input-control textarea {
+  background-color: white;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark {
+  color: #c5c5c5 !important;
+  font-family: Verdana, Arial, Helvetica, sans-serif !important;
+  font-style: italic !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.disabled {
+  color: #999999;
+}
+.theme-entry .input-control-watermark {
+  color: #c5c5c5 !important;
+  font-family: Verdana, Arial, Helvetica, sans-serif !important;
+  font-style: italic !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  line-height: 20px;
+}
+.theme-entry .input-control-watermark a.input-control,
+.theme-entry .input-control-watermark a.input-control span {
+  font-style: italic;
+  color: #c5c5c5;
+}
+.theme-entry .input-control.watermark a.input-control,
+.theme-entry .input-control.watermark a.input-control span {
+  font-style: italic;
+  color: #c5c5c5;
+}
+.theme-entry .input-control .input-control-wrapper {
+  min-height: 0px;
+  line-height: normal;
+}
+.theme-entry .slider_value_display.bottom:after {
+  border-color: white;
+  border-color: transparent transparent white white;
+}
+.theme-entry .slider_value_display.top:after {
+  border-color: white;
+  border-color: white white transparent transparent;
+}
+.theme-entry label.input-control.disabled .input-control-text,
+.theme-entry .preview label.input-control .input-control-text {
+  color: #999999;
+}
+.theme-entry .styling-outer-wrapper .input-control-m,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper input,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper a {
+  background-color: inherit;
+}
+/*#region Form Styling */
+
+.theme-entry .input-control.select-box {
+  background: white;
+}
+.theme-entry .input-control-buttons {
+  background-color: white;
+}
+.theme-entry .input-control.select-box .input-control-buttons a {
+  border-color: #aaad9c;
+}
+.theme-entry .drop-menu .drop-menu-m {
+  border-color: white;
+}
+.theme-entry .drop-menu ul.drop-menu a {
+  line-height: 19px;
+  color: #343e41;
+}
+.theme-entry .token-input .token-input-editor-area {
+  background-color: white;
+}
+.theme-entry .token-input.active .token-input-editor-area {
+  border-color: #160005;
+}
+.theme-entry .drop-text.watermark {
+  font-style: italic;
+  color: #c5c5c5;
+}
+.theme-entry .panel-watermark {
+  color: #c5c5c5;
+}
+.theme-entry .drop-text.watermark:focus {
+  color: #343e41;
+  font-style: normal;
+}
+.theme-entry .drop-textbox .drop-item {
+  color: white;
+}
+.theme-entry .tree li a,
+.theme-entry .tree li span {
+  line-height: 16px;
+  color: black;
+}
+/*#endregion Form Styling */
+
+/*#region Dragging helper styling*/
+
+.theme-entry .tree li a input,
+.theme-entry .tree li span input {
+  border-color: white;
+  background: white;
+}
+.theme-entry .panel > .panel-body {
+  background-color: white;
+}
+.theme-entry .grid .grid-body-content {
+  background: white;
+  border-color: white;
+}
+.theme-entry .grid table.grid-content-table tr.even td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row) td {
+  background-color: whitesmoke;
+}
+.theme-entry .grid.with-rownumbering .grid-content-table td:first-child,
+.theme-entry .grid-aggregation-content-table td:first-child {
+  background-color: #dcded8;
+}
+.theme-entry .grid table.grid-content-table td.empty-grid,
+.theme-entry .grid table.grid-content-table td.empty-grid *,
+.theme-entry .grid table.grid-content-table td.action-row {
+  color: #aaaaaa;
+}
+.theme-entry .grid table.grid-content-table td.action-row a.action-row {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+.theme-entry .grid table.grid-content-table td.action-row,
+.theme-entry .grid table.grid-content-table td.empty-grid {
+  background-color: inherit;
+}
+.theme-entry .grid-aggregation-content-m {
+  border-color: white;
+}
+.theme-entry .grid-aggregation-content-table {
+  background-color: white;
+}
+.theme-entry .grid.with-summary .grid-summary {
+  background-color: white;
+  border-color: #adae9c;
+}
+.theme-entry .grid-summary .grid-summary-item {
+  border-top-color: #adae9c;
+}
+.theme-entry .grid-summary .grid-summary-item-wrapper {
+  border-color: white;
+}
+.theme-entry .dialog.sub-view iframe.runtime-popup {
+  background-color: white;
+}
+.theme-entry .menu li:hover,
+.theme-entry .menu li.active {
+  background: white;
+}
+.theme-entry .menu li.disabled,
+.theme-entry .menu li.disabled:hover {
+  color: #aaaaaa;
+}
+.theme-entry .day.selected,
+.theme-entry .month.selected,
+.theme-entry .year.selected {
+  background-color: #e4efc3;
+  border-color: #98dc28;
+}
+.theme-entry .today-title {
+  color: inherit;
+}
+.theme-entry .today-title.disabled,
+.theme-entry .today-title.disabled:hover,
+.theme-entry .today-title.disabled:active {
+  color: inherit;
+  background-color: inherit;
+}
+.theme-entry .today-title.selected {
+  border-color: #98dc28;
+}
+.theme-entry .dayname,
+.theme-entry .day,
+.theme-entry .day:hover {
+  line-height: 17px;
+  color: inherit;
+}
+.theme-entry .month,
+.theme-entry .year,
+.theme-entry .month:hover,
+.theme-entry .year:hover {
+  line-height: 43px;
+  text-decoration: none;
+  color: inherit;
+}
+.theme-entry .day:hover,
+.theme-entry .month:hover,
+.theme-entry .year:hover,
+.theme-entry .today-title:hover {
+  text-decoration: none;
+}
+.theme-entry .tooltip {
+  background-color: #e3ecd2;
+}
+.theme-entry .tooltip.pointer-up .tooltip-pointer {
+  border-bottom-color: #6a9b12;
+}
+/*#region Modalizer Styling */
+
+.base0.modal-element.ajaxLoader/* View Level Modalizer & Spinner */ {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.theme-entry .expressions-watermark {
+  color: #c5c5c5;
+}
+.token-input-watermark {
+  font-style: italic;
+  color: #c5c5c5;
+  line-height: 19px;
+}
+/*#region Tokenbox Styling */
+
+.theme-entry .token-input .entity .entity-text {
+  background-color: #7bb625;
+  color: white;
+  line-height: 17px;
+}
+.theme-entry .token-input .text-node.empty {
+  line-height: 18px;
+}
+.theme-entry .token-input .active-caret.ie8 {
+  border-right-color: black;
+}
+.theme-entry .token-input-editor-area {
+  line-height: 18px;
+}
+/*#endregion Tokenbox Styling */
+
+.input-control-wrapper.token-input-editor-area {
+  background-color: White;
+}
+/*#region Column dragging*/
+
+/*#region Column dragging*/
+
+div.drag-column.ui-draggable.ui-draggable-dragging.hover,
+div.drag-column.ui-draggable.ui-draggable-dragging.hover:hover {
+  background-color: #dddddd;
+}
+/*#endregion Column dragging*/
+
+.toolbar span.SourceCode-Forms-Controls-Web-Label,
+.toolbar span.SourceCode-Forms-Controls-Web-DataLabel {
+  padding: 3px 5px;
+}
+.theme-entry .form-field label.form-field-label {
+  line-height: 20px;
+}
+.theme-entry .toolbar .form-field label.form-field-label {
+  line-height: 20px;
+}
+.theme-entry .form-field-content-label {
+  line-height: 20px;
+}
+/*#endregion Form Styling */
+
+/*#region Panel Styling */
+
+.theme-entry .panel-header-wrapper .panel-header-text {
+  line-height: 19px;
+  font-weight: bold;
+}
+/*#endregion Panel Styling */
+
+/*#region Grid Styling */
+
+.theme-entry .grid-header-wrapper .grid-header-text {
+  line-height: 19px;
+  font-weight: bold;
+}
+.theme-entry .grid .grid-column-header-text {
+  line-height: 19px;
+}
+.theme-entry div.grid-column-header-text.LabelWrap {
+  line-height: normal;
+}
+.theme-entry .grid-aggregation-header-text {
+  line-height: 20px;
+}
+/*#endregion Grid Styling */
+
+/*#region Popup Styling */
+
+.theme-entry .popup-header-text {
+  line-height: 22px;
+  font-weight: bold;
+}
+/*#endregion Popup Styling */
+
+/*#region Table Cell Styling */
+
+.theme-entry .editor-cell {
+  padding: 2px 3px 2px 2px;
+  /* padding right is not needed if control overlay is corrected on controls */
+
+}
+.theme-entry .editor-cell.empty {
+  padding: 0;
+}
+.theme-entry .editor-cell.toolbar {
+  padding: 0;
+}
+/* Design time only styling */
+
+#pgWizard .control-canvas .editor-cell {
+  padding: 3px;
+}
+#pgWizard .view-canvas .editor-cell {
+  padding: 2px;
+}
+/*#endregion Table Cell Styling */
+
+/*#region DropTextbox Styling */
+
+.theme-entry .drop-item,
+.theme-entry .drop-object,
+.theme-entry .drop-text {
+  font-size: 11px;
+}
+.theme-entry .tree li {
+  line-height: 18px;
+}
+.theme-entry .tree li a input,
+.theme-entry .tree li span input {
+  font-family: Verdana;
+  font-size: 11px;
+}
+.theme-entry .grid .grid-content-cell-wrapper .multiline-cell-icon {
+  line-height: 16px;
+}
+.theme-entry .menu li {
+  line-height: 100%;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+.theme-entry .menu li.seperator {
+  font-size: 1px;
+  line-height: 1px;
+}
+.theme-entry .menu li.seperator span {
+  font-size: 1px;
+  line-height: 1px;
+}
+.theme-entry .menu a.menu-item {
+  line-height: 16px;
+}
+.theme-entry a.tab {
+  text-decoration: none;
+  line-height: 20px;
+}
+.theme-entry a.tab:hover {
+  background-color: inherit;
+}
+.theme-entry .tab-box.with-header .tab-box-header-wrapper {
+  line-height: 19px;
+  font-weight: bold;
+}
+.theme-entry label.input-control .input-control-text {
+  line-height: 19px;
+}
+.theme-entry .input-control-buttons.twisty-button {
+  line-height: auto;
+}
+.theme-entry .input-control.select-box {
+  line-height: 1.2;
+}
+.theme-entry .input-control.select-box .input-control-buttons a.ellipsis > span span {
+  line-height: inherit;
+}
+.theme-entry .input-control-buttons a {
+  line-height: auto;
+}
+.theme-entry .input-control.select-box .input-control-buttons a {
+  text-decoration: none;
+  line-height: 18px;
+}
+#pgWizard .form-control {
+  border: 1px solid transparent;
+}
+.theme-entry span.SFC.SourceCode-Forms-Controls-Web-TextBox {
+  line-height: 1.2;
+  /*Golden Ratio for all supported browsers (IE8,9,10 & FF & Chrome) for default font size (8pt)*/
+
+}
+.no-border-box-support .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.no-border-box-support .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+.ie-document-mode-8 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.ie-document-mode-8 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark {
+  line-height: 1.2;
+}
+.theme-entry .input-control textarea {
+  line-height: 1.2;
+}
+/*Unsets the display changes made when toggling from Core to Core_legacy*/
+
+.theme-entry label.input-control.radio .input-control-img,
+.theme-entry label.input-control.checkbox .input-control-img {
+  display: unset;
+  width: 20px;
+  height: 20px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+/*Unsets the display changes made when toggling from Core to Core_legacy*/
+
+.theme-entry a.toolbar-button span.button-c span.button-icon {
+  width: 16px;
+  height: 16px;
+  float: none;
+  display: inline-block;
+}
+/*#region Style Aware Controls */
+
+.theme-entry .style-aware svg {
+  display: none;
+}
+/* Bring back checkbox img element now that svg is not being displayed */
+
+.theme-entry label.style-aware.input-control.radio .input-control-img,
+.theme-entry label.style-aware.input-control.checkbox .input-control-img {
+  display: unset;
+}
+/*#endregion Style Aware Controls */
+
+/*#region Hyperlink Global Style */
+
+#pgOuterPanel.theme-entry,
+/*Design Time*/ body.theme-entry {
+  background: white;
+}
+.theme-entry a,
+.theme-entry a:visited {
+  color: #5f9a33;
+}
+.theme-entry a:hover {
+  text-decoration: underline;
+}
+/*#endregion Hyperlink Global Style */
+
+/*#region Button Styling */
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:active {
+  color: white;
+  background: #78bc41;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #78bc41), color-stop(100%, #629e35));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #78bc41 0%, #629e35 100%);
+  /* W3C */
+  border: solid 1px #aed78e;
+}
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:active,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:active,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:active,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#78bc41', endColorstr='#629e35', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover {
+  border-color: #4f6f19;
+  text-decoration: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:active {
+  background: #c1f596;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c1f596), color-stop(100%, #8acb55));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #c1f596 0%, #8acb55 100%);
+  /* W3C */
+  border-color: #dbfac1;
+}
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover .ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c1f596', endColorstr='#8acb55', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:active {
+  border-color: #85c74f;
+  text-decoration: none;
+  background: #e4e6de;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #78bc41), color-stop(100%, #629e35));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #78bc41 0%, #629e35 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#78bc41', endColorstr='#629e35', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help span.Button-Image {
+  background: url(../Platinum/Images/Icons/button_icon.png) no-repeat 50% 50%;
+}
+/*#endregion Button Styling */
+
+/*#region Toolbar Styling */
+
+.theme-entry .toolbars {
+  border-color: #4f6f19;
+}
+.theme-entry .toolbar-wrapper,
+.theme-entry .toolbars.single .toolbar .toolbar-wrapper,
+.theme-entry .toolbars.double .toolbar .toolbar-wrapper {
+  border-color: #aed78e;
+  background: #7ac043;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7ac043), color-stop(100%, #5f9933));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7ac043 0%, #5f9933 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry .toolbar-wrapper,
+.ie8 .theme-entry .toolbars.single .toolbar .toolbar-wrapper,
+.ie8 .theme-entry .toolbars.double .toolbar .toolbar-wrapper,
+.ie9 .theme-entry .toolbar-wrapper,
+.ie9 .theme-entry .toolbars.single .toolbar .toolbar-wrapper,
+.ie9 .theme-entry .toolbars.double .toolbar .toolbar-wrapper {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ac043', endColorstr='#5f9933', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry a.toolbar-button,
+.theme-entry a.toolbar-button .button-text,
+.theme-entry a.toolbar-button.disabled,
+.theme-entry a.toolbar-button.disabled .button-text,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button .button-text {
+  color: white;
+  text-decoration: none;
+}
+.theme-entry a.toolbar-button:hover,
+.theme-entry a.toolbar-button.selected,
+.theme-entry a.toolbar-button:focus,
+.theme-entry a.toolbar-button:active {
+  border-color: #4f6f19;
+  background: #c4f89a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c4f89a 0%, #87c851 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c4f89a), color-stop(100%, #87c851));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #c4f89a 0%, #87c851 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #c4f89a 0%, #87c851 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #c4f89a 0%, #87c851 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #c4f89a 0%, #87c851 100%);
+  /* W3C */
+  color: white;
+}
+.ie8 .theme-entry a.toolbar-button:hover,
+.ie8 .theme-entry a.toolbar-button.selected,
+.ie8 .theme-entry a.toolbar-button:focus,
+.ie8 .theme-entry a.toolbar-button:active,
+.ie9 .theme-entry a.toolbar-button:hover,
+.ie9 .theme-entry a.toolbar-button.selected,
+.ie9 .theme-entry a.toolbar-button:focus,
+.ie9 .theme-entry a.toolbar-button:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4f89a', endColorstr='#87c851', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry a.toolbar-button.selected,
+.theme-entry a.toolbar-button:focus,
+.theme-entry a.toolbar-button:active {
+  border-color: #c4f89a;
+}
+.theme-entry .toolbar .filterLabel {
+  color: white;
+}
+/* Move from Core_Legacy.less for Code Fix 952276*/
+
+.theme-entry span.SourceCode-Forms-Controls-Web-Label,
+.theme-entry h1.SourceCode-Forms-Controls-Web-Label,
+.theme-entry h2.SourceCode-Forms-Controls-Web-Label,
+.theme-entry h3.SourceCode-Forms-Controls-Web-Label,
+.theme-entry h4.SourceCode-Forms-Controls-Web-Label,
+.theme-entry label.SourceCode-Forms-Controls-Web-Label,
+.theme-entry p.SourceCode-Forms-Controls-Web-Label,
+.theme-entry span.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry h1.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry h2.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry h3.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry h4.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry label.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry p.SourceCode-Forms-Controls-Web-DataLabel {
+  padding: 1px;
+}
+/*#region Toolbar Button Icons */
+
+.theme-entry a.toolbar-button.default .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.generic .button-icon {
+  background-image: url(../Platinum/Images/Icons/ToolbarButtonControl16.png);
+}
+.theme-entry a.toolbar-button.add .button-icon {
+  background-image: url(../Platinum/Images/Icons/Add16.png);
+}
+.theme-entry a.toolbar-button.edit .button-icon {
+  background-image: url(../Platinum/Images/Icons/Edit16.png);
+}
+.theme-entry a.toolbar-button.save .button-icon {
+  background-image: url(../Platinum/Images/Icons/Save16.png);
+}
+.theme-entry a.toolbar-button.save-as .button-icon {
+  background-image: url(../Platinum/Images/Icons/SaveAs16.png);
+}
+.theme-entry a.toolbar-button.delete .button-icon {
+  background-image: url(../Platinum/Images/Icons/Delete16.png);
+}
+.theme-entry a.toolbar-button.delete-all .button-icon {
+  background-image: url(../Platinum/Images/Icons/DeleteAll16.png);
+}
+.theme-entry a.toolbar-button.remove .button-icon {
+  background-image: url(../Platinum/Images/Icons/Remove16.png);
+}
+.theme-entry a.toolbar-button.remove-all .button-icon {
+  background-image: url(../Platinum/Images/Icons/RemoveAll16.png);
+}
+.theme-entry a.toolbar-button.play .button-icon {
+  background-image: url(../Platinum/Images/Icons/play16flat.png);
+}
+.theme-entry a.toolbar-button.publish .button-icon {
+  background-image: url(../Platinum/Images/Icons/Publish16.png);
+}
+.theme-entry a.toolbar-button.search .button-icon {
+  background-image: url(../Platinum/Images/Icons/Search16.png);
+}
+.theme-entry a.toolbar-button.refresh .button-icon {
+  background-image: url(../Platinum/Images/Icons/Refresh16.png);
+}
+.theme-entry a.toolbar-button.checkin .button-icon {
+  background-image: url(../Platinum/Images/Icons/CheckIn16.png);
+}
+.theme-entry a.toolbar-button.checkout .button-icon {
+  background-image: url(../Platinum/Images/Icons/CheckOut16.png);
+}
+.theme-entry a.toolbar-button.undocheckout .button-icon {
+  background-image: url(../Platinum/Images/Icons/CancelCheckOut_Generic_16.png);
+}
+.theme-entry a.toolbar-button.assign .button-icon {
+  background-image: url(../Platinum/Images/Icons/AssignStatement16.png);
+}
+/* Clipboard Action Buttons */
+
+.theme-entry a.toolbar-button.cut .button-icon {
+  background-image: url(../Platinum/Images/Icons/Cut16.png);
+}
+.theme-entry a.toolbar-button.copy .button-icon {
+  background-image: url(../Platinum/Images/Icons/Copy16.png);
+}
+.theme-entry a.toolbar-button.paste .button-icon {
+  background-image: url(../Platinum/Images/Icons/Paste16.png);
+}
+/* Advanced Actions Buttons */
+
+.theme-entry a.toolbar-button.auto-generate .button-icon {
+  background-image: url("../Platinum/Images/Icons/AutoGenerate16.png");
+}
+.theme-entry a.toolbar-button.default-canvas .button-icon {
+  background-image: url("../Platinum/Images/Icons/Default16px.png");
+}
+.theme-entry a.toolbar-button.properties .button-icon {
+  background-image: url(../Platinum/Images/Icons/Properties16.png);
+}
+.theme-entry a.toolbar-button.settings .button-icon {
+  background-image: url(../Platinum/Images/Icons/Settings16flat.png);
+}
+.theme-entry a.toolbar-button.auto-map .button-icon {
+  background-image: url(../Platinum/Images/Icons/Automap16.png);
+}
+.theme-entry a.toolbar-button.clear-formatting .button-icon {
+  background-image: url(../Platinum/Images/Icons/ClearFormatting16.png);
+}
+.theme-entry a.toolbar-button.lock .button-icon {
+  background-image: url(../Platinum/Images/Icons/Lock16.png);
+}
+.theme-entry a.toolbar-button.load .button-icon {
+  background-image: url(../Platinum/Images/Icons/LoadFlat16.png);
+}
+/* Movement Actions Buttons */
+
+.theme-entry a.toolbar-button.move-up .button-icon {
+  background-image: url(../Platinum/Images/Icons/MoveUp16.png);
+}
+.theme-entry a.toolbar-button.move-down .button-icon {
+  background-image: url(../Platinum/Images/Icons/MoveDown16.png);
+}
+.theme-entry a.toolbar-button.move-left .button-icon {
+  background-image: url(../Platinum/Images/Icons/MoveLeft16.png);
+}
+.theme-entry a.toolbar-button.move-right .button-icon {
+  background-image: url(../Platinum/Images/Icons/MoveRight16.png);
+}
+/* Table Customisation Buttons */
+
+.theme-entry a.toolbar-button.insert-table .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsertTable16.png);
+}
+.theme-entry a.toolbar-button.insert-row-above .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsertTableRowAbove16.png);
+}
+.theme-entry a.toolbar-button.insert-row-below .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsertTableRowBelow16.png);
+}
+.theme-entry a.toolbar-button.insert-column-left .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsertTableColumnsToLeft16.png);
+}
+.theme-entry a.toolbar-button.insert-column-right .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsertTableColumnsToRight16.png);
+}
+.theme-entry a.toolbar-button.merge-cells .button-icon {
+  background-image: url(../Platinum/Images/Icons/MergeCells16.png);
+}
+.theme-entry a.toolbar-button.unmerge-cells .button-icon {
+  background-image: url(../Platinum/Images/Icons/UnMergeCells16.png);
+}
+.theme-entry a.toolbar-button.merge-cell-right .button-icon {
+  background-image: url(../Platinum/Images/Icons/MergeCellRight16.png);
+}
+.theme-entry a.toolbar-button.merge-cell-below .button-icon {
+  background-image: url(../Platinum/Images/Icons/MergeCellBelow16.png);
+}
+.theme-entry a.toolbar-button.clear-cell .button-icon {
+  background-image: url(../Platinum/Images/Icons/ClearCell16_2.png);
+}
+.theme-entry a.toolbar-button.clear-row .button-icon {
+  background-image: url(../Platinum/Images/Icons/ClearRow16.png);
+}
+.theme-entry a.toolbar-button.clear-column .button-icon {
+  background-image: url(../Platinum/Images/Icons/ClearColumn16.png);
+}
+.theme-entry a.toolbar-button.remove-column .button-icon {
+  background-image: url(../Platinum/Images/Icons/RemoveColumn16.png);
+}
+.theme-entry a.toolbar-button.remove-row .button-icon {
+  background-image: url(../Platinum/Images/Icons/RemoveRow16.png);
+}
+.theme-entry a.toolbar-button.edit-cell-props .button-icon {
+  background-image: url(../Platinum/Images/Icons/CellProperties16.png);
+}
+.theme-entry a.toolbar-button.edit-table-props .button-icon {
+  background-image: url(../Platinum/Images/Icons/TableProperties16.png);
+}
+/* Text Customisation Buttons */
+
+.theme-entry a.toolbar-button.bold .button-icon {
+  background-image: url(../Platinum/Images/Icons/Bold16.png);
+}
+.theme-entry a.toolbar-button.italic .button-icon {
+  background-image: url(../Platinum/Images/Icons/Italic16.png);
+}
+.theme-entry a.toolbar-button.underline .button-icon {
+  background-image: url(../Platinum/Images/Icons/Underline16.png);
+}
+.theme-entry a.toolbar-button.strike-through .button-icon {
+  background-image: url(../Platinum/Images/Icons/StrikeThrough16.png);
+}
+.theme-entry a.toolbar-button.overline .button-icon {
+  background-image: url(../Platinum/Images/Icons/Overline16.png);
+}
+.theme-entry a.toolbar-button.subscript .button-icon {
+  background-image: url(../Platinum/Images/Icons/SubScript16.png);
+}
+.theme-entry a.toolbar-button.superscript .button-icon {
+  background-image: url(../Platinum/Images/Icons/SuperScript16.png);
+}
+.theme-entry a.toolbar-button.text-color .button-icon {
+  background-image: url(../Platinum/Images/Icons/FontColour16.png);
+}
+.theme-entry a.toolbar-button.background-color .button-icon {
+  background-image: url(../Platinum/Images/Icons/Shading16.png);
+}
+.theme-entry a.toolbar-button.text-highlight .button-icon {
+  background-image: url(../Platinum/Images/Icons/TextHighLightColour16.png);
+}
+.theme-entry a.toolbar-button.text-align-left .button-icon {
+  background-image: url(../Platinum/Images/Icons/LeftAlign16.png);
+}
+.theme-entry a.toolbar-button.text-align-right .button-icon {
+  background-image: url(../Platinum/Images/Icons/RightAlign16.png);
+}
+.theme-entry a.toolbar-button.text-align-center .button-icon {
+  background-image: url(../Platinum/Images/Icons/CentreAlign16.png);
+}
+.theme-entry a.toolbar-button.text-align-justify .button-icon {
+  background-image: url(../Platinum/Images/Icons/JustifyText16.png);
+}
+.theme-entry a.toolbar-button.text-indent .button-icon {
+  background-image: url(../Platinum/Images/Icons/DecreaseIndent16.png);
+}
+.theme-entry a.toolbar-button.text-outdent .button-icon {
+  background-image: url(../Platinum/Images/Icons/IncreaseIndent16.png);
+}
+.theme-entry a.toolbar-button.numbered-list .button-icon {
+  background-image: url(../Platinum/Images/Icons/NumberedList16.png);
+}
+.theme-entry a.toolbar-button.multilevel-list .button-icon {
+  background-image: url(../Platinum/Images/Icons/MultiLevelList16.png);
+}
+.theme-entry a.toolbar-button.bullet-list .button-icon {
+  background-image: url(../Platinum/Images/Icons/BulletList16.png);
+}
+.theme-entry a.toolbar-button.line-spacing .button-icon {
+  background-image: url(../Platinum/Images/Icons/LineSpacing16.png);
+}
+.theme-entry a.toolbar-button.grow-font .button-icon {
+  background-image: url(../Platinum/Images/Icons/GrowFont16.png);
+}
+.theme-entry a.toolbar-button.shrink-font .button-icon {
+  background-image: url(../Platinum/Images/Icons/ShrinkFont16.png);
+}
+.theme-entry a.toolbar-button.text-size .button-icon,
+.theme-entry a.toolbar-button.font-size .button-icon {
+  background-image: url(../Platinum/Images/Icons/FontSize16.png);
+}
+.theme-entry a.toolbar-button.text-family .button-icon,
+.theme-entry a.toolbar-button.font-family .button-icon {
+  background-image: url(../Platinum/Images/Icons/FontFamily16.png);
+}
+/* Alignment Action Buttons */
+
+.theme-entry a.toolbar-button.align-left .button-icon {
+  background-image: url(../Platinum/Images/Icons/AlignLeft16.png);
+}
+.theme-entry a.toolbar-button.align-right .button-icon {
+  background-image: url(../Platinum/Images/Icons/AlignRight16.png);
+}
+.theme-entry a.toolbar-button.align-top .button-icon {
+  background-image: url(../Platinum/Images/Icons/AlignTop16.png);
+}
+.theme-entry a.toolbar-button.align-bottom .button-icon {
+  background-image: url(../Platinum/Images/Icons/AlignBottom16.png);
+}
+.theme-entry a.toolbar-button.center-vertical .button-icon,
+.theme-entry a.toolbar-button.align-middle .button-icon {
+  background-image: url(../Platinum/Images/Icons/AlignMiddel16.png);
+}
+.theme-entry a.toolbar-button.center-horizontal .button-icon,
+.theme-entry a.toolbar-button.align-center .button-icon {
+  background-image: url(../Platinum/Images/Icons/AlignCenter16.png);
+}
+/* Borders Styling */
+
+.theme-entry a.toolbar-button.border-solid .button-icon {
+  background-image: url(../Platinum/Images/Icons/Solid16.png);
+}
+.theme-entry a.toolbar-button.border-dashed .button-icon {
+  background-image: url(../Platinum/Images/Icons/Dashed16.png);
+}
+.theme-entry a.toolbar-button.border-dotted .button-icon {
+  background-image: url(../Platinum/Images/Icons/Dotted16.png);
+}
+.theme-entry a.toolbar-button.border-inset .button-icon {
+  background-image: url(../Platinum/Images/Icons/AlignLeft16.png);
+}
+.theme-entry a.toolbar-button.border-outset .button-icon {
+  background-image: url(../Platinum/Images/Icons/Outset16.png);
+}
+.theme-entry a.toolbar-button.border-double .button-icon {
+  background-image: url(../Platinum/Images/Icons/Double16.png);
+}
+.theme-entry a.toolbar-button.border-groove .button-icon {
+  background-image: url(../Platinum/Images/Icons/Groove16.png);
+}
+.theme-entry a.toolbar-button.border-ridge .button-icon {
+  background-image: url(../Platinum/Images/Icons/Ridge16.png);
+}
+.theme-entry a.toolbar-button.no-borders .button-icon {
+  background-image: url(../Platinum/Images/Icons/NoBorder16.png);
+}
+.theme-entry a.toolbar-button.all-borders .button-icon {
+  background-image: url(../Platinum/Images/Icons/AllBorder16.png);
+}
+.theme-entry a.toolbar-button.inside-borders .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsideBorder16.png);
+}
+.theme-entry a.toolbar-button.outside-borders .button-icon {
+  background-image: url(../Platinum/Images/Icons/OutsideBorder16.png);
+}
+.theme-entry a.toolbar-button.inside-horizontal-borders .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsideHorizontalBorder16.png);
+}
+.theme-entry a.toolbar-button.inside-vertical-borders .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsideVerticalBorder16.png);
+}
+.theme-entry a.toolbar-button.border-bottom .button-icon {
+  background-image: url(../Platinum/Images/Icons/BottomBorder16.png);
+}
+.theme-entry a.toolbar-button.border-top .button-icon {
+  background-image: url(../Platinum/Images/Icons/TopBorder16.png);
+}
+.theme-entry a.toolbar-button.border-left .button-icon {
+  background-image: url(../Platinum/Images/Icons/LeftBorder16.png);
+}
+.theme-entry a.toolbar-button.border-right .button-icon {
+  background-image: url(../Platinum/Images/Icons/RightBorder16.png);
+}
+/* Misc Editor Actions Buttons */
+
+.theme-entry a.toolbar-button.insert-line .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsertRule16.png);
+}
+.theme-entry a.toolbar-button.insert-image .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsertImage16.png);
+}
+/* View Specific Actions Buttons */
+
+.theme-entry a.toolbar-button.change-control .button-icon {
+  background-image: url(../Platinum/Images/Icons/ChangeControls16.png);
+}
+.theme-entry a.toolbar-button.fit-to-cell .button-icon {
+  background-image: url(../Platinum/Images/Icons/RowLayout16.png);
+}
+.theme-entry a.toolbar-button.sigma .button-icon {
+  background-image: url(../Platinum/Images/Icons/Sigma16.png);
+}
+.theme-entry a.toolbar-button.event .button-icon {
+  background-image: url(../Platinum/Images/Icons/Event16.png);
+}
+.theme-entry a.toolbar-button.bind-control .button-icon {
+  background-image: url(../Platinum/Images/Icons/BindControl16.png);
+}
+.theme-entry a.toolbar-button.unbind-control .button-icon {
+  background-image: url(../Platinum/Images/Icons/UnBindControl16.png);
+}
+.theme-entry a.toolbar-button.clear-table .button-icon {
+  background-image: url(../Platinum/Images/Icons/ClearTable16.png);
+}
+/* SmartObject Specific Actions Buttons */
+
+.theme-entry a.toolbar-button.create-all .button-icon {
+  background-image: url(../Platinum/Images/Icons/CreateAll16.png);
+}
+/* Tab Control Action Buttons */
+
+.theme-entry a.toolbar-button.new-tab .button-icon {
+  background-image: url(../Platinum/Images/Icons/NewTab16.png);
+}
+.theme-entry a.toolbar-button.insert-tab .button-icon {
+  background-image: url(../Platinum/Images/Icons/InsertTab16.png);
+}
+.theme-entry a.toolbar-button.rename-tab .button-icon {
+  background-image: url(../Platinum/Images/Icons/RenameTab16.png);
+}
+.theme-entry a.toolbar-button.remove-tab .button-icon {
+  background-image: url(../Platinum/Images/Icons/RemoveTab16.png);
+}
+.theme-entry a.toolbar-button.move-tab-left .button-icon {
+  background-image: url(../Platinum/Images/Icons/MoveTabLeft16.png);
+}
+.theme-entry a.toolbar-button.move-tab-right .button-icon {
+  background-image: url(../Platinum/Images/Icons/MoveTabRight16.png);
+}
+/* Form Designer Specific Actions Buttons */
+
+.theme-entry a.toolbar-button.row-layout .button-icon {
+  background-image: url(../Platinum/Images/Icons/RowLayout16.png);
+}
+.theme-entry a.toolbar-button.column-layout .button-icon {
+  background-image: url(../Platinum/Images/Icons/ColumnLayout16.png);
+}
+.theme-entry a.toolbar-button.select-mode .button-icon {
+  background-image: url(../Platinum/Images/Icons/BulletList16.png);
+}
+.theme-entry a.toolbar-button.preview-form .button-icon {
+  background-image: url(../Platinum/Images/Icons/FormPreview16.png);
+}
+.theme-entry a.toolbar-button.preview-view .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.run .button-icon {
+  background-image: url(../Platinum/Images/Icons/GenericRun16.png);
+}
+.theme-entry a.toolbar-button.run-form .button-icon {
+  background-image: url(../Platinum/Images/Icons/RunForm16.png);
+}
+.theme-entry a.toolbar-button.run-report .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.run-view .button-icon {
+  background-image: url(../Platinum/Images/Icons/RunView16.png);
+}
+.theme-entry a.toolbar-button.run-view-parameters .button-icon {
+  background-image: url(../Platinum/Images/Icons/RunWithParametersView16.png);
+}
+.theme-entry a.toolbar-button.run-app .button-icon,
+.theme-entry a.toolbar-button.run-application .button-icon {
+  background-image: url(../Platinum/Images/Icons/RunApplication16.png);
+}
+.theme-entry a.toolbar-button.clone .button-icon {
+  background-image: url(../Platinum/Images/Icons/Copy16.png);
+}
+.theme-entry a.toolbar-button.single-mode .button-icon {
+  background-image: url(../Platinum/Images/Icons/MultiLevelList16.png);
+}
+.theme-entry a.toolbar-button.group-mode .button-icon {
+  background-image: url(../Platinum/Images/Icons/MultipleSelection16flat.png);
+}
+/* AppStudio Buttons */
+
+.theme-entry a.toolbar-button.import-report .button-icon {
+  background-image: url(../Platinum/Images/Icons/ImportReports16.png);
+}
+.theme-entry a.toolbar-button.import .button-icon {
+  background-image: url(../Platinum/Images/Icons/Import16.png);
+}
+.theme-entry a.toolbar-button.publish-report .button-icon {
+  background-image: url(../Platinum/Images/Icons/PublishReports16.png);
+}
+.theme-entry a.toolbar-button.generate-view .button-icon {
+  background-image: url("../Platinum/Images/Icons/GenerateView16.png");
+}
+.theme-entry a.toolbar-button.generate-form .button-icon {
+  background-image: url("../Platinum/Images/Icons/GenerateForm16.png");
+}
+.theme-entry a.toolbar-button.new-smartobject .button-icon {
+  background-image: url(../Platinum/Images/Icons/NewSmartObject16.png);
+}
+.theme-entry a.toolbar-button.new-view .button-icon {
+  background-image: url(../Platinum/Images/Icons/NewView16.png);
+}
+.theme-entry a.toolbar-button.add-view .button-icon {
+  background-image: url(../Platinum/Images/Icons/AddView16.png);
+}
+.theme-entry a.toolbar-button.new-form .button-icon {
+  background-image: url(../Platinum/Images/Icons/NewForm16.png);
+}
+.theme-entry a.toolbar-button.new-report .button-icon {
+  background-image: url(../Platinum/Images/Icons/NewReport16.png);
+}
+.theme-entry a.toolbar-button.new-application .button-icon {
+  background-image: url(../Platinum/Images/Icons/CreateNewApplication16.png);
+}
+.theme-entry a.toolbar-button.new-workflow .button-icon {
+  background-image: url(../Platinum/Images/Icons/CreateProcess16.png);
+}
+.theme-entry a.toolbar-button.edit-smartobject .button-icon {
+  background-image: url(../Platinum/Images/Icons/EditSmartObject16.png);
+}
+.theme-entry a.toolbar-button.edit-view .button-icon {
+  background-image: url(../Platinum/Images/Icons/EditView16.png);
+}
+.theme-entry a.toolbar-button.edit-form .button-icon {
+  background-image: url(../Platinum/Images/Icons/EditForm16.png);
+}
+.theme-entry a.toolbar-button.edit-report .button-icon {
+  background-image: url(../Platinum/Images/Icons/EditReport16.png);
+}
+.theme-entry a.toolbar-button.edit-application .button-icon {
+  background-image: url(../Platinum/Images/Icons/EditApplication16.png);
+}
+.theme-entry a.toolbar-button.delete-smartobject .button-icon {
+  background-image: url(../Platinum/Images/Icons/DeleteSmartObject16.png);
+}
+.theme-entry a.toolbar-button.delete-view .button-icon {
+  background-image: url(../Platinum/Images/Icons/DeleteView16.png);
+}
+.theme-entry a.toolbar-button.delete-form .button-icon {
+  background-image: url(../Platinum/Images/Icons/DeleteForm16.png);
+}
+.theme-entry a.toolbar-button.delete-report .button-icon {
+  background-image: url(../Platinum/Images/Icons/DeleteReport16.png);
+}
+.theme-entry a.toolbar-button.delete-application .button-icon {
+  background-image: url(../Platinum/Images/Icons/DeleteApplication16.png);
+}
+.theme-entry a.toolbar-button.save-as-smartobject .button-icon {
+  background-image: url(../Platinum/Images/Icons/SaveAsSmartObject16.png);
+}
+.theme-entry a.toolbar-button.save-as-view .button-icon {
+  background-image: url(../Platinum/Images/Icons/SaveAsView16.png);
+}
+.theme-entry a.toolbar-button.save-as-form .button-icon {
+  background-image: url(../Platinum/Images/Icons/SaveAsForm16.png);
+}
+.theme-entry a.toolbar-button.save-as-report .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.save-as-application .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.checkin-smartobject .button-icon {
+  background-image: url(../Platinum/Images/Icons/CheckInSmartObject16.png);
+}
+.theme-entry a.toolbar-button.checkin-view .button-icon {
+  background-image: url(../Platinum/Images/Icons/CheckInView16.png);
+}
+.theme-entry a.toolbar-button.checkin-form .button-icon {
+  background-image: url(../Platinum/Images/Icons/CheckInForm16.png);
+}
+.theme-entry a.toolbar-button.checkin-report .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.checkin-application .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.checkout-smartobject .button-icon {
+  background-image: url(../Platinum/Images/Icons/CheckOutSmartObject16.png);
+}
+.theme-entry a.toolbar-button.checkout-view .button-icon {
+  background-image: url(../Platinum/Images/Icons/CheckOutView16.png);
+}
+.theme-entry a.toolbar-button.checkout-form .button-icon {
+  background-image: url(../Platinum/Images/Icons/CheckOutForm16.png);
+}
+.theme-entry a.toolbar-button.checkout-report .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.checkout-application .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.undocheckout-view .button-icon {
+  background-image: url(../Platinum/Images/Icons/UndoCheckOutView16.png);
+}
+.theme-entry a.toolbar-button.undocheckout-form .button-icon {
+  background-image: url(../Platinum/Images/Icons/UndoCheckOutForm16.png);
+}
+.theme-entry a.toolbar-button.undocheckout-report .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.undocheckout-application .button-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry a.toolbar-button.rename .button-icon {
+  background-image: url(../Platinum/Images/Icons/Rename16.png);
+}
+.theme-entry a.toolbar-button.category .button-icon {
+  background-image: url(../Platinum/Images/Icons/CategoryOpen16.png);
+}
+.theme-entry a.toolbar-button.move-to .button-icon {
+  background-image: url(../Platinum/Images/Icons/MoveBetweenFolders16.png);
+}
+.theme-entry a.toolbar-button.new .button-icon {
+  background-image: url(../Platinum/Images/Icons/GenericNew16.png);
+}
+/* Report Designer Specific Toolbar Buttons */
+
+.theme-entry a.toolbar-button.drill-down .button-icon {
+  background-image: url("../Platinum/Images/Icons/Link16.png");
+}
+.theme-entry a.toolbar-button.delete-drill-down .button-icon {
+  background-image: url("../Platinum/Images/Icons/DeleteDrillThrough16.png");
+}
+/* SmartObject Designer Specific Toolbar Buttons */
+
+.theme-entry a.toolbar-button.add-so-property .button-icon {
+  background-image: url("../Platinum/Images/Icons/AddSmartObjectProperties16.png");
+}
+.theme-entry a.toolbar-button.add-so-method .button-icon {
+  background-image: url("../Platinum/Images/Icons/AddSmartObjectMethod16.png");
+}
+.theme-entry a.toolbar-button.display-method-model .button-icon {
+  background-image: url("../Platinum/Images/Icons/DisplayModel16.png");
+}
+/* Aggregation Toolbar Buttons */
+
+.theme-entry a.toolbar-button.aggregation-sum .button-icon {
+  background-image: url(../Platinum/Images/Icons/Sigma16.png);
+}
+.theme-entry a.toolbar-button.aggregation-average .button-icon {
+  background-image: url(../Platinum/Images/Icons/Average_16.png);
+}
+.theme-entry a.toolbar-button.aggregation-minimum .button-icon {
+  background-image: url(../Platinum/Images/Icons/Minimum_16.png);
+}
+.theme-entry a.toolbar-button.aggregation-maximum .button-icon {
+  background-image: url(../Platinum/Images/Icons/Maximum_16.png);
+}
+.theme-entry a.toolbar-button.aggregation-product .button-icon {
+  background-image: url(../Platinum/Images/Icons/Product_16.png);
+}
+.theme-entry a.toolbar-button.aggregation-count .button-icon {
+  background-image: url(../Platinum/Images/Icons/Count_16.png);
+}
+.theme-entry a.toolbar-button.filter .button-icon {
+  background-image: url(../Platinum/Images/Icons/Filter16.png);
+}
+.theme-entry a.toolbar-button.advanced-filter .button-icon {
+  background-image: url(../Platinum/Images/Icons/AdvancedFilter16.png);
+}
+.theme-entry a.toolbar-button.pdfdocument .button-icon {
+  background-image: url(../Platinum/Images/Icons/PDFcontrol16.png);
+}
+.theme-entry a.toolbar-button.setasdefault .button-icon {
+  background-image: url(../Platinum/Images/Icons/SetAsDefault16.png);
+}
+/*#endregion Toolbar Button Icons */
+
+/*#endregion Toolbar Styling */
+
+/*#region Form Styling */
+
+.theme-entry .input-control input[type="text"],
+.input-control input[type="password"] {
+  height: 15px;
+}
+.theme-entry .input-control a.input-control {
+  color: #343e41;
+  height: 16px;
+}
+.theme-entry .input-control.disabled a.input-control,
+.theme-entry .input-control.disabled input[type=text],
+.theme-entry .input-control.disabled input[type=password],
+.theme-entry .input-control.disabled textarea,
+.theme-entry .input-control input[type=text][disabled=disabled],
+.theme-entry .input-control input[type=password][disabled=disabled],
+.theme-entry .input-control textarea[disabled=disabled] {
+  color: #999999;
+}
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .input-control .input-control-m-c {
+  border-color: #4f6f19;
+}
+.theme-entry span.textbox-style-wrapper.focus,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.focus,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox:focus,
+.theme-entry .input-control.active .input-control-m-c,
+.theme-entry .input-control.active div.input-control-m-c,
+.theme-entry .hide-browser-highlight.active,
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.radio.focus,
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.checkbox.focus,
+.theme-entry .checkbox-outer-panel .input-control.checkbox.focus {
+  border-color: #85c74f #4f6f19 #85c74f #85c74f !important;
+  /*important will overide user configured styles */
+
+}
+.theme-entry .input-control.radio.focus {
+  border: 1px dotted #4f6f19;
+}
+.theme-entry span.textbox-style-wrapper.disabled,
+.theme-entry span.textbox-style-wrapper.preview,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.disabled,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.preview,
+.theme-entry .input-control.disabled .input-control-m-c {
+  border-color: #b9c5a3 !important;
+  /*important will overide user configured styles */
+
+}
+.theme-entry .picture-control-inline:focus {
+  outline: 1px dotted #4f6f19;
+}
+.theme-entry .lookup-box.input-control.focus {
+  border-color: #4f6f19;
+}
+.theme-entry .fileImage.focus {
+  border-color: #4f6f19 !important;
+  border-style: dotted !important;
+}
+.theme-entry span.textbox-style-wrapper.invalid,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.invalid,
+.theme-entry .input-control.invalid .input-control-m-c,
+.theme-entry .SourceCode-Forms-Controls-Web-Label.invalid,
+.theme-entry .SourceCode-Forms-Controls-Web-DataLabel.invalid,
+.theme-entry .file-wrapper.invalid,
+.theme-entry div.hyperlinkTopLeftPanel.invalid {
+  border: 1px solid #e7000e !important;
+  /*important will overide user configured styles */
+
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+.theme-entry .input-control-watermark {
+  font-style: italic !important;
+  /*important will overide user configured styles */
+  color: #c5c5c5 !important;
+  /*important will overide user configured styles */
+
+}
+.theme-entry label.input-control.checkbox .input-control-img {
+  background-image: url(K2/checkbox.png);
+}
+.theme-entry label.input-control.radio .input-control-img {
+  background-image: url(K2/radio.png);
+}
+/*#region Input Control Icons */
+
+.theme-entry label.input-control.unknown .input-control-icon {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry label.input-control.input-controls .input-control-icon {
+  background-image: url(../Platinum/Images/Icons/InputControl16.png);
+}
+.theme-entry label.input-control.display-controls .input-control-icon {
+  background-image: url(../Platinum/Images/Icons/DisplayControl16.png);
+}
+.theme-entry label.input-control.inline-labels .input-control-icon {
+  background-image: url(../Platinum/Images/Icons/ListView16.png);
+}
+.theme-entry label.input-control.stacked-labels .input-control-icon {
+  background-image: url(../Platinum/Images/Icons/ItemView16.png);
+}
+.theme-entry label.input-control.standard-buttons .input-control-icon {
+  background-image: url(../Platinum/Images/Icons/ButtonControl16.png);
+}
+.theme-entry label.input-control.toolbar-buttons .input-control-icon {
+  background-image: url(../Platinum/Images/Icons/ToolbarControl16.png);
+}
+.theme-entry label.input-control.one-column .input-control-icon {
+  background-image: url(../Platinum/Images/Icons/OneColumn16.png);
+}
+.theme-entry label.input-control.two-columns .input-control-icon {
+  background-image: url(../Platinum/Images/Icons/TwoColumns16.png);
+}
+.theme-entry label.input-control.custom-columns .input-control-icon {
+  background-image: url(../Platinum/Images/Icons/TableProperties16.png);
+}
+/*#endregion Input Control Icons */
+
+.theme-entry .input-control.select-box .input-control-buttons,
+.theme-entry .input-control.select-box .input-control-buttons a {
+  border-color: #4f6f19;
+}
+.theme-entry .input-control.select-box.disabled .input-control-buttons {
+  border-color: #d5d6ce;
+}
+.theme-entry .input-control.select-box .input-control-buttons a {
+  color: white;
+  border: solid 1px #aed78e;
+  background: #78bc41;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #78bc41), color-stop(100%, #629e35));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #78bc41 0%, #629e35 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry .input-control.select-box .input-control-buttons a,
+.ie9 .theme-entry .input-control.select-box .input-control-buttons a {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#78bc41', endColorstr='#629e35', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .input-control.select-box .input-control-buttons a > span {
+  height: 16px;
+}
+.theme-entry .input-control.select-box .input-control-buttons a > span span {
+  height: 16px;
+}
+.theme-entry .input-control.select-box .input-control-buttons a > span,
+.theme-entry .input-control.select-box .input-control-buttons a:hover > span,
+.theme-entry .input-control.select-box .input-control-buttons a:active > span,
+.theme-entry .input-control.select-box .input-control-buttons a:focus > span {
+  border-width: 1px;
+  height: 16px;
+}
+.theme-entry .input-control.select-box .input-control-buttons a:hover > span {
+  border-color: #dbfac1;
+  background: #c1f596;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c1f596), color-stop(100%, #8acb55));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #c1f596 0%, #8acb55 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry .input-control.select-box .input-control-buttons a:hover > span,
+.ie9 .theme-entry .input-control.select-box .input-control-buttons a:hover > span {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c1f596', endColorstr='#8acb55', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .input-control.select-box .input-control-buttons a:focus > span,
+.theme-entry .input-control.select-box .input-control-buttons a:active > span,
+.theme-entry .input-control.select-box.active .input-control-buttons a > span,
+.theme-entry .input-control.select-box.active .input-control-buttons:hover a > span,
+.theme-entry .input-control.select-box.active .input-control-buttons:focus a > span,
+.theme-entry .input-control.select-box.active .input-control-buttons:active a > span {
+  border: solid 1px #aed78e;
+  background: #78bc41;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #78bc41), color-stop(100%, #629e35));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #78bc41 0%, #629e35 100%);
+  /* W3C */
+  height: 16px;
+}
+.ie8 .theme-entry .input-control.select-box .input-control-buttons a:focus > span,
+.ie8 .theme-entry .input-control.select-box .input-control-buttons a:active > span,
+.ie8 .theme-entry .input-control.select-box.active .input-control-buttons a > span,
+.ie8 .theme-entry .input-control.select-box.active .input-control-buttons:hover a > span,
+.ie8 .theme-entry .input-control.select-box.active .input-control-buttons:focus a > span,
+.ie8 .theme-entry .input-control.select-box.active .input-control-buttons:active a > span,
+.ie9 .theme-entry .input-control.select-box .input-control-buttons a:focus > span,
+.ie9 .theme-entry .input-control.select-box .input-control-buttons a:active > span,
+.ie9 .theme-entry .input-control.select-box.active .input-control-buttons a > span,
+.ie9 .theme-entry .input-control.select-box.active .input-control-buttons:hover a > span,
+.ie9 .theme-entry .input-control.select-box.active .input-control-buttons:focus a > span,
+.ie9 .theme-entry .input-control.select-box.active .input-control-buttons:active a > span {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#78bc41', endColorstr='#629e35', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .input-control.select-box .input-control-buttons a.dropdown > span span,
+.theme-entry .input-control.select-box .input-control-buttons a.dropdown:active > span span,
+.theme-entry .input-control.select-box.active .input-control-buttons a.dropdown > span span,
+.theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:focus > span span,
+.theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:hover > span span,
+.theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:focus > span span {
+  background-image: url(../Platinum/Images/Arrows/black_arrow_down.gif);
+}
+.theme-entry .input-control.select-box .input-control-buttons a.dropdown:hover > span span,
+.theme-entry .input-control.select-box .input-control-buttons a.dropdown:focus > span span {
+  background-image: url(../Platinum/Images/Arrows/white_arrow_down.gif);
+}
+.theme-entry .drop-menu {
+  background-color: white;
+  border-color: #4f6f19;
+}
+.theme-entry .drop-menu.icon-control .drop-menu-m {
+  background-image: url(K2/menu_bg.gif);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu {
+  background-color: transparent;
+}
+.theme-entry .drop-menu ul.drop-menu a span {
+  color: #343e41;
+}
+.theme-entry .drop-menu ul.drop-menu a:hover span {
+  background-color: #cee8bb;
+}
+.theme-entry .drop-menu ul.drop-menu a.selected span,
+.theme-entry .drop-menu ul.drop-menu li.selected span {
+  background-color: #bfe1a5;
+}
+.theme-entry .drop-menu ul.drop-menu a.disabled span,
+.theme-entry .drop-menu ul.drop-menu a.disabled:hover span {
+  background-color: white;
+}
+/*#region Drop Menu Item Icon Styling */
+
+.theme-entry .drop-menu.icon-control ul.drop-menu a.unknown,
+.theme-entry .input-control.icon-control.unknown .input-control-icon,
+.theme-entry .input-control.icon-control.unknown .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.smartobject,
+.theme-entry .input-control.icon-control.smartobject .input-control-icon,
+.theme-entry .input-control.icon-control.smartobject .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartObject16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.workflow,
+.theme-entry .input-control.icon-control.workflow .input-control-icon,
+.theme-entry .input-control.icon-control.workflow .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Process16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.smartfunction,
+.theme-entry .input-control.icon-control.smartfunction .input-control-icon,
+.theme-entry .input-control.icon-control.smartfunction .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartFunctiont16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.view,
+.theme-entry .input-control.icon-control.view .input-control-icon,
+.theme-entry .input-control.icon-control.view .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/View16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.form,
+.theme-entry .input-control.icon-control.form .input-control-icon,
+.theme-entry .input-control.icon-control.form .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Document16flat.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.application,
+.theme-entry .input-control.icon-control.application .input-control-icon,
+.theme-entry .input-control.icon-control.application .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Application16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.report,
+.theme-entry .input-control.icon-control.report .input-control-icon,
+.theme-entry .input-control.icon-control.report .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Report16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.eventbus,
+.theme-entry .input-control.icon-control.eventbus .input-control-icon,
+.theme-entry .input-control.icon-control.eventbus .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/EventBus16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.field,
+.theme-entry .input-control.icon-control.field .input-control-icon,
+.theme-entry .input-control.icon-control.field .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Field16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.auto-guid,
+.theme-entry .drop-menu.icon-control ul.drop-menu a.autoguid,
+.theme-entry .input-control.icon-control.auto-guid .input-control-icon,
+.theme-entry .input-control.icon-control.autoguid .input-control-icon,
+.theme-entry .input-control.icon-control.auto-guid .input-control-wrapper,
+.theme-entry .input-control.icon-control.autoguid .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/AutoGuid16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.auto-number,
+.theme-entry .drop-menu.icon-control ul.drop-menu a.autonumber,
+.theme-entry .input-control.icon-control.auto-number .input-control-icon,
+.theme-entry .input-control.icon-control.autonumber .input-control-icon,
+.theme-entry .input-control.icon-control.auto-number .input-control-wrapper,
+.theme-entry .input-control.icon-control.autonumber .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/AutoNumber16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.date-time,
+.theme-entry .drop-menu.icon-control ul.drop-menu a.datetime,
+.theme-entry .input-control.icon-control.date-time .input-control-icon,
+.theme-entry .input-control.icon-control.datetime .input-control-icon,
+.theme-entry .input-control.icon-control.date-time .input-control-wrapper,
+.theme-entry .input-control.icon-control.datetime .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/DateTime16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.date,
+.theme-entry .input-control.icon-control.date .input-control-icon,
+.theme-entry .input-control.icon-control.date .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Date16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.time,
+.theme-entry .input-control.icon-control.time .input-control-icon,
+.theme-entry .input-control.icon-control.time .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Time16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.decimal,
+.theme-entry .input-control.icon-control.decimal .input-control-icon,
+.theme-entry .input-control.icon-control.decimal .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Decimal16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.file,
+.theme-entry .input-control.icon-control.file .input-control-icon,
+.theme-entry .input-control.icon-control.file .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/File16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.guid,
+.theme-entry .input-control.icon-control.guid .input-control-icon,
+.theme-entry .input-control.icon-control.guid .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Guid16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.hyperlink,
+.theme-entry .input-control.icon-control.hyperlink .input-control-icon,
+.theme-entry .input-control.icon-control.hyperlink .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Hyperlink16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.image,
+.theme-entry .input-control.icon-control.image .input-control-icon,
+.theme-entry .input-control.icon-control.image .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/InsertImage16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.memo,
+.theme-entry .input-control.icon-control.memo .input-control-icon,
+.theme-entry .input-control.icon-control.memo .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Memo16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.multi-value,
+.theme-entry .drop-menu.icon-control ul.drop-menu a.multivalue,
+.theme-entry .input-control.icon-control.multi-value .input-control-icon,
+.theme-entry .input-control.icon-control.multi-value .input-control-wrapper,
+.theme-entry .input-control.icon-control.multivalue .input-control-icon,
+.theme-entry .input-control.icon-control.multivalue .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/MultiValue16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.number,
+.theme-entry .input-control.icon-control.number .input-control-icon,
+.theme-entry .input-control.icon-control.number .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Number16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.text,
+.theme-entry .input-control.icon-control.text .input-control-icon,
+.theme-entry .input-control.icon-control.text .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Text16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.xml,
+.theme-entry .input-control.icon-control.xml .input-control-icon,
+.theme-entry .input-control.icon-control.xml .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/XML16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.yesno,
+.theme-entry .input-control.icon-control.yesno .input-control-icon,
+.theme-entry .input-control.icon-control.yesno .input-control-wrapper,
+.theme-entry .drop-menu.icon-control ul.drop-menu a.boolean,
+.theme-entry .input-control.icon-control.boolean .input-control-icon,
+.theme-entry .input-control.icon-control.boolean .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Boolean16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.controls-input,
+.theme-entry .drop-menu.icon-control ul.drop-menu a.controlsinput,
+.theme-entry .input-control.icon-control.controls-input .input-control-icon,
+.theme-entry .input-control.icon-control.controls-input .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/InputControl16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.controls-display,
+.theme-entry .drop-menu.icon-control ul.drop-menu a.controlsdisplay,
+.theme-entry .input-control.icon-control.controls-display .input-control-icon,
+.theme-entry .input-control.icon-control.controls-display .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/DisplayControl16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.labels-top,
+.theme-entry .drop-menu.icon-control ul.drop-menu a.labelstop,
+.theme-entry .input-control.icon-control.labels-top .input-control-icon,
+.theme-entry .input-control.icon-control.labelstop .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/ListView16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.labels-left,
+.theme-entry .input-control.icon-control.labels-left .input-control-icon,
+.theme-entry .input-control.icon-control.labels-left .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/ItemView16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.buttons-standard,
+.theme-entry .input-control.icon-control.buttons-standard .input-control-icon,
+.theme-entry .input-control.icon-control.buttons-standard .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/ButtonControl16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.buttons-toolbar,
+.theme-entry .input-control.icon-control.buttons-toolbar .input-control-icon,
+.theme-entry .input-control.icon-control.buttons-toolbar .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/ToolbarButtonControl16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.columns-one,
+.theme-entry .input-control.icon-control.columns-one .input-control-icon,
+.theme-entry .input-control.icon-control.columns-one .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/OneColumn16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.columns-two,
+.theme-entry .input-control.icon-control.columns-two .input-control-icon,
+.theme-entry .input-control.icon-control.columns-two .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/TwoColumns16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.columns-custom,
+.theme-entry .input-control.icon-control.columns-custom .input-control-icon,
+.theme-entry .input-control.icon-control.columns-custom .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/CustomColumn16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.smartobject-method,
+.theme-entry .input-control.icon-control.smartobject-method .input-control-icon,
+.theme-entry .input-control.icon-control.smartobject-method .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartObjectMethod16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.user,
+.theme-entry .input-control.icon-control.user .input-control-icon,
+.theme-entry .input-control.icon-control.user .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/User16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.group,
+.theme-entry .input-control.icon-control.group .input-control-icon,
+.theme-entry .input-control.icon-control.group .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Groups16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.role,
+.theme-entry .input-control.icon-control.role .input-control-icon,
+.theme-entry .input-control.icon-control.role .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Roles16.png);
+}
+/* View Designer Toolbox Properties Dropdown Icons */
+
+.theme-entry .drop-menu.icon-control ul.drop-menu a.generic,
+.theme-entry .input-control.icon-control.generic .input-control-icon,
+.theme-entry .input-control.icon-control.generic .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/ToolbarButtonControl16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.association,
+.theme-entry .input-control.icon-control.association .input-control-icon,
+.theme-entry .input-control.icon-control.association .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/AssociationDatatype16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.add,
+.theme-entry .input-control.icon-control.add .input-control-icon,
+.theme-entry .input-control.icon-control.add .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Add16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.edit,
+.theme-entry .input-control.icon-control.edit .input-control-icon,
+.theme-entry .input-control.icon-control.edit .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Edit16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.delete,
+.theme-entry .input-control.icon-control.delete .input-control-icon,
+.theme-entry .input-control.icon-control.delete .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Delete16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.delete-all,
+.theme-entry .input-control.icon-control.delete-all .input-control-icon,
+.theme-entry .input-control.icon-control.delete-all .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/DeleteAll16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.load,
+.theme-entry .input-control.icon-control.load .input-control-icon,
+.theme-entry .input-control.icon-control.load .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/LoadFlat16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.save,
+.theme-entry .input-control.icon-control.save .input-control-icon,
+.theme-entry .input-control.icon-control.save .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Save16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.refresh,
+.theme-entry .input-control.icon-control.refresh .input-control-icon,
+.theme-entry .input-control.icon-control.refresh .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Refresh16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.checkin,
+.theme-entry .input-control.icon-control.checkin .input-control-icon,
+.theme-entry .input-control.icon-control.checkin .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/CheckIn16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.checkout,
+.theme-entry .input-control.icon-control.checkout .input-control-icon,
+.theme-entry .input-control.icon-control.checkout .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/CheckOut16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.undocheckout,
+.theme-entry .input-control.icon-control.undocheckout .input-control-icon,
+.theme-entry .input-control.icon-control.undocheckout .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/UndoCheckOut16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.none,
+.theme-entry .input-control.icon-control.none .input-control-icon,
+.theme-entry .input-control.icon-control.none .input-control-wrapper {
+  background-image: none;
+}
+/* SmartObject Designer Dropdown Styling */
+
+.theme-entry .drop-menu.icon-control ul.drop-menu a.smartobject-property,
+.theme-entry .input-control.icon-control.smartobject-property .input-control-icon,
+.theme-entry .input-control.icon-control.smartobject-property .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartObjectProperties16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.smartobject-method-parameter,
+.theme-entry .input-control.icon-control.smartobject-method-parameter .input-control-icon,
+.theme-entry .input-control.icon-control.smartobject-method-parameter .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartObjectMethodParameter16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.specific-value,
+.theme-entry .input-control.icon-control.specific-value .input-control-icon,
+.theme-entry .input-control.icon-control.specific-value .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/SpecificValues16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.system-value,
+.theme-entry .input-control.icon-control.system-value .input-control-icon,
+.theme-entry .input-control.icon-control.system-value .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/SystemValues16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-generic,
+.theme-entry .input-control.icon-control.document-generic .input-control-icon,
+.theme-entry .input-control.icon-control.document-generic .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/GenericFileDoc16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-avi,
+.theme-entry .input-control.icon-control.document-avi .input-control-icon,
+.theme-entry .input-control.icon-control.document-avi .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Avi16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-mov,
+.theme-entry .input-control.icon-control.document-mov .input-control-icon,
+.theme-entry .input-control.icon-control.document-move .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/MOV16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-wmv,
+.theme-entry .input-control.icon-control.document-wmv .input-control-icon,
+.theme-entry .input-control.icon-control.document-wmv .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/WMV16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-bmp,
+.theme-entry .input-control.icon-control.document-bmp .input-control-icon,
+.theme-entry .input-control.icon-control.document-bmp .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/BMP16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-gif,
+.theme-entry .input-control.icon-control.document-gif .input-control-icon,
+.theme-entry .input-control.icon-control.document-gif .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/GIF16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-png,
+.theme-entry .input-control.icon-control.document-png .input-control-icon,
+.theme-entry .input-control.icon-control.document-png .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/PNG16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-chm,
+.theme-entry .input-control.icon-control.document-chm .input-control-icon,
+.theme-entry .input-control.icon-control.document-chm .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/HLP16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-csv,
+.theme-entry .input-control.icon-control.document-csv .input-control-icon,
+.theme-entry .input-control.icon-control.document-csv .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/CSV_16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-doc,
+.theme-entry .input-control.icon-control.document-doc .input-control-icon,
+.theme-entry .input-control.icon-control.document-doc .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Docs16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-htm,
+.theme-entry .input-control.icon-control.document-htm .input-control-icon,
+.theme-entry .input-control.icon-control.document-htm .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/HTM16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-html,
+.theme-entry .input-control.icon-control.document-html .input-control-icon,
+.theme-entry .input-control.icon-control.document-html .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/HTML16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-mp3,
+.theme-entry .input-control.icon-control.document-mp3 .input-control-icon,
+.theme-entry .input-control.icon-control.document-mp3 .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/MP316.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-wav,
+.theme-entry .input-control.icon-control.document-wav .input-control-icon,
+.theme-entry .input-control.icon-control.document-wav .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/WAV16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-wma,
+.theme-entry .input-control.icon-control.document-wma .input-control-icon,
+.theme-entry .input-control.icon-control.document-wma .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/WMA16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-one,
+.theme-entry .input-control.icon-control.document-one .input-control-icon,
+.theme-entry .input-control.icon-control.document-one .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/One16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-pdf,
+.theme-entry .input-control.icon-control.document-pdf .input-control-icon,
+.theme-entry .input-control.icon-control.document-pdf .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Pdf16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-ppt,
+.theme-entry .input-control.icon-control.document-ppt .input-control-icon,
+.theme-entry .input-control.icon-control.document-ppt .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/PPT16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-pps,
+.theme-entry .input-control.icon-control.document-pps .input-control-icon,
+.theme-entry .input-control.icon-control.document-pps .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/PPS16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-txt,
+.theme-entry .input-control.icon-control.document-txt .input-control-icon,
+.theme-entry .input-control.icon-control.document-txt .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/TextDoc16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-xls,
+.theme-entry .input-control.icon-control.document-xls .input-control-icon,
+.theme-entry .input-control.icon-control.document-xls .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/XLS16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-xsn,
+.theme-entry .input-control.icon-control.document-xsn .input-control-icon,
+.theme-entry .input-control.icon-control.document-xsn .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/XSN16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.document-zip,
+.theme-entry .input-control.icon-control.document-zip .input-control-icon,
+.theme-entry .input-control.icon-control.document-zip .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Zip16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.view-flow,
+.theme-entry .input-control.icon-control.view-flow .input-control-icon,
+.theme-entry .input-control.icon-control.view-flow .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/ViewFlow16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.user-account,
+.theme-entry .input-control.icon-control.user-account .input-control-icon,
+.theme-entry .input-control.icon-control.user-account .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/UserAccount16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.invoice,
+.theme-entry .input-control.icon-control.invoice .input-control-icon,
+.theme-entry .input-control.icon-control.invoice .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Invoice16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.equals,
+.theme-entry .input-control.icon-control.equals .input-control-icon,
+.theme-entry .input-control.icon-control.equals .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Equals16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.not-equals,
+.theme-entry .input-control.icon-control.not-equals .input-control-icon,
+.theme-entry .input-control.icon-control.not-equals .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/NotEqual16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.greater-than,
+.theme-entry .input-control.icon-control.greater-than .input-control-icon,
+.theme-entry .input-control.icon-control.greater-than .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/GreaterThan16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.less-than,
+.theme-entry .input-control.icon-control.less-than .input-control-icon,
+.theme-entry .input-control.icon-control.less-than .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/LessThan16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.greater-than-equals,
+.theme-entry .input-control.icon-control.greater-than-equals .input-control-icon,
+.theme-entry .input-control.icon-control.greater-than-equals .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/GreaterThanEqual16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.less-than-equals,
+.theme-entry .input-control.icon-control.less-than-equals .input-control-icon,
+.theme-entry .input-control.icon-control.less-than-equals .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/LessThanEqual16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.contains,
+.theme-entry .input-control.icon-control.contains .input-control-icon,
+.theme-entry .input-control.icon-control.contains .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/Contains16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.starts-with,
+.theme-entry .input-control.icon-control.starts-with .input-control-icon,
+.theme-entry .input-control.icon-control.starts-with .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/StartsWith16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.ends-with,
+.theme-entry .input-control.icon-control.ends-with .input-control-icon,
+.theme-entry .input-control.icon-control.ends-with .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/EndsWith16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.text-blank,
+.theme-entry .input-control.icon-control.text-blank .input-control-icon,
+.theme-entry .input-control.icon-control.text-blank .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/IsBlank16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.text-not-blank,
+.theme-entry .input-control.icon-control.text-not-blank .input-control-icon,
+.theme-entry .input-control.icon-control.text-not-blank .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/IsNotBlank16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.sort-ascending,
+.theme-entry .input-control.icon-control.sort-ascending .input-control-icon,
+.theme-entry .input-control.icon-control.sort-ascending .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/SortAscending16.png);
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a.sort-descending,
+.theme-entry .input-control.icon-control.sort-descending .input-control-icon,
+.theme-entry .input-control.icon-control.sort-descending .input-control-wrapper {
+  background-image: url(../Platinum/Images/Icons/SortDescending16.png);
+}
+/*#endregion Drop Menu Item Icon Styling */
+
+/*#endregion Form Styling */
+
+/*#region Menu Styling */
+
+.theme-entry .menu {
+  border-color: #4f6f19;
+  background: white url("K2/menu_bg.gif") repeat-y 0 0;
+}
+.theme-entry .menu li:hover,
+.theme-entry .menu li.active {
+  background: #cee8bb;
+  border-color: #4f6f19;
+}
+.theme-entry .menu li.seperator span {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0 #e0e0e0 white white;
+}
+.theme-entry .menu a.menu-item {
+  color: #222222;
+}
+.theme-entry .menu a.menu-item.children {
+  background-image: url("K2/paging_arrows_single_right_normal.png");
+}
+/*#endregion Menu Styling */
+
+/*#region Menu Icon Styling */
+
+.theme-entry .menu a.menu-item.favourite span.menu-item-icon {
+  background-image: url(../Platinum/Images/Icons/Favourites16.png);
+}
+.theme-entry .menu a.menu-item.add span.menu-item-icon {
+  background-image: url(../Platinum/Images/Icons/Add16.png);
+}
+.theme-entry .menu a.menu-item.edit span.menu-item-icon {
+  background-image: url(../Platinum/Images/Icons/Edit16.png);
+}
+.theme-entry .menu a.menu-item.delete span.menu-item-icon {
+  background-image: url(../Platinum/Images/Icons/Delete16.png);
+}
+.theme-entry .menu a.menu-item.remove span.menu-item-icon {
+  background-image: url(../Platinum/Images/Icons/Remove16.png);
+}
+.theme-entry .menu a.menu-item.refresh span.menu-item-icon {
+  background-image: url(../Platinum/Images/Icons/Refresh16.png);
+}
+.theme-entry .menu a.menu-item.save span.menu-item-icon {
+  background-image: url(../Platinum/Images/Icons/Save16.png);
+}
+.theme-entry .menu a.menu-item.search span.menu-item-icon {
+  background-image: url(../Platinum/Images/Icons/Search16.png);
+}
+.theme-entry .menu a.menu-item.user span.menu-item-icon {
+  background-image: url(../Platinum/Images/Icons/User16.png);
+}
+.theme-entry .menu a.menu-item.group span.menu-item-icon {
+  background-image: url(../Platinum/Images/Icons/group16.png);
+}
+/*#endregion Menu Icon Styling */
+
+/*#region DropTextbox Styling */
+
+.theme-entry .drop-item {
+  color: white;
+  background-color: #7bb625;
+}
+/*#region DropItem Icons */
+
+.theme-entry .drop-item.auto-guid {
+  background-image: url(../Platinum/Images/Icons/AutoGuid16.png);
+}
+.theme-entry .drop-item.auto-number {
+  background-image: url(../Platinum/Images/Icons/AutoNumber16.png);
+}
+.theme-entry .drop-item.date-time {
+  background-image: url(../Platinum/Images/Icons/DateTime16.png);
+}
+.theme-entry .drop-item.datetime-now {
+  background-image: url("../Platinum/Images/Icons/Now16.png");
+}
+.theme-entry .drop-item.date {
+  background-image: url(../Platinum/Images/Icons/Date16.png);
+}
+.theme-entry .drop-item.time {
+  background-image: url(../Platinum/Images/Icons/Time16.png);
+}
+.theme-entry .drop-item.decimal {
+  background-image: url(../Platinum/Images/Icons/Decimal16.png);
+}
+.theme-entry .drop-item.file {
+  background-image: url(../Platinum/Images/Icons/File16.png);
+}
+.theme-entry .drop-item.guid {
+  background-image: url(../Platinum/Images/Icons/Guid16.png);
+}
+.theme-entry .drop-item.hyperlink-control {
+  background-image: url(../Platinum/Images/Icons/Hyperlink16.png);
+}
+.theme-entry .drop-item.memo {
+  background-image: url(../Platinum/Images/Icons/Memo16.png);
+}
+.theme-entry .drop-item.multivalue-control {
+  background-image: url(../Platinum/Images/Icons/MultiValue16.png);
+}
+.theme-entry .drop-item.number {
+  background-image: url(../Platinum/Images/Icons/Number16.png);
+}
+.theme-entry .drop-item.text {
+  background-image: url(../Platinum/Images/Icons/Text16.png);
+}
+.theme-entry .drop-item.xml {
+  background-image: url(../Platinum/Images/Icons/XML16.png);
+}
+.theme-entry .drop-item.yesno {
+  background-image: url(../Platinum/Images/Icons/Boolean16.png);
+}
+.theme-entry .drop-item.button-control {
+  background-image: url(../Platinum/Images/Icons/ButtonControl16.png);
+}
+.theme-entry .drop-item.calendar-control {
+  background-image: url(../Platinum/Images/Icons/CalendarControl16.png);
+}
+.theme-entry .drop-item.checkbox-control {
+  background-image: url(../Platinum/Images/Icons/CheckBoxControl16.png);
+}
+.theme-entry .drop-item.dropdown-control {
+  background-image: url(../Platinum/Images/Icons/DropDownList16.png);
+}
+.theme-entry .drop-item.file-control {
+  background-image: url(../Platinum/Images/Icons/FileAttachmentControl16.png);
+}
+.theme-entry .drop-item.listbox-control {
+  background-image: url(../Platinum/Images/Icons/ListBoxControl16.png);
+}
+.theme-entry .drop-item.radiobutton-control {
+  background-image: url(../Platinum/Images/Icons/RadioButton.png);
+}
+.theme-entry .drop-item.radiobuttongroup-control {
+  background-image: url(../Platinum/Images/Icons/RadioButtonGroup.png);
+}
+.theme-entry .drop-item.textbox-control {
+  background-image: url(../Platinum/Images/Icons/TextBoxControl16.png);
+}
+.theme-entry .drop-item.picker-control {
+  background-image: url(../Platinum/Images/Icons/PickerToolbar16.png);
+}
+.theme-entry .drop-item.datalabel-control {
+  background-image: url(../Platinum/Images/Icons/DataLabelControl16.png);
+}
+.theme-entry .drop-item.label-control {
+  background-image: url(../Platinum/Images/Icons/Label16.png);
+}
+.theme-entry .drop-item.lookup-control {
+  background-image: url(../Platinum/Images/Icons/LookupControl16.png);
+}
+.theme-entry .drop-item.rating-control {
+  background-image: url(../Platinum/Images/Icons/RatingControl16.png);
+}
+.theme-entry .drop-item.slider-control {
+  background-image: url(../Platinum/Images/Icons/SliderControl16.png);
+}
+.theme-entry .drop-item.table-control {
+  background-image: url(../Platinum/Images/Icons/TableControl16.png);
+}
+.theme-entry .drop-item.user {
+  background-image: url(../Platinum/Images/Icons/User16.png);
+}
+.theme-entry .drop-item.toolbar-control {
+  background-image: url(../Platinum/Images/Icons/ToolbarControl16.png);
+}
+.theme-entry .drop-item.toolbar-button-control {
+  background-image: url(../Platinum/Images/Icons/ToolbarButtonControl16.png);
+}
+.theme-entry .drop-item.tree-control {
+  background-image: url(../Platinum/Images/Icons/TreeControl16.png);
+}
+.theme-entry .drop-item.image,
+.theme-entry .drop-item.image-control {
+  background-image: url(../Platinum/Images/Icons/InsertImage16.png);
+}
+/*#endregion DropItem Icons*/
+
+/*#endregion DropTextbox Styling */
+
+/*#region Token Icon Styling */
+
+.theme-entry .token-input .entity.icon.error .entity-text {
+  background-image: url(../Platinum/Images/Icons/Error16.png);
+}
+.theme-entry .token-input .entity.icon.warning .entity-text {
+  background-image: url(../Platinum/Images/Icons/Warning16.png);
+}
+.theme-entry .token-input .entity.icon.smartobject .entity-text {
+  background-image: url(../Platinum/Images/Icons/SmartObject16.png);
+}
+.theme-entry .token-input .entity.icon.view .entity-text {
+  background-image: url(../Platinum/Images/Icons/View16.png);
+}
+.theme-entry .token-input .entity.icon.item-view .entity-text {
+  background-image: url(../Platinum/Images/Icons/ItemView16.png);
+}
+.theme-entry .token-input .entity.icon.capturelist-view .entity-text {
+  background-image: url(../Platinum/Images/Icons/CaptureList16.png);
+}
+.theme-entry .token-input .entity.icon.list-view .entity-text {
+  background-image: url(../Platinum/Images/Icons/ListView16.png);
+}
+.theme-entry .token-input .entity.icon.content-view .entity-text {
+  background-image: url(../Platinum/Images/Icons/ContentView16.png);
+}
+.theme-entry .token-input .entity.icon.form .entity-text {
+  background-image: url(../Platinum/Images/Icons/SmartForm16.png);
+}
+.theme-entry .token-input .entity.icon.application .entity-text {
+  background-image: url(../Platinum/Images/Icons/Application16.png);
+}
+.theme-entry .token-input .entity.icon.smartfunction .entity-text {
+  background-image: url(../Platinum/Images/Icons/SmartFunctiont16.png);
+}
+.theme-entry .token-input .entity.icon.report .entity-text {
+  background-image: url(../Platinum/Images/Icons/Report16.png);
+}
+.theme-entry .token-input .entity.icon.workflow .entity-text {
+  background-image: url(../Platinum/Images/Icons/Process16.png);
+}
+.theme-entry .token-input .entity.icon.eventbus .entity-text {
+  background-image: url(../Platinum/Images/Icons/EventBus16.png);
+}
+.theme-entry .token-input .entity.icon.field .entity-text {
+  background-image: url(../Platinum/Images/Icons/Field16.png);
+}
+.theme-entry .token-input .entity.icon.auto-guid .entity-text,
+.theme-entry .token-input .entity.icon.autoguid .entity-text {
+  background-image: url(../Platinum/Images/Icons/AutoGuid16.png);
+}
+.theme-entry .token-input .entity.icon.auto-number .entity-text,
+.theme-entry .token-input .entity.icon.autonumber .entity-text {
+  background-image: url(../Platinum/Images/Icons/AutoNumber16.png);
+}
+.theme-entry .token-input .entity.icon.date-time .entity-text,
+.theme-entry .token-input .entity.icon.datetime .entity-text {
+  background-image: url(../Platinum/Images/Icons/DateTime16.png);
+}
+.theme-entry .token-input .entity.icon.date .entity-text {
+  background-image: url(../Platinum/Images/Icons/Date16.png);
+}
+.theme-entry .token-input .entity.icon.time .entity-text {
+  background-image: url(../Platinum/Images/Icons/Time16.png);
+}
+.theme-entry .token-input .entity.icon.decimal .entity-text {
+  background-image: url(../Platinum/Images/Icons/Decimal16.png);
+}
+.theme-entry .token-input .entity.icon.file .entity-text {
+  background-image: url(../Platinum/Images/Icons/File16.png);
+}
+.theme-entry .token-input .entity.icon.guid .entity-text {
+  background-image: url(../Platinum/Images/Icons/Guid16.png);
+}
+.theme-entry .token-input .entity.icon.hyperlink .entity-text {
+  background-image: url(../Platinum/Images/Icons/Hyperlink16.png);
+}
+.theme-entry .token-input .entity.icon.image .entity-text {
+  background-image: url(../Platinum/Images/Icons/Image16.png);
+}
+.theme-entry .token-input .entity.icon.memo .entity-text {
+  background-image: url(../Platinum/Images/Icons/Memo16.png);
+}
+.theme-entry .token-input .entity.icon.multi-value-control .entity-text,
+.theme-entry .token-input .entity.icon.multivalue-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/MultiValue16.png);
+}
+.theme-entry .token-input .entity.icon.number .entity-text {
+  background-image: url(../Platinum/Images/Icons/Number16.png);
+}
+.theme-entry .token-input .entity.icon.text .entity-text {
+  background-image: url(../Platinum/Images/Icons/Text16.png);
+}
+.theme-entry .token-input .entity.icon.xml .entity-text {
+  background-image: url(../Platinum/Images/Icons/XML16.png);
+}
+.theme-entry .token-input .entity.icon.yesno .entity-text {
+  background-image: url(../Platinum/Images/Icons/Boolean16.png);
+}
+.theme-entry .token-input .entity.icon.svcObj .entity-text,
+.theme-entry .token-input .entity.icon.service-object .entity-text {
+  background-image: url(../Platinum/Images/Icons/ServiceObject16.png);
+}
+.theme-entry .token-input .entity.icon.svcMethod .entity-text,
+.theme-entry .token-input .entity.icon.service-method .entity-text {
+  background-image: url(../Platinum/Images/Icons/ServiceMethod16.png);
+}
+.theme-entry .token-input .entity.icon.category .entity-text {
+  background-image: url(../Platinum/Images/Icons/FolderClosed16.png);
+}
+.theme-entry .token-input .entity.icon.user .entity-text {
+  background-image: url(../Platinum/Images/Icons/User16.png);
+}
+.theme-entry .token-input .entity.icon.button-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/ButtonControl16.png);
+}
+.theme-entry .token-input .entity.icon.calendar-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/CalendarControl16.png);
+}
+.theme-entry .token-input .entity.icon.checkbox-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/CheckBoxControl16.png);
+}
+.theme-entry .token-input .entity.icon.dropdown-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/DropDownList16.png);
+}
+.theme-entry .token-input .entity.icon.file-control .entity-text,
+.theme-entry .token-input .entity.icon.filepostback-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/FileAttachmentControl16.png);
+}
+.theme-entry .token-input .entity.icon.listbox-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/ListBoxControl16.png);
+}
+.theme-entry .token-input .entity.icon.radiobutton-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/RadioButton.png);
+}
+.theme-entry .token-input .entity.icon.radiobuttongroup-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/RadioButtonGroup.png);
+}
+.theme-entry .token-input .entity.icon.textbox-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/TextBoxControl16.png);
+}
+.theme-entry .token-input .entity.icon.picker-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/PickerToolBar16.png);
+}
+.theme-entry .token-input .entity.icon.textarea-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/TextBoxControl16.png);
+}
+.theme-entry .token-input .entity.icon.image-control .entity-text,
+.theme-entry .token-input .entity.icon.picture-control .entity-text,
+.theme-entry .token-input .entity.icon.imagepostback-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/Picture16_02.png);
+}
+.theme-entry .token-input .entity.icon.datalabel-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/DataLabelControl16.png);
+}
+.theme-entry .token-input .entity.icon.gauge-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/GaugeControl.png);
+}
+.theme-entry .token-input .entity.icon.label-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/Label16.png);
+}
+.theme-entry .token-input .entity.icon.lookup-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/LookupControl16.png);
+}
+.theme-entry .token-input .entity.icon.rating-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/RatingControl16.png);
+}
+.theme-entry .token-input .entity.icon.slider-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/SliderControl16.png);
+}
+.theme-entry .token-input .entity.icon.table-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/TableControl16.png);
+}
+.theme-entry .token-input .entity.icon.toolbar-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/ToolbarControl16.png);
+}
+.theme-entry .token-input .entity.icon.toolbarbutton-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/ToolbarButtonControl16.png);
+}
+.theme-entry .token-input .entity.icon.toolbartable-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/ToolbarTable16.png);
+}
+.theme-entry .token-input .entity.icon.listtable-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/TableList16.png);
+}
+.theme-entry .token-input .entity.icon.tree-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/TreeControl16.png);
+}
+.theme-entry .token-input .entity.icon.multiselectcheckbox-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/MultiSelectCheckBoxes16.png);
+}
+.theme-entry .token-input .entity.icon.listdisplay-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/ListDisplay16.png);
+}
+.theme-entry .token-input .entity.icon.radiobuttonlist-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/RadioButtonList16.png);
+}
+.theme-entry .token-input .entity.icon.plugin .entity-text {
+  background-image: url(../Platinum/Images/Icons/plugin_16_flat.png);
+}
+.theme-entry .token-input .entity.icon.report-parameter .entity-text {
+  background-image: url(../Platinum/Images/Icons/Report_Parameters_16_flat.png);
+}
+.theme-entry .token-input .entity.icon.smartobject-method .entity-text {
+  background-image: url(../Platinum/Images/Icons/SmartObjectMethod16.png);
+}
+.theme-entry .token-input .entity.icon.event .entity-text {
+  background-image: url(../Platinum/Images/Icons/Event16.png);
+}
+.theme-entry .token-input .entity.icon.form-state .entity-text {
+  background-image: url(../Platinum/Images/Icons/FormState16a.png);
+}
+.theme-entry .token-input .entity.icon.property .entity-text {
+  background-image: url(../Platinum/Images/Icons/Properties16.png);
+}
+.theme-entry .token-input .entity.icon.view-event .entity-text {
+  background-image: url(../Platinum/Images/Icons/ViewEvent16.png);
+}
+.theme-entry .token-input .entity.icon.process-activity .entity-text {
+  background-image: url(../Platinum/Images/Icons/Activity16.png);
+}
+.theme-entry .token-input .entity.icon.action .entity-text {
+  background-image: url(../Platinum/Images/Icons/Actions16.png);
+}
+.theme-entry .token-input .entity.icon.data-field .entity-text {
+  background-image: url(../Platinum/Images/Icons/DataField16.png);
+}
+.theme-entry .token-input .entity.icon.xml-field .entity-text {
+  background-image: url(../Platinum/Images/Icons/XamlField16.png);
+}
+.theme-entry .token-input .entity.icon.workflow-action-name .entity-text {
+  background-image: url(../Platinum/Images/Icons/WorkflowActionsName16.png);
+}
+.theme-entry .token-input .entity.icon.workflow-view .entity-text {
+  background-image: url(../Platinum/Images/Icons/WorkflowView16.png);
+}
+.theme-entry .token-input .entity.icon.expression .entity-text {
+  background-image: url(../Platinum/Images/Icons/Expression16.png);
+}
+.theme-entry .token-input .entity.icon.datetime-now .entity-text {
+  background-image: url(../Platinum/Images/Icons/Now16.png);
+}
+.theme-entry .token-input .entity.icon.false .entity-text {
+  background-image: url(../Platinum/Images/Icons/False16.png);
+}
+.theme-entry .token-input .entity.icon.true .entity-text {
+  background-image: url(../Platinum/Images/Icons/True16.png);
+}
+.theme-entry .token-input .entity.icon.empty-string .entity-text {
+  background-image: url(../Platinum/Images/Icons/EmptyString16.png);
+}
+.theme-entry .token-input .entity.hyperlink-control .entity-text {
+  background-image: url(../Platinum/Images/Icons/Hyperlink16.png);
+}
+/*#endregion Token Icon Styling */
+
+/*#region Tree Styling */
+
+.theme-entry .tree li a:hover,
+.theme-entry .tree li a:focus,
+.theme-entry .tree li a.hover {
+  background-color: #d6e3b0;
+}
+.theme-entry .tree li.selected > a,
+.theme-entry .tree li.selected > a:hover,
+.theme-entry .tree li.selected > span {
+  background-color: #e4efc3;
+}
+/*#region Tree Node Icons */
+
+.theme-entry .tree li.user > a,
+.theme-entry .tree li.user > span {
+  background-image: url("../Platinum/Images/Icons/User16.png");
+}
+.theme-entry .tree li.children.open > a,
+.theme-entry .tree li.children.open > span {
+  background-image: url("../Platinum/Images/Icons/FolderOpen16.png");
+}
+.theme-entry .tree li.children.closed > a,
+.theme-entry .tree li.children.closed > span {
+  background-image: url("../Platinum/Images/Icons/FolderClosed16.png");
+}
+.theme-entry .tree li.datetime-now > a,
+.theme-entry .tree li.datetime-now.open > a,
+.theme-entry .tree li.datetime-now.closed > a,
+.theme-entry .tree li.datetime-now > span,
+.theme-entry .tree li.datetime-now.open > span,
+.theme-entry .tree li.datetime-now.closed > span {
+  background-image: url("../Platinum/Images/Icons/Now16.png");
+}
+.theme-entry .tree li.client > a,
+.theme-entry .tree li.client.open > a,
+.theme-entry .tree li.client.closed > a,
+.theme-entry .tree li.client > span,
+.theme-entry .tree li.client.open > span,
+.theme-entry .tree li.client.closed > span {
+  background-image: url("../Platinum/Images/Icons/DisplayControl16.png");
+}
+.theme-entry .tree li.smartobject > a,
+.theme-entry .tree li.smartobject > span {
+  background-image: url(../Platinum/Images/Icons/SmartObject16.png) !important;
+}
+.theme-entry .tree li.view > a,
+.theme-entry .tree li.view > span {
+  background-image: url(../Platinum/Images/Icons/View16.png) !important;
+}
+.theme-entry .tree li.item-view > a,
+.theme-entry .tree li.item-view > span {
+  background-image: url(../Platinum/Images/Icons/ItemView16.png) !important;
+}
+.theme-entry .tree li.capturelist-view > a,
+.theme-entry .tree li.capturelist-view > span {
+  background-image: url(../Platinum/Images/Icons/CaptureList16.png) !important;
+}
+.theme-entry .tree li.list-view > a,
+.theme-entry .tree li.list-view > span {
+  background-image: url(../Platinum/Images/Icons/ListView16.png) !important;
+}
+.theme-entry .tree li.content-view > a,
+.theme-entry .tree li.content-view > span {
+  background-image: url(../Platinum/Images/Icons/ContentView16.png) !important;
+}
+.theme-entry .tree li.views > a,
+.theme-entry .tree li.views > span {
+  background-image: url(../Platinum/Images/Icons/View16.png);
+}
+.theme-entry .tree li.form > a,
+.theme-entry .tree li.form > span {
+  background-image: url(../Platinum/Images/Icons/SmartForm16.png) !important;
+}
+.theme-entry .tree li.forms > a,
+.theme-entry .tree li.forms > span {
+  background-image: url(../Platinum/Images/Icons/SmartForm16.png);
+}
+.theme-entry .tree li.application > a,
+.theme-entry .tree li.application > span {
+  background-image: url(../Platinum/Images/Icons/Application16.png) !important;
+}
+.theme-entry .tree li.applications > a,
+.theme-entry .tree li.applications > span {
+  background-image: url(../Platinum/Images/Icons/Application16.png);
+}
+.theme-entry .tree li.smartfunction > a,
+.theme-entry .tree li.smartfunction > span {
+  background-image: url(../Platinum/Images/Icons/SmartFunctiont16.png) !important;
+}
+.theme-entry .tree li.smartfunctions > a,
+.theme-entry .tree li.smartfunctions > span {
+  background-image: url(../Platinum/Images/Icons/SmartFunctiont16.png);
+}
+.theme-entry .tree li.report > a,
+.theme-entry .tree li.report > span {
+  background-image: url(../Platinum/Images/Icons/Report16.png) !important;
+}
+.theme-entry .tree li.workflow > a,
+.theme-entry .tree li.workflow > span {
+  background-image: url(../Platinum/Images/Icons/Process16.png) !important;
+}
+.theme-entry .tree li.eventbus > a,
+.theme-entry .tree li.eventbus > span {
+  background-image: url(../Platinum/Images/Icons/EventBus16.png) !important;
+}
+.theme-entry .tree li.loading > a,
+.theme-entry .tree li.loading > span {
+  background-image: url(../Platinum/Images/Loaders/PreloaderGreen_16px.gif) !important;
+}
+.theme-entry .tree li.warning > a,
+.theme-entry .tree li.warning > span {
+  background-image: url(../Platinum/Images/Icons/Warning16.png) !important;
+}
+.theme-entry .tree li.field > a,
+.theme-entry .tree li.field.open > a,
+.theme-entry .tree li.field.closed > a,
+.theme-entry .tree li.field > span,
+.theme-entry .tree li.field.open > span,
+.theme-entry .tree li.field.closed > span {
+  background-image: url(../Platinum/Images/Icons/Field16.png);
+}
+.theme-entry .tree li.auto-guid > a,
+.theme-entry .tree li.auto-guid > span {
+  background-image: url(../Platinum/Images/Icons/AutoGuid16.png);
+}
+.theme-entry .tree li.auto-number > a,
+.theme-entry .tree li.auto-number > span {
+  background-image: url(../Platinum/Images/Icons/AutoNumber16.png);
+}
+.theme-entry .tree li.date-time > a,
+.theme-entry .tree li.date-time > span {
+  background-image: url(../Platinum/Images/Icons/DateTime16.png);
+}
+.theme-entry .tree li.date > a,
+.theme-entry .tree li.date > span {
+  background-image: url(../Platinum/Images/Icons/Date16.png);
+}
+.theme-entry .tree li.time > a,
+.theme-entry .tree li.time > span {
+  background-image: url(../Platinum/Images/Icons/Time16.png);
+}
+.theme-entry .tree li.decimal > a,
+.theme-entry .tree li.decimal > span {
+  background-image: url(../Platinum/Images/Icons/Decimal16.png);
+}
+.theme-entry .tree li.file > a,
+.theme-entry .tree li.file > span {
+  background-image: url(../Platinum/Images/Icons/File16.png);
+}
+.theme-entry .tree li.guid > a,
+.theme-entry .tree li.guid > span {
+  background-image: url(../Platinum/Images/Icons/Guid16.png);
+}
+.theme-entry .tree li.hyperlink-control > a,
+.theme-entry .tree li.hyperlink-control > span {
+  background-image: url(../Platinum/Images/Icons/Hyperlink16.png);
+}
+.theme-entry .tree li.image > a,
+.theme-entry .tree li.image > span {
+  background-image: url(../Platinum/Images/Icons/Image16.png);
+}
+.theme-entry .tree li.memo > a,
+.theme-entry .tree li.memo > span {
+  background-image: url(../Platinum/Images/Icons/Memo16.png);
+}
+.theme-entry .tree li.multivalue-control > a,
+.theme-entry .tree li.multivalue-control > span {
+  background-image: url(../Platinum/Images/Icons/MultiValue16.png);
+}
+.theme-entry .tree li.number > a,
+.theme-entry .tree li.number > span {
+  background-image: url(../Platinum/Images/Icons/Number16.png);
+}
+.theme-entry .tree li.text > a,
+.theme-entry .tree li.text > span {
+  background-image: url(../Platinum/Images/Icons/Text16.png);
+}
+.theme-entry .tree li.xml > a,
+.theme-entry .tree li.xml > span {
+  background-image: url(../Platinum/Images/Icons/XML16.png);
+}
+.theme-entry .tree li.yesno > a,
+.theme-entry .tree li.yesno > span {
+  background-image: url(../Platinum/Images/Icons/Boolean16.png);
+}
+.theme-entry .tree li.open.svcInst > a,
+.theme-entry .tree li.open.svcInst > span {
+  background-image: url(../Platinum/Images/Icons/ServiceInstanceOpen16.png);
+}
+.theme-entry .tree li.open.service-instance > a,
+.theme-entry .tree li.open.service-instance > span {
+  background-image: url(../Platinum/Images/Icons/ServiceInstanceOpen16.png);
+}
+.theme-entry .tree li.closed.svcInst > a,
+.theme-entry .tree li.closed.svcInst > span {
+  background-image: url(../Platinum/Images/Icons/ServiceInstanceClosed16.png);
+}
+.theme-entry .tree li.closed.service-instance > a,
+.theme-entry .tree li.closed.service-instance > span {
+  background-image: url(../Platinum/Images/Icons/ServiceInstanceClosed16.png);
+}
+.theme-entry .tree li.open.svcObj > a,
+.theme-entry .tree li.open.svcObj > span,
+.theme-entry .tree li.open.service-object > a,
+.theme-entry .tree li.open.service-object > span {
+  background-image: url(../Platinum/Images/Icons/ServiceObject16.png);
+}
+.theme-entry .tree li.closed.svcObj > a,
+.theme-entry .tree li.closed.svcObj > span,
+.theme-entry .tree li.closed.service-object > a,
+.theme-entry .tree li.closed.service-object > span {
+  background-image: url(../Platinum/Images/Icons/ServiceObject16.png);
+}
+.theme-entry .tree li.svcMethod > a,
+.theme-entry .tree li.svcMethod > span,
+.theme-entry .tree li.service-method > a,
+.theme-entry .tree li.service-method > span {
+  background-image: url(../Platinum/Images/Icons/ServiceMethod16.png);
+}
+.theme-entry .tree li.open.svcFolder > a,
+.theme-entry .tree li.open.svcFolder > span,
+.theme-entry .tree li.open.service-folder > a,
+.theme-entry .tree li.open.service-folder > span {
+  background-image: url(../Platinum/Images/Icons/ServiceInstanceOpen16.png);
+}
+.theme-entry .tree li.closed.svcFolder > a,
+.theme-entry .tree li.closed.svcFolder > span,
+.theme-entry .tree li.closed.service-folder > a,
+.theme-entry .tree li.closed.service-folder > span {
+  background-image: url(../Platinum/Images/Icons/ServiceInstanceClosed16.png);
+}
+.theme-entry .tree li.service-object-browser > a,
+.theme-entry .tree li.service-object-browser > span,
+.theme-entry .tree li.open.service-object-browser > a,
+.theme-entry .tree li.open.service-object-browser > span,
+.theme-entry .tree li.closed.service-object-browser > a,
+.theme-entry .tree li.closed.service-object-browser > span {
+  background-image: url(../Platinum/Images/Icons/ServiceObjectBrowser16.png);
+}
+.theme-entry .tree li.open.fields > a,
+.theme-entry .tree li.open.fields > span {
+  background-image: url(../Platinum/Images/Icons/FieldsOpen16.png);
+}
+.theme-entry .tree li.closed.fields > a,
+.theme-entry .tree li.closed.fields > span {
+  background-image: url(../Platinum/Images/Icons/FieldsClosed16.png);
+}
+.theme-entry .tree li.field-types > a,
+.theme-entry .tree li.field-types > span {
+  background-image: url(../Platinum/Images/Icons/FieldTypes16.png) !important;
+}
+.theme-entry .tree li.category > a,
+.theme-entry .tree li.category > span {
+  background-image: url(../Platinum/Images/Icons/FolderClosed16.png);
+}
+.theme-entry .tree li.open.category > a,
+.theme-entry .tree li.open.category > span {
+  background-image: url(../Platinum/Images/Icons/FolderOpen16.png);
+}
+.theme-entry .tree li.closed.category > a,
+.theme-entry .tree li.closed.category > span {
+  background-image: url(../Platinum/Images/Icons/FolderClosed16.png);
+}
+.theme-entry .tree li.open.applications > a,
+.theme-entry .tree li.open.applications > span {
+  background-image: url(../Platinum/Images/Icons/ApplicationsOpen16.png);
+}
+.theme-entry .tree li.closed.applications > a,
+.theme-entry .tree li.closed.applications > span {
+  background-image: url(../Platinum/Images/Icons/ApplicationsClosed16.png);
+}
+.theme-entry .tree li.open.favourites > a,
+.theme-entry .tree li.open.favourites > span {
+  background-image: url(../Platinum/Images/Icons/Favourites16.png);
+}
+.theme-entry .tree li.closed.favourites > a,
+.theme-entry .tree li.closed.favourites > span {
+  background-image: url(../Platinum/Images/Icons/Favourites16.png);
+}
+.theme-entry .tree li.open.user > a,
+.theme-entry .tree li.open.drop-menu.icon-control ul.drop-menu a > span {
+  background-image: url(../Platinum/Images/Icons/User16.png);
+}
+.theme-entry .tree li.closed.user > a,
+.theme-entry .tree li.closed.user > span,
+.theme-entry .tree li.open.user > a,
+.theme-entry .tree li.open.user > span {
+  background-image: url(../Platinum/Images/Icons/User16.png);
+}
+.theme-entry .tree li.open.recent > a,
+.theme-entry .tree li.open.recent > span {
+  background-image: url(../Platinum/Images/Icons/Recent16.png);
+}
+.theme-entry .tree li.closed.recent > a,
+.theme-entry .tree li.closed.recent > span {
+  background-image: url(../Platinum/Images/Icons/Recent16.png);
+}
+.theme-entry .tree li.all-items > a,
+.theme-entry .tree li.all-items > span {
+  background-image: url(../Platinum/Images/Icons/FolderClosed16.png);
+}
+.theme-entry .tree li.open.all-items > a,
+.theme-entry .tree li.open.all-items > span {
+  background-image: url(../Platinum/Images/Icons/FolderOpen16.png);
+}
+.theme-entry .tree li.closed.all-items > a,
+.theme-entry .tree li.closed.all-items > span {
+  background-image: url(../Platinum/Images/Icons/FolderClosed16.png);
+}
+.theme-entry .tree li.open.smartobjects > a,
+.theme-entry .tree li.open.smartobjects > span,
+.theme-entry .tree li.closed.smartobjects > a,
+.theme-entry .tree li.closed.smartobjects > span {
+  background-image: url(../Platinum/Images/Icons/SmartObjectsClosed16.png);
+}
+.theme-entry .tree li.open.smartfunctions > a,
+.theme-entry .tree li.open.smartfunctions > span {
+  background-image: url(../Platinum/Images/Icons/SmartFunctionsOpen16.png);
+}
+.theme-entry .tree li.closed.smartfunctions > a,
+.theme-entry .tree li.closed.smartfunctions > span {
+  background-image: url(../Platinum/Images/Icons/SmartFunctionsClosed16.png);
+}
+.theme-entry .tree li.open.views > a,
+.theme-entry .tree li.open.views > span {
+  background-image: url(../Platinum/Images/Icons/SmartViewsOpen16.png);
+}
+.theme-entry .tree li.closed.views > a,
+.theme-entry .tree li.closed.views > span {
+  background-image: url(../Platinum/Images/Icons/SmartViewsClosed16.png);
+}
+.theme-entry .tree li.open.forms > a,
+.theme-entry .tree li.open.forms > span {
+  background-image: url(../Platinum/Images/Icons/SmartFormsOpen16.png);
+}
+.theme-entry .tree li.closed.forms > a,
+.theme-entry .tree li.closed.forms > span {
+  background-image: url(../Platinum/Images/Icons/SmartFormsClosed16.png);
+}
+.theme-entry .tree li.open.reports > a,
+.theme-entry .tree li.open.reports > span {
+  background-image: url(../Platinum/Images/Icons/ReportsOpen16.png);
+}
+.theme-entry .tree li.closed.reports > a,
+.theme-entry .tree li.closed.reports > span {
+  background-image: url(../Platinum/Images/Icons/ReportsClosed16.png);
+}
+.theme-entry .tree li.open.workflows > a,
+.theme-entry .tree li.open.workflows > span {
+  background-image: url(../Platinum/Images/Icons/WorkFlowsOpen16.png);
+}
+.theme-entry .tree li.closed.workflows > a,
+.theme-entry .tree li.closed.workflows > span {
+  background-image: url(../Platinum/Images/Icons/WorkFlowsClosed16.png);
+}
+.theme-entry .tree li.open.recent-smartobjects > a,
+.theme-entry .tree li.open.recent-smartobjects > span,
+.theme-entry .tree li.closed.recent-smartobjects > a,
+.theme-entry .tree li.closed.recent-smartobjects > span {
+  background-image: url(../Platinum/Images/Icons/RecentSmartObjects16.png);
+}
+.theme-entry .tree li.open.recent-views > a,
+.theme-entry .tree li.open.recent-views > span,
+.theme-entry .tree li.closed.recent-views > a,
+.theme-entry .tree li.closed.recent-views > span {
+  background-image: url(../Platinum/Images/Icons/RecentViews16.png);
+}
+.theme-entry .tree li.open.recent-forms > a,
+.theme-entry .tree li.open.recent-forms > span,
+.theme-entry .tree li.closed.recent-forms > a,
+.theme-entry .tree li.closed.recent-forms > span {
+  background-image: url(../Platinum/Images/Icons/RecentForms16.png);
+}
+.theme-entry .tree li.open.recent-reports > a,
+.theme-entry .tree li.open.recent-reports > span,
+.theme-entry .tree li.closed.recent-reports > a,
+.theme-entry .tree li.closed.recent-reports > span {
+  background-image: url(../Platinum/Images/Icons/RecentReports16.png);
+}
+.theme-entry .tree li.open.recent-applications > a,
+.theme-entry .tree li.open.recent-applications > span,
+.theme-entry .tree li.closed.recent-applications > a,
+.theme-entry .tree li.closed.recent-applications > span {
+  background-image: url(../Platinum/Images/Icons/RecentApplications16.png);
+}
+.theme-entry .tree li.open.recent-workflows > a,
+.theme-entry .tree li.open.recent-workflows > span,
+.theme-entry .tree li.closed.recent-workflows > a,
+.theme-entry .tree li.closed.recent-workflows > span {
+  background-image: url(../Platinum/Images/Icons/RecentWorkflows16.png);
+}
+.theme-entry .tree li.open.shared > a,
+.theme-entry .tree li.open.shared > span {
+  background-image: url(../Platinum/Images/Icons/Shared16pix.png);
+}
+.theme-entry .tree li.closed.shared > a,
+.theme-entry .tree li.closed.shared > span {
+  background-image: url(../Platinum/Images/Icons/Shared16pix.png);
+}
+.theme-entry .tree li.controls > a,
+.theme-entry .tree li.controls > span {
+  background-image: url(../Platinum/Images/Icons/ControlsFolder16_closed.png);
+}
+.theme-entry .tree li.open.controls > a,
+.theme-entry .tree li.open.controls > span {
+  background-image: url(../Platinum/Images/Icons/ControlsFolder16_open.png);
+}
+.theme-entry .tree li.closed.controls > a,
+.theme-entry .tree li.closed.controls > span {
+  background-image: url(../Platinum/Images/Icons/ControlsFolder16_closed.png);
+}
+.theme-entry .tree li.button-control > a,
+.theme-entry .tree li.button-control.children.open > a,
+.theme-entry .tree li.button-control.children.closed > a,
+.theme-entry .tree li.button-control > span {
+  background-image: url(../Platinum/Images/Icons/ButtonControl16.png);
+}
+.theme-entry .tree li.toolbarbutton-control > a,
+.theme-entry .tree li.toolbarbutton-control.children.open > a,
+.theme-entry .tree li.toolbarbutton-control.children.closed > a,
+.theme-entry .tree li.toolbarbutton-control > span {
+  background-image: url(../Platinum/Images/Icons/ToolBarButtonControl16.png);
+}
+.theme-entry .tree li.calendar-control > a,
+.theme-entry .tree li.calendar-control.children.open > a,
+.theme-entry .tree li.calendar-control.children.closed > a,
+.theme-entry .tree li.calendar-control > span {
+  background-image: url(../Platinum/Images/Icons/CalendarControl16.png);
+}
+.theme-entry .tree li.checkbox-control > a,
+.theme-entry .tree li.checkbox-control.children.open > a,
+.theme-entry .tree li.checkbox-control.children.closed > a,
+.theme-entry .tree li.checkbox-control > span {
+  background-image: url(../Platinum/Images/Icons/CheckBoxControl16.png);
+}
+.theme-entry .tree li.dropdown-control > a,
+.theme-entry .tree li.dropdown-control.children.open > a,
+.theme-entry .tree li.dropdown-control.children.closed > a,
+.theme-entry .tree li.dropdown-control > span {
+  background-image: url(../Platinum/Images/Icons/DropDownList16.png);
+}
+.theme-entry .tree li.file-control > a,
+.theme-entry .tree li.file-control.children.open > a,
+.theme-entry .tree li.file-control.children.closed > a,
+.theme-entry .tree li.file-control > span {
+  background-image: url(../Platinum/Images/Icons/FileAttachmentControl16.png);
+}
+.theme-entry .tree li.listbox-control > a,
+.theme-entry .tree li.listbox-control.children.open > a,
+.theme-entry .tree li.listbox-control.children.closed > a,
+.theme-entry .tree li.listbox-control > span {
+  background-image: url(../Platinum/Images/Icons/ListBoxControl16.png);
+}
+.theme-entry .tree li.radiobutton-control > a,
+.theme-entry .tree li.radiobutton-control.children.open > a,
+.theme-entry .tree li.radiobutton-control.children.closed > a,
+.theme-entry .tree li.radiobutton-control > span {
+  background-image: url(../Platinum/Images/Icons/RadioButton.png);
+}
+.theme-entry .tree li.radiobuttongroup-control > a,
+.theme-entry .tree li.radiobuttongroup-control.children.open > a,
+.theme-entry .tree li.radiobuttongroup-control.children.closed > a,
+.theme-entry .tree li.radiobuttongroup-control > span {
+  background-image: url(../Platinum/Images/Icons/RadioButtonGroup.png);
+}
+.theme-entry .tree li.textbox-control > a,
+.theme-entry .tree li.textbox-control.children.open > a,
+.theme-entry .tree li.textbox-control.children.closed > a,
+.theme-entry .tree li.textbox-control > span {
+  background-image: url(../Platinum/Images/Icons/TextBoxControl16.png);
+}
+.theme-entry .tree li.picker-control > a,
+.theme-entry .tree li.picker-control.children.open > a,
+.theme-entry .tree li.picker-control.children.closed > a,
+.theme-entry .tree li.picker-control > span {
+  background-image: url(../Platinum/Images/Icons/PickerToolbar16.png);
+}
+.theme-entry .tree li.image-control > a,
+.theme-entry .tree li.image-control.children.open > a,
+.theme-entry .tree li.image-control.children.closed > a,
+.theme-entry .tree li.image-control > span {
+  background-image: url(../Platinum/Images/Icons/InsertImage16.png);
+}
+.theme-entry .tree li.datalabel-control > a,
+.theme-entry .tree li.datalabel-control.children.open > a,
+.theme-entry .tree li.datalabel-control.children.closed > a,
+.theme-entry .tree li.datalabel-control > span {
+  background-image: url(../Platinum/Images/Icons/DataLabelControl16.png);
+}
+.theme-entry .tree li.gauge-control > a,
+.theme-entry .tree li.gauge-control.children.open > a,
+.theme-entry .tree li.gauge-control.children.closed > a,
+.theme-entry .tree li.gauge-control > span {
+  background-image: url(../Platinum/Images/Icons/GaugeControl.png);
+}
+.theme-entry .tree li.label-control > a,
+.theme-entry .tree li.label-control.children.open > a,
+.theme-entry .tree li.label-control.children.closed > a,
+.theme-entry .tree li.label-control > span {
+  background-image: url(../Platinum/Images/Icons/Label16.png);
+}
+.theme-entry .tree li.lookup-control > a,
+.theme-entry .tree li.lookup-control.children.open > a,
+.theme-entry .tree li.lookup-control.children.closed > a,
+.theme-entry .tree li.lookup-control > span {
+  background-image: url(../Platinum/Images/Icons/LookupControl16.png);
+}
+.theme-entry .tree li.rating-control > a,
+.theme-entry .tree li.rating-control.children.open > a,
+.theme-entry .tree li.rating-control.children.closed > a,
+.theme-entry .tree li.rating-control > span {
+  background-image: url(../Platinum/Images/Icons/RatingControl16.png);
+}
+.theme-entry .tree li.slider-control > a,
+.theme-entry .tree li.slider-control.children.open > a,
+.theme-entry .tree li.slider-control.children.closed > a,
+.theme-entry .tree li.slider-control > span {
+  background-image: url(../Platinum/Images/Icons/SliderControl16.png);
+}
+.theme-entry .tree li.table-control > a,
+.theme-entry .tree li.table-control.children.open > a,
+.theme-entry .tree li.table-control.children.closed > a,
+.theme-entry .tree li.table-control > span {
+  background-image: url(../Platinum/Images/Icons/TableControl16.png);
+}
+.theme-entry .tree li.toolbar-control > a,
+.theme-entry .tree li.toolbar-control.children.open > a,
+.theme-entry .tree li.toolbar-control.children.closed > a,
+.theme-entry .tree li.toolbar-control > span {
+  background-image: url(../Platinum/Images/Icons/ToolbarControl16.png);
+}
+.theme-entry .tree li.toolbar-button-control > a,
+.theme-entry .tree li.toolbar-button-control.children.open > a,
+.theme-entry .tree li.toolbar-button-control.children.closed > a,
+.theme-entry .tree li.toolbar-button-control > span {
+  background-image: url(../Platinum/Images/Icons/ToolbarButtonControl16.png);
+}
+.theme-entry .tree li.tree-control > a,
+.theme-entry .tree li.tree-control.children.open > a,
+.theme-entry .tree li.tree-control.children.closed > a,
+.theme-entry .tree li.tree-control > span {
+  background-image: url(../Platinum/Images/Icons/TreeControl16.png);
+}
+.theme-entry .tree li.sqlum > a,
+.theme-entry .tree li.sqlum > span {
+  background-image: url(../Platinum/Images/Icons/SQL_UM_16_flat.png);
+}
+.theme-entry .tree li.groups > a,
+.theme-entry .tree li.groups > span {
+  background-image: url(../Platinum/Images/Icons/group16.png);
+}
+.theme-entry .tree li.users > a,
+.theme-entry .tree li.users > span {
+  background-image: url(../Platinum/Images/Icons/User16.png);
+}
+.theme-entry .tree li.plugin > a,
+.theme-entry .tree li.plugin > span {
+  background-image: url(../Platinum/Images/Icons/plugin_16_flat.png);
+}
+.theme-entry .tree li.open.report-parameters > a,
+.theme-entry .tree li.open.report-parameters > span {
+  background-image: url(../Platinum/Images/Icons/Report_Parameters_Open_16_flat.png);
+}
+.theme-entry .tree li.closed.report-parameters > a,
+.theme-entry .tree li.closed.report-parameters > span {
+  background-image: url(../Platinum/Images/Icons/Report_Parameters_Closed_16_flat.png);
+}
+.theme-entry .tree li.report-parameter > a,
+.theme-entry .tree li.report-parameter > span {
+  background-image: url(../Platinum/Images/Icons/Report_Parameters_16_flat.png);
+}
+.theme-entry .tree li.smartobject-method > a,
+.theme-entry .tree li.smartobject-method > span,
+.theme-entry .tree li.children.smartobject-method > a,
+.theme-entry .tree li.children.smartobject-method > span {
+  background-image: url(../Platinum/Images/Icons/SmartObjectMethod16.png);
+}
+.theme-entry .tree li.children.no-image > a,
+.theme-entry .tree li.children.no-image > span {
+  background-image: none;
+}
+.theme-entry .tree li.event > a,
+.theme-entry .tree li.event > span {
+  background-image: url(../Platinum/Images/Icons/Event16.png);
+}
+.theme-entry .tree li.form-state > a,
+.theme-entry .tree li.form-state > span,
+.theme-entry .tree li.children.form-state > a,
+.theme-entry .tree li.children.form-state > span {
+  background-image: url(../Platinum/Images/Icons/FormState16a.png);
+}
+.theme-entry .tree li.appstudio > a,
+.theme-entry .tree li.appstudio > span,
+.theme-entry .tree li.children.appstudio > a,
+.theme-entry .tree li.children.appstudio > span {
+  background-image: url(../Platinum/Images/Icons/AppStudio16.png);
+}
+.theme-entry .tree li.property > a,
+.theme-entry .tree li.property > span {
+  background-image: url(../Platinum/Images/Icons/Properties16.png);
+}
+.theme-entry .tree li.open.parameters > a,
+.theme-entry .tree li.open.parameters > span {
+  background-image: url(../Platinum/Images/Icons/ParametersOpen16.png);
+}
+.theme-entry .tree li.closed.parameters > a,
+.theme-entry .tree li.closed.parameters > span {
+  background-image: url(../Platinum/Images/Icons/ParametersClosed16.png);
+}
+.theme-entry .tree li.view-event > a,
+.theme-entry .tree li.view-event > span {
+  background-image: url(../Platinum/Images/Icons/ViewEvent16.png);
+}
+.theme-entry .tree li.environmentField > a,
+.theme-entry .tree li.environmentField > span {
+  background-image: url(../Platinum/Images/Icons/EnvironmentField16.png);
+}
+.theme-entry .tree li.ControlProperty > a,
+.theme-entry .tree li.ControlProperty > span {
+  background-image: url(../Platinum/Images/Icons/ControlProperty16.png);
+}
+.theme-entry .tree a.smartobject,
+.theme-entry .tree li.children > a.smartobject,
+.theme-entry .tree li.children.closed > a.smartobject,
+.theme-entry .tree li.children.open > a.smartobject {
+  background-image: url(../Platinum/Images/Icons/SmartObject16.png);
+}
+.theme-entry .tree a.view,
+.theme-entry .tree li.children > a.view,
+.theme-entry .tree li.children.closed > a.view,
+.theme-entry .tree li.children.open > a.view {
+  background-image: url(../Platinum/Images/Icons/View16.png);
+}
+.theme-entry .tree a.form,
+.theme-entry .tree li.children > a.form,
+.theme-entry .tree li.children.closed > a.form,
+.theme-entry .tree li.children.open > a.form {
+  background-image: url(../Platinum/Images/Icons/SmartForm16.png);
+}
+.theme-entry .tree a.report,
+.theme-entry .tree li.children > a.report,
+.theme-entry .tree li.children.closed > a.report,
+.theme-entry .tree li.children.open > a.report {
+  background-image: url(../Platinum/Images/Icons/Report16.png);
+}
+/*#endregion Tree Node Icons */
+
+/*#endregion Tree Styling */
+
+/*#region Panel Styling */
+
+.theme-entry .panel-header {
+  border-color: #4f6f19;
+}
+.theme-entry .panel > .panel-header .panel-header-c,
+.theme-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars .toolbar-wrapper,
+.theme-entry .panel.with-header.with-double-toolbar > .panel-toolbars .toolbars .toolbar-wrapper {
+  border-color: #aed78e;
+  background: #7ac043;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7ac043), color-stop(100%, #5f9933));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7ac043 0%, #5f9933 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry .panel > .panel-header .panel-header-c,
+.ie8 .theme-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars .toolbar-wrapper,
+.ie8 .theme-entry .panel.with-header.with-double-toolbar > .panel-toolbars .toolbars .toolbar-wrapper,
+.ie9 .theme-entry .panel > .panel-header .panel-header-c,
+.ie9 .theme-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars .toolbar-wrapper,
+.ie9 .theme-entry .panel.with-header.with-double-toolbar > .panel-toolbars .toolbars .toolbar-wrapper {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ac043', endColorstr='#5f9933', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .panel-header-wrapper .panel-header-text,
+.theme-entry .panel .view-name {
+  color: white;
+}
+.theme-entry .panel > .panel-body {
+  border-color: #4f6f19;
+}
+.theme-entry .panel-header-wrapper .panel-header-controls a {
+  background-image: url(K2/ExpandCollapse.png);
+}
+/*#endregion Panel Styling */
+
+/*#region Grid Styling */
+
+.theme-entry .grid-header {
+  border-color: #4f6f19;
+}
+.theme-entry .grid-header-wrapper,
+.theme-entry .grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper,
+.theme-entry .grid.with-header .grid-toolbars .toolbars.double .toolbar .toolbar-wrapper,
+.theme-entry .grid td.not-sortable .grid-column-header-cell:hover {
+  border-color: #aed78e;
+  background: #7ac043;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7ac043), color-stop(100%, #5f9933));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7ac043 0%, #5f9933 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry .grid-header-wrapper,
+.ie8 .theme-entry .grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper,
+.ie8 .theme-entry .grid.with-header .grid-toolbars .toolbars.double .toolbar .toolbar-wrapper,
+.ie8 .theme-entry .grid td.not-sortable .grid-column-header-cell:hover,
+.ie9 .theme-entry .grid-header-wrapper,
+.ie9 .theme-entry .grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper,
+.ie9 .theme-entry .grid.with-header .grid-toolbars .toolbars.double .toolbar .toolbar-wrapper,
+.ie9 .theme-entry .grid td.not-sortable .grid-column-header-cell:hover {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ac043', endColorstr='#5f9933', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .grid-header-text {
+  color: white;
+}
+.theme-entry .grid-header-wrapper .grid-header-controls a {
+  background-image: url(K2/ExpandCollapse.png);
+}
+.theme-entry .grid-content-table tbody tr.highlighted > td {
+  border-bottom-color: #78bc41;
+  border-top-color: #78bc41;
+}
+.theme-entry .grid-content-table tbody tr.highlighted td.first {
+  border-left-color: #78bc41;
+}
+.theme-entry .grid-content-table tbody tr.highlighted td.last {
+  border-right-color: #78bc41;
+}
+.theme-entry .grid-content-table a.action-row:focus,
+.theme-entry .runtime-list-item a:focus {
+  outline: 1px dotted #78bc41;
+}
+.theme-entry .grid .grid-body {
+  border-color: #4f6f19;
+}
+.theme-entry .grid .grid-column-headers {
+  border-bottom-color: #4f6f19;
+}
+.theme-entry .grid.gridSummaryNeedLeftBorder .grid-column-headers {
+  border-left: #4f6f19 1px solid;
+}
+.theme-entry .grid.gridSummaryNeedRightBorder .grid-column-headers {
+  border-right: #4f6f19 1px solid;
+}
+.theme-entry .grid.gridSummaryNeedTopBorder .grid-column-headers {
+  border-top: #4f6f19 1px solid;
+}
+.theme-entry .grid.gridSummaryNeedLeftBorder .grid-body-content {
+  border-left: #4f6f19 1px solid;
+}
+.theme-entry .grid.gridSummaryNeedRightBorder .grid-body-content {
+  border-right: #4f6f19 1px solid;
+}
+.theme-entry .grid.gridSummaryNeedBottomBorder .grid-body-content {
+  border-bottom: #4f6f19 1px solid;
+}
+.theme-entry .grid .grid-column-headers-wrapper {
+  border-color: #aed78e;
+  background: #7ac043;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7ac043), color-stop(100%, #5f9933));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7ac043 0%, #5f9933 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry .grid .grid-column-headers-wrapper,
+.ie9 .theme-entry .grid .grid-column-headers-wrapper {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ac043', endColorstr='#5f9933', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .grid .grid-column-header-text {
+  color: white;
+}
+.theme-entry .grid .grid-column-header-divider {
+  border-color: #aed78e #4f6f19 #4f6f19 #aed78e;
+}
+.theme-entry .grid table.grid-column-header-table td:hover,
+.theme-entry .grid table.grid-column-header-table td.focus {
+  border-color: #dbfac1;
+  background: #c1f596;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c1f596), color-stop(100%, #8acb55));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #c1f596 0%, #8acb55 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry .grid table.grid-column-header-table td:hover,
+.ie8 .theme-entry .grid table.grid-column-header-table td.focus,
+.ie9 .theme-entry .grid table.grid-column-header-table td:hover,
+.ie9 .theme-entry .grid table.grid-column-header-table td.focus {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c1f596', endColorstr='#8acb55', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .grid .grid-column-header-cell.asc {
+  background-image: url(K2/sort_ascending_normal.png);
+}
+.theme-entry .grid .grid-column-header-cell.desc {
+  background-image: url(K2/sort_descending_normal.png);
+}
+.theme-entry .grid table.grid-content-table tr.even td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row) td {
+  background-color: #eff7e8;
+}
+.theme-entry .grid table.grid-content-table tr:hover td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover td {
+  background-color: #cee8bb;
+}
+.theme-entry .grid .grid-content-table tr.action-row:hover td.action-row,
+.theme-entry .grid .grid-content-table tr.empty-grid:hover td {
+  background-color: transparent;
+}
+.theme-entry .grid table.grid-content-table tr.selected td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row) td {
+  background-color: #bfe1a5;
+}
+.theme-entry .grid.with-aggregation .grid-aggregation {
+  border-color: #adae9c;
+}
+.theme-entry .grid-aggregation-header-c {
+  background: #f9f9f9;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #dfe4d7 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f9f9), color-stop(100%, #dfe4d7));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f9f9f9 0%, #dfe4d7 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f9f9f9 0%, #dfe4d7 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f9f9f9 0%, #dfe4d7 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f9f9f9 0%, #dfe4d7 100%);
+  /* W3C */
+  border-color: white;
+}
+.ie8 .theme-entry .grid-aggregation-header-c,
+.ie9 .theme-entry .grid-aggregation-header-c {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#dfe4d7', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .grid-aggregation.collapsed .grid-aggregation-header-arrow {
+  background-image: url(../Platinum/Images/Arrows/black_arrow_down.gif);
+}
+.theme-entry .grid-aggregation.expanded .grid-aggregation-header-arrow {
+  background-image: url(../Platinum/Images/Arrows/black_arrow_up.gif);
+}
+.theme-entry .grid-aggregation-header-text {
+  color: #343e41;
+}
+.theme-entry .grid-aggregation .grid-aggregation-content {
+  border-top-color: #adae9c;
+}
+.theme-entry .grid.with-summary .grid-summary,
+.theme-entry .grid-summary .grid-summary-item {
+  border-color: #adae9c;
+}
+/*#region Grid Cell Icons */
+
+.theme-entry .grid .grid-content-cell.icon .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Default16px.png);
+}
+.theme-entry .grid .grid-content-cell.icon.user .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/User16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.group .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Groups16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.role .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Roles16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.smartobject .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartObject16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.smartobject-composite .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/CompositeSmartObject16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.view .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/View16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.item-view .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ItemView16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.capturelist-view .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/CaptureList16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.list-view .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ListView16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.content-view .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ContentView16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.form .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartForm16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.report .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Report16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.application .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Application16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.workflow .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Process16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.smartfunction .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartFunctiont16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.category .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/FolderClosed16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.auto-guid .grid-content-cell-wrapper,
+.theme-entry .grid .grid-content-cell.icon.autoguid .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/AutoGuid16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.auto-number .grid-content-cell-wrapper,
+.theme-entry .grid .grid-content-cell.icon.autonumber .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/AutoNumber16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.date-time .grid-content-cell-wrapper,
+.theme-entry .grid .grid-content-cell.icon.datetime .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/DateTime16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.date .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Date16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.time .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Time16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.decimal .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Decimal16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.file .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/File16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.guid .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Guid16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.hyperlink .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Hyperlink16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.image .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/InsertImage16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.memo .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Memo16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.multi-value .grid-content-cell-wrapper,
+.theme-entry .grid .grid-content-cell.icon.multivalue .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/MultiValue16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.number .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Number16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.text .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Text16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.xml .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/XML16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.yesno .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Boolean16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.service-instance .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ServiceInstance16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.service-object .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ServiceObject16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.service-method .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ServiceMethod16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.form-event .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/FormEvent16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.view-event .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ViewEvent16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.form-state .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/FormState16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.smartobject-method .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartObjectMethod16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.smartobject-property .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartObjectProperties16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.smartobject-method-parameter .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/SmartObjectMethodParameter16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.service-object-property .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ServiceObjectMethodProperties16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.service-method-input-property .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/InputServiceProperty16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.service-method-return-property .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ReturnServiceProperty16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.specific-value .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/SpecificValues16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.system-value .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/SystemValues16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.service-object-method-parameter .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ServiceObjectMethodParameter16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-generic .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/GenericFileDoc16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-avi .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Avi16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-mov .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/MOV16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-wmv .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/WMV16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-bmp .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/BMP16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-gif .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/GIF16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-png .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/PNG16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-chm .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/HLP16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-csv .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/CSV_16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-doc .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Docs16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-htm .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/HTM16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-html .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/HTML16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-mp3 .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/MP316.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-wav .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/WAV16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-wma .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/WMA16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-one .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/One16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-pdf .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Pdf16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-pps .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/PPS16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-ppt .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/PPT16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-txt .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/TextDoc16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-xls .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/XLS16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-xsn .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/XSN16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.document-zip .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Zip16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.view-flow .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/ViewFlow16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.user-account .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/UserAccount16.png);
+}
+.theme-entry .grid .grid-content-cell.icon.invoice .grid-content-cell-wrapper {
+  background-image: url(../Platinum/Images/Icons/Invoice16.png);
+}
+/*Runtime User Filter Dialog -- Hide X & display the SetAsDefault Icon*/
+
+.theme-entry #filterNameList table.grid-content-table td:last-child label:not(:empty) {
+  background-image: url(../Platinum/Images/Icons/SetAsDefault16.png);
+}
+/*#endregion Grid Cell Icons */
+
+.theme-entry .grid .grid-paging-control-text {
+  color: white;
+}
+.theme-entry a.toolbar-button.paging-first .button-icon {
+  background-image: url(K2/paging_arrows_double_left_normal.png);
+}
+.theme-entry a.toolbar-button.paging-first:hover .button-icon,
+.theme-entry a.toolbar-button.paging-first:active .button-icon,
+.theme-entry a.toolbar-button.paging-first:focus .button-icon {
+  background-image: url(K2/paging_arrows_double_left_hover.png);
+}
+.theme-entry a.toolbar-button.paging-first.disabled:hover .button-icon,
+.theme-entry a.toolbar-button.paging-first.disabled:active .button-icon,
+.theme-entry a.toolbar-button.paging-first.disabled:focus .button-icon {
+  background-image: url(K2/paging_arrows_double_left_normal.png);
+}
+.theme-entry a.toolbar-button.paging-left .button-icon {
+  background-image: url(K2/paging_arrows_single_left_normal.png);
+}
+.theme-entry a.toolbar-button.paging-left:hover .button-icon,
+.theme-entry a.toolbar-button.paging-left:active .button-icon,
+.theme-entry a.toolbar-button.paging-left:focus .button-icon {
+  background-image: url(K2/paging_arrows_single_left_hover.png);
+}
+.theme-entry a.toolbar-button.paging-left.disabled:hover .button-icon,
+.theme-entry a.toolbar-button.paging-left.disabled:active .button-icon,
+.theme-entry a.toolbar-button.paging-left.disabled:focus .button-icon {
+  background-image: url(K2/paging_arrows_single_left_normal.png);
+}
+.theme-entry a.toolbar-button.paging-right .button-icon {
+  background-image: url(K2/paging_arrows_single_right_normal.png);
+}
+.theme-entry a.toolbar-button.paging-right:hover .button-icon,
+.theme-entry a.toolbar-button.paging-right:active .button-icon,
+.theme-entry a.toolbar-button.paging-right:focus .button-icon {
+  background-image: url(K2/paging_arrows_single_right_hover.png);
+}
+.theme-entry a.toolbar-button.paging-right.disabled:hover .button-icon,
+.theme-entry a.toolbar-button.paging-right.disabled:active .button-icon,
+.theme-entry a.toolbar-button.paging-right.disabled:focus .button-icon {
+  background-image: url(K2/paging_arrows_single_right_normal.png);
+}
+.theme-entry a.toolbar-button.paging-last .button-icon {
+  background-image: url(K2/paging_arrows_double_right_normal.png);
+}
+.theme-entry a.toolbar-button.paging-last:hover .button-icon,
+.theme-entry a.toolbar-button.paging-last:active .button-icon,
+.theme-entry a.toolbar-button.paging-last:focus .button-icon {
+  background-image: url(K2/paging_arrows_double_right_hover.png);
+}
+.theme-entry a.toolbar-button.paging-last.disabled:hover .button-icon,
+.theme-entry a.toolbar-button.paging-last.disabled:active .button-icon,
+.theme-entry a.toolbar-button.paging-last.disabled:focus .button-icon {
+  background-image: url(K2/paging_arrows_double_right_normal.png);
+}
+/*#endregion Grid Styling */
+
+/*#region Popup Styling */
+
+.theme-entry .popup-header {
+  background: #7ac043;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7ac043), color-stop(100%, #5f9933));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7ac043 0%, #5f9933 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7ac043 0%, #5f9933 100%);
+  /* W3C */
+  border-color: #4f6f19;
+}
+.ie8 .theme-entry .popup-header,
+.ie9 .theme-entry .popup-header {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ac043', endColorstr='#5f9933', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .popup-header-text {
+  color: white;
+}
+.theme-entry .popup-header-buttons a {
+  margin-top: 2px;
+}
+.theme-entry .popup-header-buttons a.close {
+  background-image: url("K2/CloseNormal.png");
+  margin-right: 5px;
+}
+.theme-entry .popup-header-buttons a.close:hover,
+.theme-entry .popup-header-buttons a.close:focus,
+.theme-entry .popup-header-buttons a.close:active {
+  background-image: url("K2/CloseHover.png");
+  background-position: 0 0;
+}
+.theme-entry .popup-header-buttons a.maximize {
+  background-image: url("K2/ExpandNormal.png");
+}
+.theme-entry .popup-header-buttons a.maximize:hover,
+.theme-entry .popup-header-buttons a.maximize:focus,
+.theme-entry .popup-header-buttons a.maximize:active {
+  background-image: url("K2/ExpandHover.png");
+  background-position: 0 0;
+}
+.theme-entry .popup-header-buttons a.restore {
+  background-image: url("K2/CollapseNormal.png");
+}
+.theme-entry .popup-header-buttons a.restore:hover,
+.theme-entry .popup-header-buttons a.restore:focus,
+.theme-entry .popup-header-buttons a.restore:active {
+  background-image: url("K2/CollapseHover.png");
+  background-position: 0 0;
+}
+.theme-entry .popup-body {
+  background: #5f9933;
+  border-color: #4f6f19;
+}
+.theme-entry .popup-footer-c {
+  background-color: #5f9933;
+  border-color: #4f6f19;
+}
+/*#region MessageBox Icons */
+
+.theme-entry .message-box-content.info {
+  background-image: url("../Platinum/Images/Icons/Info32.png");
+}
+.theme-entry .message-box-content.warning {
+  background-image: url("../Platinum/Images/Icons/Warning32.png");
+}
+.theme-entry .message-box-content.error {
+  background-image: url("../Platinum/Images/Icons/Error32.png");
+}
+.theme-entry .message-box-content.confirmation {
+  background-image: none;
+}
+.theme-entry .message-box-content.message {
+  background-image: url("../Platinum/Images/Icons/K2Designer32.png");
+}
+.theme-entry .message-box-content.sign-in {
+  background-image: url("../Platinum/Images/Icons/Lock32.png");
+}
+/*#endregion MessageBox Icons */
+
+/*#endregion Popup Styling */
+
+/*#region Tab Styling */
+
+.theme-entry .popup .tab-box {
+  background-color: #5f9933;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab {
+  border-color: #4f6f19;
+  color: #343e41;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper {
+  background: #78bc41;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #78bc41), color-stop(100%, #629e35));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #78bc41 0%, #629e35 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #78bc41 0%, #629e35 100%);
+  /* W3C */
+  border-color: #aed78e;
+}
+.ie8 .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper,
+.ie9 .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#78bc41', endColorstr='#629e35', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.focus .tab-wrapper {
+  border-color: #dbfac1;
+  background: #c1f596;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c1f596), color-stop(100%, #8acb55));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #c1f596 0%, #8acb55 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #c1f596 0%, #8acb55 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-wrapper,
+.ie8 .theme-entry .tab-box ul.tab-box-tabs a.tab.focus .tab-wrapper,
+.ie9 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-wrapper,
+.ie9 .theme-entry .tab-box ul.tab-box-tabs a.tab.focus .tab-wrapper {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c1f596', endColorstr='#8acb55', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus:hover .tab-wrapper {
+  border-color: #4f6f19;
+}
+.theme-entry .tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper {
+  background: #dfe4d7;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #dfe4d7 0%, #f9f9f9 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dfe4d7), color-stop(100%, #f9f9f9));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #dfe4d7 0%, #f9f9f9 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #dfe4d7 0%, #f9f9f9 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #dfe4d7 0%, #f9f9f9 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #dfe4d7 0%, #f9f9f9 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry .tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper,
+.ie9 .theme-entry .tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfe4d7', endColorstr='#f9f9f9', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-wrapper {
+  background: white;
+  filter: none;
+  border-color: white;
+  color: #161d25;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab.disabled .tab-wrapper .tab-text {
+  color: #cccccc;
+}
+/*#region Tab Icons */
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.tab-add {
+  background-image: url(../Platinum/Images/Icons/InsertTab16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.controls-closed {
+  background-image: url(../Platinum/Images/Icons/ControlsFolder16_closed.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.fields {
+  background-image: url(../Platinum/Images/Icons/FieldTypes16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.so-methods {
+  background-image: url(../Platinum/Images/Icons/SmartObjectMethod16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.properties {
+  background-image: url(../Platinum/Images/Icons/Properties16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.events {
+  background-image: url(../Platinum/Images/Icons/EventBus16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.browse {
+  background-image: url(../Platinum/Images/Icons/BrowseOpen16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.search {
+  background-image: url(../Platinum/Images/Icons/Search16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.context {
+  background-image: url(../Platinum/Images/Icons/ContextTab16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.smartobjects {
+  background-image: url(../Platinum/Images/Icons/SmartObjectsOpen16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.views {
+  background-image: url(../Platinum/Images/Icons/SmartViewsOpen16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.service-instances {
+  background-image: url(../Platinum/Images/Icons/ServiceInstanceOpen16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.categories {
+  background-image: url(../Platinum/Images/Icons/CategoryOpen16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.smartobject-properties {
+  background-image: url(../Platinum/Images/Icons/SmartObjectProperties16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.smartobject-methods {
+  background-image: url(../Platinum/Images/Icons/SmartObjectMethod16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.filter {
+  background-image: url(../Platinum/Images/Icons/Filter16.png);
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.ordering {
+  background-image: url(../Platinum/Images/Icons/Order16.png);
+}
+/*#endregion Tab Icons */
+
+.theme-entry .tab-box .tab-box-header {
+  border-color: #4f6f19;
+}
+.theme-entry .tab-box.with-header .tab-box-header-c {
+  background: #f9f9f9;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #dfe4d7 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f9f9), color-stop(100%, #dfe4d7));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f9f9f9 0%, #dfe4d7 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f9f9f9 0%, #dfe4d7 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f9f9f9 0%, #dfe4d7 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f9f9f9 0%, #dfe4d7 100%);
+  /* W3C */
+  border-color: white;
+}
+.ie8 .theme-entry .tab-box.with-header .tab-box-header-c,
+.ie9 .theme-entry .tab-box.with-header .tab-box-header-c {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#dfe4d7', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry .tab-box .tab-box-body {
+  border-color: #4f6f19;
+  background-color: white;
+}
+/*#endregion Tab Styling */
+
+/*#region Calendar Popup Styling */
+
+.theme-entry .calendar-outline {
+  border-color: #4f6f19;
+  background: white;
+  color: #37433d;
+}
+.theme-entry .top-calendar {
+  border: none;
+}
+.theme-entry .today-title,
+.theme-entry .today-title:visited {
+  color: #4f6f19;
+}
+.theme-entry .top-calendar-left {
+  background-image: url("K2/calendar_single_left_normal.png");
+}
+.theme-entry .top-calendar-left:hover {
+  background-image: url("K2/calendar_single_left_hover.png");
+}
+.theme-entry .top-calendar-right {
+  background-image: url("K2/calendar_single_right_normal.png");
+}
+.theme-entry .top-calendar-right:hover {
+  background-image: url("K2/calendar_single_right_hover.png");
+}
+.theme-entry .calendar-content-outside {
+  border: none;
+  color: #37433d;
+}
+.theme-entry .dayname,
+.theme-entry .day,
+.theme-entry .month,
+.theme-entry .year,
+.theme-entry .day:visited,
+.theme-entry .month:visited,
+.theme-entry .year:visited {
+  border-color: white;
+  color: black;
+}
+.theme-entry .day.not-of-current-month,
+.theme-entry .day.not-of-current-month:visited {
+  color: #d0d0d0;
+}
+.theme-entry .day.not-of-current-month:hover {
+  color: white;
+}
+.theme-entry .day:hover,
+.theme-entry .month:hover,
+.theme-entry .year:hover,
+.theme-entry .today-title:hover,
+.theme-entry .day.active,
+.theme-entry .month.active,
+.theme-entry .year.active {
+  background-color: #dff5d0;
+}
+.theme-entry .day.selected,
+.theme-entry .month.selected,
+.theme-entry .year.selected {
+  background-color: #bfe1a5;
+}
+.theme-entry .today-text {
+  border: none;
+}
+/*#endregion Calendar Popup Styling */
+
+/*#region Picker Control Styling*/
+
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control .input-control-wrapper,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box input[type=text],
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box .input-control-m-c,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box .input-control-watermark,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box div.editable-area {
+  height: 45px !important;
+}
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control {
+  padding-bottom: 1px;
+}
+.theme-entry .dialog#PickerSearchDialog .form-field .form-field-element-wrapper .ps-choice-wrapper .ps-choice-button .picker-add {
+  margin-right: 3px;
+}
+html[dir=rtl] .theme-entry .dialog#PickerSearchDialog .form-field .form-field-element-wrapper .ps-choice-wrapper .ps-choice-button .picker-add {
+  margin-left: 3px;
+  margin-right: 0;
+}
+/*endregion Picker Control Styling*/
+
+/*#region Rating Control Styling */
+
+.theme-entry .filledRatingStar {
+  background-image: url("K2/rating_saved.png");
+}
+.theme-entry .emptyRatingStar {
+  background-image: url("K2/rating_empty.png");
+}
+.theme-entry .savedRatingStar {
+  background-image: url("K2/rating_saved.png");
+}
+.theme-entry .hoveredRatingStar {
+  background-image: url("K2/rating_filled.png");
+}
+/*#endregion Rating Control Stylig */
+
+/*#region Slider Control Styling */
+
+.theme-entry .handle-icon {
+  height: 11px;
+}
+.theme-entry .slider_value_display {
+  font-family: "Verdana", sans-serif;
+  font-size: 1.1em;
+  color: #313841;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background: white;
+}
+.theme-entry .slider_value_display.bottom:after {
+  border-color: transparent transparent white white;
+}
+.theme-entry .slider_value_display.top:after {
+  border-color: white white transparent transparent;
+}
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_inner,
+.theme-entry .Slider-rail .Slider-rail-inner {
+  background-image: url("K2/slider_bar_repeater.png");
+}
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_start,
+.theme-entry .Slider-rail .Slider-rail-start {
+  background-image: url("K2/slider_bar_left_corners.png");
+}
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_end,
+.theme-entry .Slider-rail .Slider-rail-end {
+  background-image: url("K2/slider_bar_right_corners.png");
+}
+.theme-entry .ajax__slider_h_handle,
+.theme-entry .Slider-rail a.Slider {
+  background-image: url("K2/slider_button_normal.png");
+}
+.theme-entry .ajax__slider_h_handle.active,
+.theme-entry .ajax__slider_h_handle:hover,
+.theme-entry .ajax__slider_h_handle:focus,
+.theme-entry .ajax__slider_h_handle:active,
+.theme-entry .Slider-rail a.Slider:hover,
+.theme-entry .Slider-rail a.Slider:focus,
+.theme-entry .Slider-rail a.Slider:active {
+  background-image: url("K2/slider_button_hover.png");
+}
+.theme-entry .ajax__slider_h_handle.disabled:hover,
+.theme-entry .ajax__slider_h_handle.read-only:hover,
+.theme-entry .ajax__slider_h_handle.disabled:focus,
+.theme-entry .ajax__slider_h_handle.read-only:focus,
+.theme-entry .ajax__slider_h_handle.disabled:active,
+.theme-entry .ajax__slider_h_handle.read-only:active,
+.theme-entry .Slider-rail.disabled a.Slider:hover,
+.theme-entry .Slider-rail.read-only a.Slider:hover,
+.theme-entry .Slider-rail.disabled a.Slider:focus,
+.theme-entry .Slider-rail.read-only a.Slider:focus,
+.theme-entry .Slider-rail.disabled a.Slider:active,
+.theme-entry .Slider-rail.read-only a.Slider:active {
+  background-image: url("K2/slider_button_normal.png");
+}
+/*#endregion Slider Control Styling */
+
+/*#region Hyperlink Control Styling */
+
+.theme-entry a.Hyperlink {
+  color: #98dc28;
+}
+.theme-entry a.Hyperlink-NotSet {
+  color: #98dc28;
+}
+.theme-entry a.disabled,
+.theme-entry a.disabled:hover {
+  color: #cccccc;
+  cursor: default;
+  text-decoration: none;
+}
+/*#endregion Hyperlink Styling */
+
+/*#region Tooltip Styling */
+
+.theme-entry .tooltip {
+  background-color: #e3ecd2;
+  border-color: #6a9b12;
+}
+.theme-entry .tooltip.pointer-down .tooltip-pointer {
+  border-top-color: #6a9b12;
+}
+.theme-entry .tooltip.pointer-down .tooltip-pointer-inner {
+  border-top-color: #e3ecd2;
+}
+.theme-entry .tooltip.pointer-up .tooltip-pointer {
+  border-bottom-color: #6a9b12;
+}
+.theme-entry .tooltip.pointer-left .tooltip-pointer {
+  border-right-color: #6a9b12;
+}
+.theme-entry .tooltip.pointer-left .tooltip-pointer-inner {
+  border-right-color: #e3ecd2;
+}
+.theme-entry .tooltip.pointer-right .tooltip-pointer {
+  border-left-color: #6a9b12;
+}
+.theme-entry .tooltip.pointer-right .tooltip-pointer-inner {
+  border-left-color: #e3ecd2;
+}
+.theme-entry .tooltip.validation {
+  background-color: #fee8d3;
+  border-color: #b16a22;
+}
+.theme-entry .tooltip.validation.pointer-down .tooltip-pointer {
+  border-top-color: #b16a22;
+}
+.theme-entry .tooltip.validation.pointer-down .tooltip-pointer-inner {
+  border-top-color: #fee8d3;
+}
+.theme-entry .tooltip.validation.pointer-up .tooltip-pointer {
+  border-bottom-color: #b16a22;
+}
+.theme-entry .tooltip.validation.pointer-up .tooltip-pointer-inner {
+  border-bottom-color: #fee8d3;
+}
+.theme-entry .tooltip.validation.pointer-left .tooltip-pointer {
+  border-right-color: #b16a22;
+}
+.theme-entry .tooltip.validation.pointer-left .tooltip-pointer-inner {
+  border-right-color: #fee8d3;
+}
+.theme-entry .tooltip.validation.pointer-right .tooltip-pointer {
+  border-left-color: #b16a22;
+}
+.theme-entry .tooltip.validation.pointer-right .tooltip-pointer-inner {
+  border-left-color: #fee8d3;
+}
+/*#endregion Tooltip Styling */
+
+/*#region Design Time Styling */
+
+.theme-entry .view-name {
+  color: white;
+}
+/*#endregion Design Time Styling */
+
+/*#region Attachment Control Styling */
+
+.theme-entry .file-progress {
+  fill: #98dc28;
+}
+.theme-entry .file-wrapper {
+  border-color: #bbbbbb;
+  border-width: 1px;
+  border-style: dashed;
+}
+.theme-entry .file-wrapper.borderless,
+.theme-entry .file-wrapper.uploaded.borderless {
+  border-color: transparent;
+}
+.theme-entry .file-wrapper.read-only:hover {
+  background-color: inherit;
+}
+.theme-entry .file-wrapper:hover,
+.theme-entry .file-wrapper.read-only.uploaded:hover {
+  background-color: #cee8bb;
+}
+/*#endregion Attachment Control Styling */
+

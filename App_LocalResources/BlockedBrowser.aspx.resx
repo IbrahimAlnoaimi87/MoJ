@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrowserNotSupportedHeading" xml:space="preserve">
+    <value>Your browser is not supported</value>
+    <comment>this is the title of a message which appears either when the browser is out of date or not supported [common]</comment>
+  </data>
+  <data name="BrowserNotSupportedText" xml:space="preserve">
+    <value>SmartForms is not supported with your current browser. Please download the latest version of one of the following browsers:</value>
+    <comment>this is the message which appears either when the browser is out of date or not supported [common]</comment>
+  </data>
+  <data name="SafariName" xml:space="preserve">
+    <value>Safari&lt;sup&gt; ®&lt;/sup&gt;</value>
+    <comment>[do not translate] [to be reviewed]</comment>
+  </data>
+  <data name="EdgeName" xml:space="preserve">
+    <value>Microsoft Edge&lt;sup&gt; ®&lt;/sup&gt;</value>
+    <comment>[do not translate]</comment>
+  </data>
+  <data name="ChromeName" xml:space="preserve">
+    <value>Google Chrome™</value>
+    <comment>[do not translate]</comment>
+  </data>
+  <data name="FirefoxName" xml:space="preserve">
+    <value>Mozilla Firefox&lt;sup&gt; ®&lt;/sup&gt;</value>
+    <comment>[do not translate] [to be reviewed]</comment>
+  </data>
+  <data name="HelpLinkText" xml:space="preserve">
+    <value>For more information, see {0}</value>
+    <comment>when the user clicks this message they are navigated to the K2 website for further information [to be reviewed]</comment>
+  </data>
+  <data name="DeviceNotSupportedText" xml:space="preserve">
+    <value>Nintex Designer is not supported with your current mobile browser.</value>
+    <comment>this is the message which appears when an unsupported device attempts to access the Nintex designer [common]</comment>
+  </data>
+  <data name="BrowserCompatibilityNotSupportedHeading" xml:space="preserve">
+    <value>Your browser's compatibility mode is not supported</value>
+    <comment>this is the title of a message which appears when the browser compatibility mode is not supported [common]</comment>
+  </data>
+  <data name="BrowserCompatibilityNotSupportedText" xml:space="preserve">
+    <value>Your browser is supported but it is running in a compatibility mode which is not.  Please contact your system administrator to resolve this issue.</value>
+    <comment>this is the message which appears when the browser compatibility mode is not supported [common]</comment>
+  </data>
+  <data name="BrowserCompatibilityNotSupportedHostingPageText" xml:space="preserve">
+    <value>Your browser is supported but the document mode set by the hosting page is not.</value>
+    <comment>this is the message which appears when the browser compatibility mode, set by the current hosting web application is not supported [common]</comment>
+  </data>
+  <data name="FormReOpenLinkText" xml:space="preserve">
+    <value>Click {0} to open the form in a new tab.</value>
+    <comment>Text providing a link to re-open the form in a new browser tab [common]</comment>
+  </data>
+  <data name="FormReOpenLinkAnchorText" xml:space="preserve">
+    <value>here</value>
+    <comment>The hyperlink text to go into the place holder of the FormReOpenLinkText</comment>
+  </data>
+  <data name="HelpLinkAnchorText" xml:space="preserve">
+    <value>Help</value>
+    <comment>The hyperlink text to go into the place holder of the HelpLinkText</comment>
+  </data>
+  <data name="HelpLinkWebpartAnchorText" xml:space="preserve">
+    <value>Help</value>
+    <comment>The hyperlink text to go into the place holder of the HelpLinkWebpartText</comment>
+  </data>
+  <data name="HelpLinkWebpartText" xml:space="preserve">
+    <value>For more information, see {0}</value>
+  </data>
+</root>

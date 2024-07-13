@@ -1,0 +1,218 @@
+.PGC
+{
+  width:100%;
+  width: expression(this.parentNode.offsetWidth + "px");
+  display:inline;
+  float:left;
+  font-size: 11px;
+}
+
+.PGC_READONLY
+{
+	width:100%;
+	height: 100%;
+	display:inline;
+	float:left;
+	font-size: 11px;
+}
+
+.PGC_DOT
+{
+  border-top-width: 1px;
+  border-top-style: dotted;
+  border-top-color: #d6e3b0;
+}
+
+.PGC a
+{
+  display:block;
+}
+
+.PGC_HEAD
+{
+  float:left;
+  width: 100%;
+  display: block;
+}
+
+.PGC_HEAD span
+{
+  font-weight:bold;
+  margin-left: 0;
+}
+
+.PGI_NAME
+{
+  float:left;
+  cursor:pointer;
+  overflow:hidden;
+  width:150px;
+  padding-left:15px;
+  height:18px;
+  padding-top:3px;
+  vertical-align: top;
+}
+
+.PGI_NAME span
+{
+	margin-left: 0;
+	padding-left: 0;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width:135px;
+	vertical-align: top;
+}
+
+.PGI_READONLY_NAME
+{
+	float: left;
+	cursor: default;
+	overflow: hidden;
+	padding-left: 15px;
+	width: 100px;
+	height: 20px;
+	padding-top: 2px;
+	display: inline;
+	vertical-align: top
+}
+
+.PGI_READONLY_NAME span
+{
+	margin-left: 0;
+	padding-left: 0;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 96px;
+	vertical-align: top
+}
+
+.PGI_VALUE a, .PGI_VALUE select
+{
+  width:100%;
+}
+
+.PGI_VALUE a
+{
+  padding-left:2px;
+}
+
+.PGI_VALUE span
+{
+	padding-left:1px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 288px;
+	vertical-align: top
+}
+
+.PGI_VALUE select
+{
+  margin: 0;
+  padding-bottom:2px;
+  border: 0;
+  display:none;
+  vertical-align: top
+}
+
+.PGI_VALUE input
+{
+  margin: 0;
+  padding-bottom: 1px;
+  border: 0;
+  min-width: 290px;
+  width: 290px;
+  display: none;
+  vertical-align: top
+}
+
+.PGI_IMG
+{
+	height: 20px;
+	width: 20px;	
+	background-color:#808080;
+	text-align:center;
+	cursor:hand;
+	overflow:hidden;
+	float:left;
+}
+
+.PGI_VALUE
+{
+  float:left;
+  cursor:pointer;
+  overflow:hidden;
+  width: 225px;
+  padding:2px;	
+  height:20px;
+  vertical-align: top
+}
+
+.PGI_READONLY_VALUE
+{
+	float: right;
+	cursor: default;
+	overflow: hidden;
+	width: 150px;
+	padding: 2px;	
+	height: 20px;
+	vertical-align: top
+}
+
+.PGI_READONLY_VALUE span
+{
+	padding-left: 1px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 145px;
+}
+
+.PGI_NOWRAP
+{
+	display: block;
+	width: 270px;
+	height: 20px;
+}
+
+.PGI_POPUP
+{
+  float: left;
+  cursor: pointer;
+  overflow: hidden;
+  width: 225px;
+  padding: 2px;	
+  height: 18px;
+  
+}
+
+.PGI_POPUP span
+{
+  padding-left:1px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.PGI_FOOTER
+{
+  float:left;
+  margin: 0;
+  width:100%;
+}
+
+.PGI_BORDER
+{
+	background-color:#fff;
+	border: solid 1px #808080;
+}
+
+.PGC_CONTAINER
+{
+	height:240px;
+	width:100%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}

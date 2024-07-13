@@ -1,0 +1,209 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+html[dir=rtl] #ExpressionsGrid table.grid-content-table td:last-child {
+  direction: ltr;
+}
+html[dir=rtl] #EBExpressionsPanelContent {
+  direction: ltr;
+  text-align: left;
+}
+#EBExpressionsPanelContent .drop-text.watermark {
+  min-width: 150px;
+}
+#EBExpressionsPanelContent .expression-wrapper {
+  padding: 3px;
+}
+#EBExpressionsPanelContent .operator-item,
+#EBExpressionsPanelContent .operator,
+#EBExpressionsPanelContent .left-bracket,
+#EBExpressionsPanelContent .right-bracket,
+#EBExpressionsPanelContent .function,
+#EBExpressionsPanelContent .comma,
+#EBExpressionsPanelContent .textbox-container,
+#EBExpressionsPanelContent .operator-container,
+#EBExpressionsPanelContent .add-extra-term,
+#EBExpressionsPanelContent .sub-expression-wrapper {
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  margin: 0 3px;
+  min-width: 16px;
+  vertical-align: bottom;
+  background-size: 16px 16px;
+  background-position: 50% 50%;
+}
+#EBExpressionsPanelContent .operator-item,
+#EBExpressionsPanelContent .operator,
+#EBExpressionsPanelContent .left-bracket,
+#EBExpressionsPanelContent .right-bracket {
+  color: transparent;
+  overflow: hidden;
+}
+#EBExpressionsPanelContent .sub-expression-wrapper {
+  display: inline;
+  margin: 1px 0;
+}
+#EBExpressionsPanelContent .operator,
+#EBExpressionsPanelContent .operator-item,
+#EBExpressionsPanelContent .bracket,
+#EBExpressionsPanelContent .function,
+#EBExpressionsPanelContent .comma {
+  text-align: center;
+}
+#EBExpressionsPanelContent .operator.hover,
+#EBExpressionsPanelContent .operator-item.hover,
+#EBExpressionsPanelContent .bracket.hover,
+#EBExpressionsPanelContent .function.hover,
+#EBExpressionsPanelContent .comma.hover {
+  background-color: #deeffd;
+}
+#EBExpressionsPanelContent .operator.selected,
+#EBExpressionsPanelContent .operator-item.selected,
+#EBExpressionsPanelContent .bracket.selected,
+#EBExpressionsPanelContent .function.selected,
+#EBExpressionsPanelContent .comma.selected {
+  background-color: rgba(33, 150, 243, 0.2);
+  border: 1px solid #2196f3;
+}
+#EBExpressionsPanelContent .comma {
+  margin-left: 0;
+  font-weight: bold;
+}
+#EBExpressionsPanelContent .function {
+  background-position: 0 50%;
+  padding-left: 22px;
+}
+#EBExpressionsPanelContent .function.if-statement {
+  color: transparent;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#EBExpressionsPanelContent .bracket,
+#EBExpressionsPanelContent .operator {
+  margin: 0px 0px;
+}
+#EBExpressionsPanelContent .textbox-container.selected .input-control .input-control-m {
+  background-color: #fcfffc;
+  border: 1px solid #2196f3;
+}
+#EBExpressionsPanelContent .textbox-container {
+  min-width: 160px;
+  max-width: 260px;
+}
+#EBExpressionsPanelContent .operator-container,
+#EBExpressionsPanelContent .add-extra-term {
+  width: 40px;
+  line-height: 22px;
+}
+#EBExpressionsPanelContent .add-extra-term {
+  color: #a0a0a0;
+}
+#EBExpressionsPanelContent .operator-container,
+#EBExpressionsPanelContent .add-extra-term,
+#EBExpressionsPanelContent .existing-operator {
+  background-color: #fcfcfc;
+  border: 1px dashed #d0d0d0;
+  min-width: 40px;
+  min-height: 22px;
+}
+#EBExpressionsPanelContent .add-extra-term {
+  cursor: pointer;
+}
+#EBExpressionsPanelContent .operator-container.hover,
+#EBExpressionsPanelContent .existing-operator.hover,
+#EBExpressionsPanelContent .add-extra-term.hover {
+  background-color: #deeffd;
+  border: 1px solid #2196f3;
+}
+#EBExpressionsPanelContent .operator,
+#EBExpressionsPanelContent .operator-item,
+#EBExpressionsPanelContent .left-bracket,
+#EBExpressionsPanelContent .right-bracket {
+  text-indent: -99999px;
+}
+#EBExpressionsPanelContent .left-bracket.collapsed-margin,
+#EBExpressionsPanelContent .right-bracket.collapsed-margin {
+  margin-left: 0;
+}
+#EBExpressionsPanelContent .function.collapsed-margin {
+  margin-right: 0;
+}
+#EBExpressionsPanelContent .token-input .token-input-editor-area {
+  height: 18px;
+  line-height: 18px;
+  text-align: left;
+}
+html[dir=rtl] #EBExpressionPreviewPanel .scroll-wrapper {
+  direction: ltr;
+  text-align: left;
+}
+#EBOperatorsPanelTree,
+#EBContextPanelTree {
+  padding: 8px 10px 10px 5px;
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .icon.left-bracket,
+  a.ui-draggable-dragging.left-bracket {
+    background-image: url("../Images/Icons/Functions/BracketLeft16.png");
+  }
+  .icon.right-bracket,
+  a.ui-draggable-dragging.right-bracket {
+    background-image: url("../Images/Icons/Functions/BracketRight16.png");
+  }
+  .icon.literal.true,
+  a.ui-draggable-dragging.literal.true {
+    background-image: url("../Images/Icons/Functions/True16.png");
+  }
+  .icon.literal.false,
+  a.ui-draggable-dragging.literal.false {
+    background-image: url("../Images/Icons/Functions/False16.png");
+  }
+  .icon.literal.empty-string,
+  a.ui-draggable-dragging.literal.empty-string {
+    background-image: url("../Images/Icons/Functions/Empty16.png");
+  }
+  .icon.expression,
+  a.ui-draggable-dragging.expression {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction16.png");
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .icon.left-bracket,
+  a.ui-draggable-dragging.left-bracket {
+    background-image: url("../Images/Icons/Functions/BracketLeft16@2x.png");
+  }
+  .icon.right-bracket,
+  a.ui-draggable-dragging.right-bracket {
+    background-image: url("../Images/Icons/Functions/BracketRight16@2x.png");
+  }
+  .icon.literal.true,
+  a.ui-draggable-dragging.literal.true {
+    background-image: url("../Images/Icons/Functions/True16@2x.png");
+  }
+  .icon.literal.false,
+  a.ui-draggable-dragging.literal.false {
+    background-image: url("../Images/Icons/Functions/False16@2x.png");
+  }
+  .icon.literal.empty-string,
+  a.ui-draggable-dragging.literal.empty-string {
+    background-image: url("../Images/Icons/Functions/Empty16@2x.png");
+  }
+  .icon.expression,
+  a.ui-draggable-dragging.expression {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction16@2x.png");
+  }
+}

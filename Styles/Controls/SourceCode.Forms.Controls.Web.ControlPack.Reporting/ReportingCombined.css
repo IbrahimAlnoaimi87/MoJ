@@ -1,0 +1,1210 @@
+
+.k-tooltip {
+  border: 1px solid #4386d7 !important;
+  background-color: white !important;
+  z-index: 1000;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  text-align: left !important;
+}
+.drop-menu ul.drop-menu a.duration {
+  padding-left: 20px;
+}
+.datepicker-right {
+  margin-left: 75px;
+}
+.reportheader-overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.01;
+  background-color: white;
+}
+.grids-overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.01;
+  background-color: white;
+}
+.boxing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*B562695: No Control in the project*/
+
+/*End of B562695*/
+
+.maindiv1:focus {
+  outline: none;
+}
+:focus {
+  outline: 0;
+}
+/* #region EXPANDER */
+
+/* with .active class, it is expanded.*/
+
+/* collapsed */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader a.dropbutton {
+  margin: 0;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+#UsersConfig_secondPageOutside a.dropbutton {
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+/* #endregion EXPANDER */
+
+.radchartlabel {
+  font-size: 12px;
+  fill: #262626;
+}
+#ProcessChartConfigTreeHolder1.error {
+  border: 1px solid red;
+}
+#ProcessChartConfigTreeHolder1.error::before {
+  -moz-animation: fadein 0.25s;
+  -o-animation: fadein 0.25s;
+  -webkit-animation: fadein 0.25s;
+  animation: fadein 0.25s;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  left: 0px;
+  top: 2px;
+  width: 16px;
+}
+.spanUsers.error {
+  text-decoration: line-through;
+}
+span.spanUsers.textboxSpan.error::before {
+  -moz-animation: fadein 0.25s;
+  -o-animation: fadein 0.25s;
+  -webkit-animation: fadein 0.25s;
+  animation: fadein 0.25s;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  left: 0px;
+  top: 2px;
+  width: 16px;
+}
+.WorkflowInstancesChart {
+  background-color: black;
+  margin-right: 10px;
+}
+a.ui-draggable-dragging.workflowinstancesgrid-control,
+.tree li.workflowinstancesgrid-control > a,
+.tree li.workflowinstancesgrid-control > span,
+.tree li.workflowinstancesgrid-control.children.open > a,
+.tree li.workflowinstancesgrid-control.children.closed > a,
+.theme-entry .drop-item.workflowinstancesgrid-control,
+.theme-entry .tree li.workflowinstancesgrid-control > a,
+.theme-entry .tree li.workflowinstancesgrid-control > span,
+.drop-menu.icon-control ul.drop-menu a.workflowinstancesgrid-control,
+.input-control.icon-control.workflowinstancesgrid-control .input-control-icon,
+.input-control.icon-control.workflowinstancesgrid-control .input-control-wrapper,
+.menu a.menu-item.control-workflowinstancesgrid span.menu-item-icon,
+.grid .grid-content-cell.icon.control-workflowinstancesgrid {
+  background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Reporting.WorkflowInstancesGrid.Resources.Style.WorkflowInstancesGridIcon.png")%>');
+  background-repeat: no-repeat;
+}
+.toolboxitem.workflowinstancesgrid-control,
+.token-input .entity.icon.workflowinstancesgrid-control .entity-text,
+.drop-item.workflowinstancesgrid-control {
+  background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Reporting.WorkflowInstancesGrid.Resources.Style.WorkflowInstancesGridIcon.png")%>');
+  background-repeat: no-repeat;
+}
+a.ui-draggable-dragging.worflowreferences-control,
+.tree li.worflowreferences-control > a,
+.tree li.worflowreferences-control > span,
+.tree li.worflowreferences-control.children.open > a,
+.tree li.worflowreferences-control.children.closed > a,
+.theme-entry .drop-item.worflowreferences-control,
+.theme-entry .tree li.worflowreferences-control > a,
+.theme-entry .tree li.worflowreferences-control > span,
+.drop-menu.icon-control ul.drop-menu a.worflowreferences-control,
+.input-control.icon-control.worflowreferences-control .input-control-icon,
+.input-control.icon-control.worflowreferences-control .input-control-wrapper,
+.menu a.menu-item.control-worflowreferences span.menu-item-icon,
+.grid .grid-content-cell.icon.control-workflowreferences {
+  background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Reporting.CommonResources.Default16px.png")%>');
+  background-repeat: no-repeat;
+}
+.toolboxitem.worflowreferences-control,
+.token-input .entity.icon.worflowreferences-control .entity-text,
+.drop-item.worflowreferences-control {
+  background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Reporting.CommonResources.Default16px.png")%>');
+  background-repeat: no-repeat;
+}
+.RadGrid_Default .rgExpand {
+  background-position: 5px -496px;
+  background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Reporting.CommonResources.Sprites.gif")%>');
+}
+.RadGrid_Default .rgCollapse {
+  background-position: 3px -444px;
+  background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Reporting.CommonResources.Sprites.gif")%>');
+}
+a.ui-draggable-dragging.workflowtime-control,
+.tree li.workflowtime-control > a,
+.tree li.workflowtime-control > span,
+.tree li.workflowtime-control.children.open > a,
+.tree li.workflowtime-control.children.closed > a,
+.theme-entry .drop-item.workflowtime-control,
+.theme-entry .tree li.workflowtime-control > a,
+.theme-entry .tree li.workflowtime-control > span,
+.drop-menu.icon-control ul.drop-menu a.workflowtime-control,
+.input-control.icon-control.workflowtime-control .input-control-icon,
+.input-control.icon-control.workflowtime-control .input-control-wrapper,
+.menu a.menu-item.control-workflowtime span.menu-item-icon,
+.grid .grid-content-cell.icon.control-workflowtime {
+  background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Reporting.WorkflowTime.Resources.Style.WorkflowTime.png")%>');
+  background-repeat: no-repeat;
+}
+.toolboxitem.workflowtime-control,
+.token-input .entity.icon.workflowtime-control .entity-text,
+.drop-item.workflowtime-control {
+  background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ControlPack.Reporting.WorkflowTime.Resources.Style.WorkflowTime.png")%>');
+  background-repeat: no-repeat;
+}
+.reportheader_main {
+  position: relative;
+}
+a.reportheader_main {
+  font-size: 11px;
+  position: relative;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader #panel1 {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+}
+/* report header main - title info node */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.report-header-collapsed .report-header-main-sub-text {
+  margin-left: 2px;
+  display: inline;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper .form-field .form-field-label {
+  width: auto;
+  line-height: 20px;
+  padding-left: 0;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .linkText {
+  line-height: 20px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader div.form-field,
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.designtime div.form-field {
+  padding-top: 5px;
+  margin: 0;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.report-header-collapsed,
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.report-header-collapsed .stylewrapper {
+  height: auto !important;
+  /* override inline  */
+
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.report-header-collapsed .textlabel {
+  margin-bottom: 0;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.report-header-collapsed .dropbutton {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* #region SELECT DATE RANGE PICKER */
+
+#DateRangeConfig_secondPageInternal {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  /* predefined range */
+
+  /* custom range */
+
+  /* specific range */
+
+}
+#DateRangeConfig_secondPageInternal .date-wrapper {
+  display: table;
+  width: 100%;
+}
+#DateRangeConfig_secondPageInternal .date-wrapper-row {
+  display: table-row;
+}
+#DateRangeConfig_secondPageInternal .date-wrapper-cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 3px;
+}
+#DateRangeConfig_secondPageInternal .calendar-start-date,
+#DateRangeConfig_secondPageInternal .calendar-end-date {
+  display: inline-block;
+  width: 100%;
+  min-width: 100px;
+  vertical-align: middle;
+  line-height: normal;
+}
+#DateRangeConfig_secondPageInternal .calendar-start-date.datepicker-right,
+#DateRangeConfig_secondPageInternal .calendar-end-date.datepicker-right {
+  margin-left: 0;
+}
+#DateRangeConfig_secondPageInternal .calendar-start-date-text,
+#DateRangeConfig_secondPageInternal .calendar-end-date-text {
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  vertical-align: middle;
+  line-height: normal;
+}
+#DateRangeConfig_secondPageInternal .predefined-range-section {
+  display: table-row;
+}
+#DateRangeConfig_secondPageInternal .predefined-drop-wrapper,
+#DateRangeConfig_secondPageInternal .predefined-radio-wrapper {
+  display: table-cell;
+  vertical-align: top;
+}
+#DateRangeConfig_secondPageInternal .custom-range-section {
+  display: table-row;
+}
+#DateRangeConfig_secondPageInternal .custom-radio-wrapper,
+#DateRangeConfig_secondPageInternal .custom-drop-wrapper {
+  display: table-cell;
+}
+#DateRangeConfig_secondPageInternal .specific-range-section {
+  display: table-row;
+}
+#DateRangeConfig_secondPageInternal .specific-radio-wrapper {
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 5px;
+}
+#DateRangeConfig_secondPageInternal .specific-drop-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+#DateRangeConfig_secondPageInternal .specific-radio-wrapper .input-control-text {
+  white-space: nowrap;
+}
+/* #endregion SELECT DATE RANGE PICKER */
+
+/* #region SELECT STATUS PICKER */
+
+#StatusPropertyConfig_secondPageInternal {
+  box-sizing: border-box;
+}
+#StatusPropertyConfig_secondPageInternal .form-field-label {
+  flex-basis: 0;
+  padding-left: 0;
+}
+/* #endregion SELECT STATUS PICKER */
+
+.rgDetailTable thead > th:last-child {
+  border-right: 0px;
+}
+.spanProcess.focus {
+  outline: 1px dotted !important;
+}
+.series0UserPerformanceDesigner {
+  background-color: #5d9731;
+}
+.series1UserPerformanceDesigner {
+  background-color: #006a72;
+}
+.series2UserPerformanceDesigner {
+  background-color: #b52e34;
+}
+/*userperformance chart*/
+
+.UserPerformanceChart {
+  background-color: white;
+  margin-right: 10px;
+  border: 1px solid #adae9c;
+}
+/* Standard Grid*/
+
+.SFC.StandardGrid.hidden {
+  display: none;
+}
+.SFC.StandardGrid.designtime.hidden {
+  display: block;
+}
+.SFC.StandardGrid {
+  overflow: hidden;
+  position: relative;
+}
+.StandardGrid .disable-overlay {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  border-style: none;
+  background-color: white;
+  opacity: 0.1;
+}
+.ie8 .StandardGrid .disable-overlay,
+.ie-document-mode-8 .StandardChart .disable-overlay {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=1)";
+}
+.StandardGrid.disabled .disable-overlay,
+.StandardGrid.preview .disable-overlay {
+  bottom: 0px;
+  right: 0px;
+}
+.StandardGrid.disabled {
+  border-color: #adaeda !important;
+  opacity: 0.5;
+}
+.StandardGrid.designtime.disabled {
+  border-color: #adaeda !important;
+  background-color: transparent;
+  opacity: 0.5;
+}
+.StandardGrid.designtime .disable-overlay {
+  background-color: #cccccc;
+  opacity: 0.1;
+}
+/*Standard Chart*/
+
+.SFC.StandardChart.hidden {
+  display: none;
+}
+.SFC.StandardChart.designtime.hidden {
+  display: block;
+}
+.SFC.StandardChart.designtime .header-wrapper,
+.SFC.StandardChart.preview .header-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.SFC.StandardChart {
+  overflow: visible;
+  position: relative;
+}
+.SFC.StandardChart .ajaxLoader {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.StandardChart.opacity {
+  opacity: 0.3 !important;
+}
+.k-chart.preventOverFlow {
+  overflow: hidden;
+  width: 100% !important;
+}
+.StandardChart .disable-overlay {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  border-style: none;
+  background-color: #cccccc;
+  opacity: 0.1;
+}
+.StandardChart.disabled .disable-overlay {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  border-style: none;
+  background-color: #cccccc;
+  opacity: 0.5;
+}
+.StandardChart.disabled .disable-overlay,
+.StandardChart.preview .disable-overlay,
+.StandardChart.readonly .disable-overlay {
+  bottom: 0px;
+  right: 0px;
+}
+.StandardChart.disabled {
+  border-color: #adaeda !important;
+  opacity: 0.3;
+}
+.StandardChart.designtime.disabled {
+  border-color: #adaeda !important;
+  background-color: transparent;
+  opacity: 0.5;
+}
+.SFC.StandardChart .radhtmlcharttitle {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GridruntimeLoad {
+  display: none;
+}
+/*ReportHeader*/
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.hidden {
+  display: none;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.designtime.hidden {
+  display: block;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.runtime.scrollable {
+  overflow-y: auto !important;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader {
+  overflow: hidden;
+  position: relative;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .disable-overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-style: none;
+  opacity: 0.1;
+  background-color: white;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .stylewrapper {
+  width: auto;
+  height: 100%;
+  border: 1px solid gray;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.runtime.report-header-collapsed .stylewrapper,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.designtime.report-header-collapsed .stylewrapper {
+  overflow: hidden;
+}
+.ie8 .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .disable-overlay,
+.ie-document-mode-8 .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .disable-overlay {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=1)";
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.disabled .disable-overlay,
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.preview .disable-overlay {
+  bottom: 0px;
+  right: 0px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.disabled .disable-overlay,
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.preview .disable-overlay,
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.readonly .disable-overlay {
+  bottom: 0px;
+  right: 0px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.disabled {
+  border-color: #adaeda !important;
+  opacity: 0.5;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.designtime .disable-overlay {
+  border-color: #adaeda !important;
+  background-color: #cccccc;
+  opacity: 0.1;
+  bottom: 0px;
+  right: 0px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.designtime.disabled {
+  border-color: #adaeda !important;
+  background-color: transparent;
+  opacity: 0.5;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .textlabel {
+  margin-left: 0;
+  margin-bottom: 5px;
+  display: inline;
+  cursor: default;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .dropbutton {
+  position: relative;
+  margin-bottom: 0;
+  float: right;
+  text-align: right;
+  margin-right: 2px;
+  margin-top: 0;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .form-field-element-wrapper {
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper {
+  overflow: auto;
+  width: 100%;
+  padding: 4px 0 0 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .sfc-report-header-header-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 30px);
+  display: inline-block;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .form-field .form-field {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .form-field-element-wrapper .formfield {
+  padding-right: 10px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .form-field-element-wrapper {
+  margin-left: 142px;
+}
+/* runtime */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.runtime .reportheader_wrapper .form-field .form-field-element-wrapper {
+  margin-left: 142px;
+}
+/* designer */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper .form-field .form-field-element-wrapper {
+  margin-left: 0;
+}
+#DateRangeConfig_secondPage .disabled {
+  opacity: 0.5;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .formfield.disabled {
+  opacity: 0.5;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .formfield.hidden {
+  opacity: 0.5;
+}
+.resize-sensor,
+.resize-sensor > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.SFC.StandardGrid .UserPerfHeader {
+  min-height: 18px;
+  font-weight: bold;
+}
+.radgrid-grid-column-header-text {
+  line-height: 20px;
+}
+.StandardGrid .UserPerfSubHeader {
+  min-height: 12px;
+  margin-bottom: 10px;
+}
+/* Report Header - Select Users picker */
+
+#UsersConfig_secondPageOutside #UsersConfig_secondPageInternal {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+#UsersConfig_secondPageOutside .scroll-wrapper {
+  overflow: hidden;
+}
+#UsersConfig_secondPageOutside #selectedUsersPanel {
+  position: relative;
+}
+#UsersConfig_secondPageOutside .sfc-report-header-users-config-select-user-radio-container {
+  margin-left: -2px;
+}
+#UsersConfig_secondPageOutside .user-search-result-box {
+  overflow: auto;
+  border: 1px solid #dddddd;
+  height: 124px;
+  width: auto;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+#UsersConfig_secondPageOutside .search-result-list-box {
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow-y: auto;
+  padding: 5px 0 5px 10px;
+}
+#UsersConfig_secondPageOutside .search-result-list-box .sfc-reporting-user-search-result {
+  background-color: #fccb51;
+  color: #4e5758;
+}
+#UsersConfig_secondPageOutside #UsersTextBox {
+  overflow: auto;
+  height: 124px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  border: 1px solid #dddddd;
+}
+#UsersConfig_secondPageOutside.search-expanded #UsersTextBox {
+  height: 97px;
+}
+#UsersConfig_secondPageOutside .security-label-box {
+  display: flex;
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0 0 0 5px;
+}
+#UsersConfig_secondPageOutside .security-label-container {
+  display: flex;
+  flex-direction: row;
+}
+#UsersConfig_secondPageOutside .security-label-container .dropdown-box {
+  width: 100%;
+}
+#UsersConfig_secondPageOutside #securityLabelText {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#UsersConfig_secondPageOutside .search-container {
+  display: flex;
+  flex-direction: row;
+}
+#UsersConfig_secondPageOutside .search-container .dropdown-box {
+  display: flex;
+  flex-direction: row;
+  width: 125px;
+}
+#UsersConfig_secondPageOutside .search-container .dropdown-box .styling-outer-wrapper {
+  width: 100%;
+}
+#UsersConfig_secondPageOutside .search-container .user-search-textbox {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 0 5px;
+}
+#UsersConfig_secondPageOutside .sfc-reporting-user-config-section-container {
+  margin-top: 5px;
+}
+#UsersConfig_secondPageOutside .search-expander {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 0 5px 0 0;
+  min-width: 16px;
+}
+#UsersConfig_secondPageOutside #addButton2 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  color: #29b6f6;
+}
+#UsersConfig_secondPageOutside .users-complex-search-options .ajaxLoader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+#UsersConfig_secondPageOutside .removeUserItem {
+  padding: 0 0 0 10px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-WorkflowReferences-WorkflowReferences .expandTH {
+  width: 35px;
+}
+#UsersConfig_secondPageOutside #selectedPanelDisabler.disabled {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.8;
+  background-color: white;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+.lastColumn {
+  border-right-width: 0;
+}
+#UsersConfig_secondPageInternal .removeUserItem,
+#ProcessChartConfig_secondPage .processInnerSpan {
+  cursor: pointer;
+  color: red;
+}
+#ProcessChartConfig_secondPage .imgDelete16,
+#UsersConfig_secondPageInternal .imgDelete16 {
+  position: relative;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+}
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside .highlight {
+  display: inline;
+  background-color: yellow;
+}
+#ProcessChartPropertyConfig_secondPageOutside .highlight {
+  display: inline;
+  background-color: yellow;
+}
+.HeaderMouseOver {
+  cursor: col-resize;
+}
+/* report grid footer */
+
+.StandardGrid div.report-grid-footer-container {
+  position: relative;
+}
+.StandardGrid.designtime div.report-grid-navigation-wrapper {
+  display: table;
+}
+.StandardGrid.runtime div.report-grid-navigation-wrapper {
+  display: table;
+  width: auto;
+}
+.RadGrid div.report-grid-navigation-inner-wrapper,
+.StandardGrid div.report-grid-navigation-inner-wrapper {
+  display: table-row;
+  height: 100%;
+}
+.RadGrid div.report-grid-navigation-wrapper-prev,
+.StandardGrid div.report-grid-navigation-wrapper-prev {
+  display: table-cell;
+  width: 20px;
+  vertical-align: middle;
+}
+.RadGrid div.report-grid-navigation-wrapper-first,
+.StandardGrid div.report-grid-navigation-wrapper-first {
+  display: table-cell;
+  width: 20px;
+  vertical-align: middle;
+}
+.RadGrid div.report-grid-navigation-wrapper-next,
+.StandardGrid div.report-grid-navigation-wrapper-next {
+  display: table-cell;
+  width: 20px;
+  vertical-align: middle;
+}
+.RadGrid div.report-grid-navigation-wrapper-last,
+.StandardGrid div.report-grid-navigation-wrapper-last {
+  display: table-cell;
+  width: 20px;
+  vertical-align: middle;
+}
+/* input label text */
+
+.RadGrid div.report-grid-navigation-wrapper-page-label,
+.StandardGrid div.report-grid-navigation-wrapper-page-label {
+  display: table-cell;
+  width: 35px;
+  vertical-align: middle;
+}
+/* input text for page display (wrapper) */
+
+.RadGrid div.report-grid-navigation-wrapper-page-input,
+.StandardGrid div.report-grid-navigation-wrapper-page-input {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* input text for page display (editable box) */
+
+.RadGrid div.report-grid-navigation-page-input-box,
+.StandardGrid div.report-grid-navigation-page-input-box {
+  background-color: white;
+  width: 40px;
+  height: 16px;
+  line-height: normal;
+  text-align: right;
+  border: 1px solid #aaad9c;
+  color: black;
+}
+.buttonFirstPage.disabled,
+.buttonLastPage.disabled,
+.buttonPrev.disabled,
+.buttonNext.disabled {
+  opacity: 0.5;
+  cursor: default;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+.spanUsers {
+  -ms-user-select: none;
+  user-select: none;
+  outline: 1px solid transparent;
+  padding: 5px 0 5px 10px;
+}
+.spanUsers:hover {
+  background-color: #deeffd;
+}
+.spanUsers.selectedspan {
+  background-color: #2196f3;
+  color: white;
+}
+.spanUsers.selectedspan:hover {
+  color: white;
+  background-color: #2196f3;
+}
+.StandardGrid div,
+.StandardGrid th,
+.StandardGrid td {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-WorkflowInstances-WorkflowInstances.StandardChart div.stylewrapper,
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ActivityInstances-ActivityInstances.StandardChart div.stylewrapper,
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-UserPerformance-UserPerformance.StandardChart div.stylewrapper,
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-WorkflowTime-WorkflowTime.StandardChart div.stylewrapper {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+.StandardGrid .stylewrapper {
+  width: auto;
+}
+.SFC.StandardChart .header-wrapper {
+  z-index: auto;
+  position: relative;
+  text-align: left;
+}
+.spacerDiv {
+  height: 10px;
+}
+/* #region SELECT DATE RANGE PICKER */
+
+#DateRangeConfig_secondPageInternal .input-control.radio {
+  width: 145px;
+}
+#DateRangeConfig_secondPageInternal .input-control.radio .input-control-text {
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  width: 120px;
+}
+#DateRangeConfig_secondPageInternal .lastdivtext {
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  width: 75px;
+  margin-top: 0;
+}
+#DateRangeConfig_secondPageInternal .custom-range-row-label {
+  width: 75px;
+}
+#DateRangeConfig_secondPageInternal .custom-range-row-value {
+  width: 102px;
+}
+/* #endregion SELECT DATE RANGE PICKER */
+
+/* #region GRID PAGINATION */
+
+.StandardGrid.disable-pagination .report-grid-navigation-page-input-box,
+.StandardGrid .rgDetailTable.disable-pagination .report-grid-detail-navigation-page-input {
+  opacity: 0.5;
+}
+/* #endregion GRID PAGINATION */
+
+/* #region REPORT HEADER */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader {
+  width: 100%;
+  background-color: #f2f2f4;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.preview .stylewrapper {
+  padding: 10px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .topInfoString {
+  display: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.report-header-collapsed .topInfoString {
+  display: inline;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .topDivElipseEffect {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  padding: 1px 0 3px 0;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.preview {
+  overflow: hidden;
+  width: 100%;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.preview .loadPreview {
+  display: none;
+}
+/* #region REPORT HEADER */
+
+/* #region SELECT WORKFLOW PICKER */
+
+#ProcessChartPropertyConfig_secondPageOutside #ProcessChartPropertyConfig_secondPageInternal {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+#ProcessChartPropertyConfig_secondPageOutside .workflow-selection-radio-wrapper {
+  display: block;
+}
+#ProcessChartPropertyConfig_secondPageOutside #ProcessChartConfigTreeHolder {
+  display: block;
+  overflow: auto;
+  height: 140px;
+  width: auto;
+  padding: 4px 0 0 4px;
+  border: 1px solid #dddddd;
+}
+#ProcessChartPropertyConfig_secondPageOutside #addButton1 {
+  width: 100%;
+  margin: 6px auto 4px auto;
+  float: none;
+  display: flex;
+  justify-content: center;
+  color: #2196f3;
+}
+#ProcessChartPropertyConfig_secondPageOutside #addButton1.disabled:focus {
+  outline: none;
+}
+#ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox {
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #dddddd;
+  padding: 0;
+}
+#ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox .spanUsers {
+  display: block;
+}
+#ProcessChartPropertyConfig_secondPageOutside .tree {
+  margin: 0;
+  padding: 0;
+}
+/* #endregion SELECT WORKFLOW PICKER */
+
+/* #region SELECT USER PICKER */
+
+/* #endregion SELECT USER PICKER */
+
+/* #region SELECT ACTIVITY PICKER */
+
+#ReportHeaderActivityPicker .workflowTreeContainer {
+  overflow: auto;
+  height: 142px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+}
+#ReportHeaderActivityPicker .activityPickerWaterMark {
+  padding: 0 0 0 3px;
+}
+/* #endregion SELECT ACTIVITY PICKER */
+
+/* #region SELECT DATE RANGE PICKER */
+
+.designtime #DateRangeConfig_secondPageInternal .custom-drop-wrapper.disabled .lastdivtext {
+  color: #cccccc;
+}
+/* #endregion SELECT DATE RANGE PICKER */
+
+/* #region VISIBLE COLUMN PICKER */
+
+#GridColumnComplexConfig_secondPageOutside .wrapper {
+  box-sizing: border-box;
+}
+#GridColumnComplexConfig_secondPageOutside .form-field-label {
+  flex-basis: 0;
+}
+#GridColumnComplexConfig_secondPageOutside .reporting-grid-visible-column-config-item-row {
+  display: flex;
+  padding: 0 0 3px 0;
+}
+#GridColumnComplexConfig_secondPageOutside .reporting-grid-visible-column-config-label-text {
+  line-height: 20px;
+}
+/* #endregion VISIBLE COLUMN PICKER */
+
+/* #region TELERIK OVERRIDE */
+
+.StandardGrid .RadGrid table.rgMasterTable tr .rgExpandCol {
+  padding-left: 5px;
+  text-align: left;
+}
+/* #endregion TELERIK OVERRIDE */
+
+/* #region SMARTFORM OVERRIDE */
+
+.StandardGrid div.report-grid-header-wrapper,
+.StandardGrid .rgRow,
+.StandardGrid .rgAltRow {
+  text-align: left;
+}
+/* #endregion SMARTFORM OVERRIDE */
+
+/* #region GRID */
+
+.StandardGrid .view-flow-wrapper > .view-flow-icon {
+  height: 16px;
+  width: 16px;
+  display: block;
+}
+.StandardGrid .view-flow-wrapper > .view-flow-icon:hover {
+  cursor: pointer;
+}
+/* #endregion GRID*/
+
+/* RTL layout */
+
+html[dir=rtl] .SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader #panel1 {
+  text-align: right;
+}
+html[dir=rtl] .SFC.StandardChart .header-wrapper {
+  text-align: right;
+}
+html[dir=rtl] .StandardGrid div.report-grid-header-wrapper,
+html[dir=rtl] .StandardGrid .rgRow,
+html[dir=rtl] .StandardGrid .rgAltRow {
+  text-align: right;
+}
+html[dir=rtl] .StandardGrid.runtime div.report-grid-navigation-wrapper {
+  direction: ltr;
+}
+/* #endregion RTL*/
+
+.theme-entry .spanUsers {
+  outline: 1px solid transparent;
+}
+.theme-entry .spanUsers.selectedspan {
+  outline: 1px dotted black;
+  padding-right: 3px;
+  border: none;
+  color: #4e5758;
+}
+.theme-entry #UsersConfig_secondPageOutside .spanUsers {
+  padding: 0;
+}
+.theme-entry #UsersConfig_secondPageOutside.search-expanded #UsersTextBox {
+  height: 109px;
+}
+.theme-entry #UsersConfig_secondPageOutside .user-search-result-box {
+  border: 1px solid #adae9c;
+  width: 100%;
+  height: 132px;
+  margin: 3px 0 0 0;
+}
+.theme-entry #UsersConfig_secondPageOutside .user-search-result-box .sfc-reporting-user-search-result {
+  background-color: yellow;
+  color: #4e5758;
+}
+.theme-entry #UsersConfig_secondPageOutside #UsersTextBox {
+  height: 132px;
+  padding: 0;
+  align-items: flex-start;
+}
+.theme-entry #UsersConfig_secondPageOutside .user-search-textbox {
+  margin: 0 0 0 3px;
+}
+.theme-entry #UsersConfig_secondPageOutside .sfc-reporting-user-config-section-container {
+  margin-top: 3px;
+}
+.theme-entry #UsersConfig_secondPageOutside .users-complex-search-options {
+  margin: 0;
+}
+.theme-entry #UsersConfig_secondPageOutside .sfc-report-header-users-config-select-user-radio-container {
+  height: 20px;
+  margin: 0;
+}
+.theme-entry #UsersConfig_secondPageOutside .scroll-wrapper {
+  overflow: hidden;
+}
+.theme-entry #UsersConfig_secondPageOutside .scroll-wrapper #UsersConfig_secondPageInternal {
+  margin: 0;
+  padding: 0;
+}
+.theme-entry #UsersConfig_secondPageOutside .scroll-wrapper #UsersConfig_secondPageInternal #addButton2 {
+  margin: 5px 0 5px 0;
+  color: #4e5758;
+}
+.theme-entry #UsersConfig_secondPageOutside .scroll-wrapper #UsersConfig_secondPageInternal #addButton2:hover {
+  color: white;
+}
+.theme-entry #UsersConfig_secondPageOutside .removeUserItem {
+  padding: 0;
+}
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartPropertyConfig_secondPageInternal {
+  display: block;
+  margin: 0;
+}
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartConfigTreeHolder {
+  overflow: auto;
+  height: 140px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4px;
+}
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox {
+  height: 67px;
+  align-items: flex-start;
+}
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox .spanUsers {
+  padding: 1px 3px;
+}
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #addButton1 {
+  color: #4e5758;
+}
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #addButton1:hover {
+  color: white;
+}
+.theme-entry #ReportHeaderActivityPicker {
+  height: 250px !important;
+}
+.theme-entry #ReportHeaderActivityPicker #WorkflowActivityChartConfig_secondPageInternal {
+  padding: 0;
+}
+.theme-entry #ReportHeaderActivityPicker .workflowTreeContainer {
+  height: 156px;
+  padding: 3px;
+  border: 1px solid #dddddd;
+}
+.theme-entry #StatusPropertyConfig_secondPageOutside .form-field .form-field-element-wrapper {
+  margin-left: 0;
+}
+.mozilla .theme-entry #UsersConfig_secondPageOutside .user-search-result-box {
+  height: 130px;
+}
+.mozilla .theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox {
+  height: 63px;
+}

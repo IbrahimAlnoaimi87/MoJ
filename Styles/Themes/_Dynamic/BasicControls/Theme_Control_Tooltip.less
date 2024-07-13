@@ -1,0 +1,81 @@
+/* Used for validation errors on textboxes etc */
+
+/*#region normal tooltip*/
+.theme-entry .tooltip
+{
+    border-color: @Tooltip-Border-Color;
+    background-color: @Tooltip-Background-Color;
+    color: @Tooltip-Text-Color;
+}
+
+/* Border of pointer triangle */
+.theme-entry .tooltip.pointer-down .tooltip-pointer
+{
+    border-top-color: @Tooltip-Border-Color;
+}
+
+/* Inside of pointer triangle */
+.theme-entry .tooltip.pointer-down .tooltip-pointer-inner
+{
+    border-top-color: @Tooltip-Background-Color;
+}
+
+.theme-entry .tooltip.pointer-up .tooltip-pointer
+{
+    border-bottom-color: @Tooltip-Border-Color;
+}
+
+.theme-entry .tooltip.pointer-left .tooltip-pointer
+{
+    border-right-color: @Tooltip-Border-Color;
+}
+
+.theme-entry .tooltip.pointer-left .tooltip-pointer-inner
+{
+    border-right-color: @Tooltip-Background-Color;
+}
+
+.theme-entry .tooltip.pointer-right .tooltip-pointer
+{
+    border-left-color: @Tooltip-Border-Color;
+}
+
+.theme-entry .tooltip.pointer-right .tooltip-pointer-inner
+{
+    border-left-color: @Tooltip-Background-Color;
+}
+/*#endregion normal tooltip*/
+
+/*#region validation tooltip*/
+.theme-entry .tooltip.validation
+{
+    background-color: @Tooltip-Error-Background-Color;
+    border-color: @Tooltip-Error-Border-Color;
+    border-radius: 0;
+    color: @Tooltip-Error-Text-Color;
+}
+
+.theme-entry .tooltip.validation.pointer-down .tooltip-pointer,
+.theme-entry .tooltip.validation.pointer-down .tooltip-pointer-inner
+{
+    border-top-color: @Tooltip-Error-Border-Color;
+}
+
+.theme-entry .tooltip.validation.pointer-up .tooltip-pointer,
+.theme-entry .tooltip.validation.pointer-up .tooltip-pointer-inner
+{
+    border-bottom-color: @Tooltip-Error-Border-Color;
+}
+
+.theme-entry .tooltip.validation.pointer-left .tooltip-pointer,
+.theme-entry .tooltip.validation.pointer-left .tooltip-pointer-inner
+{
+    border-right-color: @Tooltip-Error-Border-Color;
+}
+
+.theme-entry .tooltip.validation.pointer-right .tooltip-pointer,
+.theme-entry .tooltip.validation.pointer-right .tooltip-pointer-inner
+{
+    border-left-color: @Tooltip-Error-Border-Color; //if we have different classes defined for this, do we need separate vars too?
+}
+/*#endregion validation tooltip*/

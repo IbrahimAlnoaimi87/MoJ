@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-buttons.icon-size24.ic-{iconname}"/> <!-- normal -->
+          <RowDefinition row="2" cssSelector=".icon.icon-set-buttons.icon-size24.ic-{iconname}.hover"/> <!-- hover -->
+          <RowDefinition row="3" cssSelector=".icon.icon-set-buttons.icon-size24.ic-{iconname}.disabled"/> <!-- Disabled/Colour Variant -->
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1" cssname="add_button">Add24_Button.png</Row>
+              <Row number="2" cssname="add_button">Add24_Hover_Button.png</Row>
+              <Row number="3" cssname="add_button">Add24_Disabled_Button.png</Row>
+            </Rows>
+          </Column>
+
+          <Column number="2">
+            <Rows>
+              <Row number="1" cssname="help_button">Help24_Button.png</Row>
+              <Row number="2" cssname="help_button">Help24_Hover_Button.png</Row>
+              <Row number="3" cssname="help_button">Help24_Disabled_Button.png</Row>
+            </Rows>
+          </Column>
+
+          <Column number="3">
+            <Rows>
+              <Row number="1" cssname="bin_button">Bin24.png</Row>
+              <Row number="2" cssname="bin_button">Bin24_Hover.png</Row>
+              <Row number="3" cssname="bin_button">Bin24_ColourVariant1.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="4">
+            <Rows>
+              <Row number="1" cssname="AddDropdown_Left">AddDropdown_Left24.png</Row>
+              <Row number="2" cssname="AddDropdown_Left">AddDropdown_Left_Hover24.png</Row>
+              <Row number="3" cssname="AddDropdown_Left">AddDropdown_Left_Disabled24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="5">
+            <Rows>
+              <Row number="1" cssname="AddDropdown_Right">AddDropdown_Right24.png</Row>
+              <Row number="2" cssname="AddDropdown_Right">AddDropdown_Right_Hover24.png</Row>
+              <Row number="3" cssname="AddDropdown_Right">AddDropdown_Right_Disabled24.png</Row>
+            </Rows>
+          </Column>
+		  
+            <Column number="6">
+            <Rows>
+              <Row number="1" cssname="contextbrowserbutton">ContextBrowserButton24.png</Row>
+            </Rows>
+          </Column>
+
+        </SourceImages>
+		
+		
+      </InputSettings>
+      <OutputSettings padding="12,0,0,12">
+        <CssBackgroundImageFolder>Buttons/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/Buttons/Buttons24.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/Buttons24.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

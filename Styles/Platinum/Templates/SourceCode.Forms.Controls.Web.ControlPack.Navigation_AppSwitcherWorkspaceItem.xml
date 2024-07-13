@@ -1,0 +1,6 @@
+﻿<a class="PART-WorkspaceUrl" href="javascript:void(0);" title="{title}" data-workspacevalue="{schemeid}">
+  <div class="appswitcher-workspace-item">
+    <div class="PART-WorskaceIcon appswitcher-workspace-icon {iconname}"></div>
+    <div class="PART-WorkspaceDisplay appswitcher-workspace-display">{display}</div>
+  </div>
+</a>

@@ -1,0 +1,614 @@
+﻿/* Tab-box Outer Element Styling */
+.tab-box
+{
+	position: relative;
+}
+
+.tab-box.full
+{
+	height: 100%;
+}
+
+html[dir=rtl] .tab-box.full
+{
+	direction:rtl;
+}
+
+/* Tab-box Tabs Collection Element Styling */
+.tab-box ul.tab-box-tabs
+{
+	height: 21px;
+	list-style: none outside none;
+	margin: 0;
+	outline: none;
+	padding: 0;
+	position:relative;
+}
+
+.tab-box.tabs-top ul.tab-box-tabs
+{
+	border-bottom: 1px solid #ADAE9C;
+}
+
+.tab-box.tabs-bottom ul.tab-box-tabs
+{
+	border-top: 1px solid #ADAE9C;
+}
+
+.tab-box.full.tabs-bottom ul.tab-box-tabs
+{
+	bottom: 0;
+	position: absolute;
+	width:100%;
+}
+
+.tab-box.hide-tabs ul.tab-box-tabs
+{
+	display: none;
+}
+
+/* Tab-box Tabs Collection Item Element Styling */
+.tab-box ul.tab-box-tabs li
+{
+	display: inline-block;
+	margin:0;
+	padding: 0;
+}
+
+/* Tab-box Tab Styling */
+.tab-box ul.tab-box-tabs a.tab
+{
+	border-color:#adae9c;
+	border-style:solid;
+	border-width:1px 1px 0 1px;
+	color: #343e41;
+	cursor: pointer;
+	display: inline-block;
+	height: 20px;
+	line-height: 18px;
+	margin: 0 1px 0 0;
+	outline:none;
+	text-decoration: none;	
+}
+
+html[dir=rtl] .tab-box ul.tab-box-tabs a.tab
+{
+	margin: 0 0 0 1px;
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-wrapper
+{
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+	padding: 0 5px;
+	height: 18px;
+	display: block;
+	border: solid 1px #fff;
+}
+
+.ie8 .tab-box ul.tab-box-tabs a.tab .tab-wrapper,
+.ie9 .tab-box ul.tab-box-tabs a.tab .tab-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+}
+
+.tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper
+{
+	background: #dfe4d7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #dfe4d7 0%, #f9f9f9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfe4d7), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dfe4d7 0%,#f9f9f9 100%); /* W3C */
+}
+
+.ie8 .tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper,
+.ie9 .tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe4d7', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+}
+
+.tab-box ul.tab-box-tabs a.tab:hover .tab-wrapper, 
+.tab-box ul.tab-box-tabs a.tab.focus .tab-wrapper,
+.tab-box ul.tab-box-tabs a.tab.selected.focus .tab-wrapper,
+.tab-box ul.tab-box-tabs a.tab.selected.focus:hover .tab-wrapper
+{
+	border-color: #84bf17;
+}
+
+.tab-box ul.tab-box-tabs a.tab.selected
+{
+	outline: none;
+}
+
+.tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper, 
+.tab-box ul.tab-box-tabs a.tab.selected:hover .tab-wrapper
+{
+	background:#fff;
+	border-color: #fff;
+	height: 19px;
+	filter:none;
+}
+
+.ie8 .tab-box.tabs-bottom ul.tab-box-tabs a.tab.selected .tab-wrapper,
+.ie8 .tab-box.tabs-bottom ul.tab-box-tabs a.tab.selected:hover .tab-wrapper,
+.ie9 .tab-box.tabs-bottom ul.tab-box-tabs a.tab.selected .tab-wrapper,
+.ie9 .tab-box.tabs-bottom ul.tab-box-tabs a.tab.selected:hover .tab-wrapper
+{
+	background:#fff;
+	border-color: #fff;
+	filter:none;
+}
+
+.tab-box.tabs-bottom ul.tab-box-tabs a.tab.selected .tab-wrapper
+{
+	height:18px;
+	margin-top:-1px;
+	padding-top:1px;
+}
+
+.tab-box.tabs-bottom ul.tab-box-tabs a.tab
+{
+	border-width: 0 1px 1px 1px;
+}
+
+.tab-box.tabs-bottom ul.tab-box-tabs a.tab.selected
+{
+	
+}
+
+.tab-box.tabs-top ul.tab-box-tabs a.tab.selected
+{
+	
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-text, 
+.tab-box ul.tab-box-tabs a.tab .tab-icon, 
+.tab-box ul.tab-box-tabs a.tab .tab-control
+{
+	display: block;
+	float: left;
+	margin-left: 5px;
+	height: 18px;
+}
+
+html[dir=rtl] .tab-box ul.tab-box-tabs a.tab .tab-text, 
+html[dir=rtl] .tab-box ul.tab-box-tabs a.tab .tab-icon, 
+html[dir=rtl] .tab-box ul.tab-box-tabs a.tab .tab-control
+{
+	float: right;
+	margin-left: auto;
+	margin-right: 5px;
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-text:first-child, 
+.tab-box ul.tab-box-tabs a.tab .tab-icon:first-child, 
+.tab-box ul.tab-box-tabs a.tab .tab-control:first-child
+{
+	margin-left: 0;
+}
+
+html[dir=rtl] .tab-box ul.tab-box-tabs a.tab .tab-text:first-child, 
+html[dir=rtl] .tab-box ul.tab-box-tabs a.tab .tab-icon:first-child, 
+html[dir=rtl] .tab-box ul.tab-box-tabs a.tab .tab-control:first-child
+{
+	margin-right: 0;
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon
+{
+	width: 16px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.tab-add
+{
+	background-image: url(../Images/Icons/New16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.controls-closed
+{
+	background-image: url(../Images/Icons/ControlsFolder16_closed.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.fields
+{
+	background-image: url(../Images/Icons/FieldTypes16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.fields.error
+{
+	background-image: url(../Images/Icons/FieldTypes_Error16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.so-methods
+{
+	background-image: url(../Images/Icons/SmartObjectMethod16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.properties
+{
+	background-image: url(../Images/Icons/Properties16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.properties.error
+{
+	background: url(../Images/Icons/Properties_Generic_Error16.png) no-repeat;
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.events.error
+{
+	background: url(../Images/Icons/EventBus_Error16.png) no-repeat;
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.events
+{
+	background-image: url(../Images/Icons/EventBus16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.browse
+{
+	background-image: url(../Images/Icons/BrowseOpen16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.search
+{
+	background-image: url(../Images/Icons/Search16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.context
+{
+	background-image: url(../Images/Icons/ContextTab16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.context.error
+{
+	background-image: url(../Images/Icons/ContextTab_Error16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.smartobjects
+{
+	background-image: url(../Images/Icons/SmartObjectsOpen16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.views
+{
+	background-image: url(../Images/Icons/SmartViewsOpen16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.service-instances
+{
+	background-image: url(../Images/Icons/ServiceInstanceOpen16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.categories
+{
+	background-image: url(../Images/Icons/CategoryOpen16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.smartobject-properties
+{
+	background-image: url(../Images/Icons/SmartObjectProperties16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.smartobject-methods
+{
+	background-image: url(../Images/Icons/SmartObjectMethod16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.operators
+{
+	background-image: url(../Images/Icons/fx16_Open.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.filter
+{
+	background-image: url(../Images/Icons/Filter16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.advanced-filter
+{
+	background-image: url(../Images/Icons/AdvancedFilter16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.ordering
+{
+	background-image: url(../Images/Icons/Order16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.rw-events
+{
+	background-image: url(../Images/Icons/Event16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.rw-conditions
+{
+	background-image: url(../Images/Icons/Conditions16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.rw-actions
+{
+	background-image: url(../Images/Icons/Actions16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.rw-rule
+{
+	background-image: url(../Images/Icons/RulesTemplate16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-icon.rw-rule.error
+{
+	background-image: url(../Images/Icons/RulesTemplateError16.png);
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-control
+{
+	width: 10px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-control.tab-remove
+{
+	margin-top: 8px;
+	background-image: url(../Images/Tabs/tab_close_button.png);
+	height: 6px;
+	width: 6px;
+	background-position: 50% 0;
+	float: right; 
+}
+
+html[dir=rtl] .tab-box ul.tab-box-tabs a.tab .tab-control.tab-remove
+{
+	float: left;
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-control.tab-remove:hover
+{
+	background-position: 50% -6px;
+}
+
+html[dir=rtl] .tab-box ul.tab-box-tabs a.tab .tab-control.tab-remove:hover
+{
+	background-position: 50% 100%;
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-text input
+{
+	-moz-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	border: 1px solid #aaad9c;
+	margin-top: 2px;
+}
+	
+.tab-box ul.tab-box-tabs a.tab input.borderless 
+{
+	border-style: none;
+	outline: none;
+}
+
+.tab-box ul.tab-box-tabs a.tab .tab-text input:focus
+{
+	border-color: #98dc28;
+}
+
+/* Tab-box Header Styling */
+.tab-box .tab-box-header
+{
+	border-color: #adae9c;
+	border-style: solid;
+	border-width: 1px 1px 0 1px;
+	display: none;
+	height: 24px;
+	position: relative;
+}
+
+.tab-box.with-header .tab-box-header
+{
+	display: block;
+}
+
+.tab-box.full.tabs-top.with-header .tab-box-header
+{
+	position: absolute;
+	top: 21px;
+	left: 0;
+	right: 0;
+}
+
+.tab-box.with-header .tab-box-header-c
+{
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+	border: solid 1px #fff;
+	height: 22px;
+}
+
+.ie8 .tab-box.with-header .tab-box-header-c,
+.ie9 .tab-box.with-header .tab-box-header-c
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+}
+
+.tab-box.with-header .tab-box-header-wrapper
+{
+	float: left;
+	font-weight: bold;
+	line-height: 19px;
+	padding-left: 7px;
+}
+
+/* Tab-box Body Styling */
+.tab-box .tab-box-body
+{
+	position: relative;
+	border-style: solid;
+	border-color: #ADAE9C;
+}
+
+.tab-box.tabs-top .tab-box-body
+{
+	top: 21px;
+	border-width: 0 1px 1px 1px;
+}
+
+.tab-box.tabs-bottom .tab-box-body
+{
+	border-width: 1px 1px 0 1px;
+}
+
+.tab-box.tabs-top.with-header .tab-box-body
+{
+	margin-top: 0;
+}
+
+.tab-box.full .tab-box-body
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.tab-box.full.tabs-top .tab-box-body
+{
+	margin-top: 0;
+	top: 22px;
+	bottom: 0;
+	background-color:#ffffff;
+}
+
+.tab-box.full.tabs-top.with-header .tab-box-body
+{
+	top: 45px;
+}
+
+.tab-box.full.tabs-bottom .tab-box-body
+{
+	margin-top: 0;
+	bottom: 22px;
+	top: 0;
+}
+
+.tab-box.full.tabs-bottom.with-header .tab-box-body
+{
+	top: 24px;
+}
+
+.tab-box.full.hide-tabs .tab-box-body
+{
+	top: 0;
+	bottom: 0;
+}
+
+.tab-box.full.tabs-top.with-toolbar .tab-box-body
+{
+	top: 46px;
+}
+
+.tab-box.full.tabs-bottom.with-toolbar .tab-box-body
+{
+	top: 24px;
+}
+
+/* Tab-box Body Border Styling */
+.tab-box .tab-box-body-t, .tab-box .tab-box-body-m, .tab-box .tab-box-body-b
+{
+	position: relative;
+}
+
+.tab-box.full .tab-box-body-m
+{
+	bottom: 3px;
+	left: 3px;
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	padding: 0;
+}
+
+.tab-box .tab-box-body-m
+{
+	padding-left: 3px;
+}
+
+.tab-box .tab-box-body-m-c
+{
+	position: relative;
+	padding-right: 3px;
+	height: 100%;
+}
+
+.tab-box.full .tab-box-body-m-c
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+}
+
+.tab-box .tab-box-body-wrapper
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* Tab Info Styling */
+div.tab-info
+{
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	right: 3px;
+	height: 30px;
+	overflow: hidden;
+	background-color: #d4e6c7;
+}
+
+div.tab-info-wrapper
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 2px;
+}
+
+/* Tab Content Styling */
+div.tab-content
+{
+	position: relative;
+}
+
+div.tab-content.full
+{
+	height: 100%;
+}
+
+div.tab-content-wrapper
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.tab-box ul.tab-box-tabs a.tab.disabled
+{
+	color: #CCCCCC;
+}

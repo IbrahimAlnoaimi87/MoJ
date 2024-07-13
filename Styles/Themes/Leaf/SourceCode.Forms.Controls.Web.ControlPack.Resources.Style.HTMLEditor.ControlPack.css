@@ -1,0 +1,332 @@
+﻿/* RichTextThemeStart */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.expanded .stylewrapper
+{
+	border-color: #2f3100;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModes a:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_selected,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rt-row-mode a[data-tool=Print]:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rt-row-mode a[data-tool=Print] .Print:hover
+{
+	background-color: #b2ca00;
+}
+
+/* item group separator */
+.theme-entry .RadEditor .reToolbarWrapper .reGrip.grip_last
+{
+	border-right-color: #c5c5c5;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.split_arrow:hover,
+.theme-entry .RadEditor .reToolbarWrapper .sub-wrapper:hover,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color:hover,
+.theme-entry .rich-text-dropdown-item-container .rich-text-overflow-item-arrow:hover
+{
+	background-color: #7d8902;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper .reTool_selected, /* highlight when tool item is in active state */
+.theme-entry .RadEditor .reToolbarWrapper a:hover /* background color when hovering tool item icons */
+{
+	background-color: #7d8902;
+}
+
+.theme-entry .rich-text-overflow-tool-item-position-base:hover, /* color for hover over the overflow items */
+.theme-entry .reEditorModes a:hover, /* edit mode area hover */
+.theme-entry .reMode_selected /* selected edit mode area */
+{
+	background-color: #7d8902;
+}
+
+.theme-entry .reMode_selected span, /* selected edit mode text */
+.theme-entry .reEditorModes span /* non-selected edit mode text */
+{
+	color: #fff;
+}
+
+/* editor body */
+.theme-entry .Default.RadEditor, 
+.theme-entry .Default.RadEditor .reModule, 
+.theme-entry .Default.RadEditor .reWrapper
+{
+	border-color: #b2ca00;
+	background-color: #7d8902;
+	background: #b4cc00; /* Old browsers */
+	background: -moz-linear-gradient(top, #b4cc00 0%, #7d8902 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4cc00), color-stop(100%,#7d8902)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #b4cc00 0%,#7d8902 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #b4cc00 0%,#7d8902 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #b4cc00 0%,#7d8902 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #b4cc00 0%,#7d8902 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4cc00', endColorstr='#7d8902',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .Default.reWrapper, 
+.theme-entry .Default.RadEditor 
+.theme-entry .reContentCell, 
+.theme-entry .Default.reColorPicker, 
+.theme-entry .Default.reInsertTable, 
+.theme-entry .Default.reDropDownBody, 
+.theme-entry .Default.reCustomLinks a:hover
+{
+	border: 1px solid #b2ca00;
+}
+
+.theme-entry .reMode_selected.reMode_hover:hover
+{
+	background-color: transparent;
+}
+
+/* tool item that has drop arrow needs explicit hover color to override parent hover style to prevent both item icon and arrow to be highlighted */
+.theme-entry .RadEditor .reToolbar li a:hover .sub-wrapper:hover,
+.theme-entry .RadEditor .reToolbar li a:hover .rich-text-tool-arrow:hover,
+.theme-entry .RadEditor .reToolbar li a:hover .InsertTable:hover 
+{
+	background-color: #7d8902;
+}
+
+.theme-entry .reSplitButton:link
+{
+	width: 38px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper .insert-table-link span.split_arrow
+{
+	left: 28px;
+}
+
+/* #region IMAGES */
+
+.theme-entry .rich-text-overflow-dropdown-icon 
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-position: -151px -7px;
+}
+
+/* each tool items for toolbar section */
+.theme-entry .RadEditor .reToolbarWrapper span.Bold
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -8px -5px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.Italic
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -344px -5px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.Underline
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -512px -5px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.JustifyLeft
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -367px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.JustifyRight
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -488px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.JustifyCenter
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -56px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.InsertOrderedList
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -392px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.InsertUnorderedList
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-position: -31px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.Indent
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -296px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.Outdent
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -104px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.BackColor
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -176px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.ForeColor
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -271px -6px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.InsertParagraph
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -416px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rt-row-mode .Print
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -464px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.InsertTable
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	padding-left: 9px;
+	padding-top: 8px;
+	background-position: -316px -3px;
+	margin-top: 0;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.split_arrow
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -155px -8px;
+	width: 10px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper .imageUploader
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -536px -8px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper .hyperlink
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -560px -8px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+/* Edit mode images */
+.theme-entry .RadEditor .reEditorModesCell .reMode_design_icon
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -126px -9px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reEditorModesCell .reMode_html_icon
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -78px -8px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.theme-entry .RadEditor .reEditorModesCell .reMode_preview_icon
+{
+	background-image:url('RichText/RichTextWhite16_Sprite.png');
+	background-repeat: no-repeat;
+	background-position: -439px -7px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+
+.theme-entry .RadEditor .reToolbarWrapper .rich-text-overflow-dropdown-icon 
+{
+	background-image: url('RichText/RichTextWhite16_Sprite.png');
+    background-repeat: no-repeat;
+    background-position: -51px -194px;
+}
+
+
+/* #endregion IMAGES */
+
+/* RichTextThemeEnd */

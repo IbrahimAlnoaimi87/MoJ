@@ -1,0 +1,2541 @@
+﻿.tree,
+.tree ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+div.tree + div.tree
+{
+    margin-top: 25px;
+}
+
+.tree li ul 
+{
+    display: none;
+    clear: both;
+}
+
+.tree li
+{
+    display: block;
+    min-height: 18px;
+    line-height: 18px;
+    padding: 0 0 0 18px;
+    margin: 0 0 0 0;
+    clear: both;
+}
+
+html[dir=rtl] .tree li
+{
+    padding: 0 18px 0 0;
+}
+
+.tree li.hidden
+{
+    display:none;
+}
+
+.tree li > a,
+.tree li > span 
+{
+    display: inline;
+    float: left;
+    line-height: 16px;
+    padding: 1px 4px 1px 23px;
+    color:#000;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 1px 1px; 
+    border:solid 1px transparent;
+    margin: 0;
+    background-image: url("../Images/Icons/Document16flat.png");
+}
+
+html[dir=rtl] .tree li > a,
+html[dir=rtl] .tree li > span 
+{
+    background-position: 99.9% 1px;
+    float:right;
+    padding: 1px 23px 1px 4px;
+}
+
+.tree li.user > a,
+.tree li.user > span 
+{
+    background-image: url("../Images/Icons/User16.png");
+}
+
+.tree li > a,
+.tree li a.not-draggable
+{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tree li a.not-droppable
+{
+    cursor:not-allowed;
+}
+
+.tree li.children.open > a,
+.tree li.children.open > span 
+{
+    background-image: url("../Images/Icons/FolderOpen16.png");
+}
+
+.tree li.children.closed > a,
+.tree li.children.closed > span 
+{
+    background-image: url("../Images/Icons/FolderClosed16.png");
+}
+
+.tree li a:hover, 
+.tree li a:focus,
+.tree li a.hover 
+{
+    background-color: #eff7d4;
+    border-color:#d6e3b0;
+    outline: none;
+}
+
+.tree li.selected > a,
+.tree li.selected > a:hover,
+.tree li.selected > span
+{
+    background-color: #d6e3b0;
+    border-color:#d6e3b0;
+}
+
+.tree li.disabled > a,
+.tree li.disabled > a:hover,
+.tree li.disabled > span
+{
+    background-color:transparent;
+    border-color:transparent;
+}
+
+.tree li.children.open 
+{
+    background:url("../Images/Tree/minus_alt.gif") 0 0 no-repeat;
+}
+
+.tree li.open ul 
+{
+    display:block;
+    clear:both;
+}
+
+.tree li.children.closed 
+{
+    background:url("../Images/Tree/plus_alt.gif") 0 0 no-repeat;
+}
+
+.tree li.closed ul 
+{
+    display:none !important;
+}
+
+html[dir=rtl] .tree li.children.open, 
+html[dir=rtl] .tree li.children.closed 
+{
+    background-position: 100% 1px;
+}
+
+.tree li a input,
+.tree li span input 
+{
+    margin:0;
+    padding:0 0;
+    display:block;
+    height:14px !important;
+    border:1px solid #fff;
+    background:#fff;
+    font-family:Verdana;
+    font-size:11px;
+}
+
+.tree li.default > a,
+.tree li.default > span
+{
+    background-image: url(../Images/Icons/Default16px.png);
+}
+
+.tree li.smartobject > a,
+.tree li.smartobject > span,
+.tree li.closed.smartobject > a,
+.tree li.closed.smartobject > span,
+.tree li.open.smartobject > a,
+.tree li.open.smartobject > span
+{
+    background-image: url(../Images/Icons/SmartObject16.png);
+}
+
+.tree li.staticdata > a,
+.tree li.staticdata > span,
+.tree li.closed.staticdata > a,
+.tree li.closed.staticdata > span,
+.tree li.open.staticdata > a,
+.tree li.open.staticdata > span
+{
+    background-image: url(../Images/Icons/StaticData16.png);
+}
+
+.tree li.view > a,
+.tree li.view > span,
+.tree li.closed.view > a,
+.tree li.closed.view > span,
+.tree li.open.view > a,
+.tree li.open.view > span
+{
+    background-image: url(../Images/Icons/View16.png);
+}
+
+.tree li.item-view > a,
+.tree li.item-view > span,
+.tree li.closed.item-view > a,
+.tree li.closed.item-view > span,
+.tree li.open.item-view > a,
+.tree li.open.item-view > span
+{
+    background-image: url(../Images/Icons/ItemView16.png);
+}
+
+.tree li.capturelist-view > a,
+.tree li.capturelist-view > span,
+.tree li.closed.capturelist-view > a,
+.tree li.closed.capturelist-view > span,
+.tree li.open.capturelist-view > a,
+.tree li.open.capturelist-view > span
+{
+    background-image: url(../Images/Icons/CaptureList16.png);
+}
+
+.tree li.list-view > a,
+.tree li.list-view > span,
+.tree li.closed.list-view > a,
+.tree li.closed.list-view > span,
+.tree li.open.list-view > a,
+.tree li.open.list-view > span
+{
+    background-image: url(../Images/Icons/ListView16.png);
+}
+
+.tree li.content-view > a,
+.tree li.content-view > span,
+.tree li.closed.content-view > a,
+.tree li.closed.content-view > span,
+.tree li.open.content-view > a,
+.tree li.open.content-view > span
+{
+    background-image: url(../Images/Icons/ContentView16.png);
+}
+
+.tree li.item-view.checked-out > a,
+.tree li.item-view.checked-out > span,
+.tree li.closed.item-view.checked-out > a,
+.tree li.closed.item-view.checked-out > span,
+.tree li.open.item-view.checked-out > a,
+.tree li.open.item-view.checked-out > span
+{
+    background-image: url(../Images/Icons/ItemViewCheckOut16.png);
+}
+
+.tree li.capturelist-view.checked-out > a,
+.tree li.capturelist-view.checked-out > span,
+.tree li.closed.capturelist-view.checked-out > a,
+.tree li.closed.capturelist-view.checked-out > span,
+.tree li.open.capturelist-view.checked-out > a,
+.tree li.open.capturelist-view.checked-out > span
+{
+    background-image: url(../Images/Icons/CaptureListCheckOut16.png);
+}
+
+.tree li.list-view.checked-out > a,
+.tree li.list-view.checked-out > span,
+.tree li.closed.list-view.checked-out > a,
+.tree li.closed.list-view.checked-out > span,
+.tree li.open.list-view.checked-out > a,
+.tree li.open.list-view.checked-out > span
+{
+    background-image: url(../Images/Icons/ListCheckOut16.png);
+}
+
+.tree li.item-view.checked-out-user > a,
+.tree li.item-view.checked-out-user > span,
+.tree li.closed.item-view.checked-out-user > a,
+.tree li.closed.item-view.checked-out-user > span,
+.tree li.open.item-view.checked-out-user > a,
+.tree li.open.item-view.checked-out-user > span
+{
+    background-image: url(../Images/Icons/ItemViewCheckOutUser16.png);
+}
+
+.tree li.capturelist-view.checked-out-user > a,
+.tree li.capturelist-view.checked-out-user > span,
+.tree li.closed.capturelist-view.checked-out-user > a,
+.tree li.closed.capturelist-view.checked-out-user > span,
+.tree li.open.capturelist-view.checked-out-user > a,
+.tree li.open.capturelist-view.checked-out-user > span
+{
+    background-image: url(../Images/Icons/CaptureListCheckOutByOtherUser16.png);
+}
+
+.tree li.list-view.checked-out-user > a,
+.tree li.list-view.checked-out-user > span,
+.tree li.closed.list-view.checked-out-user > a,
+.tree li.closed.list-view.checked-out-user > span,
+.tree li.open.list-view.checked-out-user > a,
+.tree li.open.list-view.checked-out-user > span
+{
+    background-image: url(../Images/Icons/ListCheckOutByOtherUser16.png);
+}
+
+.tree li.views > a,
+.tree li.views > span
+{
+    background-image: url(../Images/Icons/View16.png);
+}
+
+.tree li.form > a,
+.tree li.form > span,
+.tree li.closed.form > a,
+.tree li.closed.form > span,
+.tree li.open.form > a,
+.tree li.open.form > span
+{
+    background-image: url(../Images/Icons/SmartForm16.png);
+}
+
+.tree li.form.checked-out > a,
+.tree li.form.checked-out > span,
+.tree li.closed.form.checked-out > a,
+.tree li.closed.form.checked-out > span,
+.tree li.open.form.checked-out > a,
+.tree li.open.form.checked-out > span
+{
+    background-image: url(../Images/Icons/FormCheckOut16.png);
+}
+
+.tree li.form.checked-out-user > a,
+.tree li.form.checked-out-user > span,
+.tree li.closed.form.checked-out-user > a,
+.tree li.closed.form.checked-out-user > span,
+.tree li.open.form.checked-out-user > a,
+.tree li.open.form.checked-out-user > span
+{
+    background-image: url(../Images/Icons/FormCheckOutUser16.png);
+}
+
+.tree li.forms > a,
+.tree li.forms > span
+{
+    background-image: url(../Images/Icons/SmartForm16.png);
+}
+
+.tree li.application > a,
+.tree li.application > span
+{
+    background-image: url(../Images/Icons/Application16.png) ! important;
+}
+
+.tree li.applications > a,
+.tree li.applications > span
+{
+    background-image: url(../Images/Icons/Application16.png);
+}
+
+.tree li.smartfunction > a,
+.tree li.smartfunction > span
+{
+    background-image: url(../Images/Icons/SmartFunctiont16.png) ! important;
+}
+
+.tree li.smartfunctions > a,
+.tree li.smartfunctions > span
+{
+    background-image: url(../Images/Icons/SmartFunctiont16.png);
+}
+
+.tree li.report > a,
+.tree li.report > span
+{
+    background-image: url(../Images/Icons/Report16.png) ! important;
+}
+
+.tree li.workflow > a,
+.tree li.workflow > span
+{
+    background-image: url(../Images/Icons/Process16.png) ! important;
+}
+
+.tree li.workflow.workflow-shared > a,
+.tree li.workflow.workflow-shared > span
+{
+    background-image: url(../Images/Icons/ProcessShared16.png) ! important;
+}
+
+.tree li.workflow.workflow-locked > a,
+.tree li.workflow.workflow-locked > span
+{
+    background-image: url(../Images/Icons/UnlockProcess16.png) ! important;
+}
+
+.tree li.workflow.workflow-deployed > a,
+.tree li.workflow.workflow-deployed > span
+{
+    background-image: url(../Images/Icons/DeployedWorkflow16.png) ! important;
+}
+
+.tree li.eventbus > a,
+.tree li.eventbus > span
+{
+    background-image: url(../Images/Icons/EventBus16.png) ! important;
+}
+
+.tree li.loading > a,
+.tree li.loading > span
+{
+    background-image: url(../Images/Loaders/PreloaderGreen_16px.gif) ! important;
+}
+
+.tree li.warning > a,
+.tree li.warning > span
+{
+    background-image: url(../Images/Icons/Warning16.png) ! important;
+}
+
+.tree li.field > a,
+.tree li.field > span,
+.tree li.open.field > a,
+.tree li.open.field > span,
+.tree li.closed.field > a,
+.tree li.closed.field > span
+{
+    background-image: url(../Images/Icons/Field16.png);
+}
+
+.tree li.auto-guid > a,
+.tree li.auto-guid > span,
+.tree li.autoguid > a,
+.tree li.autoguid > span
+{
+    background-image: url(../Images/Icons/AutoGuid16.png);
+}
+
+.tree li.auto-number > a,
+.tree li.auto-number > span,
+.tree li.autonumber > a,
+.tree li.autonumber > span
+{
+    background-image: url(../Images/Icons/AutoNumber16.png);
+}
+
+.tree li.date-time > a,
+.tree li.date-time > span,
+.tree li.datetime > a,
+.tree li.datetime > span
+{
+    background-image: url(../Images/Icons/DateTime16.png);
+}
+
+.tree li.date > a,
+.tree li.date > span
+{
+    background-image: url(../Images/Icons/Date16.png);
+}
+
+.tree li.time > a,
+.tree li.time > span
+{
+    background-image: url(../Images/Icons/Time16.png);
+}
+
+.tree li.decimal > a,
+.tree li.decimal > span
+{
+    background-image: url(../Images/Icons/Decimal16.png);
+}
+
+.tree li.file > a,
+.tree li.file > span
+{
+    background-image: url(../Images/Icons/File16.png);
+}
+
+.tree li.guid > a,
+.tree li.guid > span
+{
+    background-image: url(../Images/Icons/Guid16.png);
+}
+
+.tree li.hyperlink > a,
+.tree li.hyperlink > span
+{
+    background-image: url(../Images/Icons/Hyperlink16.png);
+}
+
+.tree li.image > a,
+.tree li.image > span
+{
+    background-image: url(../Images/Icons/Image16.png);
+}
+
+.tree li.memo > a,
+.tree li.memo > span
+{
+    background-image: url(../Images/Icons/Memo16.png);
+}
+
+.tree li.multi-value > a,
+.tree li.multi-value > span,
+.tree li.multivalue > a,
+.tree li.multivalue > span,
+.tree li.multivalue-control > a,
+.tree li.multivalue-control > span
+{
+    background-image: url(../Images/Icons/MultiValue16.png);
+}
+
+.tree li.number > a,
+.tree li.number > span
+{
+    background-image: url(../Images/Icons/Number16.png);
+}
+
+.tree li.text > a,
+.tree li.text > span
+{
+    background-image: url(../Images/Icons/Text16.png);
+}
+
+.tree li.xml > a,
+.tree li.xml > span
+{
+    background-image: url(../Images/Icons/XML16.png);
+}
+
+.tree li.yesno > a,
+.tree li.yesno > span
+{
+    background-image: url(../Images/Icons/Boolean16.png);
+}
+
+.tree li.ControlProperty > a,
+.tree li.ControlProperty > span
+{
+    background-image: url(../Images/Icons/ControlProperty16.png);
+}
+
+.tree li.open.svcInst > a,
+.tree li.open.svcInst > span
+{
+    background-image:url(../Images/Icons/ServiceInstanceOpen16.png);
+}
+
+.tree li.open.service-instance > a,
+.tree li.open.service-instance > span
+{
+    background-image:url(../Images/Icons/ServiceInstanceOpen16.png);
+}
+.tree li.closed.svcInst > a,
+.tree li.closed.svcInst > span
+{
+    background-image:url(../Images/Icons/ServiceInstanceClosed16.png);
+}
+
+.tree li.closed.service-instance > a,
+.tree li.closed.service-instance > span
+{
+    background-image:url(../Images/Icons/ServiceInstanceClosed16.png);
+}
+
+.tree li.open.svcObj > a,
+.tree li.open.svcObj > span,
+.tree li.open.service-object > a,
+.tree li.open.service-object > span
+{
+    background-image: url(../Images/Icons/ServiceObject16.png);
+}
+.tree li.closed.svcObj > a,
+.tree li.closed.svcObj > span,
+.tree li.closed.service-object > a,
+.tree li.closed.service-object > span
+{
+    background-image: url(../Images/Icons/ServiceObject16.png);
+}
+
+.tree li.svcMethod > a,
+.tree li.svcMethod > span,
+.tree li.service-method > a,
+.tree li.service-method > span
+{
+    background-image: url(../Images/Icons/ServiceMethod16.png);
+}
+
+.tree li.open.svcFolder > a,
+.tree li.open.svcFolder > span,
+.tree li.open.service-folder > a,
+.tree li.open.service-folder > span
+{
+    background-image: url(../Images/Icons/ServiceInstanceOpen16.png);
+}
+.tree li.closed.svcFolder > a,
+.tree li.closed.svcFolder > span,
+.tree li.closed.service-folder > a,
+.tree li.closed.service-folder > span
+{
+    background-image: url(../Images/Icons/ServiceInstanceClosed16.png);
+}
+.tree li.closed.service-instance-folder > a,
+.tree li.closed.service-instance-folder > span,
+.tree li.service-instance-folder > a,
+.tree li.service-instance-folder > span
+{
+    background-image: url(../Images/Icons/FolderClosed16.png);
+}
+.tree li.open.service-instance-folder > a,
+.tree li.open.service-instance-folder > span
+{
+    background-image: url(../Images/Icons/FolderOpen16.png);
+}
+
+.tree li.service-object-browser > a,
+.tree li.service-object-browser > span,
+.tree li.open.service-object-browser > a,
+.tree li.open.service-object-browser > span,
+.tree li.closed.service-object-browser > a,
+.tree li.closed.service-object-browser > span
+{
+    background-image:url(../Images/Icons/ServiceObjectBrowser16.png);
+}
+
+.tree li.open.fields > a,
+.tree li.open.fields > span
+{
+    background-image: url(../Images/Icons/FieldsOpen16.png);
+}
+.tree li.closed.fields > a,
+.tree li.closed.fields > span
+{
+    background-image: url(../Images/Icons/FieldsClosed16.png);
+}
+
+.tree li.field-types > a,
+.tree li.field-types > span
+{
+    background-image: url(../Images/Icons/FieldTypes16.png) ! important;
+}
+
+.tree li.category > a,
+.tree li.category > span
+{
+    background-image: url(../Images/Icons/FolderClosed16.png);
+}
+.tree li.open.category > a,
+.tree li.open.category > span
+{
+    background-image: url(../Images/Icons/FolderOpen16.png);
+}
+.tree li.closed.category > a,
+.tree li.closed.category > span
+{
+    background-image: url(../Images/Icons/FolderClosed16.png);
+}
+
+.tree li.open.applications > a,
+.tree li.open.applications > span
+{
+    background-image: url(../Images/Icons/ApplicationsOpen16.png);
+}
+.tree li.closed.applications > a,
+.tree li.closed.applications > span
+{
+    background-image: url(../Images/Icons/ApplicationsClosed16.png);
+}
+
+.tree li.open.favourites > a,
+.tree li.open.favourites > span
+{
+    background-image: url(../Images/Icons/Favourites16.png);
+}
+.tree li.closed.favourites > a,
+.tree li.closed.favourites > span
+{
+    background-image: url(../Images/Icons/Favourites16.png);
+}
+
+.tree li.open.user > a,
+.tree li.open.user > span
+{
+    background-image: url(../Images/Icons/User16.png);
+}
+.tree li.closed.user > a,
+.tree li.closed.user > span
+{
+    background-image: url(../Images/Icons/User16.png);
+}
+
+.tree li.open.datetime-now > a,
+.tree li.open.datetime-now > span,
+.tree li.closed.datetime-now > a,
+.tree li.closed.datetime-now > span
+{
+    background-image: url(../Images/Icons/Now16.png);
+}
+
+.tree li.open.recent > a,
+.tree li.open.recent > span
+{
+    background-image: url(../Images/Icons/Recent16.png);
+}
+.tree li.closed.recent > a,
+.tree li.closed.recent > span
+{
+    background-image: url(../Images/Icons/Recent16.png);
+}
+
+.tree li.all-items > a,
+.tree li.all-items > span
+{
+    background-image: url(../Images/Icons/FolderClosed16.png);
+}
+.tree li.open.all-items > a,
+.tree li.open.all-items > span
+{
+    background-image: url(../Images/Icons/FolderOpen16.png);
+}
+.tree li.closed.all-items > a,
+.tree li.closed.all-items > span
+{
+    background-image: url(../Images/Icons/FolderClosed16.png);
+}
+
+.tree li.open.smartobjects > a,
+.tree li.open.smartobjects > span
+{
+    background-image: url(../Images/Icons/SmartObjectsOpen16.png);
+}
+.tree li.closed.smartobjects > a,
+.tree li.closed.smartobjects > span
+{
+    background-image: url(../Images/Icons/SmartObjectsClosed16.png);
+}
+
+.tree li.open.smartfunctions > a,
+.tree li.open.smartfunctions > span
+{
+    background-image: url(../Images/Icons/SmartFunctionsOpen16.png);
+}
+.tree li.closed.smartfunctions > a,
+.tree li.closed.smartfunctions > span
+{
+    background-image: url(../Images/Icons/SmartFunctionsClosed16.png);
+}
+
+.tree li.open.views > a,
+.tree li.open.views > span
+{
+    background-image: url(../Images/Icons/SmartViewsOpen16.png);
+}
+.tree li.closed.views > a,
+.tree li.closed.views > span
+{
+    background-image: url(../Images/Icons/SmartViewsClosed16.png);
+}
+
+.tree li.open.forms > a,
+.tree li.open.forms > span
+{
+    background-image: url(../Images/Icons/SmartFormsOpen16.png);
+}
+.tree li.closed.forms > a,
+.tree li.closed.forms > span
+{
+    background-image: url(../Images/Icons/SmartFormsClosed16.png);
+}
+
+.tree li.open.reports > a,
+.tree li.open.reports > span
+{
+    background-image: url(../Images/Icons/ReportsOpen16.png);
+}
+.tree li.closed.reports > a,
+.tree li.closed.reports > span
+{
+    background-image: url(../Images/Icons/ReportsClosed16.png);
+}
+
+.tree li.open.workflows > a,
+.tree li.open.workflows > span
+{
+    background-image: url(../Images/Icons/WorkFlowsOpen16.png);
+}
+.tree li.closed.workflows > a,
+.tree li.closed.workflows > span
+{
+    background-image: url(../Images/Icons/WorkFlowsClosed16.png);
+}
+
+.tree li.open.recent-smartobjects > a,
+.tree li.open.recent-smartobjects > span,
+.tree li.closed.recent-smartobjects > a,
+.tree li.closed.recent-smartobjects > span
+{
+    background-image: url(../Images/Icons/RecentSmartObjects16.png);
+}
+
+.tree li.open.recent-views > a,
+.tree li.open.recent-views > span,
+.tree li.closed.recent-views > a,
+.tree li.closed.recent-views > span
+{
+    background-image: url(../Images/Icons/RecentViews16.png);
+}
+
+.tree li.open.recent-forms > a,
+.tree li.open.recent-forms > span,
+.tree li.closed.recent-forms > a,
+.tree li.closed.recent-forms > span
+{
+    background-image: url(../Images/Icons/RecentForms16.png);
+}
+
+.tree li.open.recent-reports > a,
+.tree li.open.recent-reports > span,
+.tree li.closed.recent-reports > a,
+.tree li.closed.recent-reports > span
+{
+    background-image: url(../Images/Icons/RecentReports16.png);
+}
+
+.tree li.open.recent-applications > a,
+.tree li.open.recent-applications > span,
+.tree li.closed.recent-applications > a,
+.tree li.closed.recent-applications > span
+{
+    background-image: url(../Images/Icons/RecentApplications16.png);
+}
+
+.tree li.open.recent-workflows > a,
+.tree li.open.recent-workflows > span,
+.tree li.closed.recent-workflows > a,
+.tree li.closed.recent-workflows > span
+{
+    background-image: url(../Images/Icons/RecentWorkflows16.png);
+}
+
+.tree li.open.shared > a,
+.tree li.open.shared > span
+{
+    background-image: url(../Images/Icons/Shared16pix.png);
+}
+.tree li.closed.shared > a,
+.tree li.closed.shared > span
+{
+    background-image: url(../Images/Icons/Shared16pix.png);
+}
+
+.tree li.controls > a,
+.tree li.controls > span
+{
+    background-image: url(../Images/Icons/ControlsFolder16_closed.png);
+}
+
+.tree li.open.controls > a,
+.tree li.open.controls > span
+{
+    background-image: url(../Images/Icons/ControlsFolder16_open.png);
+}
+
+.tree li.closed.controls > a,
+.tree li.closed.controls > span
+{
+    background-image: url(../Images/Icons/ControlsFolder16_closed.png);
+}
+
+.tree li.list-view.error > a
+{
+    background-image: url(../Images/Icons/ListViewControl_Error16.png) ! important;
+}
+
+.tree li.item-view.error > a
+{
+    background-image: url(../Images/Icons/ItemViewControl_Error16.png) ! important;
+}
+
+.tree li.label-control.error > a
+{
+    background-image: url(../Images/Icons/Label_Error16.png) ! important;
+}
+
+.tree li.picture-control.error > a
+{
+    background-image: url(../Images/Icons/Picture_Error16.png) ! important;
+}
+
+.tree li.calendar-control.error > a
+{
+    background-image: url(../Images/Icons/CalenderControl_Error16.png) ! important;
+}
+
+.tree li.checkbox-control.error > a
+{
+    background-image: url(../Images/Icons/CheckBoxControl_Error16.png) ! important;
+}
+
+.tree li.multiselectcheckbox-control.error > a
+{
+    background-image: url(../Images/Icons/MultiSelectCheckboxes_Error16.png) ! important;
+}
+
+.tree li.datalabel-control.error > a
+{
+    background-image: url(../Images/Icons/DataLabelControl_Error16.png) ! important;
+}
+
+.tree li.dropdown-control.error > a
+{
+    background-image: url(../Images/Icons/DropdownList_Error16.png) ! important;
+}
+
+.tree li.hyperlink-control.error > a
+{
+    background-image: url(../Images/Icons/Hyperlink_Error16.png) ! important;
+}
+
+.tree li.listdisplay-control.error > a
+{
+    background-image: url(../Images/Icons/ListDisplay_Error16.png) ! important;
+}
+
+.tree li.lookup-control.error > a
+{
+    background-image: url(../Images/Icons/LookUp_Error16.png) ! important;
+}
+
+.tree li.picker-control.error > a
+{
+    background-image: url(../Images/Icons/PickerToolbar_Error16.png) ! important;
+}
+
+.tree li.radiobutton-control.error > a
+{
+    background-image: url(../Images/Icons/RadioButton_Error16.png) ! important;
+}
+
+.tree li.radiobuttongroup-control.error > a
+{
+    background-image: url(../Images/Icons/RadioButtonGroup_Error.png) ! important;
+}
+
+.tree li.radiobuttonlist-control.error > a
+{
+    background-image: url(../Images/Icons/RadioButtonList_Error16.png) ! important;
+}
+
+.tree li.rating-control.error > a
+{
+    background-image: url(../Images/Icons/Rating_Error16.png) ! important;
+}
+
+.tree li.slider-control.error > a
+{
+    background-image: url(../Images/Icons/SliderControl_Error16.png) ! important;
+}
+
+.tree li.textarea-control.error > a
+{
+    background-image: url(../Images/Icons/TextAreaControl_Error16.png) ! important;
+}
+
+.tree li.textbox-control.error > a
+{
+    background-image: url(../Images/Icons/TextBoxControl_Error16.png) ! important;
+}
+
+.tree li.button-control.error > a
+{
+    background-image: url(../Images/Icons/ButtonControl_Error16.png) ! important;
+}
+
+.tree li.toolbarbutton-control.error > a
+{
+    background-image: url(../Images/Icons/ToolbarButtonControl_Error16.png) ! important;
+}
+
+.tree li.filepostback-control.error > a
+{
+    background-image: url(../Images/Icons/File_Error16.png) ! important;
+}
+
+.tree li.imagepostback-control.error > a
+{
+    background-image: url(../Images/Icons//File_Error16.png) ! important;
+}
+
+.tree li.table-control.error > a
+{
+    background-image: url(../Images/Icons/TableControl_Error16.png) ! important;
+}
+
+.tree li.button-control > a,
+.tree li.button-control.children.open > a,
+.tree li.button-control.children.closed > a,
+.tree li.button-control > span
+{
+    background-image: url(../Images/Icons/ButtonControl16.png);
+}
+
+.tree li.toolbarbutton-control > a,
+.tree li.toolbarbutton-control.children.open > a,
+.tree li.toolbarbutton-control.children.closed > a,
+.tree li.toolbarbutton-control > span
+{
+    background-image: url(../Images/Icons/ToolbarButtonControl16.png);
+}
+
+.tree li.toolbartable-control > a,
+.tree li.toolbartable-control.children.open > a,
+.tree li.toolbartable-control.children.closed > a,
+.tree li.toolbartable-control > span
+{
+    background-image: url(../Images/Icons/ToolbarTable16.png);
+}
+
+.tree li.listtable-control > a,
+.tree li.listtable-control.children.open > a,
+.tree li.listtable-control.children.closed > a,
+.tree li.listtable-control > span
+{
+    background-image: url(../Images/Icons/TableList16.png);
+}
+
+.tree li.calendar-control > a,
+.tree li.calendar-control.children.open > a,
+.tree li.calendar-control.children.closed > a,
+.tree li.calendar-control > span
+{
+    background-image: url(../Images/Icons/CalendarControl16.png);
+}
+
+.tree li.checkbox-control > a,
+.tree li.checkbox-control.children.open > a,
+.tree li.checkbox-control.children.closed > a,
+.tree li.checkbox-control > span
+{
+    background-image: url(../Images/Icons/CheckBoxControl16.png);
+}
+
+.tree li.dropdown-control > a,
+.tree li.dropdown-control > span,
+.tree li.dropdown-control.children > a,
+.tree li.dropdown-control.children.open > a,
+.tree li.dropdown-control.children.closed > a,
+.tree li.dropdown-control.children > span
+{
+    background-image: url(../Images/Icons/DropDownList16.png);
+}
+
+.tree li.file-control > a,
+.tree li.file-control > span,
+.tree li.file-control.children.open > a,
+.tree li.file-control.children.closed > a,
+.tree li.filepostback-control.children.open > a,
+.tree li.filepostback-control.children.closed > a,
+.tree li.filepostback-control > a,
+.tree li.filepostback-control > span,
+.tree li.file > a,
+.tree li.file > span,
+.tree li.file.children.open > a,
+.tree li.file.children.closed > a
+{
+    background-image: url(../Images/Icons/File16.png);
+}
+
+.tree li.listbox-control > a,
+.tree li.listbox-control > span,
+.tree li.listbox-control.children > a,
+.tree li.listbox-control.children.open > a,
+.tree li.listbox-control.children.closed > a,
+.tree li.listbox-control.children > span
+{
+    background-image: url(../Images/Icons/ListBoxControl16.png);
+}
+
+.tree li.radiobutton-control > a,
+.tree li.radiobutton-control > span,
+.tree li.radiobutton-control.children > a,
+.tree li.radiobutton-control.children.open > a,
+.tree li.radiobutton-control.children.closed > a,
+.tree li.radiobutton-control.children > span
+{
+    background-image: url(../Images/Icons/RadioButton.png);
+}
+
+.tree li.radiobuttongroup-control > a,
+.tree li.radiobuttongroup-control > span,
+.tree li.radiobuttongroup-control.children > a,
+.tree li.radiobuttongroup-control.children.open > a,
+.tree li.radiobuttongroup-control.children.closed > a,
+.tree li.radiobuttongroup-control.children > span
+{
+    background-image: url(../Images/Icons/RadioButtonGroup.png);
+}
+
+.tree li.textbox-control.children.open > a,
+.tree li.textbox-control.children.closed > a,
+.tree li.textbox-control > a,
+.tree li.textbox-control > span
+{
+    background-image: url(../Images/Icons/TextBoxControl16.png);
+}
+
+.tree li.image-control > a,
+.tree li.image-control > span,
+.tree li.image-control.children.open > a,
+.tree li.image-control.children.closed > a,
+.tree li.imagepostback-control > a,
+.tree li.imagepostback-control > span,
+.tree li.imagepostback-control.children.open > a,
+.tree li.imagepostback-control.children.closed > a,
+.tree li.picture-control > a,
+.tree li.picture-control > span,
+.tree li.picture-control.children.open > a,
+.tree li.picture-control.children.closed > a
+{
+    background-image: url(../Images/Icons/Picture16_02.png);
+}
+.tree li.image > a,
+.tree li.image > span,
+.tree li.image.children.open > a,
+.tree li.image.children.closed > a
+{
+    background-image: url(../Images/Icons/Picture16_02.png);
+}
+.smartobject ul li a.image
+{
+    background-image: url(../Images/Icons/Image16.png);
+}
+.smartobject ul li a.hyperlink-control
+{
+    background-image: url(../Images/Icons/Hyperlink16.png);
+}
+
+.tree li.datalabel-control > a,
+.tree li.datalabel-control.children.open > a,
+.tree li.datalabel-control.children.closed > a,
+.tree li.datalabel-control > span
+{
+    background-image: url(../Images/Icons/DataLabelControl16.png);
+}
+
+.tree li.gauge-control > a,
+.tree li.gauge-control.children.open > a,
+.tree li.gauge-control.children.closed > a,
+.tree li.gauge-control > span
+{
+    background-image: url(../Images/Icons/GaugeControl.png);
+}
+
+.tree li.label-control > a,
+.tree li.label-control.children.open > a,
+.tree li.label-control.children.closed > a,
+.tree li.label-control > span
+{
+    background-image: url(../Images/Icons/Label16_02.png);
+}
+
+.tree li.lookup-control > a,
+.tree li.lookup-control > span,
+.tree li.lookup-control.children > a,
+.tree li.lookup-control.children.open > a,
+.tree li.lookup-control.children.closed > a,
+.tree li.lookup-control.children > span
+{
+    background-image: url(../Images/Icons/Lookup16.png);
+}
+
+.tree li.rating-control > a,
+.tree li.rating-control.children.open > a,
+.tree li.rating-control.children.closed > a,
+.tree li.rating-control > span
+{
+    background-image: url(../Images/Icons/Rating16.png);
+}
+
+.tree li.slider-control > a,
+.tree li.slider-control.children.open > a,
+.tree li.slider-control.children.closed > a,
+.tree li.slider-control > span
+{
+    background-image: url(../Images/Icons/SliderControl16.png);
+}
+
+.tree li.table-control > a,
+.tree li.table-control.children.open > a,
+.tree li.table-control.children.closed > a,
+.tree li.table-control > span
+{
+    background-image: url(../Images/Icons/TableControl16.png);
+}
+
+.tree li.toolbar-control > a,
+.tree li.toolbar-control > span
+{
+    background-image: url(../Images/Icons/ToolbarControl16.png);
+}
+
+.tree li.toolbar-button-control > a,
+.tree li.toolbar-button-control.children.open > a,
+.tree li.toolbar-button-control.children.closed > a,
+.tree li.toolbar-button-control > span
+{
+    background-image: url(../Images/Icons/ToolbarButtonControl16.png);
+}
+
+.tree li.tree-control > a,
+.tree li.tree-control > span,
+.tree li.tree-control.children > a,
+.tree li.tree-control.children.open > a,
+.tree li.tree-control.children.closed > a,
+.tree li.tree-control.children > span
+{
+    background-image: url(../Images/Icons/TreeControl16.png);
+}
+
+.tree li.multiselectcheckbox-control > a,
+.tree li.multiselectcheckbox-control > span,
+.tree li.multiselectcheckbox-control.children > a,
+.tree li.multiselectcheckbox-control.children.open > a,
+.tree li.multiselectcheckbox-control.children.closed > a,
+.tree li.multiselectcheckbox-control.children > span
+{
+    background-image: url(../Images/Icons/MultiSelectCheckBoxes16.png);
+}
+
+.tree li.hyperlink-control > a,
+.tree li.hyperlink-control.children.open > a,
+.tree li.hyperlink-control.children.closed > a,
+.tree li.hyperlink-control > span
+{
+    background-image: url(../Images/Icons/Hyperlink.png);
+}
+
+.tree li.listdisplay-control > a,
+.tree li.listdisplay-control > span,
+.tree li.listdisplay-control.children > a,
+.tree li.listdisplay-control.children.open > a,
+.tree li.listdisplay-control.children.closed > a,
+.tree li.listdisplay-control.children > span
+{
+    background-image: url(../Images/Icons/ListDisplay16.png);
+}
+
+.tree li.radiobuttonlist-control > a,
+.tree li.radiobuttonlist-control > span,
+.tree li.radiobuttonlist-control.children > a,
+.tree li.radiobuttonlist-control.children.open > a,
+.tree li.radiobuttonlist-control.children.closed > a,
+.tree li.radiobuttonlist-control.children > span
+{
+    background-image: url(../Images/Icons/RadioButtonList16.png);
+}
+
+.tree li.control-method > a,
+.tree li.control-method > span,
+.tree li.control-method.children.closed > a,
+.tree li.control-method.children.open > a,
+.tree li.control-method-control.children > span
+{
+    background-image: url(../Images/Icons/ControlMethod16.png);
+}
+
+.tree li.control-method-parameter > a,
+.tree li.control-method-parameter > span
+{
+    background-image: url(../Images/Icons/ControlMethodParameter16.png);
+}
+
+.tree li.sqlum > a,
+.tree li.sqlum > span
+{
+    background-image: url(../Images/Icons/SQL_UM_16_flat.png);
+}
+
+.tree li.groups > a,
+.tree li.groups > span
+{
+    background-image: url(../Images/Icons/group16.png);
+}
+
+.tree li.users > a,
+.tree li.users > span
+{
+    background-image: url(../Images/Icons/User16.png);
+}
+
+.tree li.plugin > a,
+.tree li.plugin > span
+{
+    background-image: url(../Images/Icons/plugin_16_flat.png);
+}
+
+.tree li.open.report-parameters > a,
+.tree li.open.report-parameters > span
+{
+    background-image: url(../Images/Icons/Report_Parameters_Open_16_flat.png);
+}
+.tree li.closed.report-parameters > a,
+.tree li.closed.report-parameters > span
+{
+    background-image: url(../Images/Icons/Report_Parameters_Closed_16_flat.png);
+}
+
+.tree li.report-parameter > a,
+.tree li.report-parameter > span
+{
+    background-image: url(../Images/Icons/Report_Parameters_16_flat.png);
+}
+
+
+.tree li.smartobject-method > a,
+.tree li.smartobject-method > span,
+.tree li.children.smartobject-method > a,
+.tree li.children.smartobject-method > span
+{
+    background-image: url(../Images/Icons/SmartObjectMethod16.png);
+}
+
+.tree li.form-event > a,
+.tree li.form-event > span,
+.tree li.children.form-event > a,
+.tree li.children.form-event > span
+{
+    background-image: url(../Images/Icons/FormEvent16.png);
+}
+
+.tree li.children.no-image > a,
+.tree li.children.no-image > span
+{
+    background-image: none;
+}
+
+.tree li.event > a,
+.tree li.event > span
+{
+    background-image: url(../Images/Icons/Event16.png);
+}
+
+.tree li.form-state > a,
+.tree li.form-state > span,
+.tree li.children.form-state > a,
+.tree li.children.form-state > span
+{
+    background-image: url(../Images/Icons/FormState16a.png);
+}
+
+.tree li.appstudio > a,
+.tree li.appstudio > span,
+.tree li.children.appstudio > a,
+.tree li.children.appstudio > span
+{
+    background-image: url(../Images/Icons/AppStudio16.png);
+}
+
+.tree li.property > a,
+.tree li.property > span
+{
+    background-image:url(../Images/Icons/Properties16.png);
+}
+
+.tree li.open.parameters > a,
+.tree li.open.parameters > span
+{
+    background-image:url(../Images/Icons/ParametersOpen16.png);
+}
+
+.tree li.closed.parameters > a,
+.tree li.closed.parameters > span
+{
+    background-image:url(../Images/Icons/ParametersClosed16.png);
+}
+
+.tree li.view-event > a,
+.tree li.view-event > span
+{
+    background-image:url(../Images/Icons/ViewEvent16.png);
+}
+
+/* Collapsed Root Styling */
+.tree.collapsed-root li.root
+{
+    background: none;
+    padding-left: 0;
+}
+
+.tree.collapsed-root li.root > a,
+.tree.collapsed-root li.root > span
+{
+    display: none;
+}
+
+/* Checkbox Tree Styling */
+.tree.checkbox li a,
+.tree.checkbox li span
+{
+    background-image: url("../Images/Tree/unchecked_form.png");
+    padding-left: 41px;
+}
+
+.tree.checkbox li.checked a,
+.tree.checkbox li.checked span 
+{
+    background-image: url("../Images/Tree/checked_form.png");
+}
+
+.tree.checkbox li.open > a,
+.tree.checkbox li.open > span 
+{
+    background-image: url("../Images/Tree/unchecked_open_folder.png");
+}
+
+.tree.checkbox li.closed > a,
+.tree.checkbox li.closed > span 
+{
+    background-image: url("../Images/Tree/unchecked_closed_folder.png");
+}
+
+.tree.checkbox li.checked.open > a,
+.tree.checkbox li.checked.open > span 
+{
+    background-image: url("../Images/Tree/checked_open_folder.png");
+}
+
+.tree.checkbox li.checked.closed > a,
+.tree.checkbox li.checked.closed > span 
+{
+    background-image: url("../Images/Tree/checked_closed_folder.png");
+}
+
+.tree.checkbox li.user > a,
+.tree.checkbox li.user > span 
+{
+    background-image: url("../Images/Tree/unchecked_user.png");
+}
+
+.tree.checkbox li.user.checked > a,
+.tree.checkbox li.user.checked > span 
+{
+    background-image: url("../Images/Tree/checked_user.png");
+}
+
+/* Tree Icon Styling (New Structure) */
+.tree a.smartobject,
+.tree li.children > a.smartobject,
+.tree li.children.closed > a.smartobject,
+.tree li.children.open > a.smartobject
+{
+    background-image:url(../Images/Icons/SmartObject16.png);
+}
+
+.tree a.staticdata,
+.tree li.children > a.staticdata,
+.tree li.children.closed > a.staticdata,
+.tree li.children.open > a.staticdata
+{
+    background-image:url(../Images/Icons/StaticData16.png);
+}
+
+.tree li.textarea-control > a,
+.tree li.textarea-control.closed  > a,
+.tree li.textarea-control.open > a,
+.tree li.textarea-control > span,
+.tree li.textarea-control.closed > span,
+.tree li.textarea-control.open > span
+{
+    background-image: url(../Images/Icons/TextAreaControl16.png);
+}
+
+/* Workflow Specific Node Styling */
+.tree a.process-activity,
+.tree li.children > a.process-activity,
+.tree li.children.closed > a.process-activity,
+.tree li.children.open > a.process-activity,
+.tree li.process-activity > a,
+.tree li.process-activity.closed > a,
+.tree li.process-activity.open > a,
+.tree li.process-activity > span,
+.tree li.process-activity.closed > span,
+.tree li.process-activity.open > span
+{
+    background-image:url(../Images/Icons/Activity16.png);
+}
+
+.tree a.action,
+.tree li.action > a,
+.tree li.action > span
+{
+    background-image:url(../Images/Icons/Actions16.png);
+}
+
+.tree li.process-activities > a,
+.tree li.process-activities > span,
+.tree li.process-activities.closed > a,
+.tree li.process-activities.closed > span
+{
+    background-image:url(../Images/Icons/ActivityCollectionClosed16.png);
+}
+.tree li.process-activities.open > a
+{
+    background-image:url(../Images/Icons/ActivityCollectionOpen16.png);
+}
+
+.tree li.data-fields > a,
+.tree li.data-fields > span,
+.tree li.data-fields.closed > a,
+.tree li.data-fields.closed > span
+{
+    background-image:url(../Images/Icons/DataFieldsClosed16.png);
+}
+.tree li.data-fields.open > a
+{
+    background-image:url(../Images/Icons/DataFieldsOpen16.png);
+}
+
+.tree li.data-field > a,
+.tree li.data-field.closed > a,
+.tree li.data-field.open > a,
+.tree li.data-field > span,
+.tree li.data-field.closed > span,
+.tree li.data-field.open > span
+{
+    background-image:url(../Images/Icons/DataField16.png);
+}
+
+.tree li.xml-fields > a,
+.tree li.xml-fields > span,
+.tree li.xml-fields.closed > a,
+.tree li.xml-fields.closed > span
+{
+    background-image:url(../Images/Icons/XAML_FieldsClosed16.png);
+}
+.tree li.xml-fields.open > a
+{
+    background-image:url(../Images/Icons/XAML_FieldsOpen16.png);
+}
+
+.tree li.xml-field > a,
+.tree li.xml-field.closed  > a,
+.tree li.xml-field.open > a,
+.tree li.xml-field > span,
+.tree li.xml-field.closed  > span,
+.tree li.xml-field.open > span
+{
+    background-image:url(../Images/Icons/XamlField16.png);
+}
+
+.tree li.workflow-action-name > a,
+.tree li.workflow-action-name.closed > a,
+.tree li.workflow-action-name.open > a,
+.tree li.workflow-action-name > span,
+.tree li.workflow-action-name.closed > span,
+.tree li.workflow-action-name.open > span
+{
+    background-image:url(../Images/Icons/WorkflowActionsName16.png);
+}
+
+.tree li.workflow-actions > a,
+.tree li.workflow-actions.closed > a,
+.tree li.workflow-actions.open > a,
+.tree li.workflow-actions > span,
+.tree li.workflow-actions.closed > span,
+.tree li.workflow-actions.open > span
+{
+    background-image:url(../Images/Icons/WorkflowActions16.png);
+}
+
+.tree li.workflow-view-event > a,
+.tree li.workflow-view-event.closed > a,
+.tree li.workflow-view-event.open > a,
+.tree li.workflow-view-event > span,
+.tree li.workflow-view-event.closed > span,
+.tree li.workflow-view-event.open > span
+{
+    background-image: url(../Images/Icons/EventsClosed16.png);
+}
+
+.tree li.workflow-view > a,
+.tree li.workflow-view.closed > a,
+.tree li.workflow-view.open > a,
+.tree li.workflow-view > span,
+.tree li.workflow-view.closed > span,
+.tree li.workflow-view.open > span
+{
+    background-image: url(../Images/Icons/WorkflowView16.png);
+}
+
+.tree li.xml-reference > a,
+.tree li.xml-reference.closed > a
+.tree li.xml-reference.open > a,
+.tree li.xml-reference > span,
+.tree li.xml-reference.closed > span
+.tree li.xml-reference.open > span
+{
+    background-image:url(../Images/Icons/XamlField16.png);
+}
+
+/* Expression Builder Tree Icons */
+
+.tree li.expressions > a,
+.tree li.expressions.closed > a
+{
+    background-image:url(../Images/Icons/fx16_Closed.png);
+}
+.tree li.expressions.open > a
+{
+    background-image:url(../Images/Icons/fx16_Open.png);
+}
+
+.tree li.expression > a,
+.tree li.expression.closed > a,
+.tree li.expression.open > a
+{
+    background-image: url(../Images/Icons/Expression16.png);
+}
+
+.tree li.operator.add > a,
+.tree li.operator.add.closed > a,
+.tree li.operator.add.open > a
+{
+    background-image: url(../Images/Icons/Plus16.png);
+}
+
+.tree li.operator.minus > a,
+.tree li.operator.minus.closed > a,
+.tree li.operator.minus.open > a
+{
+    background-image: url(../Images/Icons/Subtract16.png);
+}
+
+.tree li.operator.multiply > a,
+.tree li.operator.multiply.closed > a,
+.tree li.operator.multiply.open > a
+{
+    background-image: url(../Images/Icons/Multiply16.png);
+}
+
+.tree li.operator.divide > a,
+.tree li.operator.divide.closed > a,
+.tree li.operator.divide.open > a
+{
+    background-image: url(../Images/Icons/Divide16.png);
+}
+
+.tree li.operator.modulus > a,
+.tree li.operator.modulus.closed > a,
+.tree li.operator.modulus.open > a
+{
+    background-image: url(../Images/Icons/Module16.png);
+}
+
+.tree li.operator.equals > a,
+.tree li.operator.equals.closed > a,
+.tree li.operator.equals.open > a
+{
+    background-image: url(../Images/Icons/Equals16.png);
+}
+
+.tree li.operator.not-equals > a,
+.tree li.operator.not-equals.closed > a,
+.tree li.operator.not-equals.open > a
+{
+    background-image: url(../Images/Icons/NotEqual16.png);
+}
+
+.tree li.operator.greater-than-equals > a,
+.tree li.operator.greater-than-equals.closed > a,
+.tree li.operator.greater-than-equals.open > a
+{
+    background-image: url(../Images/Icons/GreaterThanEqual16.png);
+}
+
+.tree li.operator.greater-than > a,
+.tree li.operator.greater-than.closed > a,
+.tree li.operator.greater-than.open > a
+{
+    background-image: url(../Images/Icons/GreaterThan16.png);
+}
+
+.tree li.operator.less-than-equals > a,
+.tree li.operator.less-than-equals.closed > a,
+.tree li.operator.less-than-equals.open > a
+{
+    background-image: url(../Images/Icons/LessThanEqual16.png);
+}
+
+.tree li.operator.less-than > a,
+.tree li.operator.less-than.closed > a,
+.tree li.operator.less-than.open > a
+{
+    background-image: url(../Images/Icons/LessThan16.png);
+}
+
+.tree li.operator.and > a,
+.tree li.operator.and.closed > a,
+.tree li.operator.and.open > a
+{
+    background-image: url(../Images/Icons/And16.png);
+}
+
+.tree li.operator.or > a,
+.tree li.operator.or.closed > a,
+.tree li.operator.or.open > a
+{
+    background-image: url(../Images/Icons/Or16.png);
+}
+
+.tree li.operator.xor > a,
+.tree li.operator.xor.closed > a,
+.tree li.operator.xor.open > a
+{
+    background-image: url(../Images/Icons/Xor16.png);
+}
+
+.tree li.literal.true > a,
+.tree li.literal.true.closed > a,
+.tree li.literal.true.open > a
+{
+    background-image: url(../Images/Icons/True16.png);
+}
+
+.tree li.literal.false > a,
+.tree li.literal.false.closed > a,
+.tree li.literal.false.open > a
+{
+    background-image: url(../Images/Icons/False16.png);
+}
+
+.tree li.literal.empty-string > a,
+.tree li.literal.empty-string.closed > a,
+.tree li.literal.empty-string.open > a
+{
+    background-image: url(../Images/Icons/EmptyString16.png);
+}
+
+.tree li.function.not > a,
+.tree li.function.not.closed > a,
+.tree li.function.not.open > a
+{
+    background-image: url(../Images/Icons/Not16.png);
+}
+
+.tree li.left-bracket > a,
+.tree li.left-bracket.closed > a,
+.tree li.left-bracket.open > a
+{
+    background-image: url(../Images/Icons/BracketLeft16.png);
+}
+
+.tree li.right-bracket > a,
+.tree li.right-bracket.closed > a,
+.tree li.right-bracket.open > a
+{
+    background-image: url(../Images/Icons/BracketRight16.png);
+}
+
+.tree li.function.number-average > a,
+.tree li.function.number-average.closed > a,
+.tree li.function.number-average.open > a
+{
+    background-image: url(../Images/Icons/Average16.png);
+}
+
+.tree li.function.number-sum > a,
+.tree li.function.number-sum.closed > a,
+.tree li.function.number-sum.open > a
+{
+    background-image: url(../Images/Icons/Sum16.png);
+}
+
+.tree li.function.number-count > a,
+.tree li.function.number-count.closed > a,
+.tree li.function.number-count.open > a
+{
+    background-image: url(../Images/Icons/Count16.png);
+}
+
+.tree li.function.number-min > a,
+.tree li.function.number-min.closed > a,
+.tree li.function.number-min.open > a
+{
+    background-image: url(../Images/Icons/Minimum16.png);
+}
+
+.tree li.function.number-max > a,
+.tree li.function.number-max.closed > a,
+.tree li.function.number-max.open > a
+{
+    background-image: url(../Images/Icons/Maximum16.png);
+}
+
+.tree li.function.text-length > a,
+.tree li.function.text-length.closed > a,
+.tree li.function.text-length.open > a
+{
+    background-image: url(../Images/Icons/Length16.png);
+}
+
+.tree li.function.text-left > a,
+.tree li.function.text-left.closed > a,
+.tree li.function.text-left.open > a
+{
+    background-image: url(../Images/Icons/SubstringLeft16.png);
+}
+
+.tree li.function.text-right > a,
+.tree li.function.text-right.closed > a,
+.tree li.function.text-right.open > a
+{
+    background-image: url(../Images/Icons/SubstringRight16.png);
+}
+
+.tree li.function.text-to-upper > a,
+.tree li.function.text-to-upper.closed > a,
+.tree li.function.text-to-upper.open > a
+{
+    background-image: url(../Images/Icons/Uppercase16.png);
+}
+
+.tree li.function.text-to-lower > a,
+.tree li.function.text-to-lower.closed > a,
+.tree li.function.text-to-lower.open > a
+{
+    background-image: url(../Images/Icons/Lowercase16.png);
+}
+
+.tree li.function.text-concat > a,
+.tree li.function.text-concat.closed > a,
+.tree li.function.text-concat.open > a
+{
+    background-image: url(../Images/Icons/Concat16.png);
+}
+
+.tree li.function.text-substring > a,
+.tree li.function.text-substring.closed > a,
+.tree li.function.text-substring.open > a
+{
+    background-image: url(../Images/Icons/Substring16.png);
+}
+
+.tree li.function.text-trim > a,
+.tree li.function.text-trim.closed > a,
+.tree li.function.text-trim.open > a
+{
+    background-image: url(../Images/Icons/Trim16.png);
+}
+
+.tree li.function.text-matches > a,
+.tree li.function.text-matches.closed > a,
+.tree li.function.text-matches.open > a
+{
+    background-image: url(../Images/Icons/MatchGeneric16.png);
+}
+
+.tree li.function.text-not-matches > a,
+.tree li.function.text-not-matches.closed > a,
+.tree li.function.text-not-matches.open > a
+{
+    background-image: url(../Images/Icons/MatchDoesNot16.png);
+}
+
+.tree li.function.text-contains > a,
+.tree li.function.text-contains.closed > a,
+.tree li.function.text-contains.open > a
+{
+    background-image: url(../Images/Icons/Contains16.png);
+}
+
+.tree li.function.text-starts-with > a,
+.tree li.function.text-starts-with.closed > a,
+.tree li.function.text-starts-with.open > a
+{
+    background-image: url(../Images/Icons/StartsWith16.png);
+}
+
+.tree li.function.text-ends-with > a,
+.tree li.function.text-ends-with.closed > a,
+.tree li.function.text-ends-with.open > a
+{
+    background-image: url(../Images/Icons/EndsWith16.png);
+}
+
+.tree li.function.text-blank > a,
+.tree li.function.text-blank.closed > a,
+.tree li.function.text-blank.open > a
+{
+    background-image: url(../Images/Icons/IsBlank16.png);
+}
+
+.tree li.function.text-not-blank > a,
+.tree li.function.text-not-blank.closed > a,
+.tree li.function.text-not-blank.open > a
+{
+    background-image: url(../Images/Icons/IsNotBlank16.png);
+}
+
+.tree li.function.text-find > a,
+.tree li.function.text-find.closed > a,
+.tree li.function.text-find.open > a
+{
+    background-image: url(../Images/Icons/Find16.png);
+}
+
+.tree li.function.text-hyperlink > a,
+.tree li.function.text-hyperlink.closed > a,
+.tree li.function.text-hyperlink.open > a
+{
+    background-image: url(../Images/Icons/HyperlinkFunction16.png);
+}
+
+.tree li.function.text-insert > a,
+.tree li.function.text-insert.closed > a,
+.tree li.function.text-insert.open > a
+{
+    background-image: url(../Images/Icons/Insert16.png);
+}
+
+.tree li.function.text-join > a,
+.tree li.function.text-join.closed > a,
+.tree li.function.text-join.open > a
+{
+    background-image: url(../Images/Icons/Join16.png);
+}
+
+.tree li.function.text-mid > a,
+.tree li.function.text-mid.closed > a,
+.tree li.function.text-mid.open > a
+{
+    background-image: url(../Images/Icons/Mid.png);
+}
+
+.tree li.function.text-pad-left > a,
+.tree li.function.text-pad-left.closed > a,
+.tree li.function.text-pad-left.open > a
+{
+    background-image: url(../Images/Icons/PadLeft16.png);
+}
+
+.tree li.function.text-pad-right > a,
+.tree li.function.text-pad-right.closed > a,
+.tree li.function.text-pad-right.open > a
+{
+    background-image: url(../Images/Icons/PadRight16.png);
+}
+
+.tree li.function.text-proper > a,
+.tree li.function.text-proper.closed > a,
+.tree li.function.text-proper.open > a
+{
+    background-image: url(../Images/Icons/Proper16.png);
+}
+
+.tree li.function.text-replace > a,
+.tree li.function.text-replace.closed > a,
+.tree li.function.text-replace.open > a
+{
+    background-image: url(../Images/Icons/Replace16.png);
+}
+
+.tree li.function.text-url-decode > a,
+.tree li.function.text-url-decode.closed > a,
+.tree li.function.text-url-decode.open > a
+{
+    background-image: url(../Images/Icons/Decode16.png);
+}
+
+.tree li.function.text-url-encode > a,
+.tree li.function.text-url-encode.closed > a,
+.tree li.function.text-url-encode.open > a
+{
+    background-image: url(../Images/Icons/Encode16.png);
+}
+
+.tree li.function.text-xml-decode > a,
+.tree li.function.text-xml-decode.closed > a,
+.tree li.function.text-xml-decode.open > a
+{
+    background-image: url(../Images/Icons/Decode16.png);
+}
+
+.tree li.function.text-xml-encode > a,
+.tree li.function.text-xml-encode.closed > a,
+.tree li.function.text-xml-encode.open > a
+{
+    background-image: url(../Images/Icons/Encode16.png);
+}
+
+.tree li.function.text-html-decode > a,
+.tree li.function.text-html-decode.closed > a,
+.tree li.function.text-html-decode.open > a
+{
+    background-image: url(../Images/Icons/Decode16.png);
+}
+
+.tree li.function.text-html-encode > a,
+.tree li.function.text-html-encode.closed > a,
+.tree li.function.text-html-encode.open > a
+{
+    background-image: url(../Images/Icons/Encode16.png);
+}
+
+.tree li.function.number-abs > a,
+.tree li.function.number-abs.closed > a,
+.tree li.function.number-abs.open > a
+{
+    background-image: url(../Images/Icons/AbsoluteValue16.png);
+}
+
+.tree li.function.number-format > a,
+.tree li.function.number-format.closed > a,
+.tree li.function.number-format.open > a
+{
+    background-image: url(../Images/Icons/FormatNumber16.png);
+}
+
+.tree li.function.number-power > a,
+.tree li.function.number-power.closed > a,
+.tree li.function.number-power.open > a
+{
+    background-image: url(../Images/Icons/Power16.png);
+}
+
+.tree li.function.number-random > a,
+.tree li.function.number-random.closed > a,
+.tree li.function.number-random.open > a
+{
+    background-image: url(../Images/Icons/RandBetween16.png);
+}
+
+.tree li.function.number-root > a,
+.tree li.function.number-root.closed > a,
+.tree li.function.number-root.open > a
+{
+    background-image: url(../Images/Icons/Root16.png);
+}
+
+.tree li.function.number-round > a,
+.tree li.function.number-round.closed > a,
+.tree li.function.number-round.open > a
+{
+    background-image: url(../Images/Icons/Round16.png);
+}
+
+.tree li.function.number-floor > a,
+.tree li.function.number-floor.closed > a,
+.tree li.function.number-floor.open > a
+{
+    background-image: url(../Images/Icons/Floor16.png);
+}
+
+.tree li.function.number-ceiling > a,
+.tree li.function.number-ceiling.closed > a,
+.tree li.function.number-ceiling.open > a
+{
+    background-image: url(../Images/Icons/Ceiling16.png);
+}
+
+.tree li.function.number-square > a,
+.tree li.function.number-square.closed > a,
+.tree li.function.number-square.open > a
+{
+    background-image: url(../Images/Icons/Square16.png);
+}
+
+.tree li.function.number-square-root > a,
+.tree li.function.number-square-root.closed > a,
+.tree li.function.number-square-root.open > a
+{
+    background-image: url(../Images/Icons/SquareRoot16.png);
+}
+
+.tree li.function.datetime-add-days > a,
+.tree li.function.datetime-add-days.closed > a,
+.tree li.function.datetime-add-days.open > a
+{
+    background-image: url(../Images/Icons/AddDays16.png);
+}
+
+.tree li.function.datetime-add-hours > a,
+.tree li.function.datetime-add-hours.closed > a,
+.tree li.function.datetime-add-hours.open > a
+{
+    background-image: url(../Images/Icons/AddHours16.png);
+}
+
+.tree li.function.datetime-add-minutes > a,
+.tree li.function.datetime-add-minutes.closed > a,
+.tree li.function.datetime-add-minutes.open > a
+{
+    background-image: url(../Images/Icons/AddMinutes16.png);
+}
+
+.tree li.function.datetime-add-seconds > a,
+.tree li.function.datetime-add-seconds.closed > a,
+.tree li.function.datetime-add-seconds.open > a
+{
+    background-image: url(../Images/Icons/AddSeconds16.png);
+}
+
+.tree li.function.datetime-subtract-days > a,
+.tree li.function.datetime-subtract-days.closed > a,
+.tree li.function.datetime-subtract-days.open > a
+{
+    background-image: url(../Images/Icons/SubtractDay16.png);
+}
+
+.tree li.function.datetime-subtract-hours > a,
+.tree li.function.datetime-subtract-hours.closed > a,
+.tree li.function.datetime-subtract-hours.open > a
+{
+    background-image: url(../Images/Icons/SubtractHours16.png);
+}
+
+.tree li.function.datetime-subtract-minutes > a,
+.tree li.function.datetime-subtract-minutes.closed > a,
+.tree li.function.datetime-subtract-minutes.open > a
+{
+    background-image: url(../Images/Icons/SubtractMinutes16.png);
+}
+
+.tree li.function.datetime-subtract-seconds > a,
+.tree li.function.datetime-subtract-seconds.closed > a,
+.tree li.function.datetime-subtract-seconds.open > a
+{
+    background-image: url(../Images/Icons/SubtractSec16_02.png);
+}
+
+.tree li.function.datetime-day-difference > a,
+.tree li.function.datetime-day-difference.closed > a,
+.tree li.function.datetime-day-difference.open > a
+{
+    background-image: url(../Images/Icons/DateDif16.png);
+}
+
+.tree li.function.datetime-format > a,
+.tree li.function.datetime-format.closed > a,
+.tree li.function.datetime-format.open > a
+{
+    background-image: url(../Images/Icons/FormatDate16.png);
+}
+
+.tree li.function.datetime-day > a,
+.tree li.function.datetime-day.closed > a,
+.tree li.function.datetime-day.open > a
+{
+    background-image: url(../Images/Icons/Day16.png);
+}
+
+.tree li.function.datetime-month > a,
+.tree li.function.datetime-month.closed > a,
+.tree li.function.datetime-month.open > a
+{
+    background-image: url(../Images/Icons/Month16.png);
+}
+
+.tree li.function.datetime-year > a,
+.tree li.function.datetime-year.closed > a,
+.tree li.function.datetime-year.open > a
+{
+    background-image: url(../Images/Icons/YearOne16.png);
+}
+
+.tree li.function.datetime-yesterday > a,
+.tree li.function.datetime-yesterday.closed > a,
+.tree li.function.datetime-yesterday.open > a
+{
+    background-image: url(../Images/Icons/Yesterday16.png);
+}
+
+.tree li.datetime-now > a,
+.tree li.function.datetime-now > a,
+.tree li.function.datetime-now.closed > a,
+.tree li.function.datetime-now.open > a
+{
+    background-image: url(../Images/Icons/Now16.png);
+}
+
+.tree li.function.datetime-today > a,
+.tree li.function.datetime-today.closed > a,
+.tree li.function.datetime-today.open > a
+{
+    background-image: url(../Images/Icons/Today16.png);
+}
+
+.tree li.function.datetime-tomorrow > a,
+.tree li.function.datetime-tomorrow.closed > a,
+.tree li.function.datetime-tomorrow.open > a
+{
+    background-image: url(../Images/Icons/Tomorrow16.png);
+}
+
+.tree li.function.datetime-week-number > a,
+.tree li.function.datetime-week-number.closed > a,
+.tree li.function.datetime-week-number.open > a
+{
+    background-image: url(../Images/Icons/WeekNum16.png);
+}
+
+.tree li.function.datetime-weekday > a,
+.tree li.function.datetime-weekday.closed > a,
+.tree li.function.datetime-weekday.open > a
+{
+    background-image: url(../Images/Icons/WeekdayE16.png);
+}
+
+.tree li.function.datetime-start-month > a,
+.tree li.function.datetime-start-month.closed > a,
+.tree li.function.datetime-start-month.open > a
+{
+    background-image: url(../Images/Icons/BeginMonth16.png);
+}
+
+.tree li.function.datetime-start-year > a,
+.tree li.function.datetime-start-year.closed > a,
+.tree li.function.datetime-start-year.open > a
+{
+    background-image: url(../Images/Icons/BeginYear16.png);
+}
+
+.tree li.function.datetime-start-week > a,
+.tree li.function.datetime-start-week.closed > a,
+.tree li.function.datetime-start-week.open > a
+{
+    background-image: url(../Images/Icons/BeginWeek16.png);
+}
+
+.tree li.function.datetime-start-quarter > a,
+.tree li.function.datetime-start-quarter.closed > a,
+.tree li.function.datetime-start-quarter.open > a
+{
+    background-image: url(../Images/Icons/StartQuarter16.png);
+}
+
+.tree li.function.datetime-end-year > a,
+.tree li.function.datetime-end-year.closed > a,
+.tree li.function.datetime-end-year.open > a
+{
+    background-image: url(../Images/Icons/EndYear16.png);
+}
+
+.tree li.function.datetime-end-month > a,
+.tree li.function.datetime-end-month.closed > a,
+.tree li.function.datetime-end-month.open > a
+{
+    background-image: url(../Images/Icons/EndMonth16.png);
+}
+
+.tree li.function.datetime-end-week > a,
+.tree li.function.datetime-end-week.closed > a,
+.tree li.function.datetime-end-week.open > a
+{
+    background-image: url(../Images/Icons/EndWeek16.png);
+}
+
+.tree li.function.datetime-end-quarter > a,
+.tree li.function.datetime-end-quarter.closed > a,
+.tree li.function.datetime-end-quarter.open > a
+{
+    background-image: url(../Images/Icons/EndQuarter16.png);
+}
+
+.tree li.function.list-first > a,
+.tree li.function.list-first.closed > a,
+.tree li.function.list-first.open > a
+{
+    background-image: url(../Images/Icons/Default16px.png);
+}
+
+.tree li.function.list-last > a,
+.tree li.function.list-last.closed > a,
+.tree li.function.list-last.open > a
+{
+    background-image: url(../Images/Icons/Default16px.png);
+}
+
+.tree li.function.list-selected > a,
+.tree li.function.list-selected.closed > a,
+.tree li.function.list-selected.open > a
+{
+    background-image: url(../Images/Icons/Default16px.png);
+}
+
+.tree li.function.to-boolean > a,
+.tree li.function.to-boolean.closed > a,
+.tree li.function.to-boolean.open > a
+{
+    background-image: url(../Images/Icons/ToBoolean16.png);
+}
+
+.tree li.function.to-datetime > a,
+.tree li.function.to-datetime.closed > a,
+.tree li.function.to-datetime.open > a
+{
+    background-image: url(../Images/Icons/ToDateAndTime16.png);
+}
+
+.tree li.function.to-decimal > a,
+.tree li.function.to-decimal.closed > a,
+.tree li.function.to-decimal.open > a
+{
+    background-image: url(../Images/Icons/ToDecimal16.png);
+}
+
+.tree li.function.to-number > a,
+.tree li.function.to-number.closed > a,
+.tree li.function.to-number.open > a
+{
+    background-image: url(../Images/Icons/ToNumber16.png);
+}
+
+.tree li.function.to-text > a,
+.tree li.function.to-text.closed > a,
+.tree li.function.to-text.open > a
+{
+    background-image: url(../Images/Icons/ToText16.png);
+}
+
+.tree li.symbol.text-return > a,
+.tree li.symbol.text-return.closed > a,
+.tree li.symbol.text-return.open > a
+{
+    background-image: url(../Images/Icons/Return16.png);
+}
+
+.tree li.symbol.text-space > a,
+.tree li.symbol.text-space.closed > a,
+.tree li.symbol.text-space.open > a
+{
+    background-image: url(../Images/Icons/Space16.png);
+}
+
+.tree li.symbol.text-tab > a,
+.tree li.symbol.text-tab.closed > a,
+.tree li.symbol.text-tab.open > a
+{
+    background-image: url(../Images/Icons/Tab16.png);
+}
+
+.tree li.function.if-statement > a,
+.tree li.function.if-statement.closed > a,
+.tree li.function.if-statement.open > a
+{
+    background-image: url(../Images/Icons/IfStatement16.png);
+}
+
+.tree li.auto-guidFF > a,
+.tree li.auto-guidFF > span,
+.tree li.autoguidFF > a,
+.tree li.autoguidFF > span
+{
+    background-image: url(../Images/Icons/AutoGuidFF16.png);
+}
+
+.tree li.auto-numberFF > a,
+.tree li.auto-numberFF > span,
+.tree li.autonumberFF > a,
+.tree li.autonumberFF > span
+{
+    background-image: url(../Images/Icons/AutoNumberFF16.png);
+}
+
+.tree li.date-timeFF > a,
+.tree li.date-timeFF > span,
+.tree li.datetimeFF > a,
+.tree li.datetimeFF > span
+{
+    background-image: url(../Images/Icons/DateTimeFF16.png);
+}
+
+.tree li.dateFF > a,
+.tree li.dateFF > span
+{
+    background-image: url(../Images/Icons/DateFF16.png);
+}
+
+.tree li.timeFF > a,
+.tree li.timeFF > span
+{
+    background-image: url(../Images/Icons/TimeFF16.png);
+}
+
+.tree li.decimalFF > a,
+.tree li.decimalFF > span
+{
+    background-image: url(../Images/Icons/DecimalFF16_v2.png);
+}
+
+.tree li.fileFF > a,
+.tree li.fileFF > span
+{
+    background-image: url(../Images/Icons/FileFF16.png);
+}
+
+.tree li.guidFF > a,
+.tree li.guidFF > span
+{
+    background-image: url(../Images/Icons/GuidFF16.png);
+}
+
+.tree li.hyperlinkFF > a,
+.tree li.hyperlinkFF > span
+{
+    background-image: url(../Images/Icons/HyperlinkFF16.png);
+}
+
+.tree li.imageFF > a,
+.tree li.imageFF > span
+{
+    background-image: url(../Images/Icons/ImageFF16.png);
+}
+
+.tree li.memoFF > a,
+.tree li.memoFF > span
+{
+    background-image: url(../Images/Icons/MemoFF16.png);
+}
+
+.tree li.multi-valueFF > a,
+.tree li.multi-valueFF > span,
+.tree li.multivalueFF > a,
+.tree li.multivalueFF > span
+{
+    background-image: url(../Images/Icons/MultiValueFF16.png);
+}
+
+.tree li.numberFF > a,
+.tree li.numberFF > span
+{
+    background-image: url(../Images/Icons/NumberFF16.png);
+}
+
+.tree li.textFF > a,
+.tree li.textFF > span
+{
+    background-image: url(../Images/Icons/TextFF16.png);
+}
+
+.tree li.yesnoFF > a,
+.tree li.yesnoFF > span
+{
+    background-image: url(../Images/Icons/YesNoFF16.png);
+}
+
+.tree li.smartobjectFF > a,
+.tree li.smartobjectFF > span
+{
+    background-image: url(../Images/Icons/SmartObjectFF16.png) ! important;
+}
+
+.tree li.error > a,
+.tree li.error > span
+{
+    background-image: url(../Images/Icons/Error16.png) ! important;
+}
+
+.tree li.rendermode > a,
+.tree li.rendermode > span
+{
+    background-image: url(../Images/Icons/RenderMode16.png) ! important;
+}
+
+.tree li.tab > a,
+.tree li.tab > span
+{
+    background-image: url(../Images/Icons/GenericTab16.png) ! important;
+}
+
+.tree li.picker-control > a, 
+.tree li.picker-control.open > a,
+.tree li.picker-control.closed > a,
+.tree li.picker-control > span,
+.tree li.picker-control.open > span,
+.tree li.picker-control.closed > span
+{
+    background-image: url("../Images/Icons/PickerToolbar16.png");
+}
+
+.tree li.client > a,
+.tree li.client.open > a,
+.tree li.client.closed > a,
+.tree li.client > span,
+.tree li.client.open > span,
+.tree li.client.closed > span
+{
+    background-image: url(../Images/Icons/DisplayControl16.png);
+}
+
+.tree li.conditional-style > a,
+.tree li.conditional-style > span
+{
+    background-image: url(../Images/Icons/ConditionalStyle16.png);
+}
+
+.tree li.condition > a,
+.tree li.condition > span
+{
+    background-image: url(../Images/Icons/Conditions16.png);
+}
+
+.tree li.width > a,
+.tree li.width > span
+{
+    background-image: url(../Images/Icons/Width16.png);
+}
+
+.tree li.height > a,
+.tree li.height > span
+{
+    background-image: url(../Images/Icons/Height16.png);
+}
+
+.tree li.dimentions > a,
+.tree li.dimentions > span
+{
+    background-image: url(../Images/Icons/Dimentions16.png);
+}
+
+.tree li.environmentField > a,
+.tree li.environmentField > span
+{
+    background-image: url(../Images/Icons/EnvironmentField16.png);
+}
+
+.tree li.process-instance > a,
+.tree li.process-instance.open > a,
+.tree li.process-instance.closed > a,
+.tree li.process-instance > span,
+.tree li.process-instance.open > span,
+.tree li.process-instance.closed > span
+{
+    background-image: url(../Images/Icons/ProcessInstance16.png);
+}
+
+.tree li.mail > a,
+.tree li.mail > span
+{
+    background-image: url(../Images/Icons/Mail16.png);
+}
+
+.tree li.group > a,
+.tree li.group > span
+{
+    background-image: url(../Images/Icons/group16.png);
+}

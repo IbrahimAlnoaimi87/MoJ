@@ -1,0 +1,1075 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+@_Grid-Background-Color: rgb(255,255,255);
+@_Dark-Glass: rgba(0,0,0,0.2);
+@_Dark-Glass-Text-Color: rgba(255,255,255,0.6);
+
+.grid
+{
+    position: relative;
+}
+
+.grid.full
+{
+    height: 100%;
+    //LG: Flex layout
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    & > .grid-header,
+    & > .grid-toolbar,
+    & > .grid-footer
+    {
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    & > .grid-body
+    {
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .grid-header,
+    .grid-toolbars,
+    .grid-body,
+    .grid-footer
+    {
+        overflow: hidden;
+    }
+
+    .grid.with-footer
+    {
+        display: block;
+    }
+
+    &.without-header .grid-header,
+    &.without-toolbar .grid-toolbars,
+    &.without-footer .grid-footer
+    {
+        display: none;
+    }
+
+    &.empty
+    {
+        .grid-content-table
+        {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        td.empty-grid
+        {
+            vertical-align: top;
+            text-align: left;
+        }
+
+        html[dir=rtl] td.empty-grid
+        {
+            text-align: right;
+        }
+    }
+}
+
+.grid.full .grid-body .grid-body-content tbody tr.empty-grid td.empty-grid .grid-content-cell
+{
+    padding: 10px;
+}
+
+/* Grid Header Styling */
+.grid-header
+{
+    border: solid 1px @Grid-Header-Border-Color;
+    height: @Grid-header-Height;
+    box-sizing: border-box;
+}
+
+.grid-header-wrapper
+{
+    background: @Panel-Header-Background-Color-1; /* Old browsers */
+    height: @Grid-header-Height - 2px; //Header has inset border;
+    box-sizing: border-box;
+
+    .grid.dark &
+    {
+        background-color: transparent;
+    }
+}
+
+.grid-header-text
+{
+    cursor: default;
+    float: left;
+    font-weight: 700;
+    height: @Grid-header-Height - 2px; //Header has inset border;
+    line-height: @Grid-header-Height - 2px; //Header has inset border;
+    padding: 0 5px;
+
+    .grid.dark &
+    {
+        padding: 0px;
+    }
+
+    html[dir=rtl] &
+    {
+        float: right;
+    }
+}
+
+
+
+/* Grid Header Controls Styling */
+.grid-header-controls
+{
+    background: none;
+    float: right;
+    height: @Grid-header-Height - 2px; //Header has inset border;
+    padding: 0 0 0 3px;
+}
+
+.grid-header-controls a
+{
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 15px;
+    margin: 2px;
+    width: 15px;
+}
+
+.grid-header-controls a span
+{
+    display: none;
+}
+
+.grid .grid-header-controls a.collapse-horizontal
+{
+    background-image: url(../Images/Arrows/black_arrow_left.png);
+}
+
+.grid .grid-header-controls a.collapse-horizontal:hover
+{
+    background-image: url(../Images/Arrows/green_arrow_left.png);
+}
+
+.grid .grid-header-controls a.expand-horizontal
+{
+    background-image: url(../Images/Arrows/black_arrow_right.png);
+}
+
+.grid .grid-header-controls a.expand-horizontal:hover
+{
+    background-image: url(../Images/Arrows/green_arrow_right.png);
+}
+
+/* Grid Toolbars Styling */
+.grid-toolbars
+{
+    overflow: hidden;
+
+    .grid.dark &
+    {
+        background-color: @Grid-Toolbar-Background-Color;
+    }
+}
+
+
+.grid.with-header.with-toolbar .grid-toolbars .toolbars,
+.grid.with-header.with-double-toolbar .grid-toolbars .toolbars
+{
+    border-top-width: 0;
+}
+
+.grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-wrapper
+{
+    background-color: @Toolbar-Background-Color-1;
+}
+
+.grid.with-header .grid-toolbars .toolbars.double .toolbar:first-child .toolbar-wrapper
+{
+    background-color: #e1e4d9;
+}
+
+/* Grid Body Styling */
+.grid-body
+{
+    border-top: solid 1px @Grid-Border-Color;
+    border-bottom: solid 1px @Grid-Border-Color;
+    position: relative;
+
+    .grid.dark &
+    {
+        border-top: none;
+        border-bottom: none;
+    }
+}
+
+.grid.without-header.without-toolbar .grid-body
+{
+    margin-top: 0;
+}
+
+
+.grid .grid-content-cell.icon.form.loading,
+.grid .grid-content-cell.icon.view.loading,
+.grid .grid-content-cell.icon.list-view.loading,
+.grid .grid-content-cell.icon.item-view.loading,
+.grid .grid-content-cell.icon.form.checked-out.loading,
+.grid .grid-content-cell.icon.view.checked-out.loading,
+.grid .grid-content-cell.icon.list-view.checked-out.loading,
+.grid .grid-content-cell.icon.item-view.checked-out.loading
+{
+    background-image: url(../Images/Loaders/PreloaderGreen_16px.gif);
+}
+
+/* Grid Column Headers Styling */
+.grid .grid-column-headers
+{
+    border-bottom: solid 1px @Grid-Border-Color;
+    min-height: @Grid-Column-Header-Height;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.grid.full .grid-column-headers
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.grid-column-headers-wrapper
+{
+    background-color: @Grid-Column-Header-Background-Color;
+    border: solid 1px @Grid-Column-Header-Inset-Border-Color;
+    min-height: @Grid-Column-Header-Height;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+
+
+    .grid.dark &
+    {
+        background-color: @_Dark-Glass;
+        border: none;
+
+        td
+        {
+            color: @_Dark-Glass-Text-Color;
+        }
+    }
+}
+
+.grid table.grid-column-header-table
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+html[dir=rtl] .grid table.grid-column-header-table
+{
+    left: auto;
+    right: 0;
+}
+
+.grid table.grid-column-header-table,
+.grid table.grid-content-table,
+.grid table.grid-summary-content-table
+{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.grid table.grid-content-table:focus
+{
+    outline: none;
+}
+
+.grid table.grid-column-header-table,
+.grid table.grid-column-header-table tr,
+.grid table.grid-column-header-table td
+{
+    min-height: @Grid-Column-Header-Height - 2px;
+    height: 100%;
+}
+
+.grid table.grid-column-header-table td
+{
+    padding: 0;
+}
+
+.grid table.grid-column-header-table .hidden,
+.grid table.grid-content-table .hidden
+{
+    display: none;
+}
+
+.grid table.grid-content-table tr.inactive
+{
+    opacity: 0.5;
+}
+
+.grid .grid-column-header-cell,
+.grid .grid-column-header-cell-wrapper,
+.grid .grid-column-header-cell-content
+{
+    min-height: @Grid-Column-Header-Height - 2px;
+}
+
+.grid .grid-column-header-cell,
+.grid .grid-column-header-cell-wrapper
+{
+    height: 100%;
+}
+
+.grid .grid-column-header-cell
+{
+    cursor: default;
+    position: relative;
+    padding: 0 4px 0 2px;
+}
+
+.grid .grid-column-header-cell-wrapper
+{
+    display: table;
+    width: inherit;
+}
+
+.grid .grid-column-header-cell-content
+{
+    display: table-cell;
+    vertical-align: middle;
+    width: inherit;
+}
+
+.grid table.grid-column-header-table td:hover,
+.sfg-header-td:hover
+{
+    background-color: @Grid-Column-Header-Hover-Background-Color; /* Old browsers */
+}
+
+.grid.dark table.grid-column-header-table td:hover
+{
+    background-color: rgba(255,255,255, 0.1);
+}
+
+
+.grid td.not-sortable .grid-column-header-cell:hover,
+.grid table.grid-column-header-table.not-sortable .grid-column-header-cell:hover
+{
+    background: none;
+}
+
+.sfg-header-td .grid-column-header-cell-wrapper
+{
+    width: 100%;
+}
+
+.grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper,
+.sfg-header-td.asc .grid-column-header-cell-wrapper
+{
+    background: url(../Images/Arrows/lightgrey_small_arrow_up.gif) no-repeat 50% 1px;
+}
+
+.grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper,
+.sfg-header-td.desc .grid-column-header-cell-wrapper
+{
+    background: url(../Images/Arrows/lightgrey_small_arrow_down.gif) no-repeat 50% 1px;
+}
+
+.grid .grid-column-header-cell.asc:hover .grid-column-header-cell-wrapper,
+.sfg-header-td.asc .grid-column-header-cell-wrapper:hover
+{
+    background-image: url(../Images/Arrows/grey_small_arrow_up.gif);
+}
+
+.grid .grid-column-header-cell.desc:hover .grid-column-header-cell-wrapper,
+.sfg-header-td.desc .grid-column-header-cell-wrapper:hover
+{
+    background-image: url(../Images/Arrows/grey_small_arrow_down.gif);
+}
+
+.grid .grid-column-header-text,
+.sfg-header-td
+{
+    cursor: default;
+    line-height: 19px;
+    overflow: hidden;
+    position: relative;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: inherit;
+}
+
+.sfg-header-td
+{
+    padding-left: 2px;
+}
+
+.sfg .sfg-header-td .grid-column-header-divider
+{
+    cursor: default;
+}
+
+.grid-column-header-divider
+{
+    cursor: col-resize;
+    min-height: @Grid-Column-Header-Height - 2px;
+    width: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: background-color 0.15s linear;
+
+    &:hover
+    {
+        background-color: rgba(255,255,255,0.2);
+    }
+
+    html[dir=rtl] &
+    {
+        left: 0;
+        right: auto;
+    }
+}
+
+
+
+.grid-column-header-table td.last .grid-column-header-divider
+{
+    display: none;
+}
+
+.grid-column-header-table td.not-resizable .grid-column-header-divider
+{
+    cursor: default;
+}
+
+.grid a.grid-column-header-button
+{
+    display: none;
+    height: @Grid-Column-Header-Height - 2px;
+    width: 14px;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    overflow: hidden;
+    background: transparent url(../Images/Grid/grid_column_header_button.png) no-repeat 0 50%;
+}
+
+.grid a.grid-column-header-button span
+{
+    display: block;
+    height: @Grid-Column-Header-Height - 2px;
+    width: 14px;
+    background: transparent url(../Images/Arrows/black_arrow_down.gif) no-repeat 5px 50%;
+}
+
+.grid .grid-column-header-cell:hover a.grid-column-header-button
+{
+    display: block;
+}
+
+.grid .grid-column-header-cell .input-control.checkbox
+{
+    margin-right: 2px;
+}
+
+/* Grid Content Styling */
+.grid .grid-body-content
+{
+    background: @_Grid-Background-Color;
+    border: solid 1px @_Grid-Background-Color;
+    position: relative;
+}
+
+.grid.full .grid-body-content
+{
+    position: absolute;
+    top: @Grid-Column-Header-Height;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+
+.grid .grid-body-content-wrapper
+{
+    position: relative;
+}
+
+.grid.full .grid-body-content-wrapper
+{
+    overflow: auto;
+    height: 100%;
+}
+
+.grid table.grid-content-table tr
+{
+    min-height: @Grid-Row-Height;
+}
+
+.sfg-table
+{
+    table-layout: fixed;
+}
+
+.sfg-row
+{
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+    user-select: none;
+}
+
+.sfg-body-td
+{
+    padding: 1px 2px 1px 1px;
+    height: @Grid-Row-Height;
+    cursor: default;
+}
+
+.sfg-row.even td,
+.grid table.grid-content-table tr.even td,
+.grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row) td
+{
+    background-color: #f5f5f5;
+}
+
+.sfg-row.highlight-on-hover:hover:not(.selected) td,
+.grid table.grid-content-table tr:hover:not(.selected) td,
+.grid table.grid-content-table.zebra-stripes tr:hover:not(.action-row):not(.selected) td
+{
+    background-color: @Grid-Row-Hover-Background-Color;
+}
+
+.sfg-row.selected td,
+.grid table.grid-content-table tr.selected td,
+.grid table.grid-content-table.zebra-stripes tr.selected:nth-child(odd):not(.action-row) td,
+.grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row) td
+{
+    background-color: @Grid-Row-Selected-Background-Color;
+    color: @Highlight-Text-Color;
+
+    & .token-input-editor-area
+    {
+        /* TFS 767501 - The input textbox won't be highlighted so it should not change to highlight text color */
+        color: @Main-Text-Color;
+    }
+}
+
+.grid table.grid-content-table td
+{
+    padding: 0;
+    vertical-align: top;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.grid table.grid-content-table td.left-align
+{
+    text-align: left;
+}
+
+.grid table.grid-content-table td.center-align
+{
+    text-align: center;
+}
+
+.grid table.grid-content-table td.right-align
+{
+    text-align: right;
+}
+
+.grid table.grid-content-table td.hidden
+{
+    display: none;
+}
+
+.grid .grid-content-cell
+{
+    text-align: inherit;
+    cursor: default;
+    padding: 5px 2px;
+}
+
+.sfg-body-td > span
+{
+    display: block;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 1px;
+}
+
+.grid.with-rownumbering .grid-content-table td:first-child,
+.grid-aggregation-content-table td:first-child
+{
+    background-color: #dcded8;
+}
+
+.grid-aggregation-content-table td:first-child
+{
+    width: 56px !important;
+}
+
+.grid.with-rownumbering .grid-column-header-table td:first-child,
+.grid.with-rownumbering .grid-content-table td:first-child
+{
+    text-align: right;
+}
+
+.grid .grid-content-cell.numeric
+{
+    text-align: right;
+}
+
+@_cellSpacingToIcon: 3px;
+@_contentSpacingFromIcon: 3px;
+@_iconSize: 16px;
+
+.grid .grid-content-cell.inline-icon
+{
+    display: flex; //to make sure the cell wrapper is to the right of the icon
+    padding-left: @_cellSpacingToIcon;
+
+    .grid-content-cell-wrapper
+    {
+        padding-left: @_contentSpacingFromIcon;
+    }
+}
+
+.grid .grid-content-cell.icon
+{
+    padding-left: (@_cellSpacingToIcon + @_contentSpacingFromIcon) + @_iconSize;
+    background-repeat: no-repeat;
+    background-position: 3px 50%;
+    /*  
+        For grid, we would like to display text in the cell of the grid to be one line without wrapping to the next. 
+        When the text overflow the cell, we would like to shorten it with ellipse. 
+
+        Because in icons.less, .icon is defined with display:inline-block, it messes up with the width of the cell when the text in the cell overflows.
+        Thus we need to override it back to be block to ensure the width does not go over the width of the cell. (see TFS 719218)
+    */
+    display: block;
+}
+
+html[dir=rtl] .grid .grid-content-cell.icon
+{
+    background-position: 99% 3px;
+    padding-left: 2px;
+    padding-right: 22px;
+}
+
+html[dir=rtl] .grid .grid-content-cell.icon .grid-content-cell-wrapper
+{
+    padding-right: 8px;
+}
+
+.grid table.grid-content-table tr.nowrap,
+.grid table.grid-content-table tr.nowrap td
+{
+    /*height: 23px;*/
+}
+
+.grid table.grid-content-table tr.nowrap td
+{
+    overflow: hidden;
+}
+
+.grid table.grid-content-table tr.nowrap .grid-content-cell
+{
+    overflow: hidden;
+}
+
+.grid table.grid-content-table tr.nowrap .grid-content-cell-wrapper,
+.grid table.grid-content-table .grid-content-cell-wrapper,
+.grid table.grid-content-table .grid-content-cell-wrapper .service-method,
+.grid .categorySectionsList .radiobox-button-text
+{
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.grid .grid-content-cell.edit-mode
+{
+    padding: 1px 2px 1px 1px;
+}
+
+.sfg-body-td.checkradio-cell,
+.grid .grid-content-cell.checkradio-cell
+{
+    padding: 1px 2px 1px 1px;
+    text-align: center;
+}
+
+.grid .grid-content-cell.checkradio-cell .input-control.checkbox
+{
+    margin-right: 2px;
+}
+
+.grid table.grid-content-table td.empty-grid
+{
+    color: #aaa;
+    width: 100%;
+}
+
+/* Grid Action Row Styling */
+.grid table.grid-content-table td.action-row
+{
+    color: #aaa;
+}
+
+.grid table.grid-content-table td.action-row a:focus
+{
+    outline: none;
+}
+
+.sfg .action-row:focus
+{
+    outline: @Input-Focus-Border-Color 1px dotted;
+}
+
+.sfg .action-row
+{
+    padding-left: 1px;
+}
+
+.sfg .action-row,
+.grid table.grid-content-table td.action-row a.action-row
+{
+    color: #aaa;
+    text-decoration: none;
+}
+
+.grid table.grid-content-table td.action-row,
+.grid table.grid-content-table td.empty-grid
+{
+    background-color: inherit !important;
+}
+
+.grid.with-rownumbering table.grid-content-table td.action-row
+{
+    text-align: left !important;
+    width: inherit !important;
+}
+
+/* Grid Footer Styling */
+.grid-footer
+{
+    height: @Grid-Footer-Height;
+    position: relative;
+
+    .grid.dark &
+    {
+        background-color: @_Grid-Background-Color;
+    }
+}
+
+.grid.with-aggregation.with-footer .grid-footer
+{
+    margin-top: @Grid-Footer-Top-Margin;
+}
+
+.grid.with-aggregation.with-footer .grid-footer .toolbars
+{
+    border-top-width: 1px;
+}
+
+.grid.with-footer .grid-footer
+{
+    display: block;
+}
+
+.grid .grid-footer .toolbars
+{
+    border-top-width: 0;
+}
+
+
+
+/* Grid Aggregation Styling */
+.grid.with-aggregation .grid-aggregation
+{
+    border: solid 1px #adae9c;
+    border-top-width: 0;
+}
+
+.grid.with-aggregation.full .grid-aggregation
+{
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+}
+
+.grid.without-aggregation .grid-aggregation
+{
+    display: none;
+}
+
+.grid-aggregation-header
+{
+    height: @Grid-Aggregation-Header-Height;
+}
+
+.grid-aggregation-header-c
+{
+    background: #f9f9f9; /* Old browsers */
+    height: @Grid-Aggregation-Header-Height;
+}
+
+.grid-aggregation-header-arrow
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: @Grid-Aggregation-Header-Height;
+    position: absolute;
+    width: 7px;
+    right: 5px;
+}
+
+.grid-aggregation.collapsed .grid-aggregation-header-arrow
+{
+    background-image: url(../Images/Arrows/black_arrow_up.gif);
+}
+
+.grid-aggregation.expanded .grid-aggregation-header-arrow
+{
+    background-image: url(../Images/Arrows/black_arrow_down.gif);
+}
+
+.grid-aggregation-header-link
+{
+    display: block;
+    height: @Grid-Aggregation-Header-Height;
+}
+
+.grid-aggregation.expanded .grid-aggregation-header-link
+{
+    left: 0;
+    right: 0;
+}
+
+.grid-aggregation-header-text
+{
+    font-weight: 700;
+    line-height: @Grid-Aggregation-Header-Height;
+    padding-left: 5px;
+    color: #343e41;
+}
+
+.grid-aggregation .grid-aggregation-content
+{
+    border-top: solid 1px #adae9c;
+}
+
+.grid-aggregation.collapsed .grid-aggregation-content
+{
+    display: none;
+}
+
+.grid-aggregation-content-m
+{
+    border: solid 1px @_Grid-Background-Color;
+}
+
+.grid-aggregation-content-table
+{
+    background-color: @_Grid-Background-Color;
+    width: 100%;
+}
+
+.grid-aggregation-content-table td
+{
+    padding: 5px;
+    text-align: right;
+}
+
+/* Grid Summary Styling */
+.grid.with-summary .grid-summary
+{
+    background-color: @_Grid-Background-Color;
+    border: solid 1px #adae9c;
+    border-top-width: 0;
+}
+
+.grid.with-summary.full .grid-summary
+{
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+}
+
+.grid.without-summary .grid-summary
+{
+    display: none;
+}
+
+.grid-summary .grid-summary-item
+{
+    border-top: solid 1px #adae9c;
+}
+
+.grid-summary .grid-summary-item:first-child
+{
+    border-top: none;
+}
+
+.grid-summary .grid-summary-item-wrapper
+{
+    border: solid 1px #fff;
+}
+
+.grid-summary .grid-summary-content-table
+{
+}
+
+/* Grid Footer Paging Control Styling */
+.grid .grid-paging-control-text
+{
+    float: left;
+    padding: 0 3px;
+    line-height: 20px;
+}
+
+.grid .grid-paging-control .input-control.text-input
+{
+    width: 40px;
+    float: left;
+}
+
+.grid .grid-paging-control .input-control.text-input input
+{
+    text-align: right;
+}
+
+/* Grid Column Divider Styling */
+.grid-column-drag-divider
+{
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    width: 3px;
+    cursor: col-resize;
+}
+
+/* Grid Column Hidden Styling */
+.grid-hidden-column
+{
+    display: none;
+}
+
+/* Grid with hidden column headers */
+.grid.hide-column-headers .grid-column-headers
+{
+    display: none;
+}
+
+.grid.full.hide-column-headers .grid-body-content
+{
+    top: 0;
+}
+
+
+/* Grid Edit & Display Templates Section */
+.grid .grid-edit-templates,
+.grid .grid-display-templates
+{
+    display: none;
+}
+
+.grid .grid-content-cell.icon,
+.grid .grid-content-cell-wrapper .multiline-cell-icon
+{
+    background-size: 16px 16px; /*important for multiresolution*/
+}
+
+/* Grid Multiline Icon Styling (Used in the SO Designer Methods Grid) */
+.grid .grid-content-cell-wrapper .multiline-cell-icon
+{
+    background-repeat: no-repeat;
+    line-height: 16px;
+    margin-top: 4px;
+    padding-left: 22px;
+}
+
+.grid .grid-content-cell-wrapper .multiline-cell-icon:first-child
+{
+    margin-top: 0;
+}
+
+/* Collapsed Display */
+.grid.collapsed .grid-toolbars,
+.grid.collapsed .grid-body,
+.grid.collapsed .grid-summary,
+.grid.collapsed .grid-footer
+{
+    display: none;
+}
+
+.no-drop .grid-body-content td div,
+.no-drop .grid-body-content td div a,
+.no-drop .grid-column-headers tr,
+.no-drop .grid-column-headers td div
+{
+    cursor: no-drop !important;
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('grid_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('grid_images.less');
+}
+
+
+/*#region cheeky changes */
+
+#pgRulesTabContent.grid .grid-body
+{
+    border-bottom: solid 0px transparent;
+}
+/*#endregion*/
+
+

@@ -1,0 +1,9 @@
+﻿.home-header
+{
+    display: none ! important;
+}
+
+.home-content
+{
+    top: 4px ! important;
+}

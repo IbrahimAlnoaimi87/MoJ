@@ -1,0 +1,1396 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../../Designer_Variables.less";
+
+@Rule-Border-Left-Width: 3px;
+
+#StyleToolbarWrapper
+{
+    display: none;
+}
+
+.rulesUl
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    position: relative;
+    border-left: none;
+}
+
+    .rulesUl > .rulesUl
+    {
+        margin-left: 21px;
+    }
+
+html[dir=rtl] #RulePanelbox_RuleArea
+{
+    text-align: left;
+    direction: ltr;
+}
+
+#ruleDefinitionRulesArea
+{
+    padding: 0 0 5px 0;
+    border: none;
+}
+
+.rulesUl:not(#ruleDefinitionRulesArea)
+{
+    border-left: @Rule-Border-Left-Width solid transparent;
+}
+
+ul.rulesUl > li.action.prefix > ul.rulesUl.action.prefix
+{
+    list-style: none;
+    overflow: visible;
+    position: relative;
+}
+
+div > .rulesUl:first-child
+{
+    margin: 0;
+}
+
+li > .rulesUl
+{
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0;
+    overflow: visible;
+    margin-left: 0;
+}
+
+div.rw-search-txt-wrapper
+{
+    float: right;
+    line-height: 20px;
+    margin-right: 3px;
+}
+
+div.rw-nif
+{
+    color: #aaa;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+
+div.rw-toolbar-heading
+{
+    float: left;
+    line-height: 20px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+div.rw-search-wrapper
+{
+    float: right;
+    width: 300px;
+}
+
+ul.rulesUl.handler.If > li.action:not(.prefix)
+{
+    margin-left: 0;
+
+    /*html[dir=html] &
+    {
+        background-position:right;
+        padding-right:20px;
+        margin-right:5px;
+    }*/    
+}
+
+ul.rulesUl.handler.If > li.condition ~ li.action:not(.prefix)
+{
+    margin-left: 40px;
+
+    /*html[dir=html] &
+    {
+        background-position:right;
+    }*/   
+}
+
+ul.rulesUl > li:not(.event):not(.handler-action),
+ul.rulesUl > li:not(.event-placeHolder):not(.handler-action),
+ul.rulesUl > li.condition:not(.prefix):not(.handler-action),
+ul.rulesUl > li.action:not(.prefix):not(.handler-action),
+ul.rulesUl.handler:not(.If) > div.rule-item-wrapper,
+ul.rulesUl.handler:not(.If) > div.rule-item-wrapper ~ li.action:not(.prefix)
+{
+    padding-left: 25px;
+
+    /*html[dir=rtl] &
+    {
+        padding-left:0px;
+        padding-right:25px;
+    }*/
+}
+
+ul.rulesUl > li.handler-action
+{
+    padding-left: 0;
+    margin-left: 19px;
+
+    /*html[dir=rtl] &
+    {
+        padding-left:0px;
+        padding-right:24px;
+    }*/
+}
+
+ul.rulesUl > li.condition,
+ul.rulesUl > li.action,
+ul.rulesUl.handler:not(.If) > div.rule-item-wrapper
+{
+    margin-top: 0;
+    margin-left: 18px;
+    min-height: 19px;
+    line-height: 24px;
+    border-left: 3px solid transparent;
+    padding-left: 25px;
+    background-position: 4px 4px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+
+    /*html[dir=rtl] &
+    {
+        background-position:right;
+        padding-left:0px;
+        padding-right:25px;
+        margin-right:25px;
+    }*/
+}
+
+ul.rulesUl > li.action:not(.prefix)
+{
+    margin-left: 0;
+
+    /*html[dir=rtl] &
+    {
+         margin-right:5px;
+    }*/
+}
+
+ul.rulesUl > li.condition ~ li.action:not(.prefix),
+ul.rulesUl:not(.If) > div.rule-item-wrapper ~ li.action:not(.prefix)
+{
+    margin-left: 40px;
+
+    /*html[dir=rtl] &
+    {
+        margin-left:0px;
+        margin-right:48px;
+    }*/
+}
+
+ul.rulesUl:not(.if) > li.action.prefix
+{   
+    margin-left: 18px;
+
+    /*html[dir=rtl] &
+    {
+        margin-left:0px;
+        margin-right:0px;
+        padding-right:0px;
+    }*/
+}
+
+ul.rulesUl > li.condition ~ li.action.prefix
+{   
+    margin-left: 18px;
+
+    /*html[dir=rtl] &
+    {
+        margin-left:0px;
+        margin-right:25px;
+        padding-right:0px;
+    }*/
+}
+
+ul.rulesUl > li.action.prefix
+{
+    padding-left: 0;
+}
+
+ul.rulesUl.handler.If > div.rule-item-wrapper
+{
+    display: none;
+}
+
+ul.rulesUl > li.action.prefix > ul.rulesUl > li.action:not(.prefix)
+{
+    padding-left: 25px;
+    margin-left: 16px;
+    border-left: @Rule-Border-Left-Width solid transparent;
+    background-position: 4px 4px;
+
+    /*html[dir=rtl] & // Multiple actions grouped
+    {
+        background-position:right;
+        padding-left:0px;
+        margin-right:25px;
+    }*/
+}
+
+ul#ruleDefinitionRulesArea.rulesUl > li.event,
+ul.rulesUl > li.event-placeHolder
+{
+    margin-top: 0;
+    margin-left: 0;
+    min-height: 20px;
+    line-height: 24px;
+    padding-left: 3px;
+    border-left: @Rule-Border-Left-Width solid transparent;
+
+    /*html[dir=rtl] &
+    {
+        padding-right:0px;
+        margin-right:6px;
+    }*/
+}
+
+ul.rulesUl.handler:not(.If) > li.condition ~ li.action,
+ul.rulesUl.handler:not(.If) > li.condition ~ li.handler-action
+{
+    margin-left: 62px;
+}
+
+ul.rulesUl.handler:not(.If) > li.condition ~ li.action.prefix
+{
+    margin-left: 40px;
+
+    /*html[dir=rtl] &
+    {
+        margin-right:50px;
+    }*/
+}
+
+ul.rulesUl.prefix > li
+{
+    margin-top: 0;
+    margin-left: 14px;
+    min-height: 20px;
+    line-height: 24px;
+}
+
+ul.rulesUl.handler:not(.If) > li.condition
+{
+    margin-left: 40px;
+}
+
+.rulesUl.action.prefix > a
+{
+    padding-left: 25px;
+
+    /*html[dir=rtl] &
+    {
+        padding-left:0px;
+        padding-right:25px;
+    }*/
+}
+
+ul.rulesUl:not(#ruleDefinitionRulesArea),
+ul.rulesUl > li.action.prefix
+{
+    border-left: @Rule-Border-Left-Width solid transparent;
+}
+
+    ul.rulesUl.hover:not(#ruleDefinitionRulesArea),
+    ul.rulesUl > li.action.prefix.hover
+    {
+        border-left-color: fadeout(@Rule-Row-Highlight-Color, 90%);
+    }
+
+    ul.rulesUl.selected:not(#ruleDefinitionRulesArea),
+    ul.rulesUl > li.action.prefix.selected
+    {
+        background-color: fadeout(@Rule-Row-Highlight-Color, 80%);
+        border-left-color: @Rule-Row-Highlight-Color; //100%
+    }
+
+
+    ul.rulesUl.hover:not(.If),
+    ul.rulesUl > li.event.hover,
+    ul.rulesUl > li.condition.form-context.hover,
+    ul.rulesUl > li.condition.view-context.hover,
+    ul.rulesUl > li.condition.control-context.hover,
+    ul.rulesUl > li.condition.state-context.hover,
+    ul.rulesUl > li.condition.subform-context.hover,
+    ul.rulesUl > li.action.form-context.hover,
+    ul.rulesUl > li.action.view-context.hover,
+    ul.rulesUl > li.action.control-context.hover,
+    ul.rulesUl > li.action.state-context.hover,
+    ul.rulesUl > li.action.subform-context.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.event.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.condition.form-context.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.condition.view-context.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.condition.control-context.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.condition.state-context.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.condition.subform-context.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.action.form-context.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.action.view-context.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.action.control-context.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.action.state-context.hover,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.action.subform-context.hover
+    {
+        border-left: @Rule-Border-Left-Width solid transparent;
+        background-color: fadeout(@Rule-Row-Highlight-Color, 90%);
+        border-left-color: fadeout(@Rule-Row-Highlight-Color, 90%);
+    }
+
+    ul.rulesUl.selected:not(.If),
+    ul.rulesUl > li.event.selected,
+    ul.rulesUl > li.condition.form-context.selected,
+    ul.rulesUl > li.condition.view-context.selected,
+    ul.rulesUl > li.condition.control-context.selected,
+    ul.rulesUl > li.condition.state-context.selected,
+    ul.rulesUl > li.condition.subform-context.selected,
+    ul.rulesUl > li.action.form-context.selected,
+    ul.rulesUl > li.action.view-context.selected,
+    ul.rulesUl > li.action.control-context.selected,
+    ul.rulesUl > li.action.state-context.selected,
+    ul.rulesUl > li.action.subform-context.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.event.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.condition.form-context.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.condition.view-context.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.condition.control-context.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.condition.state-context.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.condition.subform-context.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.action.form-context.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.action.view-context.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.action.control-context.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.action.state-context.selected,
+    ul.rulesUl > li.action.prefix > ul.rulesUl > li.action.subform-context.selected
+    {
+        border-left: @Rule-Border-Left-Width solid transparent;
+        background-color: fadeout(@Rule-Row-Highlight-Color, 80%);
+        border-left-color: @Rule-Row-Highlight-Color; //100%
+    }
+
+.rulesUl li
+{
+    &.form-context,
+    &.view-context,
+    &.control-context,
+    &.subform-context,
+    &.state-context
+    {
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+
+        &:not(.If) > div.rule-item-wrapper
+        {
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+        }
+    }
+}
+
+
+
+.rulesUl > li.condition ~ li.action
+{
+    margin-left: 35px;
+}
+
+.rulesUl > li.event > div.rule-item-wrapper,
+.rulesUl.handler:not(.if) > div.rule-item-wrapper,
+.rulesUl > li.condition > div.rule-item-wrapper,
+.rulesUl > li.action > div.rule-item-wrapper
+{
+    padding-right: 140px;
+    position: relative;
+
+    /*html[dir=rtl] &
+    {
+        padding-right:0px;
+    }*/
+}
+
+
+.rulesUl div.comments
+{
+    width: 16px;
+    height: 24px;
+    position: absolute;
+    right: 3px;
+    top: 0;
+    background-size: 16px 16px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: none;
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+}
+
+.rulesUl.handler > div.handler-specifier
+{
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 11px;
+    width: 4px;
+    border-top: none;
+    border-bottom: 1px solid #ADAE9C;
+    border-left: 1px solid #ADAE9C;
+    border-right: none;
+
+    /*html[dir=rtl] &
+    {
+        left:auto;
+        right:11px;
+        border-right: 1px solid #ADAE9C;
+        border-left: none;
+    }*/
+}
+
+.rulesUl.prefix > div.execution-specifier
+{
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 9px;
+    width: 4px;
+    border-top: none;
+    border-bottom: 1px solid #ADAE9C;
+    border-left: 1px solid #ADAE9C;
+    border-right: none;
+
+    /*html[dir=rtl] &
+    {
+        left: auto;
+        right:10px;
+        border-left: none;
+        border-right: 1px solid #ADAE9C;
+    }*/
+}
+
+
+.handler-expander,
+.condition-expander,
+.execution-expander
+{
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+
+    /*html[dir=rtl] &
+    {
+        left:auto;
+        right:0px;
+    }*/
+}
+
+.section-expander
+{
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+
+    html[dir=rtl] &
+    {
+        /*left:auto;
+        right:0px;*/
+    }
+}
+
+
+.handler-expander
+{
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+}
+
+
+.execution-expander
+{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+}
+
+
+.rulesUl.prefix > .execution-expander
+{
+    left: 2px;
+}
+
+
+.categorySections > div.section-specifier
+{
+    position: absolute;
+    top: 11px;
+    bottom: 5px;
+    left: 7px;
+    width: 4px;
+    border-top: none;
+    border-bottom: 1px solid #ADAE9C;
+    border-left: 1px solid #ADAE9C;
+    border-right: none;
+
+    html[dir=rtl] &
+    {
+        /*left:auto;
+        right:10px;
+        border-left:none;
+        border-right:1px solid #adae9c;*/
+    }
+}
+
+.categorySections > div.section-specifier.no-border,
+ul.rulesUl.handler > div.condition-specifier.no-border,
+ul.rulesUl.prefix > div.execution-specifier.no-border,
+ul.rulesUl.handler > div.handler-specifier.no-border,
+ul.rulesUl.handler-no-border:not(#ruleDefinitionRulesArea)
+{
+    border: none;
+}
+
+.section-expander
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.categorySectionsList.error .section-expander::after
+{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 6px;
+    top: 0px;
+}
+
+
+ul.rulesUl.If > .condition-expander,
+ul.rulesUl.If > .condition-specifier
+{
+    display: none;
+}
+
+ul.rulesUl:not(.If) > div.condition-expander
+{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 26px;
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+
+ul.rulesUl:not(.If) > div.condition-specifier
+{
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 33px;
+    width: 4px;
+    border-top: none;
+    border-bottom: 1px solid #ADAE9C;
+    border-left: 1px solid #ADAE9C;
+    border-right: none;
+}
+
+
+
+div.rules-wizard-error
+{
+    color: @Error-Text-Color;
+    display: none;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+}
+
+.prefix.index
+{
+    margin-top: 0;
+    padding-left: 0;
+    min-height: 20px;
+    line-height: 22px;
+}
+
+/*
+    PopupMenu styles
+*/
+.rulesbuttonDiv
+{
+    min-width: 150px;
+    overflow: auto;
+}
+
+#autogenFieldsTable
+{
+    table-layout: fixed;
+}
+
+#mappingsDiv
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.rulesbuttonDiv li
+{
+    margin: 0;
+    display: block;
+    overflow: visible;
+    min-width: 150px;
+}
+
+.ruleswizard-expressions
+{
+    top: 5px;
+    right: 16px;
+    bottom: 26px;
+    left: 16px;
+    display: none;
+    position: absolute;
+}
+
+.rulesbuttonDiv li a
+{
+    display: block;
+    background-color: White;
+    color: #343e41;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 2px 0 2px 2px;
+    border-left: solid 15px #d6e6a5;
+    min-width: 150px;
+}
+
+.rulesbuttonDiv li a:hover
+{
+    background-color: #e0e0e0;
+    color: #343e41;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+#RuleArea
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+
+html > body .rulesbuttonDiv li a
+{
+    width: 100%;
+    min-width: 150px;
+}
+/*
+    End of PopupMenu styles
+*/
+
+.categoryTreeRulesWrapper
+{
+    width: 298px;
+    height: 297px;
+    display: none;
+    overflow: auto;
+}
+
+.rulesCategoryTree
+{
+    height: 290px;
+    overflow: auto;
+}
+
+.divRemove,
+.divUpArrow,
+.divUpArrow.disabled,
+.RuleMapping
+{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+
+.RuleMapping,
+.divRemove,
+.divUpArrow,
+.divDownArrow
+{
+    display: inline;
+    float: left;
+    cursor: pointer;
+}
+
+.RuleMapping.disabled,
+.divUpArrow.disabled,
+.divDownArrow.disabled
+{
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)"; /*IE8*/
+}
+
+.rule-action
+{
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    cursor: pointer;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    padding-left: 19px;
+}
+
+.rule-action > span
+{
+    line-height: 22px;
+}
+
+.rulesImageWrapper
+{
+    display: none;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.rulesImageWrapper.handler
+{
+    margin-left: 19px;
+    margin-top: 0;
+}
+
+.rulesMappingDiv
+{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.brRuleNameWidth,
+.brRuleTypeWidth
+{
+    width: 50%;
+}
+
+#rulesMappingGrid
+{
+    margin-top: 40px;
+}
+
+.rulesPopupBoxContentTable
+{
+    position: static;
+    height: 100%;
+    width: 100%;
+}
+
+.rulesPopupBoxContentTableWrapper
+{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.rulesPopupHeaderTableBox
+{
+    height: 22px;
+    padding-left: 0;
+    width: 100%;
+    position: static;
+}
+
+.rulesHeaderBox
+{
+    position: static;
+    left: 0;
+    right: 0;
+    height: 21px;
+}
+
+.categorySections
+{
+    padding-bottom: 10px;
+    margin: 5px 0 0 5px;
+    position: relative;
+
+    html[dir=rtl] &
+    {
+        text-align:left;
+    }
+}
+
+html[dir=rtl] #RuleItemTabBox .categorySections .radiobox .radiobox-button .radiobox-button-c .radiobox-button-icon
+{
+    float:left !important;
+}
+
+.categorySections > .radiobox
+{
+    margin-left: 13px;
+
+    html[dir=rtl] &
+    {
+        /*margin-right: 13px;
+        margin-left:0px;*/
+    }
+}
+
+.categorySectionsHeading
+{
+    margin-left: 18px;
+    display: inline-block;
+
+    html[dir=rtl] &
+    {
+        /*margin-left: 0px;
+        margin-right: 18px;*/
+    }
+}
+
+.conditionsMappingDiv
+{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.custom-value-widget-textbox
+{
+    height: 44px;
+}
+
+.custom-value-widget-textarea
+{
+    height: 87px;
+}
+
+li.event-placeHolder
+{
+    color: #999ea0;
+    margin-left: 4px;
+}
+
+    li.event-placeHolder:hover
+    {
+        cursor: pointer;
+    }
+
+.rulesUl div a:visited,
+.rulesUl div a.visited
+{
+    color: @Hyperlink-Text-Color;
+    border-bottom: 1px solid @Hyperlink-Text-Color;
+}
+
+.rulesUl div a.dependant
+{
+    border-bottom: 1px dashed @Hyperlink-Text-Color;
+}
+
+.rulesUl div a.in-error
+{
+    color: @Error-Text-Color;
+    border-bottom: 1px dashed @Error-Text-Color;
+}
+
+.rulesUl div a.disabled
+{
+    //there is a webresource trying to override this text color with !important
+    color: fadeout(@Main-Text-Color, 70%) !important;
+    border: none;
+}
+
+.rulesUl div a.inactive
+{
+    color: darken(@Main-Text-Color,10%);
+    cursor: default;
+}
+
+.rulesUl div a.inactive:hover
+{
+    cursor: default;
+}
+
+.rulesUl div a.rule-part-inactive
+{
+    color: darken(@Main-Text-Color,10%);
+    cursor: default;
+    border: none;
+}
+
+.rulesUl div a.rule-part-inactive.in-error
+{
+    color: @Error-Text-Color;
+}
+
+.rulesUl div a.inactive:visited,
+.rulesUl div a.inactive.visited
+{
+    border: none;
+}
+
+.rulesUl div a
+{
+    color: @Hyperlink-Text-Color;
+    text-decoration: none;
+}
+
+
+ul.rulesUl > li.action.prefix > ul.rulesUl.action.prefix > a.execTypeGroup.inactive
+{
+    color: #343d42;
+    cursor: default;
+    border: none;
+    text-decoration: none;
+}
+
+.rulesUl li.disabled > div a,
+.rulesUl.disabled li > div a,
+.rulesUl.disabled li > div.rule-item-wrapper > span.condition.prefix,
+.rulesUl.disabled li > div.rule-item-wrapper > div:not(.rulesImageWrapper),
+.rulesUl.disabled > div.rule-item-wrapper > div:not(.rulesImageWrapper),
+.rulesUl.disabled > div.rule-item-wrapper > div:not(.rulesImageWrapper) a
+{
+    color: #ccc;
+    cursor: default;
+    border: none;
+}
+
+ul.rulesUl > li.action.prefix.disabled > ul.rulesUl.action.prefix > a.execTypeGroup.inactive,
+ul.rulesUl > li.action.prefix.disabled > ul.rulesUl.action.prefix > a.execTypeGroup
+{
+    color: #ccc;
+    cursor: default;
+    border: none;
+    text-decoration: none;
+}
+
+ul.rulesUl.handler:not(.Else) > li.action:nth-child(3):nth-last-child(1)
+{
+    margin-left: 0;
+}
+
+#EmptyRuleDesign_Placeholder
+{
+    position: absolute;
+    bottom: 12px;
+    left: 9px;
+    right: 12px;
+    top: 12px;
+}
+
+#EmptyRuleDesign_Placeholder .outer-panel-table > tbody > tr > td
+{
+    vertical-align: top;
+}
+
+#EmptyRuleDesign_Placeholder .inner-panel-table,
+#EmptyRuleDesign_Placeholder .outer-panel-table
+{
+    width: 100%;
+}
+
+#EmptyRuleDesign_Placeholder .rule-drop-area
+{
+    bottom: 0;
+    right: 3px;
+    display: table-cell;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+#EmptyRuleDesign_Placeholder .rule-drop-area-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #F7F7F7;
+    border: 1px dashed #d0d0d0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    min-height: 25px;
+    min-width: 25px;
+}
+
+#EmptyRuleDesign_Placeholder .rule-drop-area-text
+{
+    color: #a0a0a0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#EmptyRuleDesign_Placeholder .rule-drop-area-title
+{
+    color: #CBCBCB;
+    font-family: @Main-Font-Family !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    margin-bottom: 20px;
+    -webkit-text-shadow: 1px 1px #fff;
+    text-shadow: 1px 1px #fff;
+}
+
+#EmptyRuleDesign_Placeholder .rule-drop-area-text hr
+{
+    border-color: #E8E8E5;
+    margin-bottom: 32px;
+    max-width: 380px;
+    width: 80%;
+}
+
+#EmptyRuleDesign_Placeholder .italic-style-font
+{
+    color: #94979C !important;
+    font-family: @Main-Font-Family !important;
+    font-size: 11px !important;
+    font-style: normal !important;
+}
+
+#rwTabbedRuleItemSelectorContent span.radiobox-button-c,
+#rwTabbedRuleItemSelectorContent label.radiobox-button
+{
+    height: auto;
+}
+
+#rwTabbedRuleItemSelectorContent label.radiobox-button
+{
+    white-space: normal;
+}
+
+div#rwcommentsPopupWrapper, div#readOnlyCommentsPopupWrapper
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#rwSearchTextFF .form-field-element-wrapper
+{
+    margin-left: 0;
+}
+
+#RulesWizardTopPane .radiobox.small-buttons .radiobox-button .radiobox-button-text
+{
+    margin-left: 22px;
+    line-height: 21px;
+}
+
+.panel-header-controls a
+{
+    background-position: 50% 50%;
+}
+
+#rwTabbedRuleItemSelectorPanel.collapsed
+{
+    width: 30px;
+}
+
+#rwTabbedRuleItemSelectorPanel.collapsed #rwSearchPanelPanel,
+#rwTabbedRuleItemSelectorPanel.collapsed #rwTabbedRuleItemSelectorContent,
+#rwTabbedRuleItemSelectorPanel.collapsed a.tab:not(.selected),
+#rwTabbedRuleItemSelectorPanel.collapsed .panel-header-text
+{
+    display: none;
+}
+
+#rwTabbedRuleItemSelectorPanel.collapsed .tab-box-tabs,
+#rwTabbedRuleItemSelectorPanel.collapsed .tab-box-body
+{
+    border: none;
+}
+
+#rwTabbedRuleItemSelectorPanel.collapsed a.tab.selected
+{
+    border: none;
+    padding: 0 1px 1px 1px;
+}
+
+#rwTabbedRuleItemSelectorPanel.collapsed .panel-header-controls
+{
+    background: none;
+}
+
+#rwTabbedRuleItemSelectorPanel.collapsed .panel-header-controls a.expand
+{
+    background-size: 4px 7px;
+    background-repeat: no-repeat;
+}
+
+#rwTabbedRuleItemSelectorPanel.collapsed .tab-box ul.tab-box-tabs a.tab .tab-wrapper
+{
+    padding: 0 0 0 1px;
+}
+
+#rwTabbedRuleItemSelectorPanel .panel-header-wrapper .panel-header-controls a.collapse-horizontal:focus,
+#rwTabbedRuleItemSelectorPanel .panel-header-wrapper .panel-header-controls a.expand-horizontal:focus
+{
+    outline: none;
+}
+
+#rwToolboxPane .tab-box-body
+{
+    border-top: none;
+}
+
+#rwEnableDisableTb_base .input-control-text
+{
+    line-height: 20px;
+}
+
+#RuleSettingsDialog #RuleNameFF,
+#rwSearchTextFF
+{
+    margin-top: 0;
+}
+
+#rwCommentsPanel .input-control-wrapper
+{
+    height: 276px;
+    overflow: hidden;
+}
+
+#rwToolboxPC
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    html[dir=rtl] &
+    {
+        text-align:left;
+    }
+}
+
+#rwToolboxSearchPane
+{
+    flex-grow: 0;
+    position: relative;
+}
+
+#rwToolboxPane
+{
+    flex-grow: 1;
+    position: relative;
+
+    & > .tab-box
+    {
+        height: auto; //override
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+}
+
+
+#rwCommentsPanel #rwTxtComments
+{
+    height: 273px;
+}
+
+#readOnlyCommentsPanel #readOnlyTxtComments
+{
+    height: 269px;
+}
+
+#readOnlyCommentsPanel .panel-body
+{
+    background-color: transparent;
+
+    & #readOnlyTxtComments,
+    & .input-control .input-control-m-c
+    {
+        background-color: transparent;
+    }
+}
+
+#RuleEditorTabBox .tab-text
+{
+    max-width: 250px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+li.handler-action
+{
+    padding-bottom: 1px;
+    border: none;
+}
+
+    li.handler-action > ul.rulesUl
+    {
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+
+//Should be the same as the generic-tabs height ideally
+//(fill hard coded value with global var when possible)
+@_Rules-NameBar-Height: 30px;
+
+.lyt-rw-editorpanel
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.lyt-rw-namebar
+{
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: @_Rules-NameBar-Height;
+}
+
+.lyt-rw-editor-panel
+{
+    flex-grow: 1;
+    position: relative; //for absolute items inside.
+}
+
+.rw-name-container
+{
+    height: @_Rules-NameBar-Height;
+    line-height: @_Rules-NameBar-Height;
+}
+
+#RuleEditor > .panel
+{
+    border: solid 1px @Panel-Border-Color;
+    background-color: @Panel-Content-Background-Color;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    .panel-toolbars
+    {
+        flex-shrink: 0;
+        flex-grow: 0;
+        position: relative; //override the standard absolute panel layout
+        top: auto; //override the standard absolute panel layout
+        height: auto; //override the standard absolute panel layout
+        border-bottom: solid 1px @Panel-Border-Color;
+
+        .toolbars.single
+        {
+            height: auto; //override the standard absolute panel layout
+        }
+
+        .toolbar
+        {
+            height: auto; //override the standard absolute panel layout
+        }
+
+        .toolbar-wrapper
+        {
+            display: flex;
+            flex-direction: row;
+            height: 30px; //same height as the rules-toolbox's searchbox.
+            box-sizing: border-box; //make sure the overall height is 30px
+            align-items: center;
+        }
+    }
+
+
+    .panel-body
+    {
+        flex-grow: 1;
+        position: relative; //override the standard absolute panel layout
+        bottom: auto; //override the standard absolute panel layout
+        top: auto; //override the standard absolute panel layout
+        height: auto; //override the standard absolute panel layout
+        border: none; //override the standard styling for a panel - as this needs to ecapsulate the toolbar.
+    }
+}
+
+#ruleWizardPopup #RulesWizardPaneContainer #RulesWizardTopPane
+{
+    .scroll-wrapper
+    {
+        overflow: hidden;
+    }
+
+    #rwTabbedRuleItemSelectorContent
+    {
+        padding: 0px;
+    }
+}
+
+#RuleItemTabBox
+{
+    .tab-box-tabs
+    {
+        .tab-text
+        {
+            margin-left: 5px;
+        }
+    }
+}
+
+.support-filtered
+{
+    display:none !important;
+}
+
+#rwTabbedRuleItemSelectorContent
+{
+    label.radiobox-button
+    {
+        &.rule-filteredOut
+        {
+            display:none !important;
+        }
+    }
+}

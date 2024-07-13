@@ -1,0 +1,79 @@
+/* Theme: Dynamic Theme */
+/* Author: Lewis Garmston */
+/* Date: 05/08/2020 */
+
+/* Breaking Points
+	- 480 x 736 width/height - Phones
+	- 800 width - Phablets, Tablets (Touch devices)
+	- 800+ Desktop etc.
+ */
+
+// Generates all of the css variable declarations that the form will inject.
+// This is included here to make sure all of the css variables have base values (when the user hasn't created a style profile)
+// e.g.
+// body {
+//      --input-background-color: #234436;
+//      --input-border-color: #ccc436;
+//      350 more!!
+//      --button-background-color: #0144CC;
+// }
+@import "_Dynamic/Variables_Dynamic.less";
+
+  
+// All Variables are defined as CSS Variables here
+// Custom Controls will @import this file to gain access to these variables.
+// Basic Controls will be able to use these variables too via the @Imports lower in this file. 
+// e.g.
+//      @Input-Background-Color: --input-background-color;
+//      @Input-Border-Color: --input-border-color;
+//      350 more!
+//      @Button-Background-Color: --button-background-color;
+@import (multiple) url('_Dynamic/Theme_Variables.less');
+
+@import url('_Dynamic/Theme.include.less');
+
+@import url('_Dynamic/Theme_Animations.include.less');
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @import (multiple)  url('_Dynamic/Theme_Images.include.less');
+    @import (multiple) url('_Dynamic/Theme_Images_Mobile.include.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @import (multiple) url('_Dynamic/Theme@2x.include.less');
+    @import (multiple) url('_Dynamic/Theme_Images@2x.include.less');
+    @import (multiple) url('_Dynamic/Theme_Images_Mobile@2x.include.less');
+}
+
+ 
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* Large devices, Desktop */
+@import url('_Dynamic/Theme_Desktop.include.less'); /*only screen and (min-width : 800px);*/
+
+/* Mobile (touch) devices, phones & tablets  - .mobile selector targets touch devices */
+@import url('_Dynamic/Theme_Touch.include.less'); 
+
+/* Extra Small Devices, Phones and Smart Phones */
+@media only screen and (max-device-width : 480px) and (orientation:portrait), only screen and (max-device-width : 736px) and (orientation:landscape)
+{
+    @import url('_Dynamic/Theme_Phone.include.less');
+}
+ 
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-device-width : 480px) and (orientation:portrait)
+{
+    @import url('_Dynamic/Theme_Phone_Portrait.include.less');
+}
+
+@media only screen and (max-device-width : 736px) and (orientation:landscape)
+{
+    @import url('_Dynamic/Theme_Phone_Landscape.include.less');
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */
+
+

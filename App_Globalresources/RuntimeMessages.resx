@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfigureUserFiltersHeader" xml:space="preserve">
+    <value>Configure User Filters</value>
+    <comment>This is the title of the page used to configure a filtered list. [location: ListView filter settings pop up] [runtime]</comment>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>The date is invalid or in an incorrect format</value>
+  </data>
+  <data name="WorkflowNotLoaded" xml:space="preserve">
+    <value>Worklist item could not be loaded.</value>
+    <comment>Message shown when a worklist item could not be loaded</comment>
+  </data>
+  <data name="InvalidFormat" xml:space="preserve">
+    <value>The value is invalid or in an incorrect format</value>
+  </data>
+  <data name="QuickSearchTypeMismatch" xml:space="preserve">
+    <value>The quick search value does not match the property type of {1} for the {0} field.</value>
+    <comment>Message shown when a quicksearch selection and the value typed does not match</comment>
+  </data>
+  <data name="CulutureInformationFailedToLoad" xml:space="preserve">
+    <value>The culture information failed to load</value>
+  </data>
+  <data name="PropertyTypesFailedToLoad" xml:space="preserve">
+    <value>The default property type styles failed to load</value>
+  </data>
+  <data name="ErrorEmailNotSent" xml:space="preserve">
+    <value>Email could not be sent</value>
+  </data>
+  <data name="ErrorEmptyFields" xml:space="preserve">
+    <value>Empty fields: {0}</value>
+  </data>
+  <data name="ErrorFileUpload" xml:space="preserve">
+    <value>The file could not be uploaded. Unforseen error occured on the file upload, contact your administrator.</value>
+    <comment>this is the message displayed when the user attempts to upload a file and an error occurs [runtime] [location: file attachment or image attachment control] [to be reviewed]</comment>
+  </data>
+  <data name="ErrorMaxSizeExceededFile" xml:space="preserve">
+    <value>The file attachment exceeds the maximum size of {0} KB.</value>
+  </data>
+  <data name="ErrorMaxSizeExceededImage" xml:space="preserve">
+    <value>The image attachment exceeds the maximum size of {0} KB.</value>
+  </data>
+  <data name="ErrorFileDenied" xml:space="preserve">
+    <value>This type of file may not be attached.</value>
+  </data>
+  <data name="ErrorNoImageForImageType" xml:space="preserve">
+    <value>Incorrect file type selected. Select an image to attach.</value>
+  </data>
+  <data name="ErrorNoExtensionForFile" xml:space="preserve">
+    <value>The file attachment has no extension. Select a file with a valid extension.</value>
+  </data>
+  <data name="ErrorNoFileSelected" xml:space="preserve">
+    <value>Select a file to attach.</value>
+  </data>
+  <data name="ErrorSettingControlProperty" xml:space="preserve">
+    <value>Property of control could not be set: {0}.  Error message: {1}</value>
+  </data>
+  <data name="ErrorSubformClosed" xml:space="preserve">
+    <value>Subform closed couldn't be fired</value>
+  </data>
+  <data name="WarningActiveElementNotFound" xml:space="preserve">
+    <value>Active element could not be found on a subform</value>
+  </data>
+  <data name="InvalidURLWarningHeader" xml:space="preserve">
+    <value>Invalid location specified</value>
+    <comment>Header of message shown when a URL might be invalid</comment>
+  </data>
+  <data name="InvalidURLWarningText" xml:space="preserve">
+    <value>The following location might be invalid. Continue to &lt;b&gt;"{0}"&lt;/b&gt;?</value>
+    <comment>[to be reviewed] Message shown when a URL might be invalid</comment>
+  </data>
+  <data name="SmartObjectNotFound" xml:space="preserve">
+    <value>The SmartObject {0} or one of its components could not be resolved. &lt;br&gt; Error Details: {1}</value>
+  </data>
+  <data name="ControlNotFound" xml:space="preserve">
+    <value>Control could not be found:</value>
+  </data>
+  <data name="ErrorEventName" xml:space="preserve">
+    <value>Rule:</value>
+  </data>
+  <data name="ErrorFormName" xml:space="preserve">
+    <value>Form:</value>
+  </data>
+  <data name="ErrorLocation" xml:space="preserve">
+    <value>Location:</value>
+  </data>
+  <data name="ErrorViewName" xml:space="preserve">
+    <value>View:</value>
+  </data>
+  <data name="RuntimeErrorOccurred" xml:space="preserve">
+    <value>Runtime error occurred:</value>
+  </data>
+  <data name="ValidationWarningMessage" xml:space="preserve">
+    <value>The following validation warnings must be corrected in order to submit the form:</value>
+  </data>
+  <data name="ValidationWarnings" xml:space="preserve">
+    <value>Validation Warnings</value>
+  </data>
+  <data name="WorkflowItemReferenceNotFound" xml:space="preserve">
+    <value>The item references for this workflow could not be resolved because the View or an instance of the View can not be found on the Form.</value>
+    <comment>Message shown when item reference information could not be resolved</comment>
+  </data>
+  <data name="SpecifyHyperlinkText" xml:space="preserve">
+    <value>Click here to specify hyperlink</value>
+  </data>
+  <data name="ErrorFileEmpty" xml:space="preserve">
+    <value>Uploading failed due to the file selected being empty.</value>
+  </data>
+  <data name="UnauthorisedAnonymousSMOAccess" xml:space="preserve">
+    <value>Cannot access SmartObject item '{0}' anonymously.</value>
+  </data>
+  <data name="UnauthorisedAnonymousAccess" xml:space="preserve">
+    <value>Unauthorised anonymous access.</value>
+  </data>
+  <data name="DateTimeCouldNotParseMessage" xml:space="preserve">
+    <value>Could not parse Date Time.</value>
+  </data>
+  <data name="DateTimeInvalidOperation" xml:space="preserve">
+    <value>The {0} operation is not valid for type: {1}.</value>
+  </data>
+  <data name="DateTimeInvalidPropertyMessage" xml:space="preserve">
+    <value>Invalid Date Time property {0} - {1}.</value>
+  </data>
+  <data name="DateTimeUnitNotSupportForAddition" xml:space="preserve">
+    <value>Unit '{0}' not supported  for addition with DateTime type.</value>
+  </data>
+  <data name="ParseTimeZoneXmlMissingArgument" xml:space="preserve">
+    <value>The XML argument must be provided</value>
+  </data>
+  <data name="TimeZonesQueryNotAFunction" xml:space="preserve">
+    <value>The predicate must be a function.</value>
+  </data>
+  <data name="TimeZonesUnresolved" xml:space="preserve">
+    <value>Timezones have not been resolved.</value>
+  </data>
+  <data name="DateCouldNotParseMessage" xml:space="preserve">
+    <value>Could not parse Date.</value>
+  </data>
+  <data name="DateInvalidPropertyMessage" xml:space="preserve">
+    <value>Invalid Date property {0} - {1}.</value>
+  </data>
+  <data name="DateUnitNotSupportForAddition" xml:space="preserve">
+    <value>Unit '{0}' not supported  for addition with Date type.</value>
+  </data>
+  <data name="TimeCouldNotParseMessage" xml:space="preserve">
+    <value>Could not parse Time.</value>
+  </data>
+  <data name="TimeInvalidPropertyMessage" xml:space="preserve">
+    <value>Invalid Time property {0} - {1}.</value>
+  </data>
+  <data name="TimeUnitNotSupportForAddition" xml:space="preserve">
+    <value>Unit '{0}' not supported  for addition with Time type.</value>
+  </data>
+  <data name="WarningExecutingControlMethod" xml:space="preserve">
+    <value>The method '{0}' is using the context variable 'CurrentControlID' which has been deprecated.  Please use 'CurrentControlId' instead.  The casing of 'ID' has been corrected.</value>
+  </data>
+  <data name="UnauthorisedProcessAccess" xml:space="preserve">
+    <value>Unauthorised process access.</value>
+  </data>
+  <data name="UnauthorisedSMOAccess" xml:space="preserve">
+    <value>Unauthorised SmartObject access</value>
+    <comment>Message shown when an attempt is made to execute a method on a SmartObject which is not allowed on the form/view.</comment>
+  </data>
+  <data name="UnableToApplyFilter" xml:space="preserve">
+    <value>Unable to apply the filter to a list control ({0}). Check the SmartObject configuration.</value>
+    <comment>Error message shown when an error ocurs while trying to apply a filter to the datasource of a control. Token {0} is replaced with the list control name in the code</comment>
+  </data>
+  <data name="ErrorInvalidFileSize" xml:space="preserve">
+    <value>The file is larger than the maximum size ({0}).</value>
+  </data>
+  <data name="ErrorInvalidFileType" xml:space="preserve">
+    <value>Valid extensions are: {0}</value>
+    <comment>This is part of the File &amp; Image attachment detail error state. This is the second line of the detail error message reason if the validation for the AllowType property fails. The argument will be the AllowType property's value of the allowed file extensions for the control e.g. "jpg,png".</comment>
+  </data>
+  <data name="ErrorInvalidFileSizeAttachment" xml:space="preserve">
+    <value>Invalid file size.</value>
+  </data>
+  <data name="ErrorInvalidFileMessageWrapper" xml:space="preserve">
+    <value>Runtime error ({0})</value>
+  </data>
+  <data name="ErrorWebServerIsUnreachable" xml:space="preserve">
+    <value>The file could not be uploaded. The network might be down or web server is unreachable. contact your administrator.</value>
+  </data>
+  <data name="ErrorFileNotUploaded" xml:space="preserve">
+    <value>File not uploaded</value>
+    <comment>Error text of the attachment control when a file upload error occurs.</comment>
+  </data>
+  <data name="ContentTypeFriendlyName_Avi" xml:space="preserve">
+    <value>(Audio Video Interleave)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Bmp" xml:space="preserve">
+    <value>(Bitmap Image)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Chm" xml:space="preserve">
+    <value>(Compiled HTML Help File)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Csv" xml:space="preserve">
+    <value>(Comma Separated Values File)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Doc" xml:space="preserve">
+    <value>(Microsoft Office Word Document)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Flv" xml:space="preserve">
+    <value>(Flash Video)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Gif" xml:space="preserve">
+    <value>(GIF Image)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Html" xml:space="preserve">
+    <value>(HTML Document)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Jpeg" xml:space="preserve">
+    <value>(JPEG Image)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Kspx" xml:space="preserve">
+    <value>(K2 Package &amp; Deployment)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_M4a" xml:space="preserve">
+    <value>(MPEG 4 Audio File)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_M4p" xml:space="preserve">
+    <value>(Protected AAC File)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Mov" xml:space="preserve">
+    <value>(Apple QuickTime Movie)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Mp3" xml:space="preserve">
+    <value>(MPEG-1 Audio Layer 3)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Mp4" xml:space="preserve">
+    <value>(Moving Picture Expert Group-4)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Mpeg" xml:space="preserve">
+    <value>(Moving Picture Experts Group)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_One" xml:space="preserve">
+    <value>(Microsoft Office OneNote Section)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Otherwise" xml:space="preserve">
+    <value>(File)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Pdf" xml:space="preserve">
+    <value>(PDF File)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Png" xml:space="preserve">
+    <value>(PNG Image)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Pps" xml:space="preserve">
+    <value>(PowerPoint Slide Show)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Ppt" xml:space="preserve">
+    <value>(Microsoft Office PowerPoint Presentation)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Rar" xml:space="preserve">
+    <value>(WinRAR Compressed Archive)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Tif" xml:space="preserve">
+    <value>(TIF Image)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Txt" xml:space="preserve">
+    <value>(Text Document)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Wav" xml:space="preserve">
+    <value>(Waveform Audio File)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Wma" xml:space="preserve">
+    <value>(Windows Media Audio)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Wmv" xml:space="preserve">
+    <value>(Windows Media Video)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Xls" xml:space="preserve">
+    <value>(Microsoft Office Excel Worksheet)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Xml" xml:space="preserve">
+    <value>(XML Document)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Xsn" xml:space="preserve">
+    <value>(Microsoft Office InfoPath Form Template)</value>
+  </data>
+  <data name="ContentTypeFriendlyName_Zip" xml:space="preserve">
+    <value>(Compressed Folder)</value>
+  </data>
+  <data name="ErrorInvalidFileTypeWrapper" xml:space="preserve">
+    <value>"{0}" is not a valid type.</value>
+    <comment>This is  part of the File &amp; Image attachment detail error state. This is the first line of the error message. The argument will be the  file name.</comment>
+  </data>
+  <data name="PopupDetailErrorTitle" xml:space="preserve">
+    <value>File Not Uploaded</value>
+    <comment>Popup Error Detail Title</comment>
+  </data>
+  <data name="ErrorDetailFileLink" xml:space="preserve">
+    <value>Details.</value>
+    <comment>This is the Details link to retrieve more information on the exception of the file &amp; image attachment control</comment>
+  </data>
+  <data name="AnonymousTokenExpired" xml:space="preserve">
+    <value>The anonymous token supplied has expired.</value>
+    <comment>Message shown when the anonymous token for performing actions on an anonymous form/view has expired.</comment>
+  </data>
+  <data name="AnonymousTokenInvalid" xml:space="preserve">
+    <value>The anonymous token supplied is invalid.</value>
+    <comment>Message shown when the anonymous token supplied for performing actions on an anonymous form/view is invalid.</comment>
+  </data>
+  <data name="ErrorInvalidCharsInXml" xml:space="preserve">
+    <value>The {0} cannot be displayed: Data contains invalid characters.</value>
+    <comment>Error message shown when XML received from server contains invalid XML charcters.</comment>
+  </data>
+  <data name="ShortResolutionIdentifier_day" xml:space="preserve">
+    <value>d</value>
+    <comment>Shortened form of the resolution identifier</comment>
+  </data>
+  <data name="ShortResolutionIdentifier_hour" xml:space="preserve">
+    <value>h</value>
+    <comment>Shortened form of the resolution identifier</comment>
+  </data>
+  <data name="ShortResolutionIdentifier_millisecond" xml:space="preserve">
+    <value>ms</value>
+    <comment>Shortened form of the resolution identifier</comment>
+  </data>
+  <data name="ShortResolutionIdentifier_minute" xml:space="preserve">
+    <value>m</value>
+    <comment>Shortened form of the resolution identifier</comment>
+  </data>
+  <data name="ShortResolutionIdentifier_month" xml:space="preserve">
+    <value>m</value>
+    <comment>Shortened form of the resolution identifier</comment>
+  </data>
+  <data name="ShortResolutionIdentifier_second" xml:space="preserve">
+    <value>s</value>
+    <comment>Shortened form of the resolution identifier</comment>
+  </data>
+  <data name="ShortResolutionIdentifier_week" xml:space="preserve">
+    <value>w</value>
+    <comment>Shortened form of the resolution identifier</comment>
+  </data>
+  <data name="ShortResolutionIdentifier_year" xml:space="preserve">
+    <value>y</value>
+    <comment>Shortened form of the resolution identifier</comment>
+  </data>
+  <data name="RedirectPageMessage" xml:space="preserve">
+    <value>The request resulted in a redirect page.</value>
+    <comment>Message shown to state that the currect server request resulted in a redirect page.</comment>
+  </data>
+  <data name="ReloadFormLink" xml:space="preserve">
+    <value>Click {0} to reload the form.</value>
+    <comment>Shown as part of the redirect page message where the {0} token is replaced with a link to reload the current form.</comment>
+  </data>
+  <data name="ReloadFormDisplay" xml:space="preserve">
+    <value>here</value>
+    <comment>Display wording for the link displayed as part of the redirect page message above to allow the user the reload the current form.</comment>
+  </data>
+  <data name="ReAuthenticatePageMessage" xml:space="preserve">
+    <value>The request was not authenticated.</value>
+    <comment>Message shown to state that the currect server request was unauthenticated.</comment>
+  </data>
+  <data name="ReAuthenticateUserMessage" xml:space="preserve">
+    <value>Click {0} to reauthenticate.</value>
+    <comment>Shown as part of the reauthenticate user message where the {0} token is replaced with a link to reauthenticate the current user.</comment>
+  </data>
+  <data name="ReAuthenticateUserLink" xml:space="preserve">
+    <value>here</value>
+    <comment>Wording for the link displayed as part of the reauthenticate user message which allows the user to reauthenticate.</comment>
+  </data>
+  <data name="WarningPropertyNotValidatedForSmartObjectMethod" xml:space="preserve">
+    <value>The {1} property for {2} method on the {0} SmartObject could not be validated. Please check your configuration.</value>
+    <comment>Message logged when a property could not be found for a specific SmartObject method - mostly used when associated data will be retrieved. This won't be shown to the user, but will available in the log files.  [eg "The PickedUp property for Rounds method on the GarbageRetrieval SmartObject could not be validated. Please check your configuration"] [runtime]</comment>
+  </data>
+  <data name="LongResolutionIdentifier_day" xml:space="preserve">
+    <value>Days</value>
+    <comment>Long form of the resolution identifier</comment>
+  </data>
+  <data name="LongResolutionIdentifier_hour" xml:space="preserve">
+    <value>Hours</value>
+    <comment>Long form of the resolution identifier</comment>
+  </data>
+  <data name="LongResolutionIdentifier_millisecond" xml:space="preserve">
+    <value>Milliseconds</value>
+    <comment>Long form of the resolution identifier</comment>
+  </data>
+  <data name="LongResolutionIdentifier_minute" xml:space="preserve">
+    <value>Minutes</value>
+    <comment>Long form of the resolution identifier</comment>
+  </data>
+  <data name="LongResolutionIdentifier_month" xml:space="preserve">
+    <value>Months</value>
+    <comment>Long form of the resolution identifier</comment>
+  </data>
+  <data name="LongResolutionIdentifier_second" xml:space="preserve">
+    <value>Seconds</value>
+    <comment>Long form of the resolution identifier</comment>
+  </data>
+  <data name="LongResolutionIdentifier_week" xml:space="preserve">
+    <value>Weeks</value>
+    <comment>Long form of the resolution identifier</comment>
+  </data>
+  <data name="LongResolutionIdentifier_year" xml:space="preserve">
+    <value>Years</value>
+    <comment>Long form of the resolution identifier</comment>
+  </data>
+  <data name="MediumResolutionIdentifier_day" xml:space="preserve">
+    <value>dys</value>
+    <comment>Medium form of the resolution identifier</comment>
+  </data>
+  <data name="MediumResolutionIdentifier_hour" xml:space="preserve">
+    <value>hrs</value>
+    <comment>Medium form of the resolution identifier</comment>
+  </data>
+  <data name="MediumResolutionIdentifier_millisecond" xml:space="preserve">
+    <value>ms</value>
+    <comment>Medium form of the resolution identifier</comment>
+  </data>
+  <data name="MediumResolutionIdentifier_minute" xml:space="preserve">
+    <value>mins</value>
+    <comment>Medium form of the resolution identifier</comment>
+  </data>
+  <data name="MediumResolutionIdentifier_month" xml:space="preserve">
+    <value>mos</value>
+    <comment>Medium form of the resolution identifier</comment>
+  </data>
+  <data name="MediumResolutionIdentifier_second" xml:space="preserve">
+    <value>secs</value>
+    <comment>Medium form of the resolution identifier</comment>
+  </data>
+  <data name="MediumResolutionIdentifier_week" xml:space="preserve">
+    <value>wks</value>
+    <comment>Medium form of the resolution identifier</comment>
+  </data>
+  <data name="MediumResolutionIdentifier_year" xml:space="preserve">
+    <value>yrs</value>
+    <comment>Medium form of the resolution identifier</comment>
+  </data>
+  <data name="LongResolutionIdentifierSingular_day" xml:space="preserve">
+    <value>Day</value>
+    <comment>Long form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="LongResolutionIdentifierSingular_hour" xml:space="preserve">
+    <value>Hour</value>
+    <comment>Long form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="LongResolutionIdentifierSingular_millisecond" xml:space="preserve">
+    <value>Millisecond</value>
+    <comment>Long form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="LongResolutionIdentifierSingular_minute" xml:space="preserve">
+    <value>Minute</value>
+    <comment>Long form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="LongResolutionIdentifierSingular_month" xml:space="preserve">
+    <value>Month</value>
+    <comment>Long form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="LongResolutionIdentifierSingular_second" xml:space="preserve">
+    <value>Second</value>
+    <comment>Long form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="LongResolutionIdentifierSingular_week" xml:space="preserve">
+    <value>Week</value>
+    <comment>Long form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="LongResolutionIdentifierSingular_year" xml:space="preserve">
+    <value>Year</value>
+    <comment>Long form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="MediumResolutionIdentifierSingular_day" xml:space="preserve">
+    <value>dy</value>
+    <comment>Medium form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="MediumResolutionIdentifierSingular_hour" xml:space="preserve">
+    <value>hr</value>
+    <comment>Medium form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="MediumResolutionIdentifierSingular_millisecond" xml:space="preserve">
+    <value>ms</value>
+    <comment>Medium form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="MediumResolutionIdentifierSingular_minute" xml:space="preserve">
+    <value>min</value>
+    <comment>Medium form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="MediumResolutionIdentifierSingular_month" xml:space="preserve">
+    <value>mo</value>
+    <comment>Medium form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="MediumResolutionIdentifierSingular_second" xml:space="preserve">
+    <value>sec</value>
+    <comment>Medium form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="MediumResolutionIdentifierSingular_week" xml:space="preserve">
+    <value>wk</value>
+    <comment>Medium form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="MediumResolutionIdentifierSingular_year" xml:space="preserve">
+    <value>yr</value>
+    <comment>Medium form of the resolution identifier (Singular)</comment>
+  </data>
+  <data name="XSRFNoCookieSupplied" xml:space="preserve">
+    <value>No Anti-Cross Site Request Forgery cookie found in request</value>
+    <comment>Message shown when no Anti-Cross Site Request Forgery cookie supplied in the request.</comment>
+  </data>
+  <data name="XSRFNoTokenSupplied" xml:space="preserve">
+    <value>No Anti-Cross Site Request Forgery token found in request</value>
+    <comment>Message shown when no Anti-Cross Site Request Forgery token supplied in the request.</comment>
+  </data>
+  <data name="XSRFTokenValueIncorrect" xml:space="preserve">
+    <value>The Anti-Cross Site Request Forgery token value is incorrect.</value>
+    <comment>Message shown when the Anti-Cross Site Request Forgery cookie value does not match the Anti-Cross Site Request Forgery token value</comment>
+  </data>
+  <data name="MobileRequestNotFound" xml:space="preserve">
+    <value>The request with correlationId '{0}' could not be matched for the mobile app response.</value>
+    <comment>Error message shown if there is an internal processing error trying to link a request to a response within the mobile app.  The correlationId will be guid.</comment>
+  </data>
+  <data name="MobileRequestTimedOut" xml:space="preserve">
+    <value>The request sent to the mobile application timed out.</value>
+    <comment>Error message shown when the mobile applicaiton does not respond to a request for annotation / barcode / supported methods / loadDraft / saveDraft.</comment>
+  </data>
+  <data name="OpenXmlNotFound" xml:space="preserve">
+    <value>Cannot create Excel file. For more information, see this {0}</value>
+    <comment>Message shown when we are unable to perform an export to Excel, due to the Open XML SDK for Microsoft Office missing on the IIS server</comment>
+  </data>
+  <data name="OpenXmlNotFoundKb" xml:space="preserve">
+    <value>Knowledge Base article</value>
+    <comment>Wording for "Knowledge Base article" used in the message shown when we are unable to perform an export to Excel, due to the Open XML SDK for Microsoft Office missing on the IIS server</comment>
+  </data>
+  <data name="InvalidSmartObjectName" xml:space="preserve">
+    <value>Please do not use one of the following characters: # % &amp; * \ | : ; " / &gt; &lt; ?</value>
+    <comment>Throw error when SmartObject name contains one of these character # % &amp; * \ | : ; " / &gt; &lt; ?</comment>
+  </data>
+</root>

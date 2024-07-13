@@ -1,0 +1,134 @@
+/*#region VIEW PANEL*/
+
+/*reset*/
+.theme-entry .grid-header
+{
+    height: auto;
+}
+/*reset end*/
+
+.theme-entry .panel.with-toolbar > .panel-header
+{
+    border-bottom-width: 0;
+}
+
+/*view header styles*/
+.theme-entry .panel-header,
+.theme-entry .grid-header-wrapper
+{
+    -moz-border-radius: @View-Border-Radius @View-Border-Radius 0px 0;
+    -ms-border-radius: @View-Border-Radius @View-Border-Radius 0px 0;
+    -webkit-border-radius: @View-Border-Radius @View-Border-Radius 0px 0;
+    border-radius: @View-Border-Radius @View-Border-Radius 0px 0;
+    background: @View-Header-Background-Color;
+    /* Old browsers */
+}
+
+
+.theme-entry .panel-header,
+.theme-entry .grid-header-wrapper
+{
+    background: @View-Header-Background-Color;
+    border-radius: inherit;
+}
+
+.theme-entry .grid-header-wrapper
+{
+    border: none;
+}
+
+.theme-entry .grid-header-wrapper .grid-header-text,
+.theme-entry .panel-header-wrapper .panel-header-text
+{
+    color: @View-Header-Text-Color;
+    background: @View-Header-Background-Color;
+    padding-right: 4rem;
+    width: 100%;
+}
+
+.theme-entry .panel-header-wrapper .panel-header-controls
+{
+    height: 100%;
+    padding: 0;
+}
+
+.theme-entry .panel-header-c
+{
+    border-width: 0;
+    border-style: none;
+    border-radius: @View-Border-Radius-Top @View-Border-Radius-Top 0px 0px;
+    /*design time*/
+    /*design time*/
+}
+
+.theme-entry .collapsed.panel
+{
+    height: auto; /*overrides the 24px*/
+}
+
+.theme-entry .panel-header-wrapper
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /*removed - change the message box header style if this is changed*/
+    /*why?*/
+}
+
+#pgWizard .theme-entry .grid-header-wrapper .inline-editable,
+#pgWizard .theme-entry .panel-header-wrapper .inline-editable,
+.theme-entry .grid-header-wrapper .grid-header-text,
+.theme-entry .panel-header-wrapper .panel-header-text
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 1.0rem;
+    color: @View-Header-Text-Color;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: @View-Header-Text-Size;
+    float: none; /*override - base*/
+    display: inline-block;
+}
+
+.theme-entry .dialog.runtime-message .panel-header-text /*Message box override*/
+{
+    width: auto;
+    color: @Dialog-Header-Text-Color;
+    padding-left: 0.3rem;
+}
+
+.theme-entry .panel-header
+{
+    border-width: 0;
+    border-style: solid;
+}
+
+.theme-entry .grid-header-wrapper .grid-header-text > span,
+.theme-entry .panel-header-wrapper .panel-header-text > span
+{
+    font-size: inherit;
+    display: block;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+/*Panel Structure*/
+.theme-entry .grid > .grid-body,
+.theme-entry .panel > .panel-body
+{
+    margin-top: 0; /*override*/
+}
+
+.theme-entry .panel > .panel-body
+{
+    padding: 0;
+}
+
+/*#endregion VIEW PANEL*/

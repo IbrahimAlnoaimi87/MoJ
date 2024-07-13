@@ -1,0 +1,113 @@
+
+
+html
+{
+    font-size: 62.5%; /*makes sure that 1em/rem = 10px*/
+    /*this may cause problems inside of smartforms - only testing will tell */
+    /*this has to be on the html node in order for "rem" units to work ('rem' means 'root-relative em')*/
+}
+
+body
+{
+    -webkit-text-size-adjust: 100%; /*prevent mobile safari from resizing text elements in DIVS to be "more readable"*/
+    zoom: 1; /* Keep IE11 from auto zooming */
+}
+
+
+body.theme-entry
+{
+    
+    -webkit-font-smoothing: antialiased;
+}
+
+.theme-entry
+{
+    color: @Normal-Text-Color;
+    font-family: @Main-Font-Family;
+    font-size: @Main-Text-Size;
+}
+
+
+.theme-entry h1, 
+.theme-entry h2, 
+.theme-entry h3, 
+.theme-entry h4, 
+.theme-entry p, 
+.theme-entry label
+{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+// CHECK WITH LEWIS
+.theme-entry h1.page-title
+{
+    font-family: @Heading-Font-Family;
+    font-size: @Page-Title-Text-Size;
+    color: @Page-Title-Text-Color;
+}
+
+.theme-entry h2.page-subtitle
+{
+    font-family: @Heading-Font-Family;
+    font-size: @Page-Subtitle-Text-Size;
+    color: @Page-Subtitle-Text-Color;
+}
+
+.theme-entry h1
+{
+    font-family: @Heading-Font-Family;
+    font-size: @Heading1-Text-Size;
+    color: @Heading1-Text-Color;
+}
+
+.theme-entry h2
+{
+    font-family: @Heading-Font-Family;
+    font-size: @Heading2-Text-Size;
+    color: @Heading2-Text-Color;
+}
+
+.theme-entry h3
+{
+    font-size: @Heading3-Text-Size;
+    color: @Heading3-Text-Color;
+}
+
+.theme-entry h4
+{
+    font-size: @Heading4-Text-Size;
+    color: @Heading4-Text-Color;
+}
+
+.theme-entry span
+{
+    color: inherit; 
+}
+
+.theme-entry label.input-label
+{
+    font-size: @Input-Label-Text-Size;
+    color: @Input-Label-Text-Color;
+    text-transform: none;
+}
+
+.theme-entry p
+{
+    font-size: 1.2rem;
+    color: @Paragraph-Text-Color;
+}
+
+.theme-entry p.description
+{
+    font-size: 1.2rem;
+    color: @Description-Text-Color;
+}

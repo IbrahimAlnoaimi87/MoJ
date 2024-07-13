@@ -1,0 +1,17 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="SourceCode.Forms.MasterPages.MasterPagesGeneric" Codebehind="Generic.master.cs" %>
+
+<!DOCTYPE html>
+
+<html dir="<%=GetGlobalResourceObject("Default", "HTMLDirectionality") %>" class="<%=GetApplicationStyleClassFromUrl()%>">
+<head runat="server">
+	<title></title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width"/>
+</head>
+<body id="PageBody" runat="server">
+	<span id="__designerStatus" style="display: none"></span>
+	<form id="form1" runat="server" onsubmit="return false;">
+		<asp:contentplaceholder id="PageContent" runat="server" />
+		<asp:ContentPlaceHolder id="PageVariables" runat="server" />
+	</form>
+</body>
+</html>

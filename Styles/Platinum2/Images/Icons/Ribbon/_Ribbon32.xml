@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-ribbon.icon-size32.ic-{iconname}"/> <!-- normal -->
+		  <RowDefinition row="2" cssSelector=".icon.icon-set-ribbon.icon-size32.ic-{iconname}.selected"/> <!-- selected -->
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1">1to1_32.png</Row>
+              
+            </Rows>
+          </Column>
+          <Column number="2">   
+            <Rows>  
+              <Row number="1">Add32.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="3">   
+            <Rows>  
+              <Row number="1">AdvancedSmartObject32.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="4">   
+            <Rows>  
+              <Row number="1">AlignBottom32.png</Row>
+             
+            </Rows> 
+          </Column>   
+          <Column number="5">   
+            <Rows>  
+              <Row number="1">AlignCentreHoriz32.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="6">   
+            <Rows>  
+              <Row number="1">AlignLeft32.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="7">   
+            <Rows>  
+              <Row number="1">AlignMiddleVert32.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="8">   
+            <Rows>  
+              <Row number="1">AlignRight32.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="9">   
+            <Rows>  
+              <Row number="1">AlignTop32.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="10">    
+            <Rows>  
+              <Row number="1">Category32.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="11">    
+            <Rows>  
+              <Row number="1">CheckIn32.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="12">    
+            <Rows>  
+              <Row number="1">CheckOut32.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="13">    
+            <Rows>  
+              <Row number="1">CollectCopy32.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="14">    
+            <Rows>  
+              <Row number="1">Color32.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="15">    
+            <Rows>  
+              <Row number="1">Copy32.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="16">    
+            <Rows>  
+              <Row number="1">Cut32.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="17">    
+            <Rows>  
+              <Row number="1">Delete32.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="18">    
+            <Rows>  
+              <Row number="1">Deploy32.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="19">    
+            <Rows>  
+              <Row number="1">DesignA_NewWorkflowFile32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="20">    
+            <Rows>  
+              <Row number="1">DesignA_NewForm32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="21">    
+            <Rows>  
+              <Row number="1">DesignA_NewSmartObject32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="22">    
+            <Rows>  
+              <Row number="1">DesignA_NewView32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="23">    
+            <Rows>  
+              <Row number="1">Edit32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="24">    
+            <Rows>  
+              <Row number="1">ErrorHandling32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="25">    
+            <Rows>  
+              <Row number="1">FitToWindow32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="26">    
+            <Rows>  
+              <Row number="1">FlipHorisontal32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="27">    
+            <Rows>  
+              <Row number="1">FlipVertical32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="28">    
+            <Rows>  
+              <Row number="1">Form32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="29">    
+            <Rows>  
+              <Row number="1">GenerateA_NewForm32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="30">    
+            <Rows>  
+              <Row number="1">GenerateA_NewView32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="31">    
+            <Rows>  
+              <Row number="1">Label32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="32">    
+            <Rows>  
+              <Row number="1">Lock32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="33">    
+            <Rows>  
+              <Row number="1">Method32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="34">    
+            <Rows>  
+              <Row number="1">MoveDown32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="35">    
+            <Rows>  
+              <Row number="1">MoveUp32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="36">    
+            <Rows>  
+              <Row number="1">Notes32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="37">    
+            <Rows>  
+              <Row number="1">NudgeDown32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="38">    
+            <Rows>  
+              <Row number="1">NudgeLeft32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="39">    
+            <Rows>  
+              <Row number="1">NudgeRight32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="40">    
+            <Rows>  
+              <Row number="1">NudgeUp32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="41">    
+            <Rows>  
+              <Row number="1">Paste32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="42">    
+            <Rows>  
+              <Row number="1">Properties32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="43">    
+            <Rows>  
+              <Row number="1">Remove32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="44">    
+            <Rows>  
+              <Row number="1">RemoveAll32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="45">    
+            <Rows>  
+              <Row number="1">Rename32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="46">    
+            <Rows>  
+              <Row number="1">Report32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="47">    
+            <Rows>  
+              <Row number="1">ResizeGrid_GridSizeDialog32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="48">    
+            <Rows>  
+              <Row number="1">RotateAntiClockwise32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="49">    
+            <Rows>  
+              <Row number="1">RotateClockwise32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="50">    
+            <Rows>  
+              <Row number="1">Run32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="51">    
+            <Rows>  
+              <Row number="1">RunWithParameters32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="52">    
+            <Rows>  
+              <Row number="1">SameHeight32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="53">    
+            <Rows>  
+              <Row number="1">SameSize32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="54">    
+            <Rows>  
+              <Row number="1">SameWidth32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="55">    
+            <Rows>  
+              <Row number="1">SaveAs32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="56">    
+            <Rows>  
+              <Row number="1">SaveToPattern32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="57">    
+            <Rows>  
+              <Row number="1">Search32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="58">    
+            <Rows>  
+              <Row number="1">SelectAll32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="59">    
+            <Rows>  
+              <Row number="1">ServiceObject32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="60">    
+            <Rows>  
+              <Row number="1">Settings32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="61">    
+            <Rows>  
+              <Row number="1">SharePointWorkflowIntegration32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="62">    
+            <Rows>  
+              <Row number="1">ShowCategory32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="63">    
+            <Rows>  
+              <Row number="1">ShowGridToggle32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="64">    
+            <Rows>  
+              <Row number="1">SmartObject32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="65">    
+            <Rows>  
+              <Row number="1">SmartObjectMethod32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="66">    
+            <Rows>  
+              <Row number="1">SmartObjectProperties32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="67">    
+            <Rows>  
+              <Row number="1">SnapToGrid32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="68">    
+            <Rows>  
+              <Row number="1">StartProcess32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="69">    
+            <Rows>  
+              <Row number="1">Toolbox32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="70">    
+            <Rows>  
+              <Row number="1">View32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="71">    
+            <Rows>  
+              <Row number="1">ViewCode32.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="72">    
+            <Rows>  
+              <Row number="1">Workflow32.png</Row>
+            </Rows> 
+          </Column>   
+		  
+		  <Column number="73">    
+            <Rows>  
+              <Row number="1">Rules_Ribbon32.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="74">    
+            <Rows>  
+              <Row number="1">Zoom_Ribbon32.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="75">    
+            <Rows>  
+              <Row number="1">ZoomIn_Ribbon32.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="76">    
+            <Rows>  
+              <Row number="1">ZoomOut_Ribbon32.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="77">    
+            <Rows>  
+              <Row number="1">GoToStart32.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="78">    
+            <Rows>  
+              <Row number="1">AlignOverflow32.png</Row>
+			  <Row number="2" cssname="alignoverflow">AlignOverflow_Toggled32.png</Row>
+            </Rows> 
+          </Column>  
+		  <Column number="79">    
+            <Rows>  
+              <Row number="1">ClipboardOverflow32.png</Row>
+			  <Row number="2" cssname="clipboardoverflow">ClipboardOverflow_Toggled32.png</Row>
+            </Rows> 
+          </Column>  
+		  <Column number="80">    
+            <Rows>  
+              <Row number="1">ShowOverflow32.png</Row>
+			  <Row number="2" cssname="showoverflow">ShowOverflow_Toggled32.png</Row>
+            </Rows> 
+          </Column>  
+		  <Column number="81">    
+            <Rows>  
+              <Row number="1">StyleOverflow32.png</Row>
+			  <Row number="2" cssname="styleoverflow">StyleOverflow_Toggled32.png</Row>
+            </Rows> 
+          </Column>  		  
+		  <Column number="82">    
+            <Rows>  
+              <Row number="1">ViewOverflow32.png</Row>
+			  <Row number="2" cssname="viewoverflow">ViewOverflow_Toggled32.png</Row>
+            </Rows> 
+          </Column>  		  
+		  <Column number="83">    
+            <Rows>  
+              <Row number="1">ZoomOverflow32.png</Row>
+			  <Row number="2" cssname="zoomoverflow">ZoomOverflow_Toggled32.png</Row>
+            </Rows> 
+          </Column>  			  
+
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="16,0,0,16">
+        <CssBackgroundImageFolder>Ribbon/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/Ribbon/Ribbon32.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/Ribbon32.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

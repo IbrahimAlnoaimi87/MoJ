@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="alt_ActDest" xml:space="preserve">
+    <value>Activity destinations</value>
+  </data>
+  <data name="alt_AppendDestRunTime" xml:space="preserve">
+    <value>Append destinations while in-process</value>
+  </data>
+  <data name="alt_AppendDestRunTimeAlt" xml:space="preserve">
+    <value>Destinations defined at design time.  Destinations can be added at run time. Original stay unchanged.</value>
+  </data>
+  <data name="alt_CloseMenu" xml:space="preserve">
+    <value>Close Menu</value>
+  </data>
+  <data name="alt_DefaultForm" xml:space="preserve">
+    <value>Link Default Workflow Form</value>
+  </data>
+  <data name="alt_DeleteActivity" xml:space="preserve">
+    <value>Delete activity and all lines and outcomes linked to it.</value>
+  </data>
+  <data name="alt_DeleteFavotrite" xml:space="preserve">
+    <value>Delete user</value>
+  </data>
+  <data name="alt_DeleteFavotriteGroup" xml:space="preserve">
+    <value>Delete group</value>
+  </data>
+  <data name="alt_DestAddToFavorites" xml:space="preserve">
+    <value>Add users to favorites</value>
+  </data>
+  <data name="alt_DestAssignDesignTime" xml:space="preserve">
+    <value>Destinations defined at design time only</value>
+  </data>
+  <data name="alt_DestCap" xml:space="preserve">
+    <value>Destinations:</value>
+  </data>
+  <data name="alt_DestDefineFrontEnd" xml:space="preserve">
+    <value>Define on front-end</value>
+  </data>
+  <data name="alt_Destinations" xml:space="preserve">
+    <value>Set destinations</value>
+  </data>
+  <data name="alt_DestinationsAssigned" xml:space="preserve">
+    <value>Destinations assigned</value>
+  </data>
+  <data name="alt_DestOriginator" xml:space="preserve">
+    <value>Originator</value>
+  </data>
+  <data name="alt_DestOriginatorAlt" xml:space="preserve">
+    <value>Destination is the person which submitter the original request.</value>
+  </data>
+  <data name="alt_EditDestRunTime" xml:space="preserve">
+    <value>Edit destinations while in-process</value>
+  </data>
+  <data name="alt_EditDestRunTimeAlt" xml:space="preserve">
+    <value>Destinations defined at design time.  Can be changed at run time.</value>
+  </data>
+  <data name="alt_FavGroups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="alt_FavNewGroup" xml:space="preserve">
+    <value>New group</value>
+  </data>
+  <data name="alt_FavWindowCap" xml:space="preserve">
+    <value>Manage Favorites</value>
+  </data>
+  <data name="alt_MaximumNumberDestinations" xml:space="preserve">
+    <value>Maximum number of destinations</value>
+  </data>
+  <data name="alt_MinimumNumberDestinations" xml:space="preserve">
+    <value>Minimum number of destinations</value>
+  </data>
+  <data name="alt_Notes" xml:space="preserve">
+    <value>Set Note</value>
+  </data>
+  <data name="alt_OpenMenu" xml:space="preserve">
+    <value>Open Menu</value>
+  </data>
+  <data name="alt_Outcome_Properties" xml:space="preserve">
+    <value>Outcome Properties</value>
+  </data>
+  <data name="alt_Properties" xml:space="preserve">
+    <value>Modify activity properties</value>
+  </data>
+  <data name="alt_Share_Process" xml:space="preserve">
+    <value>Share this Workflow</value>
+  </data>
+  <data name="alt_SO_Client_Side" xml:space="preserve">
+    <value>Link Form</value>
+  </data>
+  <data name="alt_SO_Server_Side" xml:space="preserve">
+    <value>Set Template Properties</value>
+  </data>
+  <data name="alt_SOPropertyOutcome" xml:space="preserve">
+    <value>Link SO Property to an Outcome Rule</value>
+  </data>
+  <data name="alt_SOPropertySelectOutcome" xml:space="preserve">
+    <value>Apply rule to outcome</value>
+  </data>
+  <data name="alt_Viewer_Close" xml:space="preserve">
+    <value>Click to close viewer</value>
+  </data>
+  <data name="but_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="but_Add_Outcome" xml:space="preserve">
+    <value>Add Outcome</value>
+  </data>
+  <data name="but_Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="but_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="but_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="but_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="but_Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="but_Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="but_Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="head_Action_Name" xml:space="preserve">
+    <value>Action name</value>
+  </data>
+  <data name="head_Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="head_Activity_Name" xml:space="preserve">
+    <value>Activity Name</value>
+  </data>
+  <data name="head_Activity_Properties" xml:space="preserve">
+    <value>Activity Properties</value>
+  </data>
+  <data name="head_Build_Process" xml:space="preserve">
+    <value>Build Workflow</value>
+  </data>
+  <data name="head_Delpoy_Process" xml:space="preserve">
+    <value>Deploy Workflow</value>
+  </data>
+  <data name="head_Destinations" xml:space="preserve">
+    <value>Destinations</value>
+  </data>
+  <data name="head_Favorites" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="head_Link_Pages" xml:space="preserve">
+    <value>Link page to Workflow</value>
+  </data>
+  <data name="head_Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="head_Outcomes" xml:space="preserve">
+    <value>Outcomes</value>
+  </data>
+  <data name="head_Personal_Processes" xml:space="preserve">
+    <value>Personal Workflows</value>
+  </data>
+  <data name="head_Process_Create" xml:space="preserve">
+    <value>Create new Workflow</value>
+  </data>
+  <data name="head_Process_DeleteSharedUsers" xml:space="preserve">
+    <value>Delete user/s</value>
+  </data>
+  <data name="head_Process_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="head_Process_NotShared" xml:space="preserve">
+    <value>Not shared</value>
+  </data>
+  <data name="head_Process_PublicShared" xml:space="preserve">
+    <value>Public share</value>
+  </data>
+  <data name="head_Process_Share" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="head_Process_ShareProcess" xml:space="preserve">
+    <value>Share Workflow</value>
+  </data>
+  <data name="head_Process_SpecificShared" xml:space="preserve">
+    <value>Specific share</value>
+  </data>
+  <data name="head_Process_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="head_Rules" xml:space="preserve">
+    <value>Rules</value>
+  </data>
+  <data name="head_Shared_Processes" xml:space="preserve">
+    <value>Shared Workflows</value>
+  </data>
+  <data name="head_SmartObject_Pages" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="head_SmartObjectProperties" xml:space="preserve">
+    <value>SmartObject Property Rules</value>
+  </data>
+  <data name="menu_ActionsLayout" xml:space="preserve">
+    <value>ACTIONS</value>
+  </data>
+  <data name="menu_ActionsTab" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="menu_Build" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="menu_Deploy" xml:space="preserve">
+    <value>Deploy</value>
+  </data>
+  <data name="menu_Favorites" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="menu_FavoritesTab" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="menu_Groups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="menu_PageActions" xml:space="preserve">
+    <value>PAGE ACTIONS</value>
+  </data>
+  <data name="menu_ProcessData" xml:space="preserve">
+    <value>Workflow data</value>
+  </data>
+  <data name="menu_ProcessDataFields" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="menu_Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="menu_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="menu_SmartObjects" xml:space="preserve">
+    <value>SmartObjects</value>
+  </data>
+  <data name="menu_SmartObjectsLinked" xml:space="preserve">
+    <value>SmartObjects Linked To Workflow</value>
+  </data>
+  <data name="menu_SmartObjectsTab" xml:space="preserve">
+    <value>SmartObjects</value>
+  </data>
+  <data name="menu_Templates" xml:space="preserve">
+    <value>TEMPLATES</value>
+  </data>
+  <data name="menu_Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="msg_Action_Atleast_One" xml:space="preserve">
+    <value>Please add at least one action for the outcomes to be based on.</value>
+  </data>
+  <data name="msg_Action_Exists" xml:space="preserve">
+    <value>Action already exists.</value>
+  </data>
+  <data name="msg_Action_Exists_InProcess" xml:space="preserve">
+    <value>Action already exists in the Workflow.</value>
+  </data>
+  <data name="msg_Action_Name" xml:space="preserve">
+    <value>Please enter an action name.</value>
+  </data>
+  <data name="msg_Activity_Name" xml:space="preserve">
+    <value>Please enter an activity name.</value>
+  </data>
+  <data name="msg_Activity_NoOutcomes" xml:space="preserve">
+    <value>Outcomes can not exist without activities.</value>
+  </data>
+  <data name="msg_ActivityDestinations" xml:space="preserve">
+    <value>Destinations not set on the {0} activity.</value>
+  </data>
+  <data name="msg_AllTrueFirstTrue" xml:space="preserve">
+    <value>Please select whether the Workflow must continue after the first true rule or after all rules are true.</value>
+  </data>
+  <data name="msg_BuildTask1" xml:space="preserve">
+    <value>Building Workflow...</value>
+  </data>
+  <data name="msg_BuildTask10" xml:space="preserve">
+    <value>Checking outcomes...</value>
+  </data>
+  <data name="msg_BuildTask11" xml:space="preserve">
+    <value>Build complete.</value>
+  </data>
+  <data name="msg_BuildTask12" xml:space="preserve">
+    <value>Build failed...</value>
+  </data>
+  <data name="msg_BuildTask13" xml:space="preserve">
+    <value>&lt;font style=\"color:red\"&gt;Error:&lt;/font&gt; Activity not set for outcome {0}...</value>
+  </data>
+  <data name="msg_BuildTask14" xml:space="preserve">
+    <value>&lt;font style=\"color:red\"&gt;Error:&lt;/font&gt; Please define all activity names</value>
+  </data>
+  <data name="msg_BuildTask15" xml:space="preserve">
+    <value>&lt;font style=\"color:red\"&gt;Error:&lt;/font&gt; Activity name for {0} contains invalid characters</value>
+  </data>
+  <data name="msg_BuildTask16" xml:space="preserve">
+    <value>Checking for duplicate activity names...</value>
+  </data>
+  <data name="msg_BuildTask17" xml:space="preserve">
+    <value>&lt;font style=\"color:red\"&gt;Error:&lt;/font&gt; Duplicate activity names not allowed. The activity name {0} occures more than once</value>
+  </data>
+  <data name="msg_BuildTask2" xml:space="preserve">
+    <value>Checking for SmartObject form...</value>
+  </data>
+  <data name="msg_BuildTask3" xml:space="preserve">
+    <value>&lt;font style=\"color:red\"&gt;Error:&lt;/font&gt; Workflow not linked to a form...</value>
+  </data>
+  <data name="msg_BuildTask4" xml:space="preserve">
+    <value>Checking Workflow properties...</value>
+  </data>
+  <data name="msg_BuildTask5" xml:space="preserve">
+    <value>&lt;font style=\"color:red\"&gt;Error:&lt;/font&gt; No Workflow name specified...</value>
+  </data>
+  <data name="msg_BuildTask6" xml:space="preserve">
+    <value>Checking activities...</value>
+  </data>
+  <data name="msg_BuildTask7" xml:space="preserve">
+    <value>&lt;font style=\"color:red\"&gt;Error:&lt;/font&gt; No activities defined for Workflow...</value>
+  </data>
+  <data name="msg_BuildTask8" xml:space="preserve">
+    <value>Checking destinations...</value>
+  </data>
+  <data name="msg_BuildTask9" xml:space="preserve">
+    <value>&lt;font style=\"color:red\"&gt;Error:&lt;/font&gt; Destinations not set on {0}...</value>
+  </data>
+  <data name="msg_Destinstion_MaxGreaterThanMin" xml:space="preserve">
+    <value>Please make sure the maximum is greater then the minimum.</value>
+  </data>
+  <data name="msg_Invalid_Form_Return" xml:space="preserve">
+    <value>Invalid information from page linking screen. Please contact your system administrator.</value>
+  </data>
+  <data name="msg_LoadViewer" xml:space="preserve">
+    <value>Please wait for the Workflow view to load.</value>
+  </data>
+  <data name="msg_Navigate" xml:space="preserve">
+    <value>Unsaved changes will be lost!</value>
+  </data>
+  <data name="msg_NorRequiredFieldOnView" xml:space="preserve">
+    <value>No required fields were set-up for the linked form.</value>
+  </data>
+  <data name="msg_Outcome_Exists" xml:space="preserve">
+    <value>Outcome already exists.</value>
+  </data>
+  <data name="msg_Outcome_For_Rule" xml:space="preserve">
+    <value>Please select an outcome for the rule.</value>
+  </data>
+  <data name="msg_Outcome_Name" xml:space="preserve">
+    <value>Please enter an outcome name.</value>
+  </data>
+  <data name="msg_OutcomeRule_NoOutcome" xml:space="preserve">
+    <value>Please click \"&lt;&lt; Back\" to add outcomes.</value>
+  </data>
+  <data name="msg_Process_ValidName" xml:space="preserve">
+    <value>Please enter a valid Workflow name.</value>
+  </data>
+  <data name="msg_quickFindSearchText" xml:space="preserve">
+    <value>Enter search here</value>
+  </data>
+  <data name="msg_Rule_To_Edit" xml:space="preserve">
+    <value>Please select a rule to edit.</value>
+  </data>
+  <data name="msg_SaveMessage" xml:space="preserve">
+    <value>Please save the form data before submitting the form.</value>
+  </data>
+  <data name="msg_SharedSuccess" xml:space="preserve">
+    <value>Workflow shared successfully.</value>
+  </data>
+  <data name="pop_Activity_ActionOutcome_Hint1" xml:space="preserve">
+    <value>*Create action(s) to be used by the outcome(s). Click "Next" to continue.</value>
+  </data>
+  <data name="pop_Activity_ActionOutcome_Hint2" xml:space="preserve">
+    <value>*Create outcomes(s) to be used by the outcome rule(s). Click "Next" to continue.</value>
+  </data>
+  <data name="pop_Activity_ActionOutcome_Hint3" xml:space="preserve">
+    <value>*Create outcomes. Choose if all the outcomes must be executed or only the rules till a true is returned by a outcome. Click "OK" to apply.</value>
+  </data>
+  <data name="pop_Activity_Actions" xml:space="preserve">
+    <value>Action(s)</value>
+  </data>
+  <data name="pop_Activity_Actions_Configure" xml:space="preserve">
+    <value>Configure Action(s):</value>
+  </data>
+  <data name="pop_Activity_Head_Descr" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="pop_Activity_Head_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="pop_Activity_Name" xml:space="preserve">
+    <value>Enter activity name:</value>
+  </data>
+  <data name="pop_Activity_OutcomeRule" xml:space="preserve">
+    <value>Outcome Rule:</value>
+  </data>
+  <data name="pop_Activity_OutcomeRule_AllTrue" xml:space="preserve">
+    <value>All True</value>
+  </data>
+  <data name="pop_Activity_OutcomeRule_FirstTrue" xml:space="preserve">
+    <value>First True</value>
+  </data>
+  <data name="pop_Activity_OutcomeRules" xml:space="preserve">
+    <value>Outcome Rules(s)</value>
+  </data>
+  <data name="pop_Activity_OutcomeRules_Configure" xml:space="preserve">
+    <value>Configure Outcome rule(s):</value>
+  </data>
+  <data name="pop_Activity_Outcomes" xml:space="preserve">
+    <value>Outcomes(s)</value>
+  </data>
+  <data name="pop_Activity_Outcomes_Configure" xml:space="preserve">
+    <value>Configure Outcome(s):</value>
+  </data>
+  <data name="pop_Activity_Properties" xml:space="preserve">
+    <value>Activity Properties</value>
+  </data>
+  <data name="pop_Project_Properties" xml:space="preserve">
+    <value>Project Properties</value>
+  </data>
+  <data name="pop_Project_Properties_Descr" xml:space="preserve">
+    <value>Description: </value>
+  </data>
+  <data name="pop_Project_Properties_Name" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="StartActivityOutcome" xml:space="preserve">
+    <value>Form Submitted</value>
+  </data>
+  <data name="StartActivityOutcomeDescr" xml:space="preserve">
+    <value>Form Submitted</value>
+  </data>
+  <data name="StartActivityText" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="template_Client_Side" xml:space="preserve">
+    <value>Client Side</value>
+  </data>
+  <data name="template_Mail_Template" xml:space="preserve">
+    <value>Mail Template</value>
+  </data>
+  <data name="template_Originator" xml:space="preserve">
+    <value>Originator</value>
+  </data>
+</root>

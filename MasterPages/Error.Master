@@ -1,0 +1,15 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Error.master.cs" Inherits="SourceCode.Forms.MasterPages.Error"%>
+
+<!DOCTYPE html>
+
+<html id="ErrorRoot" dir="<%=GetGlobalResourceObject("Default", "HTMLDirectionality") %>" class="<%=GetApplicationStyleClassFromUrl()%>">
+<head runat="server">
+	<title></title>
+</head>
+<body class="error">
+	<form id="form1" runat="server">
+		<asp:contentplaceholder id="PageContent" runat="server" />
+		<asp:ContentPlaceHolder id="PageVariables" runat="server" />
+	</form>
+</body>
+</html>

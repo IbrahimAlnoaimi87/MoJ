@@ -1,0 +1,603 @@
+﻿@keyframes fadein 
+{
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+.controlToolboxGroupCategory, 
+.propertyGridCategory
+{
+	margin-bottom: 3px;
+	position: relative;
+}
+
+.controlToolboxGroupCategoryBody, 
+.propertyGridCategoryBody
+{
+	margin-left: 20px;
+}
+
+html[dir=rtl] .controlToolboxGroupCategoryBody, 
+html[dir=rtl] .propertyGridCategoryBody
+{
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.controlToolboxGroupCategoryBody.closed, 
+.propertyGridCategoryBody.closed
+{
+	display: none;
+}
+
+.controlToolboxGroupCategoryBody.open, 
+.propertyGridCategoryBody.open
+{
+	display: block;
+}
+
+.controlToolboxGroupCategoryHeader, 
+.propertyGridCategoryHeader
+{
+	border-bottom: 1px solid Silver;
+}
+
+.propertyGridCategory.error .propertyGridCategoryToggle::after 
+{
+	background: url(../Images/Icons/Error16.png) no-repeat;
+	background-size: contain;
+	width: 10px;
+	height: 10px;
+	content: '';
+	display: block;
+	position: absolute;
+	left: 2px;
+	top: 0px;
+}
+
+.controlToolboxGroupCategoryLabel, 
+.propertyGridCategoryLabel
+{
+	font-weight: 700;
+	height: 20px;
+	line-height: 19px;
+	margin-left: 12px;
+}
+
+html[dir=rtl] .controlToolboxGroupCategoryLabel, 
+html[dir=rtl] .propertyGridCategoryLabel
+{
+	margin-left: 0;
+	margin-right: 12px;
+}
+
+.controlToolboxGroupCategoryToggle, .propertyGridCategoryToggle
+{
+	background-position: -3px 50%;
+	cursor: pointer;
+	height: 20px;
+	position: absolute;
+	width: 9px;
+}
+
+.controlToolboxGroupCategoryToggle.closed, .propertyGridCategoryToggle.closed
+{
+	background-image: url(../Images/Tree/plus_alt.gif);
+}
+
+.controlToolboxGroupCategoryToggle.open, .propertyGridCategoryToggle.open
+{
+	background-image: url(../Images/Tree/minus_alt.gif);
+}
+
+.propertyGridEditWrapper
+{
+	padding-right: 2px;
+}
+
+div.propertyGridPropertyEdit
+{
+	overflow: hidden;
+	padding-top: 3px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.propertyGridPropertyItem
+{
+	height: 22px;
+	margin-top: 2px;
+	position: relative;
+}
+
+.propertyGridPropertyItemLabel
+{
+	overflow: hidden;
+	padding-top: 3px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 110px;
+}
+
+.propertyGridPropertyItemValue
+{
+	left: 112px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+html[dir=rtl] .propertyGridPropertyItemValue
+{
+	right: 112px;
+	left: 0;
+}
+
+.propertyGridPropertyItem.error .input-control.icon-control .input-control-wrapper,
+.propertyGridPropertyItem.error .input-control.select-box.lookup-box .input-control-wrapper
+{
+	background-color: #b22222;
+}
+
+.propertyGridPropertyItem.error .input-control.icon-control .input-control-wrapper input[type=text],
+.propertyGridPropertyItem.error .input-control.select-box.lookup-box .input-control-wrapper input[type=text],
+.propertyGridPropertyItem.error .input-control.select-box.dropdown-box .input-control-wrapper span
+{
+	color:#ffffff;
+}
+
+.toolboxitem
+{
+	background-image: url(../Images/Controls/unknown.gif);
+	background-repeat: no-repeat;
+	height: 16px;
+	margin-top: 2px;
+	padding-left: 19px;
+	cursor: pointer;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.toolboxitem.invalid
+{
+	position:relative;
+	color:#c9c9c9;
+	padding-right:50px;
+}
+
+.toolboxitem.invalid a
+{
+	display:block;
+	position:absolute;
+	right: 0;
+	top: 1px;
+	font-size:10px;
+	width:50px;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+
+.toolboxitem.invalid:hover
+{
+	background-color:#fbfbfb;
+}
+
+html[dir=rtl] .toolboxitem
+{
+	background-position:right;
+	padding-left: 0;
+	padding-right: 19px;
+}
+
+.toolboxitem.aggregation
+{
+	background-image: url(../Images/Icons/Sigma16.png);
+}
+
+.toolboxitem.associationheading-control
+{
+	background-image: url(../Images/Icons/AssociationHeading16_2.png);
+}
+
+.toolboxitem.button-control
+{
+	background-image: url(../Images/Icons/ButtonControl16.png);
+}
+
+.toolboxitem.calendar-control
+{
+	background-image: url(../Images/Icons/CalendarControl16.png);
+}
+
+.toolboxitem.checkbox-control
+{
+	background-image: url(../Images/Icons/CheckBoxControl16.png);
+}
+
+.toolboxitem.datalabel-control
+{
+	background-image: url(../Images/Icons/DataLabelControl16.png);
+}
+
+.toolboxitem.dropdown-control
+{
+	background-image: url(../Images/Icons/DropdownList16.png);
+}
+
+.toolboxitem.file-control
+{
+	background-image: url(../Images/Icons/File16.png);
+}
+
+.toolboxitem.filepostback-control
+{
+	background-image: url(../Images/Icons/File16.png);
+}
+
+.toolboxitem.gauge-control
+{
+	background-image: url(../Images/Icons/GaugeControl.png);
+}
+
+.toolboxitem.hyperlink-control
+{
+	background-image: url(../Images/Icons/Hyperlink.png);
+}
+
+.toolboxitem.imagepostback-control
+{
+	background-image: url(../Images/Icons/Picture16_02.png);
+}
+
+.toolboxitem.label-control
+{
+	background-image: url(../Images/Icons/Label16_02.png);
+}
+
+.toolboxitem.listdisplay-control
+{
+	background-image: url(../Images/Icons/ListDisplay16.png);
+}
+
+.toolboxitem.listheading-control
+{
+	background-image: url(../Images/Icons/ListHeadings16.png);
+}
+
+.toolboxitem.lookup-control
+{
+	background-image: url(../Images/Icons/Lookup16.png);
+}
+
+.toolboxitem.multiselectcheckbox-control
+{
+	background-image: url(../Images/Icons/MultiSelectCheckBoxes16.png);
+}
+
+.toolboxitem.radiobuttonlist-control
+{
+	background-image: url(../Images/Icons/RadioButtonList16.png);
+}
+
+.toolboxitem.radiobutton-control
+{
+	background-image: url(../Images/Icons/RadioButton.png);
+}
+
+.toolboxitem.radiobuttongroup-control
+{
+	background-image: url(../Images/Icons/RadioButtonGroup.png);
+}
+
+.toolboxitem.rating-control
+{
+	background-image: url(../Images/Icons/Rating16.png);
+}
+
+.toolboxitem.slider-control
+{
+	background-image: url(../Images/Icons/SliderControl16.png);
+}
+
+.toolboxitem.toolbarbutton-control
+{
+	background-image: url(../Images/Icons/ToolbarButtonControl16.png);
+}
+
+.toolboxitem.toolbartable-control
+{
+	background-image: url(../Images/Icons/ToolbarControl16.png);
+}
+
+.toolboxitem.tree-control
+{
+	background-image: url(../Images/Icons/Tree16.png);
+}
+
+.toolboxitem.image-control
+{
+	background-image: url(../Images/Icons/Picture16_02.png);
+}
+
+.toolboxitem.picture-control
+{
+	background-image: url(../Images/Icons/Picture16.png);
+}
+
+.toolboxitem.listtable-control, .toolboxitem.table-control
+{
+	background-image: url(../Images/Icons/TableControl16.png);
+}
+
+.toolboxitem.textbox-control
+{
+	background-image: url(../Images/Icons/TextBoxControl16.png);
+}
+
+.toolboxitem.textarea-control
+{
+	background-image: url(../Images/Icons/TextAreaControl16.png);
+}
+
+.toolboxitem.picker-control
+{ 
+	background-image: url("../Images/Icons/PickerToolbar16.png"); 
+} 
+	
+/*#region - Resolver Accordion Styling */
+
+.panel-group.accordion
+{
+
+}
+
+.panel-group.accordion.analyzer
+{
+	box-sizing: border-box;
+	min-height: 100%;
+	padding: 7px;
+	position: relative;
+}
+
+.panel-group.accordion *
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.panel-group.accordion .panel
+{
+	background-color: #fff;
+	border: solid 1px #adae9c;
+}
+
+.panel-group.accordion.analyzer .panel + .panel
+{
+	margin-top: 10px;
+}
+
+.panel-group.accordion .panel-heading
+{
+	background: #f5f5f1;
+	background: -moz-linear-gradient(top, #f5f5f1 0%, #e2e4da 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f1), color-stop(100%,#e2e4da));
+	background: -webkit-linear-gradient(top, #f5f5f1 0%,#e2e4da 100%);
+	background: -o-linear-gradient(top, #f5f5f1 0%,#e2e4da 100%);
+	background: -ms-linear-gradient(top, #f5f5f1 0%,#e2e4da 100%);
+	background: linear-gradient(to bottom, #f5f5f1 0%,#e2e4da 100%);
+	border-bottom: solid 1px #adae9c;
+	min-height: 24px;
+}
+
+.panel-group.accordion .panel.collapsed .panel-heading
+{
+	border-bottom: none;
+}
+
+.panel-group.accordion .panel-title
+{
+	color: #343e41;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 19px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0 5px;
+}
+
+.panel-group.accordion .panel-body
+{
+	border: none; /* override core design-time styling */
+	margin-top: 0;
+}
+
+.panel-group.accordion .panel.collapsed .panel-body
+{
+	display: none;
+}
+
+.panel-group.accordion.analyzer .panel-heading
+{
+	display: table;
+	width: 100%;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-header
+{
+	display: table-row;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander
+{
+	color: #fff;
+	cursor: pointer;
+	border-right: solid 1px #adae9c;
+	display: table-cell;
+	max-width: 30px;
+	padding: 10px 5px;
+	text-align: center;
+	vertical-align: top;
+	width: 30px;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander.auto,
+.panel-group.accordion.analyzer .analyzer-cause-expander.warning
+{
+	background-color: #ff8c00;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander.error,
+.panel-group.accordion.analyzer .analyzer-cause-expander.missing
+{
+	background-color: #b22222;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander.info
+{
+	background-color: #483d8b;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander.success
+{
+	background-color: #006400;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander .icon
+{
+	margin-top: 5px;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-heading
+{
+	display: table-cell;
+	padding: 10px;
+	width: auto;
+}
+
+.panel-group.accordion.analyzer h3
+{
+	color: #343e41;
+	font-size: 11px;
+	margin-bottom: 5px;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-resolve
+{
+	display: table-cell;
+	padding: 10px;
+	vertical-align: middle;
+	width: 1px;
+}
+
+.panel-group.accordion.analyzer .panel-body
+{
+	padding: 0;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-items
+{
+	display: table;
+	width: 100%;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item
+{
+	display: table-row;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item-info
+{
+	display: table-cell;
+	padding: 10px;
+	width: auto;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item-type
+{
+	display: table-cell;
+	padding: 10px;
+	text-align: right;
+	vertical-align: middle;
+	width: 150px;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item-resolve
+{
+	background-color: #F5F8F1;
+	display: table-cell;
+	padding: 10px;
+	vertical-align: middle;
+	width: 1px;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item .ico
+{
+	float: left;
+	margin-right: 10px;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item .analyzer-error-subtype,
+#DependencyNotifierDependencyContainer .dep-notifier-subtype
+{
+	color: #808080;
+	font-weight: normal;
+}
+
+.panel-group.accordion.analyzer button
+{
+	min-width: 100px;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item + .analyzer-error-item .analyzer-error-item-info,
+.panel-group.accordion.analyzer .analyzer-error-item + .analyzer-error-item .analyzer-error-item-type,
+.panel-group.accordion.analyzer .analyzer-error-item + .analyzer-error-item .analyzer-error-item-resolve
+{
+	border-top: solid 1px #adae9c;
+}
+
+.panel-group.accordion.analyzer .empty-report-text 
+{
+	color: #a0a0a0;
+	text-align: center;
+}
+
+/*#endregion*/
+
+.form-field.error > .form-field-element-wrapper div.input-control-body div.input-control-wrapper
+{
+	-moz-animation: fadein 0.25s;
+	-o-animation: fadein 0.25s;
+	-webkit-animation: fadein 0.25s;
+	animation: fadein 0.25s;
+	background: url(../Images/Icons/Error16.png) no-repeat 1px 50%;
+	content: '';
+	display: block;
+	height: 16px;
+	position: relative;
+	padding-left: 20px;
+}
+
+.form-field .form-field-element-wrapper > .complexPopupReadOnlyWrapper.error-state::before
+{
+	-moz-animation: fadein 0.25s;
+	-o-animation: fadein 0.25s;
+	-webkit-animation: fadein 0.25s;
+	animation: fadein 0.25s;
+	background: url(../Images/Icons/Error16.png) no-repeat 50% 50%;
+	content: '';
+	display: inline-block;
+	height: 16px;
+	position: relative;
+	margin-right: 4px;
+	top: 2px;
+	width: 16px;
+}
+
+.form-field.disabled .form-field-element-wrapper > .complexPopupReadOnlyWrapper.error-state::before
+{
+	border-color: #eef0ed;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}

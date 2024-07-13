@@ -1,0 +1,89 @@
+﻿/* #region FLUID LAYOUT */
+
+html.workspace-notfound,
+.workspace-notfound body,
+.workspace-notfound #form1,
+.workspace-notfound .runtime-content,
+.workspace-notfound .runtime-form,
+.workspace-notfound .runtime-form > .form,
+.workspace-notfound .runtime-form > .form > .row
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+/* #endregion */
+
+/* #region LAYOUT */
+
+.workspace-notfound .editor-cell,
+.workspace-notfound .editor-cell:first-child,
+.workspace-notfound .editor-cell:last-child,
+.workspace-notfound .Grid-Layout .editor-cell[row='1'],
+.workspace-notfound .Grid-Layout .editor-cell.lastrow
+{
+    padding: 0;
+}
+
+.workspace-notfound .runtime-form > .form > .row
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* #endregion */
+
+/* #region CONTROL STYLING */
+
+.workspace-notfound span[name="lblTitle"]
+{
+    font-size: 1.5rem;
+    color: #858a8a;
+    padding: 0.4rem 0 1.6rem 0;
+    border-bottom: 1px #dfdfdf solid;
+}
+
+.workspace-notfound span[name="lblDescription"]
+{
+    font-size: 1.3rem;
+    color: #858a8a;
+    padding: 1.6rem 0 4.8rem 0;
+}
+
+/* #endregion CONTROL STYLING */
+
+/* #region ICONS */
+
+.workspace-notfound span[name="lblImage"]
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-repeat: no-repeat;
+    -moz-background-size: 40px;    
+    background-size: 40px;    
+    background-position: center center;
+    background-image: url(RuntimeTheme/Error40.png);
+}
+
+/* #endregion ICONS */
+
+/* #region MEDIA QUERY */
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .workspace-notfound span[name="lblImage"]
+    {
+        background-image: url(RuntimeTheme/Error40@2x.png);
+    }
+}
+
+/* #endregion */

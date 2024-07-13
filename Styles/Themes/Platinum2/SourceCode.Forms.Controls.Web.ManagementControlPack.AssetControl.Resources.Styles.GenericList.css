@@ -1,0 +1,69 @@
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover
+{
+    display: block;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem span.button-icon
+{
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    background: url('GenericList/AddItem24Default.png') no-repeat transparent center;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem
+{
+    z-index: auto;
+    margin: auto;
+}
+
+    .theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem,
+    .theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn,
+    .theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem:hover,
+    .theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn:hover
+    {
+        background: transparent;
+    }
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .title > span
+{
+    color: #626262;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_GenericExpenseGridItemMainRow .deleteItem
+{
+    opacity: 1;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn .button-icon
+{
+    width: 16px;
+    height: 16px;
+    background: url('GenericList/Bin16Default.png') no-repeat transparent center;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PropertiesMain,
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Property2DynamicRight
+{
+    width: 50%;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn
+{
+    margin: 0;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Property2DynamicRight
+{
+    padding-right: 30px;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glForwardedUsers"] .genericitem
+{
+    cursor: default;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList
+{
+   font-size: 1.5rem;
+}

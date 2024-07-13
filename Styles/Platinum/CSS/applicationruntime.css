@@ -1,0 +1,135 @@
+﻿.appruntime-top-box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    overflow: hidden;
+}
+
+.appruntime-top-box-header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 24px;
+    overflow: hidden;
+}
+
+.appruntime-top-box-header-l
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    overflow: hidden;
+    background: transparent url(../Images/TitleBar/titlebar_left_corners.png) no-repeat left top;
+}
+
+.appruntime-top-box-header-c
+{
+    position: absolute;
+    top: 0;
+    left: 4px;
+    bottom: 0;
+    right: 4px;
+    overflow: hidden;
+    background: transparent url(../Images/TitleBar/titlebar_repeater.png) repeat-x left top;
+}
+
+.appruntime-top-box-header-r
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    overflow: hidden;
+    background: transparent url(../Images/TitleBar/titlebar_right_corners.png) no-repeat right top;
+}
+
+.appruntime-step-box-header-text
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 0 5px;
+}
+
+.appruntime-top-box-body
+{
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.appruntime-top-box-body-l,
+.appruntime-top-box-body-r
+{
+    display: none;
+}
+
+.appruntime-top-box-body-c
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.appruntime-top-box-footer
+{
+    display: none;
+}
+
+/* AppRuntime Main Box Styling */
+.appruntime-main-box
+{
+    position: absolute;
+    top: 51px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.appruntime-main-box-header,
+.appruntime-main-box-footer
+{
+    display: none;
+}
+
+.appruntime-main-box-body
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.appruntime-main-box-body-l,
+.appruntime-main-box-body-r
+{
+    display: none;
+}
+
+.appruntime-main-box-body-c
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

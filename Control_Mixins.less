@@ -1,0 +1,168 @@
+﻿//Purpose: This file allows controls to generate css for their control icons.
+//		   The mixins on this page generate all of the CSS rules needed to ensure
+//	       a control's icon appears throughout K2 Designer.
+//Author:  Lewis Garmston
+
+.mixin-control-medium-icon(@controlclass;@imageurl;@res;@has-extended-icons)
+{
+    @standardImageUrl: ~"url('@{imageurl}16@{res}.png')";
+
+    /* Form Designer: While dragging and dropping control on to the canvas*/
+    a.ui-draggable-dragging.canvasDragGhost.@{controlclass}-control,
+    /* View/Form Designer: At top of properties panel when control is selected on the canvas*/
+    .icon.icon-size32.@{controlclass}-control, .ico.icon-@{controlclass}-control.medium
+    {
+        .mixin-has-extended-icons-medium(true)
+        {
+            background-image: ~"url('@{imageurl}32@{res}.png')";
+        }
+
+        .mixin-has-extended-icons-medium(false)
+        {
+            background-image: @standardImageUrl;
+        }
+
+        .mixin-has-extended-icons-medium(@has-extended-icons);
+    }
+}
+
+
+//Private Mixin - Not to be used outside of this file.
+._mixin-control(@controlclass;@imageurl;@res;@has-extended-icons)
+{
+    @standardImageUrl: ~"url('@{imageurl}16@{res}.png')";
+
+    /* View Designer: While dragging and dropping control on to the canvas*/
+    a.ui-draggable-dragging.@{controlclass}-control,
+    /* Runtime: List View filter dragging*/
+    .theme-entry a.icon.ui-draggable-dragging.@{controlclass}-control,
+    /* View Designer: Configure Data Source popup for list controls the 'Parent Control' dropdown*/
+    .drop-menu.icon-control ul.drop-menu a.@{controlclass}-control,
+    /* Rule Designer: Action configuration target mappings tree*/
+    .input-control.icon-control.@{controlclass}-control .input-control-icon,
+    .input-control.icon-control.@{controlclass}-control .input-control-wrapper,
+    /* View/Form Designer: Droppable control's list on the left and the change control popup list*/
+    .toolboxitem.@{controlclass}-control,
+    /* Rules Designer: Popup of Specify edit state for controls action*/
+    .grid .grid-content-cell.icon.@{controlclass}-control,
+    /* Rule Designer: Action hot spot context menu*/
+    .menu a.menu-item.@{controlclass}-control span.menu-item-icon,
+    /* Rules Designer:  Action configuration mappings screens context trees*/
+    .tree li.@{controlclass}-control > a,
+    .tree li.@{controlclass}-control > span,
+    .tree li.@{controlclass}-control.children > a,
+    .tree li.@{controlclass}-control.children.open > a,
+    .tree li.@{controlclass}-control.children.closed > a,
+    .tree li.@{controlclass}-control.children > span,
+    .tree li.@{controlclass}-control.children.open > span,
+    .tree li.@{controlclass}-control.children.closed > span,
+    /* Runtime: List View filter context tree*/
+    .theme-entry .tree li.@{controlclass}-control > a.@{controlclass}-control,
+    .theme-entry .tree li.@{controlclass}-control.children.open > a.@{controlclass}-control,
+    .theme-entry .tree li.@{controlclass}-control.children.closed > a.@{controlclass}-control,
+    /* Rules Designer: Select controls to validate popup of the View passes validation condition*/
+    .grid .grid-content-cell.icon.control-@{controlclass},
+    .input-control.checkbox .icon-control .@{controlclass}-control > span,
+    /* View/Form Designer: Dependencies popup when deleting a control that is referenced*/
+    .ico.icon-@{controlclass}-control
+    {
+        background-image: @standardImageUrl;
+    }
+
+    .mixin-control-medium-icon(@controlclass;@imageurl;@res;@has-extended-icons);
+    /* Form Designer: Selection tree when control is in error*/
+    .tree li a.@{controlclass}-control.error
+    {
+        .mixin-has-extended-icons-error(true)
+        {
+            background-image: ~"url('@{imageurl}_Error16@{res}.png')" !important;
+        }
+
+        .mixin-has-extended-icons-error(false)
+        {
+            background-image: @standardImageUrl;
+            position: relative;
+
+            &:after
+            {
+                -moz-animation: fadein .25s;
+                -o-animation: fadein .25s;
+                -webkit-animation: fadein .25s;
+                animation: fadein .25s;
+                background: ~"url('../Images/Icons/Ribbon/Error16@{res}.png')" no-repeat;
+                background-size: contain;
+                width: 10px;
+                height: 10px;
+                content: '';
+                display: block;
+                position: absolute;
+                left: 12px;
+                top: 0px
+            }
+        }
+
+        .mixin-has-extended-icons-error(@has-extended-icons);
+    }
+    /* View/Form Designer: Conditional Styles popup where control has been dropped in a condition*/
+    /* Runtime: List View Advanced Filter Drop items */
+    .input-control .drop-object.drop-item.@{controlclass}-control,
+    /* View/Form Designer:  Conditional Styles Left side of expression*/
+    .input-control .drop-item.@{controlclass}-control,
+    /* Rules Designer: Action configuration target mappings screens where the control has been dropped*/
+    .token-input .entity.icon.@{controlclass}-control,
+    /* Runtime: List View Filter Drop items*/
+    .theme-entry .token-input .entity.icon.@{controlclass}-control span.entity-text,
+    /* Rules Designer: Navigate to Form action in the URL preview*/
+    #FormNavigatePreviewPanel .token.@{controlclass}-control,
+    /* Rules Designer: Navigate to URL action widget tokens*/
+    #BrowserNavigatePC .token.@{controlclass}-control
+    {
+        .mixin-has-extended-icons-selected(true)
+        {
+            background-image: ~"url('@{imageurl}_Selected14@{res}.png')";
+        }
+
+        .mixin-has-extended-icons-selected(false)
+        {
+            background-image: @standardImageUrl;
+        }
+
+        .mixin-has-extended-icons-selected(@has-extended-icons);
+    }
+    /* Runtime: List View Advanced Filter Drop items */
+    .theme-entry .input-control .drop-object.drop-item.@{controlclass}-control,
+    /* Runtime: List View Filter Drop items */
+    .theme-entry .token-input .entity.icon.@{controlclass}-control span.entity-text,
+    /* Runtime: List View filter context tree */
+    /* Runtime: List View filter dragging*/
+    .theme-entry a.icon.ui-draggable-dragging.@{controlclass}-control,
+    .theme-entry .tree li.@{controlclass}-control > a.@{controlclass}-control,
+    .theme-entry .tree li.@{controlclass}-control.children.open > a.@{controlclass}-control,
+    .theme-entry .tree li.@{controlclass}-control.children.closed > a.@{controlclass}-control
+    {
+        background-position-y: 50%; //override custom control sprite positioning
+    }
+}
+
+//Public Mixin - Used by all custom controls, and built-in controls from their own less files.
+//Param: controlclass  - this is the simplename of the control like "sfc-timer" or "timer" for a builtin control.
+//                       for some of the css selectors "-control" will be appended, e.g. ".timer-control"
+//Param: baseimageurl - if you have Timer16.png and Timer16@2x.png, then the baseimagename is "Timer".
+//						should also be prefixed with the relative path from the css file to the control
+//						image files, if there is one.
+.SourceCode-Designer-Control-Icon-Mixin(@controlclass;@baseimageurl;@has-extended-icons: false)
+{
+    /*Images - normal*/
+    @smallres: ~"";
+    @largeres: "@2x";
+
+    @media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+    {
+        ._mixin-control(@controlclass;@baseimageurl;@smallres;@has-extended-icons);
+    }
+    /*Images@2x - hi-dpi*/
+    @media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+    {
+        ._mixin-control(@controlclass;@baseimageurl;@largeres;@has-extended-icons);
+    }
+}

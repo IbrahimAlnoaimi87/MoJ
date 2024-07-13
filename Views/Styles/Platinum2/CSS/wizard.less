@@ -1,0 +1,1528 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		View Designer specific Wizard styles*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../../Designer_Variables.less";
+
+/*the control toolbox listing*/
+div.dataitemcontainer
+{
+    display: block;
+    //padding: 1px 1px 1px 3px;
+    overflow-y: auto;
+}
+
+div.datalistitem
+{
+    cursor: pointer;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis; /* Opera vendor prefix */
+    white-space: nowrap;
+}
+
+div.datalistitem:hover,
+div.datalistitem:focus
+{
+    background-color: #808080;
+}
+
+div.contentBelowToolbar
+{
+    position: absolute;
+    top: 27px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+label.afterInput
+{
+    vertical-align: middle;
+    width: auto;
+    float: none;
+}
+
+div.changeControlContainer
+{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+html[dir=rtl] #vdFormEventsTabGrid.grid
+{
+    text-align:left !important;
+    direction:ltr !important;
+
+     & .grid-content-cell.icon
+    {
+        background-position:3px 99% !important;
+
+        & .grid-content-cell-wrapper
+        {
+            padding-right:0px !important;
+            padding-left:20px !important;
+        }
+    }
+}
+
+div.changeControlItem
+{
+    border: solid 1px transparent;
+}
+
+div.changeControlItem:focus, div.changeControlItem:hover
+{
+    border: solid 1px @Control-Selection-Overlay-Background-Color;
+    background-color: @Control-Selection-Overlay-Background-Color;
+}
+
+div.changeControlItem.selected
+{
+    background-color: @Control-Selection-Overlay-Background-Color;
+    border: solid 1px @Control-Selection-Border-Color;
+}
+
+div.wizard-step-content
+{
+    overflow: hidden;
+}
+
+div.panelBoxContentFullNestedLeft
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 2px;
+    overflow: auto;
+}
+
+div.editor-canvas
+{
+    position: static;
+    overflow-x: hidden;
+}
+
+th.ActionListColWidth
+{
+    width: 33%;
+}
+
+div.viewActionListTable
+{
+    top: 28px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+div.viewActionListTableHeader
+{
+    top: 0;
+    right: 0;
+}
+
+.editor-table
+{
+    position: relative;
+    empty-cells: show;
+}
+
+#editableSection
+{
+    margin-top: 30px;
+}
+
+table.capturelist-editor-table
+{
+    position: relative;
+    empty-cells: show;
+    border: none;
+    width: 100%;
+}
+
+table.capturelist-editor-table > tbody > tr.editor-row > td.editor-cell
+{
+    position: relative;
+    empty-cells: show;
+}
+
+table.capturelist-editor-table > tbody > tr.editor-row > td.editor-cell:not(.selectedobject)
+{
+    border-right: 1px dotted #bbb;
+}
+
+
+table.editor-table.toolbar > tbody > tr.editor-row > td.editor-cell:not(.selectedobject)
+{
+    border-right: 1px dotted #bbb;
+}
+
+table.editor-table.toolbar > tbody > tr.editor-row > td.editor-cell-item-hover
+{
+    background-color: @Control-Selection-Overlay-Background-Color;
+}
+
+table.editor-table.toolbar
+{
+    border: none;
+    background-color: #F7F7F7;
+    margin-bottom: 3px;
+}
+
+.editor-body
+{
+    width: 100%;
+}
+
+tr.editor-row
+{
+    width: 100%;
+    empty-cells: show;
+}
+
+tr.editor-row.emptyCell
+{
+    min-height: 24px;
+    empty-cells: show;
+    background: none;
+    border: none;
+}
+
+tr.editor-row.list-view-footer
+{
+    height: 24px;
+}
+
+tr.editor-row.list-view-item.footer > td.editor-cell
+{
+    background-color: #f9f9f9;
+}
+
+tr.editor-row.list-view-item.footer > td.editor-cell:not(.selectedobject)
+{
+    border-bottom: none;
+}
+
+tr.editor-row.list-view-item.footer:first-child > td.editor-cell:not(.selectedobject)
+{
+    border-top: 1px solid #B6B7A8;
+}
+
+td.editor-cell.header,
+tr.list-view-item > td.editor-cell.header
+{
+    height: 22px;
+    empty-cells: show;
+    background: #f9f9f9;
+    padding: 0;
+    padding-left: 3px;
+    border: none;
+    border-bottom: 1px solid #bbb;
+    vertical-align: middle;
+}
+
+td.editor-cell.header.error,
+tr.list-view-item > td.editor-cell.header.error
+{
+    position: relative;
+}
+
+td.editor-cell.header.error:after,
+tr.list-view-item > td.editor-cell.header.error:after
+{
+    animation: fadein 0.25s;
+    background: url("../../../../Styles/Platinum2/Images/Icons/Badges/Error16.png") no-repeat 50% 50%;
+    content: '';
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: -8px;
+    width: 16px;
+    z-index: @Designer-Adornments-z-index !important;
+}
+
+td.editor-cell.header.error.base-index:after,
+tr.list-view-item > td.editor-cell.header.error.base-index:after
+{
+    z-index: @Designer-Base-z-index !important;
+}
+
+.editor-cell
+{
+    empty-cells: show;
+    overflow: hidden;
+    min-height: 24px;
+    border-collapse: collapse;
+    padding: 3px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.editor-canvas.theme-entry .editor-cell
+{
+    overflow: visible;
+}
+
+.editor-cell.watermark-visible
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.editor-cell.watermark-visible .watermark-text
+{
+    display: inline-block;
+}
+
+.editor-cell.watermark-invisible .watermark-text
+{
+    display: none;
+}
+
+
+tr.editor-row.list-view-item.header > td.editor-cell.selectedobject
+{
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #bbb;
+}
+
+tr.editor-row.list-view-item > td.editor-cell:not(.selectedobject)
+{
+    border-bottom: none;
+}
+
+tr.editor-row.list-view-item > td.editor-cell:first-child:not(.selectedobject)
+{
+    border-left: none;
+}
+
+table.capturelist-editor-table tr.editor-row > td.editor-cell:not(.selectedobject)
+{
+    border-left: none;
+}
+
+table.capturelist-editor-table tr.editor-row > td.editor-cell:first-child:not(.selectedobject)
+{
+    border-left: 1px dotted #bbb;
+}
+
+.editor-cell.alternate
+{
+    empty-cells: show;
+    overflow: hidden;
+    height: 24px;
+    padding: 3px;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+}
+
+.editor-cell.alternate:not(.selectedobject)
+{
+    border-right: none;
+}
+
+.controlwrapper.hover .controloverlay
+{
+    background-color: transparent;
+    /*border-color: @Control-Selection-Border-Color;*/
+    opacity: 1.0;
+}
+
+div.column-hover-overlay
+{
+    background-color: @Control-Selection-Overlay-Background-Color;
+    position: absolute;
+    top: 0;
+    border: none;
+}
+
+
+div.watermark-text
+{
+    font-style: italic;
+    color: #a0a0a0;
+    text-align: center;
+}
+
+.controlwrapper
+{
+    position: relative;
+    border: solid 1px transparent;
+    cursor: pointer;
+    display: block;
+    //this stops controls from overflowing a cell in a view with tight tables (many cols)
+    max-width: 100%;
+}
+
+.controlwrapper.draggable
+{
+    position: relative;
+    border: solid 1px transparent;
+    cursor: pointer;
+}
+
+.controlwrapper.error::after
+{
+    -moz-animation: fadein 0.25s;
+    -o-animation: fadein 0.25s;
+    -webkit-animation: fadein 0.25s;
+    animation: fadein 0.25s;
+    background: url(../../../../Styles/Platinum2/Images/Icons/Badges/Error16.png) no-repeat 50% 50%;
+    content: '';
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: -8px;
+    width: 16px;
+}
+
+html[dir=rtl] .controlwrapper.error::after
+{
+    left: 0;
+    right: auto;
+}
+
+.editor-cell .controlwrapper.error::after
+{
+    //[890383] The pseduo badges under a cell should be hidden and they are replace with the absolute position badges
+    //This is because we would like to set the .editor-cell's over-flow property to hidden.
+    opacity: 0;
+
+    .ui-draggable-dragging &
+    {
+        //[899886] When the column is being dragged in list view, we would like to show pseduo badging
+        opacity: 1;
+    }
+}
+
+.controlwrapper.hover
+{
+    /*border: solid 1px #84bf17;*/
+}
+
+.controlwrapper.inline
+{
+    vertical-align: inherit;
+    line-height: 14px;
+}
+
+tr.editor-row.list-view-item > td.editor-cell > .controlwrapper
+{
+    max-width: 100%;
+}
+
+.controlwrapper a.Hyperlink-NotSet
+{
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div.draggable
+{
+    cursor: pointer;
+}
+
+div.section
+{
+    position: relative;
+    width: 100%;
+}
+
+/* data type icons */
+div.toolboxitem
+{
+    background-color: transparent;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+html[dir=rtl] div.toolboxitem
+{
+    background-position: right center;
+}
+
+
+
+/*--------------------*/
+
+div.dragging
+{
+    width: 100px;
+}
+
+div.innerWrapper
+{
+    width: auto;
+    height: auto;
+    padding: 2px 0 0 2px;
+}
+
+div.fullWrapperPadded
+{
+    width: 100%;
+    height: 100%;
+    padding: 2px 2px 2px 2px;
+}
+
+div.fullWrapper
+{
+    width: 100%;
+    height: 100%;
+}
+
+div.fullWrapperOverflow
+{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+div.absoluteWrapper
+{
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+}
+
+div.absoluteFullWrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.absoluteFullWrapperOverflow
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+html[dir=rtl] div.absoluteFullWrapperOverflow
+{
+    text-align: right;
+}
+
+div.absoluteFullWrapperOverflowX
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+div.absoluteBottomAlign
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+}
+
+div.absoluteTopAlign
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2px;
+    right: 2px;
+}
+
+div.absoluteOffsetAlign130
+{
+    position: absolute;
+    top: 130px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+}
+
+div.absoluteOffsetAlign140
+{
+    position: absolute;
+    top: 140px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.absoluteOffsetAlign150
+{
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.categoryTreeContainer
+{
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2px;
+}
+
+div.borderTop
+{
+    border-top: solid 1px #b3b3b3;
+}
+
+div.viewTypeContainer
+{
+    position: absolute;
+    top: 125px;
+    bottom: 0;
+    left: 2px;
+    right: 2px;
+}
+
+div.splitLeftColumn
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    height: 51px;
+}
+
+div.splitRightColumn
+{
+    position: absolute;
+    top: 54px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    //height: expression(this.parentNode.offsetHeight+"px"); /* IE only */
+}
+
+div.splitDivider
+{
+    position: absolute;
+    top: 0;
+    left: 300px;
+    bottom: 0;
+    width: 3px;
+    //height: expression((this.parentNode.offsetHeight)+"px"); /* IE only */
+}
+
+div.container
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.paddedContainer
+{
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+}
+
+div.hidediv
+{
+    display: none;
+}
+
+div.halfDynamicTop
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+div.halfFixedBottom
+{
+    position: absolute;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+div.halfFullBottom
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+div.viewsettings
+{
+    margin-left: 0;
+}
+
+div.leftpad3
+{
+    padding-left: 3px;
+}
+
+div.leftpad15
+{
+    padding-left: 15px;
+}
+
+#divConditionsMapping
+{
+    height: 100%;
+}
+
+div.autoGenMethodSelectContainer
+{
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+div.autoGenFielSelectContainer
+{
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+label.autoGenButtonsLabel
+{
+    display: block;
+    padding-left: 4px;
+}
+
+label.autogenButtonMethodsMsg
+{
+    padding-left: 0;
+}
+
+div.autoGenMethodSelectLeft
+{
+    float: left;
+    margin-right: 10px;
+}
+
+div.autoGenMethodSelectRight
+{
+    float: none;
+}
+
+div#txtColumnsCustomWrapper
+{
+    width: 25px;
+    padding-left: 40px;
+}
+
+input.AutoGenerateColomnsText
+{
+    margin-left: 25px;
+    width: 25px;
+}
+
+#divControlCalculation
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.wizard-finish-pane-top
+{
+    position: absolute;
+    top: 0;
+    height: 100px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.wizard-finish-pane-bottom
+{
+    position: absolute;
+    top: 103px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+/* Column dragging*/
+div.drag-column
+{
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    overflow: visible;
+    margin-left: -5px;
+
+    &.ui-draggable
+    {
+        &.drop-hover,
+        &.available.drop-column
+        {
+            background-color: @Highlight-Color-1;
+            transition-property: background;
+            transition-duration: 0.15s;
+            cursor: pointer;
+        }
+    }
+
+    div.drag-block
+    {
+        position: relative;
+        display: none;
+        top: 50%;
+        left: 50%; //this sits within a drag-column
+        margin-top: -7px;
+        margin-left: -7px;
+        width: 15px; //would normally be 14, but we're balancing the handle over a 1px border;
+        height: 15px;
+        position: absolute;
+        box-sizing: border-box;
+        bottom: auto;
+        box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+        border-radius: 100%;
+        border: 1px solid @Control-Selection-Border-Color;
+        background-color: @Panel-Background-Color;
+        cursor: col-resize;
+    }
+}
+
+.dragging-allowed
+{
+    cursor: col-resize;
+}
+
+div.columnWrapperDiv
+{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: visible;
+}
+
+div.editormain-wrapper
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    bottom: 0;
+}
+
+div.editormain-wrapper-top
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 51%;
+}
+
+div.editormain-wrapper-bottom
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+div.editorcanvas-wrapper
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 353px;
+    bottom: 0;
+}
+
+div.createfields-section
+{
+    position: relative;
+    top: 10px;
+}
+
+div.labelplacement-section
+{
+    position: relative;
+    top: 20px;
+}
+
+div.createbuttons-section
+{
+    position: relative;
+    top: 30px;
+}
+
+div#vdAutoGenerateInputViewOptions
+{
+    position: relative;
+    top: 40px;
+}
+
+div.rowOptionsSettings
+{
+    position: relative;
+}
+
+div.listOptionsSettings
+{
+    position: relative;
+    top: 20px;
+}
+
+div#CaptureListViewSettings
+{
+    position: relative;
+    top: 20px;
+}
+
+div.formGenerationOptions-wrapper
+{
+    position: relative;
+}
+
+div.formGeneralOptions-wrapper
+{
+    position: relative;
+}
+
+li.floatfix
+{
+    position: relative;
+    height: 23px;
+}
+
+.collapse-margin-right
+{
+    margin-right: 0 !important;
+    float: left;
+}
+
+.checkradio-text-input
+{
+    float: left;
+    width: 30px;
+}
+
+.checkradio-text-input-label
+{
+    line-height: 19px;
+    margin-left: 4px;
+    float: left;
+}
+
+div.toolbar-droppable
+{
+    height: 24px;
+    min-width: 5px;
+    width: 15px;
+    position: relative;
+    display: inline-block;
+    border: dashed 1px #bbb;
+}
+
+div.toolbar-droppable.hover
+{
+    border: solid 1px @Control-Selection-Border-Color;
+}
+/* Toolbox */
+div.controlToolboxGroup
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+tr.placeholder-footer
+{
+    height: 28px;
+    background-color: #f9f9f9;
+}
+
+div#vdRuntimeFilteringCheckboxWrapper
+{
+    padding-top: 4px;
+    padding-left: 16px;
+}
+
+span.layout-create-blank32,
+span.layout-auto-generate32
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-style: none;
+    height: 52px;
+    width: 52px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 32px 32px;
+}
+
+
+html[dir=rtl] span.layout-create-blank32,
+html[dir=rtl] span.layout-auto-generate32
+{
+    float: right;
+}
+
+
+.autogen-dialog-contents
+{
+    background-color: @Panel-Content-Background-Color;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    box-sizing: border-box;
+    border-bottom: solid 1px @Panel-Border-Color;
+    border-top: solid 1px @Panel-Border-Color;
+}
+
+
+#ListViewCreateNewOptions
+{
+    padding: 7px;
+}
+
+#ListViewCreateNewOptions .form-field:first-child
+{
+    margin-top: 0;
+}
+
+#ViewAutoGenLayoutDialog .popup-body-c
+{
+    // background-color:#fff;
+    // border: 1px solid #ADAE9C;
+}
+
+#ViewAutoGenLayoutDialog table
+{
+    //width:377px;
+}
+
+#ViewAutoGenLayoutDialog table tr td
+{
+    padding-top: 1px;
+}
+
+#ViewAutoGenLayoutDialog table thead td
+{
+    padding-top: 0;
+}
+
+#ViewAutoGenLayoutDialog table col.label-column
+{
+    width: 137px;
+}
+
+#ViewAutoGenLayoutDialog table col.setting-column
+{
+    width: 120px;
+}
+
+#ViewAutoGenLayoutDialog table th,
+#ViewAutoGenLayoutDialog table td
+{
+    text-align: center;
+}
+
+#ViewAutoGenLayoutDialog table th:first-child,
+#ViewAutoGenLayoutDialog table td:first-child
+{
+    text-align: left;
+}
+
+html[dir=rtl] #ViewAutoGenLayoutDialog table th:first-child,
+html[dir=rtl] #ViewAutoGenLayoutDialog table td:first-child
+{
+    text-align: right;
+}
+
+#ViewAutoGenLayoutDialog .input-control-text.generic-ellipsis
+{
+    width: 117px;
+}
+
+#ViewAutoGenLayoutDialog table td > label.input-control.icon-control
+{
+    width: 100%;
+}
+
+#ViewAutoGenLayoutDialog table td > label.input-control.icon-control .input-control-icon
+{
+    margin-right: 2px;
+    width: 16px;
+}
+
+
+#ListEditOptions
+{
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+html[dir=rtl] #ListEditOptions
+{
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+#EditOptions_AllRows_Options
+{
+    margin-top: 10px;
+    width: 500px;
+}
+
+label.EnableAddNewRowLink
+{
+    width: 500px;
+}
+
+#EditOptions_AllRows_Options_CBs
+{
+    float: left;
+}
+
+html[dir=rtl] #EditOptions_AllRows_Options_CBs
+{
+    float: right;
+}
+
+#EditOptions_AllRows_Options_DDs
+{
+    display: inline-block;
+}
+
+#EditOptions_AllRows_Options table
+{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#EditOptions_AllRows_Options table col.editoptions-allrows-method-dropdowns
+{
+    width: 120px;
+}
+
+#EditOptions_AllRows_Options table td:nth-child(2)
+{
+    padding: 0 6px;
+}
+
+#EditOptions_AllRows_Options ul.input-control-group li
+{
+    margin: 4px 0 0;
+}
+
+#EditOptions_AllRows_Options ul.input-control-group li:first-child
+{
+    margin-top: 0;
+}
+
+#EditOptionsExpander .expander-right-panel-content > div > label.input-control.checkbox:first-child .input-control-img,
+#AdditionalOptionsExpander .expander-right-panel-content > label.input-control.checkbox:first-child .input-control-img
+{
+    margin-left: -3px;
+}
+
+html[dir=rtl] #EditOptionsExpander .expander-right-panel-content > div > label.input-control.checkbox:first-child .input-control-img,
+html[dir=rtl] #AdditionalOptionsExpander .expander-right-panel-content > label.input-control.checkbox:first-child .input-control-img
+{
+    margin-left: 0;
+    margin-right: -3px;
+}
+
+#UserSettingsPaging
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#UserSettingsPaging > *
+{
+    float: left;
+}
+
+html[dir=rtl] #UserSettingsPaging > *
+{
+    float: right;
+}
+
+#UserSettingsPaging > *:nth-child(2)
+{
+    margin-left: 7px;
+    margin-right: 2px;
+}
+
+html[dir=rtl] #UserSettingsPaging > *:nth-child(2)
+{
+    margin-left: 2px;
+    margin-right: 7px;
+}
+
+#UserSettingsPaging > *:last-child
+{
+    vertical-align: top;
+    margin-top: 3px;
+}
+
+#UserSettingsListEditing
+{
+    clear: both;
+}
+//********Empty View Styles
+#tableLayoutOptions {
+    width: auto;
+    height: auto;
+    margin-bottom: 40px; /*padding-bottom: 40px;*/ //Todo - designer padding revert
+
+    & > div {
+        height: auto !important; //override inline styles
+    }
+}
+//the empty option buttons e.g. Add Table, Autogen layout
+div.designer-option
+{
+    position: relative;
+}
+//"Empty View Text"
+#EmptyView
+{
+    display: block;
+    border-style: none;
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: @Text-Color-4;
+    font-family: @Main-Font-Family;
+    font-size: 22px;
+    padding-bottom: 20px;
+    padding-top: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid @List-Item-Border-Color-1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#EmptyViewIcon
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    display: block;
+    border-style: none;
+    height: 52px;
+    width: 52px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 52px 52px;
+}
+
+div.designer-option
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+#bodySection.empty
+{
+    -webkit-box-size: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+div.designer-option
+{
+    &:hover
+    {
+        background-color: @Dropdown-Item-Selected-Background-Color !important; //override javascript hover state.
+        color: @Dropdown-Item-Selected-Text-Color;
+
+        span.blank-view-options-title
+        {
+            color: @Dropdown-Item-Selected-Text-Color;
+        }
+
+        span.blank-view-options-description
+        {
+            color: fadeout(@Dropdown-Item-Selected-Text-Color,30%);
+        }
+    }
+}
+
+#EditorCanvas_ViewEditorCanvas.empty
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+label.blank-view-options
+{
+    display: block;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+label.blank-view-options > span
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 52px;
+}
+
+span.blank-view-options-title,
+span.blank-view-options-description
+{
+    padding-left: 52px;
+    padding-right: 5px;
+}
+
+span.blank-view-options-title
+{
+    display: block;
+    color: @Highlight-Color-1;
+}
+
+span.blank-view-options-description
+{
+    color: @Text-Color-4;
+}
+
+#editorCanvasPane.empty div.panel-body-m
+{
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+}
+//Make the View Editor Canvas look awesome
+//container for the view toolbar and canvas
+// display:flex removed for compatibility with IE11 - TFS 732920
+.view-layout-pane
+{
+    display: block;
+    height: 100%;
+
+    & > .canvas-container
+    {
+        background-color: @Background-Color-2;
+        background-image: url(../../../../Styles/Platinum2/Images/Icons/Grid/GridSpots_Dark_10percent.png);
+        background-size: 13px;
+        position: relative;
+        height: ~"calc(100% - (@{Toolbar-Height} + 2px))"; //border top and bottom are hard coded at 1px each.
+        box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.4);
+
+        & > .scroll-wrapper
+        {
+            & > .canvas-layout-table
+            {
+                //895153 Edge issue:
+                //If display is table, when having a long text (about 110 characters) in a control under a Table Control (with CSS Grid implementation),
+                //It is causing the CSS grid to be bigger in width and a horizontal scroll bar appears.
+                //This seems to be an Edge specific bug and it only occurs when a CSS Grid is under a div with display:table.
+                //Since the purpose of the display:table is to make the content to align to the center (horizontally and vertically) for an empty canvas,
+                //change this to be block for normal canvas should be fine.  Only empty canvas needs display:table.
+                display: block;
+
+                height: ~"calc(100% - (@{Toolbar-Height} + 2px))"; //border top and bottom are hard coded at 1px each.
+                width: 100%;
+
+                & > .tr
+                {
+                    display: block;
+
+                    & > .td
+                    {
+                        display: block;
+                        text-align: center;
+
+                        & > .padding-wrapper
+                        {
+                            display: inline-block;
+                            text-align: initial; //stop child elements from getting align:center.
+                            box-sizing: border-box;
+                            padding: 5.4rem;
+                            width: 100%;
+
+                            & > .editor-canvas
+                            {
+                                margin: auto; //center horizontally
+                                //BUG-FIX: if this is overflow:auto...
+                                //scrollbars will show when selection resize handles are on a selected control.
+                                //we have scrollbars further up for overflow.
+                                overflow: visible;
+                                padding: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//specific layout for centering Empty View Layout
+#editorCanvasPane.empty
+{
+    & > .view-layout-pane.empty
+    {
+        & > .canvas-container
+        {
+            & > .scroll-wrapper
+            {
+                & > .canvas-layout-table
+                {
+                    display: table;
+
+                    & > .tr
+                    {
+                        display: table-row;
+
+                        & > .td
+                        {
+                            display: table-cell;
+                            vertical-align: middle;
+
+                            & > .padding-wrapper
+                            {
+                                width: auto; // TFS 778586 - IE 11 doesnt like initial, so apply auto and proper browsers will then use initial
+                                width: initial;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+#vdToolboxPane .lyt-tab-container
+{
+    right: 0px;
+}
+
+#vdeditorToolboxPane .lyt-tab-container
+{
+    left: 0px;
+}
+
+#vdToolboxPane + .divider
+{
+    box-sizing: border-box;
+    border-right: solid 1px @Panel-Border-Color;
+}
+
+#editorCanvasPane + .divider
+{
+    box-sizing: border-box;
+    border-left: solid 1px @Panel-Border-Color;
+}
+
+
+.view-layout-pane .editor-canvas
+{
+    background-color: rgba(255,255,255,1);
+    margin: auto; //Center it.
+    &.empty
+    {
+        background-color: rgba(255,255,255, 1);
+        border: dashed 1px rgba(173, 174, 156, 1);
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        max-width: auto;
+
+        #editableSection
+        {
+            display: none; //hide this section when the canvas is empty.
+        }
+
+        #toolbarSection
+        {
+        }
+
+        #bodySection
+        {
+        }
+    }
+}
+/* data type icons for the auto-generation popup */
+span.field
+{
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+
+    html[dir=rtl] &
+    {
+        background-position: right center;
+    }
+}
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @import url('wizard_images.less');
+}
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @import url('wizard_images@2x.less');
+}

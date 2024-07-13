@@ -1,0 +1,62 @@
+/*#region TREE CONTROL */
+
+.theme-entry .tree li
+{
+    height: auto;
+}
+
+.theme-entry .tree li a
+{
+    border: 0.1rem solid @Tree-Item-Hyperlink-Border-Color;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+/*hover style*/
+.theme-entry .tree li a:hover,
+.theme-entry .tree li a:focus,
+.theme-entry .tree li a.hover
+{
+    //background-color: #bfeafb;
+    background-color: @Tree-Item-Selected-Background-Color; //#00abf0 much darker blue
+}
+
+/*selection style*/
+.theme-entry .tree li.selected > a,
+.theme-entry .tree li.selected > a:hover,
+.theme-entry .tree li.selected > span
+{
+    //background-color: #7fd5f7;
+    background-color: @Tree-Item-Selected-Background-Color; //#00abf0 much darker blue
+    //border-color: #00abf0;
+    border-color: @Tree-Item-Selected-Border-Color;
+}
+
+/* Collapsed Root Styling */
+.theme-entry .tree.collapsed-root li.root
+{
+    background: none;
+    padding-left: 0;
+}
+
+.theme-entry .tree.collapsed-root li.root > a,
+.theme-entry .tree.collapsed-root li.root > span
+{
+    display: none;
+}
+
+.theme-entry .tree li.children.open
+{
+    /*background: url("../Platinum/Images/Tree/minus_alt.gif") 0 0 no-repeat;*/
+    background-position: 1px 3px;
+}
+
+.theme-entry .tree li.children.closed
+{
+    /*background: url("../Platinum/Images/Tree/plus_alt.gif") 0 0 no-repeat;*/
+    background-position: 1px 3px;
+}
+/*#endregion TREE CONTROL */

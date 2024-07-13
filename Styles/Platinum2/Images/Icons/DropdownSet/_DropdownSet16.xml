@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-dropdownset.icon-size16.ic-{iconname}"/> 
+          <RowDefinition row="2" cssSelector=".icon.icon-set-dropdownset.icon-size16.ic-{iconname}.hover"/> 
+          <RowDefinition row="3" cssSelector=".icon.icon-set-dropdownset.icon-size16.ic-{iconname}.focus"/> 
+    	  <RowDefinition row="4" cssSelector=".icon.icon-set-dropdownset.icon-size16.ic-{iconname}.disabled"/> 
+    	  <RowDefinition row="5" cssSelector=".icon.icon-set-dropdownset.icon-size16.ic-{iconname}.colour_dark"/>
+		  <RowDefinition row="6" cssSelector=".icon.icon-set-dropdownset.icon-size16.ic-{iconname}.alt"/>
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1" cssname="dropdown">Dropdown16.png</Row>
+			  <Row number="2" cssname="dropdown">Dropdown_Hover16.png</Row>
+              <Row number="3" cssname="dropdown">Dropdown_Focus16.png</Row>
+              <Row number="4" cssname="dropdown">Dropdown_Disabled16.png</Row>
+      		  <Row number="5" cssname="dropdown">Dropdown_ColourVarient16.png</Row>
+      		  <Row number="6" cssname="dropdown">Dropdown_Alt16.png</Row>			  
+            </Rows>
+          </Column>
+          <Column number="2">   
+            <Rows>
+              <Row number="1" cssname="pickercontrol">PickerControl16.png</Row>
+			        <Row number="2" cssname="pickercontrol">PickerControl_Hover16.png</Row>
+              <Row number="3" cssname="pickercontrol">PickerControl_Focus16.png</Row>
+              <Row number="4" cssname="pickercontrol">PickerControl_Disabled16.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="3">   
+            <Rows>
+              <Row number="1" cssname="selectedrowindicator">SelectedRowIndicator16.png</Row>
+			  <Row number="2" cssname="selectedrowindicator">SelectedRowIndicator_Hover16.png</Row>
+              <Row number="3" cssname="selectedrowindicator">SelectedRowIndicator_Alt216.png</Row>
+              <Row number="4" cssname="selectedrowindicator">SelectedRowIndicator_Alt16.png</Row>
+            </Rows> 
+          </Column> 
+          <Column number="4">   
+            <Rows>
+              <Row number="1" cssname="expandedit">ExpandEdit16.png</Row>
+			        <Row number="2" cssname="expandedit">ExpandEdit_Hover16.png</Row>
+              <Row number="3" cssname="expandedit">ExpandEdit_Focus16.png</Row>
+              <Row number="4" cssname="expandedit">ExpandEdit_Disabled16.png</Row>
+            </Rows> 
+          </Column> 
+		  
+		  <Column number="5">   
+            <Rows>
+              <Row number="1" cssname="Priority_Low">Priority_Low16.png</Row>
+			        <Row number="2" cssname="Priority_Low">Priority_Low_Hover16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="6">   
+            <Rows>
+              <Row number="1" cssname="Priority_Medium">Priority_Medium16.png</Row>
+			        <Row number="2" cssname="Priority_Medium">Priority_Medium_Hover16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="7">   
+            <Rows>
+              <Row number="1" cssname="Priority_High">Priority_High16.png</Row>
+			        <Row number="2" cssname="Priority_High">Priority_High_Hover16.png</Row>
+            </Rows> 
+          </Column>
+		  
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="8,0,0,8">
+        <CssBackgroundImageFolder>DropdownSet/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/DropdownSet/DropdownSet16.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/DropdownSet16.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

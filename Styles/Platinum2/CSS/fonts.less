@@ -1,0 +1,70 @@
+﻿/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+
+@font-face
+{
+    font-family: 'Open-Sans';
+    src: url('Fonts/OpenSans-Regular-webfont.eot');
+    src: url('Fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('Fonts/OpenSans-Regular-webfont.woff') format('woff'), url('Fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('Fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Open-Sans-Light';
+    src: url('Fonts/OpenSans-Light-webfont.eot');
+    src: url('Fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('Fonts/OpenSans-Light-webfont.woff') format('woff'), url('Fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('Fonts/OpenSans-Light-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, td, li, p, textarea, input[type=text], input.text, input.drop-text, select, option, button
+{
+    font-family: @Main-Font-Family;
+    color: @Main-Text-Color;
+}
+
+body, textarea, input[type=text], input.text, input.drop-text, select, option, button
+{
+    font-size: 11px;
+}
+
+h1, h2, h3, h4
+{
+    font-family: @Main-Font-Family;
+    margin-top: 0;
+}
+
+h1
+{
+    font-size: 14px;
+}
+
+h1.error
+{
+    color: #343e41;
+}
+
+h2.error
+{
+    color: #e9310d;
+}
+
+a,
+a:hover,
+a:visited
+{
+    color: @Hyperlink-Text-Color;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: @Hyperlink-Hover-Text-Color;
+}

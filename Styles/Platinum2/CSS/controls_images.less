@@ -1,0 +1,58 @@
+//The Control developer can choose to import these or not, depending on whether they need them.
+@import (reference) "@{SourceCode-Designer-Control-Mixins-File}";
+
+@ImageFolder: "../Images/Icons/Toolbox/";
+
+//--- ADD NEW CONTROL MIXIN CALLS FOR BUILT IN CONTROLS HERE
+
+.SourceCode-Designer-Control-Icon-Mixin(listheading,~"@{ImageFolder}ListHeading",false);
+.SourceCode-Designer-Control-Icon-Mixin(column,~"@{ImageFolder}Column",true);
+.SourceCode-Designer-Control-Icon-Mixin(unknown,~"@{ImageFolder}Unknown",false);
+.SourceCode-Designer-Control-Icon-Mixin(radiobutton,~"@{ImageFolder}RadioButton",true);
+.SourceCode-Designer-Control-Icon-Mixin(picker,~"@{ImageFolder}Picker",true);
+.SourceCode-Designer-Control-Icon-Mixin(slider,~"@{ImageFolder}Slider",true);
+.SourceCode-Designer-Control-Icon-Mixin(table,~"@{ImageFolder}Table",true);
+.SourceCode-Designer-Control-Icon-Mixin(listtable,~"@{ImageFolder}Table",true);
+.SourceCode-Designer-Control-Icon-Mixin(hyperlink,~"@{ImageFolder}Hyperlink",true);
+.SourceCode-Designer-Control-Icon-Mixin(datalabel,~"@{ImageFolder}DataLabel",true);
+.SourceCode-Designer-Control-Icon-Mixin(label,~"@{ImageFolder}Label",true);
+.SourceCode-Designer-Control-Icon-Mixin(button,~"@{ImageFolder}Button",true);
+.SourceCode-Designer-Control-Icon-Mixin(toolbarbutton,~"@{ImageFolder}Button",true);
+.SourceCode-Designer-Control-Icon-Mixin(toolbar-button,~"@{ImageFolder}Button",true);
+.SourceCode-Designer-Control-Icon-Mixin(calendar,~"@{ImageFolder}Calendar",true);
+.SourceCode-Designer-Control-Icon-Mixin(checkbox,~"@{ImageFolder}CheckBox",true);
+.SourceCode-Designer-Control-Icon-Mixin(multiselectcheckbox,~"@{ImageFolder}CheckBoxList",true);
+.SourceCode-Designer-Control-Icon-Mixin(rating,~"@{ImageFolder}Rating",true);
+.SourceCode-Designer-Control-Icon-Mixin(content,~"@{ImageFolder}Content",true);
+.SourceCode-Designer-Control-Icon-Mixin(picture,~"@{ImageFolder}Picture",true);
+.SourceCode-Designer-Control-Icon-Mixin(imagepostback,~"@{ImageFolder}ImageAttachment",true);
+.SourceCode-Designer-Control-Icon-Mixin(filepostback,~"@{ImageFolder}FileAttachment",true);
+.SourceCode-Designer-Control-Icon-Mixin(radiobuttonlist,~"@{ImageFolder}RadioButtonList",true);
+.SourceCode-Designer-Control-Icon-Mixin(radiobuttongroup,~"@{ImageFolder}RadioButtonList",true);
+.SourceCode-Designer-Control-Icon-Mixin(textbox,~"@{ImageFolder}TextBox",true);
+.SourceCode-Designer-Control-Icon-Mixin(textarea,~"@{ImageFolder}TextBox",true);
+.SourceCode-Designer-Control-Icon-Mixin(dropdown,~"@{ImageFolder}DropDownList",true);
+.SourceCode-Designer-Control-Icon-Mixin(saveaspdf,~"@{ImageFolder}SaveAs_PDF",true);
+.SourceCode-Designer-Control-Icon-Mixin(lookup,~"@{ImageFolder}Lookup",true);
+.SourceCode-Designer-Control-Icon-Mixin(listdisplay,~"@{ImageFolder}ListDisplay",true);
+
+//Non standard controls
+.SourceCode-Designer-Control-Icon-Mixin(areaitem,~"@{ImageFolder}View",true);
+.SourceCode-Designer-Control-Icon-Mixin(cell,~"@{ImageFolder}Cell",true);
+
+/*Images - normal*/
+@smallres: ~"";
+@largeres: "@2x";
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    //This is surfaced when selecting the toolbar table in a editable list control (see TFS 727158)
+    .mixin-control-medium-icon(toolbartable,~"@{ImageFolder}ToolbarLayout", ~"@{smallres}", true);
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    //This is surfaced when selecting the toolbar table in a editable list control (see TFS 727158)
+    .mixin-control-medium-icon(toolbartable,~"@{ImageFolder}ToolbarLayout", ~"@{largeres}",true);
+}

@@ -1,0 +1,453 @@
+﻿/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.choice-control > a,
+    .theme-entry .tree li.choice-control > span,
+    .theme-entry .tree li.choice-control.children.open > a,
+    .theme-entry .tree li.choice-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Choice/Images/ChoiceControl16.png');
+    }
+
+    .theme-entry .tree li.choice-control > a:hover,
+    .theme-entry .tree li.choice-control > span:hover,
+    .theme-entry .tree li.choice-control.selected > a,
+    .theme-entry .tree li.choice-control.selected > span,
+    .theme-entry .tree li.choice-control > a:focus,
+    .theme-entry .tree li.choice-control > span:focus,
+    .theme-entry .tree li.choice-control.children.open > a:hover,
+    .theme-entry .tree li.choice-control.children.open > span:hover,
+    .theme-entry .tree li.choice-control.children.open.selected > a,
+    .theme-entry .tree li.choice-control.children.open.selected > span,
+    .theme-entry .tree li.choice-control.children.open > a:focus,
+    .theme-entry .tree li.choice-control.children.open > span:focus,
+    .theme-entry .tree li.choice-control.children.closed > a:hover,
+    .theme-entry .tree li.choice-control.children.closed > span:hover,
+    .theme-entry .tree li.choice-control.children.closed.selected > a,
+    .theme-entry .tree li.choice-control.children.closed.selected > span,
+    .theme-entry .tree li.choice-control.children.closed > a:focus,
+    .theme-entry .tree li.choice-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Choice/Images/ChoiceControl_Selected14.png');
+    }
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.choice-control > a,
+    .theme-entry .tree li.choice-control > span,
+    .theme-entry .tree li.choice-control.children.open > a,
+    .theme-entry .tree li.choice-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Choice/Images/ChoiceControl16@2x.png');
+    }
+
+    .theme-entry .tree li.choice-control > a:hover,
+    .theme-entry .tree li.choice-control > span:hover,
+    .theme-entry .tree li.choice-control.selected > a,
+    .theme-entry .tree li.choice-control.selected > span,
+    .theme-entry .tree li.choice-control > a:focus,
+    .theme-entry .tree li.choice-control > span:focus,
+    .theme-entry .tree li.choice-control.children.open > a:hover,
+    .theme-entry .tree li.choice-control.children.open > span:hover,
+    .theme-entry .tree li.choice-control.children.open.selected > a,
+    .theme-entry .tree li.choice-control.children.open.selected > span,
+    .theme-entry .tree li.choice-control.children.open > a:focus,
+    .theme-entry .tree li.choice-control.children.open > span:focus,
+    .theme-entry .tree li.choice-control.children.closed > a:hover,
+    .theme-entry .tree li.choice-control.children.closed > span:hover,
+    .theme-entry .tree li.choice-control.children.closed.selected > a,
+    .theme-entry .tree li.choice-control.children.closed.selected > span,
+    .theme-entry .tree li.choice-control.children.closed > a:focus,
+    .theme-entry .tree li.choice-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Choice/Images/ChoiceControl_Selected14@2x.png');
+    }
+}
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+
+/* radio vertical layout, own value label (ie) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.ie .ownoption.choice-control-item-row .input-control span.input-control-text
+{
+    line-height: 2.1rem;
+}
+
+/* radio horizontal layout, own value label (ie) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal.ie .ownoption.choice-control-item-row .input-control span.input-control-text
+{
+    line-height: 2.0rem;
+}
+
+/* radio vertical layout, own value label (Firefox) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.moz .choice-control-item-row.ownoption .input-control span.input-control-text
+{
+    line-height: 2.1rem;
+}
+
+/* radio horizontal layout, own value label (Firefox) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal.moz .choice-control-item-row.ownoption .input-control span.input-control-text
+{
+    line-height: 2.0rem;
+}
+
+/* own value label on horizontal layout for radio button */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal.displayTypeRadio .ownoption .input-control-text
+{
+    padding-top: 0.1rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal .ownoption .input-control-text
+{
+    padding-top: 0.1rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row .input-control span.input-control-img
+{
+    margin: 0.3rem 0 0 0;
+    height: 1.9rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.ie .choice-control-item-row .input-control span.input-control-img
+{
+    margin-top: 0.3rem;
+}
+
+/* horizontal layout option images */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal .input-control span.input-control-img,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal .choice-control-item-row.ownoption .input-control .input-control-img
+{
+    position: relative;
+}
+/* horizontal layout, radio options and own options */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal.displayTypeRadio .input-control span.input-control-img,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal.displayTypeRadio .choice-control-item-row.ownoption .input-control .input-control-img
+{
+    margin-right: 0;
+}
+
+/* #region validation */
+
+/*validation reset*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.displayTypeDropdown .stylewrapper.invalid,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.displayTypeCheckbox .stylewrapper.invalid,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.displayTypeRadio .stylewrapper.invalid
+{
+    border: 1px solid transparent !important; /* validation red border should replace the style builder inline therefore using !important */
+    border-bottom-color: #b71c1c !important; /*important will overide user configured styles */
+}
+/*End validation reset*/
+
+/* dropdown */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.displayTypeDropdown .invalid .styling-left .styling-inner-wrapper
+{
+    border: 1px solid transparent !important;
+}
+
+/* non lithium theme use this element for red border due to some spacing issue. For lithium transparent the border here */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reContentCell.invalid
+{
+    border: 1px solid transparent !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .invalid .dropdown-box.choiceddl,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .invalid .controlWrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.displayTypeDropdown .stylewrapper.invalid .input-control.select-box
+{
+    background-color: transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .invalid>*>*:not(.withownvalue):not(.ownoption) .input-control-m-c,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .invalid>*>*:not(.withownvalue):not(.ownoption) .styling-right .styling-inner-wrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .invalid>*>*:not(.withownvalue):not(.ownoption) .dropdown-box.active .input-control-m-c,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .invalid .input-control.select-box:not(.withownvalue):not(.ownoption) .input-control-buttons
+{
+    border-color: transparent !important;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Choice .invalid .input-control 
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Choice .invalid .input-control .input-control-text
+{
+    color: #b71c1c !important;
+}
+
+/* #endregion validation */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .withownvalue,
+.theme-entry #choice-control-default-value-picker .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control.select-box.dropdown-box.withownvalue,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control.choice-dropdown-with-own-value
+{
+    position: static;
+    top: auto; /*override - base*/
+    left: auto; /*override - base*/
+    right: auto; /*override - base*/
+    bottom: auto; /*override - base*/
+    height: auto; /*override - base*/
+    display: block; /* override - base */
+}
+
+/* #region states */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice label.input-control
+{
+    border-width: 0; /* stops the jumping upon focus */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice label.input-control
+{
+    border: 1px dotted transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice label.input-control.focus
+{
+    border: 1px dotted #3cb0df;
+}
+/* #endregion states */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .controlWrapper
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control.checkbox span.input-control-text
+{
+    display: block;
+    line-height: 2.4rem;
+    height: auto;
+    margin-left: 2.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control.radio span.input-control-text
+{
+    display: block;
+    line-height: 2.4rem;
+    height: auto;
+    margin-left: 1.9rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal .input-control.checkbox span.input-control-text,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal .input-control.radio span.input-control-text
+{
+    display: inline-block;
+    line-height: 1.8rem;
+}
+
+/*#region OWN VALUE - OVERRIDES*/
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice div.input-control.text-input.ownvalue /*text input*/
+{
+    margin-left: 2.2rem; /*width of radio icon*/
+    position: relative;
+    clear: both;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal .ownoption .checkbox
+{
+    width: 100%;
+}
+
+/*Watermark*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice div.input-control.text-input.ownvalue .input-control-watermark
+{
+    line-height: 2.2rem; /*desktop.height*/
+}
+
+/*radio button*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .controlWrapper label
+{
+    float: left;
+    clear: left;
+    margin-right: 0.5rem; /* create some spacing between horizontal choice items */
+    width: 100%;
+}
+
+/*dropdown list on 'ownvalue' option*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .withownvalue
+{
+    min-height: 2.4rem;
+}
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .withownvalue.choiceddl
+    {
+        margin-left: 0px; /*this control is abs positioned next to the radio / checkbox*/
+        width: auto; /*override-base*/
+        position: absolute; /*this is the only way (without adding html) to get a table-like layout of the radio and dropdown next to it*/
+        left: 2.3rem; /*width of radio icon (19px) + 4px padding, 3px gap between the radio and dropdown (same gap as other labels)*/
+        right: 0;
+        top: 0;
+    }
+
+/* Create some space between the radio button for own values & preceding/succeeding contorls */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .withownvalue.choiceddl + * > label
+{
+    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .controlWrapper .choice-control-item-row.ownoption > label
+{
+    margin-bottom: 0.3rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.preview .withownvalue.choiceddl
+{
+    margin-left: 0;
+    width: auto; /*override-base*/
+    position: absolute; /*this is the only way (without adding html) to get a table-like layout of the radio and dropdown next to it*/
+    left: 2.3rem; /*width of radio icon (19px) + 4px padding, 3px gap between the radio and dropdown (same gap as other labels)*/
+    right: 0;
+    top: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice.preview .withownvalue .dropdown.styling-inner-wrapper
+{
+    right: 2.2rem;
+    position: absolute;
+    top: 0.1rem;
+}
+
+/* dropdown inner body part */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control-body.styling-left
+{
+    width: 100%;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row.ownoption .input-control span.input-control-text
+{
+    padding-left: 0.2rem;
+    margin-left: 2.0rem;
+    line-height: 2.0rem;
+}
+
+/*radiobutton on "ownvalue" option*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row.ownoption .input-control .input-control-img
+{
+    position: relative;
+    margin-top: 0.2rem;
+    margin-right: 0;
+}
+
+/*#endregion OWN VALUE - OVERRIDES*/
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control .input-control-text:empty
+{
+    display: none; /* hides empty control labels */
+}
+
+html[dir=rtl].msie .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row .checkbox .input-control-text,
+html[dir=rtl].msie .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row .radio .input-control-text
+{
+    margin-top: 0;
+    padding-right: 0.4rem;
+}
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row .radio .input-control-text,
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row.ownoption .input-control span.input-control-text
+{
+    margin-right: 2.3rem;
+}
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row.ownoption .input-control .input-control-img
+{
+    margin: 0.3rem 0 0 0;
+}
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control.checkbox span.input-control-text
+{
+    margin-left: 0;
+    margin-right: 2.2rem;
+}
+
+/* #endregion DESKTOP*/
+
+/* #region TOUCH */
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row .input-control span.input-control-img {
+    height: 2.6rem;
+}
+
+/* own value image */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row.ownoption .input-control .input-control-img
+{
+    margin-top: 0.4rem;
+}
+
+/* option label */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control.checkbox .input-control-text,
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control.radio .input-control-text
+{
+    padding-left: 0.3rem;
+    margin-top: 0;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+    width: auto;
+    display: block;
+    height: 3.0rem;
+    line-height: 3.0rem;
+}
+
+/* option own value label */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row.ownoption .input-control span.input-control-text
+{
+    margin-left: 0;
+    height: 3.0rem;
+    line-height: 3.0rem;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice div.input-control.text-input.ownvalue
+{
+    margin-left: 2.8rem;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .withownvalue.choiceddl
+{
+    left: 3.0rem;
+}
+
+.mobile .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Choice .dropdown-box.input-control .input-control-wrapper > a
+{
+    line-height: 3.2rem; /*needed for vertically centering the chosen item */
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice div.input-control.text-input.ownvalue .input-control-watermark
+{
+    line-height: 2.7rem;
+}
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */
+
+

@@ -1,0 +1,138 @@
+
+@_fPath: ~"../Images/Icons/Functions/";
+@_dPath: ~"../Images/Icons/DataTypes/";
+
+.mixin-functions(@functionclass;@imageurl)
+{
+    a.ui-draggable-dragging.function.@{functionclass},
+    .icon.function.@{functionclass},
+    .tree li.@{functionclass} > a,
+    .tree li.@{functionclass}.closed > a,
+    .tree li.@{functionclass}.open > a
+    {
+        background-image: url("@{imageurl}16@{res}.png");
+    }
+}
+
+html
+{
+    .mixin-functions(text-upper,~"@{_fPath}ToUpper");
+    .mixin-functions(text-lower,~"@{_fPath}ToLower");
+    .mixin-functions(text-matches,~"@{_fPath}Match");
+    .mixin-functions(text-not-matches,~"@{_fPath}MatchDoesNot");
+    .mixin-functions(text-contains,~"@{_fPath}Contains");
+    .mixin-functions(text-starts-with,~"@{_fPath}StartsWith");
+    .mixin-functions(text-ends-with,~"@{_fPath}EndsWith");
+    .mixin-functions(text-blank,~"@{_fPath}IsBlank");
+    .mixin-functions(text-not-blank,~"@{_fPath}IsNotBlank");
+    .mixin-functions(text-trim,~"@{_fPath}Trim");
+    .mixin-functions(text-concat,~"@{_fPath}Concat");
+    .mixin-functions(text-length,~"@{_fPath}Length");
+    .mixin-functions(text-find,~"@{_fPath}FindFunction");
+    .mixin-functions(text-left,~"@{_fPath}SubStringLeft");
+    .mixin-functions(text-right,~"@{_fPath}SubStringRight");
+    .mixin-functions(text-to-upper,~"@{_fPath}ToUpper");
+    .mixin-functions(text-to-lower,~"@{_fPath}ToLower");
+    .mixin-functions(text-mid,~"@{_fPath}Mid");
+    .mixin-functions(text-hyperlink,~"@{_fPath}Hyperlink");
+    .mixin-functions(text-insert,~"@{_fPath}Insert");
+    .mixin-functions(text-join,~"@{_fPath}Join");
+    .mixin-functions(text-pad-left,~"@{_fPath}PadLeft");
+    .mixin-functions(text-pad-right,~"@{_fPath}PadRight");
+    .mixin-functions(text-proper,~"@{_fPath}Proper");
+    .mixin-functions(text-replace,~"@{_fPath}Replace");
+    .mixin-functions(text-url-decode,~"@{_fPath}GenericDecode");
+    .mixin-functions(text-url-encode,~"@{_fPath}GenericEncode");
+    .mixin-functions(text-xml-decode,~"@{_fPath}GenericDecode");
+    .mixin-functions(text-xml-encode,~"@{_fPath}GenericEncode");
+    .mixin-functions(text-html-decode,~"@{_fPath}GenericDecode");
+    .mixin-functions(text-html-encode,~"@{_fPath}GenericEncode");
+    .mixin-functions(number-abs,~"@{_fPath}AbsoluteDecimal");
+    .mixin-functions(number-average,~"@{_fPath}AverageDecimal");
+    .mixin-functions(number-max,~"@{_fPath}Maximum");
+    .mixin-functions(number-min,~"@{_fPath}Minimum");
+    .mixin-functions(number-power,~"@{_fPath}PowerDecimal");
+    .mixin-functions(number-sum,~"@{_fPath}SumFunction");
+    .mixin-functions(number-format,~"@{_fPath}FormatNumber");
+    .mixin-functions(number-random,~"@{_fPath}BetweenRandomFunction");
+    .mixin-functions(number-root,~"@{_fPath}RootDecimal");
+    .mixin-functions(number-square,~"@{_fPath}SquareFunction");
+    .mixin-functions(number-square-root,~"@{_fPath}SquareRootFunctionLong");
+    .mixin-functions(number-round,~"@{_fPath}Round");
+    .mixin-functions(number-ceiling,~"@{_fPath}Ceiling");
+    .mixin-functions(number-floor,~"@{_fPath}Floor");
+    .mixin-functions(number-count,~"@{_fPath}CountValue");
+    .mixin-functions(datetime-add-days,~"@{_fPath}AddDays");
+    .mixin-functions(datetime-add-hours,~"@{_fPath}AddHours");
+    .mixin-functions(datetime-add-minutes,~"@{_fPath}AddMinutes");
+    .mixin-functions(datetime-add-seconds,~"@{_fPath}AddSeconds");
+    .mixin-functions(datetime-subtract-days,~"@{_fPath}SubtractDays");
+    .mixin-functions(datetime-subtract-hours,~"@{_fPath}SubtractHours");
+    .mixin-functions(datetime-subtract-minutes,~"@{_fPath}SubtractMinutes");
+    .mixin-functions(datetime-subtract-seconds,~"@{_fPath}SubtractSeconds");
+    .mixin-functions(datetime-format,~"@{_fPath}SubtractSeconds");
+    .mixin-functions(datetime-today,~"@{_fPath}Today");
+    .mixin-functions(datetime-now,~"@{_fPath}Today");
+    .mixin-functions(datetime-tomorrow,~"@{_fPath}Tomorrow");
+    .mixin-functions(datetime-yesterday,~"@{_fPath}Yesterday");
+    .mixin-functions(datetime-day,~"@{_fPath}Day");
+    .mixin-functions(datetime-month,~"@{_fPath}Month");
+    .mixin-functions(datetime-year,~"@{_fPath}Year");
+    .mixin-functions(datetime-week-number,~"@{_fPath}WeekNumber");
+    .mixin-functions(datetime-weekday,~"@{_fPath}Weekday");
+    .mixin-functions(datetime-day-difference,~"@{_fPath}DateDif");
+    .mixin-functions(datetime-end-month,~"@{_fPath}EndMonth");
+    .mixin-functions(datetime-end-year,~"@{_fPath}EndYear");
+    .mixin-functions(datetime-end-week,~"@{_fPath}EndofWeek");
+    .mixin-functions(datetime-end-quarter,~"@{_fPath}EndQuarter");
+    .mixin-functions(datetime-start-month,~"@{_fPath}StartofMonthDateTime");
+    .mixin-functions(datetime-start-year,~"@{_fPath}StartofYear");
+    .mixin-functions(datetime-start-week,~"@{_fPath}StartofWeek");
+    .mixin-functions(datetime-start-quarter,~"@{_fPath}StartofQuarter");
+    .mixin-functions(to-boolean,~"@{_fPath}ToBoolean");
+    .mixin-functions(to-datetime,~"@{_fPath}ToDateTime");
+    .mixin-functions(to-decimal,~"@{_fPath}ToDecimal");
+    .mixin-functions(to-date,~"@{_dPath}Date");
+    .mixin-functions(to-time,~"@{_dPath}Time");
+    .mixin-functions(to-number,~"@{_fPath}ToInteger");
+    .mixin-functions(to-text,~"@{_fPath}ToBaseString");
+    .mixin-functions(if-statement,~"@{_fPath}If");
+    .mixin-functions(not,~"@{_fPath}Not");
+}
+
+//LG: i had to make a separate mixin as dotless doesn't support complex string parameters
+//    like ~"@{_fPath}.operator.leftbracket" the escape character "~"@{_fPath} is not supported in mixin parameters in dotless.
+.mixin-operators(@operatorclass;@imageurl)
+{
+    a.ui-draggable-dragging.operator.@{operatorclass},
+    .icon.operator.@{operatorclass},
+    .tree li.operator.@{operatorclass} > a,
+    .tree li.operator.@{operatorclass}.closed > a,
+    .tree li.operator.@{operatorclass}.open > a
+    {
+        background-image: url("../Images/Icons/Functions/@{imageurl}16@{res}.png");
+    }
+}
+
+html
+{
+    .mixin-operators(add;Plus);
+    .mixin-operators(minus;Subtract);
+    .mixin-operators(multiply;MultiplyFunction);
+    .mixin-operators(divide;Divide);
+    .mixin-operators(modulus;ModuleFunction);
+    .mixin-operators(equals;Equals);
+    .mixin-operators(not-equals;NotEquals);
+    .mixin-operators(greater-than;GreaterThan);
+    .mixin-operators(less-than;LessThan);
+    .mixin-operators(greater-than-equals;GreaterThanEquals);
+    .mixin-operators(less-than-equals;LessThanEquals);
+    .mixin-operators(and;And);
+    .mixin-operators(or;Or);
+    .mixin-operators(xor;Xor);
+    .mixin-operators(true;True);
+    .mixin-operators(false;False);
+    .mixin-operators(empty-string;Empty);
+    .mixin-operators(left-bracket;BracketLeft);
+    .mixin-operators(right-bracket;BracketRight);
+}

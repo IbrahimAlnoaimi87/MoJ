@@ -1,0 +1,355 @@
+/*Author: 		Jack Tseng*/
+/*Purpose: 		define the styling for the static html error pages (in future we would like to include layout specific styling here for the Designer.) */
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import "../../../Designer_Variables.less";
+
+@_App-Top-Bar-Height: @App-Titlebar-Height;
+@_App-Top-Bar-Height-Large: 50px;
+
+@_App-Bottom-Bar-Height: 34px; /* Height for the Login screen page footer (normal screen size) */
+@_App-Bottom-Bar-Height-Large: 68px; /* Height for the Login screen page footer (large screen size) */
+
+.errorPage
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f2f2f2;
+    font-family: @Main-Font-Family;
+
+    .fullWidth
+    {
+        width: 100%;
+    }
+
+    .mediumWidth
+    {
+        width: 60%;
+    }
+
+    .mediumHeight
+    {
+        height: 60%;
+    }
+
+    .brokenComputerSvg
+    {
+        width: 28%;
+    }
+
+    .errorDescription
+    {
+        position: absolute;
+        top: 0px;
+        margin-left: 5%;
+        margin-top: 5%;
+
+        .title
+        {
+            color: rgba(54, 71, 79, 0.8);
+            font-size: 3.4rem;
+            line-height: 3.8rem;
+        }
+
+        .description
+        {
+            color: #36474f;
+            font-size: 1.8rem;
+            margin-top: 20px;
+        }
+
+        .errorCode
+        {
+            font-style: italic;
+            color: #36474f;
+            font-size: 1.6rem;
+            margin-top: 10px;
+        }
+
+        .refreshLink
+        {
+            font-size: 2.4rem;
+            margin-top: 30px;
+        }
+    }
+
+    .mainLogo
+    {
+        top: 0px;
+        position: absolute;
+        margin-left: -35px;
+        left: 50%;
+        z-index: 3000;
+        background-repeat: no-repeat;
+        background-color: @App-Titlebar-Background-1;
+    }
+
+    .mainHeader
+    {
+        flex-shrink: 0;
+        height: @_App-Top-Bar-Height;
+        background-color: @App-Titlebar-Background-1;
+    }
+
+    .mainContent
+    {
+        flex: 1;
+        overflow: auto;
+        position: relative;
+    }
+
+    .footer
+    {
+        flex-shrink: 0;
+        background-color: #e2e5e5;
+        height: @_App-Bottom-Bar-Height;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .PageHelpLink
+        {
+            padding-left: 10px;
+            padding-right: 10px;
+
+            & > a
+            {
+                font-size: 1.4rem;
+                display: block;
+                color: @Highlight-Color-1;
+                text-decoration: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            & > a:hover
+            {
+                color: @Highlight-Color-2;
+            }
+
+            & > a:focus
+            {
+                border-color: @Highlight-Color-1;
+            }
+        }
+    }
+    /* #region css layout for a div table */
+    .layout-table
+    {
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+
+    .layout-table-row
+    {
+        display: table-row;
+    }
+
+    .layout-table-cell
+    {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .layout-table-cell-alignment
+    {
+        display: inline-block;
+    }
+    /* #endregion end css layout for a div table */
+}
+
+/* #region SVG graphics styles*/
+#error404graphics
+{
+    a.svgLink
+    {
+        cursor: pointer;
+
+        .st5, 
+        .st1
+        {
+            opacity: 0.8;
+        }
+
+        &:hover
+        {
+            .st5, 
+            .st1
+            {
+                opacity: 1;
+            }
+        }
+    }
+
+    a:focus #btnDesigner
+    {
+        stroke: @Highlight-Color-1;
+    }
+
+    #btnDesigner
+    {
+        height: 183px;
+        width: 183px;
+        fill: transparent;
+        stroke: transparent;
+        stroke-width: 2;
+    }
+
+    .st0
+    {
+        fill: #36474F;
+    }
+
+    .st1
+    {
+        font-family: @Main-Font-Family;
+    }
+
+    .st2
+    {
+        font-size: 25px;
+    }
+
+    .st3
+    {
+        fill: #666666;
+    }
+
+    .st4
+    {
+        fill: none;
+        stroke: #36474F;
+        stroke-width: 2;
+        stroke-miterlimit: 10;
+    }
+
+    .st5
+    {
+        fill: @App-Titlebar-Background-1;
+    }
+
+    .st6
+    {
+        fill: @Highlight-Color-1;
+    }
+
+    .st7
+    {
+        font-size: 27px;
+    }
+
+    .st8
+    {
+        fill: #FFFFFF;
+    }
+}
+/* #endregion SVG graphics styles*/
+
+/*Large screen size */
+@media only screen and (min-width: 1650px)
+{
+    .errorPage
+    {
+        .mainLogo
+        {
+            position: absolute;
+            margin-left: 50px;
+            left: 50%;
+            z-index: 3000;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+            background-size: 100px 100px;
+        }
+
+        .mainHeader
+        {
+            /* Bigger top bar on login page */
+            line-height: @_App-Top-Bar-Height-Large;
+            height: @_App-Top-Bar-Height-Large;
+        }
+
+        .errorDescription
+        {
+            .title
+            {
+                font-size: 5.2rem;
+                line-height: 5.8rem;
+            }
+
+            .description
+            {
+                font-size: 2.4rem;
+                margin-top: 30px;
+            }
+
+            .errorType
+            {
+                font-size: 2.0rem;
+                margin-top: 16px;
+            }
+
+            .refreshLink
+            {
+                font-size: 2.4rem;
+                margin-top: 40px;
+            }
+        }
+
+        .footer
+        {
+            height: @_App-Bottom-Bar-Height-Large;
+
+            .PageHelpLink
+            {
+                & > a
+                {
+                    font-size: 2rem;
+                    height: 46px;
+                    line-height: 44px;
+                }
+            }
+        }
+    }
+}
+
+
+/*#region Normal screen size (Less than 1650px)*/
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx) and (max-width: 1650px), (max-resolution: 144dpi) and (max-width: 1650px), (-webkit-max-device-pixel-ratio: 1.5) and (max-width: 1650px), (-o-max-device-pixel-ratio: 3/2) and (max-width: 1650px)
+{
+    @res: "";
+    @import (multiple) url('layout_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx) and (max-width: 1650px), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi) and (max-width: 1650px), (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1650px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1650px)
+{
+    @res: "@2x";
+    @import (multiple) url('layout_images.less');
+}
+/*#endregion*/
+
+/*#region Large screen size (Greater than 1650px)*/
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx) and (min-width: 1650px), (max-resolution: 144dpi) and (min-width: 1650px), (-webkit-max-device-pixel-ratio: 1.5) and (min-width: 1650px), (-o-max-device-pixel-ratio: 3/2) and (min-width: 1650px)
+{
+    @res: "";
+    @import (multiple) url('layout_images_large.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx) and (min-width: 1650px), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi) and (min-width: 1650px), (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1650px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1650px)
+{
+    @res: "@2x";
+    @import (multiple) url('layout_images_large.less');
+}
+/*#endregion*/

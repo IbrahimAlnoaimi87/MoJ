@@ -1,0 +1,171 @@
+﻿/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import "../../../Designer_Variables.less";
+
+.tooltip
+{
+    background-color: #e3ecd2;
+    border: 1px solid #6a9b12;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-width: 1px;
+    padding: 0.8em;
+    width: auto;
+    max-width: 400px;
+    position: absolute;
+}
+
+.tooltip .tooltip-pointer,
+.tooltip .tooltip-pointer-inner
+{
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.tooltip.pointer-down .tooltip-pointer,
+.tooltip.pointer-down .tooltip-pointer-inner
+{
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 0;
+}
+
+.tooltip.pointer-down .tooltip-pointer
+{
+    border-top: 14px solid #6a9b12;
+    bottom: -14px;
+    left: 50%;
+    margin-left: -7px;
+    right: auto;
+}
+
+.tooltip.pointer-down .tooltip-pointer-inner
+{
+    border-top: 14px solid #e3ecd2;
+    bottom: auto;
+    left: -7px;
+    top: -16px;
+}
+
+.tooltip.pointer-up .tooltip-pointer,
+.tooltip.pointer-up .tooltip-pointer-inner
+{
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 0;
+}
+
+.tooltip.pointer-up .tooltip-pointer
+{
+    border-bottom: 14px solid #6a9b12;
+    top: -14px;
+    left: 50%;
+    margin-left: -7px;
+    right: auto;
+}
+
+.tooltip.pointer-up .tooltip-pointer-inner
+{
+    border-bottom: 14px solid #e3ecd2;
+    top: 2px;
+    left: -7px;
+}
+
+.tooltip.pointer-left .tooltip-pointer,
+.tooltip.pointer-left .tooltip-pointer-inner
+{
+    border-left: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+
+.tooltip.pointer-left .tooltip-pointer
+{
+    border-right: 14px solid #6a9b12;
+    left: -14px;
+    top: 50%;
+    margin-top: -7px;
+    bottom: auto;
+}
+
+.tooltip.pointer-left .tooltip-pointer-inner
+{
+    border-right: 14px solid #e3ecd2;
+    left: 2px;
+    top: -7px;
+}
+
+.tooltip.pointer-right .tooltip-pointer,
+.tooltip.pointer-right .tooltip-pointer-inner
+{
+    border-right: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+
+.tooltip.pointer-right .tooltip-pointer
+{
+    border-left: 14px solid #6a9b12;
+    right: -14px;
+    top: 50%;
+    margin-top: -7px;
+    bottom: auto;
+}
+
+.tooltip.pointer-right .tooltip-pointer-inner
+{
+    border-left: 14px solid #e3ecd2;
+    right: 2px;
+    top: -7px;
+}
+
+/* Validation Tooltip Styling */
+.tooltip.validation
+{
+    background-color: #fee8d3;
+    border-color: #b16a22;
+}
+
+.tooltip.validation.pointer-down .tooltip-pointer
+{
+    border-top-color: #b16a22;
+}
+
+.tooltip.validation.pointer-down .tooltip-pointer-inner
+{
+    border-top-color: #fee8d3;
+}
+
+.tooltip.validation.pointer-up .tooltip-pointer
+{
+    border-bottom-color: #b16a22;
+}
+
+.tooltip.validation.pointer-up .tooltip-pointer-inner
+{
+    border-bottom-color: #fee8d3;
+}
+
+.tooltip.validation.pointer-left .tooltip-pointer
+{
+    border-right-color: #b16a22;
+}
+
+.tooltip.validation.pointer-left .tooltip-pointer-inner
+{
+    border-right-color: #fee8d3;
+}
+
+.tooltip.validation.pointer-right .tooltip-pointer
+{
+    border-left-color: #b16a22;
+}
+
+.tooltip.validation.pointer-right .tooltip-pointer-inner
+{
+    border-left-color: #fee8d3;
+}

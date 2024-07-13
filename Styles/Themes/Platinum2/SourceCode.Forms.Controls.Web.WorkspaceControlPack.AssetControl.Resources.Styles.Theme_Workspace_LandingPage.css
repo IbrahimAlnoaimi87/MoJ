@@ -1,0 +1,288 @@
+﻿/* FoRm LandingPage Styles */
+.workspace-landingpage .workspace-button
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: inherit;
+    display: inline;
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+}
+
+    .workspace-landingpage .workspace-button:hover
+    {
+        cursor: pointer;
+    }
+
+    .workspace-landingpage .workspace-button > .left,
+    .workspace-landingpage .workspace-button > .right
+    {
+        display: inline-block;
+        float: left;
+    }
+
+    .workspace-landingpage .workspace-button > .right
+    {
+        width: calc(100% - 47px);
+        margin-left: 15px;
+    }
+
+        .workspace-landingpage .workspace-button > .right > .top,
+        .workspace-landingpage .workspace-button > .right > .bottom
+        {
+            width: 100%;
+            white-space: pre-line;
+            float: left;
+            word-wrap: break-word;
+        }
+
+        .workspace-landingpage .workspace-button > .right > .top
+        {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    .workspace-landingpage .workspace-button > .left .icon
+    {
+        float: left;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+
+.workspace-landingpage .view
+{
+    margin: 0 !important; /* Override inline styling */
+}
+
+.workspace-landingpage .option-select-box label.shortcut-workspaceinbox .icon
+{
+    background-image: url("Workspace/Inbox32.png");
+}
+
+.workspace-landingpage .option-select-box label.shortcut-workspacereports .icon
+{
+    background-image: url("Workspace/Reports32.png");
+}
+
+.workspace-landingpage .option-select-box label.shortcut-workspaceforms .icon
+{
+    background-image: url("Workspace/Form_32.png");
+}
+
+.workspace-landingpage .option-select-box label.shortcut-workspacesettings .icon
+{
+    background-image: url("Workspace/Settings32.png");
+}
+
+.workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d span[name='dlblWelcomeUser'],
+.workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d.form,
+.workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .Grid-Layout > .editor-cell.lastrow
+{
+    padding: 0 !important;
+}
+
+.workspace-landingpage span[name='dlblWelcomeUser'] .landing-header
+{
+    text-align: center !important;
+    background: #003870; /* --globalNav-background-color */
+    margin-bottom: 5.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0rem;
+}
+
+    .workspace-landingpage span[name='dlblWelcomeUser'] .landing-header .landing-welcome
+    {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        font-size: 1.2rem;
+        color: #ffffff; /* --globalNav-text-color */
+    }
+
+    .workspace-landingpage span[name='dlblWelcomeUser'] .landing-header .landing-welcome-text
+    {
+        font-size: 1.2rem;
+        color: #ffffff; /* --globalNav-text-color */
+        margin: 0;
+    }
+
+        .workspace-landingpage span[name='dlblWelcomeUser'] .landing-header .landing-welcome-text b
+        {
+            font-weight: bolder;
+            color: #ffffff; /* --globalNav-text-color */
+        }
+
+    .workspace-landingpage span[name='dlblWelcomeUser'] .landing-header i
+    {
+        position: absolute;
+        /*background-image: url('Workspace/ManagementLandingGraphic75.png');*/
+        background-size: cover;
+        height: 0rem;
+        width: 0rem;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .row:last-child span
+{
+    text-align: center;
+}
+
+.workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .row:last-child .workspace-button
+{
+    color: #717171;
+    max-width: 70rem;
+    background-color: transparent;
+    font: inherit;
+}
+
+    .workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .row:last-child .workspace-button .right .top
+    {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #5b595d;
+    }
+
+    .workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .row:last-child .workspace-button .right .bottom
+    {
+        font-size: 1.5rem;
+        color: #717171;
+    }
+
+.workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .hyperlinkTopPanel
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+}
+
+    .workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .hyperlinkTopPanel > div
+    {
+        width: 30px;
+        margin: 5px auto;
+    }
+
+    .workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .hyperlinkTopPanel a
+    {
+        background-image: url("Workspace/Help24Default.png");
+        height: 24px;
+        width: 24px;
+        margin: auto;
+        background-size: 24px;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        white-space: nowrap;
+    }
+
+        .workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .hyperlinkTopPanel a:hover
+        {
+            background-image: url("Workspace/Help24Default.png");
+        }
+
+.workspace-landingpage span.SourceCode-Forms-Controls-Web-DataLabel[name='Inbox'],
+.workspace-landingpage span.SourceCode-Forms-Controls-Web-DataLabel[name='Reports']
+{
+    padding: 0;
+}
+
+.workspace-landingpage span.SourceCode-Forms-Controls-Web-DataLabel[name='Forms'],
+.workspace-landingpage span.SourceCode-Forms-Controls-Web-DataLabel[name='Settings']
+{
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.workspace-landingpage span.SourceCode-Forms-Controls-Web-DataLabel[name='Inbox']:hover,
+.workspace-landingpage span.SourceCode-Forms-Controls-Web-DataLabel[name='Reports']:hover,
+.workspace-landingpage span.SourceCode-Forms-Controls-Web-DataLabel[name='Forms']:hover,
+.workspace-landingpage span.SourceCode-Forms-Controls-Web-DataLabel[name='Settings']:hover
+{
+    background-color: rgba(2,135,209,0.1);
+}
+
+.workspace-landingpage .row:nth-child(2)
+{
+    display: none;
+}
+
+.workspace-landingpage .row:nth-child(3)
+{
+    padding: 0 6rem;
+    padding-bottom:5.2rem;
+}
+
+
+    .workspace-landingpage .row:nth-child(3) .Grid-Layout
+    {
+        -ms-grid-columns: 1fr 405px 10% 405px 1fr !important;
+        grid-template-columns: 1fr 405px 10% 405px 1fr !important;
+    }
+
+
+
+        .workspace-landingpage .row:nth-child(3) .Grid-Layout .editor-cell[col='2'] > span
+        {
+            float: right;
+            justify-self: flex-end;
+            margin-left:auto;
+            margin-right: auto;
+        }
+
+        .workspace-landingpage .row:nth-child(3) .Grid-Layout .editor-cell
+        {
+            padding: 0 !important;
+        }
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .workspace-landingpage .option-select-box label.shortcut-workspaceinbox .icon
+    {
+        background-image: url("Workspace/Inbox32@2x.png");
+    }
+
+    .workspace-landingpage .option-select-box label.shortcut-workspacereports .icon
+    {
+        background-image: url("Workspace/Reports32@2x.png");
+    }
+
+    .workspace-landingpage .option-select-box label.shortcut-workspaceforms .icon
+    {
+        background-image: url("Workspace/Form32@2x.png");
+    }
+
+    .workspace-landingpage .option-select-box label.shortcut-workspacesettings .icon
+    {
+        background-image: url("Workspace/Settings32@2x.png");
+    }
+
+    .workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .hyperlinkTopPanel a
+    {
+        background-image: url("Workspace/Help24Default@2x.png");
+    }
+
+        .workspace-landingpage #a56611cd-9d6c-4325-a196-4e1b49c6833d .hyperlinkTopPanel a:hover
+        {
+            background-image: url("Workspace/Help24Default@2x.png");
+        }
+
+    .workspace-landingpage span[name='dlblWelcomeUser'] .landing-header i
+    {
+      /* background-image: url('Workspace/ManagementLandingGraphic75@2x.png');*/
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (min-width: 768px), only screen and (min--moz-device-pixel-ratio: 3) and (min-width: 768px), only screen and (-o-min-device-pixel-ratio: 3/1) and (min-width: 768px), only screena and (min-device-pixel-ratio: 3) and (min-width: 768px), only screen and (min-resolution: 3dppx)
+{
+    .workspace-landingpage span[name='dlblWelcomeUser'] .landing-header i
+    {
+      /* background-image: url('Workspace/ManagementLandingGraphic75@3x.png');*/
+    }
+}

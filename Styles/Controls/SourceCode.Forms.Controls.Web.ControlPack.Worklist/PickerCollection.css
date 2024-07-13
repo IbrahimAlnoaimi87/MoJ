@@ -1,0 +1,1320 @@
+
+/* 'X' button that shows up when typing text in the textbox. Remove this IE10+ feature */
+
+#picker-collection-add-user-popup-root input[type=text]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+#picker-collection-sleep-header,
+/*Select a sleep option*/ #picker-collection-share-header/*Shared With*/ {
+  float: right;
+  line-height: 22px;
+  height: 22px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+#picker-collection-sleep-header/*Select a sleep option*/ {
+  width: 100%;
+  margin-right: 2px;
+}
+#picker-collection-share-header/*Shared With*/ {
+  width: calc(99%);
+  margin-right: 4px;
+}
+#picker-collection-add-user-operation-box-header,
+/*Recent, Search Result*/ #picker-collection-share-operation-box-header/*Add, Remove*/ {
+  position: absolute;
+  line-height: 22px;
+  height: 22px;
+  width: auto;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+/*Add & Remove buttons in AddUser/Redirect pickers*/
+
+.popup a.picker-collection-share-toolbar-button {
+  height: 22px;
+  line-height: 22px;
+  float: left;
+  border-color: transparent !important;
+  border-width: 0 !important;
+  padding: 0 5px;
+}
+.popup a.toolbar-button.picker-collection-button-disabled {
+  cursor: default;
+  background: none;
+  outline-width: 0px;
+  outline-color: transparent;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.popup a.picker-collection-share-toolbar-button span {
+  line-height: 22px;
+}
+#picker-collection-add-user-upper-pane {
+  width: 100%;
+  margin-top: 3px;
+  position: relative;
+  left: -5px;
+  background-color: white;
+}
+.picker-collection-search-section {
+  table-layout: fixed;
+  width: auto;
+}
+.picker-collection-search-section td:first-child span {
+  padding-top: 2px;
+}
+.picker-collection-expander-container {
+  display: inline;
+  margin-top: -4px;
+}
+.moz .picker-collection-expander-container {
+  margin-top: -5px;
+}
+#picker-collection-add-user-upper-pane .picker-collection-search-criteria-expander {
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: relative;
+  left: -2px;
+}
+.picker-collection-add-user-search-option-expander-up {
+  background-position: 0 1px;
+}
+.picker-collection-add-user-search-option-expander-down {
+  background-position: 0 -15px;
+  top: 1px;
+}
+#picker-collection-share-operation-box,
+#picker-collection-add-user-operation-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  margin: 4px 3px 3px 44px;
+}
+#picker-collection-share-operation-box {
+  top: 26px;
+}
+#picker-collection-add-user-operation-box {
+  top: 81px;
+}
+#picker-collection-add-user-container.collapsed #picker-collection-add-user-operation-box {
+  top: 32px;
+}
+#picker-collection-add-user-advanced-search-dropdown-match-wrapper {
+  margin-top: 5px;
+  margin-right: 4px;
+}
+#picker-collection-add-user-advanced-search-dropdown-label-wrapper {
+  margin-top: 4px;
+  margin-right: 4px;
+}
+#picker-collection-share-operation-box-body {
+  background-color: white;
+  border-left: 1px solid #adae9c;
+  border-right: 1px solid #adae9c;
+  border-bottom: 1px solid #adae9c;
+  float: left;
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  overflow: auto;
+  /* margin-right: -2px; */
+
+}
+/* yellow hightlight on text for matched serach result characters */
+
+.picker-collection-search-text-highlight {
+  background-color: yellow;
+}
+#date-picker-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+}
+#FilterConfig_secondPageInternal .tab-wrapper {
+  flex-direction: row-reverse;
+}
+#FilterConfig_secondPageOutside .scroll-wrapper {
+  padding: 0;
+}
+#FilterConfig_secondPageInternal.designTimeOnly {
+  padding: 0;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .wrapper {
+  padding: 0;
+}
+#FilterConfig_secondPageInternal.designTimeOnly #SortBody {
+  top: 0px !important;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .tab-box-tabs {
+  height: 30px;
+  background-color: #ececec;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .tab-box-tabs li {
+  height: 100%;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .tab-box-tabs li .sfc-worklist-tab-filter {
+  margin-left: 10px;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .tab-box-tabs li .tab {
+  height: 100%;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .tab-box-tabs li .tab:hover {
+  background-color: #f8f8f8;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .tab-box-tabs li .tab .tab-wrapper {
+  flex-direction: row;
+  height: 100%;
+  padding: 0 10px;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .grid-body-content {
+  max-height: 147px;
+  overflow: auto;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .toolbar {
+  border: 1px solid transparent;
+  background: none;
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .toolbar .toolbar-wrapper .toolbar-button {
+  padding: 5px 3px 5px 3px;
+}
+.worklist-filter-date-picker-calender-icon {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+}
+#FilterConfig_secondPage .grid .grid-column-header-table {
+  width: 100%;
+}
+#filter-picker-grid-filter .grid-column-header-table {
+  width: 100%;
+}
+#filter-picker-grid-filter .grid-body-content {
+  max-height: 180px;
+  overflow: auto;
+}
+/* overrides platinum hover state */
+
+#FilterConfig_FilterPanel .grid-column-header-cell:hover {
+  background-color: transparent;
+}
+/* grid column layout picker styling */
+
+#picker-collection-grid-layout-popup-root {
+  background-color: #f8f8f8;
+}
+#picker-collection-grid-layout-popup-root .scroll-wrapper {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+#picker-collection-grid-layout-popup-root .hidden {
+  display: none;
+}
+.picker-collection-grid-layout-settings-container {
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+  overflow: hidden;
+}
+.picker-collection-grid-layout-settings-center-pane {
+  width: 100%;
+}
+.picker-collection-grid-layout-settings-selected-columns-pane {
+  height: 100%;
+}
+.picker-collection-grid-layout-settings-header {
+  border: 1px solid #d4d4d4;
+  border-bottom: 1px solid transparent;
+  background-color: #ececec;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  line-height: normal;
+}
+.picker-collection-grid-layout-settings-header span {
+  padding-left: 3px;
+}
+.picker-collection-grid-layout-settings-sub-header {
+  padding: 3px;
+  margin: 0 3px;
+  border-bottom: 1px solid #adae9c;
+  /*B556290*/
+
+  /*padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    left: 3px;
+    width: 185px;*/
+
+}
+.picker-collection-grid-layout-settings-sub-header span {
+  font-weight: bold;
+}
+.picker-collection-grid-layout-settings-right-pane {
+  width: 100%;
+  box-sizing: border-box;
+}
+.picker-collection-grid-layout-settings-container .picker-collection-grid-layout-settings-selected-columns-column-move-section {
+  height: 30px;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+.picker-collection-grid-layout-settings-selected-columns-column-move-section a {
+  margin-top: 2px;
+  padding: 2px 5px 0 2px;
+}
+.picker-collection-grid-layout-settings-selected-columns-column-move-section a:active,
+.picker-collection-grid-layout-settings-selected-columns-column-move-section a:hover,
+.picker-collection-grid-layout-settings-selected-columns-column-move-section a:visited,
+.picker-collection-grid-layout-settings-selected-columns-column-move-section a:link {
+  text-decoration: none;
+}
+.picker-collection-grid-layout-settings-available-columns-body {
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  height: 346px;
+  overflow: auto;
+  background-color: white;
+  box-sizing: border-box;
+}
+.picker-collection-grid-layout-settings-selected-columns-body {
+  border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  background-color: white;
+  overflow: auto;
+  height: 318px;
+  box-sizing: border-box;
+}
+.picker-collection-grid-layout-settings-available-columns-body .picker-collection-grid-layout-settings-columns-item:hover,
+.picker-collection-grid-layout-settings-selected-columns-body .picker-collection-grid-layout-settings-columns-item:hover,
+.picker-collection-grid-layout-settings-available-columns-body .picker-collection-column-item-selected:hover,
+.picker-collection-grid-layout-settings-selected-columns-body .picker-collection-column-item-selected:hover,
+.picker-collection-grid-layout-settings-selected-columns-body .picker-collection-column-item-selected .picker-collection-grid-layout-settings-columns-item-value:hover {
+  background-color: #deeffd;
+  color: #4e5758;
+  cursor: pointer;
+}
+.picker-collection-grid-layout-settings-available-columns-body .picker-collection-column-item-selected,
+.picker-collection-grid-layout-settings-selected-columns-body .picker-collection-column-item-selected {
+  background-color: #2196f3;
+  color: white;
+}
+.picker-collection-grid-layout-settings-selected-columns-body .picker-collection-column-item-selected .picker-collection-grid-layout-settings-columns-item-value {
+  color: white;
+}
+.picker-collection-grid-layout-settings-available-columns-body .picker-collection-grid-layout-settings-columns-item,
+.picker-collection-grid-layout-settings-selected-columns-body ul li {
+  /*padding: 0px 1px 2px;*/
+  padding: 3px;
+  border: 1px solid transparent;
+}
+.picker-collection-grid-layout-settings-available-columns-body ul,
+.picker-collection-grid-layout-settings-selected-columns-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 11px 3px 11px 3px;
+  /*B556290*/
+
+  /*
+    top: -5px;
+    left: 3px;
+    position: relative;
+    margin: 11px 21px 11px 3px;*/
+
+}
+.picker-collection-grid-layout-settings-center-pane-body {
+  display: flex;
+  flex-direction: column;
+  height: 365px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.picker-collection-grid-layout-settings-columns-item-key {
+  display: none;
+}
+.picker-collection-grid-layout-settings-grid-type-section {
+  padding-bottom: 5px;
+}
+.picker-collection-grid-layout-settings-grid-type-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.picker-collection-grid-layout-settings-pane-container {
+  float: left;
+  width: 100%;
+  height: 390px;
+  position: relative;
+}
+.picker-collection-grid-layout-settings-disable-overlay-active {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.picker-collection-grid-layout-settings-disable-overlay-active-opacity {
+  opacity: 0.3;
+}
+.picker-collection-grid-layout-settings-move-item-right {
+  margin-bottom: 10px;
+}
+.picker-collection-grid-layout-settings-move-item-right:hover,
+.picker-collection-grid-layout-settings-move-item-left:hover {
+  cursor: pointer;
+}
+.container-table {
+  height: 100%;
+  width: 100%;
+}
+.available-column-pane {
+  /*B556290*/
+  width: 30%;
+  vertical-align: top;
+}
+.center-column-pane {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+}
+.selected-column-pane {
+  width: 100%;
+}
+.picker-collection-grid-layout-settings-columns-item-firstcol {
+  width: 50%;
+}
+/*B556290*/
+
+/*.picker-collection-grid-layout-settings-columns-item-value {
+
+    margin:3px;
+}*/
+
+.picker-collection-grid-layout-settings-columns-item-widthtb {
+  width: 95%;
+}
+input.picker-collection-grid-layout-settings-columns-item-widthtb[type='text'] {
+  border: solid 1px #dde0db;
+  outline: solid 1px #aaad9c;
+  padding: 2px;
+}
+input.picker-collection-grid-layout-settings-columns-item-widthtb[type='text']:focus {
+  border: solid 1px #98dc28;
+  outline-offset: 0;
+}
+/*#region placeholder - vendor pseudo-class/element cannot be combine.*/
+
+/* < Firefox 19 */
+
+input.picker-collection-grid-layout-settings-columns-item-widthtb[type='text']:-moz-placeholder {
+  color: #999999;
+}
+/* > Firefox 19 */
+
+input.picker-collection-grid-layout-settings-columns-item-widthtb[type='text']::-moz-placeholder {
+  color: #999999;
+}
+/* > ie10 */
+
+input.picker-collection-grid-layout-settings-columns-item-widthtb[type='text']:-ms-input-placeholder {
+  color: #999999;
+}
+/* ie9-will inject placeholder class*/
+
+.ie9 input.picker-collection-grid-layout-settings-columns-item-widthtb[type='text'].placeholder {
+  color: #999999;
+}
+/*Placeholder hide on focus should be fixed at the global level.*/
+
+input.picker-collection-grid-layout-settings-columns-item-widthtb[type='text']:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input.picker-collection-grid-layout-settings-columns-item-widthtb[type='text']:focus:-moz-placeholder {
+  color: transparent;
+}
+input.picker-collection-grid-layout-settings-columns-item-widthtb[type='text']:focus::-moz-placeholder {
+  color: transparent;
+}
+input.picker-collection-grid-layout-settings-columns-item-widthtb[type='text']:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/*#endregion placeholder*/
+
+/* End of Grid Layout Configuration picker styling */
+
+.picker-unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.picker-collection-sleep-operation-box-basic-options-container {
+  margin-top: 10px;
+}
+.SleepUnorderedList {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  padding-left: 26px;
+}
+.sleep-date,
+.SleepListItem {
+  line-height: 0px;
+}
+#picker-collection-popup-root .sleep-date .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control {
+  top: 0px;
+  left: 0px;
+  position: inherit;
+  width: inherit;
+}
+#picker-collection-popup-root .sleep-date .picker-collection-sleep-operation-box-date-options-container .datepicker-right.disabled input,
+#picker-collection-popup-root .picker-collection-sleep-operation-box-basic-options-container label.input-control.radio.disabled span,
+#worklist-control-filter-date-range .input-control.select-box.dropdown-box.selected.disabled a,
+#worklist-control-filter-date-range .datepicker-right.disabled input {
+  cursor: pointer;
+}
+#picker-collection-popup-root .datepicker-right {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+#picker-collection-add-user-operation-box-body .search-not-found {
+  background: white;
+}
+#picker-collection-add-user-container .picker-collection-search-criteria-cell {
+  width: 325px;
+}
+.mozilla #picker-collection-add-user-container .picker-collection-search-criteria-cell {
+  width: 325px;
+}
+.msie #picker-collection-add-user-container .picker-collection-search-criteria-cell {
+  width: 327px;
+}
+#picker-collection-add-user-search-display-text,
+#picker-collection-add-user-advanced-search-string-display-text,
+#picker-collection-add-user-advanced-search-label-display-text {
+  white-space: nowrap;
+}
+#picker-collection-add-user-container.collapsed .picker-collection-advanced-search-area {
+  display: none;
+}
+#picker-collection-action-menu-config-popup-root .scroll-wrapper {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: white;
+  box-sizing: border-box;
+}
+#picker-collection-action-menu-config-popup-root .worklist-action-menu-item-picker-body {
+  height: 100%;
+}
+#picker-collection-action-menu-config-popup-root .worklist-action-menu-item-list {
+  list-style-type: none;
+  padding: 6px 0 0 6px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.msie #picker-collection-action-menu-config-popup-root .worklist-action-menu-item-list {
+  padding: 3px 0 0 6px;
+}
+#filter-picker-value_TextBox::-ms-clear {
+  width: 0;
+  height: 0;
+}
+/* #region CHOOSE DATE PICKER */
+
+#worklist-control-filter-date-range .scroll-wrapper {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+#worklist-control-filter-date-range .specific-date {
+  padding: 0 0 10px 0;
+}
+#worklist-control-filter-date-range .calendar-control {
+  width: auto;
+  margin-left: 20px;
+}
+#worklist-control-filter-date-range .datepicker-right,
+#worklist-control-filter-date-range .dropdown-box {
+  margin-left: 20px;
+  margin-right: 3px;
+}
+#worklist-control-filter-date-range .date-range-picker-container {
+  padding: 10px;
+}
+.filterPickerMainBody #filter-picker-value {
+  cursor: pointer;
+}
+.filterPickerMainBody .tab-box div#SortBody.tab-box-body {
+  background-color: white;
+}
+.filterPickerMainBody .tab-box ul.tab-box-tabs a#tabFilter.tab.selected .tab-wrapper,
+.filterPickerMainBody .tab-box ul.tab-box-tabs a#tabColumn.tab.selected .tab-wrapper {
+  background: white;
+  border-color: transparent;
+  cursor: default;
+}
+#picker-collection-popup-root .sleep-date .picker-collection-sleep-operation-box-date-options-container .datepicker-right.disabled .overlay,
+#worklist-control-filter-date-range .datepicker-right.disabled .overlay {
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  opacity: 0.01;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/*user textbox in OOF and OOF Exception pickers*/
+
+.popup .delegatedUserLookupCell .input-control-body {
+  height: 18px;
+  line-height: 18px;
+  right: 23px;
+  /*overriding Core.css line 2481*/
+
+}
+.popup .delegatedUserLookupCell .input-control-body::selection,
+.popup .delegatedUserLookupCell .OOFUserLookupUsername::selection {
+  background: transparent;
+}
+/*firefox is so special that it's special tags refuse to work if they get grouped with the normal ones*/
+
+.popup .delegatedUserLookupCell .input-control-body::-moz-selection,
+.popup .delegatedUserLookupCell .OOFUserLookupUsername::-moz-selection {
+  background: transparent;
+}
+.popup .delegatedUserLookupCell .OOFUserLookupUsername {
+  padding: 0 2px 1px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.popup .delegatedUserLookupCell .search {
+  margin-right: 3px;
+}
+#OOFGrid .disabled .oof-label,
+#OOFGrid .disabled .toolbar,
+#OOFGrid .disabled .OOFExceptionGridContainer,
+#OOFGrid .disabled .editableUserLookupContainer {
+  opacity: 0.5;
+}
+.OOFExceptionUserLookupTable .editableLookupContainer {
+  position: absolute;
+  top: auto;
+  bottom: 28px;
+  left: 66px;
+  right: 14px;
+}
+#OOFGrid .oof-delegate-user-lookup {
+  width: 100%;
+}
+.editableUserLookupContainer {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 75px;
+  bottom: 0;
+  left: 5px;
+  right: 1px;
+  margin-top: 2px;
+}
+.editableUserLookupTextbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 46px;
+  width: auto;
+  height: 15px;
+  padding-left: 3px;
+  padding-top: 3px;
+  background-color: white;
+  line-height: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.editableUserLookupIconWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 30px;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+}
+.msie .editableUserLookupIconWrapper {
+  right: 28px;
+}
+.editableUserLookupIcon,
+.editableUserLookupRemoveIcon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.editableUserLookupRemoveIconWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 6px;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+}
+/* #region USER LOOKUP */
+
+.picker-collection-lookup-cell {
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  left: 114px;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+.ie .picker-collection-lookup-cell {
+  left: 114px;
+}
+.worklistUserLookupTextbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 47px;
+  height: 18px;
+  width: 274px;
+  padding-left: 3px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.moz .worklistUserLookupTextbox {
+  width: 275px;
+  left: 2px;
+}
+.ie .worklistUserLookupTextbox {
+  width: 277px;
+  left: -1px;
+}
+.chrome .worklistUserLookupTextbox {
+  width: 278px;
+  left: 2px;
+}
+.worklistUserLookupTextbox:focus {
+  outline: none;
+}
+.worklistUserLookupIconWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 281px;
+  right: 0;
+  border-style: solid solid solid none;
+  border-width: 1px 1px 1px 0;
+}
+.msie .worklistUserLookupIconWrapper {
+  left: 280px;
+}
+@supports (-ms-accelerator:true) {
+  .chrome .worklistUserLookupTextbox {
+    left: 0;
+  }
+}
+.worklistUserLookupClearIconWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 303px;
+  right: 0;
+  border-style: solid solid solid solid;
+  border-width: 1px 1px 1px 1px;
+}
+.worklistUserLookupIconWrapper,
+.worklistUserLookupClearIconWrapper,
+.worklistUserLookupIcon,
+.worklistUserLookupClearIcon {
+  width: 18px;
+  height: 18px;
+}
+.firefox .editableUserLookupIconWrapper {
+  right: 27px;
+}
+.firefox .worklistUserLookupClearIconWrapper {
+  left: 303px;
+}
+.firefox .picker-collection-lookup-cell {
+  left: 113.5px;
+}
+.msie .picker-collection-lookup-cell {
+  left: 114.5px;
+}
+/* #endregion USER LOOKUP */
+
+/* #region DELEGATED USER DIALOG */
+
+.oof-delegated-user-list-row,
+.picker-collection-grid-row {
+  height: 40px;
+  width: 100%;
+}
+.picker-collection-grid-row.selected,
+.oof-delegated-user-list-row:hover,
+.picker-collection-grid-row:hover {
+  cursor: pointer;
+}
+.picker-collection-grid-row .picker-collection-grid-row-user-display-name {
+  display: inline-block;
+  padding-top: 6px;
+  padding-left: 8px;
+  vertical-align: middle;
+  color: black;
+  /* ellipsis the long text. 93% width to prevent  horizontal scrollbar */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 93%;
+}
+.picker-collection-grid-row .picker-collection-grid-row-user-email {
+  padding-left: 28px;
+  width: 200px;
+  color: #bcbcbc;
+  /* ellipsis the long text. 93% width to prevent  horizontal scrollbar */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 93%;
+}
+.picker-collection-grid-row-user-id,
+.picker-collection-grid-row-user-FQN {
+  display: none;
+}
+.oof-delegated-user-list-row-user-image,
+.picker-collection-grid-row-user-image {
+  vertical-align: middle;
+  position: relative;
+  top: 11px;
+  left: 5px;
+}
+.oof-delegated-user-list-row-user-name {
+  display: inline-block;
+  position: relative;
+  top: 13px;
+  margin-left: 10px;
+}
+/* grid area for displaying user info */
+
+#picker-collection-add-user-operation-box-body,
+.oof-delegated-user-list-body {
+  height: auto;
+  width: auto;
+  overflow: auto;
+  position: absolute;
+  top: 23px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #adae9c;
+}
+.oof-delegated-user-list-body {
+  top: 0;
+}
+/* #endregion DELEGATED USER DIALOG */
+
+/* #region RTL */
+
+html[dir=rtl] #picker-collection-add-user-operation-box {
+  margin: 4px 44px 3px 3px;
+}
+html[dir=rtl] .picker-collection-lookup-cell {
+  right: 116px;
+  left: 0px;
+}
+html[dir=rtl] .worklistUserLookupClearIconWrapper {
+  right: 301px;
+  left: 0;
+}
+html[dir=rtl] .worklistUserLookupIconWrapper {
+  right: 280px;
+  left: 0;
+}
+html[dir=rtl] .worklistUserLookupTextbox {
+  right: 0;
+  left: 47px;
+  padding-left: 0;
+  padding-right: 3px;
+}
+html[dir=rtl] #picker-collection-add-user-upper-pane {
+  right: -5px;
+}
+html[dir=rtl] #picker-collection-add-user-upper-pane .picker-collection-search-criteria-expander {
+  right: -2px;
+}
+html[dir=rtl] .picker-collection-grid-row-user-image {
+  right: 5px;
+}
+html[dir=rtl] .picker-collection-grid-row .picker-collection-grid-row-user-display-name {
+  right: 8px;
+}
+html[dir=rtl] .picker-collection-grid-row .picker-collection-grid-row-user-email {
+  right: 28px;
+}
+html[dir=rtl] #picker-collection-add-user-advanced-search-dropdown-label-wrapper {
+  margin-left: 4px;
+  margin-right: 0;
+}
+html[dir=rtl] #picker-collection-add-user-advanced-search-dropdown-match-wrapper {
+  margin-right: 0;
+  margin-left: 4px;
+}
+html[dir=rtl] .editableUserLookupRemoveIconWrapper {
+  right: auto;
+  left: 6px;
+}
+html[dir=rtl] .editableUserLookupIconWrapper,
+html[dir=rtl] .moz .editableUserLookupIconWrapper {
+  right: auto;
+  left: 27px;
+}
+html[dir=rtl] .editableUserLookupTextbox {
+  right: 0;
+  left: 49px;
+  padding-right: 3px;
+  padding-left: 0;
+}
+html[dir=rtl] .editableUserLookupContainer {
+  right: 5px;
+  left: 1px;
+}
+html[dir=rtl] .theme-entry .worklist-filter-date-picker-calender-icon {
+  right: inherit;
+  left: 0;
+}
+/* RTL Name, Filter, Users label */
+
+html[dir=rtl] #addOOFException .oof-label {
+  padding-right: 5px;
+  padding-left: 0px;
+}
+html[dir=rtl] #addOOFException .oof-td-field {
+  padding-left: 20px;
+  padding-right: 0px;
+}
+html[dir=rtl] #addOOFException .workflowContainer {
+  right: 0;
+  left: 20px;
+}
+/* user lookup textbox section */
+
+html[dir=rtl] #addOOFException .editableUserLookupTextbox {
+  left: 63px;
+  right: inherit;
+}
+html[dir=rtl] #addOOFException .editableUserLookupIconWrapper {
+  left: 41px;
+  right: auto;
+  /* fixing msie not supporting initial*/
+  right: initial;
+}
+html[dir=rtl] #addOOFException .editableUserLookupRemoveIconWrapper {
+  left: 20px;
+  right: auto;
+  /* fixing msie not supporting initial*/
+  right: initial;
+}
+html[dir=rtl] #picker-collection-add-user-operation-box-header span {
+  padding-left: 0;
+  padding-right: 5px;
+}
+html[dir=rtl] #picker-collection-add-user-layout-left {
+  float: right;
+}
+html[dir=rtl] #picker-collection-add-user-search-display-text {
+  padding-right: 5px;
+  padding-left: 50px;
+}
+html[dir=rtl] #picker-collection-add-user-advanced-search-string-display-text,
+html[dir=rtl] #picker-collection-add-user-advanced-search-label-display-text {
+  padding-right: 5px;
+  padding-left: 0px;
+}
+html[dir=rtl] #picker-collection-sleep-header/*Select a sleep option*/ {
+  float: left;
+  margin-left: 2px;
+}
+/*Add & Remove buttons in AddUser/Redirect pickers*/
+
+html[dir=rtl] .popup a.picker-collection-share-toolbar-button {
+  float: right;
+}
+html[dir=rtl] #picker-collection-share-operation-box,
+html[dir=rtl] #picker-collection-add-user-operation-box {
+  margin: 4px 44px 3px 3px;
+}
+html[dir=rtl] #picker-collection-share-header/*Shared With*/ {
+  margin-left: 4px;
+  float: left;
+}
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorklistGridHeaderLast .worklist-grid-column-divider {
+  display: none;
+}
+/* #endregion RTL */
+
+/* #region SF OVERRIDE */
+
+#picker-collection-popup-root .modalizer {
+  /* override SmartForms auto generated px values due to it causes vertical and horizontal scrollbar to show up */
+  height: 100% !important;
+  width: 100% !important;
+}
+/* #endregion SF OVERRIDE */
+
+/* #region OOF PICKER */
+
+#OOFConfig .scroll-wrapper {
+  overflow: hidden;
+}
+#OOFConfig .editableUserLookupContainer {
+  position: relative;
+  top: -8px;
+  left: 0;
+  right: 0;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .OOF {
+  margin-bottom: 6px;
+}
+#oof-options.disabled:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  width: auto;
+  background: transparent;
+  z-index: 99;
+}
+#oof-options.disabled {
+  opacity: 0.5;
+}
+#oof-options.disabled .input-control-body.styling-left,
+#oof-options.disabled .grid-body-content {
+  background: #eeeeee;
+}
+#OOFConfig .oof-td {
+  padding: 5px;
+}
+#OOFConfig #oof-delegate-picker-box .oof-td {
+  padding: 0 0 0 3px;
+}
+#OOFConfig .oof-delegate-picker-box > .oof-label {
+  padding: 0 5px 0 5px;
+}
+#OOFConfig .OOFExceptionWrapper.oof-label {
+  padding: 12px 0 5px 5px;
+}
+#OOFGrid .OOFDelegatedUserLookup .input-control-body.styling-left {
+  padding-left: 3px;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+}
+.popup-header-text,
+.oof-label {
+  cursor: default;
+}
+#OOFGrid .oof-label {
+  padding: 5px;
+}
+/*this fits the width of this td to the width of the text inside ("I am:")*/
+
+#OOFGrid #oof-status-box td.oof-label {
+  width: 1%;
+  white-space: nowrap;
+  padding-right: 10px;
+  padding-top: 0;
+}
+#OOFExceptionContext .OOFExceptionSearchUserLookupBox .input-control-body.styling-left {
+  padding-left: 3px;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+}
+#addOOFException .workflowContainer {
+  min-height: 100px;
+  height: 200px;
+  overflow: auto;
+  padding: 3px;
+}
+#addOOFException .activity {
+  min-height: 60px;
+}
+.oof-label span {
+  white-space: nowrap;
+}
+#addOOFException .oof-td-field {
+  width: 100%;
+  padding-right: 20px;
+}
+.msie #addOOFException .oof-td-field,
+.mozilla #addOOFException .oof-td-field {
+  padding-left: 3px;
+}
+#addOOFException .scroll-wrapper {
+  overflow: hidden;
+}
+#addOOFException .OOFExceptionTable {
+  width: auto;
+}
+#addOOFException .OOFExceptionTable input {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+#addOOFException .popup-body-content,
+#OOFConfig .popup-body-content {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#addOOFException .popup-body-c.disabled {
+  background: #f6f6f6;
+}
+#addOOFException .popup-body-c.disabled .popup-body-content {
+  opacity: 0.5;
+}
+/*after clicking Edit on an Exception Rule, this invisible overlay prevents the user from clicking things while the workflow tree is loading*/
+
+#addOOFException .popup-body-c.disabled .popup-body-content:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: auto;
+  height: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  z-index: 99;
+}
+#OOFGrid .toolbar {
+  margin: 0 5px 0 5px;
+}
+#OOFGrid .grid-body {
+  width: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* resolve header bottom and body top border overlap */
+  border-top: none;
+}
+#OOFGrid .OOFExceptionText {
+  font-size: 11px;
+  display: block;
+}
+#OOFConfig .input-control-watermark.hidden {
+  display: none;
+}
+#OOFExceptionGrid .scroll-wrapper {
+  height: 156px;
+  overflow-y: auto !important;
+  /* override js style from grid widget in SF */
+
+}
+/* remove the browser default outline styling */
+
+#OOFExceptionGrid tr.highlighted:focus {
+  outline: none;
+}
+/* exception rule picker */
+
+#addOOFException .workflowContainer {
+  min-height: 0;
+}
+#OOFExceptionContext {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  width: auto;
+}
+#addOOFException .OOFExceptionTable {
+  position: absolute;
+  top: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+#OOFExceptionGrid .grid-body-content .grid-content-cell-wrapper {
+  word-wrap: break-word;
+}
+.oof-exception-filter-row,
+.userLookupRow,
+.oof-exception-name-row {
+  height: 18px;
+}
+.oof-exception-workflow-row {
+  height: auto;
+}
+/* Name, Filter, Users label */
+
+#addOOFException .oof-label {
+  position: relative;
+  vertical-align: middle;
+  padding-top: 0;
+  padding-left: 5px;
+}
+/* Process tree label */
+
+#addOOFException .oof-exception-workflow-row .oof-label {
+  vertical-align: top;
+  padding-top: 5px;
+}
+#addOOFException .oof-td.oof-td-field {
+  position: relative;
+  vertical-align: middle;
+  padding-top: 3px;
+}
+#addOOFException .workflowContainer {
+  position: absolute;
+  top: 3px;
+  bottom: 7px;
+  left: 0;
+  right: 20px;
+  height: auto;
+  width: auto;
+}
+.mozilla #addOOFException .workflowContainer {
+  left: 3px;
+  bottom: 7px;
+}
+.msie #addOOFException .workflowContainer {
+  /* IE - height auto only allocates few pixel so we need px value here */
+  height: 200px;
+  left: 3px;
+}
+.OOFExceptionUserLookupTable {
+  position: absolute;
+  top: -3px;
+  bottom: 0;
+  left: 0;
+  right: 0rem;
+  height: auto;
+  width: 100%;
+  margin-left: 0;
+}
+/* users label */
+
+#addOOFException .userLookupRow .oof-label {
+  padding-bottom: 10px;
+}
+.OOFExceptionUserLookupTable .editableLookupContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+/* user lookup textbox section */
+
+#addOOFException .editableUserLookupTextbox {
+  right: 63px;
+}
+.mozilla #addOOFException .editableUserLookupTextbox,
+.msie #addOOFException .editableUserLookupTextbox {
+  left: 3px;
+}
+#addOOFException .editableUserLookupIconWrapper {
+  right: 43px;
+}
+.msie #addOOFException .editableUserLookupIconWrapper {
+  right: 42px;
+}
+#addOOFException .editableUserLookupRemoveIconWrapper {
+  right: 20px;
+}
+/* #endregion OOF PICKER */
+
+/* #region RUNTIME */
+
+.theme-entry #FilterConfig_secondPage .grid-body-content {
+  max-height: 180px;
+  overflow: auto;
+}
+.theme-entry #FilterConfig_secondPage .tab {
+  border: 1px solid #adae9c;
+}
+.theme-entry #FilterConfig_secondPage .tab.selected {
+  border-bottom: 1px solid transparent;
+  background-color: white;
+}
+.theme-entry #FilterConfig_secondPage .tab:hover .tab-wrapper {
+  border: 1px solid #87c41f;
+}
+.theme-entry #FilterConfig_secondPage .tab-wrapper {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+.theme-entry #FilterConfig_secondPage .toolbar {
+  margin: 3px;
+}
+.theme-entry #FilterConfig_secondPage .grid {
+  padding: 0 3px;
+}
+.theme-entry #worklist-control-filter-date-range .scroll-wrapper {
+  border: none;
+}
+.theme-entry #worklist-control-filter-date-range .date-range-picker-container {
+  padding: 5px;
+}
+.theme-entry #worklist-control-filter-date-range .specific-date {
+  padding: 0;
+}

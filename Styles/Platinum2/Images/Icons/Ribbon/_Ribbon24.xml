@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-ribbon.icon-size24.ic-{iconname}"/> <!-- normal -->
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1">1to1_24.png</Row>
+              
+            </Rows>
+          </Column>
+          <Column number="2">   
+            <Rows>  
+              <Row number="1">Add24.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="3">   
+            <Rows>  
+              <Row number="1">AdvancedSmartObject24.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="4">   
+            <Rows>  
+              <Row number="1">AlignBottom24.png</Row>
+             
+            </Rows> 
+          </Column>   
+          <Column number="5">   
+            <Rows>  
+              <Row number="1">AlignCentreHoriz24.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="6">   
+            <Rows>  
+              <Row number="1">AlignLeft24.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="7">   
+            <Rows>  
+              <Row number="1">AlignMiddleVert24.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="8">   
+            <Rows>  
+              <Row number="1">AlignRight24.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="9">   
+            <Rows>  
+              <Row number="1">AlignTop24.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="10">    
+            <Rows>  
+              <Row number="1">Category24.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="11">    
+            <Rows>  
+              <Row number="1">CheckIn24.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="12">    
+            <Rows>  
+              <Row number="1">CheckOut24.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="13">    
+            <Rows>  
+              <Row number="1">CollectCopy24.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="14">    
+            <Rows>  
+              <Row number="1">Color24.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="15">    
+            <Rows>  
+              <Row number="1">Copy24.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="16">    
+            <Rows>  
+              <Row number="1">Cut24.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="17">    
+            <Rows>  
+              <Row number="1">Delete24.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="18">    
+            <Rows>  
+              <Row number="1">Deploy24.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="19">    
+            <Rows>  
+              <Row number="1">DesignA_NewWorkflowFile24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="20">    
+            <Rows>  
+              <Row number="1">DesignA_NewForm24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="21">    
+            <Rows>  
+              <Row number="1">DesignA_NewSmartObject24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="22">    
+            <Rows>  
+              <Row number="1">DesignA_NewView24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="23">    
+            <Rows>  
+              <Row number="1">Edit24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="24">    
+            <Rows>  
+              <Row number="1">ErrorHandling24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="25">    
+            <Rows>  
+              <Row number="1">FitToWindow24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="26">    
+            <Rows>  
+              <Row number="1">FlipHorisontal24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="27">    
+            <Rows>  
+              <Row number="1">FlipVertical24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="28">    
+            <Rows>  
+              <Row number="1">Form24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="29">    
+            <Rows>  
+              <Row number="1">GenerateA_NewForm24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="30">    
+            <Rows>  
+              <Row number="1">GenerateA_NewView24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="31">    
+            <Rows>  
+              <Row number="1">Label24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="32">    
+            <Rows>  
+              <Row number="1">Lock24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="33">    
+            <Rows>  
+              <Row number="1">Method24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="34">    
+            <Rows>  
+              <Row number="1">MoveDown24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="35">    
+            <Rows>  
+              <Row number="1">MoveUp24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="36">    
+            <Rows>  
+              <Row number="1">Notes24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="37">    
+            <Rows>  
+              <Row number="1">NudgeDown24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="38">    
+            <Rows>  
+              <Row number="1">NudgeLeft24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="39">    
+            <Rows>  
+              <Row number="1">NudgeRight24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="40">    
+            <Rows>  
+              <Row number="1">NudgeUp24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="41">    
+            <Rows>  
+              <Row number="1">Paste24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="42">    
+            <Rows>  
+              <Row number="1">Properties24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="43">    
+            <Rows>  
+              <Row number="1">Remove24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="44">    
+            <Rows>  
+              <Row number="1">RemoveAll24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="45">    
+            <Rows>  
+              <Row number="1">Rename24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="46">    
+            <Rows>  
+              <Row number="1">Report24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="47">    
+            <Rows>  
+              <Row number="1">ResizeGrid_GridSizeDialog24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="48">    
+            <Rows>  
+              <Row number="1">RotateAntiClockwise24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="49">    
+            <Rows>  
+              <Row number="1">RotateClockwise24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="50">    
+            <Rows>  
+              <Row number="1">Run24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="51">    
+            <Rows>  
+              <Row number="1">RunWithParameters24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="52">    
+            <Rows>  
+              <Row number="1">SameHeight24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="53">    
+            <Rows>  
+              <Row number="1">SameSize24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="54">    
+            <Rows>  
+              <Row number="1">SameWidth24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="55">    
+            <Rows>  
+              <Row number="1">SaveAs24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="56">    
+            <Rows>  
+              <Row number="1">SaveToPattern24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="57">    
+            <Rows>  
+              <Row number="1">Search24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="58">    
+            <Rows>  
+              <Row number="1">SelectAll24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="59">    
+            <Rows>  
+              <Row number="1">ServiceObject24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="60">    
+            <Rows>  
+              <Row number="1">Settings24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="61">    
+            <Rows>  
+              <Row number="1">SharePointWorkflowIntegration24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="62">    
+            <Rows>  
+              <Row number="1">ShowCategory24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="63">    
+            <Rows>  
+              <Row number="1">ShowGridToggle24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="64">    
+            <Rows>  
+              <Row number="1">SmartObject24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="65">    
+            <Rows>  
+              <Row number="1">SmartObjectMethod24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="66">    
+            <Rows>  
+              <Row number="1">SmartObjectProperties24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="67">    
+            <Rows>  
+              <Row number="1">SnapToGrid24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="68">    
+            <Rows>  
+              <Row number="1">StartProcess24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="69">    
+            <Rows>  
+              <Row number="1">Toolbox24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="70">    
+            <Rows>  
+              <Row number="1">View24.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="71">    
+            <Rows>  
+              <Row number="1">ViewCode24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="72">    
+            <Rows>  
+              <Row number="1">Workflow24.png</Row>
+            </Rows> 
+          </Column>
+		  
+		  <Column number="73">    
+            <Rows>  
+              <Row number="1">Rules_Ribbon24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="74">    
+            <Rows>  
+              <Row number="1">Zoom_Ribbon24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="75">    
+            <Rows>  
+              <Row number="1">ZoomIn_Ribbon24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="76">    
+            <Rows>  
+              <Row number="1">ZoomOut_Ribbon24.png</Row>
+            </Rows> 
+          </Column>
+		  
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="12,0,0,12">
+        <CssBackgroundImageFolder>Ribbon/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/Ribbon/Ribbon24.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/Ribbon24.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

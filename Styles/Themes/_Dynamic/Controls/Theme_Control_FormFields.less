@@ -1,0 +1,64 @@
+/*#region FORM FIELDS*/
+
+.theme-entry .panel-body-wrapper > div > .wrapper
+{
+    display: table; /*BUG FIX: The rows/cells will not be full width otherwise - ie/ff*/
+    border-collapse: separate;
+}
+
+.theme-entry .dialog.id-hyperlink-config .panel-body-wrapper > div > .wrapper
+{
+    border-spacing: 2px;
+    /*allow necessary spacing to be added between hyperlink form field rows*/
+}
+
+.theme-entry .form-field
+{
+    display: table-row;
+}
+
+@__Required-Indicator-Size: 8px;
+
+.theme-entry .form-field.required label.form-field-label
+{
+    background-image: none; //override core.less
+
+    &:after
+    {
+        content:'';
+        display:block;
+        position: absolute;
+        width: @__Required-Indicator-Size;
+        height: @__Required-Indicator-Size;
+        background-color: @Required-Indicator-Background-Color;
+
+        right: 0;
+        top: 50%;
+        margin-left: -1 * (@__Required-Indicator-Size/2);
+        margin-top: -1 * (@__Required-Indicator-Size/2);
+
+        border-radius: 100%;
+    }
+}
+
+.theme-entry .form-field:first-child
+{
+    margin-top: 0; /* override base theme */
+}
+
+.theme-entry .form-field > label.form-field-label,
+html[dir=rtl] .theme-entry .form-field > label.form-field-label,
+.theme-entry .form-field > .form-field-element-wrapper,
+html[dir=rtl] .theme-entry .form-field > .form-field-element-wrapper
+{
+    display: table-cell;
+    float: none;
+    margin: 0;
+}
+
+.theme-entry .form-field > label.form-field-label
+{
+    margin: 0 0.2rem 0 0;
+}
+
+/*#endregion FORM FIELDS*/

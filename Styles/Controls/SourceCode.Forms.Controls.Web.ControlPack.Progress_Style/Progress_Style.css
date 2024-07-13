@@ -1,0 +1,106 @@
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl .stylewrapper .container.metro .step-container .step-area {
+  color: #707070;
+  font-family: Segoe UI, Regular;
+  font-size: 14px;
+  text-align: center;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl .stylewrapper .container.metro .step-container .step-area .step-item .connector-left,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl .stylewrapper .container.metro .step-container .step-area .step-item .connector-right {
+  background-color: #adadad;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl .stylewrapper .container.metro .step-container .step-area .step-item .step {
+  background-color: white;
+  border-color: #adadad;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl .stylewrapper .container.metro .step-container .step-area .step-item .step:hover {
+  background-color: #3cb0df;
+  border-color: #3cb0df;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl .stylewrapper .container.metro .step-container .step-area .step-item .step:focus {
+  border-color: #3cb0df;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl .stylewrapper .container.metro .step-container .step-area .step-title .title {
+  color: #707070;
+  font-family: Segoe UI, Regular;
+  font-size: 14px;
+  text-align: center;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .stylewrapper .step-container.inprogress .step-area .step-item .step {
+  background-color: #636f80;
+  border-color: #636f80;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .stylewrapper .step-container.completed .step-area .step-item .step {
+  background-color: #636f80;
+  border-color: #636f80;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .stylewrapper .step-container.last-completed .step-area .step-item .connector-left {
+  background-color: #636f80;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .stylewrapper .step-container.next-completed .step-area .step-item .connector-right {
+  background-color: #636f80;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .stylewrapper .step-container.paused .step-area .step-item .step {
+  background-color: #adadad;
+  border-color: #adadad;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .stylewrapper .step-container.error .step-area .step-item .step {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .stylewrapper .step-container.error .step-area .step-item .step:hover {
+  background-color: #f44336;
+  border-color: #f44336;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .stylewrapper .step-container.error .step-area .step-item .step:focus {
+  border-color: #f44336;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .stylewrapper .step-container.error.selected .step-area .step-item .step {
+  background-color: #f44336;
+  border-color: #f44336;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .stylewrapper .step-container.selected .step-area .step-item .step {
+  background-color: #3cb0df;
+  border-color: #3cb0df;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl.disabled .stylewrapper .container.metro .step-container .step-area .step-item .connector-left,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl.disabled .stylewrapper .container.metro .step-container .step-area .step-item .connector-right {
+  background-color: #d9d9d9;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl.disabled .stylewrapper .container.metro .step-container .step-area .step-item .step {
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl.disabled .stylewrapper .container.metro .step-container .step-area .step-item:hover {
+  border-color: #d9d9d9;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl.disabled .stylewrapper .container.metro .step-container .step-area .step-item:focus {
+  border-color: #d9d9d9;
+}
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .container.metro .step-container.inprogress .step {
+    background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Play10.png');
+  }
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .container.metro .step-container.completed .step {
+    background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Complete10.png');
+  }
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .container.metro .step-container.paused .step {
+    background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Pause10.png');
+  }
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .container.metro .step-container.error .step {
+    background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Error10.png');
+  }
+}
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .container.metro .step-container.inprogress .step {
+    background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Play10@2x.png');
+  }
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .container.metro .step-container.completed .step {
+    background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Complete10@2x.png');
+  }
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .container.metro .step-container.paused .step {
+    background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Pause10@2x.png');
+  }
+  .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl:not(.disabled) .container.metro .step-container.error .step {
+    background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Progress/Images/Error10@2x.png');
+  }
+}

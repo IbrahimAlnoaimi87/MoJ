@@ -1,0 +1,8 @@
+﻿<ul class="reToolbar Default">
+	<li class="reGrip grip_first"></li>
+	<li class="reToolFirstItem">
+		<a title="Hyperlink" class="" href="javascript:void(0);" unselectable="on" data-tool="Hyperlink" tabindex="-1">
+			<span class="hyperlink" unselectable="on"></span>
+		</a>
+	</li>
+</ul>

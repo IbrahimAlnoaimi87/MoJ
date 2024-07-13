@@ -1,0 +1,149 @@
+/* ^.theme-entry .... for desktop devices */
+
+/* ^.mobile .theme-entry .... for touch devices */
+
+/*Theme@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper .PART_SearchButton {
+    background-image: url("../../lithium/Toolbar/Search16.png");
+    -moz-background-size: 16px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 22px;
+    width: 22px;
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper:hover .PART_SearchButton {
+    background-image: url("../../lithium/Toolbar/Search16White.png");
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper .PART_ClearSearchButton {
+    background-image: url("../../lithium/Toolbar/ClearIcon16.png");
+    -moz-background-size: 16px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 22px;
+    width: 22px;
+  }
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper:hover .PART_ClearSearchButton {
+    background-image: url("../../lithium/Toolbar/ClearIconsWhite16.png");
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  
+}
+/* #region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .input-control-wrapper .input-control-watermark {
+  /* same height as textbox so that watermark is positioned vertically centered in the textbox */
+  line-height: 2.2rem;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-color: #e6e6e6;
+  border-left: none;
+  background: none;
+}
+/* button hover style */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper:hover {
+  background-color: #3cb0df;
+}
+/* when textbox is focused, change the color of search button as well */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar.focus .search-button-wrapper {
+  border-color: #00abf0;
+}
+/* when textbox is focused, change the color of cancel search button as well */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar.focus .clear-search-button-wrapper {
+  border-color: #00abf0;
+}
+/* expand/collapse icon for advanced search option*/
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .PART_ExpanderButton {
+  background-image: url("../../lithium/RuntimeTheme/PDExpand16.png");
+  -moz-background-size: 16px;
+  background-size: 16px;
+  margin-left: 4px;
+  margin-top: 4px;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .PART_ExpanderButton.expanded {
+  background-image: url("../../lithium/RuntimeTheme/PDCollapse16.png");
+  -moz-background-size: 16px;
+  background-size: 16px;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .button-wrapper {
+  width: 22px;
+  height: 22px;
+}
+/* by default where search and clear search button coexist, search button should not have right border */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper {
+  border-right-width: 0;
+}
+/* when clear search button is disabled, be sure to add a right border to the search button */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .hideClearSearchButton .search-button-wrapper {
+  border-right-width: 0.1rem;
+}
+/* lengthy selector to override SmartForms radius setting */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar-cell-input .input-control.text-input:not(.control-group-container) .input-control-m-c {
+  border-right-width: 0;
+  border-radius: 2px 0 0 2px;
+}
+/* move the clear button 'x' icon to left */
+
+/* lengthy selector to override SmartForms radius setting */
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar-cell-input .input-control.text-input:not(.control-group-container) .input-control-m-c {
+  border-left-width: 0;
+  border-right-width: 0.1rem;
+  border-radius: 0 2px 2px 0;
+}
+/* when clear search button is disabled, ensure to swap the left and right border style for RTL */
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .hideClearSearchButton .search-button-wrapper {
+  border-right-width: 0;
+  border-left: 0.1rem solid #e6e6e6;
+}
+/* when textbox is focused, change the color of cancel search button as well */
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar.focus .search-button-wrapper {
+  border-color: #00abf0;
+}
+/* #endregion DESKTOP*/
+
+/* #region TOUCH */
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 360px) and (orientation: portrait), only screen and (max-width: 640px) and (orientation: landscape) {
+  
+}
+/* Extra Small Devices */
+
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+  
+}
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  
+}
+/*#endregion RESPONSIVE BREAKING POINTS */
+

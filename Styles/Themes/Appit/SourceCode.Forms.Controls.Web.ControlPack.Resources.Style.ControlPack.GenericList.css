@@ -1,0 +1,626 @@
+﻿.SourceCode-Forms-Controls-Web-ControlPack-GenericList .deleteItem
+{
+	display:none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_GenericExpenseGridItemMainRow .deleteItem
+{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	bottom:0px;
+	right:0px;
+	display: table !important;
+	height: 100%;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_GenericExpenseGridItemMainRow .deleteItem.hidden
+{
+	display: none !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.selected .deleteItem
+{
+	opacity: 0;
+	position: absolute;
+	top: -1px;
+	display: table !important;
+	height: 100%;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.selected .deleteItem.hidden
+{
+	display: none !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .amountDiv
+{
+	position: relative;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem
+{
+	cursor: pointer;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem:hover .deleteItem,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem:hover .deleteItem.disabled,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .deleteItem:hover
+{
+	opacity:1;
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(249,249,249,1) 30%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(249,249,249,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(249,249,249,1) 30%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(249,249,249,1) 30%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(249,249,249,1) 30%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(249,249,249,1) 30%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f9f9f9',GradientType=1 ); /* IE6-9 */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.selected:hover .deleteItem,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.selected .deleteItem:hover
+{
+	opacity:1;
+	display: block;
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,1)), color-stop(98%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 98%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem  span.button-icon
+{
+	background: url('Expenses/Add16.png') no-repeat transparent center;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem  span.button-icon
+{
+	background: url('Expenses/AddManual20@2x.png') no-repeat transparent center;
+	background-size: 30px;
+	width: 3rem;
+	height: 3rem;
+	margin-right: 0px;
+	padding-left:0px;
+	padding-right: 0px;
+	z-index: 2 !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .deleteItem  span.button-icon
+{
+	background: url('toolbar/Remove20.png') no-repeat transparent center !important;
+	width: 3rem !important;
+	display: table-cell !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #transactionsBtn  span.button-icon
+{
+	background: url('Expenses/Transaction16_White.png') no-repeat transparent center;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #transactionsBtn span.button-icon
+{
+	background: url('Expenses/AddTransaction20@2x.png') no-repeat transparent center;
+	background-size: 30px;
+	width: 3rem;
+	height: 3rem;
+	margin-right: 0px;
+	padding-left:0px;
+	padding-right: 0px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #receiptsBtn  span.button-icon
+{
+	background: url('Expenses/Receipt16_White.png') no-repeat transparent center;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #receiptsBtn  span.button-icon
+{
+	background: url('Expenses/AddReceipt20@2x.png') no-repeat transparent center;
+	background-size: 30px;
+	width: 3rem;
+	height: 3rem;
+	margin-right: 0px;
+	padding-left:0px;
+	padding-right: 0px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .billableBtn  span.button-icon
+{
+	background: url('Expenses/Billable24.png') no-repeat transparent center;
+	width: 3rem !important;
+	background-size: 24px !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .splitBtnDiv  span.button-icon
+{
+	background: url('Expenses/Split24_Blue.png') no-repeat transparent center;
+	width: 3rem !important;
+	background-size: 24px !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .billableBtn.disabled span.button-icon
+{
+	background: url('Expenses/Billable24_Grey.png') no-repeat transparent center;
+	width: 3rem !important;
+	opacity: 1 !important;
+	filter: Alpha(opacity=100) !important;
+	background-size: 24px !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .transactionBtnItem   span.button-icon
+{
+	background: url('Expenses/Transactions24.png') no-repeat transparent center;
+	background-size: 24px !important;
+	width: 3rem !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .transactionBtnItem.disabled span.button-icon
+{
+	background: url('Expenses/Transactions24_Grey.png') no-repeat transparent center;
+	width: 3rem !important;
+	opacity: 1 !important;
+	background-size: 24px !important;
+	filter: Alpha(opacity=100) !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .receiptBtnItem   span.button-icon
+{
+	background: url('Expenses/Receipts24.png') no-repeat transparent center;
+	width: 3rem !important;
+	background-size: 24px !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .receiptBtnItem.disabled span.button-icon
+{
+	background: url('Expenses/Receipts24_Grey.png') no-repeat transparent center;
+	width: 3rem !important;
+	opacity: 1 !important;
+	filter: Alpha(opacity=100) !important;
+	background-size: 24px !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .receiptBtnRecommendationItem   span.button-icon
+{
+	background: url('Expenses/ReceiptsSuggestion24.png') no-repeat transparent center !important;
+	width: 3rem !important;
+	background-size: 24px !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .receiptBtnRecommendationItem.disabled span.button-icon
+{
+	background: url('Expenses/Receipts24_Grey.png') no-repeat transparent center !important;
+	width: 3rem !important;
+	opacity: 1 !important;
+	filter: Alpha(opacity=100) !important;
+	background-size: 24px !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem 
+{
+	top:10px;
+	left:50%;
+	margin-left:-15px;
+	padding-left:0px;
+	padding-right: 0px;
+	z-index: 2 !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbaradditems 
+{
+	width: 32px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 10px;
+	position: relative;
+	transition: all 0.15s linear;
+	cursor: default;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbaradditems #transactionsBtn,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbaradditems #receiptsBtn
+{
+	opacity: 0;
+	transition: all 0.15s linear;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbaradditems:hover #transactionsBtn,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbaradditems:hover #receiptsBtn
+{
+	opacity: 1;
+	transition: all 0.25s linear .4s;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem:hover + .toolbaradditems #transactionsBtn,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem:hover + .toolbaradditems #receiptsBtn
+{
+	opacity: 1;
+	transition: all 0.25s linear .4s;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem:hover + .toolbaradditems:hover #transactionsBtn,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem:hover + .toolbaradditems:hover #receiptsBtn
+{
+	opacity: 1;
+	transition: all 0.25s linear .4s;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem:hover + .toolbaradditems 
+{
+	width: 104px;
+	transition: all 0.25s linear .4s;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbaradditems:hover 
+{
+	width: 104px;
+	transition: all 0.25s linear .4s;
+}
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem  span.button-icon
+	{
+		background: url('Expenses/Add16.png') no-repeat transparent center;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem  span.button-icon
+	{
+		background: url('Expenses/AddManual20@2x.png') no-repeat transparent center;
+		background-size: 30px;
+		width: 3rem;
+		height: 3rem;
+		margin-right: 0px;
+		padding-left:0px;
+		padding-right: 0px;
+		z-index: 2 !important;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList .deleteItem  span.button-icon
+	{
+		background: url('toolbar/Remove20.png') no-repeat transparent center !important;
+		width: 3rem !important
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList #transactionsBtn  span.button-icon
+	{
+		background: url('Expenses/Transaction16_White.png') no-repeat transparent center;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList #transactionsBtn span.button-icon
+	{
+		background: url('Expenses/AddTransaction20@2x.png') no-repeat transparent center;
+		background-size: 30px;
+		width: 3rem;
+		height: 3rem;
+		margin-right: 0px;
+		padding-left:0px;
+		padding-right: 0px;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList #receiptsBtn  span.button-icon
+	{
+		background: url('Expenses/Receipt16_White.png') no-repeat transparent center;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList #receiptsBtn  span.button-icon
+	{
+		background: url('Expenses/AddReceipt20@2x.png') no-repeat transparent center;
+		background-size: 30px;
+		width: 3rem;
+		height: 3rem;
+		margin-right: 0px;
+		padding-left:0px;
+		padding-right: 0px;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList .billableBtn  span.button-icon
+	{
+		background: url('Expenses/Billable24.png') no-repeat transparent center;
+		width: 3rem !important;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList .billableBtn.disabled span.button-icon
+	{
+		background: url('Expenses/Billable24_Grey.png') no-repeat transparent center;
+		width: 3rem !important;
+		opacity: 1 !important;
+		filter: Alpha(opacity=100) !important;
+		background-size: 24px !important;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList .transactionBtnItem   span.button-icon
+	{
+		background: url('Expenses/Transactions24.png') no-repeat transparent center;
+		background-size: 24px !important;
+		width: 3rem !important;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList .transactionBtnItem.disabled span.button-icon
+	{
+		background: url('Expenses/Transactions24_Grey.png') no-repeat transparent center;
+		width: 3rem !important;
+		opacity: 1 !important;
+		background-size: 24px !important;
+		filter: Alpha(opacity=100) !important;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList .receiptBtnItem   span.button-icon
+	{
+		background: url('Expenses/Receipts24.png') no-repeat transparent center;
+		width: 3rem !important;
+		background-size: 24px !important;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList .receiptBtnItem.disabled span.button-icon
+	{
+		background: url('Expenses/Receipts24_Grey.png') no-repeat transparent center;
+		width: 3rem !important;
+		opacity: 1 !important;
+		filter: Alpha(opacity=100) !important;
+		background-size: 24px !important;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList .receiptBtnRecommendationItem   span.button-icon
+	{
+		background: url('Expenses/ReceiptsSuggestion24.png') no-repeat transparent center !important;
+		width: 3rem !important;
+		background-size: 24px !important;
+	}
+
+	.SourceCode-Forms-Controls-Web-ControlPack-GenericList .receiptBtnRecommendationItem.disabled span.button-icon
+	{
+		background: url('Expenses/Receipts24_Grey.png') no-repeat transparent center !important;
+		width: 3rem !important;
+		opacity: 1 !important;
+		filter: Alpha(opacity=100) !important;
+		background-size: 24px !important;
+	}
+}
+
+@keyframes rotateControl
+{
+	0%
+	{
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+
+	100%
+	{
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+
+@-webkit-keyframes rotateControl
+{
+	0%
+	{
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+
+	100%
+	{
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .expenseclaimsbody
+{
+	border-bottom: 0px;
+	border-top: 0px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.selected 
+{
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+	z-index: 1;
+	position: relative;
+	margin-left: -1px;
+	margin-right:-1px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem
+{
+	padding-right: 18px !important;
+	border-bottom: 1px solid #CCCCCC;
+	height: 56px !important;
+	padding-left: 9px;
+	background-color: #F9F9F9;
+} 
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .expenseclaimsfooter
+{
+	background: #F9F9F9 !important;
+	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0.4rem;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0.4rem;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0.4rem;
+	border-right: 1px solid #cccccc;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .descriptionTD
+{
+	color: rgb(130,130,130);
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .moreInfoToolTip  .tooltip-pointer
+{
+	border-right-color: #CCCCCC !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover 
+{
+	background: #F9F9F9;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .deleteBtnCell
+{
+	width: 100%;
+	text-align: right !important;
+	padding-right: 10px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList a.toolbar-button span
+{
+	color: white !important;
+	display: table-row;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .summaryDiv
+{
+	font-weight: Bold;
+	font-style: normal;
+	color: #1390f2;
+	text-align: right;	
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .summaryDivLink
+{
+	cursor: pointer;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList a.toolbar-button:hover,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList a.toolbar-button:active,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList a.toolbar-button:focus
+{
+	background-color: transparent !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn.selectedDelete
+{
+	background-color: white !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList table
+{
+	table-layout:auto !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList td > div
+{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemwrapper 
+{
+	height: 100% !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toptoolbarsTable
+{
+	table-layout:auto !important;
+	margin: 2px;
+	margin-top: 6px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .innerToolBarItem a
+{
+	padding: 0;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .innerToolBarItem:hover .button-icon
+{
+	transform: scale(1.1);
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .recurringTitle
+{
+	padding: 10px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList td.innerItemTableCell {
+    padding-left: 49px;
+    border-bottom:  2px solid #FFFFFF;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-GenericList .innerToolBarDiv 
+{
+	top: 50% !important;
+	height: auto !important;
+	margin-top: -15px !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn:active,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn:focus
+{
+	margin-left: 51px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn.hidden
+{
+	display: none !important;
+}
+
+/* #region SF panel override (overrides theme.css) */
+
+.theme-entry.runtime-form .view
+{
+	margin-bottom: 0 !important; /* override theme.css margin-bottom: 10px */
+}
+
+/* this is custom control component, workaround to fit the panel border to look like part of the control */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody
+{
+	border: none;
+}
+
+/* expense item row */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem
+{
+	border-right: 1px solid #cccccc;
+}
+
+/* expense item row (selected state) */
+.theme-entry  .SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.selected
+{
+	border-right: 1px solid transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover
+{
+	border-right: 1px solid #cccccc;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .spacerdiv
+{
+	border-right: 1px solid #cccccc;
+} 
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList
+{
+	overflow: inherit !important;
+} 
+
+
+
+/* #endregion SF panel override */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_DetailDiv {
+	font-style:italic;
+}

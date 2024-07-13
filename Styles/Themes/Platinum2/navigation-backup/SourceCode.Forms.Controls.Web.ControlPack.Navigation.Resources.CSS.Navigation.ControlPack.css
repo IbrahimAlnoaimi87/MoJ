@@ -1,0 +1,179 @@
+.theme-entry {
+  /* theme: "minimal-dark" */
+}
+.theme-entry .navigation-allitems {
+  background-color: #302e31;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Navigation,
+.theme-entry .navigation-control-container.minimized {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.theme-entry .navigation-control-container {
+  background-color: #302e31;
+}
+.theme-entry .navigation-control-container .navigation-usermenu {
+  background-color: #302e31;
+}
+.theme-entry .navigation-control-container .navigation-usermenu.closed .usermenu-header .usermenu-section-container {
+  border-top: 1px solid #49474a;
+}
+.theme-entry .navigation-control-container .navigation-usermenu .usermenu-bottom {
+  text-transform: uppercase;
+  color: #959496;
+}
+.theme-entry .navigation-control-container .usermenu-header .usermenu-section-container {
+  border-bottom: 1px solid #49474a;
+}
+.theme-entry .navigation-control-container .usermenu-footer .usermenu-section-container {
+  border-top: 1px solid #49474a;
+}
+.theme-entry .navigation-control-container .usermenu-picture {
+  background-image: url('Navigation/Avatar.png');
+}
+.theme-entry .navigation-control-container a,
+.theme-entry .navigation-control-container span {
+  color: #ffffff;
+}
+.theme-entry .navigation-control-container .navigation-item-container:not(.disabled) .layout-table:hover,
+.theme-entry .navigation-control-container .navigation-item-container:not(.disabled) .active-menuitem {
+  -moz-transition: background-color linear 0.15s;
+  -o-transition: background-color linear 0.15s;
+  -webkit-transition: background-color linear 0.15s;
+  transition: background-color linear 0.15s;
+  background-color: #3d7391;
+}
+.theme-entry .navigation-control-container .navigation-item-container:not(.disabled) .active-menuitem .navigation-link-container {
+  border-right: 8px solid #58b2f6;
+}
+.theme-entry .navigation-control-container .navigation-item-container:not(.disabled) .navigation-link-container {
+  border-right: 8px solid transparent;
+}
+.theme-entry .navigation-control-container .navigation-item-count.important > span {
+  height: 1.6rem;
+  min-width: 1.6rem;
+  line-height: 1.4rem;
+  background-color: #bf360c;
+}
+.theme-entry .navigation-control-container .navigation-item-count.loading {
+  background-image: url('RuntimeTheme/LoadingAnimation40.gif');
+  background-size: 1.6rem;
+}
+.theme-entry .navigation-header a {
+  color: #ffffff;
+  margin-left: 20px;
+}
+.theme-entry .navigation-item-container.disabled {
+  font-style: italic;
+  opacity: .9;
+}
+.theme-entry .navigation-item-container:not(.disabled) .navigation-dataitem-container .navigation-dataitem {
+  color: #959496;
+  border-right: 8px solid transparent;
+}
+.theme-entry .navigation-item-container:not(.disabled) .navigation-dataitem-container .navigation-dataitem:hover {
+  -moz-transition: background-color linear 0.15s;
+  -o-transition: background-color linear 0.15s;
+  -webkit-transition: background-color linear 0.15s;
+  transition: background-color linear 0.15s;
+  background-color: #3d7391;
+  color: #ffffff;
+}
+.theme-entry .navigation-item-container:not(.disabled) .navigation-dataitem-container .navigation-dataitem.active-menuitem {
+  background-color: #3d7391;
+  border-right: 8px solid #4fc2f6;
+  color: #ffffff;
+}
+.theme-entry .navigation-item-container:not(.disabled) .navigation-dataitem-container .navigation-dataitem-container-options .dataitem-container-option {
+  -moz-transition: background-color linear 0.15s;
+  -o-transition: background-color linear 0.15s;
+  -webkit-transition: background-color linear 0.15s;
+  transition: background-color linear 0.15s;
+}
+.theme-entry .navigation-item-container:not(.disabled) .navigation-dataitem-container .navigation-dataitem-container-options .dataitem-container-option a {
+  color: #959496;
+  -moz-transition: color linear 0.15s;
+  -o-transition: color linear 0.15s;
+  -webkit-transition: color linear 0.15s;
+  transition: color linear 0.15s;
+}
+.theme-entry .navigation-item-container:not(.disabled) .navigation-dataitem-container .navigation-dataitem-container-options .dataitem-container-option:hover {
+  background-color: #3d7391;
+}
+.theme-entry .navigation-item-container:not(.disabled) .navigation-dataitem-container .navigation-dataitem-container-options .dataitem-container-option:hover > a {
+  color: #ffffff;
+}
+.theme-entry .navigation-expand-collapse-sprite {
+  background-image: url('Navigation/TPItemExpandCollapse16_Sprite.png');
+  background-repeat: no-repeat;
+  display: block;
+}
+.theme-entry .Expand {
+  width: 16px;
+  height: 16px;
+  background-position: -16px -16px;
+}
+.theme-entry .Collapse {
+  width: 16px;
+  height: 16px;
+  background-position: -64px -16px;
+}
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  /* ^.theme-entry .... for desktop devices */
+  .theme-entry .navigation-control-container .usermenu-picture {
+    background-image: url('Navigation/Avatar@2x.png');
+  }
+  .theme-entry .navigation-expand-collapse-sprite {
+    background-image: url('Navigation/TPItemExpandCollapse16_Sprite@2x.png');
+    background-repeat: no-repeat;
+    display: block;
+  }
+  .theme-entry .Expand {
+    width: 32px;
+    height: 32px;
+    background-position: -32px -32px;
+  }
+  .theme-entry .Collapse {
+    width: 32px;
+    height: 32px;
+    background-position: -128px -32px;
+  }
+  .theme-entry .navigation-item-count.loading {
+    background-image: url('RuntimeTheme/LoadingAnimation40@2x.gif');
+    background-size: 1.6rem;
+  }
+}
+.TaskPanel16_Sprite {
+  background-image: url('workspace/TaskPanel16_Sprite.png');
+  background-repeat: no-repeat;
+  display: block;
+}
+.Inbox16 {
+  width: 16px;
+  height: 16px;
+  background-position: -16px -16px;
+}
+.History16 {
+  width: 16px;
+  height: 16px;
+  background-position: -64px -16px;
+}
+.Task16 {
+  width: 16px;
+  height: 16px;
+  background-position: -112px -16px;
+}
+.Appliication16 {
+  width: 16px;
+  height: 16px;
+  background-position: -160px -16px;
+}
+.Analyze16 {
+  width: 16px;
+  height: 16px;
+  background-position: -208px -16px;
+}
+.workspace-toplogo {
+  background-image: url('workspace/K2_logo_White50.png');
+}
+/*Images@2x - hi-dpi*/

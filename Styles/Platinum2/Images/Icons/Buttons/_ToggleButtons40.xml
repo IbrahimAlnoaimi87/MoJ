@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-togglebuttons.icon-size{iconsize}.ic-{iconname}"/>
+          <RowDefinition row="2" cssSelector=".icon.icon-set-togglebuttons.icon-size{iconsize}.ic-{iconname}.selected"/>
+          <RowDefinition row="3" cssSelector=".icon.icon-set-togglebuttons.icon-size{iconsize}.ic-{iconname}.hover"/>
+          <RowDefinition row="4" cssSelector=".icon.icon-set-togglebuttons.icon-size{iconsize}.ic-{iconname}.focus"/>
+          <RowDefinition row="5" cssSelector=".icon.icon-set-togglebuttons.icon-size{iconsize}.ic-{iconname}.hover_focus"/>
+          <RowDefinition row="6" cssSelector=".icon.icon-set-togglebuttons.icon-size{iconsize}.ic-{iconname}.disabled"/>
+        </CssDefinitions>
+        <SourceImages>
+
+          <Column number="1">
+            <Rows>
+              <Row number="1" cssname="toggle">ToggleNormal40.png</Row>
+              <Row number="2" cssname="toggle">ToggleSelected40.png</Row>
+              <Row number="3" cssname="toggle">ToggleHover40.png</Row>
+              <Row number="4" cssname="toggle">ToggleFocus40.png</Row>
+              <Row number="5" cssname="toggle">ToggleHoverFocus40.png</Row>
+              <Row number="6" cssname="toggle">ToggleDisabled40.png</Row>
+            </Rows>
+          </Column>
+          <Column number="2">
+            <Rows>
+              <Row number="1" cssname="toggle_selected">ToggleSelected40.png</Row>
+              <Row number="2" cssname="toggle_selected">ToggleSelected40.png</Row>
+              <Row number="3" cssname="toggle_selected">ToggleSelectedHover40.png</Row>
+              <Row number="4" cssname="toggle_selected">ToggleSelectedFocus40.png</Row>
+              <Row number="5" cssname="toggle_selected">ToggleSelectedHoverFocus40.png</Row>
+              <Row number="6" cssname="toggle_selected">ToggleSelectedDisabled40.png</Row>
+            </Rows>
+          </Column>
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="20,0,0,20">
+        <CssBackgroundImageFolder>Toolbar/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/Buttons/ToggleButtons40.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/ToggleButtons40.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

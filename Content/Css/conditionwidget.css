@@ -1,0 +1,36 @@
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+.expression-dropdown-container {
+  width: 50px;
+  display: inline-block;
+}
+.grouping-button {
+  display: inline-block;
+  background: #fafbf8;
+  height: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #343e41;
+  min-width: 10px;
+  vertical-align: top;
+  border: solid 1px #dde0db;
+}
+.changed-grouping {
+  border: solid 1px #dde0db;
+}
+.available-grouping {
+  border: solid 1px #2196f3;
+  background: #deeffd;
+}
+span.previewText {
+  color: #00bcd4;
+}
+#ConditionWidgetPC #ExpressionDiv #ExpressionPanel .panel-body .scroll-wrapper {
+  padding: 10px;
+}
+#ConditionWidgetPC #PreviewDiv #previewWidget .panel-body .scroll-wrapper {
+  padding: 10px;
+}

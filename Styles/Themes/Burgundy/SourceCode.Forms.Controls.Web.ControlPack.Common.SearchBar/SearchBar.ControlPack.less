@@ -1,0 +1,39 @@
+﻿
+.button-gradient
+{
+	background: #860f15;
+	background: -moz-linear-gradient(top, #860f15 0%, #5a070f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#860f15), color-stop(100%,#5a070f));
+	background: -webkit-linear-gradient(top, #860f15 0%,#5a070f 100%);
+	background: -o-linear-gradient(top, #860f15 0%,#5a070f 100%);
+	background: -ms-linear-gradient(top, #860f15 0%,#5a070f 100%);
+	background: linear-gradient(to bottom, #860f15 0%,#5a070f 100%);
+	border-color: #160005;
+}
+
+.button-gradient-hover
+{
+	background: #c1141e;
+    background-image: -moz-linear-gradient(-90deg, #c1141e, #720415);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c1141e), to(#720415));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#c1141e, endColorstr=#720415)";
+    border-color: #c1141e;
+}
+
+.theme-entry
+{
+	.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar
+	{
+		.search-button-wrapper,
+		.clear-search-button-wrapper
+		{
+			.button-gradient;
+		}
+
+		.search-button-wrapper:hover,
+		.clear-search-button-wrapper:hover
+		{
+			.button-gradient-hover;
+		}
+	}
+}

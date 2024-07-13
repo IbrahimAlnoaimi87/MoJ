@@ -1,0 +1,696 @@
+﻿@import (reference) "@{SourceCode-Designer-Variables-File}";
+
+/*Override Toolbar cell css*/
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-bar .bottom-row div.fix-width-tree-toolbar
+{
+    width: 100%;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-bar div.spacer
+{
+    display: block;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .dropdown-td-width
+{
+    padding-right: 1px;
+}
+
+/*#region Tree*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.hidden,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .hidden,
+.theme-entry > form > div > .grid .grid-content-cell-wrapper > *.SourceCode-Forms-Controls-Web-ControlPack-TreeView.hidden,
+.theme-entry .SFCDimensionsWrapper.hidden,
+.workflowContainer .tree li.hidden
+{
+    display: none;
+}
+
+.sfc-treeview.populating-indicator
+{
+    position: absolute;
+    display: inline-block;
+    visibility: collapse;
+    top: 2px;
+    right: 2px;
+}
+
+.sfc-treeview.populating-indicator.showSearch
+{
+    top: 34px;
+    right: 4px;
+}
+
+.sfc-treeview.populating-indicator.showSearchExpanded
+{
+    top: 53px;
+    right: 4px;
+}
+
+.sfc-treeview.populating-indicator.scrollbar
+{
+    right: 19px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .highlight
+{
+    background-color: yellow;
+    display: inline;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .treeview
+{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    user-select: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView.designtime
+{
+    overflow: hidden;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .hidden
+{
+    display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .top-seperator
+{
+    border-top: 1px solid #adae9c;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-bar
+{
+    padding: 4px;
+    background-color: #fff;
+}
+
+/* more specificity to override SmartForms style*/
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper div.search-bar
+{
+    font-size: 11px;
+}
+
+/* search indicator message section */
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-tree-node-search-indicator
+{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #252525;
+    opacity: 0.7;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-tree-node-search-indicator .indicator-text
+{
+    color: #F2F2F2;
+    /* center text */
+    display: table;
+    margin: 0 auto;
+    /* vertically align to the middle */
+    height: 30px;
+    line-height: 30px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .tree-body
+{
+    overflow: auto;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView.designtime .tree-body .ul
+{
+    overflow: hidden;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-results
+{
+    overflow: auto;
+    background-color: #fff;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper div.search-results
+{
+    font-size: 11px;
+}
+
+.changeControlItem.toolboxitem.tree-control
+{
+    display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView span,
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView div,
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView label,
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView input[type="checkbox"],
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .disable-overlay
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* runtime only */
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView .disable-overlay
+{
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper
+{
+    border: 1px solid #adae9c;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden !important; /* override core */
+    background-color: white;
+    height: auto !important;
+    width: auto !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper.invalid
+{
+    border: 1px solid red;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView div.watermark
+{
+    margin-left: 5px;
+    margin-top: 2px;
+    text-align: left;
+}
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-TreeView div.watermark
+{
+    margin-right: 7px;
+    margin-left: 5px;
+    margin-top: 2px;
+    text-align: right;
+}
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-TreeView.designtime div.watermark
+{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .watermark > span
+{
+    color: #c5c5c5;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .disable-overlay.hidden
+{
+    display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .disable-overlay.preview
+{
+    opacity: 0.5;
+    background-color: #eeeeee;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly .disable-overlay
+{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*#endregion*/
+
+/*#region Node*/
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node-container
+{
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 16px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+}
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node-container
+{
+    padding-left: 0px;
+    padding-right: 16px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node-container.first
+{
+    padding-top: 4px;
+    overflow: auto;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node-container.root
+{
+    padding-left: 4px;
+}
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node-container.root
+{
+    padding-left: 0px;
+    padding-right: 4px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.expanded > .node-container
+{
+    display: block;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.collapsed > .node-container
+{
+    display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .tree-body > .node-container
+{
+    display: block;
+}
+
+/*#endregion*/
+
+/*#region Node Expander*/
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .expander-container
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .expander
+{
+    width: 16px;
+    height: 16px;
+    float: left;
+    display: table-cell;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: none;
+    position: relative;
+    top: 1px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.empty > .content > .expander-container > .expander
+{
+    background-image: none;
+    visibility: collapse;
+}
+
+
+html[dir=rtl] .expander
+{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .expander.empty
+{
+    visibility: hidden;
+}
+
+/*#endregion*/
+
+/*#region Node CheckBox */
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .checkbox-parent
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -5px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.checkbox
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*#endregion*/
+
+/*#region Node Header */
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .header
+{
+    border: 1px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    padding: 1px;
+    margin-left: -3px;
+}
+
+#StyleBuilderPreviewPanelContent .SourceCode-Forms-Controls-Web-ControlPack-TreeView .disable-overlay
+{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+}
+
+/*.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selectable .header:hover
+{
+	background-color: #EFF7D4;
+	border-color: #D6E3B0;
+	cursor: default;
+}*/
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView:not(.disabled) .node.selectable > .content > .header:hover
+{
+    cursor: pointer;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node .content
+{
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    display: table-cell;
+    padding-right: 4px;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .text
+{
+    display: table-cell;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .text.with-image
+{
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
+/*#endregion*/
+
+/*#region Node Image */
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView span.image-container
+{
+    display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView span.image-container.show
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .image
+{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    image-rendering: optimizeQuality;
+    position: relative;
+    top: 1px;
+}
+
+/*#endregion*/
+
+
+/*  DESIGN TIME  */
+
+/* designer only */
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView.disabled
+{
+    opacity: 0.5;
+    cursor: default;
+}
+
+#conditionalFormattingGrid ul.node-container
+{
+    width: auto;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView.designtime ul.node-container
+{
+    width: auto;
+}
+
+/*#region Style Builder */
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView.tree-view-style-builder,
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView.tree-view-style-builder .stylewrapper
+{
+    width: auto !important;
+    height: 250px !important;
+    overflow: hidden !important;
+}
+
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView.tree-view-conditional-style-builder .stylewrapper
+{
+    width: auto !important;
+    height: auto !important;
+}
+
+/* making sure conditional format builder preview control is not interactive */
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView.tree-view-conditional-style-builder div.disable-overlay
+{
+    display: block; /* override SF PlatinumStyleBuilder.css */
+    height: 100%;
+    width: 100%;
+}
+
+/*#endregion*/
+
+
+/* #region Search */
+
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .cp-searchbar-cell.cp-searchbar-cell-display-text,
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control-wrapper
+{
+    text-align: left; /* override SF cell alignment setting */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control.select-box .input-control-buttons
+{
+    right: -1px; /* override SmartForm dropdown style */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control.select-box .input-control-buttons a.dropdown
+{
+    width: 19px; /* override SmartForm dropdown style */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-results .search-item
+{
+    border-spacing: 0;
+    white-space: nowrap;
+    padding: 4px 7px;
+    list-style: none outside none;
+    cursor: pointer;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-results .search-item:hover
+{
+    background-color: #EFF7D4;
+    border-color: #D6E3B0;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-results .search-item.selected
+{
+    background-color: rgb(214, 227, 176);
+    border-color: rgb(214, 227, 176);
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .slide-in_start
+{
+    opacity: 0.0;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .slide-in
+{
+    opacity: 1.0;
+    transition: opacity 0.25s;
+    -webkit-transition: opacity 0.25s;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-results .search-item-text
+{
+    height: 16px;
+    vertical-align: top;
+    margin-left: 4px;
+    display: inline;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-results .search-item-image
+{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    image-rendering: optimizeQuality;
+}
+
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container
+{
+    padding-top: 8px;
+    height: 23px;
+    cursor: pointer;
+}
+
+/* 
+	This is a bad selector but need to do this because of the following entry that exists in SF base CSS:
+	'.theme-entry .SFC div, .theme-entry .SFC td'
+*/
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container
+{
+    text-align: left;
+}
+
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-icon
+{
+    margin-left: 4px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    image-rendering: optimizeQuality;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-text
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:hover
+{
+    background-color: #D6E3B0;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:focus
+{
+    background-color: #e4efc3;
+}
+
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .alternate
+{
+    background-color: #F2F2F2;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-results .watermark
+{
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-results .watermark
+{
+    margin-top: 5px;
+    margin-right: 8px;
+}
+
+/* #endregion Search */
+
+/* #region Readonly */
+/* remove border and background color on selecting node items while readonly */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly:not(.disabled) .node > .content > .header:hover
+{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly .node.focus > .content > .header
+{
+    border-color: transparent;
+}
+
+/* prevent checkbox hover state to change while readonly */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img
+{
+    background-position: 2px -4495px;
+    cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img
+{
+    background-position: 2px -4651px;
+    cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img
+{
+    background-position: 2px -4547px;
+    cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox .input-control-img
+{
+    cursor: default;
+}
+
+/* #endregion Readonly */
+

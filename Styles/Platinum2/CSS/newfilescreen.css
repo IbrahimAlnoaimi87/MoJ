@@ -1,0 +1,121 @@
+
+.lyt-newfile {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.mini.lyt-newfile {
+  flex-direction: column-reverse;
+  overflow: auto;
+}
+.lyt-newfile > .lyt-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.lyt-newfile > .lyt-details-panel {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.mini.lyt-newfile > .lyt-details-panel {
+  display: none;
+}
+.lyt-template-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mini .lyt-template-list {
+  padding: 10px;
+}
+.template-item {
+  margin: 50px 0px 0px 50px;
+}
+.mini .template-item {
+  margin: 0px;
+  width: 50%;
+  padding: 0px 10px 10px 0px;
+  box-sizing: border-box;
+}
+.mini .template-item:nth-child(even) {
+  padding-right: 0px;
+}
+.template-item a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-width: 100px;
+  min-height: 100px;
+  border: solid 2px transparent;
+  padding: 10px;
+  border-radius: 10px;
+  color: #4e5758;
+}
+.mini .template-item a {
+  min-width: 50px;
+  min-height: 50px;
+}
+.template-item a:hover {
+  border-color: rgba(221, 221, 221, 0.8);
+}
+.template-item.selected a {
+  border-color: #1b7ecd;
+}
+.mat-panel {
+  background-color: #f8f8f8;
+}
+.mat-input-panel {
+  background-color: white;
+}
+.lyt-mini-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.lyt-mini-panel .lyt-header,
+.lyt-mini-panel .lyt-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+}
+.lyt-mini-panel .lyt-header.center,
+.lyt-mini-panel .lyt-footer.center {
+  justify-content: center;
+}
+.lyt-mini-panel .lyt-header .back-button,
+.lyt-mini-panel .lyt-footer .back-button {
+  display: inline-flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.lyt-mini-panel .lyt-body {
+  flex-grow: 1;
+  display: flex;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}

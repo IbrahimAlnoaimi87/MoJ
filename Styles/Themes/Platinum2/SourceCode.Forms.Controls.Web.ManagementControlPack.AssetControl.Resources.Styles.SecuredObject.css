@@ -1,0 +1,80 @@
+﻿
+/* #region SECURED OBJECT DIALOG */
+
+html.management.secured-object .theme-entry .form
+{
+    padding: 2rem;
+}
+
+html.management.secured-object .theme-entry .view .grid-toolbars .filterChosen
+{
+    display: none;
+}
+
+html.management.secured-object .theme-entry .view .grid-toolbars .quickSearch
+{
+    margin-left: 1.5rem;
+}
+
+/* #endregion*/
+
+/* #region SECURED PROPERTIES DIALOG */
+
+html.management.secured-properties .theme-entry .form
+{
+    padding: 0;
+    background-color: #F7E9D0 !important; /* overrides inherited important */
+}
+
+    html.management.secured-properties .theme-entry .form .row:nth-child(1)
+    {
+        padding: 0 1rem;
+        background-color: #fff;
+    }
+
+    html.management.secured-properties .theme-entry .form .row:nth-child(2)
+    {
+        padding: 0 1rem 2rem 1rem;
+        background-color: #fff;
+    }
+
+    html.management.secured-properties .theme-entry .form .row:nth-child(4)
+    {
+        display: none;
+    }
+
+html.management.secured-properties .Grid-Layout > .editor-cell
+{
+    padding: 0 !important; /* overrides multiple complex selectors */
+}
+
+html.management.secured-properties .SourceCode-Forms-Controls-Web-Label[Name="lblTitle"]
+{
+    padding: 2rem 0 0 0;
+}
+
+html.management.secured-properties .SourceCode-Forms-Controls-Web-Label[Name="lblFirstProperty"],
+html.management.secured-properties .SourceCode-Forms-Controls-Web-Label[Name="lblSecondProperty"]
+{
+    padding: 2rem 0 0 0;
+    font-weight: bold;
+}
+
+html.management.secured-properties .SourceCode-Forms-Controls-Web-Label[Name="lblFirstPropertyDescription"],
+html.management.secured-properties .SourceCode-Forms-Controls-Web-Label[Name="lblSecondPropertyDescription"]
+{
+    padding: 0.5rem 0 1rem 0;
+    color: #858a8a;
+}
+
+html.management.secured-properties .SourceCode-Forms-Controls-Web-Label[Name="lblNote"]
+{
+    padding: 1rem 1rem 0 1rem;
+}
+
+html.management.secured-properties .SFC.Management-Site-Popup-Footer
+{
+    border-top: 1px solid #D3D4D6;
+}
+
+/* #endregion */

@@ -1,0 +1,421 @@
+﻿
+ul.target-rule
+{
+	/* 
+	padding: 0;
+	margin: 0;
+	*/
+	list-style: none;
+}
+.mappings-input
+{
+	position:absolute;
+	right: 0;
+	top: 0;
+	padding-left:3px;
+	left: 282px;
+}
+
+html[dir=rtl] .mappings-input
+{
+	left: 0;
+	padding-left:0;
+	padding-right:3px;
+	right: 282px;
+}
+
+li.disabled a
+{
+		color:#999;
+}
+.mappings-input.input-control.select-box .input-control-body
+{
+	right:23px;
+}
+.mappings-input.input-control.select-box .input-control-buttons a
+{
+	height:22px;
+	width:22px;
+}
+
+li.required .mappings-input 
+{
+		background:url("../../../../Styles/Platinum/Images/Forms/required_field_orange_line.png") no-repeat 0 center;
+}
+.mappings-input .drop-text.watermark
+{
+	min-width: 0;
+	width:100%;
+	overflow:hidden;
+}
+.mappings-input .styling-outer-wrapper
+{
+	min-height:24px;
+}
+.mappings-input.input-control.select-box .input-control-buttons a.dropdown span,
+.mappings-input.input-control.select-box .input-control-buttons a.dropdown span span,
+.mappings-input.input-control.select-box a.input-control
+{
+	min-height:20px;
+	height:20px;
+	line-height:19px;
+}
+.mappings-input a.input-control,
+.mappings-input input[type="text"].input-control
+{
+	min-height:20px;
+	height:20px;
+	line-height:19px;
+	padding: 0;
+}
+.mappings-input .drop-item,.mappings-input .drop-object,.mappings-input .drop-text
+{
+	min-height:18px;
+	height:18px;
+	line-height:14px;
+	vertical-align: middle;
+}
+.drop-textbox
+{
+	padding: 1px;
+	width:9999px;
+}
+.input-control .input-control-wrapper
+{
+	overflow-x:hidden;
+}
+
+.dropLabel
+{
+	height:28px;
+}
+li.dropLabel.multi-line
+{
+	height:53px;
+}
+
+li.dropLabelLast
+{
+	height:25px;
+}
+li.dropLabel label,
+li.dropLabel a
+{
+	text-overflow: ellipsis;
+	overflow-x:hidden;
+}
+
+/* Keeps the mapping inputs from overlapping the labels of the checkboxes */
+
+.target-rule-level-1 .input-control.checkbox
+{
+	max-width: 246px;
+}
+.target-rule-level-2 .input-control.checkbox
+{
+	max-width: 228px;
+}
+.target-rule-level-3 .input-control.checkbox 
+{
+	max-width: 210px;
+}
+
+.target-rule-level-4 .input-control.checkbox
+{
+	max-width: 192px;
+}
+
+.target-rule-level-1 .mappings-input
+{
+	left:264px;
+}
+.target-rule-level-2 .mappings-input
+{
+	left:246px;
+}
+.target-rule-level-3 .mappings-input
+{
+	left:228px;
+}
+.target-rule-level-4 .mappings-input
+{
+	left:210px;
+}
+
+html[dir=rtl] .target-rule-level-1 .mappings-input
+{
+		left:0;
+		right:260px;
+}
+html[dir=rtl] .target-rule-level-2 .mappings-input
+{
+		left:0;
+		right:240px;
+}
+html[dir=rtl] .target-rule-level-3 .mappings-input
+{
+		left:0;
+		right:220px;
+}
+html[dir=rtl] .target-rule-level-4 .mappings-input
+{
+		left:0;
+		right:200px;
+}
+
+.mappingValue
+{
+	height: 30px;
+}
+
+td.mappingLabelRequired
+{
+	background:url("../../../../Styles/Platinum/Images/Forms/required_field_orange_line.png") no-repeat scroll 100% 6px transparent
+}
+
+/* Old target tree stuff not moved to forms.css*/
+
+.target-tree li.open.svcInst > a, .target-tree li.open.svcInst > span, .target-tree li.open.service-instance > a, .target-tree li.open.service-instance > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/SmartObjectDesigner/svcInst.gif);
+}
+
+.target-tree li.closed.svcInst > a, .target-tree li.closed.svcInst > span, .target-tree li.closed.service-instance > a, .target-tree li.closed.service-instance > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/SmartObjectDesigner/svcInst.gif);
+}
+
+.target-tree li.open.svcObj > a, .target-tree li.open.svcObj > span, .target-tree li.open.service-object > a, .target-tree li.open.service-object > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/ServiceObject16.png);
+}
+
+.target-tree li.closed.svcObj > a, .target-tree li.closed.svcObj > span, .target-tree li.closed.service-object > a, .target-tree li.closed.service-object > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/ServiceObject16.png);
+}
+
+.target-tree li.svcMethod > a, .target-tree li.svcMethod > span, .target-tree li.service-method > a, .target-tree li.service-method > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/ServiceMethod16.png);
+}
+
+.target-tree li.open.svcFolder > a, .target-tree li.open.svcFolder > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/ServiceInstanceOpen16.png);
+}
+
+.target-tree li.closed.svcFolder > a, .target-tree li.closed.svcFolder > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/ServiceInstanceClosed16.png);
+}
+
+.target-tree li.open.fields > a, .target-tree li.open.fields > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/FieldsOpen16.png);
+}
+
+.target-tree li.closed.fields > a, .target-tree li.closed.fields > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/FieldsClosed16.png);
+}
+
+.target-tree li.open.category > a, .target-tree li.open.category > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/FolderOpen16.png);
+}
+
+.target-tree li.closed.category > a, .target-tree li.closed.category > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/FolderClosed16.png);
+}
+
+.target-tree li.open.favourites > a, .target-tree li.open.favourites > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/Favourites16.png);
+}
+
+.target-tree li.closed.favourites > a, .target-tree li.closed.favourites > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/Favourites16.png);
+}
+
+.target-tree li.open.user > a, .target-tree li.open.user > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/User16.png);
+}
+
+.target-tree li.closed.user > a, .target-tree li.closed.user > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/User16.png);
+}
+
+.target-tree li.open.recent > a, .target-tree li.open.recent > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/Recent16.png);
+}
+
+.target-tree li.closed.recent > a, .target-tree li.closed.recent > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/Recent16.png);
+}
+
+.target-tree li.open.smartobjects > a, .target-tree li.open.smartobjects > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/SmartObjectsOpen16.png);
+}
+
+.target-tree li.closed.smartobjects > a, .target-tree li.closed.smartobjects > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/SmartObjectsClosed16.png);
+}
+
+.target-tree li.open.smartfunctions > a, .target-tree li.open.smartfunctions > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/SmartFunctionsOpen16.png);
+}
+
+.target-tree li.closed.smartfunctions > a, .target-tree li.closed.smartfunctions > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/SmartFunctionsClosed16.png);
+}
+
+.target-tree li.open.views > a, .target-tree li.open.views > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/SmartViewsOpen16.png);
+}
+
+.target-tree li.closed.views > a, .target-tree li.closed.views > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/SmartViewsClosed16.png);
+}
+
+.target-tree li.open.forms > a, .target-tree li.open.forms > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/SmartFormsOpen16.png);
+}
+
+.target-tree li.closed.forms > a, .target-tree li.closed.forms > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/SmartFormsClosed16.png);
+}
+
+.target-tree li.open.processes > a, .target-tree li.open.processes > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/WorkFlowsOpen16.png);
+}
+
+.target-tree li.closed.processes > a, .target-tree li.closed.processes > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/WorkFlowsClosed16.png);
+}
+
+.target-tree li.open.shared > a, .target-tree li.open.shared > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/Shared16pix.png);
+}
+
+.target-tree li.closed.shared > a, .target-tree li.closed.shared > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/Shared16pix.png);
+}
+
+.target-tree li.open.controls > a, .target-tree li.open.controls > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/ControlsFolder16_open.png);
+}
+
+.target-tree li.closed.controls > a, .target-tree li.closed.controls > span
+{
+	background-image: url(../../../../Styles/Platinum/Images/Icons/ControlsFolder16_closed.png);
+}
+
+/* Collapsed Root Styling */
+.target-tree.collapsed-root li.root
+{
+	background: none;
+	padding-left: 0;
+}
+
+.target-tree.collapsed-root li.root > a, .target-tree.collapsed-root li.root > span
+{
+	display: none;
+}
+
+/* Checkbox Tree Styling */
+.target-tree.checkbox li a, .target-tree.checkbox li span
+{
+	padding-left: 41px;
+}
+
+.target-tree.checkbox li a, .target-tree.checkbox li span
+{
+	background-image: url("../../../../Styles/Platinum/Images/Tree/unchecked_form.png");
+}
+
+.target-tree.checkbox li.checked a, .target-tree.checkbox li.checked span
+{
+	background-image: url("../../../../Styles/Platinum/Images/Tree/checked_form.png");
+}
+
+.target-tree.checkbox li.open > a, .target-tree.checkbox li.open > span
+{
+	background-image: url("../../../../Styles/Platinum/Images/Tree/unchecked_open_folder.png");
+}
+
+.target-tree.checkbox li.closed > a, .target-tree.checkbox li.closed > span
+{
+	background-image: url("../../../../Styles/Platinum/Images/Tree/unchecked_closed_folder.png");
+}
+
+.target-tree.checkbox li.checked.open > a, .target-tree.checkbox li.checked.open > span
+{
+	background-image: url("../../../../Styles/Platinum/Images/Tree/checked_open_folder.png");
+}
+
+.target-tree.checkbox li.checked.closed > a, .target-tree.checkbox li.checked.closed > span
+{
+	background-image: url("../../../../Styles/Platinum/Images/Tree/checked_closed_folder.png");
+}
+
+.target-tree.checkbox li.user > a, .target-tree.checkbox li.user > span
+{
+	background-image: url("../../../../Styles/Platinum/Images/Tree/unchecked_user.png");
+}
+
+.target-tree.checkbox li.user.checked > a, .target-tree.checkbox li.user.checked > span
+{
+	background-image: url("../../../../Styles/Platinum/Images/Tree/checked_user.png");
+}
+.target-tree li.process-activities > a,
+.target-tree li.process-activities.closed > a
+{
+	background-image:url(../../../../Styles/Platinum/Images/Icons/ActivityCollectionClosed16.png);
+}
+.target-tree li.process-activities.open > a
+{
+	background-image:url(../../../../Styles/Platinum/Images/Icons/ActivityCollectionOpen16.png);
+}
+
+.target-tree li.data-fields > a,
+.target-tree li.data-fields.closed > a
+{
+	background-image:url(../../../../Styles/Platinum/Images/Icons/DataFieldsClosed16.png);
+}
+.target-tree li.data-fields.open > a
+{
+	background-image:url(../../../../Styles/Platinum/Images/Icons/DataFieldsOpen16.png);
+}
+
+
+.target-tree li.xml-fields > a,
+.target-tree li.xml-fields.closed > a
+{
+	background-image:url(../../../../Styles/Platinum/Images/Icons/XAML_FieldsClosed16.png);
+}
+
+.target-tree li.xml-fields.open > a
+{
+	background-image:url(../../../../Styles/Platinum/Images/Icons/XAML_FieldsOpen16.png);
+}
+

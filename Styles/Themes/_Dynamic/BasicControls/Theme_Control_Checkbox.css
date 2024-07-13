@@ -1,0 +1,17 @@
+/*#region CHECKBOX*/
+
+.theme-entry .checkbox-outer-panel label.input-control .input-control-text:empty {
+  display: none;
+}
+.theme-entry .grid .edit-template-row .checkbox-outer-panel label.input-control .input-control-text:empty {
+  display: inline;
+  padding-left: 0;
+  padding-right: 0.1rem;
+}
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item label.input-control .input-control-text,
+.theme-entry .checkbox-outer-panel label.input-control .input-control-text,
+.theme-entry label.input-control.radio .input-control-text {
+  padding-left: 3px;
+}
+/*#endregion*/
+

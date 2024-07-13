@@ -1,0 +1,6 @@
+﻿.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-hover,
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-focus,
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-active
+{
+	background-color: #d6e3b0;
+}

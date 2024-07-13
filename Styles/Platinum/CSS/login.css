@@ -1,0 +1,136 @@
+﻿.login-status
+{
+	text-align: right;
+	line-height: 30px;
+	padding: 0px 5px;
+}
+
+#login_form_container
+{
+	width: 500px;
+	min-height: 145px;
+	margin: 0 auto;
+}
+
+.form-buttons a.button
+{
+	margin-right: 3px;
+}
+
+#SignInWrapper
+{
+	display: table;
+	height: 100%;
+	max-width: 100%;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.SignInWrapper.LandingContent
+{
+	display: table-cell;
+	max-width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.SignInContent
+{
+	width: 355px;
+	text-align: left;
+	display: inline-block;
+	padding: 9px;
+	border-left: 1px solid #AEAF9D;
+	vertical-align: middle;
+	box-sizing: border-box;
+	min-height: 150px;
+	max-width: 100%;
+}
+
+.SignInForm
+{
+	width: 355px;
+	text-align: left;
+	display: inline-block;
+	padding: 9px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+.SignInContent .SignInLockImage,
+.SessionContent .SignInLockImage
+{
+	display: inline-block;
+	width: 100px;
+	height: 99px;
+	background: url(../Images/Icons/Lock96.png) no-repeat transparent;
+	background-position-x: left;
+	margin-top: 15px;
+	margin-left: 9px;
+	vertical-align: top;
+}
+
+.SignInContent .IntroText
+{
+	display: inline-block;
+	width: 220px;
+	vertical-align: top;
+}
+
+.SessionContent .IntroText
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+@media only screen and (max-width: 735px)
+{
+	.SignInContent
+	{
+		border-left: none;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 320px) 
+{
+	.TrustLoginRequired
+	{
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.TrustLoginRequired + td
+	{
+		display: block;
+		vertical-align: middle;
+	}
+
+	.TrustLoginRequired + td > .input-control.select-box
+	{
+		width: 100% !important;
+	}
+
+	.form-field label.form-field-label
+	{
+		float:none;
+		padding-left: 0;
+	}
+
+	.form-field .form-field-element-wrapper
+	{
+		margin-left: 0;
+	}
+
+	.form-field.required label.form-field-label 
+	{
+		background: none;
+	}
+
+	.form-field.required .form-field-element-wrapper
+	{
+		background: url(../Images/Forms/required_field_orange_line.png) no-repeat 0 2px;
+		padding-left: 5px;
+	}
+}

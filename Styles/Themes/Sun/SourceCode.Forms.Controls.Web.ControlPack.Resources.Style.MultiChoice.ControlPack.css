@@ -1,0 +1,38 @@
+﻿.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected
+{
+	background-color: #fee8a4 !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:hover
+{
+	background-color: #fff1c8 !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:focus
+{
+	border-color: #fecf42;
+	border-width: 1px;
+	border-style: dotted;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .multiSelectSelect
+{
+	border: 1px solid #999999;
+	background-color: white;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle
+{
+	color: #343e41;
+	border-color: #f0ac00;
+	background: #ffefbd;
+	background: -moz-linear-gradient(top,#ffefbd 0%,#fed34f 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffefbd),color-stop(100%,#fed34f));
+	background: -webkit-linear-gradient(top,#ffefbd 0%,#fed34f 100%);
+	background: -o-linear-gradient(top,#ffefbd 0%,#fed34f 100%);
+	background: -ms-linear-gradient(top,#ffefbd 0%,#fed34f 100%);
+	background: linear-gradient(to bottom,#ffefbd 0%,#fed34f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffefbd',endColorstr='#fed34f',GradientType=0);
+	border: solid 1px #e9e4e8;
+}

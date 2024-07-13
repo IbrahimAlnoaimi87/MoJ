@@ -1,0 +1,245 @@
+// Theme: Dynamic - Theme.less
+// Author: Lewis Garmston
+// Date: 3/16/2020
+// Purpose: This file is both...
+//          1) Compiled as part of Theme_Variables.less in the normal theme compilation of the Dynamic theme by smartforms at startup.
+//          2) Loaded dynamically by DynamicThemeHelper.cs (Sourcecode.Forms.Themehelper) when the user has redefined variables ontop of the base set.
+
+
+
+
+//#region Known Containers
+
+.theme-entry {
+
+    @import (reference) "Variables/BaseVariables.include.less";
+
+    @import (multiple) "Variables/CoreVariables/Value_Definitions.include.less";
+    @import (multiple) "Variables/CoreVariables/CSS_properties.include.less";
+
+    @import (multiple) "Variables/RootContainers/Value_Definitions.include.less";
+    @import (multiple) "Variables/RootContainers/CSS_properties.include.less";
+
+
+    //[[THEME_VARIABLES]]
+    //TESTING ONLY - PLEASE REMOVE BEFORE CHECKING IN TO TFS
+    //@import (optional, multiple) "../../TestStyleProfile.include.less";
+    
+
+    //#region Mixins
+
+    //ROOT MIXIN (Dialogs and forms)
+    .Root-Mixin(@_Param_Background-Color)
+    {
+        //BUG FIX: dotless (smartforms less compiler) needed this extra null scope
+        //         in order for the @imported variables to be available later in this mixin 
+        //         (for @_Actual_View-Background-Color is available to pass into .View-Mixin for example)
+        
+        &
+        {
+            @___Background-Color: @_Param_Background-Color;
+
+            //container controls
+            @import (multiple) "Variables/ContainerControls/Value_Definitions.include.less";
+            @import (multiple) "Variables/ContainerControls/CSS_properties.include.less";
+        
+            //atomic controls
+            @import (multiple) "Variables/AtomicControls/Value_Definitions.include.less";
+            @import (multiple) "Variables/AtomicControls/CSS_properties.include.less";
+            
+            //[[THEME_VARIABLES]]
+            //TESTING ONLY - PLEASE REMOVE BEFORE CHECKING IN TO TFS
+            //@import (optional, multiple) "../../TestStyleProfile.include.less";
+
+            .View-Mixin(@_Actual_View-Background-Color);
+            .Toolbar-Mixin(@_Actual_Toolbar-Background-Color);
+            //.List-Item-Hover-Mixin(@_Actual_List-Item-Hover-Background-Color);
+            //Removed to fix 946905
+            //.List-Item-Selected-Mixin(@_Actual_List-Item-Selected-Background-Color);
+            .Tab-Body-Mixin(@_Actual_Tab-Body-Background-Color);
+        }
+    }
+
+    
+    
+    //VIEWS
+    .View-Mixin(@_Param_Background-Color){
+
+        //Note: views are controlled by UD-Panel-Background-Color, they don't just fit in with the background of form (auto)
+        //the atomic controls should be recolored within the view. The View header colors should be auto based on the form color, 
+        //which is why the selecters here start at the panel and grid (body element) of the view/list-view.
+        .view .innerpanel > .grid, /* Runtime */
+        .view .innerpanel > .panel, /* Runtime */
+        .view-canvas > .grid, /* Designtime */
+        .view-canvas > .panel /* Designtime */
+        {
+            @___Background-Color: @_Param_Background-Color;
+            @import (multiple) "Variables/AtomicControls/Value_Definitions.include.less";
+            @import (multiple) "Variables/AtomicControls/CSS_properties.include.less";
+            //[[THEME_VARIABLES]]
+            //TESTING ONLY - PLEASE REMOVE BEFORE CHECKING IN TO TFS
+            //@import (optional, multiple) "../../TestStyleProfile.include.less";
+        }
+    }
+
+    //Toolbars
+    .Toolbar-Mixin(@_Param_Background-Color) {
+        .toolbars 
+        {
+            @___Background-Color: @_Param_Background-Color;
+            @import (multiple) "Variables/AtomicControls/Value_Definitions.include.less";
+            @import (multiple) "Variables/AtomicControls/CSS_properties.include.less";
+            //[[THEME_VARIABLES]]
+            //TESTING ONLY - PLEASE REMOVE BEFORE CHECKING IN TO TFS
+            //@import (optional, multiple) "../../TestStyleProfile.include.less";
+
+            //Cheeky way to make input controls in a toolbar blend into the toolbar more.
+            @Input-Background-Color: @_Transparent;
+            
+            //Toolbars have their own variable for text color. Will override the declaration in atomic/CSS_Properties
+            @Normal-Text-Color: @Toolbar-Text-Color;
+        }
+    }
+
+    //TabBody (not form tabs)
+    .Tab-Body-Mixin(@_Param_Background-Color){
+        //has to be the children of the tab-box-body (.tab-box-body > *), otherwise the atomiccontrols will 
+        //change the tab-body-background-color further resulting in a mismatch in color between the selected tab and the tab body (bug)
+        .tab-box:not(.form-tabs) > .tab-box-body > * 
+        {
+            @___Background-Color: @_Param_Background-Color;
+            background-color: @___Background-Color;
+
+            //container controls
+            @import (multiple) "Variables/ContainerControls/Value_Definitions.include.less";
+            @import (multiple) "Variables/ContainerControls/CSS_properties.include.less";
+
+            @import (multiple) "Variables/AtomicControls/Value_Definitions.include.less";
+            @import (multiple) "Variables/AtomicControls/CSS_properties.include.less";
+            //[[THEME_VARIABLES]]
+            //TESTING ONLY - PLEASE REMOVE BEFORE CHECKING IN TO TFS
+            //@import (optional, multiple) "../../TestStyleProfile.include.less";
+
+            .View-Mixin(@_Actual_View-Background-Color);
+            .Toolbar-Mixin(@_Actual_Toolbar-Background-Color);
+            //.List-Item-Hover-Mixin(@_Actual_List-Item-Hover-Background-Color);
+            .List-Item-Selected-Mixin(@_Actual_List-Item-Selected-Background-Color);
+        }
+
+    }
+    
+
+    //LIST ITEM - HOVER (must come before selected)
+    .List-Item-Hover-Mixin(@_Param_Background-Color) {
+        .grid table.grid-content-table tr:hover > td,
+        .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover > td {
+            @___Background-Color: @_Param_Background-Color;
+            //@___Background-Color: @_Actual_List-Item-Hover-Background-Color;
+
+            @import (multiple) "Variables/AtomicControls/Value_Definitions.include.less";
+            @import (multiple) "Variables/AtomicControls/CSS_properties.include.less";
+            //[[THEME_VARIABLES]]
+            //TESTING ONLY - PLEASE REMOVE BEFORE CHECKING IN TO TFS
+            //@import (optional, multiple) "../../TestStyleProfile.include.less";
+        }
+    }
+    
+    
+    //LIST ITEM  - SELECTED
+    .List-Item-Selected-Mixin(@_Param_Background-Color) {
+        .grid table.grid-content-table tr.selected > td,
+        .grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row) > td {
+            @___Background-Color: @_Param_Background-Color;
+            //@___Background-Color: @_Actual_List-Item-Selected-Background-Color;
+            @import (multiple) "Variables/AtomicControls/Value_Definitions.include.less";
+            @import (multiple) "Variables/AtomicControls/CSS_properties.include.less";
+            // We DONT include theme variables here, as the background color for a selected
+            // item will likely be dark/vibrant, and the user choosing style profile colors
+            // would most likely expect that controls within a selected row to work themselves out color-wise
+            // rather than being forced to be the same colors as those controls would be normally outside of a selected row.
+            // NOT THEME_VARIABLES
+        }
+    }
+    
+    //#endregion Mixins
+
+
+
+    //Page
+    .Root-Mixin(@_Actual_Page-Background-Color);
+
+    //Form
+    .form,         //runtime
+    #pgInnerPanel, //design time
+    .form-tabs > .tab-box-body, //form with tabs, color is applied to tab-box-body element
+    #pgTabContent //design time tab content (as the this element has theme-entry on i as well, we have to override here
+    {
+        .Root-Mixin(@_Actual_Form-Background-Color);
+    }
+
+    //Dialog
+    .dialog
+    {
+        .Root-Mixin(@_Actual_Dialog-Background-Color);
+    }
+
+}
+
+//#endregion Known Containers 
+
+//#region Experimental - for control backgrounds that are changed using format dialog.
+
+// .theme-entry
+// {
+//     //All the color declarations and tranformations here
+//     //must be in a sub {} from the Variable Declarations
+
+//     .dynamic-light-background,
+//     &.dynamic-light-background 
+//     {
+//         @___Background-Color: white;
+//         @import (multiple) "Variables/ContainerControls/Value_Definitions.include.less";
+//         @import (multiple) "Variables/AtomicControls/Value_Definitions.include.less";
+        
+      
+
+//         color: @Normal-Text-Color;
+
+//         //this comment is a tag that DynamicThemeHelper.cs will replace when injecting Variables from the user (Style profile or THEME_VARIABLES form param)
+//         //[[THEME_VARIABLES]]
+
+//         //will render each css property
+//         //e.g.
+//         //--input-background-color: @Input-Background-Color
+//         @import (multiple) "Variables/ContainerControls/CSS_properties.include.less";
+//         @import (multiple) "Variables/AtomicControls/CSS_properties.include.less";
+//     }
+// }
+
+
+
+// .theme-entry
+// {
+//     .dynamic-dark-background,
+//     &.dynamic-dark-background 
+//     {
+//         //previously were "_Dark.less" files
+//         @___Background-Color: black;
+//         @import (multiple) "Variables/ContainerControls/Value_Definitions.include.less";
+//         @import (multiple) "Variables/AtomicControls/Value_Definitions.include.less";
+        
+
+//         color: @Normal-Text-Color;
+
+//         //this comment is a tag that DynamicThemeHelper.cs will replace when injecting Variables from the user (Style profile or THEME_VARIABLES form param)
+//         //[[THEME_VARIABLES]]
+
+//         @import (multiple) "Variables/ContainerControls/CSS_properties.include.less";
+//         @import (multiple) "Variables/AtomicControls/CSS_properties.include.less";
+
+//     }
+
+// }
+
+//#endregion Experimental 
+

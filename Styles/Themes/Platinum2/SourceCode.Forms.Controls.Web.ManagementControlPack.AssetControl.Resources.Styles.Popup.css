@@ -1,0 +1,142 @@
+/* Fluid Layout */
+html,
+body,
+body > form,
+#form1,
+.runtime-form,
+.runtime-content,
+.runtime-form > .form,
+.runtime-form > .form .view,
+.runtime-form > .form .view > .innerpanel,
+.runtime-form > .form .view > .innerpanel > .visible.panel,
+.runtime-form > .form .view > .innerpanel > .visible.panel.without-header > .panel-body,
+.runtime-form > .form .view > .innerpanel > .visible.panel > .panel-body > .panel-body-m,
+.runtime-form > .form .view > .innerpanel > .visible.panel > .panel-body > .panel-body-m > .panel-body-m-c,
+.runtime-form > .form .view .panel-body-wrapper, .runtime-form > .form .view .panel-body-wrapper > div,
+.runtime-form > .form .view .panel-body-wrapper > div > .Grid-Layout
+{
+    height: 100%;
+}
+
+    body.theme-entry
+    {
+        background-color: #fff;
+    }
+
+.runtime-content
+{
+    overflow: auto;
+}
+
+.theme-entry > .tab-box .tab-box-body-m
+{
+    width: 100%;
+}
+
+.formcontrol .innerpanel > span.SFC.SourceCode-Forms-Controls-Web-Label
+{
+    display: block;
+}
+
+.theme-entry .view .innerpanel > .panel
+{
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.theme-entry .panel > .panel-body
+{
+    background-color: transparent;
+}
+
+html body.theme-entry form
+{
+    overflow: initial;
+}
+
+html.msie body.theme-entry form
+{
+    overflow: auto;
+}
+
+html body.theme-entry,
+html body.runtime-view.theme-entry
+{
+    height: calc(100% - 40px);
+    min-height: calc(100% - 40px);
+    overflow-y: initial !important;
+}
+
+.runtime-content > .runtime-form > .form
+{
+    box-sizing: border-box;
+}
+
+.theme-entry .SFC.Management-Site-Popup-Footer
+{
+    height: 42px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #ececec;
+    z-index: 3; /*Make z-index 1 higher than modalizer to avoid it overlapping during listview refresh */
+}
+
+    .Management-Site-Popup-Footer > *
+    {
+        margin: 0 1rem 0 0 !important; /* Overrides inline styling */
+    }
+
+.theme-entry h1,
+.theme-entry h2
+{
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    margin-left: 0.5rem;
+}
+
+.theme-entry h1
+{
+    font-size: 1.8rem;
+}
+
+.theme-entry h2
+{
+    font-size: 1.4rem;    
+}
+
+.theme-entry .SFC.Management-Site-Popup-Footer .SFC.SourceCode-Forms-Controls-Web-Button
+{
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+.invalid-out-of-office li
+{
+    color: red;
+    /* ToDo: Define color */
+}
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .theme-entry a.SFC.SourceCode-Forms-Controls-Web-Button.search-image
+    {
+        background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ManagementControlPack.Common.Resources.Images.Search.Search16_Sprite@2x.png")%>;');
+    }
+
+        .theme-entry a.SFC.SourceCode-Forms-Controls-Web-Button.search-image.loading
+        {
+            background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ManagementControlPack.Common.Resources.Images.Search.SearchLoader16@2x.gif")%>');
+        }
+
+    .theme-entry a.SFC.SourceCode-Forms-Controls-Web-Button.cancel-search-image
+    {
+        background-image: url('<%=WebResource("SourceCode.Forms.Controls.Web.ManagementControlPack.Common.Resources.Images.Search.CancelSearch16_Sprite@2x.png")%>');
+    }
+}
+
+.theme-entry div[name='License Change View1'] .Grid-Layout > .editor-cell[row='1']
+{
+    padding-bottom: 0 !important;
+}

@@ -1,0 +1,89 @@
+﻿<div class="cp-searchbar {classToken}">
+  <table class="cp-searchbar-container">
+    <colgroup>
+      <col class="cp-searchbar-col-1" />
+      <col class="cp-searchbar-col-2" />
+      <col class="cp-searchbar-col-3" />
+      <col class="cp-searchbar-col-4" />
+      <col class="cp-searchbar-col-5" />
+    </colgroup>
+    <tbody>
+      <tr class="cp-searchbar-upper-row">
+        <!-- search label -->
+        <td class="cp-searchbar-cell cp-searchbar-cell-display-text">
+          <span>{searchText}:</span>
+        </td>
+        <!-- expander -->
+        <td class="cp-searchbar-cell cp-searchbar-cell-expander">
+          <div class="button-wrapper" tabindex="0">
+            <span class="PART_ExpanderButton button search-options-expander"></span>
+          </div>
+        </td>
+        <!-- search input -->
+        <td class="cp-searchbar-cell cp-searchbar-cell-input">
+          <div class="input-placeholder">
+            <!-- THIS IS DESIGN-TIME ONLY.  Runtime this will be replaced by a SmartForms TextBox Widget HTML -->
+            <div class="input-control text-input">
+              <div class="input-control-t">
+                <div class="input-control-t-l"></div>
+                <div class="input-control-t-c"></div>
+                <div class="input-control-t-r"></div>
+              </div>
+              <div class="input-control-m">
+                <div class="input-control-m-l"></div>
+                <div class="input-control-m-c">
+                  <div class="input-control-wrapper">
+                    <input type="text" class="input-control SourceCode-Forms-Controls-Web-TextBox inputElement" data-options="{&quot;watermark&quot;:&quot;Type to start search&quot;}" />
+                    <div class="input-control-watermark" style="display: block;">Type to start search</div>
+                  </div>
+                </div>
+                <div class="input-control-m-r"></div>
+              </div>
+              <div class="input-control-b">
+                <div class="input-control-b-l"></div>
+                <div class="input-control-b-c"></div>
+                <div class="input-control-b-r"></div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <!-- search button -->
+        <td class="cp-searchbar-cell cp-searchbar-cell-search-button">
+          <div class="button-wrapper button-border search-wrapper search-button-wrapper" tabindex="0">
+            <span class="PART_SearchButton button search"></span>
+          </div>
+        </td>
+        <!-- clear search button -->
+        <td class="cp-searchbar-cell cp-searchbar-cell-clear-button">
+          <div class="button-wrapper button-border clear-search-button-wrapper" tabindex="0">
+            <span class="PART_ClearSearchButton button clear-search"></span>
+          </div>
+        </td>
+      </tr>
+      <!-- spacer row -->
+      <tr class="cp-searchbar-spacer-row">
+        <td colspan="5" class="cp-searchbar-cell">
+          <div class="spacer"></div>
+        </td>
+      </tr>
+
+      <!-- advanced search row -->
+      <tr class="hidden bottom-row">
+        <!-- match label -->
+        <td class="cp-searchbar-cell">
+          <span>{match}:</span>
+        </td>
+        <!-- empty space -->
+        <td class="cp-searchbar-cell">
+
+        </td>
+        <!--criteria dropdown -->
+        <td colspan="3" class="cp-searchbar-cell dropdown-td-width">
+          <div class="fix-width-tree-toolbar">
+            <select name="DropDown" class="PART_SearchOptionsDropdown input-control runtime" data-allowemptyselection="allowemptyselection" style="display: none; width: 100%;" tabindex="-1"></select>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

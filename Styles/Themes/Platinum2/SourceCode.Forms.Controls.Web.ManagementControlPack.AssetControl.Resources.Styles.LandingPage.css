@@ -1,0 +1,611 @@
+﻿.management-button
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: inherit;
+    display: inline;
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+}
+
+    .management-button:hover
+    {
+        cursor: pointer;
+    }
+
+    .management-button > .left,
+    .management-button > .right
+    {
+        display: inline-block;
+        float: left;
+    }
+
+        .management-button > .right > .top,
+        .management-button > .right > .bottom
+        {
+            width: 100%;
+            white-space: pre-line;
+            float: left;
+            word-wrap: break-word;
+        }
+
+        .management-button > .right > .top
+        {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .management-button > .left .icon
+        {
+            float: left;
+            width: 32px;
+            height: 32px;
+            background-size: 32px 32px;
+        }
+
+
+.option-select-box label.shortcut-executesmo .icon
+{
+    background-image: url("K2Sites_Management/Images/ExecuteSmartObject32.png");
+}
+
+.option-select-box label.shortcut-features .icon
+{
+    background-image: url("K2Sites_Management/Images/Features32.png");
+}
+
+.option-select-box label.shortcut-manageroles .icon
+{
+    background-image: url("K2Sites_Management/Images/Roles32.png");
+}
+
+.option-select-box label.shortcut-workflowrights .icon
+{
+    background-image: url("K2Sites_Management/Images/WorkflowRights32.png");
+}
+
+.option-select-box label.shortcut-security .icon
+{
+    background-image: url("K2Sites_Management/Images/ManageSecurity32.png");
+}
+
+.option-select-box label.shortcut-workinghours .icon
+{
+    background-image: url("K2Sites_Management/Images/WorkingHours32.png");
+}
+
+.option-select-box label.shortcut-viewoauthsettings .icon
+{
+    background-image: url("K2Sites_Management/Images/ViewOAuthSettings32.png");
+}
+
+.option-select-box label.shortcut-inspectworkflowerrors .icon
+{
+    background-image: url("K2Sites_Management/Images/InspectWorkFlowErrors32.png");
+}
+
+.option-select-box label.shortcut-manageclaimconfig .icon
+{
+    background-image: url("K2Sites_Management/Images/ManageClaimsConfiguration32.png");
+}
+
+.option-select-box label.shortcut-manageoofoptions .icon
+{
+    background-image: url("K2Sites_Management/Images/ManageOOF_Dark32.png");
+}
+
+.option-select-box label.shortcut-viewworklist .icon
+{
+    background-image: url("K2Sites_Management/Images/Tasklist32.png");
+}
+
+.option-select-box label.shortcut-categories .icon
+{
+    background-image: url("K2Sites_Management/Images/FolderOpen32.png");
+}
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .option-select-box label.shortcut-executesmo .icon
+    {
+        background-image: url("K2Sites_Management/Images/ExecuteSmartObject32@2x.png");
+    }
+
+    .option-select-box label.shortcut-features .icon
+    {
+        background-image: url("K2Sites_Management/Images/Features32@2x.png");
+    }
+
+    .option-select-box label.shortcut-manageroles .icon
+    {
+        background-image: url("K2Sites_Management/Images/Roles32@2x.png");
+    }
+
+    .option-select-box label.shortcut-workflowrights .icon
+    {
+        background-image: url("K2Sites_Management/Images/WorkflowRights32@2x.png");
+    }
+
+    .option-select-box label.shortcut-security .icon
+    {
+        background-image: url("K2Sites_Management/Images/ManageSecurity32@2x.png");
+    }
+
+    .option-select-box label.shortcut-workinghours .icon
+    {
+        background-image: url("K2Sites_Management/Images/WorkingHours32@2x.png");
+    }
+
+    .option-select-box label.shortcut-viewoauthsettings .icon
+    {
+        background-image: url("K2Sites_Management/Images/ViewOAuthSettings32@2x.png");
+    }
+
+    .option-select-box label.shortcut-inspectworkflowerrors .icon
+    {
+        background-image: url("K2Sites_Management/Images/InspectWorkFlowErrors32@2x.png");
+    }
+
+    .option-select-box label.shortcut-manageclaimconfig .icon
+    {
+        background-image: url("K2Sites_Management/Images/ManageClaimsConfiguration32@2x.png");
+    }
+
+    .option-select-box label.shortcut-manageoofoptions .icon
+    {
+        background-image: url("K2Sites_Management/Images/ManageOOF_Dark32@2x.png");
+    }
+
+    .option-select-box label.shortcut-viewworklist .icon
+    {
+        background-image: url("K2Sites_Management/Images/Tasklist32@2x.png");
+    }
+
+    .option-select-box label.shortcut-categories .icon
+    {
+        background-image: url("K2Sites_Management/Images/FolderOpen32@2x.png");
+    }
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel a
+    {
+        background-image: url("K2Sites_Management/Images/Help24Default@2x.png");
+    }
+
+        #d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel a:hover
+        {
+            background-image: url("K2Sites_Management/Images/Help24Hover@2x.png");
+        }
+}
+
+/*Remove padding for all 1 cell tables*/
+/*note this can be done in the format dialog now in SF without need for custom CSS*/
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab span[name='dlblWelcomeUser'],
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab.form,
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab .Grid-Layout .editor-cell.lastrow
+{
+    padding: 0 !important;
+}
+
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab .row:last-child
+{
+    padding: 0 6rem;
+    padding-bottom:5.2rem;
+}
+
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab span,
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab div
+{
+    font-family: 'Open-Sans Regular', 'Segoe UI Regular', Helvetica, Helvetica, sans-serif;
+}
+
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab .row:last-child span
+{
+    text-align: center;
+}
+
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab .row:last-child .management-button
+{
+    color: #717171;
+    max-width: 70rem;
+    background-color: transparent;
+}
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .row:last-child .management-button .right .top
+    {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #5b595d;
+    }
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .row:last-child .management-button .right .bottom
+    {
+        font-size: 1.5rem;
+        color: #717171;
+    }
+
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+}
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel > div
+    {
+        width: 30px;
+        margin: 5px auto;
+        border: none;
+        outline:none;
+    }
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel a
+    {
+        background-image: url("K2Sites_Management/Images/Help24Default.png");
+        height: 24px;
+        width: 24px;
+        margin: auto;
+        background-size: 24px;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        white-space: nowrap;
+    }
+
+        #d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel a:hover
+        {
+            background-image: url("K2Sites_Management/Images/Help24Hover.png");
+        }
+
+/* From LandingPage.Styles */
+.management-button
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: inherit;
+    display: inline;
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+}
+
+    .management-button:hover
+    {
+        cursor: pointer;
+    }
+
+    .management-button > .left,
+    .management-button > .right
+    {
+        display: inline-block;
+        float: left;
+    }
+
+    .management-button > .right
+    {
+        width: calc(100% - 47px);
+        margin-left: 15px;
+    }
+
+        .management-button > .right > .top,
+        .management-button > .right > .bottom
+        {
+            width: 100%;
+            white-space: pre-line;
+            float: left;
+            word-wrap: break-word;
+        }
+
+        .management-button > .right > .top
+        {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    .management-button > .left .icon
+    {
+        float: left;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+
+
+.option-select-box label.shortcut-executesmo .icon
+{
+    background-image: url("K2Sites_Management/Images/ExecuteSmartObject32.png");
+}
+
+.option-select-box label.shortcut-features .icon
+{
+    background-image: url("K2Sites_Management/Images/Features32.png");
+}
+
+.option-select-box label.shortcut-manageroles .icon
+{
+    background-image: url("K2Sites_Management/Images/Roles32.png");
+}
+
+.option-select-box label.shortcut-workflowrights .icon
+{
+    background-image: url("K2Sites_Management/Images/WorkflowRights32.png");
+}
+
+.option-select-box label.shortcut-security .icon
+{
+    background-image: url("K2Sites_Management/Images/ManageSecurity32.png");
+}
+
+.option-select-box label.shortcut-workinghours .icon
+{
+    background-image: url("K2Sites_Management/Images/WorkingHours32.png");
+}
+
+.option-select-box label.shortcut-viewoauthsettings .icon
+{
+    background-image: url("K2Sites_Management/Images/ViewOAuthSettings32.png");
+}
+
+.option-select-box label.shortcut-inspectworkflowerrors .icon
+{
+    background-image: url("K2Sites_Management/Images/InspectWorkFlowErrors32.png");
+}
+
+.option-select-box label.shortcut-manageclaimconfig .icon
+{
+    background-image: url("K2Sites_Management/Images/ManageClaimsConfiguration32.png");
+}
+
+.option-select-box label.shortcut-manageoofoptions .icon
+{
+    background-image: url("K2Sites_Management/Images/ManageOOF_Dark32.png");
+}
+
+.option-select-box label.shortcut-viewworklist .icon
+{
+    background-image: url("K2Sites_Management/Images/Tasklist32.png");
+}
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .option-select-box label.shortcut-executesmo .icon
+    {
+        background-image: url("K2Sites_Management/Images/ExecuteSmartObject32@2x.png");
+    }
+
+    .option-select-box label.shortcut-features .icon
+    {
+        background-image: url("K2Sites_Management/Images/Features32@2x.png");
+    }
+
+    .option-select-box label.shortcut-manageroles .icon
+    {
+        background-image: url("K2Sites_Management/Images/Roles32@2x.png");
+    }
+
+    .option-select-box label.shortcut-workflowrights .icon
+    {
+        background-image: url("K2Sites_Management/Images/WorkflowRights32@2x.png");
+    }
+
+    .option-select-box label.shortcut-security .icon
+    {
+        background-image: url("K2Sites_Management/Images/ManageSecurity32@2x.png");
+    }
+
+    .option-select-box label.shortcut-workinghours .icon
+    {
+        background-image: url("K2Sites_Management/Images/WorkingHours32@2x.png");
+    }
+
+    .option-select-box label.shortcut-viewoauthsettings .icon
+    {
+        background-image: url("K2Sites_Management/Images/ViewOAuthSettings32@2x.png");
+    }
+
+    .option-select-box label.shortcut-inspectworkflowerrors .icon
+    {
+        background-image: url("K2Sites_Management/Images/InspectWorkFlowErrors32@2x.png");
+    }
+
+    .option-select-box label.shortcut-manageclaimconfig .icon
+    {
+        background-image: url("K2Sites_Management/Images/ManageClaimsConfiguration32@2x.png");
+    }
+
+    .option-select-box label.shortcut-manageoofoptions .icon
+    {
+        background-image: url("K2Sites_Management/Images/ManageOOF_Dark32@2x.png");
+    }
+
+    .option-select-box label.shortcut-viewworklist .icon
+    {
+        background-image: url("K2Sites_Management/Images/Tasklist32@2x.png");
+    }
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel a
+    {
+        background-image: url("K2Sites_Management/Images/Help24Default@2x.png");
+    }
+
+        #d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel a:hover
+        {
+            background-image: url("K2Sites_Management/Images/Help24Hover@2x.png");
+        }
+}
+
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab span[name='dlblWelcomeUser'],
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab.form,
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab .Grid-Layout .editor-cell.lastrow
+{
+    padding: 0 !important;
+}
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .row:last-child .management-button
+    {
+        background-color: transparent;
+    }
+
+span[name='dlblWelcomeUser'] .landing-header
+{
+    text-align: center !important;
+    background: #003870; /* --globalNav-background-color */
+    margin-bottom: 5.0rem;
+    padding: 1.4rem 0;
+}
+
+    span[name='dlblWelcomeUser'] .landing-header .landing-welcome
+    {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        font-size: 1.2rem;
+        color: #ffffff; /* --globalNav-text-color */
+    }
+
+    span[name='dlblWelcomeUser'] .landing-header .landing-welcome-text
+    {
+        font-size: 1.2rem;
+        color: #ffffff; /* --globalNav-text-color */
+        margin: 0;
+    }
+
+        span[name='dlblWelcomeUser'] .landing-header .landing-welcome-text b
+        {
+            font-weight: bolder;
+            color: #ffffff; /* --globalNav-text-color */
+        }
+
+    span[name='dlblWelcomeUser'] .landing-header i
+    {
+        position: absolute;
+        /*background-image: url('Workspace/ManagementLandingGraphic75.png');*/
+        background-size: cover;
+        height: 0;
+        width: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab .row:last-child span
+{
+    text-align: center;
+}
+
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab .row:last-child .management-button
+{
+    color: #717171;
+    max-width: 70rem;
+}
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .row:last-child .management-button .right .top
+    {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #5b595d;
+    }
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .row:last-child .management-button .right .bottom
+    {
+        font-size: 1.5rem;
+        color: #717171;
+    }
+
+#d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+}
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel > div
+    {
+        width: 30px;
+        margin: 5px auto;
+    }
+
+    #d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel a
+    {
+        background-image: url("K2Sites_Management/Images/Help24Default.png");
+        height: 24px;
+        width: 24px;
+        margin: auto;
+        background-size: 24px;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        white-space: nowrap;
+    }
+
+        #d8b9e7ed-bd45-4af0-adb7-35252c290aab .hyperlinkTopPanel a:hover
+        {
+            background-image: url("K2Sites_Management/Images/Help24Hover.png");
+        }
+
+span[name='ExecuteSmartObject']:hover,
+span[name='WorkflowRights']:hover,
+span[name='WorkingHours']:hover,
+span[name='WorkflowErrors']:hover,
+span[name='Worklist']:hover,
+span[name='ManageRoles']:hover,
+span[name='ManageSecurity']:hover,
+span[name='OAuth']:hover,
+span[name='ManageClaims']:hover,
+span[name='OutOfOffice']:hover
+{
+    background-color: rgba(2,135,209,0.1);
+}
+
+span.SourceCode-Forms-Controls-Web-DataLabel[name='ExecuteSmartObject'],
+span.SourceCode-Forms-Controls-Web-DataLabel[name='WorkflowRights'],
+span.SourceCode-Forms-Controls-Web-DataLabel[name='WorkingHours'],
+span.SourceCode-Forms-Controls-Web-DataLabel[name='WorkflowErrors'],
+span.SourceCode-Forms-Controls-Web-DataLabel[name='Worklist'],
+span.SourceCode-Forms-Controls-Web-DataLabel[name='ManageRoles'],
+span.SourceCode-Forms-Controls-Web-DataLabel[name='ManageSecurity'],
+span.SourceCode-Forms-Controls-Web-DataLabel[name='OAuth'],
+span.SourceCode-Forms-Controls-Web-DataLabel[name='ManageClaims'],
+span.SourceCode-Forms-Controls-Web-DataLabel[name='OutOfOffice']
+{
+    padding: 0;
+    margin-top: 0.4rem;
+}
+
+div[name="LandingPage Area Item1"] .Grid-Layout 
+{
+    grid-template-columns: 1fr 405px 1fr 405px 1fr !important;
+    -ms-grid-columns: 1fr 405px 1fr 405px 1fr !important;
+}
+
+
+div[name="LandingPage Area Item1"] .Grid-Layout .editor-cell[col='2'],
+div[name="LandingPage Area Item1"] .Grid-Layout .editor-cell[col='4'] 
+{
+    width: 405px !important;
+    max-width: 405px !important;
+}
+
+div[name="LandingPage Area Item1"] .Grid-Layout .editor-cell[col='1'],
+div[name="LandingPage Area Item1"] .Grid-Layout .editor-cell[col='5']
+{
+    width: auto !important;
+}
+
+
+div[name="LandingPage Area Item1"] .Grid-Layout > .editor-cell[col='2'] > span 
+{
+    float: right;
+}
+
+div[name="LandingPage Area Item1"] .Grid-Layout .editor-cell 
+{
+    padding: 0 !important;
+}

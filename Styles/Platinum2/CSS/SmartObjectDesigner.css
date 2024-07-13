@@ -1,0 +1,12 @@
+#ParameterPopup .panel-body,
+#MapServicePropPopup .panel-body,
+#SmartObjectEditPropertyPopup .panel-body,
+#SmartObjectAssociationPopup .panel-body,
+#MethodBindWizard_SmartObjectMethodDetailsStep .panel-body,
+#MethodBindWizard_ServiceObjectMethodSelectionStep .panel-body {
+  border: none;
+}
+#MethodBindWizard_DefaultServiceObjectMethodMappingsStep .grid-header,
+#MethodBindWizard_ServiceObjectMappingStep .grid-header {
+  border: none;
+}

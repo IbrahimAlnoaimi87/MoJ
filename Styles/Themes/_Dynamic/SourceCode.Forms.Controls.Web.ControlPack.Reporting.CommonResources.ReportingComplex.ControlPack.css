@@ -1,0 +1,13 @@
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartConfigTreeHolder,
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox,
+.theme-entry #UsersConfig_secondPageOutside #UsersTextBox,
+.theme-entry #ReportHeaderActivityPicker .workflowTreeContainer {
+  border: 1px solid var(--input-border-color);
+}
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #addButton1 {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+}
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #addButton1:hover {
+  color: var(--button-hover-text-color);
+}

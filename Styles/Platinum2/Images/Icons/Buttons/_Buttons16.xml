@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Sprite>
+  <InputSettings sourceFolder="" xmlSourceDirectory="">
+    <CssDefinitions>
+      <RowDefinition row="1" cssSelector=".icon.icon-set-buttons.icon-size16.ic-{iconname}"/>
+      <!-- normal -->
+      <RowDefinition row="2" cssSelector=".icon.icon-set-buttons.icon-size16.ic-{iconname}.hover"/>
+      <!-- hover -->
+      <RowDefinition row="3" cssSelector=".icon.icon-set-buttons.icon-size16.ic-{iconname}.selected"/>
+      <!-- selected -->
+      <RowDefinition row="4" cssSelector=".icon.icon-set-buttons.icon-size16.ic-{iconname}.disabled"/>
+      <!-- selected -->
+    </CssDefinitions>
+    <SourceImages>
+      <Column cssname="DynamicEdit">
+        <Rows>
+          <Row >DynamicEdit16.png</Row>
+          <Row >DynamicEdit_Hover16.png</Row>
+          <Row >DynamicEdit_Selected16.png</Row>
+        </Rows>
+      </Column>
+      <Column cssname="WizardPaging">
+        <Rows>
+          <Row >WizardPaging16.png</Row>
+          <Row >WizardPaging_Hover16.png</Row>
+          <Row >WizardPaging_Selected16.png</Row>
+        </Rows>
+      </Column>
+      <Column cssname="AddReference">
+        <Rows>
+          <Row  >AddReference16.png</Row>
+          <Row >AddReference_Hover16.png</Row>
+          <Row number="4">AddReference_Disabled16.png</Row>
+        </Rows>
+      </Column>
+      <Column cssname="RemoveReference">
+        <Rows>
+          <Row >RemoveReference16.png</Row>
+          <Row >RemoveReference_Hover16.png</Row>
+          <Row number="4">RemoveReference_Disabled16.png</Row>
+        </Rows>
+      </Column>
+      <Column cssname="contextbrowserbutton">
+        <Rows>
+          <Row>ContextBrowserButton16.png</Row>
+          <Row>ContextBrowserButton_Hover16.png</Row>
+          <Row number="4">ContextBrowserButton_Disabled16.png</Row>
+        </Rows>
+      </Column>
+      <Column cssname="dropdownbin">
+        <Rows>
+          <Row>dropdownbin16.png</Row>
+          <Row>dropdownbin_hover16.png</Row>
+          <Row>dropdownbin_selected16.png</Row>
+        </Rows>
+      </Column>
+    </SourceImages>
+
+  </InputSettings>
+  <OutputSettings padding="8,0,0,8">
+    <CssBackgroundImageFolder>Buttons/</CssBackgroundImageFolder>
+    <SpriteOutputFile>../_SpriteOutput/Buttons/Buttons16.png</SpriteOutputFile>
+    <CssOutputFile>../_SpriteOutput/_Debug/Buttons16.css</CssOutputFile>
+  </OutputSettings>
+</Sprite>

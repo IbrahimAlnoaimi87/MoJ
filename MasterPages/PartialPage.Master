@@ -1,0 +1,7 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PartialPage.master.cs" Inherits="SourceCode.Forms.MasterPages.PartialPage" %>
+
+<asp:Panel ID="PartialPageContainer" runat="server" CssClass="wrapper partial-page-container">
+    <asp:ContentPlaceHolder ID="PartialPageContentPlaceHolder" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</asp:Panel>

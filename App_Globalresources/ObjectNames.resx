@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CategoryIndefiniteSingular" xml:space="preserve">
+    <value>a Category</value>
+    <comment>Indefinite singular of the term category (noun)</comment>
+  </data>
+  <data name="CategoryPlural" xml:space="preserve">
+    <value>Categories</value>
+    <comment>Plural of the term category (noun)</comment>
+  </data>
+  <data name="CategorySingular" xml:space="preserve">
+    <value>Category</value>
+    <comment>Singular of the term category (noun)</comment>
+  </data>
+  <data name="ControlPlural" xml:space="preserve">
+    <value>Controls</value>
+    <comment>Plural of the noun 'Control'</comment>
+  </data>
+  <data name="ItemPlural" xml:space="preserve">
+    <value>Items</value>
+    <comment>Plural of the term item</comment>
+  </data>
+  <data name="ItemSingular" xml:space="preserve">
+    <value>Item</value>
+    <comment>Singular of the term item</comment>
+  </data>
+  <data name="ItemsPlural" xml:space="preserve">
+    <value>Items</value>
+    <comment>Plural of the term item</comment>
+  </data>
+  <data name="OptionsPlural" xml:space="preserve">
+    <value>Options</value>
+    <comment>Plural of the term option</comment>
+  </data>
+  <data name="SmartFunctionPlural" xml:space="preserve">
+    <value>SmartFunctions</value>
+    <comment>Plural of a SmartFunction</comment>
+  </data>
+  <data name="SmartFunctionSingular" xml:space="preserve">
+    <value>SmartFunction</value>
+    <comment>Singular of a SmartFunction</comment>
+  </data>
+  <data name="SmartObjectIndefiniteSingular" xml:space="preserve">
+    <value>a SmartObject</value>
+    <comment>Indefinite singular of a SmartObject [do not translate SmartObject]</comment>
+  </data>
+  <data name="SmartObjectPlural" xml:space="preserve">
+    <value>SmartObjects</value>
+    <comment>Plural of SmartObject</comment>
+  </data>
+  <data name="SmartObjectSingular" xml:space="preserve">
+    <value>SmartObject</value>
+    <comment>this is allows the user to create a single new SmartObject [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="SmartFormIndefiniteSingular" xml:space="preserve">
+    <value>a Form</value>
+    <comment>Indefinite singular of a SmartForms form</comment>
+  </data>
+  <data name="SmartFormPlural" xml:space="preserve">
+    <value>Forms</value>
+    <comment>Plural of a SmartForms form</comment>
+  </data>
+  <data name="StyleProfileSingular" xml:space="preserve">
+    <value>Style Profile</value>
+    <comment>this is allows the user to create a single new Form[location: app studio toolbar] [designtime]</comment>
+  </data>
+    <data name="StyleProfileIndefiniteSingular" xml:space="preserve">
+    <value>a Style Profile</value>
+    <comment>Indefinite singular of a SmartForms form</comment>
+  </data>
+    <data name="StyleProfilePlural" xml:space="preserve">
+    <value>Style Profiles</value>
+    <comment>Plural of a SmartForms form</comment>
+  </data>
+    <data name="SmartFormSingular" xml:space="preserve">
+    <value>Form</value>
+    <comment>this is allows the user to create a single new Form[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="SmartViewIndefiniteSingular" xml:space="preserve">
+    <value>a view</value>
+    <comment>Indefinite of a SmartForms view</comment>
+  </data>
+  <data name="SmartViewPlural" xml:space="preserve">
+    <value>Views</value>
+    <comment>Plural of a SmartForms view</comment>
+  </data>
+  <data name="SmartViewSingular" xml:space="preserve">
+    <value>View</value>
+    <comment>this is allows the user to create a single new View[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="WorkflowProcessIndefiniteSingular" xml:space="preserve">
+    <value>a Workflow</value>
+    <comment>Indefinite singular of a Workflow Process</comment>
+  </data>
+  <data name="WorkflowProcessPlural" xml:space="preserve">
+    <value>Workflows</value>
+    <comment>Plural of a Workflow Process</comment>
+  </data>
+  <data name="WorkflowProcessSingular" xml:space="preserve">
+    <value>Workflow</value>
+    <comment>this is allows the user to create a single new Workflow[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="SystemObjectIndefiniteSingular" xml:space="preserve">
+    <value>a System Object</value>
+    <comment>Indefinite singular of a system object</comment>
+  </data>
+  <data name="SystemObjectPlural" xml:space="preserve">
+    <value>System Objects</value>
+    <comment>Plural of a system object</comment>
+  </data>
+  <data name="SystemObjectSingular" xml:space="preserve">
+    <value>System Object</value>
+    <comment>Singular of a system object</comment>
+  </data>
+  <data name="Control" xml:space="preserve">
+    <value>Control</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="ControlMethodParameter" xml:space="preserve">
+    <value>Control Method Parameter</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="ControlProperty" xml:space="preserve">
+    <value>Control Property</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="FormParameter" xml:space="preserve">
+    <value>Form Parameter</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="FormProperty" xml:space="preserve">
+    <value>Form Property</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="MethodParameter" xml:space="preserve">
+    <value>SmartObject Method Parameter</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="ObjectProperty" xml:space="preserve">
+    <value>SmartObject Property</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="PanelProperty" xml:space="preserve">
+    <value>Panel Property</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="ProcessItemReference" xml:space="preserve">
+    <value>Workflow Process Item Reference</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="ViewField" xml:space="preserve">
+    <value>SmartObject Property (View Field)</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="ViewParameter" xml:space="preserve">
+    <value>View Parameter</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="ViewProperty" xml:space="preserve">
+    <value>View Property</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="WorkflowActivityDataField" xml:space="preserve">
+    <value>Workflow Activity Data Field</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="WorkflowActivityProperty" xml:space="preserve">
+    <value>Workflow Activity Property</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="WorkflowActivityXmlField" xml:space="preserve">
+    <value>Workflow Activity Xml Field</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="WorkflowEventProperty" xml:space="preserve">
+    <value>Workflow Event Property</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="WorkflowProcessDataField" xml:space="preserve">
+    <value>Workflow Process Data Field</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="WorkflowProcessProperty" xml:space="preserve">
+    <value>Workflow Process Property</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="WorkflowProcessXmlField" xml:space="preserve">
+    <value>Workflow Process Xml Field</value>
+    <comment>Object name do not translate</comment>
+  </data>
+  <data name="SmartFormEventSingular" xml:space="preserve">
+    <value>Form Event</value>
+    <comment>A SmartForm Event.</comment>
+  </data>
+  <data name="SmartFormParameterSingular" xml:space="preserve">
+    <value>Form Parameter</value>
+    <comment>A SmartForm Parameter.</comment>
+  </data>
+  <data name="SmartViewEventSingular" xml:space="preserve">
+    <value>View Event</value>
+    <comment>A SmartView Event.</comment>
+  </data>
+  <data name="SmartViewMethodSingular" xml:space="preserve">
+    <value>View Method</value>
+    <comment>A SmartView Method.</comment>
+  </data>
+  <data name="SmartViewParameterSingular" xml:space="preserve">
+    <value>View Parameter</value>
+    <comment>A SmartView Parameter.</comment>
+  </data>
+  <data name="SmartViewSelectionSingular" xml:space="preserve">
+    <value>View Selection</value>
+    <comment>A SmartView Selection.</comment>
+  </data>
+  <data name="SmartObjectMethodSingular" xml:space="preserve">
+    <value>SmartObject Method</value>
+    <comment>Singular of a SmartObject method</comment>
+  </data>
+  <data name="SmartObjectPropertySingular" xml:space="preserve">
+    <value>SmartObject Property</value>
+    <comment>Singular of a SmartObject property</comment>
+  </data>
+  <data name="SourceFieldIndefiniteSingular" xml:space="preserve">
+    <value>a View Field</value>
+    <comment>Indefinite singular of a SmartForms view field</comment>
+  </data>
+  <data name="SourceFieldPlural" xml:space="preserve">
+    <value>View Fields</value>
+    <comment>Plural of a SmartForms view field</comment>
+  </data>
+  <data name="SourceFieldSingular" xml:space="preserve">
+    <value>View Field</value>
+    <comment>Singular of a SmartForms view field</comment>
+  </data>
+  <data name="SmartFormEmptyFileName" xml:space="preserve">
+    <value>New Form</value>
+    <comment>this is allows the user to create a single new Form[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="SmartObjectEmptyFileName" xml:space="preserve">
+    <value>New SmartObject</value>
+    <comment>this is allows the user to create a single new SmartObject [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="SmartViewEmptyFileName" xml:space="preserve">
+    <value>New View</value>
+    <comment>this is allows the user to create a single new View[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="WorkflowProcessEmptyFileName" xml:space="preserve">
+    <value>New Workflow</value>
+    <comment>this is allows the user to create a single new Workflow[location: app studio toolbar] [designtime]</comment>
+  </data>
+    <data name="StyleProfileEmptyFileName" xml:space="preserve">
+    <value>New Style Profile</value>
+    <comment>this is allows the user to create a single new Style Profile[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="WorkflowLegacyProcessSingular" xml:space="preserve">
+    <value>Workflow (Legacy)</value>
+    <comment>this is allows the user to create a single new legacy Workflow[location: app studio toolbar] [designtime]</comment>
+  </data>
+</root>

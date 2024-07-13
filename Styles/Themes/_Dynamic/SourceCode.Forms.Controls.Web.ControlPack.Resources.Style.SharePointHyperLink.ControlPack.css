@@ -1,0 +1,81 @@
+/* ^.theme-entry .... for desktop devices */
+
+/* ^.mobile .theme-entry .... for touch devices */
+
+/*Theme@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  
+}
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .input-control input[type=text] {
+  border: 0px solid var(--input-border-color);
+  background-color: var(--input-background-color);
+  border-radius: var(--input-rounding);
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .textboxurl {
+  margin-bottom: var(--between-control-spacing);
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .addresstitle,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .descriptiontitle {
+  margin-bottom: var(--between-control-spacing);
+}
+/* validation */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.invalid .text-input,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.invalid .input-control,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.invalid .input-control-watermark {
+  background-color: var(--input-error-background-color) !important;
+  color: var(--input-error-text-color) !important;
+  /* override -- Core.css watermark style with !important */
+
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.invalid .input-control-m-c {
+  background-color: var(--input-error-background-color);
+  border-color: var(--input-error-border-color) !important;
+  /*important will overide user configured styles */
+  color: var(--input-error-text-color);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .Hyperlink.disabled {
+  color: var(--hyperlink-disabled-text-color);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .Hyperlink:focus {
+  outline: 1px dotted var(--hyperlink-focus-border-color);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.picture img.disabled {
+  opacity: 0.5;
+}
+/* #endregion DESKTOP */
+
+/* #region TOUCH */
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 360px) and (orientation: portrait), only screen and (max-width: 640px) and (orientation: landscape) {
+  
+}
+/* Extra Small Devices - Orientation Targetting */
+
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+  
+}
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  
+}
+/*#endregion RESPONSIVE BREAKING POINTS */
+

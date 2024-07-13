@@ -1,0 +1,927 @@
+#picker-collection-popup-root .scroll-wrapper
+{
+	background-color: #f9f9f9;
+}
+
+#picker-collection-share-add-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background-image: url(../Platinum/pickerCollection/Add16.png);
+}
+
+#picker-collection-share-remove-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background-image: url(../Platinum/pickerCollection/Delete16.png);
+}
+
+.theme-entry .picker-collection-grid-column-header-divider
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 3px;
+	height: 16px;
+	display: inline-block;
+	float: left;
+	background-image: url(../Platinum/pickerCollection/grid_column_header_divider.png);
+}
+
+#DisplayValueConfigPicker .popup-body-content
+{
+	background-color: #FFFFFF;
+}
+
+.theme-entry .k-tooltip
+{
+	border-color: #C6DFE7 !important;
+}
+
+#picker-collection-share-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-image: url(../Platinum/pickerCollection/Share32.png);
+	margin: 5px;
+}
+
+.theme-entry #FilterConfig_secondPageInternal a.tab
+{
+	border-color: #b8b9bd;
+}
+
+.theme-entry .picker-collection-header-theme-color,
+.theme-entry #FilterConfig_secondPageInternal .tab-wrapper
+{
+	background: #3f5368;
+	background: -moz-linear-gradient(top, #3f5368 0%, #22384d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f5368), color-stop(100%,#22384d));
+	background: -webkit-linear-gradient(top, #3f5368 0%,#22384d 100%);
+	background: -o-linear-gradient(top, #3f5368 0%,#22384d 100%);
+	background: -ms-linear-gradient(top, #3f5368 0%,#22384d 100%);
+	background: linear-gradient(to bottom, #3f5368 0%,#22384d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f5368', endColorstr='#22384d',GradientType=0 );
+	border-color: #161d25;
+}
+
+.theme-entry #FilterConfig_secondPageInternal a.tab:hover .tab-wrapper,
+.theme-entry #FilterConfig_secondPageInternal a.tab:focus .tab-wrapper
+{
+	background: #306C93;
+	background: -moz-linear-gradient(top, #306C93 0%, #22384d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#306C93), color-stop(100%,#22384d));
+	background: -webkit-linear-gradient(top, #306C93 0%,#22384d 100%);
+	background: -o-linear-gradient(top, #306C93 0%,#22384d 100%);
+	background: -ms-linear-gradient(top, #306C93 0%,#22384d 100%);
+	background: linear-gradient(to bottom, #306C93 0%,#22384d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#306C93', endColorstr='#22384d',GradientType=0 );
+}
+
+.theme-entry #FilterConfig_secondPageInternal a.tab:hover .tab-wrapper,
+.theme-entry #FilterConfig_secondPageInternal a.tab:focus .tab-wrapper
+{
+	background: #6684A3;
+}
+
+#picker-collection-share-header,
+#picker-collection-share-operation-box-header,
+#picker-collection-add-user-upper-pane,
+#picker-collection-sleep-header
+{
+	border: 1px solid #adae9c;
+}
+
+#picker-collection-add-user-popup-root .scroll-wrapper
+{
+	background-color: #f9f9f9;
+}
+
+#picker-collection-add-user-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-image: url(../Platinum/pickerCollection/Share32.png);
+	margin: 5px;
+}
+
+#picker-collection-add-user-search-text-field-wrapper
+{
+	position: relative;
+	width: 100%;
+	border: none;
+}
+
+#picker-collection-add-user-search-text-field
+{
+	border: none;
+	width: 100%;
+	height: 18px;
+	position: relative;
+	top: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding-left: 3px;
+}
+
+.theme-entry .picker-collection-search-text-highlight
+{
+	background-color: yellow;
+}
+
+.theme-entry .picker-collection-textbox-outer
+{
+	border: solid 1px #aaad9c;
+}
+
+.theme-entry .picker-collection-remove-container
+{
+	margin-left: 21px;
+	margin-right: 4px;
+}
+
+#picker-collection-add-user-search-text-field:focus
+{
+	border: none;
+}
+
+.theme-entry .picker-collection-add-user-search-option-expander-up,
+.theme-entry .picker-collection-add-user-search-option-expander-down,
+.theme-entry .picker-collection-add-user-advanced-search-option-label-expander-up,
+.theme-entry .picker-collection-add-user-advanced-search-option-label-expander-down
+{
+	background-image: url(../Platinum/pickerCollection/PDCombined.png);
+}
+
+#picker-collection-add-user-search-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	left: 2px;
+	top: 2px;
+	background-image: url(../Platinum/pickerCollection/Search16.png);
+}
+
+#picker-collection-add-user-search-remove-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	background-image: url(../Platinum/pickerCollection/ClearIcon.png);
+}
+
+.theme-entry .oof-delegated-user-list-row:nth-child(even),
+.theme-entry .picker-collection-grid-row.even
+{
+	height: 40px;
+	width: 100%;
+	background-color: #F2F2F2;
+}
+
+#picker-collection-redirect-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-image: url(../Platinum/pickerCollection/Redirect32.png);
+	margin: 5px;
+}
+
+#picker-collection-sleep-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-image: url(../Platinum/pickerCollection/sleep32.png);
+	margin: 5px;
+}
+
+#picker-collection-sleep-operation-box
+{
+	float: left;
+	width: 100%;
+	height: 157px;
+	overflow: auto;
+	position: relative;
+	left: -4px;
+	top: -3px;
+	background-color: #fff;
+	border-left: 1px solid #adae9c;
+	border-right: 1px solid #adae9c;
+	border-bottom: 1px solid #adae9c;
+}
+
+#FilterConfig_FilterPanel .toolbar,
+#FilterConfig_ColumnPanel .toolbar
+{
+	border: 1px solid #adae9c;
+	background: #f5f5f1;
+	background: -moz-linear-gradient(top, #f5f5f1 0%, #e2e4da 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f1), color-stop(100%,#e2e4da));
+	background: -webkit-linear-gradient(top, #f5f5f1 0%,#e2e4da 100%);
+	background: -o-linear-gradient(top, #f5f5f1 0%,#e2e4da 100%);
+	background: -ms-linear-gradient(top, #f5f5f1 0%,#e2e4da 100%);
+	background: linear-gradient(to bottom, #f5f5f1 0%,#e2e4da 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f1', endColorstr='#e2e4da',GradientType=0 );
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+#FilterConfig_FilterPanel .grid-column-header-cell:hover
+{
+	background: transparent;
+}
+
+#picker-collection-layout-left
+{
+	width: 10%;
+	float: left;
+}
+
+#picker-collection-layout-right
+{
+	width: 90%;
+	float: right;
+}
+
+#picker-collection-share-header span
+{
+	padding-left: 5px;
+}
+
+#picker-collection-add-user-layout-left
+{
+	width: 10%;
+	float: left;
+}
+
+#picker-collection-add-user-layout-right
+{
+	width: 90%;
+	float: right;
+}
+
+#picker-collection-add-user-upper-pane a
+{
+	text-decoration: none;
+}
+
+.theme-entry .picker-collection-search-outer-wrapper
+{
+	position: relative;
+}
+
+#picker-collection-add-user-advanced-search-dropdown-label-wrapper
+{
+	margin-top: 3px;
+	margin-right: 4px;
+}
+
+.theme-entry .picker-collection-search-top
+{
+	margin-top: 5px;
+}
+
+.theme-entry .picker-collection-search-bottom
+{
+	margin-bottom: 5px;
+}
+
+#picker-collection-add-user-search-display-text
+{
+	padding-left: 5px;
+	padding-right: 50px;
+}
+
+#picker-collection-add-user-search-icon-outer
+{
+	display: inline-block;
+	width: 18px;
+	height: 20px;
+	position: absolute;
+	top: 5px;
+	right: 24px;
+	margin-right: 3px;
+}
+
+#picker-collection-add-user-search-remove
+{
+	position: relative;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	top: 0;
+	left: 0;
+	border-left-width: 1px;
+	border-left-style: solid;
+	margin-right: 5px;
+	margin-left: 3px;
+	border-left: 1px solid #e9e4e8;
+}
+
+#picker-collection-add-user-advanced-search-string-display-text
+{
+	padding-left: 5px;
+}
+
+#picker-collection-add-user-advanced-search .input-control.select-box.dropdown-box
+{
+	width: 342px;
+	display: inline-block;
+	position: relative;
+	top: -3px;
+}
+
+#picker-collection-add-user-advanced-search-label
+{
+	height: 14px;
+}
+
+#picker-collection-add-user-advanced-search-label-display-text
+{
+	padding-left: 5px;
+}
+
+#picker-collection-add-user-advanced-search-label .input-control.select-box.dropdown-box
+{
+	width: 342px;
+	display: inline-block;
+	position: relative;
+	top: -11px;
+}
+
+.theme-entry .picker-collection-search-label-cell
+{
+	width: 50px;
+}
+
+.theme-entry .picker-collection-search-expander-cell
+{
+	width: 15px;
+}
+
+.theme-entry .picker-collection-search-criteria-cell
+{
+	width: 100%;
+}
+
+.theme-entry .picker-collection-add-user-advanced-search-option-label-expander-up
+{
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -9px;
+}
+
+.theme-entry .picker-collection-add-user-advanced-search-option-label-expander-down
+{
+	background-repeat: no-repeat;
+	background-position: 0 -15px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -9px;
+}
+
+#picker-collection-add-user-search-label-display-text
+{
+	padding-left: 5px;
+	padding-right: 20px;
+	position: relative;
+	top: -1px;
+}
+
+
+#picker-collection-add-user-operation-box-header span
+{
+	padding-left: 5px;
+	line-height: 22px;
+	cursor: default;
+}
+
+.theme-entry #picker-collection-add-user-search-display-text,
+.theme-entry #picker-collection-add-user-advanced-search-string-display-text,
+.theme-entry #picker-collection-add-user-advanced-search-label-display-text,
+.theme-entry #picker-collection-share-header .picker-collection-text-theme-color
+{
+	cursor: default;
+}
+
+.theme-entry .picker-collection-text-theme-color
+{
+	color: #fff;
+}
+
+.theme-entry a.picker-collection-button-disabled:hover
+{
+	background: none !important;
+}
+
+/* add user picker user grid */
+.theme-entry .picker-collection-grid-row
+{
+	height: 40px;
+	width: 100%;
+}
+
+#picker-collection-add-user-popup-root .popup-header-text
+{
+	cursor: default;
+}
+
+.picker-collection-sleep-operation-box-basic-options-container li
+{
+	height: 21px;
+}
+
+#picker-collection-sleep-layout-left
+{
+	width: 10%;
+	float: left;
+}
+
+#picker-collection-sleep-layout-right
+{
+	width: 90%;
+	float: right;
+}
+
+#picker-collection-sleep-header span
+{
+	padding-left: 5px;
+	cursor: default;
+}
+
+#picker-collection-sleep-operation-box .input-control.radio
+{
+	margin-top: 4px;
+	margin-left: 3px;
+}
+
+#picker-collection-popup-root.webkit .picker-collection-sleep-operation-box-basic-options-container ul
+{
+	list-style: none;
+	position: relative;
+	top: -14px;
+	left: -15px;
+	margin: 0;
+}
+
+#picker-collection-popup-root.ie .picker-collection-sleep-operation-box-basic-options-container ul,
+#picker-collection-popup-root.moz .picker-collection-sleep-operation-box-basic-options-container ul
+{
+	list-style: none;
+	position: relative;
+	top: -14px;
+	left: -15px;
+}
+
+#picker-collection-popup-root.moz .picker-collection-sleep-operation-box-date-options-outer-container,
+#picker-collection-popup-root.ie .picker-collection-sleep-operation-box-date-options-outer-container
+{
+	position: relative;
+	top: -8px;
+}
+
+.theme-entry #picker-collection-popup-root.webkit .picker-collection-sleep-operation-box-date-options-outer-container .input-control.radio
+{
+	position: relative;
+	top: -7px;
+	left: 0;
+}
+
+#picker-collection-popup-root.moz .picker-collection-sleep-operation-box-date-options-outer-container .input-control.radio,
+#picker-collection-popup-root.ie .picker-collection-sleep-operation-box-date-options-outer-container .input-control.radio
+{
+	position: relative;
+	top: -12px;
+}
+
+#picker-collection-popup-root .popup-header-text
+{
+	cursor: default;
+}
+
+#picker-collection-popup-root.ie .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control,
+#picker-collection-popup-root.webkit .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control
+{
+	width: 345px;
+	position: relative;
+	top: -5px;
+}
+
+#picker-collection-popup-root.moz .picker-collection-sleep-operation-box-date-options-container .input-control.calendar-control
+{
+	width: 323px;
+	position: relative;
+	top: -5px;
+}
+
+.picker-collection-sleep-operation-box-date-options-container .datapicker-right
+{
+	margin-left: 0;
+}
+
+#picker-collection-popup-root .scroll-wrapper
+{
+	background-color: #f9f9f9;
+}
+
+.theme-entry #picker-collection-share-header,
+.theme-entry #picker-collection-share-operation-box-header,
+.theme-entry #picker-collection-add-user-upper-pane,
+.theme-entry #picker-collection-add-user-operation-box-header,
+.theme-entry #picker-collection-sleep-header
+{
+	border: 1px solid #adae9c;
+}
+
+.theme-entry .picker-collection-text-theme-color
+{
+	color: #fff !important;
+}
+
+.theme-entry .picker-collection-icon-theme-color:hover,
+.theme-entry .picker-collection-icon-theme-color:focus
+{
+	background: #eaf6ff;
+	background: -moz-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaf6ff), color-stop(100%,#bfe4fc));
+	background: -webkit-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+	background: -o-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+	background: -ms-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+	background: linear-gradient(to bottom, #eaf6ff 0%,#bfe4fc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf6ff', endColorstr='#bfe4fc',GradientType=0 );
+	color: #fff;
+}
+
+.theme-entry .picker-collection-icon-theme-color
+{
+	color: #343e41;
+	background: #f8f4f8;
+	background: -moz-linear-gradient(top, #f8f4f8 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f4f8), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #f8f4f8 0%,#ffffff 100%);
+	background: -o-linear-gradient(top, #f8f4f8 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #f8f4f8 0%,#ffffff 100%);
+	background: linear-gradient(to bottom, #f8f4f8 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f4f8', endColorstr='#ffffff',GradientType=0 );
+	border-right: 1px solid #e9e4e8;
+	border-top: 1px solid #e9e4e8;
+	border-bottom: 1px solid #e9e4e8;
+}
+
+.theme-entry .picker-collection-grid-row.selected
+{
+	background-color: #c4e9f5;
+}
+
+.theme-entry .oof-delegated-user-list-row:hover,
+.theme-entry .picker-collection-grid-row:hover
+{
+	background-color: #d3eef7;
+}
+
+	.theme-entry .picker-collection-grid-row:hover .picker-collection-grid-row-user-email,
+	.theme-entry .picker-collection-grid-row.selected .picker-collection-grid-row-user-email
+	{
+		color: #676767;
+	}
+
+.theme-entry #picker-collection-sleep-operation-box .input-control.disabled .input-control-m-c
+{
+	border-color: #a9a4b8;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .OOF /* OOF notification border */
+{
+	border: 1px solid #e9e4e8;
+}
+
+#addOOFException .popup-body-content,
+#OOFConfig .popup-body-content
+{
+	background-color: #fff;
+	border: 1px solid #e9e4e8;
+}
+
+#OOFGrid .pickerCollectionOOFDelegatedUserRemoveAll,
+#OOFExceptionContext .pickerCollectionOOFDelegatedUserRemoveAll
+{
+	border-left-width: 1px;
+	border-left-style: solid;
+	width: 18px;
+	height: 18px;
+}
+
+#OOFConfig .oof-td.delegatedUserLookupCell
+{
+	padding-right: 0;
+}
+
+#OOFConfig .oof-td.delegatedUserRemoveCell
+{
+	padding-left: 0;
+	width: 20px;
+}
+
+#OOFExceptionContext .oof-td.delegatedUserRemoveCell
+{
+	padding-left: 0;
+	padding-right: 20px;
+	width: 20px;
+	max-width: 20px;
+}
+
+.theme-entry #OOFExceptionContext .oof-td.delegatedUserLookupCell
+{
+	padding-right: 0;
+	height: 30px;
+}
+
+#OOFExceptionContext .OOFExceptionUserLookupTable .oof-td-label
+{
+	padding-right: 20px;
+}
+
+#OOFGrid .toolbar,
+#OOFGrid .OOFDelegatedUserLookup .input-control-body.styling-left,
+#OOFExceptionContext .OOFExceptionSearchUserLookupBox .input-control-body.styling-left,
+#addOOFException .workflowContainer /* OOF Exception picker workflow tree box */
+{
+	border: 1px solid #e9e4e8;
+}
+
+#OOFConfig tr.userLookupRow .input-control-body.styling-left, /* OOF picker user lookup box */
+#OOFExceptionContext tr.userLookupRow .input-control-body.styling-left, /* OOF exception picker user lookup box */
+#picker-collection-add-user-container tr.userLookupRow .input-control-m-c, /* Add user picker user lookup box */
+#OOFExceptionContext .SFC.OOFExceptionName, /* OOF Exception picker Rule Name textbox */
+#workflowSearchBox /* OOF Exception picker workflow searchbox */
+{
+	background: #fff;
+	background: -moz-linear-gradient(top, #f8f3f7 0%, #ffffff 10px, #ffffff 11px, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f3f7), color-stop(10px,#ffffff), color-stop(11px,#ffffff), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #f8f3f7 0%,#ffffff 10px,#ffffff 11px,#ffffff 100%);
+	background: -o-linear-gradient(top, #f8f3f7 0%,#ffffff 10px,#ffffff 11px,#ffffff 100%);
+	background: -ms-linear-gradient(top, #f8f3f7 0%,#ffffff 10px,#ffffff 11px,#ffffff 100%);
+	background: linear-gradient(to bottom, #f8f3f7 0%,#ffffff 10px,#ffffff 11px,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f3f7', endColorstr='#ffffff',GradientType=0 );
+}
+
+	#OOFConfig tr.userLookupRow.highlight_focus .input-control-body.styling-left,
+	#OOFExceptionContext tr.userLookupRow.highlight_focus .input-control-body.styling-left,
+	#picker-collection-add-user-container tr.userLookupRow.highlight_focus .input-control-m-c,
+	#OOFExceptionContext .SFC.OOFExceptionName:focus,
+	#workflowSearchBox.SFC:focus
+	{
+		border: 1px solid #92c0e0;
+	}
+
+.userLookupRow.highlight_focus a.search.styling-inner-wrapper
+{
+	border-left: 1px solid #92c0e0;
+}
+
+#worklistAddUserPickerUserLookup > span,
+#picker-collection-add-user-search-icon
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	left: 2px;
+	top: 2px;
+	background-image: url(../platinum/pickerCollection/Search16.png);
+}
+
+#OOFConfig .OOFDelegatedUserLookup .search,
+#OOFExceptionContext .OOFExceptionSearchUserLookupBox .search,
+#picker-collection-add-user-search-remove
+{
+	position: relative;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	top: 0;
+	left: 0;
+	border-left-width: 1px;
+	border-left-style: solid;
+	margin-left: 3px;
+	margin-right: 4px;
+}
+
+#worklistAddUserPickerUserLookup
+{
+	height: 18px;
+}
+
+.pickerCollectionOOFDelegatedUserRemoveAll
+{
+	border-left-color: #e9e4e8;
+}
+
+/*user textbox in OOF and OOF Exception pickers*/
+.popup .delegatedUserLookupCell .OOFUserLookupUsername.selected
+{
+	background: #c4e9f5;
+}
+
+.popup .delegatedUserLookupCell .OOFUserLookupUsername:hover
+{
+	background: #d3eef7;
+}
+
+.theme-entry .editableUserLookupTextbox,
+.theme-entry .worklistUserLookupTextbox,
+.theme-entry .editableUserLookupIconWrapper,
+.theme-entry .editableUserLookupRemoveIconWrapper
+{
+	border: solid 1px #e9e4e8;
+}
+
+.theme-entry .worklistUserLookupTextbox
+{
+	background: #fff;
+	background: -moz-linear-gradient(top, #f8f3f7 0%, #ffffff 10px, #ffffff 11px, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f3f7), color-stop(10px,#ffffff), color-stop(11px,#ffffff), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #f8f3f7 0%,#ffffff 10px,#ffffff 11px,#ffffff 100%);
+	background: -o-linear-gradient(top, #f8f3f7 0%,#ffffff 10px,#ffffff 11px,#ffffff 100%);
+	background: -ms-linear-gradient(top, #f8f3f7 0%,#ffffff 10px,#ffffff 11px,#ffffff 100%);
+	background: linear-gradient(to bottom, #f8f3f7 0%,#ffffff 10px,#ffffff 11px,#ffffff 100%);
+}
+
+.theme-entry .editableUserLookupIconWrapper
+{
+	border-left: none;
+}
+
+.theme-entry .editableUserLookupIconWrapper,
+.theme-entry .editableUserLookupRemoveIconWrapper,
+.theme-entry .worklistUserLookupIconWrapper,
+.theme-entry .worklistUserLookupClearIconWrapper
+{
+	background: #f8f4f8;
+	background: -moz-linear-gradient(top, #f8f4f8 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f4f8), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #f8f4f8 0%,#ffffff 100%);
+	background: -o-linear-gradient(top, #f8f4f8 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #f8f4f8 0%,#ffffff 100%);
+	background: linear-gradient(to bottom, #f8f4f8 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f4f8', endColorstr='#ffffff',GradientType=0 );
+	border-color: #e9e4e8;
+}
+
+	.theme-entry .editableUserLookupIconWrapper:hover,
+	.theme-entry .editableUserLookupIconWrapper:focus,
+	.theme-entry .editableUserLookupRemoveIconWrapper:hover,
+	.theme-entry .editableUserLookupRemoveIconWrapper:focus,
+	.theme-entry .worklistUserLookupIconWrapper:hover,
+	.theme-entry .worklistUserLookupIconWrapper:focus,
+	.theme-entry .worklistUserLookupClearIconWrapper:hover,
+	.theme-entry .worklistUserLookupClearIconWrapper:focus
+{
+		background: #eaf6ff;
+		background: -moz-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaf6ff), color-stop(100%,#bfe4fc));
+		background: -webkit-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+		background: -o-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+		background: -ms-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+		background: linear-gradient(to bottom, #eaf6ff 0%,#bfe4fc 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf6ff', endColorstr='#bfe4fc',GradientType=0 );
+}
+
+.theme-entry .editableUserLookupFocused .editableUserLookupTextbox,
+.theme-entry .worklistUserLookupTextbox:focus
+{
+	border: solid 1px #91cdf2;
+}
+
+.msie .theme-entry .worklistUserLookupClearIconWrapper
+{
+	left: 302.5px;
+}
+
+.theme-entry #addOOFException .highlight
+{
+	background-color: yellow;
+	display: inline;
+}
+
+/* #region RTL layout */
+
+html[dir=rtl] .theme-entry .editableUserLookupIconWrapper
+{
+	border-left: solid 1px #e9e4e8;
+}
+
+/* Share Task region */
+
+html[dir=rtl] #picker-collection-layout-right
+{
+	float: left;
+}
+
+html[dir=rtl] #picker-collection-layout-left
+{
+	float: right;
+}
+
+html[dir=rtl] #picker-collection-share-header span
+{
+	padding-right: 5px;
+	padding-left: 0;
+}
+
+html[dir=rtl] .theme-entry .picker-collection-grid-column-header-divider
+{
+	float: right;
+}
+
+/* Sleep Task region */
+html[dir=rtl] #picker-collection-sleep-layout-left
+{
+	float: right;
+}
+
+html[dir=rtl] #picker-collection-sleep-layout-right
+{
+	float: left;
+}
+
+html[dir=rtl] #picker-collection-sleep-header span
+{
+	padding-left: 0;
+	padding-right: 5px;
+}
+
+html[dir=rtl] #picker-collection-sleep-operation-box
+{
+	float: right;
+	left: 4px;
+}
+
+	html[dir=rtl] #picker-collection-sleep-operation-box .input-control.radio
+	{
+		margin-left: 0;
+		margin-right: 3px;
+	}
+
+html[dir=rtl] #picker-collection-popup-root .picker-collection-sleep-operation-box-basic-options-container ul
+{
+	left: 0;
+	right: -15px;
+}
+
+/* #endregion RTL layout */
+
+/* #region FILTER SORT PICKER */
+
+.theme-entry #FilterConfig_secondPage .tab
+{
+    border: 1px solid #e9e4e8;
+}
+
+.theme-entry #FilterConfig_secondPage .tab:hover .tab-wrapper
+{
+    border: 1px solid transparent;
+}
+
+.theme-entry #FilterConfig_secondPage .tab:not(.selected) .tab-text
+{
+    color: #fff;
+}
+
+/* #endregion FILTER SORT PICKER */
