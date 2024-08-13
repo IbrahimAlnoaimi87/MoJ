@@ -1,0 +1,160 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+.calendar-outline {
+  position: absolute;
+  min-height: 192px;
+  width: 165px;
+  background: white;
+  border: solid 1px gray;
+  padding: 3px;
+  height: inherit;
+}
+.top-calendar {
+  padding: 2px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.top-calendar-left {
+  position: absolute;
+  left: 2px;
+  width: 16px;
+  font-weight: 900;
+  background: url('../Images/Paging/left_paging_arrow.png') no-repeat 0 0;
+  text-decoration: none;
+}
+.top-calendar-right {
+  position: absolute;
+  right: 2px;
+  font-weight: 900;
+  width: 16px;
+  background: url('../Images/Paging/right_paging_arrow.png') no-repeat right 0;
+  text-decoration: none;
+}
+.top-calendar-left:hover {
+  background-image: url('../Images/Paging/left_paging_arrow_hover.png');
+}
+.top-calendar-right:hover {
+  background-image: url('../Images/Paging/right_paging_arrow_hover.png');
+}
+.today-title,
+.today-title:visited {
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+.today-title:hover,
+.today-title.selected,
+.today-title:focus {
+  background-color: #e4efc3;
+}
+.today-text {
+  margin-top: 10px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: inherit;
+  text-decoration: none;
+  outline: none;
+}
+.today-text-value {
+  color: #2196f3;
+  padding-right: 3px;
+}
+.dayname {
+  height: 17px;
+  width: 17px;
+  text-align: right;
+  padding: 0 2px;
+  display: inline-block;
+  position: relative;
+  border: 1px solid white;
+  text-decoration: none;
+  outline: none;
+  color: #b3b5b3;
+}
+.day {
+  position: relative;
+  height: 17px;
+  width: 17px;
+  text-align: right;
+  padding: 0 2px;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid white;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+.week {
+  position: relative;
+  min-width: 170px;
+  text-decoration: none;
+}
+.day:hover,
+.month:hover,
+.year:hover,
+.day.active,
+.month.active,
+.year.active {
+  background-color: #e4efc3;
+}
+.day.selected,
+.month.selected,
+.year.selected {
+  background-color: #e4efc3;
+}
+.day.not-of-current-month {
+  color: #aaaaaa;
+}
+.month {
+  line-height: 43px;
+  height: 43px;
+  width: 39px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border: 1px solid white;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+.year {
+  line-height: 43px;
+  height: 43px;
+  width: 39px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border: 1px solid white;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+div.calendar-content-outside {
+  position: absolute;
+  overflow: hidden;
+  height: 140px;
+}
+div.calendar-content {
+  position: relative;
+  overflow: hidden;
+  height: 140px;
+  width: 170px;
+}

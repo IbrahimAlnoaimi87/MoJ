@@ -1,0 +1,875 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+#AppStudioIntroPanel .welcome-content .option-select-box-column {
+  min-height: auto;
+  min-width: auto;
+  width: 100%;
+  float: none;
+}
+#AppStudioIntroPanel .welcome-content .option-select-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#AppStudioIntroPanel .welcome-content .option-select-box li {
+  display: inline-block;
+}
+#AppStudioIntroPanel .DiagramContent .IntroFooterText {
+  width: 100%;
+  height: 18px;
+  text-align: left;
+}
+#AppStudioIntroPanel.panel > .panel-body {
+  background-color: transparent;
+}
+html[dir="rtl"] #AppStudioIntroPanel .recentitems li > a {
+  background-position: 99% 1px;
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  #AppStudioIntroPanel .recents-box li > a {
+    background-image: url("../Images/Icons/Toolbar/Document16.png");
+  }
+  #AppStudioIntroPanel .main-section {
+    background-image: none;
+  }
+  #AppStudioIntroPanel .main-logo {
+    background-image: url("../images/Icons/DesignerHome/DesignerLogo70.png");
+  }
+  #AppStudioIntroPanel .create-button.smartobject {
+    background-image: url("../images/Icons/DesignerHome/SMOBackground190.png");
+  }
+  #AppStudioIntroPanel .create-button.view {
+    background-image: url("../images/Icons/DesignerHome/ViewBackground190.png");
+  }
+  #AppStudioIntroPanel .create-button.form {
+    background-image: url("../images/Icons/DesignerHome/FormBackground190.png");
+  }
+  #AppStudioIntroPanel .create-button.workflow {
+    background-image: url("../images/Icons/DesignerHome/WFBackground190.png");
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  #AppStudioIntroPanel .recents-box li > a {
+    background-image: url("../Images/Icons/Toolbar/Document16@2x.png");
+  }
+  #AppStudioIntroPanel .main-section {
+    background-image: none;
+  }
+  #AppStudioIntroPanel .main-logo {
+    background-image: url("../images/Icons/DesignerHome/DesignerLogo70@2x.png");
+  }
+  #AppStudioIntroPanel .create-button.smartobject {
+    background-image: url("../images/Icons/DesignerHome/SMOBackground190@2x.png");
+  }
+  #AppStudioIntroPanel .create-button.view {
+    background-image: url("../images/Icons/DesignerHome/ViewBackground190@2x.png");
+  }
+  #AppStudioIntroPanel .create-button.form {
+    background-image: url("../images/Icons/DesignerHome/FormBackground190@2x.png");
+  }
+  #AppStudioIntroPanel .create-button.workflow {
+    background-image: url("../images/Icons/DesignerHome/WFBackground190@2x.png");
+  }
+}
+.lyt-explorermainwindow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+}
+.lyt-explorermainwindow > .lyt-explorer-header {
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  padding: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+.lyt-explorermainwindow > .lyt-explorer-maincontent {
+  flex-grow: 1;
+  flex-shrink: 0;
+  position: relative;
+}
+.lyt-explorermainwindow .lyt-fullcontent {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  bottom: 5px;
+  right: 5px;
+}
+.details-container {
+  border: 1px solid #dddddd;
+}
+.details-header,
+.details-box {
+  width: 760px;
+  /*max-width: 750px;
+    min-width: 600px;*/
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.details-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background-color: white;
+}
+.details-box .runas-link {
+  word-break: break-all;
+  display: none;
+}
+.details-box #ParmGrid .grid-body {
+  border: none;
+}
+.details-box #ParmGrid .grid-column-headers {
+  border: none;
+  min-height: 24px;
+}
+.details-box #ParmGrid .grid-column-headers .grid-column-headers-wrapper {
+  border: none;
+  border-bottom: 1px solid #dddddd;
+  background-color: #f8f8f8;
+  min-height: 24px;
+}
+.details-box #ParmGrid .grid-column-headers .grid-column-headers-wrapper table {
+  min-height: 24px;
+}
+.details-box #ParmGrid .grid-column-headers .grid-column-headers-wrapper table tr {
+  min-height: 24px;
+}
+.details-box #ParmGrid .grid-column-headers .grid-column-headers-wrapper table tr td {
+  min-height: 24px;
+  border-left: 1px solid #dddddd;
+  padding-left: 8px;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr {
+  min-height: 30px;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr td {
+  vertical-align: middle;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr td .grid-content-cell {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  padding-left: 10px;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr td .grid-content-cell.icon {
+  padding-left: 29px;
+  background-position: 8px 30%;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr td.first .grid-content-cell {
+  padding-left: 6px;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr td .grid-content-cell-wrapper {
+  min-height: unset;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr td .grid-content-cell-wrapper .input-control-m-c,
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr td .grid-content-cell-wrapper .input-control-wrapper {
+  min-height: 22px;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr td label.input-control.checkbox {
+  padding-top: 5px;
+  padding-left: 0px;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr:nth-child(odd) td:not(.last) {
+  background-color: white;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr:nth-child(even) td:not(.last) {
+  background-color: #f8f8f8;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr td.last {
+  background-color: white;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr:hover:not(.action-row):not(.selected) td {
+  background-color: #deeffd;
+}
+.details-box #ParmGrid table.grid-content-table.zebra-stripes tr.selected:not(.action-row) td {
+  background-color: #2196f3;
+}
+.details-box > .pane-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+.details-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ececec;
+  color: #4e5758;
+  border-bottom: solid 1px #dddddd;
+}
+.details-header-name {
+  max-width: 100%;
+}
+.details-header-name span {
+  display: block;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  word-break: break-all;
+}
+.details-header-description {
+  max-height: 42px;
+  width: 60%;
+  overflow: hidden;
+  text-align: center;
+}
+.details-box .separator {
+  border-bottom: solid #e5e5e5 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.details-box .separator,
+.details-box .option-select-box {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.details-box .option-select-box:first-child {
+  margin-top: 5px;
+}
+.details-box .option-select-box:last-child {
+  margin-bottom: 5px;
+}
+.details-box ul:empty + .separator {
+  display: none;
+}
+.details-box > .pane-container > .pane {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 50%;
+}
+.details-box > .pane-container > .pane a {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.details-box > .pane-container > .pane a[target="_blank"]::after {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/icons/management/ExternalLink16@2x.png");
+  content: ' ';
+  margin-top: -3px;
+}
+.details-box > .pane-container > .divider {
+  position: absolute;
+  content: '';
+  border-right: solid #e5e5e5 1px;
+  height: auto !important;
+  top: 5px;
+  left: auto !important;
+  right: auto !important;
+  bottom: 5px !important;
+}
+.details-box > .pane-container > .pane {
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  position: relative;
+}
+.details-box > .pane-container > .pane > .panel > .panel-body {
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  position: relative;
+  border: 0px none;
+  background-color: transparent;
+}
+.details-box > .pane-container > .pane > .panel > .panel-body > .panel-body-m {
+  position: relative;
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+}
+.details-box .option-select-box-column {
+  min-width: 0px;
+  width: auto;
+  float: none;
+}
+.details-box .form-field-content-label {
+  word-break: break-all;
+}
+.details-box .form-field-content-label > span,
+.details-box .form-field-content-label > .avatar-control {
+  vertical-align: middle;
+}
+.details-box span.avartar-name {
+  margin-left: 0px;
+}
+.details-box span.avatar-icon {
+  display: none;
+}
+.details-footer {
+  background-color: #f8f8f8;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px;
+  /*LG: Edge to edge*/
+  padding: 0px 0px;
+  height: 54px;
+  line-height: 54px;
+  float: none;
+  /*Make the footer buttons span all the way across*/
+
+}
+.details-footer .button-bar {
+  display: block;
+  height: 100%;
+  line-height: normal;
+  vertical-align: middle;
+}
+.details-footer .button-bar .button-bar-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.details-footer .button-bar .button-group {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  float: none;
+}
+.details-footer .button-bar .button-group.left {
+  justify-content: flex-start;
+}
+.details-footer .button-bar .button-group.right {
+  justify-content: flex-end;
+}
+.details-footer .button-bar .button {
+  float: none;
+  display: inline-block;
+}
+.details-footer .button-bar-wrapper .button-group.left a.button {
+  margin: 10px 0 10px 10px;
+  height: 34px;
+  line-height: 32px;
+}
+.details-footer .button-bar-wrapper .button-group.left a.button.help {
+  width: 34px;
+  min-width: 34px;
+  max-width: 34px;
+}
+.details-footer .button-bar-wrapper .button-group.left a.button > .button-wrapper {
+  height: 32px;
+}
+html[dir=rtl] .details-footer .button-bar-wrapper .button-group.left a.button {
+  margin: 10px 10px 10px 0;
+}
+.details-footer .button-bar-wrapper .button-group.right a.button {
+  margin: 10px 10px 10px 0;
+  height: 34px;
+  line-height: 32px;
+}
+.details-footer .button-bar-wrapper .button-group.right a.button > .button-wrapper {
+  height: 32px;
+}
+html[dir=rtl] .details-footer .button-bar-wrapper .button-group.right a.button {
+  margin: 10px 0 10px 10px;
+}
+.details-footer .button-bar-wrapper a.button.externalLink .button-text {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.details-footer .button-bar-wrapper a.button.externalLink .button-text::after {
+  content: ' ';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin-left: 10px;
+  margin-bottom: -2px;
+}
+.object-details .form-field label.form-field-label {
+  font-weight: bold;
+}
+.object-details {
+  background-repeat: no-repeat;
+  background-position: 95% 5px;
+  position: relative;
+  padding: 5px;
+}
+#MainContentPane > .wrapper,
+#MainContentPane > .wrapper > .wrapper.partial-page-container,
+#AppStudioIntroPanel.panel > .panel-body,
+#AppStudioIntroPanel.panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper {
+  overflow: visible;
+}
+#AppStudioIntroPanel > .panel-body {
+  border: none 0px transparent;
+}
+#AppStudioIntroPanel.panel.full > .panel-body > .panel-body-m {
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+#AppStudioIntroPanel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > .scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 12px;
+  overflow: visible;
+}
+#AppStudioIntroPanel h3 {
+  font-family: "Open-Sans", "Segoe UI Regular", Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 10px;
+}
+#AppStudioIntroPanel .welcome-content .heading-container h3 {
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+#AppStudioIntroPanel .main-section {
+  flex-grow: 1;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #f8f8f8;
+}
+#AppStudioIntroPanel .main-content {
+  overflow-y: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#AppStudioIntroPanel .main-section .main-content {
+  overflow: hidden;
+}
+#AppStudioIntroPanel .main-section .explorer-content {
+  will-change: opacity, transform;
+  opacity: 0;
+  transform: scale(1.1);
+  pointer-events: none;
+  transition: opacity 0.5s, transform 0.5s;
+}
+#AppStudioIntroPanel .main-section .welcome-content {
+  will-change: opacity, transform;
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: all;
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+#AppStudioIntroPanel .main-section .welcome-content h3 {
+  color: #4e5758;
+  font-size: 16px;
+}
+#AppStudioIntroPanel .main-section.showexplorer .main-content {
+  overflow: hidden;
+}
+#AppStudioIntroPanel .main-section.showexplorer .main-logo {
+  transform: translateY(-80px);
+  transition: transform 0.5s;
+}
+#AppStudioIntroPanel .main-section.showexplorer + .bottom-bar {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(42px);
+  transition: transform 0.5s, opacity 0.5s;
+}
+#AppStudioIntroPanel .main-section.showexplorer .explorer-content {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: all;
+}
+#AppStudioIntroPanel .main-section.showexplorer .welcome-content {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+}
+#AppStudioIntroPanel .welcome-content {
+  color: white;
+}
+#AppStudioIntroPanel .explorer-content {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+#AppStudioIntroPanel .explorer-content #MainNavigationPane {
+  background-color: #ececec;
+}
+#AppStudioIntroPanel .explorer-content #MainNavigationPane + .divider {
+  background-color: transparent;
+}
+#AppStudioIntroPanel .explorer-content .navigation-panel-body {
+  border-width: 0px;
+}
+#AppStudioIntroPanel .bottom-bar {
+  height: 42px;
+  line-height: 42px;
+  background-color: #ececec;
+  white-space: nowrap;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+#AppStudioIntroPanel .main-logo {
+  position: absolute;
+  margin-left: -35px;
+  left: 50%;
+  top: -34px;
+  /*Same height as top-bar*/
+  z-index: 3000;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  background-size: 70px 70px;
+  box-sizing: border-box;
+  background-position: center;
+  border-color: #003870;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #003870;
+  border-top-width: 0px;
+}
+#AppStudioIntroPanel .create-buttons-container,
+#AppStudioIntroPanel .recents-container,
+#AppStudioIntroPanel .heading-container {
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#AppStudioIntroPanel .heading-container {
+  margin-top: 0px;
+}
+#AppStudioIntroPanel .create-buttons-container {
+  margin-top: 12px;
+}
+#AppStudioIntroPanel .recents-container {
+  margin-top: 24px;
+}
+#AppStudioIntroPanel .recents-container {
+  display: flex;
+  flex-direction: row;
+}
+#AppStudioIntroPanel .recents-container .recents-box {
+  background-color: white;
+  flex-grow: 1;
+  flex-basis: 0;
+  overflow: hidden;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+}
+#AppStudioIntroPanel .recents-container .recents-box > h3 {
+  flex-grow: 0;
+  font-size: 14px;
+}
+#AppStudioIntroPanel .recents-container .recents-box > .recent-box-column {
+  flex-grow: 1;
+}
+#AppStudioIntroPanel .recents-container .recents-box > .recent-box-column.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 130px;
+}
+#AppStudioIntroPanel .recents-container .separator {
+  width: 20px;
+}
+#AppStudioIntroPanel .recent-box-watermark {
+  display: block;
+  font-size: 9pt;
+  margin-top: -25px;
+  color: #4e5758;
+}
+#AppStudioIntroPanel .recents-box ul {
+  height: 130px;
+  flex-basis: 130px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  column-count: 2;
+  column-fill: auto;
+  -moz-column-count: 2;
+  -moz-column-fill: auto;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-padding-start: 0px;
+  padding-left: 0px;
+}
+#AppStudioIntroPanel .recents-box ul li {
+  display: block;
+  height: 20px;
+  overflow: hidden;
+}
+#AppStudioIntroPanel .recents-box ul li a {
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 20px;
+  color: #4e5758;
+  transition: color 0.15s;
+}
+html[dir=ltr] #AppStudioIntroPanel .recents-box ul li a {
+  background-position: 1px center;
+  padding-left: 26px;
+}
+html[dir=rtl] #AppStudioIntroPanel .recents-box ul li a {
+  background-position: calc(99%) center;
+  padding-right: 26px;
+}
+#AppStudioIntroPanel .recents-box ul li a:hover {
+  color: #29b6f6;
+}
+#AppStudioIntroPanel .create-button {
+  background-repeat: no-repeat;
+  background-size: 190px 110px;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  height: 110px;
+  width: 190px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  color: #4e5758;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  border: 0px none;
+  /*override form style*/
+
+}
+#AppStudioIntroPanel .create-button .title {
+  font-family: "Open-Sans", "Segoe UI Regular", Helvetica, Arial, sans-serif;
+  padding-bottom: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  display: block;
+  margin-top: auto;
+}
+#AppStudioIntroPanel .create-button .desc {
+  font-family: "Open-Sans", "Segoe UI Regular", Helvetica, Arial, sans-serif;
+  color: #4e5758;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  margin-top: auto;
+}
+#AppStudioIntroPanel .create-button .icon {
+  display: none;
+}
+#AppStudioIntroPanel .create-button .option-c {
+  padding: 10px 10px;
+  position: absolute;
+  display: block;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(78, 87, 88, 0.8);
+  border: none;
+  box-sizing: border-box;
+  transform: translateY(55px);
+  transition: transform 0.25s;
+}
+#AppStudioIntroPanel .create-button:hover .option-c {
+  transform: translateY(0px);
+  transition: transform 0.25s;
+  color: #4e5758;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+#AppStudioIntroPanel .create-button .heading {
+  display: block;
+}
+#AppStudioIntroPanel span.heading {
+  padding-bottom: 10px;
+}
+#AppStudioIntroPanel .browse-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(55, 71, 79, 0.5);
+  text-transform: uppercase;
+  color: rgba(55, 71, 79, 0.5);
+  letter-spacing: 0.03em;
+  transition: opacity 0.15s;
+}
+#AppStudioIntroPanel .browse-button:focus {
+  border-color: #29b6f6;
+}
+#AppStudioIntroPanel .browse-button:hover {
+  color: #29b6f6;
+  border-color: #29b6f6;
+  background-color: white;
+}
+#AppStudioIntroPanel a.intro-copyright-text {
+  position: absolute;
+  top: -42px;
+  left: 20px;
+  color: #4e5758;
+  font-size: 9px;
+  text-decoration: none;
+}
+#AppStudioIntroPanel a.intro-copyright-text:hover {
+  color: #29b6f6;
+}
+#AppStudioIntroPanel ul.bottom-links {
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-padding-start: 0px;
+}
+#AppStudioIntroPanel ul.bottom-links a {
+  color: #2196f3;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+#AppStudioIntroPanel ul.bottom-links a:hover {
+  color: #1b7ecd;
+}
+#AppStudioIntroPanel ul.bottom-links > li {
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#AppStudioIntroPanel .intro.main-section {
+  overflow: hidden;
+}
+#AppStudioIntroPanel .intro.main-section {
+  opacity: 0;
+}
+#AppStudioIntroPanel .intro .main-content {
+  transform: scale(1.1);
+}
+#AppStudioIntroPanel .intro.bottom-bar {
+  opacity: 0;
+}
+#AppStudioIntroPanel .intro.bottom-bar {
+  transform: translateY(42px);
+}
+#AppStudioIntroPanel .intro .main-logo {
+  transform: translateY(-80px);
+  transition: transform 1s;
+}
+#AppStudioIntroPanel .main-section {
+  opacity: 1;
+  transition: opacity 1s;
+}
+#AppStudioIntroPanel .main-content {
+  transform: scale(1);
+  transition: transform 1s;
+}
+#AppStudioIntroPanel .main-logo {
+  transform: translateY(0px);
+  transition: transform 1s;
+}
+#AppStudioIntroPanel .bottom-bar {
+  transform: translateY(0px);
+  transition: transform 1s;
+}
+#AppStudioIntroPanel.outro .main-content {
+  overflow-y: hidden;
+}
+#AppStudioIntroPanel.outro .main-section {
+  opacity: 0;
+  transition: opacity 1s;
+}
+#AppStudioIntroPanel.outro .create-button,
+#AppStudioIntroPanel.outro .recents-container,
+#AppStudioIntroPanel.outro .browse-button,
+#AppStudioIntroPanel.outro .heading-container {
+  opacity: 0;
+  transform: translateY(140px);
+  transition: all 0.5s ease-in;
+}
+#AppStudioIntroPanel.outro .create-button.outro {
+  transition-delay: 0.5s;
+}
+#AppStudioIntroPanel.outro .create-button.outro .option-c,
+#AppStudioIntroPanel.outro .create-button.outro:hover .option-c {
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+#AppStudioIntroPanel.outro .bottom-bar {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}

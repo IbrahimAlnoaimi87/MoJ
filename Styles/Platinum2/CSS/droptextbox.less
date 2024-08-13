@@ -1,0 +1,25 @@
+﻿/*Author: 		Ge-org Brohammer*/
+/*Purpose: 		Styling of the drop-textbox used in conditions for conditional formatting*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import "../../../Designer_Variables.less";
+
+.drop-text
+{
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.webkit .drop-text
+{
+    outline: none;
+}
+
+.drop-text.watermark
+{
+    font-style: italic;
+    color: @Input-Watermark-Text-Color;
+    min-width: 250px;
+}

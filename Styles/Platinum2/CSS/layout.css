@@ -1,0 +1,414 @@
+/*Author: 		Jack Tseng*/
+
+/*Purpose: 		define the styling for the static html error pages (in future we would like to include layout specific styling here for the Designer.) */
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+/* Height for the Login screen page footer (normal screen size) */
+/* Height for the Login screen page footer (large screen size) */
+
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f2f2f2;
+  font-family: "Open-Sans", "Segoe UI Regular", Helvetica, Arial, sans-serif;
+  /* #region css layout for a div table */
+
+  /* #endregion end css layout for a div table */
+
+}
+.errorPage .fullWidth {
+  width: 100%;
+}
+.errorPage .mediumWidth {
+  width: 60%;
+}
+.errorPage .mediumHeight {
+  height: 60%;
+}
+.errorPage .brokenComputerSvg {
+  width: 28%;
+}
+.errorPage .errorDescription {
+  position: absolute;
+  top: 0px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.errorPage .errorDescription .title {
+  color: rgba(54, 71, 79, 0.8);
+  font-size: 3.4rem;
+  line-height: 3.8rem;
+}
+.errorPage .errorDescription .description {
+  color: #36474f;
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+.errorPage .errorDescription .errorCode {
+  font-style: italic;
+  color: #36474f;
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.errorPage .errorDescription .refreshLink {
+  font-size: 2.4rem;
+  margin-top: 30px;
+}
+.errorPage .mainLogo {
+  top: 0px;
+  position: absolute;
+  margin-left: -35px;
+  left: 50%;
+  z-index: 3000;
+  background-repeat: no-repeat;
+  background-color: #003870;
+}
+.errorPage .mainHeader {
+  flex-shrink: 0;
+  height: 34px;
+  background-color: #003870;
+}
+.errorPage .mainContent {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+}
+.errorPage .footer {
+  flex-shrink: 0;
+  background-color: #e2e5e5;
+  height: 34px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.errorPage .footer .PageHelpLink {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.errorPage .footer .PageHelpLink > a {
+  font-size: 1.4rem;
+  display: block;
+  color: #2196f3;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.errorPage .footer .PageHelpLink > a:hover {
+  color: #29b6f6;
+}
+.errorPage .footer .PageHelpLink > a:focus {
+  border-color: #2196f3;
+}
+.errorPage .layout-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.errorPage .layout-table-row {
+  display: table-row;
+}
+.errorPage .layout-table-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.errorPage .layout-table-cell-alignment {
+  display: inline-block;
+}
+/* #region SVG graphics styles*/
+
+#error404graphics a.svgLink {
+  cursor: pointer;
+}
+#error404graphics a.svgLink .st5,
+#error404graphics a.svgLink .st1 {
+  opacity: 0.8;
+}
+#error404graphics a.svgLink:hover .st5,
+#error404graphics a.svgLink:hover .st1 {
+  opacity: 1;
+}
+#error404graphics a:focus #btnDesigner {
+  stroke: #2196f3;
+}
+#error404graphics #btnDesigner {
+  height: 183px;
+  width: 183px;
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 2;
+}
+#error404graphics .st0 {
+  fill: #36474f;
+}
+#error404graphics .st1 {
+  font-family: "Open-Sans", "Segoe UI Regular", Helvetica, Arial, sans-serif;
+}
+#error404graphics .st2 {
+  font-size: 25px;
+}
+#error404graphics .st3 {
+  fill: #666666;
+}
+#error404graphics .st4 {
+  fill: none;
+  stroke: #36474f;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+#error404graphics .st5 {
+  fill: #003870;
+}
+#error404graphics .st6 {
+  fill: #2196f3;
+}
+#error404graphics .st7 {
+  font-size: 27px;
+}
+#error404graphics .st8 {
+  fill: white;
+}
+/* #endregion SVG graphics styles*/
+
+/*Large screen size */
+
+@media only screen and (min-width: 1650px) {
+  .errorPage .mainLogo {
+    position: absolute;
+    margin-left: 50px;
+    left: 50%;
+    z-index: 3000;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+  }
+  .errorPage .mainHeader {
+    /* Bigger top bar on login page */
+    line-height: 50px;
+    height: 50px;
+  }
+  .errorPage .errorDescription .title {
+    font-size: 5.2rem;
+    line-height: 5.8rem;
+  }
+  .errorPage .errorDescription .description {
+    font-size: 2.4rem;
+    margin-top: 30px;
+  }
+  .errorPage .errorDescription .errorType {
+    font-size: 2rem;
+    margin-top: 16px;
+  }
+  .errorPage .errorDescription .refreshLink {
+    font-size: 2.4rem;
+    margin-top: 40px;
+  }
+  .errorPage .footer {
+    height: 68px;
+  }
+  .errorPage .footer .PageHelpLink > a {
+    font-size: 2rem;
+    height: 46px;
+    line-height: 44px;
+  }
+}
+/*#region Normal screen size (Less than 1650px)*/
+
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx) and (max-width: 1650px), (max-resolution: 144dpi) and (max-width: 1650px), (-webkit-max-device-pixel-ratio: 1.5) and (max-width: 1650px), (-o-max-device-pixel-ratio: 3/2) and (max-width: 1650px) {
+  .errorPage .mainLogo {
+    margin-left: -35px;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    background-image: url("../images/Icons/DesignerHome/DesignerLogo70.png");
+    /* Commented out below because for Nintex rebranding, we are using a generic Nintex logo. [942657] */
+  
+    /*
+      html.designer &
+      {
+          margin-left: -35px;
+          margin-top: 0px;
+          width: 70px;
+          height: 91px;
+          background-size: 70px 91px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoDesigner70@{res}.png");
+      }
+  
+      html.management &
+      {
+          margin-left: -50px;
+          margin-top: 0px;
+          width: 99px;
+          height: 91px;
+          background-size: 99px 91px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoManagement70@{res}.png");
+      }
+  
+      html.workspace &
+      {
+          margin-left: -44px;
+          margin-top: 0px;
+          width: 88px;
+          height: 91px;
+          background-size: 88px 91px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoWorkspace70@{res}.png");
+      }
+      */
+  
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx) and (max-width: 1650px), (min-resolution: 144dpi) and (max-width: 1650px), (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1650px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1650px) {
+  .errorPage .mainLogo {
+    margin-left: -35px;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    background-image: url("../images/Icons/DesignerHome/DesignerLogo70@2x.png");
+    /* Commented out below because for Nintex rebranding, we are using a generic Nintex logo. [942657] */
+  
+    /*
+      html.designer &
+      {
+          margin-left: -35px;
+          margin-top: 0px;
+          width: 70px;
+          height: 91px;
+          background-size: 70px 91px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoDesigner70@{res}.png");
+      }
+  
+      html.management &
+      {
+          margin-left: -50px;
+          margin-top: 0px;
+          width: 99px;
+          height: 91px;
+          background-size: 99px 91px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoManagement70@{res}.png");
+      }
+  
+      html.workspace &
+      {
+          margin-left: -44px;
+          margin-top: 0px;
+          width: 88px;
+          height: 91px;
+          background-size: 88px 91px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoWorkspace70@{res}.png");
+      }
+      */
+  
+  }
+}
+/*#endregion*/
+
+/*#region Large screen size (Greater than 1650px)*/
+
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx) and (min-width: 1650px), (max-resolution: 144dpi) and (min-width: 1650px), (-webkit-max-device-pixel-ratio: 1.5) and (min-width: 1650px), (-o-max-device-pixel-ratio: 3/2) and (min-width: 1650px) {
+  .errorPage .mainLogo {
+    margin-left: -50px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url("../images/Icons/DesignerHome/DesignerLogo100.png");
+    /* Commented out below because for Nintex rebranding, we are using a generic Nintex logo. [942657] */
+  
+    /*
+      html.designer &
+      {
+          margin-left: -50px;
+          margin-top: 0px;
+          width: 100px;
+          height: 130px;
+          background-size: 100px 130px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoDesigner100@{res}.png");
+      }
+  
+      html.management &
+      {
+          margin-left: -70px;
+          margin-top: 0px;
+          width: 140px;
+          height: 130px;
+          background-size: 140px 130px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoManagement100@{res}.png");
+      }
+  
+      html.workspace &
+      {
+          margin-left: -63px;
+          margin-top: 0px;
+          width: 126px;
+          height: 130px;
+          background-size: 126px 130px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoWorkspace100@{res}.png");
+      }
+      */
+  
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx) and (min-width: 1650px), (min-resolution: 144dpi) and (min-width: 1650px), (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1650px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1650px) {
+  .errorPage .mainLogo {
+    margin-left: -50px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url("../images/Icons/DesignerHome/DesignerLogo100@2x.png");
+    /* Commented out below because for Nintex rebranding, we are using a generic Nintex logo. [942657] */
+  
+    /*
+      html.designer &
+      {
+          margin-left: -50px;
+          margin-top: 0px;
+          width: 100px;
+          height: 130px;
+          background-size: 100px 130px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoDesigner100@{res}.png");
+      }
+  
+      html.management &
+      {
+          margin-left: -70px;
+          margin-top: 0px;
+          width: 140px;
+          height: 130px;
+          background-size: 140px 130px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoManagement100@{res}.png");
+      }
+  
+      html.workspace &
+      {
+          margin-left: -63px;
+          margin-top: 0px;
+          width: 126px;
+          height: 130px;
+          background-size: 126px 130px;
+          background-image: url("../images/Icons/DesignerHome/K2LogoWorkspace100@{res}.png");
+      }
+      */
+  
+  }
+}
+/*#endregion*/
+

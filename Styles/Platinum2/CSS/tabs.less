@@ -1,0 +1,494 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+
+/* Tab Panel Layout - used in main form/view designer only*/
+.lyt-tab-container
+{
+    position: absolute;
+    top: @Standard-Padding-Small;
+    bottom: @Standard-Padding-Small;
+    left: @Standard-Padding-Small;
+    right: @Standard-Padding-Small;
+}
+
+/* Tab-box Outer Element Styling */
+.tab-box
+{
+    position: relative;
+}
+
+    .tab-box.full
+    {
+        height: 100%;
+        //LG: Flex layout
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .tab-box-header
+        {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        & > .tab-box-tabs
+        {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        & > .tab-box-body
+        {
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        &.tabs-bottom ul.tab-box-tabs
+        {
+            order: 2; //i.e. after body.
+        }
+
+        html[dir=rtl] &
+        {
+            direction: rtl;
+        }
+    }
+
+@_Tab-Box-Height: 21px;
+@_Tab-Height: @_Tab-Box-Height - 1; //20px
+@_Tab-Line-Height: @_Tab-Box-Height - 3; //18px
+
+/* Tab-box Tabs Collection Element Styling */
+ul.tab-box-tabs
+{
+    height: @_Tab-Box-Height;
+    list-style: none outside none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    position: relative;
+    user-select: none; //stop highlighting of spans/divs, so this feels like UI.
+}
+
+.tabs-top ul.tab-box-tabs
+{
+    border-bottom: 1px solid @Panel-Border-Color;
+}
+
+.tabs-bottom ul.tab-box-tabs
+{
+    border-top: 1px solid @Panel-Border-Color;
+}
+
+
+.tab-box.hide-tabs ul.tab-box-tabs
+{
+    display: none;
+}
+
+/* Tab-box Tabs Collection Item Element Styling */
+.tab-box ul.tab-box-tabs li
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tab-box Tab Styling */
+.tab
+{
+    border-color: @Panel-Border-Color;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    color: @Main-Text-Color;
+    cursor: pointer;
+    display: inline-block;
+    height: @_Tab-Height;
+    line-height: @_Tab-Line-Height;
+    margin: 0 1px 0 0;
+    outline: none;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+
+    &:hover
+    {
+        color: @Main-Text-Color;
+        background-color: @Tab-Content-Background-Color;
+    }
+
+    &.focus
+    {
+        border-color: @Tab-Focus-Border-Color;
+    }
+
+    &.selected,
+    &.selected:hover
+    {
+        outline: none;
+        background-color: @Tab-Content-Background-Color;
+    }
+
+    transition: background-color 0.15s linear;
+
+    html[dir=rtl] &
+    {
+        margin: 0 0 0 1px;
+    }
+}
+
+.tab-wrapper
+{
+    padding: 0 5px;
+    height: @_Tab-Height;
+    line-height: @_Tab-Line-Height;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+
+    .tab-icon
+    {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .tab-text
+    {
+        flex-grow: 1;
+    }
+}
+
+
+.tab-box.tabs-bottom ul.tab-box-tabs a.tab.selected .tab-wrapper
+{
+    background-color: @Tab-Content-Background-Color;
+    height: @_Tab-Height;
+    margin-top: -1px; //over the border
+    padding-top: 1px;
+}
+
+.tab-box.tabs-top ul.tab-box-tabs a.tab.selected .tab-wrapper
+{
+    background-color: @Tab-Content-Background-Color;
+    height: @_Tab-Height;
+    margin-bottom: -1px; //over the border
+    padding-bottom: 1px;
+}
+
+.tab-box.tabs-bottom ul.tab-box-tabs a.tab
+{
+    border-width: 0 1px 1px 1px;
+}
+
+
+.tab-text,
+.tab-icon,
+.tab-control
+{
+    height: auto;
+    display: block;
+    margin-left: 5px;
+
+    html[dir=rtl]&
+    {
+        margin-left: auto;
+        margin-right: 5px;
+    }
+
+    &:first-child
+    {
+        margin-left: 0;
+
+        html[dir=rtl]&
+        {
+            margin-right: 0;
+        }
+    }
+}
+
+.tab-control
+{
+    width: 10px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 18px;
+}
+
+.tab-text
+{
+    height: auto; //for flex layout
+}
+
+.tab-icon
+{
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 16px 16px;
+}
+
+//Large/New styling
+@_Large-Tab-Box-Height: 30px;
+@_Large-Tab-Height: @_Large-Tab-Box-Height - 1; //20px
+@_Large-Tab-Line-Height: @_Large-Tab-Box-Height - 3; //18px
+.tab-box.large
+{
+    ul.tab-box-tabs
+    {
+        height: @_Large-Tab-Box-Height;
+        box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: @Panel-Background-Color-2;
+        padding: 0px 10px;
+    }
+
+    .tab
+    {
+        height: @_Large-Tab-Height;
+        line-height: @_Large-Tab-Line-Height;
+        border-color: transparent;
+        margin: 0px; //override the 1px right margin
+        &:hover
+        {
+            background-color: fadeout(@Tab-Content-Background-Color, 60%);
+        }
+    }
+
+    .tab.selected
+    {
+        border-color: @Panel-Border-Color;
+    }
+
+    .tab-wrapper
+    {
+        height: @_Large-Tab-Height;
+        line-height: @_Large-Tab-Line-Height;
+        padding: 0px 10px;
+    }
+
+    .tab-text
+    {
+        margin-left: 10px;
+    }
+
+    &.tabs-top ul.tab-box-tabs a.tab.selected .tab-wrapper,
+    &.tabs-bottom ul.tab-box-tabs a.tab.selected .tab-wrapper
+    {
+        height: @_Large-Tab-Height;
+    }
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @import url('tabs_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @import url('tabs_images@2x.less');
+}
+
+
+
+.tab-control.tab-remove
+{
+    background-image: url(../Images/Tabs/tab_close_button.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 6px 18px; //sprite 3 states vertically.
+    height: 6px;
+    width: 6px;
+
+    &:hover
+    {
+        background-position: 50% -6px;
+
+        html[dir=rtl] &
+        {
+            background-position: 50% 100%;
+        }
+    }
+}
+
+
+
+.tab-text input
+{
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    border: 1px solid #aaad9c;
+    margin-top: 2px;
+
+    &:focus
+    {
+        border-color: @Input-Focus-Border-Color;
+    }
+}
+
+a.tab input.borderless
+{
+    border-style: none;
+    outline: none;
+}
+
+/* Tab-box Header Styling */
+.tab-box-header
+{
+    border-color: @Panel-Border-Color;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    display: none;
+    height: 24px;
+    position: relative;
+}
+
+.tab-box.with-header .tab-box-header
+{
+    display: block;
+}
+
+
+.tab-box-header-c
+{
+    background: #f9f9f9; /* Old browsers */
+    height: 22px;
+}
+
+.tab-box-header-wrapper
+{
+    float: left;
+    font-weight: bold;
+    line-height: 19px;
+    padding-left: 7px;
+}
+
+/* Tab-box Body Styling */
+.tab-box-body
+{
+    position: relative;
+    border-style: solid;
+    border-color: @Panel-Border-Color;
+    background-color: @Tab-Content-Background-Color;
+}
+
+.tabs-top .tab-box-body
+{
+    border-width: 0 1px 1px 1px;
+}
+
+.tabs-bottom .tab-box-body
+{
+    border-width: 1px 1px 0 1px;
+}
+
+.tabs-top.with-header .tab-box-body
+{
+    margin-top: 0;
+}
+
+
+/* Tab-box Body Border Styling */
+.tab-box .tab-box-body-t,
+.tab-box .tab-box-body-m,
+.tab-box .tab-box-body-b
+{
+    position: relative;
+}
+
+.tab-box.full .tab-box-body-m
+{
+    bottom: 0px; /*LG: Edge to Edge*/
+    left: 0px; /*LG: Edge to Edge*/
+    position: absolute;
+    right: 0px; /*LG: Edge to Edge*/
+    top: 0px; /*LG: Edge to Edge*/
+    padding: 0;
+}
+
+.tab-box .tab-box-body-m
+{
+    padding-left: 3px;
+}
+
+.tab-box .tab-box-body-m-c
+{
+    position: relative;
+    padding-right: 3px;
+    height: 100%;
+}
+
+.tab-box.full .tab-box-body-m-c
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+
+.tab-box .tab-box-body-wrapper
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Tab Info Styling */
+div.tab-info
+{
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    right: 3px;
+    height: 30px;
+    overflow: hidden;
+    background-color: #d4e6c7;
+}
+
+div.tab-info-wrapper
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 2px;
+}
+
+/* Tab Content Styling */
+div.tab-content
+{
+    position: relative;
+}
+
+    div.tab-content.full
+    {
+        height: 100%;
+    }
+
+div.tab-content-wrapper
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tab-box ul.tab-box-tabs a.tab.disabled
+{
+    color: #CCCCCC;
+}

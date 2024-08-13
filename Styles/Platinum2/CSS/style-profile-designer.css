@@ -1,0 +1,94 @@
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+.hide-offscreen {
+  left: -10000px;
+}
+.hidden {
+  display: none;
+}
+.style-profile-developer-container {
+  display: flex;
+  height: 100%;
+}
+.style-profile-developer-container.hidden {
+  left: -10000px;
+}
+.style-profile-developer-container.hidden .k2-overlay {
+  left: -10000px;
+}
+.style-profile-developer-container.hidden .style-profile-designer-section {
+  display: none;
+}
+.style-profile-developer-container.hidden .form-preview-section {
+  display: none;
+}
+.style-profile-developer-container .style-profile-designer-section {
+  width: 370px;
+  height: 100%;
+  flex-shrink: 0;
+}
+.style-profile-developer-container .form-preview-section {
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid #e5e5e5;
+}
+.style-profile-developer-container .form-preview-section .preview-top-bar {
+  height: 28px;
+  width: 100%;
+  background-color: #eeeeee;
+}
+.style-profile-developer-container .form-preview-section .preview-top-bar .toolbar-button {
+  margin: 4px;
+}
+.style-profile-developer-container .form-preview-section .preview-top-bar #select-preview-form-btn.hidden {
+  display: none;
+}
+.style-profile-developer-container .form-preview-section .preview-top-bar #preview-drop-down.hidden {
+  display: none;
+}
+.style-profile-developer-container .form-preview-section #preview-form.hidden {
+  left: -10000px;
+  display: inline;
+  position: absolute;
+}
+iframe.fill-container {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#select-preview-form-btn.toolbar-button {
+  height: 24px;
+  margin: 2px;
+  padding: 2px 3px;
+  max-width: 400px;
+  display: inline-flex;
+}
+#select-preview-form-btn.toolbar-button span,
+#select-preview-form-btn.toolbar-button .icon {
+  float: none;
+  flex-grow: 0;
+}
+#select-preview-form-btn.toolbar-button .button-text {
+  line-height: 20px;
+  height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-grow: 1;
+}
+#select-preview-form-btn.toolbar-button .icon {
+  margin: 2px;
+  flex-shrink: 0;
+}
+#select-preview-form-btn.toolbar-button .icon.icon-size16 {
+  height: 16px;
+}
+#refresh-button {
+  float: right;
+  background-color: #eeeeee;
+  border: none;
+  height: 100%;
+  width: 28px;
+}
+#SelectPreviewFormMenu.menu {
+  max-width: 400px;
+}

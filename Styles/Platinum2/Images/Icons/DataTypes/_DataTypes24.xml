@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-datatypes.icon-size24.ic-{iconname}"/> <!-- normal -->
+          <RowDefinition row="2" cssSelector=".icon.icon-set-datatypes.icon-size24.ic-{iconname}.hover"/> <!-- hover -->
+          <RowDefinition row="3" cssSelector=".icon.icon-set-datatypes.icon-size24.ic-{iconname}.selected"/> <!-- selected -->
+          <RowDefinition row="4" cssSelector=".icon.icon-set-datatypes.icon-size24.ic-{iconname}.watermark"/> <!-- watermark -->
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1" cssname="autoguid">AutoGUID24.png</Row>
+              <Row number="2" cssname="autoguid">AutoGUID_Hover24.png</Row>
+              <Row number="3" cssname="autoguid">AutoGUID_Selected24.png</Row>
+	          <Row number="4" cssname="autoguid">AutoGUID_Watermark24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="2">   
+            <Rows>  
+              <Row number="1" cssname="autonumber">AutoNumber24.png</Row>
+              <Row number="2" cssname="autonumber">AutoNumber_Hover24.png</Row>
+              <Row number="3" cssname="autonumber">AutoNumber_Selected24.png</Row>
+              <Row number="4" cssname="autonumber">AutoNumber_Watermark24.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="3">   
+            <Rows>  
+              <Row number="1" cssname="datetime">DateTime24.png</Row>
+              <Row number="2" cssname="datetime">DateTime_Hover24.png</Row>
+              <Row number="3" cssname="datetime">DateTime_Selected24.png</Row>
+              <Row number="4" cssname="datetime">DateTime_Watermark24.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="4">   
+            <Rows>  
+              <Row number="1" cssname="decimal">Decimal24.png</Row>
+              <Row number="2" cssname="decimal">Decimal_Hover24.png</Row>
+              <Row number="3" cssname="decimal">Decimal_Selected24.png</Row>
+              <Row number="4" cssname="decimal">Decimal_Watermark24.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="5">   
+            <Rows>  
+              <Row number="1" cssname="folderclosed">FolderClosed24.png</Row>
+              <Row number="2" cssname="folderclosed">FolderClosed_Hover24.png</Row>
+              <Row number="3" cssname="folderclosed">FolderClosed_Selected24.png</Row>
+              <Row number="4" cssname="folderclosed">FolderClosed_Watermark24.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="6">   
+            <Rows>  
+              <Row number="1" cssname="folderopen">FolderOpen24.png</Row>
+              <Row number="2" cssname="folderopen">FolderOpen_Hover24.png</Row>
+              <Row number="3" cssname="folderopen">FolderOpen_Selected24.png</Row>
+              <Row number="4" cssname="folderopen">FolderOpen_Watermark24.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="7">   
+            <Rows>  
+              <Row number="1" cssname="guid">GUID24.png</Row>
+              <Row number="2" cssname="guid">GUID_Hover24.png</Row>
+              <Row number="3" cssname="guid">GUID_Selected24.png</Row>
+              <Row number="4" cssname="guid">GUID_Watermark24.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="8">   
+            <Rows>  
+              <Row number="1" cssname="hyperlink">Hyperlink24.png</Row>
+              <Row number="2" cssname="hyperlink">Hyperlink_Hover24.png</Row>
+              <Row number="3" cssname="hyperlink">Hyperlink_Selected24.png</Row>
+              <Row number="4" cssname="hyperlink">Hyperlink_Watermark24.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="9">   
+            <Rows>  
+              <Row number="1" cssname="image">Image24.png</Row>
+              <Row number="2" cssname="image">Image_Hover24.png</Row>
+              <Row number="3" cssname="image">Image_Selected24.png</Row>
+              <Row number="4" cssname="image">Image_Watermark24.png</Row>
+            </Rows> 
+          </Column>   
+          <Column number="10">    
+            <Rows>  
+              <Row number="1" cssname="memo">Memo24.png</Row>
+              <Row number="2" cssname="memo">Memo_Hover24.png</Row>
+              <Row number="3" cssname="memo">Memo_Selected24.png</Row>
+              <Row number="4" cssname="memo">Memo_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="11">    
+            <Rows>  
+              <Row number="1" cssname="multivalue">MultiValue24.png</Row>
+              <Row number="2" cssname="multivalue">MultiValue_Hover24.png</Row>
+              <Row number="3" cssname="multivalue">MultiValue_Selected24.png</Row>
+              <Row number="4" cssname="multivalue">MultiValue_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="12">    
+            <Rows>  
+              <Row number="1" cssname="number">Number24.png</Row>
+              <Row number="2" cssname="number">Number_Hover24.png</Row>
+              <Row number="3" cssname="number">Number_Selected24.png</Row>
+              <Row number="4" cssname="number">Number_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="13">    
+            <Rows>  
+              <Row number="1" cssname="text">Text24.png</Row>
+              <Row number="2" cssname="text">Text_Hover24.png</Row>
+              <Row number="3" cssname="text">Text_Selected24.png</Row>
+              <Row number="4" cssname="text">Text_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="14">    
+            <Rows>  
+              <Row number="1" cssname="yesno">YesNo24.png</Row>
+              <Row number="2" cssname="yesno">YesNo_Hover24.png</Row>
+              <Row number="3" cssname="yesno">YesNo_Selected24.png</Row>
+              <Row number="4" cssname="yesno">YesNo_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="15">    
+            <Rows>  
+              <Row number="1" cssname="date">Date24.png</Row>
+              <Row number="2" cssname="date">Date_Hover24.png</Row>
+              <Row number="3" cssname="date">Date_Selected24.png</Row>
+              <Row number="4" cssname="date">Date_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="16">    
+            <Rows>  
+              <Row number="1" cssname="time">Time24.png</Row>
+              <Row number="2" cssname="time">Time_Hover24.png</Row>
+              <Row number="3" cssname="time">Time_Selected24.png</Row>
+              <Row number="4" cssname="time">Time_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="17">    
+            <Rows>  
+              <Row number="1" cssname="function">Functions24.png</Row>
+              <Row number="2" cssname="function">Functions_Hover24.png</Row>
+              <Row number="3" cssname="function">Functions_Selected24.png</Row>
+              <Row number="4" cssname="function">Functions_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+		 <Column number="18">    
+            <Rows>  
+              <Row number="1" cssname="any">Any24.png</Row>
+              <Row number="2" cssname="any">Any_Hover24.png</Row>
+              <Row number="3" cssname="any">Any_Selected24.png</Row>
+              <Row number="4" cssname="any">Any_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+          
+		  <Column number="19">    
+            <Rows>  
+              <Row number="1" cssname="xml">XML24.png</Row>
+              <Row number="2" cssname="xml">XML_Hover24.png</Row>
+              <Row number="3" cssname="XML">XML_Selected24.png</Row>
+              <Row number="4" cssname="XML">XML_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="20">    
+            <Rows>  
+              <Row number="1" cssname="File">File24.png</Row>
+              <Row number="2" cssname="File">File_Hover24.png</Row>
+              <Row number="3" cssname="File">File_Selected24.png</Row>
+              <Row number="4" cssname="File">File_Watermark24.png</Row>
+            </Rows> 
+          </Column>
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="12,0,0,12">
+        <CssBackgroundImageFolder>DataTypes/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/DataTypes/DataTypes24.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/DataTypes24.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

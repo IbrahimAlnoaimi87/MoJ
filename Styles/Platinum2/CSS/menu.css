@@ -1,0 +1,1161 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+.menu-bar {
+  height: 24px;
+  padding-left: 5px;
+  background: transparent url("../Images/Toolbar/toolbar_left_corner.png") no-repeat 0 100%;
+}
+.menu-bar-wrapper {
+  padding-right: 5px;
+  height: 24px;
+  background: transparent url("../Images/Toolbar/toolbar_right_slide.png") no-repeat 100% 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.menu-bar a.menu-bar-button {
+  display: block;
+  margin: 1px 0;
+  width: auto;
+  height: 22px;
+  background: transparent url("../Images/Toolbar/toolbar_button_left_corner.png") no-repeat 0 22px;
+  text-decoration: none;
+  padding-left: 5px;
+  float: left;
+  color: #343e41;
+  cursor: pointer;
+}
+.menu-bar a.menu-bar-button > span {
+  background: transparent url("../Images/Toolbar/toolbar_button_right_slide.png") no-repeat 100% 22px;
+  padding-right: 5px;
+  height: 22px;
+  display: block;
+  cursor: pointer;
+}
+a.menu-bar-button span.menu-bar-button-text {
+  display: block;
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  padding: 0 2px;
+  cursor: pointer;
+}
+.menu-bar a.menu-bar-button:hover,
+.menu-bar a.menu-bar-button:focus,
+.menu-bar a.menu-bar-button.active {
+  background-position: 0 0;
+}
+.menu-bar a.menu-bar-button:hover > span,
+.menu-bar a.menu-bar-button:focus > span,
+.menu-bar a.menu-bar-button.active > span {
+  background-position: 100% 0;
+}
+.menu {
+  background-color: #f0f0f0;
+  background-attachment: local;
+  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  max-width: 85%;
+  /* Allow for space either side of menus to accept user click for hiding */
+  position: absolute;
+  visibility: hidden;
+}
+.menu-shadow {
+  display: none;
+}
+.menu ul {
+  list-style: none outside none;
+  background: transparent none repeat scroll 0;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  display: block;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 100%;
+  padding: 1px;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+.menu li:hover {
+  background: #deeffd;
+}
+.menu li.selected {
+  background: #2196f3;
+}
+.menu li.disabled,
+.menu li.disabled:hover {
+  background-color: transparent;
+  border: none;
+  color: #4e5758;
+  cursor: default;
+  opacity: 0.3;
+  padding: 1px;
+}
+.menu li.seperator {
+  font-size: 1px;
+  line-height: 1px;
+}
+.menu li.seperator:hover {
+  background: none;
+  border: none;
+}
+.menu li.seperator span {
+  border-top: 1px solid #e5e5e5;
+  display: block;
+  font-size: 1px;
+  line-height: 1px;
+  margin: 2px 3px;
+  overflow: hidden;
+}
+.menu a.menu-item {
+  color: #4e5758;
+  cursor: pointer;
+  display: block;
+  line-height: 16px;
+  outline: 0 none invert;
+  padding: 3px 21px 3px 3px;
+  text-decoration: none;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu li.selected a.menu-item {
+  color: white;
+}
+html[dir=rtl] .menu a.menu-item {
+  padding: 3px 3px 3px 21px;
+}
+.menu a.checkmenu-item,
+.menu a.radiomenu-item {
+  color: #4e5758;
+  cursor: pointer;
+  display: block;
+  line-height: 16px;
+  outline: 0 none invert;
+  padding: 3px 21px 3px 1px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+html[dir=rtl] .menu a.checkmenu-item,
+html[dir=rtl] .menu a.radiomenu-item {
+  padding: 3px 1px 3px 21px;
+}
+.menu a.checkmenu-item label.input-control.checkbox .input-control-text,
+.menu a.radiomenu-item label.input-control.checkbox .input-control-text {
+  margin-left: 10px;
+}
+html[dir=rtl] .menu a.checkmenu-item label.input-control.checkbox .input-control-text,
+html[dir=rtl] .menu a.radiomenu-item label.input-control.checkbox .input-control-text {
+  margin-left: 1px;
+  /* reset */
+  margin-right: 10px;
+}
+.menu a.menu-item.children {
+  background-color: transparent;
+  background-image: url(../Images/Arrows/black_arrow_right.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: right center;
+}
+.menu a.menu-item.checked {
+  background-image: url(../Images/Icons/Yes16.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: right center;
+}
+.menu a.menu-item span.menu-item-icon {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0 none;
+  height: 16px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+  display: block;
+  float: left;
+}
+html[dir=rtl] .menu a.menu-item span.menu-item-icon {
+  float: right;
+  margin: 0 0 0 8px;
+}
+.menu a.menu-item .menu-item-text {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.menu li.disabled a.menu-item,
+.menu li.disabled:hover a.menu-item {
+  cursor: default;
+}
+.menu a.menu-item.disabled {
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+  /*IE8*/
+  cursor: default;
+}
+.menu a.menu-item span.menu-item-icon {
+  background-size: 16px 16px;
+  /*needed for resolution icons in media query*/
+
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .menu a.menu-item.favourite span.menu-item-icon {
+    background-image: url("../Images/Icons/EditToolbox/Favourites16.png");
+  }
+  .menu a.menu-item.add span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Add16.png");
+  }
+  .menu a.menu-item.edit span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16.png");
+  }
+  .menu a.menu-item.move-up span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/MoveUp16.png");
+  }
+  .menu a.menu-item.move-down span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/MoveDown16.png");
+  }
+  .menu a.menu-item.drill-down span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Hyperlink16.png");
+  }
+  .menu a.menu-item.delete-drill-down span.menu-item-icon {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16.png");
+  }
+  .menu a.menu-item.delete span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16.png");
+  }
+  .menu a.menu-item.delete-all span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/RemoveAll16.png");
+  }
+  .menu a.menu-item.remove span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Remove16.png");
+  }
+  .menu a.menu-item.remove-all span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/RemoveAll16.png");
+  }
+  .menu a.menu-item.lock span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Lock16.png");
+  }
+  .menu a.menu-item.load span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Load16.png");
+  }
+  .menu a.menu-item.play span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Run16.png");
+  }
+  .menu a.menu-item.refresh span.menu-item-icon {
+    background-image: url("../Images/Icons/ContextBrowser/Refresh16.png");
+  }
+  .menu a.menu-item.publish span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Deploy16.png");
+  }
+  .menu a.menu-item.properties span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Properties16.png");
+  }
+  .menu a.menu-item.auto-generate span.menu-item-icon {
+    background-image: url("../Images/Icons/ConditionsDropdown/Auto16.png");
+  }
+  .menu a.menu-item.generate-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/GenerateSmartObject16.png");
+  }
+  .menu a.menu-item.generate-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/GenerateANewView16.png");
+  }
+  .menu a.menu-item.generate-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/GenerateANewForm16.png");
+  }
+  .menu a.menu-item.generate-report span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Report16.png");
+  }
+  .menu a.menu-item.security span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Security16.png");
+  }
+  .menu a.menu-item.checkin span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckIn16.png");
+  }
+  .menu a.menu-item.checkout span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckOut16.png");
+  }
+  .menu a.menu-item.undocheckout span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CancelCheckOut16.png");
+  }
+  .menu a.menu-item.play span.menu-item-icon,
+  .menu a.menu-item.run span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Run16.png");
+  }
+  .menu a.menu-item.preview span.menu-item-icon,
+  .menu a.menu-item.preview-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Run16.png");
+  }
+  .menu a.menu-item.preview-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px.png");
+  }
+  .menu a.menu-item.run-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Run16.png");
+  }
+  .menu a.menu-item.runas-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RunWithParameters16.png");
+  }
+  .menu a.menu-item.run-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Run16.png");
+  }
+  .menu a.menu-item.copy span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Copy16.png");
+  }
+  .menu a.menu-item.clone span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Copy16.png");
+  }
+  .menu a.menu-item.save span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Save16.png");
+  }
+  .menu a.menu-item.save-as span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16.png");
+  }
+  .menu a.menu-item.view-capture span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/View16.png");
+  }
+  .menu a.menu-item.formparameter-datetime span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/DateTime16.png");
+  }
+  .menu a.menu-item.formparameter-number span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Number16.png");
+  }
+  .menu a.menu-item.formparameter-text span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Text16.png");
+  }
+  .menu a.menu-item.formparameter-boolean span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/YesNo16.png");
+  }
+  .menu a.menu-item.viewparameter-datetime span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/DateTime16.png");
+  }
+  .menu a.menu-item.viewparameter-number span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Number16.png");
+  }
+  .menu a.menu-item.viewparameter-text span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Text16.png");
+  }
+  .menu a.menu-item.viewparameterevent span.menu-item-icon,
+  .menu a.menu-item.formparameterevent span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Method16.png");
+  }
+  .menu a.menu-item.viewparameter-boolean span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/YesNo16.png");
+  }
+  .menu a.menu-item.view-list span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/View16.png");
+  }
+  .menu a.menu-item.view-capturelist span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/View16.png");
+  }
+  .menu a.menu-item.viewmethod span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Method16.png");
+  }
+  .menu a.menu-item.rendermode span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Connection16.png");
+  }
+  .menu a.menu-item.viewevent span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .menu a.menu-item.formevent span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .menu a.menu-item.method-create span.menu-item-icon,
+  .menu a.menu-item.create-method span.menu-item-icon,
+  .menu a.menu-item.method-delete span.menu-item-icon,
+  .menu a.menu-item.delete-method span.menu-item-icon,
+  .menu a.menu-item.method-read span.menu-item-icon,
+  .menu a.menu-item.read-method span.menu-item-icon,
+  .menu a.menu-item.method-list span.menu-item-icon,
+  .menu a.menu-item.list-method span.menu-item-icon,
+  .menu a.menu-item.method-update span.menu-item-icon,
+  .menu a.menu-item.update-method span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/SmartObjectMethod16.png");
+  }
+  .menu a.menu-item.control span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px.png");
+  }
+  .menu a.menu-item.control-toolbartable span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Table16.png");
+  }
+  .menu a.menu-item.control-tree span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Context16.png");
+  }
+  .menu a.menu-item.controlevent span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .menu a.menu-item.controlmethod span.menu-item-icon,
+  .menu a.menu-item.controlmethod-none span.menu-item-icon,
+  .menu a.menu-item.none-controlmethod span.menu-item-icon,
+  .menu a.menu-item.controlmethod-text span.menu-item-icon,
+  .menu a.menu-item.controlmethod-boolean span.menu-item-icon,
+  .menu a.menu-item.controlmethod-datetime span.menu-item-icon,
+  .menu a.menu-item.controlmethod-number span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Method16.png");
+  }
+  .menu a.menu-item.control-panel span.menu-item-icon,
+  .menu a.menu-item.panel-control.icon.ic-panel span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/GenericTab16.png");
+  }
+  .menu a.menu-item.panel span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/GenericTab16.png");
+  }
+  .menu a.menu-item.actionitemstate span.menu-item-icon {
+    background-image: url("../Images/Icons/Rules/State16.png");
+  }
+  .menu a.menu-item.actionexecutiontype span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Action16.png");
+  }
+  .menu a.menu-item.rule span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .menu a.menu-item.new-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewWorkflowFile16.png");
+  }
+  .menu a.menu-item.new-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewSmartObject16.png");
+  }
+  .menu a.menu-item.new-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewView16.png");
+  }
+  .menu a.menu-item.new-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewForm16.png");
+  }
+  .menu a.menu-item.new-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewStyleProfile16.png");
+  }
+  .menu a.menu-item.new-report span.menu-item-icon {
+    background-image: url("../Images/Icons/Steps/Create16.png");
+  }
+  .menu a.menu-item.new-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Steps/Create16.png");
+  }
+  .menu a.menu-item.new-category span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewCategory16.png");
+  }
+  .menu a.menu-item.reset-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/ResetToDefault.svg");
+  }
+  .menu a.menu-item.browse span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Browse.svg");
+  }
+  .menu a.menu-item.edit-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16.png");
+  }
+  .menu a.menu-item.edit-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16.png");
+  }
+  .menu a.menu-item.edit-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16.png");
+  }
+  .menu a.menu-item.edit-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16.png");
+  }
+  .menu a.menu-item.edit-report span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16.png");
+  }
+  .menu a.menu-item.edit-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16.png");
+  }
+  .menu a.menu-item.edit-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16.png");
+  }
+  .menu a.menu-item.unlock-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/Management/Release16.png");
+  }
+  .menu a.menu-item.delete-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16.png");
+  }
+  .menu a.menu-item.delete-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16.png");
+  }
+  .menu a.menu-item.delete-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16.png");
+  }
+  .menu a.menu-item.delete-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16.png");
+  }
+  .menu a.menu-item.delete-report span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16.png");
+  }
+  .menu a.menu-item.delete-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16.png");
+  }
+  .menu a.menu-item.delete-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16.png");
+  }
+  .menu a.menu-item.checkin-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckIn16.png");
+  }
+  .menu a.menu-item.checkin-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckIn16.png");
+  }
+  .menu a.menu-item.checkin-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckIn16.png");
+  }
+  .menu a.menu-item.checkin-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckIn16.png");
+  }
+  .menu a.menu-item.checkin-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px.png");
+  }
+  .menu a.menu-item.checkout-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/CheckOut16.png");
+  }
+  .menu a.menu-item.checkout-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/CheckOut16.png");
+  }
+  .menu a.menu-item.checkout-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/CheckOut16.png");
+  }
+  .menu a.menu-item.checkout-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/CheckOut16.png");
+  }
+  .menu a.menu-item.checkout-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px.png");
+  }
+  .menu a.menu-item.undocheckout-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CancelCheckOut16.png");
+  }
+  .menu a.menu-item.undocheckout-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CancelCheckOut16.png");
+  }
+  .menu a.menu-item.undocheckout-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CancelCheckOut16.png");
+  }
+  .menu a.menu-item.undocheckout-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px.png");
+  }
+  .menu a.menu-item.save-as-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16.png");
+  }
+  .menu a.menu-item.save-as-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16.png");
+  }
+  .menu a.menu-item.save-as-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16.png");
+  }
+  .menu a.menu-item.save-as-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16.png");
+  }
+  .menu a.menu-item.save-as-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px.png");
+  }
+  .menu a.menu-item.save-as-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16.png");
+  }
+  .menu a.menu-item.reuse-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/ContextBrowser/Refresh16.png");
+  }
+  .menu a.menu-item.runas-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RunWithParameters16.png");
+  }
+  .menu a.menu-item.run-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Run16.png");
+  }
+  .menu a.menu-item.rename span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Rename16.png");
+  }
+  .menu a.menu-item.moveto span.menu-item-icon,
+  .menu a.menu-item.move-to span.menu-item-icon {
+    background-image: url("../Images/Icons/Steps/MoveFolder16.png");
+  }
+  .menu a.menu-item.run-new-tab span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RunInNewTab16.png");
+  }
+  .menu a.menu-item.run-new-window span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RunInNewWindow16.png");
+  }
+  .menu a.menu-item.add-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Add16.png");
+  }
+  .menu a.menu-item.insert-tab span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/TabAdd16.png");
+  }
+  .menu a.menu-item.rename-tab span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/TabRename16.png");
+  }
+  .menu a.menu-item.remove-tab span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/TabDelete16.png");
+  }
+  .menu a.menu-item.move-tab-left span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/TabMoveLeft16.png");
+  }
+  .menu a.menu-item.move-tab-right span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/TabMoveRight16.png");
+  }
+  .menu a.menu-item.row-layout span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RowLayout16.png");
+  }
+  .menu a.menu-item.column-layout span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/ColumnLayout16.png");
+  }
+  .menu a.menu-item.sigma span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Functions16.png");
+  }
+  .menu a.menu-item.align-left span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignLeft16.png");
+  }
+  .menu a.menu-item.align-right span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignRight16.png");
+  }
+  .menu a.menu-item.align-top span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignTop16.png");
+  }
+  .menu a.menu-item.align-bottom span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignBottom16.png");
+  }
+  .menu a.menu-item.align-middle span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignMiddleVert16.png");
+  }
+  .menu a.menu-item.align-center span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignCentreHoriz16.png");
+  }
+  .menu a.menu-item.clear-table span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/ClearTable16.png");
+  }
+  .menu a.menu-item.clear-row span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/ClearRow16.png");
+  }
+  .menu a.menu-item.clear-column span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/ClearColumn16.png");
+  }
+  .menu a.menu-item.insert-column-left span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/InsertColumnLeft16.png");
+  }
+  .menu a.menu-item.insert-column-right span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/InsertColumnRight16.png");
+  }
+  .menu a.menu-item.insert-row-above span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/InsertRowAbove16.png");
+  }
+  .menu a.menu-item.insert-row-below span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/InsertRowBelow16.png");
+  }
+  .menu a.menu-item.remove-column span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RemoveColumn16.png");
+  }
+  .menu a.menu-item.remove-row span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RemoveRow16.png");
+  }
+  .menu a.menu-item.merge-cell-right span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/MergeRight16.png");
+  }
+  .menu a.menu-item.merge-cell-below span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/MergeBelow16.png");
+  }
+  .menu a.menu-item.sort-by-name span.menu-item-icon,
+  .menu a.menu-item.sort-by-name-asc span.menu-item-icon {
+    background-image: url("../Images/Icons/ConditionsDropdown/Descending16.png");
+  }
+  .menu a.menu-item.sort-by-name-desc span.menu-item-icon {
+    background-image: url("../Images/Icons/ConditionsDropdown/Ascending16.png");
+  }
+  .menu a.menu-item.sort-by-type span.menu-item-icon,
+  .menu a.menu-item.sort-by-type-asc span.menu-item-icon {
+    background-image: url("../Images/Icons/ConditionsDropdown/Descending16.png");
+  }
+  .menu a.menu-item.sort-by-type-desc span.menu-item-icon {
+    background-image: url("../Images/Icons/ConditionsDropdown/Ascending16.png");
+  }
+  .menu a.menu-item.view-flow span.menu-item-icon {
+    background-image: url("../Images/Icons/Management/ViewFlow16.png");
+  }
+  .menu a.menu-item.create-package span.menu-item-icon {
+    background-image: url("../Images/Icons/Steps/Create16.png");
+  }
+  .menu a.menu-item.deploy-package span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Deploy16.png");
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .menu a.menu-item.favourite span.menu-item-icon {
+    background-image: url("../Images/Icons/EditToolbox/Favourites16@2x.png");
+  }
+  .menu a.menu-item.add span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Add16@2x.png");
+  }
+  .menu a.menu-item.edit span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16@2x.png");
+  }
+  .menu a.menu-item.move-up span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/MoveUp16@2x.png");
+  }
+  .menu a.menu-item.move-down span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/MoveDown16@2x.png");
+  }
+  .menu a.menu-item.drill-down span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Hyperlink16@2x.png");
+  }
+  .menu a.menu-item.delete-drill-down span.menu-item-icon {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16@2x.png");
+  }
+  .menu a.menu-item.delete span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16@2x.png");
+  }
+  .menu a.menu-item.delete-all span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/RemoveAll16@2x.png");
+  }
+  .menu a.menu-item.remove span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Remove16@2x.png");
+  }
+  .menu a.menu-item.remove-all span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/RemoveAll16@2x.png");
+  }
+  .menu a.menu-item.lock span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Lock16@2x.png");
+  }
+  .menu a.menu-item.load span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Load16@2x.png");
+  }
+  .menu a.menu-item.play span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Run16@2x.png");
+  }
+  .menu a.menu-item.refresh span.menu-item-icon {
+    background-image: url("../Images/Icons/ContextBrowser/Refresh16@2x.png");
+  }
+  .menu a.menu-item.publish span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Deploy16@2x.png");
+  }
+  .menu a.menu-item.properties span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Properties16@2x.png");
+  }
+  .menu a.menu-item.auto-generate span.menu-item-icon {
+    background-image: url("../Images/Icons/ConditionsDropdown/Auto16@2x.png");
+  }
+  .menu a.menu-item.generate-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/GenerateSmartObject16@2x.png");
+  }
+  .menu a.menu-item.generate-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/GenerateANewView16@2x.png");
+  }
+  .menu a.menu-item.generate-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/GenerateANewForm16@2x.png");
+  }
+  .menu a.menu-item.generate-report span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Report16@2x.png");
+  }
+  .menu a.menu-item.security span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Security16@2x.png");
+  }
+  .menu a.menu-item.checkin span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckIn16@2x.png");
+  }
+  .menu a.menu-item.checkout span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckOut16@2x.png");
+  }
+  .menu a.menu-item.undocheckout span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CancelCheckOut16@2x.png");
+  }
+  .menu a.menu-item.play span.menu-item-icon,
+  .menu a.menu-item.run span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Run16@2x.png");
+  }
+  .menu a.menu-item.preview span.menu-item-icon,
+  .menu a.menu-item.preview-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Run16@2x.png");
+  }
+  .menu a.menu-item.preview-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px@2x.png");
+  }
+  .menu a.menu-item.run-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Run16@2x.png");
+  }
+  .menu a.menu-item.runas-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RunWithParameters16@2x.png");
+  }
+  .menu a.menu-item.run-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Run16@2x.png");
+  }
+  .menu a.menu-item.copy span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Copy16@2x.png");
+  }
+  .menu a.menu-item.clone span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/Copy16@2x.png");
+  }
+  .menu a.menu-item.save span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Save16@2x.png");
+  }
+  .menu a.menu-item.save-as span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16@2x.png");
+  }
+  .menu a.menu-item.view-capture span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/View16@2x.png");
+  }
+  .menu a.menu-item.formparameter-datetime span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/DateTime16@2x.png");
+  }
+  .menu a.menu-item.formparameter-number span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Number16@2x.png");
+  }
+  .menu a.menu-item.formparameter-text span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Text16@2x.png");
+  }
+  .menu a.menu-item.formparameter-boolean span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/YesNo16@2x.png");
+  }
+  .menu a.menu-item.viewparameter-datetime span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/DateTime16@2x.png");
+  }
+  .menu a.menu-item.viewparameter-number span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Number16@2x.png");
+  }
+  .menu a.menu-item.viewparameter-text span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Text16@2x.png");
+  }
+  .menu a.menu-item.viewparameterevent span.menu-item-icon,
+  .menu a.menu-item.formparameterevent span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Method16@2x.png");
+  }
+  .menu a.menu-item.viewparameter-boolean span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/YesNo16@2x.png");
+  }
+  .menu a.menu-item.view-list span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/View16@2x.png");
+  }
+  .menu a.menu-item.view-capturelist span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/View16@2x.png");
+  }
+  .menu a.menu-item.viewmethod span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Method16@2x.png");
+  }
+  .menu a.menu-item.rendermode span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Connection16@2x.png");
+  }
+  .menu a.menu-item.viewevent span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .menu a.menu-item.formevent span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .menu a.menu-item.method-create span.menu-item-icon,
+  .menu a.menu-item.create-method span.menu-item-icon,
+  .menu a.menu-item.method-delete span.menu-item-icon,
+  .menu a.menu-item.delete-method span.menu-item-icon,
+  .menu a.menu-item.method-read span.menu-item-icon,
+  .menu a.menu-item.read-method span.menu-item-icon,
+  .menu a.menu-item.method-list span.menu-item-icon,
+  .menu a.menu-item.list-method span.menu-item-icon,
+  .menu a.menu-item.method-update span.menu-item-icon,
+  .menu a.menu-item.update-method span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/SmartObjectMethod16@2x.png");
+  }
+  .menu a.menu-item.control span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px@2x.png");
+  }
+  .menu a.menu-item.control-toolbartable span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Table16@2x.png");
+  }
+  .menu a.menu-item.control-tree span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Context16@2x.png");
+  }
+  .menu a.menu-item.controlevent span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .menu a.menu-item.controlmethod span.menu-item-icon,
+  .menu a.menu-item.controlmethod-none span.menu-item-icon,
+  .menu a.menu-item.none-controlmethod span.menu-item-icon,
+  .menu a.menu-item.controlmethod-text span.menu-item-icon,
+  .menu a.menu-item.controlmethod-boolean span.menu-item-icon,
+  .menu a.menu-item.controlmethod-datetime span.menu-item-icon,
+  .menu a.menu-item.controlmethod-number span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Method16@2x.png");
+  }
+  .menu a.menu-item.control-panel span.menu-item-icon,
+  .menu a.menu-item.panel-control.icon.ic-panel span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/GenericTab16@2x.png");
+  }
+  .menu a.menu-item.panel span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/GenericTab16@2x.png");
+  }
+  .menu a.menu-item.actionitemstate span.menu-item-icon {
+    background-image: url("../Images/Icons/Rules/State16.png");
+  }
+  .menu a.menu-item.actionexecutiontype span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Action16.png");
+  }
+  .menu a.menu-item.rule span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .menu a.menu-item.new-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewWorkflowFile16@2x.png");
+  }
+  .menu a.menu-item.new-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewSmartObject16@2x.png");
+  }
+  .menu a.menu-item.new-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewView16@2x.png");
+  }
+  .menu a.menu-item.new-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewForm16@2x.png");
+  }
+  .menu a.menu-item.new-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewStyleProfile16@2x.png");
+  }
+  .menu a.menu-item.new-report span.menu-item-icon {
+    background-image: url("../Images/Icons/Steps/Create16@2x.png");
+  }
+  .menu a.menu-item.new-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Steps/Create16@2x.png");
+  }
+  .menu a.menu-item.new-category span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/DesignANewCategory16@2x.png");
+  }
+  .menu a.menu-item.reset-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/ResetToDefault.svg");
+  }
+  .menu a.menu-item.browse span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Browse.svg");
+  }
+  .menu a.menu-item.edit-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16@2x.png");
+  }
+  .menu a.menu-item.edit-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16@2x.png");
+  }
+  .menu a.menu-item.edit-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16@2x.png");
+  }
+  .menu a.menu-item.edit-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16@2x.png");
+  }
+  .menu a.menu-item.edit-report span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16@2x.png");
+  }
+  .menu a.menu-item.edit-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16@2x.png");
+  }
+  .menu a.menu-item.edit-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Edit16@2x.png");
+  }
+  .menu a.menu-item.unlock-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/Management/Release16@2x.png");
+  }
+  .menu a.menu-item.delete-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16@2x.png");
+  }
+  .menu a.menu-item.delete-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16@2x.png");
+  }
+  .menu a.menu-item.delete-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16@2x.png");
+  }
+  .menu a.menu-item.delete-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16@2x.png");
+  }
+  .menu a.menu-item.delete-report span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16@2x.png");
+  }
+  .menu a.menu-item.delete-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16@2x.png");
+  }
+  .menu a.menu-item.delete-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Delete16@2x.png");
+  }
+  .menu a.menu-item.checkin-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckIn16@2x.png");
+  }
+  .menu a.menu-item.checkin-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckIn16@2x.png");
+  }
+  .menu a.menu-item.checkin-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckIn16@2x.png");
+  }
+  .menu a.menu-item.checkin-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CheckIn16@2x.png");
+  }
+  .menu a.menu-item.checkin-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px@2x.png");
+  }
+  .menu a.menu-item.checkout-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/CheckOut16@2x.png");
+  }
+  .menu a.menu-item.checkout-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/CheckOut16@2x.png");
+  }
+  .menu a.menu-item.checkout-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/CheckOut16@2x.png");
+  }
+  .menu a.menu-item.checkout-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/CheckOut16@2x.png");
+  }
+  .menu a.menu-item.checkout-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px@2x.png");
+  }
+  .menu a.menu-item.undocheckout-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CancelCheckOut16@2x.png");
+  }
+  .menu a.menu-item.undocheckout-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CancelCheckOut16@2x.png");
+  }
+  .menu a.menu-item.undocheckout-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/CancelCheckOut16@2x.png");
+  }
+  .menu a.menu-item.undocheckout-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px@2x.png");
+  }
+  .menu a.menu-item.save-as-smartobject span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16@2x.png");
+  }
+  .menu a.menu-item.save-as-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16@2x.png");
+  }
+  .menu a.menu-item.save-as-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16@2x.png");
+  }
+  .menu a.menu-item.save-as-styleprofile span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16@2x.png");
+  }
+  .menu a.menu-item.save-as-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Default16px@2x.png");
+  }
+  .menu a.menu-item.save-as-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/Ribbon/SaveAs16@2x.png");
+  }
+  .menu a.menu-item.reuse-workflow span.menu-item-icon {
+    background-image: url("../Images/Icons/ContextBrowser/Refresh16@2x.png");
+  }
+  .menu a.menu-item.runas-form span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RunWithParameters16@2x.png");
+  }
+  .menu a.menu-item.run-application span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Run16@2x.png");
+  }
+  .menu a.menu-item.rename span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Rename16@2x.png");
+  }
+  .menu a.menu-item.moveto span.menu-item-icon,
+  .menu a.menu-item.move-to span.menu-item-icon {
+    background-image: url("../Images/Icons/Steps/MoveFolder16@2x.png");
+  }
+  .menu a.menu-item.run-new-tab span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RunInNewTab16@2x.png");
+  }
+  .menu a.menu-item.run-new-window span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RunInNewWindow16@2x.png");
+  }
+  .menu a.menu-item.add-view span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Add16@2x.png");
+  }
+  .menu a.menu-item.insert-tab span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/TabAdd16@2x.png");
+  }
+  .menu a.menu-item.rename-tab span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/TabRename16@2x.png");
+  }
+  .menu a.menu-item.remove-tab span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/TabDelete16@2x.png");
+  }
+  .menu a.menu-item.move-tab-left span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/TabMoveLeft16@2x.png");
+  }
+  .menu a.menu-item.move-tab-right span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/TabMoveRight16@2x.png");
+  }
+  .menu a.menu-item.row-layout span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RowLayout16@2x.png");
+  }
+  .menu a.menu-item.column-layout span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/ColumnLayout16@2x.png");
+  }
+  .menu a.menu-item.sigma span.menu-item-icon {
+    background-image: url("../Images/Icons/DataTypes/Functions16@2x.png");
+  }
+  .menu a.menu-item.align-left span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignLeft16@2x.png");
+  }
+  .menu a.menu-item.align-right span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignRight16@2x.png");
+  }
+  .menu a.menu-item.align-top span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignTop16@2x.png");
+  }
+  .menu a.menu-item.align-bottom span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignBottom16@2x.png");
+  }
+  .menu a.menu-item.align-middle span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignMiddleVert16@2x.png");
+  }
+  .menu a.menu-item.align-center span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/AlignCentreHoriz16@2x.png");
+  }
+  .menu a.menu-item.clear-table span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/ClearTable16@2x.png");
+  }
+  .menu a.menu-item.clear-row span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/ClearRow16@2x.png");
+  }
+  .menu a.menu-item.clear-column span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/ClearColumn16@2x.png");
+  }
+  .menu a.menu-item.insert-column-left span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/InsertColumnLeft16@2x.png");
+  }
+  .menu a.menu-item.insert-column-right span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/InsertColumnRight16@2x.png");
+  }
+  .menu a.menu-item.insert-row-above span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/InsertRowAbove16@2x.png");
+  }
+  .menu a.menu-item.insert-row-below span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/InsertRowBelow16@2x.png");
+  }
+  .menu a.menu-item.remove-column span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RemoveColumn16@2x.png");
+  }
+  .menu a.menu-item.remove-row span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/RemoveRow16@2x.png");
+  }
+  .menu a.menu-item.merge-cell-right span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/MergeRight16@2x.png");
+  }
+  .menu a.menu-item.merge-cell-below span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/MergeBelow16@2x.png");
+  }
+  .menu a.menu-item.sort-by-name span.menu-item-icon,
+  .menu a.menu-item.sort-by-name-asc span.menu-item-icon {
+    background-image: url("../Images/Icons/ConditionsDropdown/Descending16@2x.png");
+  }
+  .menu a.menu-item.sort-by-name-desc span.menu-item-icon {
+    background-image: url("../Images/Icons/ConditionsDropdown/Ascending16@2x.png");
+  }
+  .menu a.menu-item.sort-by-type span.menu-item-icon,
+  .menu a.menu-item.sort-by-type-asc span.menu-item-icon {
+    background-image: url("../Images/Icons/ConditionsDropdown/Descending16@2x.png");
+  }
+  .menu a.menu-item.sort-by-type-desc span.menu-item-icon {
+    background-image: url("../Images/Icons/ConditionsDropdown/Ascending16@2x.png");
+  }
+  .menu a.menu-item.view-flow span.menu-item-icon {
+    background-image: url("../Images/Icons/Management/ViewFlow16.png");
+  }
+  .menu a.menu-item.create-package span.menu-item-icon {
+    background-image: url("../Images/Icons/Steps/Create16@2x.png");
+  }
+  .menu a.menu-item.deploy-package span.menu-item-icon {
+    background-image: url("../Images/Icons/Toolbar/Deploy16@2x.png");
+  }
+}

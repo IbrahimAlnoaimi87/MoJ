@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-assetbrowser.icon-size{iconsize}.ic-{iconname}"/>
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1">FolderClosed20.png</Row>
+            </Rows>
+          </Column>
+          <Column number="2">
+            <Rows>
+              <Row number="1">FolderOpen20.png</Row>
+            </Rows>
+          </Column>
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="10,0,0,10">
+        <CssBackgroundImageFolder>AssetBrowser/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/AssetBrowser/AssetBrowser20.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/AssetBrowser20.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

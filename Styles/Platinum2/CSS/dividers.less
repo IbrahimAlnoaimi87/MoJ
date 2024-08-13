@@ -1,0 +1,98 @@
+﻿/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+.vertical-divider,
+.horizontal-divider
+{
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.vertical-divider
+{
+    top: 0;
+    bottom: 0;
+    width: @Divider-Width;
+    background-image: url(../Images/Dividers/vertical_expander_dots.png);
+    cursor: w-resize;
+}
+
+.horizontal-divider
+{
+    left: 0;
+    right: 0;
+    height: @Divider-Width;
+    background-image: url(../Images/Dividers/horizontal_expander_dots.png);
+    cursor: n-resize;
+}
+
+.horizontal-spacer
+{
+    height: @Divider-Width;
+}
+
+.vertical-spacer
+{
+    width: @Divider-Width;
+}
+
+.ghost
+{
+    background-color: @Divider-Dragging-Background-Color;
+    opacity: 0.7;
+}
+
+.divider.ui-draggable-dragging
+{
+    background-color: @Divider-Dragging-Background-Color;
+}
+
+/* Divider Base Styling */
+.divider
+{
+    position: relative;
+}
+
+.divider.horizontal
+{
+    height: @Divider-Width;
+}
+
+.divider.vertical
+{
+    width: @Divider-Width;
+}
+
+.divider.draggable
+{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.divider.draggable.horizontal
+{
+    background-image: url(../Images/Dividers/horizontal_expander_dots.png);
+    cursor: n-resize;
+}
+
+.divider.draggable.vertical
+{
+    background-image: url(../Images/Dividers/vertical_expander_dots.png);
+    cursor: w-resize;
+}
+
+
+/*LG: Specific Divider used for the navigation panel has to be solid fill*/
+#MainNavigationPane + .vertical.divider
+{
+    background-color: @Main-Designer-Background-Color;
+}
+/*LG*/
+
+

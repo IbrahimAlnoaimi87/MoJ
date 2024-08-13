@@ -1,0 +1,71 @@
+﻿
+//Purpose: For Error, Warning, search, and Info Badges
+//         The Badging control (including actions and description)
+//         For Badges that are not baked into other icons, but are separate.
+//Author: Lewis Garmston
+
+//The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  
+//This is because /styles, /forms, /rules etc all have css in them 
+@import (reference) "../../../Designer_Variables.less";
+
+
+@_BadgeSize : 10px;
+
+.badge{
+
+    position: absolute;
+    right: -(0.5 * @_BadgeSize);
+    top:  -(0.5 * @_BadgeSize);
+
+    content: '';
+    display: block;
+    height: @_BadgeSize;
+    width: @_BadgeSize;
+
+
+    @_NegativeHalf : (-1 * (@_BadgeSize/2));
+    margin-left: @_NegativeHalf;
+    margin-top: @_NegativeHalf;
+    margin-right: @_NegativeHalf;
+    margin-bottom: @_NegativeHalf;
+
+    border-radius: 100%;
+   
+
+    background-position: 50% 50%;
+    background-size:  @_BadgeSize  @_BadgeSize;
+
+    transform: scale(0.7);
+    opacity: 0.0;
+    pointer-events: none;
+
+    transition: opacity 0.15s, transform 0.15s;
+
+
+    &.error{
+        background-color: @Error-Color-1; 
+    }
+
+
+    &.show{
+        transform: scale(1.0);
+        opacity: 1.0;
+        pointer-events:all;
+    }
+}
+
+
+
+/*Special positioning*/
+.file-tab .badge{
+    top: auto;
+    right: auto;
+    position: relative;
+
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+

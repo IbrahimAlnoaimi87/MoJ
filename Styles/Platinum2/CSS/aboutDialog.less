@@ -1,0 +1,247 @@
+/*Author: 		Dirk Steenkamp*/
+/*Purpose: 		The purpose of this file is the styling of the About Dialog on the K2 Designer*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import "@{SourceCode-Designer-Variables-File}";
+
+@_About-Footer-Bar-BackGround-Color: #f8f8f8;
+@_Table-Row-Zebra-Background-Color: #f5f5f5;
+@_About-Gray-Text-Color: #808080;
+@_About-Footer-Bar-Border-Color: #e5e5e5;
+
+.about-dialog-full-panel.panel,
+.about-dialog-full-panel.panel > .panel-body,
+.about-dialog-full-panel.panel > .panel-body > .panel-body-m,
+.about-dialog-full-panel.panel > .panel-body > .panel-body-m > .panel-body-m-c,
+.about-dialog-full-panel.panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper,
+.about-dialog-full-panel.panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div {
+    position: absolute;
+    bottom: 0px;
+    top: 0rem;
+    left: 0px;
+    right: 0px;
+}
+
+.about-outer-body {
+    position: absolute;
+    bottom: 0px;
+    top: 0rem;
+    left: 0px;
+    right: 0px;
+}
+
+.about-footer-bar {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: @_About-Footer-Bar-BackGround-Color;
+    height: 4.6rem;
+    border-top: solid 1px @_About-Footer-Bar-Border-Color;
+}
+//Justify for the "Latest Update" link on the left panel of the about footer bar to have it sit on the right side of the footer
+.about-footer-bar.about-left-panel {
+    justify-content: flex-end;
+}
+//General styling for the "Latest Update" and "Back" links on the left and right panel of the about footer bar.
+.about-footer-bar-links {
+    display: inline-block;
+    cursor: pointer;
+    color: @Hyperlink-Text-Color;
+
+    &:hover {
+        color: @Hyperlink-Hover-Text-Color;
+    }
+}
+//Icons for the "Latest Update" and "Back" links on the left and right panel of the about footer bar.
+.about-footer-bar-links .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+//Animation for the switching between the left and right panel of the dialog for navigation purposes
+.about-dialog-full-panel .about-right-panel {
+    transform: translateX(100%);
+    transition: all 0.25s;
+}
+
+.about-dialog-full-panel .about-left-panel {
+    transform: translateX(0%);
+    transition: all 0.25s;
+}
+
+.about-dialog-full-panel .about-right-panel.show {
+    transform: translateX(0%);
+}
+
+.about-dialog-full-panel .about-left-panel.hide {
+    transform: translateX(-100%);
+}
+//Styling for dynamically generated <table>
+.about-updates-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-style: none;
+}
+
+.about-updates-table > tbody {
+    padding: 0px;
+    list-style: none;
+}
+
+.about-updates-table > tbody > tr {
+    padding: 0px;
+    list-style: none;
+    height: 34px;
+}
+
+.about-updates-table > tbody > tr > td {
+    padding: 0px 10px;
+}
+
+.about-updates-table > tbody > tr:nth-child(even) {
+    background-color: @_Table-Row-Zebra-Background-Color;
+}
+
+.about-updates-table > tbody > tr > td.about-update-cell {
+    width: 380px;
+}
+
+.about-link {
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+@_Icon-Gap: @Standard-Padding-Large;
+
+.about-body .icon {
+    margin-left: @_Icon-Gap;
+    margin-top: @_Icon-Gap;
+    float: left;
+
+    html[dir=rtl] & {
+        float: right;
+        margin-left: 0px;
+        margin-right: @_Icon-Gap;
+    }
+}
+
+.about-body {
+    height: 150px;
+    width: 460px;
+    padding: 15px 10px 10px 10px;
+}
+
+.about-normaltext {
+    padding-left: 170px;
+
+    html[dir=rtl] & {
+        padding-left: 0;
+        padding-right: 170px;
+    }
+}
+
+.about-graytext {
+    padding-left: 150px;
+    padding-top: 10px;
+    color: @_About-Gray-Text-Color;
+
+    html[dir=rtl] & {
+        padding-left: 0;
+        padding-right: 150px;
+        padding-top: 34px;
+    }
+}
+
+.about-latest-update {
+    cursor: pointer;
+    text-decoration: none;
+    color: @Main-Text-Color;
+
+    &:visited {
+        color: @Main-Text-Color;
+    }
+
+    &:hover {
+        color: @Hyperlink-Hover-Text-Color;
+    }
+}
+
+.about-latest-update-date {
+    display: inline-block;
+}
+
+.about-latest-update-copy-text {
+    display: inline-block;
+    color: @Hyperlink-Text-Color;
+    opacity: 0;
+}
+
+.about-latest-update-copy-text.show {
+    animation: aboutDialog_showCopyText 3.5s 1;
+}
+
+.about-latest-update-date.copy {
+    color: @Hyperlink-Text-Color;
+}
+
+.about-latest-update.copy {
+    color: @Hyperlink-Text-Color;
+}
+
+.about-dialog-full-panel .back-link {
+    width: 240px;
+}
+
+.about-dialog-full-panel .download-link {
+    width: 240px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-latest-update-copy {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.about-latest-update-copy .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    float: none;
+}
+
+.about-dialog-full-panel .download-history-link {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+    color: @Main-Text-Color;
+
+    &:hover {
+        color: @Hyperlink-Hover-Text-Color;
+    }
+}
+
+@keyframes aboutDialog_showCopyText {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

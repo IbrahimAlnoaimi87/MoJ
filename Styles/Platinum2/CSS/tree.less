@@ -1,0 +1,202 @@
+﻿/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+.tree,
+.tree ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+div.tree + div.tree
+{
+    margin-top: 25px;
+}
+
+.tree li ul
+{
+    display: none;
+    clear: both;
+}
+
+.tree li
+{
+    display: block;
+    min-height: 18px;
+    line-height: 18px;
+    padding: 0 0 0 18px;
+    margin: 0 0 0 0;
+    clear: both;
+
+    html[dir=rtl] &
+    {
+        padding: 0 18px 0 0;
+    }
+}
+
+
+.tree li.hidden
+{
+    display: none;
+}
+
+.tree
+{
+    li
+    {
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        line-height: normal;
+
+        html[dir=ltr] &
+        {
+            background-position: 1px 1px;
+        }
+
+        html[dir=rtl] &
+        {
+            background-position: 100% 1px;
+        }
+
+        & > a, & > span
+        {
+            display: inline;
+            float: left;
+            line-height: 16px;
+            padding: 1px 4px 1px 23px;
+            color: @Main-Text-Color;
+            white-space: nowrap;
+            text-decoration: none;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: 1px 1px;
+            border: solid 1px transparent;
+            margin: 0;
+
+            html[dir=rtl] &
+            {
+                background-position: 99.9% 1px;
+                float: right;
+                padding: 1px 23px 1px 4px;
+            }
+        }
+    }
+
+    &.dark
+    {
+        li
+        {
+            & > a, & > span
+            {
+                color: @Main-Text-Color-Dark;
+            }
+        }
+    }
+}
+
+.tree li > a,
+.tree li a.not-draggable
+{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tree li a.not-droppable
+{
+    cursor: not-allowed;
+}
+
+.tree
+{
+    li
+    {
+        a:hover
+        {
+            background-color: @Tree-Item-Hover-Background-Color;
+            color: @Main-Text-Color;
+            outline: none;
+        }
+
+        &.selected > a,
+        &.selected > a:hover,
+        &.selected > span
+        {
+            background-color: @Tree-Item-Selected-Background-Color;
+            color: @Tree-Item-Selected-Text-Color;
+        }
+
+        &.selected > a:focus
+        {
+            border-color: @Tree-Item-Focus-Border-Color;
+        }
+
+        &.disabled > a,
+        &.disabled > a:hover,
+        &.disabled > span
+        {
+            pointer-events: none;
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        &.open ul
+        {
+            display: block;
+            clear: both;
+        }
+
+        &.closed ul
+        {
+            display: none !important;
+        }
+
+        a input,
+        span input
+        {
+            margin: 0;
+            padding: 0 0;
+            display: block;
+            height: 14px !important;
+            border: 1px solid #fff;
+            background: #fff;
+            font-family: Verdana;
+            font-size: 11px;
+        }
+    }
+}
+
+
+/*#region Icons*/
+.tree li,
+.tree li > a,
+.tree li > span,
+.tree li.children
+{
+    background-size: 16px 16px;
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('tree_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('tree_images.less');
+}
+
+/*#endregion icons*/

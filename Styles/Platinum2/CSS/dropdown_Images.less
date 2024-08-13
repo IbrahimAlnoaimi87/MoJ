@@ -1,0 +1,99 @@
+
+.mixin-dropdowns(@controlclass;@imageurl;@isimportant: false)
+{
+    .drop-menu.icon-control ul.drop-menu a.@{controlclass},
+    .input-control.icon-control.@{controlclass} .input-control-icon,
+    .input-control.icon-control.@{controlclass} .input-control-wrapper,
+    .input-control.icon-control.dropdown-box.@{controlclass} .input-control-wrapper
+    {
+        .values(@controlclass;@imageurl) when(@isimportant = false)
+        {
+            background-image: url("../images/icons/dropdownset/@{imageurl}16@{res}.png");
+        }
+
+        .values(@controlclass;@imageurl) when(@isimportant = true)
+        {
+            background-image: url("../images/icons/dropdownset/@{imageurl}16@{res}.png") !important;
+        }
+
+        .values(@controlclass;@imageurl);
+    }
+
+    div.@{controlclass}.input-control.select-box
+    {
+        background-image: none !important;
+    }
+
+    .drop-menu.icon-control ul.drop-menu a.@{controlclass}
+    {
+        background-position: 1px 50% !important;
+    }
+
+    .input-control.icon-control.dropdown-box.@{controlclass} .input-control-wrapper
+    {
+        background-position: 1px 50% !important;
+        background-clip: initial;
+    }
+}
+
+html
+{
+    .mixin-dropdowns(FullProcNameDisp;Workflow;true);
+    .mixin-dropdowns(Users;UserManagement;true);
+    .mixin-dropdowns(Status;WorkflowStatus;true);
+    .mixin-dropdowns(RangeTokenDisplay;Year;true);
+    .mixin-dropdowns(duration;Duration;true);
+    .mixin-dropdowns(instancecount;InstanceCount;true);
+    .mixin-dropdowns(column;ColumnChart;true);
+    .mixin-dropdowns(pie;PieChart;true);
+    .mixin-dropdowns(bar;BarChart;true);
+    .mixin-dropdowns(twoseventy;Angle270Degrees;true);
+    .mixin-dropdowns(ninty;Angle90Degrees;true);
+    .mixin-dropdowns(zero;Angle0Degrees;true);
+    .mixin-dropdowns(fade;SpecialEffects;true);
+    .mixin-dropdowns(explodeandfade;SpecialEffects;true);
+    .mixin-dropdowns(explode;SpecialEffects;true);
+    .mixin-dropdowns(noeffect;EffectsNone;true);
+    .mixin-dropdowns(multiple;SelectionMulti;true);
+    .mixin-dropdowns(single;SelectionSingle;true);
+    .mixin-dropdowns(ColumnLayoutConfigurationViewTypeGrid;Grid;true);
+    .mixin-dropdowns(ColumnLayoutConfigurationViewTypeSimple;Simple;true);
+    .mixin-dropdowns(ActivityName;Activities;true);
+    .mixin-dropdowns(this_year;Year;true);
+    .mixin-dropdowns(this_quarter;Quarter;true);
+    .mixin-dropdowns(this_month;Month;true);
+    .mixin-dropdowns(this_week;Week;true);
+    .mixin-dropdowns(last_7_days;Day;true);
+    .mixin-dropdowns(last_30_days;Day;true);
+    .mixin-dropdowns(last_60_days;Day;true);
+    .mixin-dropdowns(last_90_days;Day;true);
+    .mixin-dropdowns(last_120_days;Day;true);
+    .mixin-dropdowns(last_week;Week;true);
+    .mixin-dropdowns(last_month;Month;true);
+    .mixin-dropdowns(last_year;Year;true);
+    .mixin-dropdowns(today;Day;true);
+    .mixin-dropdowns(yesterday;Day;true);
+    .mixin-dropdowns(previous_and_current_week;Week;true);
+    .mixin-dropdowns(previous_and_current_month;Month;true);
+    .mixin-dropdowns(previous_and_current_year;Year;true);
+    .mixin-dropdowns(today_and_yesterday;Day;true);
+    .mixin-dropdowns(hour;Duration;true);
+    .mixin-dropdowns(stacked;Stacked;true);
+    .mixin-dropdowns(seperate;Clustered;true);
+    .mixin-dropdowns(combined;Aggregated;true);
+    .mixin-dropdowns(started;Started;true);
+    .mixin-dropdowns(participated;Participated;true);
+    .mixin-dropdowns(all;StartedandParticipated;true);
+    .mixin-dropdowns(VisibleColumns;VisibleColumns;true);
+    .mixin-dropdowns(first;FirstRecord;true);
+    .mixin-dropdowns(nonevalue;EffectsNone;true);
+    .mixin-dropdowns(portrait;Portrait;true);
+    .mixin-dropdowns(landscape;Landscape;true);
+    .mixin-dropdowns(input;InputControl;true);
+    .mixin-dropdowns(auto;Auto;true);
+    .mixin-dropdowns(yes;ScrollBoth;true);
+    .mixin-dropdowns(no;EffectsNone;true);
+    .mixin-dropdowns(bottom;ScrollHorizontal;true);
+    .mixin-dropdowns(right;ScrollVertical;true);
+    .mixin-dropdowns(All;Year;true);
+}

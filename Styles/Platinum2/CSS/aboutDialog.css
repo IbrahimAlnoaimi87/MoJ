@@ -1,0 +1,201 @@
+/*Author: 		Dirk Steenkamp*/
+
+/*Purpose: 		The purpose of this file is the styling of the About Dialog on the K2 Designer*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+.about-dialog-full-panel.panel,
+.about-dialog-full-panel.panel > .panel-body,
+.about-dialog-full-panel.panel > .panel-body > .panel-body-m,
+.about-dialog-full-panel.panel > .panel-body > .panel-body-m > .panel-body-m-c,
+.about-dialog-full-panel.panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper,
+.about-dialog-full-panel.panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div {
+  position: absolute;
+  bottom: 0px;
+  top: 0rem;
+  left: 0px;
+  right: 0px;
+}
+.about-outer-body {
+  position: absolute;
+  bottom: 0px;
+  top: 0rem;
+  left: 0px;
+  right: 0px;
+}
+.about-footer-bar {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #f8f8f8;
+  height: 4.6rem;
+  border-top: solid 1px #e5e5e5;
+}
+.about-footer-bar.about-left-panel {
+  justify-content: flex-end;
+}
+.about-footer-bar-links {
+  display: inline-block;
+  cursor: pointer;
+  color: #2196f3;
+}
+.about-footer-bar-links:hover {
+  color: #29b6f6;
+}
+.about-footer-bar-links .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+.about-dialog-full-panel .about-right-panel {
+  transform: translateX(100%);
+  transition: all 0.25s;
+}
+.about-dialog-full-panel .about-left-panel {
+  transform: translateX(0%);
+  transition: all 0.25s;
+}
+.about-dialog-full-panel .about-right-panel.show {
+  transform: translateX(0%);
+}
+.about-dialog-full-panel .about-left-panel.hide {
+  transform: translateX(-100%);
+}
+.about-updates-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-style: none;
+}
+.about-updates-table > tbody {
+  padding: 0px;
+  list-style: none;
+}
+.about-updates-table > tbody > tr {
+  padding: 0px;
+  list-style: none;
+  height: 34px;
+}
+.about-updates-table > tbody > tr > td {
+  padding: 0px 10px;
+}
+.about-updates-table > tbody > tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+.about-updates-table > tbody > tr > td.about-update-cell {
+  width: 380px;
+}
+.about-link {
+  cursor: pointer;
+  text-decoration: none !important;
+  color: black !important;
+}
+.about-body .icon {
+  margin-left: 5px;
+  margin-top: 5px;
+  float: left;
+}
+html[dir=rtl] .about-body .icon {
+  float: right;
+  margin-left: 0px;
+  margin-right: 5px;
+}
+.about-body {
+  height: 150px;
+  width: 460px;
+  padding: 15px 10px 10px 10px;
+}
+.about-normaltext {
+  padding-left: 170px;
+}
+html[dir=rtl] .about-normaltext {
+  padding-left: 0;
+  padding-right: 170px;
+}
+.about-graytext {
+  padding-left: 150px;
+  padding-top: 10px;
+  color: gray;
+}
+html[dir=rtl] .about-graytext {
+  padding-left: 0;
+  padding-right: 150px;
+  padding-top: 34px;
+}
+.about-latest-update {
+  cursor: pointer;
+  text-decoration: none;
+  color: #4e5758;
+}
+.about-latest-update:visited {
+  color: #4e5758;
+}
+.about-latest-update:hover {
+  color: #29b6f6;
+}
+.about-latest-update-date {
+  display: inline-block;
+}
+.about-latest-update-copy-text {
+  display: inline-block;
+  color: #2196f3;
+  opacity: 0;
+}
+.about-latest-update-copy-text.show {
+  animation: aboutDialog_showCopyText 3.5s 1;
+}
+.about-latest-update-date.copy {
+  color: #2196f3;
+}
+.about-latest-update.copy {
+  color: #2196f3;
+}
+.about-dialog-full-panel .back-link {
+  width: 240px;
+}
+.about-dialog-full-panel .download-link {
+  width: 240px;
+  display: flex;
+  justify-content: flex-end;
+}
+.about-latest-update-copy {
+  display: inline-block;
+  cursor: pointer;
+}
+.about-latest-update-copy .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  float: none;
+}
+.about-dialog-full-panel .download-history-link {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #4e5758;
+}
+.about-dialog-full-panel .download-history-link:hover {
+  color: #29b6f6;
+}
+@keyframes aboutDialog_showCopyText {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

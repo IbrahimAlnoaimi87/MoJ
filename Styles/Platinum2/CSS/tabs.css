@@ -1,0 +1,533 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+/* Tab Panel Layout - used in main form/view designer only*/
+
+.lyt-tab-container {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+}
+/* Tab-box Outer Element Styling */
+
+.tab-box {
+  position: relative;
+}
+.tab-box.full {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.tab-box.full .tab-box-header {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.tab-box.full > .tab-box-tabs {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.tab-box.full > .tab-box-body {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.tab-box.full.tabs-bottom ul.tab-box-tabs {
+  order: 2;
+}
+html[dir=rtl] .tab-box.full {
+  direction: rtl;
+}
+/* Tab-box Tabs Collection Element Styling */
+
+ul.tab-box-tabs {
+  height: 21px;
+  list-style: none outside none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  position: relative;
+  user-select: none;
+}
+.tabs-top ul.tab-box-tabs {
+  border-bottom: 1px solid #e5e5e5;
+}
+.tabs-bottom ul.tab-box-tabs {
+  border-top: 1px solid #e5e5e5;
+}
+.tab-box.hide-tabs ul.tab-box-tabs {
+  display: none;
+}
+/* Tab-box Tabs Collection Item Element Styling */
+
+.tab-box ul.tab-box-tabs li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+/* Tab-box Tab Styling */
+
+.tab {
+  border-color: #e5e5e5;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  color: #4e5758;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  line-height: 18px;
+  margin: 0 1px 0 0;
+  outline: none;
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  transition: background-color 0.15s linear;
+}
+.tab:hover {
+  color: #4e5758;
+  background-color: white;
+}
+.tab.focus {
+  border-color: #1b7ecd;
+}
+.tab.selected,
+.tab.selected:hover {
+  outline: none;
+  background-color: white;
+}
+html[dir=rtl] .tab {
+  margin: 0 0 0 1px;
+}
+.tab-wrapper {
+  padding: 0 5px;
+  height: 20px;
+  line-height: 18px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+}
+.tab-wrapper .tab-icon {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.tab-wrapper .tab-text {
+  flex-grow: 1;
+}
+.tab-box.tabs-bottom ul.tab-box-tabs a.tab.selected .tab-wrapper {
+  background-color: white;
+  height: 20px;
+  margin-top: -1px;
+  padding-top: 1px;
+}
+.tab-box.tabs-top ul.tab-box-tabs a.tab.selected .tab-wrapper {
+  background-color: white;
+  height: 20px;
+  margin-bottom: -1px;
+  padding-bottom: 1px;
+}
+.tab-box.tabs-bottom ul.tab-box-tabs a.tab {
+  border-width: 0 1px 1px 1px;
+}
+.tab-text,
+.tab-icon,
+.tab-control {
+  height: auto;
+  display: block;
+  margin-left: 5px;
+}
+html[dir=rtl].tab-text,
+html[dir=rtl].tab-icon,
+html[dir=rtl].tab-control {
+  margin-left: auto;
+  margin-right: 5px;
+}
+.tab-text:first-child,
+.tab-icon:first-child,
+.tab-control:first-child {
+  margin-left: 0;
+}
+html[dir=rtl].tab-text:first-child,
+html[dir=rtl].tab-icon:first-child,
+html[dir=rtl].tab-control:first-child {
+  margin-right: 0;
+}
+.tab-control {
+  width: 10px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 18px;
+}
+.tab-text {
+  height: auto;
+}
+.tab-icon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 16px 16px;
+}
+.tab-box.large ul.tab-box-tabs {
+  height: 30px;
+  box-sizing: border-box;
+  background-color: #ececec;
+  padding: 0px 10px;
+}
+.tab-box.large .tab {
+  height: 29px;
+  line-height: 27px;
+  border-color: transparent;
+  margin: 0px;
+}
+.tab-box.large .tab:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.tab-box.large .tab.selected {
+  border-color: #e5e5e5;
+}
+.tab-box.large .tab-wrapper {
+  height: 29px;
+  line-height: 27px;
+  padding: 0px 10px;
+}
+.tab-box.large .tab-text {
+  margin-left: 10px;
+}
+.tab-box.large.tabs-top ul.tab-box-tabs a.tab.selected .tab-wrapper,
+.tab-box.large.tabs-bottom ul.tab-box-tabs a.tab.selected .tab-wrapper {
+  height: 29px;
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.tab-add {
+    background-image: url(../Images/Icons/Steps/Create16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.controls-closed {
+    background-image: url(../Images/Icons/Toolbox/Controls16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.controls-closed.error {
+    background-image: url(../Images/Icons/Toolbox/Controls_Error16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.fields {
+    background-image: url(../Images/Icons/ContextBrowser/MenuFieldsTab16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.fields.error {
+    background-image: url(../Images/Icons/Badges/MenuFieldsTab_Error16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.so-methods {
+    background-image: url(../Images/Icons/Toolbar/Method16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.properties {
+    background-image: url(../Images/Icons/Toolbar/Properties16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.properties.error {
+    background-image: url(../Images/Icons/Badges/Properties_Error16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.events.error {
+    background-image: url(../Images/Icons/Badges/Rules_Error16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.events {
+    background-image: url(../Images/Icons/Toolbox/Rules16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.browse {
+    background-image: url(../Images/Icons/AssetBrowser/FolderOpen16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.search {
+    background-image: url(../Images/Icons/Ribbon/Search16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.context {
+    background-image: url(../Images/Icons/Toolbox/Context16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.context.error {
+    background-image: url(../Images/Icons/Toolbox/Context_Error16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.smartobjects {
+    background-image: url(../Images/Icons/FileTypes/SmartObject16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.views {
+    background-image: url(../Images/Icons/FileTypes/View16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.service-instances {
+    background-image: url(../Images/Icons/Management/ServiceInstance16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.categories {
+    background-image: url(../Images/Icons/AssetBrowser/CategoryServer16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.smartobject-properties {
+    background-image: url(../Images/Icons/Toolbar/Properties16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.smartobject-methods {
+    background-image: url(../Images/Icons/Toolbar/Method16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.operators {
+    background-image: url(../Images/Icons/DataTypes/Functions16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.filter {
+    background-image: url(../Images/Icons/Runtime/Filter16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.advanced-filter {
+    background-image: url(../Images/Icons/Runtime/AdvancedFilter16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.ordering {
+    background-image: url(../Images/Icons/ConditionsDropdown/Descending16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.rw-events {
+    background-image: url(../Images/Icons/Toolbox/Event16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.rw-conditions {
+    background-image: url(../Images/Icons/Toolbox/Conditions16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.rw-actions {
+    background-image: url(../Images/Icons/Toolbox/Action16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.rw-rule {
+    background-image: url(../Images/Icons/Toolbox/Rules16.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.rw-rule.error {
+    background-image: url(../Images/Icons/Badges/Rules_Error16.png);
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.tab-add {
+    background-image: url(../Images/Icons/Steps/Create16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.controls-closed {
+    background-image: url(../Images/Icons/Toolbox/Controls16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.controls-closed.error {
+    background-image: url(../Images/Icons/Toolbox/Controls_Error16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.fields {
+    background-image: url(../Images/Icons/ContextBrowser/MenuFieldsTab16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.fields.error {
+    background-image: url(../Images/Icons/Badges/MenuFieldsTab_Error16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.so-methods {
+    background-image: url(../Images/Icons/Toolbar/Method16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.properties {
+    background-image: url(../Images/Icons/Toolbar/Properties16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.properties.error {
+    background-image: url(../Images/Icons/Badges/Properties_Error16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.events.error {
+    background-image: url(../Images/Icons/Badges/Rules_Error16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.events {
+    background-image: url(../Images/Icons/Toolbox/Rules16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.browse {
+    background-image: url(../Images/Icons/AssetBrowser/FolderOpen16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.search {
+    background-image: url(../Images/Icons/Ribbon/Search16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.context {
+    background-image: url(../Images/Icons/Toolbox/Context16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.context.error {
+    background-image: url(../Images/Icons/Toolbox/Context_Error16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.smartobjects {
+    background-image: url(../Images/Icons/FileTypes/SmartObject16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.views {
+    background-image: url(../Images/Icons/FileTypes/View16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.service-instances {
+    background-image: url(../Images/Icons/Management/ServiceInstance16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.categories {
+    background-image: url(../Images/Icons/AssetBrowser/CategoryServer16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.smartobject-properties {
+    background-image: url(../Images/Icons/Toolbar/Properties16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.smartobject-methods {
+    background-image: url(../Images/Icons/Toolbar/Method16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.operators {
+    background-image: url(../Images/Icons/DataTypes/Functions16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.filter {
+    background-image: url(../Images/Icons/Runtime/Filter16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.advanced-filter {
+    background-image: url(../Images/Icons/Runtime/AdvancedFilter16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.ordering {
+    background-image: url(../Images/Icons/ConditionsDropdown/Descending16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.rw-events {
+    background-image: url(../Images/Icons/Toolbox/Event16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.rw-conditions {
+    background-image: url(../Images/Icons/Toolbox/Conditions16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.rw-actions {
+    background-image: url(../Images/Icons/Toolbox/Action16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.rw-rule {
+    background-image: url(../Images/Icons/Toolbox/Rules16@2x.png);
+  }
+  .tab-box ul.tab-box-tabs a.tab .tab-icon.rw-rule.error {
+    background-image: url(../Images/Icons/Badges/Rules_Error16@2x.png);
+  }
+}
+.tab-control.tab-remove {
+  background-image: url(../Images/Tabs/tab_close_button.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 6px 18px;
+  height: 6px;
+  width: 6px;
+}
+.tab-control.tab-remove:hover {
+  background-position: 50% -6px;
+}
+html[dir=rtl] .tab-control.tab-remove:hover {
+  background-position: 50% 100%;
+}
+.tab-text input {
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  border: 1px solid #aaad9c;
+  margin-top: 2px;
+}
+.tab-text input:focus {
+  border-color: #1b7ecd;
+}
+a.tab input.borderless {
+  border-style: none;
+  outline: none;
+}
+/* Tab-box Header Styling */
+
+.tab-box-header {
+  border-color: #e5e5e5;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  display: none;
+  height: 24px;
+  position: relative;
+}
+.tab-box.with-header .tab-box-header {
+  display: block;
+}
+.tab-box-header-c {
+  background: #f9f9f9;
+  /* Old browsers */
+  height: 22px;
+}
+.tab-box-header-wrapper {
+  float: left;
+  font-weight: bold;
+  line-height: 19px;
+  padding-left: 7px;
+}
+/* Tab-box Body Styling */
+
+.tab-box-body {
+  position: relative;
+  border-style: solid;
+  border-color: #e5e5e5;
+  background-color: white;
+}
+.tabs-top .tab-box-body {
+  border-width: 0 1px 1px 1px;
+}
+.tabs-bottom .tab-box-body {
+  border-width: 1px 1px 0 1px;
+}
+.tabs-top.with-header .tab-box-body {
+  margin-top: 0;
+}
+/* Tab-box Body Border Styling */
+
+.tab-box .tab-box-body-t,
+.tab-box .tab-box-body-m,
+.tab-box .tab-box-body-b {
+  position: relative;
+}
+.tab-box.full .tab-box-body-m {
+  bottom: 0px;
+  /*LG: Edge to Edge*/
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 0;
+}
+.tab-box .tab-box-body-m {
+  padding-left: 3px;
+}
+.tab-box .tab-box-body-m-c {
+  position: relative;
+  padding-right: 3px;
+  height: 100%;
+}
+.tab-box.full .tab-box-body-m-c {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+.tab-box .tab-box-body-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* Tab Info Styling */
+
+div.tab-info {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  right: 3px;
+  height: 30px;
+  overflow: hidden;
+  background-color: #d4e6c7;
+}
+div.tab-info-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 2px;
+}
+/* Tab Content Styling */
+
+div.tab-content {
+  position: relative;
+}
+div.tab-content.full {
+  height: 100%;
+}
+div.tab-content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.tab-box ul.tab-box-tabs a.tab.disabled {
+  color: #cccccc;
+}

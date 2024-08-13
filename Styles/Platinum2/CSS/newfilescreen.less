@@ -1,0 +1,197 @@
+//Author: 		Lewis Garmston
+//Purpose: 		Styles for Generic New File Screen with Templates and name selection
+
+//The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  
+//This is because /styles, /forms, /rules etc all have css in them 
+@import (reference) "../../../Designer_Variables.less";
+
+
+.lyt-newfile
+{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right:0px;
+    bottom: 0px;
+
+    display:flex;
+    justify-content: stretch;
+    align-items: stretch;
+
+    .mini&
+    {
+        flex-direction: column-reverse;
+        overflow: auto;
+    }
+
+    &>.lyt-content{
+
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    &>.lyt-details-panel{
+
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        width: 300px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 10px;
+        box-sizing: border-box;
+
+        .mini&
+        {
+            display: none;
+        }
+    }
+}
+
+
+//#region Templates List
+
+.lyt-template-list
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    display:flex;
+    flex-wrap: wrap;
+
+    .mini &{
+
+        padding: 10px;
+    }
+}
+
+.template-item
+{
+    margin: 50px 0px 0px 50px;
+
+    .mini &
+    {
+        margin: 0px;
+        width: 50%;
+        padding: 0px 10px 10px 0px;
+        box-sizing: border-box;
+
+        &:nth-child(even){
+            padding-right: 0px;
+        }
+    }
+
+    a
+    {
+        display:flex;
+        align-content: center;
+        justify-content: center;
+        min-width: 100px;
+        min-height: 100px;
+
+        border: solid 2px transparent;
+        padding: 10px;
+        border-radius: 10px;
+
+        color: @Main-Text-Color;
+
+        .mini &
+        {
+            min-width: 50px;
+            min-height: 50px;
+        }
+
+        &:hover{
+
+            border-color: fadeout(@Input-Border-Color, 20%);
+        }
+
+    }
+
+    &.selected
+    {
+        a
+        {
+            border-color: @Input-Focus-Border-Color;
+        }
+    }
+}
+
+//#endregion Templates List
+
+
+//#region very generic material classes (probably should be moved)
+
+.mat-panel
+{
+
+    background-color: @Panel-Background-Color;
+}
+
+.mat-input-panel
+{
+
+    background-color: @Input-Background-Color;
+}
+
+//#endregion very generic material classes
+
+
+//#region Generic popup panel layout classes
+
+
+//defines a popup or main panel with a header/footer area (both optional)
+.lyt-mini-panel
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    .lyt-header,
+    .lyt-footer
+    {
+        flex-grow:0;
+        flex-shrink: 0;
+        height: 5rem;
+
+        display:flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: center;
+
+        &.center{
+            justify-content:center;
+        }
+
+        .back-button
+        {
+            display: inline-flex;
+            height: 3.5rem;
+            width: 3.5rem;
+
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .lyt-body
+    {
+        flex-grow: 1;
+        display:flex;
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: relative; //the content is likely to have absolute positioned stuff.
+    }
+}
+
+//#endregion Generic popup panel layout classes

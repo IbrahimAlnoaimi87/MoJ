@@ -1,0 +1,2039 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+.tree,
+.tree ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+div.tree + div.tree {
+  margin-top: 25px;
+}
+.tree li ul {
+  display: none;
+  clear: both;
+}
+.tree li {
+  display: block;
+  min-height: 18px;
+  line-height: 18px;
+  padding: 0 0 0 18px;
+  margin: 0 0 0 0;
+  clear: both;
+}
+html[dir=rtl] .tree li {
+  padding: 0 18px 0 0;
+}
+.tree li.hidden {
+  display: none;
+}
+.tree li {
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  line-height: normal;
+}
+html[dir=ltr] .tree li {
+  background-position: 1px 1px;
+}
+html[dir=rtl] .tree li {
+  background-position: 100% 1px;
+}
+.tree li > a,
+.tree li > span {
+  display: inline;
+  float: left;
+  line-height: 16px;
+  padding: 1px 4px 1px 23px;
+  color: #4e5758;
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 1px 1px;
+  border: solid 1px transparent;
+  margin: 0;
+}
+html[dir=rtl] .tree li > a,
+html[dir=rtl] .tree li > span {
+  background-position: 99.9% 1px;
+  float: right;
+  padding: 1px 23px 1px 4px;
+}
+.tree.dark li > a,
+.tree.dark li > span {
+  color: white;
+}
+.tree li > a,
+.tree li a.not-draggable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tree li a.not-droppable {
+  cursor: not-allowed;
+}
+.tree li a:hover {
+  background-color: #deeffd;
+  color: #4e5758;
+  outline: none;
+}
+.tree li.selected > a,
+.tree li.selected > a:hover,
+.tree li.selected > span {
+  background-color: #1da5f3;
+  color: white;
+}
+.tree li.selected > a:focus {
+  border-color: #1b7ecd;
+}
+.tree li.disabled > a,
+.tree li.disabled > a:hover,
+.tree li.disabled > span {
+  pointer-events: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+.tree li.open ul {
+  display: block;
+  clear: both;
+}
+.tree li.closed ul {
+  display: none !important;
+}
+.tree li a input,
+.tree li span input {
+  margin: 0;
+  padding: 0 0;
+  display: block;
+  height: 14px !important;
+  border: 1px solid white;
+  background: white;
+  font-family: Verdana;
+  font-size: 11px;
+}
+/*#region Icons*/
+
+.tree li,
+.tree li > a,
+.tree li > span,
+.tree li.children {
+  background-size: 16px 16px;
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .tree li > a,
+  .tree li > span {
+    background-image: url("../Images/Icons/Toolbar/Document16.png");
+  }
+  .tree li.children.open > a,
+  .tree li.children.open > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16.png");
+  }
+  .tree li.children.closed > a,
+  .tree li.children.closed > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16.png");
+  }
+  html[dir=ltr] .tree li.children.open:not(.root) {
+    background-image: url("../Images/Icons/TreeView/Expanded16.png");
+  }
+  html[dir=rtl] .tree li.children.open:not(.root) {
+    position: relative;
+  }
+  html[dir=rtl] .tree li.children.open:not(.root):before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    top: 3px;
+    background-image: url("../Images/Icons/TreeView/Expanded16.png");
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  html[dir=ltr] .tree li.children.closed:not(.root) {
+    background-image: url("../Images/Icons/TreeView/Collapsed16.png");
+  }
+  html[dir=rtl] .tree li.children.closed:not(.root) {
+    position: relative;
+  }
+  html[dir=rtl] .tree li.children.closed:not(.root):before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    top: 3px;
+    background-image: url("../Images/Icons/TreeView/Collapsed16.png");
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .tree.dark li.children.open {
+    background-image: url("../Images/Icons/TreeView/Expanded_Alt16.png");
+  }
+  .tree.dark li.children.closed {
+    background-image: url("../Images/Icons/TreeView/Collapsed_Alt16.png");
+  }
+  .tree li.loading {
+    background-image: url("../Images/Icons/Animated/LoadingControl_f8f8f8_16.gif") !important;
+  }
+  .tree.dark li.loading {
+    background-image: url("../Images/Icons/Animated/LoadingControl_576e7a_16.gif") !important;
+  }
+  .tree li.views > a,
+  .tree li.views > span,
+  .tree li.closed.views > a,
+  .tree li.closed.views > span,
+  .tree li.open.views > a,
+  .tree li.open.views > span,
+  a.ui-draggable-dragging.views {
+    background-image: url("../Images/Icons/FileTypes/View16.png");
+  }
+  .tree li.forms > a,
+  .tree li.forms > span,
+  .tree li.closed.forms > a,
+  .tree li.closed.forms > span,
+  .tree li.open.forms > a,
+  .tree li.open.forms > span,
+  a.ui-draggable-dragging.forms {
+    background-image: url("../Images/Icons/FileTypes/Form16.png");
+  }
+  .tree li.applications > a,
+  .tree li.applications > span,
+  .tree li.closed.applications > a,
+  .tree li.closed.applications > span,
+  .tree li.open.applications > a,
+  .tree li.open.applications > span,
+  a.ui-draggable-dragging.applications {
+    background-image: url("../Images/Icons/FileTypes/K2Project16.png");
+  }
+  .tree li.smartfunctions > a,
+  .tree li.smartfunctions > span,
+  .tree li.closed.smartfunctions > a,
+  .tree li.closed.smartfunctions > span,
+  .tree li.open.smartfunctions > a,
+  .tree li.open.smartfunctions > span,
+  a.ui-draggable-dragging.smartfunctions {
+    background-image: url("../Images/Icons/DataTypes/Functions16.png");
+  }
+  .tree li.user > a,
+  .tree li.user > span,
+  .tree li.closed.user > a,
+  .tree li.closed.user > span,
+  .tree li.open.user > a,
+  .tree li.open.user > span,
+  a.ui-draggable-dragging.user {
+    background-image: url("../Images/Icons/AssetBrowser/MyItems16.png");
+  }
+  .tree li.staticdata > a,
+  .tree li.staticdata > span,
+  .tree li.closed.staticdata > a,
+  .tree li.closed.staticdata > span,
+  .tree li.open.staticdata > a,
+  .tree li.open.staticdata > span,
+  a.ui-draggable-dragging.staticdata {
+    background-image: url("../Images/Icons/FileTypes/StaticData16.png");
+  }
+  .tree li.smartfunction > a,
+  .tree li.smartfunction > span,
+  .tree li.closed.smartfunction > a,
+  .tree li.closed.smartfunction > span,
+  .tree li.open.smartfunction > a,
+  .tree li.open.smartfunction > span,
+  a.ui-draggable-dragging.smartfunction {
+    background-image: url("../Images/Icons/DataTypes/Functions16.png");
+  }
+  .tree li.eventbus > a,
+  .tree li.eventbus > span,
+  .tree li.closed.eventbus > a,
+  .tree li.closed.eventbus > span,
+  .tree li.open.eventbus > a,
+  .tree li.open.eventbus > span,
+  a.ui-draggable-dragging.eventbus {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .tree li.warning > a,
+  .tree li.warning > span {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .tree li.field > a,
+  .tree li.field > span,
+  .tree li.open.field > a,
+  .tree li.open.field > span,
+  .tree li.closed.field > a,
+  .tree li.closed.field > span,
+  a.ui-draggable-dragging.field {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16.png");
+  }
+  .tree li.ControlProperty > a,
+  .tree li.ControlProperty > span,
+  a.ui-draggable-dragging.ControlProperty {
+    background-image: url("../Images/Icons/Toolbar/Properties16.png");
+  }
+  .tree li.open.svcInst > a,
+  .tree li.open.svcInst > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+  .tree li.open.service-instance > a,
+  .tree li.open.service-instance > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+  .tree li.closed.svcInst > a,
+  .tree li.closed.svcInst > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+  .tree li.closed.service-instance > a,
+  .tree li.closed.service-instance > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+  .tree li.open.svcObj > a,
+  .tree li.open.svcObj > span,
+  .tree li.open.service-object > a,
+  .tree li.open.service-object > span {
+    background-image: url("../Images/Icons/Management/ServiceObject16.png");
+  }
+  .tree li.closed.svcObj > a,
+  .tree li.closed.svcObj > span,
+  .tree li.closed.service-object > a,
+  .tree li.closed.service-object > span {
+    background-image: url("../Images/Icons/Management/ServiceObject16.png");
+  }
+  .tree li.svcMethod > a,
+  .tree li.svcMethod > span,
+  .tree li.service-method > a,
+  .tree li.service-method > span {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .tree li.open.svcFolder > a,
+  .tree li.open.svcFolder > span,
+  .tree li.open.service-folder > a,
+  .tree li.open.service-folder > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+  .tree li.closed.svcFolder > a,
+  .tree li.closed.svcFolder > span,
+  .tree li.closed.service-folder > a,
+  .tree li.closed.service-folder > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+  .tree li.closed.service-instance-folder > a,
+  .tree li.closed.service-instance-folder > span,
+  .tree li.service-instance-folder > a,
+  .tree li.service-instance-folder > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16.png");
+  }
+  .tree li.open.service-instance-folder > a,
+  .tree li.open.service-instance-folder > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16.png");
+  }
+  .tree li.service-object-browser > a,
+  .tree li.service-object-browser > span,
+  .tree li.open.service-object-browser > a,
+  .tree li.open.service-object-browser > span,
+  .tree li.closed.service-object-browser > a,
+  .tree li.closed.service-object-browser > span {
+    background-image: url("../Images/Icons/Management/ServiceObject16.png");
+  }
+  .tree li.open.fields > a,
+  .tree li.open.fields > span {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16.png");
+  }
+  .tree li.closed.fields > a,
+  .tree li.closed.fields > span {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16.png");
+  }
+  .tree li.field-types > a,
+  .tree li.field-types > span {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16.png");
+  }
+  .tree li.category > a,
+  .tree li.category > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16.png");
+  }
+  .tree li.open.category > a,
+  .tree li.open.category > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16.png");
+  }
+  .tree li.closed.category > a,
+  .tree li.closed.category > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16.png");
+  }
+  .tree li.open.applications > a,
+  .tree li.open.applications > span {
+    background-image: url("../Images/Icons/FileTypes/K2Project16.png");
+  }
+  .tree li.closed.applications > a,
+  .tree li.closed.applications > span {
+    background-image: url("../Images/Icons/FileTypes/K2Project16.png");
+  }
+  .tree li.open.favourites > a,
+  .tree li.open.favourites > span {
+    background-image: url("../Images/Icons/EditToolbox/Favourites16.png");
+  }
+  .tree li.closed.favourites > a,
+  .tree li.closed.favourites > span {
+    background-image: url("../Images/Icons/EditToolbox/Favourites16.png");
+  }
+  .tree li.open.user > a,
+  .tree li.open.user > span {
+    background-image: url("../Images/Icons/AssetBrowser/MyItems16.png");
+  }
+  .tree li.closed.user > a,
+  .tree li.closed.user > span {
+    background-image: url("../Images/Icons/AssetBrowser/MyItems16.png");
+  }
+  .tree li.recent > a,
+  .tree li.recent > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .tree li.open.recent > a,
+  .tree li.open.recent > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .tree li.closed.recent > a,
+  .tree li.closed.recent > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .tree li.all-items > a,
+  .tree li.all-items > span {
+    background-image: url("../Images/Icons/AssetBrowser/RootItem16.png");
+  }
+  .tree li.open.all-items > a,
+  .tree li.open.all-items > span {
+    background-image: url("../Images/Icons/AssetBrowser/RootItem16.png");
+  }
+  .tree li.closed.all-items > a,
+  .tree li.closed.all-items > span {
+    background-image: url("../Images/Icons/AssetBrowser/RootItem16.png");
+  }
+  .tree li.open.smartobjects > a,
+  .tree li.open.smartobjects > span {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16.png");
+  }
+  .tree li.closed.smartobjects > a,
+  .tree li.closed.smartobjects > span {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16.png");
+  }
+  .tree li.open.smartfunctions > a,
+  .tree li.open.smartfunctions > span {
+    background-image: url("../Images/Icons/DataTypes/Functions16.png");
+  }
+  .tree li.closed.smartfunctions > a,
+  .tree li.closed.smartfunctions > span {
+    background-image: url("../Images/Icons/DataTypes/Functions16.png");
+  }
+  .tree li.open.views > a,
+  .tree li.open.views > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16.png");
+  }
+  .tree li.closed.views > a,
+  .tree li.closed.views > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16.png");
+  }
+  .tree li.open.forms > a,
+  .tree li.open.forms > span {
+    background-image: url("../Images/Icons/FileTypes/Form16.png");
+  }
+  .tree li.closed.forms > a,
+  .tree li.closed.forms > span {
+    background-image: url("../Images/Icons/FileTypes/Form16.png");
+  }
+  .tree li.open.styleprofiles > a,
+  .tree li.open.styleprofiles > span {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile16.png");
+  }
+  .tree li.closed.styleprofiles > a,
+  .tree li.closed.styleprofiles > span {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile16.png");
+  }
+  .tree li.open.workflows > a,
+  .tree li.open.workflows > span {
+    background-image: url("../Images/Icons/Management/WorkflowFolderOpen16.png");
+  }
+  .tree li.closed.workflows > a,
+  .tree li.closed.workflows > span {
+    background-image: url("../Images/Icons/Management/WorkflowFolderClosed16.png");
+  }
+  .tree li.open.recent-smartobjects > a,
+  .tree li.open.recent-smartobjects > span,
+  .tree li.closed.recent-smartobjects > a,
+  .tree li.closed.recent-smartobjects > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .tree li.open.recent-views > a,
+  .tree li.open.recent-views > span,
+  .tree li.closed.recent-views > a,
+  .tree li.closed.recent-views > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .tree li.open.recent-forms > a,
+  .tree li.open.recent-forms > span,
+  .tree li.closed.recent-forms > a,
+  .tree li.closed.recent-forms > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .tree li.open.recent-styleprofiles > a,
+  .tree li.open.recent-styleprofiles > span,
+  .tree li.closed.recent-styleprofiles > a,
+  .tree li.closed.recent-styleprofiles > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .tree li.open.recent-reports > a,
+  .tree li.open.recent-reports > span,
+  .tree li.closed.recent-reports > a,
+  .tree li.closed.recent-reports > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .tree li.open.recent-applications > a,
+  .tree li.open.recent-applications > span,
+  .tree li.closed.recent-applications > a,
+  .tree li.closed.recent-applications > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .tree li.open.recent-workflows > a,
+  .tree li.open.recent-workflows > span,
+  .tree li.closed.recent-workflows > a,
+  .tree li.closed.recent-workflows > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .tree li.open.shared > a,
+  .tree li.open.shared > span {
+    background-image: url("../Images/Icons/Management/Share16.png");
+  }
+  .tree li.closed.shared > a,
+  .tree li.closed.shared > span {
+    background-image: url("../Images/Icons/Management/Share16.png");
+  }
+  .tree li.controls > a,
+  .tree li.controls > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16.png");
+  }
+  .tree li.open.controls > a,
+  .tree li.open.controls > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16.png");
+  }
+  .tree li.closed.controls > a,
+  .tree li.closed.controls > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16.png");
+  }
+  .tree li.image > a,
+  .tree li.image > span,
+  .tree li.image.children.open > a,
+  .tree li.image.children.closed > a {
+    background-image: url("../Images/Icons/DataTypes/Image16.png");
+  }
+  .smartobject ul li a.image {
+    background-image: url("../Images/Icons/DataTypes/Image16.png");
+  }
+  .smartobject ul li a.hyperlink-control {
+    background-image: url("../Images/Icons/DataTypes/Hyperlink16.png");
+  }
+  .tree li.list-view.error > a,
+  .tree li.item-view.error > a {
+    background-image: url("../Images/Icons/Badges/ViewError16.png");
+  }
+  .tree li.control-method > a,
+  .tree li.control-method > span,
+  .tree li.control-method.children.closed > a,
+  .tree li.control-method.children.open > a,
+  .tree li.control-method-control.children > span {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .tree li.control-method-parameter > a,
+  .tree li.control-method-parameter > span {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .tree li.sqlum > a,
+  .tree li.sqlum > span {
+    background-image: url("../Images/Icons/Management/SQLUserManager16.png");
+  }
+  .tree li.groups > a,
+  .tree li.groups > span {
+    background-image: url("../Images/Icons/Management/Groups16.png");
+  }
+  .tree li.users > a,
+  .tree li.users > span {
+    background-image: url("../Images/Icons/Management/User16.png");
+  }
+  .tree li.plugin > a,
+  .tree li.plugin > span {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16.png");
+  }
+  .tree li.open.report-parameters > a,
+  .tree li.open.report-parameters > span {
+    background-image: url("../Images/Icons/Toolbox/Parameter16.png");
+  }
+  .tree li.closed.report-parameters > a,
+  .tree li.closed.report-parameters > span {
+    background-image: url("../Images/Icons/Toolbox/Parameter16.png");
+  }
+  .tree li.report-parameter > a,
+  .tree li.report-parameter > span {
+    background-image: url("../Images/Icons/Toolbox/Parameter16.png");
+  }
+  .tree li.smartobject-method > a,
+  .tree li.smartobject-method > span,
+  .tree li.children.smartobject-method > a,
+  .tree li.children.smartobject-method > span {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .tree li.form-event > a,
+  .tree li.form-event > span,
+  .tree li.children.form-event > a,
+  .tree li.children.form-event > span {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .tree li.children.no-image > a,
+  .tree li.children.no-image > span {
+    background-image: none;
+  }
+  .tree li.event > a,
+  .tree li.event > span {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .tree li.form-state > a,
+  .tree li.form-state > span,
+  .tree li.children.form-state > a,
+  .tree li.children.form-state > span {
+    background-image: url("../Images/Icons/Rules/State16.png");
+  }
+  .tree li.appstudio > a,
+  .tree li.appstudio > span,
+  .tree li.children.appstudio > a,
+  .tree li.children.appstudio > span {
+    background-image: url("../Images/Icons/FileTypes/K2Project16.png");
+  }
+  .tree li.property > a,
+  .tree li.property > span {
+    background-image: url("../Images/Icons/Toolbox/Properties16.png");
+  }
+  .tree li.open.parameters > a,
+  .tree li.open.parameters > span {
+    background-image: url("../Images/Icons/Toolbox/Parameter16.png");
+  }
+  .tree li.closed.parameters > a,
+  .tree li.closed.parameters > span {
+    background-image: url("../Images/Icons/Toolbox/Parameter16.png");
+  }
+  .tree li.view-event > a,
+  .tree li.view-event > span {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  /* Collapsed Root Styling */
+  
+  .tree.collapsed-root li.root {
+    background-image: none;
+    padding-left: 0;
+  }
+  .tree.collapsed-root li.root > a,
+  .tree.collapsed-root li.root > span {
+    display: none;
+  }
+  /* Checkbox Tree Styling */
+  
+  .tree.checkbox li a,
+  .tree.checkbox li span {
+    background-image: url("../Images/Icons/FileTypes/Form16.png");
+    padding-left: 41px;
+  }
+  .tree.checkbox li.checked a,
+  .tree.checkbox li.checked span {
+    background-image: url("../Images/Icons/FileTypes/Form16.png");
+  }
+  .tree.checkbox li.open > a,
+  .tree.checkbox li.open > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16.png");
+  }
+  .tree.checkbox li.closed > a,
+  .tree.checkbox li.closed > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16.png");
+  }
+  .tree.checkbox li.checked.open > a,
+  .tree.checkbox li.checked.open > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16.png");
+  }
+  .tree.checkbox li.checked.closed > a,
+  .tree.checkbox li.checked.closed > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16.png");
+  }
+  .tree.checkbox li.user > a,
+  .tree.checkbox li.user > span {
+    background-image: url("../Images/Icons/AssetBrowser/MyItems16.png");
+  }
+  .tree.checkbox li.user.checked > a,
+  .tree.checkbox li.user.checked > span {
+    background-image: url("../Images/Icons/AssetBrowser/MyItems16.png");
+  }
+  /* Tree Icon Styling (New Structure) */
+  
+  .tree a.smartobject,
+  .tree li.children > a.smartobject,
+  .tree li.children.closed > a.smartobject,
+  .tree li.children.open > a.smartobject {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16.png");
+  }
+  .tree a.staticdata,
+  .tree li.children > a.staticdata,
+  .tree li.children.closed > a.staticdata,
+  .tree li.children.open > a.staticdata {
+    background-image: url("../Images/Icons/Toolbox/StaticData16.png");
+  }
+  /* Workflow Specific Node Styling */
+  
+  .tree a.process-activity,
+  .tree li.children > a.process-activity,
+  .tree li.children.closed > a.process-activity,
+  .tree li.children.open > a.process-activity,
+  .tree li.process-activity > a,
+  .tree li.process-activity.closed > a,
+  .tree li.process-activity.open > a,
+  .tree li.process-activity > span,
+  .tree li.process-activity.closed > span,
+  .tree li.process-activity.open > span {
+    background-image: url("../Images/Icons/ContextBrowser/Activities16.png");
+  }
+  .tree a.action,
+  .tree li.action > a,
+  .tree li.action > span {
+    background-image: url("../Images/Icons/Steps/Actions16.png");
+  }
+  .tree li.process-activities > a,
+  .tree li.process-activities > span,
+  .tree li.process-activities.closed > a,
+  .tree li.process-activities.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/Activities16.png");
+  }
+  .tree li.process-activities.open > a {
+    background-image: url("../Images/Icons/ContextBrowser/Activities16.png");
+  }
+  .tree li.data-fields > a,
+  .tree li.data-fields > span,
+  .tree li.data-fields.closed > a,
+  .tree li.data-fields.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/DataField16.png");
+  }
+  .tree li.data-fields.open > a {
+    background-image: url("../Images/Icons/ContextBrowser/DataField16.png");
+  }
+  .tree li.data-field > a,
+  .tree li.data-field.closed > a,
+  .tree li.data-field.open > a,
+  .tree li.data-field > span,
+  .tree li.data-field.closed > span,
+  .tree li.data-field.open > span {
+    background-image: url("../Images/Icons/ContextBrowser/DataField16.png");
+  }
+  .tree li.xml-fields > a,
+  .tree li.xml-fields > span,
+  .tree li.xml-fields.closed > a,
+  .tree li.xml-fields.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/XamlField16.png");
+  }
+  .tree li.xml-fields.open > a {
+    background-image: url("../Images/Icons/ContextBrowser/XamlField16.png");
+  }
+  .tree li.xml-field > a,
+  .tree li.xml-field.closed > a,
+  .tree li.xml-field.open > a,
+  .tree li.xml-field > span,
+  .tree li.xml-field.closed > span,
+  .tree li.xml-field.open > span,
+  a.ui-draggable-dragging.xml-field {
+    background-image: url("../Images/Icons/ContextBrowser/XamlField16.png");
+  }
+  .tree li.workflow-action-name > a,
+  .tree li.workflow-action-name.closed > a,
+  .tree li.workflow-action-name.open > a,
+  .tree li.workflow-action-name > span,
+  .tree li.workflow-action-name.closed > span,
+  .tree li.workflow-action-name.open > span {
+    background-image: url("../Images/Icons/Ribbon/Workflow16.png");
+  }
+  .tree li.workflow-actions > a,
+  .tree li.workflow-actions.closed > a,
+  .tree li.workflow-actions.open > a,
+  .tree li.workflow-actions > span,
+  .tree li.workflow-actions.closed > span,
+  .tree li.workflow-actions.open > span {
+    background-image: url("../Images/Icons/Ribbon/Workflow16.png");
+  }
+  .tree li.workflow-view-event > a,
+  .tree li.workflow-view-event.closed > a,
+  .tree li.workflow-view-event.open > a,
+  .tree li.workflow-view-event > span,
+  .tree li.workflow-view-event.closed > span,
+  .tree li.workflow-view-event.open > span {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .tree li.workflow-view > a,
+  .tree li.workflow-view.closed > a,
+  .tree li.workflow-view.open > a,
+  .tree li.workflow-view > span,
+  .tree li.workflow-view.closed > span,
+  .tree li.workflow-view.open > span {
+    background-image: url("../Images/Icons/Ribbon/Workflow16.png");
+  }
+  .tree li.xml-reference > a,
+  .tree li.xml-reference.closed > a .tree li.xml-reference.open > a,
+  .tree li.xml-reference > span,
+  .tree li.xml-reference.closed > span .tree li.xml-reference.open > span {
+    background-image: url("../Images/Icons/ContextBrowser/XamlField16.png");
+  }
+  /* Expression Builder Tree Icons */
+  
+  .tree li.expressions > a,
+  .tree li.expressions.closed > a {
+    background-image: url("../Images/Icons/DataTypes/Functions16.png");
+  }
+  .tree li.expressions.open > a {
+    background-image: url("../Images/Icons/DataTypes/Functions16.png");
+  }
+  .tree li.expression > a,
+  .tree li.expression.closed > a,
+  .tree li.expression.open > a {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction16.png");
+  }
+  .tree li.function.list-first > a,
+  .tree li.function.list-first.closed > a,
+  .tree li.function.list-first.open > a,
+  .tree li.function.list-last > a,
+  .tree li.function.list-last.closed > a,
+  .tree li.function.list-last.open > a,
+  .tree li.function.list-selected > a,
+  .tree li.function.list-selected.closed > a,
+  .tree li.function.list-selected.open > a,
+  .tree li.default > a,
+  .tree li.default > span {
+    background-image: url("../Images/Icons/Default16px.png");
+  }
+  .tree li.symbol.text-return > a,
+  .tree li.symbol.text-return.closed > a,
+  .tree li.symbol.text-return.open > a {
+    background-image: url("../Images/Icons/Toolbox/Return16.png");
+  }
+  .tree li.symbol.text-space > a,
+  .tree li.symbol.text-space.closed > a,
+  .tree li.symbol.text-space.open > a {
+    background-image: url("../Images/Icons/Toolbox/Space16.png");
+  }
+  .tree li.symbol.text-tab > a,
+  .tree li.symbol.text-tab.closed > a,
+  .tree li.symbol.text-tab.open > a {
+    background-image: url("../Images/Icons/Toolbox/Tab16.png");
+  }
+  .tree li.smartobjectFF > a,
+  .tree li.smartobjectFF > span {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16.png");
+  }
+  .tree li.error > a,
+  .tree li.error > span {
+    background-image: url("../Images/Icons/Ribbon/Error16.png");
+  }
+  .tree li.rendermode > a,
+  .tree li.rendermode > span,
+  a.ui-draggable-dragging.rendermode {
+    background-image: url("../Images/Icons/Toolbox/Connection16.png");
+  }
+  .tree li.tab > a,
+  .tree li.tab > span {
+    background-image: url("../Images/Icons/Toolbar/GenericTab16.png");
+  }
+  .tree li.picker-control > a,
+  .tree li.picker-control.open > a,
+  .tree li.picker-control.closed > a,
+  .tree li.picker-control > span,
+  .tree li.picker-control.open > span,
+  .tree li.picker-control.closed > span {
+    background-image: url("../Images/Icons/Toolbox/Picker16.png");
+  }
+  .tree li.client > a,
+  .tree li.client.open > a,
+  .tree li.client.closed > a,
+  .tree li.client > span,
+  .tree li.client.open > span,
+  .tree li.client.closed > span {
+    background-image: url("../Images/Icons/Toolbox/Display16.png");
+  }
+  .tree li.conditional-style > a,
+  .tree li.conditional-style > span {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16.png");
+  }
+  .tree li.condition > a,
+  .tree li.condition > span {
+    background-image: url("../Images/Icons/Toolbox/Conditions16.png");
+  }
+  .tree li.width > a,
+  .tree li.width > span {
+    background-image: url("../Images/Icons/Toolbox/Width16.png");
+  }
+  .tree li.height > a,
+  .tree li.height > span {
+    background-image: url("../Images/Icons/Toolbox/Height16.png");
+  }
+  .tree li.vertical-align > a,
+  .tree li.vertical-align > span {
+    background-image: url("../Images/Icons/Toolbox/VerticalAlign16.png");
+  }
+  .tree li.dimentions > a,
+  .tree li.dimentions > span {
+    background-image: url("../Images/Icons/Toolbox/Dimensions16.png");
+  }
+  .tree li.environmentField > a,
+  .tree li.environmentField > span,
+  a.ui-draggable-dragging.environmentField {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16.png");
+  }
+  .tree li.process-instance > a,
+  .tree li.process-instance.open > a,
+  .tree li.process-instance.closed > a,
+  .tree li.process-instance > span,
+  .tree li.process-instance.open > span,
+  .tree li.process-instance.closed > span {
+    background-image: url("../Images/Icons/Management/WorkflowInstance16.png");
+  }
+  .tree li.mail > a,
+  .tree li.mail > span {
+    background-image: url("../Images/Icons/Mail16.png");
+  }
+  .tree li.group > a,
+  .tree li.group > span {
+    background-image: url("../Images/Icons/Management/Groups16.png");
+  }
+  /* Old target tree stuff not moved to forms.css*/
+  
+  .target-tree li.svcInst.open > a,
+  .target-tree li.service-instance.open > a,
+  .target-tree li.svcInst.closed > a,
+  .target-tree li.service-instance.closed > a,
+  .target-tree li.svcInst.open > span,
+  .target-tree li.service-instance.open > span,
+  .target-tree li.svcInst.closed > span,
+  .target-tree li.service-instance.closed > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+  .target-tree li.svcObj.open > a,
+  .target-tree li.service-object.open > a,
+  .target-tree li.svcObj.closed > a,
+  .target-tree li.service-object.closed > a,
+  .target-tree li.svcObj.open > span,
+  .target-tree li.service-object.open > span,
+  .target-tree li.svcObj.closed > span,
+  .target-tree li.service-object.closed > span {
+    background-image: url("../Images/Icons/Management/ServiceObject16.png");
+  }
+  .target-tree li.svcMethod > a,
+  .target-tree li.service-method > a,
+  .target-tree li.svcMethod > span,
+  .target-tree li.service-method > span {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .target-tree li.svcFolder.open > a,
+  .target-tree li.svcFolder.closed > a,
+  .target-tree li.svcFolder.open > span,
+  .target-tree li.svcFolder.closed > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+  .target-tree li.fields.open > a,
+  .target-tree li.fields.closed > a,
+  .target-tree li.fields.open > span,
+  .target-tree li.fields.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16.png");
+  }
+  .target-tree li.category.open > a,
+  .target-tree li.category.closed > a,
+  .target-tree li.category.open > span,
+  .target-tree li.category.closed > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16.png");
+  }
+  .target-tree li.favourites.open > a,
+  .target-tree li.favourites.closed > a,
+  .target-tree li.favourites.open > span,
+  .target-tree li.favourites.closed > span {
+    background-image: url("../Images/Icons/EditToolbox/Favourites16.png");
+  }
+  .target-tree li.user.open > a,
+  .target-tree li.user.closed > a,
+  .target-tree li.user.open > span,
+  .target-tree li.user.closed > span {
+    background-image: url("../Images/Icons/Management/User16.png");
+  }
+  .target-tree li.recent.open > a,
+  .target-tree li.recent.closed > a,
+  .target-tree li.recent.open > span,
+  .target-tree li.recent.closed > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16.png");
+  }
+  .target-tree li.smartobjects.open > a,
+  .target-tree li.smartobjects.closed > a,
+  .target-tree li.smartobjects.open > span,
+  .target-tree li.smartobjects.closed > span {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16.png");
+  }
+  .target-tree li.smartfunctions.open > a,
+  .target-tree li.smartfunctions.closed > a,
+  .target-tree li.smartfunctions.open > span,
+  .target-tree li.smartfunctions.closed > span {
+    background-image: url("../Images/Icons/DataTypes/Functions16.png");
+  }
+  .target-tree li.views.open > a,
+  .target-tree li.views.closed > a,
+  .target-tree li.views.open > span,
+  .target-tree li.views.closed > span {
+    background-image: url("../Images/Icons/FileTypes/View16.png");
+  }
+  .target-tree li.forms.open > a,
+  .target-tree li.forms.closed > a,
+  .target-tree li.forms.open > span,
+  .target-tree li.forms.closed > span {
+    background-image: url("../Images/Icons/FileTypes/Form16.png");
+  }
+  .target-tree li.styleprofiles.open > a,
+  .target-tree li.styleprofiles.closed > a,
+  .target-tree li.styleprofiles.open > span,
+  .target-tree li.styleprofiles.closed > span {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile16.png");
+  }
+  .target-tree li.processes.open > a,
+  .target-tree li.processes.closed > a,
+  .target-tree li.processes.open > span,
+  .target-tree li.processes.closed > span {
+    background-image: url("../Images/Icons/FileTypes/ProcessDefinition16.png");
+  }
+  .target-tree li.shared.open > a,
+  .target-tree li.shared.closed > a,
+  .target-tree li.shared.open > span,
+  .target-tree li.shared.closed > span {
+    background-image: url("../Images/Icons/Management/Share16.png");
+  }
+  .target-tree li.controls.open > a,
+  .target-tree li.controls.closed > a,
+  .target-tree li.controls.open > span,
+  .target-tree li.controls.closed > span {
+    background-image: url("../Images/Icons/Toolbox/Controls16.png");
+  }
+  .target-tree li.process-activities.open > a,
+  .target-tree li.process-activities.closed > a,
+  .target-tree li.process-activities.open > span,
+  .target-tree li.process-activities.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/Activities16.png");
+  }
+  .target-tree li.data-fields.open > a,
+  .target-tree li.data-fields.closed > a,
+  .target-tree li.data-fields.open > span,
+  .target-tree li.data-fields.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/DataField16.png");
+  }
+  .target-tree li.xml-fields.open > a,
+  .target-tree li.xml-fields.closed > a,
+  .target-tree li.xml-fields.open > span,
+  .target-tree li.xml-fields.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/XamlField16.png");
+  }
+  /* Checkbox Tree Styling - used in Rules Designer mapping screens */
+  
+  .target-tree.checkbox li a,
+  .target-tree.checkbox li span {
+    background-image: url("../Images/Tree/unchecked_form.png");
+  }
+  .target-tree.checkbox li.checked a,
+  .target-tree.checkbox li.checked span {
+    background-image: url("../Images/Tree/checked_form.png");
+  }
+  .target-tree.checkbox li.open a,
+  .target-tree.checkbox li.open span {
+    background-image: url("../Images/Tree/unchecked_open_folder.png");
+  }
+  .target-tree.checkbox li.closed a,
+  .target-tree.checkbox li.closed span {
+    background-image: url("../Images/Tree/unchecked_closed_folder.png");
+  }
+  .target-tree.checkbox li.checked.open a,
+  .target-tree.checkbox li.checked.open span {
+    background-image: url("../Images/Tree/checked_open_folder.png");
+  }
+  .target-tree.checkbox li.checked.closed a,
+  .target-tree.checkbox li.checked.closed span {
+    background-image: url("../Images/Tree/checked_closed_folder.png");
+  }
+  .target-tree.checkbox li.user a,
+  .target-tree.checkbox li.user span {
+    background-image: url("../Images/Tree/unchecked_user.png");
+  }
+  .target-tree.checkbox li.user.checked a,
+  .target-tree.checkbox li.user.checked span {
+    background-image: url("../Images/Tree/checked_user.png");
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .tree li > a,
+  .tree li > span {
+    background-image: url("../Images/Icons/Toolbar/Document16@2x.png");
+  }
+  .tree li.children.open > a,
+  .tree li.children.open > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16@2x.png");
+  }
+  .tree li.children.closed > a,
+  .tree li.children.closed > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16@2x.png");
+  }
+  html[dir=ltr] .tree li.children.open:not(.root) {
+    background-image: url("../Images/Icons/TreeView/Expanded16@2x.png");
+  }
+  html[dir=rtl] .tree li.children.open:not(.root) {
+    position: relative;
+  }
+  html[dir=rtl] .tree li.children.open:not(.root):before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    top: 3px;
+    background-image: url("../Images/Icons/TreeView/Expanded16@2x.png");
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  html[dir=ltr] .tree li.children.closed:not(.root) {
+    background-image: url("../Images/Icons/TreeView/Collapsed16@2x.png");
+  }
+  html[dir=rtl] .tree li.children.closed:not(.root) {
+    position: relative;
+  }
+  html[dir=rtl] .tree li.children.closed:not(.root):before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    top: 3px;
+    background-image: url("../Images/Icons/TreeView/Collapsed16@2x.png");
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .tree.dark li.children.open {
+    background-image: url("../Images/Icons/TreeView/Expanded_Alt16@2x.png");
+  }
+  .tree.dark li.children.closed {
+    background-image: url("../Images/Icons/TreeView/Collapsed_Alt16@2x.png");
+  }
+  .tree li.loading {
+    background-image: url("../Images/Icons/Animated/LoadingControl_f8f8f8_16@2x.gif") !important;
+  }
+  .tree.dark li.loading {
+    background-image: url("../Images/Icons/Animated/LoadingControl_576e7a_16@2x.gif") !important;
+  }
+  .tree li.views > a,
+  .tree li.views > span,
+  .tree li.closed.views > a,
+  .tree li.closed.views > span,
+  .tree li.open.views > a,
+  .tree li.open.views > span,
+  a.ui-draggable-dragging.views {
+    background-image: url("../Images/Icons/FileTypes/View16@2x.png");
+  }
+  .tree li.forms > a,
+  .tree li.forms > span,
+  .tree li.closed.forms > a,
+  .tree li.closed.forms > span,
+  .tree li.open.forms > a,
+  .tree li.open.forms > span,
+  a.ui-draggable-dragging.forms {
+    background-image: url("../Images/Icons/FileTypes/Form16@2x.png");
+  }
+  .tree li.applications > a,
+  .tree li.applications > span,
+  .tree li.closed.applications > a,
+  .tree li.closed.applications > span,
+  .tree li.open.applications > a,
+  .tree li.open.applications > span,
+  a.ui-draggable-dragging.applications {
+    background-image: url("../Images/Icons/FileTypes/K2Project16@2x.png");
+  }
+  .tree li.smartfunctions > a,
+  .tree li.smartfunctions > span,
+  .tree li.closed.smartfunctions > a,
+  .tree li.closed.smartfunctions > span,
+  .tree li.open.smartfunctions > a,
+  .tree li.open.smartfunctions > span,
+  a.ui-draggable-dragging.smartfunctions {
+    background-image: url("../Images/Icons/DataTypes/Functions16@2x.png");
+  }
+  .tree li.user > a,
+  .tree li.user > span,
+  .tree li.closed.user > a,
+  .tree li.closed.user > span,
+  .tree li.open.user > a,
+  .tree li.open.user > span,
+  a.ui-draggable-dragging.user {
+    background-image: url("../Images/Icons/AssetBrowser/MyItems16@2x.png");
+  }
+  .tree li.staticdata > a,
+  .tree li.staticdata > span,
+  .tree li.closed.staticdata > a,
+  .tree li.closed.staticdata > span,
+  .tree li.open.staticdata > a,
+  .tree li.open.staticdata > span,
+  a.ui-draggable-dragging.staticdata {
+    background-image: url("../Images/Icons/FileTypes/StaticData16@2x.png");
+  }
+  .tree li.smartfunction > a,
+  .tree li.smartfunction > span,
+  .tree li.closed.smartfunction > a,
+  .tree li.closed.smartfunction > span,
+  .tree li.open.smartfunction > a,
+  .tree li.open.smartfunction > span,
+  a.ui-draggable-dragging.smartfunction {
+    background-image: url("../Images/Icons/DataTypes/Functions16@2x.png");
+  }
+  .tree li.eventbus > a,
+  .tree li.eventbus > span,
+  .tree li.closed.eventbus > a,
+  .tree li.closed.eventbus > span,
+  .tree li.open.eventbus > a,
+  .tree li.open.eventbus > span,
+  a.ui-draggable-dragging.eventbus {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .tree li.warning > a,
+  .tree li.warning > span {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .tree li.field > a,
+  .tree li.field > span,
+  .tree li.open.field > a,
+  .tree li.open.field > span,
+  .tree li.closed.field > a,
+  .tree li.closed.field > span,
+  a.ui-draggable-dragging.field {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16@2x.png");
+  }
+  .tree li.ControlProperty > a,
+  .tree li.ControlProperty > span,
+  a.ui-draggable-dragging.ControlProperty {
+    background-image: url("../Images/Icons/Toolbar/Properties16@2x.png");
+  }
+  .tree li.open.svcInst > a,
+  .tree li.open.svcInst > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+  .tree li.open.service-instance > a,
+  .tree li.open.service-instance > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+  .tree li.closed.svcInst > a,
+  .tree li.closed.svcInst > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+  .tree li.closed.service-instance > a,
+  .tree li.closed.service-instance > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+  .tree li.open.svcObj > a,
+  .tree li.open.svcObj > span,
+  .tree li.open.service-object > a,
+  .tree li.open.service-object > span {
+    background-image: url("../Images/Icons/Management/ServiceObject16@2x.png");
+  }
+  .tree li.closed.svcObj > a,
+  .tree li.closed.svcObj > span,
+  .tree li.closed.service-object > a,
+  .tree li.closed.service-object > span {
+    background-image: url("../Images/Icons/Management/ServiceObject16@2x.png");
+  }
+  .tree li.svcMethod > a,
+  .tree li.svcMethod > span,
+  .tree li.service-method > a,
+  .tree li.service-method > span {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .tree li.open.svcFolder > a,
+  .tree li.open.svcFolder > span,
+  .tree li.open.service-folder > a,
+  .tree li.open.service-folder > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+  .tree li.closed.svcFolder > a,
+  .tree li.closed.svcFolder > span,
+  .tree li.closed.service-folder > a,
+  .tree li.closed.service-folder > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+  .tree li.closed.service-instance-folder > a,
+  .tree li.closed.service-instance-folder > span,
+  .tree li.service-instance-folder > a,
+  .tree li.service-instance-folder > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16@2x.png");
+  }
+  .tree li.open.service-instance-folder > a,
+  .tree li.open.service-instance-folder > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16@2x.png");
+  }
+  .tree li.service-object-browser > a,
+  .tree li.service-object-browser > span,
+  .tree li.open.service-object-browser > a,
+  .tree li.open.service-object-browser > span,
+  .tree li.closed.service-object-browser > a,
+  .tree li.closed.service-object-browser > span {
+    background-image: url("../Images/Icons/Management/ServiceObject16@2x.png");
+  }
+  .tree li.open.fields > a,
+  .tree li.open.fields > span {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16@2x.png");
+  }
+  .tree li.closed.fields > a,
+  .tree li.closed.fields > span {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16@2x.png");
+  }
+  .tree li.field-types > a,
+  .tree li.field-types > span {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16@2x.png");
+  }
+  .tree li.category > a,
+  .tree li.category > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16@2x.png");
+  }
+  .tree li.open.category > a,
+  .tree li.open.category > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16@2x.png");
+  }
+  .tree li.closed.category > a,
+  .tree li.closed.category > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16@2x.png");
+  }
+  .tree li.open.applications > a,
+  .tree li.open.applications > span {
+    background-image: url("../Images/Icons/FileTypes/K2Project16@2x.png");
+  }
+  .tree li.closed.applications > a,
+  .tree li.closed.applications > span {
+    background-image: url("../Images/Icons/FileTypes/K2Project16@2x.png");
+  }
+  .tree li.open.favourites > a,
+  .tree li.open.favourites > span {
+    background-image: url("../Images/Icons/EditToolbox/Favourites16@2x.png");
+  }
+  .tree li.closed.favourites > a,
+  .tree li.closed.favourites > span {
+    background-image: url("../Images/Icons/EditToolbox/Favourites16@2x.png");
+  }
+  .tree li.open.user > a,
+  .tree li.open.user > span {
+    background-image: url("../Images/Icons/AssetBrowser/MyItems16@2x.png");
+  }
+  .tree li.closed.user > a,
+  .tree li.closed.user > span {
+    background-image: url("../Images/Icons/AssetBrowser/MyItems16@2x.png");
+  }
+  .tree li.recent > a,
+  .tree li.recent > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .tree li.open.recent > a,
+  .tree li.open.recent > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .tree li.closed.recent > a,
+  .tree li.closed.recent > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .tree li.all-items > a,
+  .tree li.all-items > span {
+    background-image: url("../Images/Icons/AssetBrowser/RootItem16@2x.png");
+  }
+  .tree li.open.all-items > a,
+  .tree li.open.all-items > span {
+    background-image: url("../Images/Icons/AssetBrowser/RootItem16@2x.png");
+  }
+  .tree li.closed.all-items > a,
+  .tree li.closed.all-items > span {
+    background-image: url("../Images/Icons/AssetBrowser/RootItem16@2x.png");
+  }
+  .tree li.open.smartobjects > a,
+  .tree li.open.smartobjects > span {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16@2x.png");
+  }
+  .tree li.closed.smartobjects > a,
+  .tree li.closed.smartobjects > span {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16@2x.png");
+  }
+  .tree li.open.smartfunctions > a,
+  .tree li.open.smartfunctions > span {
+    background-image: url("../Images/Icons/DataTypes/Functions16@2x.png");
+  }
+  .tree li.closed.smartfunctions > a,
+  .tree li.closed.smartfunctions > span {
+    background-image: url("../Images/Icons/DataTypes/Functions16@2x.png");
+  }
+  .tree li.open.views > a,
+  .tree li.open.views > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16@2x.png");
+  }
+  .tree li.closed.views > a,
+  .tree li.closed.views > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16@2x.png");
+  }
+  .tree li.open.forms > a,
+  .tree li.open.forms > span {
+    background-image: url("../Images/Icons/FileTypes/Form16@2x.png");
+  }
+  .tree li.closed.forms > a,
+  .tree li.closed.forms > span {
+    background-image: url("../Images/Icons/FileTypes/Form16@2x.png");
+  }
+  .tree li.open.styleprofiles > a,
+  .tree li.open.styleprofiles > span {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile16@2x.png");
+  }
+  .tree li.closed.styleprofiles > a,
+  .tree li.closed.styleprofiles > span {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile16@2x.png");
+  }
+  .tree li.open.workflows > a,
+  .tree li.open.workflows > span {
+    background-image: url("../Images/Icons/Management/WorkflowFolderOpen16@2x.png");
+  }
+  .tree li.closed.workflows > a,
+  .tree li.closed.workflows > span {
+    background-image: url("../Images/Icons/Management/WorkflowFolderClosed16@2x.png");
+  }
+  .tree li.open.recent-smartobjects > a,
+  .tree li.open.recent-smartobjects > span,
+  .tree li.closed.recent-smartobjects > a,
+  .tree li.closed.recent-smartobjects > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .tree li.open.recent-views > a,
+  .tree li.open.recent-views > span,
+  .tree li.closed.recent-views > a,
+  .tree li.closed.recent-views > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .tree li.open.recent-forms > a,
+  .tree li.open.recent-forms > span,
+  .tree li.closed.recent-forms > a,
+  .tree li.closed.recent-forms > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .tree li.open.recent-styleprofiles > a,
+  .tree li.open.recent-styleprofiles > span,
+  .tree li.closed.recent-styleprofiles > a,
+  .tree li.closed.recent-styleprofiles > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .tree li.open.recent-reports > a,
+  .tree li.open.recent-reports > span,
+  .tree li.closed.recent-reports > a,
+  .tree li.closed.recent-reports > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .tree li.open.recent-applications > a,
+  .tree li.open.recent-applications > span,
+  .tree li.closed.recent-applications > a,
+  .tree li.closed.recent-applications > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .tree li.open.recent-workflows > a,
+  .tree li.open.recent-workflows > span,
+  .tree li.closed.recent-workflows > a,
+  .tree li.closed.recent-workflows > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .tree li.open.shared > a,
+  .tree li.open.shared > span {
+    background-image: url("../Images/Icons/Management/Share16@2x.png");
+  }
+  .tree li.closed.shared > a,
+  .tree li.closed.shared > span {
+    background-image: url("../Images/Icons/Management/Share16@2x.png");
+  }
+  .tree li.controls > a,
+  .tree li.controls > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16@2x.png");
+  }
+  .tree li.open.controls > a,
+  .tree li.open.controls > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16@2x.png");
+  }
+  .tree li.closed.controls > a,
+  .tree li.closed.controls > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16@2x.png");
+  }
+  .tree li.image > a,
+  .tree li.image > span,
+  .tree li.image.children.open > a,
+  .tree li.image.children.closed > a {
+    background-image: url("../Images/Icons/DataTypes/Image16@2x.png");
+  }
+  .smartobject ul li a.image {
+    background-image: url("../Images/Icons/DataTypes/Image16@2x.png");
+  }
+  .smartobject ul li a.hyperlink-control {
+    background-image: url("../Images/Icons/DataTypes/Hyperlink16@2x.png");
+  }
+  .tree li.list-view.error > a,
+  .tree li.item-view.error > a {
+    background-image: url("../Images/Icons/Badges/ViewError16@2x.png");
+  }
+  .tree li.control-method > a,
+  .tree li.control-method > span,
+  .tree li.control-method.children.closed > a,
+  .tree li.control-method.children.open > a,
+  .tree li.control-method-control.children > span {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .tree li.control-method-parameter > a,
+  .tree li.control-method-parameter > span {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .tree li.sqlum > a,
+  .tree li.sqlum > span {
+    background-image: url("../Images/Icons/Management/SQLUserManager16@2x.png");
+  }
+  .tree li.groups > a,
+  .tree li.groups > span {
+    background-image: url("../Images/Icons/Management/Groups16@2x.png");
+  }
+  .tree li.users > a,
+  .tree li.users > span {
+    background-image: url("../Images/Icons/Management/User16@2x.png");
+  }
+  .tree li.plugin > a,
+  .tree li.plugin > span {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16@2x.png");
+  }
+  .tree li.open.report-parameters > a,
+  .tree li.open.report-parameters > span {
+    background-image: url("../Images/Icons/Toolbox/Parameter16@2x.png");
+  }
+  .tree li.closed.report-parameters > a,
+  .tree li.closed.report-parameters > span {
+    background-image: url("../Images/Icons/Toolbox/Parameter16@2x.png");
+  }
+  .tree li.report-parameter > a,
+  .tree li.report-parameter > span {
+    background-image: url("../Images/Icons/Toolbox/Parameter16@2x.png");
+  }
+  .tree li.smartobject-method > a,
+  .tree li.smartobject-method > span,
+  .tree li.children.smartobject-method > a,
+  .tree li.children.smartobject-method > span {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .tree li.form-event > a,
+  .tree li.form-event > span,
+  .tree li.children.form-event > a,
+  .tree li.children.form-event > span {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .tree li.children.no-image > a,
+  .tree li.children.no-image > span {
+    background-image: none;
+  }
+  .tree li.event > a,
+  .tree li.event > span {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .tree li.form-state > a,
+  .tree li.form-state > span,
+  .tree li.children.form-state > a,
+  .tree li.children.form-state > span {
+    background-image: url("../Images/Icons/Rules/State16@2x.png");
+  }
+  .tree li.appstudio > a,
+  .tree li.appstudio > span,
+  .tree li.children.appstudio > a,
+  .tree li.children.appstudio > span {
+    background-image: url("../Images/Icons/FileTypes/K2Project16@2x.png");
+  }
+  .tree li.property > a,
+  .tree li.property > span {
+    background-image: url("../Images/Icons/Toolbox/Properties16@2x.png");
+  }
+  .tree li.open.parameters > a,
+  .tree li.open.parameters > span {
+    background-image: url("../Images/Icons/Toolbox/Parameter16@2x.png");
+  }
+  .tree li.closed.parameters > a,
+  .tree li.closed.parameters > span {
+    background-image: url("../Images/Icons/Toolbox/Parameter16@2x.png");
+  }
+  .tree li.view-event > a,
+  .tree li.view-event > span {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  /* Collapsed Root Styling */
+  
+  .tree.collapsed-root li.root {
+    background-image: none;
+    padding-left: 0;
+  }
+  .tree.collapsed-root li.root > a,
+  .tree.collapsed-root li.root > span {
+    display: none;
+  }
+  /* Checkbox Tree Styling */
+  
+  .tree.checkbox li a,
+  .tree.checkbox li span {
+    background-image: url("../Images/Icons/FileTypes/Form16@2x.png");
+    padding-left: 41px;
+  }
+  .tree.checkbox li.checked a,
+  .tree.checkbox li.checked span {
+    background-image: url("../Images/Icons/FileTypes/Form16@2x.png");
+  }
+  .tree.checkbox li.open > a,
+  .tree.checkbox li.open > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16@2x.png");
+  }
+  .tree.checkbox li.closed > a,
+  .tree.checkbox li.closed > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16@2x.png");
+  }
+  .tree.checkbox li.checked.open > a,
+  .tree.checkbox li.checked.open > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16@2x.png");
+  }
+  .tree.checkbox li.checked.closed > a,
+  .tree.checkbox li.checked.closed > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderClosed16@2x.png");
+  }
+  .tree.checkbox li.user > a,
+  .tree.checkbox li.user > span {
+    background-image: url("../Images/Icons/AssetBrowser/MyItems16@2x.png");
+  }
+  .tree.checkbox li.user.checked > a,
+  .tree.checkbox li.user.checked > span {
+    background-image: url("../Images/Icons/AssetBrowser/MyItems16@2x.png");
+  }
+  /* Tree Icon Styling (New Structure) */
+  
+  .tree a.smartobject,
+  .tree li.children > a.smartobject,
+  .tree li.children.closed > a.smartobject,
+  .tree li.children.open > a.smartobject {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16@2x.png");
+  }
+  .tree a.staticdata,
+  .tree li.children > a.staticdata,
+  .tree li.children.closed > a.staticdata,
+  .tree li.children.open > a.staticdata {
+    background-image: url("../Images/Icons/Toolbox/StaticData16@2x.png");
+  }
+  /* Workflow Specific Node Styling */
+  
+  .tree a.process-activity,
+  .tree li.children > a.process-activity,
+  .tree li.children.closed > a.process-activity,
+  .tree li.children.open > a.process-activity,
+  .tree li.process-activity > a,
+  .tree li.process-activity.closed > a,
+  .tree li.process-activity.open > a,
+  .tree li.process-activity > span,
+  .tree li.process-activity.closed > span,
+  .tree li.process-activity.open > span {
+    background-image: url("../Images/Icons/ContextBrowser/Activities16@2x.png");
+  }
+  .tree a.action,
+  .tree li.action > a,
+  .tree li.action > span {
+    background-image: url("../Images/Icons/Steps/Actions16@2x.png");
+  }
+  .tree li.process-activities > a,
+  .tree li.process-activities > span,
+  .tree li.process-activities.closed > a,
+  .tree li.process-activities.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/Activities16@2x.png");
+  }
+  .tree li.process-activities.open > a {
+    background-image: url("../Images/Icons/ContextBrowser/Activities16@2x.png");
+  }
+  .tree li.data-fields > a,
+  .tree li.data-fields > span,
+  .tree li.data-fields.closed > a,
+  .tree li.data-fields.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/DataField16@2x.png");
+  }
+  .tree li.data-fields.open > a {
+    background-image: url("../Images/Icons/ContextBrowser/DataField16@2x.png");
+  }
+  .tree li.data-field > a,
+  .tree li.data-field.closed > a,
+  .tree li.data-field.open > a,
+  .tree li.data-field > span,
+  .tree li.data-field.closed > span,
+  .tree li.data-field.open > span {
+    background-image: url("../Images/Icons/ContextBrowser/DataField16@2x.png");
+  }
+  .tree li.xml-fields > a,
+  .tree li.xml-fields > span,
+  .tree li.xml-fields.closed > a,
+  .tree li.xml-fields.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/XamlField16@2x.png");
+  }
+  .tree li.xml-fields.open > a {
+    background-image: url("../Images/Icons/ContextBrowser/XamlField16@2x.png");
+  }
+  .tree li.xml-field > a,
+  .tree li.xml-field.closed > a,
+  .tree li.xml-field.open > a,
+  .tree li.xml-field > span,
+  .tree li.xml-field.closed > span,
+  .tree li.xml-field.open > span,
+  a.ui-draggable-dragging.xml-field {
+    background-image: url("../Images/Icons/ContextBrowser/XamlField16@2x.png");
+  }
+  .tree li.workflow-action-name > a,
+  .tree li.workflow-action-name.closed > a,
+  .tree li.workflow-action-name.open > a,
+  .tree li.workflow-action-name > span,
+  .tree li.workflow-action-name.closed > span,
+  .tree li.workflow-action-name.open > span {
+    background-image: url("../Images/Icons/Ribbon/Workflow16@2x.png");
+  }
+  .tree li.workflow-actions > a,
+  .tree li.workflow-actions.closed > a,
+  .tree li.workflow-actions.open > a,
+  .tree li.workflow-actions > span,
+  .tree li.workflow-actions.closed > span,
+  .tree li.workflow-actions.open > span {
+    background-image: url("../Images/Icons/Ribbon/Workflow16@2x.png");
+  }
+  .tree li.workflow-view-event > a,
+  .tree li.workflow-view-event.closed > a,
+  .tree li.workflow-view-event.open > a,
+  .tree li.workflow-view-event > span,
+  .tree li.workflow-view-event.closed > span,
+  .tree li.workflow-view-event.open > span {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .tree li.workflow-view > a,
+  .tree li.workflow-view.closed > a,
+  .tree li.workflow-view.open > a,
+  .tree li.workflow-view > span,
+  .tree li.workflow-view.closed > span,
+  .tree li.workflow-view.open > span {
+    background-image: url("../Images/Icons/Ribbon/Workflow16@2x.png");
+  }
+  .tree li.xml-reference > a,
+  .tree li.xml-reference.closed > a .tree li.xml-reference.open > a,
+  .tree li.xml-reference > span,
+  .tree li.xml-reference.closed > span .tree li.xml-reference.open > span {
+    background-image: url("../Images/Icons/ContextBrowser/XamlField16@2x.png");
+  }
+  /* Expression Builder Tree Icons */
+  
+  .tree li.expressions > a,
+  .tree li.expressions.closed > a {
+    background-image: url("../Images/Icons/DataTypes/Functions16@2x.png");
+  }
+  .tree li.expressions.open > a {
+    background-image: url("../Images/Icons/DataTypes/Functions16@2x.png");
+  }
+  .tree li.expression > a,
+  .tree li.expression.closed > a,
+  .tree li.expression.open > a {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction16@2x.png");
+  }
+  .tree li.function.list-first > a,
+  .tree li.function.list-first.closed > a,
+  .tree li.function.list-first.open > a,
+  .tree li.function.list-last > a,
+  .tree li.function.list-last.closed > a,
+  .tree li.function.list-last.open > a,
+  .tree li.function.list-selected > a,
+  .tree li.function.list-selected.closed > a,
+  .tree li.function.list-selected.open > a,
+  .tree li.default > a,
+  .tree li.default > span {
+    background-image: url("../Images/Icons/Default16px@2x.png");
+  }
+  .tree li.symbol.text-return > a,
+  .tree li.symbol.text-return.closed > a,
+  .tree li.symbol.text-return.open > a {
+    background-image: url("../Images/Icons/Toolbox/Return16@2x.png");
+  }
+  .tree li.symbol.text-space > a,
+  .tree li.symbol.text-space.closed > a,
+  .tree li.symbol.text-space.open > a {
+    background-image: url("../Images/Icons/Toolbox/Space16@2x.png");
+  }
+  .tree li.symbol.text-tab > a,
+  .tree li.symbol.text-tab.closed > a,
+  .tree li.symbol.text-tab.open > a {
+    background-image: url("../Images/Icons/Toolbox/Tab16@2x.png");
+  }
+  .tree li.smartobjectFF > a,
+  .tree li.smartobjectFF > span {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16@2x.png");
+  }
+  .tree li.error > a,
+  .tree li.error > span {
+    background-image: url("../Images/Icons/Ribbon/Error16@2x.png");
+  }
+  .tree li.rendermode > a,
+  .tree li.rendermode > span,
+  a.ui-draggable-dragging.rendermode {
+    background-image: url("../Images/Icons/Toolbox/Connection16@2x.png");
+  }
+  .tree li.tab > a,
+  .tree li.tab > span {
+    background-image: url("../Images/Icons/Toolbar/GenericTab16@2x.png");
+  }
+  .tree li.picker-control > a,
+  .tree li.picker-control.open > a,
+  .tree li.picker-control.closed > a,
+  .tree li.picker-control > span,
+  .tree li.picker-control.open > span,
+  .tree li.picker-control.closed > span {
+    background-image: url("../Images/Icons/Toolbox/Picker16@2x.png");
+  }
+  .tree li.client > a,
+  .tree li.client.open > a,
+  .tree li.client.closed > a,
+  .tree li.client > span,
+  .tree li.client.open > span,
+  .tree li.client.closed > span {
+    background-image: url("../Images/Icons/Toolbox/Display16@2x.png");
+  }
+  .tree li.conditional-style > a,
+  .tree li.conditional-style > span {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16@2x.png");
+  }
+  .tree li.condition > a,
+  .tree li.condition > span {
+    background-image: url("../Images/Icons/Toolbox/Conditions16@2x.png");
+  }
+  .tree li.width > a,
+  .tree li.width > span {
+    background-image: url("../Images/Icons/Toolbox/Width16@2x.png");
+  }
+  .tree li.height > a,
+  .tree li.height > span {
+    background-image: url("../Images/Icons/Toolbox/Height16@2x.png");
+  }
+  .tree li.vertical-align > a,
+  .tree li.vertical-align > span {
+    background-image: url("../Images/Icons/Toolbox/VerticalAlign16@2x.png");
+  }
+  .tree li.dimentions > a,
+  .tree li.dimentions > span {
+    background-image: url("../Images/Icons/Toolbox/Dimensions16@2x.png");
+  }
+  .tree li.environmentField > a,
+  .tree li.environmentField > span,
+  a.ui-draggable-dragging.environmentField {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16@2x.png");
+  }
+  .tree li.process-instance > a,
+  .tree li.process-instance.open > a,
+  .tree li.process-instance.closed > a,
+  .tree li.process-instance > span,
+  .tree li.process-instance.open > span,
+  .tree li.process-instance.closed > span {
+    background-image: url("../Images/Icons/Management/WorkflowInstance16@2x.png");
+  }
+  .tree li.mail > a,
+  .tree li.mail > span {
+    background-image: url("../Images/Icons/Mail16.png");
+  }
+  .tree li.group > a,
+  .tree li.group > span {
+    background-image: url("../Images/Icons/Management/Groups16@2x.png");
+  }
+  /* Old target tree stuff not moved to forms.css*/
+  
+  .target-tree li.svcInst.open > a,
+  .target-tree li.service-instance.open > a,
+  .target-tree li.svcInst.closed > a,
+  .target-tree li.service-instance.closed > a,
+  .target-tree li.svcInst.open > span,
+  .target-tree li.service-instance.open > span,
+  .target-tree li.svcInst.closed > span,
+  .target-tree li.service-instance.closed > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+  .target-tree li.svcObj.open > a,
+  .target-tree li.service-object.open > a,
+  .target-tree li.svcObj.closed > a,
+  .target-tree li.service-object.closed > a,
+  .target-tree li.svcObj.open > span,
+  .target-tree li.service-object.open > span,
+  .target-tree li.svcObj.closed > span,
+  .target-tree li.service-object.closed > span {
+    background-image: url("../Images/Icons/Management/ServiceObject16@2x.png");
+  }
+  .target-tree li.svcMethod > a,
+  .target-tree li.service-method > a,
+  .target-tree li.svcMethod > span,
+  .target-tree li.service-method > span {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .target-tree li.svcFolder.open > a,
+  .target-tree li.svcFolder.closed > a,
+  .target-tree li.svcFolder.open > span,
+  .target-tree li.svcFolder.closed > span {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+  .target-tree li.fields.open > a,
+  .target-tree li.fields.closed > a,
+  .target-tree li.fields.open > span,
+  .target-tree li.fields.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16@2x.png");
+  }
+  .target-tree li.category.open > a,
+  .target-tree li.category.closed > a,
+  .target-tree li.category.open > span,
+  .target-tree li.category.closed > span {
+    background-image: url("../Images/Icons/AssetBrowser/FolderOpen16@2x.png");
+  }
+  .target-tree li.favourites.open > a,
+  .target-tree li.favourites.closed > a,
+  .target-tree li.favourites.open > span,
+  .target-tree li.favourites.closed > span {
+    background-image: url("../Images/Icons/EditToolbox/Favourites16@2x.png");
+  }
+  .target-tree li.user.open > a,
+  .target-tree li.user.closed > a,
+  .target-tree li.user.open > span,
+  .target-tree li.user.closed > span {
+    background-image: url("../Images/Icons/Management/User16@2x.png");
+  }
+  .target-tree li.recent.open > a,
+  .target-tree li.recent.closed > a,
+  .target-tree li.recent.open > span,
+  .target-tree li.recent.closed > span {
+    background-image: url("../Images/Icons/AssetBrowser/RecentItems16@2x.png");
+  }
+  .target-tree li.smartobjects.open > a,
+  .target-tree li.smartobjects.closed > a,
+  .target-tree li.smartobjects.open > span,
+  .target-tree li.smartobjects.closed > span {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16@2x.png");
+  }
+  .target-tree li.smartfunctions.open > a,
+  .target-tree li.smartfunctions.closed > a,
+  .target-tree li.smartfunctions.open > span,
+  .target-tree li.smartfunctions.closed > span {
+    background-image: url("../Images/Icons/DataTypes/Functions16@2x.png");
+  }
+  .target-tree li.views.open > a,
+  .target-tree li.views.closed > a,
+  .target-tree li.views.open > span,
+  .target-tree li.views.closed > span {
+    background-image: url("../Images/Icons/FileTypes/View16@2x.png");
+  }
+  .target-tree li.forms.open > a,
+  .target-tree li.forms.closed > a,
+  .target-tree li.forms.open > span,
+  .target-tree li.forms.closed > span {
+    background-image: url("../Images/Icons/FileTypes/Form16@2x.png");
+  }
+  .target-tree li.styleprofiles.open > a,
+  .target-tree li.styleprofiles.closed > a,
+  .target-tree li.styleprofiles.open > span,
+  .target-tree li.styleprofiles.closed > span {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile16@2x.png");
+  }
+  .target-tree li.processes.open > a,
+  .target-tree li.processes.closed > a,
+  .target-tree li.processes.open > span,
+  .target-tree li.processes.closed > span {
+    background-image: url("../Images/Icons/FileTypes/ProcessDefinition16@2x.png");
+  }
+  .target-tree li.shared.open > a,
+  .target-tree li.shared.closed > a,
+  .target-tree li.shared.open > span,
+  .target-tree li.shared.closed > span {
+    background-image: url("../Images/Icons/Management/Share16@2x.png");
+  }
+  .target-tree li.controls.open > a,
+  .target-tree li.controls.closed > a,
+  .target-tree li.controls.open > span,
+  .target-tree li.controls.closed > span {
+    background-image: url("../Images/Icons/Toolbox/Controls16@2x.png");
+  }
+  .target-tree li.process-activities.open > a,
+  .target-tree li.process-activities.closed > a,
+  .target-tree li.process-activities.open > span,
+  .target-tree li.process-activities.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/Activities16@2x.png");
+  }
+  .target-tree li.data-fields.open > a,
+  .target-tree li.data-fields.closed > a,
+  .target-tree li.data-fields.open > span,
+  .target-tree li.data-fields.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/DataField16@2x.png");
+  }
+  .target-tree li.xml-fields.open > a,
+  .target-tree li.xml-fields.closed > a,
+  .target-tree li.xml-fields.open > span,
+  .target-tree li.xml-fields.closed > span {
+    background-image: url("../Images/Icons/ContextBrowser/XamlField16@2x.png");
+  }
+  /* Checkbox Tree Styling - used in Rules Designer mapping screens */
+  
+  .target-tree.checkbox li a,
+  .target-tree.checkbox li span {
+    background-image: url("../Images/Tree/unchecked_form.png");
+  }
+  .target-tree.checkbox li.checked a,
+  .target-tree.checkbox li.checked span {
+    background-image: url("../Images/Tree/checked_form.png");
+  }
+  .target-tree.checkbox li.open a,
+  .target-tree.checkbox li.open span {
+    background-image: url("../Images/Tree/unchecked_open_folder.png");
+  }
+  .target-tree.checkbox li.closed a,
+  .target-tree.checkbox li.closed span {
+    background-image: url("../Images/Tree/unchecked_closed_folder.png");
+  }
+  .target-tree.checkbox li.checked.open a,
+  .target-tree.checkbox li.checked.open span {
+    background-image: url("../Images/Tree/checked_open_folder.png");
+  }
+  .target-tree.checkbox li.checked.closed a,
+  .target-tree.checkbox li.checked.closed span {
+    background-image: url("../Images/Tree/checked_closed_folder.png");
+  }
+  .target-tree.checkbox li.user a,
+  .target-tree.checkbox li.user span {
+    background-image: url("../Images/Tree/unchecked_user.png");
+  }
+  .target-tree.checkbox li.user.checked a,
+  .target-tree.checkbox li.user.checked span {
+    background-image: url("../Images/Tree/checked_user.png");
+  }
+}
+/*#endregion icons*/
+

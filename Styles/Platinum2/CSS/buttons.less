@@ -1,0 +1,652 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+
+.clear
+{
+    /* Generic container (e.g. <div></div>) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+}
+
+a.button
+{
+    color: @Button-Text-Color;
+    display: inline-block; //most buttons don't need to be block, and if they do - float will make them block anyway.
+    height: 25px;
+    line-height: 23px;
+    text-decoration: none;
+    min-width: 80px;
+
+    &.disabled
+    {
+        pointer-events: none; //stop focus state on disabled buttons
+    }
+
+
+    &.loading
+    {
+        pointer-events: none;
+    }
+    //Fake transition, as the k2button widget will wait for this.
+    background-color: rgba(0,0,0,0);
+
+    &.complete
+    {
+        pointer-events: none;
+        //opacity is a fake transition - just used for a delay.
+        background-color: rgba(0,0,0,0.01);
+        transition: background-color 0.01s 1.0s linear;
+    }
+}
+
+
+.button.inline-button
+{
+    display: inline-block;
+    float: none;
+    height: auto;
+}
+
+a.dropbutton {
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /*background-size: 15px 60px;*/ //Todo - broken image revert
+}
+
+    a.dropbutton:hover
+    {
+        background-position: 50% -15px;
+        background-position: 50% -15px;
+    }
+
+    /* The button has been pressed, should display arrow upwards */
+    a.dropbutton.active
+    {
+        background-position: 50% -30px;
+    }
+
+        a.dropbutton.active:hover
+        {
+            background-position: 50% -45px;
+        }
+
+.gradient-box
+{
+    height: 14px;
+    background: #fefefe; /* Old browsers */
+    border: solid 1px #fff;
+}
+
+
+a.clearbutton
+{
+    display: block;
+    height: 11px;
+    width: 11px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    &:hover
+    {
+        background-position: 50% -11px;
+    }
+
+    &.active
+    {
+        background-position: 50% -22px;
+    }
+
+        &.active:hover
+        {
+            background-position: 50% -11px;
+        }
+}
+
+
+a.button
+{
+    .button-wrapper
+    {
+        background-color: @Button-Background-Color;
+        border: solid 1px transparent; /*set the size ready for color changes later*/
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        color: @Button-Text-Color;
+        text-transform: uppercase;
+        border-radius: 2px;
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    }
+
+    &.disabled .button-wrapper
+    {
+        background-color: @Button-Disabled-Background-Color;
+    }
+
+
+
+    &.inline-button .button-wrapper
+    {
+        height: auto;
+    }
+
+    span.button-text
+    {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        padding: 0 5px;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+
+
+    &.inline-button span.button-text
+    {
+        padding: 5px 5px;
+    }
+    //NOTE: On focus.
+    //All focus states for buttons are achieved with .focus class rather than :focus.
+    //this is becuase buttons should not *look* like they are focussed when clicked with the *mouse*
+    //but should only look focussed when tabbing with the keyboard. K2button widget achieves this.
+    &:active,
+    &:focus
+    {
+        outline: none;
+    }
+
+    &:hover,
+    &:hover:active,
+    &.focus:hover
+    {
+        outline: none;
+    }
+
+        &:hover .button-wrapper,
+        &:hover:active .button-wrapper,
+        &.focus:hover .button-wrapper
+        {
+            color: @Button-Highlighted-Text-Color;
+            background-color: @Button-Hover-Background-Color;
+        }
+
+    &.focus .button-wrapper
+    {
+        border: @Input-Focus-Border-Color solid 1px;
+        color: @Main-Text-Color;
+    }
+
+    &.disabled,
+    &.disabled:hover,
+    &.disabled.focus,
+    &.disabled:active
+    {
+        cursor: default;
+        color: inherit;
+    }
+
+        &.disabled .button-text,
+        &.disabled:hover .button-text,
+        &.disabled.focus .button-text,
+        &.disabled:active .button-text
+        {
+            cursor: default;
+            border-color: inherit;
+        }
+
+        &.disabled .button-wrapper,
+        &.disabled:hover .button-wrapper,
+        &.disabled.focus .button-wrapper,
+        &.disabled:active .button-wrapper
+        {
+            cursor: default;
+            opacity: 0.5;
+            color: @Main-Text-Color;
+            background-color: @Button-Disabled-Background-Color;
+        }
+    //SAVE + HELP button (Should be just icon buttons)
+    &.save,
+    &.help
+    {
+        color: #fff;
+        height: 25px;
+        width: 25px;
+        min-width: 25px;
+        max-width: 25px;
+        padding: 0;
+        filter: none;
+    }
+}
+
+.button.save.dark.mono
+{
+    opacity: 0.8;
+    transition: opacity 0.15s linear;
+
+    &:hover
+    {
+        opacity: 1.0;
+    }
+
+    &.disabled
+    {
+        opacity: 0.0;
+    }
+}
+
+
+a.button
+{
+    //TODO: Remove these as the buttons should be set up with buttonStyle = icon anyway
+    &.save .button-text,
+    &.help .button-text
+    {
+        display: none;
+    }
+
+    &.save .button-wrapper,
+    &.help .button-wrapper
+    {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 16px 16px;
+        -webkit-box-shadow: none; //override base button
+        -moz-box-shadow: none; //override base button
+        box-shadow: none; //override base button
+    }
+
+    &.save.focus .button-wrapper,
+    &.help.focus .button-wrapper
+    {
+        border: solid 1px #4778c7;
+        background-color: transparent; //override base button
+    }
+
+    &.save:hover .button-wrapper,
+    &.help:hover .button-wrapper
+    {
+        background-color: transparent; //override base button
+    }
+
+    &.save, &.help
+    {
+        &.disabled,
+        &.disabled:hover,
+        &.disabled.focus
+        {
+            opacity: 0.5;
+        }
+    }
+}
+
+.button
+{
+    &.buttonstyle-icon
+    {
+        color: white;
+        height: 25px;
+        width: 25px;
+        min-width: 25px;
+        max-width: 25px;
+        padding: 0;
+
+        .button-wrapper
+        {
+            background-color: transparent; //override base button
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 16px 16px;
+            -webkit-box-shadow: none; //override base button
+            -moz-box-shadow: none; //override base button
+            box-shadow: none; //override base button
+        }
+
+        &.focus
+        {
+            .button-wrapper
+            {
+                background-color: transparent;
+            }
+        }
+
+        &:hover
+        {
+            .button-wrapper
+            {
+                background-color: transparent;
+            }
+        }
+
+        &.disabled
+        {
+            .button-wrapper
+            {
+                background-color: transparent;
+            }
+        }
+
+        &:hover:active .button-wrapper,
+        &.focus:hover .button-wrapper
+        {
+            //had to be overridden due to overzealous selectors above
+            background-color: transparent;
+        }
+    }
+
+    &.buttonstyle-primary
+    {
+        min-width: 80px;
+
+        .button-wrapper
+        {
+            color: @Button-Highlighted-Text-Color;
+            background-color: @Highlight-Color-1;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 16px 16px;
+            -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+            -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+            box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+            //transition for hover states.
+            transition: background-color 0.15s;
+        }
+
+        &.focus
+        {
+            .button-wrapper
+            {
+                background-color: @Highlight-Color-1;
+                border-color: @Highlight-Color-5;
+                color: @Button-Highlighted-Text-Color;
+            }
+        }
+
+        &:hover
+        {
+            .button-wrapper
+            {
+                background-color: @Highlight-Color-2;
+            }
+        }
+
+        &.disabled
+        {
+            .button-wrapper
+            {
+                background-color: @Primary-Button-Disabled-Background-Color;
+                color: @Primary-Button-Disabled-Text-Color;
+            }
+        }
+    }
+}
+
+    .button.save.mono
+    {
+        &.complete
+        {
+            transition-duration: 0s !important; //BUG-FIX: Makes sure that the addClassTransition() ends.
+        }
+    }
+
+    //todo - make this more specific to the main wizards
+    .button.finish
+    {
+        &.loading
+        {
+            .button-wrapper
+            {
+                color: transparent;
+                background-size: 16px 16px;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &.complete
+        {
+            .button-wrapper
+            {
+                color: transparent;
+                background-size: 16px 16px;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+
+    .button.save.loading
+    {
+        animation-name: buttons_fadescale;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+
+
+@keyframes buttons_fadescale
+{
+    0%
+    {
+        transform: scale(1.0);
+        opacity: 1.0;
+    }
+
+    50%
+    {
+        transform: scale(0.85);
+        opacity: 0.5;
+    }
+
+    100%
+    {
+        transform: scale(1.0);
+        opacity: 1.0;
+    }
+}
+
+a.button
+{
+    //LOOKUP button
+    &.lookup
+    {
+        min-width: 30px;
+    }
+
+        &.lookup .button-wrapper
+        {
+            min-width: 27px;
+        }
+
+    &.clearsearch,
+    &.filter
+    {
+        min-width: 20px;
+        max-width: 20px;
+        width: 20px;
+        height: 20px;
+        margin-left: 3px;
+
+        html[dir=rtl] &
+        {
+            margin-left: 0;
+            margin-right: 3px;
+        }
+
+        &:hover
+        {
+            background: @Button-Hover-Background-Color-1;
+        }
+
+        .button-text
+        {
+            display: none;
+        }
+
+        &.disabled
+        {
+            cursor: default;
+
+            .button-wrapper
+            {
+                background-repeat: no-repeat;
+                background-position: center center;
+                opacity: 0.5;
+                height: 18px;
+            }
+        }
+
+        .button-wrapper
+        {
+            filter: none;
+            height: 18px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+//a.button
+
+
+
+/* Button Bar Styling */
+.button-bar
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: visible; /*LG: Changes this to 'visible' so that shadow is not clipped*/
+}
+
+/* Button Group Styling */
+.button-group
+{
+    width: auto;
+}
+
+    .button-group.left
+    {
+        float: left;
+    }
+
+        .button-group.left a.button
+        {
+            margin: 0 3px 0 0;
+        }
+
+    .button-group.right
+    {
+        float: right;
+        margin-right: 0;
+    }
+
+        .button-group.right a.button
+        {
+            margin: 0 0 0 3px;
+        }
+
+/* Prevent hover styles while editing a list view in the view settings dialog for the sorting button when the view canvas has been cleared*/
+#vdbtnSortOptions.disabled,
+#vdbtnSortOptions.disabled .button-wrapper,
+#vdbtnSortOptions.disabled .button-wrapper:hover
+{
+    cursor: default;
+    opacity: 0.5;
+    background-color: #FEFEFE;
+    color: #343E41;
+}
+
+/* Prevent hover styles while editing a list view in the view settings dialog for the filter button when the view canvas has been cleared*/
+#vdbtnFilterOptions.disabled,
+#vdbtnFilterOptions.disabled .button-wrapper,
+#vdbtnFilterOptions.disabled .button-wrapper:hover
+{
+    cursor: default;
+    opacity: 0.5;
+    background-color: #FEFEFE;
+    color: #343E41;
+}
+
+
+
+/* Button Element Styling */
+button,
+button[disabled],
+button[disabled]:hover
+{
+    border: solid 1px #adae9c;
+    background: #fefefe;
+    color: #343e41;
+    cursor: pointer;
+    height: 25px;
+    min-width: 60px;
+    padding: 0 5px;
+}
+
+    button:hover
+    {
+        background: @Button-Hover-Background-Color;
+        color: #fff;
+    }
+
+    button:active,
+    button.focus
+    {
+        background: #feffff;
+        border: @Input-Focus-Border-Color solid 1px;
+        color: #343e41;
+        outline: none;
+    }
+
+    button[disabled],
+    button[disabled]:hover
+    {
+        cursor: default;
+        opacity: 0.5;
+    }
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('buttons_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('buttons_images.less');
+}
+
+
+/*#region LG Cheeky changes*/
+
+//Make the Clear search button Flat
+a.button.filter .button-wrapper,
+a.button.clearsearch .button-wrapper
+{
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+/*#endregion*/

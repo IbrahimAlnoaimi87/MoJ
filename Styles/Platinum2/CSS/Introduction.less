@@ -1,0 +1,1234 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+@_ExplorerSwitch-Animation-Length: 0.5s;
+@_Introduction-Animation-Length: 1.0s;
+@_Introduction-Details-Header-Name-Padding: 20px;
+@_App-Top-Bar-Height: @App-Titlebar-Height;
+@_App-Bottom-Bar-Height: 42px;
+@_Glass-Color: rgba(255,255,255,0.2);
+
+#AppStudioIntroPanel
+{
+    .welcome-content
+    {
+        .option-select-box-column
+        {
+            min-height: auto;
+            min-width: auto; //override
+            width: 100%; //override - needed for UL flex box of "Create" buttons to work
+            float: none; //override
+        }
+
+        .option-select-box
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li
+            {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+#AppStudioIntroPanel .DiagramContent .IntroFooterText
+{
+    width: 100%;
+    height: 18px;
+    text-align: left;
+}
+
+#AppStudioIntroPanel.panel > .panel-body
+{
+    background-color: transparent;
+}
+
+html[dir="rtl"] #AppStudioIntroPanel .recentitems li > a
+{
+    background-position: 99% 1px;
+}
+
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('introduction_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('introduction_images.less');
+}
+
+//#region NEW EXPLORER STYLES HERE
+
+.lyt-explorermainwindow
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+
+    & > .lyt-explorer-header
+    {
+        flex-grow: 0;
+        flex-shrink: 0;
+        position: relative;
+        padding: @Standard-Padding-Large;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    & > .lyt-explorer-maincontent
+    {
+        flex-grow: 1;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .lyt-fullcontent
+    {
+        position: absolute;
+        top: @Standard-Padding-Large;
+        left: 0px;
+        bottom: @Standard-Padding-Large;
+        right: @Standard-Padding-Large;
+    }
+}
+//#endregion
+
+
+//FILE PROPERTIES DETAILS PAGE
+
+.details-container
+{
+    // display:flex;
+    // flex-direction: column;
+    border: 1px solid @Background-Color-4;
+}
+
+.details-header,
+.details-box
+{
+    width: 760px;
+    /*max-width: 750px;
+    min-width: 600px;*/
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.details-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: @Panel-Content-Background-Color;
+
+    .runas-link
+    {
+        word-break: break-all;
+        display: none; // runas-link element defined in RunWithParameters.aspx is used by the buildParameterURL javascript function
+    }
+
+    #ParmGrid
+    {
+        & .grid-body
+        {
+            border: none;
+        }
+
+        & .grid-column-headers
+        {
+            border: none;
+            min-height: 24px;
+
+            & .grid-column-headers-wrapper
+            {
+                border: none;
+                border-bottom: 1px solid @Background-Color-4;
+                background-color: @Background-Color-1;
+                min-height: 24px;
+
+                & table
+                {
+                    min-height: 24px;
+
+                    & tr
+                    {
+                        min-height: 24px;
+
+                        & td
+                        {
+                            min-height: 24px;
+                            border-left: 1px solid @Background-Color-4;
+                            padding-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & table.grid-content-table.zebra-stripes
+        {
+            & tr
+            {
+                min-height: 30px;
+
+                & td
+                {
+                    vertical-align: middle;
+
+                    & .grid-content-cell
+                    {
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        padding-right: 3px;
+                        padding-left: 10px;
+
+                        &.icon
+                        {
+                            padding-left: 29px;
+                            background-position: 8px 30%;
+                        }
+                    }
+
+                    &.first .grid-content-cell
+                    {
+                        padding-left: 6px;
+                    }
+
+                    & .grid-content-cell-wrapper
+                    {
+                        min-height: unset;
+
+                        & .input-control-m-c, & .input-control-wrapper
+                        {
+                            min-height: 22px;
+                        }
+                    }
+
+                    & label.input-control.checkbox
+                    {
+                        padding-top: 5px;
+                        padding-left: 0px;
+                    }
+                }
+            }
+
+            & tr:nth-child(odd) td:not(.last)
+            {
+                background-color: @Panel-Content-Background-Color;
+            }
+
+            & tr:nth-child(even) td:not(.last)
+            {
+                background-color: @Background-Color-1;
+            }
+
+            & tr td.last
+            {
+                background-color: @Input-Background-Color;
+            }
+
+            & tr:hover:not(.action-row):not(.selected) td
+            {
+                background-color: @Grid-Row-Hover-Background-Color;
+            }
+
+            & tr.selected:not(.action-row) td
+            {
+                background-color: @Grid-Row-Selected-Background-Color;
+            }
+        }
+    }
+
+
+    & > .pane-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+    }
+}
+
+
+.details-header,
+.details-headerfull
+{
+}
+
+.details-header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: @Background-Color-2;
+    color: @Main-Text-Color;
+    border-bottom: solid 1px @Background-Color-4;
+}
+
+.details-header-name
+{
+    max-width: 100%;
+
+    span
+    {
+        display: block;
+        font-size: 18px;
+        padding-left: @_Introduction-Details-Header-Name-Padding;
+        padding-right: @_Introduction-Details-Header-Name-Padding;
+        word-break: break-all;
+    }
+}
+
+
+.details-header-description
+{
+    max-height: 42px;
+    width: 60%;
+    overflow: hidden;
+    text-align: center;
+}
+
+@Details-Standard-Spacing: @Standard-Padding-Large;
+
+.details-box .separator
+{
+    border-bottom: solid @Panel-Border-Color 1px;
+    margin-top: @Details-Standard-Spacing;
+    margin-bottom: @Details-Standard-Spacing;
+}
+
+.details-box .separator,
+.details-box .option-select-box
+{
+    margin-left: @Details-Standard-Spacing;
+    margin-right: @Details-Standard-Spacing;
+}
+
+.details-box .option-select-box:first-child
+{
+    margin-top: @Details-Standard-Spacing;
+}
+
+.details-box .option-select-box:last-child
+{
+    margin-bottom: @Details-Standard-Spacing;
+}
+
+//remove any double-separators
+.details-box ul:empty + .separator
+{
+    display: none;
+}
+
+.details-box > .pane-container
+{
+    & > .pane
+    {
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 50%;
+
+        a
+        {
+            word-wrap: break-word;
+            word-break: break-all;
+
+            &[target="_blank"]
+            {
+                &::after
+                {
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    background-size: 10px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-image: url("../images/icons/management/ExternalLink16@2x.png");
+                    content: ' ';
+                    margin-top: -3px; //visual centering.
+                }
+            }
+        }
+    }
+
+    & > .divider
+    {
+        position: absolute;
+        content: '';
+        border-right: solid @Panel-Border-Color 1px;
+        height: auto !important;
+        top: @Details-Standard-Spacing;
+        left: auto !important;
+        right: auto !important;
+        bottom: @Details-Standard-Spacing !important;
+    }
+}
+
+.details-box
+{
+    & > .pane-container
+    {
+        & > .pane
+        {
+            top: auto !important;
+            bottom: auto !important;
+            left: auto !important;
+            right: auto !important;
+            position: relative;
+
+            & > .panel
+            {
+                & > .panel-body
+                {
+                    top: auto !important;
+                    bottom: auto !important;
+                    left: auto !important;
+                    right: auto !important;
+                    position: relative;
+                    border: 0px none;
+                    background-color: transparent;
+
+                    & > .panel-body-m
+                    {
+                        position: relative;
+                        top: auto;
+                        left: auto;
+                        bottom: auto;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .option-select-box-column
+    {
+        min-width: 0px; //Overrides
+        width: auto; //Overrides
+        float: none; //Overrides
+    }
+
+    .form-field-content-label
+    {
+        word-break: break-all;
+
+        & > span,
+        & > .avatar-control
+        {
+            vertical-align: middle;
+        }
+    }
+
+    span.avartar-name
+    {
+        margin-left: 0px;
+    }
+
+    span.avatar-icon
+    {
+        display: none;
+    }
+}
+
+.details-footer
+{
+    background-color: @Background-Color-1;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0px; /*LG: Edge to edge*/
+    padding: 0px 0px; /*LG: Edge to edge*/
+    height: 54px;
+    line-height: 54px;
+    float: none; /*Make the footer buttons span all the way across*/
+    .button-bar
+    {
+        display: block;
+        height: 100%;
+        line-height: normal;
+        vertical-align: middle;
+
+        .button-bar-wrapper
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+        }
+
+        .button-group
+        {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            float: none;
+
+            &.left
+            {
+                justify-content: flex-start;
+            }
+
+            &.right
+            {
+                justify-content: flex-end;
+            }
+        }
+
+        .button
+        {
+            float: none;
+            display: inline-block;
+        }
+    }
+}
+
+.details-footer .button-bar-wrapper
+{
+    .button-group.left a.button
+    {
+        margin: 10px 0 10px 10px;
+        height: 34px;
+        line-height: 32px;
+
+        &.help
+        {
+            width: 34px;
+            min-width: 34px;
+            max-width: 34px;
+        }
+
+        & > .button-wrapper
+        {
+            height: 32px;
+        }
+
+        html[dir=rtl] &
+        {
+            margin: 10px 10px 10px 0;
+        }
+    }
+
+    .button-group.right a.button
+    {
+        margin: 10px 10px 10px 0;
+        height: 34px;
+        line-height: 32px;
+
+        & > .button-wrapper
+        {
+            height: 32px;
+        }
+
+        html[dir=rtl] &
+        {
+            margin: 10px 0 10px 10px;
+        }
+    }
+
+    a.button.externalLink .button-text
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        &::after
+        {
+            content: ' ';
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background-size: 16px;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            margin-left: 10px;
+            margin-bottom: -2px;
+        }
+    }
+}
+
+.object-details .form-field label.form-field-label
+{
+    font-weight: bold;
+}
+
+.object-details
+{
+    background-repeat: no-repeat;
+    background-position: 95% 5px;
+    position: relative;
+    padding: @Details-Standard-Spacing;
+}
+
+
+//END - DETAILS PAGE
+
+
+//#region NEW CONCIERGE PAGE STYLES HERE
+
+// Allow the logo to cover the top bar
+#MainContentPane > .wrapper,
+#MainContentPane > .wrapper > .wrapper.partial-page-container,
+#AppStudioIntroPanel.panel > .panel-body,
+#AppStudioIntroPanel.panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper
+{
+    overflow: visible;
+}
+
+
+#AppStudioIntroPanel > .panel-body
+{
+    border: none 0px transparent; //remove this border for the landing page only.
+}
+
+//get rid of 3px standard paddings
+#AppStudioIntroPanel.panel.full > .panel-body > .panel-body-m
+{
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+#AppStudioIntroPanel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > .scroll-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 12px;
+    overflow: visible;
+}
+
+#AppStudioIntroPanel
+{
+
+    h3
+    {
+        font-family: @Main-Font-Family;
+        color: rgb(255,255,255);
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        margin: 10px;
+    }
+
+    .welcome-content .heading-container h3
+    {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .main-section
+    {
+        flex-grow: 1;
+        position: relative;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: @Panel-Background-Color;
+    }
+
+    .main-content
+    {
+        overflow-y: auto;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+    @_ExplorerSwitch-Animation-Length: 0.5s;
+
+    .main-section
+    {
+        .main-content
+        {
+            overflow: hidden;
+        }
+
+        .explorer-content
+        {
+            will-change: opacity, transform; //slight animation optimization for some browsers - use sparingly.
+            opacity: 0;
+            transform: scale(1.1);
+            pointer-events: none;
+            transition: opacity @_ExplorerSwitch-Animation-Length, transform @_ExplorerSwitch-Animation-Length;
+        }
+
+        .welcome-content
+        {
+            will-change: opacity, transform; //slight animation optimization for some browsers - use sparingly.
+            opacity: 1;
+            transform: scale(1.0);
+            pointer-events: all;
+            transition: opacity @_ExplorerSwitch-Animation-Length, transform @_ExplorerSwitch-Animation-Length;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-color: @Panel-Background-Color;
+
+            h3
+            {
+                color: @Heading-Text-Color;
+                font-size: 16px;
+            }
+        }
+
+        &.showexplorer
+        {
+            .main-content
+            {
+                overflow: hidden;
+            }
+
+            .main-logo
+            {
+                transform: translateY(-80px); //height of image
+                transition: transform @_ExplorerSwitch-Animation-Length;
+            }
+
+            & + .bottom-bar
+            {
+                opacity: 0.0;
+                pointer-events: none;
+                transform: translateY(@_App-Bottom-Bar-Height); //height of bottom bar
+                transition: transform @_ExplorerSwitch-Animation-Length, opacity @_ExplorerSwitch-Animation-Length;
+            }
+
+
+            .explorer-content
+            {
+                opacity: 1;
+                transform: scale(1.0);
+                pointer-events: all;
+                //transition-delay: 0.5s;
+            }
+
+            .welcome-content
+            {
+                opacity: 0;
+                transform: scale(0.9);
+                pointer-events: none;
+            }
+        }
+    }
+
+    .welcome-content
+    {
+        color: rgb(255,255,255);
+    }
+    //styles for the explorer view
+    .explorer-content
+    {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+
+        #MainNavigationPane
+        {
+            //background-color: @Panel-Background-Color;
+            background-color: @Panel-Background-Color-2;
+        }
+
+        #MainNavigationPane + .divider
+        {
+            background-color: transparent;
+        }
+
+        .navigation-panel-body
+        {
+            border-width: 0px;
+        }
+    }
+    //Styles for the introduction
+    .bottom-bar
+    {
+        height: @_App-Bottom-Bar-Height;
+        line-height: @_App-Bottom-Bar-Height;
+        background-color: @Panel-Background-Color-2;
+        white-space: nowrap;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .main-logo
+    {
+        position: absolute;
+        margin-left: -35px;
+        left: 50%;
+        top: -@_App-Top-Bar-Height; /*Same height as top-bar*/
+        z-index: 3000;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+        background-size: 70px 70px;
+        box-sizing: border-box;
+        background-position: center;
+        border-color: @App-Titlebar-Background-1;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+        background-color: @App-Titlebar-Background-1;
+        border-top-width: 0px;
+    }
+
+
+    .create-buttons-container,
+    .recents-container,
+    .heading-container
+    {
+        width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heading-container
+    {
+        margin-top: 0px;
+    }
+
+    .create-buttons-container
+    {
+        margin-top: 12px;
+    }
+
+    .recents-container
+    {
+        margin-top: 24px;
+    }
+
+    .recents-container
+    {
+        display: flex;
+        flex-direction: row;
+
+        .recents-box
+        {
+            background-color: @Input-Background-Color;
+            flex-grow: 1;
+            flex-basis: 0;
+            overflow: hidden; //makes sure long file names don't make the recent boxes >50% width
+            min-height: @Recent-Box-Height;
+            display: flex;
+            flex-direction: column;
+
+            & > h3
+            {
+                flex-grow: 0;
+                font-size: 14px;
+            }
+
+            & > .recent-box-column
+            {
+                flex-grow: 1;
+
+                &.empty
+                {
+                    //to center the watermark vert/horizontally.
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: @Recent-Box-Height;
+                }
+            }
+        }
+
+
+        .separator
+        {
+            width: 20px;
+        }
+    }
+
+    .recent-box-watermark
+    {
+        display: block;
+        font-size: 9pt;
+        margin-top: -25px; //magic number - to make the watermark look visually centered.
+        color: @Main-Text-Color;
+    }
+
+
+    .recents-box ul
+    {
+        height: @Recent-Box-Height;
+        flex-basis: @Recent-Box-Height;
+        flex-shrink: 0;
+        flex-grow: 0;
+        //overflow-hidden cuases the columns to distribute balanced rather than auto.
+        //overflow: hidden;
+        column-count: 2;
+        column-fill: auto;
+        -moz-column-count: 2;
+        -moz-column-fill: auto;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-right: 10px; //This is to make the gap between the columns to align to the create button gaps
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-padding-start: 0px;
+        padding-left: 0px; //override for edge/ie
+        li
+        {
+            display: block;
+            height: 20px;
+            overflow: hidden; //stops items from appearing ontop of eahc other in IE11
+            a
+            {
+                background-size: 16px 16px;
+                background-repeat: no-repeat;
+                display: block;
+                margin-left: 10px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                letter-spacing: 0.02em;
+                font-size: 12px;
+
+
+
+                html[dir=ltr] &
+                {
+                    background-position: 1px center;
+                    padding-left: 26px;
+                }
+
+
+
+                html[dir=rtl] &
+                {
+                    background-position: calc(100% - 1px) center;
+                    padding-right: 26px;
+                }
+
+                line-height: 20px;
+                color: @Main-Text-Color;
+                transition: color 0.15s;
+
+
+
+                &:hover
+                {
+                    color: @Hyperlink-Hover-Text-Color;
+                }
+            }
+        }
+    }
+    /*Create buttons*/
+    .create-buttons-container
+    {
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;
+    }
+
+    .create-button
+    {
+        background-repeat: no-repeat;
+        background-size: 190px 110px;
+        background-color: @Input-Background-Color;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+        height: 110px;
+        width: 190px;
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        color: @Main-Text-Color;
+        font-size: 18px;
+        line-height: 1; //override
+        letter-spacing: 0.03em;
+        border: 0px none; /*override form style*/
+        .title
+        {
+            font-family: @Main-Font-Family;
+            padding-bottom: 10px;
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            display: block;
+            margin-top: auto; //override
+        }
+
+        .desc
+        {
+            font-family: @Main-Font-Family;
+            color: @Main-Text-Color;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: normal;
+            letter-spacing: 0.03em;
+            margin-top: auto; //override
+        }
+
+        .icon
+        {
+            display: none; //override
+        }
+
+        .option-c //overlay
+        {
+            padding: 10px 10px;
+            position: absolute;
+            display: block;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            height: 90px;
+            background-color: fade(@Input-Background-Color, 70%);
+            color: fade(@Main-Text-Color, 80%);
+            border: none; //override
+            box-sizing: border-box;
+            transform: translateY(55px);
+            transition: transform 0.25s;
+        }
+
+        &:hover
+        {
+
+            .option-c //overlay
+            {
+                transform: translateY(0px);
+                transition: transform 0.25s;
+                color: @Main-Text-Color;
+                background-color: fade(@Input-Background-Color, 85%);
+            }
+        }
+    }
+
+
+    .create-button .heading
+    {
+        display: block;
+    }
+
+    span.heading
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .browse-button
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        vertical-align: middle;
+        text-align: center;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: @Tertiary-Outlined-Button-Border-Color;
+        text-transform: uppercase;
+        color: @Tertiary-Outlined-Button-Text-Color;
+        letter-spacing: 0.03em;
+        transition: opacity 0.15s;
+
+        &:focus
+        {
+            border-color: @Tertiary-Outlined-Button-Highlighted-Border-Color;
+        }
+
+        &:hover
+        {
+            color: @Tertiary-Outlined-Button-Highlighted-Text-Color;
+            border-color: @Tertiary-Outlined-Button-Highlighted-Border-Color;
+            background-color: @Tertiary-Outlined-Button-Highlighted-Background-Color;
+        }
+    }
+
+    a.intro-copyright-text
+    {
+        position: absolute;
+        top: -@_App-Bottom-Bar-Height;
+        left: 20px;
+        color: @Main-Text-Color;
+        font-size: 9px;
+        text-decoration: none;
+
+        &:hover
+        {
+            color: @Hyperlink-Hover-Text-Color;
+        }
+    }
+
+    ul.bottom-links
+    {
+        white-space: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px; //browser override
+        margin-bottom: 0px; //browser override
+        -webkit-padding-start: 0px; //browser override
+        a
+        {
+            color: @Highlight-Color-1;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+
+            &:hover
+            {
+                color: @Highlight-Color-5;
+            }
+        }
+    }
+
+    ul.bottom-links > li
+    {
+        display: inline-block;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    //ANIMATIONS - INTRO
+    .intro.main-section
+    {
+        overflow: hidden;
+    }
+
+    .intro.main-section
+    {
+        opacity: 0.0;
+    }
+
+    .intro .main-content
+    {
+        transform: scale(1.1);
+    }
+
+    .intro.bottom-bar
+    {
+        opacity: 0.0;
+    }
+
+    .intro.bottom-bar
+    {
+        transform: translateY(@_App-Bottom-Bar-Height); //height of bottom bar
+    }
+
+    .intro .main-logo
+    {
+        transform: translateY(-80px); //height of image
+        transition: transform @_Introduction-Animation-Length;
+    }
+
+    .main-section
+    {
+        opacity: 1.0;
+        transition: opacity @_Introduction-Animation-Length;
+    }
+
+    .main-content
+    {
+        transform: scale(1.0);
+        transition: transform @_Introduction-Animation-Length;
+    }
+
+    .main-logo
+    {
+        transform: translateY(0px);
+        transition: transform @_Introduction-Animation-Length;
+    }
+
+    .bottom-bar
+    {
+        transform: translateY(0px);
+        transition: transform @_Introduction-Animation-Length;
+    }
+    //ANIMATIONS - OUTRO
+    &.outro
+    {
+        .main-content
+        {
+            overflow-y: hidden;
+        }
+
+        .main-section
+        {
+            opacity: 0.0;
+            transition: opacity 1.0s;
+        }
+        /*outro the create buttons and other items*/
+        .create-button,
+        .recents-container,
+        .browse-button,
+        .heading-container
+        {
+            opacity: 0;
+            transform: translateY(140px);
+            transition: all 0.5s ease-in;
+        }
+        /*selected create button item*/
+        .create-button.outro
+        {
+            transition-delay: 0.5s;
+        }
+        /*stop the overlay from moving while the outro is happening*/
+        .create-button.outro .option-c, //overlay,
+        .create-button.outro:hover .option-c //overlay
+        {
+            opacity: 0;
+            transition: opacity 0.35s;
+        }
+        /*outro the bottom bar*/
+        .bottom-bar
+        {
+            opacity: 0;
+            transition: all 0.5s ease-in;
+        }
+    }
+    //#endregion
+}

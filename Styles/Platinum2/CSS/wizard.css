@@ -1,0 +1,922 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+/* Wizard Step Box Styling */
+
+.wizard-step-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 47px;
+  overflow: hidden;
+}
+.wizard-step-box-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 24px;
+  overflow: hidden;
+}
+.wizard-step-box-header-l {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 5px;
+  overflow: hidden;
+}
+.wizard-step-box-header-c {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 24px;
+  right: 5px;
+}
+.wizard-step-box-header-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  width: 5px;
+  overflow: hidden;
+}
+.wizard-step-box-header-text {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  right: -5px;
+  bottom: 0;
+  overflow: hidden;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0 7px;
+}
+.wizard-step-box-body {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  height: 23px;
+  overflow: hidden;
+}
+.wizard-step-box-body-l {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 23px;
+  overflow: hidden;
+}
+.wizard-step-box-body-c {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  right: 5px;
+  height: 23px;
+  overflow: hidden;
+}
+.wizard-step-box-body-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 23px;
+  overflow: hidden;
+}
+.wizard-step-box-footer {
+  display: none;
+}
+/* Step Tree Styling */
+
+.wizard-step-box-body .wrapper {
+  padding: 2px 3px 0 3px;
+}
+ul.steptree {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  border: 0px none;
+  vertical-align: top;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  box-sizing: border-box;
+}
+ul.steptree li {
+  display: inline-block;
+  position: relative;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  pointer-events: all;
+}
+ul.steptree li.error.small::after,
+ul.steptree li.warning::after,
+ul.steptree li.error::after {
+  -moz-animation: fadein 0.25s;
+  -o-animation: fadein 0.25s;
+  -webkit-animation: fadein 0.25s;
+  animation: fadein 0.25s;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -10px;
+  top: 0px;
+}
+ul.steptree a {
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  outline: none;
+  text-transform: uppercase;
+  line-height: 22px;
+  height: 24px;
+  vertical-align: middle;
+  border-bottom: solid 2px transparent;
+  box-sizing: border-box;
+}
+html[dir=rtl] ul.steptree a {
+  background-position: 100% 50%;
+}
+ul.steptree span.number {
+  display: none;
+}
+ul.steptree li.disabled span.number {
+  color: #777777;
+}
+div#RuleMappingWizard ul.steptree li.error.small::after {
+  right: 4px;
+}
+.wizard-steptree-bar.steptree-metro {
+  background-color: #ececec;
+}
+.wizard-steptree-bar.steptree-metro ul.steptree {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.wizard-steptree-bar.steptree-metro ul.steptree li:first-child a {
+  border-radius: 2px 0px 0px 2px;
+}
+.wizard-steptree-bar.steptree-metro ul.steptree li:last-child a {
+  border-radius: 0px 2px 2px 0px;
+}
+.wizard-steptree-bar.steptree-metro ul.steptree li.active a {
+  pointer-events: none;
+  font-weight: bold;
+}
+.wizard-steptree-bar.steptree-metro ul.steptree a {
+  background-color: white;
+  padding: 0px 5px;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  position: relative;
+  font-weight: normal;
+  color: rgba(78, 87, 88, 0.8);
+  transition: background-color 0.15s linear, color 0.15s linear;
+}
+html[dir=ltr] .wizard-steptree-bar.steptree-metro ul.steptree a {
+  margin-right: 10px;
+}
+html[dir=rtl] .wizard-steptree-bar.steptree-metro ul.steptree a {
+  margin-left: 10px;
+}
+.wizard-steptree-bar.steptree-metro ul.steptree li:not(:last-child) a::after {
+  display: block;
+  content: " ";
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+}
+html[dir=ltr] .wizard-steptree-bar.steptree-metro ul.steptree li:not(:last-child) a::after {
+  border-right: 0px solid transparent;
+  border-top: 11px solid transparent;
+  border-left: 10px solid white;
+  border-bottom: 11px solid transparent;
+  right: -10px;
+  transition: border-left-color 0.15s linear;
+}
+html[dir=rtl] .wizard-steptree-bar.steptree-metro ul.steptree li:not(:last-child) a::after {
+  border-left: 0px solid transparent;
+  border-top: 11px solid transparent;
+  border-right: 10px solid white;
+  border-bottom: 11px solid transparent;
+  left: -10px;
+  transition: border-right-color 0.15s linear;
+}
+html[dir=ltr] .wizard-steptree-bar.steptree-metro ul.steptree li:not(:first-child) a {
+  margin-left: 3px;
+}
+html[dir=rtl] .wizard-steptree-bar.steptree-metro ul.steptree li:not(:first-child) a {
+  margin-right: 3px;
+}
+.wizard-steptree-bar.steptree-metro ul.steptree li:not(:first-child) a::before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  content: '';
+  width: 0px;
+  height: 0px;
+}
+html[dir=ltr] .wizard-steptree-bar.steptree-metro ul.steptree li:not(:first-child) a::before {
+  border-left: 10px solid transparent;
+  border-top: 11px solid white;
+  border-bottom: 11px solid white;
+  border-right: 0px transparent;
+  left: -10px;
+  transition: border-top-color 0.15s linear, border-bottom-color 0.15s linear;
+}
+html[dir=rtl] .wizard-steptree-bar.steptree-metro ul.steptree li:not(:first-child) a::before {
+  border-right: 10px solid transparent;
+  border-top: 11px solid white;
+  border-bottom: 11px solid white;
+  border-left: 0px transparent;
+  right: -10px;
+  transition: border-top-color 0.15s linear, border-bottom-color 0.15s linear;
+}
+.wizard-steptree-bar.steptree-metro ul.steptree li a:hover {
+  color: #4e5758;
+  background-color: white;
+}
+html[dir=ltr] .wizard-steptree-bar.steptree-metro ul.steptree li a:hover::after {
+  border-left-color: white;
+}
+html[dir=rtl] .wizard-steptree-bar.steptree-metro ul.steptree li a:hover::after {
+  border-right-color: white;
+}
+.wizard-steptree-bar.steptree-metro ul.steptree li.disabled a,
+.wizard-steptree-bar.steptree-metro ul.steptree li.disabled a:hover {
+  cursor: default;
+  color: #bfc1c2;
+}
+html[dir=ltr] .wizard-steptree-bar.steptree-metro ul.steptree li:not(:first-child) a:hover::before,
+html[dir=rtl] .wizard-steptree-bar.steptree-metro ul.steptree li:not(:first-child) a:hover::before {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+.wizard-steptree-bar.steptree-tabs ul.steptree li {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.wizard-steptree-bar.steptree-tabs ul.steptree a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.wizard-steptree-bar.steptree-tabs ul.steptree a:hover {
+  color: white;
+}
+.wizard-steptree-bar.steptree-tabs ul.steptree li.disabled a {
+  color: rgba(255, 255, 255, 0.3);
+  cursor: default;
+}
+.wizard-steptree-bar.steptree-tabs ul.steptree li.active a {
+  font-weight: bold;
+  color: white;
+  border-bottom-color: #29b6f6;
+}
+.wizard-steptree-bar.steptree-tabs ul.steptree li.disabled a:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+.wizard-steptree-buttons {
+  position: absolute;
+  right: 0px;
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+.wizard-steptree-buttons a.button {
+  margin-left: 3px;
+}
+.wizard-steptree-buttons a.button.disabled {
+  opacity: 0;
+}
+.wizard-steptree-buttons a.button.finish {
+  height: auto;
+  line-height: auto;
+}
+.wizard-steptree-buttons a.button.finish .button-wrapper {
+  box-sizing: border-box;
+  border-radius: 0px;
+  line-height: 30px;
+  height: 30px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.wizard-steptree-buttons a.button.finish:focus .button-wrapper {
+  border-color: #deeffd;
+}
+.wizard-steptree-buttons a.button.finish.disabled .button-wrapper {
+  background-color: transparent;
+}
+html[dir=rtl] .wizard-steptree-buttons {
+  left: 0px;
+  right: auto;
+}
+html[dir=rtl] .wizard-steptree-buttons a.button.save {
+  order: 2;
+}
+html[dir=rtl] .wizard-steptree-buttons a.button.finish {
+  order: 1;
+}
+ul.childtree {
+  display: none;
+}
+/* Wizard Main Box Styling */
+
+.wizard-main-box {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 28px;
+  overflow: hidden;
+}
+.wizard-main-box-header,
+.wizard-main-box-footer {
+  display: none;
+}
+.wizard-main-box-body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.wizard-main-box-body-l,
+.wizard-main-box-body-r {
+  display: none;
+}
+.wizard-main-box-body-c {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+/* Wizard Button Bar Styling */
+
+.wizard-button-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  overflow: hidden;
+}
+.wizard-button-bar-t,
+.wizard-button-bar-b {
+  display: none;
+}
+.wizard-button-bar-m {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.wizard-button-bar-ml {
+  display: none;
+}
+.wizard-button-bar-mc {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wizard-button-bar-mr {
+  display: none;
+}
+/* Wizard Step Content Styling */
+
+.wizard-step-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  transition: opacity 0.25s;
+}
+.wizard-step-content.saving {
+  opacity: 0.6;
+}
+.wizard-step-content.finishing {
+  opacity: 0.6;
+}
+/* New Wizard Styling for partial page rendering */
+
+.wizard {
+  position: relative;
+}
+.wizard.full {
+  height: 100%;
+}
+.wizard .wizard-header {
+  border: solid 1px transparent;
+  position: relative;
+  height: 24px;
+  background-color: #0052a3;
+}
+.wizard .wizard-header-c {
+  background: #0052a3;
+  /* Old browsers */
+  border: solid 1px transparent;
+  box-sizing: border-box;
+  height: 24px;
+}
+.wizard .wizard-header-wrapper {
+  height: 24px;
+}
+.wizard .wizard-header-wrapper .wrapper {
+  font-weight: bold;
+  line-height: 24px;
+  padding: 0 5px;
+}
+html[dir=rtl] .wizard .wizard-header-wrapper .wrapper {
+  direction: rtl;
+}
+.wizard .wizard-steptree {
+  border: solid 1px transparent;
+  border-top-width: 0;
+  position: relative;
+  height: 30px;
+  margin-bottom: 0px;
+  background-color: #0052a3;
+  background-repeat: repeat-y;
+  background-position: center top;
+}
+.wizard.with-top-buttons .wizard-steptree {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  pointer-events: none;
+}
+.popup .wizard .wizard-steptree {
+  background-image: none;
+}
+.wizard-steptree-c {
+  background: #0052a3;
+  /* Old browsers */
+  border: solid 0px transparent;
+  box-sizing: border-box;
+  height: 30px;
+}
+.popupManager .popup .wizard .wizard-header-c {
+  background: transparent;
+  /* Old browsers */
+
+}
+.popupManager .popup .wizard .wizard-steptree {
+  background: transparent;
+  /* Old browsers */
+
+}
+.popupManager .popup .wizard .wizard-steptree .wizard-steptree-c {
+  background: transparent;
+  /* Old browsers */
+
+}
+.wizard.without-header.with-steptree .wizard-steptree {
+  border-top-width: 1px;
+}
+.wizard.without-header.with-steptree .wizard-steptree-c {
+  background: #0052a3;
+  /* Old browsers */
+
+}
+.wizard-steptree-wrapper {
+  height: 30px;
+  line-height: 30px;
+}
+.wizard-steptree-wrapper > .wrapper {
+  overflow: visible;
+}
+.wizard-steptree-wrapper .steptree {
+  margin-left: 7px;
+  text-align: center;
+}
+html[dir=rtl] .wizard-steptree-wrapper .steptree {
+  margin-right: 7px;
+}
+.wizard-steps-container {
+  position: relative;
+  margin-bottom: 3px;
+}
+.wizard-steps-container.saving *,
+.wizard-steps-container.finishing * {
+  pointer-events: none !important;
+}
+.wizard.full .wizard-steps-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.wizard.full.without-header.without-steptree .wizard-steps-container {
+  top: 0px;
+}
+.wizard.full.with-header.without-steptree .wizard-steps-container {
+  top: 27px;
+}
+.wizard.full.without-header.with-steptree .wizard-steps-container {
+  top: 30px;
+}
+.wizard.full.with-header.with-steptree .wizard-steps-container {
+  top: 54px;
+}
+.wizard.full.with-buttons .wizard-steps-container {
+  bottom: 30px;
+  margin-bottom: 0;
+}
+.wizard.full.without-buttons .wizard-steps-container {
+  bottom: 0;
+  margin-bottom: 0;
+}
+.wizard .wizard-buttons {
+  position: relative;
+  height: 30px;
+  box-sizing: border-box;
+}
+.wizard.full.with-buttons .wizard-buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.wizard .wizard-buttons .wizard-buttons-wrapper {
+  text-align: right;
+  padding-right: 3px;
+  padding-left: 0px;
+  flex-grow: 1;
+}
+html[dir=rtl] .wizard .wizard-buttons .wizard-buttons-wrapper {
+  text-align: left;
+}
+.wizard .wizard-buttons .wizard-buttons-wrapper a.button {
+  margin-left: 3px;
+  display: inline-block;
+  float: none;
+}
+html[dir=rtl] .wizard .wizard-buttons .wizard-buttons-wrapper a.button {
+  margin-left: 0;
+  margin-right: 3px;
+}
+.wizard .wizard-buttons .wizard-buttons-wrapper a.button.help {
+  float: left;
+  margin-left: 0px;
+}
+html[dir=rtl] .wizard .wizard-buttons .wizard-buttons-wrapper a.button.help {
+  float: right;
+}
+.wizard .wizard-steps-container label.intro-checkbox {
+  bottom: 1px;
+  position: absolute;
+  padding-left: 6px;
+  padding-bottom: 3px;
+}
+html[dir=rtl] .wizard .wizard-steps-container label.intro-checkbox {
+  padding-left: 0;
+  padding-right: 6px;
+}
+/* Docked Step Content Styling */
+
+.wizard-step-content.docked {
+  top: 0px;
+  bottom: 0;
+  position: absolute;
+  height: auto;
+}
+.wizard-step-content.docked > .grid.full.without-header.with-toolbar .toolbars,
+.wizard-step-content.docked > .pane-container > .pane:first-child > .toolbars,
+.wizard-step-content.docked > .target-context-canvas > .pane-container > .pane:first-child > .toolbars {
+  border-top-width: 0;
+}
+.wizard-step-content.docked > .grid.full.without-header.with-toolbar .toolbars.single .toolbar-wrapper,
+.wizard-step-content.docked > .pane-container > .pane:first-child > .toolbars.single .toolbar-wrapper,
+.wizard-step-content.docked > .target-context-canvas > .pane-container > .pane:first-child > .toolbars.single .toolbar-wrapper {
+  background: transparent;
+  /* Old browsers */
+
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  div.toolboxitem.autonumber {
+    background-image: url("../Images/Icons/DataTypes/AutoNumber16.png");
+  }
+  div.toolboxitem.autonumber.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.AutoNumber .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/AutoNumber_Error16.png");
+  }
+  div.toolboxitem.autoguid {
+    background-image: url("../Images/Icons/DataTypes/AutoGUID16.png");
+  }
+  div.toolboxitem.autoguid.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.AutoGuid .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/AutoGUID_Error16.png");
+  }
+  div.toolboxitem.guid {
+    background-image: url("../Images/Icons/DataTypes/GUID16.png");
+  }
+  div.toolboxitem.guid.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Guid .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/GUID_Error16.png");
+  }
+  div.toolboxitem.text {
+    background-image: url("../Images/Icons/DataTypes/Text16.png");
+  }
+  div.toolboxitem.text.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Text .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Text_Error16.png");
+  }
+  div.toolboxitem.number {
+    background-image: url("../Images/Icons/DataTypes/Number16.png");
+  }
+  div.toolboxitem.number.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Number .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Number_Error16.png");
+  }
+  div.toolboxitem.memo {
+    background-image: url("../Images/Icons/DataTypes/Memo16.png");
+  }
+  div.toolboxitem.memo.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Memo .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Memo_Error16.png");
+  }
+  div.toolboxitem.decimal {
+    background-image: url("../Images/Icons/DataTypes/Decimal16.png");
+  }
+  div.toolboxitem.decimal.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Decimal .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Decimal_Error16.png");
+  }
+  div.toolboxitem.yesno {
+    background-image: url("../Images/Icons/DataTypes/YesNo16.png");
+  }
+  div.toolboxitem.yesno.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.YesNo .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/YesNo_Error16.png");
+  }
+  me div.toolboxitem.datetime {
+    background-image: url("../Images/Icons/DataTypes/DateTime16.png");
+  }
+  div.toolboxitem.datetime.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.DateTime .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/DateTime_Error16.png");
+  }
+  div.toolboxitem.date {
+    background-image: url("../Images/Icons/DataTypes/Date16.png");
+  }
+  div.toolboxitem.date.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Date .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Date_Error16.png");
+  }
+  div.toolboxitem.time {
+    background-image: url("../Images/Icons/DataTypes/Time16.png");
+  }
+  div.toolboxitem.time.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Time .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Time_Error16.png");
+  }
+  div.toolboxitem.image {
+    background-image: url("../Images/Icons/DataTypes/Image16.png");
+  }
+  div.toolboxitem.image.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Image .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Image_Error16.png");
+  }
+  div.toolboxitem.file {
+    background-image: url("../Images/Icons/DataTypes/File16.png");
+  }
+  div.toolboxitem.file.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.File .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/File_Error16.png");
+  }
+  div.toolboxitem.hyperlink {
+    background-image: url("../Images/Icons/DataTypes/Hyperlink16.png");
+  }
+  div.toolboxitem.hyperlink.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Hyperlink .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Hyperlink_Error16.png");
+  }
+  div.toolboxitem.multivalue {
+    background-image: url("../Images/Icons/DataTypes/MultiValue16.png");
+  }
+  div.toolboxitem.multivalue.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.MultiValue .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/MultiValue_Error16.png");
+  }
+  .propertyGridPropertyItem.error .input-control.icon-control.expression .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Properties_Error16.png");
+  }
+  /* method type icons */
+  
+  div.toolboxitem.create {
+    background-image: url("../Images/Icons/Toolbar/Add16.png");
+  }
+  div.toolboxitem.update {
+    background-image: url("../Images/Icons/Toolbar/Save16.png");
+  }
+  div.toolboxitem.delete {
+    background-image: url("../Images/Icons/Toolbar/Delete16.png");
+  }
+  div.toolboxitem.read {
+    background-image: url("../Images/Icons/Toolbar/Load16.png");
+  }
+  div.toolboxitem.list {
+    background-image: url("../Images/Icons/Toolbar/View16.png");
+  }
+  span.layout-create-blank32 {
+    background-image: url('../Images/Icons/Placeholder/PlaceHolder32.png');
+  }
+  span.layout-create-blank32.inactive {
+    background-image: url('../Images/Icons/Placeholder/PlaceHolder32.png');
+  }
+  span.layout-auto-generate32 {
+    background-image: url('../Images/Icons/Steps/Create32.png');
+  }
+  span.layout-auto-generate32.inactive {
+    background-image: url('../Images/Icons/Placeholder/PlaceHolder32.png');
+  }
+  ul.steptree li.error.small::after,
+  ul.steptree li.error::after {
+    background-image: url('../Images/Icons/Badges/ErrorBadge_Alt12.png');
+  }
+  ul.steptree li.warning::after {
+    background-image: url('../Images/Icons/Badges/ErrorBadge20.png');
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  div.toolboxitem.autonumber {
+    background-image: url("../Images/Icons/DataTypes/AutoNumber16@2x.png");
+  }
+  div.toolboxitem.autonumber.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.AutoNumber .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/AutoNumber_Error16@2x.png");
+  }
+  div.toolboxitem.autoguid {
+    background-image: url("../Images/Icons/DataTypes/AutoGUID16@2x.png");
+  }
+  div.toolboxitem.autoguid.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.AutoGuid .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/AutoGUID_Error16@2x.png");
+  }
+  div.toolboxitem.guid {
+    background-image: url("../Images/Icons/DataTypes/GUID16@2x.png");
+  }
+  div.toolboxitem.guid.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Guid .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/GUID_Error16@2x.png");
+  }
+  div.toolboxitem.text {
+    background-image: url("../Images/Icons/DataTypes/Text16@2x.png");
+  }
+  div.toolboxitem.text.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Text .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Text_Error16@2x.png");
+  }
+  div.toolboxitem.number {
+    background-image: url("../Images/Icons/DataTypes/Number16@2x.png");
+  }
+  div.toolboxitem.number.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Number .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Number_Error16@2x.png");
+  }
+  div.toolboxitem.memo {
+    background-image: url("../Images/Icons/DataTypes/Memo16@2x.png");
+  }
+  div.toolboxitem.memo.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Memo .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Memo_Error16@2x.png");
+  }
+  div.toolboxitem.decimal {
+    background-image: url("../Images/Icons/DataTypes/Decimal16@2x.png");
+  }
+  div.toolboxitem.decimal.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Decimal .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Decimal_Error16@2x.png");
+  }
+  div.toolboxitem.yesno {
+    background-image: url("../Images/Icons/DataTypes/YesNo16@2x.png");
+  }
+  div.toolboxitem.yesno.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.YesNo .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/YesNo_Error16@2x.png");
+  }
+  me div.toolboxitem.datetime {
+    background-image: url("../Images/Icons/DataTypes/DateTime16@2x.png");
+  }
+  div.toolboxitem.datetime.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.DateTime .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/DateTime_Error16@2x.png");
+  }
+  div.toolboxitem.date {
+    background-image: url("../Images/Icons/DataTypes/Date16@2x.png");
+  }
+  div.toolboxitem.date.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Date .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Date_Error16@2x.png");
+  }
+  div.toolboxitem.time {
+    background-image: url("../Images/Icons/DataTypes/Time16@2x.png");
+  }
+  div.toolboxitem.time.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Time .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Time_Error16@2x.png");
+  }
+  div.toolboxitem.image {
+    background-image: url("../Images/Icons/DataTypes/Image16@2x.png");
+  }
+  div.toolboxitem.image.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Image .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Image_Error16@2x.png");
+  }
+  div.toolboxitem.file {
+    background-image: url("../Images/Icons/DataTypes/File16@2x.png");
+  }
+  div.toolboxitem.file.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.File .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/File_Error16@2x.png");
+  }
+  div.toolboxitem.hyperlink {
+    background-image: url("../Images/Icons/DataTypes/Hyperlink16@2x.png");
+  }
+  div.toolboxitem.hyperlink.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.Hyperlink .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Hyperlink_Error16.png");
+  }
+  div.toolboxitem.multivalue {
+    background-image: url("../Images/Icons/DataTypes/MultiValue16@2x.png");
+  }
+  div.toolboxitem.multivalue.invalid,
+  .propertyGridPropertyItem.error .input-control.icon-control.MultiValue .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/MultiValue_Error16@2x.png");
+  }
+  .propertyGridPropertyItem.error .input-control.icon-control.expression .input-control-wrapper {
+    background-image: url("../Images/Icons/Badges/Properties_Error16@2x.png");
+  }
+  /* method type icons */
+  
+  div.toolboxitem.create {
+    background-image: url("../Images/Icons/Toolbar/Add16@2x.png");
+  }
+  div.toolboxitem.update {
+    background-image: url("../Images/Icons/Toolbar/Save16@2x.png");
+  }
+  div.toolboxitem.delete {
+    background-image: url("../Images/Icons/Toolbar/Delete16@2x.png");
+  }
+  div.toolboxitem.read {
+    background-image: url("../Images/Icons/Toolbar/Load16@2x.png");
+  }
+  div.toolboxitem.list {
+    background-image: url("../Images/Icons/Toolbar/View16@2x.png");
+  }
+  span.layout-create-blank32 {
+    background-image: url('../Images/Icons/Toolbox/Table32@2x.png');
+  }
+  span.layout-create-blank32.inactive {
+    background-image: url('../Images/Icons/Toolbox/Table_Alt32@2x.png');
+  }
+  span.layout-auto-generate32 {
+    background-image: url('../Images/Icons/Toolbar/AutoTable32@2x.png');
+  }
+  span.layout-auto-generate32.inactive {
+    background-image: url('../Images/Icons/Toolbar/AutoTable_Alt32@2x.png');
+  }
+  ul.steptree li.error.small::after,
+  ul.steptree li.error::after {
+    background-image: url('../Images/Icons/Badges/ErrorBadge_Alt12@2x.png');
+  }
+  ul.steptree li.warning::after {
+    background-image: url('../Images/Icons/Badges/ErrorBadge20@2x.png');
+  }
+}

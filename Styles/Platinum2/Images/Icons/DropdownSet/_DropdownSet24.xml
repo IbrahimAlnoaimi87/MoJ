@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-dropdownset.icon-size24.ic-{iconname}"/> 
+          <RowDefinition row="2" cssSelector=".icon.icon-set-dropdownset.icon-size24.ic-{iconname}.selected"/> 
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1" cssname="recipientdynamic">RecipientDynamic24.png</Row>
+			  <Row number="2" cssname="recipientdynamic">RecipientDynamic_Selected24.png</Row>
+            </Rows>
+          </Column>
+		  
+          <Column number="2">   
+            <Rows>
+              <Row number="1" cssname="recipientsgroupdynamic">RecipientsGroupDynamic24.png</Row>
+			  <Row number="2" cssname="recipientsgroupdynamic">RecipientsGroupDynamic_Selected24.png</Row>
+            </Rows> 
+          </Column>   
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="12,0,0,12">
+        <CssBackgroundImageFolder>DropdownSet/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/DropdownSet/DropdownSet24.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/DropdownSet24.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

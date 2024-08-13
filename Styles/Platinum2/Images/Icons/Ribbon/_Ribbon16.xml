@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-ribbon.icon-size16.ic-{iconname}"/> <!-- normal -->
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1">1to1_16.png</Row>
+              
+            </Rows>
+          </Column>
+          <Column number="2">   
+            <Rows>  
+              <Row number="1">Add16.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="3">   
+            <Rows>  
+              <Row number="1">AdvancedSmartObject16.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="4">   
+            <Rows>  
+              <Row number="1">AlignBottom16.png</Row>
+             
+            </Rows> 
+          </Column>   
+          <Column number="5">   
+            <Rows>  
+              <Row number="1">AlignCentreHoriz16.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="6">   
+            <Rows>  
+              <Row number="1">AlignLeft16.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="7">   
+            <Rows>  
+              <Row number="1">AlignMiddleVert16.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="8">   
+            <Rows>  
+              <Row number="1">AlignRight16.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="9">   
+            <Rows>  
+              <Row number="1">AlignTop16.png</Row>
+              
+            </Rows> 
+          </Column>   
+          <Column number="10">    
+            <Rows>  
+              <Row number="1">Category16.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="11">    
+            <Rows>  
+              <Row number="1">CheckIn16.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="12">    
+            <Rows>  
+              <Row number="1">CheckOut16.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="13">    
+            <Rows>  
+              <Row number="1">CollectCopy16.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="14">    
+            <Rows>  
+              <Row number="1">Color16.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="15">    
+            <Rows>  
+              <Row number="1">Copy16.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="16">    
+            <Rows>  
+              <Row number="1">Cut16.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="17">    
+            <Rows>  
+              <Row number="1">Delete16.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="18">    
+            <Rows>  
+              <Row number="1">Deploy16.png</Row>
+              
+            </Rows> 
+          </Column>
+		            <Column number="19">    
+            <Rows>  
+              <Row number="1">DesignA_NewWorkflowFile16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="20">    
+            <Rows>  
+              <Row number="1">DesignA_NewForm16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="21">    
+            <Rows>  
+              <Row number="1">DesignA_NewSmartObject16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="22">    
+            <Rows>  
+              <Row number="1">DesignA_NewView16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="23">    
+            <Rows>  
+              <Row number="1">Edit16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="24">    
+            <Rows>  
+              <Row number="1">ErrorHandling16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="25">    
+            <Rows>  
+              <Row number="1">FitToWindow16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="26">    
+            <Rows>  
+              <Row number="1">FlipHorisontal16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="27">    
+            <Rows>  
+              <Row number="1">FlipVertical16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="28">    
+            <Rows>  
+              <Row number="1">Form16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="29">    
+            <Rows>  
+              <Row number="1">GenerateA_NewForm16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="30">    
+            <Rows>  
+              <Row number="1">GenerateA_NewView16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="31">    
+            <Rows>  
+              <Row number="1">Label16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="32">    
+            <Rows>  
+              <Row number="1">Lock16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="33">    
+            <Rows>  
+              <Row number="1">Method16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="34">    
+            <Rows>  
+              <Row number="1">MoveDown16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="35">    
+            <Rows>  
+              <Row number="1">MoveUp16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="36">    
+            <Rows>  
+              <Row number="1">Notes16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="37">    
+            <Rows>  
+              <Row number="1">NudgeDown16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="38">    
+            <Rows>  
+              <Row number="1">NudgeLeft16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="39">    
+            <Rows>  
+              <Row number="1">NudgeRight16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="40">    
+            <Rows>  
+              <Row number="1">NudgeUp16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="41">    
+            <Rows>  
+              <Row number="1">Paste16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="42">    
+            <Rows>  
+              <Row number="1">Properties16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="43">    
+            <Rows>  
+              <Row number="1">Remove16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="44">    
+            <Rows>  
+              <Row number="1">RemoveAll16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="45">    
+            <Rows>  
+              <Row number="1">Rename16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="46">    
+            <Rows>  
+              <Row number="1">Report16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="47">    
+            <Rows>  
+              <Row number="1">ResizeGrid_GridSizeDialog16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="48">    
+            <Rows>  
+              <Row number="1">RotateAntiClockwise16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="49">    
+            <Rows>  
+              <Row number="1">RotateClockwise16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="50">    
+            <Rows>  
+              <Row number="1">Run16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="51">    
+            <Rows>  
+              <Row number="1">RunWithParameters16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="52">    
+            <Rows>  
+              <Row number="1">SameHeight16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="53">    
+            <Rows>  
+              <Row number="1">SameSize16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="54">    
+            <Rows>  
+              <Row number="1">SameWidth16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="55">    
+            <Rows>  
+              <Row number="1">SaveAs16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="56">    
+            <Rows>  
+              <Row number="1">SaveToPattern16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="57">    
+            <Rows>  
+              <Row number="1">Search16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="58">    
+            <Rows>  
+              <Row number="1">SelectAll16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="59">    
+            <Rows>  
+              <Row number="1">ServiceObject16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="60">    
+            <Rows>  
+              <Row number="1">Settings16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="61">    
+            <Rows>  
+              <Row number="1">SharePointWorkflowIntegration16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="62">    
+            <Rows>  
+              <Row number="1">ShowCategory16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="63">    
+            <Rows>  
+              <Row number="1">ShowGridToggle16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="64">    
+            <Rows>  
+              <Row number="1">SmartObject16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="65">    
+            <Rows>  
+              <Row number="1">SmartObjectMethod16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="66">    
+            <Rows>  
+              <Row number="1">SmartObjectProperties16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="67">    
+            <Rows>  
+              <Row number="1">SnapToGrid16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="68">    
+            <Rows>  
+              <Row number="1">StartProcess16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="69">    
+            <Rows>  
+              <Row number="1">Toolbox16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="70">    
+            <Rows>  
+              <Row number="1">View16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="71">    
+            <Rows>  
+              <Row number="1">ViewCode16.png</Row>
+              
+            </Rows> 
+          </Column>
+		  <Column number="72">    
+            <Rows>  
+              <Row number="1">Workflow16.png</Row>
+            </Rows> 
+          </Column>
+		  
+		  <Column number="73">    
+            <Rows>  
+              <Row number="1">Rules_Ribbon16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="74">    
+            <Rows>  
+              <Row number="1">Zoom_Ribbon16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="75">    
+            <Rows>  
+              <Row number="1">ZoomIn_Ribbon16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="76">    
+            <Rows>  
+              <Row number="1">ZoomOut_Ribbon16.png</Row>
+            </Rows> 
+          </Column>
+		  <Column number="77">    
+            <Rows>  
+              <Row number="1">GoToStart16.png</Row>
+            </Rows> 
+          </Column>
+		  
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="8,0,0,8">
+        <CssBackgroundImageFolder>Ribbon/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/Ribbon/Ribbon16.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/Ribbon16.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

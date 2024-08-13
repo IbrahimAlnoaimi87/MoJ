@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-controls.icon-size18.ic-{iconname}"/> <!-- normal -->
+          <RowDefinition row="2" cssSelector=".icon.icon-set-controls.icon-size18.ic-{iconname}.hover"/> <!-- hover -->
+	      <RowDefinition row="3" cssSelector=".icon.icon-set-controls.icon-size18.ic-{iconname}.focus"/> <!-- hover -->	  
+          <RowDefinition row="4" cssSelector=".icon.icon-set-controls.icon-size18.ic-{iconname}.disabled"/> <!-- hover -->		  
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+              <Row number="1" cssname="checkbox">Checkbox18.png</Row>
+              <Row number="2" cssname="checkbox">Checkbox_Hover18.png</Row>
+              <Row number="3" cssname="checkbox">Checkbox_Focus18.png</Row>
+              <Row number="4" cssname="checkbox">Checkbox_Disabled18.png</Row>			  
+            </Rows>
+          </Column>
+          <Column number="2">   
+            <Rows>  
+              <Row number="1" cssname="checkboxselected">CheckboxSelected18.png</Row>
+              <Row number="2" cssname="checkboxselected">CheckboxSelected_Hover18.png</Row>
+              <Row number="3" cssname="checkboxselected">CheckboxSelected_Focus18.png</Row>
+              <Row number="4" cssname="checkboxselected">CheckboxSelected_Disabled18.png</Row>		
+            </Rows> 
+          </Column>
+         <Column number="3">
+            <Rows>
+              <Row number="1" cssname="radiobutton">RadioButton18.png</Row>
+              <Row number="2" cssname="radiobutton">RadioButton_Hover18.png</Row>
+              <Row number="3" cssname="radiobutton">RadioButton_Focus18.png</Row>
+              <Row number="4" cssname="radiobutton">RadioButton_Disabled18.png</Row>			  
+            </Rows>
+          </Column>
+          <Column number="4">   
+            <Rows>  
+              <Row number="1" cssname="radiobuttonselected">RadioButtonSelected18.png</Row>
+              <Row number="2" cssname="radiobuttonselected">RadioButtonSelected_Hover18.png</Row>
+              <Row number="3" cssname="radiobuttonselected">RadioButtonSelected_Focus18.png</Row>
+              <Row number="4" cssname="radiobuttonselected">RadioButtonSelected_Disabled18.png</Row>		
+            </Rows> 
+          </Column>   		  
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="9,0,0,9">
+        <CssBackgroundImageFolder>Controls/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/Controls/Controls18.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/Controls18.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

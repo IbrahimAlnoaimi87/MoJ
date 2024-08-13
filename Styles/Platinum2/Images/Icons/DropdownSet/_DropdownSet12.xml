@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-dropdownset.icon-size12.ic-{iconname}"/> 
+		  <RowDefinition row="2" cssSelector=".icon.icon-set-dropdownset.icon-size12.ic-{iconname}.selected"/> 
+		  <RowDefinition row="3" cssSelector=".icon.icon-set-dropdownset.icon-size12.ic-{iconname}.alt"/> 
+        </CssDefinitions>
+        <SourceImages>
+          <Column number="1">
+            <Rows>
+	          <Row number="1" cssname="dropdown">Dropdown12.png</Row>			
+              <Row number="2" cssname="dropdown">Dropdown_Toggled12.png</Row>			
+              <Row number="3" cssname="dropdown">Dropdown_Alt12.png</Row>
+            </Rows>
+          </Column>
+         
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="6,0,0,6">
+        <CssBackgroundImageFolder>DropdownSet/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/DropdownSet/DropdownSet12.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/DropdownSet12.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

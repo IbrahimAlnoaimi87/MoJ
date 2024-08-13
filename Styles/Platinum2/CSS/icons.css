@@ -1,0 +1,1098 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+.ico {
+  background-image: url("../Images/Icons/Default16px.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  width: 16px;
+  background-size: 16px 16px;
+}
+.ico.medium {
+  background-image: url("../Images/Icons/Default32px.png");
+  height: 32px;
+  width: 32px;
+  background-size: 32px 32px;
+}
+.ico.large {
+  background-image: url("../Images/Icons/Default64px.png");
+  height: 64px;
+  width: 64px;
+  background-size: 64px 64px;
+}
+.icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.icon-size16 {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+.icon-size18 {
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+}
+.icon-size20 {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
+.icon-size22 {
+  width: 22px;
+  height: 22px;
+  background-size: 22px 22px;
+}
+.icon-size24 {
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+}
+.icon-size30 {
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+}
+.icon-size32 {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+}
+.icon-size64 {
+  width: 64px;
+  height: 64px;
+  background-size: 64px 64px;
+}
+.icon-size128 {
+  width: 128px;
+  height: 128px;
+  background-size: 128px 128px;
+}
+.icon-size256 {
+  width: 256px;
+  height: 256px;
+  background-size: 256px 256px;
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .ico.icon-add {
+    background-image: url("../Images/Icons/Ribbon/Add16.png");
+  }
+  .ico.icon-delete {
+    background-image: url("../Images/Icons/Ribbon/Delete16.png");
+  }
+  .ico.icon-delete-all {
+    background-image: url("../Images/Icons/Ribbon/RemoveAll16.png");
+  }
+  .ico.icon-edit {
+    background-image: url("../Images/Icons/Ribbon/Edit16.png");
+  }
+  .ico.icon-refresh {
+    background-image: url("../Images/Icons/ContextBrowser/Refresh16.png");
+  }
+  .ico.icon-remove {
+    background-image: url("../Images/Icons/Ribbon/Remove16.png");
+  }
+  .ico.icon-remove-all {
+    background-image: url("../Images/Icons/Ribbon/RemoveAll16.png");
+  }
+  .ico.icon-error {
+    background-image: url("../Images/Icons/Ribbon/Error16.png");
+  }
+  .ico.icon-error.medium {
+    background-image: url("../Images/Icons/Management/Error32.png");
+  }
+  .ico.icon-error.large {
+    background-image: url("../Images/Icons/Management/Error64.png");
+  }
+  .ico.icon-info {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt16.png");
+  }
+  .ico.icon-info.medium {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt32.png");
+  }
+  .ico.icon-info.large {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt64.png");
+  }
+  .ico.icon-question {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt16.png");
+  }
+  .ico.icon-question.medium {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt32.png");
+  }
+  .ico.icon-question.large {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt64.png");
+  }
+  .ico.icon-warning {
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling16.png");
+  }
+  .ico.icon-warning.medium {
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling32.png");
+  }
+  .ico.icon-warning.large {
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling64.png");
+  }
+  .ico.icon-action {
+    background-image: url("../Images/Icons/Toolbox/Action16.png");
+  }
+  .ico.icon-action.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-condition {
+    background-image: url("../Images/Icons/Toolbox/Conditions16.png");
+  }
+  .ico.icon-condition.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-conditional-style {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16.png");
+  }
+  .ico.icon-conditional-style.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-control {
+    background-image: url("../Images/Icons/Toolbox/Controls16.png");
+  }
+  .ico.icon-control.medium {
+    background-image: url("../Images/Icons/Toolbox/Controls32.png");
+  }
+  .ico.icon-control-event {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .ico.icon-control-event.medium {
+    background-image: url("../Images/Icons/Toolbox/Event32.png");
+  }
+  .ico.icon-control-method {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .ico.icon-control-method.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-control-method-parameter {
+    background-image: url("../Images/Icons/Toolbox/Parameter16.png");
+  }
+  .ico.icon-control-method-parameter.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-control-property {
+    background-image: url("../Images/Icons/Toolbox/Properties16.png");
+  }
+  .ico.icon-control-property.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-event {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .ico.icon-event.medium {
+    background-image: url("../Images/Icons/Toolbox/Event32.png");
+  }
+  .ico.icon-expression {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction16.png");
+  }
+  .ico.icon-expression.medium {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction32.png");
+  }
+  .ico.icon-field {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16.png");
+  }
+  .ico.icon-field.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-filter {
+    background-image: url("../Images/Icons/Runtime/Filter16.png");
+  }
+  .ico.icon-filter.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-form {
+    background-image: url("../Images/Icons/FileTypes/Form16.png");
+  }
+  .ico.icon-form.medium {
+    background-image: url("../Images/Icons/FileTypes/Form32.png");
+  }
+  .ico.icon-styleprofile {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile16.png");
+  }
+  .ico.icon-styleprofile.medium {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile32.png");
+  }
+  .ico.icon-process {
+    background-image: url("../Images/Icons/FileTypes/ProcessDefinition16.png");
+  }
+  .ico.icon-process.medium {
+    background-image: url("../Images/Icons/FileTypes/ProcessDefinition32.png");
+  }
+  .ico.icon-smartobject {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16.png");
+  }
+  .ico.icon-smartobject.medium {
+    background-image: url("../Images/Icons/FileTypes/SmartObject32.png");
+  }
+  .ico.icon-view {
+    background-image: url("../Images/Icons/FileTypes/View16.png");
+  }
+  .ico.icon-view.medium {
+    background-image: url("../Images/Icons/FileTypes/View32.png");
+  }
+  .ico.icon-conditional-style-error {
+    background-image: url("../Images/Icons/Badges/ConditionalStyling_Error16.png");
+  }
+  .ico.icon-conditional-style-error.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-expression-error {
+    background-image: url("../Images/Icons/Badges/RegularExpressionFunctionError16.png");
+  }
+  .ico.icon-expression-error.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-sub-form {
+    background-image: url("../Images/Icons/FileTypes/Form16.png");
+  }
+  .ico.icon-sub-form.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-multiselect-control {
+    background-image: url("../Images/Icons/DataTypes/MultiValue16.png");
+  }
+  .ico.icon-multiselect-control.medium {
+    background-image: url("../Images/Icons/DataTypes/MultiValue32.png");
+  }
+  .ico.icon-smartobject-method {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .ico.icon-smartobject-method.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-smartobject-property {
+    background-image: url("../Images/Icons/Ribbon/Properties16.png");
+  }
+  .ico.icon-smartobject-property.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-smartobject-method-parameter {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .ico.icon-smartobject-method-parameter.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-service-instance {
+    background-image: url("../Images/Icons/Management/ServiceInstance16.png");
+  }
+  .ico.icon-service-instance.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-service-object {
+    background-image: url("../Images/Icons/Management/ServiceObject16.png");
+  }
+  .ico.icon-service-object.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-service-object-browser {
+    background-image: url("../Images/Icons/Management/ServiceObject16.png");
+  }
+  .ico.icon-service-object-browser.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-service-object-method {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .ico.icon-service-object-method.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-service-object-method-parameter {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .ico.icon-service-object-method-parameter.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-service-object-method-property {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .ico.icon-service-object-method-property.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-service-object-servicetype {
+    background-image: url("../Images/Icons/Management/SmartObjectServices16.png");
+  }
+  .ico.icon-service-object-servicetype.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-form-event {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .ico.icon-form-event.medium {
+    background-image: url("../Images/Icons/Toolbox/Event32.png");
+  }
+  .ico.icon-form-error {
+    background-image: url("../Images/Icons/Badges/FormError16.png");
+  }
+  .ico.icon-form-error.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-form-parameter {
+    background-image: url("../Images/Icons/Toolbox/Parameter16.png");
+  }
+  .ico.icon-form-parameter.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-form-state {
+    background-image: url("../Images/Icons/Rules/State16.png");
+  }
+  .ico.icon-form-state.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-form-state-error {
+    background-image: url("../Images/Icons/Badges/StateError16.png");
+  }
+  .ico.icon-form-state-error.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-styleprofile-error {
+    background-image: url("../Images/Icons/Badges/StyleProfileError16.png");
+  }
+  .ico.icon-view-event {
+    background-image: url("../Images/Icons/Toolbox/Event16.png");
+  }
+  .ico.icon-view-event.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-view-error {
+    background-image: url("../Images/Icons/Badges/ViewError16.png");
+  }
+  .ico.icon-view-error.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-view-method {
+    background-image: url("../Images/Icons/Ribbon/Method16.png");
+  }
+  .ico.icon-view-method.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-content-view {
+    background-image: url("../Images/Icons/FileTypes/View16.png");
+  }
+  .ico.icon-content-view.medium {
+    background-image: url("../Images/Icons/FileTypes/View32.png");
+  }
+  .ico.icon-item-view {
+    background-image: url("../Images/Icons/FileTypes/View16.png");
+  }
+  .ico.icon-item-view.medium {
+    background-image: url("../Images/Icons/FileTypes/View32.png");
+  }
+  .ico.icon-list-view {
+    background-image: url("../Images/Icons/FileTypes/View16.png");
+  }
+  .ico.icon-list-view.medium {
+    background-image: url("../Images/Icons/FileTypes/View32.png");
+  }
+  .ico.icon-workflow-view {
+    background-image: url("../Images/Icons/Ribbon/Workflow16.png");
+  }
+  .ico.icon-workflow-view.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-process-instance {
+    background-image: url("../Images/Icons/ContextBrowser/ProcessInstance16.png");
+  }
+  .ico.icon-process-instance.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-process-data-field {
+    background-image: url("../Images/Icons/ContextBrowser/DataField16.png");
+  }
+  .ico.icon-process-data-field.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-process-xml-field {
+    background-image: url("../Images/Icons/DataTypes/XML16.png");
+  }
+  .ico.icon-process-xml-field.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-workflow-actions {
+    background-image: url("../Images/Icons/Ribbon/Workflow16.png");
+  }
+  .ico.icon-workflow-actions.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-form-checked-out {
+    background-image: url("../Images/Icons/FileTypes/Form_CheckOut16.png");
+  }
+  .ico.icon-form-checked-out.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-form-checked-out-user {
+    background-image: url("../Images/Icons/FileTypes/Form_UserCheckOut16.png");
+  }
+  .ico.icon-form-checked-out-user.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-styleprofile-checked-out {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile_CheckOut16.png");
+  }
+  .ico.icon-styleprofile-checked-out-user {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile_UserCheckOut16.png");
+  }
+  .ico.icon-view-checked-out {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16.png");
+  }
+  .ico.icon-view-checked-out.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-view-checked-out-user {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16.png");
+  }
+  .ico.icon-view-checked-out-user.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-list-view-checked-out {
+    background-image: url("../Images/Icons/FileTypes/View_CheckOut16.png");
+  }
+  .ico.icon-list-view-checked-out.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-list-view-checked-out-user {
+    background-image: url("../Images/Icons/FileTypes/View_UserCheckOut16.png");
+  }
+  .ico.icon-list-view-checked-out-user.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-item-view-checked-out {
+    background-image: url("../Images/Icons/FileTypes/View_CheckOut16.png");
+  }
+  .ico.icon-item-view-checked-out.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-item-view-checked-out-user {
+    background-image: url("../Images/Icons/FileTypes/View_UserCheckOut16.png");
+  }
+  .ico.icon-item-view-checked-out-user.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32.png");
+  }
+  .ico.icon-date {
+    background-image: url("../Images/Icons/DataTypes/Date16.png");
+  }
+  .icon.icon-size16.ic-dropdown {
+    background-image: url("../Images/Icons/DropdownSet/Dropdown16.png");
+  }
+  .icon.icon-size16.ic-form {
+    background-image: url("../Images/Icons/FileTypes/Form16.png");
+  }
+  .icon.icon-size16.ic-styleprofile {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile16.png");
+  }
+  .icon.icon-size16.ic-subform {
+    background-image: url("../Images/Icons/FileTypes/SubForm16.png");
+  }
+  .icon.icon-size16.ic-smartobject {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16.png");
+  }
+  .icon.icon-size16.ic-workflow {
+    background-image: url("../Images/Icons/Toolbar/Workflow16.png");
+  }
+  .icon.icon-size16.ic-view {
+    background-image: url("../Images/Icons/FileTypes/View16.png");
+  }
+  .icon.icon-size16.ic-subview {
+    background-image: url("../Images/Icons/FileTypes/SubView16.png");
+  }
+  .icon.icon-size16.ic-close {
+    background-image: url("../Images/Icons/Runtime/HeaderClose16.png");
+  }
+  .icon.icon-size16.ic-avatarempty {
+    background-image: url("../Images/Icons/Avatar/EmptyAvatar16.png");
+  }
+  .icon.icon-size16.ic-rule {
+    background-image: url("../Images/Icons/Rules/Rule16.png");
+  }
+  .icon.icon-size16.ic-rule.error {
+    background-image: url("../Images/Icons/Rules/Rule_Error16.png");
+  }
+  .icon.icon-size16.icon-set-interactive.icon-mode-hyperlink.ic-pageleft {
+    background-image: url("../Images/Icons/Interactive/PageLeftHover16_Dark.png");
+  }
+  .icon.icon-size16.icon-set-interactive.icon-mode-hyperlink.ic-pageright {
+    background-image: url("../Images/Icons/Interactive/PageRightHover16_Dark.png");
+  }
+  .icon.icon-size16.icon-set-toolbar.ic-copy {
+    background-image: url("../Images/Icons/Toolbar/Copy16.png");
+  }
+  .icon.icon-size32.ic-dropdown {
+    background-image: url("../Images/Icons/PlaceHolder/PlaceHolder32.png");
+  }
+  .icon.icon-size32.ic-form {
+    background-image: url("../Images/Icons/FileTypes/Form32.png");
+  }
+  .icon.icon-size32.ic-styleprofile {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile32.png");
+  }
+  .icon.icon-size32.ic-smartobject {
+    background-image: url("../Images/Icons/FileTypes/SmartObject32.png");
+  }
+  .icon.icon-size32.ic-workflow {
+    background-image: url("../Images/Icons/Toolbar/Workflow32.png");
+  }
+  .icon.icon-size32.ic-view {
+    background-image: url("../Images/Icons/FileTypes/View32.png");
+  }
+  .icon.icon-size64.ic-error {
+    background-image: url("../Images/Icons/Management/Error64.png");
+  }
+  .icon.icon-size64.ic-avatarempty {
+    background-image: url("../Images/Icons/Avatar/EmptyAvatar64.png");
+  }
+  .icon.icon-size128.ic-designerlogo {
+    background-image: url("../Images/Icons/Logos/K2DesignerLogo128.png");
+  }
+  .icon.dark.icon-size16.ic-form {
+    background-image: url("../Images/Icons/FileTypes/Form_Alt16.png");
+  }
+  .icon.dark.icon-size16.ic-styleprofile {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile_Alt16.png");
+  }
+  .icon.dark.icon-size16.ic-smartobject {
+    background-image: url("../Images/Icons/FileTypes/SmartObject_Alt16.png");
+  }
+  .icon.dark.icon-size16.ic-workflow {
+    background-image: url("../Images/Icons/FileTypes/Workflow_Alt16.png");
+  }
+  .icon.dark.icon-size16.ic-view {
+    background-image: url("../Images/Icons/FileTypes/View_Alt16.png");
+  }
+  .icon.dark.icon-size16.ic-close {
+    background-image: url("../Images/Icons/Runtime/HeaderClose_Selected16.png");
+  }
+  .icon.dark.icon-size16.ic-back {
+    background-image: url("../Images/Icons/Arrows/CollapseMenu_Alt16.png");
+  }
+  .icon.dark.icon-size16.ic-avatarempty {
+    background-image: url("../Images/Icons/Avatar/EmptyAvatar_Alt16.png");
+  }
+  .icon.readonly.icon-size16.ic-run {
+    background-image: url("../Images/Icons/Toolbar/Run_ReadOnly16.png");
+  }
+  .bg-deadarea {
+    background-image: url("../Images/Icons/Backgrounds/DeadAreaBackground.png");
+    background-size: 11px 11px;
+    background-repeat: repeat;
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .ico.icon-add {
+    background-image: url("../Images/Icons/Ribbon/Add16@2x.png");
+  }
+  .ico.icon-delete {
+    background-image: url("../Images/Icons/Ribbon/Delete16@2x.png");
+  }
+  .ico.icon-delete-all {
+    background-image: url("../Images/Icons/Ribbon/RemoveAll16@2x.png");
+  }
+  .ico.icon-edit {
+    background-image: url("../Images/Icons/Ribbon/Edit16@2x.png");
+  }
+  .ico.icon-refresh {
+    background-image: url("../Images/Icons/ContextBrowser/Refresh16@2x.png");
+  }
+  .ico.icon-remove {
+    background-image: url("../Images/Icons/Ribbon/Remove16@2x.png");
+  }
+  .ico.icon-remove-all {
+    background-image: url("../Images/Icons/Ribbon/RemoveAll16@2x.png");
+  }
+  .ico.icon-error {
+    background-image: url("../Images/Icons/Ribbon/Error16@2x.png");
+  }
+  .ico.icon-error.medium {
+    background-image: url("../Images/Icons/Management/Error32@2x.png");
+  }
+  .ico.icon-error.large {
+    background-image: url("../Images/Icons/Management/Error64@2x.png");
+  }
+  .ico.icon-info {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt16@2x.png");
+  }
+  .ico.icon-info.medium {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt32@2x.png");
+  }
+  .ico.icon-info.large {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt64@2x.png");
+  }
+  .ico.icon-question {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt16@2x.png");
+  }
+  .ico.icon-question.medium {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt32@2x.png");
+  }
+  .ico.icon-question.large {
+    background-image: url("../Images/Icons/Indicators/InformationBadge_Alt64@2x.png");
+  }
+  .ico.icon-warning {
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling16@2x.png");
+  }
+  .ico.icon-warning.medium {
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling32@2x.png");
+  }
+  .ico.icon-warning.large {
+    background-image: url("../Images/Icons/Ribbon/ErrorHandling64@2x.png");
+  }
+  .ico.icon-action {
+    background-image: url("../Images/Icons/Toolbox/Action16@2x.png");
+  }
+  .ico.icon-action.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-condition {
+    background-image: url("../Images/Icons/Toolbox/Conditions16@2x.png");
+  }
+  .ico.icon-condition.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-conditional-style {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16@2x.png");
+  }
+  .ico.icon-conditional-style.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-control {
+    background-image: url("../Images/Icons/Toolbox/Controls16@2x.png");
+  }
+  .ico.icon-control.medium {
+    background-image: url("../Images/Icons/Toolbox/Controls32@2x.png");
+  }
+  .ico.icon-control-event {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .ico.icon-control-event.medium {
+    background-image: url("../Images/Icons/Toolbox/Event32@2x.png");
+  }
+  .ico.icon-control-method {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .ico.icon-control-method.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-control-method-parameter {
+    background-image: url("../Images/Icons/Toolbox/Parameter16@2x.png");
+  }
+  .ico.icon-control-method-parameter.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-control-property {
+    background-image: url("../Images/Icons/Toolbox/Properties16@2x.png");
+  }
+  .ico.icon-control-property.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-event {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .ico.icon-event.medium {
+    background-image: url("../Images/Icons/Toolbox/Event32@2x.png");
+  }
+  .ico.icon-expression {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction16@2x.png");
+  }
+  .ico.icon-expression.medium {
+    background-image: url("../Images/Icons/Functions/RegularExpressionFunction32@2x.png");
+  }
+  .ico.icon-field {
+    background-image: url("../Images/Icons/ContextBrowser/MenuFieldsTab16@2x.png");
+  }
+  .ico.icon-field.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-filter {
+    background-image: url("../Images/Icons/Runtime/Filter16@2x.png");
+  }
+  .ico.icon-filter.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-form {
+    background-image: url("../Images/Icons/FileTypes/Form16@2x.png");
+  }
+  .ico.icon-form.medium {
+    background-image: url("../Images/Icons/FileTypes/Form32@2x.png");
+  }
+  .ico.icon-styleprofile {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile16@2x.png");
+  }
+  .ico.icon-styleprofile.medium {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile32@2x.png");
+  }
+  .ico.icon-process {
+    background-image: url("../Images/Icons/FileTypes/ProcessDefinition16@2x.png");
+  }
+  .ico.icon-process.medium {
+    background-image: url("../Images/Icons/FileTypes/ProcessDefinition32@2x.png");
+  }
+  .ico.icon-smartobject {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16@2x.png");
+  }
+  .ico.icon-smartobject.medium {
+    background-image: url("../Images/Icons/FileTypes/SmartObject32@2x.png");
+  }
+  .ico.icon-view {
+    background-image: url("../Images/Icons/FileTypes/View16@2x.png");
+  }
+  .ico.icon-view.medium {
+    background-image: url("../Images/Icons/FileTypes/View32@2x.png");
+  }
+  .ico.icon-conditional-style-error {
+    background-image: url("../Images/Icons/Badges/ConditionalStyling_Error16@2x.png");
+  }
+  .ico.icon-conditional-style-error.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-expression-error {
+    background-image: url("../Images/Icons/Badges/RegularExpressionFunctionError16@2x.png");
+  }
+  .ico.icon-expression-error.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-sub-form {
+    background-image: url("../Images/Icons/FileTypes/Form16@2x.png");
+  }
+  .ico.icon-sub-form.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-multiselect-control {
+    background-image: url("../Images/Icons/DataTypes/MultiValue16@2x.png");
+  }
+  .ico.icon-multiselect-control.medium {
+    background-image: url("../Images/Icons/DataTypes/MultiValue32@2x.png");
+  }
+  .ico.icon-smartobject-method {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .ico.icon-smartobject-method.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-smartobject-property {
+    background-image: url("../Images/Icons/Ribbon/Properties16@2x.png");
+  }
+  .ico.icon-smartobject-property.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-smartobject-method-parameter {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .ico.icon-smartobject-method-parameter.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-service-instance {
+    background-image: url("../Images/Icons/Management/ServiceInstance16@2x.png");
+  }
+  .ico.icon-service-instance.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-service-object {
+    background-image: url("../Images/Icons/Management/ServiceObject16@2x.png");
+  }
+  .ico.icon-service-object.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-service-object-browser {
+    background-image: url("../Images/Icons/Management/ServiceObject16@2x.png");
+  }
+  .ico.icon-service-object-browser.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-service-object-method {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .ico.icon-service-object-method.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-service-object-method-parameter {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .ico.icon-service-object-method-parameter.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-service-object-method-property {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .ico.icon-service-object-method-property.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-service-object-servicetype {
+    background-image: url("../Images/Icons/Management/SmartObjectServices16@2x.png");
+  }
+  .ico.icon-service-object-servicetype.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-form-event {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .ico.icon-form-event.medium {
+    background-image: url("../Images/Icons/Toolbox/Event32@2x.png");
+  }
+  .ico.icon-form-error {
+    background-image: url("../Images/Icons/Badges/FormError16@2x.png");
+  }
+  .ico.icon-form-error.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-form-parameter {
+    background-image: url("../Images/Icons/Toolbox/Parameter16@2x.png");
+  }
+  .ico.icon-form-parameter.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-form-state {
+    background-image: url("../Images/Icons/Rules/State16@2x.png");
+  }
+  .ico.icon-form-state.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-form-state-error {
+    background-image: url("../Images/Icons/Badges/StateError16@2x.png");
+  }
+  .ico.icon-form-state-error.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-styleprofile-error {
+    background-image: url("../Images/Icons/Badges/StyleProfileError16@2x.png");
+  }
+  .ico.icon-view-event {
+    background-image: url("../Images/Icons/Toolbox/Event16@2x.png");
+  }
+  .ico.icon-view-event.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-view-error {
+    background-image: url("../Images/Icons/Badges/ViewError16@2x.png");
+  }
+  .ico.icon-view-error.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-view-method {
+    background-image: url("../Images/Icons/Ribbon/Method16@2x.png");
+  }
+  .ico.icon-view-method.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-content-view {
+    background-image: url("../Images/Icons/FileTypes/View16@2x.png");
+  }
+  .ico.icon-content-view.medium {
+    background-image: url("../Images/Icons/FileTypes/View32@2x.png");
+  }
+  .ico.icon-item-view {
+    background-image: url("../Images/Icons/FileTypes/View16@2x.png");
+  }
+  .ico.icon-item-view.medium {
+    background-image: url("../Images/Icons/FileTypes/View32@2x.png");
+  }
+  .ico.icon-list-view {
+    background-image: url("../Images/Icons/FileTypes/View16@2x.png");
+  }
+  .ico.icon-list-view.medium {
+    background-image: url("../Images/Icons/FileTypes/View32@2x.png");
+  }
+  .ico.icon-workflow-view {
+    background-image: url("../Images/Icons/Ribbon/Workflow16@2x.png");
+  }
+  .ico.icon-workflow-view.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-process-instance {
+    background-image: url("../Images/Icons/ContextBrowser/ProcessInstance16@2x.png");
+  }
+  .ico.icon-process-instance.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-process-data-field {
+    background-image: url("../Images/Icons/ContextBrowser/DataField16@2x.png");
+  }
+  .ico.icon-process-data-field.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-process-xml-field {
+    background-image: url("../Images/Icons/DataTypes/XML16@2x.png");
+  }
+  .ico.icon-process-xml-field.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-workflow-actions {
+    background-image: url("../Images/Icons/Ribbon/Workflow16@2x.png");
+  }
+  .ico.icon-workflow-actions.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-form-checked-out {
+    background-image: url("../Images/Icons/FileTypes/Form_CheckOut16@2x.png");
+  }
+  .ico.icon-form-checked-out.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-form-checked-out-user {
+    background-image: url("../Images/Icons/FileTypes/Form_UserCheckOut16@2x.png");
+  }
+  .ico.icon-form-checked-out-user.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-styleprofile-checked-out {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile_CheckOut16@2x.png");
+  }
+  .ico.icon-styleprofile-checked-out-user {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile_UserCheckOut16@2x.png");
+  }
+  .ico.icon-view-checked-out {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16@2x.png");
+  }
+  .ico.icon-view-checked-out.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-view-checked-out-user {
+    background-image: url("../Images/Icons/Placeholder/Placeholder16@2x.png");
+  }
+  .ico.icon-view-checked-out-user.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-list-view-checked-out {
+    background-image: url("../Images/Icons/FileTypes/View_CheckOut16@2x.png");
+  }
+  .ico.icon-list-view-checked-out.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-list-view-checked-out-user {
+    background-image: url("../Images/Icons/FileTypes/View_UserCheckOut16@2x.png");
+  }
+  .ico.icon-list-view-checked-out-user.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-item-view-checked-out {
+    background-image: url("../Images/Icons/FileTypes/View_CheckOut16@2x.png");
+  }
+  .ico.icon-item-view-checked-out.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-item-view-checked-out-user {
+    background-image: url("../Images/Icons/FileTypes/View_UserCheckOut16@2x.png");
+  }
+  .ico.icon-item-view-checked-out-user.medium {
+    background-image: url("../Images/Icons/Placeholder/Placeholder32@2x.png");
+  }
+  .ico.icon-date {
+    background-image: url("../Images/Icons/DataTypes/Date16@2x.png");
+  }
+  .icon.icon-size16.ic-dropdown {
+    background-image: url("../Images/Icons/DropdownSet/Dropdown16@2x.png");
+  }
+  .icon.icon-size16.ic-form {
+    background-image: url("../Images/Icons/FileTypes/Form16@2x.png");
+  }
+  .icon.icon-size16.ic-styleprofile {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile16@2x.png");
+  }
+  .icon.icon-size16.ic-subform {
+    background-image: url("../Images/Icons/FileTypes/SubForm16@2x.png");
+  }
+  .icon.icon-size16.ic-smartobject {
+    background-image: url("../Images/Icons/FileTypes/SmartObject16@2x.png");
+  }
+  .icon.icon-size16.ic-workflow {
+    background-image: url("../Images/Icons/Toolbar/Workflow16@2x.png");
+  }
+  .icon.icon-size16.ic-view {
+    background-image: url("../Images/Icons/FileTypes/View16@2x.png");
+  }
+  .icon.icon-size16.ic-subview {
+    background-image: url("../Images/Icons/FileTypes/SubView16@2x.png");
+  }
+  .icon.icon-size16.ic-close {
+    background-image: url("../Images/Icons/Runtime/HeaderClose16@2x.png");
+  }
+  .icon.icon-size16.ic-avatarempty {
+    background-image: url("../Images/Icons/Avatar/EmptyAvatar16@2x.png");
+  }
+  .icon.icon-size16.ic-rule {
+    background-image: url("../Images/Icons/Rules/Rule16@2x.png");
+  }
+  .icon.icon-size16.ic-rule.error {
+    background-image: url("../Images/Icons/Rules/Rule_Error16@2x.png");
+  }
+  .icon.icon-size16.icon-set-interactive.icon-mode-hyperlink.ic-pageleft {
+    background-image: url("../Images/Icons/Interactive/PageLeftHover16_Dark@2x.png");
+  }
+  .icon.icon-size16.icon-set-interactive.icon-mode-hyperlink.ic-pageright {
+    background-image: url("../Images/Icons/Interactive/PageRightHover16_Dark@2x.png");
+  }
+  .icon.icon-size16.icon-set-toolbar.ic-copy {
+    background-image: url("../Images/Icons/Toolbar/Copy16@2x.png");
+  }
+  .icon.icon-size32.ic-dropdown {
+    background-image: url("../Images/Icons/PlaceHolder/PlaceHolder32@2x.png");
+  }
+  .icon.icon-size32.ic-form {
+    background-image: url("../Images/Icons/FileTypes/Form32@2x.png");
+  }
+  .icon.icon-size32.ic-styleprofile {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile32@2x.png");
+  }
+  .icon.icon-size32.ic-smartobject {
+    background-image: url("../Images/Icons/FileTypes/SmartObject32@2x.png");
+  }
+  .icon.icon-size32.ic-workflow {
+    background-image: url("../Images/Icons/Toolbar/Workflow32@2x.png");
+  }
+  .icon.icon-size32.ic-view {
+    background-image: url("../Images/Icons/FileTypes/View32@2x.png");
+  }
+  .icon.icon-size64.ic-error {
+    background-image: url("../Images/Icons/Management/Error64@2x.png");
+  }
+  .icon.icon-size64.ic-avatarempty {
+    background-image: url("../Images/Icons/Avatar/EmptyAvatar64@2x.png");
+  }
+  .icon.icon-size128.ic-designerlogo {
+    background-image: url("../Images/Icons/Logos/K2DesignerLogo128@2x.png");
+  }
+  .icon.dark.icon-size16.ic-form {
+    background-image: url("../Images/Icons/FileTypes/Form_Alt16@2x.png");
+  }
+  .icon.dark.icon-size16.ic-styleprofile {
+    background-image: url("../Images/Icons/FileTypes/StyleProfile_Alt16@2x.png");
+  }
+  .icon.dark.icon-size16.ic-smartobject {
+    background-image: url("../Images/Icons/FileTypes/SmartObject_Alt16@2x.png");
+  }
+  .icon.dark.icon-size16.ic-workflow {
+    background-image: url("../Images/Icons/FileTypes/Workflow_Alt16@2x.png");
+  }
+  .icon.dark.icon-size16.ic-view {
+    background-image: url("../Images/Icons/FileTypes/View_Alt16@2x.png");
+  }
+  .icon.dark.icon-size16.ic-close {
+    background-image: url("../Images/Icons/Runtime/HeaderClose_Selected16@2x.png");
+  }
+  .icon.dark.icon-size16.ic-back {
+    background-image: url("../Images/Icons/Arrows/CollapseMenu_Alt16@2x.png");
+  }
+  .icon.dark.icon-size16.ic-avatarempty {
+    background-image: url("../Images/Icons/Avatar/EmptyAvatar_Alt16@2x.png");
+  }
+  .icon.readonly.icon-size16.ic-run {
+    background-image: url("../Images/Icons/Toolbar/Run_ReadOnly16@2x.png");
+  }
+  .bg-deadarea {
+    background-image: url("../Images/Icons/Backgrounds/DeadAreaBackground@2x.png");
+    background-size: 11px 11px;
+    background-repeat: repeat;
+  }
+}

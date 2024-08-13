@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+      <RowDefinition row="1" cssSelector=".icon.icon-set-contextbrowserfunctions.icon-size16.ic-{iconname}"/> <!-- normal -->
+        </CssDefinitions>
+        <SourceImages>
+			<Column number="1">
+				<Rows>
+					<Row number="1" cssname="AbsoluteDecimal">AbsoluteDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="2">
+				<Rows>
+					<Row number="1" cssname="AbsoluteLong">AbsoluteLong16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="3">
+				<Rows>
+					<Row number="1" cssname="AddDateFunction">AddDateFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="4">
+				<Rows>
+					<Row number="1" cssname="AddDays">AddDays16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="5">
+				<Rows>
+					<Row number="1" cssname="AddHours">AddHours16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="6">
+				<Rows>
+					<Row number="1" cssname="AddMinutes">AddMinutes16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="7">
+				<Rows>
+					<Row number="1" cssname="AddSeconds">AddSeconds16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="8">
+				<Rows>
+					<Row number="1" cssname="AddTimeFunction">AddTimeFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="9">
+				<Rows>
+					<Row number="1" cssname="And">And16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="10">
+				<Rows>
+					<Row number="1" cssname="AverageDecimal">AverageDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="11">
+				<Rows>
+					<Row number="1" cssname="BetweenRandomFunction">BetweenRandomFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="12">
+				<Rows>
+					<Row number="1" cssname="BetweenRandomLong">BetweenRandomLong16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="13">
+				<Rows>
+					<Row number="1" cssname="Contains">Contains16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="14">
+				<Rows>
+					<Row number="1" cssname="ConversionFunction">ConversionFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="15">
+				<Rows>
+					<Row number="1" cssname="CountValue">CountValue16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="16">
+				<Rows>
+					<Row number="1" cssname="DateDif">DateDif16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="17">
+				<Rows>
+					<Row number="1" cssname="DateFunction">DateFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="18">
+				<Rows>
+					<Row number="1" cssname="Day">Day16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="19">
+				<Rows>
+					<Row number="1" cssname="DayDifference">DayDifference16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="20">
+				<Rows>
+					<Row number="1" cssname="Empty">Empty16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="21">
+				<Rows>
+					<Row number="1" cssname="EndMonth">EndMonth16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="22">
+				<Rows>
+					<Row number="1" cssname="EndofMonth">EndofMonth16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="23">
+				<Rows>
+					<Row number="1" cssname="EndofQuarter">EndofQuarter16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="24">
+				<Rows>
+					<Row number="1" cssname="EndofWeek">EndofWeek16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="25">
+				<Rows>
+					<Row number="1" cssname="EndofYear">EndofYear16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="26">
+				<Rows>
+					<Row number="1" cssname="EndQuarter">EndQuarter16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="27">
+				<Rows>
+					<Row number="1" cssname="EndWeek">EndWeek16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="28">
+				<Rows>
+					<Row number="1" cssname="EndYear">EndYear16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="29">
+				<Rows>
+					<Row number="1" cssname="ExcelFunction">ExcelFunction16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="30">
+				<Rows>
+					<Row number="1" cssname="False">False16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="31">
+				<Rows>
+					<Row number="1" cssname="FindFunction">FindFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="32">
+				<Rows>
+					<Row number="1" cssname="FormatDate">FormatDate16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="33">
+				<Rows>
+					<Row number="1" cssname="GenerateGUID">GenerateGUID16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="34">
+				<Rows>
+					<Row number="1" cssname="FileFunction">FileFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="35">
+				<Rows>
+					<Row number="1" cssname="GenericRootFunction">GenericRootFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="36">
+				<Rows>
+					<Row number="1" cssname="GetAttachmentContent">GetAttachmentContent16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="37">
+				<Rows>
+					<Row number="1" cssname="GetCell">GetCell16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="38">
+				<Rows>
+					<Row number="1" cssname="GetCellWithinInput">GetCellWithinInput16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="39">
+				<Rows>
+					<Row number="1" cssname="GetEmailsForSharepointGroup">GetEmailsForSharepointGroup16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="40">
+				<Rows>
+					<Row number="1" cssname="GetEmailsForSharepointUsers">GetEmailsForSharepointUsers16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="41">
+				<Rows>
+					<Row number="1" cssname="GetFile_FileFriendlyName">GetFile_FileFriendlyName16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="42">
+				<Rows>
+					<Row number="1" cssname="GetRange">GetRange16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="43">
+				<Rows>
+					<Row number="1" cssname="GetRangeWithInput">GetRangeWithInput16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="44">
+				<Rows>
+					<Row number="1" cssname="GetSharepointGroups">GetSharepointGroups16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="45">
+				<Rows>
+					<Row number="1" cssname="GetSharePointItemRef">GetSharePointItemRef16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="46">
+				<Rows>
+					<Row number="1" cssname="GetSharePointUrl">GetSharePointUrl16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="47">
+				<Rows>
+					<Row number="1" cssname="GetSharepointUsers">GetSharepointUsers16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="48">
+				<Rows>
+					<Row number="1" cssname="Hyperlink">Hyperlink16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="49">
+				<Rows>
+					<Row number="1" cssname="If">If16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="50">
+				<Rows>
+					<Row number="1" cssname="Insert">Insert16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="51">
+				<Rows>
+					<Row number="1" cssname="Join">Join16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="52">
+				<Rows>
+					<Row number="1" cssname="Left">Left16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="53">
+				<Rows>
+					<Row number="1" cssname="Length">Length16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="54">
+				<Rows>
+					<Row number="1" cssname="Match">Match16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="55">
+				<Rows>
+					<Row number="1" cssname="MatchMultiple">MatchMultiple16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="56">
+				<Rows>
+					<Row number="1" cssname="MatchSingle">MatchSingle16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="57">
+				<Rows>
+					<Row number="1" cssname="Maximum">Maximum16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="58">
+				<Rows>
+					<Row number="1" cssname="MaximumDecimal">MaximumDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="59">
+				<Rows>
+					<Row number="1" cssname="MaximumLong">MaximumLong16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="60">
+				<Rows>
+					<Row number="1" cssname="Mid">Mid16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="61">
+				<Rows>
+					<Row number="1" cssname="MidThreeParameters">MidThreeParameters16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="62">
+				<Rows>
+					<Row number="1" cssname="Minimum">Minimum16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="63">
+				<Rows>
+					<Row number="1" cssname="MinimumDecimal">MinimumDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="64">
+				<Rows>
+					<Row number="1" cssname="MinimumLong">MinimumLong16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="65">
+				<Rows>
+					<Row number="1" cssname="Month">Month16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="66">
+				<Rows>
+					<Row number="1" cssname="No">No16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="67">
+				<Rows>
+					<Row number="1" cssname="Not">Not16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="68">
+				<Rows>
+					<Row number="1" cssname="NumbersFunction">NumbersFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="69">
+				<Rows>
+					<Row number="1" cssname="Or">Or16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="70">
+				<Rows>
+					<Row number="1" cssname="PadLeft">PadLeft16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="71">
+				<Rows>
+					<Row number="1" cssname="PadRight">PadRight16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="72">
+				<Rows>
+					<Row number="1" cssname="PowerDecimal">PowerDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="73">
+				<Rows>
+					<Row number="1" cssname="PowerLong">PowerLong16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="74">
+				<Rows>
+					<Row number="1" cssname="Proper">Proper16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="75">
+				<Rows>
+					<Row number="1" cssname="Quarter">Quarter16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="76">
+				<Rows>
+					<Row number="1" cssname="RandomFunction">RandomFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="77">
+				<Rows>
+					<Row number="1" cssname="RandomFunctionDecimal">RandomFunctionDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="78">
+				<Rows>
+					<Row number="1" cssname="RandomFunctionLong">RandomFunctionLong16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="79">
+				<Rows>
+					<Row number="1" cssname="RegularExpressionFunction">RegularExpressionFunction16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="80">
+				<Rows>
+					<Row number="1" cssname="Replace">Replace16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="81">
+				<Rows>
+					<Row number="1" cssname="Right">Right16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="82">
+				<Rows>
+					<Row number="1" cssname="RootDecimal">RootDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="83">
+				<Rows>
+					<Row number="1" cssname="RootFunctionDecimal">RootFunctionDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="84">
+				<Rows>
+					<Row number="1" cssname="RootFunctionLong">RootFunctionLong16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="85">
+				<Rows>
+					<Row number="1" cssname="RoundDown">RoundDown16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="86">
+				<Rows>
+					<Row number="1" cssname="RoundFunction">RoundFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="87">
+				<Rows>
+					<Row number="1" cssname="RoundUp">RoundUp16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="88">
+				<Rows>
+					<Row number="1" cssname="SearchFunction">SearchFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="89">
+				<Rows>
+					<Row number="1" cssname="Split">Split16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="90">
+				<Rows>
+					<Row number="1" cssname="SquareFunction">SquareFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="91">
+				<Rows>
+					<Row number="1" cssname="SquareFunctionDecimal">SquareFunctionDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="92">
+				<Rows>
+					<Row number="1" cssname="SquareFunctionLong">SquareFunctionLong16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="93">
+				<Rows>
+					<Row number="1" cssname="SquareRootFunctionLong">SquareRootFunctionLong16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="94">
+				<Rows>
+					<Row number="1" cssname="StartofMonthDateTime">StartofMonthDateTime16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="95">
+				<Rows>
+					<Row number="1" cssname="StartofMonthYearMonth">StartofMonthYearMonth16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="96">
+				<Rows>
+					<Row number="1" cssname="StartofQuarter">StartofQuarter16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="97">
+				<Rows>
+					<Row number="1" cssname="StartofWeek">StartofWeek16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="98">
+				<Rows>
+					<Row number="1" cssname="StartofYear">StartofYear16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="99">
+				<Rows>
+					<Row number="1" cssname="SubractDays">SubractDays16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="100">
+				<Rows>
+					<Row number="1" cssname="SubtractHours">SubtractHours16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="101">
+				<Rows>
+					<Row number="1" cssname="SubtractMinutes">SubtractMinutes16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="102">
+				<Rows>
+					<Row number="1" cssname="SubtractSeconds">SubtractSeconds16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="103">
+				<Rows>
+					<Row number="1" cssname="SumFunction">SumFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="104">
+				<Rows>
+					<Row number="1" cssname="SumFunctionDecimal">SumFunctionDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="105">
+				<Rows>
+					<Row number="1" cssname="SumFunctionLong">SumFunctionLong16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="106">
+				<Rows>
+					<Row number="1" cssname="TextFunction">TextFunction16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="107">
+				<Rows>
+					<Row number="1" cssname="ToBaseString">ToBaseString16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="108">
+				<Rows>
+					<Row number="1" cssname="ToBinary">ToBinary16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="109">
+				<Rows>
+					<Row number="1" cssname="ToBoolean">ToBoolean16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="110">
+				<Rows>
+					<Row number="1" cssname="ToByte">ToByte16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="111">
+				<Rows>
+					<Row number="1" cssname="ToDateTime">ToDateTime16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="112">
+				<Rows>
+					<Row number="1" cssname="Today">Today16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="113">
+				<Rows>
+					<Row number="1" cssname="ToDecimal">ToDecimal16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="114">
+				<Rows>
+					<Row number="1" cssname="ToDouble">ToDouble16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="115">
+				<Rows>
+					<Row number="1" cssname="ToInteger">ToInteger16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="116">
+				<Rows>
+					<Row number="1" cssname="ToK2FQN">ToK2FQN16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="117">
+				<Rows>
+					<Row number="1" cssname="ToLong">ToLong16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="118">
+				<Rows>
+					<Row number="1" cssname="ToLower">ToLower16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="119">
+				<Rows>
+					<Row number="1" cssname="Tomorrow">Tomorrow16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="120">
+				<Rows>
+					<Row number="1" cssname="ToSharepointClaimsUser">ToSharepointClaimsUser16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="121">
+				<Rows>
+					<Row number="1" cssname="ToSharepointClaimsUsers">ToSharepointClaimsUsers16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="122">
+				<Rows>
+					<Row number="1" cssname="ToShort">ToShort16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="123">
+				<Rows>
+					<Row number="1" cssname="ToString">ToString16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="124">
+				<Rows>
+					<Row number="1" cssname="ToUpper">ToUpper16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="125">
+				<Rows>
+					<Row number="1" cssname="True">True16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="126">
+				<Rows>
+					<Row number="1" cssname="Yes">Yes16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="127">
+				<Rows>
+					<Row number="1" cssname="XOr">XOr16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="128">
+				<Rows>
+					<Row number="1" cssname="UpdateDataField">UpdateDataField16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="129">
+				<Rows>
+					<Row number="1" cssname="URLFunction">URLFunction16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="130">
+				<Rows>
+					<Row number="1" cssname="WeekDay">WeekDay16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="131">
+				<Rows>
+					<Row number="1" cssname="WeekNumber">WeekNumber16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="132">
+				<Rows>
+					<Row number="1" cssname="Year">Year16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="133">
+				<Rows>
+					<Row number="1" cssname="Yesterday">Yesterday16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="134">
+				<Rows>
+					<Row number="1" cssname="GenericEncode">GenericEncode16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="135">
+				<Rows>
+					<Row number="1" cssname="Trim">Trim16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="136">
+				<Rows>
+					<Row number="1" cssname="FormatNumber">FormatNumber16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="137">
+				<Rows>
+					<Row number="1" cssname="FirstItem">FirstItem16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="138">
+				<Rows>
+					<Row number="1" cssname="IndexItem">IndexItem16.png</Row>
+				</Rows>
+			</Column>
+			<Column number="139">
+				<Rows>
+					<Row number="1" cssname="LastItem">LastItem16.png</Row>
+				</Rows>
+			</Column>
+			
+			<Column number="140">
+				<Rows>
+					<Row number="1" cssname="GetWordContent">GetWordContent16.png</Row>
+				</Rows>
+			</Column>
+			
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="8,0,0,8">
+        <CssBackgroundImageFolder>Functions/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/Functions/ContextBrowserFunctions16.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/ContextBrowserFunctions16.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>

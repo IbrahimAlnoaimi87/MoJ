@@ -1,0 +1,941 @@
+﻿/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import "../../../Designer_Variables.less";
+
+@_App-Top-Bar-Height: @App-Titlebar-Height;
+@_App-Top-Bar-Height-Large: 50px;
+
+@_App-Bottom-Bar-Height: 34px; /* Height for the Login screen page footer (normal screen size) */
+@_App-Bottom-Bar-Height-Large: 68px; /* Height for the Login screen page footer (large screen size) */
+
+@_Auth-Method-Description-Min-Height: 20px;
+@_Auth-Method-Description-Max-Height: 34px;
+@_Auth-Method-Description-Min-Height-Large: 28px;
+@_Auth-Method-Description-Max-Height-Large: 54px;
+
+@_Auth-Method-Background-Color: rgba(248, 248, 248, 1);
+@_Auth-Method-Background-Color-Highlighted: rgba(250, 250, 250, 1);
+
+html 
+{
+    font-size: 62.5%;
+
+    body 
+    {
+        font-size: 1.1rem;
+        background-color: #003870 !important;
+    }
+}
+
+/*#region multiline-clamp mixin */
+/* mixin that implements multiline ellipse for webkit supported browser */
+.multiline-clamp-mixin()
+{
+    /* For WebKit browser we can implement multiple line ellipses with line-clamp property. see - https://css-tricks.com/line-clampin/ */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+/*#endregion*/
+
+/*#region multiline-ellipses mixin */
+/* mixin that implements multiline ellipse for non-webkit supported browser */
+/* Overflow text are hidden and ellipses are injected at bottom right corner of the container. see - http://dev.mobify.com/blog/multiline-ellipsis-in-pure-css/ */
+.multiline-ellipses-mixin(@width, @backgroundColor)
+{
+    position: relative;
+    text-align: justify;
+
+    margin-left:-@width;
+    padding-right:@width;
+    padding-left:@width;
+
+    &::before
+    {
+        /* points in the end */
+        content: '...';
+        /* absolute position */
+        position: absolute;
+        /* set position to right bottom corner of block */
+        right: 0px;
+        bottom: 0px;
+    }
+
+    &::after 
+    {
+        /* points in the end */
+        content: '';
+        /* absolute position */
+        position: absolute;
+        /* set position to right bottom corner of text */
+        right: 0;
+        /* set width and height */
+        width: @width;
+        height: calc(@width * 2);
+        background-color: @backgroundColor;
+    }
+}
+/*#endregion*/
+
+//found in the header of the K2 Designer (smartforms designer)
+.login-status
+{
+    text-align: right;
+    line-height: 30px;
+    padding: 0px 5px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#login_form_container
+{
+    width: 500px;
+    min-height: 145px;
+    margin: 0 auto;
+}
+
+.form-buttons a.button
+{
+    margin-right: 3px;
+}
+
+#SignInWrapper
+{
+    display: table;
+    height: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.SignInWrapper.LandingContent
+{
+    display: table-cell;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.SignInContent
+{
+    width: 355px;
+    text-align: left;
+    display: inline-block;
+    padding: 9px;
+    border-left: 1px solid #AEAF9D;
+    vertical-align: middle;
+    box-sizing: border-box;
+    min-height: 150px;
+    max-width: 100%;
+}
+
+.SignInForm
+{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 9px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.SignInContent .SignInLockImage,
+.SessionContent .SignInLockImage
+{
+    display: inline-block;
+    width: 100px;
+    height: 99px;
+    background: url(../Images/Icons/Lock96.png) no-repeat transparent;
+    background-position-x: left;
+    margin-top: 15px;
+    margin-left: 9px;
+    vertical-align: top;
+}
+
+.SignInContent .IntroText
+{
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+}
+
+.SessionContent .IntroText
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#SignInPanel.panel > .panel-body
+{
+    background-color: transparent;
+}
+
+// Allow the logo to cover the top bar
+#SignInPanel.panel > .panel-body,
+#SignInPanel.panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper
+{
+    overflow: visible;
+}
+
+#SignInPanel > .panel-body
+{
+    border: none 0px transparent; //remove this border for the landing page only.
+}
+
+//get rid of 3px standard paddings
+#SignInPanel.panel.full > .panel-body > .panel-body-m
+{
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+#SignInPanel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > .scroll-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    overflow: visible;
+}
+
+#SignInPanel
+{
+    .main-logo
+    {
+        position: absolute;
+        margin-left: -35px;
+        left: 50%;
+        top: -@_App-Top-Bar-Height; /*Same height as top-bar*/
+        z-index: 3000;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+        background-size: 70px 70px;
+    }
+}
+
+
+.stsMethodsWrapper
+{
+    font-family: "Open-Sans", "Segoe UI", "Helvetica", "Sans-serif";
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f2f2f2;
+    align-items: center;
+    overflow-y: auto;
+
+    & .stsMethodsContent
+    {
+        color: rgba(55, 71, 79, 0.6);
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.stsIssuerList
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    align-items: center;
+
+    & .stsIssuer > a
+    {
+        display: flex;
+        font-family: inherit;
+        font-weight: 300;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 2px;
+
+        /*firefox/webkit prop*/
+        will-change: contents;
+
+        /*Transitions*/
+        color: rgba(55, 71, 79, 0.5);
+        background-color: @_Auth-Method-Background-Color;
+        transform: scale(1.0);
+        border-color: transparent;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+
+        transition: color 0.15s, background-color 0.15s, transform 0.15s , border-color 0.15s;
+
+        &:focus
+        {
+            border-color: rgba(33,150,243, 0.8);
+        }
+
+        &:hover
+        {
+            cursor: pointer;
+
+            /*Transitions*/
+            color: rgba(55, 71, 79, 0.8);
+            background-color: @_Auth-Method-Background-Color-Highlighted;
+            transform: scale(1.05);
+            border-color: rgba(33,150,243, 1.0);
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+
+            transition: color 0.15s, background-color 0.15s, transform 0.15s , border-color 0.15s;
+        }
+
+        & .stsAuthMethod
+        {
+            text-align: left;
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+
+            & > div
+            {
+                overflow: hidden;
+            }
+        }
+
+        html.webkit & .stsAuthMethodDescription
+        {
+            .multiline-clamp-mixin();
+        }
+    }
+
+    & .stsIssuer:last-child
+    {
+        margin-bottom: 30px;
+    }
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+{
+  border-top-color: #f2f2f2 !important;
+  -webkit-text-fill-color: #37474f;
+  -webkit-box-shadow: 0 0 0px 1000px #f2f2f2 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.stsMainLogo
+{
+    top:0px;
+    position: absolute;
+    margin-left: -35px;
+    left: 50%;
+    /*Same height as top-bar*/
+    z-index: 3000;
+    background-repeat: no-repeat;
+}
+
+.stsLoginInPanel
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f2f2f2;
+    font-family: "Open-Sans", "Segoe UI", "Helvetica", "Sans-serif";
+}
+
+/* Don't show IE's clear andd reveal buttons */
+.stsLoginInPanel input[type=text]::-ms-clear,
+.stsLoginInPanel input::-ms-reveal
+{
+    display: none;
+}
+
+.stsLoginInPanel a,
+.stsLoginInPanel input
+{
+    outline: none;
+}
+
+
+.stsLoginInPanel .stsHeader
+{
+    flex-shrink: 0;
+    height: @_App-Top-Bar-Height;
+    background-color: #36474f;
+}
+
+.stsLoginInPanel .stsMain
+{
+    flex: 1;
+    overflow: auto;
+}
+
+/* css layout for a div table */
+.layout-table
+{
+    display:table;
+    height: 100%;
+    width:100%;
+}
+
+.layout-table-row
+{
+    display:table-row;
+}
+
+.layout-table-cell
+{
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.layout-table-cell-alignment
+{
+    display:inline-block;
+}
+/* end css layout for a div table */
+
+.stsLoginInPanel .stsMain .stsLoginDetails
+{
+    height: auto;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.stsLoginInPanel .stsFooter
+{
+    flex-shrink: 0;
+    background-color: #e2e5e5;
+    height: @_App-Bottom-Bar-Height;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stsLoginDetails .input-control
+{
+     color: #37474f;
+    font-family: inherit;
+    font-style: normal;
+    background-color: transparent;
+    box-sizing: border-box;
+    min-height: 24px;
+    width: 300px;
+    font-size: 1.2rem;
+    padding: 0px;
+    padding-bottom: 4px;
+    border: 1px solid transparent;
+    border-bottom-color: rgba(55, 71, 79, 0.5);
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.stsLoginDetails .validation-error
+{
+    font-family: inherit;
+    padding-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color:rgba(183, 28, 28, 0.5);
+}
+
+.input-control::placeholder
+{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9ca3ac;
+    font-style: italic;
+    opacity: 1; /* Firefox */
+}
+
+.input-control:-ms-input-placeholder
+{ /* Internet Explorer 10-11 */
+    color: #9ca3ac;
+    font-style: italic;
+}
+
+.input-control::-ms-input-placeholder
+{ /* Microsoft Edge */
+    color: #9ca3ac;
+    font-style: italic;
+}
+
+.stsLoginDetails .input-control:focus
+{
+    border-bottom-color: rgba(33,150,243, 0.8);
+}
+
+.stsLoginDetails .input-control.invalid
+{
+    border-bottom-color: rgba(183, 28, 28, 0.5);
+}
+
+.stsLoginUserNamePlaceHolder
+{
+    height: 56px;
+}
+
+.stsPasswordPlaceHolder
+{
+    min-height: 40px;
+    max-height: 100px;
+    padding-bottom: 10px;
+}
+
+.stsRememberMePlaceHolder
+{
+    height: 100px;
+    display: none;
+}
+
+.stsSignInButton
+{
+    text-align: center;
+}
+
+.stsSignInButton .button 
+{
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    color: #FFFFFF;
+    display: inline-block;
+    background-color: #2196f3;
+    background-clip: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    float: none;
+    min-width: 80px;
+    min-height: 30px;
+    line-height: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1.2px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+.stsSignInButton .button:hover
+{
+    background-color: #29b6f6;
+}
+
+.stsSignInButton .button:focus
+{
+    border-color: #1b7ecd;
+    border-style: solid;
+    border-width: 1.2px;
+}
+
+.stsSignInButton .button:focus:hover
+{
+    background-color: #29b6f6;
+    border-color: #1b7ecd;
+}
+
+.stsSignInButton .button.disabled,
+.stsSignInButton .button.disabled:hover,
+.stsSignInButton .button.disabled:focus,
+.stsSignInButton .button.disabled:focus:hover
+{
+    color: #f0f0f1;
+    background-color:#bfc1c2;
+    border-color: transparent;
+    pointer-events: none;
+}
+
+.stsSignInButton .button.loading
+{
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    color: transparent;
+}
+
+.preload-icon
+{
+    display: none;
+}
+
+.stsFooter .PageHelpLink > a
+{   
+    font-size: 1.4rem;
+    display: block;
+    opacity: 0.7;
+    color: rgba(33, 150, 243, 0.8);
+    text-decoration: none;
+    padding: 4px;
+    padding-left: 34px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-image: url("../images/Icons/DesignerLogin/LearnMore24.png");
+    background-position: 4px center;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+}
+
+.stsFooter .PageHelpLink > a:hover
+{
+    opacity: 1;
+    color:  rgba(33, 150, 243, 1);
+}
+
+.stsFooter .PageHelpLink > a:focus
+{
+    border-color: #2196f3;
+}
+
+@media only screen and (max-width: 1650px)
+{
+    .stsMethodsWrapper .stsMethodsContent 
+    {
+      padding-top: 150px;
+    }
+
+    .stsMethodsContent .stsLoginMethod 
+    {
+      font-size: 1.7rem;
+    }
+
+    .stsIssuerList
+    {
+        & > li
+        {
+            width: 324px;
+        }
+
+        & .stsIssuer > a
+        {
+            height: 66px;
+            padding-top: 0px;
+            padding-left: 14px;
+            padding-right: 14px;
+            margin-top: 40px;
+
+            & .stsAuthMethod
+            {
+                width: 192px;
+
+                & > div
+                {
+                    width: 192px;
+                }
+            }
+
+            & .stsAuthMethodType
+            {
+                font-size: 1.6rem;
+                height: 20px;
+                line-height:1.1;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+            }
+
+            & .stsAuthMethodDescription
+            {
+                font-size: 1.2rem;
+                min-height: @_Auth-Method-Description-Min-Height;
+                max-height: @_Auth-Method-Description-Max-Height;
+            }
+
+            & .stsAuthMethodIcon
+            {
+                width: 82px;
+                margin-right: 20px;
+                background-image: url("../images/Icons/DesignerLogin/AccountLoginGraphic82.png");
+                background-size: 82px 82px;
+                background-position: center;
+            }
+
+            html:not(.webkit) & .stsAuthMethodDescription
+            {
+                .multiline-ellipses-mixin(@width: 10px, @backgroundColor: @_Auth-Method-Background-Color);
+            }
+
+            html:not(.webkit) &:hover .stsAuthMethodDescription::after
+            {
+                background-color: @_Auth-Method-Background-Color-Highlighted;
+                transition: background-color 0.15s;
+            }
+        }
+
+    }
+}
+
+/*Large screen size */
+@media only screen and (min-width: 1650px)
+{
+    .home-header.login
+    {
+        /* Bigger top bar on login page */
+        line-height: @_App-Top-Bar-Height-Large;
+        height: @_App-Top-Bar-Height-Large;
+    }
+
+    .home-content.login
+    {
+      /* Bigger top bar on login page */
+      top: @_App-Top-Bar-Height-Large;
+    }
+
+    #SignInPanel
+    {
+        .main-logo
+        {
+            position: absolute;
+            margin-left: 50px;
+            left: 50%;
+            top: -@_App-Top-Bar-Height-Large; /*Same height as top-bar*/
+            z-index: 3000;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+            background-size: 100px 100px;
+        }
+    }
+
+    .stsMethodsWrapper .stsMethodsContent 
+    {
+      padding-top: 170px;
+    }
+
+    .stsMethodsContent .stsLoginMethod 
+    {
+      font-size: 2.0rem;
+    }
+
+    .stsIssuerList 
+    {
+        & li
+        {
+            width: 480px;
+        }
+
+        & .stsIssuer > a
+        {
+            height: 98px;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 50px;
+
+            & .stsAuthMethod
+            {
+                width: 292px;
+
+                & > div
+                {
+                    width: 292px;
+                }
+            }
+
+            & .stsAuthMethodType
+            {
+                font-size: 2.2rem;
+                height: 28px;
+                line-height:1.1;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+            }
+            
+            & .stsAuthMethodDescription
+            {
+                font-size: 2rem;
+                min-height: @_Auth-Method-Description-Min-Height-Large;
+                max-height: @_Auth-Method-Description-Max-Height-Large;
+            }
+
+            & .stsAuthMethodIcon
+            {
+                width: 120px;
+                margin-right: 26px;
+                background-image: url("../images/Icons/DesignerLogin/AccountLoginGraphic120.png");
+                background-size: 120px 120px;
+                background-position: center;
+            }
+
+            html:not(.webkit) & .stsAuthMethodDescription
+            {
+                .multiline-ellipses-mixin(@width: 15px, @backgroundColor: @_Auth-Method-Background-Color);
+            }
+
+            html:not(.webkit) &:hover .stsAuthMethodDescription::after
+            {
+                background-color: @_Auth-Method-Background-Color-Highlighted;
+                transition: background-color 0.15s;
+            }
+        }
+    }
+
+    .stsLoginInPanel .stsHeader
+    {
+        height: 50px;
+    }
+
+    .stsLoginInPanel .stsMain .stsLoginDetails
+    {
+        width: 500px;
+    }
+
+    .stsLoginInPanel .stsFooter
+    {
+        height: @_App-Bottom-Bar-Height-Large;
+    }
+
+    .stsLoginDetails .input-control
+    {
+        min-height: 30px;
+        width: 500px;
+        font-size: 2rem;
+        padding: 0px;
+        padding-bottom: 4px;
+    }
+
+    .stsLoginDetails .validation-error
+    {
+        padding-top: 14px;
+        font-size: 2.2rem;
+    }
+
+    .stsLoginUserNamePlaceHolder
+    {
+        height: 80px;
+    }
+
+    .stsPasswordPlaceHolder
+    {
+        height: 80px;
+        min-height: 70px;
+        max-height: 160px;
+        padding-bottom: 10px;
+    }
+
+    .stsRememberMePlaceHolder
+    {
+        height: 130px;
+        display: none;
+    }
+
+    .stsSignInButton .button
+    {
+        font-size: 2.4rem;
+        min-width: 150px;
+        min-height: 50px;
+        line-height: 46px;
+        border-width: 1.5px;
+    }
+
+    .stsSignInButton .button:focus
+    {
+        border-width: 1.5px;
+    }
+
+    .stsFooter .PageHelpLink > a
+    {   
+        font-size: 2rem;
+        height: 46px;
+        line-height: 44px;
+        padding: 4px;
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 735px)
+{
+    .SignInContent
+    {
+        border-left: none;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px)
+{
+    .form-field label.form-field-label
+    {
+        float: none;
+        padding-left: 0;
+    }
+
+    .form-field .form-field-element-wrapper
+    {
+        margin-left: 0;
+    }
+
+    .form-field.required label.form-field-label
+    {
+        background: none;
+    }
+
+    .form-field.required .form-field-element-wrapper
+    {
+        background: url(../Images/Forms/required_field_orange_line.png) no-repeat 0 2px;
+        padding-left: 5px;
+    }
+}
+
+/*#region Normal screen size (Less than 1650px)*/
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx) and (max-width: 1650px), 
+	(max-resolution: 144dpi) and (max-width: 1650px), 
+	(-webkit-max-device-pixel-ratio: 1.5) and (max-width: 1650px), 
+	(-o-max-device-pixel-ratio: 3/2) and (max-width: 1650px)
+{
+	@res: "";
+	@import (multiple) url('login_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx) and (max-width: 1650px), /*this is for retina graphics, apple/samsung devices*/
+	(min-resolution: 144dpi) and (max-width: 1650px), 
+	(-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1650px), 
+	(-o-min-device-pixel-ratio: 3/2) and (max-width: 1650px)
+{
+	@res: "@2x";
+	@import (multiple) url('login_images.less');
+}
+/*#endregion*/
+
+/*#region Large screen size (Greater than 1650px)*/
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx) and (min-width: 1650px), 
+    (max-resolution: 144dpi) and (min-width: 1650px), 
+    (-webkit-max-device-pixel-ratio: 1.5) and (min-width: 1650px), 
+    (-o-max-device-pixel-ratio: 3/2) and (min-width: 1650px)
+{
+    @res: "";
+    @import (multiple) url('login_images_large.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx) and (min-width: 1650px), /*this is for retina graphics, apple/samsung devices*/
+    (min-resolution: 144dpi) and (min-width: 1650px), 
+    (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1650px), 
+    (-o-min-device-pixel-ratio: 3/2) and (min-width: 1650px)
+{
+    @res: "@2x";
+    @import (multiple) url('login_images_large.less');
+}
+/*#endregion*/

@@ -1,0 +1,658 @@
+﻿/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+.panel
+{
+    position: relative;
+
+    &.full
+    {
+        height: 100%;
+    }
+}
+
+
+/* Panel Header Styling */
+
+.panel-header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    border-style: solid;
+    border-width: 0px 0px 0 0px;
+    height: @Panel-Header-Height;
+    border-color: transparent;
+}
+
+
+.panel-header-c
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.panel-header-wrapper
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.panel-header-wrapper .panel-header-icon
+{
+    width: @Panel-Header-Height;
+    height: @Panel-Header-Height;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 16px 16px;
+    order: 1;
+}
+
+html[dir=rtl] .panel-header-wrapper .panel-header-icon
+{
+    order: 2;
+}
+
+.panel-header-wrapper .panel-header-text
+{
+    flex-grow: 1;
+    order: 2;
+    font-weight: bold;
+    padding-left: 9px;
+    padding-right: 5px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    font-weight: normal;
+    color: @Panel-Header-Text-Color; /*pick the context browser color*/
+}
+
+.panel-header-wrapper .panel-header-controls
+{
+    height: @Panel-Header-Height;
+    padding: 0 0 0 3px;
+    order: 3;
+}
+
+html[dir=rtl] .panel-header-wrapper .panel-header-controls
+{
+    order: 1;
+    padding: 0 3px 0 0;
+}
+
+.panel-header-wrapper .panel-header-controls a
+{
+    background-image: url(../Images/Buttons/ShowHideButton.png);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: @Panel-Header-Height;
+    width: @Panel-Header-Height;
+    margin: 0;
+}
+
+html[dir=rtl] .panel-header-wrapper .panel-header-controls a
+{
+    float: right;
+}
+
+.panel-header-wrapper .panel-header-controls a span
+{
+    display: none;
+}
+
+.panel-header-wrapper .panel-header-controls a.collapse-horizontal
+{
+    background-image: url(../Images/Arrows/black_arrow_left.png);
+}
+
+.panel-header-wrapper .panel-header-controls a.collapse-horizontal:hover
+{
+    background-image: url(../Images/Arrows/green_arrow_left.png);
+}
+
+.panel-header-wrapper .panel-header-controls a.expand-horizontal
+{
+    background-image: url(../Images/Arrows/black_arrow_right.png);
+}
+
+.panel-header-wrapper .panel-header-controls a.expand-horizontal:hover
+{
+    background-image: url(../Images/Arrows/green_arrow_right.png);
+}
+
+.panel.full > .panel-header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.panel.without-header > .panel-header
+{
+    display: none;
+}
+
+.panel.with-toolbar > .panel-header
+{
+    border-bottom-width: 1px;
+}
+
+/* Panel Toolbar Styling */
+.panel-toolbars
+{
+    overflow: hidden;
+}
+
+.panel.without-toolbar > .panel-toolbars
+{
+    display: none;
+}
+
+.panel.full > .panel-toolbars
+{
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.panel.without-header.full > .panel-toolbars
+{
+    top: 0;
+}
+
+.panel.with-header.with-toolbar .panel-toolbars .toolbars,
+.panel.with-header.with-double-toolbar .panel-toolbars .toolbars,
+.panel.with-header.with-triple-toolbar .panel-toolbars .toolbars
+{
+    border-top-width: 0;
+}
+
+.panel.with-header.with-toolbar > .panel-toolbars
+{
+    height: auto;
+}
+
+.panel.with-header.with-toolbar > .panel-toolbars .toolbars.single .toolbar-wrapper
+{
+    background-color: @Toolbar-Background-Color-1; /* Old browsers */
+}
+
+
+
+
+
+
+.panel.without-header.with-toolbar > .panel-toolbars
+{
+    height: 24px; //TODO: replace these with @Toolbar-Height
+}
+
+.panel.with-header.with-double-toolbar > .panel-toolbars
+{
+    height: 46px; //TODO: replace these with @Toolbar-Height
+}
+
+.panel.without-header.with-double-toolbar > .panel-toolbars
+{
+    height: 47px; //TODO: replace these with @Toolbar-Height
+}
+
+.panel.without-header.with-triple-toolbar > .panel-toolbars
+{
+    height: 70px; //TODO: replace these with @Toolbar-Height
+}
+
+/* Grid Body Styling */
+.panel > .panel-body
+{
+    background-color: @Panel-Content-Background-Color;
+    border: solid 1px @Panel-Border-Color;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    margin-top: 0px;
+    position: relative;
+    padding: 10px;
+}
+
+.panel.without-header.without-toolbar > .panel-body,
+.panel.without-header.with-toolbar > .panel-body,
+.panel.with-header.without-toolbar > .panel-body
+{
+    margin-top: 0;
+}
+
+.panel.full > .panel-body
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin-top: 0;
+    padding: 0;
+}
+
+.panel.without-header.without-toolbar.full > .panel-body
+{
+    top: 0;
+}
+
+/* Temp fix for PanelBox control */
+.panel.without-header.full > .panel-body
+{
+    top: 0;
+}
+
+.panel.with-header.without-toolbar.full > .panel-body,
+.panel.without-header.with-toolbar.full > .panel-body
+{
+    top: 23px; //TODO: replace these with @Toolbar-Height
+}
+
+.panel.with-header.with-toolbar.full > .panel-body
+{
+    top: 50px; //TODO: replace these with @Toolbar-Height
+}
+
+.panel.without-header.with-double-toolbar.full > .panel-body
+{
+    top: 50px; //TODO: replace these with @Toolbar-Height
+}
+
+.panel.with-header.with-double-toolbar.full > .panel-body
+{
+    top: 73px; //TODO: replace these with @Toolbar-Height @Panel-Header-Height
+}
+
+.panel.without-header.with-triple-toolbar.full > .panel-body
+{
+    top: 73px; //TODO: replace these with @Toolbar-Height
+}
+
+.panel.without-footer.full > .panel-body
+{
+    bottom: 0; //TODO: replace these with @Toolbar-Height
+}
+
+.panel.with-footer.full > .panel-body
+{
+    bottom: @Panel-Footer-Height;
+}
+
+.panel > .panel-body > .panel-body-m
+{
+    position: relative;
+}
+
+.panel.full > .panel-body > .panel-body-m
+{
+    //LG: Maybe remove these 3px styles, and just add them back on PANE?
+    // bottom:@Standard-Padding-Small;
+    // left:@Standard-Padding-Small;
+    // position:absolute;
+    // right:@Standard-Padding-Small;
+    // top:@Standard-Padding-Small;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+//this element is added manually to a panel content (inside the scroll-wrapper)
+//to make sure text and inline-elements stay off the edge.
+.panel-content
+{
+    padding: @Standard-Padding-Small;
+}
+
+.panel.with-header.without-toolbar > .panel-body > .panel-body-t .panel-body-t-c,
+.panel.without-header.with-toolbar > .panel-body > .panel-body-t .panel-body-t-c
+{
+    background-color: @Panel-Content-Background-Color;
+    background-image: none;
+}
+
+.panel.full > .panel-body > .panel-body-m > .panel-body-m-c
+{
+    height: 100%;
+    position: relative;
+}
+
+.panel .panel-body-m-l,
+.panel .panel-body-m-r
+{
+    display: none;
+}
+
+.panel .panel-body-wrapper
+{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Panel Footer Styling */
+.panel > .panel-footer
+{
+    height: @Panel-Footer-Height;
+    position: relative;
+}
+
+.panel.without-footer > .panel-footer
+{
+    display: none;
+}
+
+.panel.with-footer > .panel-footer
+{
+    display: block;
+}
+
+.panel.with-footer.full > .panel-footer
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.panel.with-footer > .panel-footer > .toolbars
+{
+    border-top: none;
+}
+
+.panel-watermark
+{
+    color: @Input-Watermark-Text-Color;
+}
+
+#RuntimePanelContainer.wrapper
+{
+    background-color:white; //Force a white border around the Run in window panel [See File Properties Page one note spec]
+
+
+    .scroll-wrapper
+    {
+        background-color: @Panel-Background-Color; //Run with parameter panel should have the normal background color [See File Properties Page one note spec]
+    }
+}
+
+#RunPanel.panel.full
+{
+    position: absolute;
+    left:10px;
+    right:10px;
+
+    .panel-body
+    {
+        top:10px;
+        bottom:10px;
+    }
+}
+
+.details-view-icon,
+.details-so-icon,
+.details-form-icon,
+.details-workflow-icon,
+.details-application-icon
+{
+    display: block;
+    height: 64px;
+    width: 64px;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('panels_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('panels_images.less');
+}
+
+
+/*#region LG:Cheeky Changes */
+
+
+
+/*just inside the Form designer do we get rid of the separator in the panel headers (properties/context)*/
+#vdeditorToolboxPane .panel-header-controls,
+#FormDesignerLayoutPropertiesPane .panel-header-controls
+{
+    display: none;
+}
+
+#pgToolBox.pane-container,
+#vdToolboxPaneContainer.pane-container
+{
+    margin-right: @Standard-Padding-Small; //vdToolboxPaneContainer
+}
+
+
+
+
+/*Pane divider animations*/
+#paneDetailsSelect
+{
+    transition: top 0.25s;
+}
+
+.pane-container.vertical > .pane
+{
+    transition: height 0.25s, top 0.25s;
+}
+
+.pane-container.vertical > .divider
+{
+    transition: top 0.25s;
+}
+
+.pane-container.vertical > .divider.ui-draggable-dragging
+{
+    transition: top 0s;
+}
+
+.pane-container.horizontal > .pane
+{
+    transition: width 0.25s, left 0.25s;
+}
+
+.pane-container.horizontal > .divider
+{
+    transition: left 0.25s;
+}
+
+.pane-container.horizontal > .divider.ui-draggable-dragging
+{
+    transition: left 0s;
+}
+
+
+/*View/Form Designer - Clean up the borders in borders of the context + properties panes */
+/*As these are changes to the "pane" styles, they must only affect these panes.*/
+#FormDesignerLayoutPropertiesPane > .pane-container > .pane > .panel > .panel-body,
+#vdeditorToolboxPane > .pane-container > .pane > .panel > .panel-body
+{
+    background-color: transparent;
+    border: none transparent;
+}
+
+/*File Properties screen - Remove footer borders */
+#LowerDetailsPanel > .panel-body
+{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+//Rules Designer - remove background on toolbox container
+#rwTabbedRuleItemSelectorPanel > .panel-body,
+#rwSearchPanelPanel > .panel-body
+{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+//View/Form/SMO "General" Tab - putting in properties etc
+// #ViewDesignerDetailsPanel,
+// #SoWizard_DetailsStep,
+// #pgDetailsPanel{
+// 	 .scroll-wrapper{
+// 		display: flex;
+// 		flex-direction: column;
+// 		align-items: stretch;
+// 		justify-content: center;
+// 	 }
+// 	 .panel-body{
+// 		 background-color: @Panel-Background-Color;
+// 	 }
+// 	 .panel-body-m{
+// 		 top:0px; //override so that the scroll bar is not indented.
+// 		 left:0px;
+// 		 right:0px;
+// 		 bottom:0px;
+// 	 }
+// }
+
+#ViewDesignerDetailsPanel,
+#SoWizard_DetailsStep,
+#pgDetailsPanel
+{
+    .form-field,
+    .field-page-header,
+    .field-page-buttons
+    {
+        max-width: 510px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: stretch; //for the parent.
+        //display: flex; //NOTE: .form-field.hidden is display:none, so this cannot be more specific.
+        flex-direction: row; //for the contents of the form-field
+        flex-shrink: 0; //makes sure the fields are still separated when the window is short
+        flex-grow: 0; //makes sure the fields are still separated when the general window is short (Scrollbars)
+    }
+
+    .form-field .form-field-element-wrapper
+    {
+        margin-left: auto; //override the hardcoded 147px
+        flex-grow: 1; //the input should take up the remaining width
+    }
+
+    .lyt-centered-container > div
+    {
+        display: block;
+    }
+}
+
+
+.field-page-buttons
+{
+    padding-top: 30px;
+    text-align: center; //aligns the button in the middle
+}
+
+.field-page-header
+{
+    border-bottom: solid 1px @Field-Page-Separator-Border-Color;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.field-page-header .field-page-icon
+{
+    height: 128px;
+    width: 128px;
+    background-size: 128px 128px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: auto;
+}
+
+
+//Hide the wizard header at the top of the View Layout screen (not implemented as a wizard header)
+#EditorCanvas > .panel-header
+{
+    display: none;
+}
+
+#EditorCanvas > .panel-toolbars
+{
+    top: 0px;
+}
+
+#EditorCanvas.panel.with-header.with-toolbar.full > .panel-body
+{
+    top: @Toolbar-Height;
+}
+
+#EditorCanvas.panel.without-header.with-double-toolbar.full > .panel-body
+{
+    top: @Toolbar-Height + @Toolbar-Height + 1px; //1px for separator
+}
+
+
+//1) Expression Builder - Get rid of the extra 3px padding around the context browser
+//2) View/Form Editor (Layout) Properties panel - Get rid of the extra 3px padding around those panels.
+#EBContextPanel.panel,
+#vdEditorMain.panel,
+#edtiorBottomPanel.panel
+{
+    & > .panel-body
+    {
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        background-color: transparent;
+
+        & > .panel-body-m
+        {
+            left: 0px;
+            // right: 0px; We want to keep the right padding on these main window items.
+            top: 0px;
+            bottom: 0px;
+        }
+    }
+}
+
+#RuntimePanelContainer
+{
+    #RunPanel
+    {
+        > .panel-header
+        {
+            .panel-header-text
+            {
+                color: rgba(255,255,255,0.8);
+            }
+        }
+    }
+}
+
+/*#endregion */

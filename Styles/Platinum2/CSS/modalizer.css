@@ -1,0 +1,139 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+div.base0 {
+  position: absolute;
+}
+div.base2 {
+  position: fixed;
+}
+div.base1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+div.ajaxLoader {
+  background-size: 40px;
+}
+.k2-overlay .k2-overlay-icon.loading {
+  background-size: 40px;
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  div.ajaxLoader {
+    background-image: url(../Images/Icons/Animated/LoadingPage_light40.gif);
+  }
+  .k2-overlay.k2-modal-overlay {
+    background-image: url(../Images/modalizer_spacer.png);
+  }
+  .k2-overlay .k2-overlay-icon.loading {
+    background-image: url(../Images/Icons/Animated/LoadingPage_light40.gif);
+  }
+  .k2-overlay.designer-loader .k2-overlay-icon.loading,
+  .k2-overlay.app-loader .k2-overlay-icon.loading,
+  .k2-overlay.dark .k2-overlay-icon.loading {
+    background-image: url("../Images/Icons/Animated/LoadingPage40_37474f.gif");
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  div.ajaxLoader {
+    background-image: url(../Images/Icons/Animated/LoadingPage_light40@2x.gif);
+  }
+  .k2-overlay.k2-modal-overlay {
+    background-image: url(../Images/modalizer_spacer.png);
+  }
+  .k2-overlay .k2-overlay-icon.loading {
+    background-image: url(../Images/Icons/Animated/LoadingPage_light40@2x.gif);
+  }
+  .k2-overlay.designer-loader .k2-overlay-icon.loading,
+  .k2-overlay.app-loader .k2-overlay-icon.loading,
+  .k2-overlay.dark .k2-overlay-icon.loading {
+    background-image: url("../Images/Icons/Animated/LoadingPage40_37474f@2x.gif");
+  }
+}
+div.modalizer,
+div.ajaxLoader {
+  background-color: rgba(55, 71, 79, 0.1);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+div.ajaxLoader.inner-modal,
+div.control-loading.inner-modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+/* New overlay & modalizer styling */
+
+.k2-overlay {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.k2-overlay.invisible-overlay {
+  opacity: 0.01 !important;
+}
+.k2-overlay.invisible-overlay .k2-overlay-icon {
+  opacity: 0.01 !important;
+}
+.k2-overlay.k2-modal-overlay.form-designer {
+  background-color: #37474f;
+  cursor: default;
+  opacity: 0.05;
+}
+.k2-overlay .k2-overlay-icon {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.k2-overlay.k2-modal-overlay.app-loader,
+.k2-overlay.k2-modal-overlay.designer-loader {
+  background-image: none;
+  background-color: #37474f;
+  opacity: 1;
+}
+.k2-overlay.k2-modal-overlay.transparent {
+  background-color: transparent;
+  background-image: none;
+}
+.k2-overlay.k2-modal-overlay.popup-loading {
+  background-color: #f8f8f8;
+  cursor: default;
+  opacity: 1;
+}
+iframe.shim {
+  filter: mask;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index: -1;
+}
+.modalizer.intro {
+  opacity: 0;
+}
+.modalizer:not(.intro) {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+.modalizer.exit {
+  opacity: 0;
+  transition: opacity 0.25s;
+}

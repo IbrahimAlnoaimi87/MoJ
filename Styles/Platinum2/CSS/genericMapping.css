@@ -1,0 +1,120 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+.wizard-step-content.docked > .wrapper > .mapping-tree-section,
+.wizard-step-content.docked > .wrapper > .mapping-content-section {
+  bottom: 24px;
+  top: 3px;
+}
+.mapping-tree-section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  overflow: auto;
+}
+.mapping-tree-section.notab {
+  border: solid 1px none;
+}
+.mapping-content-section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 297px;
+  overflow: auto;
+  right: 0;
+}
+.mapping-tree-section.rightAlign {
+  right: 0px;
+  left: auto;
+}
+.mapping-content-section.rightAlign {
+  left: 0px;
+  right: 300px;
+}
+.mapping-tab-content-section {
+  position: absolute;
+  top: 30px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  overflow: auto;
+}
+.mapping-notab-content-section {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  overflow: auto;
+}
+.mapping-tab-other-tree-section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+.mapping-tab-context-expressions-section {
+  position: absolute;
+  height: 146px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 2px;
+  overflow: auto;
+}
+.has-expressions {
+  bottom: 150px;
+}
+.mapping-tab-drag-item {
+  background: #efefef;
+  border: solid 1px #ededed;
+}
+.mapping-tab-drag-item-a {
+  background: #efefef;
+}
+.expression-builder-generic-mappings {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+a.condition-change-yes.oneDrop.expression-change {
+  margin-top: -18px;
+}
+a.condition-change-no.oneDrop.expression-change {
+  margin-top: -18px;
+}
+div.expressions-first-statement {
+  position: relative;
+  top: 25px;
+  height: 50px !important;
+}
+td.generic-mappings-expression-width {
+  width: 100%;
+}
+.popup-body-content .mapping-content-section .panel-body-wrapper > .scroll-wrapper {
+  padding: 0px;
+}
+/*Isolate this change to the datasource config to prevent issues on the rules mapping inputs.*/
+
+#propertyConfig_DisplayTemplatePanel_Container .token-input.single-line .token-input-editor-area {
+  overflow-x: auto;
+}
+.mapping-tree-section.rightAlign .panel > .panel-body {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top: none;
+  border-bottom: none;
+}

@@ -1,0 +1,254 @@
+//Purpose: Styling defined for table column resize widget
+//Author: Jack Tseng
+
+//The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  
+//This is because /styles, /forms, /rules etc all have css in them 
+@import (reference) "../../../Designer_Variables.less";
+
+@_ColumnSelectorHeight: 2.4rem;
+@_ColumnSelectorContentHeight: 2.2rem;
+@_ColumnSelectorTextColor: rgba(255, 255, 255, 0.5);
+@_ColumnSelectorTextColorSelected: rgba(255, 255, 255, 1);
+@_ColumnSelectorTextColorHighlighted: rgba(255, 255, 255, 1);
+@_ColumnSelectorBorderColor: rgba(255, 255, 255, 0.25);
+@_ColumnBoxingShadowColor: rgba(0, 0, 0, 0.15);
+@_ColumnBackgroundColor: rgba(55, 71, 79, 1);
+@_ColumnBackgroundColorSelected: rgba(33, 150, 243, 1);
+@_ColumnBackgroundColorHighlighted: rgba(93, 111, 119, 1);
+@_ColumnBackgroundColorHover: rgba(75, 90, 97, 1);
+
+.columnResizeWidgetWrapper
+{
+    opacity: 0;
+    pointer-events: none;
+
+    &.show
+    {
+        opacity: 1;
+        pointer-events: all;
+
+        .columnSelectorTable
+        {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    &.showWithAnimation
+    {
+        -moz-animation: fadein 0.15s;
+        -o-animation: fadein 0.15s;
+        -webkit-animation: fadein 0.15s;
+        animation: fadein 0.15s;
+    }
+}
+
+.columnSelectorTable
+{
+    opacity: 0; //Although the columnResizeWidgetWrapper has opacity of 0, in IE the table is still shown thus set the opacity of the table to be zero as well.
+    pointer-events: none;
+    position: absolute;
+    height: @_ColumnSelectorHeight;
+    table-layout: fixed;
+    background-color: @_ColumnBackgroundColor;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px @_ColumnBoxingShadowColor;
+
+    & > tbody > tr > td
+    {
+        .columnSelector
+        {
+            height: @_ColumnSelectorHeight;
+            box-sizing: border-box;
+            border: solid 1px @_ColumnSelectorBorderColor;
+            border-right: none;
+            overflow: hidden;
+        }
+
+        &:first-child > .columnSelector
+        {
+            border-radius: 3px 0px 0px 3px;
+        }
+
+        &:last-child > .columnSelector
+        {
+            border-radius: 0px 3px 3px 0px;
+            border: solid 1px @_ColumnSelectorBorderColor;
+        }
+
+        &:first-child:last-child > .columnSelector
+        {
+            border-radius: 3px;
+        }
+
+        &.selected
+        {
+            .columnSelector
+            {
+                border: solid 1px transparent;
+            }
+            //The columnSelector next to selected columnSelector should not have left border
+            & + td .columnSelector
+            {
+                border-left: none;
+            }
+        }
+
+        &.highlighted
+        {
+            .columnSelector
+            {
+                border: solid 1px @_ColumnSelectorBorderColor;
+            }
+            //The columnSelector next to highlighted columnSelector should not have left border
+            & + td .columnSelector
+            {
+                border-left: none;
+            }
+        }
+    }
+}
+
+.columnSelector
+{
+    position: relative;
+    content: '';
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    font-size: 1.2rem;
+    align-items: center;
+    color: @_ColumnSelectorTextColor;
+
+    .content
+    {
+        flex-grow: 1;
+        line-height: @_ColumnSelectorContentHeight;
+        height: @_ColumnSelectorContentHeight;
+        text-align: center;
+        font-family: "Open-Sans", "Segoe UI", Helvetica, Arial, sans-serif; //Default font in the Designer
+        color: @_ColumnSelectorTextColor;
+        pointer-events: none;
+    }
+
+    .leftEdge,
+    .rightEdge
+    {
+        &.columnResizeGrip
+        {
+            height: 12px;
+            width: auto;
+            padding-top: 6px; //Improve drag hit zone
+            padding-bottom: 6px; //Improve drag hit zone
+            display: flex;
+            opacity: 0;
+            pointer-events: none; //Disable it so user can not drag a hidden grip
+            &.ui-draggable-dragging
+            {
+                opacity: 0;
+            }
+
+            .stripe
+            {
+                width: 1px;
+                height: 100%;
+                background-color: @_ColumnSelectorTextColorHighlighted;
+            }
+
+            .spacer
+            {
+                width: 1px;
+                opacity: 0;
+            }
+        }
+    }
+
+    .leftEdge.columnResizeGrip
+    {
+        padding-left: 2px;
+        padding-right: 5px; //For better hit zone
+    }
+
+    .rightEdge.columnResizeGrip
+    {
+        padding-left: 5px; //For better hit zone
+        padding-right: 2px;
+    }
+
+
+    &.left-most,
+    &.selected.left-most,
+    &.highlighted.left-most
+    {
+        .leftEdge
+        {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+
+    &.right-most,
+    &.selected.right-most,
+    &.highlighted.right-most
+    {
+        .rightEdge
+        {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+
+    &:hover
+    {
+        cursor: pointer;
+        opacity: 1;
+        color: @_ColumnSelectorTextColorHighlighted;
+        background-color: @_ColumnBackgroundColorHover;
+
+        .content
+        {
+            color: @_ColumnSelectorTextColorHighlighted;
+        }
+    }
+
+    &.highlighted
+    {
+        cursor: pointer;
+        opacity: 1;
+        color: @_ColumnSelectorTextColorHighlighted;
+        background-color: @_ColumnBackgroundColorHighlighted;
+
+        .content
+        {
+            color: @_ColumnSelectorTextColorHighlighted;
+        }
+    }
+
+    &.selected
+    {
+        opacity: 1;
+        color: @_ColumnSelectorTextColorSelected;
+        background-color: @_ColumnBackgroundColorSelected;
+
+        .content
+        {
+            color: @_ColumnSelectorTextColorSelected;
+        }
+    }
+
+    &.selected,
+    &.highlighted
+    {
+        .columnResizeGrip
+        {
+            pointer-events: auto;
+            opacity: 1;
+
+            &:hover
+            {
+                cursor: col-resize;
+            }
+        }
+    }
+}

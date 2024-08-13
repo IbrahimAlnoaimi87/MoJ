@@ -1,0 +1,700 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+/* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+body {
+  background: #37474f;
+  /* Old browsers */
+
+}
+html[dir=rtl] body {
+  text-align: right;
+  direction: rtl;
+}
+/* Home Header Styling */
+
+.home-header {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  height: 34px;
+  overflow: hidden;
+  color: white;
+}
+.home-header-c {
+  position: relative;
+  height: 34px;
+  background-color: #003870;
+  /* Old browsers */
+
+}
+.header-logo {
+  /*LG: Updated logos*/
+  display: block;
+  line-height: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0px;
+}
+html[dir=ltr] .header-logo {
+  left: 0px;
+}
+html[dir=rtl] .header-logo {
+  right: 0px;
+}
+.header-logo a {
+  /*LG: Updated logos*/
+  background-image: url(../Images/K2Logo64.png#betarefresh);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  line-height: 34px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-left: 6px;
+  /*keep it in the same position as workflow designer*/
+
+}
+.header-logo span {
+  display: none;
+}
+.header-content {
+  height: 34px;
+}
+.header-system-info {
+  display: none;
+}
+.header-system-info .wrapper {
+  text-align: center;
+  line-height: 44px;
+}
+/* Home Content Styling */
+
+.home-content {
+  /*sdfjdjfsdjdsf*/
+  background-color: transparent;
+  /* Old browsers */
+  position: absolute;
+  top: 38px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+}
+.home-content-mc {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+.home-content-mc > .wrapper {
+  overflow: visible;
+}
+/* Site Style Overrides */
+
+body.collapsed-header .home-header {
+  display: none !important;
+}
+body.collapsed-header .home-content {
+  top: 0 !important;
+}
+/* SharePoint 2013 Embedded Site Style */
+
+body.sp2013 {
+  background: white;
+}
+body.sp2013 .home-content {
+  -moz-box-shadow: inset 0 0 1px 1px #adae9c;
+  -webkit-box-shadow: inset 0 0 1px 1px #adae9c;
+  box-shadow: inset 0 0 1px 1px #adae9c;
+}
+/* AppStudio Grid specifics */
+
+#AppStudioGrid.grid {
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+#SecurityUI .scroll-wrapper {
+  overflow: hidden;
+}
+#SecurityUI .scroll-wrapper #securityConfig_frame {
+  height: 100%;
+  width: 100%;
+}
+#AppStudioGrid .grid-footer .toolbar-label,
+#AppStudioSearchGrid .grid-footer .toolbar-label {
+  margin-right: 20px;
+}
+#AppStudioSearchFormPanel tr:first-child .form-field {
+  margin-top: 0;
+}
+#AppStudioSearchFormPanel tr:last-child td {
+  padding-top: 2px;
+}
+.header-logo {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.5s linear;
+}
+.appbar-backbutton-container {
+  line-height: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s linear;
+}
+html[dir=ltr] .appbar-backbutton-container {
+  left: 0px;
+}
+html[dir=rtl] .appbar-backbutton-container {
+  right: 0px;
+}
+.appbar-backbutton {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  height: 24px;
+  line-height: 24px;
+  box-sizing: border-box;
+  border: solid 1px white;
+  border-radius: 2px;
+  opacity: 0.8;
+  transition: opacity 0.15s linear;
+}
+html[dir=ltr] .appbar-backbutton {
+  margin-left: 5px;
+}
+html[dir=rtl] .appbar-backbutton {
+  margin-right: 5px;
+}
+.appbar-backbutton:hover {
+  opacity: 1;
+}
+.appbar-backbutton .icon {
+  vertical-align: middle;
+}
+.appbar-backbutton label {
+  color: white;
+  text-transform: uppercase;
+  flex-grow: 1;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+.explorer-header {
+  position: absolute;
+  pointer-events: none;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+.home-header.showexplorer .appbar-backbutton-container {
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
+}
+.home-header.showexplorer .header-logo {
+  opacity: 0;
+  pointer-events: none;
+}
+.home-header.showexplorer .explorer-header {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.avatar-control {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.avatar-control.main-avatar {
+  display: flex;
+  height: 34px;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+  text-align: right;
+}
+html[dir=ltr] .avatar-control.main-avatar {
+  right: 0px;
+}
+html[dir=rtl] .avatar-control.main-avatar {
+  left: 0px;
+}
+.lyt-avatar-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.lyt-avatar-content .avatar-icon {
+  flex-shrink: 0;
+  order: 0;
+}
+.lyt-avatar-content .avatar-name {
+  flex-grow: 1;
+  order: 1;
+}
+html[dir=ltr] .lyt-avatar-content .avatar-name {
+  margin-left: 5px;
+}
+html[dir=rtl] .lyt-avatar-content .avatar-name {
+  margin-right: 5px;
+}
+.main-avatar .lyt-avatar-content .avatar-icon {
+  order: 0;
+}
+.main-avatar .lyt-avatar-content .avatar-name {
+  order: 1;
+}
+.main-avatar .lyt-avatar-content .avatar-name {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.avatar-button {
+  transition: color 0.15s linear;
+  color: #2196f3;
+  line-height: normal;
+  cursor: pointer;
+}
+.avatar-button:hover {
+  color: #29b6f6;
+}
+.main-avatar .avatar-button {
+  padding: 3px 5px;
+  height: 22px;
+  line-height: 22px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  transition: background-color 0.15s linear;
+  color: white;
+}
+html[dir=ltr] .main-avatar .avatar-button {
+  margin-right: 6px;
+}
+html[dir=rtl] .main-avatar .avatar-button {
+  margin-left: 6px;
+}
+.main-avatar .avatar-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.avatar-icon {
+  background-position: center;
+}
+.avatar-icon.personalized {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  border-color: white !important;
+}
+.avatar-icon.personalized.icon-size16 {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.avatar-popup {
+  background-color: white;
+  width: 200px;
+  min-height: 100px;
+  text-align: center;
+  position: absolute;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.avatar-popup .icon {
+  display: block;
+  margin: 10px auto;
+  background-position: center;
+}
+.avatar-popup .icon.personalized {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  border-color: white !important;
+}
+.avatar-popup .name {
+  font-weight: bold;
+}
+.avatar-popup .button {
+  margin: 5px 5px;
+  max-width: none;
+  display: block;
+}
+.lyt-avatar-text {
+  margin-bottom: 10px;
+}
+.lyt-avatar-text > span {
+  display: block;
+  margin: auto;
+}
+.icon.ic-avatarempty {
+  border-radius: 100%;
+  border: solid 2px #4e5758;
+}
+.icon.ic-avatarempty.icon-size16 {
+  border-width: 1px;
+}
+.icon.ic-avatarempty.icon-size32 {
+  border-width: 2px;
+}
+.icon.ic-avatarempty.icon-size64 {
+  border-width: 3px;
+}
+.icon.ic-avatarempty.dark {
+  border-color: white;
+}
+/*#region Designer File Tabs */
+
+.file-tab-container,
+.designer-file-tabs-container {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 34px;
+  line-height: 34px;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+.file-tab,
+.designer-file-tab {
+  position: relative;
+  height: 34px;
+  pointer-events: all;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.file-tab.closed,
+.designer-file-tab.closed {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+.file-tab.readonly .name-container,
+.designer-file-tab.readonly .name-container {
+  pointer-events: none;
+  cursor: default;
+}
+.file-tab .layout,
+.designer-file-tab .layout {
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+.file-tab .layout .icon-wrapper,
+.designer-file-tab .layout .icon-wrapper {
+  width: 30px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.file-tab .layout .icon-wrapper .icon,
+.designer-file-tab .layout .icon-wrapper .icon {
+  display: block;
+}
+.file-tab .layout .name-container,
+.designer-file-tab .layout .name-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.file-tab .layout .name-container a,
+.designer-file-tab .layout .name-container a {
+  display: block;
+  flex-grow: 1;
+  transition: background-color 0.15s;
+}
+.file-tab .layout .name-container label,
+.designer-file-tab .layout .name-container label {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+}
+.file-tab .layout .name-container input[type=text],
+.designer-file-tab .layout .name-container input[type=text] {
+  display: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+.file-tab .layout .name-container input[type=text]::-ms-clear,
+.designer-file-tab .layout .name-container input[type=text]::-ms-clear {
+  display: none;
+}
+.file-tab .layout .name-container input[type=text],
+.designer-file-tab .layout .name-container input[type=text],
+.file-tab .layout .name-container label,
+.designer-file-tab .layout .name-container label {
+  min-width: 50px;
+  max-width: 150px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.file-tab .layout .name-container input[type=text],
+.designer-file-tab .layout .name-container input[type=text],
+.file-tab .layout .name-container a,
+.designer-file-tab .layout .name-container a {
+  height: 18px;
+  line-height: 18px;
+  border-radius: 2px;
+  border: none;
+}
+.file-tab .layout .close-container,
+.designer-file-tab .layout .close-container {
+  width: 30px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.file-tab .layout .close-container a,
+.designer-file-tab .layout .close-container a {
+  display: block;
+  opacity: 0.2;
+  transition: opacity 0.15s linear;
+}
+.file-tab .layout .close-container a:hover,
+.designer-file-tab .layout .close-container a:hover {
+  opacity: 1;
+}
+.file-tab .layout .close-container .icon,
+.designer-file-tab .layout .close-container .icon {
+  display: block;
+}
+.file-tab.editing .layout .name-container label,
+.designer-file-tab.editing .layout .name-container label {
+  display: none;
+}
+.file-tab.editing .layout .name-container input[type=text],
+.designer-file-tab.editing .layout .name-container input[type=text] {
+  display: block;
+}
+.file-tab.empty .layout .name-container label,
+.designer-file-tab.empty .layout .name-container label {
+  font-style: italic;
+}
+.file-tab-container.dark .file-tab {
+  background-color: #0052a3;
+}
+.file-tab-container.dark .file-tab .layout .name-container a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.file-tab-container.dark .file-tab .layout .name-container label {
+  color: white;
+}
+.file-tab-container.dark .file-tab .layout .name-container input[type=text] {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.file-tab-container.dark .file-tab.empty .layout .name-container label {
+  color: rgba(255, 255, 255, 0.4);
+}
+.file-tab-container.light .file-tab {
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.15s linear;
+  border: 1px solid transparent;
+}
+.file-tab-container.light .file-tab:hover {
+  background-color: white;
+}
+.file-tab-container.light .file-tab .layout .name-container {
+  cursor: text;
+}
+.file-tab-container.light .file-tab .layout .name-container a:hover {
+  background-color: transparent;
+}
+.file-tab-container.light .file-tab .layout .name-container label {
+  color: #4e5758;
+  font-weight: bold;
+}
+.file-tab-container.light .file-tab .layout .name-container input[type=text] {
+  background-color: transparent;
+  color: #4e5758;
+}
+.file-tab-container.light .file-tab.empty {
+  background-color: white;
+  border-color: #dddddd;
+}
+.file-tab-container.light .file-tab.empty .layout .name-container label {
+  font-weight: normal;
+  color: rgba(78, 87, 88, 0.4);
+}
+.file-tab-container.light .file-tab.editing {
+  background-color: white;
+  color: #4e5758;
+  border-color: #1b7ecd;
+}
+.file-tab-container.light .file-tab.readonly:hover {
+  background-color: rgba(255, 255, 255, 0);
+  transition: none;
+}
+.file-tab-container.light .file-tab .layout .name-container input[type=text],
+.file-tab-container.light .file-tab .layout .name-container label {
+  max-width: 300px;
+}
+.file-tab-container.light .file-tab,
+.file-tab-container.light .file-tab .layout {
+  height: 26px;
+}
+/*#endregion */
+.breadcrumb + .separator {
+  display: none;
+}
+.breadcrumb-disabled {
+  padding: 0px 5px;
+  color: #4e5758;
+  font-weight: normal;
+  height: 22px;
+  line-height: 22px;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  vertical-align: top;
+}
+.breadcrumb-disabled .icon {
+  margin-right: 3px;
+}
+.breadcrumb-disabled.ic-run {
+  color: #a2a2a2;
+}
+.breadcrumb-disabled.icon.icon-size16,
+.breadcrumb.icon.icon-size16 {
+  background-position: 4px 4px;
+  padding-left: 26px;
+  width: auto;
+  height: auto;
+}
+a.breadcrumb {
+  background-color: #dddddd;
+  padding: 0px 5px;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  position: relative;
+  font-weight: normal;
+  color: #4e5758;
+  transition: background-color 0.15s linear, color 0.15s linear;
+}
+html[dir=ltr] a.breadcrumb {
+  margin-right: 10px;
+}
+html[dir=rtl] a.breadcrumb {
+  margin-left: 10px;
+}
+a.breadcrumb::after {
+  display: block;
+  content: " ";
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+}
+html[dir=ltr] a.breadcrumb::after {
+  border-right: 0px solid transparent;
+  border-top: 11px solid transparent;
+  border-left: 10px solid #dddddd;
+  border-bottom: 11px solid transparent;
+  right: -10px;
+  transition: border-left-color 0.15s linear;
+}
+html[dir=rtl] a.breadcrumb::after {
+  border-left: 0px solid transparent;
+  border-top: 11px solid transparent;
+  border-right: 10px solid #dddddd;
+  border-bottom: 11px solid transparent;
+  left: -10px;
+  transition: border-right-color 0.15s linear;
+}
+html[dir=ltr] a.breadcrumb:not(:first-child) {
+  margin-left: 3px;
+}
+html[dir=rtl] a.breadcrumb:not(:first-child) {
+  margin-right: 3px;
+}
+a.breadcrumb:not(:first-child)::before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  content: '';
+  width: 0px;
+  height: 0px;
+}
+html[dir=ltr] a.breadcrumb:not(:first-child)::before {
+  border-left: 10px solid transparent;
+  border-top: 11px solid #dddddd;
+  border-bottom: 11px solid #dddddd;
+  border-right: 0px transparent;
+  left: -10px;
+  transition: border-top-color 0.15s linear, border-bottom-color 0.15s linear;
+}
+html[dir=rtl] a.breadcrumb:not(:first-child)::before {
+  border-right: 10px solid transparent;
+  border-top: 11px solid #dddddd;
+  border-bottom: 11px solid #dddddd;
+  border-left: 0px transparent;
+  right: -10px;
+  transition: border-top-color 0.15s linear, border-bottom-color 0.15s linear;
+}
+a.breadcrumb:hover {
+  color: #29b6f6;
+  background-color: #dddddd;
+}
+html[dir=ltr] a.breadcrumb:hover::after {
+  border-left-color: #dddddd;
+}
+html[dir=rtl] a.breadcrumb:hover::after {
+  border-right-color: #dddddd;
+}
+html[dir=ltr] a.breadcrumb:hover:not(:first-child)::before,
+html[dir=rtl] a.breadcrumb:hover:not(:first-child)::before {
+  border-top-color: #dddddd;
+  border-bottom-color: #dddddd;
+}
+/*#region LG: Cheeky changes */
+
+.home-header {
+  top: 0px;
+  /*Remove chrome*/
+  right: 0px;
+  left: 0px;
+  line-height: 34px;
+  vertical-align: middle;
+}
+.home-content {
+  top: 34px;
+  /*Make Header the same size as Workflow Designer V5*/
+  left: 0px;
+  /*Remove chrome*/
+  right: 0px;
+  bottom: 0px;
+  /*Remove chrome*/
+
+}
+.home-content-mc {
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+}
+/*#endregion */
+

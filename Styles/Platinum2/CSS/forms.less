@@ -1,0 +1,2683 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+/* Form Field Styling */
+
+.form-field
+{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    position: relative;
+    margin-bottom: 3px;
+    padding: 0;
+    clear: both;
+    //justify-content: center; //caused problems in IE.
+    &.stacked
+    {
+        flex-direction: column;
+        margin-bottom: 15px; //todo: only do this for the appstudio filedetails screen (i.e. not generic)
+        & > .form-field-label
+        {
+            flex-basis: auto; //override non-stacked style
+            width: auto; //override non-stacked style
+            line-height: normal; //override non-stacked style
+        }
+
+        & > .form-field-element-wrapper
+        {
+            padding-left: 0px;
+        }
+    }
+
+    & > .form-field-element-wrapper
+    {
+        flex-grow: 1;
+        min-width: 0;
+        width: 100%;
+
+        > .input-control
+        {
+            min-width: 0;
+        }
+    }
+
+    &.hidden
+    {
+        display: none;
+    }
+}
+
+.form-field:first-child
+{
+    margin-top: 1px;
+}
+
+.form-field:only-child,
+.form-field.only-child,
+.form-field:last-child,
+.form-field.last-child
+{
+    margin-bottom: 0;
+}
+
+.form-field.override-top-margin
+{
+    margin-top: 9px;
+}
+
+.form-field.override-bottom-margin
+{
+    margin-bottom: 9px;
+}
+
+.toolbar .form-field
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-field label.form-field-label
+{
+    display: block;
+    line-height: @Input-Single-Line-Height;
+    padding-left: 5px;
+    padding-right: 14px; // allows for the * of the required field not to overlay the text
+    position: relative;
+    vertical-align: top;
+    width: 140px;
+    flex-basis: 140px;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.panel #MoveToCategoryLookUpFF.form-field label.form-field-label 
+{
+    padding-left: 0px;
+}
+
+html[dir=rtl] .form-field label.form-field-label 
+{
+    order: 1;
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.form-field.hidden-label label.form-field-label
+{
+    display: none;
+}
+
+.toolbar .form-field label.form-field-label
+{
+    line-height: @Input-Single-Line-Height;
+}
+
+.dropLabel.required > span::after,
+.form-field.required label.form-field-label,
+.dropLabel.required label.input-control
+{
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: 98% center;
+}
+
+.dropLabel.required > span
+{
+    position: relative;
+}
+
+.dropLabel.required > span::after
+{
+    position: absolute;
+    right: 2px;
+    top: 0;
+    display: block;
+    width: 10px;
+    height: 100%;
+    content: '';
+}
+
+html[dir=rtl] .form-field.required label.form-field-label,
+html[dir=rtl] .dropLabel.required label.input-control
+{
+    background-position: 0 2px;
+}
+
+.form-field .form-field-element-wrapper
+{
+    order: 2;
+}
+
+html[dir=rtl] .form-field .form-field-element-wrapper
+{
+    order: 2;
+}
+
+.form-field .form-field-element-wrapper a
+{
+    line-height: @Input-Single-Line-Height;
+}
+
+.toolbar .form-field .form-field-element-wrapper
+{
+    padding-right: 0;
+}
+
+html[dir=rtl] .toolbar .form-field .form-field-element-wrapper
+{
+    padding-left: 0;
+}
+
+.form-field.narrow-label label.form-field-label
+{
+    width: 70px;
+}
+
+.form-field.narrow-label .form-field-element-wrapper
+{
+    margin-left: 77px;
+}
+
+html[dir=rtl] .form-field.narrow-label .form-field-element-wrapper
+{
+    margin-left: 0;
+    margin-right: 77px;
+}
+
+.form-field.no-label .form-field-element-wrapper
+{
+    margin-left: 3px;
+}
+
+html[dir=rtl] .form-field.no-label .form-field-element-wrapper
+{
+    margin-left: 0;
+    margin-right: 3px;
+}
+
+.form-field.stacked label.form-field-label
+{
+    float: none;
+    width: auto;
+}
+
+.form-field.stacked.required label.form-field-label
+{
+    background-image: none;
+}
+
+.form-field.bold-label label.form-field-label
+{
+    font-weight: 700;
+}
+
+.form-field.stacked .form-field-element-wrapper
+{
+    margin-left: 0;
+    padding-left: 5px;
+}
+
+.form-field.stacked.required .form-field-element-wrapper
+{
+    padding-left: 10px;
+    background: url(../Images/Forms/required_field_orange_line.png) no-repeat 6px 2px;
+}
+
+.form-field.disabled
+{
+    color: #999;
+}
+
+.form-field-content-label
+{
+    line-height: @Input-Single-Line-Height;
+    min-height: @Input-Single-Line-Height;
+}
+
+
+/* Input Controls Base Styling */
+.input-control,
+.input-control .input-control-body
+{
+    position: relative;
+}
+
+@Input-Single-Line-Height-Large: 30px;
+@Standard-Padding-Small: 10px;
+
+//Make the searchbox modern (chunky).
+.input-control.large
+{
+    min-height: @Input-Single-Line-Height-Large;
+
+    .input-control-wrapper
+    {
+        min-height: @Input-Single-Line-Height-Large;
+        line-height: @Input-Single-Line-Height-Large;
+    }
+
+    .input-control-watermark
+    {
+        line-height: @Input-Single-Line-Height-Large;
+        height: @Input-Single-Line-Height-Large;
+        padding: 0px @Standard-Padding-Small;
+    }
+
+    input[type="text"]
+    {
+        padding-left: @Standard-Padding-Small;
+    }
+}
+
+
+
+.input-control input[type=text],
+.input-control input[type=password]
+{
+    border: none;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    // vertical-align: middle;
+    // height: 13px;
+    // padding-bottom: 2px;
+}
+
+.input-control input[type=password]
+{
+    font-size: 11px;
+}
+
+.mozilla .input-control input[type=text],
+.mozilla .input-control input[type=password]
+{
+    // height: 13px;
+}
+
+
+
+.input-control a.input-control
+{
+    background-color: @Input-Background-Color;
+    color: @Input-Text-Color;
+    cursor: default;
+    display: block;
+    height: @Input-Single-Line-Height;
+    line-height: @Input-Single-Line-Height;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+    -webkit-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.input-control.watermark a.input-control,
+.input-control.watermark a.input-control span
+{
+    font-size: 11px;
+    font-family: @Main-Font-Family;
+    font-style: italic;
+    color: @Input-Watermark-Text-Color;
+}
+
+.input-control a.input-control span
+{
+    padding-left: 2px;
+}
+
+.input-control.disabled a.input-control,
+.input-control.disabled input[type=text],
+.input-control.disabled input[type=password],
+.input-control.disabled textarea,
+.input-control input[type=text][disabled=disabled],
+.input-control input[type=password][disabled=disabled],
+.input-control textarea[disabled=disabled]
+{
+    color: @Input-Disabled-Text-Color;
+    cursor: default;
+}
+
+html[dir=rtl] .input-control.disabled a.input-control,
+html[dir=rtl] .input-control.disabled input[type=text],
+html[dir=rtl] .input-control.disabled input[type=password],
+html[dir=rtl] .input-control.disabled textarea,
+html[dir=rtl] .input-control input[type=text][disabled=disabled],
+html[dir=rtl] .input-control input[type=password][disabled=disabled],
+html[dir=rtl] .input-control textarea[disabled=disabled]
+{
+    text-align: right;
+}
+
+.input-control textarea
+{
+    border: none;
+    margin: 0;
+    width: 100%;
+    background-color: @Input-Background-Color;
+    overflow: auto;
+    resize: none;
+    padding: 1px 0 0 0;
+}
+
+html[dir=rtl] .input-control textarea
+{
+    text-align: right;
+    direction: rtl;
+}
+
+.edit-template-row .input-control.checkbox
+{
+    padding-left: 1px;
+}
+
+.input-control input[type=text]:focus,
+.input-control input[type=password]:focus,
+.input-control textarea:focus
+{
+    outline: none;
+}
+
+.input-control input[readonly=readonly]
+{
+    cursor: default;
+}
+
+.input-control .input-control-m-c,
+.input-control-content
+{
+    background: @Input-Background-Color;
+    border: solid 1px @Input-Border-Color;
+    min-height: @Input-Single-Line-Height;
+    // height: @Input-Single-Line-Height;
+    // box-sizing: border-box;
+    transition: border-color 0.15s linear;
+}
+
+.input-control.active .input-control-m-c,
+.input-control.active .input-control-content
+{
+    border-color: @Input-Focus-Border-Color;
+}
+
+/*LG: Need to change the button border too! */
+
+.input-control.disabled .input-control-m-c,
+.input-control.disabled .input-control-content
+{
+    border-color: @Input-Disabled-Border-Color;
+}
+
+.input-control.invalid .input-control-m-c,
+.input-control.invalid .input-control-content,
+.file-wrapper-wrapper.invalid,
+.image-wrapper-wrapper.invalid
+{
+    border-color: #a7b48b !important;
+}
+
+.input-control .input-control-m-l,
+.input-control .input-control-m-r
+{
+    display: none;
+}
+
+.input-control .input-control-wrapper
+{
+    min-height: @Input-Single-Line-Height;
+    line-height: @Input-Single-Line-Height;
+    padding-left: 3px;
+    position: relative;
+}
+
+html[dir=rtl] .input-control .input-control-wrapper
+{
+    padding-left: 0;
+    padding-right: 3px;
+}
+
+.input-control.select-box.dropdown-box.And .input-control-wrapper,
+.input-control.select-box.dropdown-box.Or .input-control-wrapper
+{
+    padding-left: 0;
+}
+
+.input-control.disabled .input-control-wrapper
+{
+    border-color: transparent;
+    opacity: 0.5;
+}
+
+.input-control.invalid .input-control-wrapper
+{
+    border-color: #f98515;
+}
+
+/* Input Control - State Styling */
+.input-control.error-state input[type=text],
+.input-control.error-state input[type=password],
+.input-control.error-state a.input-control
+{
+    color: @Input-Error-Text-Color;
+}
+
+.input-control.error-state .input-control-m-c,
+.input-control.error-state .input-control-content
+{
+    border: solid 1px @Input-Error-Border-Color;
+}
+
+.input-control.select-box .input-control-wrapper
+{
+    padding-right: 22px;
+
+    html [dir=rtl] &
+    {
+        padding-left: 22px;
+        padding-right: 0px;
+    }
+}
+
+
+/* Icon Control Styling */
+.input-control.icon-control.select-box .input-control-wrapper
+{
+    padding-left: 20px;
+    padding-right: 22px;
+
+    html[dir=rtl] &
+    {
+        padding-left: 22px;
+        padding-right: 20px;
+    }
+}
+
+.input-control.icon-control .input-control-wrapper
+{
+    position: relative;
+    padding-left: 20px;
+    background-position: 1px 50%;
+    //Needed for high-resolution icons.
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+
+
+    html[dir=rtl] &
+    {
+        padding-left: 0;
+        padding-right: 20px;
+        background-position: 100% 50%;
+    }
+}
+
+
+.input-control.icon-control.watermark .input-control-wrapper
+{
+    padding-left: 0;
+
+    html[dir=rtl] &
+    {
+        padding-right: 0;
+    }
+}
+
+
+/* Icon Control - State Styling */
+.input-control.icon-control.error-state .input-control-wrapper::after,
+.input-control.icon-control.error-state.checkbox .input-control-icon::after /*Picker filter checkboxes*/
+{
+    -moz-animation: fadein 0.25s;
+    -o-animation: fadein 0.25s;
+    -webkit-animation: fadein 0.25s;
+    animation: fadein 0.25s;
+    background: url(../Images/Icons/Badges/Error16.png) no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 11px;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 6px;
+    top: 0;
+}
+
+.input-control.icon-control.error-state.error .input-control-wrapper::after /*Display template / items with no icon*/
+{
+    display: none;
+}
+
+.input-control.icon-control.error-state.checkbox .input-control-icon::after /*Picker filter checkboxes*/
+{
+    left: 28px;
+}
+
+/* Checkbox / Radiobutton Styling */
+ul.input-control-group
+{
+    list-style: none outside none;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+ul.input-control-group li
+{
+    margin: 2px 0 0 0;
+    padding: 0;
+}
+
+ul.input-control-group li:first-child
+{
+    margin-top: 0;
+}
+
+ul.input-control-group.collapsed li
+{
+    display: inline;
+    margin: 0 2px 2px 0;
+}
+
+//Controls with a label before it.
+label.input-control
+{
+    //the default is for controls to line up next to each other.
+    display: inline-flex;
+    flex-direction: row;
+
+    input
+    {
+        //hide the input
+        position: absolute;
+        top: 0px;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    .input-control-img
+    {
+        order: 1;
+        width: 18px;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        padding: 0;
+        height: @Input-Single-Line-Height;
+        flex-shrink: 0;
+    }
+
+    .input-control-icon
+    {
+        order: 2;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        padding: 0;
+        height: @Input-Single-Line-Height;
+        width: @Input-Single-Line-Height;
+        background-size: 16px 16px;
+        flex-shrink: 0;
+    }
+
+    .input-control-text
+    {
+        order: 3;
+        margin: 1px;
+        float: none;
+        background: none;
+        padding: 0;
+        height: @Input-Single-Line-Height;
+        line-height: @Input-Single-Line-Height;
+        // Make shrinking possible.
+        flex-shrink: 1;
+        min-width: 0;
+        // Text Ellipsis.
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:empty
+        {
+            display: none;
+        }
+    }
+    //the img span and the text span
+    //TODO: this should be a more careful selector
+    span
+    {
+        height: @Input-Single-Line-Height;
+        cursor: pointer;
+    }
+
+    &.disabled
+    {
+        .input-control-icon
+        {
+            -moz-opacity: 0.5;
+            -khtml-opacity: 0.5;
+            opacity: 0.5;
+        }
+
+        .input-control-text
+        {
+            color: @Input-Disabled-Text-Color;
+        }
+
+        span
+        {
+            cursor: default;
+        }
+    }
+
+    &:focus, &.focus
+    {
+        .input-control-text
+        {
+            outline: #000 1px dotted;
+        }
+    }
+    //Checkbox/Radio controls
+    //Keep the styles not related to the sprite separate.
+    &.checkbox,
+    &.radio
+    {
+        display: inline-flex;
+        align-items: center; //only for a single checkbox/radio
+        white-space: nowrap;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        flex-direction: row;
+
+        & > .input-control-img
+        {
+            flex-shrink: 0;
+        }
+    }
+}
+//RADIO BUTTON AND CHECKBOX SPRITE
+//Note: This was hardcoded, but utilized the Design-Team's sprite+css generator
+//      to help get the positions quickly/correctly.
+label.input-control.radio .input-control-img,
+label.input-control.checkbox .input-control-img,
+.radiobox.small-buttons .radiobox-button .radiobox-button-input
+{
+    background-size: 108px 108px; /*Size of sprite*/
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+label.input-control.radio
+{
+    /*SVGs should be hidden for all property configurations on design time, but not on preview forms that are non-legacy */
+    svg
+    {
+        .popupManager &
+        {
+            display: none;
+        }
+    }
+
+    .input-control-img
+    {
+        background-position: -63px -9px; /*1st*/
+    }
+
+    &:hover .input-control-img
+    {
+        background-position: -63px -36px; /*2th*/
+    }
+
+    &:focus .input-control-img
+    {
+        background-position: -63px -63px;
+    }
+
+    &.disabled .input-control-img
+    {
+        background-position: -63px -90px; /*3th*/
+    }
+
+    &.checked .input-control-img
+    {
+        background-position: -90px -9px; /*4th*/
+    }
+
+    &.checked:hover .input-control-img
+    {
+        background-position: -90px -36px; /*5th*/
+    }
+
+    &.checked:focus .input-control-img
+    {
+        background-position: -90px -63px; /*5th*/
+    }
+
+    &.checked.disabled .input-control-img
+    {
+        background-position: -90px -90px; /*7th*/
+    }
+}
+
+
+label.input-control.checkbox
+{
+    /*SVGs should be hidden for all property configurations on design time, but not on preview forms that are non-legacy */
+    svg
+    {
+        .popupManager &,
+        .form-field &
+        {
+            display: none;
+        }
+    }
+
+    .input-control-img
+    {
+        background-position: -9px -9px; /*1st*/
+    }
+
+    &:hover .input-control-img
+    {
+        background-position: -9px -36px; /*2th*/
+    }
+
+    &:focus .input-control-img
+    {
+        background-position: -9px -63px; /*4th*/
+    }
+
+    &.disabled .input-control-img
+    {
+        background-position: -9px -90px; /*3th*/
+    }
+
+    &.checked .input-control-img
+    {
+        background-position: -36px -9px; /*4th*/
+    }
+
+    &.checked:hover .input-control-img
+    {
+        background-position: -36px -36px; /*5th*/
+    }
+
+    &.checked:focus .input-control-img
+    {
+        background-position: -36px -63px;
+    }
+
+    &.checked.disabled .input-control-img
+    {
+        background-position: -36px -90px; /*7th*/
+    }
+}
+//SAME SPRITE, but for 'Radiobox-Buttons' (a type of checkbox list used in rules)
+//radio
+.radiobox-button-input.radio
+{
+    .radiobox .radiobox-button &
+    {
+        background-position: -63px -9px; /*1st*/
+    }
+
+    .radiobox .radiobox-button:hover &
+    {
+        background-position: -63px -36px; /*2th*/
+    }
+
+    .radiobox .radiobox-button:focus &
+    {
+        background-position: -63px -63px;
+    }
+
+    .radiobox .radiobox-button.disabled &
+    {
+        background-position: -63px -90px; /*3th*/
+    }
+
+    .radiobox .radiobox-button.checked &
+    {
+        background-position: -90px -9px; /*4th*/
+    }
+
+    .radiobox .radiobox-button.checked:hover &
+    {
+        background-position: -90px -36px; /*5th*/
+    }
+
+    .radiobox .radiobox-button.checked:focus &
+    {
+        background-position: -90px -63px; /*5th*/
+    }
+
+    .radiobox .radiobox-button.checked.disabled &
+    {
+        background-position: -90px -90px; /*7th*/
+    }
+}
+//check
+.radiobox-button-input.checkbox
+{
+    .radiobox .radiobox-button &
+    {
+        background-position: -9px -9px;
+    }
+
+    .radiobox .radiobox-button:hover &
+    {
+        background-position: -9px -36px; /*2th*/
+    }
+
+    .radiobox .radiobox-button:focus &
+    {
+        background-position: -9px -63px; /*4th*/
+    }
+
+    .radiobox .radiobox-button.disabled &
+    {
+        background-position: -9px -90px; /*3th*/
+    }
+
+    .radiobox .radiobox-button.checked &
+    {
+        background-position: -36px -9px; /*4th*/
+    }
+
+    .radiobox .radiobox-button.checked:hover &
+    {
+        background-position: -36px -36px; /*5th*/
+    }
+
+    .radiobox .radiobox-button.checked:focus &
+    {
+        background-position: -36px -63px;
+    }
+
+    .radiobox .radiobox-button.checked.disabled &
+    {
+        background-position: -36px -90px; /*7th*/
+    }
+}
+
+.styling-outer-wrapper
+{
+    min-height: @Input-Single-Line-Height;
+}
+
+.styling-outer-wrapper .input-control-m,
+.styling-outer-wrapper .input-control-m .input-control-m-c,
+.styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper,
+.styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper input,
+.styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper a
+{
+    background-color: inherit;
+}
+/* Base Select Box Styling */
+select.input-control
+{
+    width: 100%;
+}
+
+.input-control.select-box
+{
+    min-height: @Input-Single-Line-Height;
+    min-width: 40px;
+    background: @Input-Background-Color;
+    line-height: 1.15;
+
+    #ParmGrid &
+    {
+        min-width: 120px;
+    }
+
+    .input-control-body
+    {
+        top: 0;
+        left: 0;
+        right: 19px;
+        min-height: 18px;
+
+        html[dir=rtl] &
+        {
+            position: absolute;
+            right: 0;
+            left: 0px;
+        }
+    }
+
+    &.disabled
+    {
+        .input-control-buttons
+        {
+            background: transparent; /* Old browsers */
+            border-color: #d5d6ce;
+        }
+    }
+}
+
+
+.input-control-buttons
+{
+    position: absolute;
+    top: 1px; //avoid border of textbox
+    right: 1px; //avoid border of textbox
+    bottom: 1px; //avoid border of textbox
+    min-height: 18px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    html[dir=rtl] &
+    {
+        left: 1px; //avoid border of textbox
+        right: auto;
+        min-height: 20px;
+    }
+
+    a, &.twisty-button, &.rule-configuration-button
+    {
+        border: solid 1px transparent; //to keep it the same size as the input border
+        //height: @Input-Single-Line-Height;
+        width: @Input-Single-Line-Height;
+        text-decoration: none;
+        color: @Main-Text-Color;
+        line-height: @Input-Single-Line-Height;
+        height: auto; //ensures icon buttons do not adhere to the .icon, icon-size16 values.
+        background-position: center center; //ensures icons are centered - remove when we use sprites.
+        //make sure the icons are centered inside
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &.rule-configuration-button
+    {
+        border: solid 1px @Line-3;
+        top: 0px;
+        bottom: 0px;
+        min-height: 20px;
+    }
+}
+
+.input-control.select-box.double-buttons .input-control-body
+{
+    right: 39px;
+}
+/* Select Box Button Styling */
+html[dir=rtl] .input-control.select-box .input-control-buttons a,
+html[dir=rtl] .input-control-buttons.twisty-button
+{
+    float: right;
+    right: 0px;
+}
+
+.input-control.select-box .input-control-buttons a:hover,
+.input-control.select-box .input-control-buttons a:focus
+{
+    color: #fff;
+}
+
+.input-control.select-box.disabled
+{
+    pointer-events: none;
+
+    .input-control-buttons
+    {
+        a,
+        a:hover,
+        a:focus
+        {
+            pointer-events: none;
+            cursor: default !important;
+        }
+    }
+}
+//image?
+.input-control-buttons a > span,
+.input-control-buttons a > span > span,
+.input-control-buttons.rule-configuration-button > span,
+.input-control-buttons.rule-configuration-button > span > span
+{
+    display: block;
+    text-align: center;
+    margin: auto;
+    //LG: Note these must be overridden in runtime theme's Core.css, otherwise these icons dissapear on designtime forms.
+    // the selector in the Core.less is ".theme-entry .input-control-buttons a span span"
+    height: 16px;
+    width: 16px;
+}
+
+.input-control.select-box .input-control-buttons,
+.input-control-buttons.twisty-button
+{
+    background-color: transparent; /* Old browsers */
+}
+
+.input-control.select-box .input-control-buttons a:hover,
+.input-control-buttons.twisty-button:hover
+{
+    background-color: @Button-Hover-Background-Color-1; /* Old browsers */
+}
+
+.input-control-buttons.rule-configuration-button:hover
+{
+    color: #fff;
+    background-color: @Button-Hover-Background-Color-1;
+}
+
+.input-control.select-box .input-control-buttons a:focus,
+.input-control-buttons.twisty-button:focus
+{
+    border: solid 1px @Button-Focus-Border-Color;
+}
+
+
+.input-control.select-box.disabled .input-control-buttons a:hover,
+.input-control.select-box.disabled .input-control-buttons a:focus,
+.input-control.select-box .input-control-buttons a:active,
+.input-control.select-box.active .input-control-buttons,
+.input-control.select-box.disabled .input-control-buttons a:active,
+.input-control.select-box.active.disabled .input-control-buttons a,
+.input-control.select-box.disabled .input-control-buttons a > span,
+.input-control.select-box.disabled .input-control-buttons:hover a > span,
+.input-control.select-box.disabled .input-control-buttons:focus a > span,
+.input-control.select-box.disabled .input-control-buttons:active a > span
+{
+    background: transparent; /* Old browsers */
+}
+
+
+.input-control.select-box .input-control-buttons a:active,
+.input-control.select-box.active .input-control-buttons
+{
+    border-color: @Button-Focus-Border-Color;
+    color: @Main-Text-Color;
+}
+
+.input-control.select-box.disabled .input-control-buttons a:active,
+.input-control.select-box.active.disabled .input-control-buttons a
+{
+    border-color: #D5D6CE;
+    color: @Input-Disabled-Text-Color;
+}
+//the icon inside a selectbox button (right side of select box)
+.input-control-buttons a > span span
+{
+    display: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    text-indent: -9999px; //messes up elipsis buttons
+}
+
+.input-control.select-box .input-control-buttons a.dropdown > span span,
+.input-control.select-box.read-only .input-control-buttons a.dropdown:hover > span span,
+.input-control.select-box.read-only .input-control-buttons a.dropdown:focus > span span,
+.input-control.select-box .input-control-buttons a.dropdown:hover > span span,
+.input-control.select-box .input-control-buttons a.dropdown:focus > span span,
+.input-control.select-box.disabled .input-control-buttons a.dropdown > span span,
+.input-control.select-box.disabled .input-control-buttons a.dropdown:hover > span span,
+.input-control.select-box.disabled .input-control-buttons a.dropdown:focus > span span,
+.input-control.select-box.active .input-control-buttons a.dropdown > span span,
+.input-control.select-box.active .input-control-buttons a.dropdown:hover > span span,
+.input-control.select-box.active .input-control-buttons a.dropdown:focus > span span,
+.input-control.select-box.active .input-control-buttons a.dropdown:active > span span,
+.input-control.select-box .input-control-buttons a.search > span span,
+.input-control.select-box .input-control-buttons a.clear-search > span span,
+.input-control.select-box .input-control-buttons a.date > span span,
+.input-control.select-box .input-control-buttons a.ellipsis > span span
+{
+    display: block;
+    cursor: pointer;
+}
+
+.input-control.select-box .input-control-buttons a.ellipsis > span span,
+.input-control-buttons.rule-configuration-button.ellipsis > span span
+{
+    //Get the elipsis vertically in the middle.
+    text-indent: 0px;
+    line-height: 10px;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+
+.input-control.select-box.disabled .input-control-buttons a.ellipsis > span span
+{
+    color: @Input-Disabled-Text-Color;
+    cursor: default;
+}
+/* LookupBox Styling */
+.input-control.select-box.lookup-box.disabled .input-control-buttons a > span
+{
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.picker .input-control.select-box .input-control-buttons a.picker-resolve > span span,
+.picker .input-control.select-box .input-control-buttons a.picker-search > span span
+{
+    display: block;
+}
+
+.mozila .input-control.select-box
+{
+    line-height: 13px;
+}
+/* Watermark Styling */
+.input-control.text-input input::-webkit-input-placeholder,
+.input-control.text-input input::-moz-placeholder,
+.input-control.text-input input:-ms-input-placeholder
+{
+    font-style: italic;
+    font-size: 11px;
+    font-family: @Main-Font-Family;
+    color: @Input-Watermark-Text-Color;
+    vertical-align: middle;
+}
+
+.input-control-watermark,
+#rwSearchTextFF .input-control-watermark
+{
+    font-style: italic;
+    color: @Input-Watermark-Text-Color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0px 2px;
+    overflow: hidden;
+    text-align: left;
+    line-height: @Input-Single-Line-Height;
+    vertical-align: middle;
+}
+
+html[dir=rtl] .input-control-watermark
+{
+    text-align: right;
+}
+
+
+
+.input-control.text-input .input-control-watermark
+{
+    cursor: text;
+}
+
+.input-control.text-input .input-control-watermark:empty
+{
+    display: none;
+}
+
+html[dir=rtl] .input-control.text-input .input-control-watermark
+{
+    text-align: right;
+}
+
+.input-control.text-input.read-only .input-control-watermark
+{
+    cursor: default;
+}
+
+.input-control.icon-control .input-control-watermark
+{
+    padding-left: 18px;
+}
+
+html[dir=rtl] .input-control.icon-control .input-control-watermark
+{
+    padding-left: 0;
+    padding-right: 18px;
+}
+
+.input-control.text-input input:focus .input-control-watermark
+{
+    display: none;
+}
+/*Search box*/
+.input-control.search-box
+{
+    .clear-search.inactive,
+    .search.inactive
+    {
+        display: none;
+    }
+}
+/* Drop Down Menu Styling */
+.drop-menu
+{
+    border: solid 1px @Input-Border-Color;
+    position: relative;
+}
+
+.drop-menu .drop-menu-m
+{
+    border: solid 1px #fff;
+}
+
+.drop-menu .drop-menu-m-l,
+.drop-menu .drop-menu-m-r
+{
+    display: none;
+}
+
+.drop-menu.icon-control .drop-menu-t-c,
+.drop-menu.icon-control .drop-menu-b-c
+{
+    left: 23px;
+}
+
+.drop-menu .drop-menu-wrapper
+{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.drop-menu.overflown .drop-menu-t,
+.drop-menu.overflown .drop-menu-m,
+.drop-menu.overflown .drop-menu-b
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.drop-menu.overflown .drop-menu-t
+{
+    top: 0;
+}
+
+.drop-menu.overflown .drop-menu-m
+{
+    top: 0;
+    bottom: 0;
+}
+
+.drop-menu.overflown .drop-menu-b
+{
+    bottom: 0;
+}
+
+.drop-menu.overflown .drop-menu-m-c
+{
+    height: 100%;
+    overflow: visible;
+}
+
+.drop-menu.overflown .drop-menu-wrapper
+{
+    height: 100%;
+    overflow: auto;
+}
+
+.drop-menu ul.drop-menu
+{
+    border: none;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.drop-menu ul.drop-menu li
+{
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    position: relative;
+}
+
+.drop-menu ul.drop-menu a
+{
+    display: block;
+    text-decoration: none;
+    color: @Main-Text-Color;
+    line-height: 19px;
+    height: 20px;
+    width: auto; //full width
+    background-color: transparent;
+    background-position: 2px center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 3px;
+    background-color: #fff;
+    cursor: pointer;
+    -ms-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.drop-menu.icon-control ul.drop-menu a
+{
+    padding-left: 21px;
+
+    html[dir=rtl] &
+    {
+        background-position: right;
+        padding-left: 0;
+        padding-right: 21px;
+    }
+}
+/* Drop Down Menu Item Error State Styling */
+.drop-menu.icon-control ul.drop-menu a.error-state::after
+{
+    -moz-animation: fadein 0.25s;
+    -o-animation: fadein 0.25s;
+    -webkit-animation: fadein 0.25s;
+    animation: fadein 0.25s;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 11px;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 6px;
+    top: 0;
+}
+
+.drop-menu.icon-control ul.drop-menu a.error-state.error::after /* Hide for the error icon*/
+{
+    display: none;
+}
+/* End of Drop Down Menu Item Error State Styling */
+.drop-menu ul.drop-menu a:hover
+{
+    background-color: @Dropdown-Item-Hover-Background-Color;
+}
+
+.drop-menu ul.drop-menu a.selected,
+.drop-menu ul.drop-menu li.selected a
+{
+    background-color: @Dropdown-Item-Selected-Background-Color;
+    color: @Dropdown-Item-Selected-Text-Color;
+}
+
+.drop-menu ul.drop-menu a.disabled,
+.drop-menu ul.drop-menu a.disabled:hover
+{
+    background-color: @Input-Background-Color;
+    color: @Input-Disabled-Text-Color;
+    cursor: default;
+}
+/* Fieldset Styling */
+fieldset
+{
+    border: medium none;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.ie8 fieldset,
+.ie9 fieldset,
+.ie10 fieldset
+{
+    padding-top: 18px;
+}
+
+legend
+{
+    font-weight: bold;
+    margin-left: -10px;
+}
+
+.ie8 legend,
+.ie9 legend,
+.ie10 legend
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+}
+/* Sortables Styling */
+ul.sortable
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.sortable li
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul.sortable li a
+{
+    color: @Main-Text-Color;
+    display: block;
+    height: 20px;
+    line-height: 18px;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+ul.sortable li a.icon
+{
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 20px;
+    background-size: 16px 16px;
+}
+
+ul.sortable li a:hover
+{
+    background-color: #e4efc3;
+}
+/* Radio Box Styling */
+.radiobox
+{
+    position: relative;
+}
+
+.radiobox.collapsed li
+{
+    float: left;
+    margin-right: 1px;
+}
+
+.radiobox .radiobox-button
+{
+    border: 1px solid transparent;
+    display: block;
+    min-height: @Radio-Button-Large-Height;
+    line-height: @Radio-Button-Large-Height;
+    position: relative;
+    cursor: pointer;
+}
+
+.radiobox.small-buttons .radiobox-button
+{
+    min-height: @Radio-Button-Height; //23px single height
+    line-height: @Radio-Button-Height;
+}
+
+
+.radiobox .radiobox-button:hover
+{
+    border-color: @Radio-Button-Hover-Border-Color;
+    background-color: @Radio-Button-Hover-Background-Color;
+}
+
+.radiobox .radiobox-button.checked,
+.radiobox .radiobox-button.checked:hover
+{
+    border-color: @Radio-Button-Selected-Border-Color;
+    background-color: @Radio-Button-Hover-Background-Color;
+}
+
+.radiobox .radiobox-button.checked.disabled,
+.radiobox .radiobox-button.checked.disabled:hover
+{
+    border-color: #999;
+    border-color: transparent;
+}
+
+.radiobox .radiobox-button.disabled
+{
+    color: #999;
+    cursor: default;
+    opacity: 0.5;
+}
+
+
+.radiobox.collapsed .radiobox-button
+{
+    width: 320px;
+}
+
+.radiobox .radiobox-button .radiobox-button-c
+{
+    display: inline-block;
+    min-width: 100%; //For the description not to get wrapped early.
+    height: auto;
+    line-height: normal;
+    vertical-align: middle;
+
+    .radiobox-button-icon
+    {
+        html[dir=rtl] &
+        {
+            float: right;
+        }
+    }
+}
+
+html[dir=rtl] .rules-list-container .radiobox .radiobox-button .radiobox-button-c .radiobox-button-icon
+{
+    float: left !important;
+}
+
+.radiobox .radiobox-button:hover .radiobox-button-c
+{
+}
+
+.radiobox .radiobox-button.disabled:hover .radiobox-button-c
+{
+    border-color: transparent;
+    background-image: none;
+}
+
+.radiobox.small-buttons .radiobox-button .radiobox-button-c
+{
+    height: auto;
+    min-height: @Radio-Button-Height;
+}
+
+.radiobox .radiobox-button input
+{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.lyt-radiobox-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    & > .radiobox-button-icon
+    {
+        flex-shrink: 0;
+    }
+
+    & > .lyt-radiobox-text
+    {
+        flex-grow: 1;
+    }
+}
+
+.radiobox-button-icon
+{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    display: block;
+    float: left;
+    height: 32px;
+    width: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    .radiobox.small-buttons &
+    {
+        margin-right: 0px;
+        margin-left: 0px;
+        width: @Radio-Button-Height;
+        height: @Radio-Button-Height;
+        background-size: 16px 16px; //the ocon comes after the check boxes
+    }
+
+    .radiobox-button.disabled &
+    {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+}
+//Checkbox/Radio at the beginning of the row.
+//Sprite Image URLs for radio buttons are in Forms_Images.less, background positions for the sprite are below.
+.radiobox .radiobox-button .radiobox-button-input
+{
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+    width: @Radio-Button-Height; //must be 20px, or only slightly more for the sprite to work (below)
+    height: @Radio-Button-Height; //must be 20px, or only slightly more for the sprite to work (below)
+    margin: 9px 10px 9px 0;
+}
+//Checkbox/Radio at the beginning of the row.
+//Sprite Image URLs for radio buttons are in Forms_Images.less, background positions for the sprite are below.
+.radiobox.small-buttons .radiobox-button .radiobox-button-input
+{
+    width: @Radio-Button-Height; //must be 20px, or only slightly more for the sprite to work (below)
+    height: @Radio-Button-Height; //must be 20px, or only slightly more for the sprite to work (below)
+    margin: 2px 4px 2px 0;
+}
+
+
+
+.radiobox .radiobox-button .radiobox-button-text
+{
+    display: block;
+    font-weight: 700;
+    white-space: normal;
+}
+
+.radiobox .radiobox-button .radiobox-button-desc
+{
+    white-space: normal;
+}
+
+
+.radiobox.small-buttons .radiobox-button .radiobox-button-text
+{
+    //white-space: nowrap; //causes problems in rules designer toolbox
+    font-weight: normal;
+    margin-top: 0;
+    line-height: 21px;
+}
+
+.radiobox.small-buttons .radiobox-button .radiobox-button-desc
+{
+    display: none;
+}
+/* OptionSelectBox Styling */
+.option-select-box
+{
+    position: relative;
+}
+
+.option-select-box.full
+{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.option-select-box.full > .option-select-box-header,
+.option-select-box.full > .option-select-box-body
+{
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+}
+/* OptionSelectBox Header Styling */
+.option-select-box.with-header > .option-select-box-header
+{
+    height: 24px;
+}
+
+.option-select-box.without-header > .option-select-box-header
+{
+    display: none;
+}
+
+.option-select-box .option-select-box-header-l,
+.option-select-box .option-select-box-header-c,
+.option-select-box .option-select-box-header-r
+{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+}
+
+.option-select-box .option-select-box-header-l
+{
+    background: transparent url(../Images/TitleBar/titlebar_corners.png) no-repeat -5px 0;
+    width: 5px;
+    height: 24px;
+}
+
+.option-select-box .option-select-box-header-c
+{
+    background: transparent url(../Images/TitleBar/titlebar_repeater.png) repeat-x 0 0;
+    left: 5px;
+    right: 5px;
+    height: 24px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.option-select-box .option-select-box-header-r
+{
+    background: transparent url(../Images/TitleBar/titlebar_corners.png) no-repeat 0 0;
+    width: 5px;
+    height: 24px;
+    right: 0;
+}
+
+.option-select-box .option-select-box-header-c .wrapper
+{
+    padding: 0 2px;
+}
+/* OptionSelectBox Body Styling */
+.option-select-box .option-select-box-body
+{
+    position: relative;
+}
+
+.option-select-box.full .option-select-box-body
+{
+    bottom: 0;
+}
+
+.option-select-box.without-header.full .option-select-box-body
+{
+    top: 0;
+}
+
+.option-select-box.with-header.full .option-select-box-body
+{
+    top: 24px;
+}
+
+.option-select-box .option-select-box-body-t,
+.option-select-box .option-select-box-body-m,
+.option-select-box .option-select-box-body-b
+{
+    position: relative;
+}
+
+.option-select-box .option-select-box-body-t,
+.option-select-box .option-select-box-body-b
+{
+    height: 3px;
+}
+
+.option-select-box .option-select-box-body-t
+{
+    background: transparent url(../Images/Panels/panel_top_left_corner.png) no-repeat 0 0;
+    padding-left: 3px;
+}
+
+.option-select-box .option-select-box-body-tc
+{
+    background: transparent url(../Images/Panels/panel_top_right_slide.png) no-repeat 100% 0;
+    padding-right: 3px;
+}
+
+.option-select-box.full .option-select-box-body-tc
+{
+    background: transparent url(../Images/Panels/panel_top_border.png) repeat-x 0 0;
+    padding: 0;
+    left: 3px;
+    right: 3px;
+}
+
+.option-select-box .option-select-box-body-tl, .option-select-box .option-select-box-body-tr
+{
+    display: none;
+}
+
+.option-select-box.full .option-select-box-body-tl
+{
+    background: transparent url(../Images/Panels/panel_top_left_corner.png) no-repeat 0 0;
+    left: 0;
+}
+
+.option-select-box.full .option-select-box-body-tr
+{
+    background: transparent url(../Images/Panels/panel_top_right_corner.png) no-repeat 100% 0;
+    right: 0;
+}
+
+.option-select-box .option-select-box-body-m
+{
+    background: transparent url(../Images/Panels/panel_left_border.png) repeat-y 0 0;
+    padding-left: 3px;
+}
+
+.option-select-box .option-select-box-body-mc
+{
+    background: #fff url(../Images/Panels/panel_right_border.png) repeat-y 100% 0;
+    padding-right: 3px;
+}
+
+.option-select-box.full .option-select-box-body-mc
+{
+    background-image: none;
+    padding: 0;
+    left: 3px;
+    right: 3px;
+}
+
+.option-select-box .option-select-box-body-ml, .option-select-box .option-select-box-body-mr
+{
+    display: none;
+}
+
+.option-select-box.full .option-select-box-body-ml
+{
+    background: transparent url(../Images/Panels/panel_left_border.png) repeat-y 0 0;
+    left: 0;
+}
+
+.option-select-box.full .option-select-box-body-mr
+{
+    background: transparent url(../Images/Panels/panel_right_border.png) repeat-y 100% 0;
+    right: 0;
+}
+
+.option-select-box .option-select-box-body-b
+{
+    background: transparent url(../Images/Panels/panel_bottom_left_corner.png) no-repeat 0 -2px;
+    padding-left: 3px;
+}
+
+.option-select-box .option-select-box-body-bc
+{
+    background: transparent url(../Images/Panels/panel_bottom_right_slide.png) no-repeat 100% 0;
+    padding-right: 3px;
+}
+
+.option-select-box.full .option-select-box-body-bc
+{
+    background: transparent url(../Images/Panels/panel_bottom_border.png) repeat-x 0 -2px;
+    padding: 0;
+    left: 3px;
+    right: 3px;
+}
+
+.option-select-box .option-select-box-body-bl,
+.option-select-box .option-select-box-body-br
+{
+    display: none;
+}
+
+.option-select-box.full .option-select-box-body-bl
+{
+    background: transparent url(../Images/Panels/panel_bottom_left_corner.png) no-repeat 0 -2px;
+    left: 0;
+}
+
+.option-select-box.full .option-select-box-body-br
+{
+    background: transparent url(../Images/Panels/panel_bottom_right_corner.png) no-repeat -2px -2px;
+    right: 0;
+}
+
+.option-select-box.full .option-select-box-body-t,
+.option-select-box.full .option-select-box-body-m,
+.option-select-box.full .option-select-box-body-b
+{
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    background: none;
+    padding: 0;
+}
+
+.option-select-box.full .option-select-box-body-t
+{
+    top: 0;
+    display: block;
+}
+
+.option-select-box.full .option-select-box-body-m
+{
+    top: 3px;
+    bottom: 3px;
+    padding: 0;
+}
+
+.option-select-box.full .option-select-box-body-b
+{
+    bottom: 0;
+    padding: 0;
+}
+
+.option-select-box.with-header .option-select-box-body-t, .option-select-box.with-header.full .option-select-box-body-t
+{
+    display: none;
+}
+
+.option-select-box.with-header.full .option-select-box-body-m
+{
+    top: 0;
+    background: none;
+}
+
+.option-select-box .option-select-box-body-tl,
+.option-select-box .option-select-box-body-tc,
+.option-select-box .option-select-box-body-tr,
+.option-select-box .option-select-box-body-bl,
+.option-select-box .option-select-box-body-bc,
+.option-select-box .option-select-box-body-br
+{
+    height: 3px;
+}
+
+.option-select-box.full .option-select-box-body-tl,
+.option-select-box.full .option-select-box-body-tc,
+.option-select-box.full .option-select-box-body-tr,
+.option-select-box.full .option-select-box-body-bl,
+.option-select-box.full .option-select-box-body-bc,
+.option-select-box.full .option-select-box-body-br
+{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    height: 3px;
+    display: block;
+}
+
+.option-select-box .option-select-box-body-tl,
+.option-select-box .option-select-box-body-tr,
+.option-select-box .option-select-box-body-ml,
+.option-select-box .option-select-box-body-mr,
+.option-select-box .option-select-box-body-bl,
+.option-select-box .option-select-box-body-br
+{
+    width: 3px;
+}
+
+.option-select-box.full .option-select-box-body-ml,
+.option-select-box.full .option-select-box-body-mc,
+.option-select-box.full .option-select-box-body-mr
+{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    display: block;
+}
+
+.option-select-box .option-select-box-body-wrapper
+{
+    position: relative;
+}
+
+.option-select-box.with-header .option-select-box-body-wrapper
+{
+    padding-top: 2px;
+}
+
+.option-select-box.full .option-select-box-body-wrapper
+{
+    overflow: auto;
+}
+/* New OptionSelectBox Styling */
+ul.option-select-box,
+.option-select-box ul
+{
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.option-select-box li
+{
+    list-style-type: none;
+    margin: 0 0 1px 0;
+}
+
+.option-select-box.collapsed li
+{
+    width: 320px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin: 1px;
+}
+
+.option-select-box label
+{
+    border: 1px solid transparent;
+    display: block;
+    min-height: 48px;
+    position: relative;
+    cursor: pointer;
+}
+
+.option-select-box label .option-c
+{
+    border: 1px solid transparent;
+}
+
+
+.lyt-option-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    & > .icon
+    {
+        flex-shrink: 0;
+    }
+
+    & > .lyt-option-text
+    {
+        flex-grow: 1;
+    }
+}
+
+.option-select-box label:hover .option-c
+{
+    border-color: @Radio-Button-Hover-Border-Color;
+    background-color: @Radio-Button-Hover-Background-Color;
+}
+
+.option-select-box label.selected .option-c,
+.option-select-box label.selected:hover .option-c
+{
+    border-color: @Radio-Button-Selected-Border-Color;
+    background-color: @Radio-Button-Selected-Background-Color;
+}
+
+
+.option-select-box
+{
+    input
+    {
+        display: none;
+    }
+
+    .icon
+    {
+        display: block;
+        float: left;
+        margin: 5px;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px; /*needed for hi resolution - see media query*/
+        background-color: transparent;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-image: url(../Images/Icons/Default32px.png);
+
+        html[dir=rtl] &
+        {
+            float: right;
+        }
+    }
+
+    .title
+    {
+        display: block;
+        font-weight: 700;
+        margin-top: 5px;
+        text-decoration: none;
+    }
+
+    .desc
+    {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+.option-select-box label.disabled .icon
+{
+    opacity: 0.3;
+    cursor: default;
+    font: #cccccc;
+    color: #cccccc;
+}
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('forms_images.less');
+}
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('forms_images.less');
+}
+/* Column Styling */
+.option-select-box-column
+{
+    float: left;
+    min-width: 350px;
+    width: 50%;
+}
+
+.option-select-box-column .option-select-box
+{
+    margin-left: 1px;
+}
+
+.option-select-box-column:first-child .option-select-box
+{
+    margin-left: 0;
+}
+/* Slider Form Control Styling */
+.Slider-rail
+{
+    height: 11px;
+    position: relative;
+}
+
+.Slider-rail .Slider-rail-start
+{
+    background-image: url("../Images/Slider/slider_bar_left_corners.png");
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    height: 11px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 3px;
+}
+
+.Slider-rail .Slider-rail-inner
+{
+    background-image: url("../Images/Slider/slider_bar_repeater.png");
+    background-position: 0 50%;
+    background-repeat: repeat-x;
+    height: 11px;
+    left: 3px;
+    position: absolute;
+    right: 3px;
+    top: 0;
+}
+
+.Slider-rail .Slider-rail-end
+{
+    background-image: url("../Images/Slider/slider_bar_right_corners.png");
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    height: 11px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+}
+
+.Slider-rail a.Slider
+{
+    background-image: url("../Images/Slider/slider_button_normal.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 11px;
+    left: 0;
+    position: absolute;
+    text-decoration: none;
+    width: 11px;
+}
+
+.Slider-rail:not(.disabled) a.Slider:hover,
+.Slider-rail:not(.disabled) a.Slider:focus,
+.Slider-rail:not(.disabled) a.Slider:active
+{
+    background-image: url("../Images/Slider/slider_button_hover.png");
+}
+/* View Runtime Styling */
+.ajax__slider_h_rail .ajax_slider_rail_inner
+{
+    background-image: url("../Images/Slider/slider_bar_repeater.png");
+}
+
+.ajax__slider_h_rail .ajax_slider_rail_start
+{
+    background-image: url("../Images/Slider/slider_bar_left_corners.png");
+}
+
+.ajax__slider_h_rail .ajax_slider_rail_end
+{
+    background-image: url("../Images/Slider/slider_bar_right_corners.png");
+}
+
+.ajax__slider_h_handle
+{
+    background-image: url("../Images/Slider/slider_button_normal.png");
+}
+
+.ajax__slider_h_handle:not(.disabled):hover,
+.ajax__slider_h_handle:not(.read-only):hover,
+.ajax__slider_h_handle:not(.disabled):focus,
+.ajax__slider_h_handle:not(.read-only):focus,
+.ajax__slider_h_handle:not(.disabled):active,
+.ajax__slider_h_handle:not(.read-only):active,
+.ajax__slider_h_handle.active:not(.disabled),
+.ajax__slider_h_handle.active:not(.read-only)
+{
+    background-image: url("../Images/Slider/slider_button_hover.png");
+}
+/* Tokenbox Styling */
+.token-input .token-input-editor-area
+{
+    height: auto;
+    line-height: 18px;
+    min-height: 100%;
+    outline: none;
+}
+
+.token-input .token-input-editor-area:focus,
+.token-input .token-input-editor-area:active
+{
+    outline: none;
+}
+
+.token-input.full-size
+{
+    height: 100%;
+}
+
+.token-input.full-size .input-control-m,
+.token-input.full-size .input-control-m-c,
+.token-input.full-size .input-control-content,
+.token-input.full-size .input-control-wrapper
+{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.token-input.single-line .input-control-m-c,
+.token-input.single-line .token-input-editor-area
+{
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: text;
+}
+
+.token-input.single-line .token-input-editor-area
+{
+    height: 18px;
+}
+
+.token-input.full-size .token-input-editor-area
+{
+    position: relative;
+    height: 100%;
+    overflow-y: inherit;
+}
+
+.token-input .token-input-editor-area p
+{
+    margin-top: 0;
+}
+
+.token-input .token-input-watermark
+{
+    font-style: italic;
+    color: @Input-Watermark-Text-Color;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    line-height: 19px;
+    padding: 1px 4px;
+}
+//#region tokens/entity's (smartfields)
+//#endregion tokens/entities (smartfields)
+.token-input .token-input-editor-area .editor-line
+{
+    min-height: 18px;
+}
+
+.token-input .active-caret,
+.token-input .char.empty
+{
+    display: inline-block;
+    height: 12px;
+    margin: 0 1px;
+    width: 1px;
+}
+
+.token-input .char.over,
+.token-input .text-node.empty.over,
+.token-input .active-caret
+{
+    background: url("../Images/caret.gif") no-repeat 0 50%;
+    cursor: text;
+}
+
+.token-input .active-caret
+{
+    vertical-align: middle;
+}
+
+.token-input .text-node.empty
+{
+    line-height: 18px;
+    padding: 0 1px;
+    vertical-align: middle;
+}
+
+.token-input .active-caret.ie8
+{
+    border-right: solid 1px #000;
+}
+/* Spinner Control Styling */
+.spinner
+{
+    display: flex;
+    border: solid 1px @Input-Border-Color;
+    background-color: @Input-Background-Color;
+
+    &.active
+    {
+        border-color: @Input-Focus-Border-Color;
+    }
+
+    &.disabled
+    {
+        border-color: @Input-Disabled-Border-Color;
+    }
+}
+
+.spinner-inputs
+{
+    flex-grow: 1;
+    display: block;
+}
+
+.spinner-buttons
+{
+    width: 20px; //width of select buttons
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    vertical-align: top;
+}
+
+.spinner-input-wrapper
+{
+    height: @Input-Single-Line-Height;
+}
+
+
+.spinner-text-input
+{
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    outline: 0;
+}
+
+
+html[dir=rtl] .spinner-text-input
+{
+    margin: 0 2px 0 0;
+}
+
+.spinner-text-input:first-child
+{
+    margin-left: 4px;
+}
+
+html[dir=rtl] .spinner-text-input:first-child
+{
+    margin-left: 0;
+    margin-right: 4px;
+}
+
+
+.spinner-text-input.right-align
+{
+    text-align: right;
+    margin-left: 0;
+    margin-right: 2px;
+}
+
+.spinner-text-input.right-align:first-child
+{
+    margin-left: 1px;
+}
+
+
+.spinner-delimiter
+{
+    float: left;
+    position: relative;
+    top: 2px;
+}
+
+
+.spinner-down-button-wrapper,
+.spinner-up-button-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: stretch;
+    flex-grow: 1;
+    justify-content: stretch;
+
+    button
+    {
+        flex-grow: 1;
+        border: solid 1px transparent;
+        color: @Main-Text-Color;
+        cursor: pointer;
+        height: auto; //override main button styles
+        min-width: 0px; //override main button styles
+        padding: 0px; //override main button styles
+        width: auto;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: transparent;
+        text-indent: -9999px;
+
+        &:hover
+        {
+            background-color: @Button-Hover-Background-Color-1;
+        }
+
+        .spinner.disabled&
+        {
+            background-color: transparent;
+            cursor: default !important;
+        }
+    }
+}
+/* END Spinner Control Styling */
+/* Wysiwyg Editor Controls Styling */
+.font-family-arial
+{
+    font-family: Arial, Gadget, sans-serif;
+}
+
+.font-family-bookman-old-style
+{
+    font-family: Bookman Old Style, serif;
+}
+
+.font-family-comic-sans-ms
+{
+    font-family: Comic Sans MS, cursive;
+}
+
+.font-family-courier-new
+{
+    font-family: Courier New, Courier, monospace;
+}
+
+.font-family-garamond
+{
+    font-family: Garamond, serif;
+}
+
+.font-family-georgia
+{
+    font-family: Georgia, serif;
+}
+
+.font-family-impact
+{
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.font-family-lucida-console
+{
+    font-family: Lucida Console, Monaco, monospace;
+}
+
+.font-family-ms-sans-serif
+{
+    font-family: MS Sans Serif, Geneva, sans-serif;
+}
+
+.font-family-ms-serif
+{
+    font-family: MS Serif, 'New York', sans-serif;
+}
+
+.font-family-palatino-linotype
+{
+    font-family: Palatino Linotype, 'Book Antiqua', Palatino, serif;
+}
+
+.font-family-sans-serif
+{
+    font-family: Sans Serif;
+}
+
+.font-family-serif
+{
+    font-family: Serif;
+}
+
+.font-family-tahoma
+{
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.font-family-times-new-roman
+{
+    font-family: Times New Roman, Times, serif;
+}
+
+.font-family-trebuchet-ms
+{
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+}
+
+.font-family-verdana
+{
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+
+.input-control-icon.error-badge::after,
+.input-control-img.error-badge::after,
+.tree li > span.error-badge::after
+{
+    -moz-animation: fadein 0.25s;
+    -o-animation: fadein 0.25s;
+    -webkit-animation: fadein 0.25s;
+    animation: fadein 0.25s;
+    background: url(../Images/Icons/Badges/Error16.png) no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 11px;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 26px;
+    top: 0;
+}
+
+.tree ul.target-rule li,
+.tree ul.target-rule
+{
+    position: relative;
+}
+
+li label.input-control,
+.tree ul.target-rule > li
+{
+    overflow: visible;
+}
+
+
+.generic-ellipsis
+{
+    display: block;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.control-table, .control-table-row
+{
+    border: 0 !important;
+}
+
+.label-container span
+{
+    display: block;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+#SessionExpirationWarningDialog label.input-control.checkbox
+{
+    margin-top: 10px;
+}
+
+.ListViewGeneralStepMethodControlsDisabled
+{
+    margin-top: 5px;
+    padding-left: 23px;
+    padding-right: 5px;
+    border: solid 1px #ffecb3;
+    background-color: lighten( #ffecb3, 10%);
+    box-sizing: border-box;
+    line-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 3px 3px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+.ListViewGeneralStepMethodControlsDisabled.hidden
+{
+    display: none;
+}
+
+#vdlbl_listViewGetListMethod.form-field.hidden-label .form-field-label
+{
+    //TFS 781409: Special case where we would like hide the element but reserve space
+    visibility: hidden;
+    display: block;
+}
+
+//Readonly properties are used in the rules designer.
+.readonly-property
+{
+    padding-top: 3px;
+}
+
+.readonly-property:not(.no-icon)
+{
+    padding-left: 18px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+}

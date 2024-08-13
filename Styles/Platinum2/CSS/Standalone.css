@@ -1,0 +1,79 @@
+#StandAloneBody {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#StandAloneBody .mainContent {
+  background-color: white;
+}
+#StandAloneBody .standaloneImage {
+  /*Styles\Platinum2\Images\Icons\DesignerError\ViewBlock64.png*/
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+  background-image: url("../Images/Icons/Management/K2LogoPermissions64.png");
+  background-repeat: no-repeat;
+}
+#StandAloneBody .standaloneTitle {
+  color: #36474f;
+  font-family: "Open-Sans";
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#StandAloneBody .standaloneDescription {
+  color: #36474f;
+  font-size: 1rem;
+  font-family: "Open-Sans";
+  display: inline-block;
+  height: 34px;
+  width: 288px;
+}
+#StandAloneBody .standaloneNotifyButton {
+  padding-top: 15px;
+}
+#StandAloneBody .standaloneNotifyButton #NotifyButton {
+  font-family: "Open-Sans";
+  text-decoration: none;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  color: #003870;
+  display: inline-block;
+  background-color: white;
+  background-clip: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  float: none;
+  min-width: 80px;
+  min-height: 30px;
+  line-height: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1.2px;
+  box-shadow: none;
+  border-radius: 2px;
+}
+#StandAloneBody .standaloneNotifyButton #NotifyButton:hover {
+  background-color: white;
+}
+#StandAloneBody .standaloneNotifyButton #NotifyButton:focus {
+  border-color: white;
+  border-style: solid;
+  border-width: 1.2px;
+}
+#StandAloneBody .standaloneNotifyButton #NotifyButton:focus:hover {
+  background-color: white;
+  border-color: white;
+}
+/*Images@2x - hi-dpi Normal Screen*/
+
+@media only screen and (min-resolution: 1.5dppx) and (max-width: 1650px), (min-resolution: 144dpi) and (max-width: 1650px), (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1650px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1650px) {
+  #StandAloneBody .standaloneImage {
+    /*Styles\Platinum2\Images\Icons\DesignerError\ViewBlock64@2x.png*/
+    background-image: url("../Images/Icons/Management/K2LogoPermissions64@2x.png");
+    height: 128px;
+    width: 128px;
+  }
+}

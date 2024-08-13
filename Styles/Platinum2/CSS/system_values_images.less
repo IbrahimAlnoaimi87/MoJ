@@ -1,0 +1,24 @@
+﻿@_fPath: ~"../Images/Icons/Functions/";
+
+.mixin-system-values(@class;@imageurl)
+{
+    .tree li.@{class} > a,
+    .tree li.@{class}.closed > a,
+    .tree li.@{class}.open > a,
+    #BrowserNavigatePC .token.rendermode, /* This is used for rule widget tokens */
+    a.icon.ui-draggable-dragging.@{class} // dragging from context tree
+    {
+        background-image: url("@{imageurl}16@{res}.png");
+    }
+
+    .token-input .entity.icon.@{class},
+    .input-control .drop-item.@{class}
+    {
+        background-image: url( "@{imageurl}_Selected16@{res}.png");
+    }
+}
+
+html
+{
+    .mixin-system-values(datetime-now,~"@{_fPath}Today");
+}

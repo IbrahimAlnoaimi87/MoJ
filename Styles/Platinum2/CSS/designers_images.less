@@ -1,0 +1,93 @@
+#widget-button
+{
+    background-image: url('../Images/Icons/MoveWidget16@{res}.png');
+}
+
+#widget-button:hover
+{
+    background-image: url('../Images/Icons/MoveWidget_Hover16@{res}.png');
+}
+
+#widget-button:active,
+#widget-button.selected,
+#widget-button.selected:hover
+{
+    background-image: url('../Images/Icons/MoveWidget_Selected16@{res}.png');
+}
+
+.toolboxitem.aggregation
+{
+    background-image: url("../Images/Icons/Functions/SumFunction16@{res}.png");
+}
+
+.controlToolboxGroupCategoryToggle.closed, .propertyGridCategoryToggle.closed
+{
+    background-image: url("../Images/Icons/DropdownSet/Dropdown12@{res}.png");
+}
+
+.controlToolboxGroupCategoryToggle.open, .propertyGridCategoryToggle.open
+{
+    background-image: url("../Images/Icons/DropdownSet/DropdownExpanded12@{res}.png");
+}
+
+#UsersConfig_secondPageOutside a.dropbutton.expand-vertical
+{
+    display: block;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-image: url("../Images/Icons/DropdownSet/Dropdown16@{res}.png");
+    background-position: center;
+}
+
+#UsersConfig_secondPageOutside a.dropbutton.expand-vertical:hover,
+#UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus,
+#UsersConfig_secondPageOutside a.dropbutton.expand-vertical.active,
+#UsersConfig_secondPageOutside a.dropbutton.expand-vertical.active:hover
+{
+    background-image: url("../Images/Icons/DropdownSet/Dropdown16@{res}.png");
+}
+
+#UsersConfig_secondPageOutside a.dropbutton.collapse-vertical
+{
+    display: block;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-image: url("../Images/Icons/DropdownSet/DropdownExpanded16@{res}.png");
+    background-position: center;
+}
+
+#UsersConfig_secondPageOutside a.dropbutton.collapse-vertical:hover,
+#UsersConfig_secondPageOutside a.dropbutton.collapse-vertical:focus,
+#UsersConfig_secondPageOutside a.dropbutton.collapse-vertical.active,
+#UsersConfig_secondPageOutside a.dropbutton.collapse-vertical.active:hover
+{
+    background-image: url("../Images/Icons/DropdownSet/DropdownExpanded16@{res}.png");
+}
+
+.toolboxitem
+{
+    background-image: url("../Images/Icons/Toolbox/Unknown16@{res}.png");
+}
+
+/* --- TFS 727158 - Panel property icons should map to an unknow icon by default and if it is supplied then it will override the unknown icon. */
+/* Form Designer: While dragging and dropping control on to the canvas*/
+a.ui-draggable-dragging.canvasDragGhost,
+/* View/Form Designer: At top of properties panel when control is selected on the canvas*/
+.icon.icon-size32,
+.ico.icon.medium
+{
+    background-image: ~"url('../Images/Icons/Toolbox/Unknown32@{res}.png')";
+}
+
+/* --- End TFS 727158 */
+
+
+/* --- TFS 767481: Source icon in the properties panel for the selected picture control */
+.input-control.icon-control.select-box.lookup-box.picture .input-control-wrapper
+{
+    background-image: ~"url('../Images/Icons/Toolbox/Picture16@{res}.png')";
+}
+/* --- End TFS 767481 */
+

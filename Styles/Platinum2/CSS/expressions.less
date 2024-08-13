@@ -1,0 +1,224 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import "../../../Designer_Variables.less";
+
+html[dir=rtl] #ExpressionsGrid table.grid-content-table td:last-child
+{
+    direction: ltr;
+}
+
+#EBExpressionsPanelContent
+{
+
+    html[dir=rtl] &
+    {
+        direction: ltr;
+        text-align: left;
+    }
+
+    .drop-text.watermark
+    {
+        min-width: 150px;
+    }
+
+    .expression-wrapper
+    {
+        padding: @Standard-Padding-Small;
+    }
+
+    .operator-item,
+    .operator,
+    .left-bracket,
+    .right-bracket,
+    .function,
+    .comma,
+    .textbox-container,
+    .operator-container,
+    .add-extra-term,
+    .sub-expression-wrapper
+    {
+        background-repeat: no-repeat;
+        border: 1px solid transparent;
+        display: inline-block;
+        height: 22px;
+        line-height: 22px;
+        margin: 0 3px;
+        min-width: 16px;
+        vertical-align: bottom;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%; //this is overridden later for left aligned items.
+    }
+
+
+    .operator-item,
+    .operator,
+    .left-bracket,
+    .right-bracket
+    {
+        //make sure the actual text inside the element is hidden.
+        //as these items are icons only (no inner text).
+        color: transparent;
+        overflow: hidden;
+    }
+
+    .sub-expression-wrapper
+    {
+        display: inline;
+        margin: 1px 0;
+    }
+
+    .operator,
+    .operator-item,
+    .bracket,
+    .function,
+    .comma
+    {
+        text-align: center;
+
+        &.hover
+        {
+            background-color: @Expression-Hover-Background-Color;
+        }
+
+        &.selected
+        {
+            background-color: @Expression-Selected-Background-Color;
+            border: 1px solid @Expression-Selected-Border-Color;
+        }
+    }
+    //Comma is not an icon, but uses the text inside the element.
+    .comma
+    {
+        margin-left: 0;
+        font-weight: bold;
+    }
+    //Functions have inner text for the function name
+    .function
+    {
+        background-position: 0 50%;
+        padding-left: 22px;
+        //LG: tighten this up as the if function icon has the word "if" in it.
+        &.if-statement
+        {
+            color: transparent;
+            padding-left: 0px;
+            margin-left: 0px; //override the 3px either side.
+            margin-right: 0px; //override the 3px either side.
+        }
+    }
+    //brackets and operators do not have inner text, so do not need the margin
+    .bracket,
+    .operator
+    {
+        margin: 0px 0px; //override the 3px either side.
+    }
+
+
+    .textbox-container.selected .input-control .input-control-m
+    {
+        background-color: #FCFFFC;
+        border: 1px solid @Expression-Selected-Border-Color;
+    }
+
+    .textbox-container
+    {
+        min-width: 160px;
+        max-width: 260px;
+    }
+
+    .operator-container,
+    .add-extra-term
+    {
+        width: 40px;
+        line-height: 22px;
+    }
+
+
+    .add-extra-term
+    {
+        // text color should not affect operator-container or existing-operators
+        // as they are icons and the text in the element must stay hidden (color: transparent);
+        color: #A0A0A0;
+    }
+
+    .operator-container,
+    .add-extra-term,
+    .existing-operator
+    {
+        background-color: #FCFCFC;
+        border: 1px dashed #D0D0D0;
+        min-width: 40px;
+        min-height: 22px;
+    }
+
+    .add-extra-term
+    {
+        cursor: pointer;
+    }
+
+    .operator-container.hover,
+    .existing-operator.hover,
+    .add-extra-term.hover
+    {
+        background-color: @Expression-Hover-Background-Color;
+        border: 1px solid @Expression-Hover-Border-Color;
+    }
+
+
+    .operator,
+    .operator-item,
+    .left-bracket,
+    .right-bracket
+    {
+        text-indent: -99999px;
+    }
+
+    .left-bracket.collapsed-margin,
+    .right-bracket.collapsed-margin
+    {
+        margin-left: 0;
+    }
+
+    .function.collapsed-margin
+    {
+        margin-right: 0;
+    }
+    /* Tokenbox Implementation in Expression Builder */
+    .token-input .token-input-editor-area
+    {
+        height: 18px;
+        line-height: 18px;
+        text-align: left;
+    }
+}
+
+html[dir=rtl] #EBExpressionPreviewPanel .scroll-wrapper
+{
+    direction: ltr;
+    text-align: left;
+}
+
+#EBOperatorsPanelTree,
+#EBContextPanelTree
+{
+    padding: 8px 10px 10px 5px;
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('expressions_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('expressions_images.less');
+}

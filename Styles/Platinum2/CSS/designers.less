@@ -1,0 +1,1387 @@
+/*Author: 		Lewis Garmston*/
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+/*This is because /styles, /forms, /rules etc all have css in them */
+@import (reference) "../../../Designer_Variables.less";
+
+@keyframes fadein
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+    }
+}
+
+
+/*#region CSS Variables for Light/Dark Background Color awareness*/
+/*  Editor Elements (like widgets and dotted borders) that need to change color based on the background color they are on top of
+    will use these variables. An element that has a dark background must add .editor-dark to its classes, and
+    an element with a light background must add a .editor-light class. If the element
+    has transarent or no background it must not have either of these classes.
+*/
+:root,
+.editor-light > *    //Apply the css variables on the direct children so that nested scearnios works correctly e.g. cell that is editor-light has a table with a cell with editor-dark
+{
+    --editor-cell-border-color: rgba(0,0,0,0.2);
+    --editor-cell-hover-background-color: rgba(0,0,0,0.02);
+    --editor-drop-border-color: rgba(0,0,0,0.2);
+    --editor-drop-border-hover-color: @Control-Selection-Border-Color;
+    --editor-drop-background-color: @Control-Selection-Border-Color;
+    --editor-drop-background-hover-color: fadeout(@Control-Selection-Border-Color, 80%);
+    --editor-drop-text-color: rgba(0,0,0,0.4);
+    --editor-drop-description-text-color: rgba(0,0,0,0.4);
+}
+
+.editor-dark > *     //Apply the css variables on the direct children so that nested scearnios works correctly e.g. cell that is editor-light has a table with a cell with editor-dark
+{
+    --editor-cell-border-color: rgba(255,255,255,0.4);
+    --editor-cell-hover-background-color: rgba(255,255,255,0.1);
+    --editor-drop-border-color: rgba(255,255,255,0.2);
+    --editor-drop-border-hover-color: lighten(@Control-Selection-Border-Color, 20%);
+    --editor-drop-background-color: @Control-Selection-Border-Color;
+    --editor-drop-background-hover-color: fadeout(@Control-Selection-Border-Color, 80%);
+    --editor-drop-text-color: rgba(255,255,255,0.8);
+    --editor-drop-description-text-color: rgba(255,255,255,0.6);
+}
+
+
+// Since IE11 does not support CSS variables, we need to add an IE specific selector for each selector that uses the above CSS variables and just use the actual styling value.
+// This block can be removed once support for IE11 is dropped.
+.ie11 #pgTabControl
+{
+    &.editor-light, :root
+    {
+        .editor-cell
+        {
+            border-color: rgba(0,0,0,0.2); //--editor-cell-border-color
+        }
+
+        .editor-table .editor-cell-item-hover 
+        {
+            background-color: rgba(0,0,0,0.02) !important; /*--editor-cell-hover-background-color Override any inline styling from format dialog*/
+        }
+
+        .editor-table,
+        .editor-grid 
+        {
+            border-color: rgba(0,0,0,0.2); //--editor-cell-border-color
+        }
+
+        .editor-table .editor-cell-item-hover.drop-hover
+        {
+            background-color: fadeout(@Control-Selection-Border-Color, 80%)!important; //--editor-drop-background-hover-color
+        }
+
+        .view-canvas,
+        .panel-canvas,
+        .control-canvas
+        {
+            border-color: rgba(0,0,0,0.2); //--editor-cell-border-color
+        }
+
+        .drop-hover:not(.control-canvas)
+        {
+            background-color: fadeout(@Control-Selection-Border-Color, 80%); //--editor-drop-background-hover-color
+        }
+
+        .drop-hover:not(.editor-cell),
+        .control-canvas.can-hover:hover:not(.selected),
+        .view-canvas:hover:not(.selected)
+        {
+            border-color: @Control-Selection-Border-Color !important; //--editor-drop-border-hover-color
+        }
+
+        .view-drop-area-item
+        {
+            border-color: rgba(0,0,0,0.2) !important; //--editor-drop-border-color
+        }
+
+        .view-drop-area-item.drop-hover
+        {
+            border-color: @Control-Selection-Border-Color; //--editor-drop-border-hover-color
+            background-color: fadeout(@Control-Selection-Border-Color, 80%); //--editor-drop-background-hover-color
+        }
+
+        .view-drop-area-text
+        {
+            color: rgba(0,0,0,0.4); //--editor-drop-text-color
+        }
+
+        .view-drop-area-title
+        {
+            color: rgba(0,0,0,0.4); //--editor-drop-text-color
+        }
+
+        .view-drop-area-description
+        {
+            color: rgba(0,0,0,0.4); //--editor-drop-description-text-color
+        }
+
+        .view-drop-area-text hr
+        {
+            border-color: rgba(0,0,0,0.2); //--editor-drop-border-color
+        }
+    }
+
+    &.editor-dark
+    {
+        .editor-cell
+        {
+            border-color: rgba(255,255,255,0.4); //--editor-cell-border-color
+        }
+
+        .editor-table .editor-cell-item-hover 
+        {
+            background-color: rgba(255,255,255,0.1) !important; /*--editor-cell-hover-background-color Override any inline styling from format dialog*/
+        }
+
+        .editor-table,
+        .editor-grid 
+        {
+            border-color: rgba(255,255,255,0.4); //--editor-cell-border-color
+        }
+
+        .editor-table .editor-cell-item-hover.drop-hover
+        {
+            background-color: fadeout(@Control-Selection-Border-Color, 80%)!important; //--editor-drop-background-hover-color
+        }
+
+        .view-canvas,
+        .panel-canvas,
+        .control-canvas
+        {
+            border-color: rgba(255,255,255,0.4); //--editor-cell-border-color
+        }
+
+        .drop-hover:not(.control-canvas) 
+        {
+            background-color: fadeout(@Control-Selection-Border-Color, 80%); //--editor-drop-background-hover-color
+        }
+
+        .drop-hover:not(.editor-cell),
+        .control-canvas.can-hover:hover:not(.selected),
+        .view-canvas:hover:not(.selected) 
+        {
+            border-color: lighten(@Control-Selection-Border-Color, 20%) !important; //--editor-drop-border-hover-color
+        }
+
+        .view-drop-area-item 
+        {
+            border-color: rgba(255,255,255,0.2) !important; //--editor-drop-border-color
+        }
+
+        .view-drop-area-item.drop-hover 
+        {
+            border-color: lighten(@Control-Selection-Border-Color, 20%); //--editor-drop-border-hover-color
+            background-color: fadeout(@Control-Selection-Border-Color, 80%); //--editor-drop-background-hover-color
+        }
+
+        .view-drop-area-text 
+        {
+            color: rgba(255,255,255,0.8); //--editor-drop-text-color
+        }
+
+        .view-drop-area-title 
+        {
+            color: rgba(255,255,255,0.8); //--editor-drop-text-color
+        }
+
+        .view-drop-area-description //--editor-drop-description-text-color
+        {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .view-drop-area-text hr 
+        {
+            border-color: rgba(255,255,255,0.2); //--editor-drop-border-color
+        }
+    }
+}
+/*#endregion*/
+
+/*#region Line Breaks*/
+
+.line-break{
+    content: '\A';
+    display: contents;
+    white-space: pre;
+    pointer-events:none; /*prevents selection of cell if this is not none*/
+}
+
+.editor-grid > .editor-cell > .line-break
+{
+    width:100%;
+}
+
+/*#endregion*/
+
+@_BadgeSize: 16px;
+
+//standard Layout approach for centered vert/horiz screens,
+//that need to scroll if the window is smaller than the content.
+.lyt-centered.scroll-wrapper
+{
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+//standard Layout approach for centered vert/horiz screens,
+//that need to scroll if the window is smaller than the content.
+.lyt-centered-container-outer
+{
+    display: table;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+//standard Layout approach for centered vert/horiz screens,
+//that need to scroll if the window is smaller than the content.
+.lyt-centered-container-inner
+{
+    display: table-row;
+}
+
+//standard Layout approach for centered vert/horiz screens,
+//that need to scroll if the window is smaller than the content.
+.lyt-centered-container
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+}
+
+//standard Layout approach for centered vert/horiz screens,
+//that need to scroll if the window is smaller than the content.
+.lyt-centered-container > *
+{
+    display: inline-block;
+    text-align: left;
+
+    html[dir=rtl] &
+    {
+        text-align: right;
+    }
+}
+
+//Properties panel header - found in view/form designer
+
+//Properties panel layout (right side of screen)
+
+.lyt-properties-panel
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+
+    .lyt-properties-header
+    {
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    .lyt-properties-content
+    {
+        flex-shrink: 0;
+        flex-grow: 1;
+        position: relative;
+
+        .tab-box.full
+        {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+    }
+}
+
+.lyt-properties-header
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    label, .icon
+    {
+        display: block;
+        margin: auto;
+    }
+
+    label
+    {
+        text-align: center;
+        padding: 0px 5px;
+        padding-top: 5px;
+
+        &.empty
+        {
+            opacity: 0.25;
+            font-style: italic;
+        }
+    }
+}
+
+.controlToolboxGroupCategory,
+.propertyGridCategory
+{
+    margin-bottom: 3px;
+    position: relative;
+    margin-top: 10px;
+}
+
+
+.propertyGridCategoryBody,
+.controlToolboxGroupCategoryBody
+{
+    margin-left: 3px;
+}
+
+html[dir=rtl] .controlToolboxGroupCategoryBody,
+html[dir=rtl] .propertyGridCategoryBody
+{
+    margin-left: 0;
+    margin-right: 3px;
+}
+
+.controlToolboxGroupCategoryBody.closed,
+.propertyGridCategoryBody.closed
+{
+    display: none;
+}
+
+.controlToolboxGroupCategoryBody.open,
+.propertyGridCategoryBody.open
+{
+    display: block;
+}
+
+.controlToolboxGroupCategoryHeader,
+.propertyGridCategoryHeader
+{
+    background-color: #eee; /*LG: Temporary color*/
+    box-sizing: border-box;
+    border-bottom: solid 1px rgba(0,0,0,0.05);
+    border-top: solid 1px rgba(0,0,0,0.05);
+    position: relative; //So the error badge can be positioned correctly.
+}
+
+//don't show a top border on the first one, as it'll be against the border of the panel.
+.controlToolboxGroupCategory:first-child .controlToolboxGroupCategoryHeader,
+.propertyGridCategory:first-child .propertyGridCategoryHeader
+{
+    border-top: 0px;
+}
+
+.propertyGridCategory.error .propertyGridCategoryLabel::after
+{
+    background-image: url('../Images/Icons/Badges/ErrorBadge20.png');
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    content: '';
+    display: inline-block;
+    position: relative;
+    left: 2px;
+    top: -3px;
+}
+
+.controlToolboxGroupCategoryLabel,
+.propertyGridCategoryLabel
+{
+    font-weight: 700;
+    height: 20px;
+    line-height: 19px;
+    margin-left: 20px;
+}
+
+html[dir=rtl] .controlToolboxGroupCategoryLabel,
+html[dir=rtl] .propertyGridCategoryLabel
+{
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.controlToolboxGroupCategoryToggle, .propertyGridCategoryToggle
+{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+}
+
+.controlToolboxGroupCategoryToggle.closed, .propertyGridCategoryToggle.closed
+{
+    //background-image: url(../Images/Tree/plus_alt.gif);
+    background-size: 12px 12px;
+}
+
+.controlToolboxGroupCategoryToggle.open, .propertyGridCategoryToggle.open
+{
+    //background-image: url(../Images/Tree/minus_alt.gif);
+    background-size: 12px 12px;
+}
+
+.propertyGridEditWrapper
+{
+    padding-right: 2px;
+}
+
+div.propertyGridPropertyEdit
+{
+    overflow: hidden;
+    padding-top: 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.propertyGridPropertyItem
+{
+    height: 22px;
+    margin-top: 2px;
+    position: relative;
+}
+
+.propertyGridPropertyItemLabel
+{
+    overflow: hidden;
+    padding-top: 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 110px;
+}
+
+.propertyGridPropertyItemValue
+{
+    left: 112px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+html[dir=rtl] .propertyGridPropertyItemValue
+{
+    right: 112px;
+    left: 0;
+}
+
+.propertyGridPropertyItem.error .input-control.icon-control .input-control-wrapper,
+.propertyGridPropertyItem.error .input-control.select-box.lookup-box .input-control-wrapper
+{
+    border-color: firebrick;
+    border-style: solid;
+    border-width: thin;
+}
+
+.toolboxitem
+{
+    background-repeat: no-repeat;
+    background-position: 2px 50%;
+    height: 16px;
+    margin-top: 2px;
+    padding-left: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-size: 16px 16px; /*Needed for high resolution graphics*/
+}
+
+.toolboxitem.invalid
+{
+    position: relative;
+    color: #c9c9c9;
+    padding-right: 50px;
+}
+
+.toolboxitem.invalid a
+{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    font-size: 10px;
+    width: 50px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.toolboxitem.invalid:hover
+{
+    background-color: #fbfbfb;
+}
+
+html[dir=rtl] .toolboxitem
+{
+    background-position: right;
+    padding-left: 0;
+    padding-right: 19px;
+}
+
+/*#region - Table layout popup */
+#InsertTableLayoutContent
+{
+    input[type="text"]
+    {
+        width: 98%; //[TFS 915882]
+    }
+}
+/*#endregion*/
+
+/*#region - Resolver Accordion Styling */
+
+.panel-group.accordion
+{
+}
+
+.panel-group.accordion.analyzer
+{
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 7px;
+    position: relative;
+}
+
+.panel-group.accordion *
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.panel-group.accordion .panel
+{
+    background-color: #fff;
+    border: solid 1px #adae9c;
+}
+
+.panel-group.accordion.analyzer .panel + .panel
+{
+    margin-top: 10px;
+}
+
+.panel-group.accordion .panel-heading
+{
+    background: #f5f5f1;
+    border-bottom: solid 1px #adae9c;
+    min-height: 24px;
+}
+
+.panel-group.accordion .panel.collapsed .panel-heading
+{
+    border-bottom: none;
+}
+
+.panel-group.accordion .panel-title
+{
+    color: #343e41;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 5px;
+}
+
+.panel-group.accordion .panel-body
+{
+    border: none; /* override core design-time styling */
+    margin-top: 0;
+}
+
+.panel-group.accordion .panel.collapsed .panel-body
+{
+    display: none;
+}
+
+.panel-group.accordion.analyzer .panel-heading
+{
+    display: table;
+    width: 100%;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-header
+{
+    display: table-row;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander
+{
+    color: #fff;
+    cursor: pointer;
+    border-right: solid 1px #adae9c;
+    display: table-cell;
+    max-width: 30px;
+    padding: 10px 5px;
+    text-align: center;
+    vertical-align: top;
+    width: 30px;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander.auto,
+.panel-group.accordion.analyzer .analyzer-cause-expander.warning
+{
+    background-color: #ff8c00;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander.error,
+.panel-group.accordion.analyzer .analyzer-cause-expander.missing
+{
+    background-color: #b22222;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander.info
+{
+    background-color: #483d8b;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander.success
+{
+    background-color: #006400;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-expander .icon
+{
+    margin-top: 5px;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-heading
+{
+    display: table-cell;
+    padding: 10px;
+    width: auto;
+}
+
+.panel-group.accordion.analyzer h3
+{
+    color: #343e41;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.panel-group.accordion.analyzer .analyzer-cause-resolve
+{
+    display: table-cell;
+    padding: 10px;
+    vertical-align: middle;
+    width: 1px;
+}
+
+.panel-group.accordion.analyzer .panel-body
+{
+    padding: 0;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-items
+{
+    display: table;
+    width: 100%;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item
+{
+    display: table-row;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item-info
+{
+    display: table-cell;
+    padding: 10px;
+    width: auto;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item-type
+{
+    display: table-cell;
+    padding: 10px;
+    text-align: right;
+    vertical-align: middle;
+    width: 150px;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item-resolve
+{
+    background-color: #F5F8F1;
+    display: table-cell;
+    padding: 10px;
+    vertical-align: middle;
+    width: 1px;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item .ico
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item .analyzer-error-subtype,
+#DependencyNotifierDependencyContainer .dep-notifier-subtype
+{
+    color: #808080;
+    font-weight: normal;
+}
+
+.panel-group.accordion.analyzer button
+{
+    min-width: 100px;
+}
+
+.panel-group.accordion.analyzer .analyzer-error-item + .analyzer-error-item .analyzer-error-item-info,
+.panel-group.accordion.analyzer .analyzer-error-item + .analyzer-error-item .analyzer-error-item-type,
+.panel-group.accordion.analyzer .analyzer-error-item + .analyzer-error-item .analyzer-error-item-resolve
+{
+    border-top: solid 1px #adae9c;
+}
+
+.panel-group.accordion.analyzer .empty-report-text
+{
+    color: #a0a0a0;
+    text-align: center;
+}
+
+/*#endregion*/
+
+.form-field.error > .form-field-element-wrapper div.input-control-body div.input-control-wrapper
+{
+    -moz-animation: fadein 0.25s;
+    -o-animation: fadein 0.25s;
+    -webkit-animation: fadein 0.25s;
+    animation: fadein 0.25s;
+    background: url(../Images/Icons/Badges/Error16.png) no-repeat 1px 50%;
+    content: '';
+    display: block;
+    height: 16px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.form-field .form-field-element-wrapper > .complexPopupReadOnlyWrapper.error-state::before
+{
+    -moz-animation: fadein 0.25s;
+    -o-animation: fadein 0.25s;
+    -webkit-animation: fadein 0.25s;
+    animation: fadein 0.25s;
+    background: url(../Images/Icons/Badges/Error16.png) no-repeat 50% 50%;
+    content: '';
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    margin-right: 4px;
+    top: 2px;
+    width: 16px;
+}
+
+.form-field.disabled .form-field-element-wrapper > .complexPopupReadOnlyWrapper.error-state::before
+{
+    border-color: #eef0ed;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+//search result hit-highlighting - AJAX.ashx adds this class to hit matches
+.search-highlight
+{
+    background-color: @Search-Highlight-Color;
+    color: @Main-Text-Color;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+//Animate the designers in (fade)
+#SODesigner,
+#ViewDesigner,
+#FormDesigner,
+#StyleProfileDesigner
+{
+    transition: opacity @Designer-Intro-Animation-Duration linear;
+
+    &.intro
+    {
+        opacity: 0.0;
+        //there is javascript listening for the transition to finish - must be at least 0.01s duration
+        transition: opacity @Designer-Outro-Animation-Duration linear;
+    }
+}
+
+/**Designers wizard toolbar buttons are not style-aware*/
+#SODesigner,
+#SmartObjectAddPropertiesDialog,
+#SmartObjectAssociationDialog,
+#SmartObjectMethodDialog,
+#ServiceObjectMethodMappingsPopup,
+#ruleWizardPopup,
+#ApplicationForm,
+#FormDesigner,
+#ViewDesigner
+{
+    .toolbar-button:not(.style-aware) svg
+    {
+        display: none;
+    }
+
+    .toolbar-button:not(.style-aware) .button-icon
+    {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+    }
+}
+/**Views on system forms can have style-aware class but does not import core_legacy.css */
+.view-canvas.isSystem {
+    .toolbar-button svg {
+        display: none;
+    }
+}
+/*Condition widget popup on system forms can also have style-aware class*/
+html.designer #ConditionWidgetDialog,
+html.designer .popupManager {
+    .toolbar-button svg {
+        display: none;
+    }
+}
+
+//Smartobject designer styles - as there was no separate folder for styles in the /smartobjects folder
+.so-grid-background
+{
+    background-color: @Background-Color-1;
+}
+
+.lyt-so-object
+{
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 350px;
+    max-width: 600px;
+
+    &.st-withmethods
+    {
+        min-width: 450px;
+        max-width: 700px;
+    }
+    //for drop-accept
+    &.drag-active
+    {
+        border: solid 2px fade(@Drag-Accept-Border-Color, 20%);
+        transition: border-color 0.15s linear;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    &.drag-accept
+    {
+        border-color: @Drag-Accept-Border-Color;
+    }
+
+    position: relative;
+    margin: 10px; //helps keep the object off the edge when there are scrollbars.
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 1px 20px rgba(0,0,0,0.2);
+
+    .tab
+    {
+        background-color: fade(@Input-Background-Color, 40%);
+        border-color: transparent;
+        margin-right: 2px;
+    }
+
+    .tab-box-tabs
+    {
+        background-color: @SmartObject-Background-Color-1;
+        padding: 0px 5px;
+    }
+
+    .tab-box-body
+    {
+        background-color: @Input-Background-Color;
+    }
+
+    .toolbars
+    {
+        background-color: @Input-Background-Color;
+        border: none;
+    }
+    //this will affect the props and meths tables
+    .grid-body-content
+    {
+        min-height: 200px;
+    }
+    //undo some horrible tab styling
+    .tab-box-body-m, .tab-box-body-m-c
+    {
+        padding: 0px !important; //because tabs.css is loaded afterwards, with same specifity
+    }
+}
+
+.lyt-so-header
+{
+    background-color: @SmartObject-Background-Color-1;
+    color: @SmartObject-Text-Color-1;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 5px 5px;
+    line-height: 22px;
+    min-height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .title
+    {
+        flex-grow: 1;
+        flex-shrink: 1; //The title should be willing to give up space, thus do not set flex-shrink to 0 as it will disalbe wrapping for very long text. 
+        text-transform: uppercase;
+        vertical-align: middle;
+        box-sizing: border-box;
+        font-weight: bold;
+        padding-left: 5px;
+        word-break: break-all;
+    }
+
+    .icon
+    {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+}
+
+// General Designer Panels
+
+.designer-navpanel,
+.designer-configpanel
+{
+    background-color: @Main-Designer-Background-Color;
+}
+
+#CompositeMethodsPropsLayoutPC 
+{
+    & > .designer-navpanel
+    {
+        background-color: @Background-Color-2;
+
+        & > .panel
+        {
+            & > .panel-header
+            {
+                height: 30px;
+
+                .panel-header-wrapper .panel-header-text
+                {
+                    text-transform: uppercase;
+                    color: #868686;
+                }
+            }
+
+            & > .panel-body
+            {
+                border-top: solid 1px @Background-Color-4;
+                border-width: 1px 0 0 0;
+                top: 31px;
+            }
+        }
+    }
+
+    & > .divider
+    {
+        border-left: solid 1px @Background-Color-4;
+    }
+}
+
+.designer-panecontainer
+{
+    & > .divider
+    {
+        background-color: @Main-Designer-Background-Color;
+    }
+}
+
+//Common to View and Form Designer
+
+//Rules page styles
+div.vdrw-search-wrapper,
+div.fdrw-search-wrapper
+{
+    html[dir=ltr] &
+    {
+        float: right;
+    }
+
+    html[dir=rtl] &
+    {
+        float: left;
+    }
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    //the search textbox
+    & .input-control.search-box
+    {
+        width: 275px;
+
+        html[dir=rtl] &
+        {
+            float: right;
+        }
+    }
+}
+
+//#region Control Selection styling
+
+.controloverlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    border: solid 1px transparent;
+}
+
+.column-selected-overlay
+{
+    position: absolute;
+    top: 0;
+}
+
+/*#region table control base styles - designer - same styles for runtime classes can be found in core.less [Grid CSS] */
+
+.editor-table
+{
+    display:table;
+}
+
+.editor-grid
+{
+    display: -ms-grid;
+    display: grid;
+}
+
+div[controltype='Table']
+{
+    min-width: @Table-Control-Min-Width; /* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+    width: 100%; /* [894425] If width is set empty, the default should be 100% for the Table Control */
+}
+
+/*#endregion*/
+
+/*#region Designtime [Grid CSS] */
+//Changes done in .editor-grid  should be apply to Runtime as well for .Grid-Layout
+.editor-grid 
+{
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    & > .editor-cell
+    {
+        border-left: none !important;
+        border-top: none !important;
+        overflow: hidden !important;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        /*lastcell etc defined in Grid.cs at runtime*/
+        &.lastcellinrow
+        {
+            border-right: none !important;
+        }
+
+        &.lastrow
+        {
+            border-bottom: none !important;
+        }
+
+        & > *
+        {
+            flex-shrink: 0; //[898099] Set flex-shrink to zero so it respects to the user configured width and not shrink to the editor-cell's width
+        }
+    }
+
+    &.border-left-only > .editor-cell
+    {
+        border-right:none!important;
+        &:not([col='1'])
+        {
+            border-left:inherit!important;
+        }
+    }
+
+    &.border-top-only > .editor-cell
+    {
+        border-bottom:none!important;
+        &:not([row='1'])
+        {
+            border-top:inherit!important;
+        }
+    }
+}
+
+//#region alignment classes for table cells (table or grid rendering)
+//Note these are important as they must act as much like inline styles as possible,
+//the user sets the alignment of a cell in designer in the format dialog or toolbar.
+.editor-grid
+{
+    & > .editor-cell.align-top
+    {
+        vertical-align: top !important;
+        align-items: flex-start !important;
+        align-content: flex-start !important;
+    }
+
+    & > .editor-cell.align-middle
+    {
+        vertical-align: middle !important;
+        align-items: center !important;
+        align-content: center !important;
+    }
+
+    & > .editor-cell.align-bottom
+    {
+        vertical-align: bottom !important;
+        align-items: flex-end !important;
+        align-content: flex-end !important;
+    }
+
+    & > .editor-cell.align-left
+    {
+        text-align: left !important;
+        justify-content: flex-start !important;
+    }
+
+    & > .editor-cell.align-center
+    {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    & > .editor-cell.align-right
+    {
+        text-align: right !important;
+        justify-content: flex-end !important;
+    }
+}
+
+//#endregion
+
+.column-selected-overlay //Column on List View (not container)
+{
+    border: 1px solid @Control-Selection-Border-Color;
+    background-color: @Control-Selection-Overlay-Background-Color;
+}
+
+//On Form
+.panel-canvas.selected.error, //Drop area
+.form-control.selected.error > .editor-table, //Table control
+.form-control .editor-cell.selected.error, //Cell in table
+.form-control.selected.error > .controloverlay, //Control
+//On View
+.column-selected-overlay.error, //Column on List View
+.controlwrapper.selectedobject.error > .resizewrapper > .editor-table, //Table control
+.editor-cell.selectedobject.error:not(.header), //Cell in table
+.controlwrapper.selectedobject.error > .resizewrapper > .controloverlay //Control
+{
+    border: 1px solid @Control-Selection-Error-Border-Color;
+}
+
+//On Form
+.panel-canvas.selected .form-control.error > .controloverlay, //Control in drop area
+.form-control.selected > .editor-table .form-control.error > .controloverlay, //Control in table control
+.form-control .editor-cell.selected .form-control.error > .controloverlay, //Control in cell in table control
+.form-control.selected.error > .controloverlay, //Control
+.view-canvas.selected.error, //View
+//On View
+.column-selected-overlay.error, //Column on List View
+.controlwrapper.selectedobject > .resizewrapper > .editor-table .controlwrapper.error > .resizewrapper > .controloverlay, //Control in table control
+.editor-cell.selectedobject:not(.header) .controlwrapper.error > .resizewrapper > .controloverlay, //Control in cell in table
+.controlwrapper.selectedobject.error > .resizewrapper > .controloverlay //Control
+{
+    background-color: @Control-Selection-Error-Overlay-Background-Color;
+}
+
+//#endregion
+
+// OTHER IMAGES ****************
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('designers_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('designers_images.less');
+}
+
+
+// DATA TYPES ****************
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('datatypes_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('datatypes_images.less');
+}
+
+// BADGES ****************
+
+@import url('badges.less');
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('badges_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('badges_images.less');
+}
+
+// TABLE COLUMN SELECTOR  ****************
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('tableColumnResizeWidget_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('tableColumnResizeWidget_images.less');
+}
+
+// CONTROLS ****************
+
+//all of the 1x/2x switching is achieved within this one file
+@import "controls_images.less";
+
+// FUNCTIONS ****************
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('functions_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('functions_images.less');
+}
+
+// System Values ****************
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('system_values_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('system_values_images.less');
+}
+
+
+
+//DROPDOWN IMAGES - used in Chart control and other places
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('Dropdown_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('Dropdown_images.less');
+}
+
+
+
+//RULES DESIGNER IMAGES
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('rules_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('rules_images.less');
+}
+
+
+// File types - like smartobject, view etc - found in category tree ****************
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @res: "";
+    @import (multiple) url('filetypes_images.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), /*this is for retina graphics, apple/samsung devices*/
+(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @res: "@2x";
+    @import (multiple) url('filetypes_images.less');
+}

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Sprite>
+      <InputSettings sourceFolder="" xmlSourceDirectory="">
+        <CssDefinitions>
+          <RowDefinition row="1" cssSelector=".icon.icon-set-contextbrowser.icon-size{iconsize}.ic-{iconname}"/>
+        </CssDefinitions>
+        <SourceImages>
+		
+          <Column number="1">
+            <Rows>
+              <Row number="1">Activities24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="2">
+            <Rows>
+              <Row number="1">Associations24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="3">
+            <Rows>
+              <Row number="1">CategoryServer24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="4">
+            <Rows>
+              <Row number="1">ConversionFunction24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="5">
+            <Rows>
+              <Row number="1">DataField24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="6">
+            <Rows>
+              <Row number="1">DefaultClientEvent24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="7">
+            <Rows>
+              <Row number="1">Environments24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="8">
+            <Rows>
+              <Row number="1">EventInstanceRootNode24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="9">
+            <Rows>
+              <Row number="1">ExchangeEvent24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="10">
+            <Rows>
+              <Row number="1">FieldsTab24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="11">
+            <Rows>
+              <Row number="1">FixedFields24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="12">
+            <Rows>
+              <Row number="1">FixedFieldsVariable24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="13">
+            <Rows>
+              <Row number="1">Functions24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="14">
+            <Rows>
+              <Row number="1">MailServer24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="15">
+            <Rows>
+              <Row number="1">ProcessDefinitionFile24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="16">
+            <Rows>
+              <Row number="1">ProcessInstance24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="17">
+            <Rows>
+              <Row number="1">References24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="18">
+            <Rows>
+              <Row number="1">Refresh24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="19">
+            <Rows>
+              <Row number="1">ServiceObject24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="20">
+            <Rows>
+              <Row number="1">ServiceObjectMethod24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="21">
+            <Rows>
+              <Row number="1">ServiceType24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="22">
+            <Rows>
+              <Row number="1">SmartObject24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="23">
+            <Rows>
+              <Row number="1">Today24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="24">
+            <Rows>
+              <Row number="1">WorkflowManagementServer24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="25">
+            <Rows>
+              <Row number="1">WorkflowServer24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="26">
+            <Rows>
+              <Row number="1">WorkflowWebServices24.png</Row>
+            </Rows>
+          </Column>
+          <Column number="27">
+            <Rows>
+              <Row number="1">WorkspaceUrl24.png</Row>
+            </Rows>
+          </Column>
+		  
+		 <!--<Column number="28"> //Icon not needed at this size - 16px only
+            <Rows>
+              <Row number="1">Recent24.png</Row>
+            </Rows>
+          </Column>-->
+		  
+		  <Column number="28">
+            <Rows>
+              <Row number="1">Tomorrow24.png</Row>
+            </Rows>
+          </Column>
+		    
+		   <Column number="30">
+            <Rows>
+              <Row number="1">Absolute24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="31">
+            <Rows>
+              <Row number="1">AddDateFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="32">
+            <Rows>
+              <Row number="1">AddTimeFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="33">
+            <Rows>
+              <Row number="1">And24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="34">
+            <Rows>
+              <Row number="1">Average24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="35">
+            <Rows>
+              <Row number="1">Contains24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="36">
+            <Rows>
+              <Row number="1">DateFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="37">
+            <Rows>
+              <Row number="1">Empty24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="38">
+            <Rows>
+              <Row number="1">ExcelFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="39">
+            <Rows>
+              <Row number="1">False24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="40">
+            <Rows>
+              <Row number="1">FileFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="41">
+            <Rows>
+              <Row number="1">FirstItem24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="42">
+            <Rows>
+              <Row number="1">FormatNumber24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="43">
+            <Rows>
+              <Row number="1">GenerateGUID24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="44">
+            <Rows>
+              <Row number="1">GetEmailsForSharepoint24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="45">
+            <Rows>
+              <Row number="1">GetSharepointGroups24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="46">
+            <Rows>
+              <Row number="1">GetSharepointUsers24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="47">
+            <Rows>
+              <Row number="1">GetWordContent24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="48">
+            <Rows>
+              <Row number="1">Hyperlink24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="49">
+            <Rows>
+              <Row number="1">If24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="50">
+            <Rows>
+              <Row number="1">IndexItem24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="51">
+            <Rows>
+              <Row number="1">Insert24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="52">
+            <Rows>
+              <Row number="1">LastItem24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="53">
+            <Rows>
+              <Row number="1">Length24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="54">
+            <Rows>
+              <Row number="1">Maximum24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="55">
+            <Rows>
+              <Row number="1">Minimum24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="56">
+            <Rows>
+              <Row number="1">Not24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="57">
+            <Rows>
+              <Row number="1">NumbersFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="58">
+            <Rows>
+              <Row number="1">Or24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="59">
+            <Rows>
+              <Row number="1">Power24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="60">
+            <Rows>
+              <Row number="1">RandomFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="61">
+            <Rows>
+              <Row number="1">RegularExpressionFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="62">
+            <Rows>
+              <Row number="1">RootFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="63">
+            <Rows>
+              <Row number="1">RoundDown24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="64">
+            <Rows>
+              <Row number="1">RoundUp24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="65">
+            <Rows>
+              <Row number="1">SearchFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="66">
+            <Rows>
+              <Row number="1">SquareFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="67">
+            <Rows>
+              <Row number="1">SubractDateFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="68">
+            <Rows>
+              <Row number="1">SumFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="69">
+            <Rows>
+              <Row number="1">TextFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="70">
+            <Rows>
+              <Row number="1">ToLower24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="71">
+            <Rows>
+              <Row number="1">ToSharepointClaimsUser24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="72">
+            <Rows>
+              <Row number="1">ToSharepointClaimsUsers24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="73">
+            <Rows>
+              <Row number="1">ToUpper24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="74">
+            <Rows>
+              <Row number="1">Trim24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="75">
+            <Rows>
+              <Row number="1">True24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="76">
+            <Rows>
+              <Row number="1">UpdateDataField24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="77">
+            <Rows>
+              <Row number="1">UrlFunction24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="78">
+            <Rows>
+              <Row number="1">WeekNumber24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="79">
+            <Rows>
+              <Row number="1">Xor24.png</Row>
+            </Rows>
+          </Column>
+		  
+		   <Column number="80">
+            <Rows>
+              <Row number="1">Yesterday24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="81">
+            <Rows>
+			  <Row number="1">Refresh_White24.png</Row>
+            </Rows>
+          </Column>
+		  
+		  <Column number="82">
+            <Rows>
+			  <Row number="1">Redirect_White24.png</Row>
+            </Rows>
+          </Column>		  
+		  
+		  <Column number="83">
+            <Rows>
+			  <Row number="1">Infinite24.png</Row>
+            </Rows>
+          </Column>
+		  
+        </SourceImages>
+      </InputSettings>
+      <OutputSettings padding="12,0,0,12">
+        <CssBackgroundImageFolder>ContextBrowser/</CssBackgroundImageFolder>
+        <SpriteOutputFile>../_SpriteOutput/ContextBrowser/ContextBrowser24.png</SpriteOutputFile>
+        <CssOutputFile>../_SpriteOutput/_Debug/ContextBrowser24.css</CssOutputFile>
+      </OutputSettings>
+    </Sprite>
