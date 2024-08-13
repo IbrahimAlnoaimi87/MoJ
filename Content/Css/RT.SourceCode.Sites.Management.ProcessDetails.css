@@ -1,0 +1,12 @@
+/*!
+ SourceCode.Forms.Controls.Web.ManagementControlPack.AssetControl.Resources.Styles.Common.css (Embedded resource)
+*/
+
+/*!
+ SourceCode.Forms.Controls.Web.ManagementControlPack.AssetControl.Resources.Styles.DisableModalizer.css (Embedded resource)
+*/
+
+/*!
+ SourceCode.Forms.Controls.Web.ManagementControlPack.AssetControl.Resources.Styles.ProcessDetails.css (Embedded resource)
+*/
+html,html>body,html>body>form,html>body>form>.runtime-content,html>body>form>.runtime-content>.runtime-form{height:100%}html>body>form>.runtime-content>.runtime-form .tab-box{height:100%!important;display:flex;flex-direction:column}html>body>form>.runtime-content>.runtime-form .tab-box .tab-box-tabs{flex-grow:0}*[id="5cf66073-eb89-4a4a-8eb8-478fe8d0cc66_tabbox"]:before{margin:0!important;padding:2rem;flex-grow:0}html>body>form>.runtime-content>.runtime-form .tab-box .tab-box-body{flex-grow:1;overflow-x:hidden;overflow-y:auto}.theme-entry div[name="sctReports"]{top:10.1rem;right:0;bottom:0;left:0;margin:1rem;position:fixed;height:auto!important;width:auto!important}

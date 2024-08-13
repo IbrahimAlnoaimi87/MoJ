@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AddText" xml:space="preserve">
+    <value>Add</value>
+    <comment>This is the text which is displayed on the Add button used throughout the application [common]</comment>
+  </data>
+    <data name="CancelText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+    <data name="CheckedOutByText" xml:space="preserve">
+    <value>Checked out by {0}</value>
+    <comment>This indicates the status of an object which the user has created. In this case the object has been Checked out either by the current user or another user [eg. Checked out by John Doe][designtime]</comment>
+  </data>
+    <data name="CheckInText" xml:space="preserve">
+    <value>Check In</value>
+    <comment>This is a prompt for the user to Check in or Save an object which the user has created.[designtime]</comment>
+  </data>
+    <data name="CheckOutText" xml:space="preserve">
+    <value>Check Out</value>
+    <comment>This is a prompt for the user to Check out an object for editing [designtime]</comment>
+  </data>
+    <data name="ConfirmText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+    <data name="DeleteText" xml:space="preserve">
+    <value>Delete</value>
+    <comment>this allows a user to delete SmartObjects, Views, Forms and Workflows [location: appstudio toolbar] [designtime]</comment>
+  </data>
+    <data name="EditText" xml:space="preserve">
+    <value>Edit</value>
+    <comment>this allows a user to edit and make changes to SmartObjects, Views, Forms and Workflows [location: appstudio toolbar] [designtime]</comment>
+  </data>
+    <data name="ErrorText" xml:space="preserve">
+    <value>Error</value>
+    <comment>this is the title of an error message pop up which appears throughout the application [common]</comment>
+  </data>
+    <data name="ExpandText" xml:space="preserve">
+    <value>Click to Expand</value>
+  </data>
+    <data name="PlayText" xml:space="preserve">
+    <value>Run</value>
+    <comment>this allows a user to run a SmartObject, View, Form or Workflow which they have designed [designtime]</comment>
+  </data>
+    <data name="TestLinkText" xml:space="preserve">
+    <value>Test</value>
+    <comment>Dispaly text for the Test link button in the Run with Parameter property of a selected view or form in [designtime]. Click on the Test link button will open the link in a new window.</comment>
+  </data>
+    <data name="PreviewText" xml:space="preserve">
+    <value>View</value>
+  </data>
+    <data name="RefreshText" xml:space="preserve">
+    <value>Refresh</value>
+    <comment>this allows a user to refresh a list of SmartObjects, Views, Forms and Workflows [designtime]</comment>
+  </data>
+    <data name="AnalyzeText" xml:space="preserve">
+    <value>Analyze</value>
+    <comment>this allows a user to run dependency analyzer on a list of SmartObjects, Views and Forms [designtime]</comment>
+  </data>
+    <data name="SecurityText" xml:space="preserve">
+    <value>Security</value>
+    <comment>this allows a user to access the SecurityUI and change security for SmartObjects, Views and Forms [designtime]</comment>
+  </data>
+    <data name="RenameText" xml:space="preserve">
+    <value>Rename</value>
+    <comment>this is used to rename an object which the user has created (SmartObject, View, Form, Workflow) [designtime]</comment>
+  </data>
+    <data name="SaveText" xml:space="preserve">
+    <value>Save</value>
+  </data>
+    <data name="SearchText" xml:space="preserve">
+    <value>Search</value>
+  </data>
+    <data name="SignInText" xml:space="preserve">
+    <value>Login</value>
+    <comment>This action allows the user to Sign In to the the application using his/her credentials</comment>
+  </data>
+    <data name="UndoCheckOutText" xml:space="preserve">
+    <value>Cancel Check Out</value>
+    <comment>this allows a user cancel the check-out of an object (SmartObject, View, Form, Workflow) and discard any changes they made to it [designtime]</comment>
+  </data>
+    <data name="SaveAsText" xml:space="preserve">
+    <value>Save As</value>
+    <comment>this is used to save objects (SmartObjects, Views, Forms, Workflows) and allows the user to specify a name and location for the object to be saved [designtime]</comment>
+  </data>
+    <data name="MoveDownText" xml:space="preserve">
+    <value>Move down</value>
+    <comment>This is the text which is displayed on the Move down button used throughout the application and will usually be used to move an item down in a list [common]</comment>
+  </data>
+    <data name="MoveUpText" xml:space="preserve">
+    <value>Move up</value>
+    <comment>This is the text which is displayed on the Move up button used throughout the application and will usually be used to move an item up in a list [common]</comment>
+  </data>
+    <data name="NewText" xml:space="preserve">
+    <value>New</value>
+    <comment>This is the title on a menu where the user can add a SmartObject, View, Form or Workflow[location: appstudio toolbar] [designtime]</comment>
+  </data>
+    <data name="RemoveAllText" xml:space="preserve">
+    <value>Remove All</value>
+    <comment>This is the text which is displayed on the Remove All button used throughout the application [common]</comment>
+  </data>
+    <data name="RemoveText" xml:space="preserve">
+    <value>Remove</value>
+    <comment>This is the text which is displayed on the Remove button used throughout the application [common]</comment>
+  </data>
+    <data name="CollapseText" xml:space="preserve">
+    <value>Click to Collapse</value>
+    <comment>this allows a user to collapse a panel or menu so that it is no longer visible to the user[designtime]</comment>
+  </data>
+    <data name="RememberMeText" xml:space="preserve">
+    <value>Remember Me</value>
+  </data>
+    <data name="AssignText" xml:space="preserve">
+    <value>Assign</value>
+  </data>
+    <data name="ClearAllText" xml:space="preserve">
+    <value>Clear All</value>
+    <comment>this is a button which clears all text and values which the user has entered [designtime]</comment>
+  </data>
+    <data name="ClearText" xml:space="preserve">
+    <value>Clear</value>
+    <comment>this is a button which clears the selected text or values which the user has entered [designtime]</comment>
+  </data>
+    <data name="AutoMapText" xml:space="preserve">
+    <value>Auto Map</value>
+    <comment>verb. mappings are two items which are bound by configuration. in this case the mapping is performed automatically</comment>
+  </data>
+    <data name="CreateAllText" xml:space="preserve">
+    <value>Create All</value>
+  </data>
+    <data name="CreateText" xml:space="preserve">
+    <value>Create</value>
+  </data>
+    <data name="BeginsWithText" xml:space="preserve">
+    <value>Begins With</value>
+    <comment>this is text which is displayed in a search box and is used for filtering the search [designtime]</comment>
+  </data>
+    <data name="ContainsText" xml:space="preserve">
+    <value>Contains</value>
+    <comment>this is text which is displayed in a search box and is used for filtering the search [designtime]</comment>
+  </data>
+    <data name="ContainsTextPreview" xml:space="preserve">
+    <value>contains</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (left value) (ContainsTextPreview) (right value) [designtime]</comment>
+  </data>
+    <data name="EndsWithText" xml:space="preserve">
+    <value>Ends With</value>
+    <comment>this is text which is displayed in a search box and is used for filtering the search [designtime]</comment>
+  </data>
+    <data name="EndsWithTextPreview" xml:space="preserve">
+    <value>ends with</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (left value) (EndsWithTextPreview) (right value) [designtime]</comment>
+  </data>
+    <data name="EqualsText" xml:space="preserve">
+    <value>Equals</value>
+    <comment>this is text which is displayed in a search box and is used for filtering the search [designtime]</comment>
+  </data>
+    <data name="EqualsTextPreview" xml:space="preserve">
+    <value>is equal to</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (left value) (EqualsTextPreview) (right value) [designtime]</comment>
+  </data>
+    <data name="MatchLabel" xml:space="preserve">
+    <value>Match:</value>
+    <comment>this is a label displayed next to a search box and is used throughout the application [designtime]</comment>
+  </data>
+    <data name="NotEqualsText" xml:space="preserve">
+    <value>Not Equals</value>
+    <comment>this is text which is displayed in a search box and is used for filtering the search [designtime]</comment>
+  </data>
+    <data name="NotEqualsTextPreview" xml:space="preserve">
+    <value>is not equal to</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (left value) (NotEqualsTextPreview) (right value)  [designtime]</comment>
+  </data>
+    <data name="SearchLabel" xml:space="preserve">
+    <value>Search:</value>
+    <comment>this is a label displayed next to a search box and is used throughout the application [designtime]</comment>
+  </data>
+    <data name="ScopeLabel" xml:space="preserve">
+    <value>Scope:</value>
+    <comment>noun. the extent of the area or subject matter that something deals with or to which it is relevant.</comment>
+  </data>
+    <data name="PropertiesText" xml:space="preserve">
+    <value>Properties</value>
+    <comment>this is used display the properties of an object (SmartObject, View, Form, Workflow) [designtime]</comment>
+  </data>
+    <data name="MoveToText" xml:space="preserve">
+    <value>Move To</value>
+    <comment>this is used to move an object which the user has created into a specific category [designtime]</comment>
+  </data>
+    <data name="OpenText" xml:space="preserve">
+    <value>Open</value>
+    <comment>this is used to open the selected category in the appstudio grid [designtime]</comment>
+  </data>
+    <data name="ShowCategory" xml:space="preserve">
+    <value>Show Category</value>
+    <comment>this displays the category where an object (SmartObject, View, Form, Workflow) is saved [designtime]</comment>
+  </data>
+    <data name="MoveObject" xml:space="preserve">
+    <value>Move {0}</value>
+  </data>
+    <data name="ShowText" xml:space="preserve">
+    <value>Show</value>
+  </data>
+    <data name="AdvancedText" xml:space="preserve">
+    <value>Advanced</value>
+    <comment>This is the text which is displayed on the Advanced button used throughout the application, and allows the user to access more advanced settings [common]</comment>
+  </data>
+    <data name="Close" xml:space="preserve">
+    <value>Close</value>
+    <comment>this is the tooltip which is displayed on the close "X" button used throughout the application [common]</comment>
+  </data>
+    <data name="Details" xml:space="preserve">
+    <value>Details...</value>
+    <comment>this is a button displayed on an error message which shows the user further details [common]</comment>
+  </data>
+    <data name="ExceptionInfo" xml:space="preserve">
+    <value>Displays additional exception information</value>
+  </data>
+    <data name="Maximize" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+    <data name="Minimize" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+    <data name="MoveObjectNameText" xml:space="preserve">
+    <value>Move {0} ({1})</value>
+    <comment>this is the title of a messagebox which appears when the user moves an object (Category, SmartObject,View,Form,Workflow) to a different category [eg: Move SmartObject (CompanyABC)] [designtime]</comment>
+  </data>
+    <data name="SearchMatchTooltip" xml:space="preserve">
+    <value>Search Criteria</value>
+  </data>
+    <data name="ResetText" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+    <data name="CopyDetailsText" xml:space="preserve">
+    <value>Copy to clipboard</value>
+    <comment>this allows the user to copy the details of an error message to the clipboard [location: appears on a button button on an exception message popup]</comment>
+  </data>
+    <data name="CheckedIn" xml:space="preserve">
+    <value>Checked in</value>
+    <comment>This indicates the status of an object which the user has created. In this case the object has been Checked in or Saved [designtime]</comment>
+  </data>
+    <data name="GreaterThanText" xml:space="preserve">
+    <value>Greater Than</value>
+  </data>
+    <data name="GreaterThanTextPreview" xml:space="preserve">
+    <value>is greater than</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (left value) (GreaterThanTextPreview) (right value) [designtime]</comment>
+  </data>
+    <data name="LessThanText" xml:space="preserve">
+    <value>Less Than</value>
+  </data>
+    <data name="LessThanTextPreview" xml:space="preserve">
+    <value>is less than</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (left value) (LessThanTextPreview) (right value) [designtime]</comment>
+  </data>
+    <data name="GreaterThanEqualsText" xml:space="preserve">
+    <value>Greater Than Equals</value>
+  </data>
+    <data name="GreaterThanEqualsTextPreview" xml:space="preserve">
+    <value>is greater than or equal to</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (left value) (GreaterThanEqualsTextPreview) (right value) [designtime]</comment>
+  </data>
+    <data name="LessThanEqualsText" xml:space="preserve">
+    <value>Less Than Equals</value>
+  </data>
+    <data name="LessThanEqualsTextPreview" xml:space="preserve">
+    <value>is less than or equal to</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (left value) (LessThanEqualsTextPreivew) (right value) [designtime]</comment>
+  </data>
+    <data name="StartsWithText" xml:space="preserve">
+    <value>Starts With</value>
+  </data>
+    <data name="StartsWithTextPreview" xml:space="preserve">
+    <value>starts with</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (left value) (StartsWithTextPreview) (right value) [designtime]</comment>
+  </data>
+    <data name="IsEmptyText" xml:space="preserve">
+    <value>Is Empty</value>
+  </data>
+    <data name="IsEmptyTextPreview" xml:space="preserve">
+    <value>is empty</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (value) (IsEmptyTextPreview) [designtime]</comment>
+  </data>
+    <data name="IsNotEmptyText" xml:space="preserve">
+    <value>Is Not Empty</value>
+  </data>
+    <data name="IsNotEmptyTextPreview" xml:space="preserve">
+    <value>has a value</value>
+    <comment>this is text which is displayed in the preview window when building an advanced condition. (value) (IsNotEmptyTextPreview) [designtime]</comment>
+  </data>
+    <data name="DropOrTypeHereText" xml:space="preserve">
+    <value>Drop/type here</value>
+  </data>
+    <data name="Is" xml:space="preserve">
+    <value>is</value>
+  </data>
+    <data name="And" xml:space="preserve">
+    <value>And</value>
+  </data>
+    <data name="Or" xml:space="preserve">
+    <value>Or</value>
+  </data>
+    <data name="LogInText" xml:space="preserve">
+    <value>Login</value>
+    <comment>For action login, to be used on button that will sign user in.</comment>
+  </data>
+    <data name="DesignObjectTextSmartFormSingular" xml:space="preserve">
+    <value>Design Form</value>
+    <comment>Generate a new Form by using a wizard, but using a SmartObject, View or Form as a template [eg. "Design View", "Design Form"] [designtime]</comment>
+  </data>
+    <data name="DesignObjectTextSmartViewSingular" xml:space="preserve">
+    <value>Design View</value>
+    <comment>Generate a new View by using a wizard, but using a SmartObject, View or Form as a template [eg. "Design View", "Design Form"] [designtime]</comment>
+  </data>
+    <data name="DesignObjectTextWorkflowProcessSingular" xml:space="preserve">
+    <value>Design Workflow</value>
+    <comment>Generate a new Workflow by using a wizard, but using a SmartObject, View or Form as a template [eg. "Design View", "Design Form"] [designtime]</comment>
+  </data>
+    <data name="GenerateObjectTextOptionsPlural" xml:space="preserve">
+    <value>Generate Options</value>
+    <comment>Generate setting or options heading for generating new Views and Forms by using an existing SmartObject [eg. "Generate View", "Generate Form"] [designtime]</comment>
+  </data>
+    <data name="GenerateObjectTextSmartFormPlural" xml:space="preserve">
+    <value>Generate Forms</value>
+    <comment>this allows a user to generate a new Forms by using an existing SmartObject, View or Form as a template [eg. "Generate View", "Generate Form"] [designtime]</comment>
+  </data>
+    <data name="GenerateObjectTextSmartFormSingular" xml:space="preserve">
+    <value>Generate Form</value>
+    <comment>Generate a new Form by using an existing SmartObject, View or Form as a template [eg. "Generate View", "Generate Form"] [designtime]</comment>
+  </data>
+    <data name="GenerateObjectTextSmartViewPlural" xml:space="preserve">
+    <value>Generate Views</value>
+    <comment>Generate a new Views by using an existing SmartObject, View or Form as a template [eg. "Generate View", "Generate Form"] [designtime]</comment>
+  </data>
+    <data name="NewObjectTextCategorySingular" xml:space="preserve">
+    <value>New Category</value>
+    <comment>this is used to create new Categories [eg. New Category][designtime]</comment>
+  </data>
+    <data name="NewObjectTextSmartFormSingular" xml:space="preserve">
+    <value>New Form</value>
+    <comment>this is used to create new Forms [eg. New Form] [designtime]</comment>
+  </data>
+    <data name="NewObjectTextSmartObjectSingular" xml:space="preserve">
+    <value>New SmartObject</value>
+    <comment>this is used to create new SmartObject [eg. New SmartObject] [designtime]</comment>
+  </data>
+    <data name="NewObjectTextSmartViewSingular" xml:space="preserve">
+    <value>New View</value>
+    <comment>this is used to create new Views [eg. New View] [designtime]</comment>
+  </data>
+    <data name="NewObjectTextWorkflowProcessSingular" xml:space="preserve">
+    <value>New Workflow</value>
+    <comment>this is used to create new Workflows [eg. New Workflow] [designtime]</comment>
+  </data>
+    <data name="RenameObjectTextCategorySingular" xml:space="preserve">
+    <value>Rename Category</value>
+    <comment>this is used to rename a Category which the user has created [designtime]</comment>
+  </data>
+    <data name="NewObjectTextStyleProfileSingular" xml:space="preserve">
+    <value>New Style Profile</value>
+    <comment>this is used to create new Style Profile [eg. New Style Profile] [designtime]</comment>
+  </data>
+    <data name="RenameObjectTextSmartFormSingular" xml:space="preserve">
+    <value>Rename Form</value>
+    <comment>this is used to rename a Form which the user has created [designtime]</comment>
+  </data>
+    <data name="RenameObjectTextSmartObjectSingular" xml:space="preserve">
+    <value>Rename SmartObject</value>
+    <comment>this is used to rename a SmartObject which the user has created [designtime]</comment>
+  </data>
+    <data name="RenameObjectTextStyleProfileSingular" xml:space="preserve">
+    <value>Rename Style Profile</value>
+    <comment>this is used to rename a Style Profile which the user has created [designtime]</comment>
+  </data>
+    <data name="RenameObjectTextSmartViewSingular" xml:space="preserve">
+    <value>Rename View</value>
+    <comment>this is used to rename a View which the user has created [designtime]</comment>
+  </data>
+    <data name="ShowHideObjectTextCategoryPlural" xml:space="preserve">
+    <value>Show/Hide Categories</value>
+    <comment>Change the visibility of the Categories</comment>
+  </data>
+    <data name="ShowHideObjectTextSmartFormPlural" xml:space="preserve">
+    <value>Show/Hide Forms</value>
+    <comment>Change the visibility of the Forms</comment>
+  </data>
+    <data name="ShowHideObjectTextStyleProfilePlural" xml:space="preserve">
+    <value>Show/Hide Style Profiles</value>
+    <comment>Change the visibility of the Style Profiles</comment>
+  </data>
+    <data name="ShowHideObjectTextSmartObjectPlural" xml:space="preserve">
+    <value>Show/Hide SmartObjects</value>
+    <comment>Change the visibility of the SmartObjects</comment>
+  </data>
+    <data name="ShowHideObjectTextSmartViewPlural" xml:space="preserve">
+    <value>Show/Hide Views</value>
+    <comment>Change the visibility of the Views</comment>
+  </data>
+    <data name="ShowHideObjectTextSystemObjectPlural" xml:space="preserve">
+    <value>Show/Hide System Objects</value>
+    <comment>Change the visibility of the System Objects</comment>
+  </data>
+    <data name="ShowHideObjectTextWorkflowProcessPlural" xml:space="preserve">
+    <value>Show/Hide Workflows</value>
+    <comment>Change the visibility of the Workflows</comment>
+  </data>
+    <data name="DeleteObjectText" xml:space="preserve">
+    <value>Delete</value>
+    <comment>this allows a user to delete objects [eg. Delete SmartObject] [designtime]</comment>
+  </data>
+    <data name="DeleteObjectTextCategorySingular" xml:space="preserve">
+    <value>Delete Category</value>
+    <comment>this allows a user to delete Categories(or Folders) [eg. Delete Category] [designtime]</comment>
+  </data>
+    <data name="RefreshObjectText" xml:space="preserve">
+    <value>Refresh</value>
+    <comment>Reload (or Refresh) the data</comment>
+  </data>
+    <data name="RefreshObjectTextCategorySingular" xml:space="preserve">
+    <value>Refresh Category</value>
+    <comment>Reload (or Refresh) the Category listing</comment>
+  </data>
+    <data name="AnalyzeObjectText" xml:space="preserve">
+    <value>Analyze</value>
+    <comment>Run the dependency analyzer on the data</comment>
+  </data>
+    <data name="ContinueText" xml:space="preserve">
+    <value>Continue</value>
+    <comment>Text used for buttons or controls that will continue with a user action</comment>
+  </data>
+    <data name="NewLegacyObjectTextWorkflowProcessSingular" xml:space="preserve">
+    <value>New Workflow (Legacy)</value>
+    <comment>this is used to create new legacy Workflows [eg. New Workflow] [designtime]</comment>
+  </data>
+</root>

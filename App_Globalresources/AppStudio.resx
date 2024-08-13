@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CheckInContextMenuItem" xml:space="preserve">
+    <value>Check In</value>
+    <comment>Check in(or make public) previously made changes to a Smart Object, View or Form[location: app studio right pane] [designtime]</comment>
+  </data>
+  <data name="CheckInObjectsTooltip" xml:space="preserve">
+    <value>Check the selected {0} in</value>
+  </data>
+  <data name="CheckOutContextMenuItem" xml:space="preserve">
+    <value>Check Out</value>
+    <comment>Check out a Smart Object, View or Form to perform changes[location: app studio right pane] [designtime]</comment>
+  </data>
+  <data name="CreateASmartObjectDescription" xml:space="preserve">
+    <value>Create a new SmartObject</value>
+    <comment>this is a tooltip which appears above a button which allows the user to create a single new SmartObject [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="CreateAViewDescription" xml:space="preserve">
+    <value>Create a new View</value>
+    <comment>this is a tooltip which appears above a button which allows the user to create a single new View[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="CheckOutObjectsTooltip" xml:space="preserve">
+    <value>Check the selected {0} out</value>
+  </data>
+  <data name="CreateUsingTooltip" xml:space="preserve">
+    <value>Create a new {0} using this {1}</value>
+  </data>
+  <data name="DeleteContextMenuItem" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Remove or delete a Smart Object, View or Form[location: app studio right pane] [designtime]</comment>
+  </data>
+  <data name="DeleteSelectedObjectsTooltip" xml:space="preserve">
+    <value>Delete the selected {0}</value>
+  </data>
+  <data name="EditContextMenuItem" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Opens the Smart Object, View or Form in the desiger[location: app studio right pane] [designtime]</comment>
+  </data>
+  <data name="EditSelectedObjectTooltip" xml:space="preserve">
+    <value>Edit the selected {0}</value>
+  </data>
+  <data name="UnlockContextMenuItem" xml:space="preserve">
+    <value>Unlock</value>
+    <comment>Unlock the Smart Object, View or Form or Workflow in the desiger[location: app studio right pane] [designtime]</comment>
+  </data>
+  <data name="UnlockSelectedObjectTooltip" xml:space="preserve">
+    <value>Unlock the selected {0}</value>
+  </data>
+  <data name="ErrorFormCheckedOutByOtherUser" xml:space="preserve">
+    <value>Form '{0}' is currently checked out by '{1}'</value>
+  </data>
+  <data name="ErrorFormInUse" xml:space="preserve">
+    <value>Form '{0}' is currently used in the following applications.</value>
+  </data>
+  <data name="ErrorFormNotCheckedOut" xml:space="preserve">
+    <value>Form '{0}' is not currently checked out</value>
+  </data>
+  <data name="ErrorFormNotFound" xml:space="preserve">
+    <value>Form '{0}' could not be found and may have been deleted.</value>
+  </data>
+  <data name="ErrorFormsCheckedOutByOtherUser" xml:space="preserve">
+    <value>The following forms are currently checked out to the following users.</value>
+  </data>
+  <data name="ErrorFormsInUse" xml:space="preserve">
+    <value>The following forms are currently in use.</value>
+  </data>
+  <data name="ErrorFormsNotCheckedIn" xml:space="preserve">
+    <value>The following forms are not currently checked in.</value>
+  </data>
+  <data name="ErrorFormsNotCheckedOut" xml:space="preserve">
+    <value>The following forms are not currently checked out.</value>
+  </data>
+  <data name="ErrorFormsNotFound" xml:space="preserve">
+    <value>The following forms could not be found and may have been deleted.</value>
+  </data>
+  <data name="ErrorViewCheckedOutByOtherUser" xml:space="preserve">
+    <value>View '{0}' is currently checked out by '{1}'</value>
+  </data>
+  <data name="ErrorViewInUse" xml:space="preserve">
+    <value>View '{0}' is currently used in the following forms.</value>
+  </data>
+  <data name="ErrorViewNotCheckedOut" xml:space="preserve">
+    <value>View '{0}' is not currently checked out</value>
+  </data>
+  <data name="ErrorViewNotFound" xml:space="preserve">
+    <value>View '{0}' could not be found and may have been deleted.</value>
+  </data>
+  <data name="ErrorViewsCheckedOutByOtherUser" xml:space="preserve">
+    <value>The following views are currently checked out to the following users.</value>
+  </data>
+  <data name="ErrorViewsInUse" xml:space="preserve">
+    <value>The following views are currently in use.</value>
+  </data>
+  <data name="ErrorViewsNotCheckedIn" xml:space="preserve">
+    <value>The following views are not currently checked in.</value>
+  </data>
+  <data name="ErrorViewsNotCheckedOut" xml:space="preserve">
+    <value>The following views are not currently checked out.</value>
+  </data>
+  <data name="ErrorViewsNotFound" xml:space="preserve">
+    <value>The following views could not be found and may have been deleted.</value>
+  </data>
+  <data name="ErrorStyleProfileCheckedOutByOtherUser" xml:space="preserve">
+    <value>Style Profile '{0}' is currently checked out by '{1}'</value>
+  </data>
+  <data name="ErrorStyleProfileInUse" xml:space="preserve">
+    <value>Style Profile '{0}' is currently used in the following forms.</value>
+  </data>
+  <data name="ErrorStyleProfileNotCheckedOut" xml:space="preserve">
+    <value>Style Profile '{0}' is not currently checked out</value>
+  </data>
+  <data name="ErrorStyleProfileNotFound" xml:space="preserve">
+    <value>Style Profile '{0}' could not be found and may have been deleted.</value>
+  </data>
+  <data name="ErrorStyleProfilesCheckedOutByOtherUser" xml:space="preserve">
+    <value>The following Style Profiles are currently checked out to the following users.</value>
+  </data>
+  <data name="ErrorStyleProfilesInUse" xml:space="preserve">
+    <value>The following Style Profiles are currently in use.</value>
+  </data>
+  <data name="ErrorStyleProfilesNotCheckedIn" xml:space="preserve">
+    <value>The following Style Profiles are not currently checked in.</value>
+  </data>
+  <data name="ErrorStyleProfilesNotCheckedOut" xml:space="preserve">
+    <value>The following Style Profiles are not currently checked out.</value>
+  </data>
+  <data name="ErrorStyleProfilesNotFound" xml:space="preserve">
+    <value>The following Style Profiles could not be found and may have been deleted.</value>
+  </data>
+  <data name="GenerateFormLabel" xml:space="preserve">
+    <value>Generate a Form</value>
+  </data>
+  <data name="GenerateFormDescription" xml:space="preserve">
+    <value>Configure a new Form with this View</value>
+  </data>
+  <data name="ModuleTitle" xml:space="preserve">
+    <value>Designer</value>
+    <comment>[do not translate: "K2 Designer"] [designtime]</comment>
+  </data>
+  <data name="ObjectDeletionConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to delete the selected {0}?</value>
+    <comment>this is a confirmation message displayed to the user when they delete an object [eg: Are you sure you want to delete the selected SmartObject?] [designtime]</comment>
+  </data>
+  <data name="ObjectUndoCheckOutConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to undo the check out of this {0}?</value>
+  </data>
+  <data name="FormDetails" xml:space="preserve">
+    <value>Form Details</value>
+  </data>
+  <data name="PlayContextMenuItem" xml:space="preserve">
+    <value>Run</value>
+    <comment>Start or run a View or Form[location: app studio right pane] [designtime]</comment>
+  </data>
+  <data name="RefreshObjectTooltipCategorySingular" xml:space="preserve">
+    <value>Refresh the selected Category</value>
+  </data>
+  <data name="AnalyzeObjectTooltipCategorySingular" xml:space="preserve">
+    <value>Run dependency analyzer on the selected Category</value>
+    <comment>Run dependency analyzer on the selected Category</comment>
+  </data>
+  <data name="RunObjectTooltip" xml:space="preserve">
+    <value>Run the selected {0}</value>
+  </data>
+  <data name="SaveAsObjectTooltip" xml:space="preserve">
+    <value>Create a copy of the selected {0}</value>
+  </data>
+  <data name="SetWorkflowContextMenuItem" xml:space="preserve">
+    <value>Design Workflow</value>
+  </data>
+  <data name="SetWorkflowTooltip" xml:space="preserve">
+    <value>Create a new {0} with this {1} as context</value>
+  </data>
+  <data name="SmartobjectDetails" xml:space="preserve">
+    <value>SmartObject Details</value>
+  </data>
+  <data name="UndoCheckOutContextMenuItem" xml:space="preserve">
+    <value>Cancel Check Out on {0}</value>
+  </data>
+  <data name="ViewDetails" xml:space="preserve">
+    <value>View Details</value>
+  </data>
+  <data name="DetailsCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="DetailsDescription" xml:space="preserve">
+    <value>Description</value>
+    <comment>this is used throughout the application and allows the user to provide a description for the object which they are creating [designtime]</comment>
+  </data>
+  <data name="UndoCheckOutOnObjectsTooltip" xml:space="preserve">
+    <value>Undo all pending changes on the selected {0}</value>
+  </data>
+  <data name="DetailsName" xml:space="preserve">
+    <value>Name</value>
+    <comment>this is used throughout the application and allows the user to provide a name for the object which they are creating [designtime]</comment>
+  </data>
+  <data name="DetailsSystemName" xml:space="preserve">
+    <value>System Name</value>
+  </data>
+  <data name="DetailsVersion" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="DetailsCreateDate" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="DetailsCreatedBy" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="DetailsModifiedBy" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="DetailsModifiedDate" xml:space="preserve">
+    <value>Last Modified</value>
+  </data>
+  <data name="RefreshTooltip" xml:space="preserve">
+    <value>Refresh this tree node with the latest data</value>
+  </data>
+  <data name="AnalyzeTooltipForTreeNode" xml:space="preserve">
+    <value>Run dependency analyzer on all the items under this tree node</value>
+    <comment>Run dependency analyzer on all the items under this tree node</comment>
+  </data>
+  <data name="AnalyzeTooltipSingular" xml:space="preserve">
+    <value>Run dependency analyzer on the selected item</value>
+    <comment>Run dependency analyzer on the selected item</comment>
+  </data>
+  <data name="AnalyzeTooltipPlural" xml:space="preserve">
+    <value>Run dependency analyzer on the selected items</value>
+    <comment>Run dependency analyzer on the selected items</comment>
+  </data>
+  <data name="AnalyzeButtonTooltipSingular" xml:space="preserve">
+    <value>Run dependency analyzer on the selected item</value>
+    <comment>Run dependency analyzer on the selected item</comment>
+  </data>
+  <data name="AnalyzeButtonTooltipPlural" xml:space="preserve">
+    <value>Run dependency analyzer on the selected items</value>
+    <comment>Run dependency analyzer on the selected items</comment>
+  </data>
+  <data name="DisplayObjectPropertiesTooltip" xml:space="preserve">
+    <value>Display the properties of the selected {0}</value>
+  </data>
+  <data name="ErrorObjectNameExists" xml:space="preserve">
+    <value>The {0} name '{1}' already exists. Provide a new name to continue.</value>
+  </data>
+  <data name="ObjectCategorySelectionRequiredText" xml:space="preserve">
+    <value>Please select a category to save the {0} to.</value>
+  </data>
+  <data name="ObjectNameRequiredText" xml:space="preserve">
+    <value>Please supply a name for the {0}.</value>
+  </data>
+  <data name="SmartObjectNameRequiredText" xml:space="preserve">
+    <value>Please supply a name for the {0}. The name must contain at least one alpha-numeric character.</value>
+  </data>
+  <data name="GenericTimeoutMessage" xml:space="preserve">
+    <value>The request has timed out. Please try again in a few minutes.</value>
+  </data>
+  <data name="UnknownErrorMessage" xml:space="preserve">
+    <value>An unknown error has occured. Please contact your system administrator if the problem persists.</value>
+  </data>
+  <data name="DesignNewObjectDescription" xml:space="preserve">
+    <value>Create a new {0} using the {0} Designer.</value>
+  </data>
+  <data name="DesignNewObjectLabel" xml:space="preserve">
+    <value>Design a new {0}</value>
+  </data>
+  <data name="DesignNewViewDescription" xml:space="preserve">
+    <value>Create a new View using this SmartObject.</value>
+  </data>
+  <data name="GenerateViewsLabel" xml:space="preserve">
+    <value>Generate a View</value>
+  </data>
+  <data name="GenerateViewsDescription" xml:space="preserve">
+    <value>Generate Views using this SmartObject.</value>
+  </data>
+  <data name="DesignNewFormDescription" xml:space="preserve">
+    <value>Add this View to a new Form.</value>
+  </data>
+  <data name="MoveToTooltip" xml:space="preserve">
+    <value>Move the selected {0} to a different category</value>
+  </data>
+  <data name="RenameTooltip" xml:space="preserve">
+    <value>Rename the selected {0}</value>
+  </data>
+  <data name="ShowCategory" xml:space="preserve">
+    <value>Show the category that the selected item resides in.</value>
+  </data>
+  <data name="OpenSecurityUI" xml:space="preserve">
+    <value>Change the security for the selected object.</value>
+    <comment>Opens the SecurityUi so a user can change the permissions for the selected artifact</comment>
+  </data>
+  <data name="ErrorGetControlDefinitions" xml:space="preserve">
+    <value>Unable to acquire the Control definitions.</value>
+  </data>
+  <data name="ModifiedBy" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="ShowProperties" xml:space="preserve">
+    <value>Show properties</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="SaveAsContextMenuItem" xml:space="preserve">
+    <value>Save As</value>
+    <comment>Save another copy of the selected Smart Object, View or Form[location: app studio right pane] [designtime]</comment>
+  </data>
+  <data name="UndoCheckOutMenuItem" xml:space="preserve">
+    <value>Cancel Check out</value>
+  </data>
+  <data name="RunInNewTabContextMenuItem" xml:space="preserve">
+    <value>Run in new tab</value>
+    <comment>opens the form or view in a new browser tab [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="RunInNewWindowContextMenuItem" xml:space="preserve">
+    <value>Run in new window</value>
+    <comment>opens the form or view in a new browser window [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="CheckInObjectTooltip" xml:space="preserve">
+    <value>Check in the selected {0}</value>
+  </data>
+  <data name="CheckOutObjectTooltip" xml:space="preserve">
+    <value>Check out the selected {0}</value>
+  </data>
+  <data name="CreateAFormDescription" xml:space="preserve">
+    <value>Create a new Form</value>
+    <comment>this is a tooltip which appears above a button which allows the user to create a single new Form[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="CreateAStyleProfileDescription" xml:space="preserve">
+    <value>Create a new Style Profile</value>
+    <comment>this is a tooltip which appears above a button which allows the user to create a single new Style Profile[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DeleteObjectTooltip" xml:space="preserve">
+    <value>Click to delete the selected {0}</value>
+  </data>
+  <data name="EditObjectTooltip" xml:space="preserve">
+    <value>Click to edit the selected {0}</value>
+  </data>
+  <data name="ExpandNewButtonTooltip" xml:space="preserve">
+    <value>Click to create new items</value>
+  </data>
+  <data name="GenerateObjectsUsingTooltipSmartViewPlural" xml:space="preserve">
+    <value>Generate new Views</value>
+    <comment>Create Views from a SmartObject (or data object) [designtime]</comment>
+  </data>
+  <data name="GenerateObjectUsingTooltipSmartFormSingular" xml:space="preserve">
+    <value>Generate a new Form</value>
+  </data>
+  <data name="MoveToObjectTooltip" xml:space="preserve">
+    <value>Move the selected {0} to another category</value>
+  </data>
+  <data name="RenameObjectTooltip" xml:space="preserve">
+    <value>Rename the selected {0}</value>
+  </data>
+  <data name="RunObjectInTabTooltip" xml:space="preserve">
+    <value>Run the selected {0} in a new browser tab</value>
+  </data>
+  <data name="RunObjectInWindowTooltip" xml:space="preserve">
+    <value>Run the selected {0} in a new browser window</value>
+  </data>
+  <data name="ShowCategoryObjectTooltip" xml:space="preserve">
+    <value>Find the category the selected {0} is saved in</value>
+  </data>
+  <data name="UndoCheckOutObjectTooltip" xml:space="preserve">
+    <value>Cancel the check out on the selected {0}</value>
+  </data>
+  <data name="ShowTooltip" xml:space="preserve">
+    <value>Show the contents of the {0} category</value>
+  </data>
+  <data name="CreateAProcessDescription" xml:space="preserve">
+    <value>Create a new Workflow</value>
+    <comment>this is a tooltip which appears above a button which allows the user to create a single new Workflow[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="ProcessDetails" xml:space="preserve">
+    <value>Workflow Details</value>
+  </data>
+  <data name="ReuseContextMenuItem" xml:space="preserve">
+    <value>Reuse</value>
+  </data>
+  <data name="ReuseContextObjectTooltip" xml:space="preserve">
+    <value>Design a new {0} using the selected {0}</value>
+  </data>
+  <data name="StartInstanceContextMenuItem" xml:space="preserve">
+    <value>Start a new Instance</value>
+  </data>
+  <data name="StartInstanceObjectTooltip" xml:space="preserve">
+    <value>Start a new instance of the selected {0}</value>
+  </data>
+  <data name="CollapseSearchCriteriaTooltip" xml:space="preserve">
+    <value>Collapse Search Criteria</value>
+    <comment>this is the tooltip which is displayed over a button used to collapse the panel containing additional search criteria [designtime]</comment>
+  </data>
+  <data name="ExpandSearchCriteriaTooltip" xml:space="preserve">
+    <value>Expand Search Criteria</value>
+    <comment>this is the tooltip which is displayed over a button used to expand the panel containing additional search criteria [designtime]</comment>
+  </data>
+  <data name="CancelSearchTooltip" xml:space="preserve">
+    <value>Cancel Search</value>
+  </data>
+  <data name="CancelSearchFilterTooltip" xml:space="preserve">
+    <value>Cancel Search and Filter</value>
+  </data>
+  <data name="FiltersAppliedTooltip" xml:space="preserve">
+    <value>Filters Applied</value>
+  </data>
+  <data name="NoFiltersAppliedTooltip" xml:space="preserve">
+    <value>No Filters Applied</value>
+  </data>
+  <data name="SearchAllRulesTooltipRulesLabelText" xml:space="preserve">
+    <value>Search All Rules</value>
+  </data>
+  <data name="FilterSearchTooltip" xml:space="preserve">
+    <value>Filter Search</value>
+  </data>
+  <data name="PerformSearchTooltip" xml:space="preserve">
+    <value>Search All Items</value>
+  </data>
+  <data name="SortByNameText" xml:space="preserve">
+    <value>Sort by Name</value>
+  </data>
+  <data name="SortByNameTooltip" xml:space="preserve">
+    <value>Sort items by name</value>
+  </data>
+  <data name="SortByTypeText" xml:space="preserve">
+    <value>Sort by Type</value>
+  </data>
+  <data name="SortByTypeTooltip" xml:space="preserve">
+    <value>Sort items by type</value>
+  </data>
+  <data name="RunAsObjectTooltip" xml:space="preserve">
+    <value>Run the selected {0} with parameters</value>
+  </data>
+  <data name="RunAsText" xml:space="preserve">
+    <value>Run with Parameters</value>
+    <comment>runs the form or view with parameters [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="RunWithParameters" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="RunWithURL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="DefaultValueWatermark" xml:space="preserve">
+    <value>Type a default value</value>
+  </data>
+  <data name="SelectDefaultValueWatermark" xml:space="preserve">
+    <value>Select a default value</value>
+  </data>
+  <data name="DefaultStateWatermark" xml:space="preserve">
+    <value>(Default State)</value>
+  </data>
+  <data name="DefaultText" xml:space="preserve">
+    <value>(Default)</value>
+  </data>
+  <data name="BaseStateText" xml:space="preserve">
+    <value>(Base State)</value>
+  </data>
+  <data name="RunWithParameterLabel" xml:space="preserve">
+    <value>Run with Parameters</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="MoveCategoryDescendantErrorMessage" xml:space="preserve">
+    <value>One cannot make a category a descendant of itself.</value>
+  </data>
+  <data name="ErrorObjectNotExistRemovedMessageCategorySingular" xml:space="preserve">
+    <value>The selected category does not exist or has been removed.</value>
+  </data>
+  <data name="NamedObjectInUseDeleteError" xml:space="preserve">
+    <value>The {0} '{1}' cannot be deleted as it is currently in use.</value>
+  </data>
+  <data name="ObjectInUseDeleteError" xml:space="preserve">
+    <value>The {0} cannot be deleted as it is currently in use.</value>
+  </data>
+  <data name="SetWorkflowDescriptionWorkflowProcessSingularSmartFormSingular" xml:space="preserve">
+    <value>Create a Workflow using fields in this Form.</value>
+    <comment>Use this Form to Create a new workflow [designtime]</comment>
+  </data>
+  <data name="GenericToolTipRun" xml:space="preserve">
+    <value>Select a runnable object</value>
+  </data>
+  <data name="GenericToolTipDesignView" xml:space="preserve">
+    <value>Select a SmartObject to create a View</value>
+  </data>
+  <data name="GenericToolTipDesignForm" xml:space="preserve">
+    <value>Select a View to design a Form</value>
+  </data>
+  <data name="GenericToolTipDesignWorkFlow" xml:space="preserve">
+    <value>Select a Form to design a Workflow</value>
+  </data>
+  <data name="GenericToolTipGenerateView" xml:space="preserve">
+    <value>Select a SmartObject to generate a View</value>
+  </data>
+  <data name="GenericToolTipGenerateForm" xml:space="preserve">
+    <value>Select a View to generate a Form</value>
+  </data>
+  <data name="GenericToolTipCheckIn" xml:space="preserve">
+    <value>Select an item that can be checked in</value>
+  </data>
+  <data name="GenericToolTipCheckOut" xml:space="preserve">
+    <value>Select an item that is checked in</value>
+  </data>
+  <data name="GenericToolTipUndoCheck" xml:space="preserve">
+    <value>Select an item that is checked out</value>
+  </data>
+  <data name="DetailsDTURL" xml:space="preserve">
+    <value>Testing URL</value>
+  </data>
+  <data name="DetailsRTURL" xml:space="preserve">
+    <value>Runtime URL</value>
+  </data>
+  <data name="SearchContextAllText" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="SearchContextNoneText" xml:space="preserve">
+    <value>(None)</value>
+  </data>
+  <data name="SaveAsWorkflowTitle" xml:space="preserve">
+    <value> - Copy</value>
+    <comment>Appended text for workflow title for save as prompt</comment>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description: {0}</value>
+    <comment>SaveAsDialog and System and Workflow Title names</comment>
+  </data>
+  <data name="SystemName" xml:space="preserve">
+    <value>System Name: {0}</value>
+    <comment>this is the tooltip which appears when hovering over system objects which are displayed in the context tree[location: context tree tooltip] [common]</comment>
+  </data>
+  <data name="FullyQualifiedName" xml:space="preserve">
+    <value>Fully Qualified Name: {0}</value>
+    <comment>Title for system name and workflow name in AppStudio.</comment>
+  </data>
+  <data name="LockedBy" xml:space="preserve">
+    <value>Locked by {0}</value>
+    <comment>Indicate the user that is currently locking the workflow.</comment>
+  </data>
+  <data name="ErrorNotFound" xml:space="preserve">
+    <value>The following items could not be found and may have been deleted.</value>
+  </data>
+  <data name="ErrorNotCheckedOut" xml:space="preserve">
+    <value>The following items are not currently checked out</value>
+  </data>
+  <data name="ErrorCheckedOutByOtherUserException" xml:space="preserve">
+    <value>The following items are currently checked out to the following users</value>
+  </data>
+  <data name="ErrorNotCheckedIn" xml:space="preserve">
+    <value>The following items are not currently checked in</value>
+  </data>
+  <data name="ErrorCheckedOutByOtherUser" xml:space="preserve">
+    <value>Item '{0}' is currently checked out by '{1}'</value>
+  </data>
+  <data name="ErrorInUse" xml:space="preserve">
+    <value>The following items have dependencies:</value>
+  </data>
+  <data name="ErrorInUseForm" xml:space="preserve">
+    <value>Form '{0}' is in use by '{1}'</value>
+  </data>
+  <data name="ErrorInUseView" xml:space="preserve">
+    <value>View '{0}' is in use by '{1}'</value>
+  </data>
+  <data name="ErrorInUseFormAsSubForm" xml:space="preserve">
+    <value>Form '{0}' is in use by '{1}' as a subform</value>
+  </data>
+  <data name="ErrorInUseViewAsFormView" xml:space="preserve">
+    <value>View '{0}' is in use by '{1}' as a form view</value>
+  </data>
+  <data name="ErrorInUseViewAsSubView" xml:space="preserve">
+    <value>View '{0}' is in use by '{1}' as a subview</value>
+  </data>
+  <data name="CheckInObjectDescriptionSmartFormSingular" xml:space="preserve">
+    <value>Check this Form in.</value>
+    <comment>User to check in a single Form[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="CheckInObjectDescriptionStyleProfileSingular" xml:space="preserve">
+    <value>Check this Style Profile in.</value>
+    <comment>User to check in a single Style Profile[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="CheckInObjectDescriptionSmartViewSingular" xml:space="preserve">
+    <value>Check this View in.</value>
+    <comment>User to check in a single View[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="CheckOutObjectDescriptionSmartFormSingular" xml:space="preserve">
+    <value>Check this Form out.</value>
+    <comment>User to check out a single Form[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="CheckOutObjectDescriptionStyleProfileSingular" xml:space="preserve">
+    <value>Check this Style Profile out.</value>
+    <comment>User to check out a single Style Profile[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="CheckOutObjectDescriptionSmartViewSingular" xml:space="preserve">
+    <value>Check this View out.</value>
+    <comment>User to check out a single View[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DeleteObjectDescriptionSmartFormSingular" xml:space="preserve">
+    <value>Completely remove this Form.</value>
+    <comment>User to delete the selected Form[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DeleteObjectDescriptionStyleProfileSingular" xml:space="preserve">
+    <value>Completely remove this Style Profile.</value>
+    <comment>User to delete the selected Style Profile[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DeleteObjectDescriptionSmartObjectSingular" xml:space="preserve">
+    <value>Completely remove this SmartObject.</value>
+    <comment>User to delete the selected SmartObject [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DeleteObjectDescriptionSmartViewSingular" xml:space="preserve">
+    <value>Completely remove this View.</value>
+    <comment>User to delete the selected View[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DeleteObjectDescriptionWorkflowProcessSingular" xml:space="preserve">
+    <value>Completely remove this Workflow.</value>
+    <comment>User to delete the selected Workflow[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DesignNewObjectDescriptionSmartFormSingular" xml:space="preserve">
+    <value>Build a layout and drop controls</value>
+    <comment>Build a layout and drop controls [designtime]</comment>
+  </data>
+  <data name="DesignNewObjectDescriptionSmartObjectSingular" xml:space="preserve">
+    <value>Store or link to existing data</value>
+    <comment>Store or link to existing data [designtime]</comment>
+  </data>
+  <data name="DesignNewObjectDescriptionSmartViewSingular" xml:space="preserve">
+    <value>Create a reusable group of controls</value>
+    <comment>Create a reusable group of controls [designtime]</comment>
+  </data>
+  <data name="DesignNewObjectDescriptionWorkflowProcessSingular" xml:space="preserve">
+    <value>Automate a business process</value>
+    <comment>Automate a business process [designtime]</comment>
+  </data>
+  <data name="DesignNewObjectLabelSmartFormSingular" xml:space="preserve">
+    <value>Design a new Form</value>
+    <comment>this allows the user to create a single new Form [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DesignNewObjectLabelSmartObjectSingular" xml:space="preserve">
+    <value>Design a new SmartObject</value>
+    <comment>this allows the user to create a single new SmartObject [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DesignNewObjectLabelSmartViewSingular" xml:space="preserve">
+    <value>Design a new View</value>
+    <comment>this allows the user to create a single new View [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DesignNewObjectLabelWorkflowProcessSingular" xml:space="preserve">
+    <value>Design a new Workflow</value>
+    <comment>this allows the user to create a single new Workflow [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="DesignNewObjectLabelSmartFormSingularLanding" xml:space="preserve">
+    <value>Form</value>
+    <comment>this allows the user to create a new Form [location: Landing Page]</comment>
+  </data>
+  <data name="DesignNewObjectLabelSmartObjectSingularLanding" xml:space="preserve">
+    <value>SmartObject</value>
+    <comment>this allows the user to create a new SmartObject [location: Landing Page]</comment>
+  </data>
+  <data name="DesignNewObjectLabelSmartViewSingularLanding" xml:space="preserve">
+    <value>View</value>
+    <comment>this allows the user to create a new View [location: Landing Page]</comment>
+  </data>
+  <data name="DesignNewObjectLabelWorkflowProcessSingularLanding" xml:space="preserve">
+    <value>Workflow</value>
+    <comment>this allows the user to create a new Workflow [location: Landing Page]</comment>
+  </data>
+  <data name="EditObjectDescriptionSmartFormSingular" xml:space="preserve">
+    <value>Design this Form.</value>
+    <comment>this is allows the user to create a single new Form[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="EditObjectDescriptionStyleProfileSingular" xml:space="preserve">
+    <value>Edit this Style Profile.</value>
+    <comment>this is allows the user to create a single new Style Profile[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="EditObjectDescriptionSmartObjectSingular" xml:space="preserve">
+    <value>Design this SmartObject.</value>
+    <comment>this is allows the user to create a single new SmartObject [location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="EditObjectDescriptionSmartViewSingular" xml:space="preserve">
+    <value>Design this View.</value>
+    <comment>this is allows the user to create a single new View[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="EditObjectDescriptionWorkflowProcessSingular" xml:space="preserve">
+    <value>Design this Workflow.</value>
+    <comment>this is allows the user to create a single new Workflow[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="RunObjectDescriptionFormSingular" xml:space="preserve">
+    <value>Run this Form in this Window</value>
+    <comment>this is allows the user to create a single new Form[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="RunObjectDescriptionViewSingular" xml:space="preserve">
+    <value>Run this View in this Window</value>
+    <comment>this is allows the user to create a single new View[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="RunWithParameterDescriptionSmartFormSingular" xml:space="preserve">
+    <value>Set parameters before running this Form</value>
+    <comment>this is allows the user to run a single Form with parameters(or in a special way)[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="RunWithParameterDescriptionSmartViewSingular" xml:space="preserve">
+    <value>Set parameters before running this View</value>
+    <comment>this is allows the user to run a single View with parameters(or in a special way)[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="SaveObjectAsDescriptionSmartFormSingular" xml:space="preserve">
+    <value>Create a copy of this Form.</value>
+    <comment>Save a copy of an existing Form with another name[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="SaveObjectAsDescriptionStyleProfileSingular" xml:space="preserve">
+    <value>Create a copy of this Style Profile.</value>
+    <comment>Save a copy of an existing Style Profile with another name[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="SaveObjectAsDescriptionSmartObjectSingular" xml:space="preserve">
+    <value>Create a copy of this SmartObject.</value>
+    <comment>Save a copy of an existing SmartObject with another name[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="SaveObjectAsDescriptionSmartViewSingular" xml:space="preserve">
+    <value>Create a copy of this View.</value>
+    <comment>Save a copy of an existing View with another name[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="SaveObjectAsDescriptionWorkflowProcessSingular" xml:space="preserve">
+    <value>Create a copy of this Workflow.</value>
+    <comment>Save a copy of an existing Workflow with another name[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="UndoCheckOutObjectDescriptionSmartFormSingular" xml:space="preserve">
+    <value>Cancel check out on this Form.</value>
+    <comment>Reverse the check out on a single Form and cancel any changes[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="UndoCheckOutObjectDescriptionStyleProfileSingular" xml:space="preserve">
+    <value>Cancel check out on this Style Profile.</value>
+    <comment>Reverse the check out on a single Style Profile and cancel any changes[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="UndoCheckOutObjectDescriptionSmartViewSingular" xml:space="preserve">
+    <value>Cancel check out on this View.</value>
+    <comment>Reverse the check out on a single View and cancel any changes[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="MyObjectsNodeTextItemsPlural" xml:space="preserve">
+    <value>My Items</value>
+    <comment>Items the user created [gender: neutral]</comment>
+  </data>
+  <data name="MyObjectsNodeTextSmartFormPlural" xml:space="preserve">
+    <value>My Forms</value>
+    <comment>Forms the user created [gender: neutral]</comment>
+  </data>
+  <data name="MyObjectsNodeTextSmartObjectPlural" xml:space="preserve">
+    <value>My SmartObjects</value>
+    <comment>SmartObjects the user created [gender: neutral]</comment>
+  </data>
+  <data name="MyObjectsNodeTextSmartViewPlural" xml:space="preserve">
+    <value>My Views</value>
+    <comment>Views the user created [gender: neutral]</comment>
+  </data>
+  <data name="MyObjectsNodeTextWorkflowProcessPlural" xml:space="preserve">
+    <value>My Workflows</value>
+    <comment>Workflows the user created [gender: neutral]</comment>
+  </data>
+  <data name="AllObjectsNodeTextItemsPlural" xml:space="preserve">
+    <value>All Items</value>
+    <comment>All the Items (or everything)[location: Tree view on left] [designtime]</comment>
+  </data>
+  <data name="AllObjectsNodeTextSmartFormPlural" xml:space="preserve">
+    <value>All Forms</value>
+    <comment>All the Forms (or Form objects)[location: Tree view on left] [designtime]</comment>
+  </data>
+  <data name="AllObjectsNodeTextSmartObjectPlural" xml:space="preserve">
+    <value>All SmartObjects</value>
+    <comment>All the SmartObjects (or data objects)[location: Tree view on left] [designtime]</comment>
+  </data>
+  <data name="AllObjectsNodeTextSmartViewPlural" xml:space="preserve">
+    <value>All Views</value>
+    <comment>All the Views (or View objects)[location: Tree view on left] [designtime]</comment>
+  </data>
+  <data name="AutoGenTextSmartFormPlural" xml:space="preserve">
+    <value>Generate Forms</value>
+    <comment>Create a Forms from an object [designtime]</comment>
+  </data>
+  <data name="AutoGenTextSmartViewPlural" xml:space="preserve">
+    <value>Generate Views</value>
+    <comment>Create Views from a SmartObject (or data object) [designtime]</comment>
+  </data>
+  <data name="CreateNewObjectTooltipCategorySingular" xml:space="preserve">
+    <value>Create a New Category</value>
+    <comment>Create a new category by clicking on the create/new  [designtime]</comment>
+  </data>
+  <data name="CreateNewObjectTooltipSmartFormSingular" xml:space="preserve">
+    <value>Create a New Form</value>
+    <comment>Create or make a new Form [location: Context</comment>
+  </data>
+  <data name="CreateNewObjectTooltipSmartObjectSingular" xml:space="preserve">
+    <value>Create a New SmartObject</value>
+    <comment>Create or make a new SmartObject(or data object) [location: Context</comment>
+  </data>
+  <data name="CreateNewObjectTooltipSmartViewSingular" xml:space="preserve">
+    <value>Create a New View</value>
+    <comment>Create or make a new View [location: Context</comment>
+  </data>
+  <data name="CreateNewObjectTooltipWorkflowProcessSingular" xml:space="preserve">
+    <value>Create a New Workflow</value>
+    <comment>Create or make a new Workflow [location: Context Menu][designtime]</comment>
+  </data>
+  <data name="CreateNewObjectTooltipStyleProfileSingular" xml:space="preserve">
+    <value>Create a New Style Profile</value>
+    <comment>Create or make a new Style Profile [location: Context</comment>
+  </data>
+  <data name="DeleteSelectedObjectsTooltipCategorySingular" xml:space="preserve">
+    <value>Delete the selected Category</value>
+    <comment>Delete or remove the selected Category(or folder)</comment>
+  </data>
+  <data name="DesignNewObjectUsingTooltipSmartFormSingular" xml:space="preserve">
+    <value>Design a new Form</value>
+    <comment>Click to create(or make) a new Form</comment>
+  </data>
+  <data name="DesignNewObjectUsingTooltipSmartViewSingular" xml:space="preserve">
+    <value>Design a new View</value>
+    <comment>Click to create(or make) a new View</comment>
+  </data>
+  <data name="DesignNewObjectUsingTooltipWorkflowProcessSingular" xml:space="preserve">
+    <value>Design a new Workflow</value>
+    <comment>Click to create(or make) a new Workflow</comment>
+  </data>
+  <data name="GenerateFormFromSelectedViewsTooltip" xml:space="preserve">
+    <value>Automatically generate new Form from the selected Views</value>
+    <comment>Create a Form from chosen View [designtime]</comment>
+  </data>
+  <data name="GenerateFormFromSelectedViewTooltip" xml:space="preserve">
+    <value>Automatically generate new Form from the selected View</value>
+    <comment>Create a Form from chosen View [designtime]</comment>
+  </data>
+  <data name="GenerateViewsFromSelectedSmartObjects" xml:space="preserve">
+    <value>Automatically generate new Views from the selected SmartObjects</value>
+    <comment>Create Views from chosen SmartObjects (or data objects) [designtime]</comment>
+  </data>
+  <data name="GenerateViewsFromSelectedSmartObjectTooltip" xml:space="preserve">
+    <value>Automatically generate new Views from the selected SmartObject</value>
+    <comment>Create Views from chosen SmartObject (or data object) [designtime]</comment>
+  </data>
+  <data name="MoveToTooltipCategorySingular" xml:space="preserve">
+    <value>Move the selected Category to a different category</value>
+    <comment>Move the Category(or folder) to another Category(or folder)</comment>
+  </data>
+  <data name="OpenTooltipCategorySingular" xml:space="preserve">
+    <value>Open the selected Category</value>
+    <comment>Open the Category(or folder) in the appstudio grid</comment>
+  </data>
+  <data name="RecentObjectsNodeTextItemsPlural" xml:space="preserve">
+    <value>Recent Items</value>
+    <comment>Recently used(or opened) Items [location: Tree view on left] [designtime]</comment>
+  </data>
+  <data name="RecentObjectsNodeTextSmartFormPlural" xml:space="preserve">
+    <value>Recent Forms</value>
+    <comment>Recently used(or opened) Forms (or Form objects) [location: Tree view on left] [designtime]</comment>
+  </data>
+  <data name="RecentObjectsNodeTextSmartObjectPlural" xml:space="preserve">
+    <value>Recent SmartObjects</value>
+    <comment>Recently used(or opened) SmartObjects (or data objects) [location: Tree view on left] [designtime]</comment>
+  </data>
+  <data name="RecentObjectsNodeTextSmartViewPlural" xml:space="preserve">
+    <value>Recent Views</value>
+    <comment>Recently used(or opened) Views (or View objects) [location: Tree view on left] [designtime]</comment>
+  </data>
+  <data name="RecentObjectsNodeTextWorkflowProcessPlural" xml:space="preserve">
+    <value>Recent Workflows</value>
+    <comment>Recently used(or opened) Workflows [location: Tree view on left] [designtime]</comment>
+  </data>
+  <data name="RenameTooltipCategorySingular" xml:space="preserve">
+    <value>Rename the selected Category</value>
+    <comment>Change the name of the Category(or folder)</comment>
+  </data>
+  <data name="SharedObjectsNodeTextWorkflowProcessPlural" xml:space="preserve">
+    <value>Shared Workflows</value>
+    <comment>Workflows that are shared with a user. The user can view or edit the workflows.</comment>
+  </data>
+  <data name="SessionRenewedDescription" xml:space="preserve">
+    <value>Your original session has expired, but has been renewed. This dialog will close automatically after three seconds, but you can click the 'Close' button at any time.</value>
+    <comment>Description on Session Renewed page, this page gets displayed to inform user that the session has expired and was automatically renewed.</comment>
+  </data>
+  <data name="SessionRenewedHeading" xml:space="preserve">
+    <value>Session Renewed</value>
+    <comment>Heading on Session Renewed page, this page gets displayed to inform user that the session has expired and was automatically renewed.</comment>
+  </data>
+  <data name="WorkflowDeletionDepWarningTextPlural" xml:space="preserve">
+    <value>The selected {0} are referenced by one or more Workflows. Deleting these {0} may cause errors in the Workflows. Click OK to delete or Cancel to keep them.</value>
+    <comment>A warning that informs the user that Items they are attempting to delete are in use by Workflows and by deleting them might cause errors in the Workflows.</comment>
+  </data>
+  <data name="WorkflowDeletionDepWarningTextSingular" xml:space="preserve">
+    <value>This selected {0} is referenced by one or more Workflows. Deleting the {0} may cause errors in the Workflows. Click OK to delete or Cancel to keep it.</value>
+    <comment>A warning that informs the user that the Item they are attempting to delete is in use by  Workflow(s) and by deleting it, it may cause errors in the Workflow(s).</comment>
+  </data>
+  <data name="WorkflowUnlockWarningTextSingular" xml:space="preserve">
+    <value>Unlocking the workflow may cause unsaved changes to be lost. Do you want to continue?</value>
+    <comment>A warning that informs the user that the Item they are attempting to unlock may be in use by other user. By unlocking it, it may cause lost of unsaved work for the Workflow.</comment>
+  </data>
+  <data name="WorkflowUnlockSuccess" xml:space="preserve">
+    <value>Selected Workflow has been unlocked</value>
+    <comment>A message that informs the user that the workflow has been unlocked.</comment>
+  </data>
+  <data name="WorkflowUnlockNetworkFailure" xml:space="preserve">
+    <value>System is currently unable to unlock the selected Workflow due to a network error.  Please try again later.</value>
+    <comment>A message that informs the user that the workflow failed to unlock due to some unforeseen network error.</comment>
+  </data>
+  <data name="ObjectDependancyHeadingPlural" xml:space="preserve">
+    <value>The {0} have the following dependencies:</value>
+    <comment>A heading that indicates any dependancies for multiple items to follow in a tree structure.</comment>
+  </data>
+  <data name="ObjectDependancyHeadingSingular" xml:space="preserve">
+    <value>The {0} has the following dependencies:</value>
+    <comment>A heading that indicates any dependancies for the item to follow in a tree structure.</comment>
+  </data>
+  <data name="MultipleItemCountText" xml:space="preserve">
+    <value>{0} items</value>
+    <comment>Text showing the number of items in a collection [designtime]</comment>
+  </data>
+  <data name="MultipleSelectedItemCountText" xml:space="preserve">
+    <value>({0} selected)</value>
+    <comment>Text showing multiple items selected from a collection. {0} denotes the number of selected items [designtime]</comment>
+  </data>
+  <data name="SelectedItemCountText" xml:space="preserve">
+    <value>(1 selected)</value>
+    <comment>Text showing a single item selected from a collection [designtime]</comment>
+  </data>
+  <data name="SingleItemCountText" xml:space="preserve">
+    <value>1 item</value>
+    <comment>Text showing a single item in a collection [designtime]</comment>
+  </data>
+  <data name="ZeroItemCountText" xml:space="preserve">
+    <value>0 items</value>
+  </data>
+  <data name="ZeroSelectedItemCountText" xml:space="preserve">
+    <value>(0 selected)</value>
+    <comment>Text showing an empty selection from a collection [designtime]</comment>
+  </data>
+  <data name="CategoryPathTooltip" xml:space="preserve">
+    <value>Category: {0}</value>
+    <comment>Text showing the path of an artefact in a tooltip [designtime]</comment>
+  </data>
+  <data name="BreadcrumbSeperatorText" xml:space="preserve">
+    <value> &gt; </value>
+    <comment>Text used to seperate breadcrumbs text. Note the text direction of the translated culture needs to be considered for translation [designtime]</comment>
+  </data>
+  <data name="RefreshSearchTooltip" xml:space="preserve">
+    <value>Refresh search results</value>
+    <comment>Text indicating that execution of function will refresh the current displayed search results [designtime]</comment>
+  </data>
+  <data name="NoRecentItemsText" xml:space="preserve">
+    <value>You have no recent files</value>
+    <comment>Informing the user that no recent items are available to be displayed on the landing page</comment>
+  </data>
+  <data name="AboutLinkContent" xml:space="preserve">
+    <value>© 2021 Nintex UK Ltd</value>
+    <comment>Nintex link text</comment>
+  </data>
+  <data name="AboutLinkTitle" xml:space="preserve">
+    <value>About the Nintex Designer</value>
+    <comment>Nintex link</comment>
+  </data>
+  <data name="CheckInCheckedOutFormChildren" xml:space="preserve">
+    <value>Check in associated Views and/or Style Profiles</value>
+    <comment>Option to check in associated Views and/or Style Profiles with the selected Forms [designtime]</comment>
+  </data>
+  <data name="FormAnalysisOnCheckinErrorText" xml:space="preserve">
+    <value>The form '{0}' has dependency errors. For more information edit the form.</value>
+    <comment>Error message shown when analysis failed upon check-in of a single form [designtime]</comment>
+  </data>
+  <data name="FormCheckInConfirmationText" xml:space="preserve">
+    <value>The Form '{0}' to be checked in contains Views and/or Style Profiles that are currently checked out. Check in the associated Views and/or Style Profiles to continue or choose to automatically check in the Form as well as the Views and/or Style Profiles.</value>
+    <comment>Warning message shown when a single form cannot be checked in because its associated views and/or styleprofiles  are not checked in. The user can choose to check the associated views and/or styleprofiles in along with the selected form [designtime]</comment>
+  </data>
+  <data name="FormsCheckInConfirmationText" xml:space="preserve">
+    <value>The Forms to be checked in contain Views and/or Style Profiles that are currently checked out. Check in the associated Views and/or Style Profiles to continue or choose to automatically check in the Forms as well as the Views and/or Style Profiles.</value>
+    <comment>Warning message shown when multiple forms cannot be checked in because their associated views and/or styleprofiles  are not checked in. The user can choose to check the associated views and/or styleprofiles  in along with the selected forms</comment>
+  </data>
+  <data name="IgnoreAnalysisOnCheckinErrors" xml:space="preserve">
+    <value>Ignore dependency errors and check in.</value>
+    <comment>Text shown on checkbox label to ignore dependency errors and check-in single or multiple items. [designtime]</comment>
+  </data>
+  <data name="ItemsAnalysisOnCheckinErrorText" xml:space="preserve">
+    <value>The items listed below have dependency errors. For more information edit the relevant items.</value>
+    <comment>Error message shown when analysis failed upon check-in of multiple items [designtime]</comment>
+  </data>
+  <data name="ViewAnalysisOnCheckinErrorText" xml:space="preserve">
+    <value>The view '{0}' has dependency errors. For more information edit the view.</value>
+    <comment>Error message shown when analysis failed upon check-in of a single view [designtime]</comment>
+  </data>
+  <data name="CloneObjectHasDependencyErrorsText" xml:space="preserve">
+    <value>The Check In option is not available as dependency errors have been detected.</value>
+    <comment>Used as a tooltip and message on Save As dialog to notify user that check-in has been disabled due to dependencies [designtime]</comment>
+  </data>
+  <data name="CloneObjectHasDependencyErrorsAllowCheckinText" xml:space="preserve">
+    <value>Dependency errors detected, selecting to check in will ignore dependency errors.</value>
+    <comment>Used as a tooltip and message on Save As dialog to notify user that dependency errors exist but check-in is allowed and errors will be ignored [designtime]</comment>
+  </data>
+  <data name="ObjectAssociationDependenciesFound" xml:space="preserve">
+    <value>Some of the selected SmartObjects could not be deleted as one or more have associations to other SmartObjects.</value>
+    <comment>Error message to be displayed when one or more smartobjects were not deleted because of existing association dependencies</comment>
+  </data>
+  <data name="ObjectAssociationDependencyFound" xml:space="preserve">
+    <value>The SmartObject '{0}' cannot be deleted as it has associations to another SmartObject.</value>
+    <comment>Error message to be displayed when a smartobject was not deleted because of existing association dependencies</comment>
+  </data>
+  <data name="ObjectDependenciesFound" xml:space="preserve">
+    <value>Some of the selected SmartObjects could not be deleted as one or more have dependencies.</value>
+    <comment>Error message to be displayed when one or more smartobjects were not deleted because of existing dependencies</comment>
+  </data>
+  <data name="ObjectDependencyFound" xml:space="preserve">
+    <value>The SmartObject '{0}' cannot be deleted as it has dependencies.</value>
+    <comment>Error message to be displayed when a smartobject was not deleted because of existing dependencies</comment>
+  </data>
+  <data name="CreateFormButtonText" xml:space="preserve">
+    <value>Create</value>
+    <comment>On General tab of forms/view/smo designers.</comment>
+  </data>
+  <data name="DiscardFormButtonText" xml:space="preserve">
+    <value>Discard</value>
+    <comment>On General tab of forms/view/smo designers.</comment>
+  </data>
+  <data name="GenericNoConnectionMessage" xml:space="preserve">
+    <value>We couldn't connect, check your connection.</value>
+  </data>
+  <data name="DetailsBrowse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="NoRecentCategoriesText" xml:space="preserve">
+    <value>You have no recent folders</value>
+    <comment>Informing the user that no recent folders/categories are available to be displayed on the landing page</comment>
+  </data>
+  <data name="SetLegacyWorkflowContextMenuItem" xml:space="preserve">
+    <value>Design Workflow (Legacy)</value>
+    <comment>Design new workflow using the older workflow Silverlight Designer</comment>
+  </data>
+  <data name="SetLegacyWorkflowTooltip" xml:space="preserve">
+    <value>Create a new {0} with this {1} as context (Legacy)</value>
+    <comment>Tooltip to design a new legacy workflow using the older Silverlight Designer</comment>
+  </data>
+  <data name="CreateNewLegacyObjectTooltipWorkflowProcessSingular" xml:space="preserve">
+    <value>Create a New Workflow (Legacy)</value>
+    <comment>Create or make a new legacy Workflow [location: Context Menu][designtime]</comment>
+  </data>
+  <data name="CreateALegacyProcessDescription" xml:space="preserve">
+    <value>Click to create a new Workflow (Legacy)</value>
+    <comment>this is a tooltip which appears above a button which allows the user to create a single new legacy Workflow[location: app studio toolbar] [designtime]</comment>
+  </data>
+  <data name="LockedByText" xml:space="preserve">
+    <value>Locked by </value>
+    <comment>Indicate the user that is currently locking the workflow, used as a prefix string to a user identity display, either a link or another element.</comment>
+  </data>
+  <data name="ObjectNameLengthExceeded" xml:space="preserve">
+    <value>Name exceeds 128 characters.</value>
+    <comment>Error message to be displayed when entered workflow name exceeds 128 characters.</comment>
+  </data>
+  <data name="StyleProfileDeleteConfirmationText" xml:space="preserve">
+    <value>The Style Profile you are about to delete is in use. See below for more detail.</value>
+  </data>
+  <data name="StyleProfileDeleteItemsErrorText" xml:space="preserve">
+    <value>Style Profile '{0}' is in use by '{1}'</value>
+  </data>
+  <data name="StyleProfilesDeleteConfirmationDetailsText" xml:space="preserve">
+    <value>The following items have dependencies:</value>
+  </data>
+  <data name="StyleProfilesDeleteConfirmationText" xml:space="preserve">
+    <value>The Style Profiles you are about to delete are in use. See below for more detail.</value>
+  </data>
+  <data name="StyleProfilesDeleteItemsErrorText" xml:space="preserve">
+    <value>Style Profiles are in use by '{0}'</value>
+  </data>
+  <data name="StyleProfileDeleteConfirmationQuestion" xml:space="preserve">
+    <value>Would you like to proceed?</value>
+  </data>
+  <data name="ErrorInUseFormAsPreviewForm" xml:space="preserve">
+    <value>Form '{0}' is in use by '{1}' as a Preview Form</value>
+    <comment>Form used as the preview form for a style profile</comment>
+  </data>
+</root>

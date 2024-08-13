@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrowserExitConfirmationMessage" xml:space="preserve">
+    <value>Leaving this page will mean that any changes made to this {0} will be lost.</value>
+    <comment>this is the message which appears when the user has unsaved work and the browser window is closed [eg: Leaving this page will mean that any changes made to this SmartObject will be lost.] [common]</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>this is the text which appears on the Cancel button on a pop up message box used throughout the application [common]</comment>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+    <comment>this is the title of the confirmation message pop up used throughout the application [common]</comment>
+  </data>
+  <data name="DesignerExitConfirmationMessage" xml:space="preserve">
+    <value>Do you want to stop editing this {0} and lose any changes?</value>
+    <comment>this is the message which appears when the user has unsaved work and the user navigates away [eg: Do you want to stop editing this SmartObject and lose any changes?] [common]</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+    <comment>this is the title of the error message pop up used throughout the application [common]</comment>
+  </data>
+  <data name="NoButtonText" xml:space="preserve">
+    <value>No</value>
+    <comment>this is the text displayed on a No button used throughout the application [common]</comment>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Notification</value>
+    <comment>this is the title used for general notification pop up messages used throughout the application  [common]</comment>
+  </data>
+  <data name="OKButtonText" xml:space="preserve">
+    <value>OK</value>
+    <comment>this is the text which appears on the OK button on a pop up message box used throughout the application [common]</comment>
+  </data>
+  <data name="ParameterDefaultValueBooleanValidation" xml:space="preserve">
+    <value>You have to supply a default value of 'true', 'false', '1', '0', 'yes' or 'no' for a parameter of type Boolean.</value>
+  </data>
+  <data name="ParameterDefaultValueNumericValidation" xml:space="preserve">
+    <value>You have to supply a numeric default value for a parameter of type Number.</value>
+  </data>
+  <data name="SubformRuleDependency" xml:space="preserve">
+    <value>There are Rules dependent on this item. All dependencies will be removed.</value>
+  </data>
+  <data name="WorkflowRuleDependency" xml:space="preserve">
+    <value>This rule contains workflow actions. Deleting it may cause workflow errors.</value>
+    <comment>This is the message displayed by the Form Designer when deleting a rule that has a workflow action. [Design time]</comment>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+    <comment>this is the title of a warning message pop up which appears when the user does something wrong [common]</comment>
+  </data>
+  <data name="YesButtonText" xml:space="preserve">
+    <value>Yes</value>
+    <comment>this is the text displayed on a Yes button used throughout the application [common]</comment>
+  </data>
+  <data name="CustomCodeDialog_Header" xml:space="preserve">
+    <value>Custom Code Found</value>
+    <comment>this is header text for the custom code dialog warning message when user check-in views/forms</comment>
+  </data>
+  <data name="CustomCodeDialog_Title" xml:space="preserve">
+    <value>Have you tested?</value>
+    <comment>this is title for the custom code dialog warning message when user check-in views/forms</comment>
+  </data>
+  <data name="CustomCodeDialog_Details" xml:space="preserve">
+    <value>We've noticed that your form/view has a custom theme or custom CSS/JavaScript.</value>
+    <comment>this is details for the custom code dialog warning message when user check-in views/forms</comment>
+  </data>
+  <data name="CustomCodeDialog_Details_Plural" xml:space="preserve">
+    <value>We've noticed that your forms/views have custom themes or custom CSS/JavaScript.</value>
+    <comment>this is details for the custom code dialog warning message when user check-in views/forms</comment>
+  </data>
+  <data name="CustomCodeDialog_Accept" xml:space="preserve">
+    <value>I've tested</value>
+    <comment>this is acceptance checkbox text for the custom code dialog warning message when user check-in views/forms</comment>
+  </data>
+  <data name="CustomCodeDialog_MoreInfo_Title" xml:space="preserve">
+    <value>Table Updates (June 2020)</value>
+    <comment>this is title for the custom code dialog warning message more info section when user check-in views/forms</comment>
+  </data>
+  <data name="CustomCodeDialog_MoreInfo_Detail" xml:space="preserve">
+    <value>The table control used for layouts was improved and this is the first time you're checking in this item.  It is possible that your customizations are affected.</value>
+    <comment>this is detail for the custom code dialog warning message more info section when user check-in views/forms</comment>
+  </data>
+  <data name="CustomCodeDialog_MoreInfo_ReadMore" xml:space="preserve">
+    <value>Read more...</value>
+    <comment>this is read more link text for the custom code dialog warning message more info section when user check-in views/forms</comment>
+  </data>
+  <data name="SpinnerValueNotInValues" xml:space="preserve">
+    <value>You have entered an invalid value. Only {0} is allowed.</value>
+  </data>
+  <data name="SpinnerValueNotInRange" xml:space="preserve">
+    <value>You have entered an invalid value. Only values between {0} and {1} are allowed.</value>
+  </data>
+  <data name="SpinnerValueNotInValuesOrSpecials" xml:space="preserve">
+    <value>You have entered an invalid value. Only {0} or {1} is allowed.</value>
+  </data>
+  <data name="SpinnerValueNotInRangeOrSpecials" xml:space="preserve">
+    <value>You have entered an invalid value. Only values between {0} and {1} or {2} are allowed.</value>
+  </data>
+  <data name="OrText" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="RuleDependencyMsg" xml:space="preserve">
+    <value>There are Rules dependent on this item. Dependent items will no longer be valid.</value>
+  </data>
+  <data name="NameExistsInTargetCategoryWarning" xml:space="preserve">
+    <value>You cannot create a {0} with the name '{1}' in the target category. Either rename the object, select a different category, or make sure you have the correct permissions to view the category and create the object.</value>
+    <comment>this is the the message displayed when a user creates or moves an object into a category where an object with the same name already exists [eg: A SmartObject with the name 'SmartObjectABC' already exists in the target category. Either rename the object, select a different category, or make sure you have the correct permissions to view the category and deploy the object.]</comment>
+  </data>
+  <data name="NamesExistInTargetCategoryExtendedWarning" xml:space="preserve">
+    <value>Either rename the objects, select different categories, or make sure you have the correct permissions to view the categories and create the objects.</value>
+    <comment>this is the text displayed below the list of items on the warning message pop up when multiple objects already exist in a category with the same name while trying to generate a view and a form</comment>
+  </data>
+  <data name="NamesExistInTargetCategoryWarning" xml:space="preserve">
+    <value>You cannot create the items below in the selected categories:</value>
+    <comment>this is the text displayed above the list of items on the warning message pop up when multiple objects already exist in a category with the same name while trying to generate a view and a form  </comment>
+  </data>
+  <data name="WorkflowStateDependency" xml:space="preserve">
+    <value>This state contains rules which have workflow actions. Deleting it may cause workflow errors.</value>
+    <comment>This is the message displayed by the Form Designer when deleting a state that has a workflow action. [Design time]</comment>
+  </data>
+  <data name="ListControlPropertyConfigSmartObjectInvalidWarning" xml:space="preserve">
+    <value>The currently selected SmartObject no longer exists, please select another SmartObject to continue.</value>
+    <comment>This is the message displayed by the Form Designer when user tries to modify the display template for a Data Soure bound to a Control where the Data Source is missing or invalid. [Design time]</comment>
+  </data>
+  <data name="ListControlPropertyConfigSmartObjectHasNoAssociations" xml:space="preserve">
+    <value>The selected SmartObject does not have any associations to other SmartObjects.</value>
+    <comment>This is the message that is displayed while configuring a list control's datasource if you try pick a lookup smartobject when the association smartobject does not have any associations to other smartobjects.</comment>
+  </data>
+</root>

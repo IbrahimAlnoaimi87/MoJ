@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ButtonClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ButtonClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ButtonFinish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="ButtonNewAction" xml:space="preserve">
+    <value>New Action</value>
+  </data>
+  <data name="ButtonNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="ButtonPrevious" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="ButtonSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="DeleteNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="DeleteYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="EmptyActionList" xml:space="preserve">
+    <value>No action available</value>
+  </data>
+  <data name="MethodListDeleteHeading1" xml:space="preserve">
+    <value>Confirm delete</value>
+  </data>
+  <data name="MethodListDeletePrompt1" xml:space="preserve">
+    <value>Are you sure you want to delete the action?</value>
+  </data>
+  <data name="MethodListTooltip1" xml:space="preserve">
+    <value>Edit Action</value>
+  </data>
+  <data name="MethodListTooltip2" xml:space="preserve">
+    <value>Delete Action</value>
+  </data>
+  <data name="Subform_BindingsAction1" xml:space="preserve">
+    <value>Please setup the form bindings</value>
+  </data>
+  <data name="Subform_BindingsHeader" xml:space="preserve">
+    <value>Form Bindings</value>
+  </data>
+  <data name="Subform_BindingsValidation" xml:space="preserve">
+    <value>Please setup the the required bindings</value>
+  </data>
+  <data name="Subform_CloseCall" xml:space="preserve">
+    <value>Call</value>
+  </data>
+  <data name="Subform_CloseAction1" xml:space="preserve">
+    <value>on the main view when the sub-view closes</value>
+  </data>
+  <data name="Subform_CloseAction2" xml:space="preserve">
+    <value>Please select which events will close the subform</value>
+  </data>
+  <data name="Subform_CloseEmptyEvents" xml:space="preserve">
+    <value>No events available</value>
+  </data>
+  <data name="Subform_CloseEmptyFunctions" xml:space="preserve">
+    <value>No functions available</value>
+  </data>
+  <data name="Subform_CloseField1EmptyValue" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Subform_CloseHeader" xml:space="preserve">
+    <value>Form Close</value>
+  </data>
+  <data name="Subform_ActionAction1" xml:space="preserve">
+    <value>Please enter an action name and type</value>
+  </data>
+  <data name="Subform_ActionField1" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Subform_ActionField2" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Subform_ActionField3Option1" xml:space="preserve">
+    <value>Action per line</value>
+  </data>
+  <data name="Subform_ActionField3Option2" xml:space="preserve">
+    <value>Action per view</value>
+  </data>
+  <data name="Subform_ActionHeader" xml:space="preserve">
+    <value>Describe Action</value>
+  </data>
+  <data name="Subform_ActionValidation1" xml:space="preserve">
+    <value>Please enter an action name\n</value>
+  </data>
+  <data name="Subform_ActionValidation2" xml:space="preserve">
+    <value>Action name already exits, please correct\n</value>
+  </data>
+  <data name="Subform_ActionValidation3" xml:space="preserve">
+    <value>Please enter only alpha numeric characters\n</value>
+  </data>
+  <data name="Subform_MethodAction1" xml:space="preserve">
+    <value>Call</value>
+  </data>
+  <data name="Subform_MethodAction2" xml:space="preserve">
+    <value>when the subform loads</value>
+  </data>
+  <data name="Subform_MethodField1EmptyValue" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Subform_MethodHeader" xml:space="preserve">
+    <value>Please select what the view should do when it opens. Link corresponding main and sub-view properties by dragging and dropping the main properties on the sub-view properties</value>
+  </data>
+  <data name="Action_ViewAction1" xml:space="preserve">
+    <value>Please select a view to load</value>
+  </data>
+  <data name="Action_ViewField1" xml:space="preserve">
+    <value>Available&amp;nbsp;views</value>
+  </data>
+  <data name="Action_ViewField1EmptyValue" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Action_ViewField2" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Action_ViewField3" xml:space="preserve">
+    <value>Criteria</value>
+  </data>
+  <data name="Action_ViewHeader" xml:space="preserve">
+    <value>Please select the view to load</value>
+  </data>
+  <data name="Action_ViewValidation1" xml:space="preserve">
+    <value>Please select a view to load\n</value>
+  </data>
+  <data name="SubFormErrHeading" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TypeOfActionAction1" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TypeOfActionField1Option1" xml:space="preserve">
+    <value>In-line event</value>
+  </data>
+  <data name="TypeOfActionField1Option2" xml:space="preserve">
+    <value>Open a subform</value>
+  </data>
+  <data name="TypeOfActionHeader" xml:space="preserve">
+    <value>Type of action</value>
+  </data>
+  <data name="InlineEvent_ActionAction1" xml:space="preserve">
+    <value>Please enter an action name</value>
+  </data>
+  <data name="InlineEvent_ActionField1" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="InlineEvent_ActionHeader" xml:space="preserve">
+    <value>Describe Action</value>
+  </data>
+	<data name="InlineEvent_MethodsActionCall" xml:space="preserve">
+    <value>Call</value>
+  </data>
+  <data name="InlineEvent_MethodsAction1" xml:space="preserve">
+    <value>When the link is clicked</value>
+  </data>
+  <data name="InlineEvent_MethodsAction2Part1" xml:space="preserve">
+    <value>After</value>
+  </data>
+  <data name="InlineEvent_MethodsAction2Part2" xml:space="preserve">
+    <value>is executed</value>
+  </data>
+  <data name="InlineEvent_MethodsHeader" xml:space="preserve">
+    <value>Please select the list method and inline event to execute</value>
+  </data>
+  <data name="InlineEvent_ActionValidation1" xml:space="preserve">
+    <value>Please enter an action name</value>
+  </data>
+  <data name="InlineEvent_ActionValidation2" xml:space="preserve">
+    <value>Please enter only alpha numeric characters\n</value>
+  </data>
+  <data name="Subform_CloseValidation1" xml:space="preserve">
+    <value>Duplicate open and close methods not allowed</value>
+  </data>
+  <data name="InlineEvent_ActionField2" xml:space="preserve">
+    <value>Prompt for confirmation?</value>
+  </data>
+  <data name="Action_InfoHeader" xml:space="preserve">
+    <value>Do you want to launch a subform or an inline event?&lt;BR&gt; Note: For tips on how to create a View Action, click the blue info button.</value>
+  </data>
+  <data name="Subform_ViewField1" xml:space="preserve">
+    <value>Selected view</value>
+  </data>
+</root>

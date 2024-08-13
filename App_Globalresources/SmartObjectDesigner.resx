@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NewNameLabel" xml:space="preserve">
+    <value>New name:</value>
+  </data>
+  <data name="TypeAutoGuid" xml:space="preserve">
+    <value>AutoGUID</value>
+  </data>
+  <data name="TypeAutoNumber" xml:space="preserve">
+    <value>Autonumber</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="TypeDateTime" xml:space="preserve">
+    <value>Date/Time</value>
+  </data>
+  <data name="TypeDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="TypeDecimal" xml:space="preserve">
+    <value>Decimal</value>
+  </data>
+  <data name="TypeFile" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="TypeGuid" xml:space="preserve">
+    <value>GUID</value>
+  </data>
+  <data name="TypeHyperLink" xml:space="preserve">
+    <value>Hyperlink</value>
+  </data>
+  <data name="TypeImage" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="TypeMemo" xml:space="preserve">
+    <value>Memo</value>
+  </data>
+  <data name="TypeMultiValue" xml:space="preserve">
+    <value>Multivalue</value>
+  </data>
+  <data name="TypeNumber" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="TypeText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="TypeTime" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="TypeYesno" xml:space="preserve">
+    <value>Yes/No</value>
+  </data>
+  <data name="ValidationSONameRequired" xml:space="preserve">
+    <value>Supply a name for this SmartObject. The name must contain at least one alpha-numeric character.</value>
+  </data>
+  <data name="ValidationSOSaveAsNameExists" xml:space="preserve">
+    <value>The SmartObject name already exists.</value>
+  </data>
+  <data name="ValidationSOSpecialCharacters" xml:space="preserve">
+    <value>Invalid SmartObject name. Please do not use one of the following characters: # % &amp; * \ | : ; " / &gt; &lt; ?</value>
+  </data>
+  <data name="AddSmartObjectPropertiesDialogHeader" xml:space="preserve">
+    <value>Add Properties ({0})</value>
+  </data>
+  <data name="PropertyDescriptionText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="PropertyKeyText" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="PropertyNameText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="PropertyRequiredText" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="PropertySmartBoxText" xml:space="preserve">
+    <value>SmartBox</value>
+  </data>
+  <data name="PropertyTypeText" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="AddPropertiesActionLinkMessage" xml:space="preserve">
+    <value>&amp;lt;Add property&amp;gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="EditSmartObjectPropertyDialogHeader" xml:space="preserve">
+    <value>Edit Property ({0})</value>
+  </data>
+  <data name="PropertyDescriptionLabel" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="PropertyKeyLabel" xml:space="preserve">
+    <value>Key:</value>
+  </data>
+  <data name="PropertyNameLabel" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="PropertyRequiredLabel" xml:space="preserve">
+    <value>Required:</value>
+  </data>
+  <data name="PropertySmartBoxLabel" xml:space="preserve">
+    <value>SmartBox:</value>
+  </data>
+  <data name="PropertyTypeLabel" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="ValidationPropertyNameRequired" xml:space="preserve">
+    <value>Supply a name for this property.</value>
+  </data>
+  <data name="DefaultPropertyDescriptionText" xml:space="preserve">
+    <value>The key used to identify a specific record.</value>
+  </data>
+  <data name="DefaultPropertyNameText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="DefaultPropertyNameValue" xml:space="preserve">
+    <value>ID</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="DefaultPropertyTypeIcon" xml:space="preserve">
+    <value>auto-number</value>
+  </data>
+  <data name="DefaultPropertyTypeText" xml:space="preserve">
+    <value>Autonumber</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="RemoveAllPropertiesConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove all the SmartObject properties?</value>
+  </data>
+  <data name="RemovePropertyConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove the property '{0}'?</value>
+  </data>
+  <data name="RemoveSelectedPropertiesConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove all the selected properties?</value>
+  </data>
+  <data name="MapServicePropertyDialogHeaderText" xml:space="preserve">
+    <value>Map ServiceObject Property ({0})</value>
+  </data>
+  <data name="ManyAssociationText" xml:space="preserve">
+    <value>many</value>
+  </data>
+  <data name="OneAssociationText" xml:space="preserve">
+    <value>one</value>
+  </data>
+  <data name="PropertiesText" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="AddAssociationDialogHeader" xml:space="preserve">
+    <value>Add an association</value>
+  </data>
+  <data name="OneToManyAssociationFormat" xml:space="preserve">
+    <value>{0} can have many {1} SmartObjects.</value>
+  </data>
+  <data name="OneToOneAssociationFormat" xml:space="preserve">
+    <value>Each {0} has a single {1}.</value>
+  </data>
+  <data name="AssociationPropertyAssignmentDialogFormat" xml:space="preserve">
+    <value>Assign the {0} &amp;quot;{1}&amp;quot; field to the {2} {3} field.</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="AssociationPropertyAssignmentDialogHeader" xml:space="preserve">
+    <value>Assign property ({0})</value>
+  </data>
+  <data name="ClearAllAssociationMappingsPrompt" xml:space="preserve">
+    <value>Are you sure you want to clear all the assigned property mappings?</value>
+  </data>
+  <data name="ClearAssociationMappingPrompt" xml:space="preserve">
+    <value>Are you sure you want to clear the assigned property mapping?</value>
+  </data>
+  <data name="ValidationAssociationCompositeSONameRequired" xml:space="preserve">
+    <value>You are required to specify a unique name for the composite SmartObject. It must contain at least one alpha-numeric character.</value>
+  </data>
+  <data name="ValidationAssociationSONotSelected" xml:space="preserve">
+    <value>No SmartObject was selected. Please select a SmartObject.</value>
+  </data>
+  <data name="ServiceMethodCreateBindDialogHearder" xml:space="preserve">
+    <value>Add SmartObject method and bind ServiceObject method</value>
+  </data>
+  <data name="ServiceMethodMappingGridHeaderText" xml:space="preserve">
+    <value>ServiceObject method: {0} - {1} - {2}</value>
+  </data>
+  <data name="ValidationPropertyKeyRequired" xml:space="preserve">
+    <value>You are required to supply at least one key property for this SmartObject.</value>
+  </data>
+  <data name="ValidationPropertyRequired" xml:space="preserve">
+    <value>You are required to supply at least one property for this SmartObject.</value>
+  </data>
+  <data name="RemoveAllAssociationsConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove all the associations?</value>
+  </data>
+  <data name="RemoveAssociationConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove the association to '{0}'?</value>
+  </data>
+  <data name="EditAssociationDialogHeader" xml:space="preserve">
+    <value>Edit an association ({0})</value>
+  </data>
+  <data name="SmartObjectMethodParameterText" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="SpecificValueText" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="SystemValueText" xml:space="preserve">
+    <value>System value</value>
+  </data>
+  <data name="SilverLightServiceMethodHeaderFormat" xml:space="preserve">
+    <value>{0} ({1}-{2})</value>
+  </data>
+  <data name="ServiceMethodsText" xml:space="preserve">
+    <value>ServiceObject methods</value>
+  </data>
+  <data name="ServiceMethodText" xml:space="preserve">
+    <value>ServiceObject method</value>
+  </data>
+  <data name="MappingsText" xml:space="preserve">
+    <value>Mappings</value>
+  </data>
+  <data name="AutoMapMappingsOverwriteConfirmation" xml:space="preserve">
+    <value>Are you sure you want auto map to overwrite the current mappings?</value>
+  </data>
+  <data name="EditSmartObjectMethodParameterHeader" xml:space="preserve">
+    <value>Edit parameter ({0})</value>
+  </data>
+  <data name="NewSmartObjectMethodParameterHeader" xml:space="preserve">
+    <value>Add parameter</value>
+  </data>
+  <data name="RemoveAllMethodsConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove the methods of this SmartObject?</value>
+  </data>
+  <data name="RemoveAllParametersConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove all the SmartObject method parameters?</value>
+  </data>
+  <data name="RemoveAllServiceBindingsConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove all the ServiceObject method bindings from this SmartObject method?</value>
+  </data>
+  <data name="RemoveParameterConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove the parameter '{0}'?</value>
+  </data>
+  <data name="RemoveSelectedMethodConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove the method "{0}" from this SmartObject?</value>
+  </data>
+  <data name="RemoveServiceBindingsConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove the ServiceObject method bindings to '{0}.{1}.{2}' from this SmartObject method?</value>
+  </data>
+  <data name="ServiceMethodEditBindDialogHearder" xml:space="preserve">
+    <value>Edit SmartObject method ({0}) &amp; ServiceObject method bindings</value>
+  </data>
+  <data name="SmartObjectMethodParameterDescLabel" xml:space="preserve">
+    <value>Parameter description:</value>
+  </data>
+  <data name="SmartObjectMethodParameterNameLabel" xml:space="preserve">
+    <value>Parameter name:</value>
+  </data>
+  <data name="SmartObjectMethodParameterTypeLabel" xml:space="preserve">
+    <value>Parameter type:</value>
+  </data>
+  <data name="SmartObjectPropertyText" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="SmartObjectMethodText" xml:space="preserve">
+    <value>Method</value>
+  </data>
+  <data name="PropertyOrderChangedText" xml:space="preserve">
+    <value>Order changed</value>
+  </data>
+  <data name="PropertyUniqueLabel" xml:space="preserve">
+    <value>Unique:</value>
+  </data>
+  <data name="PropertyUniqueText" xml:space="preserve">
+    <value>Unique</value>
+  </data>
+  <data name="AssociationMappingFormat" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="ValidationServiceObjectMethodRequired" xml:space="preserve">
+    <value>You are required to select either a ServiceObject or ServiceObject method.</value>
+  </data>
+  <data name="ValidationServiceObjectPropMappingRequired" xml:space="preserve">
+    <value>The '{0}' ServiceObject property is defined as required. You are required to map this property.</value>
+  </data>
+  <data name="ValidationSmartObjectMethodNameRequired" xml:space="preserve">
+    <value>Supply a name for this SmartObject method.</value>
+  </data>
+  <data name="ValidationServiceMethodBindingRequired" xml:space="preserve">
+    <value>You should bind at least one ServiceObject method to this SmartObject method.</value>
+  </data>
+  <data name="AddServiceObjectMethodHeaderText" xml:space="preserve">
+    <value>Add ServiceObject method bindings</value>
+  </data>
+  <data name="EditServiceObjectMethodBindingsHeaderText" xml:space="preserve">
+    <value>Edit ServiceObject method bindings ({0})</value>
+  </data>
+  <data name="SelectSmartObjectMethodHeaderText" xml:space="preserve">
+    <value>Select a ServiceObject method</value>
+  </data>
+  <data name="ServiceObjectExplorerPanelHeaderText" xml:space="preserve">
+    <value>ServiceObject Explorer</value>
+  </data>
+  <data name="ValidationServiceObjectParameterMappingRequired" xml:space="preserve">
+    <value>The '{0}' ServiceObject method parameter is defined as required. You are required to map this parameter.</value>
+  </data>
+  <data name="RemoveAllPropertiesAdvancedConfirmationText" xml:space="preserve">
+    <value>There might exist some ServiceObject method bindings that are bound to the SmartObject properties. Are you sure you want to remove all the SmartObject properties?</value>
+  </data>
+  <data name="RemovePropertyAdvancedConfirmationText" xml:space="preserve">
+    <value>There might exist ServiceObject method bindings that are bound to the selected SmartObject property. Are you sure you want to remove the property '{0}'?</value>
+  </data>
+  <data name="RemoveSelectedPropertiesAdvancedConfirmationText" xml:space="preserve">
+    <value>There might exist ServiceObject method bindings that are bound to the selected SmartObject properties. Are you sure you want to remove all the selected properties?</value>
+  </data>
+  <data name="ValidationManyToManyNoKeySpecified" xml:space="preserve">
+    <value>The SmartObject '{0}' has no key property defined. Create a key property in that SmartObject to create a many to many association.</value>
+  </data>
+  <data name="ServiceInstances" xml:space="preserve">
+    <value>ServiceObject instances</value>
+  </data>
+  <data name="ValidationCategoryRequired" xml:space="preserve">
+    <value>Select a category to save this SmartObject to.</value>
+  </data>
+  <data name="SmartObjectMethodParameterDesc" xml:space="preserve">
+    <value>Type a description for this parameter</value>
+  </data>
+  <data name="SmartObjectMethodParameterName" xml:space="preserve">
+    <value>Type a name for this parameter</value>
+  </data>
+  <data name="MethodPlural" xml:space="preserve">
+    <value>methods</value>
+  </data>
+  <data name="MethodSingular" xml:space="preserve">
+    <value>method</value>
+  </data>
+  <data name="ServiceMethodsMappingGridHeaderText" xml:space="preserve">
+    <value>ServiceObject methods: SmartBox Service - {0}</value>
+  </data>
+  <data name="ValidationServiceObjectMapping" xml:space="preserve">
+    <value>Select or create a SmartObject {0} to map.</value>
+  </data>
+  <data name="ValidationParameterNameRequired" xml:space="preserve">
+    <value>Supply a name for this parameter.</value>
+  </data>
+  <data name="RefreshText" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="ValidationDuplicateManyToMany" xml:space="preserve">
+    <value>Only one many to many association is permitted for this SmartObject ({0}).</value>
+  </data>
+  <data name="ValidationAssociationMappingNotSet" xml:space="preserve">
+    <value>You are required to map at least one property to the Associated SmartObject.</value>
+  </data>
+  <data name="ManyToManyGridDisplay" xml:space="preserve">
+    <value>Many to Many</value>
+  </data>
+  <data name="ManyToOneGridDisplay" xml:space="preserve">
+    <value>Many to One</value>
+  </data>
+  <data name="OneToManyGridDisplay" xml:space="preserve">
+    <value>One to Many</value>
+  </data>
+  <data name="OneToOneGridDisplay" xml:space="preserve">
+    <value>One to One</value>
+  </data>
+  <data name="UnknownAssociationGridDisplay" xml:space="preserve">
+    <value>Unknown Association</value>
+  </data>
+  <data name="RemoveAssociationsConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove associations to '{0}'?</value>
+  </data>
+  <data name="EditPropertyTimePrecisionLabel" xml:space="preserve">
+    <value>Time Precision:</value>
+  </data>
+  <data name="ValidateSOTimePrecision" xml:space="preserve">
+    <value>The time scale places value you entered is invalid. It should be a number between 0 and 7.</value>
+  </data>
+  <data name="EditPropertyConstantSizeLabel" xml:space="preserve">
+    <value>Constant Size:</value>
+  </data>
+  <data name="EditPropertyDecimalPlacesLabel" xml:space="preserve">
+    <value>Decimal Places:</value>
+  </data>
+  <data name="EditPropertyMaxSizeLabel" xml:space="preserve">
+    <value>Maximum Size:</value>
+  </data>
+  <data name="ValidateSODecimalPlaces" xml:space="preserve">
+    <value>The decimal places value you entered is invalid.  It should be a number between 0 and 18.</value>
+  </data>
+  <data name="ValidateSOMaximumSize" xml:space="preserve">
+    <value>The maximum size you entered is invalid.  It should be a number between 1 and 200.  If the text will be longer than this, a memo type should be used.</value>
+  </data>
+  <data name="AddServiceObjectMethodLinksHeaderText" xml:space="preserve">
+    <value>Add Service Method Link</value>
+    <comment>Add ServiceObject method links dialog header text</comment>
+  </data>
+  <data name="BindServicePropertyHeader" xml:space="preserve">
+    <value>Bind Service Property ({0}) to</value>
+    <comment>Bind To Dialog Popup Title Text where "{0}" is the name of the property getting binded to</comment>
+  </data>
+  <data name="JoinFullDisplayText" xml:space="preserve">
+    <value>All values from both objects (Full Join)</value>
+    <comment>Joins Dropdown item full join</comment>
+  </data>
+  <data name="JoinInnerDisplayText" xml:space="preserve">
+    <value>Matching values in both objects (Inner Join)</value>
+    <comment>Joins Dropdown item inner join</comment>
+  </data>
+  <data name="JoinLeftDisplayText" xml:space="preserve">
+    <value>All values from the first object (Left Join)</value>
+    <comment>Joins Dropdown item left join</comment>
+  </data>
+  <data name="JoinRightDisplayText" xml:space="preserve">
+    <value>All values from the second object (Right Join)</value>
+    <comment>Joins Dropdown item right join</comment>
+  </data>
+  <data name="ErrorMethodLinkNotBound" xml:space="preserve">
+    <value>Please assign at least one property to link the two service objects</value>
+    <comment>Select Method Links Dialog Error to user to assign atleast one property</comment>
+  </data>
+  <data name="RemoveAllMethodLinksConfirmation" xml:space="preserve">
+    <value>Are you sure you want to remove all method links?</value>
+    <comment>Confirmation for Remove all method links on ServiceObect method links wizard step</comment>
+  </data>
+  <data name="RemoveMethodLinkConfirmation" xml:space="preserve">
+    <value>Are you sure you want to remove the selected method link?</value>
+    <comment>Confirmation for Remove currently selected link on ServiceObject method links wizard step</comment>
+  </data>
+  <data name="BindDialogAutoNumGuidWarning" xml:space="preserve">
+    <value>Joining these {0} properties may produce unexpected results!</value>
+    <comment>Warning shown to user when binding on autonumber/autoguid where "{0}" is autonumber or autoguid depending on passed in property type</comment>
+  </data>
+  <data name="BindToPropName" xml:space="preserve">
+    <value>Property Name:</value>
+    <comment>Field name text for Bind To Dialog</comment>
+  </data>
+  <data name="EditServiceObjectMethodLinksHeaderText" xml:space="preserve">
+    <value>Edit Service Method Link</value>
+    <comment>Edit ServiceObject method links dialog header text</comment>
+  </data>
+  <data name="EditPropertyEncyptedLabel" xml:space="preserve">
+    <value>Encrypt Property:</value>
+  </data>
+  <data name="EditPropertyIndexedLabel" xml:space="preserve">
+    <value>Indexed:</value>
+    <comment>When editing a SmartObject property, the indexed property will be shown underneath 'Unique'</comment>
+  </data>
+  <data name="SOConnectedFQNSystemValue" xml:space="preserve">
+    <value>Current User's Identity (FQN)</value>
+    <comment>A system mapping for a smartObject property or parameter using the current user's FQN.</comment>
+  </data>
+  <data name="SODisplayNameSystemValue" xml:space="preserve">
+    <value>This SmartObject's display name</value>
+    <comment>A system mapping for a smartObject property or parameter using the SmartObjects's display name.</comment>
+  </data>
+  <data name="SOGuidSystemValue" xml:space="preserve">
+    <value>This SmartObject's GUID</value>
+    <comment>A system mapping for a smartObject property or parameter using the SmartObjects's GUID value.</comment>
+  </data>
+  <data name="SOSystemNameValue" xml:space="preserve">
+    <value>This SmartObject's system name</value>
+    <comment>A system mapping for a smartObject property or parameter using the SmartObjects's system name.</comment>
+  </data>
+  <data name="SOConnectedDisplayNameSystemValue" xml:space="preserve">
+    <value>Current User's Display Name</value>
+    <comment>A system mapping for a smartObject property or parameter using the current user's display name.</comment>
+  </data>
+  <data name="SOConnectedEmailSystemValue" xml:space="preserve">
+    <value>Current User’s E-mail</value>
+    <comment>A system mapping for a smartObject property or parameter using the current user's e-mail address.</comment>
+  </data>
+  <data name="SOConnectedManagerSystemValue" xml:space="preserve">
+    <value>Current User’s Manager's Account Name</value>
+    <comment>A system mapping for a smartObject property or parameter using the current user's manager.</comment>
+  </data>
+  <data name="SOConnectedNameSystemValue" xml:space="preserve">
+    <value>Current User’s Account Name</value>
+    <comment>A system mapping for a smartObject property or parameter using the current user's account name.</comment>
+  </data>
+  <data name="SOServerDateSystemValue" xml:space="preserve">
+    <value>Current Date</value>
+    <comment>A system mapping for a smartObject property or parameter using the current server date.</comment>
+  </data>
+  <data name="SOServerDateTimeSystemValue" xml:space="preserve">
+    <value>Current Date and Time</value>
+    <comment>A system mapping for a smartObject property or parameter using the current server dateTime.</comment>
+  </data>
+  <data name="SOServerTimeSystemValue" xml:space="preserve">
+    <value>Current Time</value>
+    <comment>A system mapping for a smartObject property or parameter using the current server time.</comment>
+  </data>
+</root>

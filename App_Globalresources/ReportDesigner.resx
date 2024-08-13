@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Actions" xml:space="preserve">
+    <value>Report Actions</value>
+    <comment>01/11/2006</comment>
+  </data>
+  <data name="ActionsTab_ActionsTabTitle" xml:space="preserve">
+    <value>Toolbox</value>
+  </data>
+  <data name="aggrAvg" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="aggrCnt" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="aggrLrg" xml:space="preserve">
+    <value>Largest</value>
+  </data>
+  <data name="aggrSml" xml:space="preserve">
+    <value>Smallest</value>
+  </data>
+  <data name="aggrSum" xml:space="preserve">
+    <value>Sum</value>
+  </data>
+  <data name="alertEmpty" xml:space="preserve">
+    <value>Please provide a folder name before saving.</value>
+    <comment>21/11/2006</comment>
+  </data>
+  <data name="alertFolder" xml:space="preserve">
+    <value>This folder name already exist.</value>
+    <comment>21/11/2006</comment>
+  </data>
+  <data name="alertName" xml:space="preserve">
+    <value>Please provide a name for this report.</value>
+  </data>
+  <data name="alertNoObj" xml:space="preserve">
+    <value>This is not a valid object, please select different object.</value>
+    <comment>07/11/2006</comment>
+  </data>
+  <data name="AllRelated" xml:space="preserve">
+    <value>All Related Objects</value>
+    <comment>20/11/2006</comment>
+  </data>
+  <data name="AllReports" xml:space="preserve">
+    <value>Reports</value>
+    <comment>28/02/2007</comment>
+  </data>
+  <data name="AllReportsHelpText" xml:space="preserve">
+    <value>This section shows all the reports in the selected report category.</value>
+    <comment>28/02/2007</comment>
+  </data>
+  <data name="altDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="altFilterOptions" xml:space="preserve">
+    <value>Report Filters</value>
+  </data>
+  <data name="altFindSO" xml:space="preserve">
+    <value>Find Object</value>
+  </data>
+  <data name="altFolder" xml:space="preserve">
+    <value>New Folder</value>
+  </data>
+  <data name="altHide" xml:space="preserve">
+    <value>Hide Report Filters</value>
+  </data>
+  <data name="altShow" xml:space="preserve">
+    <value>Show Report Filters</value>
+  </data>
+  <data name="btnBrowse" xml:space="preserve">
+    <value>Browse</value>
+    <comment>28/02/2007</comment>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCreateReport" xml:space="preserve">
+    <value>Create Report</value>
+    <comment>19/02/2007</comment>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>Edit Report</value>
+  </data>
+  <data name="btnImportReport" xml:space="preserve">
+    <value>Import from Reporting Services</value>
+    <comment>*</comment>
+  </data>
+  <data name="btnIndex" xml:space="preserve">
+    <value>Report Index</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>OK</value>
+    <comment>20/02/2007</comment>
+  </data>
+  <data name="btnPreview" xml:space="preserve">
+    <value>Run Report</value>
+  </data>
+  <data name="btnRefresh" xml:space="preserve">
+    <value>New Report</value>
+  </data>
+  <data name="btnRun" xml:space="preserve">
+    <value>Run Report</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSaveAs" xml:space="preserve">
+    <value>Save Report As</value>
+    <comment>13/11/2006</comment>
+  </data>
+  <data name="btnSaveRpt" xml:space="preserve">
+    <value>Save Report</value>
+    <comment>13/11/2006</comment>
+  </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>Search</value>
+    <comment>07/11/2006</comment>
+  </data>
+  <data name="chkBackground" xml:space="preserve">
+    <value>Report Background</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="chkDate" xml:space="preserve">
+    <value>Execution Date</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="chkFooter" xml:space="preserve">
+    <value>Footer</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="chkHeader" xml:space="preserve">
+    <value>Header</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="chkOwner" xml:space="preserve">
+    <value>Report Owner</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="chkPaging" xml:space="preserve">
+    <value>Page Number</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="chrtHBar" xml:space="preserve">
+    <value>Horizontal Bar Chart</value>
+  </data>
+  <data name="chrtHBarGrp" xml:space="preserve">
+    <value>Grouped Horizontal Bar Chart</value>
+  </data>
+  <data name="chrtLine" xml:space="preserve">
+    <value>Line Chart</value>
+  </data>
+  <data name="chrtLineGrp" xml:space="preserve">
+    <value>Grouped Line Chart</value>
+  </data>
+  <data name="chrtPie" xml:space="preserve">
+    <value>Pie Chart</value>
+  </data>
+  <data name="chrtVBar" xml:space="preserve">
+    <value>Vertical Bar Chart</value>
+  </data>
+  <data name="chrtVBarGrp" xml:space="preserve">
+    <value>Grouped Vertical Bar Chart</value>
+  </data>
+  <data name="ColumnHead_CreateDate" xml:space="preserve">
+    <value>Date Saved</value>
+    <comment>20/02/2007</comment>
+  </data>
+  <data name="ColumnHead_Delete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>20/02/2007</comment>
+  </data>
+  <data name="ColumnHead_Description" xml:space="preserve">
+    <value>Description</value>
+    <comment>20/02/2007</comment>
+  </data>
+  <data name="ColumnHead_Edit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>20/02/2007</comment>
+  </data>
+  <data name="ColumnHead_Name" xml:space="preserve">
+    <value>Name</value>
+    <comment>20/02/2007</comment>
+  </data>
+  <data name="ColumnHead_Owner" xml:space="preserve">
+    <value>Owner</value>
+    <comment>20/02/2007</comment>
+  </data>
+  <data name="ColumnHead_ViewDate" xml:space="preserve">
+    <value>Date Viewed</value>
+    <comment>21/02/2007</comment>
+  </data>
+  <data name="ContextReport_Delete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>*</comment>
+  </data>
+  <data name="ContextReport_Edit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>*</comment>
+  </data>
+  <data name="ContextReport_Run" xml:space="preserve">
+    <value>Run</value>
+    <comment>*</comment>
+  </data>
+  <data name="customText" xml:space="preserve">
+    <value>Custom Text</value>
+    <comment>31/10/2006</comment>
+  </data>
+  <data name="DataObjectTab" xml:space="preserve">
+    <value>Data Objects</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="descrDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="descrFolder" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="descrName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DirectRelated" xml:space="preserve">
+    <value>Direct Related Objects</value>
+    <comment>20/11/2006</comment>
+  </data>
+  <data name="DrillTab" xml:space="preserve">
+    <value>Drill Down Navigation</value>
+    <comment>06/03/2007</comment>
+  </data>
+  <data name="ExceptionMessage" xml:space="preserve">
+    <value>Exception Message:</value>
+    <comment>19/02/2007</comment>
+  </data>
+  <data name="ExceptionTitle" xml:space="preserve">
+    <value>Exception Title:</value>
+    <comment>19/02/2007</comment>
+  </data>
+  <data name="ExceptionType" xml:space="preserve">
+    <value>Exception Type:</value>
+    <comment>19/02/2007</comment>
+  </data>
+  <data name="filterAdvanced" xml:space="preserve">
+    <value>Advanced Filters</value>
+  </data>
+  <data name="filterCondition" xml:space="preserve">
+    <value>Filter Conditions</value>
+  </data>
+  <data name="filterHead" xml:space="preserve">
+    <value>Filter Options</value>
+  </data>
+  <data name="filterLineAdd" xml:space="preserve">
+    <value>Add Filter Line</value>
+  </data>
+  <data name="filterLineDelete" xml:space="preserve">
+    <value>Delete Filter Line</value>
+  </data>
+  <data name="filterLineField" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="filterLineOperator" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="filterLineValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="FilterOptions" xml:space="preserve">
+    <value>Filter Options</value>
+    <comment>13/11/2006</comment>
+  </data>
+  <data name="filterStandard" xml:space="preserve">
+    <value>Standard Filters</value>
+  </data>
+  <data name="FormatTab" xml:space="preserve">
+    <value>Formatting</value>
+    <comment>06/03/2007</comment>
+  </data>
+  <data name="gAxis" xml:space="preserve">
+    <value>Group By</value>
+  </data>
+  <data name="GlobalData" xml:space="preserve">
+    <value>Global Data</value>
+    <comment>31/10/2006</comment>
+  </data>
+  <data name="group1" xml:space="preserve">
+    <value>Group1</value>
+  </data>
+  <data name="group2" xml:space="preserve">
+    <value>Group2</value>
+  </data>
+  <data name="group3" xml:space="preserve">
+    <value>Group3</value>
+  </data>
+  <data name="grp1Totals" xml:space="preserve">
+    <value>Group 1 Totals</value>
+  </data>
+  <data name="grp2Totals" xml:space="preserve">
+    <value>Group 2 Totals</value>
+  </data>
+  <data name="grp3Totals" xml:space="preserve">
+    <value>Group 3 Totals</value>
+  </data>
+  <data name="HeadSettings" xml:space="preserve">
+    <value>Report Settings</value>
+    <comment>20/11/2006</comment>
+  </data>
+  <data name="image" xml:space="preserve">
+    <value>Image</value>
+    <comment>31/10/2006</comment>
+  </data>
+  <data name="ImportReports" xml:space="preserve">
+    <value>Import Reports</value>
+    <comment>*</comment>
+  </data>
+  <data name="lblDrop" xml:space="preserve">
+    <value>Drop Here</value>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>Enter to date (ccyymmdd)</value>
+  </data>
+  <data name="lblFolderName" xml:space="preserve">
+    <value>Folder Name</value>
+  </data>
+  <data name="lblRows" xml:space="preserve">
+    <value>Row Criteria</value>
+  </data>
+  <data name="lblStartDate" xml:space="preserve">
+    <value>Enter from date (ccyymmdd)</value>
+  </data>
+  <data name="lblSummarize" xml:space="preserve">
+    <value>Sum By</value>
+  </data>
+  <data name="ln1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ln10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ln2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ln3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ln4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ln5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ln6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ln7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ln8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ln9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="locReportDesignerMainMenuHeading1" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="locReportDesignerMainMenuHeading2" xml:space="preserve">
+    <value>Toolbox</value>
+  </data>
+  <data name="locReportDesignerMainMenuHeading3" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="locReportDesignerMainMenuHeading4" xml:space="preserve">
+    <value>Objects</value>
+  </data>
+  <data name="MainObject" xml:space="preserve">
+    <value>Main Object</value>
+    <comment>06/11/2006</comment>
+  </data>
+  <data name="Miscellaneous" xml:space="preserve">
+    <value>Miscellaneous</value>
+    <comment>30/01/2006</comment>
+  </data>
+  <data name="mnuClearGrp" xml:space="preserve">
+    <value>Clear Grouping</value>
+  </data>
+  <data name="mnuDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="mnuRename" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="ObjectsTab_ObjectsTabTitle" xml:space="preserve">
+    <value>Objects</value>
+  </data>
+  <data name="op" xml:space="preserve">
+    <value />
+  </data>
+  <data name="optGraph" xml:space="preserve">
+    <value>Graph</value>
+  </data>
+  <data name="optMatrix" xml:space="preserve">
+    <value>Matrix</value>
+  </data>
+  <data name="optSummary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="optTabular" xml:space="preserve">
+    <value>Tabular</value>
+  </data>
+  <data name="OtherOptions" xml:space="preserve">
+    <value>Other Options</value>
+  </data>
+  <data name="PropertiesTab_PropertiesTabTitle" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="RecentlyAdded" xml:space="preserve">
+    <value>Recently Saved</value>
+    <comment>19/02/2007</comment>
+  </data>
+  <data name="RecentlyAddedHelpText" xml:space="preserve">
+    <value>This section shows the 20 most recently saved reports in the selected report category.</value>
+    <comment>28/02/2007</comment>
+  </data>
+  <data name="RecentlyViewed" xml:space="preserve">
+    <value>Recently Viewed</value>
+    <comment>19/02/2007</comment>
+  </data>
+  <data name="RecentlyViewedHelpText" xml:space="preserve">
+    <value>This section shows the 20 most recently viewed reports in the selected report category.</value>
+    <comment>28/02/2007</comment>
+  </data>
+  <data name="RefreshButton" xml:space="preserve">
+    <value>Refresh</value>
+    <comment>25/02/2007</comment>
+  </data>
+  <data name="report" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="ReportCategoryTreeExceptionHeading" xml:space="preserve">
+    <value>Report Exception</value>
+    <comment>21/02/2007</comment>
+  </data>
+  <data name="ReportCategoryTreeSelectHeading" xml:space="preserve">
+    <value>Select Report Category</value>
+    <comment>21/02/2007</comment>
+  </data>
+  <data name="ReportImportInfo" xml:space="preserve">
+    <value>To import a report from Reporting Services, expand the folders from Reporting Services, click on the Report and drag it to the Category System.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportInfo" xml:space="preserve">
+    <value>Report Info</value>
+  </data>
+  <data name="ReportingServices" xml:space="preserve">
+    <value>Reporting Services</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportObject" xml:space="preserve">
+    <value>Data Object</value>
+    <comment>06/11/2006</comment>
+  </data>
+  <data name="ReportOptions" xml:space="preserve">
+    <value>Report Options</value>
+  </data>
+  <data name="ReportPageHeading" xml:space="preserve">
+    <value>Report Designer</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportPopupConfirmDelete" xml:space="preserve">
+    <value>Are you sure you want to delete the report:</value>
+    <comment>26/02/2007</comment>
+  </data>
+  <data name="ReportPopupConfirmDelete1" xml:space="preserve">
+    <value>Users may have this Report in their Favorites list.</value>
+  </data>
+  <data name="ReportPopupHeadingDelete" xml:space="preserve">
+    <value>Confirm Delete Report</value>
+    <comment>26/02/2007</comment>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reports</value>
+    <comment>19/02/2007</comment>
+  </data>
+  <data name="ReportSections" xml:space="preserve">
+    <value>Report Sections</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="ReportType" xml:space="preserve">
+    <value>Type</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="RowGrouping" xml:space="preserve">
+    <value>Row Grouping</value>
+    <comment>13/11/2006</comment>
+  </data>
+  <data name="RowSelection" xml:space="preserve">
+    <value>Row Selection</value>
+    <comment>13/11/2006</comment>
+  </data>
+  <data name="SaveToCategorySystem" xml:space="preserve">
+    <value>Save to Category System</value>
+    <comment>*</comment>
+  </data>
+  <data name="SearchText" xml:space="preserve">
+    <value>Search Object Related To</value>
+    <comment>07/11/2006</comment>
+  </data>
+  <data name="SOBrowseTab_PropertiesTabTitle" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="SOHead" xml:space="preserve">
+    <value>Reporting Objects</value>
+  </data>
+  <data name="SOList" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="SORelation" xml:space="preserve">
+    <value>Related Objects</value>
+  </data>
+  <data name="stdfilterDate" xml:space="preserve">
+    <value>Date Property</value>
+    <comment>23/01/2007</comment>
+  </data>
+  <data name="stdfilterInterval" xml:space="preserve">
+    <value>Interval</value>
+  </data>
+  <data name="StylingTab" xml:space="preserve">
+    <value>Conditional Formatting</value>
+    <comment>06/03/2007</comment>
+  </data>
+  <data name="toolboxHead" xml:space="preserve">
+    <value>Reporting Toolbox</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="ToolBoxTab" xml:space="preserve">
+    <value>Toolbox</value>
+    <comment>30/10/2006</comment>
+  </data>
+  <data name="viewPublish" xml:space="preserve">
+    <value>Publish as View</value>
+  </data>
+  <data name="xAxis" xml:space="preserve">
+    <value>X-Axis</value>
+  </data>
+  <data name="yAxis" xml:space="preserve">
+    <value>Y-Axis</value>
+  </data>
+</root>

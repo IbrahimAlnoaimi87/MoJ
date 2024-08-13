@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddButtonTooltip" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="CloseButtonTooltip" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="DisableTooltip" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="EnableTooltip" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="ErrorMessageDuplicatefile" xml:space="preserve">
+    <value>This file is already linked to your style profile</value>
+    <comment>Error message to display when the user attempts to add a url that is already in the url list.</comment>
+  </data>
+  <data name="ErrorMessageForbiddenFileError" xml:space="preserve">
+    <value>Access to file forbidden</value>
+  </data>
+  <data name="ErrorMessageInvalidFileType" xml:space="preserve">
+    <value>Please provide a valid CSS or JS file URL</value>
+  </data>
+  <data name="ErrorMessageUnauthorisedFileError" xml:space="preserve">
+    <value>User not authorized to access file</value>
+  </data>
+  <data name="ErrorMessageUnknownFileError" xml:space="preserve">
+    <value>We were unable to validate if this file exists. Link anyway?</value>
+  </data>
+  <data name="FileListFooterText" xml:space="preserve">
+    <value>These CSS styles and scripts will be available on every page that uses this style profile.</value>
+  </data>
+  <data name="FileListHeading" xml:space="preserve">
+    <value>External Files</value>
+  </data>
+  <data name="FileListLearnMoreText" xml:space="preserve">
+    <value>Learn more...</value>
+  </data>
+  <data name="FilePickerCloseButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="FilePickerHeading" xml:space="preserve">
+    <value>Link an external file</value>
+  </data>
+  <data name="FilePickerLinkButton" xml:space="preserve">
+    <value>Link External File</value>
+  </data>
+  <data name="FileTypeCSSTooltip" xml:space="preserve">
+    <value>CSS file</value>
+  </data>
+  <data name="FileTypeJSTooltip" xml:space="preserve">
+    <value>Javascript file</value>
+  </data>
+  <data name="FileUrlLabelHeading" xml:space="preserve">
+    <value>File URL:</value>
+  </data>
+  <data name="FileUrlWatermark" xml:space="preserve">
+    <value>Insert your external file URL here</value>
+  </data>
+  <data name="LinkFileButtonText" xml:space="preserve">
+    <value>Link External File</value>
+  </data>
+  <data name="LinkFileDescription" xml:space="preserve">
+    <value>All your external CSS and JavaScript files will be listed here</value>
+  </data>
+  <data name="RefreshTooltip" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="RemoveTooltip" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+</root>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AutoGenCreateItemUsingDisplayControls" xml:space="preserve">
+    <value>Create the Item {0} using display controls</value>
+    <comment>this setting, when enabled replaces the usual controls with data labels [eg: Create the Item View using display controls] [location: auto generate view pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenLoadItemAssocListClick" xml:space="preserve">
+    <value>Load the Item {0} when the associated List View is clicked</value>
+    <comment>this setting, when enabled will display the details of an item when it's selected in a list [eg: Load the Item View when the associated List View is clicked] [location: autogenerate form/view pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenObjectNameInUse" xml:space="preserve">
+    <value>The {0} name '{1}' is already in use. Please provide an alternative {2} name.</value>
+    <comment>[to be reviewed: spelling error][no coverage: qa]</comment>
+  </data>
+  <data name="AutoGenProvideFormName" xml:space="preserve">
+    <value>Please provide the Form name.</value>
+    <comment>this is an error message which is displayed when no name has been provided when creating a form [location: auto generate form pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenFormNameWatermark" xml:space="preserve">
+    <value>Type a name for this Form</value>
+    <comment>this is the watermark text which appears in a textbox where the user can enter a name when creating a new form [location: auto generate form pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenProvideViewName" xml:space="preserve">
+    <value>Please provide the View name.</value>
+    <comment>this is an error message which is displayed when no name has been provided when creating a view[location: auto generate view pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenRefreshListAssocListSubmit" xml:space="preserve">
+    <value>Refresh the List {0} when the associated Item View is submitted</value>
+    <comment>this setting, when enabled will display the details of an item in a list, once it's submitted. [eg: Refresh the List View when the associated Item View is submitted] [location: autogenerate form/view pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenRefreshListFormLoad" xml:space="preserve">
+    <value>Refresh the List {0} when the Form loads</value>
+    <comment>this setting, when enabled will refresh details of an item in a list, each time a form containing the list loads. [eg: Refresh the List View when the Form loads] [location: autogenerate form/view pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenSelectCategory" xml:space="preserve">
+    <value>Please select a category.</value>
+    <comment>this is an error message which is displayed when no category name has been provided when creating a view[location: auto generate view pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenSelectViewType" xml:space="preserve">
+    <value>Please select at least one View type.</value>
+    <comment>this is an error message which is displayed when no view type has been selected by the user [location: auto generate view pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenUnableToComplete" xml:space="preserve">
+    <value>Unable to execute and/or complete the auto-generation initialization process:</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="AutoGenUnableToGetSmoCat" xml:space="preserve">
+    <value>Unable to acquire the SmartObject category:</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="AutoGenUseSmoCat" xml:space="preserve">
+    <value>Use SmartObject category</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="CheckedOutByText" xml:space="preserve">
+    <value>Checked out by {0}</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="DisplayTemplateEmptyValidateText" xml:space="preserve">
+    <value>Provide a value to display.</value>
+  </data>
+  <data name="EmptyGridMessageText" xml:space="preserve">
+    <value>No items to display</value>
+    <comment>this is used throughout the application where a list does not contain any values [common]</comment>
+  </data>
+  <data name="FailedToCheckFixedKey" xml:space="preserve">
+    <value>Failed to check fixedlicense key</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="FailedToCheckServerKey" xml:space="preserve">
+    <value>Failed to check server license key</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="FailedToCheckUserKey" xml:space="preserve">
+    <value>Failed to check user license key</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="FormsLoggedInText" xml:space="preserve">
+    <value>{0} &lt;a href="{1}" class="sflogout-button" &gt;Sign Out&lt;/a&gt;</value>
+    <comment>this is a heading at the top of the page which displays a welcome message to the user and provides the option to sign out of the application [eg: Welcome John Doe [Sign Out]] [location: home header] [designtime] [to be reviewed]</comment>
+  </data>
+  <data name="LoadingText" xml:space="preserve">
+    <value>Loading ...</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="LoadingWaitText" xml:space="preserve">
+    <value>Loading, please wait ...</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="LoggedInText" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="MissingPasswordText" xml:space="preserve">
+    <value>Please provide a valid password to continue.</value>
+  </data>
+  <data name="MissingUsernameText" xml:space="preserve">
+    <value>Please provide a username to continue.</value>
+  </data>
+  <data name="MissingUsernameAndPassword" xml:space="preserve">
+    <value>Username and Password are required</value>
+  </data>
+  <data name="NoItemsToDisplay" xml:space="preserve">
+    <value>There are no items to display.</value>
+    <comment>this is used throughout the application to indicate when there are no items to display in a list [common]</comment>
+  </data>
+  <data name="NotLoggedInText" xml:space="preserve">
+    <value>Please Sign In</value>
+  </data>
+  <data name="ObjectDeletionConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to delete the selected {0}?</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="ObjectUndoCheckOutConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to cancel the check out of the selected {0}? Any pending changes will be lost.</value>
+    <comment>this text is displayed in a confirmation message when the user chooses to undo checkout of an object [eg. Are you sure you want to cancel the check out of the selected Form? Any pending changes will be lost.] [designtime]</comment>
+  </data>
+  <data name="PoweredByText" xml:space="preserve">
+    <value>Powered by K2 blackpearl</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="ServerNotLicensed" xml:space="preserve">
+    <value>The server is not licensed (MachineName: {0}, MachineCode: {1}).</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="ValidationSelectObject" xml:space="preserve">
+    <value>Select a {0}.</value>
+  </data>
+  <data name="WizardExitConfirmationText" xml:space="preserve">
+    <value>All relevant data will be lost.</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Failed to sign in with the given user name and password.</value>
+  </data>
+  <data name="NoScriptContent" xml:space="preserve">
+    <value>Note: Your browser must have JavaScript capabilities enabled in order for you to be able to use SmartForms.</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="InvalidSecurityLabel" xml:space="preserve">
+    <value>Security label '{0}' is invalid.</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="CurrentWindow" xml:space="preserve">
+    <value>Current Window</value>
+    <comment>this will open a URL in the browsers current window [location: rule designer] [designtime]</comment>
+  </data>
+  <data name="NewWindowOrTab" xml:space="preserve">
+    <value>New Window (or Tab)</value>
+    <comment>this will open a URL in a new window or browser tab [location: rule designer] [designtime]</comment>
+  </data>
+  <data name="ParentWindow" xml:space="preserve">
+    <value>Parent Window</value>
+    <comment>this will open a URL in the browsers parent window [location: rule designer] [designtime]</comment>
+  </data>
+  <data name="TextboxWatermarkText" xml:space="preserve">
+    <value>Type a value</value>
+    <comment>this allows the user to  type a value into a textbox [location: rule designer pop up] [designtime]</comment>
+  </data>
+  <data name="TokenboxWatermarkText" xml:space="preserve">
+    <value>Type or drag a value</value>
+    <comment>this allows the user to either drop and object or type a value into a textbox [location: rule designer pop up] [designtime]</comment>
+  </data>
+  <data name="ModalDialog" xml:space="preserve">
+    <value>Modal Dialog Window</value>
+    <comment>this will open a URL in a pop up window (also known as a modal dialog window). [location: rule designer] [designtime]</comment>
+  </data>
+  <data name="PixelPercentageValuesOnlyText" xml:space="preserve">
+    <value>You have entered an invalid {0}. Only whole numbers, percentages not exceeding 100% and pixel values up to 32767px are supported.</value>
+  </data>
+  <data name="PixelValuesOnlyText" xml:space="preserve">
+    <value>You have entered an invalid {0} value. Only whole numbers and pixel values up to 32767px are supported.</value>
+  </data>
+  <data name="SessionExpirationWarningExtendableText" xml:space="preserve">
+    <value>Your session will expire in another {0} seconds. Would you like to extend it?</value>
+  </data>
+  <data name="SessionExpirationWarningNonExtendableText" xml:space="preserve">
+    <value>Your session will expire in another {0} seconds. Please save your progress before the session expires.</value>
+  </data>
+  <data name="SessionExpiredText" xml:space="preserve">
+    <value>Your session has expired. All progress has been lost. Close this dialog to sign in again, or alternatively, refresh your browser to continue.</value>
+  </data>
+  <data name="SessionExpirationText" xml:space="preserve">
+    <value>Session Expiration</value>
+  </data>
+  <data name="SessionKeepAliveText" xml:space="preserve">
+    <value>Keep this session alive automatically</value>
+  </data>
+  <data name="ErrorNotAuthorized" xml:space="preserve">
+    <value>Not authorized</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="CredentialsNeededText" xml:space="preserve">
+    <value>{0} method {1} requires your credentials to continue.</value>
+    <comment>Used for description / extra information in login popup which will be displayed in the event of authentication details not cached when trying to execute an SMO call that requires credentials. {0} should be replaced by the provider friendly name of the caller of the method that requires authentication. {1} should be replaced by the provider method name that failed.</comment>
+  </data>
+  <data name="CredentialsNeededNoMethodText" xml:space="preserve">
+    <value>{0} requires your credentials to continue.</value>
+    <comment>Used for description / extra information in login popup which will be displayed in the event of authentication details not cached when trying to execute an SMO call that requires credentials. {0} should be replaced by the provider friendly name of the caller of the method that requires authentication.</comment>
+  </data>
+  <data name="TargetMappingNoLongerValidMessage" xml:space="preserve">
+    <value>The configuration has been adjusted automatically.  Mappings were found that are no longer valid for the context.  These mappings have been removed.</value>
+    <comment>This will show after TargetMappingNoLongerValidHeading</comment>
+  </data>
+  <data name="TargetMappingNoLongerValidCommit" xml:space="preserve">
+    <value>Save these changes or they will be lost.</value>
+    <comment>This will show after TargetMappingNoLongerValidMessage</comment>
+  </data>
+  <data name="TargetMappingNoLongerValidDetail" xml:space="preserve">
+    <value>The following mappings have been removed:</value>
+    <comment>This will show in details after TargetMappingNoLongerValidMessage</comment>
+  </data>
+  <data name="UnknownText" xml:space="preserve">
+    <value>Unknown</value>
+    <comment>A generic resource value for the common phrase "Unknown"</comment>
+  </data>
+  <data name="FailedToDownloadFile" xml:space="preserve">
+    <value>Failed to download file from from temporary file storage remote server.</value>
+    <comment>This will warn about the failure of downloading the temporary cache file from the centralized remote server.</comment>
+  </data>
+  <data name="FailedToUploadFile" xml:space="preserve">
+    <value>Failed to upload file to the remote server.</value>
+    <comment>This will warn about the failure of uploading the temporary cache file to the centralized remote server.</comment>
+  </data>
+  <data name="LogoutText" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="SendLinkText" xml:space="preserve">
+    <value>Send Link</value>
+    <comment>seen in the avatar popup, to send email with a link in it</comment>
+  </data>
+</root>

@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AutoMap_Values" xml:space="preserve">
+    <value>Auto Map</value>
+    <comment>this is an option which automatically creates a mapping/link between two objects [location: rule designer pop up - execute a method] [designtime]</comment>
+  </data>
+  <data name="Clear_AllValues" xml:space="preserve">
+    <value>Clear All</value>
+    <comment>this clears any objects which may have been configured [location: rule designer pop up - execute a method] [designtime]</comment>
+  </data>
+  <data name="Clear_AllValuesDesc" xml:space="preserve">
+    <value>Clear All Mapped Fields</value>
+    <comment>this toolip indicates the user may clear any objects which may have been configured [location: rule designer pop up - execute a method] [designtime]</comment>
+  </data>
+  <data name="Clear_SelectedValue" xml:space="preserve">
+    <value>Clear Selected</value>
+    <comment>this clears any mappings which are selected[location: rule designer pop up - execute a method] [designtime]</comment>
+  </data>
+  <data name="Clear_SelectedValueDesc" xml:space="preserve">
+    <value>Clear Selected Field</value>
+    <comment>this is a tooltip which indicates the user may clear any mappings which are selected[location: rule designer pop up - execute a method] [designtime]</comment>
+  </data>
+  <data name="ListDisplay" xml:space="preserve">
+    <value>Display Row(s)</value>
+    <comment>this is the title of a folder which contains data labels for each row [location: context tree] [runtime]</comment>
+  </data>
+  <data name="ListEdit" xml:space="preserve">
+    <value>Add/Edit Row</value>
+    <comment>Allows for adding and editing of and object</comment>
+  </data>
+  <data name="ListFooter" xml:space="preserve">
+    <value>Footer Row(s)</value>
+    <comment>this is the title of a folder which contains the labels for each aggregate [location: context tree] [runtime]</comment>
+  </data>
+  <data name="ListHeader" xml:space="preserve">
+    <value>Header</value>
+    <comment>this is the title of a folder which contains the labels for each column header [location: context tree] [runtime]</comment>
+  </data>
+  <data name="NoItemsToDisplay" xml:space="preserve">
+    <value>No items to display</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="SystemValues" xml:space="preserve">
+    <value>System Values</value>
+    <comment>[no coverage: qa]</comment>
+  </data>
+  <data name="SystemValuesBrowserCulture" xml:space="preserve">
+    <value>Browser Culture</value>
+    <comment>This is the locale setting of the browser [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesCurrentDate" xml:space="preserve">
+    <value>Current Date and Time</value>
+    <comment>This is one of the options available under System Values [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesCurrentDateOnly" xml:space="preserve">
+    <value>Current Date</value>
+    <comment>This is one of the options available under System Values [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesCurrentTime" xml:space="preserve">
+    <value>Current Time</value>
+    <comment>This is one of the options available under System Values [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesCurrentUserFQN" xml:space="preserve">
+    <value>FQN</value>
+    <comment>This is an abbreviation of "Fully Qualified Name" [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesCurrentUserName" xml:space="preserve">
+    <value>Name</value>
+    <comment>This is the current user's name [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesDescription" xml:space="preserve">
+    <value>Description</value>
+    <comment>This is a description of the user [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesDisplayName" xml:space="preserve">
+    <value>Display Name</value>
+    <comment>This is the display name of the current user [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesEmail" xml:space="preserve">
+    <value>Email</value>
+    <comment>This refers to the current users email address [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesErrorDetail" xml:space="preserve">
+    <value>Error Details</value>
+    <comment>This describes the error that occurred [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesErrorMessage" xml:space="preserve">
+    <value>Error Message</value>
+    <comment>This describes the error that occurred [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesErrorType" xml:space="preserve">
+    <value>Error Type</value>
+    <comment>This describes the error type [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesManagerFQN" xml:space="preserve">
+    <value>Manager</value>
+    <comment>This is the manager's fully qualified name [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesPlatform" xml:space="preserve">
+    <value>Platform</value>
+    <comment>This refers to the systems software platform [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesScreenHeight" xml:space="preserve">
+    <value>Screen Height</value>
+    <comment>This is the height of the system's monitor [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesScreenWidth" xml:space="preserve">
+    <value>Screen Width</value>
+    <comment>This is the width of the system's monitor [location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesUserAgent" xml:space="preserve">
+    <value>User Agent</value>
+    <comment>This is referring to a software agent eg. an email reader is a mail user agent [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_ControlMethodParameters" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="TreeExtraHeading_ControlMethodProperties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="TreeExtraHeading_ControlMethodResult" xml:space="preserve">
+    <value>Execution result</value>
+  </data>
+  <data name="TreeExtraHeading_Controls" xml:space="preserve">
+    <value>Controls</value>
+    <comment>This the title of a folder which contains controls [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_Expressions" xml:space="preserve">
+    <value>Expressions</value>
+    <comment>This the title of a folder which contains expressions[location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_Fields" xml:space="preserve">
+    <value>Fields</value>
+    <comment>This the title of a folder which contains fields[location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_InputProperties" xml:space="preserve">
+    <value>Input Properties</value>
+    <comment>This the title of a folder which contains input properties [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_Methods" xml:space="preserve">
+    <value>Methods</value>
+    <comment>This the title of a folder which contains methods [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_Parameters" xml:space="preserve">
+    <value>Parameters</value>
+    <comment>This the title of a folder which contains parameters [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_ReturnProperties" xml:space="preserve">
+    <value>Return Properties</value>
+    <comment>This the title of a folder which contains return properties [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_SystemValues" xml:space="preserve">
+    <value>System Values</value>
+    <comment>This the title of a folder which contains System related settings and values [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_SystemValuesClient" xml:space="preserve">
+    <value>Client</value>
+    <comment>This the title of a folder which contains Client related settings and values [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_SystemValuesDate" xml:space="preserve">
+    <value>Current Date</value>
+    <comment>This the title of a folder which contains Date and time related settings and values [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_SystemValuesError" xml:space="preserve">
+    <value>Error</value>
+    <comment>This the title of a folder which contains Error related settings and values [location: context tree][common]</comment>
+  </data>
+  <data name="TreeExtraHeading_SystemValuesUser" xml:space="preserve">
+    <value>Current User</value>
+    <comment>This the title of a folder which contains user related settings and values [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeHeading_EnvironmentFields" xml:space="preserve">
+    <value>Environment Fields</value>
+    <comment>This the title of a folder which contains environment related settings and values [location: context tree] [common]</comment>
+  </data>
+  <data name="Tree_DropItemMessage" xml:space="preserve">
+    <value>Type or Drop an item</value>
+    <comment>this is a watermark which appears in a textbox which indicates to users they are allowed to drop or type items into that textbox [location: rule designer pop up - execute method - output mappings] [designtime]</comment>
+  </data>
+  <data name="Tree_DropItemMessageDragOnly" xml:space="preserve">
+    <value>Drop an item</value>
+    <comment>this is a watermark which appears in a textbox which indicates to users they are allowed to drop items into that textbox [location: rule designer pop up - execute method - output mappings] [designtime]</comment>
+  </data>
+  <data name="Workflows" xml:space="preserve">
+    <value>Workflows</value>
+    <comment>This the title of a folder which contains a list of workflows [location: rules designer - actions] [common]</comment>
+  </data>
+  <data name="TitleSystemNameLabel" xml:space="preserve">
+    <value>System Name: {0}</value>
+    <comment>this is the tooltip which appears when hovering over system objects which are displayed in the context tree[to be reviewed] [location: context tree tooltip] [common]</comment>
+  </data>
+  <data name="TitleDescriptionLabel" xml:space="preserve">
+    <value>Description: {0}</value>
+  </data>
+  <data name="TreeExtraHeading_SystemValuesRenderMode" xml:space="preserve">
+    <value>Mode</value>
+    <comment>This is the title of a folder which contains modes that a View or Form can be rendered in.[location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_SystemValuesRenderModeTooltip" xml:space="preserve">
+    <value>Normal: Forms and Views have full functionality and require a connection to the server.\n
+Offline: Forms and Views have limited functionality and work without a connection to the server.</value>
+    <comment>This is the tooltip for the Mode that a View or Form can be run in. [location: context tree]</comment>
+  </data>
+  <data name="SystemValuesCurrentWorkflowAction" xml:space="preserve">
+    <value>Action</value>
+    <comment>This refers to the workflow current action[location: context tree] [common]</comment>
+  </data>
+  <data name="SystemValuesCurrentWorkflowActivity" xml:space="preserve">
+    <value>Full Name</value>
+    <comment>This refers to the workflow current activity[location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_SystemValuesWorkflow" xml:space="preserve">
+    <value>Workflow View</value>
+    <comment>This the title of a folder which contains environment related settings and values [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_Activity" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="SystemValuesCurrentWorkflowActivityDisplayName" xml:space="preserve">
+    <value>Display Name</value>
+    <comment>This refers to the workflow current activity display name[location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_DataFields" xml:space="preserve">
+    <value>Data Fields</value>
+    <comment>This the title of a folder which contains data fields [location: context tree] [common]</comment>
+  </data>
+  <data name="TreeExtraHeading_ItemReferences" xml:space="preserve">
+    <value>Item References</value>
+    <comment>This the title of a folder which contains item references[location: context tree] [common]</comment>
+  </data>
+</root>

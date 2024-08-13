@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionAdd" xml:space="preserve">
+    <value>Add Menu Item</value>
+  </data>
+  <data name="ActionAddExisting" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ActionDescriptionLabel" xml:space="preserve">
+    <value>Menu Item Description</value>
+  </data>
+  <data name="ActionEdit" xml:space="preserve">
+    <value>Edit Menu Item</value>
+  </data>
+  <data name="ActionHeading" xml:space="preserve">
+    <value>Menu Item</value>
+  </data>
+  <data name="ActionMove" xml:space="preserve">
+    <value>Move Menu Item</value>
+  </data>
+  <data name="ActionNameLabel" xml:space="preserve">
+    <value>Menu Item Name</value>
+  </data>
+  <data name="ActionPermissions" xml:space="preserve">
+    <value>Menu Item Permissions</value>
+  </data>
+  <data name="ActionRemove" xml:space="preserve">
+    <value>Remove Menu Item</value>
+  </data>
+  <data name="ActionRemoveConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove this menu item?</value>
+  </data>
+  <data name="ActionRemoveConfirmNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ActionRemoveConfirmYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ActionRemoveHeading" xml:space="preserve">
+    <value>Remove Menu Item</value>
+  </data>
+  <data name="ActionSave" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ActionSearchClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ActionSearchClose" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ActionSearchFind" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ActionSearchLabel" xml:space="preserve">
+    <value>Search for Existing Menu Items</value>
+  </data>
+  <data name="ActionWizardAddHeading" xml:space="preserve">
+    <value>Add Menu Item</value>
+  </data>
+  <data name="ActionWizardEditHeading" xml:space="preserve">
+    <value>Edit Menu Item</value>
+  </data>
+  <data name="ActionWizardMessageClose" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ActionWizardNoSelection" xml:space="preserve">
+    <value>Please select a menu item</value>
+  </data>
+  <data name="ApplicationAdd" xml:space="preserve">
+    <value>Add Application</value>
+  </data>
+  <data name="ApplicationCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ApplicationConfigurationHeading" xml:space="preserve">
+    <value> Application Configuration</value>
+  </data>
+  <data name="ApplicationConfigure" xml:space="preserve">
+    <value>Configure Application</value>
+  </data>
+  <data name="ApplicationDescriptionLabel" xml:space="preserve">
+    <value>Application Description</value>
+  </data>
+  <data name="ApplicationEdit" xml:space="preserve">
+    <value>Edit Application</value>
+  </data>
+  <data name="ApplicationHeading" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="ApplicationNameLabel" xml:space="preserve">
+    <value>Application Name</value>
+  </data>
+  <data name="ApplicationRemove" xml:space="preserve">
+    <value>Remove Application</value>
+  </data>
+  <data name="ApplicationRemoveConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove this application?</value>
+  </data>
+  <data name="ApplicationRemoveConfirmNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ApplicationRemoveConfirmYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ApplicationRemoveHeading" xml:space="preserve">
+    <value>Remove Application</value>
+  </data>
+  <data name="ApplicationSave" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ApplicationShare" xml:space="preserve">
+    <value>Share Application</value>
+  </data>
+  <data name="ApplicationShareConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to share this application?</value>
+  </data>
+  <data name="ApplicationShareConfirmNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ApplicationShareConfirmYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ApplicationShareHeading" xml:space="preserve">
+    <value>Share Application</value>
+  </data>
+  <data name="ApplicationShareRefresh" xml:space="preserve">
+    <value>Refresh Application Sharing</value>
+  </data>
+  <data name="ApplicationShareRefreshConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to refresh the sharing of this application?</value>
+  </data>
+  <data name="ApplicationShareStop" xml:space="preserve">
+    <value>Stop Sharing Application</value>
+  </data>
+  <data name="ApplicationShareStopConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to stop sharing this application?</value>
+  </data>
+  <data name="ApplicationWizardAddHeading" xml:space="preserve">
+    <value>Add Application</value>
+  </data>
+  <data name="ApplicationWizardEditHeading" xml:space="preserve">
+    <value>Edit Application</value>
+  </data>
+  <data name="ApplicationWizardMessageClose" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ApplicationWizardNoSelection" xml:space="preserve">
+    <value>Please select an application</value>
+  </data>
+  <data name="CategoryAdd" xml:space="preserve">
+    <value>Add Menu</value>
+  </data>
+  <data name="CategoryCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CategoryEdit" xml:space="preserve">
+    <value>Edit Menu</value>
+  </data>
+  <data name="CategoryHeading" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="CategoryMove" xml:space="preserve">
+    <value>Move Menu</value>
+  </data>
+  <data name="CategoryNameLabel" xml:space="preserve">
+    <value>Menu Name</value>
+  </data>
+  <data name="CategoryRemove" xml:space="preserve">
+    <value>Remove Menu</value>
+  </data>
+  <data name="CategoryRemoveConfirmationText" xml:space="preserve">
+    <value>Are you sure you want to remove this menu?</value>
+  </data>
+  <data name="CategoryRemoveConfirmNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="CategoryRemoveConfirmYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="CategoryRemoveHeading" xml:space="preserve">
+    <value>Remove Menu</value>
+  </data>
+  <data name="CategorySave" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="CategoryWizardAddHeading" xml:space="preserve">
+    <value>Add Menu</value>
+  </data>
+  <data name="CategoryWizardEditHeading" xml:space="preserve">
+    <value>Edit Menu</value>
+  </data>
+  <data name="CategoryWizardMessageClose" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="CategoryWizardNoSelection" xml:space="preserve">
+    <value>Please select a menu</value>
+  </data>
+  <data name="CreateDateLabel" xml:space="preserve">
+    <value>Created Date</value>
+  </data>
+  <data name="CreatedByLabel" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="CreatedPageLabel" xml:space="preserve">
+    <value>Created Page</value>
+  </data>
+  <data name="CreatePageLabel" xml:space="preserve">
+    <value>Create Page</value>
+  </data>
+  <data name="DuplicateAppNameHeading" xml:space="preserve">
+    <value>Application could not be saved</value>
+  </data>
+  <data name="DuplicateAppNameMessage" xml:space="preserve">
+    <value>Another application exists with the same name. Please try again.</value>
+  </data>
+  <data name="DuplicateCatNameHeading" xml:space="preserve">
+    <value>Menu could not be saved</value>
+  </data>
+  <data name="DuplicateCatNameMessage" xml:space="preserve">
+    <value>Another menu exists with the same name within this application.  Please try again.</value>
+  </data>
+  <data name="ExistingPageLabel" xml:space="preserve">
+    <value>Existing Page</value>
+  </data>
+  <data name="ExternalURL" xml:space="preserve">
+    <value>External URL</value>
+  </data>
+  <data name="FunctionHeading" xml:space="preserve">
+    <value>Functions</value>
+  </data>
+  <data name="LogoLabel" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="MenuDetail" xml:space="preserve">
+    <value>Menu Item Detail</value>
+  </data>
+  <data name="ModifiedByLabel" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="ModifiedDateLabel" xml:space="preserve">
+    <value>Modified Date</value>
+  </data>
+  <data name="MoveActionAlreadyExists" xml:space="preserve">
+    <value>This menu item already exists in the specific menu</value>
+  </data>
+  <data name="MoveActionHeading" xml:space="preserve">
+    <value>Move Menu Item</value>
+  </data>
+  <data name="MoveCategoryHeading" xml:space="preserve">
+    <value>Move Menu</value>
+  </data>
+  <data name="NewPage" xml:space="preserve">
+    <value>New Page</value>
+  </data>
+  <data name="PageDetail" xml:space="preserve">
+    <value>Page Detail</value>
+  </data>
+  <data name="PageHeader" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="PageHeading" xml:space="preserve">
+    <value>Application Administration</value>
+  </data>
+  <data name="PageName" xml:space="preserve">
+    <value>Page Name</value>
+  </data>
+  <data name="PageType" xml:space="preserve">
+    <value>Page Type</value>
+  </data>
+  <data name="PrivateActionLabel" xml:space="preserve">
+    <value>Private Menu Item</value>
+  </data>
+  <data name="RefreshMenu" xml:space="preserve">
+    <value>Refresh my Menu</value>
+  </data>
+  <data name="SharingSettingsLabel" xml:space="preserve">
+    <value>Sharing Settings</value>
+  </data>
+  <data name="SharingSettingsText" xml:space="preserve">
+    <value>Shared and Visible</value>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="WizardHeadAppDetail" xml:space="preserve">
+    <value>Application Details</value>
+  </data>
+  <data name="WizardHeadFinish" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="WizardHeadMenuDesign" xml:space="preserve">
+    <value>Menu Design</value>
+  </data>
+  <data name="WizardHeadStyling" xml:space="preserve">
+    <value>Style your application (optional)</value>
+  </data>
+  <data name="WizardInfoAppDetail" xml:space="preserve">
+    <value>Provide a name and description for the application</value>
+  </data>
+  <data name="WizardInfoFinish" xml:space="preserve">
+    <value>Thank you.  Your application has been created successfully.</value>
+  </data>
+  <data name="WizardInfoMenuDesign" xml:space="preserve">
+    <value>Create a menu structure for your application</value>
+  </data>
+  <data name="WizardInfoStyling" xml:space="preserve">
+    <value>Customise the look of your application by uploading a logo and selecting a colour scheme</value>
+  </data>
+  <data name="WizardMainHeader" xml:space="preserve">
+    <value>Application Designer</value>
+  </data>
+  <data name="ApplicationSaveAsHeader" xml:space="preserve">
+    <value>Save Application As</value>
+  </data>
+  <data name="ApplicationSaveAsInfo" xml:space="preserve">
+    <value>Enter an alternative name for the application.</value>
+  </data>
+  <data name="CheckInLabel" xml:space="preserve">
+    <value>Check In:</value>
+  </data>
+  <data name="NewNameLabel" xml:space="preserve">
+    <value>New Name:</value>
+  </data>
+  <data name="SelectCategoryLabel" xml:space="preserve">
+    <value>Select Category:</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ValidationApplicationNameRequired" xml:space="preserve">
+    <value>Application Name is required.</value>
+  </data>
+  <data name="ValidationApplicationSaveAsNameExists" xml:space="preserve">
+    <value>An Application named '{0}' already exists. Please enter an alternative name.</value>
+  </data>
+  <data name="ValidationSaveApplicationAs" xml:space="preserve">
+    <value>Please enter an alternative name for the Application.</value>
+  </data>
+  <data name="ClonePagesLabel" xml:space="preserve">
+    <value>Clone Page(s):</value>
+  </data>
+  <data name="ValidationPageNameExists" xml:space="preserve">
+    <value>A Page named '{0}' already exists. Please enter an alternative name.</value>
+  </data>
+  <data name="ValidationSavePageAs" xml:space="preserve">
+    <value>Please enter an alternative name for each Page.</value>
+  </data>
+</root>

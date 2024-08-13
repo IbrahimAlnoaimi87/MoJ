@@ -1,0 +1,185 @@
+/*!
+ SourceCode.Forms.Controls.Web.ControlPack.Scripts.Style.GenericChartBase.css (Embedded resource)
+*/
+/* MinifyError
+(2,3): run-time error CSS1062: Expected semicolon or closing curly-brace, found '-'
+(14,28): run-time error CSS1039: Token not allowed after unary operator: '-legend-height'
+(39,16): run-time error CSS1039: Token not allowed after unary operator: '-legend-height'
+ */
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart {
+  --legend-height: 28px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .panel-body-m,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .panel-body-m-c,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .panel-body-wrapper,
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .panel-body-wrapper > div {
+  height: 100%;
+  width: 100%;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .GenericChartControlContainer {
+  overflow: hidden !important;
+  /* Overriding .theme-entry .SFC .stylewrapper*/
+  height: calc(100% - var(--legend-height));
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .GenericChartControlContainer .GenericChartContainer {
+  height: calc(100% - 28px);
+  width: 100%;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .GenericChartControlContainer .GenericChartContainer .noData-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  background-color: #fff;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .GenericChartControlContainer .GenericChartContainer .noData-overlay .noData-overlay-message {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .GenericChartControlContainer .legends-cntr {
+  height: var(--legend-height);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .GenericChartControlContainer .legends-cntr .legend-item {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .GenericChartControlContainer .legends-cntr .legend-item.first {
+  margin-left: 0;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .GenericChartControlContainer .legends-cntr .legend-item .legend-dot {
+  width: 10px;
+  height: 10px;
+  align-self: center;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .GenericChartControlContainer .legends-cntr .legend-item .legend-text {
+  align-self: center;
+  margin-left: 5px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor0 {
+  color: #4f6f18;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor1 {
+  color: #006a71;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor2 {
+  color: #d4891c;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor3 {
+  color: #4d374b;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor4 {
+  color: #505858;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor5 {
+  color: #B21e28;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor6 {
+  color: #7ac142;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor7 {
+  color: #72aeb6;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor8 {
+  color: #Deb407;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor9 {
+  color: #A682a3;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor10 {
+  color: #A0a1a2;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-GenericChart .genericChartThemeWrapper .genericChartControlColor11 {
+  color: #D9515b;
+}
+/* stacked */
+.drop-menu ul.drop-menu a.genericchartstacktype-normal,
+.drop-menu ul.drop-menu a.genericchartstacktype-normal,
+.input-control.dropdown-box.genericchartstacktype-normal .input-control-wrapper,
+.input-control.dropdown-box.genericchartstacktype-normal .input-control-wrapper {
+  background-image: url('RT.SourceCode.Forms.Controls.Web.ControlPack.GenericChartResources/webresource.png?_gv=-193872155-20240702-012609');
+  background-repeat: no-repeat;
+  background-position: 1px 50%;
+  padding-left: 20px;
+}
+/* 100% stacked */
+.drop-menu ul.drop-menu a.genericchartstacktype-onehundred,
+.drop-menu ul.drop-menu a.genericchartstacktype-onehundred,
+.input-control.dropdown-box.genericchartstacktype-onehundred .input-control-wrapper,
+.input-control.dropdown-box.genericchartstacktype-onehundred .input-control-wrapper {
+  background-image: url('RT.SourceCode.Forms.Controls.Web.ControlPack.GenericChartResources/webresource0.png?_gv=-193872155-20240702-012609');
+  background-repeat: no-repeat;
+  background-position: 1px 50%;
+  padding-left: 20px;
+}
+/* no stack */
+.drop-menu ul.drop-menu a.genericchartstacktype-none,
+.drop-menu ul.drop-menu a.genericchartstacktype-none,
+.input-control.dropdown-box.genericchartstacktype-none .input-control-wrapper,
+.input-control.dropdown-box.genericchartstacktype-none .input-control-wrapper {
+  background-image: url('RT.SourceCode.Forms.Controls.Web.ControlPack.GenericChartResources/webresource1.png?_gv=-193872155-20240702-012609');
+  background-repeat: no-repeat;
+  background-position: 1px 50%;
+  padding-left: 20px;
+}
+/* area chart */
+.drop-menu ul.drop-menu a.genericcharttype-area,
+.drop-menu ul.drop-menu a.genericcharttype-area,
+.input-control.dropdown-box.genericcharttype-area .input-control-wrapper,
+.input-control.dropdown-box.genericcharttype-area .input-control-wrapper {
+  background-image: url('RT.SourceCode.Forms.Controls.Web.ControlPack.GenericChartResources/webresource2.png?_gv=-193872155-20240702-012609');
+  background-repeat: no-repeat;
+  background-position: 1px 50%;
+  padding-left: 20px;
+}
+/* bar chart */
+.drop-menu ul.drop-menu a.genericcharttype-bar,
+.drop-menu ul.drop-menu a.genericcharttype-bar,
+.input-control.dropdown-box.genericcharttype-bar .input-control-wrapper,
+.input-control.dropdown-box.genericcharttype-bar .input-control-wrapper {
+  background-image: url('RT.SourceCode.Forms.Controls.Web.ControlPack.GenericChartResources/webresource3.png?_gv=-193872155-20240702-012609');
+  background-repeat: no-repeat;
+  background-position: 1px 50%;
+  padding-left: 20px;
+}
+/* column chart */
+.drop-menu ul.drop-menu a.genericcharttype-column,
+.drop-menu ul.drop-menu a.genericcharttype-column,
+.input-control.dropdown-box.genericcharttype-column .input-control-wrapper,
+.input-control.dropdown-box.genericcharttype-column .input-control-wrapper {
+  background-image: url('RT.SourceCode.Forms.Controls.Web.ControlPack.GenericChartResources/webresource4.png?_gv=-193872155-20240702-012609');
+  background-repeat: no-repeat;
+  background-position: 1px 50%;
+  padding-left: 20px;
+}
+/* line chart */
+.drop-menu ul.drop-menu a.genericcharttype-line,
+.drop-menu ul.drop-menu a.genericcharttype-line,
+.input-control.dropdown-box.genericcharttype-line .input-control-wrapper,
+.input-control.dropdown-box.genericcharttype-line .input-control-wrapper {
+  background-image: url('RT.SourceCode.Forms.Controls.Web.ControlPack.GenericChartResources/webresource5.png?_gv=-193872155-20240702-012609');
+  background-repeat: no-repeat;
+  background-position: 1px 50%;
+  padding-left: 20px;
+}
+/* pie chart */
+.drop-menu ul.drop-menu a.genericcharttype-pie,
+.drop-menu ul.drop-menu a.genericcharttype-pie,
+.input-control.dropdown-box.genericcharttype-pie .input-control-wrapper,
+.input-control.dropdown-box.genericcharttype-pie .input-control-wrapper {
+  background-image: url('RT.SourceCode.Forms.Controls.Web.ControlPack.GenericChartResources/webresource6.png?_gv=-193872155-20240702-012609');
+  background-repeat: no-repeat;
+  background-position: 1px 50%;
+  padding-left: 20px;
+}

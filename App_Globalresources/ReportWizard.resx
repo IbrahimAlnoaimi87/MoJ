@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="AggregationDataTypesInvalid" xml:space="preserve">
+    <value>Aggregations Average and Sum can not be applied to DateTime, Text, Memo, Multivalue or YesNo columns.</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="AggregationExists" xml:space="preserve">
+    <value>This aggregation on this column already exist.</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="AllRelatedData" xml:space="preserve">
+    <value>All related data</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="BindTo" xml:space="preserve">
+    <value>Bind To</value>
+    <comment>*</comment>
+  </data>
+  <data name="btnInsert" xml:space="preserve">
+    <value>Insert</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="BuildColumnGroupMaxReached" xml:space="preserve">
+    <value>You reached the maximum number of column groupings, you will not be able to add more column groupings.</value>
+    <comment>*</comment>
+  </data>
+  <data name="BuildRowGroupAlreadyExists" xml:space="preserve">
+    <value>A grouping on this property already exists.</value>
+    <comment>*</comment>
+  </data>
+  <data name="BuildRowGroupMaxReached" xml:space="preserve">
+    <value>You reached the maximum number of row groupings, you will not be able to add more row groupings.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ButtonClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ButtonClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ButtonFinish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="ButtonNewAction" xml:space="preserve">
+    <value>New Action</value>
+  </data>
+  <data name="ButtonNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="ButtonPrevious" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="ButtonSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Calendar</value>
+    <comment>*</comment>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="chkValidate" xml:space="preserve">
+    <value>Validate Filter</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>Click Here</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="CloseObject" xml:space="preserve">
+    <value>Close Object</value>
+    <comment>*</comment>
+  </data>
+  <data name="ClosestRelatedData" xml:space="preserve">
+    <value>Closest related data</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="cmd1" xml:space="preserve">
+    <value>1</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmd2" xml:space="preserve">
+    <value>2</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmd2CYAgo" xml:space="preserve">
+    <value>2 CY Ago</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmd2FYAgo" xml:space="preserve">
+    <value>2 FY Ago</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmd3" xml:space="preserve">
+    <value>3</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmd4" xml:space="preserve">
+    <value>4</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmd5" xml:space="preserve">
+    <value>5</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmd6" xml:space="preserve">
+    <value>6</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmd7" xml:space="preserve">
+    <value>7</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmd8" xml:space="preserve">
+    <value>8</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmd9" xml:space="preserve">
+    <value>9</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdAnd" xml:space="preserve">
+    <value>AND</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentandNext3CQ" xml:space="preserve">
+    <value>Current and Next 3 CQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentandNext3FQ" xml:space="preserve">
+    <value>Currentand Next 3 FQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentandNextCQ" xml:space="preserve">
+    <value>Current and Next CQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentandNextCY" xml:space="preserve">
+    <value>Current and Next CY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentandNextFQ" xml:space="preserve">
+    <value>Current and Next FQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentandNextFY" xml:space="preserve">
+    <value>Current and Next FY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentandNextMonth" xml:space="preserve">
+    <value>Current and Next Month</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentCQ" xml:space="preserve">
+    <value>Current CQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentCY" xml:space="preserve">
+    <value>Current CY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentFQ" xml:space="preserve">
+    <value>Current FQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCurrentFY" xml:space="preserve">
+    <value>Current FY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdCustomDateRange" xml:space="preserve">
+    <value>Custom date range</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdEqual" xml:space="preserve">
+    <value>Equal</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdGreater" xml:space="preserve">
+    <value>Greater</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdGreaterandEqual" xml:space="preserve">
+    <value>Greater and Equal</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdHDCalendarMonth" xml:space="preserve">
+    <value>Calendar Month</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdHDCalendarQuarter" xml:space="preserve">
+    <value>Calendar Quarter</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdHDCalendarWeek" xml:space="preserve">
+    <value>Calendar Week</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdHDCalendarYear" xml:space="preserve">
+    <value>Calendar Year</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdHDCustom" xml:space="preserve">
+    <value>Custom</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdHDDay" xml:space="preserve">
+    <value>Day</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdHDFiscalQuarter" xml:space="preserve">
+    <value>Fiscal Quarter</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdHDFiscalYear" xml:space="preserve">
+    <value>Fiscal Year</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdHDToday" xml:space="preserve">
+    <value>Today</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdLast120Days" xml:space="preserve">
+    <value>Last 120 Days</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdLast30Days" xml:space="preserve">
+    <value>Last 30 Days</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdLast60Days" xml:space="preserve">
+    <value>Last 60 Days</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdLast7Days" xml:space="preserve">
+    <value>Last 7 Days</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdLast90Days" xml:space="preserve">
+    <value>Last 90 Days</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdLastMonth" xml:space="preserve">
+    <value>cmdLastMonth</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdLastMonth1" xml:space="preserve">
+    <value>Last Month</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdLastWeek" xml:space="preserve">
+    <value>Last Week</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNext" xml:space="preserve">
+    <value>Next</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNext120Days" xml:space="preserve">
+    <value>Next 120 Days</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNext30Days" xml:space="preserve">
+    <value>Next 30 Days</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNext60Days" xml:space="preserve">
+    <value>Next 60 Days</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNext7Days" xml:space="preserve">
+    <value>Next 7 Days</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNext90Days" xml:space="preserve">
+    <value>Next 90 Days</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNextCQ" xml:space="preserve">
+    <value>Next CQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNextCY" xml:space="preserve">
+    <value>Next CY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNextFQ" xml:space="preserve">
+    <value>Next FQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNextFY" xml:space="preserve">
+    <value>Next FY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNextMonth" xml:space="preserve">
+    <value>Next Month</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNextWeek" xml:space="preserve">
+    <value>Next Week</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNot" xml:space="preserve">
+    <value>NOT</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdNotEqual" xml:space="preserve">
+    <value>Not Equal</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdOr" xml:space="preserve">
+    <value>OR</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPreview" xml:space="preserve">
+    <value>Preview</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPrevious" xml:space="preserve">
+    <value>Previous</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPrevious2andCurrentCY" xml:space="preserve">
+    <value>Previous 2 and Current CY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPrevious2andCurrentFY" xml:space="preserve">
+    <value>Previous 2 and Current FY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPrevious2CY" xml:space="preserve">
+    <value>Previous 2 CY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPrevious2FY" xml:space="preserve">
+    <value>Previous 2 FY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPreviousandCurrentCQ" xml:space="preserve">
+    <value>Previous and Current CQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPreviousandCurrentCY" xml:space="preserve">
+    <value>Previous and Current CY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPreviousandCurrentFQ" xml:space="preserve">
+    <value>Previous and Current FQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPreviousandCurrentFY" xml:space="preserve">
+    <value>Previous and Current FY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPreviousandCurrentMonth" xml:space="preserve">
+    <value>Previous and Current Month</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPreviousCQ" xml:space="preserve">
+    <value>Previous CQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPreviousCY" xml:space="preserve">
+    <value>Previous CY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPreviousFQ" xml:space="preserve">
+    <value>Previous FQ</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdPreviousFY" xml:space="preserve">
+    <value>Previous FY</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdSave" xml:space="preserve">
+    <value>Save</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdSaveAs" xml:space="preserve">
+    <value>Save As</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdSmaller" xml:space="preserve">
+    <value>Smaller</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdSmallerandEqual" xml:space="preserve">
+    <value>Smaller and Equal</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdThisMonth" xml:space="preserve">
+    <value>This Month</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdToday" xml:space="preserve">
+    <value>Today</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdTomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="cmdYesterday" xml:space="preserve">
+    <value>Yesterday</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="CreateReport" xml:space="preserve">
+    <value>Create Report</value>
+    <comment>*</comment>
+  </data>
+  <data name="CustomDateRange" xml:space="preserve">
+    <value>Custom Date Range</value>
+    <comment>*</comment>
+  </data>
+  <data name="CustomDateRangeHelpText" xml:space="preserve">
+    <value>Select a custom date range by selecting a "From" date and a "To" date.</value>
+    <comment>*</comment>
+  </data>
+  <data name="DataItemExistsOnReport" xml:space="preserve">
+    <value>This data item already exists on this report and can not be added again.</value>
+    <comment>*</comment>
+  </data>
+  <data name="DataLayoutColumnGrouping" xml:space="preserve">
+    <value>Data layout: Column Grouping</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="DataLayoutColumns" xml:space="preserve">
+    <value>Data layout: Report columns</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="DataLayoutLossPrompt" xml:space="preserve">
+    <value>Perfoming this action may cause data in data layout section to be removed. Are you sure you want to continue?</value>
+    <comment>*</comment>
+  </data>
+  <data name="DataLayoutRowGrouping" xml:space="preserve">
+    <value>Data layout: Row Grouping</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="DeleteNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="DeleteParameter" xml:space="preserve">
+    <value>Delete parameter</value>
+    <comment>*</comment>
+  </data>
+  <data name="DeleteYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="DeselectObject" xml:space="preserve">
+    <value>Deselect Object</value>
+    <comment>*</comment>
+  </data>
+  <data name="DeselectProperty" xml:space="preserve">
+    <value>Deselect Property</value>
+    <comment>*</comment>
+  </data>
+  <data name="DesignAnotherReport" xml:space="preserve">
+    <value>Design another report</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="DesignAnotherReportDesc" xml:space="preserve">
+    <value>Click here to design another report</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="DisableColumnGroupSubTotal" xml:space="preserve">
+    <value>Disable subtotal on column grouping.</value>
+    <comment>*</comment>
+  </data>
+  <data name="DropArea" xml:space="preserve">
+    <value>DROP HERE</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="DropHere" xml:space="preserve">
+    <value>DROP HERE</value>
+    <comment>*</comment>
+  </data>
+  <data name="EditOrDelete" xml:space="preserve">
+    <value>Edit/Delete</value>
+  </data>
+  <data name="EditReport" xml:space="preserve">
+    <value>Edit Report</value>
+    <comment>*</comment>
+  </data>
+  <data name="EmptyActionList" xml:space="preserve">
+    <value>No report available</value>
+  </data>
+  <data name="EmptyColumnNotAllowed" xml:space="preserve">
+    <value>A column name may not be empty.</value>
+    <comment>*</comment>
+  </data>
+  <data name="EnableColumnGroupSubTotal" xml:space="preserve">
+    <value>Enable subtotal on column grouping.</value>
+    <comment>*</comment>
+  </data>
+  <data name="EnterAURL" xml:space="preserve">
+    <value>Please enter a URL to test.</value>
+    <comment>*</comment>
+  </data>
+  <data name="FilterCanApply" xml:space="preserve">
+    <value>Filter can be applied.</value>
+    <comment>*</comment>
+  </data>
+  <data name="FilterConditionsHeader" xml:space="preserve">
+    <value>Filter Conditions</value>
+  </data>
+  <data name="FilterFieldHeader" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="FilterNotValid" xml:space="preserve">
+    <value>Filter could not be validated:</value>
+    <comment>*</comment>
+  </data>
+  <data name="FilterOperatorHeader" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="FiltersHeader" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="FilterValueHeader" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="Graph1" xml:space="preserve">
+    <value>Horizontal Bar Chart</value>
+  </data>
+  <data name="Graph2" xml:space="preserve">
+    <value>Horizontal Bar Chart Grouped</value>
+  </data>
+  <data name="Graph3" xml:space="preserve">
+    <value>Vertical Bar Chart</value>
+  </data>
+  <data name="Graph4" xml:space="preserve">
+    <value>Vertical Bar Chart Grouped</value>
+  </data>
+  <data name="Graph5" xml:space="preserve">
+    <value>Line Chart</value>
+  </data>
+  <data name="Graph6" xml:space="preserve">
+    <value>Line Chart Grouped</value>
+  </data>
+  <data name="Graph7" xml:space="preserve">
+    <value>Pie Chart</value>
+  </data>
+  <data name="GraphReportPopupHeading" xml:space="preserve">
+    <value>Graph Report</value>
+    <comment>*</comment>
+  </data>
+  <data name="GroupBy" xml:space="preserve">
+    <value>Group By</value>
+    <comment>*</comment>
+  </data>
+  <data name="GroupByColon" xml:space="preserve">
+    <value>Group By:</value>
+    <comment>*</comment>
+  </data>
+  <data name="HideParameter" xml:space="preserve">
+    <value>Hide Parameter</value>
+    <comment>*</comment>
+  </data>
+  <data name="InlineAnd" xml:space="preserve">
+    <value>and</value>
+    <comment>*</comment>
+  </data>
+  <data name="InputParamsHeader" xml:space="preserve">
+    <value>Input Parameters</value>
+  </data>
+  <data name="InvalidURL" xml:space="preserve">
+    <value>URL is valid.</value>
+    <comment>*</comment>
+  </data>
+  <data name="Layout1" xml:space="preserve">
+    <value>Tabular</value>
+  </data>
+  <data name="Layout2" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="Layout3" xml:space="preserve">
+    <value>Matrix</value>
+  </data>
+  <data name="Layout4" xml:space="preserve">
+    <value>Graph</value>
+  </data>
+  <data name="MatrixReportsDescription" xml:space="preserve">
+    <value>Matrix reports list summaries of your data in a grid against both horizontal and vertical criteria.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="MatrixReportsHeader" xml:space="preserve">
+    <value>Matrix Reports</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="MaximumFiltersHeader" xml:space="preserve">
+    <value>Maximum filters reached</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="MaximumFiltersMessage" xml:space="preserve">
+    <value>You have reached the maximum amount of filters to be applied.</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="mnuAdd" xml:space="preserve">
+    <value>Add</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="mnuDelete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="MultipleMethods" xml:space="preserve">
+    <value>Multiple methods</value>
+    <comment>*</comment>
+  </data>
+  <data name="NoAggregation" xml:space="preserve">
+    <value>No Aggregation</value>
+    <comment>*</comment>
+  </data>
+  <data name="NoneSelected" xml:space="preserve">
+    <value>None Selected</value>
+    <comment>*</comment>
+  </data>
+  <data name="NoText" xml:space="preserve">
+    <value>No</value>
+    <comment>*</comment>
+  </data>
+  <data name="NumericValuePrompt" xml:space="preserve">
+    <value>This item must have a numeric value.</value>
+    <comment>*</comment>
+  </data>
+  <data name="OKText" xml:space="preserve">
+    <value>OK</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="OpenObject" xml:space="preserve">
+    <value>Open Object</value>
+    <comment>*</comment>
+  </data>
+  <data name="OptionNotAvailable" xml:space="preserve">
+    <value>This option is not available.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ParametersDefaultValueHeader" xml:space="preserve">
+    <value>Default Value</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="ParametersFieldHeader" xml:space="preserve">
+    <value>Field</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="ParametersHeader" xml:space="preserve">
+    <value>Parameters</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="ParamsHeader" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="PrimDataSrcHeader" xml:space="preserve">
+    <value>Primary Data Source</value>
+  </data>
+  <data name="PublishReport" xml:space="preserve">
+    <value>Publish my report</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="PublishReportDesc" xml:space="preserve">
+    <value>Click here to publish my report</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="RelatedDataHeader" xml:space="preserve">
+    <value>Related Data</value>
+  </data>
+  <data name="RemoveAggregationItem" xml:space="preserve">
+    <value>Remove Aggregation Item</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportAggregationPopupHeader" xml:space="preserve">
+    <value>Report Aggregation</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="ReportColumn" xml:space="preserve">
+    <value>Column</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportColumnNotAvailable" xml:space="preserve">
+    <value>is not available in the data selection, would you like to remove this column from the report?</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportColumnsPopupHeading" xml:space="preserve">
+    <value>Report Columns</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportDataHeader" xml:space="preserve">
+    <value>Report Data</value>
+  </data>
+  <data name="ReportDataPopupHeading" xml:space="preserve">
+    <value>Report Data</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportDataSourceNotConfigured" xml:space="preserve">
+    <value>This data source is not configured to be used as a reporting data source.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportDescription" xml:space="preserve">
+    <value>Description</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="ReportDescriptionMaxLenght" xml:space="preserve">
+    <value>The maximum lenght for the Report Description is 512 characters.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportFinishIWantTo" xml:space="preserve">
+    <value>I want to</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="ReportName" xml:space="preserve">
+    <value>Name</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="ReportNamePrompt" xml:space="preserve">
+    <value>Provide a report name before you continue.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportParametersPrompt" xml:space="preserve">
+    <value>Please provide values for all required parameters.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportSelectColumnGrouping" xml:space="preserve">
+    <value>Select column grouping for this report before you continue</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportSelectDataColumns" xml:space="preserve">
+    <value>Select columns for this report before you continue.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportSelectDataSource" xml:space="preserve">
+    <value>Select items to build the report with, before you continue.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportSelectedDataDeselectPrompt" xml:space="preserve">
+    <value>This data item has been selected in the data layout, deselecting it will remove it from data layout and filters. The filter condition will also be cleared. Are you sure you want to continue?</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportSelectRowGrouping" xml:space="preserve">
+    <value>Select row grouping for this report before you continue.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportSpecialCharsNotAllowed" xml:space="preserve">
+    <value>The following special characters &amp;!@#$%^&amp;*()+=-[]\\\';,./{}|\":&lt;&gt;?_~ are not allowed.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportTypeHeader" xml:space="preserve">
+    <value>Report Type</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="ReportWizardCancel" xml:space="preserve">
+    <value>Are you sure you want to cancel the report wizard?</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportWizardConfirmDrillDownChange" xml:space="preserve">
+    <value>Are you sure you want to change the drilldown option?  All previous selections will be cleared for this column.</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportWizardConfirmNewReport" xml:space="preserve">
+    <value>Are you sure you want to create a new report?</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportWizardParametersPopupHeader" xml:space="preserve">
+    <value>Report Parameters</value>
+    <comment>*</comment>
+  </data>
+  <data name="ReportWizardPopupHeader" xml:space="preserve">
+    <value>Report Wizard</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="SaveAsReportPopupHeading" xml:space="preserve">
+    <value>Save Report As</value>
+    <comment>*</comment>
+  </data>
+  <data name="SaveAsReportUniqueName" xml:space="preserve">
+    <value>Please give this report a unique name, a report with this name already exist in this category.</value>
+    <comment>*</comment>
+  </data>
+  <data name="SaveReportPopupHeading" xml:space="preserve">
+    <value>Save Report</value>
+    <comment>*</comment>
+  </data>
+  <data name="SaveReportPopupSelectCategory" xml:space="preserve">
+    <value>Please select a category.</value>
+    <comment>*</comment>
+  </data>
+  <data name="SaveSpecifyCategory" xml:space="preserve">
+    <value>Select a category to save the report to.</value>
+    <comment>*</comment>
+  </data>
+  <data name="SaveSpecifyFilterValues" xml:space="preserve">
+    <value>Please specify values for the filters currently selected.</value>
+    <comment>*</comment>
+  </data>
+  <data name="SaveSpecifyParameterValues" xml:space="preserve">
+    <value>Please provide values for all required parameters.</value>
+    <comment>*</comment>
+  </data>
+  <data name="SearchText" xml:space="preserve">
+    <value>Search report data</value>
+    <comment>2007/12/20</comment>
+  </data>
+  <data name="SelectAndFormatColumn" xml:space="preserve">
+    <value>Select and format column</value>
+    <comment>*</comment>
+  </data>
+  <data name="SelectCustomDate" xml:space="preserve">
+    <value>Select custom date</value>
+    <comment>*</comment>
+  </data>
+  <data name="SelectObject" xml:space="preserve">
+    <value>Select Object</value>
+    <comment>*</comment>
+  </data>
+  <data name="SelectProperty" xml:space="preserve">
+    <value>Select Property</value>
+    <comment>*</comment>
+  </data>
+  <data name="ShowParameter" xml:space="preserve">
+    <value>Show Parameter</value>
+    <comment>*</comment>
+  </data>
+  <data name="Step0DeleteHeading1" xml:space="preserve">
+    <value>Confirm delete</value>
+  </data>
+  <data name="Step0DeletePrompt1" xml:space="preserve">
+    <value>Are you sure you want to delete the report?</value>
+  </data>
+  <data name="Step0Tooltip1" xml:space="preserve">
+    <value>Edit Report</value>
+  </data>
+  <data name="Step0Tooltip2" xml:space="preserve">
+    <value>Delete Report</value>
+  </data>
+  <data name="Step1Action1" xml:space="preserve">
+    <value>Please select the report layout:</value>
+  </data>
+  <data name="Step1Descr" xml:space="preserve">
+    <value>Select report layout.</value>
+  </data>
+  <data name="Step1Header" xml:space="preserve">
+    <value>Report Layout</value>
+  </data>
+  <data name="Step2Action1" xml:space="preserve">
+    <value>Select Report Data:</value>
+  </data>
+  <data name="Step2Descr" xml:space="preserve">
+    <value>Select report data items.</value>
+  </data>
+  <data name="Step2Header" xml:space="preserve">
+    <value>Report Data</value>
+  </data>
+  <data name="Step3Descr" xml:space="preserve">
+    <value>Data column aggregations.</value>
+  </data>
+  <data name="Step3Header" xml:space="preserve">
+    <value>Report Data Object</value>
+  </data>
+  <data name="Step4Descr" xml:space="preserve">
+    <value>Report data filtering.</value>
+  </data>
+  <data name="Step4Header" xml:space="preserve">
+    <value>Report Data Items</value>
+  </data>
+  <data name="Step5Descr" xml:space="preserve">
+    <value>Complete report setup.</value>
+  </data>
+  <data name="Step5Header" xml:space="preserve">
+    <value>Report Column Aggregations</value>
+  </data>
+  <data name="Step6Header" xml:space="preserve">
+    <value>Data Filtering</value>
+  </data>
+  <data name="SummaryFiltersAverage" xml:space="preserve">
+    <value>Average</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="SummaryFiltersCount" xml:space="preserve">
+    <value>Count</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="SummaryFiltersHeader" xml:space="preserve">
+    <value>Summary Filters</value>
+  </data>
+  <data name="SummaryFiltersLargest" xml:space="preserve">
+    <value>Largest</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="SummaryFiltersSmallest" xml:space="preserve">
+    <value>Smallest</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="SummaryFiltersSum" xml:space="preserve">
+    <value>Sum</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="SummaryReportsDescription" xml:space="preserve">
+    <value>Summary reports list your data with subtotals and other summary information.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="SummaryReportsHeader" xml:space="preserve">
+    <value>Summary Reports</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="TabularReportsDescription" xml:space="preserve">
+    <value>Tabular reports are the simplest and fastest way to list your data.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="TabularReportsHeader" xml:space="preserve">
+    <value>Tabular Reports</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="UnresolvedURL" xml:space="preserve">
+    <value>URL could not be resolved</value>
+    <comment>*</comment>
+  </data>
+  <data name="ValidateFilterConditions" xml:space="preserve">
+    <value>Validate Filter Conditions</value>
+    <comment>*</comment>
+  </data>
+  <data name="ValidateFilterLineNotNumeric" xml:space="preserve">
+    <value>This item must have a numeric value.</value>
+    <comment>2007/12/12</comment>
+  </data>
+  <data name="ViewReport" xml:space="preserve">
+    <value>View my report</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="ViewReportDesc" xml:space="preserve">
+    <value>Click here to view a copy of the report</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizardInstr1" xml:space="preserve">
+    <value>This wizard will help you to create a report.</value>
+  </data>
+  <data name="WizardInstr2" xml:space="preserve">
+    <value>With this wizard you will:</value>
+  </data>
+  <data name="WizardInstr3" xml:space="preserve">
+    <value>Dont show this wizard again.</value>
+  </data>
+  <data name="WizardInstr4" xml:space="preserve">
+    <value>Click on next to continue.</value>
+  </data>
+  <data name="WizardWelcome" xml:space="preserve">
+    <value>Welcome to the Report Wizard.</value>
+  </data>
+  <data name="WizStepColGrouping" xml:space="preserve">
+    <value>Column grouping</value>
+    <comment>2007/12/19</comment>
+  </data>
+  <data name="WizStepInfoDataLayout" xml:space="preserve">
+    <value>Drag data fields, on left, and drop them on the right in the highlighted spaces.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepInfoDataSource" xml:space="preserve">
+    <value>Choose a primary data source on the left and check the relevant related data on the right. Note: You can choose only one primary data source.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepInfoFilter" xml:space="preserve">
+    <value>Display only relevant data, by applying filters. Apply standard date and interval filters, or add advanced conditional filters. Note: To add a filter just drag a field, from the left, and drop it on the right in the highlighted spaces.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepInfoFinish" xml:space="preserve">
+    <value>Thank you.Your report has completed successfully.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepInfoParameters" xml:space="preserve">
+    <value>The parameters will be available on the report viewer to enable you to filter data on the fly. For more info read the help section.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepInfoReportInfoType" xml:space="preserve">
+    <value>Select a report type from the list below. Each report type represents data in a different way.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepInfoStyle" xml:space="preserve">
+    <value>Customize the look of your report by applying styles to the fonts, and set column options.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepInfoSummarize" xml:space="preserve">
+    <value>Check the column and row groupings that you would like to subtotal.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepInfoSummarizeMatrix" xml:space="preserve">
+    <value>Summarize the data of a column by dragging and dropping a summary filter from the list on the left to the appropriate column on the right.</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepReportColumns" xml:space="preserve">
+    <value>Report columns</value>
+    <comment>2007/12/19</comment>
+  </data>
+  <data name="WizStepRowGrouping" xml:space="preserve">
+    <value>Row grouping</value>
+    <comment>2007/12/19</comment>
+  </data>
+  <data name="WizStepTitleDataLayout" xml:space="preserve">
+    <value>Data layout</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepTitleDataSource" xml:space="preserve">
+    <value>Data source</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepTitleFilter" xml:space="preserve">
+    <value>Filter the data &amp;lt;i&amp;gt;(optional)&amp;lt;/i&amp;gt;</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepTitleFinish" xml:space="preserve">
+    <value>Finish</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepTitleParameters" xml:space="preserve">
+    <value>Report Parameters  &amp;lt;i&amp;gt;(optional)&amp;lt;/i&amp;gt;</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepTitleReportInfoType" xml:space="preserve">
+    <value>Report info and type</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepTitleStyle" xml:space="preserve">
+    <value>Style your report &amp;lt;i&amp;gt;(optional)&amp;lt;/i&amp;gt;</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="WizStepTitleSummarize" xml:space="preserve">
+    <value>Summarize the data &amp;lt;i&amp;gt;(optional)&amp;lt;/i&amp;gt;</value>
+    <comment>2007/12/11</comment>
+  </data>
+  <data name="XAxisTextValue" xml:space="preserve">
+    <value>The x-axis can not contain a text value</value>
+    <comment>*</comment>
+  </data>
+  <data name="YAxisTextValue" xml:space="preserve">
+    <value>The y-axis can not contain a text value</value>
+    <comment>*</comment>
+  </data>
+  <data name="YesText" xml:space="preserve">
+    <value>Yes</value>
+    <comment>*</comment>
+  </data>
+</root>

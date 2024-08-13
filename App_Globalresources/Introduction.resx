@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ButtonActionsOutcomes" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/ActionsAndOutcomes16.png" class='Icon'/&gt; Actions and Outcomes</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonAssociations" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/AssociationDatatype16.png" class='Icon'/&gt; Associations</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonControls" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Control16.png" class='Icon'/&gt; Controls</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonDeploying" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Deploy16.png" class='Icon'/&gt; Deploying</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonExpressions" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Expressions16.png" class='Icon'/&gt; Expressions</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonItemViews" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/ItemView16.png" class='Icon'/&gt; Item Views</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonListViews" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/ListView16.png" class='Icon'/&gt; List Views</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonMethods" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Method16.png" class='Icon'/&gt; Methods</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonParameters" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Parameters16.png" class='Icon'/&gt; Parameters</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonProperties" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Properties_Generic16.png" class='Icon'/&gt; Properties</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonRules" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Rules16.png" class='Icon'/&gt; Rules</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonServiceObjects" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/ServiceObject16.png" class='Icon'/&gt; Service Objects</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonStartForm" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/StartForm16.png" class='Icon'/&gt; Start Form</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonStates" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/State16.png" class='Icon'/&gt; States</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonStyles" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Style16.png" class='Icon'/&gt; Styles</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonThemes" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Theme16.png" class='Icon'/&gt; Themes</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonUserTaskForm" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/FormsUserTask16.png" class='Icon'/&gt; User Task Form</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ButtonWorkflowSteps" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Workflowsteps16.png" class='Icon'/&gt; Workflow Steps</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="DiagramIntro" xml:space="preserve">
+    <value>To learn more about each subject, click on the topic below to read a description:</value>
+    <comment>[description] this text is displayed on the introduction page of the application</comment>
+  </data>
+  <data name="FormHelpLink" xml:space="preserve">
+    <value>For more information, see &lt;a href="javascript:;" onclick="HelpHelper.runHelp(7062);"&gt;Help&lt;/a&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="FormIntroduction" xml:space="preserve">
+    <value>&lt;div class='PageText'&gt;
+    &lt;img src='Styles/Platinum/Images/Introduction/Icons/Page64.png' align="left" class='PageIcon'/&gt;
+        &lt;div class='PageHeader'&gt;Forms&lt;/div&gt;
+        &lt;div&gt;The Form Designer guides you through the creation of a Form. A single View, control or multiple Views and controls can be added to the design canvas for simultaneous use on a Form. Interaction of the Views can be designed using rules, and tabs can be added if you want to display Views on different pages.&lt;/div&gt;
+&lt;p&gt;Once you have finished designing your Form, you can then use the Form in a Workflow. Click on "Design a new Workflow" on the main Nintex Designer landing page or right-click the category tree and click "New Workflow". You can also use the SmartForms "Process" and "Client Event" wizards in K2 Studio and Nintex Designer for Visual Studio.
+&lt;/p&gt;
+    &lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="FormsSectionHead" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Forms32.png" alt='Forms'/&gt;&lt;div&gt;Forms&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="LoginHelpLink" xml:space="preserve">
+    <value>&lt;a target='_blank' href='https://help.nintex.com/en-US/k2five/icg/current/Content/Configure/SF/Authentication.htm'&gt;Learn More&lt;/a&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="LoginIntroductionText" xml:space="preserve">
+    <value>Sign in with your user name and password to access this site. If you do not have access, contact your administrator.</value>
+    <comment>This text is displayed on the Forms Authentication login screen, where user needs to fill in username and password.</comment>
+  </data>
+  <data name="LoginMethod" xml:space="preserve">
+    <value>Which account would you like to log in with?</value>
+    <comment>this is the authentication method text the user must select before logging into the K2 designer application [location: login screen]</comment>
+  </data>
+  <data name="LoginMethodForms" xml:space="preserve">
+    <value>Forms</value>
+    <comment>this is the Forms authentication method text the user must select before logging into the K2 designer application [location: login screen]</comment>
+  </data>
+  <data name="LoginMethodFormsDescription" xml:space="preserve">
+    <value>Sign in using forms authentication</value>
+    <comment>this is the Forms authentication method description text the user must select before logging into the K2 designer application [location: login screen]</comment>
+  </data>
+  <data name="LoginMethodActiveDirectory" xml:space="preserve">
+    <value>K2.com</value>
+    <comment>this is the Active Directory authentication method text the user must select before logging into the K2 designer application [location: login screen]</comment>
+  </data>
+  <data name="LoginMethodActiveDirectoryDescription" xml:space="preserve">
+    <value>Sign in using active directory</value>
+    <comment>this is the Active Directory authentication method description text the user must select before logging into the K2 designer application [location: login screen]</comment>
+  </data>
+  <data name="PopupActionsOutcomes" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;Actions and outcomes allow Workflows to separate what decisions, or actions, users are able to make from the implications, or outcomes, of those actions. Actions and outcomes are part of the Workflow design, separate from the user interface, or Form design. Actions are the decisions that the user can make about the Form. Outcomes are the way the Workflow decides where the Form goes next.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupAssociations" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;Associations allow for the defining and managing of relationships between SmartObjects. Associations can be configured between different SmartObjects using properties from each SmartObject. You can create one-to-one, one-to-many, many-to-one or many-to-many associations.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupControlsForms" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;
+Controls are visual items used on a Form to display data or to accept user interaction. There are various display controls such as "Picture" or "Label", or input controls such as  "Text Box", "Calendar", "Hyperlink", "Drop-down List" and so forth. There are action controls, such as buttons, that allow you to capture the user’s interaction with the Form. Custom controls can be coded to extend the control toolbox.
+&lt;br/&gt;&lt;br/&gt;
+Validation patterns can be set on controls such that the input must match a certain format (such as a phone number or e-mail address), or values can be set using expressions.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupControlsViews" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;
+Controls are visual items used on a View to display data or to accept user interaction. There are various display controls such as "Picture" or "Label", or input controls such as  "Text Box", "Calendar", "Hyperlink", "Drop-down List" and so forth. There are action controls, such as buttons, that allow you to capture the user’s interaction with the Form. Custom controls can be coded to extend the control toolbox.
+&lt;br/&gt;&lt;br/&gt;
+Validation patterns can be set on controls such that the input must match a certain format (such as a phone number or e-mail address), or values can be set using expressions.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupDeploying" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;When you deploy a Workflow, the designer checks to make sure the Workflow definition is complete and all the required configurations have been set. It then deploys the Workflow out to the Server. Once deployed it can run and people can begin using the Workflow.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupExpressions" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;An expression is a way to display a calculated value in a control at runtime. Expressions can be built using contextual information (i.e. SmartObject properties or other controls on the View), operators (i.e. logical, mathematical or text) and other expressions.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupItemViews" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;Item Views work with a single record of a SmartObject and are bound to the scalar methods of the SmartObject. Item Views can be used to display data (read-only) or capture data for either a new record or editing an existing record.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupListViews" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;List Views interact with the list methods of a SmartObject and display multiple records. List Views can be used to display multiple records (read-only) or with list editing enabled to capture additional data or edit multiple records at once.
+&lt;br/&gt;&lt;br/&gt;
+List Views can use expressions to display calculated values and can have aggregation expressions configured to display counts or sums of records. List Views can also have paging and filtering turned on automatically in the properties of the View.
+&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupMethods" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;SmartObject methods can be categorized into two types, scalar and list. Scalar methods include create, update and delete of single records. List methods retrieve multiple records. Additional methods can be created with the SmartObject Designer in "Advanced Mode". This will allow you to create business type methods, for example "Create Purchase Order", which can update data across multiple systems.
+&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupParametersForms" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;Form parameters are values that are passed into the Form using the query string. Parameters can be useful when you need to load a certain record or to determine which Form state to load. When integrating with Workflows, the serial number of the worklist item is passed into the Form using a parameter.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupParametersViews" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;View parameters are values that are passed into the View using the query string of the View or a Form containing the View. Parameters can be useful when you need to define field variables on the View.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupProperties" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;Properties are the attributes that define the SmartObject. They are things like "First Name", "Last Name", "Social Security Number", "Department", etc. Properties are created manually when a user creates the SmartObject or they are retrieved via a Service Object. The SmartObject is created to expose or surface the properties from the back-end system. Properties can be of various data types and can be marked as required, unique or as a key.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupRulesForms" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;A rule defines the business logic for the Form. The different components of a rule define what happens, when it happens, and if it should occur. The Rule Wizard includes templates to define the events, conditions and actions that make up the rule. Events are "when" the rule should execute. Conditions are the "if" statements and logical blocks to decide whether or not the rule should execute. Actions are "what" should happen in the rule.
+&lt;br/&gt;&lt;br/&gt;
+Rules can be created at both the View and Form level. View rules can be extended on a Form by adding new actions or disabling existing actions. Any rules on Form level will inherit rules on View level and any changes made at View level will also be seen at Form level. Rules' events and actions can only be edited at the level at which the rule was created.
+&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupRulesViews" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;A rule defines the business logic for the View. The different components of a rule define what happens, when it happens, and if it should occur. The Rule Wizard includes templates to define the events, conditions and actions that make up the rule. Events are "when" the rule should execute. Conditions are the "if" statements and logical blocks to decide whether or not the rule should execute. Actions are "what" should happen in the rule.
+&lt;br/&gt;&lt;br/&gt;
+Rules can be created at both the View and Form level. View rules can be extended on a Form by adding new actions or disabling existing actions. Any rules on Form level will inherit rules on View level and any changes made at View level will also be seen at Form level. Rules' events and actions can only be edited at the level at which the rule was created.
+&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupServiceObjects" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;Service Objects serve as the translation layer from the Line-of-Business system to the SmartObject framework. Service Objects for many systems are available out of the box including Active Directory, CRM, Exchange, Salesforce.com, SQL and SharePoint, to name a few. Service Objects can be built to interact with additional systems.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupStartForm" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;The start Form is used to start a Workflow instance. Typically, a capture type Form is used to start a Workflow, with some event like a button click used to trigger the "Start a Workflow" action.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupStates" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;A state is a mechanism to allow the same Form to behave differently under various circumstances. A Form state is basically a collection of rules which inherits the "Base State" rules and can extend them. In this way, different rules can be applied to the same Form in different states. States are typically used when using different cases for user tasks in a Workflow process, but the same Form is used for each task.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupStyles" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;The Style Builder (Format) is used to change how the control visually displays information. For example, fonts and styles can be changed on different controls. Also, the formatting of the control can be changed to display the relevant style, such as percentage or currency. You can configure the default style for a control on the View, as well as define conditional styles that will be used if certain conditions are met.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupThemes" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;The look-and-feel of the Form, and all Views and controls displayed on the Form, is determined by a theme. Themes can be added or customized for your own custom look-and-feel by modifying the stylesheets. In addition to selecting the theme used for the Form, you can change the background color and margins to change the spacing between Views and the edges of the browser window. This allows for a flexible yet polished look to your Forms.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupUserTaskForm" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;A task Form is assigned to a person, group or role. It is typically a display, edit or review Form, where the Workflow task item context is sent to the Form as a parameter. Some event on the Form, such as a button click, is used to action the work item and sends data back to the Workflow to carry on with the steps.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="PopupWorkflowSteps" xml:space="preserve">
+    <value>&lt;div class='PopupText'&gt;Steps in a Workflow can be either server events, which execute server side code with no user interaction, or user tasks, which surface data for the user by means of a Form. The user can then action the step by selecting the appropriate action, and the Workflow can continue with the next step in the Workflow. When all steps in the Workflow branch have been followed, the Workflow instance is completed.&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="SmartObjectHelpLink" xml:space="preserve">
+    <value>For more information, see &lt;a href="javascript:;" onclick="HelpHelper.runHelp(7060);"&gt;Help&lt;/a&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="SmartObjectIntroduction" xml:space="preserve">
+    <value>&lt;div class='PageText'&gt;
+    &lt;img src='Styles/Platinum/Images/Introduction/Icons/SmartObjects64.png' align="left"  class='PageIcon'/&gt;
+        &lt;div class='PageHeader'&gt;
+            SmartObjects&lt;/div&gt;
+        &lt;div&gt;SmartObjects are business entities that aggregate data across applications and line of business systems. The purpose of designing and using SmartObjects is not to create a secondary storage to replicate the data in other systems, but to provide a way to work with the information as it exists within the respective systems. With SmartObjects, the back end systems are still used for storage and retrieval of the business data they contain, but the SmartObjects become the mechanism through which that data is used. &lt;/div&gt;
+&lt;p&gt;
+For data that is not yet stored in a line of business system, Nintex Automations’s data storage mechanism, known as SmartBox, is used by default when creating a new SmartObject. Advanced SmartObjects utilize the Service Object layer to connect to existing line of business systems.
+&lt;/p&gt;
+    &lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="SmartObjectsSectionHead" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/SmartObjects32.png" alt='SmartObjects'/&gt;&lt;div&gt;SmartObjects&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ViewHelpLink" xml:space="preserve">
+    <value>For more information, see &lt;a href="javascript:;" onclick="HelpHelper.runHelp(7061);"&gt;Help&lt;/a&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ViewIntroduction" xml:space="preserve">
+    <value>&lt;div class='PageText'&gt;
+    &lt;img src='Styles/Platinum/Images/Introduction/Icons/Views64.png' align="left" class='PageIcon'/&gt;
+    &lt;div class='PageHeader'&gt;Views&lt;/div&gt;
+    &lt;div&gt;A View graphically represents the properties of a SmartObject and interacts with the data via SmartObject methods. A View is bound to a primary SmartObject, but can interact with associated SmartObjects as well. &lt;/div&gt;
+    &lt;p&gt;The View Designer guides you through the creation of a View. The designer starts with a "Details" screen which allows you to choose what type of View you want to create -- an Item View or List View. On the "Settings" screen you can select the SmartObject data source and set common View properties. The "Layout" screen allows you to drag controls onto the View, change the layout, set display and style properties of controls and add or edit Rules. &lt;/p&gt;
+&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="ViewsSectionHead" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Views32.png" alt='Views'/&gt;&lt;div&gt;Views&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="WorkflowSectionHead" xml:space="preserve">
+    <value>&lt;img src="Styles/Platinum/Images/Introduction/Icons/Workflows32.png" alt='Workflow'/&gt;&lt;div&gt;Workflow&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>Welcome</value>
+    <comment>Welcome message on SmartForms landing page</comment>
+  </data>
+  <data name="RecentHeadingText" xml:space="preserve">
+    <value>Recent</value>
+    <comment>Heading for recent items list on SmartForms landing page [deprecated]</comment>
+  </data>
+  <data name="MoreHeadingText" xml:space="preserve">
+    <value>More</value>
+    <comment>Heading for more information links on SmartForms landing page</comment>
+  </data>
+  <data name="GettingStartedText" xml:space="preserve">
+    <value>Getting Started</value>
+    <comment>Getting Started link text on SmartForms landing page</comment>
+  </data>
+  <data name="TutorialsText" xml:space="preserve">
+    <value>Tutorials</value>
+    <comment>Tutorials link text on SmartForms landing page</comment>
+  </data>
+  <data name="FeedbackText" xml:space="preserve">
+    <value>Feedback</value>
+    <comment>Feedback link text on SmartForms landing page</comment>
+  </data>
+  <data name="CommunityText" xml:space="preserve">
+    <value>Community</value>
+    <comment>Community link text on SmartForms landing page</comment>
+  </data>
+  <data name="HelpText" xml:space="preserve">
+    <value>Help</value>
+    <comment>K2 Designer Help link text on SmartForms landing page</comment>
+  </data>
+  <data name="BrowseFoldersText" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="RecentFoldersHeadingText" xml:space="preserve">
+    <value>Recent Folders</value>
+  </data>
+  <data name="RecentCategoriesHeadingText" xml:space="preserve">
+    <value>Recent Folders</value>
+    <comment>Heading for recent folders/categories list on SmartForms landing page</comment>
+  </data>
+  <data name="RecentItemsHeadingText" xml:space="preserve">
+    <value>Recent Files</value>
+    <comment>Heading for recent items list on SmartForms landing page</comment>
+  </data>
+  <data name="CreateOptionText" xml:space="preserve">
+    <value>Create</value>
+    <comment>Heading for the create SmartObject, View, Form and Workflow on SmartForms landing page</comment>
+  </data>
+</root>

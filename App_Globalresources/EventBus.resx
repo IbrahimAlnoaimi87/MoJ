@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionHeading" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="AllEventTab" xml:space="preserve">
+    <value>All Events</value>
+  </data>
+  <data name="AllReportsHelpText" xml:space="preserve">
+    <value>This section shows all the Events in the selected event bus category</value>
+  </data>
+  <data name="AltExpand" xml:space="preserve">
+    <value>click to expand item</value>
+  </data>
+  <data name="btnAddPolicy" xml:space="preserve">
+    <value>Add Policy</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnDelPolicy" xml:space="preserve">
+    <value>Delete Policy</value>
+  </data>
+  <data name="btnFinish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="btnPrev" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnRun" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="btnSO" xml:space="preserve">
+    <value>Select Policy</value>
+  </data>
+  <data name="ColumnHead_CreateDate" xml:space="preserve">
+    <value>Date Created</value>
+  </data>
+  <data name="ColumnHead_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ColumnHead_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ColumnHead_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ColumnHead_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ColumnHead_Owner" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="ColumnHead_ViewDate" xml:space="preserve">
+    <value>View Date</value>
+  </data>
+  <data name="CustomEventActionsHeading" xml:space="preserve">
+    <value>Custom Event Actions</value>
+  </data>
+  <data name="CustomEventConfigurationMainPageTitle" xml:space="preserve">
+    <value>Configure Custom Event</value>
+  </data>
+  <data name="CustomEventCriteria" xml:space="preserve">
+    <value>Custom Event Criteria</value>
+  </data>
+  <data name="CustomEventIndexLeftHeading" xml:space="preserve">
+    <value>Custom Events</value>
+  </data>
+  <data name="CustomEventRequiredSavePolicies" xml:space="preserve">
+    <value>In order to publish an event you need to specify at least one Action policy.</value>
+  </data>
+  <data name="CustomEventRequiredSavePoliciesTitle" xml:space="preserve">
+    <value>Required Event</value>
+  </data>
+  <data name="CustomEventSaveRequiredEventMessage" xml:space="preserve">
+    <value>Please select an event from the object browser.</value>
+  </data>
+  <data name="CustomEventSaveRequiredNameMessage" xml:space="preserve">
+    <value>Please enter a custom event name.</value>
+  </data>
+  <data name="CustomEventStep1" xml:space="preserve">
+    <value>: Start</value>
+  </data>
+  <data name="CustomEventStep2" xml:space="preserve">
+    <value>: Custom Event Information</value>
+  </data>
+  <data name="CustomEventStep3" xml:space="preserve">
+    <value>: Conditional Policies</value>
+  </data>
+  <data name="CustomEventStep4" xml:space="preserve">
+    <value>: Action Policies</value>
+  </data>
+  <data name="CustomEventStep5" xml:space="preserve">
+    <value>: Exception Policies</value>
+  </data>
+  <data name="CustomEventStep6" xml:space="preserve">
+    <value>: Finish</value>
+  </data>
+  <data name="CustomEventStepPrefix" xml:space="preserve">
+    <value>Step</value>
+  </data>
+  <data name="CustomEventSuccessfullySavedMessage" xml:space="preserve">
+    <value>Custom Event saved sucessfully</value>
+  </data>
+  <data name="CustomEventSuccessfullySavedPopupTitle" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="CustomEventWizzardActionSave" xml:space="preserve">
+    <value>Save Custom Event</value>
+  </data>
+  <data name="CustomEventWizzardHeading" xml:space="preserve">
+    <value>Custom Event Wizard</value>
+  </data>
+  <data name="CustomEventWizzardStep1" xml:space="preserve">
+    <value>This wizard will help you setup your custom event. In order to create a custom event you need to specify one or more action policies. Conditional policies are optional and only policies with a Boolean return value can be used as a conditional policy. If all the conditional policies evaluate as true then the action policies will be executed. Exception policies are optional, but can be specified and will be executed only if any of the action policies cannot be executed.</value>
+  </data>
+  <data name="CustomEventWizzardStep2" xml:space="preserve">
+    <value>Select the event to which you want to subscribe by browsing and selecting the event in the Object Browser.</value>
+  </data>
+  <data name="CustomEventWizzardStep2Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="CustomEventWizzardStep2EventName" xml:space="preserve">
+    <value>Event Name</value>
+  </data>
+  <data name="CustomEventWizzardStep2EventObject" xml:space="preserve">
+    <value>Event Object</value>
+  </data>
+  <data name="CustomEventWizzardStep2Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CustomEventWizzardStep2SharedStatus" xml:space="preserve">
+    <value>Shared Status</value>
+  </data>
+  <data name="CustomEventWizzardStep2Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="CustomEventWizzardStep3" xml:space="preserve">
+    <value>Select a conditional policy by clicking "Select Policy" and map the input data for the policy to the available data from the selected event. Click the "Add Policy" button to add another conditional policy and "Delete Policy" button to delete the current policy.</value>
+  </data>
+  <data name="CustomEventWizzardStep3PolicyDescription" xml:space="preserve">
+    <value>Policy Description</value>
+  </data>
+  <data name="CustomEventWizzardStep3PolicyName" xml:space="preserve">
+    <value>Policy Name</value>
+  </data>
+  <data name="CustomEventWizzardStep4" xml:space="preserve">
+    <value>Select a action policy by clicking "Select Policy" and map the input data for the policy to the available data from the selected event. Click the "Add Policy" button to add another action policy and "Delete Policy" button to delete the current policy.</value>
+  </data>
+  <data name="CustomEventWizzardStep4PolicyDescription" xml:space="preserve">
+    <value>Policy Description</value>
+  </data>
+  <data name="CustomEventWizzardStep4PolicyName" xml:space="preserve">
+    <value>Policy Name</value>
+  </data>
+  <data name="CustomEventWizzardStep5" xml:space="preserve">
+    <value>Select a exception policy by clicking "Select Policy" and map the input data for the policy to the available data from the selected event. Click the "Add Policy" button to add another exception policy and "Delete Policy" button to delete the current policy.</value>
+  </data>
+  <data name="CustomEventWizzardStep5PolicyDescription" xml:space="preserve">
+    <value>Policy Description</value>
+  </data>
+  <data name="CustomEventWizzardStep5PolicyName" xml:space="preserve">
+    <value>Policy Name</value>
+  </data>
+  <data name="CustomEventWizzardStep6" xml:space="preserve">
+    <value>Select a category location for your custom event, and click "Finish" to save your event, "Cancel" to cancel creating the event, and "Back" to review your criteria.</value>
+  </data>
+  <data name="CustomEventWizzardStep6PublishEvent" xml:space="preserve">
+    <value>Publish custom event</value>
+  </data>
+  <data name="CustomEventWizzardStep6ShareEvent" xml:space="preserve">
+    <value>Share custom event</value>
+  </data>
+  <data name="ErrorSpecifyEventName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="EventAdd" xml:space="preserve">
+    <value>Add Notification Event</value>
+  </data>
+  <data name="EventEdit" xml:space="preserve">
+    <value>Edit Notification Event</value>
+  </data>
+  <data name="EventBusConfigurationMainPageTitle" xml:space="preserve">
+    <value>EventBus Configuration</value>
+  </data>
+  <data name="EventDescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EventFromLabel" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="EventIndex_Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="EventIndex_CheckOut" xml:space="preserve">
+    <value>Check Out</value>
+  </data>
+  <data name="EventIndex_DateCreated" xml:space="preserve">
+    <value>Date Created</value>
+  </data>
+  <data name="EventIndex_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="EventIndex_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EventIndex_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EventIndex_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="EventIndex_User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="EventIndexCheckedOutToMe" xml:space="preserve">
+    <value>Work in Progress</value>
+  </data>
+  <data name="EventIndexPrivate" xml:space="preserve">
+    <value>Private</value>
+  </data>
+  <data name="EventIndexPublic" xml:space="preserve">
+    <value>Public</value>
+  </data>
+  <data name="EventMessFormatLabel" xml:space="preserve">
+    <value>Message Format</value>
+  </data>
+  <data name="EventMessHTMLLabel" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="EventMessPlainTextLabel" xml:space="preserve">
+    <value>Plain Text</value>
+  </data>
+  <data name="EventNameLabel" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="EventSubjectLabel" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="EventToLabel" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="ExceptionMessage" xml:space="preserve">
+    <value>Exception Message:</value>
+  </data>
+  <data name="ExceptionTitle" xml:space="preserve">
+    <value>Exception Title:</value>
+  </data>
+  <data name="ExceptionType" xml:space="preserve">
+    <value>Exception Type:</value>
+  </data>
+  <data name="GroupByA" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="GroupByAll" xml:space="preserve">
+    <value>ALL</value>
+  </data>
+  <data name="GroupByB" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="GroupByC" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="GroupByD" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="GroupByE" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="GroupByF" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="GroupByG" xml:space="preserve">
+    <value>G</value>
+  </data>
+  <data name="GroupByH" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="GroupByI" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="GroupByJ" xml:space="preserve">
+    <value>J</value>
+  </data>
+  <data name="GroupByK" xml:space="preserve">
+    <value>K</value>
+  </data>
+  <data name="GroupByL" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="GroupByM" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="GroupByN" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="GroupByO" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="GroupByP" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="GroupByQ" xml:space="preserve">
+    <value>Q</value>
+  </data>
+  <data name="GroupByR" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="GroupByS" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="GroupByT" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="GroupByU" xml:space="preserve">
+    <value>U</value>
+  </data>
+  <data name="GroupByV" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="GroupByW" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="GroupByX" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="GroupByY" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="GroupByZ" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="LeftMenuImageCloseTag" xml:space="preserve">
+    <value>Close Menu</value>
+  </data>
+  <data name="LeftMenuImageOpenTag" xml:space="preserve">
+    <value>Open Menu</value>
+  </data>
+  <data name="NewCustomEventButtonText" xml:space="preserve">
+    <value>New Custom Event</value>
+  </data>
+  <data name="NextButtonText" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="ObjectBrowserHeading" xml:space="preserve">
+    <value>Object Browser</value>
+  </data>
+  <data name="ObjectBrowserSearchImageTooltip" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ObjectBrowserSearchInputText" xml:space="preserve">
+    <value>Enter search here</value>
+  </data>
+  <data name="PreviousButtonText" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="RefreshButton" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="SaveCurrentButtonText" xml:space="preserve">
+    <value>Save Step </value>
+  </data>
+  <data name="SaveCustomEventPopupMessageTitle" xml:space="preserve">
+    <value>Save Custom Event</value>
+  </data>
+  <data name="SaveEventButtonText" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SFInput_Map" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="SFInput_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SFInput_Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="SFInput_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="SFInput_ValueType" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="SmartFunctionCancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="SmartFunctionOKButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="SmartFunctionPopupHeading" xml:space="preserve">
+    <value>Select a SmartFunction</value>
+  </data>
+  <data name="SmartFunctionSearchButtonText" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SmartFunctionSelectAlt" xml:space="preserve">
+    <value>Click to select smart function</value>
+  </data>
+  <data name="SmartFunctionTreeHeading" xml:space="preserve">
+    <value>SmartFunctions</value>
+  </data>
+  <data name="SMOInfo" xml:space="preserve">
+    <value>SmartObject Info</value>
+  </data>
+  <data name="UnableToSaveCustomEvent" xml:space="preserve">
+    <value>Unable to save custom event. Please fill in all required fields.</value>
+  </data>
+  <data name="WizardHeadDatasource" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="WizardHeadEventDetail" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="WizardHeadFinish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="WizardHeadNotification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="WizardInfoDatasource" xml:space="preserve">
+    <value>Select the event to which you want to subscribe by browsing and selecting the event in the Object Browser.</value>
+  </data>
+  <data name="WizardInfoEventDetail" xml:space="preserve">
+    <value>Provide a name, description and location for the notification event.</value>
+  </data>
+  <data name="WizardInfoFinish" xml:space="preserve">
+    <value>Thank you. The notification event was configured successfully.</value>
+  </data>
+  <data name="WizardInfoNotification" xml:space="preserve">
+    <value>Configure notification e-mail details. Please use the (;) character to separate multiple to addresses.</value>
+  </data>
+  <data name="WizardMainHeader3" xml:space="preserve">
+    <value>Notification Event Designer</value>
+  </data>
+  <data name="WizzardStepOptionalText" xml:space="preserve">
+    <value>(Optional)</value>
+  </data>
+  <data name="fntSizeExtraLarge" xml:space="preserve">
+    <value>Extra Large</value>
+  </data>
+  <data name="fntSizeLarge" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="fntSizeLarger" xml:space="preserve">
+    <value>Larger</value>
+  </data>
+  <data name="fntSizeMedium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="fntSizeSmall" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="fntSizeVeryLarge" xml:space="preserve">
+    <value>Very Large</value>
+  </data>
+  <data name="fntSizeVerySmall" xml:space="preserve">
+    <value>Very Small</value>
+  </data>
+  <data name="EventENHeading" xml:space="preserve">
+    <value>Event Name</value>
+  </data>
+  <data name="EventEOHeading" xml:space="preserve">
+    <value>Event Object</value>
+  </data>
+  <data name="EventLocationLabel" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="EventNEHeading" xml:space="preserve">
+    <value>Notification E-mail</value>
+  </data>
+  <data name="EventOBHeading" xml:space="preserve">
+    <value>Object Browser</value>
+  </data>
+  <data name="WizardIWantTo" xml:space="preserve">
+    <value>I want to</value>
+  </data>
+  <data name="WizardAnotherEvent" xml:space="preserve">
+    <value>Create another</value>
+  </data>
+  <data name="WizardAnotherEventDesc" xml:space="preserve">
+    <value>If you want to restart the wizard and create another notification event.</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>Click Here</value>
+  </data>
+  <data name="EventCHeading" xml:space="preserve">
+    <value>Available Categories</value>
+  </data>
+  <data name="EventEIHeading" xml:space="preserve">
+    <value>Event Information</value>
+  </data>
+  <data name="WizardReturnToLanding" xml:space="preserve">
+    <value>Return to landing</value>
+  </data>
+  <data name="WizardReturnToLandingDesc" xml:space="preserve">
+    <value>If you want to return to the notication event landing page.</value>
+  </data>
+  <data name="CustomEventRequiredCategoryMessage" xml:space="preserve">
+    <value>Please select a category for the e-mail notification event.</value>
+  </data>
+  <data name="CustomEventRequiredCategoryTitle" xml:space="preserve">
+    <value>Required Location</value>
+  </data>
+  <data name="CustomEventRequiredFromMessage" xml:space="preserve">
+    <value>Please complete the "From:" e-mail address</value>
+  </data>
+  <data name="CustomEventRequiredFromTitle" xml:space="preserve">
+    <value>Required From</value>
+  </data>
+  <data name="CustomEventRequiredSubjectMessage" xml:space="preserve">
+    <value>Please complete the "Subject:" field</value>
+  </data>
+  <data name="CustomEventRequiredSubjectTitle" xml:space="preserve">
+    <value>Required Subject</value>
+  </data>
+  <data name="CustomEventRequiredToMessage" xml:space="preserve">
+    <value>Please complete the "To:" e-mail address</value>
+  </data>
+  <data name="CustomEventRequiredToTitle" xml:space="preserve">
+    <value>Required To</value>
+  </data>
+  <data name="CustomEventValidFromMessage" xml:space="preserve">
+    <value>Please enter a valid "From:" e-mail address</value>
+  </data>
+  <data name="CustomEventValidFromTitle" xml:space="preserve">
+    <value>Valid From</value>
+  </data>
+  <data name="CustomEventValidToMessage" xml:space="preserve">
+    <value>Please ensure that all “To:” addresses are valid</value>
+  </data>
+  <data name="CustomEventValidToTitle" xml:space="preserve">
+    <value>Valid To</value>
+  </data>
+  <data name="CustomEventConfirmNewEventMessage" xml:space="preserve">
+    <value>Changing the subscribed event will reset your notification e-mail. Are you sure you want to continue?</value>
+  </data>
+  <data name="CustomEventConfirmNewEventTitle" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="CustomEventConfirmTypeSwitchMessage" xml:space="preserve">
+    <value>Changing the message format to plain text will remove any formatting. Are you sure you want to continue?</value>
+  </data>
+  <data name="CustomEventConfirmTypeSwitchTitle" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="CustomEventCorrectFromMessage" xml:space="preserve">
+    <value>Please enter only one valid "From:" e-mail address</value>
+  </data>
+  <data name="CustomEventCorrectFromTitle" xml:space="preserve">
+    <value>Valid From</value>
+  </data>
+  <data name="WizardHeadAssembly" xml:space="preserve">
+    <value>Custom Event</value>
+  </data>
+  <data name="WizardInfoAssembly" xml:space="preserve">
+    <value>Configure custom assembly methods and parameters. </value>
+  </data>
+  <data name="EventAssemblyAction" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="EventAssemblyActionParameters" xml:space="preserve">
+    <value>Action Parameters</value>
+  </data>
+  <data name="EventAssemblyAddAction" xml:space="preserve">
+    <value>Add Action</value>
+  </data>
+  <data name="WizardHeadingAssemblySearch" xml:space="preserve">
+    <value>Select an Assembly</value>
+  </data>
+  <data name="WizardInfoAssemblySearch" xml:space="preserve">
+    <value>Select an assembly:</value>
+  </data>
+  <data name="WizardHeadingAssemblyClass" xml:space="preserve">
+    <value>Select an Assembly Class</value>
+  </data>
+  <data name="WizardHeadingAssemblyMethod" xml:space="preserve">
+    <value>Select an Assembly Method</value>
+  </data>
+  <data name="WizardInfoAssemblyClass" xml:space="preserve">
+    <value>Select an assembly class</value>
+  </data>
+  <data name="WizardInfoAssemblyMethod" xml:space="preserve">
+    <value>Select an assembly method</value>
+  </data>
+  <data name="EventAdd1" xml:space="preserve">
+    <value>Add Custom Event</value>
+  </data>
+  <data name="EventAdd2" xml:space="preserve">
+    <value>Add K2 Event</value>
+  </data>
+  <data name="EventAdd3" xml:space="preserve">
+    <value>Add Notification Event</value>
+  </data>
+  <data name="EventEdit1" xml:space="preserve">
+    <value>Edit Custom Event</value>
+  </data>
+  <data name="EventEdit2" xml:space="preserve">
+    <value>Edit K2 Notification Event</value>
+  </data>
+  <data name="EventEdit3" xml:space="preserve">
+    <value>Edit Notification Event</value>
+  </data>
+  <data name="WizardMainHeader1" xml:space="preserve">
+    <value>Custom Event Designer</value>
+  </data>
+  <data name="WizardMainHeader2" xml:space="preserve">
+    <value>K2 Event Designer</value>
+  </data>
+  <data name="NewNotificationEventButtonText" xml:space="preserve">
+    <value>New Notification Event</value>
+  </data>
+  <data name="NewEventButtonText" xml:space="preserve">
+    <value>New Event</value>
+  </data>
+  <data name="AllCustomEventTab" xml:space="preserve">
+    <value>All Custom Events</value>
+  </data>
+  <data name="AllNotificationEventTab" xml:space="preserve">
+    <value>All Notification Events</value>
+  </data>
+  <data name="WizardHeadingHyperlinkSetup" xml:space="preserve">
+    <value>Hyperlink Settings</value>
+  </data>
+  <data name="WizardAvailableAssembly" xml:space="preserve">
+    <value>Available Assemblies</value>
+  </data>
+  <data name="WizardAvailableClass" xml:space="preserve">
+    <value>Available Classes</value>
+  </data>
+  <data name="WizardAvailableMethod" xml:space="preserve">
+    <value>Available Methods</value>
+  </data>
+  <data name="WizardWarningClassExists" xml:space="preserve">
+    <value>Duplicate action already exists.</value>
+  </data>
+  <data name="WizardWarningHeader" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="CustomEventConfirmDeleteItem" xml:space="preserve">
+    <value>"Are you sure you want to delete this item?"</value>
+  </data>
+  <data name="ErrorSpecifyEventDesc" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="CustomEventRequiredSaveCustomActionMessage" xml:space="preserve">
+    <value>In order to finish an event you need to specify at least one action.</value>
+  </data>
+  <data name="CustomEventRequiredSaveCustomActionTitle" xml:space="preserve">
+    <value>Required Action</value>
+  </data>
+  <data name="CustomEventInvalidSelectionMessage" xml:space="preserve">
+    <value>Formatting of object data not allowed. Please change your selection.</value>
+  </data>
+  <data name="CustomEventInvalidSelectionTitle" xml:space="preserve">
+    <value>Invalid selection</value>
+  </data>
+  <data name="CustomEventNameContainsSpecialChars" xml:space="preserve">
+    <value>The event name you entered contains special characters which are not allowed. &amp; ! @ # $ % ^ &amp; * ( ) + = - [ ] \ / ' ; , { } | " : &lt; &gt; ? ~ are not allowed.</value>
+  </data>
+</root>

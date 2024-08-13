@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AuthorLabelText" xml:space="preserve">
+    <value>Author</value>
+    <comment>this is the header of a column which displays the name of the person who authored an object [location: all items grid] [designtime]</comment>
+  </data>
+  <data name="AutoGenFormBehaviour" xml:space="preserve">
+    <value>Form Behavior</value>
+    <comment>this is the title of a section where the user can select the required behaviour of a Form [location: Generate a Form pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenFormCreation" xml:space="preserve">
+    <value>Form Creation</value>
+    <comment>this is the title of a section where the user can configure the various options for creating a Form [location: Generate a Form pop up] [designtime]</comment>
+  </data>
+  <data name="AutoGenViewCreation" xml:space="preserve">
+    <value>View Creation</value>
+    <comment>this is the title of a section where the user can configure the various options for creating a View [location: Generate a View pop up] [designtime]</comment>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CommonFormLabel" xml:space="preserve">
+    <value>{0}:</value>
+    <comment>this is used as a label [eg. Category:, View:, or SmartObject:] [location: generate view, form pop up] [to be reviewed] [designtime]</comment>
+  </data>
+  <data name="CustomStyleLabel" xml:space="preserve">
+    <value>(Custom)</value>
+    <comment>when the user adds styling to a control, this label is displayed [location: control properties] [designtime]</comment>
+  </data>
+  <data name="DataTypeLabelText" xml:space="preserve">
+    <value>Data Type</value>
+  </data>
+  <data name="DateCreatedLabelText" xml:space="preserve">
+    <value>Date Created</value>
+    <comment>this is the header of a column which displays the date an object was created (SmartObject, View, Form, Workflow) [location: all items grid] [designtime]</comment>
+  </data>
+  <data name="DateModifiedLabelText" xml:space="preserve">
+    <value>Date Modified</value>
+    <comment>this is the header of a column which displays the date an object was previously modified (SmartObject, View, Form, Workflow) [location: all items grid] [designtime]</comment>
+  </data>
+  <data name="DefaultLabelText" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="DescriptionLabelText" xml:space="preserve">
+    <value>Description</value>
+    <comment>this is the header of a column which displays a brief description of an object (SmartObject, View, Form, Workflow) [location: all items grid] [designtime]</comment>
+  </data>
+  <data name="IDLabelText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="NameLabelText" xml:space="preserve">
+    <value>Name</value>
+    <comment>this is used throughout the application and indicates the name of an object [designtime]</comment>
+  </data>
+  <data name="NoLabelText" xml:space="preserve">
+    <value>No</value>
+    <comment>this is a label used throughout the application, used to indicate non-acceptance of an option (SmartObject, View, Form, Workflow) [designtime]</comment>
+  </data>
+  <data name="NoneLabelText" xml:space="preserve">
+    <value>(None)</value>
+    <comment>when the user adds styling to a control, this label is displayed [location: control properties] [designtime]</comment>
+  </data>
+  <data name="FormName" xml:space="preserve">
+    <value>Form Name</value>
+  </data>
+  <data name="PagingFirstPageText" xml:space="preserve">
+    <value>Go to first page</value>
+    <comment>this is a button which displays the first page of results [common]</comment>
+  </data>
+  <data name="PagingLastPageText" xml:space="preserve">
+    <value>Go to last page</value>
+    <comment>this is button which navigates to the last page of results [common]</comment>
+  </data>
+  <data name="PagingNextPageText" xml:space="preserve">
+    <value>Go to next page</value>
+    <comment>this is a button which displays the next page of results [common]</comment>
+  </data>
+  <data name="PagingPageText" xml:space="preserve">
+    <value>Page</value>
+    <comment>this displays the page number for the list of results [common]</comment>
+  </data>
+  <data name="PagingPreviousPageText" xml:space="preserve">
+    <value>Go to previous page</value>
+    <comment>This is a button which displays the previous page of results [common]</comment>
+  </data>
+  <data name="PagingTotalPagesText" xml:space="preserve">
+    <value>of {0}</value>
+  </data>
+  <data name="PasswordText" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="SaveAndEditForm" xml:space="preserve">
+    <value>Save and edit the Form</value>
+    <comment>this allows the user to save and edit a newly generated Form [location: Generate a Form pop up] [designtime]</comment>
+  </data>
+  <data name="SaveAndViewForm" xml:space="preserve">
+    <value>Save and view the Form</value>
+    <comment>this allows the user to save and view a newly generated Form [location: Generate a Form pop up] [designtime]</comment>
+  </data>
+  <data name="SaveForm" xml:space="preserve">
+    <value>Save the Form</value>
+    <comment>this allows the user to save a newly generated Form [location: Generate a Form pop up] [designtime]</comment>
+  </data>
+  <data name="StatusLabelText" xml:space="preserve">
+    <value>Status</value>
+    <comment>this is the header of a column which displays the current status of an object (SmartObject, View, Form, Workflow) [location: all items grid] [designtime]</comment>
+  </data>
+  <data name="StyleBuilderHeading" xml:space="preserve">
+    <value>Format</value>
+    <comment>this is the title of the popup where the user can create a style and apply it to a control which they are designing [location: control properties] [designtime]</comment>
+  </data>
+  <data name="UseCultureWatermark" xml:space="preserve">
+    <value>Use Selected Culture Settings</value>
+  </data>
+  <data name="UserSettingsWatermark" xml:space="preserve">
+    <value>User Settings</value>
+  </data>
+  <data name="TypeLabelText" xml:space="preserve">
+    <value>Type</value>
+    <comment>this is the header of a column which displays the object type (SmartObject, View, Form, Workflow) [location: all items grid] [designtime]</comment>
+  </data>
+  <data name="UserNameText" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="VersionLabelText" xml:space="preserve">
+    <value>Version</value>
+    <comment>this is the header of a column which displays the version of an object (SmartObject, View, Form, Workflow) [location: all items grid] [designtime]</comment>
+  </data>
+  <data name="YesLabelText" xml:space="preserve">
+    <value>Yes</value>
+    <comment>this is a label used throughout the application, used to indicate acceptance of an option (SmartObject, View, Form, Workflow) [designtime]</comment>
+  </data>
+  <data name="PasswordTooltip" xml:space="preserve">
+    <value>Can include upper and lower case letters, numbers and symbols</value>
+  </data>
+  <data name="PasswordWatermark" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RememberMeTooltip" xml:space="preserve">
+    <value>Credentials are remembered for the configured period and sign in automatically occurs when returning to the site</value>
+  </data>
+  <data name="SignInTooltip" xml:space="preserve">
+    <value>Click here to sign in using the specified username and password</value>
+  </data>
+  <data name="UserNameTooltip" xml:space="preserve">
+    <value>You can specify your identity in one of the following formats:
+
+“username” Authenticates with and without the current domain against all security labels.
+“K2 label:username” Authenticates with and without the current domain against the specified security label.
+“domain\username” Authenticates with the specified domain against all specified security labels.
+“K2 label:domain\username” Authenticates with the specified domain against the specified security label.</value>
+    <comment>K2 specific description for username format.</comment>
+  </data>
+  <data name="UserNameWatermark" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="AuthErrorAuthenticationFailed" xml:space="preserve">
+    <value>Username or Password is incorrect</value>
+    <comment>Friendly error message displayed to the user when authentication failed.  The message may be generic to not expose the detail what went wrong.</comment>
+  </data>
+  <data name="AuthErrorGeneric" xml:space="preserve">
+    <value>Username or Password is incorrect</value>
+    <comment>Friendly error message displayed to the user when authentication failed.  The message may be generic to not expose the detail what went wrong.</comment>
+  </data>
+  <data name="BlankLabelText" xml:space="preserve">
+    <value>Blank</value>
+    <comment>this is used when the user is contructing a URL. In this case blank is a synonym for empty [location: rules designer] [designtime]</comment>
+  </data>
+  <data name="DisableRuleText" xml:space="preserve">
+    <value>Disable Rule</value>
+  </data>
+  <data name="EnableRuleText" xml:space="preserve">
+    <value>Enable Rule</value>
+  </data>
+  <data name="SelectedDateLabelText" xml:space="preserve">
+    <value>Selected day</value>
+    <comment>this displays date selected by the user on the calendar [location: calendar control] [runtime]</comment>
+  </data>
+  <data name="TimeText" xml:space="preserve">
+    <value>Time</value>
+    <comment>this is a label which displays the time [location: calendar control] [common]</comment>
+  </data>
+  <data name="CommonOptionsLabelText" xml:space="preserve">
+    <value>{0} Options</value>
+  </data>
+  <data name="GeneralLabelText" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="HeightLabelText" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="LeftLabelText" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="PositionLabelText" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="SizeLabelText" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="TopLabelText" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="WidthLabelText" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="PropertyDisplayTextAll" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="ChangeHeading" xml:space="preserve">
+    <value>Change {0}: {1}</value>
+  </data>
+  <data name="DisplayField" xml:space="preserve">
+    <value>Display Field</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="ExpressionsText" xml:space="preserve">
+    <value>Expressions</value>
+    <comment>Expressions heading in the advanced filter section. [runtime][gender: neutral]</comment>
+  </data>
+  <data name="PreviewText" xml:space="preserve">
+    <value>Preview</value>
+    <comment>Preview heading in the advanced filter section. [runtime][gender: neutral]</comment>
+  </data>
+  <data name="ConditionsText" xml:space="preserve">
+    <value>Conditions</value>
+    <comment>Contitions heading in the advanced filter section. [runtime][gender: neutral]</comment>
+  </data>
+  <data name="RightLabelText" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="OperatorLabelText" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="RowNumberLabelText" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="RulesLabelText" xml:space="preserve">
+    <value>Rules</value>
+  </data>
+  <data name="FilterLabel" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="AllText" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="ExtendedText" xml:space="preserve">
+    <value>Extended Only</value>
+  </data>
+  <data name="UnboundText" xml:space="preserve">
+    <value>Unbound</value>
+  </data>
+  <data name="SubformText" xml:space="preserve">
+    <value>Subform</value>
+  </data>
+  <data name="SubviewText" xml:space="preserve">
+    <value>Subview</value>
+  </data>
+  <data name="NoneText" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="NoneOption" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="CredentialsExtraDataLabelDefault" xml:space="preserve">
+    <value>Server or URL</value>
+    <comment>In the event of any non-specified method requiring authentication details and Login Popup displaying, this is the label to be used for the extra data required together with credentials. To add other custom labels for different methods, use this format: CredentialsExtraDataLabel + "provider name" e.g. CredentialsExtraDataLabelSAP</comment>
+  </data>
+  <data name="CacheCredentialsText" xml:space="preserve">
+    <value>Cache Credentials</value>
+    <comment>Cache Credentials text used along side a checkbox for the user to specify whether they want to cache their login credentials or not</comment>
+  </data>
+  <data name="LoginPopupHeader" xml:space="preserve">
+    <value>Login Credentials</value>
+    <comment>Used for header of login popup which will be displayed in the event of authentication details not cached when trying to execute an SMO call that requires credentials.</comment>
+  </data>
+  <data name="UserNameTooltipGeneric" xml:space="preserve">
+    <value>Specify your account to log in. The format, such as Domain\User or user@domain.com, is determined by the label. Contact your administrator for more information.</value>
+    <comment>Generic description for username format (non-K2 specific).</comment>
+  </data>
+  <data name="PropertyHeaderHasErrorTooltip" xml:space="preserve">
+    <value>Contains properties that are not valid</value>
+    <comment>this is a tooltip that popup when hover over the error icon for the property grid's header</comment>
+  </data>
+  <data name="PropertyTabHasErrorTooltip" xml:space="preserve">
+    <value>Contains properties that are not valid</value>
+    <comment>this is a tooltip that popup when hover over the error icon for the property grid tab</comment>
+  </data>
+  <data name="DurationTimeSpan" xml:space="preserve">
+    <value>Time Span (00:00:00)</value>
+    <comment>Duration Time Span format display name in Duration tab of StyleBuilder under Control Properties for a control [designtime]</comment>
+  </data>
+  <data name="DurationFriendlyShort" xml:space="preserve">
+    <value>Friendly Short Units (h, m, s)</value>
+    <comment>Duration Friendly Short Units format display name in Duration tab of StyleBuilder under Control Properties for a control [designtime]</comment>
+  </data>
+  <data name="DurationFriendlyLong" xml:space="preserve">
+    <value>Friendly Long Units (Hours, Minutes, Seconds)</value>
+    <comment>Duration Friendly Long Units format display name in Duration tab of StyleBuilder under Control Properties for a control [designtime]</comment>
+  </data>
+  <data name="DurationFriendlyMedium" xml:space="preserve">
+    <value>Friendly Medium Units (Hrs, Mins, Secs)</value>
+    <comment>Duration Friendly Medium Units format display name in Duration tab of StyleBuilder under Control Properties for a control [designtime]</comment>
+  </data>
+  <data name="ExtendedTextTooltip" xml:space="preserve">
+    <value>Show Extended Rules Only</value>
+    <comment>Shows in the rules tab in the filter on top right if you hover over the Extended checkbox.</comment>
+  </data>
+  <data name="ParameterText" xml:space="preserve">
+    <value>Parameter</value>
+    <comment>Parameter text that can be used as a label e.g. Input name, column name, in the smartform application</comment>
+  </data>
+  <data name="EditView" xml:space="preserve">
+    <value>Edit view</value>
+  </data>
+  <data name="SystemViewsTooltip" xml:space="preserve">
+    <value>Cannot edit system views</value>
+  </data>
+</root>

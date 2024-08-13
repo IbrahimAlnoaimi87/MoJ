@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddExpressionBuilderDialogHeader" xml:space="preserve">
+    <value>Add Expression</value>
+  </data>
+  <data name="EditExpressionBuilderDialogHeader" xml:space="preserve">
+    <value>Edit Expression</value>
+  </data>
+  <data name="ExpressionGridDialogHeaderText" xml:space="preserve">
+    <value>Select an Expression for the '{0}' Control.</value>
+  </data>
+  <data name="RemoveExpressionConfirmation" xml:space="preserve">
+    <value>Are you sure you want to remove the selected expression?</value>
+  </data>
+  <data name="TokenboxWatermarkText" xml:space="preserve">
+    <value>Type text or drop an item</value>
+  </data>
+  <data name="ValidationExpressionUnresolvedEntity" xml:space="preserve">
+    <value>The control '{1}' uses an expression '{0}' that contains properties that are no longer available.</value>
+  </data>
+  <data name="ValidationNameExists" xml:space="preserve">
+    <value>The expression name already exists.</value>
+  </data>
+  <data name="ValidationNameRequired" xml:space="preserve">
+    <value>Supply a name for the expression</value>
+  </data>
+  <data name="ValidationPassed" xml:space="preserve">
+    <value>The expression appears valid.</value>
+  </data>
+  <data name="ValidationTokenboxEmpty" xml:space="preserve">
+    <value>One or more required values have not been specified.</value>
+  </data>
+  <data name="ValidationTokenboxUnresolvedEntity" xml:space="preserve">
+    <value>One or more textboxes contain properties that are no longer available.</value>
+  </data>
+  <data name="ValidationUnclosedBracketsFound" xml:space="preserve">
+    <value>The Expression is not valid, some brackets are unclosed.</value>
+  </data>
+  <data name="ControlText" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="ExpressionText" xml:space="preserve">
+    <value>Expression</value>
+  </data>
+  <data name="SystemVariableText" xml:space="preserve">
+    <value>System Variable</value>
+  </data>
+  <data name="UnresolvedObjectText" xml:space="preserve">
+    <value>Unresolved {0}</value>
+  </data>
+  <data name="ViewFieldText" xml:space="preserve">
+    <value>ViewField</value>
+  </data>
+  <data name="ExpressionsText" xml:space="preserve">
+    <value>Expressions</value>
+  </data>
+  <data name="ValidationCircularReferenceFound" xml:space="preserve">
+    <value>The expression '{0}' bound to the control '{1}', contains references to the control itself which can cause errors when executed.</value>
+  </data>
+  <data name="ExpressionBoundControlsDeletionConfirmation" xml:space="preserve">
+    <value>The selection contains one or more controls used in expressions. Removing these controls will render those expressions incomplete. Are you sure you want to remove the controls in the selection?</value>
+  </data>
+  <data name="ValidationExpressionUnresolvedEntityNoBoundControl" xml:space="preserve">
+    <value>The expression '{0}' contains properties that are no longer available.</value>
+  </data>
+  <data name="ParametersTooltipLabel" xml:space="preserve">
+    <value>Parameters:</value>
+  </data>
+  <data name="ReturnTypeTooltipLabel" xml:space="preserve">
+    <value>Return Type:</value>
+  </data>
+  <data name="PreviewUnavailable" xml:space="preserve">
+    <value>Expression preview unavailable</value>
+  </data>
+  <data name="AnyTypeTooltipText" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="FalseLiteralText" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="FalseLiteralTooltip" xml:space="preserve">
+    <value>Not according to truth or fact, incorrect.</value>
+  </data>
+  <data name="LeftBracketText" xml:space="preserve">
+    <value>Opening Parenthesis</value>
+  </data>
+  <data name="LeftBracketTooltip" xml:space="preserve">
+    <value>Defines the start of the syntactic structure of an expression, overriding operator precedence.</value>
+  </data>
+  <data name="RightBracketText" xml:space="preserve">
+    <value>Closing Parenthesis</value>
+  </data>
+  <data name="RightBracketTooltip" xml:space="preserve">
+    <value>Defines the end of the syntactic structure of an expression, overriding operator precedence.</value>
+  </data>
+  <data name="TrueLiteralText" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="TrueLiteralTooltip" xml:space="preserve">
+    <value>Consistent with fact or reality, not false or erroneous.</value>
+  </data>
+  <data name="EmptyStringLiteralText" xml:space="preserve">
+    <value>(Empty String)</value>
+  </data>
+  <data name="EmptyStringLiteralTooltip" xml:space="preserve">
+    <value>An empty string value</value>
+    <comment>Tooltip for "Empty String" text operator, used in expressions [designtime]</comment>
+  </data>
+  <data name="RemoveExpressionWithDependantsConfirmation" xml:space="preserve">
+    <value>&lt;p style="margin-top:0"&gt;The selected expression is used in one or more expressions. Removing the expression will cause the dependant expressions below to be invalid.&lt;/p&gt;{0}&lt;p&gt;Do you want to remove the expression?&lt;/p&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="BoundFieldErrorText" xml:space="preserve">
+    <value>The expression cannot contain a field that is bound to the control. Use a different field or do not use an expression.</value>
+  </data>
+  <data name="InvalidExpressionErrorText" xml:space="preserve">
+    <value>The selected expression contains an error. Please update the expression or select another expression.</value>
+    <comment>An error message shown to the user when user tries to select an invalid expression for a control</comment>
+  </data>
+  <data name="NodeNotAvailableForUse" xml:space="preserve">
+    <value>To avoid circular references, this element is not available for use in this expression.</value>
+  </data>
+  <data name="ErrorExpressionFunctions" xml:space="preserve">
+    <value>An error occured while retrieving the operator data.</value>
+    <comment>Error message if no expressions functions were retrieved.</comment>
+  </data>
+  <data name="UnresolvedObjectTextControlText" xml:space="preserve">
+    <value>Unresolved Control</value>
+    <comment>An unlinked (or undefined or Unresolved) Control</comment>
+  </data>
+  <data name="UnresolvedObjectTextEnvironmentFieldText" xml:space="preserve">
+    <value>Unresolved Environment Field</value>
+    <comment>An unlinked (or undefined or Unresolved) Environment Field</comment>
+  </data>
+  <data name="UnresolvedObjectTextExpressionText" xml:space="preserve">
+    <value>Unresolved Expression</value>
+    <comment>An unlinked (or undefined or Unresolved) Expression(or instruction)</comment>
+  </data>
+  <data name="UnresolvedObjectTextFormParameterText" xml:space="preserve">
+    <value>Unresolved Form Parameter</value>
+    <comment>An unlinked (or undefined or Unresolved) Form Parameter(or custom form value)</comment>
+  </data>
+  <data name="UnresolvedObjectTextSystemVariableText" xml:space="preserve">
+    <value>Unresolved System Variable</value>
+    <comment>An unlinked (or undefined or Unresolved) System Variable</comment>
+  </data>
+  <data name="UnresolvedObjectTextViewFieldText" xml:space="preserve">
+    <value>Unresolved View Field</value>
+    <comment>An unlinked (or undefined or Unresolved) View Field</comment>
+  </data>
+  <data name="UnresolvedObjectTextViewParameterText" xml:space="preserve">
+    <value>Unresolved View Parameter</value>
+    <comment>An unlinked (or undefined or Unresolved) View Parameter(or custom view value)</comment>
+  </data>
+  <data name="ValidationTokenboxWarningEntity" xml:space="preserve">
+    <value>One or more textboxes contain properties that are no longer valid.</value>
+    <comment>The expression contains a token of an item in warning state.</comment>
+  </data>
+  <data name="UnresolvedUnknownItemText" xml:space="preserve">
+    <value>Unresolved item</value>
+    <comment>An unlinked (or undefined or Unresolved) object of unknown type</comment>
+  </data>
+</root>
