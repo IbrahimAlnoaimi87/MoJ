@@ -1,0 +1,57 @@
+﻿.expression-number
+{
+
+}
+
+.expression-operator
+{
+
+}
+
+.expression-wrapper
+{
+	
+}
+
+.expression-dropdown-container
+{
+	width: 50px;
+	display: inline-block;
+}
+
+.grouping-button
+{
+	display: inline-block;
+    background: #FAFBF8;
+    height: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #343e41;
+    min-width: 10px;
+    vertical-align:top;
+    border: solid 1px #dde0db;
+}
+
+.changed-grouping
+{
+	border: solid 1px #dde0db;
+}
+
+.available-grouping
+{
+	border: solid 1px #98dc28;
+	background: #F1F7E1;
+}
+
+.unavailable-grouping
+{
+}
+
+.all-grouping
+{
+}
+
+span.previewText
+{
+	color:#98dc28;
+}

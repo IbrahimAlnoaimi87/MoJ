@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="AddViewAction" xml:space="preserve">
+    <value>Add Rule</value>
+  </data>
+  <data name="AutoGenerate" xml:space="preserve">
+    <value>Create Labels and Controls</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Bold" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CaptureViewDescription" xml:space="preserve">
+    <value>Used to capture information.</value>
+  </data>
+  <data name="CaptureViewHeader" xml:space="preserve">
+    <value>Item View</value>
+  </data>
+  <data name="CenterAlign" xml:space="preserve">
+    <value>Center Align</value>
+  </data>
+  <data name="ChangeControl" xml:space="preserve">
+    <value>Change Control</value>
+  </data>
+  <data name="CheckOutPrompt" xml:space="preserve">
+    <value>You can not make changes to the View because it is not checked out by you. Do you want to check out this View now?</value>
+  </data>
+  <data name="ClearCell" xml:space="preserve">
+    <value>Clear Cell</value>
+  </data>
+  <data name="ClearRow" xml:space="preserve">
+    <value>Clear Row</value>
+  </data>
+  <data name="ContentCategoryHeader" xml:space="preserve">
+    <value>Category:</value>
+  </data>
+  <data name="ControlProperties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="EditCellProp" xml:space="preserve">
+    <value>Edit Cell Properties</value>
+  </data>
+  <data name="EditTableProp" xml:space="preserve">
+    <value>Edit Table Properties</value>
+  </data>
+  <data name="EditViewAction" xml:space="preserve">
+    <value>Edit Rule</value>
+  </data>
+  <data name="Error.ControlDefinitionNotFound" xml:space="preserve">
+    <value>Could not find the HTML definition for the control</value>
+  </data>
+  <data name="Error.ControlPropertyUnableToSet" xml:space="preserve">
+    <value>Could not set properties for the control '{0}' used for '{1}'</value>
+  </data>
+  <data name="Error.DefaultControlNotFound" xml:space="preserve">
+    <value>Could not find the default control definition for the selected property type.</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>Font Size</value>
+  </data>
+  <data name="HightlightColor" xml:space="preserve">
+    <value>Highlight Color</value>
+  </data>
+  <data name="Indent" xml:space="preserve">
+    <value>Indent</value>
+  </data>
+  <data name="Info.ItemExistsOnCanvas" xml:space="preserve">
+    <value>The selected item already exists on the design canvas.</value>
+  </data>
+  <data name="Info.RemoveLastColumn" xml:space="preserve">
+    <value>You may not remove the selected column, there has to be at least one column available in the table.</value>
+  </data>
+  <data name="Info.RemoveLastRow" xml:space="preserve">
+    <value>You may not remove the selected row, there has to be at least one row available in the table.</value>
+  </data>
+  <data name="InsertColLeft" xml:space="preserve">
+    <value>Insert Column to the Left</value>
+  </data>
+  <data name="InsertColRight" xml:space="preserve">
+    <value>Insert Column to the Right</value>
+  </data>
+  <data name="InsertImage" xml:space="preserve">
+    <value>Insert Image</value>
+  </data>
+  <data name="InsertRowAbove" xml:space="preserve">
+    <value>Insert Row Above</value>
+  </data>
+  <data name="InsertRowBelow" xml:space="preserve">
+    <value>Insert Row Below</value>
+  </data>
+  <data name="InsertTable" xml:space="preserve">
+    <value>Create Layout Table Only</value>
+  </data>
+  <data name="Italic" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="Justify" xml:space="preserve">
+    <value>Justify</value>
+  </data>
+  <data name="LeftAlign" xml:space="preserve">
+    <value>Left Align</value>
+  </data>
+  <data name="ListViewDescription" xml:space="preserve">
+    <value>Used to display lists of information.</value>
+  </data>
+  <data name="ListViewHeader" xml:space="preserve">
+    <value>List View</value>
+  </data>
+  <data name="MergeCellBelow" xml:space="preserve">
+    <value>Merge Cell Below</value>
+  </data>
+  <data name="MergeCellRight" xml:space="preserve">
+    <value>Merge Cell to the Right</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="CheckInText" xml:space="preserve">
+    <value>Check In this View when it is saved.</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Edit Properties</value>
+  </data>
+  <data name="RemoveCol" xml:space="preserve">
+    <value>Remove Column</value>
+  </data>
+  <data name="RemoveRow" xml:space="preserve">
+    <value>Remove Row</value>
+  </data>
+  <data name="RightAlign" xml:space="preserve">
+    <value>Right Align</value>
+  </data>
+  <data name="SelectViewTypeHeader" xml:space="preserve">
+    <value>View Type:</value>
+  </data>
+  <data name="TabPropertiesHeader" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="TabToolboxHeader" xml:space="preserve">
+    <value>Toolbox</value>
+  </data>
+  <data name="TextColor" xml:space="preserve">
+    <value>Text Color</value>
+  </data>
+  <data name="Underline" xml:space="preserve">
+    <value>Underline</value>
+  </data>
+  <data name="ValidationViewCategoryRequired" xml:space="preserve">
+    <value>Category not specified.</value>
+  </data>
+  <data name="ValidationViewNameRequired" xml:space="preserve">
+    <value>View Name is required.</value>
+  </data>
+  <data name="ViewActionColumnName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ViewDescription" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="ViewName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="DeleteViewAction" xml:space="preserve">
+    <value>Remove Rule</value>
+  </data>
+  <data name="NoChangeControlsAvailable" xml:space="preserve">
+    <value>No controls available.</value>
+  </data>
+  <data name="TabControls" xml:space="preserve">
+    <value>Toolbox</value>
+  </data>
+  <data name="TabControlsMethods" xml:space="preserve">
+    <value>Methods</value>
+  </data>
+  <data name="TabControlsFields" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="TabControlsToolbox" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="TabControl" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="TabView" xml:space="preserve">
+    <value>Rules</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ViewActionColumnLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="FormEvents" xml:space="preserve">
+    <value>Form Events</value>
+  </data>
+  <data name="TabLayoutHeader" xml:space="preserve">
+    <value>Layout Controls</value>
+  </data>
+  <data name="FitToCell" xml:space="preserve">
+    <value>Fit Control to Cell (Remove width setting)</value>
+  </data>
+  <data name="TabControlEventsHeader" xml:space="preserve">
+    <value>Events for control:</value>
+  </data>
+  <data name="TabControlProperties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="TabControlPropertiesHeader" xml:space="preserve">
+    <value>Properties for control:</value>
+  </data>
+  <data name="ControlExpression" xml:space="preserve">
+    <value>Calculation Expression for {0}</value>
+  </data>
+  <data name="ControlCalculation" xml:space="preserve">
+    <value>Control Expression</value>
+  </data>
+  <data name="EditStyles" xml:space="preserve">
+    <value>Edit Format</value>
+  </data>
+  <data name="AllowPagingText" xml:space="preserve">
+    <value>Enable Paging with</value>
+  </data>
+  <data name="ItemsPerPageText" xml:space="preserve">
+    <value>items per page</value>
+  </data>
+  <data name="ListViewGetListMethod" xml:space="preserve">
+    <value>List method:</value>
+  </data>
+  <data name="MethodBehaviourName" xml:space="preserve">
+    <value>When {0} is {1}</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveOptions" xml:space="preserve">
+    <value>Save Action:</value>
+  </data>
+  <data name="SaveAllDescription" xml:space="preserve">
+    <value>Save all changes made on the editable list.</value>
+  </data>
+  <data name="BottomAlign" xml:space="preserve">
+    <value>Bottom Align</value>
+  </data>
+  <data name="MiddleAlign" xml:space="preserve">
+    <value>Middle Align</value>
+  </data>
+  <data name="TopAlign" xml:space="preserve">
+    <value>Top Align</value>
+  </data>
+  <data name="AutoGenerateButtonTypeStandard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="AutoGenerateButtonTypeToolbar" xml:space="preserve">
+    <value>Toolbar</value>
+  </data>
+  <data name="ViewOptions" xml:space="preserve">
+    <value>View Settings</value>
+  </data>
+  <data name="ViewAutoGenerateAllMethods" xml:space="preserve">
+    <value>All methods</value>
+  </data>
+  <data name="AutoGenerateLabelTypeLeft" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="AutoGenerateLabelTypeTop" xml:space="preserve">
+    <value>Above</value>
+  </data>
+  <data name="UnbindControlMsg" xml:space="preserve">
+    <value>Are you sure you want to unbind the control?</value>
+  </data>
+  <data name="UnbindControl" xml:space="preserve">
+    <value>Unbind Control</value>
+  </data>
+  <data name="ButtonPlacement" xml:space="preserve">
+    <value>Button Placement:</value>
+  </data>
+  <data name="ViewCanvas" xml:space="preserve">
+    <value>View Canvas</value>
+  </data>
+  <data name="LabelPlacement" xml:space="preserve">
+    <value>Label Placement:</value>
+  </data>
+  <data name="DataSourceLabel" xml:space="preserve">
+    <value>Data Source:</value>
+  </data>
+  <data name="DragControlHereWatermark" xml:space="preserve">
+    <value>Drag a control here</value>
+  </data>
+  <data name="DefaultCanvas" xml:space="preserve">
+    <value>Clear canvas</value>
+  </data>
+  <data name="DefaultCanvasMsg" xml:space="preserve">
+    <value>Are you sure you would like to clear the canvas?</value>
+  </data>
+  <data name="Expressions" xml:space="preserve">
+    <value>Expressions</value>
+  </data>
+  <data name="ViewDetails" xml:space="preserve">
+    <value>View Details</value>
+  </data>
+  <data name="IntroductionStepContentHtml" xml:space="preserve">
+    <value>&lt;div class="intro-content view"&gt;
+	&lt;h2&gt;Views&lt;/h2&gt;&lt;p&gt;
+		Creating a View is the second step in Form creation.&lt;br&gt;
+			&lt;br&gt;
+				The View Designer wizard guides you through the creation of a View. The wizard starts with a Details screen which allows you to choose what type of form you want to create -- an Item View or List View. On the settings screen you can select the SmartObject data source and set common View properties. The remainder of the wizard allows you to drag additional controls onto the view, change the layout, and add or edit a rule. For more information about Views, see the &lt;a href="javascript:;" onclick="HelpHelper.runHelp(7040);"&gt;K2 Documentation.&lt;/a&gt;&lt;br&gt;
+&lt;/p&gt;The following types of Views are available:&lt;ul&gt;
+		&lt;li&gt;
+			&lt;strong&gt;Item View&lt;/strong&gt;
+			&lt;br&gt;Used to capture data, the Item View is useful when you are creating and editing individual records.
+		&lt;/li&gt;
+		&lt;br&gt;
+			&lt;li&gt;
+				&lt;strong&gt;List View&lt;/strong&gt;
+				&lt;br&gt;The List View allows users to see multiple records at a time, and can either be read-only or editable.
+			&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</value>
+    <comment>[to be reviewed]</comment>
+  </data>
+  <data name="WizardDetailsStepName" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="WizardFinishedStepName" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="WizardIntroStepName" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="WizardLayoutStepName" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="WizardRuleStepName" xml:space="preserve">
+    <value>Rules</value>
+  </data>
+  <data name="AllowUserAddNewRowsText" xml:space="preserve">
+    <value>Allow the user to add new rows</value>
+  </data>
+  <data name="AllowUserEditRowsText" xml:space="preserve">
+    <value>Allow the user to edit existing rows</value>
+  </data>
+  <data name="AllowUserReloadListText" xml:space="preserve">
+    <value>Allow the user to manually refresh list</value>
+  </data>
+  <data name="AllowUserRemoveRowsText" xml:space="preserve">
+    <value>Allow the user to remove rows</value>
+  </data>
+  <data name="ReadOnlyText" xml:space="preserve">
+    <value>Read Only</value>
+  </data>
+  <data name="EditableAddRowDesc" xml:space="preserve">
+    <value>Add a new row to the list.</value>
+  </data>
+  <data name="EditableEditRowDesc" xml:space="preserve">
+    <value>Edit the selected row in the list.</value>
+  </data>
+  <data name="EditableRemoveRowDesc" xml:space="preserve">
+    <value>Remove the selected row from the list.</value>
+  </data>
+  <data name="EditableDoubleClickRowDesc" xml:space="preserve">
+    <value>Edit the selected row in the list when it has been double clicked.</value>
+  </data>
+  <data name="WizardHeader" xml:space="preserve">
+    <value>View Designer {0} &gt; {1}</value>
+  </data>
+  <data name="SelectDatasource" xml:space="preserve">
+    <value>You need to select a Data Source to continue.</value>
+  </data>
+  <data name="InvalidListDatasource" xml:space="preserve">
+    <value>The selected SmartObject does not contain valid list methods.</value>
+  </data>
+  <data name="RuleNameViewEventNameCurrent" xml:space="preserve">
+    <value>View executed {0}</value>
+  </data>
+  <data name="ControlEvent_OnClick" xml:space="preserve">
+    <value>Clicked</value>
+  </data>
+  <data name="ViewEvent_Init" xml:space="preserve">
+    <value>Initialize</value>
+  </data>
+  <data name="ViewEvent_ListDoubleClick" xml:space="preserve">
+    <value>List item double click</value>
+  </data>
+  <data name="ViewEvent_ListRefresh" xml:space="preserve">
+    <value>List refresh</value>
+  </data>
+  <data name="ControlEvent_OnChange" xml:space="preserve">
+    <value>Changed</value>
+  </data>
+  <data name="TabBodyProperties" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="TabColumnProperties" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="AggregationAverage" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="AggregationCount" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="AggregationInteger" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="AggregationMaximum" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="AggregationMinimum" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="AggregationSum" xml:space="preserve">
+    <value>Sum</value>
+  </data>
+  <data name="AggregationDisplay" xml:space="preserve">
+    <value>List {0} ({1})</value>
+  </data>
+  <data name="ViewLayoutDescription" xml:space="preserve">
+    <value>Select or clear the checkbox next to each field you want to show or hide in this View. At least one checkbox must be selected.</value>
+  </data>
+  <data name="AlternateRowsChk" xml:space="preserve">
+    <value>Shade alternating rows</value>
+  </data>
+  <data name="BoldHeadingRogChk" xml:space="preserve">
+    <value>Bold heading row</value>
+  </data>
+  <data name="ButtonsDescription" xml:space="preserve">
+    <value>Choose how you want the buttons to display on your Item View.</value>
+  </data>
+  <data name="ButtonsTitle" xml:space="preserve">
+    <value>Buttons</value>
+  </data>
+  <data name="ConfigureButtonText" xml:space="preserve">
+    <value>Configure...</value>
+  </data>
+  <data name="EditAllRowsOptions" xml:space="preserve">
+    <value>Edit all rows</value>
+  </data>
+  <data name="EditOptionsDescription" xml:space="preserve">
+    <value>Choose whether the list items can be edited in the list. This will add menu buttons to add new rows, edit existing rows, or delete rows based on your selections.</value>
+  </data>
+  <data name="EditOptionsTitle" xml:space="preserve">
+    <value>Edit Options</value>
+  </data>
+  <data name="EditSingleRowsOptions" xml:space="preserve">
+    <value>Edit single rows</value>
+  </data>
+  <data name="EnableFilteringChk" xml:space="preserve">
+    <value>Enable filtering</value>
+  </data>
+  <data name="EnableListEditingChk" xml:space="preserve">
+    <value>Enable list editing</value>
+  </data>
+  <data name="FilterDescription" xml:space="preserve">
+    <value>Select the fields to determine the default filtering of the data.</value>
+  </data>
+  <data name="FilterTitle" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="LabelsDescription" xml:space="preserve">
+    <value>Choose how you want the labels to display on your Item View.</value>
+  </data>
+  <data name="LabelsTitle" xml:space="preserve">
+    <value>Labels</value>
+  </data>
+  <data name="MethodLabel" xml:space="preserve">
+    <value>method</value>
+  </data>
+  <data name="SortDescription" xml:space="preserve">
+    <value>Select the fields to determine the order in which the items in the View are displayed.</value>
+  </data>
+  <data name="SortTitle" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="StyleDescription" xml:space="preserve">
+    <value>Choose a style for the List View from the options on the right.</value>
+  </data>
+  <data name="StyleTitle" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="UserSettingsDescription" xml:space="preserve">
+    <value>Enable runtime filtering, paging, editing and multiple row selection. &lt;br&gt; Note: Paging is not available if the list is editable.</value>
+  </data>
+  <data name="UserSettingsTitle" xml:space="preserve">
+    <value>Runtime Options</value>
+  </data>
+  <data name="CallMethodWhenFormLoadsChk" xml:space="preserve">
+    <value>Call this method when the View loads</value>
+    <comment>When creating a View and selecting List View option in Designer</comment>
+  </data>
+  <data name="AddEditEditableTableHeader" xml:space="preserve">
+    <value>Add/Edit Item:</value>
+  </data>
+  <data name="FilterWidgetTitle" xml:space="preserve">
+    <value>Configure Filter Options</value>
+  </data>
+  <data name="SortWidgetTitle" xml:space="preserve">
+    <value>Configure Sorting Options</value>
+  </data>
+  <data name="ViewLayoutTitle" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="SettingsShowAddRow" xml:space="preserve">
+    <value>Enable Add new row link</value>
+  </data>
+  <data name="AllowMutipleSelection" xml:space="preserve">
+    <value>Allow multiple row selection</value>
+  </data>
+  <data name="AllowCellContentSelection" xml:space="preserve">
+    <value>Allow cell content selection</value>
+  </data>
+  <data name="DisplayOnlyText" xml:space="preserve">
+    <value>Display Only</value>
+  </data>
+  <data name="FieldNameText" xml:space="preserve">
+    <value>Field Name</value>
+  </data>
+  <data name="IncludeLabelText" xml:space="preserve">
+    <value>Include</value>
+  </data>
+  <data name="ExpanderTableDescription" xml:space="preserve">
+    <value>To hold your controls and labels</value>
+  </data>
+  <data name="ExpanderTableHeader" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="ListViewAdditionalOptionsDescription" xml:space="preserve">
+    <value>Additional options to auto-generate list view.</value>
+  </data>
+  <data name="ListViewAdditionalOptionsHeader" xml:space="preserve">
+    <value>Additional:</value>
+  </data>
+  <data name="EmptyView" xml:space="preserve">
+    <value>Empty View</value>
+  </data>
+  <data name="ListViewGeneralStepMethodControlsDisabled" xml:space="preserve">
+    <value>The Initialize Rule has multiple actions that execute list methods on this SmartObject.</value>
+    <comment>This is used to indicate why the list method selection and call this method when the form loads checkbox has been disabled on the general step of the view designer</comment>
+  </data>
+</root>

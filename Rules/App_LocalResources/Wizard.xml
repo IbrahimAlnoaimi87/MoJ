@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Wizard>
+  <Steptree>
+    <Header ResourceName="RuleWizardHeader"/>
+  </Steptree>
+  <Steps>
+    <!-- Details -->
+    <Step Type="Details">
+      <Name ResourceName="StepName1"/>
+      <Description ResourceName="StepDescription1"/>
+      <Element>stepContent1</Element>
+      <Disabled>false</Disabled>
+      <Hidden>false</Hidden>
+    </Step>
+    <!-- Rules -->
+    <Step Type="Rules">
+      <Name ResourceName="StepName2"/>
+      <Description ResourceName="StepDescription2"/>
+      <Element>stepContent2</Element>
+      <Disabled>false</Disabled>
+      <Hidden>false</Hidden>
+      <Content>
+      </Content>
+    </Step>
+    <!-- Conditions -->
+    <Step Type="Conditions">
+      <Name ResourceName="StepName4"/>
+      <Description ResourceName="StepDescription4"/>
+      <Element>stepContent3</Element>
+      <Disabled>false</Disabled>
+      <Hidden>false</Hidden>
+      <Content>
+      </Content>
+    </Step>
+    <!-- Actions -->
+    <Step Type="Actions">
+      <Name ResourceName="StepName3"/>
+      <Description ResourceName="StepDescription3"/>
+      <Element>stepContent4</Element>
+      <Disabled>false</Disabled>
+      <Hidden>false</Hidden>
+      <Content>
+      </Content>
+    </Step>
+  </Steps>
+</Wizard>

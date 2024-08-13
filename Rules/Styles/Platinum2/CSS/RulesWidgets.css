@@ -1,0 +1,380 @@
+/*Author: 		Lewis Garmston*/
+
+/*Purpose: 		[describe what is and what shouldn't be in this file]*/
+
+/*The master variables/color file is stored in %K2Install%/K2 smartforms Designer/ - which is 3 folders up  */
+
+/*This is because /styles, /forms, /rules etc all have css in them */
+
+
+div#formProcessDiv {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: solid 1px #adae9c;
+  box-sizing: border-box;
+  padding: 3px;
+}
+#ValidationWidgetPopup div.validation-main-wrapper {
+  position: relative;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#ValidationWidgetPopup div.validation-grid-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 83px;
+  left: 0;
+}
+#ValidationWidgetPopup div.validation-bottom-wrapper {
+  position: relative;
+  height: 40px;
+  display: block;
+  padding: 8px;
+}
+#ValidationWidgetPopup div.validation-options-wrapper {
+  position: absolute;
+  height: 83px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+#ValidationWidgetPopup #validationWidgetGrid.grid .grid-content-table tbody .first .grid-content-cell {
+  margin-left: 8px;
+}
+#ValidationWidgetPopup .validation-options-wrapper .panel .panel-body {
+  border: none;
+}
+/* FormNavigateMappingWidget */
+
+#FormNavigatePC .form-navigation-form-field {
+  clear: both;
+  margin-bottom: 3px;
+  margin-left: 54px;
+  min-height: 20px;
+  position: relative;
+}
+#FormNavigatePC .form-navigation-form-field > * {
+  position: relative;
+}
+#FormNavigatePC .form-navigation-input {
+  left: 225px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#FormNavigatePreviewPanel .preview-url {
+  line-height: 17px;
+}
+#FormNavigatePreviewPanel .preview-url.plaintext {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+#BrowserNavigatePC .token {
+  float: none;
+}
+#BrowserNavigatePC #PaneGrid .grid-header {
+  border: none;
+}
+#FormNavigatePreviewPanel .scroll-wrapper,
+#BrowserNavigatePC.scroll-wrapper {
+  padding: 10px;
+}
+#MessageTypeFF,
+#MessageTypeFF .twisty,
+#MessageTitleFF,
+#MessageTitleFF .twisty {
+  padding-top: 1px;
+}
+#BrowserNavigateOpenInTwisty {
+  left: 0 !important;
+  padding-left: 0;
+  right: 30px;
+}
+html[dir=rtl] #BrowserNavigateOpenInTwisty {
+  right: 0 !important;
+  padding-right: 0;
+  left: 30px !important;
+}
+#BrowserNavigateOpenInFF .form-field-element-wrapper > div > div:first-child {
+  margin-right: 28px;
+  position: relative;
+}
+html[dir=rtl] #BrowserNavigateOpenInFF .form-field-element-wrapper > div > div:first-child {
+  margin-left: 28px;
+  margin-right: 0;
+}
+#BrowserNavigateOpenInFF .form-field-element-wrapper > div > div:last-child {
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 1px;
+}
+html[dir=rtl] #BrowserNavigateOpenInFF .form-field-element-wrapper > div > div:last-child {
+  float: left;
+  right: unset;
+  left: 147px;
+}
+#BrowserNavigateDialogOptionsButton {
+  line-height: 14px;
+  min-width: 24px;
+}
+#BrowserNavigateDialogOptionsButton .button-wrapper {
+  height: 19px;
+  min-width: 22px;
+}
+#PaneURL .panel-body,
+#FormNavigateStatePanel .panel-body {
+  border: none;
+}
+#PaneURL .panel-body .wrapper,
+#FormNavigateStatePanel .panel-body .wrapper {
+  padding: 9px;
+  box-sizing: border-box;
+}
+#PaneURL .panel-body .wrapper .mappings-input,
+#FormNavigateStatePanel .panel-body .wrapper .mappings-input {
+  padding-right: 0px;
+}
+#FormNavigateConfigPane #FormNavigateConfigPanel > .panel-body {
+  border: none;
+  top: 47px;
+}
+#FormNavigateConfigPane #FormNavigateConfigPanel > .panel-body .scroll-wrapper {
+  padding: 7px 10px 6px 4px;
+}
+#FormNavigateConfigPane #FormNavigateConfigPanel > .panel-body .scroll-wrapper .tree {
+  margin-left: 0px;
+}
+#FormNavigateConfigPane #FormNavigateConfigPanel > .panel-body .scroll-wrapper .tree .mappings-input {
+  padding-right: 0px;
+}
+#PanePreview #FormNavigatePreviewPanel > .panel-body,
+#FormNavigatePreviewPane #FormNavigatePreviewPanel > .panel-body {
+  border: none;
+}
+/*Set Control Properties Styling*/
+
+.mappings-input {
+  height: 22px;
+  /*Give it extra pixels for the inner borders because IE11 is having trouble with flex and is not resizing the box for it's content's borders*/
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;
+  padding-right: 5px;
+}
+.mappings-input > .mapping-control,
+.mappings-input > .input-control {
+  order: 1;
+  flex-grow: 1;
+}
+.mappings-input > .twisty-button {
+  order: 3;
+}
+.mappings-input .token-input.single-line .token-input-editor-area {
+  height: 20px;
+}
+.mapping-control .input-control.radio {
+  padding-top: 3px;
+  padding-right: 8px;
+}
+html[dir=rtl] .mapping-control .input-control.radio {
+  padding-left: 8px;
+  padding-right: 0;
+}
+.twisty-radio-group li {
+  display: inline;
+}
+.mapping-control .input-control.lookup-box .ellipsis,
+.input-control-buttons.twisty-button,
+.button-image {
+  width: 20px;
+  height: 20px;
+}
+.mapping-control .input-control.lookup-box .input-control-m-c {
+  height: 23px;
+}
+.mapping-control .input-control.lookup-box .input-control-wrapper {
+  height: 21px;
+}
+.mapping-control .input-control.dropdown-box .styling-left {
+  right: 23px;
+}
+.input-control-buttons.twisty-button {
+  cursor: pointer;
+  position: static;
+}
+label.ControlProperty .input-control-icon,
+#ControlPropertiesMappingWidgetDialog label.yesno .input-control-icon {
+  display: none;
+}
+label.ControlProperty .input-control-text,
+#ControlPropertiesMappingWidgetDialog label.yesno .input-control-text {
+  padding-left: 4px;
+}
+html[dir=rtl] label.ControlProperty .input-control-text,
+html[dir=rtl] #ControlPropertiesMappingWidgetDialog label.yesno .input-control-text {
+  padding-left: 0;
+  padding-right: 4px;
+}
+.twisty.map .token-input,
+.twisty.drop .mapping-control,
+.twisty.drop .token-input.disabled .token-input-watermark,
+.without-twisty.map .token-input,
+.without-twisty.drop .mapping-control,
+.without-twisty.drop .token-input.disabled .token-input-watermark {
+  display: none !important;
+}
+.twisty.drop .token-input.disabled .token-input-watermark,
+.twisty.drop .token-input.disabled .token-input-editor-area.ui-droppable {
+  cursor: default;
+}
+.twisty.map .mapping-control,
+.without-twisty.map .mapping-control,
+.twisty.drop .token-input,
+.button-image,
+.tree li.closed ul.input-control-group.radio {
+  display: block !important;
+}
+.twisty-button .button-image {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 16px 16px;
+}
+.ControlPropertyCategory {
+  margin-bottom: 7px;
+}
+li label.ControlProperty {
+  width: 230px !important;
+}
+/*Content and PDF control css override*/
+
+.mapping-control .input-control.select-box.dropdown-box.icon-control.yes {
+  background-position: 4px -246px;
+}
+.mapping-control .input-control.select-box.dropdown-box.icon-control.no {
+  background-position: 4px -96px;
+}
+.mapping-control .input-control.select-box.dropdown-box.icon-control.auto {
+  background-position: 4px 4px;
+}
+.mapping-control .input-control.select-box.dropdown-box.icon-control.right {
+  background-position: 4px -196px;
+}
+.mapping-control .input-control.select-box.dropdown-box.icon-control.bottom {
+  background-position: 4px -146px;
+}
+.mapping-control .input-control.select-box.dropdown-box.icon-control.portrait {
+  background-position: 4px -1778px;
+}
+.mapping-control .input-control.select-box.dropdown-box.icon-control.landscape {
+  background-position: 4px -1580px;
+}
+/*End Set Control Properties Widget Styling*/
+
+/* specify edit state action*/
+
+.rules-readonly-grid .grid-content-cell.all-items {
+  font-weight: bold;
+}
+.rules-readonly-grid div.grid-column-header-text.header-choice {
+  text-align: center;
+}
+/*End specify edit state action*/
+
+#rwCustomValuePopup .form-field:first-child {
+  margin-top: 0px;
+}
+#ModalDialogWindowOptionsPopup #ModalDialogOptions .wrapper {
+  box-sizing: border-box;
+  padding: 10px;
+}
+#MailMappingWidgetDialog .mapping-content-section.rightAlign .wrapper {
+  padding: 9px 10px;
+  box-sizing: border-box;
+}
+#MailMappingWidgetDialog .mapping-content-section.rightAlign .panel-body {
+  border: none;
+  top: 22px;
+}
+#MailMappingWidgetDialog .mapping-content-section.rightAlign .pane-container.vertical .pane:last-child {
+  padding: 0 10px 10px 10px;
+  background-color: white;
+}
+#ActivityMappingWidgetDialog .mapping-content-section.rightAlign .panel-body {
+  border: none;
+}
+#ActivityMappingWidgetDialog .mapping-content-section.rightAlign .panel-body .panel-body-wrapper {
+  padding: 10px 5px 10px 0px;
+}
+#RuleMappingWizard_ProcessLoadInput_wizard_step .mapping-content-section.rightAlign .panel-body {
+  border: none;
+}
+#RuleMappingWizard_ProcessLoadInput_wizard_step .mapping-content-section.rightAlign .panel-body .panel-body-wrapper .scroll-wrapper {
+  padding: 8px 5px 8px 0px;
+}
+#RuleMappingWizard_ProcessLoadInput_wizard_step .mapping-content-section.rightAlign .panel-body .panel-body-wrapper .dropLabel.text.required span {
+  width: 234px;
+}
+#RuleMappingWizard_ProcessLoadInput_wizard_step .mapping-content-section.rightAlign .panel-body .panel-body-wrapper .mappings-input {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  left: 282px;
+  padding-right: 0;
+}
+#RuleMappingWizard_ProcessLoadInput_wizard_step .mapping-content-section.rightAlign .panel-body .panel-body-wrapper .mappings-input .input-control-buttons a {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+#RuleMappingWizard_ProcessLoadInput_wizard_step .mapping-content-section.rightAlign .panel-body .panel-body-wrapper .mappings-input .input-control-buttons a:active,
+#RuleMappingWizard_ProcessLoadInput_wizard_step .mapping-content-section.rightAlign .panel-body .panel-body-wrapper .mappings-input .input-control-buttons a.active {
+  border-color: transparent;
+}
+#RuleMappingWizard_ProcessLoadInput_wizard_step .mapping-content-section.rightAlign .panel-body .panel-body-wrapper .target-rule-level-1 .mappings-input {
+  left: 264px;
+}
+#RuleMappingWizard_ProcessStartOutput_wizard_step .mapping-content-section.rightAlign .panel-body,
+#RuleMappingWizard_ProcessLoadOutput_wizard_step .mapping-content-section.rightAlign .panel-body {
+  border: none;
+}
+#RuleMappingWizard_ProcessStartOutput_wizard_step .mapping-content-section.rightAlign .panel-body .scroll-wrapper,
+#RuleMappingWizard_ProcessLoadOutput_wizard_step .mapping-content-section.rightAlign .panel-body .scroll-wrapper {
+  padding: 10px;
+}
+#ProcessActionTopPanel .panel-body,
+#ProcessStartTopPanel .panel-body {
+  border: none;
+}
+#ProcessActionTopPanel .panel-body .WorkFlowItemMappings,
+#ProcessStartTopPanel .panel-body .WorkFlowItemMappings,
+#ProcessActionTopPanel .panel-body .WorkFlowDataMappings,
+#ProcessStartTopPanel .panel-body .WorkFlowDataMappings {
+  padding: 10px 5px 7px 0px;
+  box-sizing: border-box;
+}
+#ProcessActionBottomPanel .panel-body,
+#ProcessStartBottomPanel .panel-body {
+  border: none;
+}
+#ProcessActionBottomPanel .panel-body .WorkFlowItemMappings,
+#ProcessStartBottomPanel .panel-body .WorkFlowItemMappings,
+#ProcessActionBottomPanel .panel-body .WorkFlowDataMappings,
+#ProcessStartBottomPanel .panel-body .WorkFlowDataMappings {
+  padding: 10px 5px 7px 7px;
+  box-sizing: border-box;
+}
+#MessageMappingWidgetDialog .mapping-content-section .panel-body {
+  border: none;
+}
+#MessageMappingWidgetDialog .mapping-content-section .panel-body .panel-body-wrapper {
+  padding: 10px;
+  box-sizing: border-box;
+}

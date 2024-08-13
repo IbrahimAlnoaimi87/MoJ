@@ -1,0 +1,102 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Wizard.master.cs" Inherits="SourceCode.Forms.MasterPages.MasterPagesWizard"
+  MasterPageFile="~/MasterPages/Generic.master" %>
+
+<asp:Content ID="WizardMain" ContentPlaceHolderID="PageContent" runat="server">
+    <div class="wizard-step-box">
+        <div class="wizard-step-box-header">
+            <div class="wizard-step-box-header-l"></div>
+            <div class="wizard-step-box-header-c">
+                <div class="wizard-step-box-header-text"><asp:ContentPlaceHolder ID="StepTreeHeader" runat="server" /></div>
+            </div>
+            <div class="wizard-step-box-header-r"></div>
+            </div>
+        <div class="wizard-step-box-body">
+            <div class="wizard-step-box-body-l"></div>
+            <div class="wizard-step-box-body-c">
+                <div class="wrapper">
+                    <ul class="steptree"></ul>
+                    <asp:ContentPlaceHolder ID="StepTreeContent" runat="server" />
+                </div>
+            </div>
+            <div class="wizard-step-box-body-r"></div>
+        </div>
+        <div class="wizard-step-box-footer">
+            <div class="wizard-step-box-footer-l"></div>
+            <div class="wizard-step-box-footer-c">
+                <a href="javascript:;" id="steptreeCollapse" onclick="return false;"></a>
+            </div>
+            <div class="wizard-step-box-footer-r"></div>
+        </div>
+    </div>
+    <div class="wizard-main-box">
+        <div class="wizard-main-box-header">
+            <div class="wizard-main-box-header-l"></div>
+            <div class="wizard-main-box-header-c">
+                <div class="wizard-main-box-header-text">
+                    <span class="number">1</span>
+                    <span class="text">
+                        <asp:ContentPlaceHolder ID="WizardContentHeader" runat="server" />
+                    </span>
+                </div>
+            </div>
+            <div class="wizard-main-box-header-r"></div>
+        </div>
+        <div class="wizard-main-box-body">
+            <div class="wizard-main-box-body-l"></div>
+            <div class="wizard-main-box-body-c">
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="WizardContentStepHeader" runat="server" />
+                    <asp:ContentPlaceHolder ID="WizardContentStepDescription" runat="server" />
+                    <asp:ContentPlaceHolder ID="WizardContent" runat="server" />
+                </div>
+            </div>
+            <div class="wizard-main-box-body-r"></div>
+        </div>
+    </div>
+    <div class="wizard-main-box-footer">
+        <div class="wizard-main-box-footer-l"></div>
+        <div class="wizard-main-box-footer-c"></div>
+        <div class="wizard-main-box-footer-r"></div>
+    </div>
+    <div class="wizard-button-bar">
+        <div class="wizard-button-bar-t">
+            <div class="wizard-button-bar-tl"></div>
+            <div class="wizard-button-bar-tc"></div>
+            <div class="wizard-button-bar-tr"></div>
+        </div>
+        <div class="wizard-button-bar-m">
+            <div class="wizard-button-bar-ml"></div>
+            <div class="wizard-button-bar-mc">
+                <div class="button-bar">
+                    <asp:ContentPlaceHolder ID="WizardButtonBarLeft" runat="server" />
+                    <asp:ContentPlaceHolder ID="WizardButtonBarRight" runat="server" />
+                </div>
+            </div>
+            <div class="wizard-button-bar-mr"></div>
+        </div>
+        <div class="wizard-button-bar-b">
+            <div class="wizard-button-bar-bl"></div>
+            <div class="wizard-button-bar-bc"></div>
+            <div class="wizard-button-bar-br"></div>
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="PageVariables" ContentPlaceHolderID="PageVariables" runat="server">
+  <script type="text/javascript">
+      var wizardComplete = false;
+      window.onbeforeunload = function(e) {
+          var e = e || window.event;
+
+          if (!wizardComplete) {
+              // For IE and Firefox
+              if (e) {
+                  e.returnValue = '<%=GetGlobalResourceObject("CommonPhrases", "WizardExitConfirmationText") %>';
+              }
+
+              // For Safari
+              return '<%=GetGlobalResourceObject("CommonPhrases", "WizardExitConfirmationText") %>';
+          }
+      };
+  </script>
+  <asp:ContentPlaceHolder ID="LocalVariables" runat="server" />
+</asp:Content>

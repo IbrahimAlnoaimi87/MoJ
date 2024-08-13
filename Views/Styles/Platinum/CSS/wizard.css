@@ -1,0 +1,1664 @@
+div.dataitemcontainer
+{
+	display: block;
+	padding: 1px 1px 1px 3px;
+	overflow-y: auto;
+}
+
+div.datalistitem
+{
+	cursor: pointer;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis; /* Opera vendor prefix */
+	white-space: nowrap;
+}
+
+div.datalistitem:hover,
+div.datalistitem:focus
+{
+	background-color:#808080;
+}
+
+div.contentBelowToolbar
+{
+	position: absolute;
+	top: 27px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+label.afterInput
+{
+	vertical-align: middle;
+	width: auto;
+	float: none;
+}
+
+div.changeControlContainer
+{
+	width: 100%;
+	height: 100%;
+	background-color:#fff;
+}
+
+div.changeControlItem
+{
+	border: solid 1px transparent;
+}
+
+div.changeControlItem:focus, div.changeControlItem:hover
+{
+	border: solid 1px #d6e3b0;
+	background-color: #d6e3b0;
+}
+
+div.changeControlItem.selected
+{
+	background-color: #e4efc3;
+	border: solid 1px #d6e3b0;
+}
+
+div.wizard-step-content
+{
+	overflow: hidden;
+}
+
+div.panelBoxContentFullNestedLeft
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 2px;
+	overflow: auto;
+}
+
+div.editor-canvas
+{
+	position:static;
+	overflow-x: hidden;
+}
+
+th.ActionListColWidth
+{
+	width: 33%;
+}
+
+div.viewActionListTable
+{
+	top: 28px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+div.viewActionListTableHeader
+{
+	top: 0;
+	right: 0;
+}
+
+table.editor-table
+{
+	position: relative;
+	empty-cells: show;
+	border-right:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+	border-top:1px solid #bbb;
+	border-left:1px solid #bbb;
+}
+
+#editableSection
+{
+	margin-top:30px;
+}
+
+table.capturelist-editor-table
+{
+	position: relative;
+	empty-cells: show;
+	border:none;
+	width:100%;
+}
+
+table.capturelist-editor-table>tbody>tr.editor-row>td.editor-cell
+{
+	position: relative;
+	empty-cells: show;
+	border-right:1px dotted #bbb;	
+	width:100%;
+}
+
+
+table.editor-table.toolbar>tbody>tr.editor-row>td.editor-cell
+{
+	border-right:1px dotted #bbb;	
+}
+
+table.editor-table.toolbar>tbody>tr.editor-row>td.editor-cell-item-hover
+{
+	border:1px solid #84bf17;	
+}
+table.editor-table.toolbar
+{
+	border: none;
+	background-color: #F7F7F7;
+	margin-bottom: 3px;
+}
+
+.editor-body
+{
+	width: 100%;
+}
+
+tr.editor-row
+{
+	width: 100%;
+	empty-cells: show;
+}
+
+tr.editor-row.emptyCell
+{
+	min-height: 24px;
+	empty-cells: show;
+	background: none;	
+	border:none;
+}
+
+tr.editor-row.list-view-footer
+{
+	height:24px;
+}
+
+tr.editor-row.list-view-item.footer > td.editor-cell
+{	
+	background-color:#f9f9f9;
+	border-bottom:none;
+}
+
+tr.editor-row.list-view-item.footer:first-child > td.editor-cell
+{
+	border-top: 1px solid #B6B7A8;
+}
+
+td.editor-cell.selectedobject
+{
+	border: solid 1px #d6e3b0;
+	background-color: #e4efc3;
+}
+
+td.editor-cell.header,
+tr.list-view-item>td.editor-cell.header
+{
+	height: 22px;
+	empty-cells: show;
+	background:#f9f9f9;
+	background-image: -moz-linear-gradient(-90deg, #f9f9f9, #dfe4d7);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#dfe4d7));
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#f9f9f9, endColorstr=#dfe4d7)";
+	padding: 0;
+	padding-left: 3px;
+	border:none;
+	border-bottom: 1px solid #bbb;
+	vertical-align:middle;
+}
+
+td.editor-cell.header.error,
+tr.list-view-item>td.editor-cell.header.error
+{
+	position: relative;
+}
+
+td.editor-cell.header.error:after,
+tr.list-view-item>td.editor-cell.header.error:after
+{
+	-moz-animation: fadein 0.25s;
+	-o-animation: fadein 0.25s;
+	-webkit-animation: fadein 0.25s;
+	animation: fadein 0.25s;
+	background: url(../../../../Styles/Platinum/Images/Icons/Error16.png) no-repeat 50% 50%;
+	content: '';
+	display: block;
+	height: 16px;
+	position: absolute;
+	right: 0;
+	top: -8px;
+	width: 16px;
+}
+
+td.editor-cell
+{
+	empty-cells: show;
+	overflow: hidden;
+	min-height: 24px;	
+	border-collapse:collapse;
+	padding: 3px;
+	vertical-align:top;
+	text-align:left;
+}
+
+.editor-canvas.theme-entry td.editor-cell
+{
+	overflow: visible;
+}
+
+td.editor-cell.watermark-visible
+{
+	text-align:center;
+	vertical-align:middle;
+}
+td.editor-cell.watermark-visible .watermark-text
+{
+	display: inline-block;
+}
+td.editor-cell.watermark-invisible .watermark-text
+{
+	display: none;
+}
+
+
+tr.editor-row.list-view-item.header>td.editor-cell.selectedobject
+{	
+	background-color:#f9f9f9;
+	border-bottom: 1px solid #bbb;
+}
+
+tr.editor-row.list-view-item>td.editor-cell.selectedobject
+{
+	background-color:#fff;
+}
+
+tr.editor-row.list-view-item.footer>td.editor-cell.selectedobject
+{
+	background-color:#e4efc3;
+}
+
+tr.editor-row.list-view-item>td.editor-cell
+{
+	border-bottom:none;
+}
+
+tr.editor-row.list-view-item>td.editor-cell:first-child
+{
+	border-left:none;
+}
+
+table.capturelist-editor-table tr.editor-row>td.editor-cell
+{
+	border-left:none;
+}
+
+table.capturelist-editor-table tr.editor-row>td.editor-cell:first-child
+{
+	border-left:1px dotted #bbb;
+}
+
+td.editor-cell.alternate
+{
+	empty-cells: show;
+	overflow: hidden;
+	height: 24px;
+	padding:3px;
+	border-collapse:collapse;
+	border-right:none;
+	background-color:#f5f5f5;
+}
+
+table.editor-table td.editor-cell-item-hover
+{
+	border: solid 1px #84bf17;
+}
+
+div.controlwrapper.selectedobject
+{
+}
+
+div.controlwrapper.selectedobject .controloverlay
+{
+	background-color: #e4efc3;
+	filter: alpha(opacity=40);
+	opacity: 0.40;
+	border: solid 2px #84bf17;
+}
+
+div.controlwrapper.selectedobject.error .controloverlay
+{
+	border-color:#ff0000;
+}
+
+div.column-selected-overlay
+{
+	background-color: #e4efc3;	
+	filter: alpha(opacity=50);
+	opacity: 0.50;
+	position:absolute;
+	top: 0;
+	border:2px solid #84BF17;
+}
+
+div.column-selected-overlay.error
+{
+	background-color: #FFE4C4;
+	border-color:#ff0000;
+}
+
+div.column-selected-overlay.error::after 
+{
+	-moz-animation: fadein 0.25s;
+	-o-animation: fadein 0.25s;
+	-webkit-animation: fadein 0.25s;
+	animation: fadein 0.25s;
+	background: url(../../../../Styles/Platinum/Images/Icons/Error16.png) no-repeat 50% 50%;
+	content: '';
+	display: block;
+	height: 16px;
+	position: absolute;
+	right: 0;
+	top: -8px;
+	width: 16px;
+	background-position: 2px -1px;
+}
+
+div.column-hover-overlay
+{	
+	background-color: #e4efc3;	
+	filter: alpha(opacity=30);
+	opacity: 0.30;
+	position:absolute;
+	top: 0;
+	border:none;
+}
+
+td.editor-cell.align-top
+{
+	vertical-align: top;
+}
+
+td.editor-cell.align-middle
+{
+	vertical-align: middle;
+}
+
+td.editor-cell.align-bottom
+{
+	vertical-align: bottom;
+}
+
+td.editor-cell.align-left
+{
+	text-align: left;
+}
+
+td.editor-cell.align-center
+{
+	text-align: center;
+}
+
+td.editor-cell.align-right
+{
+	text-align: right;
+}
+
+div.watermark-text
+{
+	font-style: italic;
+	color: #a0a0a0;
+	text-align: center;
+}
+
+div.controlwrapper
+{
+	position: relative;
+	border: solid 1px transparent;
+	cursor: pointer;
+	display: block;
+	max-width: 100%;
+}
+
+div.controlwrapper.draggable 
+{
+	position: relative;
+	border: solid 1px transparent;
+	cursor: pointer;
+}
+
+div.controlwrapper.error::after 
+{
+	-moz-animation: fadein 0.25s;
+	-o-animation: fadein 0.25s;
+	-webkit-animation: fadein 0.25s;
+	animation: fadein 0.25s;
+	background: url(../../../../Styles/Platinum/Images/Icons/Error16.png) no-repeat 50% 50%;
+	content: '';
+	display: block;
+	height: 16px;
+	position: absolute;
+	right: 0;
+	top: -8px;
+	width: 16px;
+}
+
+html[dir=rtl] div.controlwrapper.error::after
+{
+	left: 0;
+	right: auto;
+}
+
+.editor-canvas table.editor-table>tbody>tr>td.editor-cell>div.controlwrapper:not(.selectedobject):hover
+{
+	border: solid 1px #84bf17;
+}
+
+div.controlwrapper.inline
+{
+	vertical-align:inherit;
+	line-height:14px;
+}
+
+tr.editor-row.list-view-item > td.editor-cell > div.controlwrapper
+{
+	max-width: 100%;
+}
+
+div.controlwrapper a.Hyperlink-NotSet
+{
+	max-width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+div.draggable 
+{
+	cursor: pointer;
+}
+
+div.section
+{
+	position: relative;
+	width: 100%;
+}
+
+/* data type icons */
+div.toolboxitem
+{
+	background-color:transparent;
+	background-position:left center;
+	background-repeat:no-repeat;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+html[dir=rtl] div.toolboxitem
+{
+	background-position:right center;
+}
+
+div.toolboxitem.autonumber
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/AutoNumber16.png");
+}
+div.toolboxitem.autonumber.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.AutoNumber .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/AutoNumber16Error.png");
+}
+div.toolboxitem.autoguid
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/AutoGuid16.png");
+}
+div.toolboxitem.autoguid.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.AutoGuid .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/AutoGuid16Error.png");
+}
+div.toolboxitem.guid
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Guid16.png");
+}
+div.toolboxitem.guid.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.Guid .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Guid16Error.png");
+}
+div.toolboxitem.text
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Text16.png");
+}
+div.toolboxitem.text.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.Text .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Text16Error.png");
+}
+div.toolboxitem.number
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Number16.png");
+}
+div.toolboxitem.number.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.Number .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Number16Error.png");
+}
+div.toolboxitem.memo
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Memo16.png");
+}
+div.toolboxitem.memo.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.Memo .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Memo16Error.png");
+}
+div.toolboxitem.decimal
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Decimal16.png");
+}
+div.toolboxitem.decimal.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.Decimal .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Decimal16Error.png");
+}
+div.toolboxitem.yesno
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Boolean16.png");
+}
+div.toolboxitem.yesno.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.YesNo .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Boolean16Error.png");
+}
+div.toolboxitem.datetime
+{
+	background-image: url( "../../../../Styles/Platinum/Images/Icons/DateTime16.png");
+}
+div.toolboxitem.datetime.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.DateTime .input-control-wrapper
+{
+	background-image: url( "../../../../Styles/Platinum/Images/Icons/DateTime16Error.png");
+}
+div.toolboxitem.date
+{
+	background-image: url( "../../../../Styles/Platinum/Images/Icons/Date16.png");
+}
+div.toolboxitem.date.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.Date .input-control-wrapper
+{
+	background-image: url( "../../../../Styles/Platinum/Images/Icons/Date16Error.png");
+}
+div.toolboxitem.time
+{
+	background-image: url( "../../../../Styles/Platinum/Images/Icons/Time16.png");
+}
+div.toolboxitem.time.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.Time .input-control-wrapper
+{
+	background-image: url( "../../../../Styles/Platinum/Images/Icons/Time16Error.png");
+}
+div.toolboxitem.image
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Image16.png");
+}
+div.toolboxitem.image.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.Image .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Image16Error.png");
+}
+div.toolboxitem.file
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/File16.png");
+}
+div.toolboxitem.file.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.File .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/File16Error.png");
+}
+div.toolboxitem.hyperlink
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Hyperlink16.png");
+}
+div.toolboxitem.hyperlink.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.Hyperlink .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Hyperlink16Error.png");
+}
+div.toolboxitem.multivalue
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/MultiValue16.png");
+}
+div.toolboxitem.multivalue.invalid,
+.propertyGridPropertyItem.error .input-control.icon-control.MultiValue .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/MultiValue16Error.png");
+}
+
+.propertyGridPropertyItem.error .input-control.icon-control.expression .input-control-wrapper
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/ExpressionError16.png");
+}
+
+/* method type icons */
+div.toolboxitem.create
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Add16.png");
+}
+div.toolboxitem.update
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Save16.png");
+}
+div.toolboxitem.delete
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Delete16.png");
+}
+div.toolboxitem.read
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/LoadFlat16.png");
+}
+div.toolboxitem.list
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/ListView16.png");
+}
+
+/*--------------------*/
+
+div.dragging
+{
+	width: 100px;
+}
+
+div.innerWrapper
+{
+	width: auto;
+	height: auto;
+	padding: 2px 0 0 2px;
+}
+
+div.fullWrapperPadded
+{
+	width: 100%;
+	height: 100%;
+	padding: 2px 2px 2px 2px;
+}
+
+div.fullWrapper
+{
+	width: 100%;
+	height: 100%;
+}
+
+div.fullWrapperOverflow
+{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+div.absoluteWrapper
+{
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 2px;
+	right: 2px;
+}
+
+div.absoluteFullWrapper
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+div.absoluteFullWrapperOverflow
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
+
+html[dir=rtl] div.absoluteFullWrapperOverflow 
+{
+	text-align: left;
+}
+
+div.absoluteFullWrapperOverflowX
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+div.absoluteBottomAlign
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 45px;
+}
+
+div.absoluteTopAlign
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 2px;
+	right: 2px;
+}
+
+div.absoluteOffsetAlign130
+{
+	position: absolute;
+	top: 130px;
+	bottom: 2px;
+	left: 2px;
+	right: 2px;
+}
+
+div.absoluteOffsetAlign140
+{
+	position: absolute;
+	top: 140px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+div.absoluteOffsetAlign150
+{
+	position: absolute;
+	top: 150px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+div.categoryTreeContainer
+{
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 2px;
+}
+
+div.borderTop
+{
+	border-top: solid 1px #b3b3b3;
+}
+
+div.viewTypeContainer
+{
+	position: absolute;
+	top: 125px;
+	bottom: 0;
+	left: 2px;
+	right: 2px;
+}
+
+div.splitLeftColumn
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	height: 51px;
+}
+
+div.splitRightColumn
+{
+	position: absolute;
+	top: 54px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	height: expression(this.parentNode.offsetHeight+"px"); /* IE only */
+}
+
+div.splitDivider
+{
+	position: absolute;
+	top: 0;
+	left: 300px;
+	bottom: 0;
+	width: 3px;
+	height: expression((this.parentNode.offsetHeight)+"px"); /* IE only */
+}
+
+div.container
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+div.paddedContainer
+{
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 2px;
+	right: 2px;
+}
+
+div.hidediv
+{
+	display: none;
+}
+
+div.halfDynamicTop
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+}
+
+div.halfFixedBottom
+{
+	position: absolute;
+	height: 80px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+div.halfFullBottom
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+div.viewsettings
+{
+	margin-left: 0;
+}
+
+div.leftpad3
+{
+	padding-left: 3px;
+}
+
+div.leftpad15
+{
+	padding-left: 15px;
+}
+
+div.controloverlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color:#fff;
+	filter: alpha(opacity=01);
+	opacity: 0.01;
+}
+
+div.controlwrapper.hover .controloverlay
+{
+	background-color: #e4efc3;
+	filter: alpha(opacity=40);
+	opacity: 0.40;
+}
+
+div.resizewrapper
+{
+	position: relative;
+	max-width: 100%;
+}
+
+td.editor-cell > div.controlwrapper > div.resizewrapper
+{
+	overflow: hidden;
+}
+
+#divConditionsMapping
+{
+	height: 100%;
+}
+
+div.autoGenMethodSelectContainer
+{
+	width: 100%;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+div.autoGenFielSelectContainer
+{
+	width: 100%;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+label.autoGenButtonsLabel
+{
+	display: block;
+	padding-left: 4px;
+}
+
+label.autogenButtonMethodsMsg
+{
+	padding-left: 0;
+}
+
+div.autoGenMethodSelectLeft
+{
+	float: left;
+	margin-right: 10px;
+}
+
+div.autoGenMethodSelectRight
+{
+	float: none;
+}
+
+div#txtColumnsCustomWrapper
+{
+	width: 25px;
+	padding-left: 40px;
+}
+
+input.AutoGenerateColomnsText
+{
+	margin-left: 25px;
+	width: 25px;
+}
+
+#divControlCalculation
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.wizard-finish-pane-top
+{
+	position: absolute;
+	top: 0;
+	height: 100px;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.wizard-finish-pane-bottom
+{
+	position: absolute;
+	top: 103px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+/* Column dragging*/
+div.drag-column
+{
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	width: 7px;
+}
+
+div.drag-block
+{
+	position: relative;
+	display: none;
+	top: 80px;
+	bottom: 0;
+	width: 8px;
+	height:8px;
+	border:1px solid #84bf17;
+	background-color:#eeeeee;
+}
+
+div.drag-column:hover
+{
+	cursor: col-resize;
+	width: 7px;
+}
+
+.dragging-allowed
+{
+	cursor: col-resize;
+}
+
+div.columnWrapperDiv
+{
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: visible;
+}
+
+div.editormain-wrapper
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 350px;
+	bottom: 0;
+}
+
+div.editormain-wrapper-top
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 51%;
+}
+
+div.editormain-wrapper-bottom
+{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+div.editorcanvas-wrapper
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 353px;
+	bottom: 0;
+}
+
+div.createfields-section
+{
+	position: relative;
+	top: 10px;
+}
+
+div.labelplacement-section
+{
+	position: relative;
+	top: 20px;
+}
+
+div.createbuttons-section
+{
+	position: relative;
+	top: 30px;
+}
+
+div#vdAutoGenerateInputViewOptions
+{
+	position: relative;
+	top: 40px;
+}
+
+div.rowOptionsSettings
+{
+	position: relative;
+}
+
+div.listOptionsSettings
+{
+	position: relative;
+	top: 20px;
+}
+
+div#CaptureListViewSettings
+{
+	position: relative;
+	top: 20px;
+}
+
+div.formGenerationOptions-wrapper
+{
+	position: relative;
+}
+
+div.formGeneralOptions-wrapper
+{
+	position: relative;
+}
+
+li.floatfix
+{
+	position: relative;
+	height: 23px;
+}
+
+.collapse-margin-right
+{
+	margin-right: 0 !important;
+	float: left;
+}
+
+.checkradio-text-input
+{
+	float: left;
+	width: 30px;
+}
+
+.checkradio-text-input-label
+{
+	line-height: 19px;
+	margin-left: 4px;
+	float: left;
+}
+
+div.toolbar-droppable
+{
+	height:24px;
+	min-width: 5px;
+	width: 15px;
+	position: relative;
+	display: inline-block;
+	border: dashed 1px #bbb;
+}
+
+div.toolbar-droppable.hover
+{
+	border: solid 1px #84bf17;
+}
+
+/* Toolbox */
+div.controlToolboxGroup
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+tr.placeholder-footer
+{
+	height: 28px;
+	background-color:#f9f9f9;
+}
+
+#tableHover
+{
+	border-style: none;
+	height: 16px;
+	width: 16px;
+	background-position: left top;
+	margin: 5px;
+	padding: 3px;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-image: url('../../../../Styles/Platinum/Images/Icons/TableSelectCursor16.png');
+}
+
+div.vdrw-search-wrapper
+{
+	float: right;
+	width: 324px;
+}
+
+html[dir=rtl] div.vdrw-search-wrapper
+{
+	float: left;
+}
+
+html[dir=rtl] div.vdrw-search-wrapper .input-control
+{
+	float: right !important; /* override inline */
+	margin-left: 3px !important; /* override inline */
+	margin-right: 0 !important; /* override inline */
+}
+
+html[dir=rtl] div.vdrw-search-wrapper .input-control:first-child,
+html[dir=rtl] div.vdrw-search-wrapper .input-control:last-child
+{
+	margin-left: 0 !important;
+}
+
+div#vdRuntimeFilteringCheckboxWrapper
+{
+	padding-top:4px;
+	padding-left:16px;
+}
+
+span.layout-create-blank32
+{
+	display: block;
+	float:left;
+	border-style:none;
+	height: 52px;
+	width: 52px;
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-image: url('../../../../Styles/Platinum/Images/icons/InsertTable32.png');
+}
+
+span.layout-create-blank32.inactive 
+{
+	display: block;
+	float:left;
+	border-style:none;
+	height: 52px;
+	width: 52px;
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-image: url('../../../../Styles/Platinum/Images/icons/InsertTableGrey.png');
+}
+
+span.layout-auto-generate32
+{
+	display: block;
+	float:left;
+	border-style:none;
+	height: 52px;
+	width: 52px;
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-image: url('../../../../Styles/Platinum/Images/icons/Generate32.png');
+}
+
+span.layout-auto-generate32.inactive
+{
+	display: block;
+	float:left;
+	border-style:none;
+	height: 52px;
+	width: 52px;
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-image: url('../../../../Styles/Platinum/Images/icons/WizardIconGrey.png');
+}
+
+html[dir=rtl] span.layout-create-blank32,
+html[dir=rtl] span.layout-auto-generate32
+{
+	float:right;
+}
+
+#EmptyView
+{
+	display: block;
+	border-style:none;
+	height:38px;
+	background-repeat:no-repeat;
+	background-position: center top;
+	color: #CBCBCB;
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	font-weight: 700 !important;
+	font-size: 16px !important;
+	margin-bottom: 20px;
+	-webkit-text-shadow: 1px 1px #fff;
+	text-shadow: 1px 1px #fff;
+	text-align:center;
+	border-bottom: solid #E8E8E5 1px;
+}
+
+#ListViewCreateNewOptions
+{
+	padding:7px;
+}
+
+#ListViewCreateNewOptions .form-field:first-child
+{
+	margin-top:0;
+}
+
+#ViewAutoGenLayoutDialog .popup-body-c
+{
+	background-color:#fff;
+	border: 1px solid #ADAE9C;
+}
+
+#ViewAutoGenLayoutDialog table
+{
+	width:377px;
+}
+
+#ViewAutoGenLayoutDialog table tr td
+{
+	padding-top:1px;
+}
+
+#ViewAutoGenLayoutDialog table thead td
+{
+	padding-top: 0;
+}
+
+#ViewAutoGenLayoutDialog table col.label-column
+{
+	width:137px;
+}
+
+#ViewAutoGenLayoutDialog table col.setting-column
+{
+	width:120px;
+}
+
+#ViewAutoGenLayoutDialog table th,
+#ViewAutoGenLayoutDialog table td
+{
+	text-align:center;
+}
+
+#ViewAutoGenLayoutDialog table th:first-child,
+#ViewAutoGenLayoutDialog table td:first-child
+{
+	text-align:left;
+}
+
+html[dir=rtl] #ViewAutoGenLayoutDialog table th:first-child,
+html[dir=rtl] #ViewAutoGenLayoutDialog table td:first-child
+{
+	text-align:right;
+}
+
+#ViewAutoGenLayoutDialog .input-control-text.generic-ellipsis
+{
+	width:117px;
+}
+
+#ViewAutoGenLayoutDialog table td > label.input-control.icon-control
+{
+	width:100%;
+	display:block;
+}
+
+#ViewAutoGenLayoutDialog table td > label.input-control.icon-control .input-control-icon
+{
+	margin-right:2px;
+	width:16px;
+}
+
+#ViewAutoGenLayoutDialog .form-field label.input-control.checkbox .input-control-img
+{
+	margin-left:-3px;
+}
+
+#ViewAutoGenLayoutDialog .form-field label.form-field-label
+{
+	width: 183px;
+}
+
+#ViewAutoGenLayoutDialog .form-field .form-field-element-wrapper
+{
+	margin-left: 190px;
+}
+
+html[dir=rtl] #ViewAutoGenLayoutDialog .form-field .form-field-element-wrapper
+{
+	margin-left: 0;
+	margin-right: 190px;
+}
+
+#ViewSettingsDialog .popup-body-c
+{
+	background-color:#fff;
+	border: 1px solid #ADAE9C;
+}
+
+#ListEditOptions
+{
+	margin-left: 20px; 
+	margin-top: 4px;
+}
+
+html[dir=rtl] #ListEditOptions
+{
+	margin-left: 0; 
+	margin-right: 20px;
+}
+
+#EditOptions_AllRows_Options
+{
+	margin-top:10px;
+	width: 500px;
+}
+
+#EditOptions_AllRows_Options_CBs
+{
+	float: left;
+}
+
+html[dir=rtl] #EditOptions_AllRows_Options_CBs
+{
+	float: right;
+}
+
+#EditOptions_AllRows_Options_DDs
+{
+	display: inline-block;
+}
+
+#EditOptions_AllRows_Options table
+{
+	margin-bottom:10px;
+	width:100%;
+}
+
+#EditOptions_AllRows_Options table col.editoptions-allrows-method-dropdowns
+{
+	width:120px;
+}
+
+#EditOptions_AllRows_Options table td:nth-child(2)
+{
+	padding:0 6px;
+}
+
+#EditOptions_AllRows_Options ul.input-control-group li
+{
+	margin: 4px 0 0;
+}
+
+#EditOptions_AllRows_Options ul.input-control-group li:first-child 
+{
+	margin-top: 0;
+}
+
+#EditOptionsExpander .expander-right-panel-content > div > label.input-control.checkbox:first-child .input-control-img,
+#AdditionalOptionsExpander .expander-right-panel-content > label.input-control.checkbox:first-child .input-control-img
+{
+	margin-left:-3px;
+}
+
+html[dir=rtl] #EditOptionsExpander .expander-right-panel-content > div > label.input-control.checkbox:first-child .input-control-img,
+html[dir=rtl] #AdditionalOptionsExpander .expander-right-panel-content > label.input-control.checkbox:first-child .input-control-img
+{
+	margin-left:0;
+	margin-right:-3px;
+}
+
+#UserSettingsPaging
+{
+	margin-top: 4px; 
+	margin-bottom: 4px;
+}
+
+#UserSettingsPaging > *
+{
+	float:left;
+}
+
+html[dir=rtl] #UserSettingsPaging > *
+{
+	float:right;
+}
+
+#UserSettingsPaging > *:nth-child(2)
+{
+	margin-left: 7px;
+	margin-right: 2px;
+}
+
+html[dir=rtl] #UserSettingsPaging > *:nth-child(2)
+{
+	margin-left: 2px;
+	margin-right: 7px;
+}
+
+#UserSettingsPaging > *:last-child
+{
+	vertical-align: top; 
+	margin-top: 3px;
+}
+
+#UserSettingsListEditing
+{
+	clear:both;
+}
+
+#bodySection.empty
+{
+	top: 50%;
+	left: 50%;
+	width: 380px;
+	margin-left: -190px;
+	margin-top: -85px;
+	-webkit-box-size: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html[dir=rtl] #bodySection.empty
+{
+	left:auto;
+	margin-left: auto;
+	margin-right: -190px;
+	right:50%;
+}
+
+#EditorCanvas_ViewEditorCanvas.empty
+{
+	background-color: #F7F7F7;
+	border: dashed 1px #DBD9D9;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+label.blank-view-options
+{
+	display: block; 
+	height: 48px; 
+	cursor: pointer
+}
+
+span.blank-view-options-title
+{
+	display: block; 
+	font-weight: bold;
+	padding-top: 5px; 
+	text-decoration: underline;
+	color:#7bb621;
+}
+
+span.blank-view-options-description
+{
+	color: #94979C;
+}
+
+#editorCanvasPane.empty div.panel-body-m
+{
+	left: 10px;
+	right: 10px;
+	top: 10px;
+	bottom: 10px;	
+}
+
+#editorCanvasPane.empty div.panel-body
+{
+	background-color:white;
+}
+
+/* data type icons for the auto-generation popup */
+span.field
+{
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+html[dir=rtl] span.field
+{
+	background-position:right center;
+}
+
+span.field.autonumber
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/AutoNumber16.png");
+}
+span.field.autoguid
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/AutoGuid16.png");
+}
+span.field.guid
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Guid16.png");
+}
+span.field.text
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Text16.png");
+}
+span.field.number
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Number16.png");
+}
+span.field.memo
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Memo16.png");
+}
+span.field.decimal
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Decimal16.png");
+}
+span.field.yesno
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Boolean16.png");
+}
+span.field.datetime
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/DateTime16.png");
+}
+span.field.image
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Image16.png");
+}
+span.field.file
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/File16.png");
+}
+span.field.hyperlink
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/Hyperlink16.png");
+}
+span.field.multivalue
+{
+	background-image:url( "../../../../Styles/Platinum/Images/Icons/MultiValue16.png");
+}

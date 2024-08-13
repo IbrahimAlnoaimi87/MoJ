@@ -1,0 +1,52 @@
+<%@ Master Language="C#" MasterPageFile="~/MasterPages/Generic.master" AutoEventWireup="true" Inherits="SourceCode.Forms.MasterPages.MasterPagesLanding" Codebehind="Landing.master.cs" %>
+
+<asp:content ID="SplitFrame" contentplaceholderid="PageContent" runat="server">
+    <div class="landing-top-box">
+        <div class="landing-top-box-header">
+            <div class="landing-top-box-header-l"></div>
+            <div class="landing-top-box-header-c">
+                <div class="landing-step-box-header-text"><asp:ContentPlaceHolder ID="ContentHeader" runat="server" /></div>
+            </div>
+            <div class="landing-top-box-header-r"></div>
+        </div>
+        <div class="landing-top-box-body">
+            <div class="landing-top-box-body-l"></div>
+            <div class="landing-top-box-body-c">
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="ToolbarPlaceHolder" runat="server" />
+                </div>
+            </div>
+            <div class="landing-top-box-body-r"></div>
+        </div>
+        <div class="landing-top-box-footer">
+            <div class="landing-top-box-footer-l"></div>
+            <div class="landing-top-box-footer-c"></div>
+            <div class="landing-top-box-footer-r"></div>
+        </div>
+    </div>
+    <div class="landing-main-box">
+        <div class="landing-main-box-header">
+            <div class="landing-main-box-header-l"></div>
+            <div class="landing-main-box-header-c"></div>
+            <div class="landing-main-box-header-r"></div>
+        </div>
+        <div class="landing-main-box-body">
+            <div class="landing-main-box-body-l"></div>
+            <div class="landing-main-box-body-c">
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="ContentBody" runat="server" />
+                </div>
+            </div>
+            <div class="landing-main-box-body-r"></div>
+        </div>
+        <div class="landing-main-box-footer">
+            <div class="landing-main-box-footer-l"></div>
+            <div class="landing-main-box-footer-c"></div>
+            <div class="landing-main-box-footer-r"></div>
+        </div>
+    </div>
+    
+    <asp:ContentPlaceHolder ID="StartUpPlaceholder" runat="server" />
+    <asp:ContentPlaceHolder ID="ListingPlaceholder" runat="server" />
+    
+</asp:content>

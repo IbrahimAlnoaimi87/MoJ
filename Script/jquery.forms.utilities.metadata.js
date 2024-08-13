@@ -1,0 +1,114 @@
+/**
+* Sets the type of metadata to use. Metadata is encoded in JSON, and each property
+* in the JSON will become a property of the element itself.
+*
+* There are four supported types of metadata storage:
+*
+*   attr:  Inside an attribute. The name parameter indicates *which* attribute.
+*          
+*   class: Inside the class attribute, wrapped in curly braces: { }
+*   
+*   elem:  Inside a child element (e.g. a script tag). The
+*          name parameter indicates *which* element.
+*   html5: Values are stored in data-* attributes.
+*          
+* The metadata for an element is loaded the first time the element is accessed via jQuery.
+*
+* As a result, you can define the metadata type, use $(expr) to load the metadata into the elements
+* matched by expr, then redefine the metadata type and run another $(expr) for other elements.
+* 
+* @name $.metadata.setType
+*
+* @example <p id="one" class="some_class {item_id: 1, item_label: 'Label'}">This is a p</p>
+* @before $.metadata.setType("class")
+* @after $("#one").metadata().item_id == 1; $("#one").metadata().item_label == "Label"
+* @desc Reads metadata from the class attribute
+* 
+* @example <p id="one" class="some_class" data="{item_id: 1, item_label: 'Label'}">This is a p</p>
+* @before $.metadata.setType("attr", "data")
+* @after $("#one").metadata().item_id == 1; $("#one").metadata().item_label == "Label"
+* @desc Reads metadata from a "data" attribute
+* 
+* @example <p id="one" class="some_class"><script>{item_id: 1, item_label: 'Label'}</script>This is a p</p>
+* @before $.metadata.setType("elem", "script")
+* @after $("#one").metadata().item_id == 1; $("#one").metadata().item_label == "Label"
+* @desc Reads metadata from a nested script element
+* 
+* @example <p id="one" class="some_class" data-item_id="1" data-item_label="Label">This is a p</p>
+* @before $.metadata.setType("html5")
+* @after $("#one").metadata().item_id == 1; $("#one").metadata().item_label == "Label"
+* @desc Reads metadata from a series of data-* attributes
+*
+* @param String type The encoding type
+* @param String name The name of the attribute to be used to get metadata (optional)
+* @cat Plugins/Metadata
+* @descr Sets the type of encoding to be used when loading metadata for the first time
+* @type undefined
+* @see metadata()
+*/
+
+(function ($)
+{
+
+	$.extend({
+		metadata: {
+			defaults: {
+				single: 'metadata'
+			},
+			get: function (elem, opts)
+			{
+				var settings = $.extend({}, this.defaults, opts);
+				// check for empty string in single property
+				if (!settings.single.length) settings.single = 'metadata';
+
+				var data = $.data(elem, settings.single);
+				// returned cached data if it already exists
+				if (checkExists(data))
+				{
+					return data;
+				}
+
+				data = "{}";
+
+				var getObject = function (data)
+				{
+					if (typeof data !== "string")
+					{
+						return data;
+					}
+
+					data = JSON.parse(data);
+					return data;
+				}
+
+				if (checkExists(elem.getAttribute))
+				{
+					var attr = elem.getAttribute("data-options");
+					if (checkExists(attr))
+					{
+						data = attr;
+					}
+				}
+
+				var object = getObject(data);
+
+				$.data(elem, settings.single, object);
+				return object;
+			}
+		}
+	});
+
+	/**
+	* Returns the metadata object for the first member of the jQuery object.
+	*
+	* @name metadata
+	* @descr Returns element's metadata object
+	* @param Object opts An object contianing settings to override the defaults
+	* @type jQuery
+	* @cat Plugins/Metadata
+	*/
+	$.fn.metadata = function (opts)
+	{
+		return $.metadata.get(this[0], opts);
+	};
+})(jQuery);

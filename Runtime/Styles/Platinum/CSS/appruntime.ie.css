@@ -1,0 +1,4 @@
+﻿#RuntimeFormPane
+{
+    height: expression(this.parentNode.offsetHeight + "px");
+}

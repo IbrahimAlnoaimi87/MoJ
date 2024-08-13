@@ -1,0 +1,1035 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionCategoryHeading1" xml:space="preserve">
+    <value>Data Transfer</value>
+  </data>
+  <data name="ActionCategoryHeading10" xml:space="preserve">
+    <value>Browser Interaction</value>
+  </data>
+  <data name="ActionCategoryHeading11" xml:space="preserve">
+    <value>Editable List Functionality</value>
+  </data>
+  <data name="ActionCategoryHeading13" xml:space="preserve">
+    <value>Subview Interaction</value>
+  </data>
+  <data name="ActionCategoryHeading2" xml:space="preserve">
+    <value>SmartObject Interaction</value>
+  </data>
+  <data name="ActionCategoryHeading3" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="ActionCategoryHeading4" xml:space="preserve">
+    <value>Subform Interaction</value>
+  </data>
+  <data name="ActionCategoryHeading7" xml:space="preserve">
+    <value>Visibility</value>
+  </data>
+  <data name="ActionCategoryHeading8" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="ActionCategoryHeading9" xml:space="preserve">
+    <value>Workflow Interaction</value>
+  </data>
+  <data name="ActionDesc1" xml:space="preserve">
+    <value>{2} execute the {0} method {1}</value>
+  </data>
+  <data name="ActionDesc10" xml:space="preserve">
+    <value>{2} open {0} subview, and execute the {1} method</value>
+  </data>
+  <data name="ActionDesc11" xml:space="preserve">
+    <value>{0} close a subview or subform</value>
+  </data>
+  <data name="ActionDesc12" xml:space="preserve">
+    <value>{2} close a subview or subform, and execute the {0} method on the View {1}</value>
+  </data>
+  <data name="ActionDesc13" xml:space="preserve">
+    <value>{2} on {0} subview, execute the {1} method</value>
+  </data>
+  <data name="ActionDesc14" xml:space="preserve">
+    <value>{2} change the properties of {0} {1}</value>
+  </data>
+  <data name="ActionDesc16" xml:space="preserve">
+    <value>{4} on {0}, {1} all the items that have been {2}{3}</value>
+  </data>
+  <data name="ActionDesc17" xml:space="preserve">
+    <value>{2} show {0} control{1}</value>
+  </data>
+  <data name="ActionDesc18" xml:space="preserve">
+    <value>{2} hide {0} control{1}</value>
+  </data>
+  <data name="ActionDesc19" xml:space="preserve">
+    <value>{1} transfer data to {0}</value>
+  </data>
+  <data name="ActionDesc2" xml:space="preserve">
+    <value>{1} navigate to {0}</value>
+  </data>
+  <data name="ActionDesc20" xml:space="preserve">
+    <value>{3} on {0}, populate {1}{2} with data</value>
+  </data>
+  <data name="ActionDesc21" xml:space="preserve">
+    <value>{2} {0}, execute its {1} method</value>
+  </data>
+  <data name="ActionDesc22" xml:space="preserve">
+    <value>{1} go to {0} tab</value>
+  </data>
+  <data name="ActionDesc23" xml:space="preserve">
+    <value>{1} go to {0} View</value>
+  </data>
+  <data name="ActionDesc24" xml:space="preserve">
+    <value>{2} on {0} Form, go to {1} View</value>
+  </data>
+  <data name="ActionDesc25" xml:space="preserve">
+    <value>{2} on {0} Form, go to {1} tab</value>
+  </data>
+  <data name="ActionDesc27" xml:space="preserve">
+    <value>{1} hide {0} View</value>
+  </data>
+  <data name="ActionDesc28" xml:space="preserve">
+    <value>{1} show {0} View</value>
+  </data>
+  <data name="ActionDesc29" xml:space="preserve">
+    <value>{1} hide {0} View filter section</value>
+  </data>
+  <data name="ActionDesc3" xml:space="preserve">
+    <value>{3} populate list control {0}{1} with data{2}</value>
+  </data>
+  <data name="ActionDesc30" xml:space="preserve">
+    <value>{1} show {0} View filter section</value>
+  </data>
+  <data name="ActionDesc31" xml:space="preserve">
+    <value>{1} hide {0} tab</value>
+  </data>
+  <data name="ActionDesc32" xml:space="preserve">
+    <value>{1} show {0} tab</value>
+  </data>
+  <data name="ActionDesc33" xml:space="preserve">
+    <value>{2} on {0}, show {1} control</value>
+  </data>
+  <data name="ActionDesc34" xml:space="preserve">
+    <value>{2} on {0}, hide {1} control</value>
+  </data>
+  <data name="ActionDesc35" xml:space="preserve">
+    <value>{4} on {0} execute the {1} method for all the items that have been {3}{2}</value>
+  </data>
+  <data name="ActionDesc37" xml:space="preserve">
+    <value>{2} get confirmation from user: {0} {1}</value>
+  </data>
+  <data name="ActionDesc38" xml:space="preserve">
+    <value>{0} show a message to the user</value>
+  </data>
+  <data name="ActionDesc39" xml:space="preserve">
+    <value>{1} open {0} as a subform</value>
+  </data>
+  <data name="ActionDesc4" xml:space="preserve">
+    <value>{1} transfer data to controls{0}</value>
+  </data>
+  <data name="ActionDesc41" xml:space="preserve">
+    <value>{2} enable {0} control{1}</value>
+  </data>
+  <data name="ActionDesc42" xml:space="preserve">
+    <value>{2} disable {0} control{1}</value>
+  </data>
+  <data name="ActionDesc43" xml:space="preserve">
+    <value>{2} on {0}, enable {1} control</value>
+  </data>
+  <data name="ActionDesc44" xml:space="preserve">
+    <value>{2} on {0}, disable {1} control</value>
+  </data>
+  <data name="ActionDesc45" xml:space="preserve">
+    <value>{0} disable the Form</value>
+  </data>
+  <data name="ActionDesc46" xml:space="preserve">
+    <value>{0} enable the Form</value>
+  </data>
+  <data name="ActionDesc47" xml:space="preserve">
+    <value>{0} close the browser window</value>
+  </data>
+  <data name="ActionDesc48" xml:space="preserve">
+    <value>{1} start the {0} Workflow</value>
+  </data>
+  <data name="ActionDesc49" xml:space="preserve">
+    <value>{1} navigate to {0}</value>
+  </data>
+  <data name="ActionDesc5" xml:space="preserve">
+    <value>{1} transfer data to {0} subview</value>
+  </data>
+  <data name="ActionDesc50" xml:space="preserve">
+    <value>{1} add a new row to the editable list{0}</value>
+  </data>
+  <data name="ActionDesc51" xml:space="preserve">
+    <value>{1} remove the selected row from the editable list{0}</value>
+  </data>
+  <data name="ActionDesc52" xml:space="preserve">
+    <value>{1} edit the selected row on the editable list{0}</value>
+  </data>
+  <data name="ActionDesc53" xml:space="preserve">
+    <value>{3} on {0} subform, on {1} View, execute the {2} method</value>
+  </data>
+  <data name="ActionDesc54" xml:space="preserve">
+    <value>{1} transfer data to {0} subform</value>
+  </data>
+  <data name="ActionDesc6" xml:space="preserve">
+    <value>{2} on SmartObject {0}, execute its {1} method</value>
+  </data>
+  <data name="ActionDesc7" xml:space="preserve">
+    <value>{4} {0} all the items that have been {1}{2}{3}</value>
+  </data>
+  <data name="ActionDesc8" xml:space="preserve">
+    <value>{3} navigate to {0}, and {1} must be {2}</value>
+  </data>
+  <data name="ActionDesc9" xml:space="preserve">
+    <value>{1} open {0} as a subview</value>
+  </data>
+  <data name="ActionMsg1" xml:space="preserve">
+    <value>Execute a method on the View</value>
+  </data>
+  <data name="ActionMsg10" xml:space="preserve">
+    <value>Open a subview and execute a method</value>
+  </data>
+  <data name="ActionMsg11" xml:space="preserve">
+    <value>Close a subview or subform</value>
+  </data>
+  <data name="ActionMsg12" xml:space="preserve">
+    <value>Close a subview or subform and execute a method on the View</value>
+  </data>
+  <data name="ActionMsg13" xml:space="preserve">
+    <value>Execute a subview method</value>
+  </data>
+  <data name="ActionMsg14" xml:space="preserve">
+    <value>Change the properties of a control</value>
+  </data>
+  <data name="ActionMsg16" xml:space="preserve">
+    <value>Execute a method on a control for values that are in a specific state</value>
+  </data>
+  <data name="ActionMsg17" xml:space="preserve">
+    <value>Show a control</value>
+  </data>
+  <data name="ActionMsg18" xml:space="preserve">
+    <value>Hide a control</value>
+  </data>
+  <data name="ActionMsg19" xml:space="preserve">
+    <value>Transfer data to a View</value>
+  </data>
+  <data name="ActionMsg2" xml:space="preserve">
+    <value>Navigate to another Form</value>
+  </data>
+  <data name="ActionMsg20" xml:space="preserve">
+    <value>Populate a list control with data</value>
+  </data>
+  <data name="ActionMsg21" xml:space="preserve">
+    <value>Execute a View method</value>
+  </data>
+  <data name="ActionMsg22" xml:space="preserve">
+    <value>Go to a specific tab</value>
+  </data>
+  <data name="ActionMsg23" xml:space="preserve">
+    <value>Go to a specific View</value>
+  </data>
+  <data name="ActionMsg24" xml:space="preserve">
+    <value>Navigate to another Form and go to a View</value>
+  </data>
+  <data name="ActionMsg25" xml:space="preserve">
+    <value>Navigate to another Form and go to a tab</value>
+  </data>
+  <data name="ActionMsg27" xml:space="preserve">
+    <value>Hide a View</value>
+  </data>
+  <data name="ActionMsg28" xml:space="preserve">
+    <value>Show a View</value>
+  </data>
+  <data name="ActionMsg29" xml:space="preserve">
+    <value>Hide a View filter section</value>
+  </data>
+  <data name="ActionMsg3" xml:space="preserve">
+    <value>Populate a list control with data</value>
+  </data>
+  <data name="ActionMsg30" xml:space="preserve">
+    <value>Show a View filter section</value>
+  </data>
+  <data name="ActionMsg31" xml:space="preserve">
+    <value>Hide a tab</value>
+  </data>
+  <data name="ActionMsg32" xml:space="preserve">
+    <value>Show a tab</value>
+  </data>
+  <data name="ActionMsg33" xml:space="preserve">
+    <value>Show a View control</value>
+  </data>
+  <data name="ActionMsg34" xml:space="preserve">
+    <value>Hide a View control</value>
+  </data>
+  <data name="ActionMsg35" xml:space="preserve">
+    <value>Execute a View method for items that are in a specific state</value>
+  </data>
+  <data name="ActionMsg37" xml:space="preserve">
+    <value>Get confirmation from user</value>
+  </data>
+  <data name="ActionMsg38" xml:space="preserve">
+    <value>Show a message</value>
+  </data>
+  <data name="ActionMsg39" xml:space="preserve">
+    <value>Open a subform</value>
+  </data>
+  <data name="ActionMsg4" xml:space="preserve">
+    <value>Transfer data to controls</value>
+  </data>
+  <data name="ActionMsg41" xml:space="preserve">
+    <value>Enable a control</value>
+  </data>
+  <data name="ActionMsg42" xml:space="preserve">
+    <value>Disable a control</value>
+  </data>
+  <data name="ActionMsg43" xml:space="preserve">
+    <value>Enable a View control</value>
+  </data>
+  <data name="ActionMsg44" xml:space="preserve">
+    <value>Disable a View control</value>
+  </data>
+  <data name="ActionMsg45" xml:space="preserve">
+    <value>Disable the Form</value>
+  </data>
+  <data name="ActionMsg46" xml:space="preserve">
+    <value>Enable the Form</value>
+  </data>
+  <data name="ActionMsg47" xml:space="preserve">
+    <value>Close the browser window</value>
+  </data>
+  <data name="ActionMsg48" xml:space="preserve">
+    <value>Start a Workflow</value>
+  </data>
+  <data name="ActionMsg49" xml:space="preserve">
+    <value>Navigate to a url</value>
+  </data>
+  <data name="ActionMsg5" xml:space="preserve">
+    <value>Transfer data to a subview</value>
+  </data>
+  <data name="ActionMsg50" xml:space="preserve">
+    <value>Add a new row to the editable list</value>
+  </data>
+  <data name="ActionMsg51" xml:space="preserve">
+    <value>Remove the selected row from the editable list</value>
+  </data>
+  <data name="ActionMsg52" xml:space="preserve">
+    <value>Edit the selected row on the editable list</value>
+  </data>
+  <data name="ActionMsg53" xml:space="preserve">
+    <value>Execute a View method that was opened on a subform</value>
+  </data>
+  <data name="ActionMsg54" xml:space="preserve">
+    <value>Transfer data to a subform</value>
+  </data>
+  <data name="ActionMsg6" xml:space="preserve">
+    <value>Execute a SmartObject method</value>
+  </data>
+  <data name="ActionMsg7" xml:space="preserve">
+    <value>Execute a method for items that have been changed</value>
+  </data>
+  <data name="ActionMsg8" xml:space="preserve">
+    <value>Navigate to another Form and execute a View method</value>
+  </data>
+  <data name="ActionMsg9" xml:space="preserve">
+    <value>Open a subview</value>
+  </data>
+  <data name="ActionStepPanelHeading" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="AdvancedCondition" xml:space="preserve">
+    <value>an advanced condition</value>
+  </data>
+  <data name="CategoryHeadingOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="ConditionCategoryHeading1" xml:space="preserve">
+    <value>Simple Comparisons</value>
+  </data>
+  <data name="ConditionCategoryHeading2" xml:space="preserve">
+    <value>Validation</value>
+  </data>
+  <data name="ConditionCategoryHeading3" xml:space="preserve">
+    <value>Custom Conditions</value>
+  </data>
+  <data name="ConditionDesc1" xml:space="preserve">
+    <value>{0} contains {1}{2}{3}</value>
+  </data>
+  <data name="ConditionDesc10" xml:space="preserve">
+    <value>on {0}, {1} does not contain a value {2}</value>
+  </data>
+  <data name="ConditionDesc11" xml:space="preserve">
+    <value>on {0}, {1} does not contain {2}{3}</value>
+  </data>
+  <data name="ConditionDesc2" xml:space="preserve">
+    <value>the form passes validation {1}{0}</value>
+  </data>
+  <data name="ConditionDesc3" xml:space="preserve">
+    <value>{0} is true</value>
+  </data>
+  <data name="ConditionDesc4" xml:space="preserve">
+    <value>on {0}, {1} contains {2}{3}</value>
+  </data>
+  <data name="ConditionDesc5" xml:space="preserve">
+    <value>the form passes validation {0}</value>
+  </data>
+  <data name="ConditionDesc6" xml:space="preserve">
+    <value>{0} contains a value {1}{2}</value>
+  </data>
+  <data name="ConditionDesc7" xml:space="preserve">
+    <value>{0} does not contain {1}{2}{3}</value>
+  </data>
+  <data name="ConditionDesc8" xml:space="preserve">
+    <value>{0} does not contain a value {1}{2}</value>
+  </data>
+  <data name="ConditionDesc9" xml:space="preserve">
+    <value>on {0}, {1} contains a value {2}</value>
+  </data>
+  <data name="ConditionMsg1" xml:space="preserve">
+    <value>a control contains a specific value</value>
+  </data>
+  <data name="ConditionMsg10" xml:space="preserve">
+    <value>a control on a View does not contain a value</value>
+  </data>
+  <data name="ConditionMsg11" xml:space="preserve">
+    <value>a control on a View does not contain a specific value</value>
+  </data>
+  <data name="ConditionMsg2" xml:space="preserve">
+    <value>the form passes validation</value>
+  </data>
+  <data name="ConditionMsg3" xml:space="preserve">
+    <value>an advanced condition is true</value>
+  </data>
+  <data name="ConditionMsg4" xml:space="preserve">
+    <value>a control on a View contains a specific value</value>
+  </data>
+  <data name="ConditionMsg5" xml:space="preserve">
+    <value>the form passes validation</value>
+  </data>
+  <data name="ConditionMsg6" xml:space="preserve">
+    <value>a control contains a value</value>
+  </data>
+  <data name="ConditionMsg7" xml:space="preserve">
+    <value>a control does not contain a specific value</value>
+  </data>
+  <data name="ConditionMsg8" xml:space="preserve">
+    <value>a control does not contain a value</value>
+  </data>
+  <data name="ConditionMsg9" xml:space="preserve">
+    <value>a control on a View contains a value</value>
+  </data>
+  <data name="ConditionStepPanelHeading" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="ConditionValue" xml:space="preserve">
+    <value>specify value</value>
+  </data>
+  <data name="CustomMessageHeading" xml:space="preserve">
+    <value>Type a message</value>
+  </data>
+  <data name="CustomMessageLabel" xml:space="preserve">
+    <value>Message:</value>
+  </data>
+  <data name="CustomTitleHeading" xml:space="preserve">
+    <value>Type a custom title</value>
+  </data>
+  <data name="CustomTitleLabel" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="CustomValueHeading" xml:space="preserve">
+    <value>Type a custom value</value>
+  </data>
+  <data name="CustomValueLabel" xml:space="preserve">
+    <value>Value:</value>
+  </data>
+  <data name="CustomValueWarning" xml:space="preserve">
+    <value>The value is required.</value>
+  </data>
+  <data name="ErrorSupplyName" xml:space="preserve">
+    <value>Enter a name for the rule.</value>
+  </data>
+  <data name="EventCategoryHeading10" xml:space="preserve">
+    <value>Subview Events</value>
+  </data>
+  <data name="EventCategoryHeading2" xml:space="preserve">
+    <value>View Method</value>
+  </data>
+  <data name="EventCategoryHeading3" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="EventCategoryHeading4" xml:space="preserve">
+    <value>Form Events</value>
+  </data>
+  <data name="EventCategoryHeading5" xml:space="preserve">
+    <value>View Events</value>
+  </data>
+  <data name="EventDesc1" xml:space="preserve">
+    <value>When the View has {0}{1}</value>
+  </data>
+  <data name="EventDesc10" xml:space="preserve">
+    <value>On {0} subform, when {1} View executed {2}</value>
+  </data>
+  <data name="EventDesc11" xml:space="preserve">
+    <value>When {0} subform has closed</value>
+  </data>
+  <data name="EventDesc12" xml:space="preserve">
+    <value>When {0} subview has closed</value>
+  </data>
+  <data name="EventDesc2" xml:space="preserve">
+    <value>When {0} raises its {1} event{2}</value>
+  </data>
+  <data name="EventDesc3" xml:space="preserve">
+    <value>On {0} subview, when {1} is {2}</value>
+  </data>
+  <data name="EventDesc4" xml:space="preserve">
+    <value>When {0} subview executed {1}</value>
+  </data>
+  <data name="EventDesc5" xml:space="preserve">
+    <value>When the Form has {0}</value>
+  </data>
+  <data name="EventDesc6" xml:space="preserve">
+    <value>{0}, when the {1} is {2}</value>
+  </data>
+  <data name="EventDesc7" xml:space="preserve">
+    <value>{0}, when the {1} is executed</value>
+  </data>
+  <data name="EventDesc8" xml:space="preserve">
+    <value>When the control raises its {0}{1}{2}</value>
+  </data>
+  <data name="EventDesc9" xml:space="preserve">
+    <value>On {0} subform, on {1} View, when {2} is {3}</value>
+  </data>
+  <data name="EventMsg1" xml:space="preserve">
+    <value>When the View executes a method</value>
+  </data>
+  <data name="EventMsg10" xml:space="preserve">
+    <value>When a View on a subform executes a method</value>
+  </data>
+  <data name="EventMsg11" xml:space="preserve">
+    <value>When a subform has closed</value>
+  </data>
+  <data name="EventMsg12" xml:space="preserve">
+    <value>When a subview has closed</value>
+  </data>
+  <data name="EventMsg2" xml:space="preserve">
+    <value>When a control on the View raises an event</value>
+  </data>
+  <data name="EventMsg3" xml:space="preserve">
+    <value>When a control on a subview raises an event</value>
+  </data>
+  <data name="EventMsg4" xml:space="preserve">
+    <value>When a subview executes a method</value>
+  </data>
+  <data name="EventMsg5" xml:space="preserve">
+    <value>When the Form raises an event</value>
+  </data>
+  <data name="EventMsg6" xml:space="preserve">
+    <value>When a control on a View raises an event</value>
+  </data>
+  <data name="EventMsg7" xml:space="preserve">
+    <value>When a View raises an event</value>
+  </data>
+  <data name="EventMsg8" xml:space="preserve">
+    <value>When the control raises an event</value>
+  </data>
+  <data name="EventMsg9" xml:space="preserve">
+    <value>When a control on a View on a subform raises an event</value>
+  </data>
+  <data name="ExecutionType" xml:space="preserve">
+    <value>Execution Type</value>
+  </data>
+  <data name="MappingContextHeading" xml:space="preserve">
+    <value>Available Mapping Sources</value>
+  </data>
+  <data name="MappingPopupHeading" xml:space="preserve">
+    <value>Configure Mappings</value>
+  </data>
+  <data name="MappingTargetHeading" xml:space="preserve">
+    <value>Available Mapping Destinations</value>
+  </data>
+  <data name="RuleDefinitionPanelHeading" xml:space="preserve">
+    <value>Rule Definition</value>
+  </data>
+  <data name="RuleStepPanelHeading" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="RuleWizardHeader" xml:space="preserve">
+    <value>Rule Wizard</value>
+  </data>
+  <data name="SourceControl" xml:space="preserve">
+    <value>select control</value>
+  </data>
+  <data name="SourceEvent" xml:space="preserve">
+    <value>select event</value>
+  </data>
+  <data name="SourceField" xml:space="preserve">
+    <value>select field</value>
+  </data>
+  <data name="SourceMethod" xml:space="preserve">
+    <value>select method</value>
+  </data>
+  <data name="SourceSubForm" xml:space="preserve">
+    <value>select View</value>
+  </data>
+  <data name="SourceView" xml:space="preserve">
+    <value>select View</value>
+  </data>
+  <data name="StepDescription1" xml:space="preserve">
+    <value>Please supply a name for the rule.</value>
+  </data>
+  <data name="StepDescription2" xml:space="preserve">
+    <value>Please select and configure an event for the rule.</value>
+  </data>
+  <data name="StepDescription4" xml:space="preserve">
+    <value>Please select and configure Actions for the rule.</value>
+  </data>
+  <data name="StepDescription3" xml:space="preserve">
+    <value>Please select and configure conditions for the rule.</value>
+  </data>
+  <data name="StepName1" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="StepName2" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="StepName4" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="StepName3" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="Synchronous" xml:space="preserve">
+    <value>then</value>
+  </data>
+  <data name="TargetBusinessObject" xml:space="preserve">
+    <value>select SmartObject</value>
+  </data>
+  <data name="TargetControl" xml:space="preserve">
+    <value>select control</value>
+  </data>
+  <data name="TargetHeading" xml:space="preserve">
+    <value>set heading</value>
+  </data>
+  <data name="TargetMessage" xml:space="preserve">
+    <value>set message</value>
+  </data>
+  <data name="TargetMethod" xml:space="preserve">
+    <value>select method</value>
+  </data>
+  <data name="TargetForm" xml:space="preserve">
+    <value>select Form</value>
+  </data>
+  <data name="TargetPanel" xml:space="preserve">
+    <value>select tab</value>
+  </data>
+  <data name="TargetProcess" xml:space="preserve">
+    <value>select</value>
+  </data>
+  <data name="TargetState" xml:space="preserve">
+    <value>select item state</value>
+  </data>
+  <data name="TargetSubForm" xml:space="preserve">
+    <value>select View</value>
+  </data>
+  <data name="TargetView" xml:space="preserve">
+    <value>select View</value>
+  </data>
+  <data name="TemplateMsg1" xml:space="preserve">
+    <value>Execute a method on the View when a control raises an event</value>
+  </data>
+  <data name="TemplateMsg10" xml:space="preserve">
+    <value>Navigate to another Form when a View completes an action</value>
+  </data>
+  <data name="TemplateMsg11" xml:space="preserve">
+    <value>Close a subview or subform and execute a method on the View when a subview executes a method</value>
+  </data>
+  <data name="TemplateMsg12" xml:space="preserve">
+    <value>Open a subform when a control raises an event</value>
+  </data>
+  <data name="TemplateMsg2" xml:space="preserve">
+    <value>Open a subview when a control raises an event</value>
+  </data>
+  <data name="TemplateMsg3" xml:space="preserve">
+    <value>Navigate to another Form when a control raises an event</value>
+  </data>
+  <data name="TemplateMsg4" xml:space="preserve">
+    <value>Save the changes of the editable list when a control raises an event</value>
+  </data>
+  <data name="TemplateMsg5" xml:space="preserve">
+    <value>Save the values of a multi-select control when a control raises an event</value>
+  </data>
+  <data name="TemplateMsg6" xml:space="preserve">
+    <value>Reload a list control when the View completes an action</value>
+  </data>
+  <data name="TemplateMsg7" xml:space="preserve">
+    <value>Execute a method on a View when the Form completes an action</value>
+  </data>
+  <data name="TemplateMsg8" xml:space="preserve">
+    <value>Execute a method on a View when a View completes an action</value>
+  </data>
+  <data name="TemplateMsg9" xml:space="preserve">
+    <value>Update master and detail values when a control raises an event</value>
+  </data>
+  <data name="WizardHeader" xml:space="preserve">
+    <value>Rule Designer {0} &gt; {1}</value>
+  </data>
+  <data name="EventDesc13" xml:space="preserve">
+    <value>When the {0} raises its {1} event</value>
+  </data>
+  <data name="EventMsg13" xml:space="preserve">
+    <value>When a control on the Form raises an event</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>select</value>
+  </data>
+  <data name="RuleName1" xml:space="preserve">
+    <value>{0} is {1}</value>
+  </data>
+  <data name="ActionDesc57" xml:space="preserve">
+    <value>{1} action the {0} Activity worklist item</value>
+  </data>
+  <data name="ActionMsg57" xml:space="preserve">
+    <value>Action a worklist item</value>
+  </data>
+  <data name="TargetWorkItem" xml:space="preserve">
+    <value>select</value>
+  </data>
+  <data name="ActionDesc58" xml:space="preserve">
+    <value>{1} open the {0} Activity worklist item</value>
+  </data>
+  <data name="ActionMsg58" xml:space="preserve">
+    <value>Open a worklist item</value>
+  </data>
+  <data name="TargetProcessHeading" xml:space="preserve">
+    <value>Select a Workflow</value>
+  </data>
+  <data name="TargetWorkItemHeading" xml:space="preserve">
+    <value>Select an activity</value>
+  </data>
+  <data name="WorkflowStripLocationBottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="WorkflowStripLocationTop" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="WorkflowStripLocationNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="WFAfterSubmitEventIDLabel" xml:space="preserve">
+    <value>After Submit</value>
+  </data>
+  <data name="WorkflowActivityLabel" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="WorkflowProcessLabel" xml:space="preserve">
+    <value>Workflow Name</value>
+  </data>
+  <data name="WorkflowStripLocationLabel" xml:space="preserve">
+    <value>Workflow View</value>
+  </data>
+  <data name="EventDesc14" xml:space="preserve">
+    <value>On {0} subform, when {1} is {2}</value>
+  </data>
+  <data name="EventMsg14" xml:space="preserve">
+    <value>When a control on a subform raises an event</value>
+  </data>
+  <data name="EventCategoryHeading7" xml:space="preserve">
+    <value>Workflow Integration</value>
+  </data>
+  <data name="EventDesc15" xml:space="preserve">
+    <value>After the Workflow action was submitted{0}</value>
+  </data>
+  <data name="EventMsg15" xml:space="preserve">
+    <value>After the Workflow action was submitted</value>
+  </data>
+  <data name="ActionCategoryHeading12" xml:space="preserve">
+    <value>Rule Interaction</value>
+  </data>
+  <data name="ActionDesc60" xml:space="preserve">
+    <value>{0} execute the {1} rule</value>
+  </data>
+  <data name="ActionMsg60" xml:space="preserve">
+    <value>Execute another rule</value>
+  </data>
+  <data name="EventDesc16" xml:space="preserve">
+    <value>After the Workflow action was submitted</value>
+  </data>
+  <data name="EventMsg16" xml:space="preserve">
+    <value>After the Workflow action was submitted</value>
+  </data>
+  <data name="ActionDesc61" xml:space="preserve">
+    <value>{1} show {0} Form control</value>
+  </data>
+  <data name="ActionDesc62" xml:space="preserve">
+    <value>{1} hide {0} Form control</value>
+  </data>
+  <data name="ActionDesc63" xml:space="preserve">
+    <value>{1} enable {0} Form control</value>
+  </data>
+  <data name="ActionDesc64" xml:space="preserve">
+    <value>{1} disable {0} Form control</value>
+  </data>
+  <data name="ActionMsg61" xml:space="preserve">
+    <value>Show a Form control</value>
+  </data>
+  <data name="ActionMsg62" xml:space="preserve">
+    <value>Hide a Form control</value>
+  </data>
+  <data name="ActionMsg63" xml:space="preserve">
+    <value>Enable a Form control</value>
+  </data>
+  <data name="ActionMsg64" xml:space="preserve">
+    <value>Disable a Form control</value>
+  </data>
+  <data name="WFAfterSubmitEventIDCallRuleLabel" xml:space="preserve">
+    <value>Call this Rule</value>
+  </data>
+  <data name="WFAfterSubmitEventIDNavigateToLabel" xml:space="preserve">
+    <value>Navigate To</value>
+  </data>
+  <data name="WFAfterSubmitEventIDShowMessageLabel" xml:space="preserve">
+    <value>Show a Message</value>
+  </data>
+  <data name="EnumAdded" xml:space="preserve">
+    <value>added</value>
+  </data>
+  <data name="EnumChanged" xml:space="preserve">
+    <value>changed</value>
+  </data>
+  <data name="EnumChecked" xml:space="preserve">
+    <value>checked</value>
+  </data>
+  <data name="EnumRemoved" xml:space="preserve">
+    <value>removed</value>
+  </data>
+  <data name="EnumSingle" xml:space="preserve">
+    <value>also</value>
+  </data>
+  <data name="EnumUnchecked" xml:space="preserve">
+    <value>unchecked</value>
+  </data>
+  <data name="EventCategoryHeading8" xml:space="preserve">
+    <value>Subform Events</value>
+  </data>
+  <data name="ActionDesc65" xml:space="preserve">
+    <value>{2} close a subview or subform, on {0} View execute the {1} method</value>
+  </data>
+  <data name="ActionDesc66" xml:space="preserve">
+    <value>{1} add a new row to the {0} View</value>
+  </data>
+  <data name="ActionDesc67" xml:space="preserve">
+    <value>{1} remove the selected row from the {0} View</value>
+  </data>
+  <data name="ActionDesc68" xml:space="preserve">
+    <value>{1} edit the selected row on the {0} View</value>
+  </data>
+  <data name="ActionMsg65" xml:space="preserve">
+    <value>Close a subview or subform and execute a method on a View</value>
+  </data>
+  <data name="ActionMsg66" xml:space="preserve">
+    <value>Add a new row to the editable list</value>
+  </data>
+  <data name="ActionMsg67" xml:space="preserve">
+    <value>Remove the selected row from the editable list</value>
+  </data>
+  <data name="ActionMsg68" xml:space="preserve">
+    <value>Edit the selected row on the editable list</value>
+  </data>
+  <data name="ActionDesc69" xml:space="preserve">
+    <value>{1} hide the View filter {0}</value>
+  </data>
+  <data name="ActionDesc70" xml:space="preserve">
+    <value>{1} show the View filter {0}</value>
+  </data>
+  <data name="ActionMsg69" xml:space="preserve">
+    <value>Hide the View filter</value>
+  </data>
+  <data name="ActionMsg70" xml:space="preserve">
+    <value>Show the View filter</value>
+  </data>
+  <data name="ActionDesc71" xml:space="preserve">
+    <value>{0} send an e-mail</value>
+  </data>
+  <data name="ActionMsg71" xml:space="preserve">
+    <value>Send an E-mail</value>
+  </data>
+  <data name="MailMappingWidgetHTMLRadioButtonLabel" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="MailMappingWidgetMessageFormatLabel" xml:space="preserve">
+    <value>Message Format:</value>
+  </data>
+  <data name="MailMappingWidgetPopupHeading" xml:space="preserve">
+    <value>Send E-mail</value>
+  </data>
+  <data name="MailMappingWidgetBodyRequired" xml:space="preserve">
+    <value>The message body is empty.</value>
+  </data>
+  <data name="MailMappingWidgetTextRadioButtonLabel" xml:space="preserve">
+    <value>Plain Text</value>
+  </data>
+  <data name="ActionDesc72" xml:space="preserve">
+    <value>{0} browse to a message page</value>
+  </data>
+  <data name="ActionMsg72" xml:space="preserve">
+    <value>Browse to a Message Page</value>
+  </data>
+  <data name="MessageMappingWidgetPopupHeading" xml:space="preserve">
+    <value>Show Message</value>
+  </data>
+  <data name="MessageMappingWidgetBodyValidationMessage" xml:space="preserve">
+    <value>You are required to supply the body for the message.</value>
+  </data>
+  <data name="MessageMappingWidgetHeadingValidationMessage" xml:space="preserve">
+    <value>You are required to supply a heading for the message.</value>
+  </data>
+  <data name="MessageMappingWidgetTypeWatermark" xml:space="preserve">
+    <value>Select a type of message dialog</value>
+  </data>
+  <data name="BrowserNavigateMappingWidgetMessageHeaderPanelTitle" xml:space="preserve">
+    <value>Navigate to a URL</value>
+  </data>
+  <data name="BrowserNavigateMappingWidgetTitleLabel" xml:space="preserve">
+    <value>Base URL:</value>
+  </data>
+  <data name="ReadOnlyWidgetHeading" xml:space="preserve">
+    <value>Specify edit state for controls</value>
+  </data>
+  <data name="SubformSettingsWaterMark" xml:space="preserve">
+    <value>Enter size or drag a value (eg: 80% or 200px)</value>
+  </data>
+  <data name="EventPlaceHolderText" xml:space="preserve">
+    <value>Select an event before completing the wizard</value>
+  </data>
+  <data name="SystemNameTooltip" xml:space="preserve">
+    <value>System Name: {0}</value>
+  </data>
+  <data name="EmptyRuleDesignAreaHeading" xml:space="preserve">
+    <value>Empty Rule</value>
+  </data>
+  <data name="EmptyRuleDesignAreaSubtext" xml:space="preserve">
+    <value>Add an Event, Condition or Action</value>
+  </data>
+  <data name="RuleSearchWatermark" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="RuleSettingsPanelNameWatermark" xml:space="preserve">
+    <value>Enter a rule name</value>
+  </data>
+  <data name="RuleSettingsPanelDesscriptionWatermark" xml:space="preserve">
+    <value>Enter a description for the rule</value>
+  </data>
+</root>

@@ -1,0 +1,342 @@
+//Created by:   Lewis Garmston
+//Purpose:      Platinum 2 colors for the K2 Designer
+//Notes:        Used by less files in multiple sub-folders, including /styles,  /forms, etc.
+
+//Nintex color from https://help.nintex.com/en-US/HELP_DOC/rebranding/variables.css
+@nx-blue-70: #0052a3;
+@nx-globalNav-background-color: #003870;
+@nx-body-secondary-background-color: #eff0f0;
+
+//CORE COLORS
+//Should not be used directly in any less files other than this one
+@Background-Header-1: #37474f;
+
+@Background-Color-1: #f8f8f8; //Panels  Dynamic Toggle Button  Toolbox  Rules Designer
+@Background-Color-2: #ececec; //Gutters, Popover background color, Border, Borders
+@Background-Color-3: #fdfdfd; //Canvas 
+@Background-Color-4: #dddddd; //Block Operators, Textbox, Popover Borders
+@Background-Color-5: #cdcdcd; //Borders
+@Background-Color-6: #fafafa; //Toasts
+@Background-Color-7: #f2f0f0; //Dialogs, wizards
+@Background-Color-8: #e0e0e0; //Dialogs, Wizards
+@Background-Color-9: #eeeeee; //Panel Headings
+
+@Line-2: #e5e5e5; //Use for horizontal rules and borders for background-1
+@Line-3: #ddd; //Use for borders of controls
+
+@Highlight-Color-1: #2196f3; //Command Buttons, Hyperlinks, Icon Hover States, File Tab, Focus Borders, Pop-overs
+@Highlight-Color-2: #29b6f6; //Command Buttons, Hyperlinks, File Tab
+@Highlight-Color-3: #deeffd; //Condition Block Borders, Config Panel Lists, Actions
+@Highlight-Color-4: #1da5f3; //If Then Blocks, Selected Blocks
+@Highlight-Color-5: #1b7ecd; //Block Focus, Command Button Focus
+@Highlight-Color-6: #90caf9; //Recents Link,  Command Button, Focus,  Icons, Property Focus
+@Highlight-Color-7: #1795dd; //Selected Condition Block Operator
+@Highlight-Color-8: #f3f9fd; //Selected Condition Block Field
+@Highlight-Color-9: #00ABF0; //Toolbar button icon highlight color
+
+@Highlight-Text-Color: #ffffff; //For when text is highlighted
+
+@Text-Color-1: #4e5758; //Button and Main Text Color
+@Text-Color-4: #858a8a;
+@Text-Color-5: #babcbd; 
+@Text-Color-7: #f0f0f1;
+@Text-Color-8: #bfc1c2; //Text Disabled
+@Dark-Text-Color-1: #ffffff; //Default Text Color for dark backgrounds
+
+@legacy-search-result-highlight-color: #ffff00; //this translate to 'yellow' used when overriding the platinum1 text highlight color for search result
+
+//MAIN COLORS
+//Should derive from the core colors, and these variables can be used in consuming less files
+@Main-Text-Color: @Text-Color-1;
+@Main-Text-Color-Dark: rgba(255,255,255,1.0);
+
+//Landing page
+@Recent-Box-Height: 130px;
+
+//generic lists and dropdowns
+@List-Item-Title-Text-Color: @Main-Text-Color;
+@List-Item-Description-Text-Color: fadeout(@Main-Text-Color, 75%);
+@List-Item-Title-Selected-Text-Color: @Main-Text-Color-Dark;
+@List-Item-Description-Selected-Text-Color: fadeout(@Main-Text-Color-Dark, 75%);
+@List-Item-Border-Color-1: #d4d4d4;
+
+//general input controls (lists, textboxes, select boxes etc) 
+@Input-Background-Color: #ffffff;
+@Input-Border-Color: @Line-3;
+@Input-Disabled-Border-Color: #F7F8F6;
+@Input-Disabled-Text-Color: fadeout(@Main-Text-Color, 60%);
+@Input-Focus-Border-Color: @Highlight-Color-5; //#98dc28;
+@Input-Error-Border-Color: @Error-Border-Color;
+@Input-Text-Color: @Main-Text-Color;
+@Input-Error-Text-Color: @Main-Text-Color;
+@Input-Watermark-Text-Color: fadeout(@Main-Text-Color, 80%);
+
+@App-Background-Color: @Background-Header-1; 
+
+@App-Background-Gradient-1: @App-Background-Color; 
+@App-Background-Gradient-2: @App-Background-Color; 
+
+@App-Titlebar-Background-1: @nx-globalNav-background-color;
+@App-Titlebar-Background-2: transparent; //#d2d3ca
+@App-Titlebar-Background-3: transparent; //#d2d3ca
+@App-Titlebar-Background-4: transparent; //#e9ece3
+@App-Titlebar-Text-Color: @Dark-Text-Color-1;
+@App-Titlebar-Height: 34px;
+@App-Titlebar-FileTab-Dark: @nx-blue-70;
+
+@Main-Font-Family: "Open-Sans", "Segoe UI Regular", Helvetica, Arial, sans-serif;
+@Main-Font-Family-Light: "Open-Sans-Light", "Segoe UI Light", Helvetica, Arial, sans-serif;
+
+//Verdana, Arial, Helvetica, sans-serif
+@Main-Background-Gradient-1: transparent; //#e1e4d9 - Background everything under app title bar 
+@Main-Background-Gradient-2: transparent; //#f6f8f1 - Background everything under app title bar
+@Main-Designer-Background-Color: @Background-Color-1;
+
+@Panel-Header-Border-Color: @Line-2;
+@Panel-Header-Background-Color: @Background-Color-1;
+@Panel-Header-Background-Color-1: @Panel-Header-Background-Color; //#f9f9f9
+@Panel-Header-Background-Color-2: @Panel-Header-Background-Color; //#dfe4d7
+@Panel-Header-Inset-Border-Color: transparent; //#fff
+@Panel-Header-Text-Color: #343e41;
+@Panel-Background-Color: @Background-Color-1;
+@Panel-Background-Color-2: @Background-Color-2;  
+@Panel-Content-Background-Color: #ffffff;
+@Panel-Border-Color: @Line-2;
+@Panel-Border-Color-Alt: #C4C7CA;
+
+@Tab-Panel-Background-Color: @Panel-Content-Background-Color;
+
+@Nav-Header-Border-Color: transparent;
+@Nav-Header-Background-Color: @Wizard-Header-Background-Color; //must be the same to keep them in sync
+@Nav-Header-Text-Color: @Dark-Text-Color-1;
+@Nav-Background-Color: @Background-Color-1; //Standard Grey Panel
+
+@Wizard-Header-Background-Color: @nx-blue-70;
+@Wizard-Header-Background-Color-1: @nx-blue-70;
+@Wizard-Header-Background-Color-2: transparent;
+@Wizard-Header-Inset-Border-Color: transparent; //#fff
+@Wizard-Header-Border-Color: transparent; //#adae9c
+@Wizard-Steps-Text-Color: @Dark-Text-Color-1;
+@Wizard-Steps-Selected-Text-Color: @Highlight-Color-1;
+@Wizard-Steps-Metro-Background-Color: @Background-Color-2;
+
+@Heading-Text-Color: @Main-Text-Color; //Headings on intro page
+
+@Hyperlink-Text-Color: @Highlight-Color-1; //#7bb625
+@Hyperlink-Hover-Text-Color: @Highlight-Color-2;
+
+@SmartField-Background-Color: @Highlight-Color-1; //#7bb625
+@SmartField-Text-Color: @Highlight-Text-Color; //#7bb625
+
+@Toolbar-Background-Color-1: transparent; //#f5f5f1 
+@Toolbar-Background-Color-2: transparent; //#e2e4da
+@Toolbar-Background-Color-3: #ffffff;
+@Toolbar-Inset-Border-Color: transparent; //#fff
+@Toolbar-Border-Color: transparent; //@Line-2; #adae9c
+@Toolbar-Border-Color-2: #dddddd;
+@Toolbar-Separator-Color: @Line-2; 
+
+//Grids
+@Grid-Border-Color: @Line-2; 
+@Grid-Toolbar-Background-Color: @Background-Color-1; 
+@Grid-Header-Border-Color: @Toolbar-Border-Color; //#adae9c
+@Grid-Column-Header-Background-Color: @Background-Color-2; //f9f9f9
+@Grid-Column-Header-Background-Color-1: @Grid-Column-Header-Background-Color;
+@Grid-Column-Header-Background-Color-2: @Grid-Column-Header-Background-Color;
+
+@Grid-Column-Header-Inset-Border-Color: transparent; //fff
+@Grid-Column-Header-Hover-Background-Color: @Highlight-Color-3; //fff
+@Grid-Column-Header-Hover-Background-Color-1: @Grid-Column-Header-Hover-Background-Color;
+@Grid-Column-Header-Hover-Background-Color-2: @Grid-Column-Header-Hover-Background-Color;
+@Grid-Column-Header-Hover-Background-Color-3: @Grid-Column-Header-Hover-Background-Color;
+@Grid-Column-Header-Hover-Background-Color-4: @Grid-Column-Header-Hover-Background-Color;
+
+@Grid-Row-Selected-Background-Color: @Highlight-Color-1; //#e4efc3
+@Grid-Row-Hover-Background-Color: @Highlight-Color-3; //#d6e3b0
+@Grid-Row-Background-Color: transparent;
+@Grid-Row-Background-Color-AlternateRow: rgba(0,0,0,0.1);
+@Grid-Row-Border-Color: transparent;
+@Grid-Row-Hover-Border-Color: transparent;
+@Grid-Row-Focus-Border-Color: @Highlight-Color-5;
+@Grid-Content-Background-Color: @Input-Background-Color;
+
+@Grid-Footer-Background-Color: transparent;
+@Grid-Footer-Background-Color-1: @Grid-Footer-Background-Color;
+@Grid-Footer-Background-Color-2: @Grid-Footer-Background-Color;
+
+@Expanding-Section-Line-Color: @Text-Color-8;
+
+//Rule Designer Rows
+@Rule-Row-Highlight-Color: @Highlight-Color-1;
+
+@Popup-Background-Color: #f8f8f8; //#606568 
+@Popup-Border-Color: transparent; //#0e1213
+@Popup-Header-Text-Color: inherit; //#fff
+
+//Toolbar buttons
+@Button-Background-Color-1: @Highlight-Color-4; //#fefefe
+@Button-Background-Color-2: @Highlight-Color-4; //#ebece5
+@Button-Background-Color-3: @Highlight-Color-4; //#ccd0c1
+@Button-Background-Color-4: @Highlight-Color-4; //#e6e9e0
+
+//Toolbar buttons
+@Button-Focus-Border-Color: @Highlight-Color-5; //87c41f
+@Button-Hover-Background-Color: @Highlight-Color-3; 
+@Button-Hover-Background-Color-1: @Highlight-Color-3; //#fefefe
+@Button-Hover-Background-Color-2: @Highlight-Color-3; //#ebece5
+@Button-Hover-Background-Color-3: @Highlight-Color-3; //#ccd0c1
+@Button-Hover-Background-Color-4: @Highlight-Color-3; //#e6e9e0
+@Button-Hover-Text-Color: inherit;
+@Button-Hover-Border-Color: transparent; //#d3d5cc
+@Button-Selected-Background-Color: @Highlight-Color-4; //for toggle buttons
+
+//Normal Buttons
+@Button-Background-Color: @Panel-Background-Color;
+@Button-Hover-Background-Color: @Highlight-Color-2;
+@Button-Disabled-Background-Color: @Panel-Background-Color;
+@Button-Text-Color: @Text-Color-1; //#343e41
+@Button-Highlighted-Text-Color: @Highlight-Text-Color;
+
+//Primary (MCTA Buttons)
+@Primary-Button-Disabled-Background-Color: #bfc1c2;
+@Primary-Button-Disabled-Text-Color: #f0f0f1;
+
+//Tertiary Outlined Buttons
+@Tertiary-Outlined-Button-Text-Color: rgba(55, 71, 79, 0.5);
+@Tertiary-Outlined-Button-Highlighted-Text-Color: @Highlight-Color-2;
+@Tertiary-Outlined-Button-Border-Color: rgba(55, 71, 79, 0.5);
+@Tertiary-Outlined-Button-Highlighted-Border-Color: @Highlight-Color-2;
+@Tertiary-Outlined-Button-Highlighted-Background-Color: rgba(255, 255, 255, 1);
+
+//Radio-Buttons-Weird (not really radio buttons, its a list of items in rules designer)
+@Radio-Button-Hover-Border-Color: transparent;
+@Radio-Button-Hover-Background-Color: @Highlight-Color-3;
+@Radio-Button-Selected-Border-Color: @Highlight-Color-1;
+@Radio-Button-Selected-Background-Color: @Highlight-Color-3;
+
+//Tree
+@Tree-Item-Hover-Background-Color: @Highlight-Color-3; //#eff7d4
+@Tree-Item-Selected-Background-Color: @Highlight-Color-4; 
+@Tree-Item-Focus-Border-Color: @Highlight-Color-5; 
+@Tree-Item-Selected-Text-Color: @Highlight-Text-Color;
+
+@Divider-Dragging-Background-Color: @Highlight-Color-1; //#86be58
+
+//Tabs
+@Tab-Content-Background-Color: @Input-Background-Color;
+@Tab-Focus-Border-Color: @Highlight-Color-5; 
+
+//Dropdowns
+@Dropdown-Item-Selected-Background-Color: @Highlight-Color-1;
+@Dropdown-Item-Selected-Text-Color: @Highlight-Text-Color;
+@Dropdown-Item-Hover-Background-Color: @Highlight-Color-3;
+
+//Context Menu
+@Context-Item-Selected-Background-Color: @Dropdown-Item-Selected-Background-Color;
+@Context-Item-Selected-Text-Color: @Dropdown-Item-Selected-Text-Color;
+@Context-Item-Hover-Background-Color: @Dropdown-Item-Hover-Background-Color;
+@Context-Separator-Border-Color: @Line-2;
+
+//Used for controls being designed on a view or form.
+@Control-Selection-Border-Color: @Highlight-Color-5;
+@Control-Selection-Background-Color: @Highlight-Color-3;
+@Control-Error-Border-Color: @Error-Color-1;
+@Control-Selection-Overlay-Background-Color: fadeout(@Control-Selection-Border-Color, 80%);
+@Control-Selection-Error-Border-Color: @Error-Color-1;
+@Control-Selection-Error-Overlay-Background-Color: fadeout(@Control-Selection-Error-Border-Color, 80%);
+@Drag-Accept-Border-Color: @Highlight-Color-1;
+
+//Expression elements - inside expression builder
+//The only reason we don't use normal variables for this is because
+//we consider the expression designer to be a separate canvas.
+@Expression-Selected-Border-Color: @Highlight-Color-1;
+@Expression-Selected-Background-Color: fadeout(@Expression-Selected-Border-Color, 80%);
+@Expression-Hover-Border-Color: @Highlight-Color-1;
+@Expression-Hover-Background-Color: @Highlight-Color-3;
+
+@Field-Page-Separator-Border-Color: @Line-2;
+
+//STATIC COLORS
+//Colors that typically do not change even when the core colors are changed.
+@Error-Color-1: #e10808;
+@Error-Color-2: #e10808;
+@Error-Border-Color: #e10808;
+@Error-Text-Color: @Error-Color-1;
+
+@Warning-Color-1: #ffc107;
+@Warning-Color-2: #fccb51;
+
+@Info-Color-1: #00bcd4;
+@Info-Color-2: #03d2e2;
+
+@Search-Highlight-Color: @Warning-Color-2;
+
+@SmartObject-Background-Color-1: #a8aa2f;
+@SmartObject-Background-Color-2: #8e9329;
+@SmartObject-Text-Color-1: rgb(255,255,255);
+
+//SIZE VARIABLES
+//Standard Heights and paddings that can't be made fluid by using flex
+@Standard-Padding-Small: 3px;
+@Standard-Padding-Large: 5px;
+
+@Panel-Header-Height: 22px;
+@Panel-Padding: 0px; //3px
+@Panel-Padding-Top: @Panel-Padding;
+@Panel-Padding-Left: @Panel-Padding;
+@Panel-Padding-Right: @Panel-Padding;
+@Panel-Padding-Bottom: @Panel-Padding;
+@Panel-Footer-Height: 24px;
+
+@Nav-Header-Height: 30px;
+
+@Wizard-Header-Height: 24px;
+@Wizard-Header-Inset-Border-Size: 0px;
+@Wizard-StepTree-Height: @Nav-Header-Height;
+@Wizard-StepTree-Margin-Bottom: 0px;
+@Wizard-Header-Margin-Bottom: @Standard-Padding-Small;
+
+@Wizard-ButtonBar-Height: 30px;
+@Wizard-ButtonBar-Margin-Top: @Standard-Padding-Small;
+@Wizard-ButtonBar-Padding-Top: @Standard-Padding-Small;
+@Wizard-ButtonBar-Padding-Bottom: @Standard-Padding-Small;
+@Wizard-StepBox-Header-Height: 24px;
+
+@Popup-Footer-Height: 54px; //Height of button (34px) plus 10px top padding plus 10px bottom padding
+@Popup-Header-Height: 46px; //Height of button (16px) plus 15px top padding plus 15px bottom padding
+@Popup-standard-padding: 10px;
+
+@Divider-Width: 5px;
+
+@Grid-header-Height: 24px;
+@Grid-header-Bottom-Margin: @Standard-Padding-Small;
+@Grid-Footer-Height: 23px;
+@Grid-Footer-Top-Margin: 3px;
+@Grid-Column-Header-Height: 22px;
+@Grid-Row-Height: 23px;
+@Grid-Aggregation-Header-Height: 22px;
+
+@Toolbar-Height: 22px;
+
+@Radio-Button-Height: 22px;
+@Radio-Button-Large-Height: 48px;
+
+@Input-Single-Line-Height: 20px;
+
+//ANIMATION SPEEDS
+//used in a variety of places
+@Hover-Animation-Duration-Normal: 0.15s;
+@Designer-Intro-Animation-Duration: 1.0s;
+@Designer-Outro-Animation-Duration: 0.25s;
+
+//z-indexes
+@Designer-Adornments-z-index :100;
+@Designer-Base-z-index: 0;
+
+//Table Control
+@Table-Control-Min-Width: 1px; /* [893303] Min-width for Table control so it display a thin bar when width of table is set to 0px in design-time */
+
+// Scrollbar
+@Scrollbar-Track-Margin: 5px;
+@Scrollbar-Handle-Color: rgba(0,0,0,0.75);
+@Scrollbar-Handle-Hover-Color: rgba(0,0,0,0.85);

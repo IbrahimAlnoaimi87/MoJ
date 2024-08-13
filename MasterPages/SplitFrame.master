@@ -1,0 +1,11 @@
+<%@ Master Language="C#" MasterPageFile="~/MasterPages/Generic.master" AutoEventWireup="true" Inherits="SourceCode.Forms.MasterPages.MasterPagesSplitFrame" Codebehind="SplitFrame.master.cs" %>
+
+<asp:content ID="SplitFrame" contentplaceholderid="PageContent" runat="server">
+    <div class="page-nav-frame">
+        <asp:contentplaceholder id="PageNavFrame" runat="server" />
+    </div>
+    <div class="page-content-frame">
+        <asp:contentplaceholder id="PageContentFrame" runat="server" />
+        <asp:ContentPlaceHolder id="PageVariables" runat="server" />
+    </div>
+</asp:content>

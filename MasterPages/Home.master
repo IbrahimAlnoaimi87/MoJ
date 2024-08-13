@@ -1,0 +1,44 @@
+<%@ Master Language="C#" AutoEventWireup="true" Codebehind="Home.master.cs" Inherits="SourceCode.Forms.MasterPages.MasterPagesHome"
+  MasterPageFile="~/MasterPages/Generic.master" %>
+
+<asp:content ID="PageContentPlaceHolder" contentplaceholderid="PageContent" runat="server">
+    
+    <div class="home-header">
+        <div class="home-header-l"></div>
+        <div class="home-header-c">
+            <div runat="server" class="header-logo" id="HeaderLogo">
+                 <a href="~/" class="home-link" runat="server"><span><%=GetGlobalResourceObject("SiteGlobal", "SiteTitleText")%></span></a>
+            </div>
+            <div class="header-content">
+                    <asp:ContentPlaceHolder ID="MainHeaderContentPlaceholder" runat="server" />
+            </div>
+            <div class="header-system-info">
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="SystemInfoContentPlaceHolder" runat="server" />
+                </div>
+            </div>
+        </div>
+        <div class="home-header-r"></div>
+    </div>
+    
+    <div class="home-content">
+        <div class="home-content-tl"></div>
+        <div class="home-content-tc"></div>
+        <div class="home-content-tr"></div>
+        <div class="home-content-ml"></div>
+        <div class="home-content-mc">
+            <div class="wrapper">
+                <asp:ContentPlaceHolder ID="HomeContentPlaceHolder" runat="server" />
+            </div>
+        </div>
+        <div class="home-content-mr"></div>
+        <div class="home-content-bl"></div>
+        <div class="home-content-bc"></div>
+        <div class="home-content-br"></div>
+    </div>
+    
+</asp:content>
+<asp:Content ID="PageVariables" ContentPlaceHolderID="PageVariables" runat="server">
+  <asp:ContentPlaceHolder ID="LocalVariables" runat="server">
+  </asp:ContentPlaceHolder>
+</asp:Content>
