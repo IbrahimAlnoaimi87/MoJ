@@ -1,0 +1,64 @@
+/*#region PICKER CONTROL */
+
+/*The picker does not play nice with table layouts and really long values.*/
+
+.theme-entry .input-control.select-box.double-buttons .input-control-m
+{
+    height: 100%;
+}
+
+.theme-entry div.picker
+{
+    height: 24px; /*Fix for 890614*/
+}
+
+.theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-body
+{
+    display: block;
+}
+
+.theme-entry .input-control.select-box.double-buttons .input-control-m-c
+{
+    box-sizing: content-box;
+}
+
+.theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-m-c
+{
+    border-radius: 0.2rem;
+}
+
+html[dir=rtl] .theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-m-c
+{
+    border-left-width: 0.1rem !important;
+}
+
+.theme-entry .input-control.select-box.disabled .input-control-buttons
+{
+    background: @Input-Button-Background-Color;
+}
+
+.theme-entry .input-control.select-box.picker-input .input-control-buttons
+{
+    vertical-align: top;
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a.picker-search > span span
+{
+    display: block;
+    text-indent: -9999px;
+    /*background-image: url(Toolbar/Search20.png);*/
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a.picker-resolve
+{
+    border-left-width: 0 !important; /* ensure custom border styling does not affect theme adversely */
+    border-right-width: 0;
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a.picker-resolve > span span
+{
+    display: block;
+    text-indent: -9999px;
+}
+
+/*#endregion DROPDOWN */

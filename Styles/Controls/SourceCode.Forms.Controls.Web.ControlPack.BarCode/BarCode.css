@@ -1,0 +1,12 @@
+.designtime.SourceCode-Forms-Controls-Web-ControlPack-BarCode {
+  border: 1px solid #959595;
+}
+.designtime.SourceCode-Forms-Controls-Web-ControlPack-BarCode .barCode-container {
+  background-image: url('Images/Barcode46.png');
+  background-size: 100%;
+  width: 46px;
+  height: 46px;
+}
+.runtime.SourceCode-Forms-Controls-Web-ControlPack-BarCode {
+  display: none;
+}

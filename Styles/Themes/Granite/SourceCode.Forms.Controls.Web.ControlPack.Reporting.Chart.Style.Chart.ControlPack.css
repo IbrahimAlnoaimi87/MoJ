@@ -1,0 +1,123 @@
+.testa
+{
+
+}
+
+.theme-entry .StandardChart .series0ActivityInstances
+{
+	stroke: #101010;
+	fill: #101010;
+}
+
+.theme-entry .StandardChart .series1ActivityInstances
+{
+	stroke: #002A58;
+	fill: #002A58;
+}
+
+.theme-entry .StandardChart .series2ActivityInstances
+{
+	stroke: #872F00;
+	fill: #872F00;
+}
+
+.theme-entry .StandardChart .series3ActivityInstances
+{
+	stroke: #876900;
+	fill: #876900;
+}
+
+.theme-entry .StandardChart .series4ActivityInstances
+{
+	stroke: #7D001B;
+	fill: #7D001B;
+}
+
+.theme-entry .StandardChart .series5ActivityInstances
+{
+	stroke: #580044;
+	fill: #580044;
+}
+
+.theme-entry .StandardChart .series6ActivityInstances
+{
+	stroke: #616161;
+	fill: #616161;
+}
+
+.theme-entry .StandardChart .series7ActivityInstances
+{
+	stroke: #3176C3;
+	fill: #3176C3;
+}
+
+.theme-entry .StandardChart .series8ActivityInstances
+{
+	stroke: #D04900;
+	fill: #D04900;
+}
+
+.theme-entry .StandardChart .series9ActivityInstances
+{
+	stroke: #D0A200;
+	fill: #D0A200;
+}
+
+.theme-entry .StandardChart .series10ActivityInstances
+{
+	stroke: #BE304E;
+	fill: #BE304E;
+}
+
+.theme-entry .StandardChart .series11ActivityInstances
+{
+	stroke: #9B548B;
+	fill: #9B548B;
+}
+
+.theme-entry .StandardChart .series12ActivityInstances
+{
+	stroke: #101010;
+	fill: #101010;
+}
+
+.theme-entry .StandardChart .series13ActivityInstances
+{
+	stroke: #002A58;
+	fill: #002A58;
+}
+
+.theme-entry .StandardChart .series14ActivityInstances
+{
+	stroke: #872F00;
+	fill: #872F00;
+}
+
+.theme-entry .StandardChart .radchartlabel
+{
+	font-size: 12px;
+	fill: #262626;
+}
+
+.theme-entry .StandardChart .radhtmlcharttitle
+{
+	font-weight: bold;
+}
+
+.theme-entry .StandardChart .radhtmlchartsubtitle
+{
+	fill: #CCCCCC;
+	color: #CCCCCC;
+}
+
+.theme-entry .StandardChart .k-tooltip
+{
+	border: 1px solid #4386D7 !important;
+	position: relative;
+	margin-left: -50px;
+}
+
+.theme-entry .k-tooltip
+{
+	border-color: #7292BB !important;
+}

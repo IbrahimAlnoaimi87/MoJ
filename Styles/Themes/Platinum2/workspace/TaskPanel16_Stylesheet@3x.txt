@@ -1,0 +1,35 @@
+.Sprite {
+    background-image: url(TaskPanel16_Sprite@3x.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.Inbox16_3x {
+    width: 48px;
+    height: 48px;
+    background-position: -48px -48px;
+}
+
+.History16_3x {
+    width: 48px;
+    height: 48px;
+    background-position: -192px -48px;
+}
+
+.Task16_3x {
+    width: 48px;
+    height: 48px;
+    background-position: -336px -48px;
+}
+
+.Application16_3x {
+    width: 48px;
+    height: 48px;
+    background-position: -480px -48px;
+}
+
+.Analyze16_3x {
+    width: 48px;
+    height: 48px;
+    background-position: -624px -48px;
+}

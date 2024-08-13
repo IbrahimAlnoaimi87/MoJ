@@ -1,0 +1,288 @@
+﻿.ui-accordion,
+.ui-accordion-item
+{ 
+	margin:0; 
+	padding:0; 
+}
+
+.ui-accordion a.ui-accordion-link
+{
+	height:23px;
+	text-decoration:none;
+	display:block;
+	color:#000;
+	line-height:22px;
+	position:relative;
+	outline:none;
+}
+
+.ui-accordion a.ui-accordion-link .ui-accordion-link-l
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:3px;
+	height:23px;
+	overflow:hidden;
+	background:transparent url(../Images/Accordion/accordion_header_middle_left.png) no-repeat 0 -1px;
+}
+
+.ui-accordion a.ui-accordion-link .ui-accordion-link-c
+{
+	position:absolute;
+	top:0;
+	left:3px;
+	right:3px;
+	height:23px;
+	overflow:hidden;
+	background:transparent url(../Images/Accordion/accordion_header_repeater.png) repeat-x 0 -1px;
+}
+
+.ui-accordion a.ui-accordion-link .ui-accordion-link-r
+{
+	position:absolute;
+	top:0;
+	right:0;
+	width:3px;
+	height:23px;
+	overflow:hidden;
+	background:transparent url(../Images/Accordion/accordion_header_middle_right.png) no-repeat 0 -1px;
+}
+
+.ui-accordion .ui-accordion-item a.ui-accordion-link.ui-state-active .ui-accordion-link-l,
+.ui-accordion .ui-accordion-item a.ui-accordion-link.ui-state-active .ui-accordion-link-c,
+.ui-accordion .ui-accordion-item a.ui-accordion-link.ui-state-active .ui-accordion-link-r,
+.ui-accordion .ui-accordion-item a.ui-accordion-link.above-active .ui-accordion-link-l,
+.ui-accordion .ui-accordion-item a.ui-accordion-link.above-active .ui-accordion-link-c,
+.ui-accordion .ui-accordion-item a.ui-accordion-link.above-active .ui-accordion-link-r
+{
+	background-position:0 0;
+}
+
+.ui-accordion .ui-accordion-item.first a.ui-accordion-link .ui-accordion-link-l,
+.ui-accordion .ui-accordion-item:first-child a.ui-accordion-link .ui-accordion-link-l
+{
+	background-image:url(../Images/Accordion/accordion_header_top_left.png);
+	background-position:0 0;
+}
+
+.ui-accordion .ui-accordion-item.first a.ui-accordion-link .ui-accordion-link-c,
+.ui-accordion .ui-accordion-item:first-child a.ui-accordion-link .ui-accordion-link-c
+{
+	background-position:0 0;
+}
+
+.ui-accordion .ui-accordion-item.first a.ui-accordion-link .ui-accordion-link-r,
+.ui-accordion .ui-accordion-item:first-child a.ui-accordion-link .ui-accordion-link-r
+{
+	background-image:url(../Images/Accordion/accordion_header_top_right.png);
+	background-position:0 0;
+}
+
+.ui-accordion .ui-accordion-item.last a.ui-accordion-link.ui-state-default .ui-accordion-link-l,
+.ui-accordion .ui-accordion-item:last-child a.ui-accordion-link.ui-state-default .ui-accordion-link-l
+{
+	background:transparent url(../Images/Accordion/accordion_header_bottom_left.png) no-repeat 0 -1px;
+}
+
+.ui-accordion .ui-accordion-item.last a.ui-accordion-link.ui-state-default .ui-accordion-link-c,
+.ui-accordion .ui-accordion-item:last-child a.ui-accordion-link.ui-state-default .ui-accordion-link-c
+{
+	background-position: 0 -1px;
+}
+
+.ui-accordion .ui-accordion-item.last a.ui-accordion-link.ui-state-default .ui-accordion-link-r,
+.ui-accordion .ui-accordion-item:last-child a.ui-accordion-link.ui-state-default .ui-accordion-link-r
+{
+	background:transparent url(../Images/Accordion/accordion_header_bottom_right.png) no-repeat 0 -1px;
+}
+
+.ui-accordion .ui-accordion-link-text 
+{
+	padding:0 2px 0px 17px;
+	background-position:5px 50%;
+	background-repeat:no-repeat;
+	background-color:transparent;
+}
+
+.ui-accordion a.ui-accordion-link.ui-state-default .ui-accordion-link-text
+{
+	background-image:url(../Images/Arrows/black_arrow_up.png);
+}
+
+.ui-accordion a.ui-accordion-link.ui-state-default:hover .ui-accordion-link-text,
+.ui-accordion a.ui-accordion-link.ui-state-default:focus .ui-accordion-link-text
+{
+	background-image:url(../Images/Arrows/green_arrow_up.png);
+}
+
+.ui-accordion a.ui-accordion-link.ui-state-active .ui-accordion-link-text
+{
+	background-image:url(../Images/Arrows/black_arrow_down.png);
+}
+
+.ui-accordion a.ui-accordion-link.ui-state-active:hover .ui-accordion-link-text,
+.ui-accordion a.ui-accordion-link.ui-state-active:focus .ui-accordion-link-text
+{
+	background-image:url(../Images/Arrows/green_arrow_down.png);
+}
+
+.ui-accordion .ui-accordion-data
+{
+	position:relative;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-t
+{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:3px;
+	overflow:hidden;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-t-l
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:3px;
+	height:3px;
+	overflow:hidden;
+	background:#fff url(../Images/Panels/panel_top_left_corner_square.png) repeat-y 0 0;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-t-c
+{
+	position:absolute;
+	top:0;
+	left:3px;
+	right:3px;
+	height:3px;
+	overflow:hidden;
+	background:#fff url(../Images/Panels/panel_top_repeater.png) repeat-x 0 0;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-t-r
+{
+	position:absolute;
+	top:0;
+	right:0;
+	width:3px;
+	height:3px;
+	overflow:hidden;
+	background:#fff url(../Images/Panels/panel_top_right_corner_square.png) repeat-y 100% 0;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-m
+{
+	position:absolute;
+	top:3px;
+	left:0;
+	right:0;
+	bottom:3px;
+	overflow:hidden;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-m-l
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:3px;
+	bottom:0;
+	overflow:hidden;
+	background:#fff url(../Images/Panels/panel_left_repeater.png) repeat-y 0 0;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-m-c
+{
+	position:absolute;
+	top:0;
+	left:3px;
+	right:3px;
+	bottom:0;
+	overflow:hidden;
+	background:#fff;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-wrapper
+{
+	height:100%;
+	overflow:auto;
+	position:relative;
+	width:100%;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-m-r
+{
+	position:absolute;
+	top:0;
+	right:0;
+	width:3px;
+	bottom:0;
+	overflow:hidden;
+	background:#fff url(../Images/Panels/panel_right_repeater.png) repeat-y 100% 0;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-b
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	height:3px;
+	overflow:hidden;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-b-l
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:3px;
+	height:3px;
+	overflow:hidden;
+	background:#fff url(../Images/Panels/panel_bottom_left_corner_square.png) repeat-y 0 -2px;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-b-c
+{
+	position:absolute;
+	top:0;
+	left:3px;
+	right:3px;
+	height:3px;
+	overflow:hidden;
+	background:#fff url(../Images/Panels/panel_bottom_repeater.png) repeat-x 0 -2px;
+}
+
+.ui-accordion .ui-accordion-data .ui-accordion-data-b-r
+{
+	position:absolute;
+	top:0;
+	right:0;
+	width:3px;
+	height:3px;
+	overflow:hidden;
+	background:#fff url(../Images/Panels/panel_bottom_right_corner_square.png) repeat-y 100% -2px;
+}
+
+.ui-accordion .ui-accordion-item.last .ui-accordion-data .ui-accordion-data-b-l,
+.ui-accordion .ui-accordion-item:last-child .ui-accordion-data .ui-accordion-data-b-l
+{
+	background:transparent url(../Images/Panels/panel_bottom_left_corner.png) no-repeat 0 -2px;
+}
+
+.ui-accordion .ui-accordion-item.last .ui-accordion-data .ui-accordion-data-b-c,
+.ui-accordion .ui-accordion-item:last-child .ui-accordion-data .ui-accordion-data-b-c
+{
+	background:transparent url(../Images/Panels/panel_bottom_repeater.png) repeat-x 0 -2px;
+}
+
+.ui-accordion .ui-accordion-item.last .ui-accordion-data .ui-accordion-data-b-r,
+.ui-accordion .ui-accordion-item:last-child .ui-accordion-data .ui-accordion-data-b-r
+{
+	background:transparent url(../Images/Panels/panel_bottom_right_corner.png) no-repeat 100% -2px;
+}

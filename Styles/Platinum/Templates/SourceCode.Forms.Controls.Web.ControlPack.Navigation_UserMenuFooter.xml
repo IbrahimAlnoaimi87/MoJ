@@ -1,0 +1,12 @@
+<div class="PART-usermenu-footer usermenu-footer {DisplayTextVisibleMarker}">
+	<div class="usermenu-section-container">
+		<div class="dropdown-container">
+			<div class="navigation-usermenu-display-container layout-cell-full-width">
+				<a title="{UserMenuDisplayBottom}" class="PART-usermenu-bottom usermenu-bottom">{UserMenuDisplayBottom}</a>
+			</div>
+			<div class=" navigation-usermenu-footer-arrow-container layout-cell">
+				<a class="PART-dropdown-arrow dropdown-icon navigation-expand-collapse-sprite Expand"></a>
+			</div>
+		</div>
+	</div>
+</div>

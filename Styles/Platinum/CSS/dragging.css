@@ -1,0 +1,981 @@
+﻿div.controlwrapper.not-bindable.hover,
+div.controlwrapper.not-bindable:hover,
+div.controlwrapper.draggable.not-bindable.hover, 
+div.controlwrapper.draggable.not-bindable:hover 
+{
+	cursor: not-allowed;
+}
+
+a.ui-draggable-dragging 
+{
+	cursor: not-allowed;
+	color: #343e41;
+	background-color: #E4EFC3;
+	background-repeat: no-repeat;
+	background-position: 1px 3px;
+	border-radius: 3px;
+	border: solid 1px #aaad9c;
+	height: 20px;
+	line-height: 19px;
+	margin: 0;
+	max-width: 300px;
+	overflow: hidden;
+	padding: 1px 4px 1px 23px;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+div.draggable.toolboxitem.ui-draggable-dragging 
+{
+	background-position: 8px 8px;
+	padding-left: 27px;
+	padding-top: 8px;
+}
+
+.ui-draggable-dragging .invalid-overlay
+{
+	background: url(../Images/Icons/Unavailable16.png) no-repeat 0 0;
+	display: block;
+	height: 16px;
+	left: -8px;
+	position: absolute;
+	top: -8px;
+	width: 16px;
+}
+
+div.draggable.toolboxitem.ui-draggable-dragging .invalid-overlay 
+{
+	left: 0;
+	top: 0;
+}
+
+a.ui-draggable-dragging.valid
+{
+	cursor: default;
+}
+
+.ui-draggable-dragging.valid .invalid-overlay
+{
+	display: none;
+}
+
+a.ui-draggable-dragging.smartobject
+{
+	background-image: url(../Images/Icons/SmartObject16.png);
+}
+
+a.ui-draggable-dragging.view
+{
+	background-image: url(../Images/Icons/View16.png);
+}
+
+a.ui-draggable-dragging.item-view
+{
+	background-image: url(../Images/Icons/ItemView16.png);
+}
+
+a.ui-draggable-dragging.list-view
+{
+	background-image: url(../Images/Icons/ListView16.png);
+}
+
+a.ui-draggable-dragging.capturelist-view
+{
+	background-image: url(../Images/Icons/CaptureList16.png);
+}
+
+a.ui-draggable-dragging.content-view
+{
+	background-image: url(../Images/Icons/ContentView16.png);
+}
+
+a.ui-draggable-dragging.form
+{
+	background-image: url(../Images/Icons/SmartForm16.png);
+}
+
+a.ui-draggable-dragging.report
+{
+	background-image: url(../Images/Icons/Report16.png);
+}
+
+a.ui-draggable-dragging.application
+{
+	background-image: url(../Images/Icons/Application16.png);
+}
+
+a.ui-draggable-dragging.workflow
+{
+	background-image: url(../Images/Icons/Process16.png);
+}
+
+a.ui-draggable-dragging.service-object
+{
+	background-image: url(../Images/Icons/ServiceObject16.png);
+}
+
+a.ui-draggable-dragging.service-method
+{
+	background-image: url(../Images/Icons/ServiceMethod16.png);
+}
+
+a.ui-draggable-dragging.category
+{
+	background-image: url(../Images/Icons/FolderOpen16.png);
+}
+
+/* SmartObject Property Types */
+
+a.ui-draggable-dragging.auto-number,
+a.ui-draggable-dragging.autonumber
+{
+	background-image: url(../Images/Icons/AutoNumber16.png);
+}
+
+a.ui-draggable-dragging.auto-guid,
+a.ui-draggable-dragging.autoguid
+{
+	background-image: url(../Images/Icons/AutoGuid16.png);
+}
+
+a.ui-draggable-dragging.date-time,
+a.ui-draggable-dragging.datetime
+{
+	background-image: url(../Images/Icons/DateTime16.png);
+}
+
+a.ui-draggable-dragging.date
+{
+	background-image: url(../Images/Icons/Date16.png);
+}
+
+a.ui-draggable-dragging.time
+{
+	background-image: url(../Images/Icons/Time16.png);
+}
+
+a.ui-draggable-dragging.decimal
+{
+	background-image: url(../Images/Icons/Decimal16.png);
+}
+
+a.ui-draggable-dragging.file
+{
+	background-image: url(../Images/Icons/File16.png);
+}
+
+a.ui-draggable-dragging.guid
+{
+	background-image: url(../Images/Icons/Guid16.png);
+}
+
+a.ui-draggable-dragging.hyperlink
+{
+	background-image: url(../Images/Icons/Hyperlink16.png);
+}
+
+a.ui-draggable-dragging.image
+{
+	background-image: url(../Images/Icons/InsertImage16.png);
+}
+
+a.ui-draggable-dragging.memo
+{
+	background-image: url(../Images/Icons/Memo16.png);
+}
+
+a.ui-draggable-dragging.multi-value
+{
+	background-image: url(../Images/Icons/MultiValue16.png);
+}
+
+a.ui-draggable-dragging.number
+{
+	background-image: url(../Images/Icons/Number16.png);
+}
+
+a.ui-draggable-dragging.text
+{
+	background-image: url(../Images/Icons/Text16.png);
+}
+
+a.ui-draggable-dragging.xml
+{
+	background-image: url(../Images/Icons/XML16.png);
+}
+
+a.ui-draggable-dragging.yesno
+{
+	background-image: url(../Images/Icons/Boolean16.png);
+}
+
+/* Control Draggables */
+a.ui-draggable-dragging.button-control
+{
+	background-image: url(../Images/Icons/ButtonControl16.png);
+}
+
+a.ui-draggable-dragging.calendar-control
+{
+	background-image: url(../Images/Icons/CalendarControl16.png);
+}
+
+a.ui-draggable-dragging.checkbox-control
+{
+	background-image: url(../Images/Icons/CheckBoxControl16.png);
+}
+
+a.ui-draggable-dragging.dropdown-control
+{
+	background-image: url(../Images/Icons/DropDownList16.png);
+}
+
+a.ui-draggable-dragging.file-control,
+a.ui-draggable-dragging.filepostback-control
+{
+	background-image: url(../Images/Icons/FileAttachmentControl16.png);
+}
+
+a.ui-draggable-dragging.listbox-control
+{
+	background-image: url(../Images/Icons/ListBoxControl16.png);
+}
+
+a.ui-draggable-dragging.radiobutton-control
+{
+	background-image: url(../Images/Icons/RadioButton.png);
+}
+
+a.ui-draggable-dragging.radiobuttongroup-control
+{
+	background-image: url(../Images/Icons/RadioButtonGroup.png);
+}
+
+a.ui-draggable-dragging.textbox-control
+{
+	background-image: url(../Images/Icons/TextBoxControl16.png);
+}
+
+a.ui-draggable-dragging.picker-control
+{
+	background-image: url(../Images/Icons/PickerToolbar16.png);
+}
+
+a.ui-draggable-dragging.image-control,
+a.ui-draggable-dragging.picture-control,
+a.ui-draggable-dragging.imagepostback-control
+{
+	background-image: url(../Images/Icons/Picture16_02.png);
+}
+
+a.ui-draggable-dragging.datalabel-control
+{
+	background-image: url(../Images/Icons/DataLabelControl16.png);
+}
+
+a.ui-draggable-dragging.gauge-control
+{
+	background-image: url(../Images/Icons/GaugeControl.png);
+}
+
+a.ui-draggable-dragging.label-control
+{
+	background-image: url(../Images/Icons/Label16.png);
+}
+
+a.ui-draggable-dragging.lookup-control
+{
+	background-image: url(../Images/Icons/LookupControl16.png);
+}
+
+a.ui-draggable-dragging.rating-control
+{
+	background-image: url(../Images/Icons/RatingControl16.png);
+}
+
+a.ui-draggable-dragging.slider-control
+{
+	background-image: url(../Images/Icons/SliderControl16.png);
+}
+
+a.ui-draggable-dragging.table-control
+{
+	background-image: url(../Images/Icons/TableControl16.png);
+}
+
+a.ui-draggable-dragging.toolbar-control
+{
+	background-image: url(../Images/Icons/ToolbarControl16.png);
+}
+
+a.ui-draggable-dragging.toolbar-button-control
+{
+	background-image: url(../Images/Icons/ToolbarButtonControl16.png);
+}
+
+a.ui-draggable-dragging.tree-control
+{
+	background-image: url(../Images/Icons/TreeControl16.png);
+}
+
+a.ui-draggable-dragging.multiselectcheckbox-control
+{
+	background-image: url(../Images/Icons/MultiSelectCheckBoxes16.png);
+}
+
+a.ui-draggable-dragging.hyperlink-control
+{
+	background-image: url(../Images/Icons/Hyperlink.png);
+}
+
+a.ui-draggable-dragging.listdisplay-control
+{
+	background-image: url(../Images/Icons/ListDisplay16.png);
+}
+
+a.ui-draggable-dragging.radiobuttonlist-control
+{
+	background-image: url(../Images/Icons/RadioButtonList16.png);
+}
+
+a.ui-draggable-dragging.user
+{
+	background-image: url(../Images/Icons/User16.png);
+}
+
+a.ui-draggable-dragging.datetime-now
+{
+	background-image: url(../Images/Icons/Now16.png);
+}
+
+a.ui-draggable-dragging.field
+{
+	background-image: url(../Images/Icons/Field16.png);
+}
+
+a.ui-draggable-dragging.ControlProperty
+{
+	background-image: url(../Images/Icons/ControlProperty16.png);
+}
+
+a.ui-draggable-dragging.rendermode
+{
+	background-image: url(../Images/Icons/RenderMode16.png);
+}
+
+a.ui-draggable-dragging.environmentField
+{
+	background-image: url(../Images/Icons/EnvironmentField16.png);
+}
+
+a.ui-draggable-dragging.auto-numberFF
+{
+	background-image:url(../Images/Icons/AutoNumberFF16.png);
+}
+
+a.ui-draggable-dragging.auto-guidFF
+{
+	background-image:url(../Images/Icons/AutoGuidFF16.png);
+}
+
+a.ui-draggable-dragging.date-timeFF
+{
+	background-image:url(../Images/Icons/DateTimeFF16.png);
+}
+
+a.ui-draggable-dragging.timeFF
+{
+	background-image:url(../Images/Icons/TimeFF16.png);
+}
+
+a.ui-draggable-dragging.dateFF
+{
+	background-image:url(../Images/Icons/DateFF16.png);
+}
+
+a.ui-draggable-dragging.decimalFF
+{
+	background-image:url(../Images/Icons/DecimalFF16_v2.png);
+}
+
+a.ui-draggable-dragging.fileFF
+{
+	background-image:url(../Images/Icons/FileFF16.png);
+}
+
+a.ui-draggable-dragging.guidFF
+{
+	background-image:url(../Images/Icons/GuidFF16.png);
+}
+
+a.ui-draggable-dragging.hyperlinkFF
+{
+	background-image:url(../Images/Icons/HyperlinkFF16.png);
+}
+
+a.ui-draggable-dragging.imageFF
+{
+	background-image:url(../Images/Icons/ImageFF16.png);
+}
+
+a.ui-draggable-dragging.memoFF
+{
+	background-image:url(../Images/Icons/MemoFF16.png);
+}
+
+a.ui-draggable-dragging.multi-valueFF
+{
+	background-image:url(../Images/Icons/MultiValueFF16.png);
+}
+
+a.ui-draggable-dragging.numberFF
+{
+	background-image:url(../Images/Icons/NumberFF16.png);
+}
+
+a.ui-draggable-dragging.textFF
+{
+	background-image:url(../Images/Icons/TextFF16.png);
+}
+
+a.ui-draggable-dragging.yesnoFF
+{
+	background-image:url(../Images/Icons/YesNoFF16.png);
+}
+
+/* Expression Builder Operators Draggables */
+a.ui-draggable-dragging.operator,
+a.ui-draggable-dragging.left-bracket,
+a.ui-draggable-dragging.right-bracket
+{
+	background-position:50% 50%;
+	height:18px;
+	padding:0;
+	text-indent:-9999px;
+	overflow:hidden;
+	width:18px;
+}
+
+a.ui-draggable-dragging.operator.add
+{
+	background-image: url(../Images/Icons/Plus16.png);
+}
+
+a.ui-draggable-dragging.operator.minus
+{
+	background-image: url(../Images/Icons/Subtract16.png);
+}
+
+a.ui-draggable-dragging.operator.multiply
+{
+	background-image: url(../Images/Icons/Multiply16.png);
+}
+
+a.ui-draggable-dragging.operator.divide
+{
+	background-image: url(../Images/Icons/Divide16.png);
+}
+
+a.ui-draggable-dragging.operator.modulus
+{
+	background-image: url(../Images/Icons/Module16.png);
+}
+
+a.ui-draggable-dragging.operator.equals
+{
+	background-image: url(../Images/Icons/Equals16.png);
+}
+
+a.ui-draggable-dragging.operator.not-equals
+{
+	background-image: url(../Images/Icons/NotEqual16.png);
+}
+
+a.ui-draggable-dragging.operator.greater-than
+{
+	background-image: url(../Images/Icons/GreaterThan16.png);
+}
+
+a.ui-draggable-dragging.operator.less-than
+{
+	background-image: url(../Images/Icons/LessThan16.png);
+}
+
+a.ui-draggable-dragging.operator.greater-than-equals
+{
+	background-image: url(../Images/Icons/GreaterThanEqual16.png);
+}
+
+a.ui-draggable-dragging.operator.less-than-equals
+{
+	background-image: url(../Images/Icons/LessThanEqual16.png);
+}
+
+a.ui-draggable-dragging.operator.and
+{
+	background-image: url(../Images/Icons/And16.png);
+}
+
+a.ui-draggable-dragging.operator.or
+{
+	background-image: url(../Images/Icons/Or16.png);
+}
+
+a.ui-draggable-dragging.operator.xor
+{
+	background-image: url(../Images/Icons/Xor16.png);
+}
+
+a.ui-draggable-dragging.function.not
+{
+	background-image: url(../Images/Icons/Not16.png);
+}
+
+a.ui-draggable-dragging.literal.true
+{
+	background-image: url(../Images/Icons/True16.png);
+}
+
+a.ui-draggable-dragging.literal.false
+{
+	background-image: url(../Images/Icons/False16.png);
+}
+
+a.ui-draggable-dragging.literal.empty-string
+{
+	background-image: url(../Images/Icons/EmptyString16.png);
+}
+
+a.ui-draggable-dragging.left-bracket
+{
+	background-image: url(../Images/Icons/BracketLeft16.png);
+}
+
+a.ui-draggable-dragging.right-bracket
+{
+	background-image: url(../Images/Icons/BracketRight16.png);
+}
+
+a.ui-draggable-dragging.function.text-upper
+{
+	background-image: url(../Images/Icons/Uppercase16.png);
+}
+
+a.ui-draggable-dragging.function.text-lower
+{
+	background-image: url(../Images/Icons/Lowercase16.png);
+}
+
+a.ui-draggable-dragging.function.text-matches
+{
+	background-image: url(../Images/Icons/MatchGeneric16.png);
+}
+
+a.ui-draggable-dragging.function.text-not-matches
+{
+	background-image: url(../Images/Icons/MatchDoesNot16.png);
+}
+
+a.ui-draggable-dragging.function.text-contains
+{
+	background-image: url(../Images/Icons/Contains16.png);
+}
+
+a.ui-draggable-dragging.function.text-starts-with
+{
+	background-image: url(../Images/Icons/StartsWith16.png);
+}
+
+a.ui-draggable-dragging.function.text-ends-with
+{
+	background-image: url(../Images/Icons/EndsWith16.png);
+}
+
+a.ui-draggable-dragging.function.text-blank
+{
+	background-image: url(../Images/Icons/IsBlank16.png);
+}
+
+a.ui-draggable-dragging.function.text-not-blank
+{
+	background-image: url(../Images/Icons/IsNotBlank16.png);
+}
+
+a.ui-draggable-dragging.function.text-substring
+{
+	background-image: url(../Images/Icons/Substring16.png);
+}
+
+a.ui-draggable-dragging.function.text-trim
+{
+	background-image: url(../Images/Icons/Trim16.png);
+}
+
+a.ui-draggable-dragging.function.text-concat
+{
+	background-image: url(../Images/Icons/Concat16.png);
+}
+
+a.ui-draggable-dragging.function.text-length
+{
+	background-image: url(../Images/Icons/Length16.png);
+}
+
+a.ui-draggable-dragging.function.text-find
+{
+	background-image: url(../Images/Icons/Find16.png);
+}
+
+a.ui-draggable-dragging.function.text-left
+{
+	background-image: url(../Images/Icons/SubstringLeft16.png);
+}
+
+a.ui-draggable-dragging.function.text-right
+{
+	background-image: url(../Images/Icons/SubstringRight16.png);
+}
+
+a.ui-draggable-dragging.function.text-to-upper
+{
+	background-image: url(../Images/Icons/Uppercase16.png);
+}
+
+a.ui-draggable-dragging.function.text-to-lower
+{
+	background-image: url(../Images/Icons/Lowercase16.png);
+}
+
+a.ui-draggable-dragging.function.text-mid
+{
+	background-image: url(../Images/Icons/Mid.png);
+}
+
+a.ui-draggable-dragging.function.text-hyperlink
+{
+	background-image: url(../Images/Icons/HyperlinkFunction16.png);
+}
+
+a.ui-draggable-dragging.function.text-insert
+{
+	background-image: url(../Images/Icons/Insert16.png);
+}
+
+a.ui-draggable-dragging.function.text-join
+{
+	background-image: url(../Images/Icons/Join16.png);
+}
+
+a.ui-draggable-dragging.function.text-pad-left
+{
+	background-image: url(../Images/Icons/PadLeft16.png);
+}
+
+a.ui-draggable-dragging.function.text-pad-right
+{
+	background-image: url(../Images/Icons/PadRight16.png);
+}
+
+a.ui-draggable-dragging.function.text-proper
+{
+	background-image: url(../Images/Icons/Proper16.png);
+}
+
+a.ui-draggable-dragging.function.text-replace
+{
+	background-image: url(../Images/Icons/Replace16.png);
+}
+
+a.ui-draggable-dragging.function.text-url-decode
+{
+	background-image: url(../Images/Icons/Decode16.png);
+}
+
+a.ui-draggable-dragging.function.text-url-encode
+{
+	background-image: url(../Images/Icons/Encode16.png);
+}
+
+a.ui-draggable-dragging.function.text-xml-decode
+{
+	background-image: url(../Images/Icons/Decode16.png);
+}
+
+a.ui-draggable-dragging.function.text-xml-encode
+{
+	background-image: url(../Images/Icons/Encode16.png);
+}
+
+a.ui-draggable-dragging.function.text-html-decode
+{
+	background-image: url(../Images/Icons/Decode16.png);
+}
+
+a.ui-draggable-dragging.function.text-html-encode
+{
+	background-image: url(../Images/Icons/Encode16.png);
+}
+
+a.ui-draggable-dragging.function.number-abs
+{
+	background-image: url(../Images/Icons/AbsoluteValue16.png);
+}
+
+a.ui-draggable-dragging.function.number-average
+{
+	background-image: url(../Images/Icons/Average16.png);
+}
+
+a.ui-draggable-dragging.function.number-max
+{
+	background-image: url(../Images/Icons/Maximum16.png);
+}
+
+a.ui-draggable-dragging.function.number-min
+{
+	background-image: url(../Images/Icons/Minimum16.png);
+}
+
+a.ui-draggable-dragging.function.number-power
+{
+	background-image: url(../Images/Icons/Power16.png);
+}
+
+a.ui-draggable-dragging.function.number-sum
+{
+	background-image: url(../Images/Icons/Sum16.png);
+}
+
+a.ui-draggable-dragging.function.number-format
+{
+	background-image: url(../Images/Icons/FormatNumber16.png);
+}
+
+a.ui-draggable-dragging.function.number-random
+{
+	background-image: url(../Images/Icons/RandBetween16.png);
+}
+
+a.ui-draggable-dragging.function.number-root
+{
+	background-image: url(../Images/Icons/Root16.png);
+}
+
+a.ui-draggable-dragging.function.number-square
+{
+	background-image: url(../Images/Icons/Square16.png);
+}
+
+a.ui-draggable-dragging.function.number-square-root
+{
+	background-image: url(../Images/Icons/SquareRoot16.png);
+}
+
+a.ui-draggable-dragging.function.number-round
+{
+	background-image: url(../Images/Icons/Round16.png);
+}
+
+a.ui-draggable-dragging.function.number-ceiling
+{
+	background-image: url(../Images/Icons/Ceiling16.png);
+}
+
+a.ui-draggable-dragging.function.number-floor
+{
+	background-image: url(../Images/Icons/Floor16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-add-days
+{
+	background-image: url(../Images/Icons/AddDays16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-add-hours
+{
+	background-image: url(../Images/Icons/AddHours16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-add-minutes
+{
+	background-image: url(../Images/Icons/AddMinutes16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-add-seconds
+{
+	background-image: url(../Images/Icons/AddSeconds16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-subtract-days
+{
+	background-image: url(../Images/Icons/SubtractDay16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-subtract-hours
+{
+	background-image: url(../Images/Icons/SubtractHours16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-subtract-minutes
+{
+	background-image: url(../Images/Icons/SubtractMinutes16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-subtract-seconds
+{
+	background-image: url(../Images/Icons/SubtractSec16_02.png);
+}
+
+a.ui-draggable-dragging.function.datetime-format
+{
+	background-image: url(../Images/Icons/FormatDate16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-today
+{
+	background-image: url(../Images/Icons/Today16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-now
+{
+	background-image: url(../Images/Icons/Now16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-tomorrow
+{
+	background-image: url(../Images/Icons/Tomorrow16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-yesterday
+{
+	background-image: url(../Images/Icons/Yesterday16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-day
+{
+	background-image: url(../Images/Icons/Day16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-month
+{
+	background-image: url(../Images/Icons/Month16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-year
+{
+	background-image: url(../Images/Icons/YearOne16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-week-number
+{
+	background-image: url(../Images/Icons/WeekNum16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-weekday
+{
+	background-image: url(../Images/Icons/WeekdayE16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-day-difference
+{
+	background-image: url(../Images/Icons/DateDif16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-end-month
+{
+	background-image: url(../Images/Icons/EndMonth16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-end-year
+{
+	background-image: url(../Images/Icons/EndYear16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-end-week
+{
+	background-image: url(../Images/Icons/EndWeek16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-end-quarter
+{
+	background-image: url(../Images/Icons/EndQuarter16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-start-month
+{
+	background-image: url(../Images/Icons/BeginMonth16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-start-year
+{
+	background-image: url(../Images/Icons/BeginYear16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-start-week
+{
+	background-image: url(../Images/Icons/BeginWeek16.png);
+}
+
+a.ui-draggable-dragging.function.datetime-start-quarter
+{
+	background-image: url(../Images/Icons/StartQuarter16.png);
+}
+
+a.ui-draggable-dragging.function.to-boolean
+{
+	background-image: url(../Images/Icons/ToBoolean16.png);
+}
+
+a.ui-draggable-dragging.function.to-datetime
+{
+	background-image: url(../Images/Icons/ToDateAndTime16.png);
+}
+
+a.ui-draggable-dragging.function.to-decimal
+{
+	background-image: url(../Images/Icons/ToDecimal16.png);
+}
+
+a.ui-draggable-dragging.function.to-number
+{
+	background-image: url(../Images/Icons/ToNumber16.png);
+}
+
+a.ui-draggable-dragging.function.to-text
+{
+	background-image: url(../Images/Icons/ToText16.png);
+}
+
+a.ui-draggable-dragging.function.if-statement
+{
+	background-image: url(../Images/Icons/IfStatement16.png);
+}
+
+a.ui-draggable-dragging.expression
+{
+	background-image: url(../Images/Icons/Expression16.png);
+}
+
+a.ui-draggable-dragging.symbol.text-return
+{
+	background-image: url(../Images/Icons/Return16.png);
+}
+
+a.ui-draggable-dragging.symbol.text-space
+{
+	background-image: url(../Images/Icons/Space16.png);
+}
+
+a.ui-draggable-dragging.symbol.text-tab
+{
+	background-image: url(../Images/Icons/Tab16.png);
+}
+
+/* Column Resizing Drag Helper Styling */
+.ui-draggable-dragging.grid-column-header-divider
+{
+	background-color:black;
+	width: 3px;
+	height:20px;
+}

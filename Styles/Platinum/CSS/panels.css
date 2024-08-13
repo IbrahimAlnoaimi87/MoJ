@@ -1,0 +1,587 @@
+﻿.panel
+{
+	position: relative;
+}
+
+.panel.full
+{
+	height: 100%;
+}
+
+/* Panel Header Styling */
+.panel-header
+{
+	border-color:#adae9c;
+	border-style:solid;
+	border-width:1px 1px 0 1px;
+	height: 22px;
+}
+
+.panel-header-c
+{
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+	border:solid 1px #fff;
+	height:20px;
+}
+
+.ie8 .panel-header-c,
+.ie9 .panel-header-c
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+}
+
+.panel-header-wrapper .panel-header-icon
+{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+
+html[dir=rtl] .panel-header-wrapper .panel-header-icon
+{
+	float: right;
+}
+
+.panel-header-wrapper .panel-header-text
+{
+	float: left;
+	font-weight: bold;
+	line-height: 19px;
+	padding-left: 5px;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	height: 20px;
+	max-width: 100%;
+}
+
+html[dir=rtl] .panel-header-wrapper .panel-header-text
+{
+	float: right;
+	padding-right: 5px;
+}
+
+.panel-header-wrapper .panel-header-controls
+{
+	background: url("../Images/TitleBar/titlebar_divider.png") no-repeat 0 50%;
+	float: right;
+	height: 20px;
+	padding: 0 0 0 3px;
+}
+
+html[dir=rtl] .panel-header-wrapper .panel-header-controls
+{
+	float: left;
+	padding: 0 3px 0 0;
+}
+
+.panel-header-wrapper .panel-header-controls a
+{
+	background-image: url(../Images/Buttons/ShowHideButton.png);
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	height: 20px;
+	margin: 0; 
+	width: 25px;
+}
+
+html[dir=rtl] .panel-header-wrapper .panel-header-controls a
+{
+	float: right;
+}
+
+.panel-header-wrapper .panel-header-controls a span
+{
+	display: none;
+}
+
+.panel-header-wrapper .panel-header-controls a.collapse-horizontal
+{
+	background-image: url(../Images/Arrows/black_arrow_left.png);
+}
+.panel-header-wrapper .panel-header-controls a.collapse-horizontal:hover
+{
+	background-image: url(../Images/Arrows/green_arrow_left.png);
+}
+
+.panel-header-wrapper .panel-header-controls a.expand-horizontal
+{
+	background-image: url(../Images/Arrows/black_arrow_right.png);
+}
+.panel-header-wrapper .panel-header-controls a.expand-horizontal:hover
+{
+	background-image: url(../Images/Arrows/green_arrow_right.png);
+}
+
+.panel.full > .panel-header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.panel.without-header > .panel-header
+{
+	display: none;
+}
+
+.panel.with-toolbar > .panel-header
+{
+	border-bottom-width:1px;
+}
+
+/* Panel Toolbar Styling */
+.panel-toolbars
+{
+	overflow: hidden;
+}
+
+.panel.without-toolbar > .panel-toolbars
+{
+	display: none;
+}
+
+.panel.full > .panel-toolbars
+{
+	position: absolute;
+	top: 24px;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.panel.without-header.full > .panel-toolbars
+{
+	top: 0;
+}
+
+.panel.with-header.with-toolbar .panel-toolbars .toolbars,
+.panel.with-header.with-double-toolbar .panel-toolbars .toolbars,
+.panel.with-header.with-triple-toolbar .panel-toolbars .toolbars
+{
+	border-top-width:0;
+}
+
+.panel.with-header.with-toolbar > .panel-toolbars
+{
+	height: auto;
+}
+
+.panel.with-header.with-toolbar > .panel-toolbars .toolbars.single .toolbar-wrapper
+{
+	background: #dfe4d7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #dfe4d7 0%, #f9f9f9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfe4d7), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dfe4d7 0%,#f9f9f9 100%); /* W3C */
+}
+
+.ie8 .panel.with-header.with-toolbar > .panel-toolbars .toolbars.single .toolbar-wrapper,
+.ie9 .panel.with-header.with-toolbar > .panel-toolbars .toolbars.single .toolbar-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe4d7', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+}
+
+.details-header
+{
+	border-right: solid 1px #adae9c;
+	border-top: solid 1px #adae9c;
+	border-left: solid 1px #adae9c;
+	height: 62px;
+	padding: 9px;
+	background: #dfe4d7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #dfe4d7 0%, #f9f9f9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfe4d7), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dfe4d7 0%,#f9f9f9 100%); /* W3C */
+}
+
+.ie8 .details-header,
+.ie9 .details-header
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe4d7', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+}
+
+.details-headerfull
+{
+	border: solid 1px #adae9c;
+	height: 62px;
+	padding: 9px;
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+}
+
+.ie8 .details-headerfull,
+.ie9 .details-headerfull
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+}
+
+.details-view-icon
+{
+	display: block;	
+	height: 64px;
+	width: 64px;
+	background: url(../Images/Icons/View64Shadow.png) no-repeat 50% 0;    
+}
+
+.details-so-icon
+{
+	display: block;	
+	height: 64px;
+	width: 64px;
+	background: url(../Images/Icons/SmartObject64.png) no-repeat 50% 0;    
+}
+
+.details-form-icon
+{
+	display: block;	
+	height: 64px;
+	width: 64px;
+	background: url(../Images/Icons/Forms64Shadow.png) no-repeat 50% 0;    
+}
+
+.details-workflow-icon
+{
+	display: block;	
+	height: 64px;
+	width: 64px;
+	background: url(../Images/Icons/Process64.png) no-repeat 50% 0;    
+}
+
+.details-application-icon
+{
+	display: block;	
+	height: 64px;
+	width: 64px;
+	background: url(../Images/Icons/Default64px.png) no-repeat 50% 0;    
+}
+
+.details-header-name
+{
+	position: absolute;
+	top: 9px;
+	left: 81px;
+	right: 90px;
+	font-weight: 700;
+}
+
+html[dir=rtl] .details-header-name
+{
+	left: 90px;
+	right: 81px;
+}
+
+.details-header-description
+{
+	position: absolute;
+	top: 28px;
+	right: 131px;
+	left: 81px;
+	bottom: 9px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+html[dir=rtl] .details-header-description
+{
+	right: 81px;
+	left: 131px;
+}
+
+.details-header-version
+{
+	position: absolute;
+	top: 9px;
+	right: 9px;
+}
+
+html[dir=rtl] .details-header-version
+{
+	left: 9px;
+	right: auto;
+}
+
+.details-header-showproperties
+{
+	position: absolute;
+	bottom: 9px;
+	right: 9px;
+	width: 117px;
+}
+
+html[dir=rtl] .details-header-showproperties
+{
+	left: 9px;
+	right: auto;
+}
+
+#DetailsBarExpander
+{
+	display: inline-block;
+	float: right;
+}
+
+html[dir=rtl] #DetailsBarExpander
+{
+	float:left;
+}
+
+.details-footer
+{
+	height: 20px;
+}
+
+.details-footer-modifieddate
+{
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	bottom: 3px;
+}
+
+html[dir=rtl] .details-footer-modifieddate
+{
+	left: auto;
+	right: 5px;
+}
+
+.details-footer-modifiedby
+{
+	position:absolute;
+	right: 6px;
+	top: 3px;
+	bottom: 3px;
+}
+
+html[dir=rtl] .details-footer-modifiedby
+{
+	left: 6px;
+	right: auto;
+}
+
+.panel.without-header.with-toolbar > .panel-toolbars
+{
+	height: 24px;
+}
+
+.panel.with-header.with-double-toolbar > .panel-toolbars
+{
+	height: 46px;
+}
+
+.panel.without-header.with-double-toolbar > .panel-toolbars
+{
+	height: 47px;
+}
+
+.panel.without-header.with-triple-toolbar > .panel-toolbars
+{
+	height: 70px;
+}
+
+/* Grid Body Styling */
+.panel > .panel-body
+{
+	background-color:#fff;
+	border:solid 1px #adae9c;
+	margin-top: 3px;
+	position: relative;
+	padding:3px;
+}
+
+.panel.without-header.without-toolbar > .panel-body, 
+.panel.without-header.with-toolbar > .panel-body, 
+.panel.with-header.without-toolbar > .panel-body
+{
+	margin-top: 0;
+}
+
+.panel.full > .panel-body
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	margin-top: 0;
+	padding:0;
+}
+
+.panel.without-header.without-toolbar.full > .panel-body
+{
+	top: 0;
+}
+
+/* Temp fix for PanelBox control */
+.panel.without-header.full > .panel-body
+{
+	top: 0;
+}
+
+.panel.with-header.without-toolbar.full > .panel-body, 
+.panel.without-header.with-toolbar.full > .panel-body
+{
+	top: 23px;
+}
+
+.panel.with-header.with-toolbar.full > .panel-body, 
+.panel.without-header.with-double-toolbar.full > .panel-body
+{
+	top: 50px;
+}
+
+.panel.with-header.with-double-toolbar.full > .panel-body, 
+.panel.without-header.with-triple-toolbar.full > .panel-body
+{
+	top: 73px;
+}
+
+.panel.without-footer.full > .panel-body
+{
+	bottom: 0;
+}
+
+.panel.with-footer.full > .panel-body
+{
+	bottom: 24px;
+}
+
+.panel > .panel-body > .panel-body-m
+{
+	position: relative;
+}
+
+.panel.full > .panel-body > .panel-body-m
+{
+	bottom:3px;
+	left:3px;
+	position:absolute;
+	right:3px;
+	top:3px;
+}
+
+.panel.with-header.without-toolbar > .panel-body > .panel-body-t .panel-body-t-c, 
+.panel.without-header.with-toolbar > .panel-body > .panel-body-t .panel-body-t-c
+{
+	background-color: #fff;
+	background-image: none;
+}
+
+.panel.full > .panel-body > .panel-body-m > .panel-body-m-c
+{
+	height: 100%;
+	position: relative;
+}
+
+.panel .panel-body-m-l, 
+.panel .panel-body-m-r
+{
+	display: none;
+}
+
+.panel .panel-body-wrapper
+{
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* Panel Footer Styling */
+.panel > .panel-footer
+{
+	height: 24px;
+	position: relative;
+}
+
+.panel.without-footer > .panel-footer
+{
+	display: none;
+}
+
+.panel.with-footer > .panel-footer
+{
+	display: block;
+}
+
+.panel.with-footer.full > .panel-footer
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.panel.with-footer > .panel-footer > .toolbars
+{
+	border-top: none;
+}
+
+/* Panel Header Icons */
+.panel-header-wrapper .panel-header-icon.search
+{
+	background-image: url("../Images/Icons/Search16.png");
+}
+
+.panel-header-wrapper .panel-header-icon.preview-form, .panel-header-wrapper .panel-header-icon.preview-view
+{
+	background-image: url("../Images/Icons/FormPreview16.png");
+}
+
+.panel-header-wrapper .panel-header-icon.form
+{
+	background-image: url("../Images/Icons/SmartForm16.png");
+}
+
+.panel-header-wrapper .panel-header-icon.view
+{
+	background-image: url("../Images/Icons/View16.png");
+}
+
+.panel-header-wrapper .panel-header-icon.list-view,
+.panel-header-wrapper .panel-header-icon.capturelist-view
+{
+	background-image: url("../Images/Icons/ListView16.png");
+}
+
+.panel-header-wrapper .panel-header-icon.capture-view
+{
+	background-image: url("../Images/Icons/ItemView16.png");
+}
+
+.panel-header-wrapper .panel-header-icon.application
+{
+	background-image: url("../Images/Icons/Application16.png");
+}
+
+.panel-header-wrapper .panel-header-icon.workflow
+{
+	background-image: url("../Images/Icons/Default16px.png");
+}
+
+.panel-watermark
+{
+	color:#c5c5c5;
+}

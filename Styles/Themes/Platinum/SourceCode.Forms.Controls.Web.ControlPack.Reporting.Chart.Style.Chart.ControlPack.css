@@ -1,0 +1,116 @@
+/*THEMES CHART*/
+.testda
+{
+
+}
+
+.theme-entry .StandardChart .series0ActivityInstances
+{
+	stroke: #4F6F18;
+	fill: #4F6F18;
+}
+
+.theme-entry .StandardChart .series1ActivityInstances
+{
+	stroke: #006a71;
+	fill: #006a71;
+}
+
+.theme-entry .StandardChart .series2ActivityInstances
+{
+	stroke: #D4891c;
+	fill: #D4891c;
+}
+
+.theme-entry .StandardChart .series3ActivityInstances
+{
+	stroke: #4d374b;
+	fill: #4d374b;
+}
+
+.theme-entry .StandardChart .series4ActivityInstances
+{
+	stroke: #505858;
+	fill: #505858;
+}
+
+.theme-entry .StandardChart .series5ActivityInstances
+{
+	stroke: #B21e28;
+	fill: #B21e28;
+}
+
+.theme-entry .StandardChart .series6ActivityInstances
+{
+	stroke: #7ac142;
+	fill: #7ac142;
+}
+
+.theme-entry .StandardChart .series7ActivityInstances
+{
+	stroke: #72aeb6;
+	fill: #72aeb6;
+}
+
+.theme-entry .StandardChart .series8ActivityInstances
+{
+	stroke: #Deb407;
+	fill: #Deb407;
+}
+
+.theme-entry .StandardChart .series9ActivityInstances
+{
+	stroke: #A682a3;
+	fill: #A682a3;
+}
+
+.theme-entry .StandardChart .series10ActivityInstances
+{
+	stroke: #A0a1a2;
+	fill: #A0a1a2;
+}
+
+.theme-entry .StandardChart .series11ActivityInstances
+{
+	stroke: #D9515b;
+	fill: #D9515b;
+}
+
+.theme-entry .StandardChart .series12ActivityInstances
+{
+	stroke: #4f6f18;
+	fill: #4f6f18;
+}
+
+.theme-entry .StandardChart .series13ActivityInstances
+{
+	stroke: #006a71;
+	fill: #006a71;
+}
+
+.theme-entry .StandardChart .series14ActivityInstances
+{
+	stroke: #D4891c;
+	fill: #D4891c;
+}
+
+.theme-entry .StandardChart .radhtmlcharttitle
+{
+	font-weight: bold;
+}
+
+.theme-entry .StandardChart .radchartlabel
+{
+	fill: #313842;
+}
+
+.theme-entry .StandardChart .radhtmlchartsubtitle
+{
+	fill: #CCCCCC;
+	color: #CCCCCC;
+}
+
+.theme-entry .k-tooltip
+{
+	border-color: #CDD6BA !important;
+}

@@ -1,0 +1,3 @@
+<div class="PART-group-header navigation-item-container navigation-header {HiddenClass} {CustomCSSClass}">
+		<span class="navigation-item" title="{TooltipText}">{DisplayText}</span>
+</div>

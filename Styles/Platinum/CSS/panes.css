@@ -1,0 +1,25 @@
+﻿.pane-container
+{
+	height:100%;
+	position:relative;
+}
+
+.pane-container .pane,
+.pane-container .divider
+{
+	position:absolute;
+}
+
+.pane-container.horizontal > .pane,
+.pane-container.horizontal > .divider
+{
+	bottom:0;
+	top:0;
+}
+
+.pane-container.vertical > .pane,
+.pane-container.vertical > .divider
+{
+	left:0;
+	right:0;
+}

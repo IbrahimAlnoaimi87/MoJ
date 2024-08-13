@@ -1,0 +1,41 @@
+<div class="visible panel scroll-contents with-header without-toolbar without-footer">
+  <div class="panel-header">
+    <div class="panel-header-l"></div>
+    <div class="panel-header-c">
+      <div class="panel-header-wrapper">
+        <div class="panel-header-text">
+          <span data-sf-title="{HeaderTitle}">{HeaderTitle}</span>
+        </div>
+        <div class="panel-header-controls">
+          <!--<a href="javascript:;" class="collapse-vertical" tabindex="0">
+            <span></span>
+          </a>-->
+        </div>
+      </div>
+    </div>
+    <div class="panel-header-r"></div>
+  </div>
+  <div class="panel-body">
+    <div class="panel-body-t">
+      <div class="panel-body-t-l"></div>
+      <div class="panel-body-t-c"></div>
+      <div class="panel-body-t-r"></div>
+    </div>
+    <div class="panel-body-m">
+      <div class="panel-body-m-l"></div>
+      <div class="panel-body-m-c">
+        <div class="panel-body-wrapper">
+          <div>
+            {WrapperBody}
+          </div>
+        </div>
+      </div>
+      <div class="panel-body-m-r"></div>
+    </div>
+    <div class="panel-body-b">
+      <div class="panel-body-b-l"></div>
+      <div class="panel-body-b-c"></div>
+      <div class="panel-body-b-r"></div>
+    </div>
+  </div>
+</div>

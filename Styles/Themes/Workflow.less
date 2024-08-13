@@ -1,0 +1,1487 @@
+//font-size, font-family, text color related styling are defined in the Core_Legacy.less
+@import url('Core_Legacy.less');
+
+/* Core font-styling */
+.workflow-entry div,
+.workflow-entry span,
+.workflow-entry td,
+.workflow-entry li,
+.workflow-entry p,
+.workflow-entry textarea,
+.workflow-entry input[type=text],
+.workflow-entry input.text,
+.workflow-entry select,
+.workflow-entry option 
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #343e41;
+    font-size: 11px;
+}
+
+/* Move from Core_Legacy.less for Code Fix 952276*/
+.workflow-entry
+{
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    label,
+    p
+    {
+        &.SourceCode-Forms-Controls-Web-Label,
+        &.SourceCode-Forms-Controls-Web-DataLabel
+        {
+            padding: 1px;
+        }
+    }
+}
+
+/* Hyperlink Global Style */
+body.workflow-entry
+{
+	background:#fff;
+}
+
+.workflow-entry a,
+.workflow-entry a:visited
+{
+	color:#5f9a33;
+}
+
+/* Button Styling */
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:focus,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:active,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:focus,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:active,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:active,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:focus,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:active
+{
+	color:#fff;
+	background: #78bc41; /* Old browsers */
+	background: -moz-linear-gradient(top,  #78bc41 0%, #629e35 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78bc41), color-stop(100%,#629e35)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #78bc41 0%,#629e35 100%); /* W3C */
+	border:solid 1px #4F6F19;
+	min-height: 23px;
+	min-width: 60px;
+	padding: 5px;
+}
+
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:focus,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:active,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:focus,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:active,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:active,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:focus,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:active,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:focus,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:active,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:focus,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:active,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:active,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:focus,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:active
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78bc41', endColorstr='#629e35',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button:hover
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button:hover:focus,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button:hover:active
+{
+	background: #c1f596; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c1f596 0%, #8acb55 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c1f596), color-stop(100%,#8acb55)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c1f596 0%,#8acb55 100%); /* W3C */
+}
+
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button:hover,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button:hover:focus,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button:hover:active,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button:hover
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button:hover:focus,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button:hover:active
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1f596', endColorstr='#8acb55',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button:focus,
+.workflow-entry a.SourceCode-Forms-Controls-Web-Button:active
+{
+	background: #78bc41; /* Old browsers */
+	background: -moz-linear-gradient(top,  #78bc41 0%, #629e35 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78bc41), color-stop(100%,#629e35)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #78bc41 0%,#629e35 100%); /* W3C */
+	border: #e4f2d9 solid 1px;
+}
+
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button:focus,
+.ie8 .workflow-entry a.SourceCode-Forms-Controls-Web-Button:active,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button:focus,
+.ie9 .workflow-entry a.SourceCode-Forms-Controls-Web-Button:active
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78bc41', endColorstr='#629e35',GradientType=0 ); /* IE6-9 */
+}
+/* End of Button Styling */
+
+/* Toolbar Styling */
+.workflow-entry .toolbars
+{
+	border-color:#4f6f19;
+}
+
+.workflow-entry .toolbar-wrapper,
+.workflow-entry .toolbars.single .toolbar .toolbar-wrapper,
+.workflow-entry .toolbars.double .toolbar .toolbar-wrapper
+{
+	border-color:#aed78e;
+	background: #7ac043; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7ac043 0%, #5f9933 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ac043), color-stop(100%,#5f9933)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7ac043 0%,#5f9933 100%); /* W3C */
+}
+
+.ie8 .workflow-entry .toolbar-wrapper,
+.ie8 .workflow-entry .toolbars.single .toolbar .toolbar-wrapper,
+.ie8 .workflow-entry .toolbars.double .toolbar .toolbar-wrapper,
+.ie9 .workflow-entry .toolbar-wrapper,
+.ie9 .workflow-entry .toolbars.single .toolbar .toolbar-wrapper,
+.ie9 .workflow-entry .toolbars.double .toolbar .toolbar-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac043', endColorstr='#5f9933',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry a.toolbar-button,
+.workflow-entry a.toolbar-button.disabled,
+.workflow-entry a.toolbar-button.disabled:hover,
+.workflow-entry a.toolbar-button.disabled:focus,
+.workflow-entry a.toolbar-button.disabled:active
+.workflow-entry a.toolbar-button .button-text
+{
+	color: #fff;
+}
+
+.workflow-entry a.toolbar-button:hover
+{
+	border-color:#4f6f19;
+	background: #c4f89a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c4f89a 0%, #87c851 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c4f89a), color-stop(100%,#87c851)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c4f89a 0%,#87c851 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c4f89a 0%,#87c851 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c4f89a 0%,#87c851 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c4f89a 0%,#87c851 100%); /* W3C */
+	color: #fff;
+}
+
+.ie8 .workflow-entry a.toolbar-button:hover,
+.ie9 .workflow-entry a.toolbar-button:hover
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4f89a', endColorstr='#87c851',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry a.toolbar-button.selected,
+.workflow-entry a.toolbar-button:focus,
+.workflow-entry a.toolbar-button:active
+{
+	border-color:#c4f89a;
+	background: #c4f89a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c4f89a 0%, #87c851 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c4f89a), color-stop(100%,#87c851)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c4f89a 0%,#87c851 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c4f89a 0%,#87c851 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c4f89a 0%,#87c851 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c4f89a 0%,#87c851 100%); /* W3C */
+	color: #fff;
+}
+
+.ie8 .workflow-entry a.toolbar-button.selected,
+.ie8 .workflow-entry a.toolbar-button:focus,
+.ie8 .workflow-entry a.toolbar-button:active,
+.ie9 .workflow-entry a.toolbar-button.selected,
+.ie9 .workflow-entry a.toolbar-button:focus,
+.ie9 .workflow-entry a.toolbar-button:active
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4f89a', endColorstr='#87c851',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .toolbar .filterLabel
+{
+	color:#fff;
+}
+/* End of Toolbar Styling */
+
+/* Form Styling */
+.workflow-entry .input-control input[type="text"], 
+.workflow-entry .input-control input[type="password"] 
+{
+	height: 15px;
+}
+
+.workflow-entry .styling-outer-wrapper 
+{
+	min-height: 20px;
+}
+
+.workflow-entry .input-control a.input-control
+{
+	color: #343e41;
+	height:16px;
+}
+
+.workflow-entry .input-control.dropdown-box a.input-control
+{
+	height:16px;
+}
+
+.workflow-entry .input-control.disabled a.input-control,
+.workflow-entry .input-control.disabled input[type=text],
+.workflow-entry .input-control.disabled input[type=password],
+.workflow-entry .input-control.disabled textarea,
+.workflow-entry .input-control input[type=text][disabled=disabled],
+.workflow-entry .input-control input[type=password][disabled=disabled],
+.workflow-entry .input-control textarea[disabled=disabled]
+{
+	color:#343E41;
+}
+.workflow-entry span.textbox-style-wrapper,
+.workflow-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.workflow-entry .input-control .input-control-m-c 
+{
+	border: 1px solid #4F6F19;
+}
+
+.workflow-entry .input-control .input-control-m-c 
+{
+	border-style: solid;
+	border-width: 1px;
+	min-height: 18px;
+	padding-left: 3px;
+}
+
+.workflow-entry .input-control.select-box .input-control-m-c, 
+.workflow-entry .input-control.select-box.active .input-control-m-c
+{
+	padding-right:0;
+	border-right-width:1px;
+}
+
+.workflow-entry span.textbox-style-wrapper.focus,
+.workflow-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.focus,
+.workflow-entry .input-control.active .input-control-m-c
+{
+	border-color:#98dc28 !important; /*important will overide user configured styles */
+}
+
+.workflow-entry span.textbox-style-wrapper.disabled,
+.workflow-entry span.textbox-style-wrapper.preview,
+.workflow-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.disabled,
+.workflow-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.preview,
+.workflow-entry .input-control.disabled .input-control-m-c
+{
+	border-color:#4f6f19 !important; /*important will overide user configured styles */
+}
+
+.workflow-entry span.textbox-style-wrapper.invalid,
+.workflow-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.invalid,
+.workflow-entry .input-control.invalid .input-control-m-c,
+.workflow-entry .SourceCode-Forms-Controls-Web-Label.invalid,
+.workflow-entry .SourceCode-Forms-Controls-Web-DataLabel.invalid,
+.workflow-entry .file-wrapper-wrapper.invalid,
+.workflow-entry .image-wrapper-wrapper.invalid,
+.workflow-entry div.hyperlinkTopLeftPanel.invalid
+{
+	border: 1px solid #e7000e !important; /*important will overide user configured styles */
+}
+
+.workflow-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox 
+{
+	min-height:20px;
+	padding-bottom: 1px;
+	padding-left: 3px;
+	padding-top: 0;
+}
+
+.mozilla .workflow-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox, 
+.webkit.safari .workflow-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox 
+{
+	padding-left: 2px;
+}
+
+.workflow-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+.workflow-entry .input-control-watermark,
+.workflow-entry .input-control.watermark a.input-control, 
+.workflow-entry .input-control.watermark a.input-control span, 
+.workflow-entry .input-control.select-box.watermark a.input-control span
+{
+	font-style:italic !important; /*important will overide user configured styles */
+	color:#c5c5c5 !important; /*important will overide user configured styles */
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+
+.workflow-entry label.input-control.checkbox .input-control-img
+{
+	background-image:url(K2/checkbox.png);
+}
+
+.workflow-entry label.input-control.radio .input-control-img
+{
+	background-image:url(K2/radio.png);
+}
+
+.workflow-entry .input-control.select-box
+{
+	line-height: 1.2;
+	min-height: 20px;
+}
+
+.workflow-entry .input-control.select-box .input-control-body
+{
+	min-height: 18px;
+	right: 19px;
+}
+
+.workflow-entry .input-control.select-box .input-control-buttons a
+{
+	color:#fff;
+	border:solid 1px #4F6F19;
+	background: #78bc41; /* Old browsers */
+	background: -moz-linear-gradient(top,  #78bc41 0%, #629e35 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78bc41), color-stop(100%,#629e35)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #78bc41 0%,#629e35 100%); /* W3C */
+	height:18px;
+	width:18px;
+}
+
+.ie8 .workflow-entry .input-control.select-box .input-control-buttons a,
+.ie9 .workflow-entry .input-control.select-box .input-control-buttons a
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78bc41', endColorstr='#629e35',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .input-control.select-box .input-control-buttons a span
+{
+	height: 18px;
+}
+
+.workflow-entry .input-control.select-box .input-control-buttons a > span
+{
+	border-width:1px;
+}
+
+.workflow-entry .input-control.select-box .input-control-buttons a:hover > span,
+.workflow-entry .input-control.select-box .input-control-buttons a:active > span,
+.workflow-entry .input-control.select-box .input-control-buttons a:focus > span
+{
+	background: #c1f596; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c1f596 0%, #8acb55 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c1f596), color-stop(100%,#8acb55)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c1f596 0%,#8acb55 100%); /* W3C */
+}
+
+.ie8 .workflow-entry .input-control.select-box .input-control-buttons a:hover > span,
+.ie8 .workflow-entry .input-control.select-box .input-control-buttons a:active > span,
+.ie8 .workflow-entry .input-control.select-box .input-control-buttons a:focus > span,
+.ie9 .workflow-entry .input-control.select-box .input-control-buttons a:hover > span,
+.ie9 .workflow-entry .input-control.select-box .input-control-buttons a:active > span,
+.ie9 .workflow-entry .input-control.select-box .input-control-buttons a:focus > span
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1f596', endColorstr='#8acb55',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .input-control.select-box .input-control-buttons a:hover,
+.workflow-entry .input-control.select-box.disabled .input-control-buttons a,
+.workflow-entry .input-control.select-box.disabled .input-control-buttons a:hover,
+.workflow-entry .input-control.select-box.disabled .input-control-buttons a:focus,
+.workflow-entry .input-control.select-box.read-only .input-control-buttons a,
+.workflow-entry .input-control.select-box.read-only .input-control-buttons a:hover,
+.workflow-entry .input-control.select-box.read-only .input-control-buttons a:focus
+{
+	color:#fff;
+	border:solid 1px #4F6F19;
+	background: #78bc41; /* Old browsers */
+	background: -moz-linear-gradient(top,  #78bc41 0%, #629e35 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78bc41), color-stop(100%,#629e35)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #78bc41 0%,#629e35 100%); /* W3C */
+}
+
+.ie8 .workflow-entry .input-control.select-box .input-control-buttons a:hover,
+.ie8 .workflow-entry .input-control.select-box.disabled .input-control-buttons a,
+.ie8 .workflow-entry .input-control.select-box.disabled .input-control-buttons a:hover,
+.ie8 .workflow-entry .input-control.select-box.disabled .input-control-buttons a:focus,
+.ie8 .workflow-entry .input-control.select-box.read-only .input-control-buttons a,
+.ie8 .workflow-entry .input-control.select-box.read-only .input-control-buttons a:hover,
+.ie8 .workflow-entry .input-control.select-box.read-only .input-control-buttons a:focus,
+.ie9 .workflow-entry .input-control.select-box .input-control-buttons a:hover,
+.ie9 .workflow-entry .input-control.select-box.disabled .input-control-buttons a,
+.ie9 .workflow-entry .input-control.select-box.disabled .input-control-buttons a:hover,
+.ie9 .workflow-entry .input-control.select-box.disabled .input-control-buttons a:focus,
+.ie9 .workflow-entry .input-control.select-box.read-only .input-control-buttons a,
+.ie9 .workflow-entry .input-control.select-box.read-only .input-control-buttons a:hover,
+.ie9 .workflow-entry .input-control.select-box.read-only .input-control-buttons a:focus
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78bc41', endColorstr='#629e35',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .input-control.select-box .input-control-buttons a:focus,
+.workflow-entry .input-control.select-box .input-control-buttons a:active,
+.workflow-entry .input-control.select-box.active .input-control-buttons a,
+.workflow-entry .input-control.select-box.active .input-control-buttons:hover a,
+.workflow-entry .input-control.select-box.active .input-control-buttons:focus a,
+.workflow-entry .input-control.select-box.active .input-control-buttons:active a
+{
+	border-color: #aed78e;
+	color:#fff;
+	background: #78bc41; /* Old browsers */
+	background: -moz-linear-gradient(top,  #78bc41 0%, #629e35 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78bc41), color-stop(100%,#629e35)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #78bc41 0%,#629e35 100%); /* W3C */
+}
+
+.ie8 .workflow-entry .input-control.select-box .input-control-buttons a:focus,
+.ie8 .workflow-entry .input-control.select-box .input-control-buttons a:active,
+.ie8 .workflow-entry .input-control.select-box.active .input-control-buttons a,
+.ie8 .workflow-entry .input-control.select-box.active .input-control-buttons:hover a,
+.ie8 .workflow-entry .input-control.select-box.active .input-control-buttons:focus a,
+.ie8 .workflow-entry .input-control.select-box.active .input-control-buttons:active a,
+.ie9 .workflow-entry .input-control.select-box .input-control-buttons a:focus,
+.ie9 .workflow-entry .input-control.select-box .input-control-buttons a:active,
+.ie9 .workflow-entry .input-control.select-box.active .input-control-buttons a,
+.ie9 .workflow-entry .input-control.select-box.active .input-control-buttons:hover a,
+.ie9 .workflow-entry .input-control.select-box.active .input-control-buttons:focus a,
+.ie9 .workflow-entry .input-control.select-box.active .input-control-buttons:active a
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78bc41', endColorstr='#629e35',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .input-control.select-box .input-control-buttons a.dropdown > span span,
+.workflow-entry .input-control.select-box .input-control-buttons a.dropdown:active > span span,
+.workflow-entry .input-control.select-box.active .input-control-buttons a.dropdown > span span,
+.workflow-entry .input-control.select-box.active .input-control-buttons a.dropdown:focus > span span,
+.workflow-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover > span span
+{
+	background-image:url(../Platinum/Images/Arrows/white_arrow_down.gif);
+}
+
+.workflow-entry .input-control.select-box .input-control-buttons a.dropdown:hover > span span,
+.workflow-entry .input-control.select-box .input-control-buttons a.dropdown:focus > span span
+{
+	background-image:url(../Platinum/Images/Arrows/white_arrow_down.gif);
+}
+
+.workflow-entry .input-control:hover .input-control-m-c,
+.workflow-entry .input-control:hover .input-control-content,
+.workflow-entry .input-control:hover .input-control-buttons, 
+.workflow-entry .input-control:hover .input-control-buttons a
+{
+	border-color: #4F6F19;
+}
+
+.workflow-entry .drop-menu,
+.workflow-entry .drop-menu.workflow-entry
+{
+	background-color:#fff;
+	border-color:#4f6f19;
+}
+
+.workflow-entry .drop-menu.icon-control .drop-menu-m,
+.workflow-entry .drop-menu.workflow-entry.icon-control .drop-menu-m
+{
+	background-image:url(K2/menu_bg.gif);
+}
+
+.workflow-entry .drop-menu.icon-control ul.drop-menu,
+.workflow-entry .drop-menu.workflow-entry.icon-control ul.drop-menu
+{
+	background-color:transparent;
+}
+
+.workflow-entry .drop-menu ul.drop-menu a span,
+.workflow-entry .drop-menu.workflow-entry ul.drop-menu a span
+{
+	color: #343e41;
+}
+
+.workflow-entry .drop-menu ul.drop-menu a:hover span,
+.theme-entry .drop-menu.workflow-entry ul.drop-menu a:hover span
+{
+	background-color:#cee8bb;
+}
+
+.workflow-entry .drop-menu ul.drop-menu a.selected span,
+.theme-entry .drop-menu.workflow-entry ul.drop-menu a.selected span
+{
+	background-color:#bfe1a5;
+}
+
+.workflow-entry .drop-menu ul.drop-menu a.disabled span,
+.workflow-entry .drop-menu.workflow-entry ul.drop-menu a.disabled span,
+.workflow-entry .drop-menu ul.drop-menu a.disabled:hover span,
+.workflow-entry .drop-menu.workflow-entry ul.drop-menu a.disabled:hover span
+{
+	background-color:#fff;
+}
+/* End of Form Styling */
+
+/* Menu Styling */
+.workflow-entry .menu
+{
+	border-color:#4f6f19;
+	background:#fff url("K2/menu_bg.gif") repeat-y 0 0;
+}
+
+.workflow-entry .menu li:hover
+{
+	background:#cee8bb;
+}
+
+.workflow-entry .menu li.seperator span
+{
+	background-color: #E0E0E0;
+	border-color: #E0E0E0 #E0E0E0 #fff #fff;
+}
+
+.workflow-entry .menu a.menu-item
+{
+	color: #222;
+}
+
+.workflow-entry .menu a.menu-item.children
+{
+	background-image:url("K2/paging_arrows_single_right_normal.png");
+}
+/* End of Menu Styling */
+
+/* DropTextbox Styling */
+.workflow-entry .drop-item
+{
+	color: #FFF;
+	background-color: #7BB625;
+}
+/* End of DropTextbox Styling */
+
+/* Tree Styling */
+.workflow-entry .tree li a:hover, 
+.workflow-entry .tree li a:focus,
+.workflow-entry .tree li a.hover 
+{
+	background-color: #d6e3b0;
+}
+
+.workflow-entry .tree li.selected > a,
+.workflow-entry .tree li.selected > a:hover,
+.workflow-entry .tree li.selected > span
+{
+	background-color: #e4efc3;
+}
+/* End of Tree Styling */
+
+/* Panel Styling */
+.workflow-entry .panel-header
+{
+	border-color:#4f6f19;
+	border-style: solid;
+	border-width: 1px 1px 0;
+	height: 22px;
+}
+
+.workflow-entry .panel-header-c,
+.workflow-entry .panel > .panel-header.panel-header-c,
+.workflow-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars .toolbar-wrapper,
+.workflow-entry .panel.with-header.with-double-toolbar > .panel-toolbars .toolbars .toolbar-wrapper
+{
+	background: #7ac043; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7ac043 0%, #5f9933 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ac043), color-stop(100%,#5f9933)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7ac043 0%,#5f9933 100%); /* W3C */
+	border: 1px solid #aed78e;
+	height: 20px;
+}
+
+.ie8 .workflow-entry .panel-header-c,
+.ie8 .workflow-entry .panel > .panel-header.panel-header-c,
+.ie8 .workflow-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars .toolbar-wrapper,
+.ie8 .workflow-entry .panel.with-header.with-double-toolbar > .panel-toolbars .toolbars .toolbar-wrapper,
+.ie9 .workflow-entry .panel-header-c,
+.ie9 .workflow-entry .panel > .panel-header.panel-header-c,
+.ie9 .workflow-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars .toolbar-wrapper,
+.ie9 .workflow-entry .panel.with-header.with-double-toolbar > .panel-toolbars .toolbars .toolbar-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac043', endColorstr='#5f9933',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .panel-header-wrapper 
+{
+	height: 20px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.workflow-entry .panel-header-wrapper .panel-header-text,
+.workflow-entry .panel .view-name
+{
+	color:#fff;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 19px;
+	padding: 0 5px;
+}
+
+.workflow-entry .panel > .panel-body
+{
+	border:1px solid #4f6f19;
+	background-color:#edf0e8;
+	padding:3px;
+}
+
+.workflow-entry .panel-header-wrapper .panel-header-icon.workflow
+{
+	background-image: url(K2/K2ThemeLogoIcon.png);
+}
+
+.workflow-entry .panel-header-wrapper .panel-header-controls a
+{
+	background-image: url(K2/ExpandCollapse.png);
+}
+/* End Panel Styling */
+
+/* Grid Styling */
+.workflow-entry .grid-header
+{
+	border-color:#4f6f19;
+}
+
+.workflow-entry .grid-header-wrapper,
+.workflow-entry .grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-c,
+.workflow-entry .grid.with-header .grid-toolbars .toolbars.double .toolbar .toolbar-c,
+.workflow-entry .grid td.not-sortable .grid-column-header-cell:hover
+{
+	border-color:#aed78e;
+	background: #7ac043; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7ac043 0%, #5f9933 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ac043), color-stop(100%,#5f9933)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7ac043 0%,#5f9933 100%); /* W3C */
+}
+
+.ie8 .workflow-entry .grid-header-wrapper,
+.ie8 .workflow-entry .grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-c,
+.ie8 .workflow-entry .grid.with-header .grid-toolbars .toolbars.double .toolbar .toolbar-c,
+.ie8 .workflow-entry .grid td.not-sortable .grid-column-header-cell:hover,
+.ie9 .workflow-entry .grid-header-wrapper,
+.ie9 .workflow-entry .grid.with-header .grid-toolbars .toolbars.single .toolbar .toolbar-c,
+.ie9 .workflow-entry .grid.with-header .grid-toolbars .toolbars.double .toolbar .toolbar-c,
+.ie9 .workflow-entry .grid td.not-sortable .grid-column-header-cell:hover
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac043', endColorstr='#5f9933',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .grid-header-text
+{
+	color:#fff;
+}
+
+.workflow-entry .grid-header-wrapper .grid-header-controls a
+{
+	background-image: url(K2/ExpandCollapse.png);
+}
+
+.workflow-entry .grid .grid-body
+{
+	border-color:#4f6f19;
+}
+
+.workflow-entry .grid .grid-column-headers
+{
+	border-bottom-color:#4f6f19;
+}
+
+.workflow-entry .grid .grid-column-headers-wrapper
+{
+	border-color:#aed78e;
+	background: #7ac043; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7ac043 0%, #5f9933 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ac043), color-stop(100%,#5f9933)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7ac043 0%,#5f9933 100%); /* W3C */
+}
+
+.ie8 .workflow-entry .grid .grid-column-headers-wrapper,
+.ie9 .workflow-entry .grid .grid-column-headers-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac043', endColorstr='#5f9933',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .grid .grid-column-header-text
+{
+	color:#fff;
+}
+
+.workflow-entry .grid .grid-column-header-divider
+{
+	border-color:#aed78e #4f6f19 #4f6f19 #aed78e;
+}
+
+.workflow-entry .grid .grid-column-header-cell:hover
+{
+	border-color:#dbfac1;
+	background: #c1f596; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c1f596 0%, #8acb55 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c1f596), color-stop(100%,#8acb55)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c1f596 0%,#8acb55 100%); /* W3C */
+}
+
+.ie8 .workflow-entry .grid .grid-column-header-cell:hover,
+.ie9 .workflow-entry .grid .grid-column-header-cell:hover
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1f596', endColorstr='#8acb55',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper
+{
+	background-image:url(K2/sort_ascending_normal.png);
+}
+
+.workflow-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper
+{
+	background-image:url(K2/sort_descending_normal.png);
+}
+
+.workflow-entry .grid table.grid-content-table tr.even td 
+{
+	background-color: #eff7e8;
+}
+
+.workflow-entry .grid table.grid-content-table tr:hover td
+{
+	background-color: #cee8bb;
+}
+
+.workflow-entry .grid .grid-content-table tr.action-row:hover td.action-row,
+.workflow-entry .grid .grid-content-table tr.empty-grid:hover td
+{
+	background-color:transparent;
+}
+
+.workflow-entry .grid table.grid-content-table tr.selected td
+{
+	background-color: #bfe1a5;
+}
+
+.workflow-entry .grid.with-aggregation .grid-aggregation
+{
+	border-color:#4F6F19;
+}
+
+.workflow-entry .grid-aggregation-header-c
+{
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+	border-color:#fff;
+}
+
+.ie8 .workflow-entry .grid-aggregation-header-c,
+.ie9 .workflow-entry .grid-aggregation-header-c
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .grid-aggregation.collapsed .grid-aggregation-header-arrow
+{
+	background-image: url(../Platinum/Images/Arrows/black_arrow_down.gif);
+}
+
+.workflow-entry .grid-aggregation.expanded .grid-aggregation-header-arrow
+{
+	background-image: url(../Platinum/Images/Arrows/black_arrow_up.gif);
+}
+
+.workflow-entry .grid-aggregation-header-text
+{
+	color:#343e41;
+}
+
+.workflow-entry .grid-aggregation .grid-aggregation-content
+{
+	border-top-color:#4F6F19;
+}
+
+.workflow-entry .grid.with-summary .grid-summary,
+.workflow-entry .grid-summary .grid-summary-item
+{
+	border-color:#4F6F19;
+}
+
+.workflow-entry .grid .grid-paging-control-text
+{
+	color:#fff;
+}
+
+.workflow-entry a.toolbar-button.paging-first:hover,
+.workflow-entry a.toolbar-button.paging-last:hover,
+.workflow-entry a.toolbar-button.paging-left:hover,
+.workflow-entry a.toolbar-button.paging-right:hover
+{
+	background:none;	
+	border-color:transparent;
+}
+
+.workflow-entry a.toolbar-button.paging-first .button-icon
+{
+	background-image: url(K2/paging_arrows_double_left_normal.png);
+}
+
+.workflow-entry a.toolbar-button.paging-first:hover .button-icon,
+.workflow-entry a.toolbar-button.paging-first:active .button-icon,
+.workflow-entry a.toolbar-button.paging-first:focus .button-icon
+{
+	background-image: url(K2/paging_arrows_double_left_hover.png);
+}
+
+.workflow-entry a.toolbar-button.paging-first.disabled:hover .button-icon,
+.workflow-entry a.toolbar-button.paging-first.disabled:active .button-icon,
+.workflow-entry a.toolbar-button.paging-first.disabled:focus .button-icon
+{
+	background-image: url(K2/paging_arrows_double_left_normal.png);
+}
+
+.workflow-entry a.toolbar-button.paging-left .button-icon
+{
+	background-image: url(K2/paging_arrows_single_left_normal.png);
+}
+
+.workflow-entry a.toolbar-button.paging-left:hover .button-icon,
+.workflow-entry a.toolbar-button.paging-left:active .button-icon,
+.workflow-entry a.toolbar-button.paging-left:focus .button-icon
+{
+	background-image: url(K2/paging_arrows_single_left_hover.png);
+}
+
+.workflow-entry a.toolbar-button.paging-left.disabled:hover .button-icon,
+.workflow-entry a.toolbar-button.paging-left.disabled:active .button-icon,
+.workflow-entry a.toolbar-button.paging-left.disabled:focus .button-icon
+{
+	background-image: url(K2/paging_arrows_single_left_normal.png);
+}
+
+.workflow-entry a.toolbar-button.paging-right .button-icon
+{
+	background-image: url(K2/paging_arrows_single_right_normal.png);
+}
+
+.workflow-entry a.toolbar-button.paging-right:hover .button-icon,
+.workflow-entry a.toolbar-button.paging-right:active .button-icon,
+.workflow-entry a.toolbar-button.paging-right:focus .button-icon
+{
+	background-image: url(K2/paging_arrows_single_right_hover.png);
+}
+
+.workflow-entry a.toolbar-button.paging-right.disabled:hover .button-icon,
+.workflow-entry a.toolbar-button.paging-right.disabled:active .button-icon,
+.workflow-entry a.toolbar-button.paging-right.disabled:focus .button-icon
+{
+	background-image: url(K2/paging_arrows_single_right_normal.png);
+}
+
+.workflow-entry a.toolbar-button.paging-last .button-icon
+{
+	background-image: url(K2/paging_arrows_double_right_normal.png);
+}
+
+.workflow-entry a.toolbar-button.paging-last:hover .button-icon,
+.workflow-entry a.toolbar-button.paging-last:active .button-icon,
+.workflow-entry a.toolbar-button.paging-last:focus .button-icon
+{
+	background-image: url(K2/paging_arrows_double_right_hover.png);
+}
+
+.workflow-entry a.toolbar-button.paging-last.disabled:hover .button-icon,
+.workflow-entry a.toolbar-button.paging-last.disabled:active .button-icon,
+.workflow-entry a.toolbar-button.paging-last.disabled:focus .button-icon
+{
+	background-image: url(K2/paging_arrows_double_right_normal.png);
+}
+/* End of Grid Styling */
+
+/* Popup Styling */
+.workflow-entry .popup-header
+{
+	background: #7ac043; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7ac043 0%, #5f9933 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ac043), color-stop(100%,#5f9933)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7ac043 0%,#5f9933 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7ac043 0%,#5f9933 100%); /* W3C */
+	border-color:#4f6f19;
+}
+
+.ie8 .workflow-entry .popup-header,
+.ie9 .workflow-entry .popup-header
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac043', endColorstr='#5f9933',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .popup-header-text
+{
+	color:#fff;
+}
+
+.workflow-entry .popup-header-buttons a
+{
+	margin-top:2px;	
+}
+
+.workflow-entry .popup-header-buttons a.close
+{
+	background-image: url("K2/CloseNormal.png");
+	margin-right:5px;
+}
+
+.workflow-entry .popup-header-buttons a.close:hover,
+.workflow-entry .popup-header-buttons a.close:focus,
+.workflow-entry .popup-header-buttons a.close:active
+{
+	background-image: url("K2/CloseHover.png");
+	background-position: 0 0;
+}
+
+.workflow-entry .popup-header-buttons a.maximize
+{
+	background-image: url("K2/ExpandNormal.png");
+}
+
+.workflow-entry .popup-header-buttons a.maximize:hover,
+.workflow-entry .popup-header-buttons a.maximize:focus,
+.workflow-entry .popup-header-buttons a.maximize:active
+{
+	background-image: url("K2/ExpandHover.png");
+	background-position: 0 0;
+}
+
+.workflow-entry .popup-header-buttons a.restore
+{
+	background-image: url("K2/CollapseNormal.png");
+}
+
+.workflow-entry .popup-header-buttons a.restore:hover,
+.workflow-entry .popup-header-buttons a.restore:focus,
+.workflow-entry .popup-header-buttons a.restore:active
+{
+	background-image: url("K2/CollapseHover.png");
+	background-position: 0 0;
+}
+
+.workflow-entry .popup-body
+{
+	background:#5f9933;
+	border-color:#4f6f19;
+}
+
+.workflow-entry .popup-footer-c
+{
+	background-color:#5f9933;
+	border-color:#4f6f19;
+}
+/* End of Popup Styling */
+
+/* Tab Styling */
+.workflow-entry .popup .tab-box
+{
+	background-color:#5f9933;
+}
+
+.workflow-entry .tab-box ul.tab-box-tabs a.tab
+{
+	border-color:#4f6f19;
+	color: #343e41;
+}
+
+.workflow-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper
+{
+	background: #78bc41; /* Old browsers */
+	background: -moz-linear-gradient(top,  #78bc41 0%, #629e35 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78bc41), color-stop(100%,#629e35)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #78bc41 0%,#629e35 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #78bc41 0%,#629e35 100%); /* W3C */
+	border-color:#aed78e;
+}
+
+.ie8 .workflow-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper,
+.ie9 .workflow-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78bc41', endColorstr='#629e35',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-wrapper, 
+.workflow-entry .tab-box ul.tab-box-tabs a.tab:focus .tab-wrapper
+{
+	border-color:#dbfac1;
+	background: #c1f596; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c1f596 0%, #8acb55 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c1f596), color-stop(100%,#8acb55)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c1f596 0%,#8acb55 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c1f596 0%,#8acb55 100%); /* W3C */
+}
+
+.ie8 .workflow-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-wrapper, 
+.ie8 .workflow-entry .tab-box ul.tab-box-tabs a.tab:focus .tab-wrapper,
+.ie9 .workflow-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-wrapper, 
+.ie9 .workflow-entry .tab-box ul.tab-box-tabs a.tab:focus .tab-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1f596', endColorstr='#8acb55',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper
+{
+	background: #dfe4d7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #dfe4d7 0%, #f9f9f9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfe4d7), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dfe4d7 0%,#f9f9f9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dfe4d7 0%,#f9f9f9 100%); /* W3C */
+}
+
+.ie8 .workflow-entry .tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper,
+.ie9 .workflow-entry .tab-box.tabs-bottom ul.tab-box-tabs a.tab .tab-wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe4d7', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper, 
+.workflow-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-wrapper
+{
+	background:#fff;
+	filter:none;
+	border-color: #fff;
+	color:#161d25;
+}
+
+.workflow-entry .tab-box ul.tab-box-tabs a.tab.disabled .tab-wrapper .tab-text
+{
+	color:#ccc;
+}
+
+.workflow-entry .tab-box .tab-box-header
+{
+	border-color:#4f6f19;
+}
+
+.workflow-entry .tab-box.with-header .tab-box-header-c
+{
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #dfe4d7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dfe4d7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9f9f9 0%,#dfe4d7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#dfe4d7 100%); /* W3C */
+	border-color:#fff;
+}
+
+.ie8 .workflow-entry .tab-box.with-header .tab-box-header-c,
+.ie9 .workflow-entry .tab-box.with-header .tab-box-header-c
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dfe4d7',GradientType=0 ); /* IE6-9 */
+}
+
+.workflow-entry .tab-box .tab-box-body
+{
+	border-color:#4f6f19;
+	background-color: #fff;
+}
+/* End of Tab Styling */
+
+/* Calendar Popup Styling */
+.workflow-entry .calendar-outline
+{
+	border-color:#4f6f19;
+	background:#fff;
+	color:#37433d;
+}
+
+.workflow-entry .top-calendar 
+{
+	border:none;
+}
+
+.workflow-entry .today-title
+{
+	color:#4f6f19;
+}
+
+.workflow-entry .top-calendar-left
+{
+	background-image:url("K2/calendar_single_left_normal.png");	
+}
+
+.workflow-entry .top-calendar-left:hover
+{
+	background-image:url("K2/calendar_single_left_hover.png");	
+}
+
+.workflow-entry .top-calendar-right
+{
+	background-image:url("K2/calendar_single_right_normal.png");	
+}
+
+.workflow-entry .top-calendar-right:hover
+{
+	background-image:url("K2/calendar_single_right_hover.png");	
+}
+
+.workflow-entry .calendar-content-outside
+{
+	border:none;
+	color:#37433d;
+}
+
+.workflow-entry .dayname,
+.workflow-entry .day,
+.workflow-entry .month,
+.workflow-entry .year
+{
+	border-color:#fff;
+}
+
+.workflow-entry .day.not-of-current-month 
+{
+	color: #d0d0d0;
+}
+
+.workflow-entry .day.not-of-current-month:hover 
+{
+	color:#fff;
+}
+
+.workflow-entry .day:hover, 
+.workflow-entry .month:hover, 
+.workflow-entry .year:hover,
+.workflow-entry .today-title:hover 
+{
+	background-color: #dff5d0;
+}
+
+.workflow-entry .day.selected, 
+.workflow-entry .month.selected, 
+.workflow-entry .year.selected 
+{
+	background-color: #bfe1a5;
+}
+
+.workflow-entry .today-text 
+{
+	border:none;
+}
+/* End of Calendar Popup Styling */
+
+/*#region Picker Control Styling*/
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control .input-control-wrapper,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box input[type=text],
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box .input-control-m-c,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box .input-control-watermark,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box div.editable-area
+{
+	height: 45px !important;
+}
+
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control
+{
+	padding-bottom: 1px;
+}
+
+.theme-entry .dialog#PickerSearchDialog .form-field .form-field-element-wrapper .ps-choice-wrapper .ps-choice-button .picker-add
+{
+	margin-right: 3px;
+}
+
+html[dir=rtl] .theme-entry .dialog#PickerSearchDialog .form-field .form-field-element-wrapper .ps-choice-wrapper .ps-choice-button .picker-add
+{
+	margin-left: 3px;
+	margin-right: 0;
+}
+/*endregion Picker Control Styling*/
+
+/* Rating Control Styling */
+.workflow-entry .ratingStar svg {
+    display: none;
+}
+
+.workflow-entry .filledRatingStar
+{
+	background-image: url("K2/rating_saved.png");
+}
+
+.workflow-entry .emptyRatingStar 
+{
+	background-image: url("K2/rating_empty.png");
+}
+
+.workflow-entry .savedRatingStar 
+{
+	background-image: url("K2/rating_saved.png");
+}
+
+.workflow-entry .hoveredRatingStar
+{
+	background-image: url("K2/rating_filled.png");
+}
+/* End of Rating Control Styling */
+
+/* Slider Control Styling */
+.theme-entry .handle-icon
+{
+	height: 11px;
+}
+
+.theme-entry .slider_value_display
+{
+	font-family: "Verdana", sans-serif;
+	font-size: 1.1em;
+	color: rgb(49, 56, 65);
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.theme-entry .slider_value_display.bottom:after
+{
+	border-color: transparent transparent #ffffff #ffffff;
+}
+
+.theme-entry .slider_value_display.top:after
+{
+	border-color: #ffffff #ffffff transparent transparent;
+}
+
+.workflow-entry .ajax__slider_h_rail .ajax_slider_rail_inner
+{
+	background-image: url("K2/slider_bar_repeater.png");
+}
+
+.workflow-entry .ajax__slider_h_rail .ajax_slider_rail_start
+{
+	background-image: url("K2/slider_bar_left_corners.png");
+}
+
+.workflow-entry .ajax__slider_h_rail .ajax_slider_rail_end
+{
+	background-image: url("K2/slider_bar_right_corners.png");
+}
+
+.workflow-entry .ajax__slider_h_handle
+{
+	background-image: url("K2/slider_button_normal.png");
+}
+
+.workflow-entry .ajax__slider_h_handle:not(.disabled, .read-only):hover,
+.workflow-entry .ajax__slider_h_handle:not(.disabled, .read-only):focus,
+.workflow-entry .ajax__slider_h_handle:not(.disabled, .read-only):active,
+.workflow-entry .ajax__slider_h_handle:not(.disabled, .read-only).active,
+.workflow-entry .Slider-rail:not(.disabled, .read-only) a.Slider:hover,
+.workflow-entry .Slider-rail:not(.disabled, .read-only) a.Slider:focus,
+.workflow-entry .Slider-rail:not(.disabled, .read-only) a.Slider:active,
+.workflow-entry .Slider-rail:not(.disabled, .read-only) a.Slider.active
+{
+	background-image: url("K2/slider_button_hover.png");
+}
+/* End of Slider Control Styling */
+
+/* Hyperlink Control Styling */
+.workflow-entry a.Hyperlink
+{
+	color:#98DC28;
+}
+
+.workflow-entry a.Hyperlink-NotSet
+{
+	color:#98DC28;
+}
+
+.workflow-entry a.Hyperlink-NotSet.disabled
+{
+	color: #CCCCCC;
+	cursor: default;
+}
+/* End of Hyperlink Styling */
+
+/* Tooltip Styling */
+.workflow-entry .tooltip
+{
+	background-color:#e3ecd2;
+	border-color:#6a9b12;
+}
+
+.workflow-entry .tooltip.pointer-down .tooltip-pointer
+{
+	border-top-color:#6a9b12;
+}
+
+.workflow-entry .tooltip.pointer-down .tooltip-pointer-inner
+{
+	border-top-color:#e3ecd2;
+}
+
+.workflow-entry .tooltip.pointer-up .tooltip-pointer
+{
+	border-bottom-color:#6a9b12;
+}
+
+.workflow-entry .tooltip.pointer-left .tooltip-pointer
+{
+	border-right-color:#6a9b12;
+}
+
+.workflow-entry .tooltip.pointer-left .tooltip-pointer-inner
+{
+	border-right-color:#e3ecd2;	
+}
+
+.workflow-entry .tooltip.pointer-right .tooltip-pointer
+{
+	border-left-color:#6a9b12;	
+}
+
+.workflow-entry .tooltip.pointer-right .tooltip-pointer-inner
+{
+	border-left-color:#e3ecd2;
+}
+
+.workflow-entry .tooltip.validation
+{
+	background-color:#fee8d3;
+	border-color:#b16a22;
+}
+
+.workflow-entry .tooltip.validation.pointer-down .tooltip-pointer
+{
+	border-top-color:#b16a22;
+}
+
+.workflow-entry .tooltip.validation.pointer-down .tooltip-pointer-inner
+{
+	border-top-color:#fee8d3;
+}
+
+.workflow-entry .tooltip.validation.pointer-up .tooltip-pointer
+{
+	border-bottom-color:#b16a22;
+}
+
+.workflow-entry .tooltip.validation.pointer-up .tooltip-pointer-inner
+{
+	border-bottom-color:#fee8d3;
+}
+
+.workflow-entry .tooltip.validation.pointer-left .tooltip-pointer
+{
+	border-right-color:#b16a22;
+}
+
+.workflow-entry .tooltip.validation.pointer-left .tooltip-pointer-inner
+{
+	border-right-color:#fee8d3;
+}
+
+.workflow-entry .tooltip.validation.pointer-right .tooltip-pointer
+{
+	border-left-color:#b16a22;
+}
+
+.workflow-entry .tooltip.validation.pointer-right .tooltip-pointer-inner
+{
+	border-left-color:#fee8d3;
+}
+/* End of Tooltip Styling */
+
+/* Editor Cell Styling */
+.workflow-entry .editor-cell
+{
+	padding: 2px 3px 2px 2px;
+}

@@ -1,0 +1,6258 @@
+// Purpose: 1) The Core.less is for resetting styles made in the designer's css
+//          (Styles/Platinum2/*.less) as otherwise these will affect forms/views in the canvas.
+//          2) These styles are what the runtime themes are expecting as a baseline. Avoid long
+//          selectors here, as the runtime theme css will have to have even longer selectors.
+//          3) Everything in this file should be preceded with .theme-entry as these styles are
+//          loaded in designer, and they should not override designer styles accidentally.
+//          4) Core_Table.less is a partial file for Core.less where the table related style should be move in here gradually.
+
+/* iPad Fix for forms hosted in iframes */
+html.mobile, html.mobile body
+{
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: fixed;
+}
+/* iPad Fix for forms hosted in iframes */
+
+
+/*#region Table control - base styles */
+
+/*Note: [891443] BUG FIX: Table controls must be just straight grid/table (not inline) unless they are inside a table cell.
+        Otherwise when directly inside panel-body-wrapper additional space will be put above or below because of
+        spaces (white spaces) in the html between the container and the table */
+
+.SourceCode-Forms-Controls-Web-Table
+    {
+    display: table;
+}
+
+.SourceCode-Forms-Controls-Web-Table.Grid-Layout
+    {
+    display: -ms-grid;
+    display: grid;
+}
+
+.editor-cell,
+td //[891443] Table control should be inline when inside a table cell
+{
+    & > .SourceCode-Forms-Controls-Web-Table
+    {
+        display: inline-table;
+    }
+}
+
+.editor-cell,
+td //[891443] Table control should be inline when inside a table cell
+{
+    & > .SourceCode-Forms-Controls-Web-Table.Grid-Layout
+    {
+        display: -ms-inline-grid;
+        display: inline-grid;
+    }
+}
+
+/*#endregion*/
+
+/*#region Runtime [Grid CSS] Grid rendering  - a different rendering for a table control */
+
+/* Changes done in .Grid-Layout should be apply to Design time as well: .editor-grid */
+.Grid-Layout
+{
+    /*previously the table control when it was rendering as a <table>, it also defaulted to 100% width*/
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    & > .editor-cell
+    {
+        border-left: none !important;
+        border-top: none !important;
+        overflow: hidden !important;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        /*lastcell etc defined in Grid.cs at runtime*/
+
+        &.lastcellinrow
+        {
+            border-right: none !important;
+        }
+
+        &.lastrow
+        {
+            border-bottom: none !important;
+        }
+
+        & > *
+        {
+            flex-shrink: 0; //[898099] Set flex-shrink to zero so it respects to the user configured width and not shrink to the editor-cell's width
+        }
+    }
+
+    &.border-left-only > .editor-cell
+    {
+        border-right:none!important;
+
+        &:not([col='1'])
+    {
+            border-left:inherit!important;
+        }
+    }
+
+    &.border-top-only > .editor-cell
+    {
+        border-bottom:none!important;
+
+        &:not([row='1'])
+        {
+            border-top:inherit!important;
+        }
+    }
+}
+/*#endregion Grid rendering*/
+
+//Table control related styles defined in the Core.less can be moved to Core_Table.less gradually
+@import (multiple) url('Core_Table.less');
+
+/*#region line-breaks*/
+.line-break
+    {
+    content: '\A';
+    display: contents;
+    white-space: pre;
+
+    td.editor-cell > &
+    {
+        //[900474] .line-break under a td should be represented as display:block
+        display: block;
+    }
+}
+
+.Grid-Layout > .editor-cell > .line-break,
+.Grid-Layout > .editor-cell > .clearFloatFix
+{
+    width:100%;
+}
+
+//First line-break after a control should have zero height [Runtime]
+.SFC + .line-break,
+.picture-control-inline + .line-break,
+.toolbar-button + .line-break,
+.file-wrapper + .line-break,
+.checkbox-outer-panel + .line-break,
+.input-control + .line-break
+{
+    height: 0px;
+}
+
+//First line-break after a control should have zero height [Design-time]
+[itemtype="control"] + .line-break,
+[itemtype="method"] + .line-break,
+[itemtype="property"] + .line-break,
+[controltype="ToolBarButton"] + .line-break,
+//First line-break in toolbar area next to a toolbar droppable area should have zero height [Design-time]
+[itemtype="control"] + .toolbar-droppable + .line-break,
+[controltype="ToolBarButton"] + .toolbar-droppable + .line-break
+{
+    height: 0px;
+}
+
+//line-break in the toolbar area should behave like a new line
+table.editor-table.toolbar > tbody > tr > .editor-cell > .line-break, //Design-time
+.toolbar .toolbar-wrapper table > tbody > tr > td .line-break //Runtime
+    {
+    display: block;
+}
+
+/*#endregion*/
+
+/*#region shadow */
+.with-shadow
+    {
+    //The styles defined here should match to the the following style guide - https://xd.adobe.com/view/77eafd45-a55e-4fd7-535c-50b6858cef35-01db/ (K2Rocks!)
+    //Currently only level 1 is supported, other levels and dark mode to be implemented for the future.
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+
+    .ie11 &
+    {
+        //ie11 doesn't show the above box-shadow nicely thus make an slight adjustment to the box-shadow value
+        -webkit-box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.25);
+        box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.25);
+    }
+}
+/*#endregion*/
+
+//#region alignment classes for table cells (table or grid rendering)
+//Note these are important as they must act as much like inline styles as possible,
+//the user sets the alignment of a cell in designer in the format dialog or toolbar.
+.Grid-Layout,
+.SourceCode-Forms-Controls-Web-Table > tbody > tr
+{
+    & > .editor-cell.align-top
+    {
+        vertical-align: top !important;
+        align-items: flex-start !important;
+        align-content: flex-start !important;
+    }
+
+    & > .editor-cell.align-middle
+    {
+        vertical-align: middle !important;
+        align-items: center !important;
+        align-content: center !important;
+    }
+
+    & > .editor-cell.align-bottom
+    {
+        vertical-align: bottom !important;
+        align-items: flex-end !important;
+        align-content: flex-end !important;
+    }
+
+    & > .editor-cell.align-left
+    {
+        text-align: left !important;
+        justify-content: flex-start !important;
+    }
+
+    & > .editor-cell.align-center
+    {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    & > .editor-cell.align-right
+    {
+        text-align: right !important;
+        justify-content: flex-end !important;
+    }
+}
+//#endregion
+
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-style: none;
+}
+
+.ie11 .runtime-content .toolbar-wrapper > table
+{
+    //[893205] IE11 only - Set the table-layout so IE11 recognized the width of the toolbar table and perform correct rendering.
+    //This issue is related to the flex-basis issue in IE11 [891769], this issue could also be fixed by setting the flex-basis for each controls like [891769] but it will be a bigger impact fix.
+    table-layout: fixed;
+}
+
+td, th
+{
+    padding: 0;
+}
+
+body.theme-entry
+    {
+    overflow-x: auto;
+    min-height: 100%;
+    -webkit-overflow-scrolling: touch;
+
+
+    html[dir=rtl] &
+    {
+        direction: rtl;
+        text-align: right;
+    }
+}
+
+body.theme-entry.runtime-view
+    {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+/*#region Default Form Center Alignment */
+.theme-entry.runtime-form,
+.workflow-entry,
+#WorkflowStrip
+    {
+    margin: 0 auto;
+}
+/*#endregion Default Form Center Alignment */
+
+
+html, body, form
+    {
+    padding: 0;
+    margin: 0;
+}
+
+
+.theme-entry
+{
+    .wrapper
+    {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .clear
+    {
+        clear: both;
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .scroll-wrapper
+    {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    //Design Time  - disable the insides of controls, so they don't respond to the mouse on the canvas.
+    .designtime *
+    {
+        pointer-events: none;
+    }
+
+    /*#region Form Runtime Styling */
+    a:not(.action-row),
+    div,
+    ul,
+    .grid table.grid-content-table
+    {
+        outline: none;
+    }
+
+    a.action-row:focus
+   
+    {
+        outline-width: 1px;
+        outline-style: dotted;
+    }
+
+    .SFC.SourceCode-Forms-Controls-Web-TextBox,
+    .input-control .input-control-m-c,
+    .input-control .input-control-content
+   
+    {
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    div.parameterPrompt
+    {
+        width: 390px;
+        height: 238px;
+        overflow: auto;
+    }
+
+    img.fileImage
+    {
+        border-width:1px;
+        border-style: solid;
+        padding: 5px;
+        height: 70px;
+        width: 70px;
+        margin: 1px;
+        cursor: pointer;
+    }
+
+    a.fileImage
+    {
+        cursor: pointer;
+    }
+
+    img.fileImage:focus,
+    a.fileImage:focus
+    {
+        outline: none;
+    }
+
+    .hide-browser-highlight.active
+    {
+        border-width: 1px;
+        border-style: dotted;
+    }
+
+    .hide-browser-highlight
+    {
+        border: 1px solid transparent;
+    }
+}
+/*#endregion Form Runtime Styling */
+
+
+
+/*#region Divider Styling */
+
+.theme-entry
+    {
+
+    .vertical-divider
+    {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: transparent url(../Platinum/Images/Dividers/vertical_expander_dots.png) no-repeat center center;
+        overflow: hidden;
+        cursor: w-resize;
+    }
+
+    span.runtime-list-item,
+    h1.runtime-list-item,
+    h2.runtime-list-item,
+    h3.runtime-list-item,
+    h4.runtime-list-item,
+    label.runtime-list-item,
+    p.runtime-list-item,
+    span.Label
+    {
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap; //For Bug 944367
+        -ms-word-wrap: normal;
+        word-wrap: normal;
+        padding: 1px;
+        max-width: 100%; //This is needed for h1, h2, h3, h4 elements text overflow to show as ellipses
+    }
+
+    h1.runtime-list-item,
+    h2.runtime-list-item,
+    h3.runtime-list-item,
+    h4.runtime-list-item,
+    label.runtime-list-item,
+    p.runtime-list-item
+    {
+        //We would like to give a bit more padding for these elements so the text in it doesn't look cliped
+        //when the inline styling for text is set to right aligend with bold and italic font [List View]
+        padding-right: 3px;
+    }
+
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    label,
+    p
+    {
+        &.SourceCode-Forms-Controls-Web-Label,
+        &.SourceCode-Forms-Controls-Web-DataLabel
+        {
+            //over flow and text wrap
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            -moz-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            -webkit-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            white-space: pre;
+            -ms-word-wrap: normal;
+            word-wrap: normal;
+            //box-sizing
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            cursor: default;
+            max-width: 100%;
+            text-align: left;
+            padding: 0.4rem 0;
+
+            &.LabelWrap
+            {
+                -ms-text-overflow: clip;
+                -o-text-overflow: clip;
+                text-overflow: clip;
+                white-space: pre-wrap;
+                -ms-word-wrap: break-word;
+                word-wrap: break-word;
+            }
+
+            &.hidden
+            {
+                display: none;
+            }
+
+            &.invalid.empty
+            {
+                width: 30px;
+                height: 10px;
+            }
+
+            &.disabled,
+            &.preview
+            {
+                filter: Alpha(opacity=50);
+                opacity: 0.5;
+                cursor: default;
+            }
+
+            html[dir=rtl] &
+            {
+                text-align: right;
+            }
+        }
+    }
+
+    .label-dimensions-wrapper
+    {
+        max-width: 100%;
+
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        label,
+        p
+        {
+            &.SourceCode-Forms-Controls-Web-Label,
+            &.SourceCode-Forms-Controls-Web-DataLabel
+            {
+                display: block;
+                max-width: none;
+            }
+        }
+    }
+
+    span.runtime-list-item-wrap,
+    h1.runtime-list-item-wrap,
+    h2.runtime-list-item-wrap,
+    h3.runtime-list-item-wrap,
+    h4.runtime-list-item-wrap,
+    p.runtime-list-item-wrap,
+    label.runtime-list-item-wrap,
+    span.LabelWrap
+    {
+        -ms-text-overflow: clip;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        white-space: pre-wrap;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        max-width: 100%; //This is needed for h1, h2, h3, h4 elements text overflow to show as ellipses
+    }
+
+    .SFC.SourceCode-Forms-Controls-Web-TextBox.hidden,
+    .SFC.SourceCode-Forms-Controls-Web-Slider.hidden,
+    span.textbox-dimensions-wrapper.hidden,
+    span.slider-dimensions-wrapper.hidden,
+    span.label-dimensions-wrapper.hidden,
+    span.button-dimensions-wrapper.hidden
+    {
+        display: none;
+    }
+
+    .horizontal-divider
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: transparent url(../Platinum/Images/Dividers/horizontal_expander_dots.png) no-repeat center center;
+        overflow: hidden;
+        cursor: n-resize;
+    }
+
+    .horizontal-spacer
+    {
+        height: 3px;
+    }
+
+    .vertical-spacer
+    {
+        width: 3px;
+    }
+
+    .ghost
+    {
+        opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=70)";
+    }
+
+    /* Divider Base Styling */
+    .divider
+    {
+        position: relative;
+    }
+
+    .divider.horizontal
+    {
+        height: 3px;
+    }
+
+    .divider.vertical
+    {
+        width: 3px;
+    }
+
+    .divider.draggable
+    {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+
+    .divider.draggable.horizontal
+    {
+        background-image: url(../Platinum/Images/Dividers/horizontal_expander_dots.png);
+        cursor: n-resize;
+    }
+
+    .divider.draggable.vertical
+    {
+        background-image: url(../Platinum/Images/Dividers/vertical_expander_dots.png);
+        cursor: w-resize;
+    }
+    /*#endregion Divider Styling */
+    /*#region Radio Button Single Styling */
+    .SFC.SourceCode-Forms-Controls-Web-RadioButtonGroup
+    {
+        display: none;
+    }
+
+
+
+    .SFC.SourceCode-Forms-Controls-Web-RadioButton.hidden
+    {
+        display: none;
+    }
+
+    .SFC.SourceCode-Forms-Controls-Web-RadioButton.designtime.hidden,
+    .SFC.SourceCode-Forms-Controls-Web-RadioButtonGroup.designtime
+    {
+        display: block;
+    }
+}
+
+.SFC.SourceCode-Forms-Controls-Web-RadioButton.hidden
+    {
+    display: none;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-RadioButtonGroup.designtime
+    {
+    display: block;
+}
+
+/*#endregion Radio Button Single Styling */
+
+/*#region Button & Button Bar Styling */
+/* Button Bar Styling */
+.theme-entry .button-bar
+    {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Button Group Styling */
+.theme-entry .button-group
+    {
+    width: auto;
+}
+
+.theme-entry .button-group.left
+    {
+    float: left;
+}
+
+.theme-entry .button-group.left a.button
+    {
+    margin: 0 3px 0 0;
+}
+
+.theme-entry .button-group.right
+    {
+    float: right;
+    margin-right: 0;
+}
+
+.theme-entry .button-group.right a.button
+    {
+    margin: 0 0 0 3px;
+}
+
+.theme-entry .button-dimensions-wrapper
+    {
+    display: inline-block;
+    min-height: 23px;
+    min-width: 60px;
+    height: auto;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.hidden
+    {
+    display: none;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button
+    {
+    border-style: solid;
+    border-width: 1px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: auto;
+    -ms-min-height: 0;
+    min-height: 23px;
+    min-width: 60px;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    -ms-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: pre;
+    -ms-word-wrap: normal;
+    word-wrap: normal;
+
+}
+    /* IE8- compatibility */
+    .no-border-box-support .theme-entry a.SourceCode-Forms-Controls-Web-Button,
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button,
+    .no-border-box-support .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+    .no-border-box-support .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+    .no-border-box-support .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+    .no-border-box-support .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active 
+    {
+        min-height: 13px;
+        min-width: 48px;
+    }
+
+    .ie-document-mode-9 .theme-entry .form-control a.SourceCode-Forms-Controls-Web-Button.designtime  
+    {
+        min-width: 48px;
+    }
+
+    .theme-entry .button-dimensions-wrapper a.SourceCode-Forms-Controls-Web-Button,
+    .theme-entry .button-dimensions-wrapper a.SourceCode-Forms-Controls-Web-Button.hidden.designtime 
+    {
+        display: block;
+        min-height: 0;
+        min-width: 0;
+    }
+
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button:active,
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button:focus,
+    .theme-entry .hide-browser-highlight a:active,
+    .theme-entry .hide-browser-highlight a:focus
+    {
+        outline: none;
+    }
+
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview,
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover,
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus,
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:active
+    {
+        cursor: default;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+    }
+
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.help
+    {
+        filter: none;
+        border-style: solid;
+        border-width: 1px;
+        width: 25px;
+        min-width: 25px;
+        padding: 5px 0;
+    }
+
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button span.Button-Image
+    {
+        border: none;
+        filter: none;
+        height: 12px;
+        padding: 3px 8px 2px 9px;
+    }
+
+
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled,
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover,
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:focus
+    {
+        opacity: 0.5;
+    }
+
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+    .ie-document-mode-8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active 
+    {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)" !important;
+    }
+    /*#endregion Button & Button Bar Styling */
+
+    /*#region Toolbar Styling */
+    .theme-entry .toolbars
+    {
+        border-style: solid;
+        border-width: 1px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .theme-entry .toolbars.single
+    {
+        min-height: 22px;
+        height: auto;
+    }
+
+    .theme-entry .toolbars.double
+    {
+        min-height: 45px;
+        height: auto;
+    }
+
+    .theme-entry .toolbar-wrapper .filterContainer .input-control
+    {
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        width: 100% !important;
+    }
+
+    .theme-entry .toolbars.triple
+    {
+        min-height: 68px;
+        height: auto;
+    }
+
+    .theme-entry .toolbar
+    {
+        min-height: 22px;
+        position: relative;
+    }
+
+    .theme-entry .toolbar.hidden
+    {
+        display: none;
+    }
+
+    .theme-entry .toolbar-wrapper
+    {
+        border-style: solid;
+        border-width: 1px;
+        min-height: 20px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .theme-entry .toolbar-wrapper td
+    {
+        -moz-user-select: none;
+    }
+
+    .theme-entry .toolbars.single .toolbar
+    {
+        min-height: 22px;
+        height: auto;
+    }
+
+    .theme-entry .toolbars.double .toolbar
+    {
+        border-top-style: solid;
+        border-top-width: 1px;
+    }
+
+    .theme-entry .toolbars.double .toolbar:first-child
+    {
+        border-top-width: 0;
+    }
+
+    .theme-entry .toolbars.single.bottom-docked
+    {
+        border-top-width: 0;
+    }
+
+    .theme-entry a.toolbar-button
+    {
+        border: 1px dotted transparent;
+        cursor: pointer;
+        display: inline-block;
+        min-height: 18px;
+        text-decoration: none;
+    }
+
+    .theme-entry a.toolbar-button:focus,
+    .theme-entry a.toolbar-button:active,
+    .theme-entry a.toolbar-button.disabled:focus
+    {
+        outline: none;
+    }
+
+    .theme-entry a.toolbar-button span
+    {
+        display: inline-block;
+        vertical-align: middle;
+        height: inherit;
+    }
+
+    .theme-entry a.toolbar-button span.button-c
+    {
+        padding: 0 2px 0 0;
+        position: relative;
+        height: inherit;
+        vertical-align: middle;
+    }
+
+    .theme-entry a.toolbar-button span.button-icon
+    {
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: auto auto;
+        height: 16px;
+        left: 0;
+        margin: 1px;
+        width: 16px;
+    }
+
+    .theme-entry a.toolbar-button span.button-text
+    {
+        padding: 0 3px;
+        display: inline;
+        white-space: pre;
+
+    html[dir=rtl] &
+    {
+            white-space:nowrap;
+        }
+    }
+
+    .theme-entry a.toolbar-button.disabled,
+    .theme-entry a.toolbar-button.disabled:hover,
+    .theme-entry a.toolbar-button.disabled:focus,
+    .theme-entry a.toolbar-button.disabled:active
+    {
+        background: none;
+        cursor: default;
+        filter: none;
+    }
+
+    .theme-entry a.toolbar-button.disabled .button-icon,
+    .theme-entry a.toolbar-button.disabled:hover .button-icon,
+    .theme-entry a.toolbar-button.disabled:focus .button-icon,
+    .theme-entry a.toolbar-button.disabled:active .button-icon
+    {
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+    }
+
+    .theme-entry a.toolbar-button.disabled .button-text,
+    .theme-entry a.toolbar-button.disabled:hover .button-text,
+    .theme-entry a.toolbar-button.disabled:focus .button-text,
+    .theme-entry a.toolbar-button.disabled:active .button-text
+    {
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+    }
+
+    /* Paging Buttons */
+    .theme-entry a.toolbar-button.paging-first:hover,
+    .theme-entry a.toolbar-button.paging-left:hover,
+    .theme-entry a.toolbar-button.paging-right:hover,
+    .theme-entry a.toolbar-button.paging-last:hover  
+    {
+        background: transparent;
+        border-color: transparent;
+        filter: none;
+    }
+
+    .theme-entry .toolbar-divider
+    {
+        display: inline-block;
+    }
+
+    /*#endregion Toolbar Styling */
+
+    /*#region Form Styling */
+    .formcontrol  
+    {
+        display: inline-block;
+        vertical-align: inherit;
+    }
+
+    /* [891769] Add commments for technical debt issue - Avoid "> *" selector
+   assumes most controls are display:inline-block, so they can be changed to block when wrapped in a control-wrapper/form-control at design time.
+   but now we have exceptions as some controls render as inline-grid or inline-flex or inline-table, so they can't be blanket changed to block.
+*/
+    /*This is a dangerous selector for Core.css to have - removing will require too much QA though*/
+    .formcontrol .innerpanel > *   
+    {
+        display: inline-block;
+        vertical-align: top;
+
+        /* Table control is an exception as it renders as display:inline-table [See 891769] */
+        &.SourceCode-Forms-Controls-Web-Table       
+        {
+            display: inline-table;
+        }
+
+        /* Table control is an exception as it renders as display:inline-grid [See 891769] */
+        &.SourceCode-Forms-Controls-Web-Table.Grid-Layout       
+        {
+            display: -ms-inline-grid;
+            display: inline-grid;
+        }
+    }
+
+    .form .col .view .innerpanel   
+    {
+        display: inline-block;
+        vertical-align: inherit;
+        width: 100%;
+    }
+
+    .theme-entry .view .innerpanel .staticHeight   
+    {
+        overflow-y: auto;
+    }
+
+    .theme-entry .tab-box-body .form  
+    {
+        /*When the form has tabs, the form color should be transparent to take the tab's default body color*/
+        background-color: transparent;
+    }
+
+    .theme-entry .form-field   
+    {
+        position: relative;
+        margin-bottom: 3px;
+        padding: 0;
+        clear: both;
+    }
+
+    .theme-entry .form-field:first-child   
+    {
+        margin-top: 1px;
+    }
+
+    .theme-entry .form-field:only-child,
+    .theme-entry .form-field.only-child,
+    .theme-entry .form-field:last-child,
+    .theme-entry .form-field.last-child   
+    {
+        margin-bottom: 1px;
+    }
+
+    .theme-entry .form-field.override-top-margin  
+    {
+        margin-top: 9px;
+    }
+
+    .theme-entry .form-field.override-bottom-margin   
+    {
+        margin-bottom: 9px;
+    }
+
+    .theme-entry .toolbar .form-field  
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .theme-entry .form-field label.form-field-label  
+    {
+        display: block;
+        float: left;
+        padding-left: 5px;
+        position: relative;
+        vertical-align: top;
+        width: 140px;
+    }
+
+    html[dir=rtl] .theme-entry .form-field label.form-field-label   
+    {
+        float: right;
+        padding-left: 0;
+        padding-right: 5px;
+    }
+
+    .theme-entry .form-field.required label.form-field-label   
+    {
+        background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAARCAMAAADAKo0jAAAAY1BMVEX5hRXtiSTyhhzmiivrhyPkhyjohCDhhSjlgiDdgifgfx/YfybcfB7UfSXXeh3QeiTTdxzLeCPNdBrHdSLJcRnCciHEbhi+byDAaxe6bh+7aRe3ax24ZhSzaR20ZBSwbimxaiLcw1LxAAAAMklEQVR4XgXAgxHDAAAAwI9ts91/yhwEoSiWpLJcUapqTavrDaNptqy23XG6bs/r9/8AIbsCEdjATOIAAAAASUVORK5CYII=') /*../Platinum/Images/Forms/required_field_orange_line.png*/ no-repeat 100% 2px;
+    }
+
+    html[dir=rtl] .theme-entry .form-field.required label.form-field-label  
+    {
+        background-position: 0 2px;
+    }
+
+    .theme-entry .form-field .form-field-element-wrapper  
+    {
+        margin-left: 147px;
+    }
+
+    html[dir=rtl] .theme-entry .form-field .form-field-element-wrapper   
+    {
+        margin-left: 0;
+        margin-right: 147px;
+    }
+
+    .theme-entry .toolbar .form-field .form-field-element-wrapper  
+    {
+        padding-right: 0;
+    }
+
+    html[dir=rtl] .theme-entry .toolbar .form-field .form-field-element-wrapper   
+    {
+        padding-left: 0;
+    }
+
+    .theme-entry .form-field.narrow-label label.form-field-label  
+    {
+        width: 70px;
+    }
+
+    .theme-entry .form-field.narrow-label .form-field-element-wrapper   
+    {
+        margin-left: 77px;
+    }
+
+    html[dir=rtl] .theme-entry .form-field.narrow-label .form-field-element-wrapper  
+    {
+        margin-left: 0;
+        margin-right: 77px;
+    }
+
+    .theme-entry .form-field.no-label .form-field-element-wrapper  
+    {
+        margin-left: 3px;
+    }
+
+    html[dir=rtl] .theme-entry .form-field.no-label .form-field-element-wrapper  
+    {
+        margin-left: 0;
+        margin-right: 3px;
+    }
+
+    .theme-entry .form-field.stacked label.form-field-label  
+    {
+        float: none;
+        width: auto;
+    }
+
+    .theme-entry .form-field.stacked.required label.form-field-label  
+    {
+        background-image: none;
+    }
+
+    .theme-entry .form-field.stacked .form-field-element-wrapper  
+    {
+        margin-left: 0;
+        padding-left: 5px;
+    }
+
+    html[dir=rtl] .theme-entry .form-field.stacked .form-field-element-wrapper  
+    {
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 5px;
+    }
+
+    .theme-entry .form-field.stacked.required .form-field-element-wrapper  
+    {
+        padding-left: 10px;
+        background: transparent url(../Platinum/Images/Forms/required_field_orange_line.png) no-repeat 6px 2px;
+    }
+
+    .theme-entry .input-control,
+    .theme-entry .input-control .input-control-body  
+    {
+        position: relative;
+    }
+
+    .theme-entry .input-control input[type=text],
+    .theme-entry .input-control input[type=password]  
+    {
+        border: none;
+        cursor: text;
+        height: 14px;
+        margin: 0;
+        min-height: 17px;
+        padding: 0 0 1px 0;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .ie-document-mode-8 .theme-entry .input-control input[type=text],
+    .ie-document-mode-8 .theme-entry .input-control input[type=password]   
+    {
+        padding-bottom: 0;
+        padding-top: 2px;
+        min-height: 16px;
+    }
+
+    .theme-entry .input-control a.input-control  
+    {
+        cursor: default;
+        display: block;
+        height: 16px;
+        margin: 0;
+        outline: none;
+        overflow: hidden;
+        padding-bottom: 0;
+        padding-top: 2px;
+        text-align: left;
+        text-decoration: none;
+        -ms-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    html[dir=rtl] .theme-entry .input-control a.input-control  
+    {
+        text-align: right;
+    }
+
+    .theme-entry .form-control.rating-control  
+    {
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .theme-entry .hyperlinkTopLeftPanel.invalid.empty
+    {
+        width: 30px;
+        height: 10px;
+    }
+    /* Necessary to make an empty datalabel and hyperlink visible */
+
+    .theme-entry .DataLabel.valid.empty,
+    .theme-entry .hyperlinkTopLeftPanel.valid.empty
+    {
+        width: 1px;
+        height: 1px;
+    }
+
+    .theme-entry .DataLabel.valid.empty.loading
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox
+    {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 1px;
+        min-height: 20px; /* 18+4 */
+        margin: 0;
+        padding-left: 3px;
+    }
+
+    html[dir=rtl] .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox
+    {
+        padding-left: 0;
+        padding-right: 3px;
+    }
+
+    /* design time only */
+    .theme-entry span.SFC.SourceCode-Forms-Controls-Web-TextBox
+    {
+        text-align: left;
+        padding-top: 2px;
+        padding-bottom: 0;
+    }
+
+    html[dir=rtl] .theme-entry span.SFC.SourceCode-Forms-Controls-Web-TextBox
+    {
+        text-align: right;
+    }
+
+    .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox
+    {
+        padding-top: 0;
+        padding-bottom: 1px;
+        padding-left: 3px;
+    }
+
+    html[dir=rtl] .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox
+    {
+        padding-right: 3px;
+    }
+
+    .mozilla .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+    .webkit.safari .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox
+    {
+        padding-left: 2px;
+    }
+
+    html[dir=rtl].mozilla .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+    html[dir=rtl].webkit.safari .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox
+    {
+        padding-right: 2px;
+    }
+
+    .no-border-box-support .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+    .no-border-box-support .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+    .ie-document-mode-8 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+    .ie-document-mode-8 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark
+    {
+        min-height: 16px;
+    }
+
+    .ie-document-mode-8 .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox
+    {
+        padding-top: 2px;
+        padding-bottom: 0;
+    }
+
+    .theme-entry .textbox-dimensions-wrapper
+    {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .theme-entry span.textbox-style-wrapper
+    {
+        width: auto;
+        display: block;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 1px;
+        min-height: 20px; /* 18+4 */
+        padding-left: 3px;
+    }
+
+    .no-border-box-support .theme-entry span.textbox-style-wrapper,
+    .ie-document-mode-8 .theme-entry span.textbox-style-wrapper
+    {
+        min-height: 16px;
+    }
+
+    .theme-entry span.textbox-style-wrapper > .SFC.SourceCode-Forms-Controls-Web-TextBox,
+    .theme-entry span.textbox-style-wrapper > .SFC.SourceCode-Forms-Controls-Web-TextBox.preview,
+    .theme-entry span.textbox-style-wrapper > .SFC.SourceCode-Forms-Controls-Web-TextBox.disabled,
+    .theme-entry span.textbox-style-wrapper > .SFC.SourceCode-Forms-Controls-Web-TextBox.focus,
+    .theme-entry span.textbox-style-wrapper > .SFC.SourceCode-Forms-Controls-Web-TextBox.invalid
+    {
+        width: 100%;
+        border-style: none;
+        border-width: 0;
+        min-height: 0; /* 18+4 TODO foix */
+        padding-left: 0;
+        background: transparent none repeat scroll 0 0;
+        text-align: inherit;
+        font: inherit;
+    }
+
+    .theme-entry .input-control textarea
+    {
+        border: none;
+        margin: 0;
+        width: 100%;
+        overflow: auto;
+        resize: none;
+        padding: 2px 0 0 0;
+        cursor: text;
+    }
+
+    .theme-entry .input-control input[type=text]:focus,
+    .theme-entry .input-control input[type=password]:focus,
+    .theme-entry .input-control textarea:focus,
+    .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox:focus
+    {
+        outline: none;
+    }
+
+    .theme-entry .token-input .token-input-editor-area,
+    .theme-entry .input-control input[readonly=readonly]
+    {
+        cursor: text;
+    }
+
+    .theme-entry .input-control .input-control-m
+    {
+        min-height: 18px;
+    }
+
+    .theme-entry .input-control.disabled,
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.disabled,
+    .theme-entry .textbox-style-wrapper.disabled,
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.preview,
+    .theme-entry .textbox-style-wrapper.preview,
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-RadioButton.preview
+    {
+        opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+        cursor: default;
+    }
+
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Choice.disabled,
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-RadioButton.disabled,
+    .theme-entry .input-control.text-input.disabled.control-group-container
+    {
+        //TFS 886235 - We don't want the disabled opacity to be set on the parent elements
+        // Child element's disabled opacity get set to 0.5 with the following selector: .input-control.disabled (See code block above)
+        opacity: 1 !important;
+    }
+
+    .theme-entry .multi-select-outer-panel
+    {
+        .input-control.checkbox.disabled,
+        .input-control.radio.disabled
+    {
+            cursor: default;
+        }
+
+        &.disabled-attachment
+    {
+            //[TFS 886235]
+            //disabled-attachment class is injected to the multi-select control for some reason and we don't want to apply the opacity same as the disabled attachment control.
+            //the disabled opacity should be set by the radio buttons and checkboxes selectors.
+            opacity: 1;
+        }
+    }
+
+    .theme-entry .input-control.select-box.lookup-box.disabled,
+    .theme-entry .input-control.text-input.disabled.TextBox .input-control-watermark,
+    .theme-entry .input-control.text-input.disabled .input-control-watermark,
+    .theme-entry .input-control.select-box.lookup-box.disabled .input-control-buttons a.ellipsis > span span
+    {
+        cursor: default;
+    }
+
+    .theme-entry .input-control.select-box.disabled .input-control-buttons a,
+    .theme-entry .input-control.select-box.disabled .input-control-buttons a:hover,
+    .theme-entry .input-control.select-box.disabled .input-control-buttons a:active,
+    .theme-entry .input-control.select-box.disabled .input-control-buttons a:focus
+    {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)" !important;
+    }
+
+    .theme-entry .input-control .input-control-m-c
+    {
+        border-style: solid;
+        border-width: 1px;
+        min-height: 18px;
+        padding-left: 3px;
+    }
+
+    html[dir=rtl] .theme-entry .input-control .input-control-m-c
+    {
+        padding-left: 0;
+        padding-right: 3px;
+    }
+
+    .theme-entry .input-control.control-group-container .input-control-m-c
+    {
+        padding-left: 0;
+    }
+
+    html[dir=rtl] .theme-entry .input-control.control-group-container .input-control-m-c
+    {
+        padding-right: 0;
+    }
+
+    .theme-entry .input-control .input-control-wrapper
+    {
+        position: relative;
+        padding-left: 0;
+    }
+
+    .theme-entry .input-control.icon-control .input-control-wrapper
+    {
+        position: relative;
+        padding-left: 20px;
+        background-repeat: no-repeat;
+        background-position: 1px 50%;
+        background-size: auto auto;
+    }
+
+    html[dir=rtl] .theme-entry .input-control.icon-control .input-control-wrapper
+    {
+        background-position: 99.7% 50%;
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    .theme-entry .input-control.icon-control.watermark .input-control-wrapper
+    {
+        padding-left: 0;
+    }
+
+    html[dir=rtl] .theme-entry .input-control.icon-control.watermark .input-control-wrapper
+    {
+        padding-right: 0;
+    }
+
+    .theme-entry .input-control-watermark
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        //padding: 2px 2px 0 0;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .theme-entry .input-control.text-input .input-control-watermark:empty
+    {
+        display: none;
+    }
+
+    html[dir=rtl] .theme-entry .input-control-watermark
+    {
+        text-align: right;
+    }
+
+    .theme-entry span.SFC.SourceCode-Forms-Controls-Web-TextBox.watermark
+    {
+        overflow: hidden;
+    }
+
+    .theme-entry .read-only .input-control-watermark,
+    .theme-entry .input-control.read-only.watermark a.input-control span
+    {
+        display: none !important;
+    }
+
+    .theme-entry .disabled .input-control-watermark,
+    .theme-entry .input-control.disabled.watermark a.input-control span,
+    .theme-entry .watermark-hidden > .input-control-watermark
+    {
+        display: none !important;
+    }
+
+    .theme-entry .input-control.text-input .input-control-watermark
+    {
+        cursor: text;
+    }
+
+    html[dir=rtl] .theme-entry .input-control.text-input .input-control-watermark
+    {
+        text-align: right;
+    }
+
+    .theme-entry .input-control.icon-control .input-control-watermark
+    {
+        padding-left: 18px;
+    }
+
+    html[dir=rtl] .theme-entry .input-control.icon-control .input-control-watermark
+    {
+        padding-left: 0;
+        padding-right: 18px;
+    }
+
+    .theme-entry .input-control a.input-control span,
+    .theme-entry .input-control.watermark a.input-control span
+    {
+        padding-left: 0;
+    }
+
+    .theme-entry .input-control.icon-control.loading .input-control-wrapper
+    {
+        background-image: url(../Platinum/Images/Loaders/PreloaderGreen_16px.gif);
+    }
+
+    .theme-entry .input-control.icon-control.unknown .input-control-wrapper
+    {
+        background-image: url(../Platinum/Images/Icons/Default16px.png);
+    }
+
+    .theme-entry .input-control.icon-control.category .input-control-wrapper
+    {
+        background-image: url(../Platinum/Images/Icons/FolderClosed16.png);
+    }
+
+    .theme-entry .input-control.icon-control.service-method .input-control-wrapper
+    {
+        background-image: url(../Platinum/Images/Icons/ServiceMethod16.png);
+    }
+
+    .theme-entry ul.input-control-group
+    {
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+    }
+
+    html[dir=rtl] .theme-entry ul.input-control-group
+    {
+        text-align: right;
+    }
+
+    .theme-entry ul.input-control-group li
+    {
+        margin: 2px 0 0 0;
+        padding: 0;
+    }
+
+    .theme-entry ul.input-control-group li:first-child
+    {
+        margin-top: 0;
+    }
+
+    .theme-entry ul.input-control-group.collapsed li
+    {
+        display: inline;
+        margin: 0 2px 2px 0;
+    }
+
+    .theme-entry label.input-control
+    {
+        display: inline-block;
+    }
+
+    .theme-entry label.input-control.read-only.radio .input-control-text,
+    .theme-entry label.input-control.read-only.radio .input-control-img,
+    .theme-entry label.input-control.read-only.checkbox .input-control-text,
+    .theme-entry label.input-control.read-only.checkbox .input-control-img
+    {
+        cursor: default;
+    }
+
+    .theme-entry img.clickable
+    {
+        cursor: pointer;
+    }
+
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-Slider:not(.designtime)
+    {
+        width: 100%;
+    }
+
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-Slider
+    {
+        min-height: 1.1em;
+        height: auto;
+        margin: 0;
+        cursor: default;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: static; /*this is to override the effects of .theme-entry .SFC position:relative that was set in ControlPackBase.css*/
+    }
+
+    .theme-entry .dragdealer
+    {
+        position: relative;
+    }
+
+    .theme-entry .dragdealer .handle
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        min-width: 1.1em;
+        min-height: 1.1em;
+        overflow:visible;
+    }
+
+    .theme-entry .dragdealer .handle.disabled
+    {
+        cursor:auto;
+    }
+
+    .theme-entry .slider-dimensions-wrapper
+    {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .theme-entry span.slider-style-wrapper
+    {
+        display:block;
+    }
+
+    .theme-entry .slider_value_display
+    {
+        min-width: 1.6em;
+        padding: 1em;
+        text-align: center;
+        position: absolute;
+        -moz-box-shadow: 0em 0.1em 0.3em 0em rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0em 0.1em 0.3em 0em rgba(0, 0, 0, 0.25);
+        box-shadow: 0em 0.1em 0.3em 0em rgba(0, 0, 0, 0.25);
+        -webkit-border-radius: 0.5em;
+        -moz-border-radius: 0.5em;
+        border-radius: 0.5em;
+        z-index: 99999;
+    }
+
+    .theme-entry .slider_value_display.bottom:after
+    {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: -0.6em;
+        bottom: -0.8em;
+        left: 50%;
+        box-sizing: border-box;
+        border-width: 0.4em;
+        border-style: solid;
+        transform-origin: 0 0;
+        transform: rotate(-45deg);
+        -moz-box-shadow: -1px 1px 1px -1px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: -1px 1px 1px -1px rgba(0, 0, 0, 0.25);
+        box-shadow: -1px 1px 1px -1px rgba(0, 0, 0, 0.25);
+    }
+
+    .theme-entry .slider_value_display.top:after
+    {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: -0.6em;
+        top: 0;
+        left: 50%;
+        box-sizing: border-box;
+        border-width: 0.4em;
+        border-style: solid;
+        transform-origin: 0 0;
+        transform: rotate(-45deg);
+        -moz-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 1px -1px 1px -1px rgba(0, 0, 0, 0.25);
+    }
+
+    .theme-entry .preview .ajax_slider_rail_inner,
+    .theme-entry .designtime .ajax_slider_rail_inner
+    {
+        position: absolute;
+        top: 0;
+        left: 0.3em;
+        height: 11px;
+        background-position: 0 50%;
+        background-repeat: repeat-x;
+        right: 0.3em;
+        filter: inherit;
+    }
+
+    .theme-entry .preview .ajax_slider_rail_start,
+    .theme-entry .designtime .ajax_slider_rail_start
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 11px;
+        background-position: 0 50%;
+        background-repeat: no-repeat;
+        width: 0.3em;
+        filter: inherit;
+    }
+
+    .theme-entry .preview .ajax_slider_rail_end,
+    .theme-entry .designtime .ajax_slider_rail_end
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 11px;
+        background-position: 0 50%;
+        background-repeat: no-repeat;
+        width: 0.3em;
+        filter: inherit;
+    }
+
+    .theme-entry .ajax__slider_h_rail
+    {
+        overflow:visible;
+        height: 1.1em;
+    }
+
+    .theme-entry .ajax__slider_h_rail,
+    .theme-entry .ajax__slider_h_handle
+    {
+        outline: none;
+    }
+
+    .theme-entry .ajax__slider_h_rail.read-only,
+    .theme-entry .ajax__slider_h_handle.read-only
+    {
+        cursor: default;
+    }
+
+    .theme-entry .ajax__slider_h_handle.read-only
+    {
+        opacity: 0.7;
+        filter: Alpha(opacity=70);
+    }
+
+    .ie-document-mode-8 .theme-entry .ajax__slider_h_handle.disabled
+    {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=70)";
+    }
+
+    .theme-entry .Hyperlink.disabled,
+    .theme-entry .Hyperlink-NotSet.disabled,
+    .theme-entry .Hyperlink-NotSet.read-only
+    {
+        cursor: default;
+    }
+
+    .theme-entry a.Hyperlink,
+    .theme-entry a.Hyperlink-NotSet
+    {
+        border: solid 1px transparent;
+        white-space: pre;
+    }
+
+    .theme-entry .Hyperlink.read-only
+    {
+        cursor: pointer;
+    }
+
+    .theme-entry .input-control.radio
+    {
+        border: 1px dotted transparent;
+    }
+
+    .theme-entry .radiobox.small-buttons .radiobox-button .radiobox-button-input
+    {
+        /*LG - Added background size fix*/
+        background-size: auto;
+    }
+
+    .theme-entry label.input-control.radio .input-control-img,
+    .theme-entry label.input-control.checkbox .input-control-img
+    {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .theme-entry .input-control-wrapper.multi-select-outer-panel
+    {
+        padding-right: 2px;
+    }
+
+    html[dir=rtl] .theme-entry .input-control-wrapper.multi-select-outer-panel
+    {
+        padding-left: 2px;
+        padding-right: 0;
+    }
+
+    .theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.radio.focus,
+    .theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.checkbox.focus,
+    .theme-entry .checkbox-outer-panel .input-control.checkbox.focus
+    {
+        border-width: 1px;
+        border-style: dotted;
+    }
+
+    .theme-entry .multi-select-outer-panel .multi-select-box-list-item label.input-control .input-control-text,
+    .theme-entry .checkbox-outer-panel label.input-control .input-control-text,
+    .theme-entry label.input-control.radio .input-control-text
+    {
+        outline: none;
+        padding-right: 3px;
+    }
+
+    html[dir=rtl] .theme-entry .multi-select-outer-panel .multi-select-box-list-item label.input-control .input-control-text
+    {
+        padding-right: 0;
+        padding-left: 3px;
+    }
+
+    .theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.radio,
+    .theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.checkbox,
+    .theme-entry .checkbox-outer-panel .input-control.checkbox
+    {
+        border: 1px solid transparent;
+    }
+
+    .theme-entry label.input-control input
+    {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    .theme-entry label.input-control span
+    {
+
+        html[dir=ltr] &
+    {
+            float: left;
+        }
+
+        html[dir=rtl] &
+    {
+            float: right;
+        }
+
+        height: 20px;
+        cursor: pointer;
+    }
+
+    html[dir=rtl] .theme-entry label.input-control span
+    {
+        float: right;
+    }
+
+    .theme-entry .label-container span.disabled,
+    .theme-entry .file-wrapper-wrapper.disabled
+    {
+        filter: Alpha(opacity=50);
+        opacity: 0.5;
+        cursor: default;
+    }
+
+    .theme-entry label.input-control.disabled span
+    {
+        cursor: default;
+    }
+
+    .theme-entry label.input-control:not(.checkbox):not(.radio) .input-control-img
+    {
+        width: 20px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+
+    .theme-entry label.input-control .input-control-img {
+
+        html[dir=ltr] & {
+            float: left;
+        }
+
+        html[dir=rtl] & {
+            float: right;
+        }
+    }
+
+    .theme-entry label.input-control.checkbox
+    {
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .theme-entry label.input-control:hover .input-control-img
+    {
+        background-position: 0 -20px;
+    }
+
+    .theme-entry label.input-control.checked .input-control-img
+    {
+        background-position: 0 -80px;
+    }
+
+    .theme-entry label.input-control.disabled .input-control-img,
+    .theme-entry .preview label.input-control .input-control-img,
+    .theme-entry label.input-control.read-only .input-control-img
+    {
+        background-position: 0 -60px;
+    }
+
+    .theme-entry label.input-control.checked:hover .input-control-img
+    {
+        background-position: 0 -100px;
+    }
+
+    .theme-entry label.input-control.checked.disabled .input-control-img,
+    .theme-entry label.input-control.checked.read-only .input-control-img
+    {
+        background-position: 0 -140px;
+    }
+
+    .theme-entry label.input-control .input-control-text
+    {
+        html[dir=ltr] &,
+        html[dir=rtl] &
+        {
+            float: none;
+        }
+    }
+
+    .theme-entry label.input-control .input-control-text:empty,
+    html[dir=rtl] .theme-entry label.input-control .input-control-text:empty
+    {
+        display: none;
+    }
+
+    .theme-entry label.input-control .input-control-icon
+    {
+        width: 20px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: auto auto;
+    }
+
+    .theme-entry label.input-control.disabled .input-control-icon
+    {
+        opacity: 0.5;
+    }
+
+    .theme-entry .styling-outer-wrapper
+    {
+        min-height: 20px;
+    }
+
+    .theme-entry select.input-control
+    {
+        width: 100%;
+    }
+
+    .theme-entry
+    {
+        .input-control-buttons.twisty-button
+        {
+            height: auto;
+        }
+
+
+        .input-control.select-box
+        {
+            cursor: text;
+            min-height: 20px;
+            min-width: 40px;
+
+            &.disabled
+            {
+                cursor: default;
+            }
+
+            .input-control-body
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 19px;
+                min-height: 18px;
+
+                html[dir=rtl] &
+                {
+                    left: 19px;
+                    right: 0;
+                }
+            }
+
+            .input-control-m-c
+            {
+                border-right-width: 0;
+
+                html[dir=rtl] &
+                {
+                    border-left-width: 0;
+                }
+            }
+
+            &.double-buttons.picker-input .input-control-m-c
+            {
+                border-right-width: 1px;
+
+                html[dir=rtl] &
+                {
+                    border-left-width: 1px;
+                }
+            }
+
+            .input-control-buttons a.ellipsis > span span
+            {
+                display: block;
+                cursor: pointer;
+                text-indent: 0;
+                vertical-align: inherit;
+                font-weight: initial;
+            }
+        }
+
+        &.editor-canvas, //view designer
+        &.pane, //form designer
+        &.StyleBuilderPreviewPanelContent //stylebuilder
+        {
+            .input-control-buttons
+            {
+                bottom: auto;//override designer flex designer canvas areas only
+            }
+        }
+
+        .input-control-buttons
+        {
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 0;
+            overflow: hidden;
+            display: block; //override designer flex
+            html[dir=rtl] &
+            {
+                left: 0;
+                right: auto;
+            }
+
+            a
+            {
+                height: auto;
+                display: block; //maintain compat for finessed icon positions
+                float: left; //maintain compat for finessed icon positions
+                span
+                {
+                    text-align: center;
+                    display: block; //maintain compat for finessed icon positions
+                    width: auto; //maintain compat for finessed icon positions
+                    vertical-align: middle;
+                    background: none;
+                    border: none;
+
+                    span
+                    {
+                        //Where the icons go
+                        background-size: auto auto; //to reset the background sizes added by AppStudio
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: auto auto;
+                        width: auto; //maintain compat for finessed icon positions
+                        text-indent: -9999px;
+                        cursor: pointer;
+                        display: block; //maintain compat for finessed icon positions
+                    }
+                }
+
+                &.ellipsis span span
+                {
+                    text-indent: 0px;
+                    display: block;
+                }
+            }
+        }
+        //#region Dialog Tweaks
+        .dialog#PickerSearchDialog .form-field .form-field-element-wrapper .ps-choice-wrapper
+        {
+            display: table;
+            table-layout: fixed;
+
+            & > div
+            {
+                display: table-cell;
+                vertical-align: top;
+            }
+        }
+        //#endregion Dialog Tweaks
+    }
+
+
+
+    .theme-entry .input-control.select-box.read-only:not(.disabled) .input-control-buttons a
+    {
+        opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+    }
+
+    .theme-entry .input-control.select-box.double-buttons .input-control-body
+    {
+        right: 39px;
+    }
+
+    html[dir=rtl] .theme-entry .input-control.select-box.double-buttons .input-control-body
+    {
+        left: 38px;
+        right: 0;
+    }
+
+    .theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-body
+    {
+        right: 0;
+    }
+
+    html[dir=rtl] .theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-body
+    {
+        left: 0;
+    }
+
+    .theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-m-c
+    {
+        border-right-width: 1px;
+    }
+
+    html[dir=rtl] .theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-m-c
+    {
+        border-left-width: 1px;
+    }
+
+    .theme-entry .input-control.select-box .input-control-buttons a
+    {
+        border-style: solid;
+        border-width: 0 0 0 1px;
+        display: block;
+        width: 18px;
+        float: left;
+        /*LG: Added to fix a select-box button size issue*/
+        /* this gets the icons to align perfectly center inside*/
+        text-align: center;
+    }
+
+    html[dir=rtl] .theme-entry .input-control.select-box .input-control-buttons a
+    {
+        border-left-width: 0;
+        border-right-width: 1px;
+        float: right;
+    }
+
+
+
+    .theme-entry .input-control.select-box.dropdown-box.watermark,
+    .theme-entry .input-control.select-box.dropdown-box.watermark.read-only .input-control.styling-font,
+    .theme-entry .input-control.select-box.dropdown-box.watermark.read-only.disabled .input-control.styling-font
+    {
+        cursor: default;
+    }
+
+    .theme-entry .input-control.select-box .input-control-buttons a.picker-resolve
+    {
+        border-right-width: 0;
+        width: 19px;
+    }
+
+    .theme-entry .view-canvas .multi-select-outer-panel
+    {
+        overflow: auto;
+    }
+
+    .theme-entry .multi-select-outer-panel .input-control-watermark
+    {
+        padding-left: 5px;
+        padding-top: 2px;
+    }
+
+    html[dir=rtl] .theme-entry .multi-select-outer-panel .input-control-watermark
+    {
+        padding-left: 0;
+        padding-right: 5px;
+    }
+
+    .theme-entry .multi-select-outer-panel.horizontal
+    {
+        display: table-row;
+    }
+
+    .theme-entry .horizontal .multi-select-box-list-item
+    {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .theme-entry .vertical .multi-select-box-list-item
+    {
+        display: block;
+    }
+
+    .theme-entry .input-control.select-box.disabled .input-control-buttons a,
+    .theme-entry .input-control.select-box.disabled .input-control-buttons a:hover,
+    .theme-entry .input-control.select-box.disabled .input-control-buttons a:focus,
+    .theme-entry .input-control.select-box.read-only .input-control-buttons a,
+    .theme-entry .input-control.select-box.read-only .input-control-buttons a:hover,
+    .theme-entry .input-control.select-box.read-only .input-control-buttons a:active,
+    .theme-entry .select-box.read-only .input-control-buttons a:focus,
+    .theme-entry .select-box.disabled .input-control-watermark,
+    .theme-entry .select-box.read-only .input-control-watermark,
+    .theme-entry .select-box.read-only .input-control-buttons a.ellipsis > span span
+    {
+        cursor: default;
+    }
+
+    .theme-entry .input-control-buttons a span
+    {
+        display: block;
+        height: 18px;
+        text-align: center;
+    }
+
+
+    .theme-entry .input-control.select-box
+    {
+        .input-control-buttons a
+    {
+            &.search > span span,
+            &.picker-search > span span
+    {
+                background-image: url(../Platinum/Images/Icons/Search16.png);
+            }
+
+            &.clear-search > span span
+    {
+                background-image: url(../Platinum/Images/Buttons/ClearSearchButton.png);
+            }
+
+            &.date > span span
+    {
+                background-image: url(../Platinum/Images/Icons/Date16.png);
+            }
+
+            &.date > span span
+    {
+                background-image: url(../Platinum/Images/Icons/DateTime16.png);
+            }
+
+            &.picker-resolve > span span
+    {
+                background-image: url(../Platinum/Images/Icons/Picker16.png);
+            }
+        }
+
+        &.timepicker .input-control-buttons a.date > span span
+    {
+            background-image: url(../Platinum/Images/Icons/Time16.png);
+        }
+    }
+
+
+    .theme-entry .drop-menu
+    {
+        border-style: solid;
+        border-width: 1px;
+        position: relative;
+        -moz-box-shadow: 5px 5px 5px #888;
+        -webkit-box-shadow: 5px 5px 5px #888;
+        box-shadow: 5px 5px 5px #888;
+    }
+
+    .theme-entry .drop-menu.modalized
+    {
+        background-image: url("../Platinum/Images/Loaders/LightGeneric16.gif");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        height: 20px !important;
+    }
+
+    .theme-entry .drop-menu .drop-menu-m
+    {
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .theme-entry .drop-menu .drop-menu-wrapper
+    {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .theme-entry .drop-menu.icon-control .drop-menu-m
+    {
+        background-repeat: repeat-y;
+        background-position: 0 0;
+        background-size: auto auto;
+    }
+
+    .theme-entry .drop-menu.overflown .drop-menu-m
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    .theme-entry .drop-menu.overflown .drop-menu-m-c
+    {
+        height: 100%;
+        overflow: visible;
+    }
+
+    .theme-entry .drop-menu.overflown .drop-menu-wrapper
+    {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .theme-entry .drop-menu ul.drop-menu
+    {
+        border: none;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .theme-entry .drop-menu ul.drop-menu li
+    {
+        list-style-image: none;
+        margin: 0;
+        padding: 0;
+        height: 20px;
+    }
+
+    .theme-entry .drop-menu ul.drop-menu a
+    {
+        display: block;
+        text-decoration: none;
+        height: 20px;
+        background-color: transparent;
+        background-position: 1px 50%;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        outline: none;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .theme-entry .drop-menu.icon-control ul.drop-menu a
+    {
+        padding-left: 21px;
+    }
+
+    .theme-entry .drop-menu ul.drop-menu a span
+    {
+        cursor: pointer;
+        display: block;
+        height: 20px;
+        overflow: hidden;
+        padding: 0 3px;
+        -ms-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+
+    .theme-entry .drop-menu ul.drop-menu a.disabled span,
+    .theme-entry .drop-menu ul.drop-menu a.disabled:hover span
+    {
+        cursor: default;
+    }
+
+    .theme-entry fieldset
+    {
+        border: medium none;
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+    .theme-entry legend
+    {
+        font-weight: bold;
+        margin-left: -10px;
+    }
+
+    .theme-entry .token-input .token-input-editor-area
+    {
+        min-height: 15px;
+        outline: none;
+        padding-left: 5px;
+    }
+    /*#endregion Form Styling */
+
+    /*#region Dragging helper styling*/
+
+    /*Context tree draggables*/
+    .theme-entry a.ui-draggable-dragging
+    {
+        z-index: 9999;
+    }
+
+    /*#endregion Dragging helper styling*/
+
+    /*#region DropTextbox Styling */
+    .theme-entry .drop-item,
+    .theme-entry .drop-object,
+    .theme-entry .drop-text
+    {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .theme-entry .drop-item
+    {
+        background-image: url(../Platinum/Images/Icons/Field16.png);
+        background-position: 0 1px;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        padding-left: 15px;
+        padding-right: 2px;
+    }
+
+    .theme-entry .drop-text
+    {
+        border-style: none;
+        height: 16px;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .theme-entry .drop-textbox
+    {
+        padding: 0;
+        padding-top: 1px;
+    }
+
+    .theme-entry .drop-textbox .drop-item
+    {
+        background-position: 0 0;
+        height: 16px;
+        padding-left: 20px;
+    }
+    /*#endregion DropTextbox Styling */
+
+    /*#region Tree Styling */
+    .theme-entry .tree,
+    .theme-entry .tree ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .theme-entry .tree li ul
+    {
+        display: none;
+        clear: both;
+    }
+
+    .theme-entry .tree li
+    {
+        display: block;
+        min-height: 18px;
+        padding: 0 0 0 18px;
+        margin: 0 0 0 0;
+        clear: both;
+    }
+
+    html[dir=rtl] .tree li
+    {
+        padding: 0 18px 0 0;
+    }
+
+    .theme-entry .tree li a,
+    .theme-entry .tree li span
+    {
+        display: inline;
+        float: left;
+        padding: 1px 4px 1px 23px;
+        white-space: nowrap;
+        text-decoration: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: 1px 1px;
+        background-size: auto auto;
+        border: 0;
+        margin: 0;
+        background-image: url("../Platinum/Images/Icons/Document16flat.png");
+    }
+
+    html[dir=rtl] .tree li > a,
+    html[dir=rtl] .tree li > span
+    {
+        background-position: 99.9% 1px;
+        float: right;
+        padding: 1px 23px 1px 4px;
+    }
+
+    .theme-entry .tree li.children.open
+    {
+        background: url('data:image/gif;base64,R0lGODlhDAANAPEDAP///wAAAICAgAAAACH5BAUAAAMALAMABAAJAAkAAAIRlI+gC8brXhMgWDtllvGhLxQAOw==') /*../Platinum/Images/Tree/minus_alt.gif*/ 0 0 no-repeat;
+    }
+
+    .theme-entry .tree li.open ul
+    {
+        display: block;
+        clear: both;
+    }
+
+    .theme-entry .tree li.children.closed
+    {
+        background: url('data:image/gif;base64,R0lGODlhDAANAPEDAP///wAAAICAgAAAACH5BAUAAAMALAMABAAJAAkAAAIUlI+gC7axnILKhXubeHHPznQIUgAAOw==') /*../Platinum/Images/Tree/plus_alt.gif*/ 0 0 no-repeat;
+    }
+
+    html[dir=rtl] .theme-entry .tree li.children.open,
+    html[dir=rtl] .theme-entry .tree li.children.closed
+    {
+        background-position: 100% 1px;
+    }
+
+    .theme-entry .tree li.closed ul
+    {
+        display: none;
+    }
+
+    .theme-entry .tree li a input,
+    .theme-entry .tree li span input
+    {
+        margin: 0;
+        padding: 0 0;
+        display: block;
+        height: 14px;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    /*#region Collapsed Root Styling */
+    .theme-entry .tree.collapsed-root li.root
+    {
+        background: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .theme-entry .tree.collapsed-root li.root > a,
+    .theme-entry .tree.collapsed-root li.root > span
+    {
+        display: none;
+    }
+    /*#endregion Collapsed Root Styling */
+
+    /*#region Checkbox Tree Styling */
+    .theme-entry .tree.checkbox li a,
+    .theme-entry .tree.checkbox li span
+    {
+        padding-left: 41px;
+        background-image: url("../Platinum/Images/Tree/unchecked_form.png");
+    }
+
+    html[dir=rtl] .theme-entry .tree.checkbox li a,
+    html[dir=rtl] .theme-entry .tree.checkbox li span
+    {
+        padding-left: 0;
+        padding-right: 41px;
+    }
+
+    .theme-entry .tree.checkbox li.checked a,
+    .theme-entry .tree.checkbox li.checked span
+    {
+        background-image: url("../Platinum/Images/Tree/checked_form.png");
+    }
+
+    .theme-entry .tree.checkbox li.open > a,
+    .theme-entry .tree.checkbox li.open > span
+    {
+        background-image: url("../Platinum/Images/Tree/unchecked_open_folder.png");
+    }
+
+    .theme-entry .tree.checkbox li.closed > a,
+    .theme-entry .tree.checkbox li.closed > span
+    {
+        background-image: url("../Platinum/Images/Tree/unchecked_closed_folder.png");
+    }
+
+    .theme-entry .tree.checkbox li.checked.open > a,
+    .theme-entry .tree.checkbox li.checked.open > span
+    {
+        background-image: url("../Platinum/Images/Tree/checked_open_folder.png");
+    }
+
+    .theme-entry .tree.checkbox li.checked.closed > a,
+    .theme-entry .tree.checkbox li.checked.closed > span
+    {
+        background-image: url("../Platinum/Images/Tree/checked_closed_folder.png");
+    }
+
+    .theme-entry .tree.checkbox li.user > a,
+    .theme-entry .tree.checkbox li.user > span
+    {
+        background-image: url("../Platinum/Images/Tree/unchecked_user.png");
+    }
+
+    .theme-entry .tree.checkbox li.user.checked > a,
+    .theme-entry .tree.checkbox li.user.checked > span
+    {
+        background-image: url("../Platinum/Images/Tree/checked_user.png");
+    }
+    /*#endregion Checkbox Tree Styling */
+
+    /*#endregion End of Tree Styling */
+
+    /*#region Panel and Grid Styling common */
+
+    .theme-entry .view-canvas
+    {
+        .panel-body,
+        .grid-body,
+        .grid-toolbars,
+        .grid-footer,
+        .toolbar-wrapper
+    {
+            *
+    {
+                /* All elements inside a view instance in design time should not respond to the mouse (hover, click, focus, etc) */
+                pointer-events: none;
+            }
+        }
+    }
+    /*#region Panel Styling */
+    .theme-entry .panel
+    {
+        position: relative;
+    }
+
+    .theme-entry .panel.full
+    {
+        height: 100%;
+    }
+
+    .theme-entry .panel.collapsed
+    {
+        height: 24px;
+    }
+
+    .theme-entry .panel-header
+    {
+        border-style: solid;
+        border-width: 1px 1px 0 1px;
+        height: 22px;
+    }
+
+    .theme-entry .panel.collapsed > .panel-header
+    {
+        border-bottom-width: 1px;
+    }
+
+    .theme-entry .panel-header-c
+    {
+        border-style: solid;
+        border-width: 1px;
+        height: 20px;
+    }
+
+    .theme-entry .panel-header-wrapper
+    {
+        height: 20px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .theme-entry .panel-header-wrapper .panel-header-icon
+    {
+        float: left;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        background-size: auto auto;
+    }
+
+    html[dir=rtl] .theme-entry .panel-header-wrapper .panel-header-icon
+    {
+        float: right;
+    }
+
+    .theme-entry .panel-header-wrapper .panel-header-text
+    {
+        box-sizing: border-box;
+        float: left;
+        overflow: hidden;
+        padding-left: 5px;
+        padding-right: 20px;
+        -ms-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        text-transform: inherit;
+    }
+
+    html[dir=rtl] .theme-entry .panel-header-wrapper .panel-header-text
+    {
+        float: right;
+        padding-left: 0;
+        padding-right: 5px;
+    }
+
+    .theme-entry .panel-header-wrapper .panel-header-icon + .panel-header-text
+    {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: auto;
+        right: 0;
+    }
+
+    html[dir=rtl] .theme-entry .panel-header-wrapper .panel-header-icon + .panel-header-text
+    {
+        left: 0;
+        right: 20px;
+    }
+
+    .theme-entry .panel-header-wrapper .panel-header-controls
+    {
+        background: none;
+        height: 20px;
+        padding: 0 0 0 3px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    html[dir=rtl] .theme-entry .panel-header-wrapper .panel-header-controls
+    {
+        left: 0;
+        padding: 0 3px 0 0;
+        right: auto;
+    }
+
+    .theme-entry .panel-header-wrapper .panel-header-controls a
+    {
+        background-repeat: no-repeat;
+        display: block;
+        float: left;
+        height: 15px;
+        margin: 2px;
+        width: 15px;
+    }
+
+    html[dir=rtl] .theme-entry .panel-header-wrapper .panel-header-controls a
+    {
+        float: right;
+    }
+
+    .theme-entry .panel-header-wrapper .panel-header-controls a span
+    {
+        display: none;
+    }
+
+    .theme-entry .panel.without-header > .panel-header
+    {
+        display: none;
+    }
+
+    .theme-entry .panel.with-toolbar > .panel-header
+    {
+        border-bottom-width: 1px;
+    }
+
+    .theme-entry .panel-toolbars
+    {
+        overflow: hidden;
+    }
+
+    .theme-entry .panel.without-toolbar > .panel-toolbars,
+    .theme-entry .panel.with-toolbar.collapsed > .panel-toolbars
+    {
+        display: none;
+    }
+
+    .theme-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars,
+    .theme-entry .panel.with-header.with-double-toolbar > .panel-toolbars .toolbars,
+    .theme-entry .panel.with-header.with-triple-toolbar > .panel-toolbars .toolbars
+    {
+        border-top-width: 0;
+    }
+
+    .theme-entry .panel.without-header.with-toolbar > .panel-toolbars .toolbars
+    {
+        border-bottom-width: 0;
+    }
+
+    .theme-entry .panel.without-header.with-toolbar > .panel-toolbars
+    {
+        min-height: 23px;
+    }
+
+    .theme-entry .panel.with-header.with-double-toolbar > .panel-toolbars
+    {
+        min-height: 46px;
+    }
+
+    .theme-entry .panel.without-header.with-double-toolbar > .panel-toolbars
+    {
+        min-height: 47px;
+    }
+
+    .theme-entry .panel.without-header.with-triple-toolbar > .panel-toolbars
+    {
+        min-height: 70px;
+    }
+
+    .theme-entry .panel > .panel-body
+    {
+        border-style: solid;
+        border-width: 1px;
+        margin-top: 3px;
+        position: relative;
+        padding: 3px;
+    }
+
+    .theme-entry .panel.collapsed > .panel-body
+    {
+        display: none;
+    }
+
+    .theme-entry .panel.without-header.without-toolbar > .panel-body,
+    .theme-entry .panel.without-header.with-toolbar > .panel-body,
+    .theme-entry .panel.with-header.without-toolbar > .panel-body
+    {
+        margin-top: 0;
+    }
+
+    .theme-entry .panel.full > .panel-body
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .theme-entry .panel.without-header.without-toolbar.full > .panel-body
+    {
+        top: 0;
+    }
+
+    .theme-entry .panel.with-header.without-toolbar.full > .panel-body,
+    .theme-entry .panel.without-header.with-toolbar.full > .panel-body
+    {
+        top: 23px;
+    }
+
+    .theme-entry .panel.with-header.with-toolbar.full > .panel-body,
+    .theme-entry .panel.without-header.with-double-toolbar.full > .panel-body
+    {
+        top: 50px;
+    }
+
+    .theme-entry .panel.with-header.with-double-toolbar.full > .panel-body,
+    .theme-entry .panel.without-header.with-triple-toolbar.full > .panel-body
+    {
+        top: 73px;
+    }
+
+    .theme-entry .panel.without-footer.full > .panel-body
+    {
+        bottom: 0;
+    }
+
+    .theme-entry .panel.with-footer.full > .panel-body
+    {
+        bottom: 24px;
+    }
+
+    .theme-entry .panel > .panel-body > .panel-body-m
+    {
+        position: relative;
+    }
+
+    .theme-entry .panel.full > .panel-body > .panel-body-m
+    {
+        bottom: 3px;
+        left: 3px;
+        position: absolute;
+        right: 3px;
+        top: 3px;
+    }
+
+    .theme-entry .panel.full > .panel-body > .panel-body-m > .panel-body-m-c
+    {
+        height: 100%;
+        position: relative;
+    }
+
+    .theme-entry .panel .panel-body-wrapper
+    {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .theme-entry .panel > .panel-footer
+    {
+        height: 24px;
+        position: relative;
+    }
+
+    .theme-entry .panel.without-footer > .panel-footer
+    {
+        display: none;
+    }
+
+    .theme-entry .panel.with-footer > .panel-footer
+    {
+        display: block;
+    }
+
+    .theme-entry .panel.with-footer.full > .panel-footer
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    .theme-entry .panel-header-wrapper .panel-header-icon.workflow
+    {
+        background-image: url(../Platinum/Images/Icons/Default16px.png);
+    }
+    /*#endregion Panel Styling */
+    /*#region Grid Styling */
+    col.hidden
+    {
+        display: none;
+    }
+
+    .theme-entry .grid
+    {
+        position: relative;
+    }
+
+    .theme-entry .grid.full
+    {
+        height: 100%;
+    }
+
+    .theme-entry .grid-header
+    {
+        border-style: solid;
+        border-width: 1px;
+        min-height: 22px;
+    }
+
+    .theme-entry .grid-header-wrapper
+    {
+        border-style: solid;
+        border-width: 1px;
+        min-height: 20px;
+        position: relative;
+    }
+
+    .theme-entry .grid-header-wrapper .grid-header-text
+    {
+        cursor: default;
+        min-height: 20px;
+        padding: 0 20px 0 5px;
+    }
+
+
+    html[dir=rtl] .theme-entry .grid-header-wrapper .grid-header-text
+    {
+        padding: 0 5px 0 20px;
+    }
+
+    .theme-entry .grid-header-wrapper .grid-header-controls
+    {
+        background: none;
+        height: 20px;
+        padding: 0 0 0 3px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    html[dir=rtl] .theme-entry .grid-header-wrapper .grid-header-controls
+    {
+        left: 0;
+        padding: 0 3px 0 0;
+        right: auto;
+    }
+
+    .theme-entry .grid-header-wrapper .grid-header-controls a
+    {
+        background-repeat: no-repeat;
+        display: block;
+        float: left;
+        height: 15px;
+        margin: 2px;
+        width: 15px;
+    }
+
+    .theme-entry .grid-header-wrapper .grid-header-controls a span
+    {
+        display: none;
+    }
+
+    .theme-entry .grid-toolbars
+    {
+        overflow: hidden;
+    }
+
+    .theme-entry .grid.without-toolbar .grid-toolbars
+    {
+        display: none;
+    }
+
+    .theme-entry .grid.with-header.with-toolbar .grid-toolbars .toolbars,
+    .theme-entry .grid.with-header.with-double-toolbar .grid-toolbars .toolbars
+    {
+        border-top-width: 0;
+    }
+
+    .theme-entry .grid .grid-body
+    {
+        position: relative;
+        border-style: solid;
+        border-width: 1px;
+        margin-top: 3px;
+        overflow: hidden;
+    }
+
+    .theme-entry .grid.without-header.without-toolbar .grid-body
+    {
+        margin-top: 0;
+    }
+
+    .theme-entry .grid .grid-column-headers
+    {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        min-height: 22px;
+        text-transform: none; //override of Designer styles
+    }
+
+    .theme-entry .grid .grid-column-headers-wrapper
+    {
+        border-style: solid;
+        border-width: 1px;
+        position: relative;
+    }
+
+    .theme-entry .grid table.grid-column-header-table,
+    .theme-entry .grid table.grid-content-table,
+    .theme-entry .grid table.grid-summary-content-table,
+    .theme-entry .grid table.grid-edit-templates-table,
+    .theme-entry .grid table.grid-display-templates-table
+    {
+        table-layout: fixed;
+        width: 100%;
+        outline: none;
+    }
+
+    .theme-entry .grid table.grid-column-header-table
+    {
+        position: relative;
+    }
+
+    .theme-entry .grid table.grid-column-header-table td
+    {
+        padding: 0;
+    }
+
+    .theme-entry .grid table.grid-column-header-table td.hidden,
+    .theme-entry .grid table.grid-content-table td.hidden,
+    .theme-entry .grid table.grid-content-table td.hidden,
+    .theme-entry .grid table.grid-edit-templates-table td.hidden,
+    .theme-entry .grid table.grid-display-templates-table td.hidden,
+    .theme-entry .grid table.grid-summary-content-table td.hidden
+    {
+        display: none;
+    }
+
+    .theme-entry .grid .grid-column-header-cell
+    {
+        cursor: default;
+        height: 100%;
+        min-height: 20px;
+        overflow: hidden;
+        position: relative;
+        padding: 0 4px;
+    }
+
+    .theme-entry .grid .grid-column-header-cell-wrapper
+    {
+        display: table;
+        height: 100%;
+        min-height: 20px;
+        width: inherit;
+    }
+
+    .theme-entry .grid .grid-column-header-cell-content
+    {
+        display: table-cell;
+        min-height: 20px;
+        vertical-align: middle;
+        width: inherit;
+    }
+
+    .theme-entry .grid .grid-column-header-cell-wrapper,
+    .theme-entry .grid .grid-column-header-cell.asc,
+    .theme-entry .grid .grid-column-header-cell.desc
+    {
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        background-position: 50% 1px;
+        width: 100%;
+    }
+
+    .theme-entry .grid .grid-column-header-text
+    {
+        cursor: default;
+        overflow: hidden;
+        position: relative;
+        -moz-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: inherit;
+    }
+
+    html[dir=rtl] .theme-entry .grid .grid-column-header-text
+    {
+        padding: 0 2px 0 4px;
+    }
+
+    .theme-entry div.grid-column-header-text.LabelWrap
+    {
+        height: auto; /*Fix List view column header label alignment and font weight when Wrap Text is enabled - Code Fix 952404*/
+        -ms-text-overflow: clip;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        white-space: normal;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .theme-entry .grid .grid-column-header-divider
+    {
+        border-style: solid;
+        border-width: 0 1px;
+        cursor: col-resize;
+        display: inline-block;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0;
+    }
+
+    .theme-entry .grid table.grid-column-header-table td:hover .grid-column-header-divider
+    {
+        z-index: 10;
+    }
+
+    html[dir=rtl] .theme-entry .grid .grid-column-header-divider
+    {
+        left: 0;
+        right: auto;
+    }
+
+    .theme-entry .grid table.grid-column-header-table td.last .grid-column-header-divider
+    {
+        display: none;
+    }
+
+    .theme-entry .grid table.grid-column-header-table td.not-resizable .grid-column-header-divider
+    {
+        cursor: default;
+    }
+
+    .theme-entry .grid.full .grid-body
+    {
+        bottom: 0;
+        left: 0;
+        margin-top: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+    }
+
+    .theme-entry .grid.without-header.without-toolbar.full .grid-body
+    {
+        top: 0;
+    }
+
+    .theme-entry .grid.with-header.without-toolbar.full .grid-body, .theme-entry .grid.without-header.with-toolbar.full .grid-body
+    {
+        top: 27px;
+    }
+
+    .theme-entry .grid.with-header.with-toolbar.full .grid-body, .theme-entry .grid.without-header.with-double-toolbar.full .grid-body
+    {
+        top: 50px;
+    }
+
+    .theme-entry .grid.with-header.with-double-toolbar.full .grid-body, .theme-entry .grid.without-header.with-triple-toolbar.full .grid-body
+    {
+        top: 73px;
+    }
+
+    .theme-entry .grid.with-aggregation.full .grid-body, .theme-entry .grid.with-footer.full .grid-body
+    {
+        bottom: 25px;
+    }
+
+    .theme-entry .grid.with-aggregation.with-footer.full .grid-body
+    {
+        bottom: 27px;
+    }
+
+    .theme-entry .grid .grid-body-content
+    {
+        border-style: solid;
+        border-width: 1px;
+        position: relative;
+    }
+
+    .theme-entry .grid.full .grid-body-content
+    {
+        position: absolute;
+        top: 23px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    .theme-entry .grid .grid-body-content-wrapper
+    {
+        position: relative;
+    }
+
+    .theme-entry .grid.full .grid-body-content-wrapper
+    {
+        overflow: auto;
+        height: 100%;
+    }
+
+    .theme-entry .grid table.grid-content-table > tbody > tr,
+    .theme-entry .grid table.grid-content-table > tr
+    {
+        cursor: default;
+        height: 23px;
+    }
+
+    .theme-entry .grid table.grid-content-table > tbody > tr > td,
+    .theme-entry .grid table.grid-content-table > tr > td
+    {
+        padding: 0;
+        vertical-align: top;
+    }
+
+    .theme-entry .grid:not(.allow-cell-content-selection) table.grid-content-table > tbody > tr > td,
+    .theme-entry .grid:not(.allow-cell-content-selection) table.grid-content-table > tr > td
+    {
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .theme-entry .grid table.grid-content-table td.left-align
+    {
+        text-align: left;
+    }
+
+    .theme-entry .grid table.grid-content-table td.center-align
+    {
+        text-align: center;
+    }
+
+    .theme-entry .grid table.grid-content-table td.right-align
+    {
+        text-align: right;
+    }
+
+    .theme-entry .grid .grid-content-cell
+    {
+        text-align: inherit;
+        cursor: default;
+        height: 100%;
+        overflow: hidden;
+        width: inherit;
+    }
+
+    .theme-entry .grid.with-rownumbering .grid-content-table tr.empty-grid td,
+    .theme-entry .grid.with-rownumbering .grid-content-table tr.empty-grid:hover td,
+    .theme-entry .grid.with-rownumbering .grid-content-table td.empty-grid:first-child,
+    .theme-entry .grid.with-rownumbering .grid-content-table tr:hover td.empty-grid:first-child,
+    .theme-entry .grid .grid-content-table td.action-row:first-child,
+    .theme-entry .grid .grid-content-table tr.action-row:hover td.action-row
+    {
+        background-color: transparent;
+        width: 100% !important;
+    }
+
+    .theme-entry .grid-aggregation-content-table td:first-child
+    {
+        width: 56px;
+    }
+
+    .theme-entry .grid.with-rownumbering .grid-column-header-table td:first-child,
+    .theme-entry .grid.with-rownumbering .grid-content-table td:first-child
+    {
+        text-align: right;
+    }
+
+    html[dir=rtl] .theme-entry .grid.with-rownumbering .grid-column-header-table td:first-child,
+    html[dir=rtl] .theme-entry .grid.with-rownumbering .grid-content-table td:first-child
+    {
+        text-align: left;
+    }
+
+    .theme-entry .grid .grid-content-cell-wrapper
+    {
+        padding: 5px 2px;
+        text-align: inherit;
+        -o-text-overflow: ellipsis;
+        -icab-text-overflow: ellipsis;
+        -khtml-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+
+    .theme-entry .grid .grid-content-cell-wrapper > span
+    {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .theme-entry .grid .grid-content-cell.numeric .grid-content-cell-wrapper
+    {
+        text-align: right;
+    }
+
+    html[dir=rtl] .theme-entry .grid .grid-content-cell.numeric .grid-content-cell-wrapper
+    {
+        text-align: left;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon .grid-content-cell-wrapper
+    {
+        padding-left: 22px;
+        position: relative;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon .grid-content-cell-wrapper:before
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 3px;
+        left: 3px;
+    }
+
+    html[dir=rtl] .theme-entry .grid .grid-content-cell.icon .grid-content-cell-wrapper
+    {
+        padding-left: 2px;
+        padding-right: 22px;
+    }
+
+    html[dir=rtl] .theme-entry .grid .grid-content-cell.icon .grid-content-cell-wrapper:before
+    {
+        left: unset;
+        right: 3px;
+    }
+    /*Runtime User Filter Dialog -- Hide X & display the SetAsDefault Icon*/
+    .theme-entry #filterNameList table.grid-content-table td:last-child label:not(:empty)
+    {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+
+    .theme-entry .grid table.grid-content-table tr.nowrap td
+    {
+        height: 23px;
+    }
+
+    .theme-entry .grid table.grid-content-table tr.nowrap .grid-content-cell
+    {
+        height: inherit;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        -icab-text-overflow: ellipsis;
+        -khtml-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: inherit;
+    }
+
+    .theme-entry .grid .grid-content-cell.edit-mode .grid-content-cell-wrapper
+    {
+        padding: 1px 2px 1px 1px;
+    }
+
+    .theme-entry .grid .grid-content-cell.checkradio-cell .grid-content-cell-wrapper
+    {
+        padding: 1px 2px 1px 1px;
+        text-align: center;
+    }
+
+    .theme-entry .grid .grid-content-cell.checkradio-cell .input-control.checkbox
+    {
+        margin-right: 2px;
+    }
+
+    .theme-entry .grid table.grid-content-table
+    {
+        border-collapse: separate;
+    }
+
+    .theme-entry .grid-content-table tbody tr td
+    {
+        border-bottom: 1px dotted transparent;
+        border-top: 1px dotted transparent;
+    }
+
+    .theme-entry .grid-content-table tbody tr.highlighted > td
+    {
+        border-bottom-width: 1px;
+        border-top-width: 1px;
+        border-bottom-style: dotted;
+        border-top-style: dotted;
+    }
+
+    .theme-entry .grid-content-table tbody tr.highlighted td.first
+    {
+        border-left-width: 1px;
+        border-left-style: dotted;
+    }
+
+    .theme-entry .grid-content-table tbody tr.highlighted td.last
+    {
+        border-right-width: 1px;
+        border-right-style: dotted;
+    }
+
+    .theme-entry .grid table.grid-content-table td.action-row,
+    .theme-entry .grid table.grid-content-table td.empty-grid
+    {
+        width: 100% !important;
+    }
+
+    .theme-entry .grid.with-rownumbering table.grid-content-table td.action-row
+    {
+        text-align: left;
+        width: inherit;
+    }
+
+    html[dir=rtl] .theme-entry .grid.with-rownumbering table.grid-content-table td.action-row
+    {
+        text-align: right;
+    }
+
+    .theme-entry .grid .grid-footer
+    {
+        min-height: 25px;
+        position: relative;
+    }
+
+    .theme-entry .grid.with-aggregation.with-footer .grid-footer
+    {
+        margin-top: 3px;
+    }
+
+    .theme-entry .grid.with-aggregation.with-footer .grid-footer .toolbars
+    {
+        border-top-width: 1px;
+    }
+
+    .theme-entry .grid.with-footer .grid-footer
+    {
+        display: block;
+    }
+
+    .theme-entry .grid .grid-footer .toolbars
+    {
+        border-top-width: 0;
+    }
+
+    .theme-entry .grid .grid-footer .toolbars a.toolbar-button
+    {
+        border: 1px dotted transparent;
+        display: block;
+        float: left;
+        min-height: 18px;
+        text-decoration: none;
+    }
+
+    html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button
+    {
+        float: right;
+    }
+
+    .theme-entry .grid .grid-footer .toolbars a.toolbar-button span
+    {
+        display: block;
+        float: left;
+        min-height: 18px;
+    }
+
+    .theme-entry .grid .grid-footer .toolbars a.toolbar-button span.button-icon
+    {
+        background-repeat: no-repeat;
+        height: 16px;
+        margin: 1px;
+        width: 16px;
+    }
+
+    .theme-entry .grid.with-footer.full .grid-footer
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    .theme-entry .grid.without-footer .grid-footer
+    {
+        display: none;
+    }
+
+    .theme-entry .grid.with-aggregation .grid-aggregation
+    {
+        border-style: solid;
+        border-width: 0 1px 1px 1px;
+    }
+
+    .theme-entry .grid.with-aggregation.full .grid-aggregation
+    {
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+    }
+
+    .theme-entry .grid.without-aggregation .grid-aggregation
+    {
+        display: none;
+    }
+
+    .theme-entry .grid-aggregation-header
+    {
+        height: 22px;
+    }
+
+    .theme-entry .grid-aggregation-header-c
+    {
+        border-style: solid;
+        border-width: 1px;
+        height: 20px;
+    }
+
+    .theme-entry .grid-aggregation-header-arrow
+    {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        height: 20px;
+        position: absolute;
+        width: 7px;
+        right: 5px;
+    }
+
+    .theme-entry .grid-aggregation-header-link
+    {
+        display: block;
+        height: 20px;
+    }
+
+    .theme-entry .grid-aggregation.expanded .grid-aggregation-header-link
+    {
+        left: 0;
+        right: 0;
+    }
+
+    .theme-entry .grid-aggregation-header-text
+    {
+        padding-left: 5px;
+    }
+
+    .theme-entry .grid-aggregation .grid-aggregation-content
+    {
+        border-top-style: solid;
+        border-top-width: 1px;
+    }
+
+    .theme-entry .grid-aggregation.collapsed .grid-aggregation-content
+    {
+        display: none;
+    }
+
+    .theme-entry .grid-aggregation-content-m
+    {
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .theme-entry .grid-aggregation-content-table
+    {
+        width: 100%;
+    }
+
+    .theme-entry .grid-aggregation-content-table td
+    {
+        padding: 5px;
+        text-align: right;
+    }
+
+    html[dir=rtl] .theme-entry .grid-aggregation-content-table td
+    {
+        text-align: left;
+    }
+
+    .theme-entry .grid.with-summary .grid-summary
+    {
+        border-style: solid;
+        border-width: 1px;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-bottom-width: 0;
+    }
+
+    .theme-entry .grid.with-summary.gridSummaryNeedLeftBorder .grid-summary
+    {
+        border-left-width: 1px;
+    }
+
+    .theme-entry .grid.with-summary.gridSummaryNeedRightBorder .grid-summary
+    {
+        border-right-width: 1px;
+    }
+
+    .theme-entry .grid.with-summary.gridSummaryNeedBottomBorder .grid-summary
+    {
+        border-bottom-width: 1px;
+    }
+
+    .theme-entry .grid.with-summary.gridSummaryNeedTopBorder .grid-body-content
+    {
+        border-bottom: 0px;
+    }
+
+    .theme-entry .grid.with-summary.gridSummaryNeedBottomBorder .grid-body-content
+    {
+        border-bottom: 0px;
+    }
+
+    .theme-entry .grid.with-summary.full .grid-summary
+    {
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+    }
+
+    .theme-entry .grid.without-summary .grid-summary
+    {
+        display: none;
+    }
+
+    .theme-entry .grid-summary .grid-summary-item
+    {
+        border-top-style: solid;
+        border-top-width: 1px;
+    }
+
+    .theme-entry .grid-summary .grid-summary-item:first-child
+    {
+        border-top: none;
+    }
+
+    .theme-entry .grid-summary .grid-summary-item-wrapper
+    {
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .theme-entry .grid .grid-paging-control,
+    .dt-listview .grid-paging-control
+    {
+        float: left;
+        margin-top: 1px;
+    }
+
+    html[dir=rtl] .theme-entry .grid .grid-paging-control,
+    html[dir=rtl] .dt-listview .grid-paging-control
+    {
+        float: right;
+    }
+
+    .theme-entry .grid .grid-paging-control-text,
+    .dt-listview .grid-paging-control-text
+    {
+        float: left;
+        padding: 2px 3px;
+    }
+
+    html[dir=rtl] .theme-entry .grid .grid-paging-control-text,
+    html[dir=rtl] .dt-listview .grid-paging-control-text
+    {
+        float: right;
+    }
+
+    .theme-entry .grid .grid-paging-control .input-control.text-input,
+    .dt-listview .grid-paging-control .input-control.text-input
+    {
+        width: 40px;
+        float: left;
+    }
+
+    html[dir=rtl] .theme-entry .grid .grid-paging-control .input-control.text-input,
+    html[dir=rtl] .dt-listview .grid-paging-control .input-control.text-input
+    {
+        float: right;
+    }
+
+    .theme-entry .grid .grid-paging-control .input-control.text-input input,
+    .dt-listview .grid-paging-control .input-control.text-input input
+    {
+        text-align: right;
+    }
+
+    html[dir=rtl] .theme-entry .grid .grid-paging-control .input-control.text-input input,
+    html[dir=rtl] .dt-listview .grid-paging-control .input-control.text-input input
+    {
+        text-align: left;
+    }
+
+    .theme-entry .grid-column-drag-divider
+    {
+        position: absolute;
+        top: 1px;
+        bottom: 1px;
+        width: 3px;
+        cursor: col-resize;
+    }
+
+    .theme-entry .grid-hidden-column
+    {
+        display: none;
+    }
+
+    .theme-entry .grid.hide-column-headers .grid-column-headers
+    {
+        display: none;
+    }
+
+    .theme-entry .grid.full.hide-column-headers .grid-body-content
+    {
+        top: 0;
+    }
+
+    .theme-entry .grid .grid-edit-templates,
+    .theme-entry .grid .grid-display-templates
+    {
+        display: none;
+    }
+
+    .theme-entry .grid .grid-content-cell-wrapper .multiline-cell-icon
+    {
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        margin-top: 4px;
+        padding-left: 22px;
+    }
+
+    .theme-entry .grid .grid-content-cell-wrapper .multiline-cell-icon:first-child
+    {
+        margin-top: 0;
+    }
+
+    .theme-entry .grid .grid-content-cell-wrapper .multiline-cell-icon.service-method
+    {
+        background-image: url(../Platinum/Images/Icons/ServiceMethod16.png);
+    }
+
+    .theme-entry .grid .grid-content-cell-wrapper .multiline-cell-icon.service-instance
+    {
+        background-image: url(../Platinum/Images/Icons/ServiceInstance16.png);
+    }
+
+    .theme-entry .grid.collapsed .grid-toolbars,
+    .theme-entry .grid.collapsed .grid-body,
+    .theme-entry .grid.collapsed .grid-summary,
+    .theme-entry .grid.collapsed .grid-footer
+    {
+        display: none;
+    }
+    /*#endregion Grid Styling */
+    /*#region Popup Styling */
+    .theme-entry .popup
+    {
+        max-height: 100%;
+        max-width: 100%;
+        position: absolute;
+    }
+
+    .theme-entry .popup-header
+    {
+        border-style: solid;
+        border-width: 2px 2px 0 2px;
+        -moz-box-shadow: 5px 5px 5px #888;
+        -webkit-box-shadow: 5px 5px 5px #888;
+        box-shadow: 5px 5px 5px #888;
+        height: 24px;
+    }
+
+    .theme-entry .popup-header-c
+    {
+        height: 24px;
+    }
+
+    .theme-entry .popup-header-wrapper
+    {
+        height: 24px;
+    }
+
+    .theme-entry .popup-header-text
+    {
+        float: left;
+        height: 24px;
+        padding-left: 5px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        -icab-text-overflow: ellipsis;
+        -khtml-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        left: 0;
+        right: 44px;
+        position: absolute;
+    }
+
+    html[dir=rtl] .theme-entry .popup-header-text
+    {
+        float: right;
+        left: 44px;
+        padding-right: 5px;
+        right: 0;
+    }
+
+    .theme-entry .popup-header-buttons
+    {
+        float: right;
+    }
+
+    html[dir=rtl] .theme-entry .popup-header-buttons
+    {
+        float: left;
+    }
+
+    .theme-entry .popup-header-button-bar
+    {
+        position: relative;
+        overflow: hidden;
+        width: auto;
+        height: 24px;
+        float: right;
+    }
+
+    html[dir=rtl] .theme-entry .popup-header-button-bar
+    {
+        float: left;
+    }
+
+    .theme-entry .popup-header-button-bar-wrapper
+    {
+        width: auto;
+        height: 24px;
+    }
+
+    html[dir=rtl] .theme-entry .popup-header-button-bar-wrapper
+    {
+        /*-moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);*/
+    }
+
+    .theme-entry .popup-header-buttons a
+    {
+        display: block;
+        float: left;
+        width: 21px;
+        height: 21px;
+        text-decoration: none;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        background-color: transparent;
+        cursor: pointer;
+        margin-left: 1px;
+    }
+
+    html[dir=rtl] .theme-entry .popup-header-buttons a
+    {
+        float: right;
+    }
+
+    .theme-entry .popup-header-buttons a:hover,
+    .theme-entry .popup-header-buttons a:focus
+    {
+        background-position: 0 0;
+    }
+
+    .theme-entry .popup-header-buttons a span
+    {
+        width: 21px;
+        height: 21px;
+        display: block;
+    }
+
+    .theme-entry .popup-body
+    {
+        position: absolute;
+        overflow: hidden;
+        top: 26px;
+        left: 0;
+        right: 0;
+        bottom: 28px;
+        border-style: solid;
+        border-width: 0 2px 2px 2px;
+        -moz-box-shadow: 5px 5px 5px #888;
+        -webkit-box-shadow: 5px 5px 5px #888;
+        box-shadow: 5px 5px 5px #888;
+    }
+
+    .theme-entry .popup-body-c
+    {
+        position: absolute;
+        overflow: hidden;
+        top: 3px;
+        bottom: 3px;
+        left: 3px;
+        right: 3px;
+    }
+
+    .theme-entry .popup-footer
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+    }
+
+    .theme-entry .popup-footer-c
+    {
+        border-style: solid;
+        border-width: 0 2px 2px 2px;
+        -moz-box-shadow: 5px 5px 5px #888;
+        -webkit-box-shadow: 5px 5px 5px #888;
+        box-shadow: 5px 5px 5px #888;
+        float: right;
+        padding: 0 0 3px 0;
+    }
+
+    html[dir=rtl] .theme-entry .popup-footer-c
+    {
+        float: left;
+    }
+
+    .theme-entry .popup-footer-c,
+    .theme-entry .popup .popup-footer .button-bar-wrapper
+    {
+        display: table;
+        border-spacing: 3px 0;
+    }
+
+    .theme-entry .popup-footer-c a.button,
+    .theme-entry .popup .popup-footer .button-bar-wrapper a.button
+    {
+        display: table-cell;
+        /*get around bug with IE9 that won't render the border if combined with table-cell and using a filter*/
+        position: relative;
+    }
+
+    .theme-entry .popup-body-content
+    {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    html.mobile .theme-entry .popup-body-content .wrapper
+    {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .theme-entry .popup.no-buttons .popup-body
+    {
+        bottom: 8px;
+    }
+
+    .theme-entry .popup.no-buttons .popup-footer
+    {
+        display: none;
+    }
+
+    .theme-entry .dialog.credentialsPopupDialog
+    {
+        width: 400px;
+        height: 214px;
+    }
+
+    .theme-entry .dialog.credentialsPopupDialog .SignInForm
+    {
+        height: 159px;
+    }
+
+    .theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-label
+    {
+        width: 139px;
+    }
+
+    .theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-element-wrapper
+    {
+        margin-left: 144px;
+    }
+
+    html[dir=rtl] .theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-element-wrapper
+    {
+        margin-right: 144px;
+    }
+
+    .theme-entry .dialog.credentialsPopupDialog .loginButtonWrapper
+    {
+        width: 100%;
+        text-align: right;
+    }
+
+    html[dir=rtl] .theme-entry .dialog.credentialsPopupDialog .loginButtonWrapper
+    {
+        text-align: left;
+    }
+
+    .theme-entry .dialog.credentialsPopupDialog .credentialsRequiredReason
+    {
+        height: 30px;
+        margin-bottom: 9px;
+        margin-top: 5px;
+        overflow: hidden;
+        padding-left: 5px;
+        text-align: left;
+    }
+
+    html[dir=rtl] .theme-entry .dialog.credentialsPopupDialog .credentialsRequiredReason
+    {
+        padding-right: 5px;
+        text-align: right;
+    }
+
+    .theme-entry .message-box-content
+    {
+        min-height: 80px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        background-position: 7px 6px;
+    }
+
+    html[dir=rtl] .theme-entry .message-box-content
+    {
+        background-position: 98% 6px;
+    }
+
+    .theme-entry .message-box-content > .panel.full
+    {
+        margin-left: 49px;
+        width: auto;
+        height: 100%;
+    }
+
+    html[dir=rtl] .theme-entry .message-box-content > .panel.full
+    {
+        margin-left: 0;
+        margin-right: 49px;
+    }
+
+    .theme-entry .message-box-content.confirmation > .panel.full
+    {
+        margin-left: 0;
+    }
+
+    .theme-entry .message-box-content.no-left-panel > .panel.full
+    {
+        margin-left: 0;
+    }
+
+    .theme-entry .message-box-content .panel.without-header.full .panel-body
+    {
+        top: 0;
+    }
+
+    .theme-entry .message-box-content .panel.full .panel-body
+    {
+        top: 22px;
+    }
+
+    .theme-entry .message-box-content .panel-body-m-c
+    {
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-top: 2px;
+    }
+
+    .theme-entry #SessionExpirationWarningDialog label.input-control.checkbox
+    {
+        bottom: 2px;
+        position: absolute;
+    }
+
+    html[dir=ltr] .theme-entry #SessionExpirationWarningDialog label.input-control.checkbox
+    {
+        margin-left: -3px; /*compensate for the checkbox image whitespace*/
+        left: 0;
+    }
+
+    html[dir=rtl] .theme-entry #SessionExpirationWarningDialog label.input-control.checkbox
+    {
+        right: 0;
+        margin-right: -3px; /*compensate for the checkbox image whitespace*/
+    }
+    /*#endregion Popup Styling */
+    /*#region Menu Styling */
+    .theme-entry .menu
+    {
+        border-style: solid;
+        border-width: 1px;
+        position: absolute;
+        padding: 2px;
+        visibility: hidden;
+        -moz-box-shadow: 5px 5px 5px #888;
+        -webkit-box-shadow: 5px 5px 5px #888;
+        box-shadow: 5px 5px 5px #888;
+    }
+
+    .theme-entry .menu ul
+    {
+        background: transparent none repeat scroll 0%;
+        border: 0 none;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .theme-entry .menu li
+    {
+        display: block;
+        padding: 1px;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        white-space: nowrap;
+    }
+
+    .theme-entry .menu li:hover,
+    .theme-entry .menu li.active
+    {
+        border-style: solid;
+        border-width: 1px;
+        padding: 0;
+    }
+
+    .theme-entry .menu li.disabled,
+    .theme-entry .menu li.disabled:hover
+    {
+        background-color: transparent;
+        border: none;
+        cursor: default;
+        opacity: 0.3;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+        padding: 1px;
+    }
+
+    .theme-entry .menu li.seperator
+    {
+        margin-left: 23px;
+    }
+
+    .theme-entry .menu li.seperator:hover
+    {
+        background: none;
+        border: none;
+        padding: 1px;
+    }
+
+    .theme-entry .menu li.seperator span
+    {
+        border-style: solid;
+        border-width: 1px 0;
+        display: block;
+        margin: 2px 3px;
+        overflow: hidden;
+    }
+
+    .theme-entry .menu a.menu-item
+    {
+        cursor: pointer;
+        display: block;
+        outline: 0pt none invert;
+        padding: 3px 21px 3px 3px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .theme-entry .menu a.menu-item.children
+    {
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+
+    .theme-entry .menu a.menu-item span.menu-item-icon
+    {
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        border: 0pt none;
+        height: 16px;
+        margin: 0pt 8px 0pt 0pt;
+        padding: 0;
+        vertical-align: top;
+        width: 16px;
+        display: block;
+        float: left;
+    }
+
+    .theme-entry .menu a.menu-item .menu-item-text
+    {
+        padding-left: 3px;
+    }
+
+    .theme-entry .menu li.disabled a.menu-item,
+    .theme-entry .menu li.disabled:hover a.menu-item
+    {
+        cursor: default;
+    }
+
+    .theme-entry .menu a.menu-item.disabled
+    {
+        opacity: 0.3;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+        cursor: default;
+    }
+    /*#endregion Menu Styling */
+    /*#region Tab Styling */
+
+    .theme-entry
+    {
+        .tab-box
+        {
+            position: relative;
+        }
+
+        .tab-box.full
+        {
+            height: 100%;
+        }
+
+        ul.tab-box-tabs
+        {
+            border-style: solid;
+            height: 23px;
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tab-box.tabs-top ul.tab-box-tabs
+        {
+            border-width: 0 0 1px 0;
+            position: relative;
+        }
+
+        .tabs-top.with-header ul.tab-box-tabs
+        {
+            margin-top: 0;
+        }
+
+        .tabs-bottom ul.tab-box-tabs
+        {
+            border-width: 1px 0 0 0;
+            margin-top: -1px;
+            position: relative;
+        }
+
+        .tab-box.full.tabs-bottom ul.tab-box-tabs
+        {
+            bottom: 0;
+            left: 0;
+            margin-top: 0;
+            position: absolute;
+            right: 0;
+        }
+
+        .tab-box.hide-tabs ul.tab-box-tabs
+        {
+            display: none;
+        }
+
+        .tab-box ul.tab-box-tabs li
+        {
+            display: inline-block;
+            vertical-align: bottom; //tabs are always on top in runtime.
+            margin: 0 1px 0 0;
+            padding: 0;
+
+            html[dir=rtl] &
+            {
+                margin: 0 0 0 1px;
+            }
+        }
+
+        .tab-box.tabs-bottom ul.tab-box-tabs li
+        {
+            vertical-align: top; //tabs are always on top in runtim, but just in case.
+        }
+
+        a.tab
+        {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            height: 22px;
+            border-style: solid;
+            border-width: 1px 1px 0;
+
+            &.selected
+            {
+                height: 22px;
+
+                .tab-wrapper
+                {
+                    margin-bottom: -1px; //when selected, move the tab over the bottom border.
+                    padding-bottom: 1px;
+                    height: 20px;
+                    border-bottom: 1px solid transparent;
+                }
+            }
+        }
+
+        .tab-box.tabs-bottom
+        {
+            a.tab
+            {
+                border-width: 0 1px 1px;
+
+                &.selected
+                {
+                    border-top-width: 0;
+                }
+            }
+        }
+
+        .tab-wrapper
+        {
+            padding: 0 5px;
+            height: 22px;
+            display: inline-flex;
+            align-items: center;
+            border-style: solid;
+            border-width: 1px;
+            border-top: 0px;
+            border-bottom: 0px;
+        }
+
+        .tab-text
+        {
+            order: 1;
+
+            html[dir=rtl] &
+            {
+                order: 3;
+            }
+        }
+
+        .tab-icon
+        {
+            order: 2;
+
+            html[dir=rtl] &
+            {
+                order: 2;
+            }
+        }
+
+        .tab-control
+        {
+            order: 3;
+
+            html[dir=rtl] &
+            {
+                order: 1;
+            }
+        }
+
+
+        .tab-text
+        {
+            flex-grow: 1;
+        }
+
+        .tab-icon
+        {
+            flex-shrink: 0;
+        }
+
+        .tab-control
+        {
+            flex-shrink: 0;
+        }
+
+        .tab-box.tabs-top
+        {
+            a.tab.selected
+            {
+                border-bottom-width: 0;
+            }
+        }
+
+
+        .tab-text,
+        .tab-icon,
+        .tab-control
+        {
+            display: block;
+            margin-left: 5px;
+
+            html[dir=rtl] &
+            {
+                margin-left: 0;
+                margin-right: 5px;
+            }
+
+            &:first-child
+            {
+                margin-left: 0;
+
+                html[dir=rtl] &
+                {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .tab-icon
+        {
+            height: 16px;
+            width: 16px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: auto auto;
+        }
+
+        #FilterTabBox.tab-box ul.tab-box-tabs a.tab
+        {
+            .tab-icon
+            {
+                margin-left: 0;
+            }
+
+            .tab-text
+            {
+                margin-left: 0;
+                margin-right: 5px;
+            }
+        }
+
+        .tab-control.tab-remove
+        {
+            height: 6px;
+        }
+
+        .tab-box-header
+        {
+            border-style: solid;
+            border-width: 1px 1px 0 1px;
+            display: none;
+            height: 24px;
+            position: relative;
+        }
+
+        .tab-box.with-header .tab-box-header
+        {
+            display: block;
+        }
+
+        .tab-box.full.tabs-top.with-header .tab-box-header
+        {
+            position: absolute;
+            top: 21px;
+            left: 0;
+            right: 0;
+        }
+
+        .tab-box.with-header
+        {
+            .tab-box-header-c
+            {
+                border-style: solid;
+                border-width: 1px;
+                height: 22px;
+            }
+
+            .tab-box-header-wrapper
+            {
+                float: left;
+                padding-left: 7px;
+            }
+        }
+
+        .tab-box-body
+        {
+            border-style: solid;
+            position: relative;
+        }
+
+        .tab-box.tabs-top .tab-box-body
+        {
+            border-width: 0 1px 1px;
+        }
+
+        .tab-box.hide-tabs .tab-box-body
+        {
+            border-width: 1px;
+        }
+
+        .tab-box.full.tabs-top .tab-box-body
+        {
+            bottom: 0;
+            margin-top: 0;
+            position: absolute;
+            top: 24px;
+        }
+
+        .tab-box.tabs-bottom .tab-box-body
+        {
+            border-width: 1px 1px 0 1px;
+        }
+
+        .tab-box.tabs-top.with-header .tab-box-body
+        {
+            margin-top: 0;
+        }
+
+        .tab-box.full .tab-box-body
+        {
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+        .tab-box.full.tabs-top.with-header .tab-box-body
+        {
+            top: 45px;
+        }
+
+        .tab-box.full.tabs-bottom .tab-box-body
+        {
+            margin-top: 0;
+            bottom: 24px;
+            top: 0;
+        }
+
+        .tab-box.full.tabs-bottom.with-header .tab-box-body
+        {
+            top: 24px;
+        }
+
+        .tab-box.full.hide-tabs .tab-box-body
+        {
+            top: 0;
+            bottom: 0;
+        }
+
+        .tab-box-body-t,
+        .tab-box-body-m,
+        .tab-box-body-b
+        {
+            position: relative;
+        }
+
+        .tab-box.full .tab-box-body-m
+        {
+            bottom: 3px;
+            left: 3px;
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            padding: 0;
+        }
+
+        & > .tab-box .tab-box-body-m
+        {
+            margin: 0 -1px -1px;
+        }
+
+        .tab-box-body-m-c
+        {
+            position: relative;
+            height: 100%;
+        }
+
+        .tab-box.full .tab-box-body-m-c
+        {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0;
+        }
+
+        .tab-box-body-wrapper
+        {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .tab-content
+        {
+            position: relative;
+
+            &.full
+            {
+                height: 100%;
+            }
+        }
+
+        .tab-content-wrapper
+        {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+    /*#endregion Tab Styling */
+    /*#region PaneContainer & Pane Styling */
+    .theme-entry .pane-container
+    {
+        height: 100%;
+        position: relative;
+    }
+
+    .theme-entry .pane-container .pane,
+    .theme-entry .pane-container .divider
+    {
+        position: absolute;
+    }
+
+    .theme-entry .pane-container.horizontal > .pane,
+    .theme-entry .pane-container.horizontal > .divider
+    {
+        bottom: 0;
+        top: 0;
+    }
+
+    .theme-entry .pane-container.vertical > .pane,
+    .theme-entry .pane-container.vertical > .divider
+    {
+        left: 0;
+        right: 0;
+    }
+    /*#endregion PaneContainer & Pane Styling */
+    /*#region Spinner Control Styling */
+    .theme-entry .spinner,
+    .theme-entry .spinner-inputs,
+    .theme-entry .spinner-input-wrapper
+    {
+        display: inline-block;
+    }
+
+    .theme-entry .spinner-inputs
+    {
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .theme-entry .spinner-input-wrapper
+    {
+        border-width: 1px;
+        border-style: solid;
+        vertical-align: bottom;
+        height: 17px;
+    }
+
+    .theme-entry .spinner-text-input
+    {
+        border: none;
+        width: 17px;
+        float: left;
+        padding: 0;
+        margin: 0 0 0 2px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        outline: 0;
+    }
+
+    .theme-entry .spinner-text-input:first-child
+    {
+        margin-left: 4px;
+    }
+
+    .mozilla .theme-entry .spinner-text-input
+    {
+        margin-left: 1px;
+        padding-bottom: 1px;
+        padding-top: 1px;
+    }
+
+    .mozilla .theme-entry .spinner-text-input:first-child
+    {
+        margin-left: 3px;
+    }
+
+    .ie10 .theme-entry .spinner-text-input,
+    .ie-document-mode-10 .theme-entry .spinner-text-input
+    {
+        margin-left: 0;
+        margin-right: 1px;
+    }
+
+    .ie10 .theme-entry .spinner-text-input:first-child,
+    .ie-document-mode-10 .theme-entry .spinner-text-input:first-child
+    {
+        margin-left: 2px;
+    }
+
+    .theme-entry .spinner-text-input.right-align
+    {
+        text-align: right;
+        margin-left: 0;
+        margin-right: 2px;
+    }
+
+    .theme-entry .spinner-text-input.right-align:first-child
+    {
+        margin-left: 1px;
+    }
+
+    .mozilla .theme-entry .spinner-text-input.right-align
+    {
+        margin-right: 1px;
+    }
+
+    .mozilla .theme-entry .spinner-text-input.right-align:first-child,
+    .ie10 .theme-entry .spinner-text-input.right-align:first-child,
+    .ie-document-mode-10 .theme-entry .spinner-text-input.right-align:first-child
+    {
+        margin-left: 2px;
+    }
+
+    .theme-entry .spinner-delimiter
+    {
+        float: left;
+        position: relative;
+        top: 2px;
+    }
+
+    .mozilla .theme-entry .spinner-delimiter
+    {
+        top: 1px;
+    }
+
+    .theme-entry .spinner-buttons
+    {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .theme-entry .spinner-up-button,
+    .theme-entry .spinner-down-button
+    {
+        display: block;
+        border-style: solid;
+        background-size: auto auto;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        text-indent: -9999px;
+        width: 19px;
+    }
+
+    .theme-entry .spinner-up-button
+    {
+        border-width: 1px 1px 1px 0;
+        height: 11px;
+        background-image: url(../Platinum/Images/Arrows/black_arrow_up.gif);
+    }
+
+    .theme-entry .spinner-down-button
+    {
+        border-width: 0 1px 1px 0;
+        height: 10px;
+        background-image: url(../Platinum/Images/Arrows/black_arrow_down.gif);
+    }
+
+    .theme-entry .spinner-up-button:hover
+    {
+        background-image: url(../Platinum/Images/Arrows/white_arrow_up.gif);
+    }
+
+    .theme-entry .spinner-down-button:hover
+    {
+        background-image: url(../Platinum/Images/Arrows/white_arrow_down.gif);
+    }
+
+    .theme-entry .spinner.disabled .spinner-up-button,
+    .theme-entry .spinner.disabled .spinner-up-button:hover
+    {
+        background-image: url(../Platinum/Images/Arrows/grey_arrow_up.gif);
+        cursor: default !important;
+    }
+
+    .theme-entry .spinner.disabled .spinner-down-button,
+    .theme-entry .spinner.disabled .spinner-down-button:hover
+    {
+        background-image: url(../Platinum/Images/Arrows/grey_arrow_down.gif);
+        cursor: default !important;
+    }
+    /*#endregion Spinner Control Styling */
+    /*#region Calendar Popup Styling */
+    .theme-entry .calendar-outline
+    {
+        border-style: solid;
+        border-width: 1px;
+        position: absolute;
+        -moz-box-shadow: 5px 5px 5px #888;
+        -webkit-box-shadow: 5px 5px 5px #888;
+        box-shadow: 5px 5px 5px #888;
+        width: 165px;
+    }
+
+    .theme-entry .top-calendar
+    {
+        padding: 2px 2px 5px 2px;
+        position: relative;
+        text-align: center;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+    }
+
+    .theme-entry .top-calendar-left
+    {
+        position: absolute;
+        left: 2px;
+        width: 16px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: auto auto;
+        cursor: default;
+        text-decoration: none;
+        border: none;
+    }
+
+    .theme-entry .top-calendar-right
+    {
+        position: absolute;
+        right: 2px;
+        width: 16px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: auto auto;
+        cursor: default;
+        text-decoration: none;
+        border: none;
+    }
+
+    .theme-entry .day.selected,
+    .theme-entry .month.selected,
+    .theme-entry .year.selected
+    {
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .theme-entry .today-title
+    {
+        cursor: pointer;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+    }
+
+    .theme-entry .today-title.disabled,
+    .theme-entry .today-title.disabled:hover,
+    .theme-entry .today-title.disabled:active
+    {
+        border: none;
+    }
+
+    .theme-entry .today-title.selected
+    {
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .theme-entry .calendar-content-outside
+    {
+        padding: 2px;
+        position: relative;
+        border-style: solid;
+        border-width: 0;
+    }
+
+    .theme-entry .week
+    {
+        position: relative;
+        min-width: 161px;
+        text-decoration: none;
+    }
+
+    .theme-entry .dayname,
+    .theme-entry .day,
+    .theme-entry .day:hover
+    {
+        border-style: solid;
+        border-width: 1px;
+        display: inline-block;
+        height: 17px;
+        padding: 0 2px;
+        position: relative;
+        text-align: center;
+        width: 17px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .theme-entry .day.today
+    {
+        text-decoration: none;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .theme-entry .dayname
+    {
+        cursor: default;
+    }
+
+    .theme-entry .month,
+    .theme-entry .year,
+    .theme-entry .month:hover,
+    .theme-entry .year:hover
+    {
+        height: 43px;
+        width: 38px;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .theme-entry .today-text
+    {
+        padding: 5px 2px 5px 2px;
+        position: relative;
+        border-style: solid;
+        border-width: 0;
+        text-align: center;
+    }
+    /*#endregion End of Calendar Popup Styling */
+    /*#region Time Picker Styling*/
+    .theme-entry .calendar-outline .timepicker-content .timepicker-spinner-label,
+    .theme-entry .calendar-outline .timepicker-content .spinner,
+    .theme-entry .calendar-outline .timepicker-content .timepicker-ok-button,
+    .theme-entry .calendar-outline .timepicker-content .timepicker-cancel-button
+    {
+        margin-left: 8px;
+    }
+
+    .theme-entry .calendar-outline .timepicker-content .timepicker-spinner-label
+    {
+        position: relative;
+        bottom: 5px;
+    }
+
+    .mozilla .theme-entry .calendar-outline .timepicker-content .timepicker-spinner-label
+    {
+        bottom: 2px;
+    }
+
+    .webkit.chrome .theme-entry .calendar-outline .timepicker-content .timepicker-spinner-label
+    {
+        bottom: 3px;
+    }
+
+    .theme-entry .calendar-outline .timepicker-content .spinner .spinner-input-wrapper
+    {
+        width: 90px;
+    }
+
+    .theme-entry .calendar-outline .timepicker-content .timepicker-ok-button,
+    .theme-entry .calendar-outline .timepicker-content .timepicker-cancel-button,
+    .theme-entry .calendar-outline .timepicker-content .timepicker-spinner-wrapper
+    {
+        margin-top: 8px;
+    }
+
+    .theme-entry .calendar-outline .timepicker-content .timepicker-ok-button,
+    .theme-entry .calendar-outline .timepicker-content .timepicker-cancel-button
+    {
+        margin-bottom: 6px;
+        width: 71px;
+    }
+
+    .mozilla .theme-entry .calendar-outline .timepicker-content .timepicker-ok-button,
+    .mozilla .theme-entry .calendar-outline .timepicker-content .timepicker-cancel-button
+    {
+        margin-bottom: 5px;
+    }
+
+    .webkit.chrome .theme-entry .calendar-outline .timepicker-content .timepicker-ok-button,
+    .webkit.chrome .theme-entry .calendar-outline .timepicker-content .timepicker-cancel-button
+    {
+        margin-bottom: 8px;
+    }
+
+    .theme-entry .calendar-outline .timepicker-content .timepicker-cancel-button
+    {
+        margin-left: 7px;
+    }
+    /*#endregion Time Picker Styling*/
+    /*#region Tooltip Styling */
+    .theme-entry .tooltip
+    {
+        border-width: 1px;
+        border-style: solid;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding: 0.8em;
+        width: auto;
+        max-width: 400px;
+        position: absolute;
+        z-index: 99999;
+    }
+
+    .theme-entry .tooltip .tooltip-pointer,
+    .theme-entry .tooltip .tooltip-pointer-inner
+    {
+        width: 0;
+        height: 0;
+        position: absolute;
+    }
+
+    .theme-entry .tooltip.pointer-down .tooltip-pointer,
+    .theme-entry .tooltip.pointer-down .tooltip-pointer-inner
+    {
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 0;
+    }
+
+    .theme-entry .tooltip.pointer-down .tooltip-pointer
+    {
+        border-top-width: 14px;
+        border-top-style: solid;
+        bottom: -14px;
+        left: 50%;
+        margin-left: -7px;
+        right: auto;
+    }
+
+    .theme-entry .tooltip.pointer-down .tooltip-pointer-inner
+    {
+        border-top-width: 14px;
+        border-top-style: solid;
+        bottom: auto;
+        left: -7px;
+        top: -16px;
+    }
+
+    .theme-entry .tooltip.pointer-up .tooltip-pointer,
+    .theme-entry .tooltip.pointer-up .tooltip-pointer-inner
+    {
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 0;
+    }
+
+    .theme-entry .tooltip.pointer-up .tooltip-pointer
+    {
+        border-bottom-width: 14px;
+        border-bottom-style: solid;
+        top: -14px;
+        left: 50%;
+        margin-left: -7px;
+        right: auto;
+    }
+
+    .theme-entry .tooltip.pointer-up .tooltip-pointer-inner
+    {
+        border-bottom-width: 14px;
+        border-bottom-style: solid;
+        top: 2px;
+        left: -7px;
+    }
+
+    .theme-entry .tooltip.pointer-left .tooltip-pointer,
+    .theme-entry .tooltip.pointer-left .tooltip-pointer-inner
+    {
+        border-left: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+    }
+
+    .theme-entry .tooltip.pointer-left .tooltip-pointer
+    {
+        border-right-width: 14px;
+        border-right-style: solid;
+        left: -14px;
+        top: 50%;
+        margin-top: -7px;
+        bottom: auto;
+    }
+
+    .theme-entry .tooltip.pointer-left .tooltip-pointer-inner
+    {
+        border-right-width: 14px;
+        border-right-style: solid;
+        left: 2px;
+        top: -7px;
+    }
+
+    .theme-entry .tooltip.pointer-right .tooltip-pointer,
+    .theme-entry .tooltip.pointer-right .tooltip-pointer-inner
+    {
+        border-right: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+    }
+
+    .theme-entry .tooltip.pointer-right .tooltip-pointer
+    {
+        border-left-width: 14px;
+        border-left-style: solid;
+        right: -14px;
+        top: 50%;
+        margin-top: -7px;
+        bottom: auto;
+    }
+
+    .theme-entry .tooltip.pointer-right .tooltip-pointer-inner
+    {
+        border-left-width: 14px;
+        border-left-style: solid;
+        right: 2px;
+        top: -7px;
+    }
+    /*#endregion Tooltip Styling */
+    /*#region Modalizer Styling */
+    .base0
+    {
+        position: absolute;
+    }
+
+    .base2 /*fixed positioning to stretch entire screen size*/
+    {
+        position: fixed;
+    }
+
+    .base1
+    {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+    }
+
+    .modal-element.hidden
+    {
+        display: none !important;
+    }
+
+    .modalizer
+    {
+        background-image: url(../Platinum/Images/modalizer_spacer.png);
+    }
+
+    .modalizer.invisible-modalizer
+    {
+        background-image: url(../Platinum/Images/spacer.png);
+    }
+
+    .modalizer.invisible-modalizer .ajaxLoader
+    {
+        display: none;
+    }
+
+    .ajaxLoader
+    {
+        background-image: url(../Platinum/Images/Loaders/PreloaderGreen_32px.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+
+    .ajaxLoader.inner-modal,
+    .control-loading.inner-modal
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+
+    .control-loading
+    {
+        background-image: url("../Platinum/Images/Loaders/LightGeneric16.gif");
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+
+    .k2-overlay
+    {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .k2-overlay.k2-modal-overlay
+    {
+        background-image: url(../Platinum/Images/modalizer_spacer.png);
+    }
+
+    .k2-overlay .k2-overlay-icon
+    {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+
+    .theme-entry + .k2-overlay .k2-overlay-icon.loading
+    {
+        background-image: url(../Platinum/Images/Loaders/PreloaderGreen_32px.gif);
+    }
+    /*#endregion Modalizer Styling */
+    /*#region Mapping Section Styling */
+    .theme-entry .mapping-tree-section
+    {
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        position: absolute;
+        top: 0;
+        width: 300px;
+    }
+
+    .theme-entry .mapping-tree-section.rightAlign
+    {
+        left: auto;
+        right: 0;
+    }
+
+    .theme-entry .mapping-content-section
+    {
+        bottom: 0;
+        left: 303px;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .theme-entry .mapping-content-section.rightAlign
+    {
+        left: 0;
+        right: 303px;
+    }
+    /*#endregion Mapping Section Styling */
+
+    .theme-entry > form > div > .grid .grid-content-cell-wrapper > *:not(.hidden)
+    {
+        display: inline-block;
+        vertical-align: inherit;
+    }
+
+    .theme-entry > form > div > .grid .grid-content-cell-wrapper > table
+    {
+        display: table;
+    }
+
+    .theme-entry .editor-cell
+    {
+        -moz-user-select: none;
+        vertical-align: top;
+        overflow: hidden;
+    }
+
+    .theme-entry .editor-cell.empty
+    {
+        vertical-align: top;
+        overflow: hidden;
+    }
+
+    .theme-entry .editor-cell > *
+    {
+        display: inline-block;
+        vertical-align: inherit;
+    }
+    /* [889340] CSS fix
+
+    IE Only issue - Some controls need to have flex-basis been set when it is under a grid cell with display:flex.  Otherwise the control renders horribly and super slow in IE11.
+
+   This problem only occurs for Form designer where the CSS grid which has a special HTML structure that renders the drop area.
+   This IE issue seems to be a classic IE+flex issue. This fix is fairly easy - whenever the control's width is set - lets say to 70%, also set "flex-basis:70%" on the .form-control element.
+   The lesson here is that IE does not like flex containers having children with widths that just have a width set, they must also have flex-basis set too.
+
+   Ideally to fix this issue properly, we need find places where the width is set for the control (both client-side and server-side) and also set the "flex-basis" for the control.
+   However the proper approach is quite expensive and decided to take alternative approach with some sacrifice.
+
+   The hack fix is to set the flex-basis for those specific scenario to be 100%.  This will only impact the controls under the View instance preview in Form Designer.
+*/
+    .ie11 #CanvasPane.theme-entry .editor-grid > .editor-cell
+    {
+        & > .input-control.select-box, //Input controls like Calender control
+        & > .input-control.select-box.double-buttons, //Input controls with 2 buttons
+        & > .file-wrapper.preview,
+        & > .line-break,
+        & > .picker, //Picker control
+        & > .multi-select-outer-panel, //Multi-select control
+        & > .SourceCode-Forms-Controls-Web-ControlPack-Choice, //Choice control
+        & > .SFC.StandardGrid, //Reporting grid controls
+        & > .SFC.StandardChart, //Reporting chart controls
+        & > .SFC.ControlPack-Worklist //Worklist control
+        {
+            flex-basis: 100%;
+        }
+    }
+
+    .theme-entry .editor-cell > table
+    {
+        display: inline-table;
+    }
+
+    .theme-entry .editor-cell > .Grid-Layout
+    {
+        display: -ms-inline-grid;
+        display: inline-grid;
+    }
+
+    /*#region Tokenbox Styling */
+    .theme-entry
+    {
+        .token-input-editor-area
+        {
+            height: auto;
+            min-height: 100%;
+            outline: none;
+        }
+
+        .token-input-editor-area:focus,
+        .token-input-editor-area:active
+        {
+            outline: none;
+        }
+
+        .token-input.full-size
+        {
+            height: 100%;
+        }
+
+        .token-input.full-size .input-control-m,
+        .token-input.full-size .input-control-m-c
+        {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .token-input.single-line .input-control-m-c,
+        .token-input.single-line .token-input-editor-area
+        {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .token-input.single-line .token-input-editor-area
+        {
+            height: 18px;
+        }
+
+        .token-input.full-size .token-input-editor-area
+        {
+            height: 100%;
+        }
+
+        .token-input-editor-area p
+        {
+            margin-top: 0;
+        }
+
+        .token-input-watermark
+        {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            padding: 1px 4px;
+        }
+
+        .token-input-editor-area .editor-line
+        {
+            min-height: 18px;
+        }
+
+        .token-input
+        {
+            .entity
+            {
+                cursor: default;
+                margin: 0 2px;
+            }
+
+            .entity .entity-text
+            {
+                display: inline-block;
+                height: 18px;
+                padding-left: 4px;
+                padding-right: 4px;
+                border-radius: 2px;
+            }
+
+            .entity.icon .entity-text
+            {
+                background-position: 2px 50%;
+                background-repeat: no-repeat;
+                background-image: url(../Platinum/Images/Icons/Default16px.png);
+                background-size: auto auto;
+                padding-left: 20px;
+            }
+
+            .entity.icon.error .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Error16.png);
+                padding-right: 2px;
+            }
+
+            .entity.icon.objectproperty.error .entity-text,
+            .entity.icon.objectproperty.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/FieldTypes_Error16.png);
+            }
+
+            .entity.icon.control.error .entity-text,
+            .entity.icon.control.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Control_Error16.png);
+            }
+
+            .entity.icon.viewfield.error .entity-text,
+            .entity.icon.viewfield.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/FieldTypes_Error16.png);
+            }
+
+            .entity.icon.formparameter.error .entity-text,
+            .entity.icon.formparameter.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/FormParameter_Error16.png);
+            }
+
+            .entity.icon.viewparameter.error .entity-text,
+            .entity.icon.viewparameter.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/ViewParameter_Error16.png);
+            }
+
+            .entity.icon.expression.error .entity-text,
+            .entity.icon.expression.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/ExpressionError16.png);
+            }
+
+            .entity.icon.textFF.error .entity-text,
+            .entity.icon.textFF.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/TextFF16Error.png);
+            }
+
+            .entity.icon.text.error .entity-text,
+            .entity.icon.text.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Text16Error.png);
+            }
+
+            .entity.icon.dateFF.error .entity-text,
+            .entity.icon.date.error .entity-text,
+            .entity.icon.dateFF.missing .entity-text,
+            .entity.icon.date.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Date16Error.png);
+            }
+
+            .entity.icon.date-timeFF.error .entity-text,
+            .entity.icon.date-time.error .entity-text,
+            .entity.icon.date-timeFF.missing .entity-text,
+            .entity.icon.date-time.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/DateTime16Error.png);
+            }
+
+            .entity.icon.decimalFF.error .entity-text,
+            .entity.icon.decimal.error .entity-text,
+            .entity.icon.decimalFF.missing .entity-text,
+            .entity.icon.decimal.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Decimal16Error.png);
+            }
+
+            .entity.icon.fileFF.error .entity-text,
+            .entity.icon.file.error .entity-text,
+            .entity.icon.fileFF.missing .entity-text,
+            .entity.icon.file.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/File16Error.png);
+            }
+
+            .entity.icon.guidFF.error .entity-text,
+            .entity.icon.guid.error .entity-text,
+            .entity.icon.guidFF.missing .entity-text,
+            .entity.icon.guid.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Guid16Error.png);
+            }
+
+            .entity.icon.hyperlinkFF.error .entity-text,
+            .entity.icon.hyperlink.error .entity-text,
+            .entity.icon.hyperlinkFF.missing .entity-text,
+            .entity.icon.hyperlink.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Hyperlink16Error.png);
+            }
+
+            .entity.icon.imageFF.error .entity-text,
+            .entity.icon.image.error .entity-text,
+            .entity.icon.imageFF.missing .entity-text,
+            .entity.icon.image.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Image16Error.png);
+            }
+
+            .entity.icon.memoFF.error .entity-text,
+            .entity.icon.memo.error .entity-text,
+            .entity.icon.memoFF.missing .entity-text,
+            .entity.icon.memo.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Memo16Error.png);
+            }
+
+            .entity.icon.multi-valueFF.error .entity-text,
+            .entity.icon.multi-value.error .entity-text,
+            .entity.icon.multi-valueFF.missing .entity-text,
+            .entity.icon.multi-value.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/MultiValue16Error.png);
+            }
+
+            .entity.icon.numberFF.error .entity-text,
+            .entity.icon.number.error .entity-text,
+            .entity.icon.numberFF.missing .entity-text,
+            .entity.icon.number.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Number16Error.png);
+            }
+
+            .entity.icon.timeFF.error .entity-text,
+            .entity.icon.time.error .entity-text,
+            .entity.icon.timeFF.missing .entity-text,
+            .entity.icon.time.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Time16Error.png);
+            }
+
+            .entity.icon.auto-numberFF.error .entity-text,
+            .entity.icon.auto-number.error .entity-text,
+            .entity.icon.auto-numberFF.missing .entity-text,
+            .entity.icon.auto-number.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/AutoNumber16Error.png);
+            }
+
+            .entity.icon.auto-guidFF.error .entity-text,
+            .entity.icon.auto-guid.error .entity-text,
+            .entity.icon.auto-guidFF.missing .entity-text,
+            .entity.icon.auto-guid.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/AutoGuid16Error.png);
+            }
+
+            .entity.icon.booleanFF.error .entity-text,
+            .entity.icon.boolean.error .entity-text,
+            .entity.icon.booleanFF.missing .entity-text,
+            .entity.icon.boolean.missing .entity-text
+            {
+                background-image: url(../Platinum/Images/Icons/Boolean16Error.png);
+            }
+
+            .active-caret
+            {
+                display: inline-block;
+                height: 12px;
+                margin: 0 1px;
+                width: 1px;
+            }
+
+            .char.over,
+            .text-node.empty.over,
+            .active-caret
+            {
+                background: url("../Platinum/Images/caret.gif") no-repeat 0 50%;
+                cursor: text;
+            }
+
+            .text-node.empty
+            {
+                padding: 0 1px;
+                vertical-align: middle;
+            }
+
+            .active-caret.ie8
+            {
+                border-right-style: solid;
+                border-right-width: 1px;
+            }
+        }
+    }
+    /*#endregion Tokenbox Styling */
+
+    /*#region Picture Control Styling */
+    .theme-entry .picture-control-inline.disabled
+    {
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        cursor: default;
+    }
+    /*#endregion Picture Control Styling */
+
+    #HiddenFileFrame
+    {
+        display: none;
+        height: 0;
+        width: 0;
+        border: 0;
+    }
+
+    /*#region Column dragging*/
+    div.drag-column
+    {
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        overflow: visible;
+
+        &:hover
+            {
+            width: 10px;
+            cursor: col-resize;
+        }
+
+        &.disabled
+        {
+            pointer-events: none;
+            display: none;
+        }
+
+        &.ui-draggable
+        {
+            &.start,
+            &.end
+            {
+                cursor: pointer;
+                width: 10px;
+                overflow: visible;
+            }
+
+            &.ui-draggable-dragging
+            {
+                &.hover,
+                &.hover:hover
+                {
+                    width: 2px;
+                    cursor: col-resize;
+                }
+            }
+        }
+
+        div.drag-block
+        {
+            position: relative;
+            display: none;
+        }
+    }
+
+    .dragging-allowed
+    {
+        cursor: col-resize;
+    }
+
+    div.columnWrapperDiv
+    {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .not-droppable,
+    div.not-droppable div,
+    span.not-droppable,
+    .not-droppable div,
+    .not-droppable .disabled
+    {
+        cursor: not-allowed !important;
+    }
+
+    /*Prevent IE9 & IE10 from showing not-allowed WI 503850*/
+    .ie9 .not-droppable,
+    .ie9 div.not-droppable div,
+    .ie9 span.not-droppable,
+    .ie9 .not-droppable div,
+    .ie9 .not-droppable .disabled,
+    .ie10 .not-droppable,
+    .ie10 div.not-droppable div,
+    .ie10 span.not-droppable,
+    .ie10 .not-droppable div,
+    .ie10 .not-droppable .disabled
+    {
+        cursor: pointer !important;
+    }
+    /*#endregion Column dragging*/
+
+    /*#region K2 Management Site Icons*/
+    .theme-entry a.toolbar-button.executesmartobject .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/ExecuteSmartObject16.png);
+    }
+
+    .theme-entry a.toolbar-button.processinstances .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/ProcessInstances16.png);
+    }
+
+    .theme-entry a.toolbar-button.processrights .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/ProcessRights16.png);
+    }
+
+    .theme-entry a.toolbar-button.roles .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/Roles16.png);
+    }
+
+    .theme-entry a.toolbar-button.startprocess .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/StartProcess16.png);
+    }
+
+    .theme-entry a.toolbar-button.startprocessinstance .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/StartProcessInstance16.png);
+    }
+
+    .theme-entry a.toolbar-button.stopprocessinstance .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/StopProcessInstance16.png);
+    }
+
+    .theme-entry a.toolbar-button.gotoactivity .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/GoToActivity16.png);
+    }
+
+    .theme-entry a.toolbar-button.viewflow .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/ViewFlow16.png);
+    }
+
+    .theme-entry a.toolbar-button.setdefaultworkinghourzone .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/WorkingHourZone16.png);
+    }
+
+    .theme-entry a.toolbar-button.retryinstance .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/RetryInstance16.png);
+    }
+
+    .theme-entry a.toolbar-button.errorfulldetail .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/ErrorFullDetails16.png);
+    }
+
+    .theme-entry a.toolbar-button.worklistdelegateitem .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/DelegateWorklistItem16.png);
+    }
+
+    .theme-entry a.toolbar-button.worklistredirect .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/WorklistRedirect16.png);
+    }
+
+    .theme-entry a.toolbar-button.worklistrelease .button-icon
+    {
+        background-image: url(../Platinum/Images/Icons/WorklistRelease16.png);
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.k2workflow .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ProcessInstance16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.oauthresourcetype .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/Resource16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.oauthresourcetypeparameter .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/Resource16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.oauthresource .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/Resource16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.oauthresourceparameter .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/Parameter16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.oauthissuers .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/OAuthIssuers16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.securitylabels .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/SecurityLabels16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.realms .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/Realms16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.audiences .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/Audience16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.serviceinstance .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ServiceInstance16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.servicetype .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ServiceType16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.processversion .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ProcessVersion16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.processinstance .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ProcessInstance16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.processxmlfield .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ProcessXMLField16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.processdatafield .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ProcessDataField16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.workinghourzone .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/WorkingHourZone16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.dayoftheweek .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/DayOfTheWeek16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.exceptiondate .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ExceptionDate16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.processschedule .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ProcessSchedule16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.errorprofile .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ErrorProfile16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.processerror .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ProcessError16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.oofexceptionrule .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/ExceptionRule16.png);
+        background-position: 0 0;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.worklistitem .grid-content-cell-wrapper:before
+    {
+        background-image: url(../Platinum/Images/Icons/WorklistItem16.png);
+        background-position: 0 0;
+    }
+
+    /*#endregion K2 Management Site Icons*/
+
+    /*#region Stack Control */
+    /*The stack container is only used by droppable radio button list and check box list controls, no internal designer controls
+    The stack container enables stacking according to row or column layout, this can be specified in the control's properties grid
+    These styles are applied at both designtime and runtime, as well as inside the stylebuilder dialog from the properties grid*/
+    .theme-entry
+    {
+        .stack-container
+    {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            overflow-x: hidden;
+            overflow-y: visible;
+
+            .stack
+    {
+                display: table-cell;
+                padding: 3px;
+                vertical-align: top;
+
+                div.multi-select-box-list-item
+    {
+                    display: block;
+                    width: 100%;
+                    max-width: 100%;
+                    float: left;
+                    clear: both;
+
+                    html[dir=rtl] &
+    {
+                        float: right;
+                    }
+
+                    label.input-control
+    {
+                        display: inline-block;
+                        height: 20px;
+                        max-width: 100%;
+
+                        .input-control-img
+    {
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+
+                        .input-control-text
+    {
+                            display: inline-block;
+                            vertical-align: top;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            max-width: calc(~"100% - 20px");
+                            margin: 0;
+                            float: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .designtime
+    {
+            .stack-container.radio .stack
+    {
+                padding-bottom: 0;
+            }
+
+            .input-control.radio
+    {
+                border-bottom-width: 0;
+            }
+        }
+    }
+    /*#endregion Stack Control */
+    /*#region Attachment Control Styling */
+    .theme-entry a.file-error-detail
+    {
+        text-decoration: underline;
+    }
+    /*#endregion Attachment Control Styling */
+    /*#region CheckBox Indeterminate State */
+    .theme-entry label.input-control.indeterminate .input-control-img
+    {
+        background-position: 0 -160px;
+    }
+
+    .theme-entry label.input-control.indeterminate:hover .input-control-img
+    {
+        background-position: 0 -180px;
+    }
+
+    .theme-entry label.input-control.indeterminate.disabled .input-control-img,
+    .theme-entry label.input-control.indeterminate.read-only .input-control-img
+    {
+        background-position: 0 -200px;
+    }
+    /*#endregion CheckBox Indeterminate State */
+
+    /*#region MobileSimulator Control Styling */
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-MobileSimulator
+    {
+        width:100%;
+        height:500px;
+    }
+    /*#endregion MobileSimulator Control Styling */
+
+    /*#region PDF Print*/
+    @media print
+    {
+        html.mobile,
+        html.mobile body
+        {
+            height: auto !important;
+            overflow: visible !important;
+            position: relative !important;
+        } /*Fix for scrollbar issue in PDFs generated from Smartforms HTML*/
+
+        .tab-box-body-wrapper, .tab-box-body-m-c, .scroll-wrapper, .panel-body-wrapper, .wrapper
+        {
+            height: auto !important;
+            /*Required for IE and Edge to not cut off more than 3 pages*/
+            overflow: visible !important;
+        }
+
+        div.runtime-content table[style*="inline-table"]
+        {
+            display: table;
+        }
+
+        label.file-label
+        {
+            display: none;
+        }
+    }
+    /*#endregion */

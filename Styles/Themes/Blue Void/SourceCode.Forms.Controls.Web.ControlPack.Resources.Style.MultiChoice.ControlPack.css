@@ -1,0 +1,623 @@
+﻿/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+/* #region DESKTOP */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .multiSelectSelect
+{
+    background-color: #fff; /*Background to the lists*/
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle
+{
+    background: #ffffff;
+    border: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #868686;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 3.0rem;
+    line-height: 3.0rem;
+    overflow: hidden;
+    padding: 0 1.0rem;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: none;
+    white-space: nowrap;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.disabled .stylewrapper .sourcetitle,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.disabled .stylewrapper .destinationtitle
+{
+    color: #c7c7c7;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice
+{
+    box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.25);
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.disabled
+{
+    color: #c7c7c7;
+}
+
+/* list box part (with header) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .optionwrapper
+{
+    border-width: 0 0.1rem 0.1rem 0.1rem;
+    border-color: #e6e6e6;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* list box part (without header) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .noHeader .optionwrapper
+{
+    top: 0;
+    height: auto;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv
+{
+    padding-left: 1.0rem;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; /*make sure that the text doesn't move when selected*/
+    border: solid 0.1rem transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:hover
+{
+    background-color: #0070ff;
+    color: #ffffff;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:focus
+{
+    border-color: #5d9eea;
+    border-style: dotted;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected
+{
+    background-color: #5d9eea;
+    color: #ffffff;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected:hover
+{
+    background-color: #0070ff;
+    color: #ffffff;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-MultiChoice div.focus,
+.SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .optioninnerwrapper:focus,
+.SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll:focus,
+.SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne:focus,
+.SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack:focus,
+.SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack:focus
+{
+    border: 1px dotted #5d9eea;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack
+{
+    width: 2.0rem;
+    height: 2.0rem;
+    position: absolute;
+    right: auto;
+    left: -1.0rem;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-width: 0 !important;
+}
+
+/*#region BUTTON POSITIONING*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonWrapper
+{
+    bottom: 0;
+    display: table-cell;
+    height: 14rem;
+    left: 50%;
+    margin: auto;
+    margin-left: -2rem;
+    position: absolute;
+    right: auto;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    width: 30px;
+}
+
+/* icons to move item around */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverbtn
+{
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    display: block;
+    margin: 12px;
+}
+
+/*#endregion BUTTON POSITIONING*/
+
+/*Disabled state*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonwrapper > a.disabled
+{
+    cursor: default;
+}
+
+/* #region validation */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.invalid,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.invalid
+{
+    border: 0px solid transparent;
+    border-bottom: 1px solid #b71c1c !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.invalid .optionwrapper
+{
+    background-color: #ffffff;
+    border: 1px solid transparent !important; /* override -- base */
+}
+
+/* #endregion validation */
+
+/* region RTL layout */
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonWrapper
+{
+    margin-left: -0.6rem;
+}
+
+/* #endregion RTL layout */
+
+/* #endregion DESKTOP */
+
+/* #region TOUCH */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle,
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle
+{
+    height: 5.2rem;
+    line-height: 5.2rem;
+}
+
+/* list box part (with header) */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .optionwrapper
+{
+    top: 5.2rem;
+}
+
+/* list box part (without header) */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .noHeader .optionwrapper
+{
+    top: 0;
+}
+
+/* #endregion TOUCH */
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.multiselect-control > a,
+    .theme-entry .tree li.multiselect-control > span,
+    .theme-entry .tree li.multiselect-control.children.open > a,
+    .theme-entry .tree li.multiselect-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.MultiChoice/Images/MultiSelectControl16.png');
+    }
+
+    .theme-entry .tree li.multiselect-control > a:hover,
+    .theme-entry .tree li.multiselect-control > span:hover,
+    .theme-entry .tree li.multiselect-control.selected > a,
+    .theme-entry .tree li.multiselect-control.selected > span,
+    .theme-entry .tree li.multiselect-control > a:focus,
+    .theme-entry .tree li.multiselect-control > span:focus,
+    .theme-entry .tree li.multiselect-control.children.open > a:hover,
+    .theme-entry .tree li.multiselect-control.children.open > span:hover,
+    .theme-entry .tree li.multiselect-control.children.open.selected > a,
+    .theme-entry .tree li.multiselect-control.children.open.selected > span,
+    .theme-entry .tree li.multiselect-control.children.open > a:focus,
+    .theme-entry .tree li.multiselect-control.children.open > span:focus,
+    .theme-entry .tree li.multiselect-control.children.closed > a:hover,
+    .theme-entry .tree li.multiselect-control.children.closed > span:hover,
+    .theme-entry .tree li.multiselect-control.children.closed.selected > a,
+    .theme-entry .tree li.multiselect-control.children.closed.selected > span,
+    .theme-entry .tree li.multiselect-control.children.closed > a:focus,
+    .theme-entry .tree li.multiselect-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.MultiChoice/Images/MultiSelectControl_Selected14.png');
+    }
+
+    /* #region IMAGE DESKTOP */
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne
+    {
+        background-image: url(RuntimeTheme/AddChevron16.png);
+    }
+
+    .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll
+    {
+        background-image: url(RuntimeTheme/AddChevron_All16.png);
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack
+    {
+        background-image: url(RuntimeTheme/RemoveChevron16.png);
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_All16.png);
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled
+    {
+        background-image: url(RuntimeTheme/AddChevron_Disabled16.png);
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled
+    {
+        background-image: url(RuntimeTheme/AddChevron_All_Disabled16.png);
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_Disabled16.png);
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_All_Disabled16.png);
+    }
+    /* #endregion IMAGE DESKTOP */
+
+    /* #region IMAGE MOBILE */
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne
+    {
+        background-image: url(RuntimeTheme/AddChevron20.png);
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll
+    {
+        background-image: url(RuntimeTheme/AddChevron_All20.png);
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack
+    {
+        background-image: url(RuntimeTheme/RemoveChevron20.png);
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_All20.png);
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled
+    {
+        background-image: url(RuntimeTheme/AddChevron_Disabled20.png);
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled
+    {
+        background-image: url(RuntimeTheme/AddChevron_All_Disabled20.png);
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_Disabled20.png);
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_All_Disabled20.png);
+        background-size: 20px;
+    }
+    /* #endregion IMAGE MOBILE */
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.multiselect-control > a,
+    .theme-entry .tree li.multiselect-control > span,
+    .theme-entry .tree li.multiselect-control.children.open > a,
+    .theme-entry .tree li.multiselect-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.MultiChoice/Images/MultiSelectControl16@2x.png');
+    }
+
+    .theme-entry .tree li.multiselect-control > a:hover,
+    .theme-entry .tree li.multiselect-control > span:hover,
+    .theme-entry .tree li.multiselect-control.selected > a,
+    .theme-entry .tree li.multiselect-control.selected > span,
+    .theme-entry .tree li.multiselect-control > a:focus,
+    .theme-entry .tree li.multiselect-control > span:focus,
+    .theme-entry .tree li.multiselect-control.children.open > a:hover,
+    .theme-entry .tree li.multiselect-control.children.open > span:hover,
+    .theme-entry .tree li.multiselect-control.children.open.selected > a,
+    .theme-entry .tree li.multiselect-control.children.open.selected > span,
+    .theme-entry .tree li.multiselect-control.children.open > a:focus,
+    .theme-entry .tree li.multiselect-control.children.open > span:focus,
+    .theme-entry .tree li.multiselect-control.children.closed > a:hover,
+    .theme-entry .tree li.multiselect-control.children.closed > span:hover,
+    .theme-entry .tree li.multiselect-control.children.closed.selected > a,
+    .theme-entry .tree li.multiselect-control.children.closed.selected > span,
+    .theme-entry .tree li.multiselect-control.children.closed > a:focus,
+    .theme-entry .tree li.multiselect-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.MultiChoice/Images/MultiSelectControl_Selected14@2x.png');
+    }
+
+    /* #region IMAGE DESKTOP */
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne
+    {
+        background-image: url(RuntimeTheme/AddChevron20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll
+    {
+        background-image: url(RuntimeTheme/AddChevron_All20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack
+    {
+        background-image: url(RuntimeTheme/RemoveChevron20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_All20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled
+    {
+        background-image: url(RuntimeTheme/AddChevron_Disabled20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled
+    {
+        background-image: url(RuntimeTheme/AddChevron_All_Disabled20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_Disabled20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_All_Disabled20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    /* #endregion IMAGE DESKTOP */
+
+    /* #region IMAGE MOBILE */
+    /* #endregion IMAGE MOBILE */
+}
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px)
+{
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice
+    {
+        height: auto !important; /* override -- inline */
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper
+    {
+        width: 100%;
+        height: 100% !important; /* override -- inline */
+        position: relative; /* base for the absolute buttons */
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .multiSelectSelect
+    {
+        background-color: #fff; /*Background to the lists*/
+        width: 100%;
+    }
+
+    /* source box */
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .selectSourceWrapper
+    {
+        float: none;
+        margin-bottom: 5.0rem;
+        width: 100%;
+    }
+
+    /* destination box */
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .selectDestinationWrapper
+    {
+        float: none;
+        margin-top: 0;
+        position: relative;
+        top: auto;
+        width: 100%;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .selectDestination .optionwrapper
+    {
+        overflow: auto;
+    }
+
+    /* buttons */
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonWrapper
+    {
+        bottom: auto;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 5.0rem;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0 !important; /* override -- base */
+        margin-top: -2.5rem;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .selectDestination
+    {
+        margin-left: 0 !important;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll,
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne,
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack,
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack
+    {
+        display: inline-block;
+        margin-left: .75rem;
+        margin-right: .75rem;
+        position: static;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverbtn
+    {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* #region button images for phone portrait ONLY */
+@media only screen and (max-width : 360px)
+{
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne
+    {
+        background-image: url(RuntimeTheme/AddChevron_Mobile20.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll
+    {
+        background-image: url(RuntimeTheme/AddChevron_All_Mobile20.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_Mobile20.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_All_Mobile20.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled
+    {
+        background-image: url(RuntimeTheme/AddChevron_Mobile_Disabled20.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled
+    {
+        background-image: url(RuntimeTheme/AddChevron_All_Mobile_Disabled20.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_Mobile_Disabled20.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_All_Mobile_Disabled20.png);
+    }
+}
+/* #endregion button images for phone portrait ONLY */
+
+/* #region button images for phone portrait x2 ONLY */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne
+    {
+        background-image: url(RuntimeTheme/AddChevron_Mobile20@2x.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll
+    {
+        background-image: url(RuntimeTheme/AddChevron_All_Mobile20@2x.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_Mobile20@2x.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_All_Mobile20@2x.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled
+    {
+        background-image: url(RuntimeTheme/AddChevron_Mobile_Disabled20@2x.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled
+    {
+        background-image: url(RuntimeTheme/AddChevron_All_Mobile_Disabled20@2x.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_Mobile_Disabled20@2x.png);
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled
+    {
+        background-image: url(RuntimeTheme/RemoveChevron_All_Mobile_Disabled20@2x.png);
+    }
+}
+/* #endregion button images for phone portrait x2 ONLY */
+
+
+/*#endregion RESPONSIVE BREAKING POINTS */

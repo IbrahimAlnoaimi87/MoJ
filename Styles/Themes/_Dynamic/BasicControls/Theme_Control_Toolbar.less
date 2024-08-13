@@ -1,0 +1,128 @@
+/*#region TOOLBAR */
+
+/*#region reset*/
+.theme-entry .toolbars,
+.theme-entry .single.toolbars .toolbar,
+.theme-entry .double.toolbars .toolbar
+{
+    border: none;
+}
+/*#endregion reset end*/
+
+/*default height*/
+.theme-entry .toolbar,
+.theme-entry .toolbars.single .toolbar /*override - base*/
+{
+    min-height: 3.2rem;
+}
+
+.theme-entry .toolbar
+{
+    padding: 0;
+    background-color: @Toolbar-Background-Color;
+    /*a 5px left+right looks nice but affects the paging control, and indents the toolbar buttons, which looks ugly */
+}
+
+
+/*#region Grid Toolbars area*/
+.theme-entry .grid.with-header .grid-toolbars
+{
+    float: none;
+    clear: both;
+    /*grey*/
+}
+
+.theme-entry .grid.with-header .grid-toolbars .toolbar-wrapper
+{
+    border-bottom: solid 1px @Toolbar-Border-Color;
+}
+
+/*#endregion*/
+
+/*textcolor override*/
+.theme-entry .toolbars
+{
+    color: @Toolbar-Text-Color;
+}
+
+.theme-entry .toolbars .radio .input-control-text,
+.theme-entry .toolbars .checkbox .input-control-text
+{
+    color: inherit;
+}
+
+.theme-entry .toolbars.single .toolbar
+{
+    padding-bottom: 1.0rem;
+}
+
+/*toolbar table control alignment*/
+.theme-entry .toolbar > .toolbar-wrapper > table > tbody > tr > td
+{
+    vertical-align: middle;
+}
+
+.theme-entry .toolbar > .toolbar-wrapper > table > tbody > tr > td > .hidden
+{
+    display: none;
+}
+
+.theme-entry .toolbar > .toolbar-wrapper > table > tbody > tr > td > a.toolbar-button
+{
+    vertical-align: text-bottom;
+}
+
+.theme-entry .toolbar > .toolbar-wrapper > table > tbody > tr > td > .SFC.SourceCode-Forms-Controls-Web-TextBox
+{
+    vertical-align: top;
+    margin-top: 0.3rem;
+}
+
+/*#endregion TOOLBAR */
+
+
+
+/*#region GENERIC TOOLBAR*/
+
+/*#region reset*/
+
+.theme-entry .with-header.grid .grid-toolbars .double.toolbars .toolbar:first-child .toolbar-wrapper,
+.theme-entry .double.toolbars .toolbar:first-child .toolbar-wrapper,
+.theme-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars.single .toolbar-wrapper,
+.theme-entry .toolbars.single .toolbar .toolbar-wrapper,
+.theme-entry .toolbars.double .toolbar .toolbar-wrapper
+{
+    background-image: none; /*removes the gradients!*/
+}
+
+/*#endregion reset end*/
+
+/*SingleToolbar*/
+.theme-entry .toolbars.single
+{
+    height: auto;
+    border-width: 0;
+    border-style: none;
+}
+
+.theme-entry .toolbars.single .toolbar
+{
+    padding-bottom: 0; /*override*/
+}
+
+.theme-entry .toolbar-wrapper /*generic control*/
+{
+    overflow: hidden;
+    height: auto;
+    border-width: 0;
+    border-style: none;
+}
+
+/*DoubleToolbar*/
+.theme-entry .toolbars.double .toolbar .toolbar-wrapper,
+.theme-entry .grid.with-header .grid-toolbars .toolbars.double .toolbar:first-child .toolbar-wrapper,
+.theme-entry .panel.with-header.with-header.with-double-toolbar > .panel-toolbars .toolbar:first-child .toolbar-wrapper
+{
+    background-color: @Toolbar-Background-Color;
+}
+/*#endregion GENERIC TOOLBAR*/

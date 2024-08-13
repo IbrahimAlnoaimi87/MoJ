@@ -1,0 +1,62 @@
+﻿/* #region DETAILS DIALOG UI */
+
+html.management.features-sharepoint .theme-entry .row.details .feature-header .header-image
+{
+    width: 295px;
+    height: 64px;
+    -moz-background-size: 295px 64px;
+    background-size: 295px 64px;
+}
+
+html.management.features-sharepoint .theme-entry .row.details .feature-description
+{
+    padding: 3rem 0 1rem 0;
+}
+
+    html.management.features-sharepoint .theme-entry .row.details .feature-description .description-text:nth-child(1)
+    {
+        display: block;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    html.management.features-sharepoint .theme-entry .row.details .feature-description a
+    {
+        padding-left: .5rem;
+    }
+
+/* #endregion */
+
+/* #region ACTIVATION DIALOG UI */
+
+html.management.features-sharepoint .theme-entry .row.activation .Grid-Layout .editor-cell[row='1'] .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlHeader"]
+{
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+html.management.features-sharepoint .theme-entry .row.activation .Grid-Layout .editor-cell.lastrow
+{
+    display: none;
+}
+
+/* #endregion */
+
+/* #region ICONS */
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    html.management.features-sharepoint .theme-entry .row.details .feature-header .header-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/SharePoint_Lockup.png);
+    }
+}
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    html.management.features-sharepoint .theme-entry .row.details .feature-header .header-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/SharePoint_Lockup@2x.png);
+    }
+}
+
+/* #endregion */

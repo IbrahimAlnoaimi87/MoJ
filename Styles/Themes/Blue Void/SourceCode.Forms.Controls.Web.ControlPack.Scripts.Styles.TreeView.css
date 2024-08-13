@@ -1,0 +1,315 @@
+﻿/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.tree-control > a,
+    .theme-entry .tree li.tree-control > span,
+    .theme-entry .tree li.tree-control.children.open > a,
+    .theme-entry .tree li.tree-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.TreeView/Images/TreeControl16.png');
+    }
+
+    .theme-entry .tree li.tree-control > a:hover,
+    .theme-entry .tree li.tree-control > span:hover,
+    .theme-entry .tree li.tree-control.selected > a,
+    .theme-entry .tree li.tree-control.selected > span,
+    .theme-entry .tree li.tree-control > a:focus,
+    .theme-entry .tree li.tree-control > span:focus,
+    .theme-entry .tree li.tree-control.children.open > a:hover,
+    .theme-entry .tree li.tree-control.children.open > span:hover,
+    .theme-entry .tree li.tree-control.children.open.selected > a,
+    .theme-entry .tree li.tree-control.children.open.selected > span,
+    .theme-entry .tree li.tree-control.children.open > a:focus,
+    .theme-entry .tree li.tree-control.children.open > span:focus,
+    .theme-entry .tree li.tree-control.children.closed > a:hover,
+    .theme-entry .tree li.tree-control.children.closed > span:hover,
+    .theme-entry .tree li.tree-control.children.closed.selected > a,
+    .theme-entry .tree li.tree-control.children.closed.selected > span,
+    .theme-entry .tree li.tree-control.children.closed > a:focus,
+    .theme-entry .tree li.tree-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.TreeView/Images/TreeControl_Selected14.png');
+    }
+
+    /* #region Readonly - override ../treeview.less*/
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img 
+    {
+        background: url(RuntimeTheme/checkbox18.png);
+        background-repeat: no-repeat;
+        cursor: default;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img 
+    {
+        background: url(RuntimeTheme/checkbox18-Inter.png);
+        background-repeat: no-repeat;
+        cursor: default;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img 
+    {
+        background: url(RuntimeTheme/checkbox18-Checked.png);
+        background-repeat: no-repeat;
+        cursor: default;
+    }
+    /* #endregion Readonly */
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.tree-control > a,
+    .theme-entry .tree li.tree-control > span,
+    .theme-entry .tree li.tree-control.children.open > a,
+    .theme-entry .tree li.tree-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.TreeView/Images/TreeControl16@2x.png');
+    }
+
+    .theme-entry .tree li.tree-control > a:hover,
+    .theme-entry .tree li.tree-control > span:hover,
+    .theme-entry .tree li.tree-control.selected > a,
+    .theme-entry .tree li.tree-control.selected > span,
+    .theme-entry .tree li.tree-control > a:focus,
+    .theme-entry .tree li.tree-control > span:focus,
+    .theme-entry .tree li.tree-control.children.open > a:hover,
+    .theme-entry .tree li.tree-control.children.open > span:hover,
+    .theme-entry .tree li.tree-control.children.open.selected > a,
+    .theme-entry .tree li.tree-control.children.open.selected > span,
+    .theme-entry .tree li.tree-control.children.open > a:focus,
+    .theme-entry .tree li.tree-control.children.open > span:focus,
+    .theme-entry .tree li.tree-control.children.closed > a:hover,
+    .theme-entry .tree li.tree-control.children.closed > span:hover,
+    .theme-entry .tree li.tree-control.children.closed.selected > a,
+    .theme-entry .tree li.tree-control.children.closed.selected > span,
+    .theme-entry .tree li.tree-control.children.closed > a:focus,
+    .theme-entry .tree li.tree-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.TreeView/Images/TreeControl_Selected14@2x.png');
+    }
+
+    /* #region Readonly - override ../treeview.less*/
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img 
+    {
+        background: url(RuntimeTheme/checkbox18@2x.png);
+        background-repeat: no-repeat;
+        cursor: default;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img 
+    {
+        background: url(RuntimeTheme/checkbox18-Inter@2x.png);
+        background-repeat: no-repeat;
+        cursor: default;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img 
+    {
+        background: url(RuntimeTheme/checkbox18-Checked@2x.png);
+        background-repeat: no-repeat;
+        cursor: default;
+    }
+    /* #endregion Readonly */
+}
+
+/* IE ONLY */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+{
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .input-control-wrapper.msie .SourceCode-Forms-Controls-Web-TextBox
+    {
+        height: 22px;
+    }
+}
+
+/* #region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar td.cp-searchbar-cell
+{
+    height: auto; /*override sf toolbar css*/
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .dropdown-td-width
+{
+    padding-right: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected > .content > .header
+{
+    background-color: #5d9eea;
+    border-color: #5d9eea;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected > .content > .header .text
+{
+    color:white;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly .node.selected > .content > .header:hover
+{
+    background-color: #0070ff;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly .node.selected > .content > .header:hover .text
+{
+    color:white;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly:not(.disabled) .node > .content > .header:hover .text
+{
+    color:#363636;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView:not(.disabled) .node > .content > .header:hover
+{
+    background-color: #0070ff;
+    border-color: #0070ff;
+    cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView:not(.disabled) .node > .content > .header:hover .text
+{
+    color:white;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.focus > .content > .header
+{
+    border: 1px dotted #5d9eea;
+}
+
+.theme-entry .sfc-treeview.populating-indicator
+{
+    background-image: url("RuntimeTheme/LoadingAnimation_Dark16.gif");
+}
+
+.theme-entry .sfc-treeview.populating-indicator.showSearch
+{
+    top: 39px;
+}
+
+.theme-entry .sfc-treeview.populating-indicator.showSearchExpanded
+{
+    top: 61px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .text.with-image
+{
+    padding-top: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .expander
+{
+    top: 0;
+}
+
+.theme-entry .sfc-treeview.populating-indicator.scrollbar
+{
+    right: 19px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView
+{
+    box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.25);
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper
+{
+    background-color: #ffffff;
+    border-color: transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper div.search-bar
+{
+    font-size: 1.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .top-seperator
+{
+    border-top-color: #e5e5e5;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper.invalid
+{
+    border-bottom-color: #b71c1c !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper.invalid .watermark > span
+{
+    color: #b71c1c !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:focus
+{
+    background-color: #5d9eea;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:hover
+{
+    background-color: #0070ff;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:hover .search-item-text,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:focus .search-item-text
+{
+    color: #ffffff;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control.select-box .input-control-buttons
+{
+    right: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control.select-box .input-control-buttons a.dropdown
+{
+    width: 2.4rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .button-wrapper
+{
+    width: 2.5rem;
+}
+
+.msie .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .button-wrapper
+{
+    height: 2.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper .PART_ClearSearchButton
+{
+    width: 2.5rem;
+}
+
+/* In IE11 checkbox image is cut off so we apply this adjusted height value */
+.desktop.msie.ie11 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.checkbox.input-control .input-control-img, .theme-entry input[type=checkbox] + label
+{
+    height: 1.85rem;
+}
+
+/* #endregion DESKTOP*/
+
+/* #region TOUCH */
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* Extra Small Devices */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */

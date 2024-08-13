@@ -1,0 +1,116 @@
+﻿html .theme-entry .ajaxLoader.modal-element
+{
+    display: none !important; /* force hide modalizer */
+    background-color: transparent !important;
+}
+
+
+/* fluid height */
+html.management.smartobject-admin,
+html.management.smartobject-admin > body,
+html.management.smartobject-admin > body > form,
+html.management.smartobject-admin > body > form > .runtime-content,
+html.management.smartobject-admin > body > form > .runtime-content > .runtime-form,
+html.management.smartobject-admin > body > form > .runtime-content > .runtime-form > .form
+{
+    height: 100% !important; /* Force fluid height */
+}
+
+    html.management.smartobject-admin .row:nth-child(2)
+    {
+        height: 8rem;
+    }
+
+    html.management.smartobject-admin .row:nth-child(3)
+    {
+        height: 4.5rem;
+    }
+
+    html.management.smartobject-admin .row:nth-child(4)
+    {
+        height: calc(100% - 12.5rem);
+    }
+
+    html.management.smartobject-admin .row:nth-child(4) .formcontrol,
+    html.management.smartobject-admin .row:nth-child(4) .formcontrol .innerpanel,
+    html.management.smartobject-admin .row:nth-child(4) .formcontrol .innerpanel .SFC.SourceCode-Forms-Controls-Web-ControlPack-StackedContent
+    {
+        height: 100% !important; /* Overrides inline style */
+    }
+
+.management.smartobject-admin .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="smoDisplayName"]
+{
+    font-size: 3rem;
+    color: #717171;
+}
+
+.management.smartobject-admin .row:nth-child(2) .editor-cell
+{
+    background-color: #f5f5f5;
+}
+
+    .management.smartobject-admin .row:nth-child(2) .Grid-Layout .editor-cell.lastrow
+    {
+        display: none;
+    }
+
+    .management.smartobject-admin .row:nth-child(2) .Grid-Layout .editor-cell[col='1']
+    {
+        padding-left: 2rem;
+    }
+
+    .management.smartobject-admin .row:nth-child(2) .Grid-Layout .editor-cell.lastcellinrow
+    {
+        padding-right: 2rem;
+    }
+
+.management.smartobject-admin .row:nth-child(3) .innerpanel
+{
+    display: flex;
+    flex-direction: row;
+}
+
+    .management.smartobject-admin .row:nth-child(3) .SFC.SourceCode-Forms-Controls-Web-Button
+    {
+        height: 4.5rem;
+        line-height: 4.5rem;
+        background-color: transparent;
+        background-image: none;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: #f5f5f5 5px solid;
+        box-shadow: none;
+        color: #4e5758;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 120px !important; /* Overrides inline style */
+        flex-grow: 0;
+    }
+    
+        .management.smartobject-admin .row:nth-child(3) .SFC.SourceCode-Forms-Controls-Web-Button.selected,
+        .management.smartobject-admin .row:nth-child(3) .SFC.SourceCode-Forms-Controls-Web-Button:focus,
+        .management.smartobject-admin .row:nth-child(3) .SFC.SourceCode-Forms-Controls-Web-Button.disabled.selected,
+        .management.smartobject-admin .row:nth-child(3) .SFC.SourceCode-Forms-Controls-Web-Button.disabled:focus
+        {
+            color: #0288d1;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            border-bottom: #0288d1 5px solid !important; /* Overrides inherited !important */
+            animation: none;
+        }
+
+        .management.smartobject-admin .row:nth-child(3) .SFC.SourceCode-Forms-Controls-Web-Button.disabled
+        {
+            opacity: 1;
+            border-color: #f5f5f5 !important; /* Overrides inherited !important */
+        }
+
+    .management.smartobject-admin .row:nth-child(3) .SFC.SourceCode-Forms-Controls-Web-Label
+    {
+        border-bottom: #f5f5f5 5px solid;
+        flex-grow: 1;
+        line-height: 4.5rem;
+        height: 4.5rem;
+    }

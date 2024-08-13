@@ -1,0 +1,216 @@
+/*#region TEXTBOX CONTROL */
+
+//#region RESETS
+
+.theme-entry .input-control textarea
+{
+    //override core.less default to white
+    //TODO: move the white out of core.less into corelegacy.less.
+    //Note that transparent must be used instead of a variable here, as 
+    //textareas appear inside an .input-control, and the wrapping input control has the background color.
+    //i.e. if the text area has a variable which is semi transparent, it will layer ontop of the the input's background color.
+    background-color: transparent;
+
+
+    //Inherit the font size (text areas do not by default - w3c)
+    font-size: inherit;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry input.input-control, 
+.theme-entry .input-control.text-input
+{
+    font-family: inherit; //make sure this is not Arial (browser default)
+    color: @Input-Text-Color;
+
+    &.invalid
+    {
+        color: @Input-Error-Text-Color;
+    }
+}
+
+.theme-entry .input-control textarea{
+    color: inherit;
+    font-family: inherit; //make sure this is not Arial (browser default)
+}
+
+
+//override core.less default to white
+//TODO: move the white out of core.less into corelegacy.less.
+//textareas
+.theme-entry .input-control .input-control-m-c {
+    border-color:  transparent;
+}
+
+
+//#endregion RESETS
+
+
+.theme-entry .input-control.text-input 
+{
+    .input-control-m-c{
+        border:none;
+    }
+}
+
+
+//LG: removed :not(.control-group-container) as it wasn't being used anywhere else, 
+//    and it was adding specifity which meant read-only and disabled states weren't overriding this.
+//    Mainly: TextArea Control
+//    NOTE: the Border element has to be .input-control-m-c as this is what the format dialog uses to change the border.
+.theme-entry .input-control.text-input 
+{
+    .input-control-m-c {
+        border: solid 1px @Input-Border-Color;
+        box-sizing: border-box;
+        background-color: @Input-Background-Color;
+        border-radius: @Input-Rounding;
+
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    &::placeholder{
+        color: @Input-Watermark-Text-Color;
+    }
+
+    &.active {
+        .input-control-m-c
+        {
+            border-color: @Input-Focus-Border-Color;
+        }
+    }
+    
+    &.readonly, //textarea control
+    &.read-only {
+        .input-control-m-c
+        {
+            background-color: @Input-ReadOnly-Background-Color;
+            border-color: @Input-ReadOnly-Border-Color;
+            color: @Input-ReadOnly-Text-Color;
+        }
+    }
+
+    &.disabled {
+        .input-control-m-c
+        {
+            background-color: @Input-Disabled-Background-Color;
+            border-color: @Input-Disabled-Border-Color;
+            color: @Input-Disabled-Text-Color;
+        }
+    }
+
+    &.invalid {
+        .input-control-m-c
+        {
+            background-color: @Input-Error-Background-Color;
+            border-color: @Input-Error-Border-Color !important;  /*important will overide user configured styles */
+            color: @Input-Error-Text-Color;
+        }
+    }
+}
+
+
+.theme-entry input[type=text].input-control,
+.theme-entry input[type=password].input-control
+{
+    background-color: @Input-Background-Color;
+    color: @Input-Text-Color;
+}
+
+
+
+
+//when an input is inside a div-based input-control, the input should be see-through, as
+//the background color and border etc will be applied to the parent div.input-control (a few parents up) 
+.theme-entry {
+    .input-control {
+        input[type=text], 
+        input[type=password]{
+            background-color:transparent;
+            color:inherit;
+        }
+    }
+}
+
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox
+{
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.theme-entry .input-control textarea
+{
+    //no units (i.e. 120%) - this makes sure the textarea control is the same height as the other controls 
+    //when the font family is changes by the user.
+    line-height: 1.2; 
+}
+
+.theme-entry .input-control textarea,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry input[type=text].input-control, /*covers the list view filter searchbox also*/
+.theme-entry input[type=password].input-control /*covers the password field on SSO login also*/
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: @Control-Inset-Horizontal-Spacing;
+    padding-left: @Control-Inset-Horizontal-Spacing;
+    padding-top: @Control-Inset-Vertical-Spacing;
+    padding-bottom: @Control-Inset-Vertical-Spacing;
+  
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry input[type=text].input-control, /*covers the list view filter searchbox also*/
+.theme-entry input[type=password].input-control /*covers the password field on SSO login also*/
+{
+    border: solid 1px @Input-Border-Color;
+
+    &.readonly{
+        background-color: @Input-ReadOnly-Background-Color;
+        border-color: @Input-ReadOnly-Border-Color;
+        color: @Input-ReadOnly-Text-Color;
+    }
+
+    &.disabled{
+        background-color: @Input-Disabled-Background-Color;
+        border-color: @Input-Disabled-Border-Color;
+        color: @Input-Disabled-Text-Color;
+    }
+}
+
+
+
+.theme-entry .input-control textarea
+{
+    border-width: 0;
+}
+
+.webkit .theme-entry .input-control textarea
+{
+    vertical-align: top; /*necessary to remove additional spacing below textarea in chrome*/
+}
+
+/* Legacy textbox control styling */
+.theme-entry .input-control.text-input .input-control-wrapper input[type=text].input-control,
+.theme-entry .input-control.text-input .input-control-wrapper input[type=password].input-control
+{
+    border-width: 0;
+}
+
+/*#endregion TEXTBOX */
+
+
+/*#region TEXTBOX */
+
+.theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox
+{
+    padding-top: 0;
+    padding-bottom: 0.1rem;
+    padding-left: @Control-Inset-Horizontal-Spacing;
+}
+
+/*#endregion TEXTBOX*/

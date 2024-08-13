@@ -1,0 +1,256 @@
+
+//#region RESETS
+
+#pgWizard .form-control > a.SourceCode-Forms-Controls-Web-Button {
+    display: inline-flex; //override layout.css which assumes all controls can be block ( a good assumption in 2010 bu not now)
+}
+
+
+//#endregion RESETS
+
+//Base styles/shape for buttons
+.theme-entry a.SourceCode-Forms-Controls-Web-Button
+{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 8rem;
+    line-height: normal; 
+    padding-top: @Control-Inset-Vertical-Spacing;
+    padding-bottom: @Control-Inset-Vertical-Spacing;
+    padding-left: @Control-Inset-Horizontal-Spacing;
+    padding-right: @Control-Inset-Horizontal-Spacing;
+    min-height: ~"calc(@{Main-Text-Size} + (@{Control-Inset-Vertical-Spacing}*2))"; // had to add 0.4rem to keep buttons the same size!
+   
+    box-sizing: border-box;
+    transition: color linear 0.15s, background-color linear 0.15s;
+
+    //* Stop buttons from being interactive on K2 design canvas
+    //* Ensure buttons are WYSIWYG
+    &.disabled, 
+    &.designtime, 
+    &.preview{
+        pointer-events: none;
+    }
+
+    &:hover
+    {
+        transition-duration: 0s; //quick on mouse-in, slow on mouse-out (like toolbar buttons)
+    }
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button
+{
+    background: @Button-Background-Color;
+    border-color: @Button-Border-Color;
+    border-radius: @Button-Rounding;
+    font-family: @Button-Font-Family;
+    color: @Button-Text-Color;
+
+    &.preview
+    {
+        background: @Button-Background-Color;
+        border-color: @Button-Border-Color;
+    }
+
+    &:focus
+    {
+        background: @Button-Focus-Background-Color;
+        border-color: @Button-Focus-Border-Color;
+        color: @Button-Focus-Text-Color;
+    }
+       
+    &:hover
+    {
+        background: @Button-Hover-Background-Color;
+        border-color: @Button-Hover-Border-Color;
+        color: @Button-Hover-Text-Color;
+    }
+
+    //focus should win on border so we have to put the focus state again herre with just border.
+    &:focus
+    {
+        border-color: @Button-Focus-Border-Color;
+    }
+
+    
+    //#region Button Style - Primary
+    &.button-primary
+    {
+        background: @Primary-Button-Background-Color;
+        border-color: @Primary-Button-Border-Color;
+        color: @Primary-Button-Text-Color;
+
+        &.designtime,
+        &.preview
+        {
+            background: @Primary-Button-Background-Color;
+            border-color: @Primary-Button-Border-Color;
+            color: @Primary-Button-Text-Color;
+        }
+
+        &:focus
+        {
+            background: @Primary-Button-Focus-Background-Color;
+            border-color: @Primary-Button-Focus-Border-Color;
+            color: @Primary-Button-Focus-Text-Color;
+        }
+
+        &:hover
+        {
+            background: @Primary-Button-Hover-Background-Color;
+            border-color: @Primary-Button-Hover-Border-Color;
+            color: @Primary-Button-Hover-Text-Color;
+        }
+
+        //focus should win on border so we have to put the focus state again herre with just border.
+        &:focus
+        {
+            border-color: @Primary-Button-Focus-Border-Color;
+        }
+       
+    }
+    //#endregion Button Style - Primary
+
+    //#region Button Style - Quiet
+    &.button-quiet,
+    &.button-quiet.designtime,
+    &.button-quiet.preview
+    {
+        background:@Quiet-Button-Background-Color;
+        border-color: @Quiet-Button-Border-Color;
+        color: @Quiet-Button-Text-Color;
+        box-shadow: none;
+
+        &.designtime,
+        &.preview
+        {
+            background: @Quiet-Button-Background-Color;
+            border-color: @Quiet-Button-Border-Color;
+            color: @Quiet-Button-Text-Color;
+            box-shadow: none;
+        }
+
+
+        &:focus
+        {
+            background: @Quiet-Button-Background-Color;
+            border-color: @Quiet-Button-Focus-Border-Color;
+            color: @Quiet-Button-Focus-Text-Color;
+        }
+
+        &:hover
+        {
+            background: @Quiet-Button-Hover-Background-Color;
+            border-color: @Quiet-Button-Hover-Border-Color;
+            color: @Quiet-Button-Hover-Text-Color;
+        }
+
+        //focus border should win over hover
+        &:focus
+        {
+            border-color: @Quiet-Button-Focus-Border-Color;
+        }
+       
+    }
+    //#endregion Button Style - Quiet */
+
+    //#region Button Style - Destructive
+    &.button-destructive
+    {
+        background-color: @Destructive-Button-Background-Color;
+        border-color: @Destructive-Button-Border-Color;
+        color: @Destructive-Button-Text-Color;
+        background-image: none;
+
+        &.designtime,
+        &.preview
+        {
+            background-color: @Destructive-Button-Background-Color;
+            border-color: @Destructive-Button-Border-Color;
+            color: @Destructive-Button-Text-Color;
+            background-image: none;
+        }
+
+        &:focus
+        {
+            background-color: @Destructive-Button-Focus-Background-Color;
+            border-color: @Destructive-Button-Focus-Border-Color;
+            color: @Destructive-Button-Focus-Text-Color;
+        }
+
+        &:hover
+        {
+            background-color: @Destructive-Button-Hover-Background-Color;
+            border-color: @Destructive-Button-Hover-Border-Color;
+            color: @Destructive-Button-Hover-Text-Color;
+        }
+
+        //focus should win on border
+        &:focus
+        {
+            border-color: @Destructive-Button-Focus-Border-Color;
+        }
+       
+    }
+    //#endregion Button Style - destructive 
+
+    //#region Button Style - Disabled Styling
+    &.disabled,
+    &.disabled.designtime,
+    &.disabled.preview,
+    &.disabled:hover,
+    &.disabled:hover:focus,
+    &.disabled:focus
+    {
+        background-image: none;
+        background-color: @Button-Disabled-Background-Color !important;
+        border-color: @Button-Disabled-Border-Color !important;
+        box-shadow: none !important;
+        color: @Button-Disabled-Text-Color !important;
+
+        &.button-quiet,
+        &.button-quiet.designtime
+        {
+            background-color: @Quiet-Button-Disabled-Background-Color !important;
+            border-color: @Quiet-Button-Disabled-Border-Color !important;
+            color: @Quiet-Button-Disabled-Text-Color !important;
+            background-image: none;
+            box-shadow: none;
+        }
+    }
+    //#endregion Button Style - Disabled Styling*/
+}
+
+
+//#region deprecated code
+
+//Ideally remove the below in favor of the code already doing pointer-events:none above for "WYSIWYG"
+//* Stop buttons from being interactive on K2 design canvas
+//* Ensure buttons are WYSIWYG
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:active
+{
+    box-sizing: border-box;
+    color: @Button-Text-Color;
+    -moz-transition: color linear 0.15s;
+    -o-transition: color linear 0.15s;
+    -webkit-transition: color linear 0.15s;
+    transition: color linear 0.15s;
+}

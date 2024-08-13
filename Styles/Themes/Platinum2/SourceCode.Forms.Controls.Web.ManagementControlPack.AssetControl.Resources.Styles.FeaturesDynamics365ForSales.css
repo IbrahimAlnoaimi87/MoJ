@@ -1,0 +1,62 @@
+﻿
+html.management.features-dynamics365ForSales .theme-entry .row.details .Grid-Layout .editor-cell[row='1']
+{
+    background-color: #002050;
+}
+
+html.management.features-dynamics365ForSales .theme-entry .row.details .feature-header .header-image
+{
+    display: block;
+    width: 53rem;
+    height: 6.4rem;
+    -moz-background-size: auto 6.4rem;
+    background-size: auto 6.4rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+html.management.features-dynamics365ForSales .theme-entry .row.details .feature-description
+{
+    padding: 3rem 0 1rem 0;
+}
+
+    html.management.features-dynamics365ForSales .theme-entry .row.details .feature-description .description-text:nth-child(1)
+    {
+        padding-bottom: 1rem;
+    }
+
+    html.management.features-dynamics365ForSales .theme-entry .row.details .feature-description a
+    {
+        padding-left: .5rem;
+    }
+
+/* #endregion */
+
+/* #region ACTIVATION DIALOG */
+
+html.management.features-dynamics365ForSales .theme-entry .row.details tbody tr:nth-child(1) td .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlHeader"]
+{
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+/* #endregion */
+
+
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    html.management.features-dynamics365ForSales .theme-entry .row.details .feature-header .header-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Dynamics365ForSales/Dynamics365_Lockup.png);
+    }
+}
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    html.management.features-dynamics365ForSales .theme-entry .row.details .feature-header .header-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Dynamics365ForSales/Dynamics365_Lockup@2x.png);
+    }
+}
+
+/* #endregion */

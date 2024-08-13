@@ -1,0 +1,171 @@
+
+@__Tree-Item-Indent-For-PlusMinus: 1.8rem;
+@__Tree-Item-Border-Width: 0.1rem;
+
+.theme-entry .tree li
+{
+	min-height: @Main-Text-Size;
+	line-height:2.2rem;
+
+    padding-left:@__Tree-Item-Indent-For-PlusMinus;
+}
+
+.theme-entry .tree li a, 
+.theme-entry .tree li span
+{
+	min-height: @Main-Text-Size;
+	line-height:normal;
+	padding-left: @Control-Inset-Narrow-Horizontal-Spacing;
+    padding-right: @Control-Inset-Narrow-Horizontal-Spacing;
+    padding-top: @Control-Inset-Narrow-Vertical-Spacing;
+    padding-bottom: @Control-Inset-Narrow-Vertical-Spacing;
+}
+
+
+.theme-entry .tree li
+{
+    height: auto;
+}
+
+.theme-entry .tree li a
+{
+    border: @__Tree-Item-Border-Width solid transparent; //keeping space for focus border
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    color: inherit;
+
+    border-radius: @Tree-Item-Rounding;
+
+    transition: background-color 0.15s linear, color 0.15s linear;
+    transition-duration: 0s; //overridden.
+    
+    &:hover
+    {
+        background-color: @Tree-Item-Hover-Background-Color; 
+        color: @Tree-Item-Hover-Text-Color;
+
+        transition-duration: 0s;
+    }
+
+    &:focus
+    {
+        border-color: @Tree-Item-Focus-Border-Color; //#00abf0 much darker blue
+        border-style: dotted;
+    }
+}
+
+//Selected
+.theme-entry .tree li.selected {
+    & > a,
+    & > a:hover,
+    & > span
+    {
+        
+        background-color: @Tree-Item-Selected-Background-Color; 
+        border-color: @Tree-Item-Selected-Border-Color;
+        color: @Tree-Item-Selected-Text-Color;
+        transition-duration: 0s;
+    }
+}
+
+/* Collapsed Root Styling */
+.theme-entry .tree.collapsed-root li.root
+{
+    background: none;
+    padding-left: 0;
+}
+
+.theme-entry .tree.collapsed-root li.root > a,
+.theme-entry .tree.collapsed-root li.root > span
+{
+    display: none;
+}
+
+
+.theme-entry .tree 
+{
+    li.children{
+        position:relative;
+    }
+
+    li.children.open,
+    li.children.closed
+    {
+        background-image: none; //the image will now be in a psuedo element.
+    }
+}
+
+
+//Node images (workflow, file, folder, datatype etc - used in the context browser for list views)
+.theme-entry .tree
+{
+    li > a, 
+    li > span
+    {
+        background-image: none!important; //override where the icon was orginally showing inside a tree control.
+        display: flex;
+        align-items: center;
+
+        &:before
+        {
+            content: '';
+            display:block;
+            position: relative;
+            flex-shrink: 0; //needed otherwise when there is long text on the tree node, the icon gets sqished to nothing.
+
+            height: 1.6rem;
+            width: 1.6rem;
+
+            .mobile & 
+            {
+                height: 2.0rem;
+                width: 2.0rem;
+            }
+
+            margin-right: @Between-Control-Spacing;
+        }
+    }
+}
+
+
+.theme-entry .tree 
+{
+    li.children:before
+    {
+        content: '';
+        display:block;
+        position: absolute;
+        height: 1.6rem;
+        width: 1.6rem;
+
+        margin-left: -0.8rem;
+        margin-top: -0.8rem;
+
+        top: ~"calc(@{Control-Inset-Narrow-Vertical-Spacing} + (1.6rem / 2) + @{__Tree-Item-Border-Width})";
+        left: (@__Tree-Item-Indent-For-PlusMinus / 2);
+
+        .mobile & {
+            //uses the size of the icon
+            top: ~"calc(@{Control-Inset-Narrow-Vertical-Spacing} + (2.0rem / 2) + @{__Tree-Item-Border-Width})";
+        }
+
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,913 @@
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .stylewrapper {
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.RuntimeWorklistMain {
+  display: none;
+}
+.SourceCodeFormsControlsWorklist .WorkListGridHeader .worklist-grid-column-header-cell {
+  height: 20px;
+}
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistGridHeaderLast .worklist-grid-column-header-cell .worklist-grid-column-divider,
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistGridHeaderSecondToLast .worklist-grid-column-header-cell .worklist-grid-column-divider,
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorklistGridHeaderFirst .worklist-grid-column-header-cell .worklist-grid-column-divider {
+  cursor: initial;
+}
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorklistGridHeaderSecondToLast .worklist-grid-column-header-cell .worklist-grid-column-divider,
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistGridHeaderFirst .worklist-grid-column-header-cell .worklist-grid-column-divider {
+  cursor: col-resize;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist .disable-overlay {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  border-style: none;
+  opacity: 0.5;
+  background-color: white;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklist-grid-column-header-cell .input-control-img {
+  position: relative;
+  bottom: 0px;
+  left: 1px;
+  top: -1px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.moz .worklist-grid-column-header-cell .input-control-img {
+  left: 1px;
+  bottom: 0px;
+  position: relative;
+}
+.SourceCodeFormsControlsWorklist .checkboxheader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: auto;
+  padding-left: 3px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.disabled .disable-overlay,
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.preview .disable-overlay,
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .readonly .disable-overlay {
+  bottom: 0px;
+  right: 0px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .disabled {
+  border-color: #adaeda !important;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .designtime .disable-overlay {
+  border-color: #adaeda !important;
+  background-color: #cccccc;
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+  /* For IE8 and earlier */
+  bottom: 0px;
+  right: 0px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .designtime.disabled {
+  border-color: #adaeda !important;
+  background-color: transparent;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+
+}
+.viewDetailsWorklistError {
+  color: #343e41 !important;
+  cursor: pointer;
+}
+.styled-select select {
+  background: transparent;
+  /*width: 370px;*/
+  width: 100%;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 16px;
+  -webkit-appearance: none;
+  height: 18px;
+  border: 1px solid #dee3dd;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .loadMore {
+  color: inherit;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist .readonly {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklist-item-delegate.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.styled-select {
+  overflow: hidden;
+}
+.ui-datepicker {
+  width: 17em;
+  padding: 0.2em 0.2em 0;
+  display: none;
+  background-color: #acaf9c;
+}
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: 0.2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+  top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+  right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month-year {
+  width: 100%;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 49%;
+}
+.ui-datepicker table {
+  width: 100%;
+  font-size: 0.9em;
+  border-collapse: collapse;
+  margin: 0 0 0.4em;
+}
+.ui-datepicker th {
+  padding: 0.7em 0.3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+}
+.ui-datepicker td {
+  border: 0;
+  padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+  display: block;
+  padding: 0.2em;
+  text-align: right;
+  text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: 0.7em 0 0 0;
+  padding: 0 0.2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: 0.5em 0.2em 0.4em;
+  cursor: pointer;
+  padding: 0.2em 0.6em 0.3em 0.6em;
+  width: auto;
+  overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left;
+}
+/* with multiple calendars */
+
+.ui-datepicker.ui-datepicker-multi {
+  width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto 0.4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left;
+}
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0;
+}
+/* RTL support */
+
+.ui-datepicker-rtl {
+  direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+  float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+/* flip the arrow image if RTL mode */
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-Worklist .SelectArrowImageDiv {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: "FlipH";
+  filter: FlipH;
+}
+/* this class should only be applied to the date field which has actual date format string.
+for RTL, date should be Left-to-Right format. Only relative dates are RTL.
+*/
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklist-column-date-field > span {
+  unicode-bidi: bidi-override;
+  direction: ltr;
+}
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout .WorklistTableEventDate,
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout .WorklistTableWorkflowName {
+  padding-right: 10px;
+}
+div.SourceCodeFormsControlsWorklist button {
+  cursor: pointer;
+}
+div.SourceCodeFormsControlsWorklist div.popup {
+  background: white;
+  width: 160px;
+  border: 1px solid #aaaaaa;
+  z-index: 999;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv {
+  width: 100%;
+  overflow-y: auto;
+  padding: 0px;
+  margin: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable div.loadmore {
+  display: none;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistLoadMoreSectionRow td.WorklistLoadMoreSectionRowTD {
+  width: 100%;
+  height: 15px;
+  text-align: center;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistLoadMoreSectionRow td.WorklistLoadMoreSectionRowTD a.LoadMoreHyperlink {
+  color: #608d0c;
+  text-align: center;
+  font-size: 11px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist a.LoadMoreHyperlink {
+  font-style: normal;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem {
+  width: 100%;
+  cursor: pointer;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItemGrid {
+  width: 100%;
+  cursor: pointer;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: White;
+  height: 40px;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItemGrid table.WorkListItemGrid {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border-width: 1px;
+  border-spacing: 2px;
+  border-style: outset;
+  border-color: White;
+  border-collapse: separate;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItemGrid table.WorkListItemGrid thead.testHeader {
+  background-color: #e0e0e0;
+  text-align: left;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0%;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne {
+  width: 100%;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTablePriority {
+  text-align: center;
+  width: 25px;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableEventName {
+  text-align: left;
+  width: 70%;
+  font-weight: bold;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableEventDate {
+  text-align: right;
+  width: 30%;
+  color: #4f7216;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableFolio {
+  text-align: left;
+  /*width:20%;*/
+  font-size: 12px;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistProcessName {
+  text-align: left;
+  /*width:30%;*/
+  font-size: 12px;
+  /*padding-left: 2%;*/
+
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableActivityName {
+  text-align: left;
+  /*width:30%;*/
+  font-size: 12px;
+  /*padding-left: 2%;*/
+
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableStatus {
+  text-align: left;
+  /*width: 1%;*/
+  font-size: 12px;
+  /*padding-left: 2%;*/
+
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowTwo td.WorklistTableFolio {
+  text-align: left;
+  width: 70%;
+  font-size: 12px;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowTwo td.WorklistTableWorkflowName {
+  text-align: right;
+  width: 30%;
+  color: #4f7216;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowTwo {
+  width: 100%;
+}
+td.LastRowSelectGridArrow {
+  background: white;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow div.WorklistItemSectionDiv div.WorklistItem table.WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTableSelectArrow {
+  width: 40px;
+  text-align: center;
+  /*background: #e2f5fc;*/
+
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow table.WorkListItemTable td.WorklistItemGridCell,
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow table.WorkListItemTable td.WorklistItemFirstCell,
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow table.WorkListItemTableHeader thead.WorkListGridHeader th {
+  min-width: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+div.SourceCodeFormsControlsWorklist table.WorklistMainTable tr.WorklistItemSectionRow table.WorkListItemTable td.WorklistItemIcons div.OverdueImageDivOpen,
+table.WorkListItemTableSimple tr.WorkListItemTableRowOne td.WorklistTablePriority div.OverdueImageDivOpen {
+  background: none !important;
+  height: 11px;
+  width: 11px;
+  float: left;
+  padding-left: 1px;
+}
+.SourceCodeFormsControlsWorklist .OverdueImageDivOpen,
+.SourceCodeFormsControlsWorklist .PriorityImageDivNotHigh {
+  background: none !important;
+  height: 11px;
+  width: 11px;
+  float: left;
+  padding-left: 1px;
+}
+div.SourceCodeFormsControlsWorklist div.WorkListGridTableBody {
+  overflow-y: auto;
+  overflow-x: visible;
+  display: block;
+}
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist .shadedCol {
+  font-style: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+/* prevent interactive for style builder mini control */
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist.readonly .disable-overlay {
+  bottom: 0px;
+  right: 0px;
+}
+.SourceCodeFormsControlsWorklist {
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+.SourceCodeFormsControlsWorklist span.selectedSearchText,
+.SourceCodeFormsControlsWorklist .WorkListItemTableSimple span.selectedSearchText {
+  background-color: yellow;
+}
+.ControlPack-Worklist .SourceCodeFormsControlsWorklist .searchBar .SearchClearTD {
+  padding-left: 2px;
+  position: relative;
+  right: 0;
+}
+#SortBody {
+  top: 0 !important;
+}
+#FilterConfig_secondPageInternal.designTimeOnly .input-control-m-r {
+  display: block;
+}
+.designTimeOnly .input-control .input-control-wrapper {
+  overflow-x: visible;
+}
+.customActions {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.worklist-action-menu-right-cell .worklist-action-text {
+  position: relative;
+  display: block;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+}
+.SourceCodeFormsControlsWorklist .headerTools {
+  margin: 2px;
+  position: absolute;
+  display: inline-block;
+  right: 5px;
+}
+.SourceCodeFormsControlsWorklist .hide-toolbars {
+  display: none !important;
+  /*! required to override inline display style on search & filter buttons*/
+
+}
+.SourceCodeFormsControlsWorklist div.WatermarkText {
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  color: #aaaaaa;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: transparent;
+  cursor: default;
+  display: none;
+}
+.worklist-action-menu-right-cell .No-Item {
+  position: relative;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  font-style: italic;
+  text-decoration: none;
+  color: gray;
+}
+.worklist-action-menu-right-cell-no-hover {
+  background: none !important;
+  width: 144px;
+}
+.SourceCodeFormsControlsWorklist .underline-workitem {
+  text-decoration: underline;
+  cursor: pointer !important;
+}
+.SourceCodeFormsControlsWorklist .WorklistItemGridRow {
+  cursor: default;
+}
+.worklist-action-menu-right-cell:hover,
+.worklist-action-menu-container .worklist-action-icon:hover {
+  cursor: pointer;
+}
+.worklist-action-icon:focus {
+  outline: none;
+}
+/*For switching-off hover background when button is disabled.*/
+
+.worklist-action-menu-right-cell.last,
+.worklist-action-menu-container span.worklist-action-icon.disabled {
+  outline: none;
+  cursor: default;
+  background-color: transparent;
+}
+.SourceCodeFormsControlsWorklist input.ieSimple {
+  margin: 0 3px 1px 1px !important;
+}
+.worklist-action-menu-right-cell .disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+
+}
+.SourceCodeFormsControlsWorklist .WorkListGridHeader span {
+  color: inherit;
+  font-size: inherit;
+}
+.SourceCodeFormsControlsWorklist div.WorkListGridTableBody {
+  text-align: left;
+  padding: 0 0 1px 0;
+  /*padding: 1px; /*without this the div covers the tr focus outline*/
+
+}
+.SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox/*simple & grid*/ {
+  padding-left: 6px;
+}
+/* checkbox td element for each item row */
+
+.SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistTableCheckbox {
+  text-align: left;
+  padding-left: 4px;
+}
+.SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistTableCheckbox.ie-header {
+  padding-left: 6px;
+}
+.SourceCodeFormsControlsWorklist .ie.checkboxheader {
+  padding-left: 5px;
+}
+.SourceCodeFormsControlsWorklist .WorkListItemTable .GridCheckbox/*grid only*/ {
+  padding-left: 8px;
+}
+.SourceCodeFormsControlsWorklist .searchBar tr td:first-child {
+  white-space: nowrap;
+}
+.SourceCodeFormsControlsWorklist .worklist-search-expander {
+  margin-left: 2px;
+  margin-right: 2px;
+  background-position: 1px 1px;
+  padding: 1px;
+  /*position: relative;*/
+
+}
+.SourceCodeFormsControlsWorklist span.worklist-grid-column-header-cell-text,
+.SourceCodeFormsControlsWorklist .searchBar,
+.SourceCodeFormsControlsWorklist .headerTxt {
+  cursor: default;
+}
+/*To add a right padding to help with the ellipses Bug 489951*/
+
+.SourceCodeFormsControlsWorklist span.worklist-grid-column-header-cell-text {
+  padding-right: 5px;
+}
+/* required to override a * selector in smartforms general.css line 38 */
+
+.SourceCodeFormsControlsWorklist .searchBar .text-input,
+.SourceCodeFormsControlsWorklist .searchBar .worklist-filter-dropdown-outer-wrapper {
+  display: block;
+}
+.SourceCodeFormsControlsWorklist .headerTxt {
+  margin: 8px 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.panel-toolbars .WorklistItemGridCell span {
+  display: inline;
+  vertical-align: bottom;
+}
+.worklist-action-menu-right-cell.enhanced-color {
+  background-color: #e0e0e0;
+}
+.SourceCodeFormsControlsWorklist .nav {
+  table-layout: fixed;
+}
+.SourceCodeFormsControlsWorklist .nav input::-moz-focus-inner {
+  border: 0;
+  /*remove black focus style from .worklit-btn in Firefox*/
+
+}
+.condtional-format-preview .SourceCodeFormsControlsWorklist .nav td {
+  background: none !important;
+  /* required to override td selector in grid.css (.grid table.grid-content-table tr.selected td {background-color: #e4efc3;}) */
+
+}
+.condtional-format-preview .SourceCodeFormsControlsWorklist .nav td.worklistToolbarIconWrapper {
+  padding: 5px !important;
+  /* required to override td selector in grid.css (.grid table.grid-content-table td {padding: 0}) */
+
+}
+.SourceCodeFormsControlsWorklist .worklistDisabledOverlay {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #e0e0e0;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+.SourceCodeFormsControlsWorklist .worklistToolbarHeaderTextWrapper {
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+}
+.SourceCodeFormsControlsWorklist .worklistToolbarIconWrapper {
+  float: right;
+  padding: 5px;
+}
+.SourceCodeFormsControlsWorklist .worklistOOFCell {
+  padding: 0 15px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklistOOFCell {
+  height: 0;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .OOF {
+  display: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.out-of-office .OOF {
+  display: block;
+  background-color: white;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .OOFInput {
+  border: 1px solid transparent;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.out-of-office .OOFInput {
+  border: 1px solid #acaf9c;
+}
+.SourceCodeFormsControlsWorklist .worklistOOFMessageWrapper {
+  padding: 4px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklistUserLookupTextbox:focus {
+  outline: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .smartform-checkbox_selectall .input-control-text {
+  display: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchHeaderText {
+  padding-top: 4px;
+}
+.clearFloats {
+  clear: both;
+}
+/* 'X' button that shows up when typing text in the textbox. Remove this IE10+ feature */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist input[type=text]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListItemTableSimple td.shadedCol {
+  background-color: whitesmoke;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .SourceCodeFormsControlsWorklist {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .stylewrapper {
+  overflow: hidden;
+}
+/* static height */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static .WorklistItemSectionCell {
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+}
+/* multi select mode + static height (Simple Layout) */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static .WorklistItemSectionCell {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static.worklist-multiselect-mode .WorklistItemSectionCell {
+  top: 67px;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static.search-section-active.search-options-expanded .WorklistItemSectionCell {
+  top: 88px;
+}
+/* search + static height */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static.search-section-active .WorklistItemSectionCell {
+  top: 64px;
+}
+/* search + multi select mode + static height (Simple Layout) */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static.search-section-active.worklist-multiselect-mode .WorklistItemSectionCell {
+  top: 102px;
+}
+/*B564452*/
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static.search-section-active.worklist-multiselect-mode.search-options-expanded .WorklistItemSectionCell {
+  top: 126px;
+}
+/* static height (Grid Layout) */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.grid-layout.height-static .WorkListGridTableBody {
+  position: absolute;
+  top: 21px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  box-sizing: border-box;
+}
+/* static height (Simple Layout) */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static .WorkListGridTableBody {
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  box-sizing: border-box;
+}
+/* RTL layout */
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-Worklist .stylewrapper {
+  overflow: hidden;
+}
+html[dir=rtl] .theme-entry .input-control a.input-control,
+html[dir=rtl] .SourceCodeFormsControlsWorklist .WorkListGridHeader .worklist-grid-column-header-cell,
+html[dir=rtl] .SourceCodeFormsControlsWorklist .WorklistItemGridRow {
+  text-align: right;
+}
+html[dir=rtl] .SourceCodeFormsControlsWorklist .WorkListGridHeader .worklist-grid-column-header-cell.checkboxheader {
+  text-align: inherit;
+}
+html[dir=rtl] #worklist-control-filter-date-range .calendar-control,
+html[dir=rtl] #worklist-control-filter-date-range .dropdown-box,
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .column-arow {
+  left: 0;
+  right: inherit;
+}
+html[dir=rtl] #OOFGrid {
+  position: static !important;
+}
+html[dir=rtl] .worklist-action-menu-right-cell .worklist-action-text {
+  padding-right: 10px;
+}
+html[dir=rtl] .SourceCodeFormsControlsWorklist .worklistToolbarHeaderTextWrapper {
+  float: right;
+  padding-right: 0;
+}
+html[dir=rtl] .SourceCodeFormsControlsWorklist .worklistToolbarIconWrapper {
+  float: left;
+}
+html[dir=rtl] .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchClear {
+  background-position: 3px 5px;
+}
+html[dir=rtl] .theme-entry .input-control.select-box .input-control-buttons {
+  border-width: 1px 0 1px 1px;
+}
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-column-divider {
+  left: 0;
+  right: initial;
+}
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistItemIcons {
+  padding-left: 0;
+  padding-right: 4px;
+}
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistItemIcons div.OverdueImageDiv {
+  float: right;
+  padding-left: 0px;
+  padding-right: 1px;
+}
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistItemIcons div.PriorityImageDiv {
+  float: right;
+}
+.msie .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklist-grid-column-header-cell .input-control-img {
+  left: -1px;
+}
+html[dir=rtl] .ControlPack-Worklist .SourceCodeFormsControlsWorklist .searchBar .SearchClearTD {
+  right: 2px;
+}
+/* force cache image on load, this selector should never be visible */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .force-refresh-error-cache {
+  width: 0 !important;
+  /* override theme */
+  height: 0 !important;
+  /* override theme */
+
+}
+/*Refactor - moved from inline*/
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistItemSectionCell {
+  width: 100%;
+  height: 100%;
+  /*B557088*/
+  vertical-align: top;
+  overflow: visible;
+  /*Update to visible, to allow table item wrapper show scroll for table block*/
+  background-color: white;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.grid-layout .WorkListItemTable tbody.WorklistItemSectionDiv:empty {
+  display: block;
+  height: 1px;
+}
+/* #region SMARTFORMS OVERRIDE */
+
+/* override theme font size to respect style builder */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist .text-underline {
+  font-size: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  color: inherit;
+}
+/* #endregion SMARTFORMS OVERRIDE */
+
+/* #region STYLE BUILDER */
+
+#StyleBuilderPreviewPanelContentWrapper .SourceCode-Forms-Controls-Web-ControlPack-Worklist .disable-overlay {
+  opacity: 0;
+}
+/* #endregion STYLE BUILDER */
+

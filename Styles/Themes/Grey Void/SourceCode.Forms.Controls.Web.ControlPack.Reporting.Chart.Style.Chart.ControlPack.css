@@ -1,0 +1,325 @@
+/* Theme: Blue Void - Theme_Variables.less */
+/* Author: Shawn Dippenaar */
+/* Date: 15/11/2017 */
+/* Header bottom border */
+/* Input/Control Validation */
+/* Command Button (Secondary)*/
+/* Toolbar button */
+/* Load More - Worklist */
+/* ^.theme-entry .... for desktop devices */
+
+/* ^.mobile .theme-entry .... for touch devices */
+
+/*Theme@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  
+}
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+
+.theme-entry .StandardChart .radhtmlcharttitle,
+.theme-entry .StandardGrid .radhtmlcharttitle {
+  min-height: 1.9rem;
+  margin-left: 0;
+}
+.theme-entry .StandardChart .radhtmlchartsubtitle,
+.theme-entry .StandardGrid .radhtmlchartsubtitle {
+  margin-top: 0;
+  margin-left: 0;
+}
+.theme-entry .StandardChart .UserPerfSubHeader,
+.theme-entry .StandardGrid .UserPerfSubHeader {
+  margin-top: 0;
+  margin-left: 0.2rem;
+}
+/* #region Fonts */
+
+.theme-entry .k-tooltip {
+  font-family: "Open Sans", "Segoe UI Regular", Helvetica;
+  font-style: inherit;
+  font-size: 1.6rem;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  padding-left: 2rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.3rem;
+  line-height: normal;
+  background-color: #636f80;
+  color: #c6cfde;
+  -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.theme-entry .StandardChart .radchartlabel,
+.theme-entry .StandardChart .radhtmlchartsubtitle {
+  font-family: "Open Sans", "Segoe UI Regular", Helvetica;
+  font-style: inherit !important;
+  /* font-size: 1.4rem !important;  causing text overlap and due to svg, padding cannot be added from css side, for this iteration commenting out and let original 12px font size to be applied. */
+  white-space: nowrap !important;
+  -webkit-text-overflow: ellipsis !important;
+  -moz-text-overflow: ellipsis !important;
+  -ms-text-overflow: ellipsis !important;
+  -o-text-overflow: ellipsis !important;
+  text-overflow: ellipsis !important;
+}
+/* #endregion Fonts */
+
+/* #region Colors */
+
+.theme-entry .StandardChart .series0ActivityInstances {
+  stroke: #f44336;
+  fill: #f44336;
+}
+.theme-entry .StandardChart .series1ActivityInstances {
+  stroke: #2196f3;
+  fill: #2196f3;
+}
+.theme-entry .StandardChart .series2ActivityInstances {
+  stroke: #9c27b0;
+  fill: #9c27b0;
+}
+.theme-entry .StandardChart .series3ActivityInstances {
+  stroke: #00bcd4;
+  fill: #00bcd4;
+}
+.theme-entry .StandardChart .series4ActivityInstances {
+  stroke: #ffc107;
+  fill: #ffc107;
+}
+.theme-entry .StandardChart .series5ActivityInstances {
+  stroke: #673ab7;
+  fill: #673ab7;
+}
+.theme-entry .StandardChart .series6ActivityInstances {
+  stroke: #e91e63;
+  fill: #e91e63;
+}
+.theme-entry .StandardChart .series7ActivityInstances {
+  stroke: #8bc34a;
+  fill: #8bc34a;
+}
+.theme-entry .StandardChart .series8ActivityInstances {
+  stroke: #bdbdbd;
+  fill: #bdbdbd;
+}
+.theme-entry .StandardChart .series9ActivityInstances {
+  stroke: #cddc39;
+  fill: #cddc39;
+}
+.theme-entry .StandardChart .series10ActivityInstances {
+  stroke: #ffeb3b;
+  fill: #ffeb3b;
+}
+.theme-entry .StandardChart .series11ActivityInstances {
+  stroke: #e91e63;
+  fill: #e91e63;
+}
+.theme-entry .StandardChart.disabled .series0ActivityInstances,
+.theme-entry .StandardChart.disabled .series1ActivityInstances,
+.theme-entry .StandardChart.disabled .series2ActivityInstances,
+.theme-entry .StandardChart.disabled .series3ActivityInstances,
+.theme-entry .StandardChart.disabled .series4ActivityInstances,
+.theme-entry .StandardChart.disabled .series5ActivityInstances,
+.theme-entry .StandardChart.disabled .series6ActivityInstances,
+.theme-entry .StandardChart.disabled .series7ActivityInstances,
+.theme-entry .StandardChart.disabled .series8ActivityInstances,
+.theme-entry .StandardChart.disabled .series9ActivityInstances,
+.theme-entry .StandardChart.disabled .series10ActivityInstances,
+.theme-entry .StandardChart.disabled .series11ActivityInstances {
+  stroke: #c7c7c7;
+  fill: #c7c7c7;
+}
+.theme-entry .StandardChart.disabled path.barInstance:not([stroke="none"]),
+.theme-entry .StandardChart.disabled path.barIndicator:not([stroke="none"]) {
+  stroke: #c7c7c7;
+  fill: #c7c7c7;
+}
+.theme-entry .StandardChart .series0ActivityInstances,
+.theme-entry .StandardChart .series1ActivityInstances,
+.theme-entry .StandardChart .series2ActivityInstances,
+.theme-entry .StandardChart .series3ActivityInstances,
+.theme-entry .StandardChart .series4ActivityInstances,
+.theme-entry .StandardChart .series5ActivityInstances,
+.theme-entry .StandardChart .series6ActivityInstances,
+.theme-entry .StandardChart .series7ActivityInstances,
+.theme-entry .StandardChart .series8ActivityInstances,
+.theme-entry .StandardChart .series9ActivityInstances,
+.theme-entry .StandardChart .series10ActivityInstances,
+.theme-entry .StandardChart .series11ActivityInstances {
+  opacity: 1;
+  /* columns should not be semi-transparent */
+
+}
+/* #endregion Series Colors */
+
+/* #region Headers & Labels */
+
+/* chart header wrapper */
+
+.theme-entry .StandardChart .header-wrapper {
+  line-height: normal;
+  height: 4.4rem;
+  background-color: white;
+  color: #b4b4b4;
+  border-bottom: 1px solid #e5e5e5;
+}
+.msie .theme-entry .StandardChart .header-wrapper,
+.mozilla .theme-entry .StandardChart .header-wrapper {
+  height: 4.1rem;
+}
+.theme-entry .StandardChart .radhtmlcharttitle {
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding-left: 2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0;
+  line-height: normal;
+  color: #868686;
+  cursor: default;
+  text-transform: uppercase;
+}
+.theme-entry .StandardChart.disabled .radhtmlcharttitle {
+  color: #c7c7c7;
+}
+.msie .theme-entry .StandardChart .radhtmlcharttitle {
+  padding-top: 0.3rem;
+}
+.theme-entry .StandardChart .radchartlabel {
+  fill: #838383;
+  color: #838383;
+}
+.theme-entry .StandardChart.disabled .radchartlabel {
+  fill: #c7c7c7;
+  color: #c7c7c7;
+}
+.theme-entry .StandardChart .radhtmlchartsubtitle {
+  font-weight: 700;
+  padding-left: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 1.3rem;
+  line-height: normal;
+  color: #c7c7c7;
+  position: relative;
+  top: -1px;
+  cursor: default;
+  text-transform: uppercase;
+}
+.msie .theme-entry .StandardChart .radhtmlchartsubtitle,
+.mozilla .theme-entry .StandardChart .radhtmlchartsubtitle {
+  top: 0;
+}
+/* #endregion Headers & Labels */
+
+/* #region Tooltip */
+
+.theme-entry .k-tooltip {
+  border: none !important;
+  background-color: white !important;
+  padding: 1rem !important;
+  color: #838383 !important;
+  -webkit-box-shadow: 0rem 0rem 0.3rem 0rem rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0rem 0rem 0.3rem 0rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0rem 0.3rem 0rem rgba(0, 0, 0, 0.5);
+}
+/* #endregion Tooltip */
+
+/* #region Chart Items Boxing */
+
+.theme-entry .StandardChart .stylewrapper {
+  position: absolute !important;
+  left: 0px !important;
+  right: 0px !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  overflow: visible !important;
+  background-color: white !important;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.theme-entry .boxing {
+  padding: 0 0 2rem 0 !important;
+}
+.theme-entry .k-chart {
+  top: 0.7rem;
+}
+/* #endregion Chart Items Boxing */
+
+/* #endregion DESKTOP*/
+
+/* #region TOUCH */
+
+.mobile .theme-entry .StandardChart .radhtmlcharttitle {
+  font-size: 1.6rem;
+  padding-bottom: 0;
+}
+.mobile .theme-entry .StandardChart .radhtmlchartsubtitle {
+  font-size: 1.4rem;
+}
+.mobile .theme-entry .StandardChart .radhtmlchartsubtitle {
+  top: 0;
+}
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 360px) and (orientation: portrait), only screen and (max-width: 640px) and (orientation: landscape) {
+  .mobile .theme-entry #ProcessChartPropertyConfig_secondPageInternal div + div + div {
+    position: absolute !important;
+    height: auto !important;
+    width: 100% !important;
+    bottom: 90px;
+    top: 65px;
+  }
+  .mobile .theme-entry #ProcessChartPropertyConfig_secondPageInternal #ProcessChartTextBox {
+    float: none !important;
+    /* override inline */
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 900px !important;
+    /* override inline */
+  
+  }
+  .mobile .theme-entry #ProcessChartPropertyConfig_secondPageInternal .processchart-add {
+    margin-left: 0 !important;
+    /* override inline */
+    margin-right: 0.5rem !important;
+    /* override inline */
+  
+  }
+}
+/* Extra Small Devices - Orientation Targetting */
+
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+  
+}
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  .mobile .theme-entry div#ProcessChartPropertyConfig_secondPageOutside .popup-header {
+    display: none;
+    /* hiding dialog header to generate more real estate */
+  
+  }
+  .mobile .theme-entry div#ProcessChartPropertyConfig_secondPageOutside .popup-body {
+    top: 0.3rem;
+  }
+}
+/*#endregion RESPONSIVE BREAKING POINTS */
+

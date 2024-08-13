@@ -1,0 +1,150 @@
+/*Designtime Pickers*/
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside.designtime #ProcessChartConfigTreeHolder 
+{
+	width: 465px !important;
+}
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside.designtime #ProcessChartTextBox 
+{
+	width: 400px !important;
+	height: 85px !important;
+	margin-left: 5px !important;
+	float: left !important;
+}
+
+.theme-entry #UsersConfig_secondPageOutside.designtime #textBoxDiv 
+{
+	width: 293px !important;
+}
+
+.theme-entry #UsersConfig_secondPageOutside.designtime 
+{
+	height: 350px !important;
+}
+
+.theme-entry #UsersConfig_secondPageOutside.designtime.expanded
+{
+	height: 372px !important;
+}
+
+.theme-entry #UsersConfig_secondPageOutside.designtime #UsersList
+{
+	height: 160px !important;
+	width: 465px !important;
+}
+
+.theme-entry #UsersConfig_secondPageOutside.designtime #UsersTextBox
+{
+	height: 48px !important;
+	width: 403px !important;
+}
+
+.theme-entry #StatusPropertyConfig_secondPageOutside.designtime 
+{
+	height: 275px !important;
+}
+
+.theme-entry #DateRangeConfig_secondPageOutside.designtime 
+{
+	height: 235px !important;
+}
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside.designtime #ProcessChartConfigTreeHolder1 
+{
+	height: 150px !important;
+}
+
+.theme-entry #UsersConfig_secondPageOutside
+{
+	height: 410px !important; /* override popup manager */
+}
+
+.theme-entry .users-complex-search-options
+{
+	margin-bottom: 4px;
+}
+
+.theme-entry #UsersTextBox
+{
+	width: 389px;
+	height: 49px;
+}
+
+.theme-entry #UsersConfig_secondPage .panel .panel-body-m,
+.theme-entry #StatusPropertyConfig_secondPage .panel .panel-body-m,
+.theme-entry #DateRangeConfig_secondPage .panel .panel-body-m
+{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.theme-entry #UsersConfig_secondPageOutside.designtime .panel .panel-body-m,
+.theme-entry #StatusPropertyConfig_secondPageOutside.designtime .panel .panel-body-m,
+.theme-entry #DateRangeConfig_secondPageOutside.designtime .panel .panel-body-m
+{
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+}
+
+.theme-entry #DateRangeConfig_secondPageOutside
+{
+	height: 235px !important;
+}
+
+.theme-entry #StatusPropertyConfig_secondPageOutside
+{
+	height: 315px !important;
+}
+
+.theme-entry #DisplayValueConfigPicker
+{
+	height: 135px !important;
+}
+
+.theme-entry #DisplayValueConfigPicker .popup-body-content
+{
+	background-color: #FFFFFF;
+}
+
+.theme-entry #addButton1 span,
+.theme-entry #addButton2 span
+{
+	padding: 0;
+}
+
+.theme-entry .spanUsers.textboxSpan:hover,
+.theme-entry .spanUsers.selectedspan,
+.theme-entry .spanUsers.selectedspan:hover,
+.theme-entry .spanUsers:hover
+{
+	background-color:#c4e9f5;
+}
+
+.theme-entry .report-grid-navigation-wrapper .pager-buttongeneric.buttonFirstPage 
+{
+	background-position-y: 55%;
+}
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartConfigTreeHolder,
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox,
+.theme-entry #UsersConfig_secondPageOutside #UsersTextBox,
+.theme-entry #ReportHeaderActivityPicker .workflowTreeContainer
+{
+    border: 1px solid #adae9c;
+}
+
+.theme-entry #ReportHeaderActivityPicker .workflowTreeContainer
+{
+    height: 111px;
+}
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #addButton1:hover,
+.theme-entry #UsersConfig_secondPageOutside .scroll-wrapper #UsersConfig_secondPageInternal #addButton2:hover
+{
+    color: #343e41;
+}

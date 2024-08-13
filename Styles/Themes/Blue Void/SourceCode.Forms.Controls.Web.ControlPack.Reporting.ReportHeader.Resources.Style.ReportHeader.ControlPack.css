@@ -1,0 +1,1648 @@
+/* #region DESKTOP */
+
+/* #region REPORT HEADER MAIN */
+
+
+/* #endregion REPORT HEADER MAIN */
+
+
+.theme-entry .form-field-label
+{
+    white-space: nowrap !important;
+    overflow: hidden;
+    -webkit-text-overflow: ellipsis !important;
+    -moz-text-overflow: ellipsis !important;
+    -ms-text-overflow: ellipsis !important;
+    -o-text-overflow: ellipsis !important;
+    text-overflow: ellipsis !important;
+    color: #636f80;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .textlabel
+{
+    display: inline;
+    line-height: normal;
+    color: #868686;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.disabled .textlabel
+{
+    color: #c7c7c7;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .topDivElipseEffect
+{
+    padding-top: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper
+{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.report-header-collapsed .topInfoString
+{
+    display: inline;
+    color: #abaaaa;
+}
+
+.theme-entry .textlabel > div
+{
+    line-height: 3.2rem !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_main.linkText
+{
+    font-size: 1.2rem;
+    color: #5d9eea;
+    text-decoration: none;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_main.linkText:hover
+{
+    color: #0070ff;
+    text-decoration: underline;
+}
+
+.theme-entry .disabled .reportheader_main.linkText,
+.theme-entry .disabled .reportheader_main.linkText:hover
+{
+    color: #c7c7c7;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper 
+{
+    height: 156px !important; /* This is to give enough height for the header so that scrollbar doesn't show. */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper .form-field .form-field-element-wrapper
+{
+    line-height: normal;
+    padding-left: 6.0rem;
+    padding-top: 0.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper .form-field label.form-field-label
+{
+    padding-top: 0.2rem;
+    padding-left: 0;
+    color: #abaaaa;
+    text-transform: uppercase;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.disabled .reportheader_wrapper .form-field label.form-field-label
+{
+    color: #c7c7c7;
+}
+
+/* #region SELECT WORKFLOWS PICKER */
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside
+{
+    height: 40rem !important; /* override -- inline -- popup manager */
+}
+
+.theme-entry #ProcessChartConfig_secondPage .panel.full > .panel-body > .panel-body-m
+{
+    left: 0; /* override -- inline --*/
+    right: 0; /* override -- inline --*/
+}
+
+
+/* workflow tree box */
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartConfigTreeHolder
+{
+    border: solid 0.1rem #e6e6e6;
+    padding-left: 0.5rem;
+}
+
+/* red cross icon to remove added activity */
+.theme-entry #ProcessChartPropertyConfig_secondPageInternal .processInnerSpan,
+.theme-entry #UsersConfig_secondPageInternal .removeUserItem
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.6rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(RuntimeTheme/ClearIcon_White16.png);
+    width: 16px;
+    height: 16px;
+}
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox
+{
+    border: solid 0.1rem #e6e6e6;
+    margin-top: -0.1rem;
+    padding: 0.2rem;
+    display: block;
+    height: 6.8rem;
+    overflow: auto;
+}
+
+/* red cross image next to the activity name in the added activity box */
+.theme-entry #ProcessChartConfig_secondPage .imgDelete16, /* Select Workflow picker */
+.theme-entry #UsersConfig_secondPageInternal .imgDelete16, /* Select Workflow picker */
+.theme-entry #UsersConfig_secondPageInternal .removeUserItem img /* Select User picker */
+{
+    display: none;
+}
+
+/* #endregion SELECT WORKFLOWS PICKER */
+
+
+/* #region SELECT DATE RANGE PICKER */
+
+.theme-entry #DateRangeConfig_secondPageOutside
+{
+    height: 24.0rem !important; /* override -- inline -- popup manager */
+    width: 57.0rem !important; /* override -- inline -- popup manager */
+}
+
+.theme-entry #ProcessChartConfig_secondPage .scroll-wrapper
+{
+    overflow: hidden;
+}
+
+.theme-entry .DateRange .input-control-wrapper
+{
+    margin-left: 0.5rem;
+}
+
+/* the picker area containing rows */
+.theme-entry #DateRangeConfig_secondPage .panel-body-m
+{
+    height: auto;
+}
+
+/* the word "last" in the custom range row */
+.theme-entry .predefinedDropWrapper .lastdivtext
+{
+    padding-right: 0.5rem;
+}
+
+.theme-entry .predefinedDropWrapper .form-element.selectbox .input-control-body.styling-left
+{
+    width: auto;
+}
+
+/* Custom Range radio button label */
+.theme-entry .formCustomInnerWrapper > .input-control.radio
+{
+    margin-top: 1.0rem;
+}
+
+/* Specific Range radio button label */
+.theme-entry .formSpecificInnerWrapper > .input-control.radio
+{
+    margin-top: 2.5rem;
+}
+
+.theme-entry .datepicker-right
+{
+    margin-left: 0;
+}
+
+/* #region SELECT STATUS PICKER */
+
+.theme-entry #StatusPropertyConfig_secondPageOutside
+{
+    width: 29.0rem !important; /* override -- inline -- popup manager */
+    height: 33.0rem !important; /* override -- inline -- popup manager */
+}
+
+.theme-entry #StatusPropertyConfig_secondPageInternal .select-status-picker-content-area
+{
+    height: 21.0rem;
+}
+
+.theme-entry #StatusPropertyConfig_secondPageInternal .form-field > .form-field-label /* radio label in Select Status picker */
+{
+    float: left;
+    display: none;
+}
+
+.theme-entry #StatusPropertyConfig_secondPageOutside .form-field-element-wrapper
+{
+    float: left;
+}
+
+.theme-entry #StatusPropertyTextBox tr
+{
+    line-height: 1.3rem;
+}
+
+.theme-entry #StatusPropertyTextBox tr td
+{
+    padding-bottom: 1.0rem;
+}
+
+.theme-entry #StatusPropertyTextBox tr td:last-child
+{
+    padding-left: 0.5rem;
+}
+
+/* #endregion SELECT STATUS PICKER */
+
+
+/* #region SELECT USERS PICKER */
+.theme-entry #UsersConfig_secondPageOutside #usersearchbar
+{
+    line-height: normal;
+}
+
+/* space for each checkbox row */
+.theme-entry .linkHighlightStatusText
+{
+    margin-bottom: 0.1rem;
+}
+
+/* label text */
+.theme-entry .linkHighlightStatusText .input-control-text
+{
+    margin-left: 0.2rem;
+}
+
+.theme-entry #UsersConfig_secondPageInternal
+{
+    overflow-x: hidden;
+}
+
+.theme-entry #UsersConfig_secondPageOutside /* picker */
+{
+    width: 60rem !important; /* override -- inline -- popup manager */
+    height: 43.8rem !important; /* override -- inline -- popup manager */
+}
+
+.theme-entry #UsersConfig_secondPageOutside .sfc-reporting-user-config-section-container
+{
+    margin: 0.3rem 0 0 0.4rem;
+}
+
+/* users in pillbox for added user */
+.theme-entry #UsersConfig_secondPageInternal #UsersTextBox .textboxSpan,
+.theme-entry #ProcessChartPropertyConfig_secondPageInternal .spanUsers.textboxSpan
+{
+    background-color: #5d9eea;
+    color: #fff;
+    padding: 0.5rem;
+    display: inline-block;
+    margin: 0.2rem 0.1rem 0 0.2rem;
+}
+
+/* selected user styling */
+.theme-entry .spanUsers.selectedspan
+{
+    background-color: #5d9eea;
+    color: #ffffff;
+}
+
+/* hover state for user */
+.theme-entry #UsersConfig_secondPageInternal #UsersTextBox .textboxSpan:hover,
+.theme-entry #UsersConfig_secondPageInternal #UsersTextBox .textboxSpan:hover span,
+.theme-entry .spanUsers:hover,
+.theme-entry #ProcessChartPropertyConfig_secondPageInternal .spanUsers.textboxSpan:hover
+{
+    background-color: #0070ff; /* override -- base */
+    color: #ffffff;
+}
+
+.theme-entry #selectedUsersPanel > .users-complex-search-options
+{
+    margin-left: 1.5rem;
+}
+
+.theme-entry #UsersConfig_secondPageOutside .sfc-report-header-users-config-select-user-radio-container
+{
+    margin-left: 0;
+    height: 2.7rem;
+}
+
+/* user search result box */
+.mozilla .theme-entry #UsersConfig_secondPageOutside .user-search-result-box,
+.theme-entry #UsersConfig_secondPageOutside .user-search-result-box
+{
+    height: 12.0rem;
+    background-color: #fff;
+    border: solid 0.1rem #e6e6e6;
+}
+
+.theme-entry #UsersConfig_secondPageOutside.search-expanded .user-search-result-box
+{
+    margin-top: 0.3rem;
+}
+
+.theme-entry .securityLabelText /* security table text */
+{
+    margin-top: 1.0rem !important; /* override -- inline --*/
+}
+
+.theme-entry #selectedUsersPanel .input-control.dropdown-box .input-control-body.styling-left /* criteria dropdown left node */
+{
+    width: 100%;
+}
+
+.theme-entry #selectedUsersPanel .indented /* the last row where Add button is located */
+{
+    margin-left: 0;
+}
+
+.theme-entry #UsersTextBox /* textbox that displays added user name */
+{
+    border: solid 0.1rem #e6e6e6;
+}
+
+/* radio label */
+.theme-entry #UsersConfig_secondPageInternal .input-control.radio
+{
+    display: inline-block;
+    width: 100%;
+    border-width: 1px;
+}
+
+.theme-entry #UsersConfig_secondPageInternal .input-control.radio.focus
+{
+    border: 1px dotted #00abf0;
+    outline-color: transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.theme-entry #selectedUsersPanel
+{
+    height: 100%;
+}
+
+/* user search result list box */
+.theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers.search-result-list-box
+{
+    line-height: 3.0rem;
+    height: 3.0rem;
+    width: 100%;
+    padding-left: 3rem;
+    background-position: 7px 7px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.theme-entry #UsersConfig_secondPageOutside #selectedPanelDisabler.disabled
+{
+    background-color: transparent;
+}
+
+/* added user textbox */
+.theme-entry #UsersConfig_secondPageOutside #UsersTextBox
+{
+    height: 9.3rem;
+}
+
+/* added user textbox when search area is expanded */
+.theme-entry #UsersConfig_secondPageOutside.search-expanded #UsersTextBox
+{
+    height: 6.6rem;
+}
+
+.theme-entry #UsersConfig_secondPageOutside .security-label-cell
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.theme-entry #UsersConfig_secondPageInternal .radio .input-control-img
+{
+    margin: 0.2rem 0;
+}
+
+.mozilla .theme-entry #UsersConfig_secondPageInternal .radio .input-control-img
+{
+    margin: 0.1rem 0;
+}
+
+.msie .theme-entry #UsersConfig_secondPageInternal .radio .input-control-img
+{
+    height: 1.9rem; /* override theme core 1.8rem to prevent getting cut off */
+}
+
+.theme-entry #UsersConfig_secondPageOutside .security-label-box
+{
+    height: auto;
+    line-height: normal;
+}
+
+.theme-entry #UsersConfig_secondPageOutside .search-container .dropdown-box .input-control-m-c
+{
+    height: 2.4rem;
+}
+
+.theme-entry #UsersConfig_secondPageOutside .scroll-wrapper #UsersConfig_secondPageInternal #addButton2
+{
+    color: #ffffff;
+}
+
+/* #endregion SELECT USERS PICKER */
+
+
+/* #region SELECT ACTIVITY PICKER */
+
+.theme-entry #ReportHeaderActivityPicker
+{
+    height: 340px !important; /* override popup manager */
+}
+
+.theme-entry #ReportHeaderActivityPicker .workflowTreeContainer /* workflow tree box */
+{
+    height: 21.7rem;
+    padding: 0 0 0 0.3rem;
+    margin: 0;
+    background-color: #fff;
+}
+
+.theme-entry #ReportHeaderActivityPicker .form-field-label
+{
+    width: 7.8rem;
+    padding: 0;
+    margin: 0;
+}
+
+.theme-entry #ReportHeaderActivityPicker .form-field:last-child .form-field-label,
+.theme-entry #ReportHeaderActivityPicker .form-field:last-child .form-field-element-wrapper 
+{
+    padding-top: 0.3rem;
+}
+
+.mobile .theme-entry #ReportHeaderActivityPicker .form-field:last-child .form-field-label 
+{
+    height: 2.8rem;
+}
+
+/* #endregion SELECT ACTIVITY PICKER */
+
+/* #region DISPLAY VALUE PICKER */
+.theme-entry #DisplayValueConfigPicker
+{
+    width: 40rem !important; /* override -- inline -- popup manager */
+    height: 18.0rem !important; /* override -- inline -- popup manager */
+}
+
+.theme-entry #DisplayValueConfigPicker .input-control.dropdown-box
+{
+    margin-top: 0.5rem;
+}
+
+/* #endregion DISPLAY VALUE PICKER */
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .stylewrapper
+{
+    background-color: #f7f7f7;
+    border: transparent;
+    padding: 0px;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader
+{
+    position: relative;
+    box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.25);
+}
+
+.theme-entry .form-field label.form-field-label
+{
+    position: relative;
+    vertical-align: top;
+    width: 14.0rem;
+    height: 2.4rem;
+    padding-top: 0.5rem;
+}
+
+/* Select Workflow picker */
+.theme-entry #ProcessChartPropertyConfig_secondPageInternal .workflow-selection-radio-wrapper
+{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #addButton1
+{
+    margin: 0.6rem auto 0.6rem auto;
+}
+
+.mozilla .theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox
+{
+    height: 7.3rem;
+}
+
+/* Select Status Picker */
+.theme-entry #StatusPropertyConfig_secondPageInternal
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1.0rem 0;
+}
+
+/* #region SELECT DATE RANGE PICKER */
+.theme-entry #DateRangeConfig_secondPageInternal
+{
+    height: 12.5rem;
+}
+
+.theme-entry #DateRangeConfig_secondPageInternal .input-control.radio
+{
+    display: inline-block;
+    width: 20rem;
+}
+
+.theme-entry #DateRangeConfig_secondPageInternal .input-control.radio .input-control-text
+{
+    width: 17rem;
+}
+
+.theme-entry .formPreDefinedWrapper > .form-field-element-wrapper.selectbox
+{
+    padding-left: 5rem;
+}
+
+.mozilla .theme-entry #DateRangeConfig_secondPageInternal .input-control.radio .input-control-text
+{
+    display: inline-block;
+}
+
+.theme-entry #DateRangeConfig_secondPageInternal .date-wrapper
+{
+    height: 5.5rem;
+}
+
+.theme-entry #DateRangeConfig_secondPageInternal .custom-drop-wrapper
+{
+    vertical-align: middle;
+}
+
+.theme-entry #DateRangeConfig_secondPageInternal .specific-radio-wrapper
+{
+    padding-top: 0.6rem;
+}
+
+.theme-entry #DateRangeConfig_secondPageInternal .predefined-radio-wrapper
+{
+    padding-right: 2rem;
+}
+
+.theme-entry #DateRangeConfig_secondPageInternal .date-wrapper-cell
+{
+    padding-top: 0.1rem;
+}
+
+.theme-entry #DateRangeConfig_secondPageInternal .specific-drop-wrapper
+{
+    vertical-align: top;
+    padding-top: 0.5rem;
+}
+
+.theme-entry #DateRangeConfig_secondPageInternal .calendar-start-date-text,
+.theme-entry #DateRangeConfig_secondPageInternal .calendar-end-date-text
+{
+    padding-right: 1.7rem;
+}
+
+.theme-entry #DateRangeConfig_secondPageInternal .custom-radio-wrapper
+{
+    vertical-align: middle;
+}
+
+/* #endregion SELECT DATE RANGE PICKER */
+
+/* #endregion DESKTOP */
+
+
+/* #region TOUCH */
+
+/* #region REPORT HEADER MAIN */
+
+/* sub text for report header text should not be visible for any mobile device */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.report-header-collapsed .report-header-main-sub-text
+{
+    display: none;
+}
+
+/* report header text */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .textlabel
+{
+}
+
+/* #endregion REPORT HEADER MAIN */
+
+/* search textbox */
+.mobile .theme-entry #RangeBox,
+.mobile .theme-entry #DateRangeConfig_TextBox,
+.mobile .theme-entry #DateRangeConfig_TextBox2
+{
+    -webkit-appearance: none;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_main
+{
+    font-size: 1.6rem;
+}
+
+.mobile .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.runtime.scrollable
+{
+    min-height: 30.0rem;
+    background-color: #dcdcdc !important; /* override -- inline */
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper .form-field .form-field-element-wrapper
+{
+    line-height: 3rem;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper .form-field label.form-field-label
+{
+    padding-bottom: 0rem;
+}
+
+/* Select Workflow picker */
+.mobile .theme-entry #ProcessChartPropertyConfig_secondPageOutside
+{
+    height: 46.2rem !important; /* override -- inline (popup manager) */
+}
+
+/* #region SELECT DATE RANGE PICKER */
+.mobile .theme-entry #DateRangeConfig_secondPageOutside
+{
+    height: 28.0rem !important; /* override -- inline (popup manager) */
+    width: 65.0rem !important; /* override -- inline (popup manager) */
+}
+
+.mobile .theme-entry #DateRangeConfig_secondPageOutside .scroll-wrapper
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.mobile .theme-entry #DateRangeConfig_secondPageInternal .input-control.radio
+{
+    width: 25rem;
+}
+
+.mobile .theme-entry .formPreDefinedWrapper
+{
+    margin-bottom: 3.1rem;
+}
+
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.date > span span
+{
+    height: 3.0rem;
+    width: 3.0rem;
+}
+
+.ie10.mobile .theme-entry #DateRangeConfig_Image,
+.ie11.mobile .theme-entry #DateRangeConfig_Image,
+.ie10.mobile .theme-entry #DateRangeConfig_Image2,
+.ie11.mobile .theme-entry #DateRangeConfig_Image2
+{
+    height: 3.3rem;
+}
+
+.mobile .theme-entry #DateRangeConfig_secondPageInternal .calendar-start-date-text
+{
+    margin-top: 0;
+}
+
+
+/* custom range */
+.mobile .theme-entry #DateRangeConfig_secondPageInternal .custom-range-row-label
+{
+    width: 8.9rem;
+}
+
+.mobile .theme-entry #DateRangeConfig_secondPageInternal .lastdivtext
+{
+    margin-right: 0.5rem;
+}
+
+
+
+/* #endregion SELECT DATE RANGE PICKER */
+
+/* Select Status picker */
+
+.mobile .theme-entry #StatusPropertyConfig_secondPageOutside
+{
+    height: 55.0rem !important; /* override -- inline (popup manager) */
+}
+
+.mobile .theme-entry #StatusPropertyConfig_secondPageInternal .select-status-picker-content-area
+{
+    height: auto;
+}
+
+/* #region SELECT USER PICKER */
+
+.mobile .theme-entry #UsersConfig_secondPageOutside #selectedPanelDisabler.disabled
+{
+    top: 7rem;
+}
+
+.mobile.msie .theme-entry #UsersConfig_secondPageInternal .radio .input-control-img
+{
+    height: 2.4rem;
+}
+
+/* user search result list box */
+.mobile .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers.search-result-list-box
+{
+    line-height: 3.0rem;
+    height: 3.0rem;
+    width: 100%;
+    padding-left: 3rem;
+    background-position: 7px 7px;
+    vertical-align: middle;
+}
+
+
+.mobile .theme-entry #UsersConfig_secondPageOutside .user-search-result-box
+{
+    margin-top: 0.3rem;
+}
+
+.mobile .theme-entry #UsersConfig_secondPageOutside #selectedUsersPanel
+{
+    height: auto;
+}
+
+
+.mobile .theme-entry #searchButtonDiv > span > span
+{
+    background-position: center;
+    width: 32px;
+    height: 32px;
+}
+
+.mobile .theme-entry #UsersConfig_secondPageOutside #UsersTextBox
+{
+    height: 16rem;
+}
+
+.mobile .theme-entry #UsersConfig_secondPageOutside.search-expanded .user-search-result-box
+{
+    height: 16rem;
+}
+
+.mobile.msie .theme-entry #UsersConfig_secondPageOutside .search-container .dropdown-box .input-control-m-c
+{
+    height: 3.5rem;
+}
+
+.mobile .theme-entry #UsersConfig_secondPageOutside .sfc-report-header-users-config-select-user-radio-container
+{
+    height: 3.0rem;
+}
+
+/* #endregion SELECT USER PICKER */
+
+
+/* #region SELECT STATUS PICKER */
+
+.mobile .theme-entry .linkHighlightStatusText .focus
+{
+    outline: 1px dotted #00abf0;
+}
+
+.mobile .theme-entry #StatusPropertyConfig_secondPageInternal .form-field
+{
+    position: relative;
+}
+
+.mobile .theme-entry #StatusPropertyConfig_secondPageInternal .form-field-element-wrapper
+{
+}
+
+.mobile .theme-entry #StatusPropertyConfig_secondPageInternal .select-status-picker-content-area
+{
+    float: none;
+}
+
+.mobile .theme-entry .linkHighlightStatusText
+{
+    margin-bottom: 1.0rem;
+}
+
+.mobile .theme-entry .linkHighlightStatusText .input-control-text
+{
+    margin-left: 0.5rem;
+}
+
+/* #endregion SELECT STATUS PICKER */
+
+/* #region SELECT ACTIVITY PICKER */
+.mobile .theme-entry #ReportHeaderActivityPicker
+{
+    height: 41rem !important; /* override popup manager */
+}
+
+/* #endregion SELECT ACTIVITY PICKER */
+
+
+
+/* #endregion TOUCH */
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.reportheader-control > a,
+    .theme-entry .tree li.reportheader-control > span,
+    .theme-entry .tree li.reportheader-control.children.open > a,
+    .theme-entry .tree li.reportheader-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Reporting.ReportHeader/Images/ReportHeader16.png');
+    }
+
+    .theme-entry .tree li.reportheader-control > a:hover,
+    .theme-entry .tree li.reportheader-control > span:hover,
+    .theme-entry .tree li.reportheader-control.selected > a,
+    .theme-entry .tree li.reportheader-control.selected > span,
+    .theme-entry .tree li.reportheader-control > a:focus,
+    .theme-entry .tree li.reportheader-control > span:focus,
+    .theme-entry .tree li.reportheader-control.children.open > a:hover,
+    .theme-entry .tree li.reportheader-control.children.open > span:hover,
+    .theme-entry .tree li.reportheader-control.children.open.selected > a,
+    .theme-entry .tree li.reportheader-control.children.open.selected > span,
+    .theme-entry .tree li.reportheader-control.children.open > a:focus,
+    .theme-entry .tree li.reportheader-control.children.open > span:focus,
+    .theme-entry .tree li.reportheader-control.children.closed > a:hover,
+    .theme-entry .tree li.reportheader-control.children.closed > span:hover,
+    .theme-entry .tree li.reportheader-control.children.closed.selected > a,
+    .theme-entry .tree li.reportheader-control.children.closed.selected > span,
+    .theme-entry .tree li.reportheader-control.children.closed > a:focus,
+    .theme-entry .tree li.reportheader-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Reporting.ReportHeader/Images/ReportHeader_Selected14.png');
+    }
+
+    /* #region IMAGE DESKTOP */
+    .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers /* report header - user select picker */
+    {
+        background-image: url(Management/User16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers:hover /* report header - user select picker */
+    {
+        background-image: url(Management/User_Hover16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+    }
+    .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers:focus,
+    .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers.selectedspan
+    {
+        background-image: url(Management/User_Selected16.png);        
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+    }
+
+
+    .theme-entry #searchButtonDiv > span > span /* Select Users picker - user search icon */
+    {
+        background-image: url(Toolbar/Search16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry #searchButtonDiv:hover > span > span, /* report header - Select Users picker - user search icon */
+    .theme-entry #searchButtonDiv:focus > span > span
+    {
+        background-image: url(Toolbar/Search16White.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry .tree a.process-activity,
+    .theme-entry .tree li.children > a.process-activity,
+    .theme-entry .tree li.children.closed > a.process-activity,
+    .theme-entry .tree li.children.open > a.process-activity,
+    .theme-entry .tree li.process-activity > a,
+    .theme-entry .tree li.process-activity.closed > a,
+    .theme-entry .tree li.process-activity.open > a
+    {
+        background-image: url(ContextBrowser/WorkflowActivity16.png);
+        height: 16px;
+    }
+
+    .theme-entry .tree a.process-activity:hover,
+    .theme-entry .tree li.children > a.process-activity:hover,
+    .theme-entry .tree li.children.closed > a.process-activity:hover,
+    .theme-entry .tree li.children.open > a.process-activity:hover,
+    .theme-entry .tree li.process-activity > a:hover,
+    .theme-entry .tree li.process-activity.closed > a:hover,
+    .theme-entry .tree li.process-activity.open > a:hover
+    {
+        background-image: url(ContextBrowser/WorkflowActivity_Hover16.png);
+        height: 16px;
+    }
+
+    .theme-entry .tree a.process-activity:focus,
+    .theme-entry .tree li.children > a.process-activity:focus,
+    .theme-entry .tree li.children.closed > a.process-activity:focus,
+    .theme-entry .tree li.children.open > a.process-activity:focus,
+    .theme-entry .tree li.process-activity > a:focus,
+    .theme-entry .tree li.process-activity.selected > a,
+    .theme-entry .tree li.process-activity.closed > a:focus,
+    .theme-entry .tree li.process-activity.closed.selected > a,
+    .theme-entry .tree li.process-activity.open > a:focus,
+    .theme-entry .tree li.process-activity.open.selected > a
+    {
+        background-image: url(ContextBrowser/WorkflowActivity_Selected16.png);
+        height: 16px;
+    }
+
+    .theme-entry #ProcessChartPropertyConfig_secondPageInternal .processInnerSpan,
+    .theme-entry #UsersConfig_secondPageInternal .removeUserItem
+    {
+        background-image: url(RuntimeTheme/ClearIcon_White16.png);
+        width: 16px;
+        height: 16px;
+    }
+
+    /* #endregion IMAGE DESKTOP */
+
+    /* #region IMAGE MOBILE */
+
+    .mobile .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers /* report header - user select picker */
+    {
+        background-image: url(Management/User20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+    }
+
+    .mobile .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers:hover /* report header - user select picker */
+    {
+        background-image: url(Management/User_Hover20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+    }
+    .mobile .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers:focus,
+    .mobile .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers.selectedspan
+    {
+        background-image: url(Management/User_Selected20.png);        
+        -moz-background-size: 20px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+    }
+
+
+    .mobile .theme-entry #searchButtonDiv > span > span /* report header - Select Users picker - user search icon */
+    {
+        background-image: url(Toolbar/Search20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile .theme-entry #searchButtonDiv:hover > span > span, /* report header - Select Users picker - user search icon */
+    .mobile .theme-entry #searchButtonDiv:focus > span > span
+    {
+        background-image: url(Toolbar/Search20White.png);
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .tree a.process-activity,
+    .mobile .theme-entry .tree li.children > a.process-activity,
+    .mobile .theme-entry .tree li.children.closed > a.process-activity,
+    .mobile .theme-entry .tree li.children.open > a.process-activity,
+    .mobile .theme-entry .tree li.process-activity > a,
+    .mobile .theme-entry .tree li.process-activity.closed > a,
+    .mobile .theme-entry .tree li.process-activity.open > a
+    {
+        background-image: url(ContextBrowser/WorkflowActivity20.png);
+        background-size: 20px;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.reportheader-control > a,
+    .theme-entry .tree li.reportheader-control > span,
+    .theme-entry .tree li.reportheader-control.children.open > a,
+    .theme-entry .tree li.reportheader-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Reporting.ReportHeader/Images/ReportHeader16@2x.png');
+    }
+
+    .theme-entry .tree li.reportheader-control > a:hover,
+    .theme-entry .tree li.reportheader-control > span:hover,
+    .theme-entry .tree li.reportheader-control.selected > a,
+    .theme-entry .tree li.reportheader-control.selected > span,
+    .theme-entry .tree li.reportheader-control > a:focus,
+    .theme-entry .tree li.reportheader-control > span:focus,
+    .theme-entry .tree li.reportheader-control.children.open > a:hover,
+    .theme-entry .tree li.reportheader-control.children.open > span:hover,
+    .theme-entry .tree li.reportheader-control.children.open.selected > a,
+    .theme-entry .tree li.reportheader-control.children.open.selected > span,
+    .theme-entry .tree li.reportheader-control.children.open > a:focus,
+    .theme-entry .tree li.reportheader-control.children.open > span:focus,
+    .theme-entry .tree li.reportheader-control.children.closed > a:hover,
+    .theme-entry .tree li.reportheader-control.children.closed > span:hover,
+    .theme-entry .tree li.reportheader-control.children.closed.selected > a,
+    .theme-entry .tree li.reportheader-control.children.closed.selected > span,
+    .theme-entry .tree li.reportheader-control.children.closed > a:focus,
+    .theme-entry .tree li.reportheader-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.Reporting.ReportHeader/Images/ReportHeader_Selected14@2x.png');
+    }
+
+    /* #region IMAGE DESKTOP */
+
+    .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers /* report header - user select picker */
+    {
+        background-image: url(Management/User20@2x.png);
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers:hover /* report header - user select picker */
+    {
+        background-image: url(Management/User_Hover20@2x.png);
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+    }
+    .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers:focus,
+    .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers.selectedspan
+    {
+        background-image: url(Management/User_Selected20@2x.png);        
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+    }
+
+
+    .theme-entry #searchButtonDiv > span > span /* report header - Select Users picker - user search icon */
+    {
+        background-image: url(Toolbar/Search16@2x.png);
+        background-size: 16px;
+        width: 21px;
+        height: 21px;
+    }
+
+    .theme-entry #searchButtonDiv:hover > span > span, /* report header - Select Users picker - user search icon */
+    .theme-entry #searchButtonDiv:focus > span > span
+    {
+        background-image: url(Toolbar/Search16White@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .tree a.process-activity,
+    .theme-entry .tree li.children > a.process-activity,
+    .theme-entry .tree li.children.closed > a.process-activity,
+    .theme-entry .tree li.children.open > a.process-activity,
+    .theme-entry .tree li.process-activity > a,
+    .theme-entry .tree li.process-activity.closed > a,
+    .theme-entry .tree li.process-activity.open > a
+    {
+        background-image: url(ContextBrowser/WorkflowActivity20@2x.png);
+        background-size: 20px;
+        height: 20px;
+    }
+    /* #endregion IMAGE DESKTOP */
+
+    /* #region IMAGE MOBILE */
+
+    /* report header - select user picker */
+    .mobile .theme-entry .input-control.select-box .input-control-buttons a#searchButtonDiv > span span
+    {
+        background-image: url(Toolbar/Search20@2x.png);
+        background-repeat: no-repeat;
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* user select picker -- user icon */
+    .mobile .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers
+    {
+        background-image: url(Management/User20@2x.png);
+        background-repeat: no-repeat;
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers:hover /* report header - user select picker */
+    {
+        background-image: url(Management/User_Hover20@2x.png);
+        background-repeat: no-repeat;
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile  .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers:focus,
+    .mobile .theme-entry #UsersConfig_secondPageInternal #UsersList .spanUsers.selectedspan
+    {
+        background-image: url(Management/User_Selected20@2x.png);        
+        background-repeat: no-repeat;
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    /* #endregion IMAGE MOBILE */
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+    .mobile .theme-entry #DateRangeConfig_secondPageOutside.popup
+    {
+        height: 100% !important; /* override -- inline popup manager */
+        width: 100% !important; /* override -- inline popup manager */
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageOutside.popup .panel
+    {
+        overflow: hidden;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .textlabel + div
+    {
+        display: none !important; /* hiding due to technical debt that exist*/
+    }
+
+    .mobile .theme-entry div#StatusPropertyConfig_secondPageOutside,
+    .mobile .theme-entry div#UsersConfig_secondPageOutside,
+    .mobile .theme-entry div#ProcessChartPropertyConfig_secondPageOutside,
+    .mobile .theme-entry div#DisplayValueConfigPicker
+    {
+        width: 100% !important; /* override -- inline popup manager */
+        height: 100% !important; /* override -- inline popup manager */
+    }
+
+    /* #region SELECT WORKFLOW PICKER */
+    .mobile .theme-entry #ProcessChartConfig_secondPage #selectedPanelDisabler.disabled
+    {
+        height: 100% !important;
+        width: 100% !important;
+        top: 8rem;
+        left: 0;
+        bottom: 0;
+        position: absolute !important;
+    }
+
+    .mobile .theme-entry #ProcessChartConfig_secondPage .scroll-wrapper
+    {
+        overflow-y: auto;
+    }
+
+    /* #endregion SELECT WORKFLOW PICKER */
+
+
+    /* #region SELECT STATUS PICKER */
+    .mobile .theme-entry #StatusPropertyConfig_secondPageInternal .select-status-picker-content-area
+    {
+        padding-left: 0.5rem;
+        padding-top: 0.3rem;
+    }
+    /* #region SELECT STATUS PICKER */
+
+
+    /* #region SELECT USER PICKER */
+
+    .mobile .theme-entry #UsersConfig_secondPageOutside .scroll-wrapper
+    {
+        overflow: auto;
+    }
+
+    .mobile .theme-entry #UsersConfig_secondPageInternal
+    {
+        overflow-x: hidden;
+    }
+
+    .mobile .theme-entry #UsersConfig_secondPageOutside .search-container
+    {
+        top: 0.3rem;
+    }
+
+    .mobile .theme-entry #UsersConfig_secondPageOutside .search-container .dropdown-box
+    {
+        width: 20rem;
+    }
+
+    .mobile .theme-entry #UsersConfig_secondPageOutside .search-expander
+    {
+        min-width: 3.2rem;
+    }
+
+    .mobile .theme-entry #selectedUsersPanel > .users-complex-search-options
+    {
+        margin: 0.3rem 0 0 0;
+    }
+
+    /* #endregion SELECT USER PICKER */
+
+
+
+    /* #region SELECT ACTIVITY PICKER */
+
+    .mobile .theme-entry #ReportHeaderActivityPicker
+    {
+        height: auto !important; /* override popup manager */
+    }
+
+    /* #endregion SELECT ACTIVITY PICKER */
+
+
+    /* #region SELECT DATE RANGE PICKER */
+
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal
+    {
+        height: 100%;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageOutside .panel
+    {
+        overflow: hidden;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageOutside .scroll-wrapper
+    {
+        overflow-y: auto;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .input-control.radio .input-control-text
+    {
+        display: inline;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .calendar-start-date-text
+    {
+        width: auto;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .calendar-end-date-text
+    {
+        width: auto;
+    }
+
+    /* #endregion SELECT DATE RANGE PICKER */
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+    .mobile .theme-entry #DateRangeConfig_secondPageOutside.popup, /* Date Range popup */
+    .mobile .theme-entry #StatusPropertyConfig_secondPageOutside.popup, /* Select Status popup */
+    .mobile .theme-entry #UsersConfig_secondPageOutside.popup, /* Select Users picker */
+    .mobile .theme-entry #DisplayValueConfigPicker.popup /* Display Value picker */
+    {
+        height: 100% !important; /* override -- inline -- popup manager */
+        width: 100% !important; /* override -- inline -- popup manager */
+    }
+
+    /* #region REPORT HEADER MAIN */
+
+    /* report header main - header block */
+    .mobile .theme-entry #panel1 > .reportheader_main
+    {
+        height: 4.0rem;
+    }
+
+    .mobile .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.runtime.scrollable
+    {
+        min-height: 33.0rem;
+    }
+
+    /* label item on the right */
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper .form-field .form-field-element-wrapper
+    {
+        padding-left: 0;
+        padding-bottom: 0;
+        margin-left: 0;
+        line-height: normal;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper .form-field label.form-field-label
+    {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    /* sub header text when shrink the report header */
+    .mobile .theme-entry .reportheader_main > div:last-child
+    {
+        display: none;
+    }
+
+    /* Report header text */
+    .mobile .theme-entry .reportheader_main div.textlabel
+    {
+        display: block;
+        padding-top: 0.6rem;
+    }
+
+    /* #endregion REPORT HEADER MAIN */
+
+    /* #region SELECT WORKFLOW PICKER  */
+
+    .mobile .theme-entry #ProcessChartPropertyConfig_secondPageOutside.popup
+    {
+        height: 100% !important; /* override -- inline -- popup manager */
+    }
+
+    .mobile .theme-entry #ProcessChartPropertyConfig_secondPageInternal > div > div
+    {
+        margin-left: 0 !important; /* override -- inline */
+    }
+
+    .mobile .theme-entry #ProcessChartPropertyConfig_secondPageInternal #ProcessChartConfigTreeHolder
+    {
+        width: 100%;
+        height: 18rem;
+    }
+
+    .mobile .theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox
+    {
+        margin-top: 0.5rem;
+        height: 20rem;
+    }
+
+    /* #endregion SELECT WORKFLOW PICKER */
+
+
+
+    /* #region SELECT DATE RANGE PICKER */
+
+    /* reset all table layout for portrait style */
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .predefined-range-section,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .custom-range-section,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .specific-range-section,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .predefined-drop-wrapper,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .predefined-radio-wrapper,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .custom-radio-wrapper,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .custom-drop-wrapper,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .specific-radio-wrapper,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .specific-drop-wrapper
+    {
+        display: block;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageOutside .panel
+    {
+        overflow: hidden;
+    }
+
+    .theme-entry #DateRangeConfig_secondPageInternal .predefined-radio-wrapper
+    {
+        padding-right: 0;
+    }
+
+    /* prevent UI break when changing the layout from landscape to portrait */
+    #DateRangeConfig_secondPageInternal .input-control.radio
+    {
+        display: inline;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPage .panel-body,
+    .mobile .theme-entry #DateRangeConfig_secondPage div.panel-body-m
+    {
+        height: 100%;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .calendar-start-date-text,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .calendar-end-date-text
+    {
+        margin-left: 0;
+    }
+
+
+    /* #endregion SELECT DATE RANGE PICKER */
+
+
+
+    /* #region SELECT USER PICKER  */
+
+
+    .mobile .theme-entry #UsersConfig_secondPageOutside .security-label-box
+    {
+        width: auto;
+        margin-left: 3.4rem;
+    }
+
+    .mobile .theme-entry #UsersConfig_secondPageOutside .user-search-result-box
+    {
+        height: 15rem;
+    }
+
+    .mobile .theme-entry #UsersConfig_secondPageOutside.search-expanded .user-search-result-box
+    {
+        height: 8.8rem;
+    }
+
+    .mobile .theme-entry #UsersConfig_secondPageOutside .panel
+    {
+        overflow: hidden;
+    }
+
+    /* search icon - override original 20px width and height to position it to center of 32px square */
+    .mobile .theme-entry .input-control.select-box .input-control-buttons a#searchButtonDiv:hover > span span,
+    .mobile .theme-entry .input-control.select-box .input-control-buttons a#searchButtonDiv > span span
+    {
+        height: 32px;
+        width: 32px;
+    }
+
+    /* radio label */
+    .mobile .theme-entry div#UsersConfig_secondPageInternal .input-control.radio
+    {
+        display: inline-block; /* override -- theme.css display:table-row*/
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 1px solid transparent;
+    }
+
+    .mobile .theme-entry #usersearchbar_base
+    {
+        width: 100%;
+    }
+
+    /* #endregion SELECT USER PICKER */
+
+    /* #region SELECT ACTIVITY PICKER */
+    .mobile .theme-entry #WorkflowActivityChartConfig_secondPageInternal .form-field > label.form-field-label
+    {
+        width: 7.8rem;
+        height: 3.0rem;
+    }
+
+    .mobile .theme-entry #WorkflowActivityChartConfig_secondPageInternal .input-control.text-input
+    {
+        margin-top: 0;
+    }
+
+    .mobile .theme-entry #WorkflowActivityChartConfig_secondPageInternal .form-field
+    {
+        padding-bottom: 0;
+    }
+
+    .mobile .theme-entry .form-field label.form-field-label
+    {
+        height: 3.0rem;
+        padding-top: 0;
+    }
+
+    /* workflow tree box */
+    .mobile .theme-entry #ReportHeaderActivityPicker .workflowTreeContainer
+    {
+        height: 27rem;
+    }
+
+    /* #endregion SELECT ACTIVITY PICKER */
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+    .mobile .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader.runtime.scrollable
+    {
+        height: 30rem !important;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .textlabel + div
+    {
+        width: 35rem;
+        bottom: 0.5rem;
+    }
+
+    .mobile .theme-entry .input-control.select-box .input-control-buttons a#searchButtonDiv > span span
+    {
+        height: 32px;
+        width: 32px;
+        background-position: center;
+    }
+
+    .mobile .theme-entry #UsersConfig_secondPageInternal .input-control.radio
+    {
+        border-width: 1px;
+    }
+
+    .mobile.ie9 .theme-entry #selectedUsersPanel #textBoxDiv,
+    .mobile.ie10 .theme-entry #selectedUsersPanel #textBoxDiv,
+    .mobile.ie11 .theme-entry #selectedUsersPanel #textBoxDiv
+    {
+        width: 25.9rem !important; /* override -- base -- fallback */
+        width: calc(100% - 19.5rem) !important; /* override -- base */
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageOutside .formPreDefinedWrapper
+    {
+        margin-bottom: 3.7rem;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-ReportHeader-ReportHeader .reportheader_wrapper .form-field .form-field-element-wrapper
+    {
+        line-height: normal;
+        padding-bottom: 0;
+        vertical-align: middle;
+    }
+
+    /* #region Select Date Range picker */
+    .mobile .theme-entry .predefinedDropWrapper div.calendar-control
+    {
+        width: 16.0rem;
+        left: 9.8rem;
+    }
+
+    .mobile .theme-entry .predefinedDropWrapper .calendar-control #DateRangeConfig_Image,
+    .mobile .theme-entry .predefinedDropWrapper .calendar-control #DateRangeConfig_Image2
+    {
+        margin-right: 0;
+    }
+
+    /* #endregion Select Date Range picker */
+
+    /* workflow tree box */
+    .mobile .theme-entry #ReportHeaderActivityPicker .workflowTreeContainer
+    {
+        height: 17.6rem;
+    }
+
+    .mobile .theme-entry #WorkflowActivityChartConfig_secondPageInternal .form-field-label
+    {
+        width: 7.5rem !important; /* override -- desktop */
+    }
+
+    .mobile .theme-entry .StandardGrid .radgrid-footer a.reportGridFooterBtnPrev
+    {
+        right: auto;
+        left: 15.0rem;
+    }
+
+    /* #region SELECT USER PICKER */
+
+    /* #endregion SELECT USER PICKER */
+
+
+
+    /* #region SELECT DATE RANGE PICKER */
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .predefined-radio-wrapper
+    {
+        padding-right: 0;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageOutside .scroll-wrapper
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-top: 0.2rem;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .input-control.radio .input-control-text
+    {
+        display: block;
+    }
+
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .calendar-start-date-text,
+    .mobile .theme-entry #DateRangeConfig_secondPageInternal .calendar-end-date-text
+    {
+        width: 10rem;
+    }
+
+    /* #endregion SELECT DATE RANGE PICKER */
+}

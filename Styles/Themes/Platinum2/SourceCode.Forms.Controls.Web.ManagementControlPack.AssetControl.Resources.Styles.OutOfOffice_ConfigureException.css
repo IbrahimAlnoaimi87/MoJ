@@ -1,0 +1,89 @@
+
+.theme-entry .panel-body-wrapper > div > .Grid-Layout > .editor-cell[row='1'][col='1'] > .Grid-Layout 
+{
+    -ms-grid-columns:  65px 1fr !important;
+    grid-template-columns: 65px 1fr !important;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover
+{
+    display: block;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem span.button-icon
+{
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    background: url('GenericList/AddItem24Default.png') no-repeat transparent center;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #addExpenseItem
+{
+    z-index: auto;
+    margin: auto;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .title > span
+{
+    color: #626262;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_GenericExpenseGridItemMainRow .deleteItem
+{
+    opacity: 1;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn .button-icon
+{
+    width: 16px;
+    height: 16px;
+    background: url('GenericList/Bin16Default.png') no-repeat transparent center;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PropertiesMain,
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Property2DynamicRight
+{
+    width: 50%;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList #deleteBtn
+{
+    margin: 0;
+}
+
+.theme-entry div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Property2DynamicRight
+{
+    padding-right: 30px;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glExceptionUsers"] .genericitem
+{
+    cursor: default;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-Button[name="btnCancel"]
+{
+    margin-right: 10px;
+}
+
+.theme-entry div[name="glExceptions"] .PART_TitlteDescriptionDynamicLeft
+{
+    padding: .5rem 2.0rem;
+}
+
+.theme-entry div[name="glExceptions"] .PropertiesMain
+{
+    padding-right: 30px;
+}
+
+
+/* Firefox specific fix for exception config popup.  Firefox swaps overflow imporperly and shows scrollbar for html element instead of body */
+html.management-outofofficeconfig.firefox
+{
+    overflow: hidden !important; /* override inline style */
+}
+html.management-outofofficeconfig.firefox body
+{
+    overflow-y: auto !important; /* override inline style */
+}

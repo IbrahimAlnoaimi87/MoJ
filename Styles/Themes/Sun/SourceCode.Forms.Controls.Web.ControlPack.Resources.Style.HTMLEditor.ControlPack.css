@@ -1,0 +1,77 @@
+﻿/* item group separator */
+.theme-entry .RadEditor .reToolbarWrapper .reGrip.grip_last
+{
+	border-right-color: #c5c5c5;
+}
+
+/* overflow tool item text color on hover */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.expanded .stylewrapper
+{
+	border-color: #f0ac00;
+}
+
+.theme-entry .reMode_selected span, /* selected edit mode text */
+.theme-entry .reEditorModes span /* non-selected edit mode text */
+{
+	color: #0f0a06;
+}
+
+.theme-entry .Default.reWrapper, 
+.theme-entry .Default.RadEditor .reContentCell, 
+.theme-entry .Default.reColorPicker, 
+.theme-entry .Default.reInsertTable, 
+.theme-entry .Default.reDropDownBody, 
+.theme-entry .Default.reCustomLinks a:hover
+{
+	border: 1px solid #f0ac00;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.split_arrow:hover,
+.theme-entry .RadEditor .reToolbarWrapper .sub-wrapper:hover,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color:hover,
+.theme-entry .rich-text-dropdown-item-container .rich-text-overflow-item-arrow:hover
+{
+	background-color: #f0ac00;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper a:hover, /* background color when hovering tool item icons */
+.theme-entry .RadEditor .reToolbarWrapper .reTool_selected, /* highlight when tool item is in active state */
+.theme-entry .rich-text-overflow-tool-item-position-base:hover /* color for hover over the overflow items */
+{
+	background-color: #f0ac00;
+}
+
+.theme-entry .reEditorModes a:hover, /* edit mode area hover */
+.theme-entry .reMode_selected /* selected edit mode area */
+{
+	background-color: #fed34f;
+}
+
+.theme-entry .reMode_selected.reMode_hover:hover
+{
+	background-color: transparent;
+}
+
+.theme-entry .Default.RadEditor, 
+.theme-entry .Default.RadEditor .reModule, 
+.theme-entry .Default.RadEditor .reWrapper
+{
+	border-color: #f0ac00;
+	background-color: #fff0c0;
+	background: #f9e395; /* Old browsers */
+	background: -moz-linear-gradient(top, #f9e395 0%, #e4b114 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9e395), color-stop(100%,#e4b114)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f9e395 0%,#e4b114 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f9e395 0%,#e4b114 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f9e395 0%,#e4b114 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f9e395 0%,#e4b114 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e395', endColorstr='#e4b114',GradientType=0 ); /* IE6-9 */
+}
+
+/* tool item that has drop arrow needs explicit hover color to override parent hover style to prevent both item icon and arrow to be highlighted */
+.theme-entry .RadEditor .reToolbar li a:hover .sub-wrapper:hover,
+.theme-entry .RadEditor .reToolbar li a:hover .rich-text-tool-arrow:hover,
+.theme-entry .RadEditor .reToolbar li a:hover .InsertTable:hover 
+{
+	background-color: #f0ac00;
+}

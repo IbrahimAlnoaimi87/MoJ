@@ -1,0 +1,66 @@
+﻿.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView {
+  border-style: none;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selectable .header:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected .header:hover {
+  background-color: rgba(2, 136, 209, 0.5);
+  border: 1px solid rgba(2, 136, 209, 0.5);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView div.header.selected,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected > .content > .header {
+  background-color: #0288d1;
+  border: 1px solid #0288d1;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node .content {
+  display: block;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .header {
+  width: 100%;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.treeview.focus {
+  border: 1px dotted #b4dcf1;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView > .stylewrapper {
+  border-color: transparent !important;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView span {
+  font-size: 1.5rem;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .highlight {
+  background-color: #b4dcf1;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:hover {
+  background-color: rgba(2, 136, 209, 0.5);
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .alternate {
+  background-color: transparent;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img {
+  background-position: 0 -176px;
+}
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img,
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img {
+  background-position: 0 -240px;
+}
+/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+/*Theme@2x - hi-dpi*/
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img,
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img {
+    background-position: 0 -176px;
+  }
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img,
+  .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img {
+    background-position: 0 -240px;
+  }
+}
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img,
+  .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img {
+    background-position: 0 -240px;
+  }
+}

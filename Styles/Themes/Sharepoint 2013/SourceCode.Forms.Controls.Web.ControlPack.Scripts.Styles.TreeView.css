@@ -1,0 +1,113 @@
+﻿/* Tree Styling */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .input-control-watermark 
+{
+	font-size: 13px; /* override SF*/
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .dropdown-td-width 
+{
+	padding-right: 0;
+}
+
+.theme-entry .sfc-treeview.populating-indicator.showSearch
+{
+	top: 37px;
+}
+
+.theme-entry .SFC .cp-searchbar-cell-clear-button,
+.theme-entry .SFC .cp-searchbar-cell-input
+{
+    font-size: 13px !important; /*need to specify specifically 13px for the searchbar to override default coming from common*/
+}
+
+.theme-entry .sfc-treeview.populating-indicator.showSearchExpanded
+{
+	top: 59px;
+}
+
+.theme-entry .sfc-treeview.populating-indicator.scrollbar
+{
+	right: 19px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected > .content > .header,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly .node.selected > .content > .header:hover
+{
+	background-color: #c4e9f5;
+	border-color: #c4e9f5;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView:not(.disabled) .node > .content > .header:hover
+{
+	background-color: #c4e9f5;
+	border-color: #c4e9f5;
+	cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.focus > .content > .header
+{
+	border:1px dotted #c4e9f5;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.collapsed > .content > .expander-container > .expander
+{
+	background-image: url("../../Platinum/Images/Tree/plus_alt.gif");
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.expanded > .content > .expander-container > .expander
+{
+	background-image: url("../../Platinum/Images/Tree/minus_alt.gif");
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView  .text.with-image
+{
+	padding-top: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .expander
+{
+	top: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:hover
+{
+	background-color: #e7f7ff;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:focus
+{
+	background-color:#cde6f7;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control.select-box .input-control-buttons
+{
+	right: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control.select-box .input-control-buttons a.dropdown
+{
+    width: 22px;
+}
+
+/* #region Readonly */
+
+/* prevent checkbox hover state to change while readonly */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img
+{
+    background-position: 4px -4772px;
+	cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img
+{
+	background-position: 4px -4922px;
+	cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img
+{
+	background-position: 4px -4822px;
+	cursor: default;
+}
+
+/* #endregion Readonly */

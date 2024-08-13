@@ -1,0 +1,267 @@
+/*#region CALENDAR POPUP*/
+
+/*#region resets*/
+.theme-entry .popup.id-calendar-control-popup,
+.theme-entry .calendar-outline,
+.theme-entry .calendar-content-outside,
+.theme-entry .top-calendar
+{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+/*#endregion resets end*/
+
+.theme-entry .popup.id-calendar-control-popup
+{
+    width: 28.4rem !important;
+    z-index: 100000; /* ensures the calendar popup will show over any validation tooltips */
+}
+
+.theme-entry .popup.id-calendar-control-popup.type-date-time
+{
+    min-height: 46.1rem;
+}
+
+.theme-entry .calendar-outline
+{
+    width: 100%;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: @Calendar-Background-Color;
+    -moz-box-shadow: @Calendar-Shadow;
+    -webkit-box-shadow: @Calendar-Shadow;
+    box-shadow: @Calendar-Shadow;
+    color: @Calendar-Text-Color;
+}
+
+/*top calendar*/
+.theme-entry .top-calendar a
+{
+    margin-top: 1.4rem;
+}
+
+.theme-entry .top-calendar a.today-title
+{
+    border: solid 1px @Calendar-Today-Border-Color;
+    border-radius: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 0.4rem;
+    padding: 1.0rem;
+    /*push the cal contents down */
+}
+
+.theme-entry .calendar-content,
+.theme-entry .calendar-content .week:first-child
+{
+    border-bottom: solid 1px @Calendar-Week-Divider-Color;
+}
+
+.theme-entry .popup.id-calendar-control-popup.mode-year .calendar-content .week:first-child,
+.theme-entry .popup.id-calendar-control-popup.mode-month .calendar-content .week:first-child
+{
+    border-bottom-width: 0;
+}
+
+.theme-entry .top-calendar-left,
+.theme-entry .top-calendar-right
+{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.theme-entry .top-calendar-left
+{
+    left: 0.7rem;
+}
+
+.theme-entry .top-calendar-right
+{
+    right: 0.7rem;
+}
+
+.theme-entry .calendar-content
+{
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+}
+
+/*days area*/
+.theme-entry .today-title,
+.theme-entry .today-title:visited,
+.theme-entry .today-text-value,
+.theme-entry .dayname,
+.theme-entry .day,
+.theme-entry .month,
+.theme-entry .year,
+.theme-entry .timepicker-spinner-label
+{
+    -moz-text-shadow: 1px 1px 1px @Calendar-Text-Shadow-Color;
+    -ms-text-shadow: 1px 1px 1px @Calendar-Text-Shadow-Color;
+    -webkit-text-shadow: 1px 1px 1px @Calendar-Text-Shadow-Color;
+    text-shadow: 1px 1px 1px @Calendar-Text-Shadow-Color;
+}
+
+/*day normal color*/
+.theme-entry a.day,
+.theme-entry a.day:visited,
+.theme-entry a.month,
+.theme-entry a.month:visited,
+.theme-entry a.year,
+.theme-entry a.year:visited
+{
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: @Calendar-Item-Text-Color;
+}
+
+/*day disabled color*/
+.theme-entry .dayname,
+.theme-entry .not-of-current-month.day,
+.theme-entry .not-of-current-month.day:visited,
+.theme-entry .timepicker-spinner-label
+{
+    color: @Calendar-Item-Disabled-Text-Color;
+}
+
+.theme-entry .today-title,
+.theme-entry .today-title:visited,
+.theme-entry .today-text-value
+{
+    color: @Calendar-Today-Text-Color;
+}
+
+/*day sizing*/
+.theme-entry .dayname
+{
+    color: @Calendar-Day-Header-Text-Color;
+}
+
+//dayname = a day header like M,T,W,T,F
+//day = a selectable date item.
+.theme-entry .dayname,
+.theme-entry a.day,
+.theme-entry a.day:hover
+{
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    width: 4.0rem;
+    height: 4.0rem;
+    text-align: center;
+    line-height: 4.0rem;
+}
+
+.theme-entry a.day,
+.theme-entry a.day:hover{
+    border: 1px solid @Calendar-Item-Border-Color;
+}
+
+/*month and year view*/
+.theme-entry .month,
+.theme-entry .year,
+.theme-entry .month:hover,
+.theme-entry .year:hover
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 7.0rem;
+    height: 9.4rem;
+    border: 1px solid @Calendar-ItemGroup-Border-Color;
+    line-height: 9.4rem;
+}
+
+.theme-entry .week
+{
+    position: relative;
+    min-width: 0;
+    white-space: nowrap;
+}
+
+.theme-entry .today-text .today-text-label,
+.theme-entry .today-text br
+{
+    display: none;
+}
+
+.theme-entry .day.today
+{
+    border-color: @Calendar-Today-Border-Color;
+    
+}
+
+/*standard hover styles in calendar picker*/
+.theme-entry .day:hover,
+.theme-entry .month:hover,
+.theme-entry .year:hover
+{
+    background-color: @Calendar-Item-Hover-Background-Color;
+}
+
+.theme-entry .day.selected,
+.theme-entry .month.selected,
+.theme-entry .year.selected,
+.theme-entry .day.selected:hover,
+.theme-entry .month.selected:hover,
+.theme-entry .year.selected:hover,
+.theme-entry .day.active,
+.theme-entry .month.active,
+.theme-entry .year.active
+{
+    border-color: @Calendar-Selected-Item-Background-Color;
+    background-color: @Calendar-Selected-Item-Border-Color;
+}
+
+.theme-entry .today-title:hover
+{
+    background-color: @Calendar-Date-Hover-Background-Color;
+    background-color: @Calendar-Item-Hover-Background-Color;
+    color: @Calendar-Date-Hover-Text-Color;
+}
+
+/*datetime popup extras*/
+.theme-entry .popup.id-calendar-control-popup .timepicker-content
+{
+    padding: 0 0.8rem;
+}
+
+.theme-entry .popup.id-calendar-control-popup .timepicker-content .timepicker-spinner-label
+{
+    display: none;
+}
+
+.theme-entry .popup.id-calendar-control-popup .timepicker-content .spinner
+{
+    margin-left: 0;
+}
+
+.theme-entry .timepicker-buttons
+{
+    text-align: center;
+}
+
+.theme-entry .calendar-outline .timepicker-content .timepicker-ok-button,
+.theme-entry .calendar-outline .timepicker-content .timepicker-cancel-button,
+.mozilla .theme-entry .calendar-outline .timepicker-content .timepicker-ok-button,
+.mozilla .theme-entry .calendar-outline .timepicker-content .timepicker-cancel-button
+{
+    margin: 0.8rem 0;
+    width: 13rem;
+}
+
+.theme-entry .calendar-outline .timepicker-content .timepicker-ok-button
+{
+    margin-right: 0.8rem;
+}
+
+/*#endregion CALENDAR POPUP*/

@@ -1,0 +1,203 @@
+/*#region TABS */
+
+/*#region resets*/
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.selected.tab:hover .tab-wrapper
+{
+    height: auto;
+    border: none;
+    background: none;
+}
+
+/*these values are set by the page author*/
+html .theme-entry .tab-box .tab-content,
+html .theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper,
+html .theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-wrapper
+{
+    border-color: transparent !important; /*override the hard coded white in design time*/
+}
+
+/*#endregion resets*/
+
+/*design time */
+.theme-entry .tab-box-body
+{
+    position: relative;
+    top: auto;
+    bottom: auto;
+}
+
+.theme-entry .tab-box-body .form
+{
+    background-color: transparent; /*override above color*/
+}
+
+/*design time */
+.theme-entry .tab-box ul.tab-box-tabs
+{
+    height: auto;
+    border: none;
+    border-width: 0;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs li
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs li a.tab
+{
+    display: inline-block;
+    border: none;
+    background: transparent;
+    color: @Tab-Text-Color;
+    vertical-align: top;
+    /*expand to fit the li's fixed height*/
+}
+
+.theme-entry .tab-box ul.tab-box-tabs li a.tab,
+.theme-entry .tab-box ul.tab-box-tabs li a.tab.selected
+{
+    height: auto;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs li a.tab .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs li a.tab.selected .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus:hover .tab-wrapper
+{
+    height: auto;
+    position: relative;
+    padding: 0 1.2rem;
+    /*design time - so remove-tab button can be placed*/
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-text,
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon
+{
+    display: inline-block;
+    float: none;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon
+{
+    vertical-align: text-bottom;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab.disabled .tab-wrapper
+{
+    color: @Tab-Disabled-Text-Color;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper
+{
+    background-color: transparent;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-text
+{
+    color: @Tab-Text-Color; /*tab text color*/
+    opacity: 0.7;
+    float: none;
+    height: auto;
+    -moz-transition: opacity linear 0.15s;
+    -ms-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+}
+
+/*tab text in a tab control embedded on a dialog*/
+/* Unsure this is being used anymore - tabs only appear on forms, not within popups 2020/10 */
+.theme-entry .popup .tab-box ul.tab-box-tabs a.tab .tab-text
+{
+    color: rgba(0,0,0,0.5); /*tab text color*/
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-text
+{
+    opacity: 1;
+    -moz-transition: opacity linear 0.15s;
+    -ms-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-text,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-text
+{
+    color: @Tab-Text-Selected-Color;
+    opacity: 1;
+}
+
+/*selected tab and body - same color */
+.theme-entry .tab-box .tab-box-body,
+.theme-entry .tab-box.full.tabs-top .tab-box-body, /*tabs.css override*/
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected
+{
+    background-color: @Tab-Selected-Background-Color; /*override - core*/
+}
+
+/*selected tab and body - same color - tab control embedded in a dialog (e.g. worklist filters dialog) */
+.theme-entry .dialog .tab-box .tab-box-body,
+.theme-entry .dialog .tab-box.full.tabs-top .tab-box-body, /*tabs.css override*/
+.theme-entry .dialog .tab-box ul.tab-box-tabs a.tab.selected,
+.theme-entry .dialog .tab-box ul.tab-box-tabs a.tab.selected:hover
+{
+    background-color: @Tab-Hover-Background-Color;
+}
+
+.theme-entry .dialog .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper
+{
+    background-color: transparent !important;
+}
+
+/*tab body, when inside a dialog (i.e. on a light background) */
+.theme-entry .dialog .tab-box .tab-box-body,
+.theme-entry .dialog .tab-box.full.tabs-top .tab-box-body
+{
+    padding: 0.5rem;
+}
+
+/*override when tabs should not be showing at all - design-time*/
+.theme-entry .tab-box.hide-tabs .tab-box-body,
+.theme-entry .tab-box.full.tabs-top.hide-tabs .tab-box-body /*tabs.css override*/
+{
+    background-color: transparent;
+}
+
+/*tabs buttons - focus states*/
+.theme-entry .tab-box ul.tab-box-tabs a.tab.focus .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus:hover .tab-wrapper
+{
+    border-color: @Tab-Selected-Border-Color;
+}
+
+.theme-entry .tab-box.tabs-bottom ul.tab-box-tabs a.tab
+{
+    /*when tabs are at the bottom*/
+}
+
+.theme-entry .tab-box.full.tabs-top.hide-tabs .tab-box-body
+{
+    top: 0;
+}
+
+/*tab remove button - design time */
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-remove.tab-control
+{
+    margin-left: 1.0rem;
+    /*design time*/
+}
+
+/*tab body*/
+.theme-entry .tab-box .tab-box-body
+{
+    border: none;
+}
+
+/*#endregion TABS */

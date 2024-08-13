@@ -1,0 +1,202 @@
+/* RadGrid Styling */
+
+/* footer (design time) */
+.theme-entry .StandardGrid.designtime .radgrid1-footer .toolbar-wrapper
+{
+	border-color: transparent;
+}
+
+/* footer (design time) */
+.theme-entry .StandardGrid.designtime .report-grid-footer-container
+{
+	border-color: #8f1017 #150103 #150103 #8f1017;
+	background: #870e15; /* Old browsers */
+	background: -moz-linear-gradient(top, #870e15 0%, #300107 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#870e15), color-stop(100%,#300107)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #870e15 0%,#300107 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #870e15 0%,#300107 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #870e15 0%,#300107 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #870e15 0%,#300107 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#870e15', endColorstr='#300107',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .StandardGrid .report-grid-footer-container,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-first,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-prev,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-next,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-last,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-page-input,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-page-label,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-first,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-prev,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-first,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-next,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-last,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-page-label,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-page-input
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#870e15', endColorstr='#300107',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .StandardGrid .UserPerfHeader
+{
+	font-weight: bold !important;
+}
+
+.theme-entry .StandardGrid .UserPerfSubHeader
+{
+	color: #CCCCCC !important;
+}
+
+.theme-entry .radgrid-tableMain tr.radgrid-footer .radgrid-footer .toolbar-wrapper,
+.theme-entry .radgrid-tableMain .radgrid-divPage,
+.theme-entry .radgrid-grid-column-header-text,
+.theme-entry .radgrid-gridheader a,
+.theme-entry .radgrid a
+{
+	color: #ffffff;
+}
+
+.theme-entry .StandardGrid .rgDetailTable 
+{
+	border-color: #8f1017;
+}
+
+.theme-entry .StandardGrid .rgDetailTable .rgAltRow td,
+.theme-entry .StandardGrid .rgDetailTable .rgRow td
+{
+	padding-left: 6px;
+}
+
+.theme-entry .radgrid-gridheader
+{
+	background: #870e15; /* Old browsers */
+	background: -moz-linear-gradient(top, #870e15 0%, #300107 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#870e15), color-stop(100%,#300107)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #870e15 0%,#300107 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #870e15 0%,#300107 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #870e15 0%,#300107 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #870e15 0%,#300107 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#870e15', endColorstr='#300107',GradientType=0 ); /* IE6-9 */
+	border-color: #8f1017 #150103 #150103 #8f1017;
+}
+
+.theme-entry .radgrid-footer
+{
+	background: #870e15; /* Old browsers */
+	background: -moz-linear-gradient(top, #870e15 0%, #300107 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#870e15), color-stop(100%,#300107)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #870e15 0%,#300107 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #870e15 0%,#300107 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #870e15 0%,#300107 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #870e15 0%,#300107 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#870e15', endColorstr='#300107',GradientType=0 ); /* IE6-9 */
+	border-color: #8f1017 #150103 #150103 #8f1017;
+	color: #ffffff !important;
+}
+
+.theme-entry .radgrid-grid-column-header-cell.sorting:hover
+{
+	background: #a5171f; /* Old browsers */
+	background: -moz-linear-gradient(top, #a5171f 0%, #800d14 50%, #640910 51%, #850e15 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5171f), color-stop(50%,#800d14), color-stop(51%,#640910), color-stop(100%,#850e15)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a5171f 0%,#800d14 50%,#640910 51%,#850e15 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a5171f 0%,#800d14 50%,#640910 51%,#850e15 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a5171f 0%,#800d14 50%,#640910 51%,#850e15 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #a5171f 0%,#800d14 50%,#640910 51%,#850e15 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5171f', endColorstr='#850e15',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .radgrid-altrowLayout
+{
+	background-color: #ffffff;
+}
+
+.theme-entry .radgrid-rowLayout
+{
+	background-color: #f5f5f5;
+}
+
+.theme-entry .radgrid-grid-column-headers-wrapper
+{
+	border-color: #8f1017 #150103 #150103 #8f1017;
+}
+
+.theme-entry .radgrid-rowLayout:active,
+.theme-entry .radgrid-rowLayout:hover,
+.theme-entry .radgrid-altrowLayout:active,
+.theme-entry .radgrid-altrowLayout:hover
+{
+	background-color: #e6cfd0;
+}
+
+.theme-entry .radgrid-rowLayout:hover.radgrid-selectedItem,
+.theme-entry .radgrid-altrowLayout:hover.radgrid-selectedItem
+{
+	background-color: #dab6b8;
+}
+
+.theme-entry .radgrid-selectedItem 
+{
+	background-color:#dab6b8;
+	outline: 1px dotted #a5171f;
+}
+
+.theme-entry .radgrid-tableMain
+{
+	border-color: #8f1017 #150103 #150103 #8f1017;
+}
+
+.theme-entry .StandardGrid .buttonPrev:hover
+{
+	background-image: url(paging_arrows_single_left_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonPrev,
+.theme-entry .StandardGrid .buttonPrev.disabled:hover
+{
+	background-image: url(paging_arrows_single_left_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonFirstPage:hover
+{
+	background-image: url(paging_arrows_double_left_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonFirstPage,
+.theme-entry .StandardGrid .buttonFirstPage.disabled:hover
+{
+	background-image: url(paging_arrows_double_left_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonLastPage,
+.theme-entry .StandardGrid .buttonLastPage.disabled:hover
+{
+	background-image: url(paging_arrows_double_right_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonNext:hover
+{
+	background-image: url(paging_arrows_single_right_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonNext,
+.theme-entry .StandardGrid .buttonNext.disabled:hover
+{
+	background-image: url(paging_arrows_single_right_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonLastPage:hover
+{
+	background-image: url(paging_arrows_double_right_hover.png);
+}
+
+.theme-entry .StandardGrid .rgSortAsc
+{
+	background-image: url(sort_ascending_normal.png);
+}
+
+.theme-entry .StandardGrid .rgSortDesc
+{
+	background-image: url(sort_descending_normal.png);
+}

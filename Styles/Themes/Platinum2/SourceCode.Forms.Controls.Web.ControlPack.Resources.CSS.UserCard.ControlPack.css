@@ -1,0 +1,82 @@
+﻿.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .stylewrapper {
+  overflow: hidden;
+  border-radius: 3px;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-details-parent {
+  padding: .2rem .5rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-avatar-parent {
+  padding: 0.5rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-avatar {
+  min-width: 4.0rem;
+  min-height: 4.0rem;
+  background-image: url('Navigation/Avatar.png');
+  border-radius: 4.0rem;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard div.usercard-displayname {
+  color: #626262;
+  font-size: 1.5rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard div.usercard-email {
+  font-size: 1.3rem;
+  color: #929292;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard a.usercard-link {
+  text-decoration: underline;
+  color: #64CBF0;
+  font-size: 1.5rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard div.usercard-link-description {
+  color: #626262;
+  font-size: 1.5rem;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-clickable {
+  cursor: pointer;
+  display: block;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard.disabled {
+  opacity: .7;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard.disabled .usercard-link {
+  cursor: default;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-loading-spinner {
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('RuntimeTheme/LoadingAnimation_Dark40.gif');
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-overlay-text {
+  display: block;
+  text-align: center;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard .usercard-retry-icon {
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('RuntimeTheme/RefreshErrorWL20Dark.png');
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard a.usercard-overlay-text,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard span.usercard-overlay-text,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-UserCard div.usercard-overlay-text {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #626262;
+}
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  /* ^.theme-entry .... for desktop devices */
+  .theme-entry .usercard-avatar {
+    background-image: url('Navigation/Avatar@2x.png');
+  }
+  .theme-entry .usercard-loading-spinner {
+    background-image: url('RuntimeTheme/LoadingAnimation_Dark40@2x.gif');
+  }
+  .theme-entry .usercard-retry-icon {
+    background-image: url('RuntimeTheme/RefreshErrorWL20Dark@2x.png');
+  }
+}

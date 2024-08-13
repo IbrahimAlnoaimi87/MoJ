@@ -1,0 +1,51 @@
+﻿.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv.selected
+{
+	background-color: #cde6f7 !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:hover
+{
+	background-color: #e7f7ff;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:focus,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .listwrapper:focus
+{
+	border-color: #2a8dd4;
+	border-width: 1px;
+	border-style: dotted;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper
+{
+	border: 1px solid #999999;
+	background-color: white;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .title
+{
+	color: #6c6e70;
+	background: #EFEFEF;
+	font-size: 11pt;
+	border: solid 1px #e9e4e8;
+	line-height: 14px;
+}
+
+/* form preview */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox.preview .stylewrapper
+{
+	height: 100% !important; /* override inline */
+}
+
+/* watermark text */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox div.listbox-watermark
+{
+	font-family: "Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+	font-size: 13px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox div.listbox-watermark 
+{
+	color: #aaaaaa;
+	text-align: center;
+}

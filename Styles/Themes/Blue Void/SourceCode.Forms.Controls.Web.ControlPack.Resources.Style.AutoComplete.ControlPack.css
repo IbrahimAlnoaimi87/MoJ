@@ -1,0 +1,178 @@
+﻿/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.autocomplete-control > a,
+    .theme-entry .tree li.autocomplete-control > span,
+    .theme-entry .tree li.autocomplete-control.children.open > a,
+    .theme-entry .tree li.autocomplete-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.AutoComplete/Images/Autocomplete16.png');
+    }
+
+    .theme-entry .tree li.autocomplete-control > a:hover,
+    .theme-entry .tree li.autocomplete-control > span:hover,
+    .theme-entry .tree li.autocomplete-control.selected > a,
+    .theme-entry .tree li.autocomplete-control.selected > span,
+    .theme-entry .tree li.autocomplete-control > a:focus,
+    .theme-entry .tree li.autocomplete-control > span:focus,
+    .theme-entry .tree li.autocomplete-control.children.open > a:hover,
+    .theme-entry .tree li.autocomplete-control.children.open > span:hover,
+    .theme-entry .tree li.autocomplete-control.children.open.selected > a,
+    .theme-entry .tree li.autocomplete-control.children.open.selected > span,
+    .theme-entry .tree li.autocomplete-control.children.open > a:focus,
+    .theme-entry .tree li.autocomplete-control.children.open > span:focus,
+    .theme-entry .tree li.autocomplete-control.children.closed > a:hover,
+    .theme-entry .tree li.autocomplete-control.children.closed > span:hover,
+    .theme-entry .tree li.autocomplete-control.children.closed.selected > a,
+    .theme-entry .tree li.autocomplete-control.children.closed.selected > span,
+    .theme-entry .tree li.autocomplete-control.children.closed > a:focus,
+    .theme-entry .tree li.autocomplete-control.children.closed > span:focus
+
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.AutoComplete/Images/Autocomplete_Selected14.png');
+    }
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.autocomplete-control > a,
+    .theme-entry .tree li.autocomplete-control > span,
+    .theme-entry .tree li.autocomplete-control.children.open > a,
+    .theme-entry .tree li.autocomplete-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.AutoComplete/Images/Autocomplete16@2x.png');
+    }
+
+    .theme-entry .tree li.autocomplete-control > a:hover,
+    .theme-entry .tree li.autocomplete-control > span:hover,
+    .theme-entry .tree li.autocomplete-control.selected > a,
+    .theme-entry .tree li.autocomplete-control.selected > span,
+    .theme-entry .tree li.autocomplete-control > a:focus,
+    .theme-entry .tree li.autocomplete-control > span:focus,
+    .theme-entry .tree li.autocomplete-control.children.open > a:hover,
+    .theme-entry .tree li.autocomplete-control.children.open > span:hover,
+    .theme-entry .tree li.autocomplete-control.children.open.selected > a,
+    .theme-entry .tree li.autocomplete-control.children.open.selected > span,
+    .theme-entry .tree li.autocomplete-control.children.open > a:focus,
+    .theme-entry .tree li.autocomplete-control.children.open > span:focus,
+    .theme-entry .tree li.autocomplete-control.children.closed > a:hover,
+    .theme-entry .tree li.autocomplete-control.children.closed > span:hover,
+    .theme-entry .tree li.autocomplete-control.children.closed.selected > a,
+    .theme-entry .tree li.autocomplete-control.children.closed.selected > span,
+    .theme-entry .tree li.autocomplete-control.children.closed > a:focus,
+    .theme-entry .tree li.autocomplete-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.AutoComplete/Images/Autocomplete_Selected14@2x.png');
+    }
+}
+
+/* #region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+
+/* dropdown menu */
+.theme-entry ul.autocomplete-menu
+{
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.25);
+    outline: 1px solid #fff;
+}
+
+/* item in a menu row */
+.theme-entry .autocomplete-menu .ui-menu-item a
+{
+    min-height: 2.4rem;
+    padding: 0 0 0 0.3rem;
+    line-height: 2.4rem;
+    border-radius: 0;
+    border: 1px solid transparent;
+}
+
+/* dropdown menu row (hover) */
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-hover
+{
+    background-color: transparent;
+}
+
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-focus
+{
+    background-color: #0070ff;
+}
+
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-focus,
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-focus span
+{
+    color: white !important; /* Override parent !important */
+}
+
+/* dropdown menu row (selected) */
+.theme-entry .autocomplete-menu .ui-menu-item.selected
+{
+    background-color: #5d9eea;
+}
+
+.theme-entry .autocomplete-menu .ui-menu-item.selected a,
+.theme-entry .autocomplete-menu .ui-menu-item.selected span
+{
+    color: white !important; /* Override parent !important */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-AutoComplete .input-control.text-input .input-control-wrapper input[type=text]
+{
+    height: inherit;
+    vertical-align: top;
+    min-height: 2.1rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-AutoComplete .input-control-watermark
+{
+    line-height: 2.1rem;
+}
+
+.msie .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-AutoComplete input.ui-autocomplete-loading
+{
+    background-position: calc(100% - 1.8em) center;
+}
+
+
+/* #region validation */
+
+
+/* #endregion validation */
+
+
+/* #endregion DESKTOP*/
+
+/* #region TOUCH */
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */
+
+

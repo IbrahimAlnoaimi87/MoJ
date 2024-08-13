@@ -1,0 +1,212 @@
+/* Theme: Lithium */
+/* Author: Lewis Garmston */
+/* Date: 20/02/2014 */
+/* Purpose: Portrait orientation only*/
+
+/*#region FORM FIELDS*/
+
+.mobile .theme-entry .form-field
+{
+	display: block;
+	width: 100%;
+}
+
+.mobile .theme-entry .form-field > label.form-field-label,
+html[dir=rtl].mobile  .theme-entry .form-field > label.form-field-label,
+.mobile .theme-entry .form-field > .form-field-element-wrapper,
+html[dir=rtl].mobile  .theme-entry .form-field > .form-field-element-wrapper,
+.mobile .theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > label.form-field-label,
+.mobile .theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-label,
+html[dir=rtl].mobile .theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > label.form-field-label,
+html[dir=rtl].mobile .theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-label,
+.mobile .theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > .form-field-element-wrapper,
+.mobile .theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-element-wrapper,
+html[dir=rtl].mobile .theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > .form-field-element-wrapper,
+html[dir=rtl].mobile .theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-element-wrapper
+{
+	box-sizing: border-box;
+	display: block;
+	float: none;
+	margin-left:0;
+	margin-right:0;
+	width: 100%;
+}
+
+.mobile .theme-entry .form-field.required > label.form-field-label,
+html[dir=rtl].mobile .theme-entry .form-field.required > label.form-field-label
+{
+	background-image: none;
+}
+
+.mobile .theme-entry .form-field.required > .form-field-element-wrapper
+{
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 10px;
+}
+
+html[dir=rtl].mobile .theme-entry .form-field.required > .form-field-element-wrapper
+{
+	background-position: right center;
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+@media only screen and 
+	(max-resolution: 1.5dppx), 
+	(max-resolution: 144dpi), 
+	(-webkit-max-device-pixel-ratio: 1.5), 
+	(-o-max-device-pixel-ratio: 3/2)
+{
+	.mobile .theme-entry .form-field.required > .form-field-element-wrapper 
+	{
+		background-image: url(RuntimeTheme/RequiredField.png);
+	}
+}
+
+@media only screen and 
+	(min-resolution: 1.5dppx),  /*this is for retina graphics, apple/samsung devices*/
+	(min-resolution: 144dpi),
+	(-webkit-min-device-pixel-ratio: 1.5), 
+	(-o-min-device-pixel-ratio: 3/2)
+{
+	.mobile .theme-entry .form-field.required > .form-field-element-wrapper 
+	{
+		background-image: url(RuntimeTheme/RequiredField@2x.png);
+		background-size: 8px;
+	}
+}
+
+/*#endregion FORM FIELDS*/
+
+/*#region HALF SCREEN POPUPS */
+
+/*Specific for iphone?*/
+.mobile .theme-entry .menu
+{
+	position: absolute;
+	top: 5.0rem;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/*override the popup positions set in javascript for desktop mode*/
+/*popups that must take up most of the screen because they typically scroll*/
+/*popups must keep space at the top of the screen to dismiss the popup*/
+.mobile .theme-entry .menu,
+.mobile .theme-entry .popup
+{
+	position: absolute !important;
+	top: auto !important;
+	left: 0 !important;
+	bottom: 0!important;
+	right: 0!important;
+	height: auto !important;
+	max-height: none !important;
+	width: 100%!important; /*for calendar and color pickers etc*/
+	display: block!important; /*for calendar and color pickers etc*/
+}
+
+.mobile .theme-entry .dialog,
+.mobile .theme-entry .dialog#PickerSearchDialog
+{
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	bottom: 0 !important;
+	right: 0 !important;
+	height: auto !important;
+	width: auto !important;
+	max-height: none !important;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .popup-body
+{
+	top: 6rem !important;
+}
+
+/*Bottom Aligned popups, which keep the same height*/
+/*e.g. calendar fixes*/
+.mobile .theme-entry .popup .calendar-outline
+{
+	left: 0 !important; /*override - inline*/
+	top: auto !important; /*override - inline*/
+	display: block;
+	width: 100% !important; /*override - inline*/
+	bottom: 0;
+}
+
+.mobile .theme-entry .dayname,
+.mobile .theme-entry a.day,
+.mobile .theme-entry a.day:hover
+{
+	width: 14.285%;
+}
+
+.mobile .theme-entry .month,
+.mobile .theme-entry .year,
+.mobile .theme-entry .month:hover,
+.mobile .theme-entry .year:hover
+{
+	width: 25%;
+}
+
+/*#endregion HALF SCREEN POPUPS */
+
+/*#region DIALOG POPUPS*/
+/*As simple popups like calendars etc cannot be targetted directly, we have to define their styles first*/
+/*and then override those styles for the diloags again*/
+
+/*#region PICKER dialog*/
+
+.mobile .theme-entry .picker-search-grid.grid.full
+{
+	height: 32.4rem !important; /* ensure the grid takes up the remaining space */
+}
+
+/*#endregion*/
+
+
+
+/*#endregion*/
+
+/*#region TOOLBAR BUTTONS - thinner*/
+
+.mobile .theme-entry a.toolbar-button
+{
+	padding-left: 1.0rem;
+	padding-right: 1.0rem;
+}
+
+/*#endregion TOOLBAR BUTTONS*/
+
+/*#region FILTER CONFIGURATION */
+
+.mobile .theme-entry .filterContainer .filterTxt
+{
+	width: 25.8rem;
+	display: block;
+	float: left;
+}
+
+.mobile .theme-entry .filterContainer .quickSearch.filter a
+{
+	display: block;
+	float: left;
+}
+
+.mobile .theme-entry .filterContainer .searchDdl
+{
+	max-width: 100%;
+	margin-right: 1rem;
+}
+
+.mobile .theme-entry .filterContainer .quickSearch.filter .filterLabel,
+.mobile .theme-entry .filterContainer .filterChosen.filter 
+{
+	padding-bottom: 0;
+}
+
+/*#endregion*/
+

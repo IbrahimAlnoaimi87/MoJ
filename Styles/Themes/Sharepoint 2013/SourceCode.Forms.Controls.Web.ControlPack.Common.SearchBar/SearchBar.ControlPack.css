@@ -1,0 +1,98 @@
+.button-gradient {
+  filter: none;
+  background-color: transparent;
+  background: none;
+  height: 21px;
+  width: 22px;
+}
+.button-gradient-hover {
+  background: #eaf6ff;
+  filter: none;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .PART_SearchButton {
+  height: 16px;
+  width: 16px;
+  background-image: url("Images/search16.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  display: inline-block;
+  margin-left: 2px;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .PART_ClearSearchButton {
+  height: 20px;
+  width: 20px;
+  background-image: url("Images/searchClear16.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  display: block;
+  margin-left: 1px;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .PART_ExpanderButton {
+  height: 16px;
+  width: 16px;
+  background-image: url("Images/arrow_down_normal.png");
+  background-repeat: no-repeat;
+  background-position: center !important;
+  background-size: auto auto;
+  display: inline-block;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .PART_ExpanderButton.expanded {
+  background-image: url("Images/arrow_up_normal.png");
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar.hideClearSearchButton .search-button-wrapper {
+  border-right-width: 1px;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper {
+  filter: none;
+  background-color: transparent;
+  background: none;
+  height: 21px;
+  width: 22px;
+  border-right-width: 0;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper {
+  filter: none;
+  background-color: transparent;
+  background: none;
+  height: 21px;
+  width: 22px;
+  border-left-width: 0;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper:hover {
+  background: #eaf6ff;
+  filter: none;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .input-control .input-control-m-c {
+  border-right-width: 0;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar.hover .search-button-wrapper {
+  border-color: #92c0e0;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar.hover .clear-search-button-wrapper {
+  border-color: #92c0e0;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar.focus .search-button-wrapper {
+  border-color: #2a8dd4;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar.focus .clear-search-button-wrapper {
+  border-color: #2a8dd4;
+}
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .input-control-m-c {
+  border-right-width: 1px;
+  border-left-width: 0;
+}
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .PART_SearchButton {
+  margin-left: 0;
+  margin-right: 2px;
+}
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar .PART_ClearSearchButton {
+  margin-left: 0;
+  margin-right: 4px;
+}
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .cp-searchbar.hideClearSearchButton .search-button-wrapper {
+  border-right-width: 0;
+  border-left-width: 1px;
+}

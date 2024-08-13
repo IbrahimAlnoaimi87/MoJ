@@ -1,0 +1,44 @@
+﻿.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv.selected
+{
+	background-color: #fee8a4 !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:hover
+{
+	background-color: #fff1c8;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:focus,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .listwrapper:focus
+{
+	border-color: #fecf42;
+	border-width: 1px;
+	border-style: dotted;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper
+{
+	border: 1px solid #999999;
+	background-color: white;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .title
+{
+	color: #343e41;
+	border-color: #f0ac00;
+	background: #ffefbd;
+	background: -moz-linear-gradient(top,#ffefbd 0%,#fed34f 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffefbd),color-stop(100%,#fed34f));
+	background: -webkit-linear-gradient(top,#ffefbd 0%,#fed34f 100%);
+	background: -o-linear-gradient(top,#ffefbd 0%,#fed34f 100%);
+	background: -ms-linear-gradient(top,#ffefbd 0%,#fed34f 100%);
+	background: linear-gradient(to bottom,#ffefbd 0%,#fed34f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffefbd',endColorstr='#fed34f',GradientType=0);
+	border: solid 1px #e9e4e8;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox div.listbox-watermark 
+{
+	color: #aaaaaa;
+	text-align: center;
+}

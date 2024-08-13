@@ -1,0 +1,196 @@
+
+/* Hide widget from View Desginer Toolbox */
+
+.draggable.toolboxitem.sfcsearchbarwidget-control {
+  display: none;
+}
+/* Hide widget from Form Desginer Toolbox */
+
+.toolboxitem.sfcsearchbarwidget-control {
+  display: none;
+}
+/* ensure a cursor to show up when clicking on search box (otherwise you have to click twice) */
+
+.cp-searchbar .input-control-watermark {
+  pointer-events: none;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cp-searchbar table {
+  width: 100%;
+  table-layout: auto;
+}
+.cp-searchbar-cell {
+  white-space: nowrap;
+}
+.cp-searchbar-cell-display-text {
+  width: 50px;
+}
+.cp-searchbar-cell-expander,
+.cp-searchbar-cell-search-button,
+.cp-searchbar-cell-clear-button {
+  width: 20px;
+}
+.cp-searchbar .input-control {
+  width: 100%;
+}
+.cp-searchbar .button-wrapper {
+  width: 18px;
+  height: 18px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  cursor: pointer;
+}
+.cp-searchbar .button {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+.cp-searchbar .button-border {
+  border-color: #adae9c;
+}
+.cp-searchbar .button-gradient {
+  background: #e4e7dd;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fefefe 0%, #e4e7dd 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #e4e7dd));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fefefe 0%, #e4e7dd 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fefefe 0%, #e4e7dd 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fefefe 0%, #e4e7dd 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fefefe 0%, #e4e7dd 100%);
+  /* W3C */
+
+}
+.cp-searchbar .button-gradient:hover {
+  background: #89bf2d;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #99dd2b 0%, #89bf2d 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #99dd2b), color-stop(100%, #89bf2d));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #99dd2b 0%, #89bf2d 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #99dd2b 0%, #89bf2d 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #99dd2b 0%, #89bf2d 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #99dd2b 0%, #89bf2d 100%);
+  /* W3C */
+
+}
+.cp-searchbar .search-button .button-border {
+  border-left: 0px;
+}
+.cp-searchbar .clear-search-button .button-wrapper {
+  margin-left: 2px;
+}
+.cp-searchbar .PART_ExpanderButton {
+  margin-left: 1px;
+  margin-top: 1px;
+  background-image: url("Images/PDExpand.png");
+}
+.cp-searchbar .PART_ExpanderButton.expanded {
+  background-image: url("Images/PDCollapse.png");
+}
+.cp-searchbar .PART_SearchButton {
+  background-position: 1px 1px;
+  background-image: url("Images/Search16.png");
+}
+.cp-searchbar .PART_ClearSearchButton {
+  background-position: 5px 5px;
+  background-image: url("Images/ClearIcon.png");
+}
+.cp-searchbar .hidden {
+  display: none;
+}
+.cp-searchbar .spacer {
+  height: 2px;
+}
+/* remove the clear field [x] button that IE put in the very right side of the textbox */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .SourceCode-Forms-Controls-Web-TextBox::-ms-clear {
+  display: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .hideSearchButton .cp-searchbar-cell-search-button,
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .hideClearSearchButton .cp-searchbar-cell-clear-button {
+  width: 0;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .hideSearchButton .search-button-wrapper,
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .hideClearSearchButton .clear-search-button-wrapper {
+  display: none;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper,
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper {
+  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #ebece5 50%, #ccd0c1 51%, #e6e9e0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(50%, #ebece5), color-stop(51%, #ccd0c1), color-stop(100%, #e6e9e0));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #ebece5 50%, #ccd0c1 51%, #e6e9e0 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #ebece5 50%, #ccd0c1 51%, #e6e9e0 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #ebece5 50%, #ccd0c1 51%, #e6e9e0 100%);
+  background: linear-gradient(to bottom, #fefefe 0%, #ebece5 50%, #ccd0c1 51%, #e6e9e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#e6e9e0', GradientType=0);
+  border-color: #acaf9c;
+}
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper:hover,
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper:hover {
+  background: #a4e241;
+  background: -moz-linear-gradient(top, #a4e241 0%, #7db619 50%, #59820c 51%, #7daf21 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a4e241), color-stop(50%, #7db619), color-stop(51%, #59820c), color-stop(100%, #7daf21));
+  background: -webkit-linear-gradient(top, #a4e241 0%, #7db619 50%, #59820c 51%, #7daf21 100%);
+  background: -o-linear-gradient(top, #a4e241 0%, #7db619 50%, #59820c 51%, #7daf21 100%);
+  background: -ms-linear-gradient(top, #a4e241 0%, #7db619 50%, #59820c 51%, #7daf21 100%);
+  background: linear-gradient(to bottom, #a4e241 0%, #7db619 50%, #59820c 51%, #7daf21 100%);
+  color: white;
+}
+/* remove search button left border to integrate with search textbox */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper {
+  border-left-width: 0;
+}
+/* when serch button is enabled, be sure to add left border to the clear icon */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper {
+  border-left-width: 1px;
+}
+/* when search button is hidden, remove left border to the clear icon to integrate the border with search textbox */
+
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .hideSearchButton .clear-search-button-wrapper {
+  border-left-width: 0;
+}
+/* search textbox not displaying 100% when tree on toolbar of view on form */
+
+.toolbar .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar.preview .cp-searchbar-container .input-placeholder {
+  width: 100%;
+}
+/* #region RTL */
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .hideSearchButton .search-button-wrapper {
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper {
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+/* clear button 'x' icon shift bit for RTL so need to make adjustment */
+
+html[dir=rtl] .cp-searchbar .PART_ClearSearchButton {
+  background-position: 3px 5px;
+}
+/* #endregion RTL */
+

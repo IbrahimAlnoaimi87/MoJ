@@ -1,0 +1,36 @@
+.theme-entry .spanUsers.textboxSpan:hover,
+.theme-entry .spanUsers:hover span,
+.theme-entry .spanUsers.selectedspan,
+.theme-entry .spanUsers.selectedspan:hover,
+.theme-entry .spanUsers:hover,
+.theme-entry .selectedspan span,
+.theme-entry .selectedspan:hover span
+{
+	background-color:#d9e57f;
+}
+
+#DisplayValueConfigPicker .popup-body-content
+{
+	background-color: #FFFFFF;
+}
+
+#addButton1 span,
+#addButton2 span,
+.theme-entry #UsersConfig_secondPageOutside .scroll-wrapper #UsersConfig_secondPageInternal #addButton2,
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #addButton1
+{
+	color: #ffffff;
+}
+
+.theme-entry .report-grid-navigation-wrapper .pager-buttongeneric.buttonFirstPage 
+{
+	background-position-y: 55%;
+}
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartConfigTreeHolder,
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox,
+.theme-entry #UsersConfig_secondPageOutside #UsersTextBox,
+.theme-entry #ReportHeaderActivityPicker .workflowTreeContainer
+{
+    border: 1px solid #2f3100;
+}

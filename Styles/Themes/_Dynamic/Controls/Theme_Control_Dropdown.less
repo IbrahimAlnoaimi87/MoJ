@@ -1,0 +1,155 @@
+/*#region DROPDOWN */
+
+
+.theme-entry .input-control.select-box.dropdown-box .input-control-buttons
+{
+    overflow: inherit;
+}
+
+/*#endregion DROPDOWN */
+
+
+//#region RESETS
+
+
+//override core.less
+.theme-entry .drop-menu .drop-menu-m{
+    border-color: transparent;
+    border-width: 0px;
+}
+
+//#endregion
+
+
+/*#region DROPDOWN POPOVER*/
+/*appears under a drop-down control*/
+
+.theme-entry .drop-menu
+{
+    border: none;
+    background-color: @Menu-Background-Color;
+    backdrop-filter: @Menu-Background-Effect; 
+    color : @Menu-Text-Color;
+
+    -moz-box-shadow: @Menu-Shadow;
+    -webkit-box-shadow: @Menu-Shadow;
+    box-shadow: @Menu-Shadow;
+    z-index: 2 !important; /*override - inline - only in worklist control dialog - BUG logged*/
+
+    border-color: @Menu-Border-Color;
+    border-radius: @Menu-Rounding;
+    overflow: hidden; //so rounding will work
+
+    
+}
+
+
+.theme-entry .drop-menu ul.drop-menu li a
+{
+	min-height: @Main-Text-Size;
+	padding: @Control-Inset-Vertical-Spacing @Control-Inset-Horizontal-Spacing;
+
+    height: auto;
+    color: inherit;
+
+	.mobile &
+	{
+		min-height:initial;
+	}
+}
+
+
+.theme-entry .drop-menu.icon-control ul.drop-menu
+{
+    background-color: transparent;
+}
+
+.theme-entry .drop-menu ul.drop-menu li
+{
+    height: auto;
+}
+
+
+.theme-entry .drop-menu ul.drop-menu a span
+{
+    color: inherit;
+    height: auto;
+    line-height: normal;
+    padding: 0;
+}
+
+.theme-entry .drop-menu ul.drop-menu a:hover
+{
+    background-color: @Menu-Item-Hover-Background-Color; /*hover color*/
+    color: @Menu-Item-Hover-Text-Color;
+}
+
+.theme-entry .drop-menu ul.drop-menu a.selected,
+.theme-entry .drop-menu ul.drop-menu a.selected:hover,
+.theme-entry .drop-menu ul.drop-menu li.selected,
+.theme-entry .drop-menu ul.drop-menu li.selected a:hover
+{
+    background-color: @Menu-Item-Selected-Background-Color; /*selected color*/
+}
+
+.theme-entry .drop-menu ul.drop-menu a.selected span,
+.theme-entry .drop-menu ul.drop-menu li.selected span
+{
+    color: @Menu-Item-Selected-Text-Color;
+}
+
+.theme-entry .drop-menu ul.drop-menu a.disabled,
+.theme-entry .drop-menu ul.drop-menu a.disabled:hover
+{
+    background-color: @Menu-Item-Disabled-Background-Color;
+    color: @Menu-Item-Disabled-Text-Color;
+}
+
+.theme-entry .input-control.token-input
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.theme-entry .input-control.token-input .input-control-content
+{
+    border-radius: 2px;
+}
+
+.theme-entry .input-control.token-input.active .input-control-content
+{
+    border-color: @Input-Focus-Border-Color;
+    border-width: 1px /* override theme global definition */
+}
+/*#endregion DROPDOWN STYLES*/
+
+/*#region DROPDOWN  CONTROL*/
+
+/*All drop down controls*/
+.theme-entry .dropdown-box.input-control .input-control-wrapper > a
+{
+    position: relative;
+    padding-top: 0;
+
+}
+
+//watermark or chosen value
+.theme-entry .dropdown-box.input-control .input-control-wrapper > a > span
+{
+    display:block; //so the padding and height is respected. could be inline-block too
+    position: relative; /*makes the box size to contents when there is no width set - list view filter bug in FF*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: @__Input-Inner-Height;
+    line-height: @__Input-Inner-Height;
+    min-height: @Main-Text-Size;
+}
+
+.theme-entry .drop-menu.icon-control ul.drop-menu a
+{
+    padding-left: 2.5rem;
+}
+
+/*#endregion DROPDOWN  STYLES*/

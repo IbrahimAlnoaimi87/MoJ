@@ -1,0 +1,23 @@
+/*#region RATING CONTROL */
+.theme-entry .ratingWrapper
+{
+    padding: 0.3rem 0 0 0.3rem; /* keeps spacing in line with margin between stars */
+}
+
+.theme-entry .ratingStar
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 0 0.3rem 0.3rem 0 !important; /* override base - keeps spacing for wrapping rating controls */
+}
+
+.theme-entry .ratingWrapper.disabled *,
+.theme-entry .ratingWrapper.read-only *
+{
+    cursor: default;
+}
+
+/*#endregion RATING CONTROL */

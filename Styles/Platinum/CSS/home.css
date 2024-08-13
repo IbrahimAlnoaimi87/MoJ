@@ -1,0 +1,241 @@
+﻿body
+{
+	background: #879aa5; /* Old browsers */
+	background: -moz-linear-gradient(top, #1a2329 0%, #879aa5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1a2329), color-stop(100%,#879aa5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1a2329 0%,#879aa5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1a2329 0%,#879aa5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1a2329 0%,#879aa5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #1a2329 0%,#879aa5 100%); /* W3C */
+}
+
+.ie8 body,
+.ie9 body
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2329', endColorstr='#879aa5',GradientType=0 ); /* IE6-9 */
+}
+
+html[dir=rtl] body
+{
+	text-align: right;
+	direction:rtl;
+}
+
+/* Home Header Styling */
+.home-header
+{
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	right: 4px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.home-header-c
+{
+	position: relative;
+	height: 30px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #d2d3ca 50%, #d2d3ca 51%, #e9ece3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#d2d3ca), color-stop(51%,#d2d3ca), color-stop(100%,#e9ece3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#d2d3ca 50%,#d2d3ca 51%,#e9ece3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#d2d3ca 50%,#d2d3ca 51%,#e9ece3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#d2d3ca 50%,#d2d3ca 51%,#e9ece3 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#d2d3ca 50%,#d2d3ca 51%,#e9ece3 100%); /* W3C */
+}
+
+.ie8 .home-header-c,
+.ie9 .home-header-c
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9ece3',GradientType=0 ); /* IE6-9 */
+}
+
+.header-logo
+{
+	background:url(../Images/Logo.png#betarefresh) no-repeat 0 50%;
+	float:left;
+	height: 30px;
+	margin-left:5px;
+	width: 212px;
+}
+
+.header-logo.runtime
+{
+	background:url(../Images/K2Runtime.png#betarefresh) no-repeat 0 50%;
+}
+
+.header-logo a.home-link
+{
+	display: block;
+	height: 100%;
+	border: none;
+	padding-left:45px;
+	text-decoration:none;
+}
+
+.header-logo a.home-link span
+{
+	font-size:16px;
+	line-height:56px;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#4f6f18;
+	display:none;
+}
+
+.header-content
+{
+	float:right;
+	height: 30px;
+}
+
+.header-divider
+{
+	position: absolute;
+	top: 0;
+	right: 180px;
+	bottom: 0;
+	overflow: hidden;
+	width: 3px;
+	background: transparent url(../Images/Home/top_bar_devider.png) no-repeat left center;
+	display: none;
+}
+
+.header-system-info
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	width: 180px;
+	display: none;
+}
+
+.header-system-info .wrapper
+{
+	text-align: center;
+	line-height: 44px;
+}
+
+/* Home Content Styling */
+.home-content
+{
+	background: #f6f8f1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e1e4d9 0%, #f6f8f1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1e4d9), color-stop(100%,#f6f8f1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e1e4d9 0%,#f6f8f1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e1e4d9 0%,#f6f8f1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e1e4d9 0%,#f6f8f1 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e1e4d9 0%,#f6f8f1 100%); /* W3C */
+	position: absolute;
+	top: 38px;
+	left: 4px;
+	right: 4px;
+	bottom: 4px;
+	overflow: hidden;
+}
+
+.ie8 .home-content,
+.ie9 .home-content
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e4d9', endColorstr='#f6f8f1',GradientType=0 ); /* IE6-9 */
+}
+
+.home-content-mc
+{
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+	overflow: hidden;
+}
+
+/* Site Style Overrides */
+body.collapsed-header .home-header
+{
+	display: none ! important;
+}
+
+body.collapsed-header .home-content
+{
+	top: 4px ! important;
+}
+
+/* SharePoint 2013 Embedded Site Style */
+body.sp2013
+{
+	background:#fff;
+}
+
+body.sp2013 .home-content
+{
+	-moz-box-shadow: inset 0 0 1px 1px #adae9c;
+	-webkit-box-shadow: inset 0 0 1px 1px #adae9c;
+	box-shadow: inset 0 0 1px 1px #adae9c;
+    top: 32px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body.collapsed-header.sp2013 .home-content
+{
+    top: 0 ! important;
+}
+
+/* Host.aspx */
+body.hosting .header-logo
+{
+    background-image:none;
+    width:auto;
+}
+
+body.hosting .wrapper a
+{    
+    line-height:30px;
+    font-weight:700;    
+}
+
+body.hosting .home-content .home-content-mc
+{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body.hosting .home-content .home-content-mc .wrapper
+{
+    background-color:#fff;
+}
+
+/* AppStudio RTL overrides*/
+html[dir=rtl] #BottomFilterMenuPanel .panel-body-wrapper > * > *
+{
+	margin:3px 5px 0 3px ! important;
+}
+
+#BottomFilterMenuPanel a
+{
+	display:inline-block;
+}
+
+/* AppStudio Grid specifics */
+#AppStudioGrid .grid-footer .toolbar-label,
+#AppStudioSearchGrid .grid-footer .toolbar-label
+{
+	margin-right: 20px;
+}
+
+#AppStudioSearchFormPanel tr:first-child .form-field
+{
+	margin-top: 0;
+}
+
+#AppStudioSearchFormPanel tr:last-child td
+{
+	padding-top: 2px;
+}

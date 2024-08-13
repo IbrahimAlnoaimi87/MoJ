@@ -1,0 +1,249 @@
+﻿
+/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+/*Theme@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+	
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+	/* #region IMAGE DESKTOP */
+	
+	/* #endregion IMAGE DESKTOP */
+
+	/* #region IMAGE MOBILE */
+	/* #endregion IMAGE MOBILE */
+}
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper
+{
+	background-color: #fff; /*Background to the lists*/
+	border-radius: 4px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .title
+{
+	background: #636e80;
+	border: 0 !important;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #c2cbda;
+	height: 3.0rem;
+	line-height: 3.0rem;
+	overflow: hidden;
+	padding: 0 1.0rem;
+	-webkit-text-overflow: ellipsis !important;
+	-moz-text-overflow: ellipsis !important;
+	-ms-text-overflow: ellipsis !important;
+	-o-text-overflow: ellipsis !important;
+	text-overflow: ellipsis !important;
+	text-shadow: 0rem 0.2rem #535c6b;
+	white-space: nowrap !important;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .option::selection
+{
+	background-color: #3cb0df;
+	color: #fff;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox div.listbox-watermark 
+{
+	line-height: 3.5rem;
+	padding: 0 !important; /* override - inline */
+	display: block;
+	font-style: italic;
+	font-size: 1.2rem;
+	font-family: 'Segoe UI Semibold', HelveticaNeue-Medium, Helvetica, sans-serif;
+	margin: 0 !important; /* override -- inline */
+	color: #aaaaaa;
+	text-align: center;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox div.listbox-watermark.hidden
+{
+	display: none;
+}
+
+/* list box part (with header) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .listwrapper .optionwrapper
+{
+	border-width: 0 0.1rem 0.1rem 0.1rem;
+	border-color: #e6e6e6;
+	top: 0rem;
+}
+
+/* list box part (without header) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .noHeader .optionwrapper
+{
+	top: 0;
+	height: 100%;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv
+{
+	padding-left: 1.0rem;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; /*make sure that the text doesn't move when selected*/
+	border: solid 0.1rem transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:hover
+{
+	background-color: #bfeafb;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:focus,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .listwrapper:focus
+{
+	border-color: #3cb0df;
+	border-style: dotted;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv.selected,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv.selected:hover
+{
+	background-color: #7fd5f7;
+}
+
+/* #region validation */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox.invalid,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-ListBox.invalid
+{
+	border: 0px solid transparent !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox.invalid .optionwrapper
+{
+	background-color: #fff3f4;
+	-moz-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	-o-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	-webkit-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	border-color: rgba(178,30,40,0.4);
+	border: 1px solid rgba(178, 30, 40, 0.4) !important; /* override -- base */
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+/* #endregion validation */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox.invalid .hidden + .optionwrapper
+{
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* #endregion DESKTOP */
+
+/* #region TOUCH */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .title
+{
+	height: 5.2rem;
+	line-height: 5.2rem;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox div.listbox-watermark
+{
+	z-index: 1;
+}
+
+/* list box part (without header) */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .noHeader .optionwrapper
+{
+	top: 0;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:hover
+{
+	background-color: transparent;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:focus,
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .listwrapper:focus
+{
+	border-color: transparent;
+	border-style: transparent;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv.selected,
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv.selected:hover
+{
+	background-color: #7fd5f7;
+}
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper
+	{
+		width: 100%;
+		height: 100% !important; /* override -- inline */
+		position: relative; /* base for the absolute buttons */
+	}
+
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper
+	{
+		background-color: #fff; /*Background to the lists*/
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		width: 100%;
+	}
+
+	/* option wrapper */
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .selectWrapper
+	{
+		float: none;
+		margin-bottom: 5.0rem;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* #region button images for phone portrait ONLY */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+	
+}
+/* #endregion button images for phone portrait ONLY */
+
+/* #region button images for phone portrait x2 ONLY */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+
+}
+/* #endregion button images for phone portrait x2 ONLY */
+
+
+/*#endregion RESPONSIVE BREAKING POINTS */

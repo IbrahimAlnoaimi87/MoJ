@@ -1,0 +1,86 @@
+#display-reportheader-dropdown
+{
+	position: absolute;
+	left: 2px;
+	right: 2px;
+	top: 4px;
+}
+
+/* #region SELECT WORKFLOW PICKER */
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside
+{
+	height: 410px !important; /* override popup manager inline */
+}
+
+.theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox
+{
+    height: 63px;
+}
+
+.mozilla .theme-entry #ProcessChartPropertyConfig_secondPageOutside #ProcessChartTextBox
+{
+	height: 62px;
+	margin-top: -1px;
+}
+
+
+/* #endregion SELECT WORKFLOW PICKER */
+
+
+/* #region SELECT USER PICKER */
+
+.theme-entry #UsersConfig_secondPageOutside #selectedUsersPanel
+{
+	padding-top: 5px;
+}
+
+
+.theme-entry #UsersConfig_secondPageOutside .users-complex-search-options
+{
+	margin-bottom: 0;
+}
+
+.mozilla .theme-entry #UsersConfig_secondPageOutside .user-search-result-box,
+.theme-entry #UsersConfig_secondPageOutside .user-search-result-box,
+.theme-entry #UsersConfig_secondPageOutside #UsersTextBox
+{
+	height: 94px;
+}
+
+.theme-entry #UsersConfig_secondPageOutside.search-expanded #UsersTextBox
+{
+	height: 68px;
+}
+
+.theme-entry #UsersConfig_secondPageInternal .user-search-textbox .search > span
+{
+	background-image: url("../SharePoint%202013/worklist/Search16.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 16px;
+	width: 21px;
+	height: 21px;
+}
+
+.theme-entry #UsersConfig_secondPageOutside .scroll-wrapper .sfc-report-header-users-config-select-user-radio-container
+{
+    margin-left: 0;
+}
+
+/* #endregion SELECT USER PICKER */
+
+
+/* #region ACTIVITY PICKER */
+
+.theme-entry #ReportHeaderActivityPicker .tree li:first-child
+{
+	margin-top: 0;
+}
+
+.theme-entry #ReportHeaderActivityPicker .workflowTreeContainer
+{
+	height: 107px;
+}
+
+/* #endregion ACTIVITY PICKER */

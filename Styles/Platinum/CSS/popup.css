@@ -1,0 +1,737 @@
+﻿.popup
+{
+	position: absolute;
+}
+
+.popup-header
+{
+	background: #606568; /* Old browsers */
+	background: -moz-linear-gradient(top,  #606568 0%, #1d2325 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#606568), color-stop(100%,#1d2325)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #606568 0%,#1d2325 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #606568 0%,#1d2325 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #606568 0%,#1d2325 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #606568 0%,#1d2325 100%); /* W3C */
+	border-style:solid ;
+	border-color:#0e1213;
+	border-width:2px 2px 0 2px;
+	-moz-box-shadow:5px 5px 5px #888;
+	-webkit-box-shadow:5px 5px 5px #888;
+	box-shadow:5px 5px 5px #888;
+	height:24px;
+}
+
+.ie8 .popup-header,
+.ie9 .popup-header
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606568', endColorstr='#1d2325',GradientType=0 ); /* IE6-9 */
+}
+
+.popup-header-c
+{
+	height:24px;
+}
+
+.popup-header-wrapper
+{
+	height:24px;
+}
+
+.popup-header-text
+{
+	color: #fff;
+	float: left;
+	font-weight: bold;
+	height: 24px;
+	line-height: 22px;
+	padding-left: 5px;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: default;
+	left: 0;
+	right: 44px;
+	position: absolute;
+}
+
+html[dir=rtl] .popup-header-text
+{
+	float:right;
+	left: 44px;
+	padding-left:0;
+	padding-right:5px;
+	right:0;
+}
+
+.popup-header-buttons
+{
+	float:right;
+}
+
+html[dir=rtl] .popup-header-buttons
+{
+	float:left;
+}
+
+.popup-header-button-bar
+{
+	position: relative;
+	overflow: hidden;
+	width: auto;
+	height: 21px;
+	float: right;
+}
+
+html[dir=rtl] .popup-header-button-bar
+{
+	float:left;
+}
+
+.popup-header-button-bar-wrapper
+{
+	width: auto;
+	height: 21px;
+}
+
+html[dir=rtl] .popup-header-button-bar-wrapper
+{
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.popup-header-buttons a
+{
+	display: block;
+	float: left;
+	width: 21px;
+	height: 21px;
+	text-decoration: none;
+	background-position: left 0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.popup-header-buttons a span
+{
+	width: 20px;
+	height: 21px;
+	display: block;
+}
+
+.popup-header-buttons a:hover, .popup-header-buttons a:focus
+{
+	background-position: left -21px;
+}
+
+.popup-header-buttons a:active
+{
+	background-position: left -42px;
+}
+
+.popup-header-buttons a.close
+{
+	background-image: url(../Images/Popup/close_button_only.png);
+}
+
+.popup-header-buttons a.close.only, .popup-header-buttons a.close:only-child
+{
+	background-image: url(../Images/Popup/close_button_only.png) !important;
+}
+
+.popup-header-buttons a.close.last, .popup-header-buttons a.close:last-child
+{
+	background-image: url(../Images/Popup/close_button_end.png);
+}
+
+.popup-header-buttons a.minimize:first-child
+{
+	background-image: url(../Images/Popup/minimize_button_left.png);
+	width: 20px;
+}
+
+.popup-header-buttons a.maximize
+{
+	background-image: url(../Images/Popup/maximize_button_center.png);
+	width: 20px;
+}
+
+.popup-header-buttons a.maximize:first-child, .popup-header-buttons a.maximize.first
+{
+	background-image: url(../Images/Popup/maximize_button_left.png);
+	width: 20px;
+}
+
+.popup-header-buttons a.restore
+{
+	background-image: url(../Images/Popup/restore_button_center.png);
+	width: 20px;
+}
+
+.popup-header-buttons a.restore:first-child, .popup-header-buttons a.restore.first
+{
+	background-image: url(../Images/Popup/restore_button_left.png);
+	width: 20px;
+}
+
+.popup-body
+{
+	position: absolute;
+	overflow: hidden;
+	top: 26px;
+	left: 0;
+	right: 0;
+	bottom: 28px;
+	background: #ecebec; /* Old browsers */
+	background: -moz-linear-gradient(top,  #caccbe 0%, #ecebec 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#caccbe), color-stop(100%,#ecebec)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #caccbe 0%,#ecebec 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #caccbe 0%,#ecebec 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #caccbe 0%,#ecebec 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #caccbe 0%,#ecebec 100%); /* W3C */
+	border-style:solid ;
+	border-color:#0e1213;
+	border-width:0 2px 2px 2px;
+	-moz-box-shadow:5px 5px 5px #888;
+	-webkit-box-shadow:5px 5px 5px #888;
+	box-shadow:5px 5px 5px #888;
+}
+
+.ie8 .popup-body,
+.ie9 .popup-body
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#caccbe', endColorstr='#ecebec',GradientType=0 ); /* IE6-9 */
+}
+
+.popup-body-c
+{
+	position: absolute;
+	overflow: hidden;
+	top: 3px;
+	bottom: 3px;
+	left: 3px;
+	right: 3px;
+}
+
+.popup-footer
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+}
+
+.popup-footer-c
+{
+	background-color:#ecebec;
+	border-style:solid ;
+	border-color:#0e1213;
+	border-width:0 2px 2px 2px;
+	-moz-box-shadow:5px 5px 5px #888;
+	-webkit-box-shadow:5px 5px 5px #888;
+	box-shadow:5px 5px 5px #888;
+	float:right;
+	padding: 0 3px 3px;
+}
+
+html[dir=rtl] .popup-footer-c
+{
+	float:left;
+}
+
+.popup-footer-r
+{
+	display: none;
+}
+
+.popup .popup-footer .button-bar-wrapper a.button
+{
+	margin-left: 3px;
+}
+
+html[dir=rtl] .popup .popup-footer .button-bar-wrapper a.button
+{
+	margin-left: 0;
+	margin-right: 3px;
+}
+
+.popup .popup-footer .button-bar-wrapper a.button:first-child
+{
+	margin-left:0;
+}
+
+html[dir=rtl] .popup .popup-footer .button-bar-wrapper a.button:first-child
+{
+	margin-right:0;
+}
+
+.popup-body-content
+{
+	position: relative; 	
+	width: 100%; 	
+	height: 100%; 	
+	overflow: hidden;
+}
+
+.popup.no-buttons .popup-body
+{
+	bottom: 8px;
+}
+
+.popup.no-buttons .popup-footer, 
+.popup.no-buttons .popup-footer > .popup-footer-l, 
+.popup.no-buttons .popup-footer > .popup-footer-c, 
+.popup.no-buttons .popup-footer > .popup-footer-r
+{
+	display:none;
+}
+
+.popup-shadow
+{
+	position: absolute;
+	overflow: hidden;
+	opacity: 0.7;
+}
+
+.popup-shadow-t
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 10px;
+}
+
+.popup-shadow-tl
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: transparent url("../Images/Popup/dropshadow_top_left_corner.png") no-repeat 0 0;
+}
+
+.popup-shadow-tc
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 10px;
+	right: 10px;
+	height: 10px;
+	background: transparent url("../Images/Popup/dropshadow_top_repeater.png") repeat-x 0 0;
+}
+
+.popup-shadow-tr
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	width: 10px;
+	right: 0;
+	height: 10px;
+	background: transparent url("../Images/Popup/dropshadow_top_right_corner.png") no-repeat 100% 0;
+}
+
+.popup-shadow-m
+{
+	position: absolute;
+	overflow: hidden;
+	top: 10px;
+	left: 0;
+	right: 0;
+	bottom: 38px;
+}
+
+.popup-shadow-ml
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 10px;
+	bottom: 0;
+	background: transparent url("../Images/Popup/dropshadow_left_repeater.png") repeat-y 0 0;
+}
+
+.popup-shadow-mc
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 10px;
+	right: 10px;
+	bottom: 0;
+	background: transparent url("../Images/Popup/dropshadow_center_bg.png") repeat 0 0;
+}
+
+.popup-shadow-mr
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	width: 10px;
+	right: 0;
+	bottom: 0;
+	background: transparent url("../Images/Popup/dropshadow_right_repeater.png") repeat-y 100% 0;
+}
+
+.popup-shadow-b
+{
+	position: absolute;
+	overflow: hidden;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 38px;
+}
+
+.popup-shadow-bl
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 38px;
+	background: transparent url("../Images/Popup/dropshadow_bottom_left_corner.png") no-repeat 0 0;
+}
+
+.popup-shadow-bc
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 10px;
+	right: 10px;
+	height: 38px;
+	background: transparent url("../Images/Popup/dropshadow_bottom_repeater.png") repeat-x 0 0;
+}
+
+.popup-shadow-br
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	width: 10px;
+	right: 0;
+	height: 38px;
+	background: transparent url("../Images/Popup/dropshadow_button_bar_right_corner.png") no-repeat 100% 0;
+}
+
+.popup-shadow-button-bar
+{
+	float: right;
+	height: 38px;
+	background: transparent url("../Images/Popup/dropshadow_button_bar_left_slide.png") no-repeat 0 0;
+}
+
+.popup-shadow.no-buttons .popup-shadow-m
+{
+	bottom: 10px;
+}
+
+.popup-shadow.no-buttons .popup-shadow-b, 
+.popup-shadow.no-buttons .popup-shadow-b > .popup-shadow-bl, 
+.popup-shadow.no-buttons .popup-shadow-b > .popup-shadow-bc, 
+.popup-shadow.no-buttons .popup-shadow-b > .popup-shadow-br
+{
+	height: 10px;
+}
+
+.popup-shadow.no-buttons .popup-shadow-b > .popup-shadow-bc
+{
+	right: 10px;
+}
+
+.popup-shadow.no-buttons .popup-shadow-b > .popup-shadow-br
+{
+	display: block;
+	width: 10px;
+	background: transparent url("../Images/Popup/dropshadow_bottom_right_corner.png") no-repeat 100% 0;
+}
+
+.popup-shadow.no-buttons .popup-shadow-b .popup-shadow-button-bar
+{
+	display: none;
+}
+
+/* Message Box Content Styling */
+.message-box-content
+{
+	min-height: 80px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 7px 6px;
+}
+
+html[dir=rtl] .message-box-content
+{
+	background-position: 98% 6px;
+}
+
+.message-box-content.info
+{
+	background-image: url("../Images/Icons/Info32.png");
+}
+
+.message-box-content.warning
+{
+	background-image: url("../Images/Icons/Warning32.png");
+}
+
+.message-box-content.error
+{
+	background-image: url("../Images/Icons/Error32.png");
+}
+
+.message-box-content.confirmation
+{
+	background-image: none;
+}
+
+.message-box-content.sign-in
+{
+	background-image: url("../Images/Icons/Lock32.png");
+}
+
+.message-box-content > .panel.full
+{
+	margin-left: 49px;
+	width: auto;
+	height: 100%;
+}
+
+html[dir=rtl] .message-box-content > .panel.full
+{
+	margin-left: 0;
+	margin-right: 49px;
+}
+
+.message-box-content.confirmation > .panel.full
+{
+	margin-left: 0;
+}
+
+html[dir=rtl] .message-box-content.confirmation > .panel.full
+{
+	margin-right: 0;
+}
+
+.message-box-content .panel-body-m-c
+{
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 2px;
+}
+
+/* ExceptionBox Styling */
+.exceptionMessage
+{
+	height: 96px;
+	overflow: auto;
+}
+
+.exceptionDivider
+{
+	background-color: #c0c0c0;
+	border-color: #f8f8f8;
+	border-style: solid;
+	border-width: 1px 0;
+	height: 1px;
+	margin: 2px 0;
+}
+
+.exceptionDetails
+{
+	bottom: 0;
+	display: none;
+	left: 0;
+	overflow: auto;
+	position: absolute;
+	right: 0;
+	top: 103px;
+}
+
+.exceptionDetails > ul.exception
+{
+	margin: 0;
+	padding: 0 0 0 15px;
+}
+
+.exceptionDetails > ul li > pre
+{
+	color: #808080;
+	display: inline;
+	white-space: pre-wrap; /* CSS3 */
+	white-space: -moz-pre-wrap; /* Mozilla, ca. 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	-ms-word-wrap: break-word;
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+/* Popup Resize Handles */
+.popup.ui-resizable .ui-resizable-s
+{
+	bottom:27px;
+}
+
+/* Dependency Notifier Popup */
+#DependencyNotifierDependencyContainer
+{
+	margin: 3px 0px 3px 1px;
+	padding: 0px;
+}
+
+#DependencyNotifierDependencyContainer ul
+{
+	padding: 0 0 0 18px;
+	margin: 0px;
+}
+
+#DependencyNotifierDependencyContainer li
+{
+	display: block;
+	padding: 3px 0px 3px 20px;
+	margin: 3px;
+	clear: both;
+}
+
+#DependencyNotifierDependencyContainer li i.ico
+{
+	margin: 0px 3px 3px 0px;
+	position: absolute;
+	left: 20px
+}
+
+#DependencyNotifierDependencyContainer .categorySectionsHeading
+{
+	font-weight: bold;
+	display: block;
+}
+
+#rbKeepOrRemoveDependenciesGroup
+{
+	margin-top: 9px;
+	margin-left: 27px;
+	white-space: normal;
+}
+
+#DependencyWarningPopupMessage .notifier-title-message
+{
+	word-wrap: break-word;
+	padding: 9px;
+}
+
+#DependencyWarningPopupMessage .notifier-choice-message
+{
+	padding-top: 9px;
+}
+
+#DependencyWarningPopupMessage .notifier-footer
+{
+	position: absolute;
+	bottom: 9px;
+	left: 9px;
+}
+
+#DependencyWarningPopupMessage .notifier-footer.hidden
+{
+	display: none;
+	height: 0;
+}
+
+#DependencyWarningPopupMessage .notifier-confirmation-message
+{
+	padding-top: 9px;
+}
+
+#DependencyWarningPopupMessage .notifier-confirmation
+{
+	position: absolute;
+	bottom: 9px;
+	left: 9px;
+}
+
+#DependencyWarningPopupMessage .notifier-confirmation.hidden
+{
+	display: none;
+	height: 0;
+}
+
+#DependencyNotifierListPanelContainer
+{
+	word-wrap: break-word;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+#DependencyWarningPopup.no-content
+{
+	height: 100%;
+	padding: 6px;
+	background-color: #FFF;
+}
+
+/* CheckInOut Dialog */
+#CheckInOutDialog .dialog-override-option
+{
+	position: absolute;
+	bottom: 3px;
+}
+
+#CheckInOutDialog hr
+{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	margin: 0;
+}
+
+#CheckInOutDialog .checkinout-dialog-detail
+{
+	position: absolute;
+	bottom: 23px;
+	top: 55px;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
+
+#CheckInOutDialog .checkinout-dialog-detail ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#CheckInOutDialog .checkinout-dialog-detail > ul > li
+{
+	padding-left: 0;
+}
+
+#CheckInOutDialog .checkinout-dialog-detail li
+{
+	display: block;
+	min-height: 20px;
+	line-height: 20px;
+	padding: 0 0 0 18px;
+	margin: 0 0 0 0;
+	clear: both;
+}
+
+#CheckInOutDialog .checkinout-dialog-detail ul .ico
+{
+	vertical-align: middle;
+}

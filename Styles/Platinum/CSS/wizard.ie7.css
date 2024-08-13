@@ -1,0 +1,6 @@
+﻿.wizard-button-bar-mc,
+.wizard-inner-box-body,
+.wizard.full .wizard-step-content
+{
+    height: expression(this.parentNode.offsetHeight + "px");
+}

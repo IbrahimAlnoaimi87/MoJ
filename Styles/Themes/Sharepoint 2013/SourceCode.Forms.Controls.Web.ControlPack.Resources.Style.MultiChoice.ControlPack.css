@@ -1,0 +1,93 @@
+﻿.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected
+{
+	background-color: #cde6f7;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:hover
+{
+	background-color: #e7f7ff;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:focus
+{
+	border-color: #2a8dd4;
+	border-width: 1px;
+	border-style: dotted;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .multiSelectSelect
+{
+	border: 1px solid #999999;
+	background-color: white;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle
+{
+	padding: 5px;
+	color: #6c6e70;
+	background: #EFEFEF;
+	background: rgba(239, 239, 239, 0.78);
+	font-size:8pt;
+	border: solid 1px #e9e4e8;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOne
+{
+	background-image: url(MultiSelect/Add_16.png);
+	background-repeat: no-repeat;
+	top: -12px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAll
+{
+	background-image: url(MultiSelect/AddAll_16.png);
+	background-repeat: no-repeat;
+	top: -36px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonOneBack
+{
+	background-image: url(MultiSelect/Remove_16.png);
+	background-repeat: no-repeat;
+	top: 12px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .buttonAllBack
+{
+	background-image: url(MultiSelect/RemoveAll_16.png);
+	background-repeat: no-repeat;
+	top: 36px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOne.disabled
+{
+	background-image: url(MultiSelect/Add_Disabled_16.png);
+	cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAll.disabled
+{
+	background-image: url(MultiSelect/AddAll_Disabled_16.png);
+	cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonOneBack.disabled
+{
+	background-image: url(MultiSelect/Remove_Disabled_16.png);
+	cursor: default;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .buttonAllBack.disabled
+{
+	background-image: url(MultiSelect/RemoveAll_Disabled_16.png);
+	cursor: default;
+}

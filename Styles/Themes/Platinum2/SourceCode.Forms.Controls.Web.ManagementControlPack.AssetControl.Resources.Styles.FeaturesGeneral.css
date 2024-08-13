@@ -1,0 +1,328 @@
+﻿/* #region LAYOUT */
+
+/* #region FLUID HEIGHT */
+html.management.features-general,
+html.management.features-general > body,
+html.management.features-general > body > form,
+html.management.features-general > body > form > .runtime-content,
+html.management.features-general > body > form > .runtime-content > .runtime-form,
+html.management.features-general > body > form > .runtime-content > .runtime-form > .form
+{
+    height: 100% !important; /* Force fluid height */
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region GENERAL STYLING */
+
+html.management.features-general.disable-modalizer .theme-entry .base2.base1.modal-element
+{
+    display: none !important; /* Disable modalizer */
+}
+
+html.management.features-general .theme-entry span.SFC.SourceCode-Forms-Controls-Web-Label,
+html.management.features-general .theme-entry span.SFC.SourceCode-Forms-Controls-Web-DataLabel,    
+html.management.features-general .theme-entry a.description-link
+{
+    color: #858A8A;
+}
+
+html.management.features-general .theme-entry .SFC.Management-Site-Popup-Footer
+{
+    background-color: #F5F5F5;
+    height: 5.5rem;
+    width: calc(100% - 4rem);
+    z-index: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+    html.management.features-general .theme-entry .SFC.Management-Site-Popup-Footer .SFC.SourceCode-Forms-Controls-Web-Button
+    {
+        float: none;
+        position: initial;
+        top: 0;
+        margin: 0 !important; /* Overrides inherited !important */
+    }
+
+    html.management.features-general .theme-entry .SFC.Management-Site-Popup-Footer .SFC.SourceCode-Forms-Controls-Web-DataLabel
+    {
+        padding-top: 1rem;
+    }
+
+/* #region BUTTONS */
+
+html.management.features-general .theme-entry a.SourceCode-Forms-Controls-Web-Button
+{
+    text-transform: uppercase;
+    border-color: transparent !important; /* Overrides inherited !important */
+    height: 3.5rem;
+    line-height: 3.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    background-image: none !important; /* Overrides various variants */
+    border-radius: 1px;
+}
+
+    html.management.features-general .theme-entry a.SourceCode-Forms-Controls-Web-Button,
+    html.management.features-general .theme-entry a.SourceCode-Forms-Controls-Web-Button.blue
+    {
+        color: #FFFFFF;
+        background-color: #3D95F2;
+    }
+
+    html.management.features-general .theme-entry a.SourceCode-Forms-Controls-Web-Button.gray
+    {
+        color: #707070;
+        background-color: #E8E8E8;
+    }
+
+        html.management.features-general .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover,
+        html.management.features-general .theme-entry a.SourceCode-Forms-Controls-Web-Button.blue:hover,
+        html.management.features-general .theme-entry a.SourceCode-Forms-Controls-Web-Button.gray:hover
+        {
+            background-color: #29b6f6;
+            color: #FFFFFF;
+        }    
+
+        html.management.features-general .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+        html.management.features-general .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover
+        {
+            color: #F0F0F1;
+            background-color: #BFC1C2;
+        }
+
+/* #endregion*/
+
+/* #endregion */
+
+/* #region DETAILS DIALOG UI */
+
+html.management.features-general .theme-entry .row.details .Grid-Layout .editor-cell[row='1']
+{
+    text-align: center;
+    vertical-align: middle;
+    height: 10.4rem;
+    padding: 0;
+    background-color: #0072BC;
+}
+
+    html.management.features-general .theme-entry .row.details .Grid-Layout .editor-cell[col='1']:not([row='1'])
+    {
+        padding-left: 4rem;
+    }
+
+    html.management.features-general .theme-entry .row.details .Grid-Layout .editor-cell.lastcellinrow:not([row='1'])
+    {
+        padding-right: 4rem;
+    }
+
+html.management.features-general .theme-entry .row.details .feature-header .header-image
+{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+html.management.features-general .theme-entry .row.details .feature-description span,
+html.management.features-general .theme-entry .row.details .feature-description a
+{
+    color: #4E5758;
+    white-space: normal;
+}
+
+/* #endregion */
+
+/* #region ACTIVATION DIALOG UI */
+
+    html.management.features-general .theme-entry .row.activation .Grid-Layout .editor-cell
+    {
+        padding-bottom: 26px !important;
+    }
+
+    html.management.features-general .theme-entry .row.activation .Grid-Layout .editor-cell[row='1']
+    {
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+    }
+
+        html.management.features-general .theme-entry .row.activation .Grid-Layout .editor-cell[col='1']:not([row='1']) 
+        {
+            padding-left: 4rem;
+        }
+
+html.management.features-general .theme-entry .row.activation .feature-header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    html.management.features-general .theme-entry .row.activation .feature-header .header-image
+    {
+        display: block;
+        width: 72px;
+        height: 72px;
+        -moz-background-size: 72px;
+        background-size: 72px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+
+    html.management.features-general .theme-entry .row.activation .feature-header .header-title
+    {
+        color: #858A8A;
+        font-size: 20px;
+    }
+
+html.management.features-general .theme-entry .row.activation .activation-step .step-container
+{
+    max-width: 67rem;
+}
+
+    html.management.features-general .theme-entry .row.activation .activation-step .step-container .step-image
+    {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        -moz-background-size: 18px;
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+
+    html.management.features-general .theme-entry .row.activation .activation-step .step-container .step-title
+    {
+        display: inline-block;
+        margin: 0.1rem 0 0 1rem;
+        vertical-align: top;
+        color: #4E5758;
+        font-weight: bold;
+    }
+
+    html.management.features-general .theme-entry .row.activation .activation-step .step-container .step-description,
+    html.management.features-general .theme-entry .row.activation .activation-step .step-container .step-error
+    {
+        display: block;
+        margin-left: 2.8rem;
+        color: #858A8A;
+        white-space: normal;
+    }
+
+        html.management.features-general .theme-entry .row.activation .activation-step .step-container .step-description ul
+        {
+            margin: 0;
+        }
+
+            html.management.features-general .theme-entry .row.activation .activation-step .step-container .step-description ul li
+            {
+                color: #858A8A;
+            }
+
+        html.management.features-general .theme-entry .row.activation .activation-step .step-container .step-description:empty,
+        html.management.features-general .theme-entry .row.activation .activation-step .step-container .step-error:empty
+        {
+            display: none;
+        }
+
+html.management.features-general .theme-entry .row.activation .activation-step .step-buttons
+{
+    display: none;
+}
+
+    html.management.features-general .theme-entry .row.activation span.attention .activation-step .step-buttons
+    {
+        height: 35px;
+        width: 280px;
+        margin: 1rem 0 0 2.8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+/* #endregion */
+
+/* #region ICONS */
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    html.management.features-general .theme-entry .row.activation .feature-header .header-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Configure72.gif);
+    }
+
+    html.management.features-general .theme-entry .row.activation .feature-header.complete .header-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Success72.gif);
+    }
+
+    html.management.features-general .theme-entry .row.activation .activation-step .step-container .step-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Bullet_Empty18.png);
+    }
+
+    html.management.features-general .theme-entry .row.activation span.active .activation-step .step-container .step-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Bullet_Configuring18.gif);
+    }
+
+    html.management.features-general .theme-entry .row.activation span.complete .activation-step .step-container .step-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Bullet_Success18.gif);
+    }
+
+    html.management.features-general .theme-entry .row.activation span.attention .activation-step .step-container .step-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Bullet_Attention18.png);
+    }
+
+    html.management.features-general .theme-entry .row.activation span.error .activation-step .step-container .step-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Bullet_Error18.png);
+    }
+}
+
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    html.management.features-general .theme-entry .row.activation .feature-header .header-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Configure72@2x.gif);
+    }
+
+    html.management.features-general .theme-entry .row.activation .feature-header.complete .header-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Success72@2x.gif);
+    }
+
+    html.management.features-general .theme-entry .row.activation .activation-step .step-container .step-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Bullet_Empty18@2x.png);
+    }
+
+    html.management.features-general .theme-entry .row.activation span.active .activation-step .step-container .step-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Bullet_Configuring18@2x.gif);
+    }
+
+    html.management.features-general .theme-entry .row.activation span.complete .activation-step .step-container .step-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Bullet_Success18@2x.gif);
+    }
+
+    html.management.features-general .theme-entry .row.activation span.attention .activation-step .step-container .step-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Bullet_Attention18@2x.png);
+    }
+
+    html.management.features-general .theme-entry .row.activation span.error .activation-step .step-container .step-image
+    {
+        background-image: url(K2Sites_Management/Images/Features/Bullet_Error18@2x.png);
+    }
+}
+
+/* #endregion */

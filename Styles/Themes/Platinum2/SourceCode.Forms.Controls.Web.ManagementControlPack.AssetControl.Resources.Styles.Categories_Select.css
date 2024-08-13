@@ -1,0 +1,43 @@
+/* undo Management_Popup.css overflow */
+body > form > .runtime-content > .runtime-form 
+{
+    overflow: hidden;
+}
+/* fluid height */
+.runtime-form > .form > .row:nth-child(2),
+.runtime-form > .form > .row:nth-child(2) > .view,
+.runtime-form > .form > .row:nth-child(2) > .view > .innerpanel,
+.runtime-form > .form > .row:nth-child(2) > .view > .innerpanel > .panel[name="Categrories.Select Area Item"],
+.runtime-form > .form > .row:nth-child(2) > .view > .innerpanel > .panel[name="Categrories.Select Area Item"] > .panel-body,
+.runtime-form > .form > .row:nth-child(2) > .view > .innerpanel > .panel[name="Categrories.Select Area Item"] > .panel-body > .panel-body-m,
+.runtime-form > .form > .row:nth-child(2) > .view > .innerpanel > .panel[name="Categrories.Select Area Item"] > .panel-body > .panel-body-m > .panel-body-m-c,
+.runtime-form > .form > .row:nth-child(2) > .view > .innerpanel > .panel[name="Categrories.Select Area Item"] > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper,
+.runtime-form > .form > .row:nth-child(2) > .view > .innerpanel > .panel[name="Categrories.Select Area Item"] > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div,
+.runtime-form > .form > .row:nth-child(2) > .view > .innerpanel > .panel[name="Categrories.Select Area Item"] > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout,
+.runtime-form > .form > .row:nth-child(2) > .view > .innerpanel > .panel[name="Categrories.Select Area Item"] > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout > .editor-cell
+{
+    height: 100%;
+}
+
+.panel[name="Categrories.Select Area Item"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"],
+.panel[name="Categrories.Select Area Item"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView[name="Tree"] .tree-body
+{
+    height: 100%;
+}
+.theme-entry .panel[name="Categrories.Select Area Item"] .panel-body-wrapper .Grid-Layout > .editor-cell 
+{
+    padding: 0;
+}
+.theme-entry .panel[name="Categrories.Select Area Item"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper 
+{
+    border: none;
+}
+.theme-entry .panel[name="Categrories.Select Area Item"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node-container.first
+{
+    padding: 4px;
+}
+.theme-entry .panel[name="Categrories.Select Area Item"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node-container:not(.first)
+{
+    padding: .2rem;
+    padding-left: 1.5rem;
+}

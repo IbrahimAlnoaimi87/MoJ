@@ -1,0 +1,355 @@
+﻿//A relative path to the Theme_Variables.less file inside the specific theme folder
+@import (reference) "@{SourceCode-Runtime-Theme-Variables-File}";
+
+/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+//TREE CONTROL
+//Relies on the tree jquery widget (part of smartforms core) for its base layout css.
+
+/*Theme@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img
+    {
+        background-position: 0 -324px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img
+    {
+        background-position: 0 -352px;
+    }
+
+    /* #region Readonly */
+
+    /* prevent checkbox hover state to change while readonly */
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img
+    {
+        background-position: 0 -156px;
+        cursor: default;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img
+    {
+        background-position: 0 -324px;
+        cursor: default;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img
+    {
+        background-position: 0 -184px;
+        cursor: default;
+    }
+
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img
+    {
+        background-position: 0 -156px;
+        cursor: default;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img
+    {
+        background-position: 0 -324px;
+        cursor: default;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img
+    {
+        background-position: 0 -184px;
+        cursor: default;
+    }
+
+    /* #endregion Readonly */
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img,
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img
+    {
+        background-position: 0 -240px;
+    }
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate .input-control-img,
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView label.input-control.indeterminate:hover .input-control-img
+    {
+        background-position: 0 -240px;
+    }
+
+    /* #region Readonly */
+
+    /* prevent checkbox hover state to change while readonly */
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img
+    {
+        background-position: 0 -156px;
+        cursor: default;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img
+    {
+        background-position: 0 -324px;
+        cursor: default;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img
+    {
+        background-position: 0 -184px;
+        cursor: default;
+    }
+
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox:hover .input-control-img
+    {
+        background-position: 0 -184px;
+        cursor: default;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.indeterminate:hover .input-control-img
+    {
+        background-position: 0px -422px;
+        cursor: default;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly label.input-control.checkbox.checked:hover .input-control-img
+    {
+        background-position: 0 -252px;
+        cursor: default;
+    }
+
+    /* #endregion Readonly */
+}
+
+/* #region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar td.cp-searchbar-cell
+{
+    height: auto; /*override sf toolbar css*/
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .dropdown-td-width
+{
+    padding-right: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container:focus{
+    background-color: transparent; //reset base Treeview.css
+}
+
+//Normal
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node > .content > .header
+{
+    border-radius: @Tree-Item-Rounding;
+    min-height: @Main-Text-Size;
+
+    padding-left: @Control-Inset-Narrow-Horizontal-Spacing;
+    padding-right: @Control-Inset-Narrow-Horizontal-Spacing;
+
+    .text
+    {
+        padding-top: @Control-Inset-Narrow-Vertical-Spacing;
+        padding-bottom: @Control-Inset-Narrow-Vertical-Spacing;
+        line-height:normal;
+    }
+    
+    //Hover
+    &:hover
+    {
+        background-color: @Tree-Item-Hover-Background-Color;
+        border-color: @Tree-Item-Hover-Border-Color;
+        color: @Tree-Item-Hover-Text-Color;
+        cursor: default;
+    }
+}
+
+//selected
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected > .content > .header
+{
+    background-color: @Tree-Item-Selected-Background-Color;
+    border-color: @Tree-Item-Selected-Border-Color;
+    color: @Tree-Item-Selected-Text-Color;
+}
+
+//selected + readonly
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.readonly .node.selected > .content > .header:hover
+{
+    background-color: @Tree-Item-Selected-Background-Color;
+}
+
+//Focus
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.focus > .content > .header
+{
+    border-width: 1px;
+    border-style: dotted;
+    border-color: @Tree-Item-Focus-Border-Color;
+}
+
+//disabled
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView.disabled .node > .content > .header{
+    pointer-events: none;
+}
+
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView {
+    .highlight 
+    {
+        background-color: @Search-Highlight-Background-Color;
+        color: @Search-Highlight-Text-Color;
+    }
+
+    .search-results
+    {
+        background-color: @Input-Background-Color;
+
+        div.watermark
+        {
+            margin: 0px;
+            padding-top: @Control-Inset-Vertical-Spacing;
+            padding-bottom: @Control-Inset-Vertical-Spacing;
+            padding-left: @Control-Inset-Horizontal-Spacing;
+            padding-right: @Control-Inset-Horizontal-Spacing;
+        }
+        span.watermark 
+        {
+            margin:0px;
+            padding: 0px;
+        }
+    }
+
+    .top-seperator 
+    {
+        border-color:@Input-Border-Color;
+    }
+}
+
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .checkbox-parent{
+    margin-left: auto; //override base
+}
+
+.theme-entry .sfc-treeview.populating-indicator
+{
+    background-image: url("RuntimeTheme/LoadingAnimation_Dark16.gif");
+}
+
+.theme-entry .sfc-treeview.populating-indicator.showSearch
+{
+    top: 39px;
+}
+
+.theme-entry .sfc-treeview.populating-indicator.showSearchExpanded
+{
+    top: 61px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .text.with-image
+{
+    padding-top: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .expander
+{
+    top: 0;
+}
+
+.theme-entry .sfc-treeview.populating-indicator.scrollbar
+{
+    right: 19px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-bar{
+    //override base
+    background-color:transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper div.search-bar
+{
+    font-size: 1.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper{
+    background-color: @Input-Background-Color;
+    border-color:  @Input-Border-Color; //override tree base
+
+    border-radius: @Input-Rounding;
+    
+    &.invalid
+    {
+        background-color: @Input-Error-Background-Color;
+        border-color: @Input-Error-Border-Color !important; /*important will overide user configured styles */
+    }
+}
+
+//Search Results
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .search-item-container{
+    &:hover
+    {
+        background-color: @Tree-Item-Hover-Background-Color;
+    }
+    &:focus
+    {
+        border-color: @Tree-Item-Focus-Border-Color
+    }
+}
+
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control.select-box .input-control-buttons
+{
+    right: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .cp-searchbar .input-control.select-box .input-control-buttons a.dropdown
+{
+    width: @__Input-Height;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .search-button-wrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper
+{
+    width: @__Input-Height;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .hideSearchButton .search-button-wrapper,
+.SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .hideClearSearchButton .clear-search-button-wrapper
+{
+	display: none;
+}
+
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .SourceCode-Forms-Controls-Web-ControlPack-Common-SearchBar .clear-search-button-wrapper .PART_ClearSearchButton
+{
+
+}
+
+/* #endregion DESKTOP*/
+
+/* #region TOUCH */
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* Extra Small Devices */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */

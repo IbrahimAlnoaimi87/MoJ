@@ -1,0 +1,1487 @@
+﻿/*
+ regions are categorized as below:
+
+ GENERAL - high level style definition goes in here
+ TOOLBAR - toolbar section
+ CONTENT ROW - content row section
+ EDIT MODE - edit mode row section
+ SF OVERRIDE - style to override SF css such as toolbar cell, editable list view etc
+ OVERFLOW DROPDOWN - overflow dropdown related
+ TELERIK - telerik style related, mostly used to override
+ WATERMARK - watermark styling
+ VALIDATION - validation styleing
+ STYLE BUILDER - style builder mini-control related
+ MISC - if cannot be categorized, it goes here
+ PRERENDER - pre-render UI specific style
+ RTL - Right to Left related styling
+*/
+
+@import (reference) "@{SourceCode-Designer-Variables-File}";
+
+/* #region GENERAL */
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor
+{
+	color: #343e41;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+    min-width: 300px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime
+{
+    min-width: 0;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .hidden
+{
+	display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie8 .control-table
+{
+	border-collapse: separate;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor table.fixedLayout
+{
+	table-layout: fixed;
+}
+
+/* control top row */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row.rt-row-top
+{
+	height: 1px;
+}
+
+/* extra row */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row.rt-row-extra
+{
+	/* this row is used by Telerik to show extra info such as word count but we do not offer such feature. This row is to be untouched */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.disabled.ie .disable-overlay-all
+{
+	filter: alpha(opacity=75);
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reTlbVertical
+{
+	width: 5px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100% !important; /* override Telerik inline computation */
+	width: 100% !important; /* override inline */
+	overflow: hidden;
+	position: relative;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .richtext-parts-wrapper
+{
+	height: 100%;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolZone table,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .richtext-parts-wrapper
+{
+	table-layout: auto;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-left-vertical-bar
+{
+	width: 5px;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-right-vertical-bar
+{
+	width: 6px;
+}
+
+.richtext-dark-overlay
+{
+	background-color: white;
+	filter: alpha(opacity=50); /* IE */
+	opacity: 0.5; /* Safari, Opera */
+	-moz-opacity: 0.50; /* FireFox */
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* position:absolute; */
+	top: 0px;
+	left: 0px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor > table
+{
+	table-layout: auto !important; /* override inline */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .disable-overlay-toolbar
+{
+	display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.readonly .disable-overlay-toolbar
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: auto;
+	width: auto;
+	display: block;
+	background-color: #eeeeee;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.readonly .rt-row-toolbar
+{
+	font-family: Verdana;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.disabled .disable-overlay-all
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: auto;
+	width: auto;
+	display: block;
+	background-color: #eeeeee;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor div.stylewrapper
+{
+	overflow: hidden;
+	width: auto;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rt-focus-box
+{
+	height:0; 
+	width:0; 
+	max-height:0; 
+	max-width:0; 
+	border: none; 
+	outline: none;
+}
+
+/* #endregion GENERAL */
+
+
+/* #region TOOLBAR */
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reTool_disabled
+{
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+.ie11 .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper
+{
+	overflow: visible !important; /* override -- inline */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reWrapper ul.reToolbar
+{
+	width: auto !important;
+	margin-right: 1px !important; /* override telerik's important */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reGrip
+{
+	width: 1px;
+	margin-left: 2px !important;
+	margin-right: 2px !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reGrip.grip_first
+{
+	display: none;
+}
+
+html.ie8 .RadEditor table.control-table .reToolCell.ie-tool-cell
+{
+	width: 100%;
+}
+
+/* toolbar row */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row.rt-row-toolbar
+{
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.toolbar-hidden .control-table-row.rt-row-toolbar
+{
+	display: none;
+}
+
+/* hide toolbar when HTML mode */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-html-mode .control-table-row.rt-row-toolbar
+{
+	display: none;
+}
+
+/* hide toolbar when preview mode */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-preview-mode .control-table-row.rt-row-toolbar
+{
+	display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie .reToolbar .disabled
+{
+	filter: alpha(opacity=40);
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor td.ie-tool-cell
+{
+	vertical-align: middle;
+}
+
+/* if readonly, then do not highlight toolbar item */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.readonly .reTool_selected
+{
+	background-color: transparent;
+}
+
+.RadEditor .reToolbar .reTool_selected.reTool_disabled,
+.RadEditor .reToolbar .reTool_selected.reTool_disabled:hover,
+.RadEditor .reToolbar .reTool_disabled .sub-wrapper,
+.RadEditor .reToolbar .reTool_disabled .sub-wrapper:hover,
+.RadEditor .reToolbar .reTool_disabled span.split_arrow.rich-text-tool-arrow,
+.RadEditor .reToolbar .reTool_disabled span.split_arrow.rich-text-tool-arrow:hover
+{
+	background-color: transparent;
+	border: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper a.reTool_disabled:hover span
+{
+	color: black;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a.back-color-link:hover,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a.fore-color-link:hover,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a.insert-form-element-link:hover,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a.insert-table-link:hover
+{
+	background-color: transparent;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.split_arrow
+{
+	position: absolute;
+	top: -3px;
+	left: 24px;
+	border: none !important; /* override Telerik inline */
+	height: 24px !important; /* override Telerik inline */
+}
+
+/* Insert Table tool split arrow needs specific style */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper .insert-table-link span.split_arrow
+{
+	left: 27px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .back-color-link,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .fore-color-link,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .insert-form-element-link,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .insert-table-link
+{
+	position: relative;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper .sub-wrapper
+{
+	height: 24px;
+	width: 22px;
+	margin-left: 1px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper .Print
+{
+	position: relative;
+	top: 1px;
+	margin-left: 4px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie .RadEditor.reWrapper .reToolCell.no-toolbar
+{
+	padding-top: 3px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.moz .RadEditor.reWrapper .reToolCell.no-toolbar
+{
+	padding-top: 6px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reWrapper .reToolCell.no-toolbar
+{
+	padding-top: 1px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-html-mode.mode-toolbar-showing .RadEditor.reWrapper .reToolCell,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-preview-mode.mode-toolbar-showing .RadEditor.reWrapper .reToolCell
+{
+	padding-top: 0px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolCell
+{
+	padding-bottom: 0px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolCell
+{
+	height: 30px;
+	padding-top: 4px;
+	padding-bottom: 0px;
+	position: relative;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolZone
+{
+	height: 30px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie .RadEditor .reToolCell
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie .RadEditor.reWrapper .reToolCell
+{
+	padding-top: 2px;
+	padding-bottom: 0px;
+}
+
+/* specifically applying distance for Insert Table tool due to DOM structure with split arrow*/
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .insert-table-list-container
+{
+	margin-right: 5px !important; /* override Telerik !important css */
+}
+
+/* for tool item with split button, do not apply color to whole <a> tag */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reTool.reSplitButton:hover
+{
+	background-color: transparent;
+}
+
+/* hide the tool items that are not defined in toolItemValueHolder property */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .tool-disabled,
+.rich-text-dropdown-item-container .tool-disabled
+{
+	display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper a[data-tool='ImageUploader'],
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper a[data-tool='Hyperlink']
+{
+	padding: 0px;
+    width: 24px;
+    height: 25px;
+    display: block;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper .imageUploader,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper .hyperlink
+{
+	margin: 5px 0 0 4px;
+}
+
+/* #endregion TOOLBAR */
+
+
+/* #region CONTENT ROW */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea.reContentAreaToggle
+{
+	-moz-user-select: text;
+}
+
+/* HTML mode textarea */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .html-mode-value-holder
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: auto;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.toolbar-hidden.edit-mode-row-hidden .RadEditor.reWrapper td.reContentCell
+{
+	padding: 0;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.toolbar-hidden.edit-mode-row-hidden .reContentCell iframe
+{
+	position: relative !important; /* override -- inline -- absolute */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea span
+{
+	color: inherit;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea li 
+{
+    text-align: left;
+    font-family: Verdana;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea.editable-area
+{
+    text-align: left;
+
+    html[dir=rtl]
+    {
+        text-align: right;
+    }
+}
+
+
+/* content row */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row.rt-row-content
+{
+	position: absolute;
+	top: 35px;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	height: auto;
+	width: auto;
+}
+
+/* content row (IE) */
+.msie .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row.rt-row-content
+{
+	top: 32px;
+}
+
+/* content row (no toolbar) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.toolbar-hidden .control-table-row.rt-row-content
+{
+	top: 6px;
+}
+
+/* content row (no edit mode) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.edit-mode-row-hidden .control-table-row.rt-row-content
+{
+	top: 35px;
+	bottom: 5px;
+}
+
+/* content row (text area mode) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.edit-mode-row-hidden.toolbar-hidden .control-table-row.rt-row-content,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-html-mode.edit-mode-row-hidden .control-table-row.rt-row-content,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-preview-mode.edit-mode-row-hidden .control-table-row.rt-row-content
+{
+	top: 0;
+	bottom: 0;
+}
+
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.edit-mode-row-hidden.toolbar-hidden .stylewrapper
+{
+	border: 1px solid #adae9c;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.edit-mode-row-hidden.toolbar-hidden .reContentCell,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.edit-mode-row-hidden.toolbar-hidden .RadEditor
+{
+	border: none;
+}
+
+
+/* content position on HTML mode */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-html-mode .control-table-row.rt-row-content
+{
+	top: 6px;
+}
+
+/* content position (no toolbar + HTML mode) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-html-mode.toolbar-hidden .control-table-row.rt-row-content
+{
+	top: 6px;
+}
+
+/* content position (no toolbar + no edit mode row + HTML mode) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-html-mode.toolbar-hidden.edit-mode-row-hidden .rt-row-content
+{
+	top: 0;
+}
+
+/* content position on preview mode */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-preview-mode .control-table-row.rt-row-content
+{
+	top: 6px;
+}
+
+/* HTML mode textarea */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-html-mode .reContentCell textarea
+{
+	height: 100% !important; /* override Telerik inline */
+	outline: none;
+	overflow: auto;
+}
+
+/* HTML mode textarea (Designer) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime.is-html-mode .reContentCell textarea
+{
+	resize: none;
+	border: none;
+}
+
+/* HTML mode textarea (Designer) - ONLY HTML mode is enabled (textarea mode look) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime.is-html-mode.toolbar-hidden.edit-mode-row-hidden .reContentCell textarea
+{
+	height: 100%;
+	width: 100%;
+}
+
+/* HTML mode textarea (Designer) - edit mode row is visible */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime.is-html-mode.toolbar-hidden .reContentCell textarea
+{
+	height: auto !important; /* override base 100% */
+}
+
+/* HTML mode textarea (Designer) - hide the textarea when eidt mode is Design or Preview */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime.is-design-mode .reContentCell textarea,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime.is-preview-mode .reContentCell textarea
+{
+	display: none;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .richtext-simple-content
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* content cell position base */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentCell
+{
+	position: absolute;
+	height: auto !important; /* override Telerik inline style */
+	width: auto !important;
+	top: 0;
+	bottom: 0;
+	left: 5px;
+	right: 5px;
+}
+
+/* IE (no edit mode) */
+.msie .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.edit-mode-row-hidden .reContentCell
+{
+	top: -3px;
+}
+
+/* content area (text area mode) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.toolbar-hidden.edit-mode-row-hidden .reContentCell,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-html-mode.edit-mode-row-hidden .reContentCell,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-preview-mode.edit-mode-row-hidden .reContentCell
+{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* IE (text area mode) */
+.msie .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.toolbar-hidden.edit-mode-row-hidden .reContentCell
+{
+	top: 0;
+}
+
+/* content area base */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea 
+{
+    text-decoration: none;
+    overflow-y: auto;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute !important; /* override - inline relative */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto !important;
+    width: auto !important;
+    font-family: Verdana;
+
+    .controlwrapper.inline &
+    {
+        //This is to clear the line-height defined by the inherited styling 
+        //The inherited styling is defined as 14px and it is causing the text with text styling overlapping each other in the rich text control content area
+        //When the rich text control is dropped on to the toolbar area in the designer
+        line-height: normal;
+    }
+}
+
+/* HTML mode iframe */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentCell iframe
+{
+	position: absolute !important; /* override -- inline */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100% !important /* override -- inline */;
+	width: 100% !important /* override -- inline */;
+}
+
+/* edit mode area */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModes
+{
+	margin-top: 3px;
+	margin-bottom: 5px;
+}
+
+/* add space for cursor position so that it is not too close to the border */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reWrapper td.reContentCell
+{
+	padding-left: 3px;
+	padding-top: 0px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reWrapper td.reContentCell .reContentArea span
+{
+	font-size: inherit;
+	font-family: inherit;
+}
+
+/* design mode */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-design-mode .rich-text-row-content iframe
+{
+	display: none;
+}
+
+/* html mode (readonly) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-html-mode.readonly .rich-text-row-content iframe
+{
+	display: block;
+}
+
+/* preview mode */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-preview-mode .rich-text-row-content iframe
+{
+	display: none;
+}
+
+
+/* #endregion CONTENT ROW */
+
+
+/* #region EDIT MODE */
+
+/* edit mode row */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row.rt-row-mode
+{
+	position: absolute;
+	top: auto;
+	left: 7px;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	height: 30px;
+}
+
+/* edit mode row (hidden) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.edit-mode-row-hidden .control-table-row.rt-row-mode
+{
+	display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolZone
+{
+	vertical-align: middle !important;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .emptyMode
+{
+	padding-bottom: 7px;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModesCell
+{
+	width: 100%;
+}
+
+/* space for each edit mode */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_design,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_html,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_preview
+{
+	display: inline-block;
+	position: relative;
+	width: auto;
+	margin-right: 2px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_design.hidden,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_html.hidden,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_preview.hidden
+{
+	display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie .reMode_text,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.moz .reMode_text
+{
+	top: -1px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_text
+{
+	height: 20px;
+	display: inline-block;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	width: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* Edit mode link - set proper height so that hover image fully shows up */
+.RadEditor .reEditorModes ul li a
+{
+	height: 22px;
+}
+
+/* edit mode text and icon */
+.RadEditor .reToolZone .reEditorModes a span
+{
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 3px 3px 0 0;
+	margin-top: 1px;
+	margin-left: 4px;
+	vertical-align: middle;
+}
+
+/* avoid editor mode cells color to have gradient theme effect */
+.RadEditor .reEditorModes
+{
+	background-color: transparent !important;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie .RadEditor.reWrapper .reEditorModes.no-toolbar
+{
+	margin-bottom: 1px;
+	margin-top: 3px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.moz .RadEditor.reWrapper .reEditorModes.no-toolbar
+{
+	margin-bottom: 1px;
+	margin-top: 1px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reWrapper .reEditorModes.no-toolbar
+{
+	margin-bottom: 1px;
+	margin-top: 1px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rt-row-mode a[data-tool=Print]
+{
+	position: absolute;
+	top: 3px;
+	bottom: 3px;
+	right: 5px;
+	left: auto;
+	width: auto;
+	height: auto;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rt-row-mode a[data-tool=Print]:hover,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rt-row-mode a[data-tool=Print] .Print:hover
+{
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+
+/* #endregion EDIT MODE */
+
+
+/* #region SF OVERRIDE */
+.form .row *:last-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reTool span
+{
+	margin-left: 3px;
+}
+
+.grid table.grid-content-table tr:hover td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie8 td
+{
+	background-color: transparent;
+}
+
+.grid table.grid-content-table tr:hover td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie8 td.reContentCell
+{
+	background-color: #fff;
+}
+
+.form .row *:last-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea p,
+.form .row *:first-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea p
+{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.form .row *:last-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea blockquote,
+.form .row *:first-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea blockquote
+{
+	margin-left: 20px;
+}
+
+.form .row *:last-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor table.control-table
+{
+	table-layout: fixed;
+}
+
+.form .row *:last-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie8 .RadEditor table.control-table
+{
+	table-layout: auto;
+}
+
+.form .row *:last-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor,
+.form .row *:first-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor
+{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/* override ELV row highlight */
+.grid table.grid-content-table tr .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor td,
+.grid table.grid-content-table tr:hover .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor td,
+.grid table.grid-content-table tr td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor td,
+.grid table.grid-content-table.zebra-stripes tr:not(.action-row) td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor td,
+.grid table.grid-content-table tr:hover td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor td, /* hover */
+.grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor td /* hover */
+{
+	background-color: transparent;
+}
+
+.grid table.grid-content-table tr .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row td.reContentCell,
+.grid table.grid-content-table tr:hover .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row td.reContentCell,
+.grid table.grid-content-table tr td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row td.reContentCell,
+.grid table.grid-content-table.zebra-stripes tr:not(.action-row) td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row td.reContentCell,
+.grid table.grid-content-table tr:hover td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row td.reContentCell, /* hover */
+.grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row td.reContentCell /* hover */
+{
+	background-color: #FFFFFF;
+}
+
+/* override SF grid widget styling */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row
+{
+	height: auto;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor > table
+{
+	position: static; /* override toolbar.css relative position that screw up UI in grey cell */
+}
+
+/* gray cell (inside-toolbar-cell class) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.inside-toolbar-cell .reToolZone table
+{
+	background-color: transparent; /* override wizard.css to prevent edit mode table color be applied */
+}
+
+/* be sure to set top row height as any theme could change */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.inside-toolbar-cell .control-table-row.rt-row-top td.reWrapper_corner,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.inside-toolbar-cell .control-table-row.rt-row-top td.reWrapper_center
+{
+	height: 0;
+}
+
+.toolbar-wrapper td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.inside-toolbar-cell .rich-text-overflow-dropdown-wrapper
+{
+	display: inline; /* override SF embeddeed style otherwise overflow icon is positioned in wrong place */
+}
+
+.selectedobject .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.inside-toolbar-cell .editor-table
+{
+	border: none !important; /* override SF embedded style (green border) */
+}
+
+/* Editable List View */
+.grid-content-table tbody tr td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor td
+{
+	/* override  core */
+	border-top: none;
+	border-bottom: none;
+}
+
+/* table tool - overriding core css width 100% which cause unwanted space inside of table */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reContentArea table
+{
+	width: auto;
+}
+
+/* gray cell issue - this style put display:inline-block which cause tool item display calculation to go wrong (.toolbar-wrapper td > *) */
+.toolbar-wrapper td .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper
+{
+	display: block; /* override SF inline-block */
+}
+
+/* when setting control width to percent value, controlwrapper and resizewrapper is set to that percent which then make it even smaller */
+div[controltype="HTMLEditor"].controlwrapper > .resizewrapper
+{
+	width: auto !important; /* override inline */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor div.reContentArea 
+{
+	color: #000;
+}
+
+/* #endregion SF OVERRIDE */
+
+
+
+/* #region OVERFLOW DROPDOWN */
+
+.rich-text-overflow-item-icon-wrapper
+{
+	position: absolute;
+	top: 4px;
+	left: 5px;
+}
+
+/* overflow tool item name text */
+.rich-text-tool-item-name
+{
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	position: absolute;
+	top: 4px;
+	left: 35px;
+	cursor: default;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: block;
+	height: 18px;
+	white-space: nowrap;
+	width: 125px;
+}
+
+.richTextOverflowDropdownIcon
+{
+	height: 25px;
+	width: 17px;
+	position: absolute;
+	border: 1px solid transparent;
+	top: 2px;
+}
+
+.richTextDropdownArrowBase
+{
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 7px;
+	position: absolute;
+}
+
+.richtext-position-base-wrapper
+{
+	position: relative;
+	overflow: hidden;
+}
+
+/* picker list */
+.rich-text-tool-item-picker-body ul
+{
+	list-style-type: none;
+}
+
+/* picker body */
+.rich-text-tool-item-picker-body
+{
+	background-color: #fff;
+    padding: 3px;
+}
+
+/* overflow dropdown root container that appended to document body */
+.rich-text-dropdown-item-container
+{
+	border: 1px solid #c5c5c5;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/* default hidden state of overflow dropdown */
+.rich-text-dropdown-item-container.hidden
+{
+	display: none;
+}
+
+.rich-text-dropdown-item-container ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.rich-text-overflow-dropdown-icon-container
+{
+	float: right;
+	width: 20px;
+	height: 20px;
+	border: 1px solid transparent;
+	position: relative;
+	top: 2px;
+}
+
+.rich-text-overflow-dropdown-icon-container:hover
+{
+	cursor: pointer;
+}
+
+.rich-text-overflow-dropdown-icon-container.hidden
+{
+	display: none;
+}
+
+.rich-text-tool-item-wrapper
+{
+	width: 180px;
+	height: 25px;
+	/*border-left: 1px solid #c5c5c5;
+	border-right: 1px solid #c5c5c5;*/
+	background-color: #fff;
+	color: #1a2329;
+	position: relative;
+}
+
+.rich-text-tool-item-wrapper.hidden
+{
+	display: none;
+}
+
+.rich-text-overflow-tool-item-position-base
+{
+	position: relative;
+	height: 25px;
+}
+
+.rich-text-dropdown-item-container .rich-text-overflow-item-arrow
+{
+	left: 166px;
+	top: 0px;
+	position: absolute;
+	background-position: -37px 11px;
+	width: 14px;
+	height: 25px;
+}
+
+.rich-text-overflow-tool-item-position-base.color-icon
+{
+	width: 167px;
+}
+
+#richTextToolItemPickerList
+{
+	list-style-type: none;
+}
+
+.rich-text-dropdown-item-container .rich-text-overflow-item-back-color,
+.rich-text-dropdown-item-container .rich-text-overflow-item-fore-color
+{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+	height: 13px;
+	width: 16px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .BackColor,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .ForeColor
+{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+}
+
+#rich-text-tool-item-picker .rich-text-tool-item-list
+{
+	padding: 0;
+	margin: 0;
+}
+
+/* #endregion OVERFLOW DROPDOWN */
+
+
+
+/* #region TELERIK */
+
+.reColorPicker .addCustomColorLink
+{
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* override Telerik Skins.Default css */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModes span
+{
+	background-image: none;
+	line-height: normal;
+	margin: 0;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reContentArea
+{
+	padding: 1px 3px 0 3px;
+}
+
+/* #endregion TELERIK */
+
+
+/* #region WATERMARK */
+/* watermark base */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentCell div.richtext-watermark-overlay
+{
+	position: absolute;
+	height: auto;
+	width: auto;
+	color: #c5c5c5;
+	font-style: italic;
+	text-align: left;
+	top: 2px;
+	left: 3px;
+	right: 0;
+	bottom: 0;
+
+    html[dir=rtl] &
+    {
+        text-align: right;
+    }
+}
+
+/* watermark no toolbar */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.toolbar-hidden div.richtext-watermark-overlay
+{
+	top: 3px;
+	left: 5px;
+}
+
+/* watermark no edit mode row */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.edit-mode-row-hidden div.richtext-watermark-overlay
+{
+	top: 2px;
+}
+
+/* hide watermark text on readonly */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.readonly div.richtext-watermark-overlay 
+{
+	display: none;
+}
+
+/* #endregion WATERMARK */
+
+
+
+/* #region VALIDATION */
+
+/* red border for validation rule  */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reContentCell.invalid,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.invalid
+{
+	border: 1px solid #e7000e;
+}
+
+/* #endregion VALIDATION */
+
+
+/* #region STYLE BUILDER */
+
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.style-builder-content .RadEditor
+{
+	height: 160px !important; /* override -- telerik inline computation */
+}
+
+#conditionalFormattingGrid .conditional-style-preview
+{
+	background-color: transparent;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content
+{
+	height: auto !important; /* override -- inline */
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content div.stylewrapper
+{
+	height: 150px;
+	width: auto;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .RadEditor,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .richtext-parts-wrapper
+{
+	height: 100% !important; /* override -- inline */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.style-builder-content .rich-text-overflow-dropdown-icon-container,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .rich-text-overflow-dropdown-icon-container
+{
+	position: absolute;
+	top: 5px;
+	right: -5px;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .reToolbar
+{
+	padding: 1px;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .reToolCell
+{
+	padding-top: 3px;
+}
+
+/* override core style from grid */
+.grid table.grid-content-table tr .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .reContentCell
+{
+	height: auto;
+}
+/* override core style from grid */
+.grid table.grid-content-table tr .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .rt-row-top.control-table-row
+{
+	min-height: 1px;
+}
+
+/* style builder not supposed to have watermark text (443536) */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.style-builder-content .richtext-watermark-overlay,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .richtext-watermark-overlay
+{
+	display: none;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .rich-text-row-toolbar,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .rich-text-row-content,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .rich-text-row-edit-mode
+{
+	min-height: 0 !important; /* override SF core */
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.style-builder-content .disable-overlay,
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .disable-overlay
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+}
+
+/* #endregion STYLE BUILDER */
+
+
+/* #region MISC */
+
+/* WORD copy paste */
+.msie .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor h4 font
+{
+	font-size: 16px;
+}
+
+/* #endregion MISC */
+
+
+/* #region PRERENDER */
+div.preRenderContainer
+{
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* #endregion PRERENDER */
+
+
+/* #region RTL */
+
+/* content area RTL */
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea
+{
+	direction: rtl;
+	text-align: right;
+	padding: 1px 3px 0 0;
+}
+
+/* overflow dropdown arrow */
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-overflow-dropdown-icon-container
+{
+	float: right;
+}
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reRtl .reEditorModes li a span
+{
+	padding-left: 27px;
+	padding-right: 0;
+	margin-left: 0;
+	padding: 3px 0 0 3px;
+}
+
+/* design mode icon */
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_design_icon
+{
+	background-position: 0px -68px; /* override Telerik reRTl style */
+}
+
+/* HTML mode icon */
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_html_icon
+{
+	background-position: -52px -117px; /* override Telerik reRTl style */
+}
+
+/* preview mode icon */
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_preview_icon
+{
+	background-position: -26px -172px; /* override Telerik reRTl style */
+}
+
+html[dir=rtl] .RadEditor .reToolZone .reEditorModes a span
+{
+	text-align: right;
+}
+
+/* watermark */
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor div.richtext-watermark-overlay
+{
+	text-align: right;
+	right: 3px;
+	left: 0;
+}
+
+/* secondary picker arrow in overflow dropdown item row */
+html[dir=rtl] .rich-text-dropdown-item-container .rich-text-overflow-item-arrow
+{
+	left: 0;
+}
+
+/* overflow drpdown tool item name text */
+html[dir=rtl] .rich-text-dropdown-item-container .rich-text-tool-item-name
+{
+	left: 0px;
+	right: 5px;
+}
+
+/* #endregion RTL */
+
+
+html[dir=rtl] .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rt-row-mode a[data-tool=Print]
+{
+	right: auto;
+	left: 5px;
+}
+
+
+
+/* #region custom tool */
+#sfc-rt-custom-tool-popup .toolContainer
+{
+	width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+#sfc-rt-custom-tool-popup .toolWrapper
+{
+	padding: 5px;
+}
+
+#sfc-rt-custom-tool-popup .toolList
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#sfc-rt-custom-tool-popup .toolRow
+{
+	margin-top: 3px;
+	height: 100%;
+}
+
+#sfc-rt-custom-tool-popup .toolRow.displayLabel
+{
+	margin-top: 0;
+}
+
+#sfc-rt-custom-tool-popup .toolLabelRow
+{
+	margin-bottom: 3px;
+}
+
+#sfc-rt-custom-tool-popup .invalid .input-control-m-c
+{
+	border: 1px solid red;
+}
+
+
+#sfc-rt-custom-tool-popup .urlInputRow
+{
+	margin-top: 5px;
+	height:auto;
+}
+
+/* #endregion custom tool */
+
+/* #region tool item configuration dialog */
+
+//BASE DESIGNER
+#RichTextControl_ToolItemPicker
+{
+    .scroll-wrapper
+    {
+        box-sizing: border-box;
+        border: solid 1px @Line-2;
+    }
+}
+
+/* #endregion tool item configuration dialog */

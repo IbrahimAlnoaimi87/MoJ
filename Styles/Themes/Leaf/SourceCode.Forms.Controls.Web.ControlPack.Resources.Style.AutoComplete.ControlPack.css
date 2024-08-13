@@ -1,0 +1,14 @@
+﻿.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-hover
+{
+	background-color: #bdc67f;
+}
+
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-focus
+{
+	background-color: #bdc67f;
+}
+
+.theme-entry ul.autocomplete-menu
+{
+	outline: 1px solid #2f3100;
+}

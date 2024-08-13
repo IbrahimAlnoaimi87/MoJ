@@ -1,0 +1,345 @@
+/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+/*Theme@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+}
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+
+.theme-entry .StandardChart .radhtmlcharttitle,
+.theme-entry .StandardGrid .radhtmlcharttitle
+{
+	min-height: 1.9rem;
+	margin-left: 0;
+}
+
+.theme-entry .StandardChart .radhtmlchartsubtitle,
+.theme-entry .StandardGrid .radhtmlchartsubtitle
+{
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.theme-entry .StandardChart .UserPerfSubHeader,
+.theme-entry .StandardGrid .UserPerfSubHeader
+{
+	margin-top: 0;
+	margin-left: 0.2rem;
+}
+
+/* #region Fonts */
+.theme-entry .k-tooltip
+{
+	font-family: "Segoe UI Semibold", "HelveticaNeue-Medium", "Helvetica", "sans-serif";
+	font-style: inherit;
+	font-size: 1.6rem;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	padding-left: 2.0rem;
+	padding-top: 0.6rem;
+	padding-bottom: 0.3rem;
+	line-height: normal;
+	background-color: #636f80;
+	color: #c6cfde;
+	-moz-border-radius: 0.4rem 0.4rem 0rem 0rem;
+	-webkit-border-radius: 0.4rem 0.4rem 0rem 0rem;
+	border-radius: 0.4rem 0.4rem 0rem 0rem;
+	-moz-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+}
+
+.theme-entry .StandardChart .radchartlabel,
+.theme-entry .StandardChart .radhtmlchartsubtitle
+{
+	font-family: "Segoe UI Semibold", "HelveticaNeue-Medium", "Helvetica", "sans-serif";
+	font-style: inherit !important;
+	/* font-size: 1.4rem !important;  causing text overlap and due to svg, padding cannot be added from css side, for this iteration commenting out and let original 12px font size to be applied. */
+	white-space: nowrap !important;
+	-webkit-text-overflow: ellipsis !important;
+	-moz-text-overflow: ellipsis !important;
+	-ms-text-overflow: ellipsis !important;
+	-o-text-overflow: ellipsis !important;
+	text-overflow: ellipsis !important;
+}
+
+/* #endregion Fonts */
+
+/* #region Colors */
+.theme-entry .StandardChart .series0ActivityInstances
+{
+	stroke: #e26352;
+	fill: #e26352;
+}
+
+.theme-entry .StandardChart .series1ActivityInstances
+{
+	stroke: #60c7d0;
+	fill: #60c7d0;
+}
+
+.theme-entry .StandardChart .series2ActivityInstances
+{
+	stroke: #9093e2;
+	fill: #9093e2;
+}
+
+.theme-entry .StandardChart .series3ActivityInstances
+{
+	stroke: #56c69e;
+	fill: #56c69e;
+}
+
+.theme-entry .StandardChart .series4ActivityInstances
+{
+	stroke: #ffcb98;
+	fill: #ffcb98;
+}
+
+.theme-entry .StandardChart .series5ActivityInstances
+{
+	stroke: #8c69ec;
+	fill: #8c69ec;
+}
+
+.theme-entry .StandardChart .series6ActivityInstances
+{
+	stroke: #f59689;
+	fill: #f59689;
+}
+
+.theme-entry .StandardChart .series7ActivityInstances
+{
+	stroke: #a3e8ee;
+	fill: #a3e8ee;
+}
+
+.theme-entry .StandardChart .series8ActivityInstances
+{
+	stroke: #cdcff9;
+	fill: #cdcff9;
+}
+
+.theme-entry .StandardChart .series9ActivityInstances
+{
+	stroke: #a3f1d5;
+	fill: #a3f1d5;
+}
+
+.theme-entry .StandardChart .series10ActivityInstances
+{
+	stroke: #fbe1c8;
+	fill: #fbe1c8;
+}
+
+.theme-entry .StandardChart .series11ActivityInstances
+{
+	stroke: #d8c9fe;
+	fill: #d8c9fe;
+}
+
+/* #endregion Series Colors */
+
+/* #region Headers & Labels */
+
+/* chart header wrapper */
+.theme-entry .StandardChart .header-wrapper
+{
+	line-height: normal;
+	height: 4.4rem;
+	background-color: #636f80;
+	color: #c2ccdb;
+	-moz-border-radius: 0.4rem 0.4rem 0rem 0rem;
+	-webkit-border-radius: 0.4rem 0.4rem 0rem 0rem;
+	border-radius: 0.4rem 0.4rem 0rem 0rem;
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+}
+
+.msie .theme-entry .StandardChart .header-wrapper,
+.mozilla .theme-entry .StandardChart .header-wrapper
+{
+	height: 4.1rem;
+}
+
+.theme-entry .StandardChart .radhtmlcharttitle
+{
+	font-weight: normal;
+	font-size: 1.4rem;
+	padding-left: 2.0rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0;
+	line-height: normal;
+	color: #c2ccdb;
+	-moz-border-radius: 0.4rem 0.4rem 0rem 0rem;
+	-webkit-border-radius: 0.4rem 0.4rem 0rem 0rem;
+	border-radius: 0.4rem 0.4rem 0rem 0rem;
+	cursor: default;
+}
+
+.msie .theme-entry .StandardChart .radhtmlcharttitle
+{
+	padding-top: 0.3rem;
+}
+
+.theme-entry .StandardChart .radchartlabel
+{
+	fill: #838383 !important;
+	color: #838383 !important;
+}
+
+.theme-entry .StandardChart .radhtmlchartsubtitle
+{
+	padding-left: 2.0rem;
+	padding-top: 0;
+	padding-bottom: 0;
+	min-height: 1.3rem;
+	line-height: normal;
+	color: #97a2b1;
+	position: relative;
+	top: -1px;
+	cursor: default;
+}
+
+.msie .theme-entry .StandardChart .radhtmlchartsubtitle, 
+.mozilla .theme-entry .StandardChart .radhtmlchartsubtitle
+{
+	top: 0;
+}
+
+/* #endregion Headers & Labels */
+
+/* #region Tooltip */
+.theme-entry .k-tooltip
+{
+	border: none !important;
+	background-color: #ffffff !important;
+	padding: 1.0rem !important;
+	color: #838383 !important;
+	-moz-border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
+	-webkit-border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
+	border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
+	-webkit-box-shadow: 0rem 0rem 0.3rem 0rem rgba(0,0,0,0.50);
+	-moz-box-shadow: 0rem 0rem 0.3rem 0rem rgba(0,0,0,0.50);
+	box-shadow: 0rem 0rem 0.3rem 0rem rgba(0,0,0,0.50);
+}
+
+/* #endregion Tooltip */
+
+/* #region Chart Items Boxing */
+.theme-entry .StandardChart .stylewrapper
+{
+	position: absolute !important;
+	left: 0px !important;
+	right: 0px !important;
+	top: 0px !important;
+	bottom: 0px !important;
+	overflow: visible !important;
+	background-color: #ffffff !important;
+	-moz-border-radius: 0.3rem 0.3rem 0.2rem 0.2rem;
+	-webkit-border-radius: 0.3rem 0.3rem 0.2rem 0.2rem;
+	border-radius: 0.3rem 0.3rem 0.2rem 0.2rem;
+}
+
+.theme-entry .boxing
+{
+	padding: 0 0 2.0rem 0 !important;
+}
+
+.theme-entry .k-chart
+{
+	top: 0.7rem;
+}
+
+/* #endregion Chart Items Boxing */
+
+/* #endregion DESKTOP*/
+
+/* #region TOUCH */
+
+.mobile .theme-entry .StandardChart .radhtmlcharttitle
+{
+	font-size: 1.6rem;
+	padding-bottom: 0;
+}
+
+.mobile .theme-entry .StandardChart .radhtmlchartsubtitle
+{
+	font-size: 1.4rem;
+}
+
+.mobile .theme-entry .StandardChart .radhtmlchartsubtitle
+{
+	top: 0;
+}
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+	.mobile .theme-entry #ProcessChartPropertyConfig_secondPageInternal div + div + div
+	{
+		position: absolute !important;
+		height: auto !important;
+		width: 100% !important;
+		bottom: 90px;
+		top: 65px;
+	}
+
+	.mobile .theme-entry #ProcessChartPropertyConfig_secondPageInternal #ProcessChartTextBox
+	{
+		float: none !important; /* override inline */
+		min-width: 0 !important;
+		max-width: 100% !important;
+		width: 900px !important; /* override inline */
+	}
+
+	.mobile .theme-entry #ProcessChartPropertyConfig_secondPageInternal .processchart-add
+	{
+		margin-left: 0 !important; /* override inline */
+		margin-right: 0.5rem !important; /* override inline */
+	}
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+	.mobile .theme-entry div#ProcessChartPropertyConfig_secondPageOutside .popup-header
+	{
+		display: none; /* hiding dialog header to generate more real estate */
+	}
+
+	.mobile .theme-entry div#ProcessChartPropertyConfig_secondPageOutside .popup-body
+	{
+		top: 0.3rem;
+	}
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */
+
+

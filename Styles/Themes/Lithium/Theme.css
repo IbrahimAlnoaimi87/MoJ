@@ -1,0 +1,4094 @@
+/* Theme: Lithium */
+
+/* Author: Lewis Garmston */
+
+/* Date: 20/02/2014 */
+
+/*#region RESETS*/
+
+.theme-entry .SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .input-control .input-control-m-c,
+.theme-entry .input-control .input-control-content {
+  border-color: #e6e6e6;
+  background-color: transparent;
+  /*override - base*/
+
+}
+.theme-entry .input-control .input-control-m-c {
+  padding-left: 0;
+  /*override - base*/
+
+}
+/*#endregion RESETS*/
+
+html {
+  font-size: 62.5%;
+  /*makes sure that 1em/rem = 10px*/
+
+  /*this may cause problems inside of smartforms - only testing will tell */
+
+  /*this has to be on the html node in order for "rem" units to work ('rem' means 'root-relative em')*/
+
+}
+body {
+  -webkit-text-size-adjust: 100%;
+  /*prevent mobile safari from resizing text elements in DIVS to be "more readable"*/
+  zoom: 1;
+  /* Keep IE11 from auto zooming */
+
+}
+/*#region MAIN STRUCTURE*/
+
+.theme-entry *::selection {
+  background: #3cb0df;
+  /* IE, Chrome */
+  color: white;
+}
+.theme-entry .radio::selection,
+.theme-entry .radio input::selection,
+.theme-entry .radio .input-control-img::selection,
+.theme-entry .radio .input-control-text::selection,
+.theme-entry .checkbox::selection,
+.theme-entry .checkbox input::selection,
+.theme-entry .checkbox .input-control-img::selection,
+.theme-entry .checkbox .input-control-text::selection,
+.theme-entry tr::selection,
+.theme-entry td::selection,
+.theme-entry div::selection {
+  background: #3cb0df;
+  /* IE, Chrome */
+  color: #313841;
+}
+.theme-entry .radio.disabled::selection,
+.theme-entry .radio.disabled input::selection,
+.theme-entry .radio.disabled .input-control-img::selection,
+.theme-entry .radio.disabled .input-control-text::selection,
+.theme-entry .checkbox.disabled::selection,
+.theme-entry .checkbox.disabled input::selection,
+.theme-entry .checkbox.disabled .input-control-img::selection,
+.theme-entry .checkbox.disabled .input-control-text::selection {
+  background: transparent;
+  /* IE, Chrome */
+  color: #999999;
+}
+.theme-entry *::-moz-selection {
+  background: #3cb0df;
+  /* Firefox */
+  color: white;
+}
+.theme-entry .radio::-moz-selection,
+.theme-entry .radio input::-moz-selection,
+.theme-entry .radio .input-control-img::-moz-selection,
+.theme-entry .radio .input-control-text::-moz-selection,
+.theme-entry .checkbox::-moz-selection,
+.theme-entry .checkbox input::-moz-selection,
+.theme-entry .checkbox .input-control-img::-moz-selection,
+.theme-entry .checkbox .input-control-text::-moz-selection {
+  background: transparent;
+  /* Firefox */
+  color: #313841;
+}
+.theme-entry .radio.disabled::-moz-selection,
+.theme-entry .radio.disabled input::-moz-selection,
+.theme-entry .radio.disabled .input-control-img::-moz-selection,
+.theme-entry .radio.disabled .input-control-text::-moz-selection,
+.theme-entry .checkbox.disabled::-moz-selection,
+.theme-entry .checkbox.disabled input::-moz-selection,
+.theme-entry .checkbox.disabled .input-control-img::-moz-selection,
+.theme-entry .checkbox.disabled .input-control-text::-moz-selection {
+  background: transparent;
+  /* Firefox */
+  color: #999999;
+}
+/*#endregion MAIN STRUCTURE*/
+
+/*#region Default FORM BACKGROUND*/
+
+#pgInnerPanel #pgTabControl > .tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper,
+/*Design Time*/ .theme-entry .tab-box .tab-box-body,
+/*Runtime*/ .theme-entry .form,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-wrapper {
+  background-color: white;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-wrapper {
+  border-color: white;
+}
+/*DEFAULT PAGE BACKGROUND*/
+
+body.theme-entry,
+#pgOuterPanel.theme-entry/*Design Time*/ {
+  background-color: #222c32;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body.theme-entry.runtime-view {
+  background-color: #efefef;
+}
+/*#endregion FORM BACKGROUND*/
+
+/*#region FONTS*/
+
+/*
+Explicitly define a Segoe UI font-family so that we can assign Segoe UI 
+Semilight to an appropriate font-weight.
+*/
+
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 200;
+  src: local("Segoe UI Light");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 300;
+  src: local("Segoe UI Semilight");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  src: local("Segoe UI");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  src: local("Segoe UI Semibold");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 700;
+  src: local("Segoe UI Bold");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Segoe UI Italic");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Segoe UI Bold Italic");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-weight: 200;
+  src: local("Helvetica Light");
+}
+body.theme-entry,
+.theme-entry div,
+.theme-entry span,
+.theme-entry td,
+.theme-entry li,
+.theme-entry p,
+.theme-entry textarea,
+.theme-entry input[type=text],
+.theme-entry input.text,
+.theme-entry select,
+.theme-entry option,
+.theme-entry label.input-control .input-control-text,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+/*override - core*/ .theme-entry .input-control-watermark,
+/*override - core*/ .theme-entry a.Hyperlink,
+.theme-entry a.Hyperlink-NotSet,
+.theme-entry a.Hyperlink-NotSet.disabled {
+  color: #313841;
+  font-size: 1.6rem;
+  font-family: "Segoe UI", "HelveticaNeue-Medium", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+/*override - core - important*/ .theme-entry .input-control-watermark/*override - core - important*/ {
+  font-family: "Segoe UI", "HelveticaNeue-Medium", Helvetica, sans-serif !important;
+}
+.theme-entry h1,
+.theme-entry h2,
+.theme-entry h3,
+.theme-entry h4,
+.theme-entry p,
+.theme-entry label {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+}
+.theme-entry h1.page-title {
+  font-family: "Segoe UI Semi-Light", "Helvetica Light", sans-serif;
+  font-size: 3.6rem;
+  color: #536072;
+}
+.theme-entry h2.page-subtitle {
+  font-family: "Segoe UI Semi-Light", "Helvetica Light", sans-serif;
+  font-size: 2.4rem;
+  color: #818da0;
+}
+.theme-entry h1 {
+  font-family: "Segoe UI Semi-Light", "Helvetica Light", sans-serif;
+  font-size: 3.2rem;
+  color: #323942;
+}
+.theme-entry h2 {
+  font-family: "Segoe UI Semi-Light", "Helvetica Light", sans-serif;
+  font-size: 2.4rem;
+  color: #6b7785;
+}
+.theme-entry h3 {
+  font-family: "Segoe UI", "Helvetica", sans-serif;
+  font-size: 1.8rem;
+  color: #323942;
+}
+.theme-entry h4 {
+  font-family: "Segoe UI", "Helvetica", sans-serif;
+  font-size: 1.6rem;
+  color: #536072;
+}
+.theme-entry span {
+  font-family: "Segoe UI", "Helvetica", sans-serif;
+  font-size: 1.2rem;
+  color: #6b7785;
+}
+.theme-entry label.input-label {
+  font-family: "Segoe UI", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  color: #6b7785;
+  text-transform: none;
+}
+.theme-entry p {
+  font-family: "Segoe UI", "Helvetica", sans-serif;
+  font-size: 1.2rem;
+  color: #6b7785;
+}
+.theme-entry p.description {
+  font-family: "Segoe UI", "Helvetica", sans-serif;
+  font-size: 1.2rem;
+  color: #818da0;
+}
+/*#endregion FONTS */
+
+/*#region GENERIC CONTROL STYLES */
+
+/*Generic TextBox dimensions and watermarks for all types of control*/
+
+/*height/color*/
+
+.theme-entry .input-control a.input-control,
+.theme-entry .spinner/*non-standard*/ {
+  color: #343e41;
+}
+/*disabled text boxes*/
+
+.theme-entry .input-control.disabled a.input-control,
+.theme-entry .input-control.disabled input[type=text],
+.theme-entry .input-control.disabled input[type=password],
+.theme-entry .input-control.disabled textarea,
+.theme-entry .input-control input[type=text][disabled=disabled],
+.theme-entry .input-control input[type=password][disabled=disabled],
+.theme-entry .input-control textarea[disabled=disabled] {
+  color: #999999;
+}
+/*watermarks*/
+
+.theme-entry .input-control a.input-control span,
+.theme-entry .input-control.watermark a.input-control span,
+.theme-entry .input-control.select-box .input-control-watermark,
+.theme-entry .input-control.select-box div.editable-area,
+/*make ksure the editable area has the same padding as the watermark*/ .theme-entry .input-control.select-box input[type=text],
+/*make ksure the editable area has the same padding as the watermark*/ .theme-entry .input-control textarea,
+/*make ksure the editable area has the same padding as the watermark*/ .theme-entry .input-control-watermark {
+  padding-left: 0.5rem;
+}
+.theme-entry .input-control.watermark a.input-control,
+.theme-entry .input-control.watermark a.input-control span {
+  color: #c5c5c5;
+  font-style: italic;
+  font-size: 1.6rem;
+  font-family: "Segoe UI", "HelveticaNeue-Medium", Helvetica, sans-serif;
+  /*override - base*/
+
+}
+/*#endregion GENERIC CONTROL STYLES */
+
+/*#region ALL INPUT CONTROLS*/
+
+/*#region resets*/
+
+.theme-entry .input-control .input-control-wrapper {
+  text-align: left;
+}
+.theme-entry .input-control.icon-control .input-control-wrapper {
+  padding-left: 2.5rem;
+}
+#pgWizard .theme-entry .input-control .input-control-wrapper {
+  overflow: hidden;
+  /* override - designtime */
+
+}
+/*#endregion*/
+
+/*single row height items*/
+
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .spinner/*non-standard*/ {
+  height: auto;
+}
+/*editable controls (should appear white)*/
+
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox {
+  border: 0px solid white;
+  background-color: white;
+}
+/*rounded corners*/
+
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .input-control-wrapper > textarea,
+.theme-entry .input-control.select-box,
+.theme-entry .spinner/*non-standard*/ {
+  border-radius: 2px;
+}
+/*TODO - not sure what this rule is for*/
+
+.theme-entry label.input-control .input-control-text,
+html[dir=rtl] .theme-entry label.input-control .input-control-text {
+  float: none;
+}
+/*state - focus highlight*/
+
+.theme-entry span.textbox-style-wrapper.focus,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.focus,
+.theme-entry .input-control.active .input-control-m-c,
+.theme-entry .input-control.active .input-control-content,
+.theme-entry .hide-browser-highlight.active,
+.theme-entry .input-control.select-box.active .input-control-buttons {
+  border-color: #00abf0;
+}
+.theme-entry .dialog.id-picker-search .input-control.select-box.picker-input.active .input-control-m-c {
+  border-right-width: 1px !important;
+  /* necessary for right border to display on picker add textfield */
+
+}
+/* reserve some space for outline display */
+
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item {
+  padding: 0.1rem;
+}
+/* implement outlining for focus to assist alignment & stop jumping between focus & blur */
+
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.radio.focus,
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.checkbox.focus,
+.theme-entry .checkbox-outer-panel .input-control.checkbox.focus {
+  outline-color: #00abf0;
+}
+/* checkbox / radio button list - override border implementation with outline when focussed to support alignment */
+
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.radio,
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.checkbox,
+.theme-entry .checkbox-outer-panel .input-control.checkbox {
+  outline: 1px dotted transparent;
+}
+/* override normal border implementation to support alignment & jumping on hover */
+
+.theme-entry .hyperlinkTopLeftPanel.hide-browser-highlight.active,
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.radio.active,
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.checkbox.active,
+.theme-entry .checkbox-outer-panel .input-control.checkbox.active {
+  outline: 1px dotted #00abf0;
+}
+.theme-entry .input-control.read-only .input-control-m-c {
+  border-color: rgba(230, 230, 230, 0.5);
+}
+.theme-entry .input-control.read-only.active .input-control-m-c {
+  border-color: rgba(0, 171, 240, 0.5);
+}
+/*state - focus highlight*/
+
+.theme-entry .picture-control-inline:focus {
+  outline: 1px dotted #3cb0df;
+  /*[Recolor("themeColor": "HighlightColor", tint:0.1, shade:0.1)] */
+
+}
+/*state - Hover fill*/
+
+.theme-entry .file-wrapper:hover {
+  /*file attachment control*/
+  background-color: #bfeafb;
+}
+/*state - invalid*/
+
+.theme-entry span.textbox-style-wrapper.invalid,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.invalid,
+.theme-entry .input-control.invalid .input-control-m-c,
+.theme-entry .input-control.control-group-container.invalid .input-control-m-c,
+.theme-entry .SourceCode-Forms-Controls-Web-Label.invalid,
+.theme-entry .SourceCode-Forms-Controls-Web-DataLabel.invalid,
+.theme-entry .file-wrapper.invalid,
+.theme-entry div.hyperlinkTopLeftPanel.invalid,
+.theme-entry .picker .input-control.invalid .input-control-m-c,
+.theme-entry .input-control.invalid textarea,
+.theme-entry .input-control.select-box.invalid input[type="text"] {
+  background-color: #fff3f4;
+  -moz-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+  -o-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+  -webkit-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+  animation: field_validation_pulse linear infinite 2s alternate-reverse;
+  border-color: rgba(178, 30, 40, 0.4) !important;
+  /*important will overide user configured styles */
+
+}
+.theme-entry .input-control.select-box.invalid .input-control-buttons {
+  background-color: #fff3f4;
+  -moz-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+  -o-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+  -webkit-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+  animation: field_validation_pulse linear infinite 2s alternate-reverse;
+  border-color: rgba(178, 30, 40, 0.4) !important;
+  /*important will overide user configured styles */
+
+}
+/* state -- invalid -- override red border */
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.invalid.watermark,
+.theme-entry .input-control.invalid .input-control-watermark {
+  color: #636f80 !important;
+}
+.theme-entry span.textbox-style-wrapper.invalid:focus,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.invalid:focus,
+.theme-entry .input-control.invalid .input-control-m-c:focus,
+.theme-entry .SourceCode-Forms-Controls-Web-Label.invalid:focus,
+.theme-entry .SourceCode-Forms-Controls-Web-DataLabel.invalid:focus,
+.theme-entry .file-wrapper-wrapper.invalid:focus,
+.theme-entry div.hyperlinkTopLeftPanel.invalid:focus,
+.theme-entry .picker .input-control.invalid .input-control-m-c:focus,
+.theme-entry .input-control.control-group-container.invalid .input-control-m-c:focus,
+.theme-entry .input-control.text-input.invalid.active .input-control-m-c {
+  border: 1px solid #b21e28 !important;
+  /*!important only to ensure radiobutton group has correct border colour*/
+
+}
+.theme-entry .input-control.select-box.invalid.active .input-control-m-c,
+.theme-entry .input-control.select-box.invalid.active .input-control-buttons {
+  border-color: #b21e28;
+}
+/*state - disabled/preview*/
+
+.theme-entry span.textbox-style-wrapper.disabled,
+.theme-entry span.textbox-style-wrapper.preview,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.disabled,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.preview,
+.theme-entry .input-control.disabled .input-control-m-c {
+  border-color: #e6e6e6 !important;
+  /*important will overide user configured styles */
+
+}
+/*Watermark*/
+
+.theme-entry .input-control-watermark {
+  bottom: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: text;
+  left: 0;
+  overflow: hidden;
+  padding-top: 0;
+  position: absolute;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  white-space: nowrap;
+  /*indent is acheived with padding*/
+
+  /*needed for text-overflow*/
+
+  /*override - base*/
+
+}
+/*List Control Overrides (checklist/radiolist)*/
+
+.theme-entry .multi-select-outer-panel .input-control-watermark {
+  position: static;
+  padding-top: 0;
+  /*overide for the list controls*/
+
+}
+/*List Control Overrides (checklist/radiolist)*/
+
+.theme-entry div.multi-select-box-list-item label.input-control {
+  display: block;
+  /*makes the checkbox or radio box full width*/
+
+}
+.theme-entry .multi-select-outer-panel.borderless .multi-select-box-list-item label.input-control {
+  padding-left: 0;
+}
+.theme-entry span.multi-select-box-list-item {
+  display: inline-block;
+  /* inline multi-select item */
+
+}
+/*#endregion ALL INPUT CONTROLS*/
+
+/*#region MODAL SCREENS*/
+
+.theme-entry .modalizer,
+.theme-entry .k2-overlay.k2-modal-overlay {
+  background-image: none;
+}
+/*#endregion*/
+
+/* ***** SPECIFIC CONTROLS ***** */
+
+/*#region BUTTON */
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button {
+  background: #798596;
+  border-color: #4f5a69;
+  border-radius: 3px;
+  /*#region Button Style - Main*/
+
+  /*#endregion Button Style - Main */
+
+  /*#region Button Style - Quiet*/
+
+  /*#endregion Button Style - Quiet */
+
+  /*#region Button Style - Destructive*/
+
+  /*#endregion Button Style - destructive */
+
+  /*#region Button Style - Disabled Styling*/
+
+  /*#endregion Button Style - Disabled Styling*/
+
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview {
+  background: #798596;
+  border-color: #4f5a69;
+  border-radius: 3px;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover {
+  background: #647081;
+  border-color: #4f5a69;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:focus {
+  background: #798596;
+  border-color: #3cb0df;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:focus {
+  background: #647081;
+  border-color: #3cb0df;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary {
+  background: #2196f3;
+  border-color: #2196f3;
+  color: white;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary.preview {
+  background: #2196f3;
+  border-color: #2196f3;
+  color: white;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary:hover {
+  background: #64b5f6;
+  border-color: #64b5f6;
+  color: white;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary:focus {
+  background: #2196f3;
+  border-color: #0472c9;
+  color: white;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary:hover:focus {
+  background: #64b5f6;
+  border-color: #0472c9;
+  color: white;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.preview {
+  background: white;
+  border-color: #4f5a69;
+  color: #343e59;
+  box-shadow: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.designtime.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.preview.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.preview,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.designtime.preview,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.preview.preview {
+  background: white;
+  border-color: #4f5a69;
+  color: #343e59;
+  box-shadow: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.designtime:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.preview:hover {
+  background: #647081;
+  border-color: #4f5a69;
+  color: white;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.designtime:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.preview:focus {
+  background: white;
+  border-color: #3cb0df;
+  color: #343e59;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.designtime:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.preview:hover:focus {
+  background: #647081;
+  border-color: #3cb0df;
+  color: white;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+  color: white;
+  background-image: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive.preview {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+  color: white;
+  background-image: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive:hover {
+  background-color: #c4374c;
+  border-color: #c4374c;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive:focus {
+  background-color: #b71c1c;
+  border-color: #6a0909;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive:hover:focus {
+  background-color: #c4374c;
+  border-color: #6a0909;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.preview,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus {
+  background-image: none;
+  background-color: #bfc1c2 !important;
+  border-color: #bfc1c2 !important;
+  box-shadow: none !important;
+  color: white !important;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.designtime.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.preview.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.designtime.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.preview.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus.button-quiet.designtime {
+  background-color: white !important;
+  border-color: #bfc1c2 !important;
+  color: #bfc1c2 !important;
+  background-image: none;
+  box-shadow: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:active {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  min-width: 12rem;
+  box-shadow: inset 0px 1px 2px #9ba6b6;
+  color: white;
+  -moz-transition: color linear 0.15s;
+  -o-transition: color linear 0.15s;
+  -webkit-transition: color linear 0.15s;
+  transition: color linear 0.15s;
+  /* Chrome,Safari4+ */
+
+  /* Chrome10+,Safari5.1+ */
+
+  /* FF3.6+ */
+
+  /* IE10+ */
+
+  /* Old browsers */
+
+  /* Opera 11.10+ */
+
+  /* W3C */
+
+  /*affects the help button*/
+
+  /*dark blue*/
+
+  /*override - base important style - .SFC.disabled */
+
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:active {
+  color: white;
+  -moz-transition: color linear 0.15s;
+  -o-transition: color linear 0.15s;
+  -webkit-transition: color linear 0.15s;
+  transition: color linear 0.15s;
+  /*white*/
+
+}
+/*#endregion BUTTON */
+
+/*#region LABEL*/
+
+.theme-entry .form-field .form-field-label {
+  /*text-transform: uppercase;*/
+  /*LG: We can't do this - it is not reverseable in the format builder (Format)*/
+  color: #6b7785;
+}
+/*#endregion LABEL*/
+
+/*#region TEXTBOX CONTROL */
+
+.theme-entry .input-control.text-input:not(.control-group-container) .input-control-m-c {
+  background-color: white;
+  border-radius: 2px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.theme-entry input[type=text].input-control,
+.theme-entry input[type=password].input-control {
+  background-color: transparent;
+}
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox {
+  padding-top: 0;
+  padding-left: 0;
+}
+.theme-entry .input-control textarea,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry input[type=text].input-control,
+/*covers the list view filter searchbox also*/ .theme-entry input[type=password].input-control/*covers the password field on SSO login also*/ {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  /*override - inline*/
+
+  /*ready for focus color etc*/
+
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry input[type=text].input-control,
+/*covers the list view filter searchbox also*/ .theme-entry input[type=password].input-control/*covers the password field on SSO login also*/ {
+  border: solid 1px #e6e6e6;
+}
+.theme-entry .input-control textarea {
+  border-width: 0;
+}
+.webkit .theme-entry .input-control textarea {
+  vertical-align: top;
+  /*necessary to remove additional spacing below textarea in chrome*/
+
+}
+/* Legacy textbox control styling */
+
+.theme-entry .input-control.text-input .input-control-wrapper input[type=text].input-control,
+.theme-entry .input-control.text-input .input-control-wrapper input[type=password].input-control {
+  border-width: 0;
+}
+/*#endregion TEXTBOX */
+
+/*#region DROPTEXTBOX CONTROL */
+
+.theme-entry .drop-textbox {
+  border-radius: 2px;
+  padding: 0.1rem 0.5rem;
+  background-color: white;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.theme-entry .drop-item,
+.theme-entry .drop-object,
+.theme-entry .drop-text {
+  font-size: 1.6rem;
+}
+.theme-entry .drop-textbox .drop-item {
+  background-position: 2px 50%;
+}
+/*#endregion DROPTEXTBOX*/
+
+/*#region HYPERLINK */
+
+.theme-entry a,
+.theme-entry a:visited {
+  -moz-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */
+
+}
+.mozilla .theme-entry .runtime-list-item a,
+.mozilla .theme-entry a:visited {
+  padding-left: 0.1rem;
+  /*why?*/
+
+}
+/*#endregion HYPERLINK */
+
+/*#region RADIO BUTTON*/
+
+.theme-entry .input-control.radio {
+  border: 1px dotted transparent;
+  display: table-row;
+  min-width: 2.2rem;
+  outline: 0.1rem dotted transparent;
+}
+.theme-entry label.input-control.radio span {
+  display: table-cell;
+  vertical-align: top;
+}
+.theme-entry label.input-control.radio .input-control-text:empty {
+  display: none;
+}
+/*#region FIREFOX SPECIFIC */
+
+.mozilla .theme-entry .input-control.radio input,
+.mozilla .theme-entry .input-control.checkbox input {
+  left: -0.1rem;
+  /* Ensure outlining for focus is rendered correctly */
+  opacity: 0;
+}
+/*#endregion*/
+
+/*#endregion RADIO BUTTON*/
+
+/*#region SELECT BOX */
+
+/*Notes - select-box is any input control with a  button(s) to the right of the text entry */
+
+/*      - It includes the PICKER, CALENDAR, DROPDOWN AND OTHERS*/
+
+/*      - It is also used in the worklist control, which has non-standard css classes (at the time of dev)*/
+
+/*#region resets*/
+
+.theme-entry .input-control.select-box.double-buttons .input-control-body {
+  height: inherit;
+  right: auto;
+  margin-right: auto;
+  /*override - base*/
+
+}
+.theme-entry .input-control.select-box .input-control-body {
+  position: relative;
+  /*override - base*/
+  width: auto;
+  /*push the buttons right - cannot be 100% otherwise ie will stretch to max-width*/
+
+}
+/*#endregion resets - end*/
+
+.theme-entry .input-control.select-box {
+  border-collapse: separate;
+  display: inline-table;
+  width: 100%;
+}
+.theme-entry .input-control.select-box .styling-outer-wrapper {
+  position: relative;
+  display: table-row;
+}
+.theme-entry .input-control.select-box .input-control-body,
+.theme-entry .input-control.select-box .input-control-buttons {
+  right: auto;
+  /*override - base*/
+  display: table-cell;
+  position: relative !important;
+  /* override inline */
+  vertical-align: middle;
+  white-space: nowrap;
+  /*make sure the buttons are inline*/
+
+  /*override - base*/
+
+}
+.theme-entry .input-control.select-box .input-control-buttons {
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-radius: 0 0.2rem 0.2rem 0;
+  border-width: 1px 1px 1px 0;
+  position: static;
+  /*override - base*/
+  width: 1px;
+  /*take up minimal space, must use 1px and not 0px for webkit*/
+
+}
+.theme-entry .input-control.select-box.read-only .input-control-buttons {
+  border-color: rgba(230, 230, 230, 0.5);
+}
+html[dir=rtl] .theme-entry .input-control.select-box .input-control-buttons {
+  border-radius: 0.2rem 0 0 0.2rem;
+  border-width: 1px 0 1px 1px;
+}
+.theme-entry .input-control.select-box .input-control-m {
+  display: table;
+  height: inherit;
+  table-layout: fixed;
+  width: 100%;
+}
+.theme-entry .input-control.select-box .input-control-m .input-control-wrapper {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+/*this element has the focus border*/
+
+.theme-entry .input-control.select-box .input-control-m-c {
+  height: 100%;
+  min-height: 100%;
+  /*auto height will respect the line-height, setting the height to 3.2rem will stop the top border from showing*/
+  overflow: hidden;
+  /*BUG FIX: when the control was active the top border wasn't showing*/
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html[dir=ltr] .theme-entry .input-control.select-box .input-control-m-c {
+  border-radius: 0.2rem 0 0 0.2rem;
+  border-right-width: 0 !important;
+  /* override - inline */
+
+}
+html[dir=rtl] .theme-entry .input-control.select-box .input-control-m-c {
+  border-left-width: 0 !important;
+  /* override - inline */
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+.theme-entry .input-control.select-box .input-control-watermark,
+.theme-entry .input-control.select-box div.editable-area,
+.theme-entry .input-control.select-box input[type=text] {
+  border-width: 0;
+  padding: 0;
+  padding-left: 0.5rem;
+  text-align: left;
+  vertical-align: middle;
+  width: 100%;
+}
+html[dir=rtl] .theme-entry .input-control.select-box .input-control-watermark,
+html[dir=rtl] .theme-entry .input-control.select-box div.editable-area,
+html[dir=rtl] .theme-entry .input-control.select-box input[type=text] {
+  padding: 0;
+  padding-right: 0.5rem;
+  text-align: right;
+}
+.theme-entry .input-control.select-box input[type=text] {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.theme-entry .input-control.select-box .input-control-watermark {
+  position: absolute;
+}
+.theme-entry .input-control.select-box .input-control-buttons a {
+  background: transparent;
+  border: none;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  color: white;
+  display: inline-block;
+  float: none;
+  text-decoration: none;
+  vertical-align: top;
+  /* Old browsers */
+
+  /*override*/
+
+  /*stops extra space underneath*/
+
+}
+html[dir="rtl"] .theme-entry .input-control.select-box .input-control-buttons a {
+  float: none;
+}
+.theme-entry .input-control.select-box .input-control-buttons a > span {
+  border-width: 1px;
+}
+.theme-entry .input-control.select-box .input-control-buttons a:hover,
+.theme-entry .input-control.select-box .input-control-buttons a:focus {
+  background-color: #3cb0df;
+  border-color: #3cb0df;
+}
+.theme-entry .input-control.select-box.disabled .input-control-buttons a,
+.theme-entry .input-control.select-box.disabled .input-control-buttons a:hover,
+.theme-entry .input-control.select-box.disabled .input-control-buttons a:focus,
+.theme-entry .input-control.select-box.read-only .input-control-buttons a,
+.theme-entry .input-control.select-box.read-only .input-control-buttons a:hover {
+  background-color: transparent;
+  border-color: #e6e6e6;
+  color: #636f80;
+  /* Old browsers */
+
+}
+.theme-entry .input-control.select-box .input-control-buttons a span {
+  display: block;
+  height: 100%;
+  color: #636f80;
+  text-align: center;
+}
+/* Design-time */
+
+#pgWizard .theme-entry .form-control > .input-control.select-box,
+#StyleBuilderPreviewPanelContentWrapper.theme-entry > #StyleBuilderPreviewPanelContent > .input-control.select-box {
+  display: table;
+}
+#StyleBuilderPreviewPanelContentWrapper.theme-entry > #StyleBuilderPreviewPanelContent > .input-control.select-box .input-control-wrapper {
+  overflow: hidden;
+}
+#pgWizard .theme-entry .input-control.select-box .input-control-buttons,
+#pgWizard .theme-entry .input-control-buttons.twisty-button,
+#StyleBuilderPreviewPanelContentWrapper.theme-entry .input-control.select-box .input-control-buttons {
+  background: transparent;
+  filter: none;
+}
+/*#endregion SELECT BOX */
+
+/*#region LOOKUP CONTROL*/
+
+/* a type of selectbox - with a ellipsis select box*/
+
+.theme-entry .lookup-box.input-control.focus {
+  border-color: #00abf0;
+}
+/*#endregion LOOKUP CONTROL*/
+
+/*#region DROPDOWN */
+
+.theme-entry .input-control.select-box.dropdown-box .input-control-buttons {
+  overflow: inherit;
+}
+/*#endregion DROPDOWN */
+
+/*#region PICKER CONTROL */
+
+/*The picker does not play nice with table layouts and really long values.*/
+
+.theme-entry .input-control.select-box.double-buttons .input-control-m {
+  height: 100%;
+}
+.theme-entry div.picker {
+  display: inline-flex;
+  /*Fix for 890614 and 932060*/
+
+}
+.theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-body {
+  display: block;
+}
+.theme-entry .input-control.select-box.double-buttons .input-control-m-c {
+  box-sizing: content-box;
+}
+.theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-m-c {
+  border-radius: 0.2rem;
+}
+html[dir=rtl] .theme-entry .input-control.select-box.picker-input.hide-buttons .input-control-m-c {
+  border-left-width: 0.1rem !important;
+}
+.theme-entry .input-control.select-box.disabled .input-control-buttons {
+  background: transparent;
+}
+.theme-entry .input-control.select-box.picker-input .input-control-buttons {
+  vertical-align: top;
+}
+.theme-entry .input-control.select-box .input-control-buttons a.picker-search > span span {
+  display: block;
+  text-indent: -9999px;
+  /*background-image: url(Toolbar/Search20.png);*/
+
+}
+.theme-entry .input-control.select-box .input-control-buttons a.picker-resolve {
+  border-left-width: 0 !important;
+  /* ensure custom border styling does not affect theme adversely */
+  border-right-width: 0;
+}
+.theme-entry .input-control.select-box .input-control-buttons a.picker-resolve > span span {
+  display: block;
+  text-indent: -9999px;
+}
+/*#endregion DROPDOWN */
+
+/*#region CHECKBOX*/
+
+.theme-entry .checkbox-outer-panel label.input-control .input-control-text:empty {
+  display: none;
+}
+.theme-entry .grid .edit-template-row .checkbox-outer-panel label.input-control .input-control-text:empty {
+  display: inline;
+  padding-left: 0;
+  padding-right: 0.1rem;
+}
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item label.input-control .input-control-text,
+.theme-entry .checkbox-outer-panel label.input-control .input-control-text,
+.theme-entry label.input-control.radio .input-control-text {
+  padding-left: 3px;
+}
+/*#endregion*/
+
+/*#region CHECKBOX LIST*/
+
+.theme-entry .multi-select-outer-panel .input-control.radio .input-control-text {
+  display: table-cell;
+  white-space: normal;
+  /*multi-line text will appear as a block to the right of the radio button*/
+
+}
+/*#endregion*/
+
+/*#region TOOLBAR */
+
+/*#region reset*/
+
+.theme-entry .toolbars,
+.theme-entry .single.toolbars .toolbar,
+.theme-entry .double.toolbars .toolbar {
+  border: none;
+}
+/*#endregion reset end*/
+
+/*default height*/
+
+.theme-entry .toolbar,
+.theme-entry .toolbars.single .toolbar/*override - base*/ {
+  min-height: 3.2rem;
+}
+.theme-entry .toolbar {
+  padding: 0;
+  background-color: #dedfde;
+  /*a 5px left+right looks nice but affects the paging control, and indents the toolbar buttons, which looks ugly */
+
+}
+/*#region Grid Toolbars area*/
+
+.theme-entry .grid.with-header .grid-toolbars {
+  float: none;
+  clear: both;
+  background: #e6e6e6;
+  /*grey*/
+
+}
+.theme-entry .grid.with-header .grid-toolbars .toolbar-wrapper {
+  border-bottom: solid 1px #bcc4cd;
+}
+/*#endregion*/
+
+/*textcolor override*/
+
+.theme-entry .toolbars div,
+.theme-entry .toolbars span,
+.theme-entry .toolbars td,
+.theme-entry .toolbars li,
+.theme-entry .toolbars p {
+  color: #636e7e;
+  /*light grey*/
+
+}
+.theme-entry .toolbars textarea,
+.theme-entry .toolbars input[type=text],
+.theme-entry .toolbars input.text,
+.theme-entry .toolbars select,
+.theme-entry .toolbars option,
+.theme-entry .toolbars .input-control div,
+.theme-entry .toolbars .input-control span,
+.theme-entry .toolbars .input-control td,
+.theme-entry .toolbars .input-control li,
+.theme-entry .toolbars .input-control p {
+  color: inherit;
+}
+.theme-entry .toolbars .radio .input-control-text,
+.theme-entry .toolbars .checkbox .input-control-text {
+  color: #313841;
+}
+.theme-entry .toolbars.single .toolbar {
+  padding-bottom: 1rem;
+}
+/*toolbar table control alignment*/
+
+.theme-entry .toolbar > .toolbar-wrapper > table > tbody > tr > td {
+  vertical-align: middle;
+}
+.theme-entry .toolbar > .toolbar-wrapper > table > tbody > tr > td > .hidden {
+  display: none;
+}
+.theme-entry .toolbar > .toolbar-wrapper > table > tbody > tr > td > a.toolbar-button {
+  vertical-align: text-bottom;
+}
+.theme-entry .toolbar > .toolbar-wrapper > table > tbody > tr > td > .SFC.SourceCode-Forms-Controls-Web-TextBox {
+  vertical-align: top;
+  margin-top: 0.3rem;
+}
+/*#endregion TOOLBAR */
+
+/*#region TOOLBAR ICON BUTTONS*/
+
+.theme-entry a.toolbar-button span.button-icon {
+  left: 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+/*#region light icon-buttons*/
+
+/*used by standard toolbars, toolbar buttons, richtext control*/
+
+/*#endregion*/
+
+/*#region dark icon-buttons*/
+
+/*used by worklist control, and others*/
+
+.theme-entry .grid-header a.toolbar-button,
+.theme-entry .panel-header a.toolbar-button {
+  border-style: dotted;
+  border-width: 1px;
+  border-color: transparent;
+  -moz-background-size: 16px 16px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.theme-entry .grid-header a.toolbar-button:hover,
+.theme-entry .panel-header a.toolbar-button:hover {
+  background-color: #515b6a;
+}
+/*toggle style*/
+
+.theme-entry .grid-header a.toolbar-button.selected,
+.theme-entry .panel-header a.toolbar-button.selected,
+.theme-entry .grid-header a.toolbar-button.selected:hover,
+.theme-entry .panel-header a.toolbar-button.selected:hover {
+  background-color: #3c4653;
+}
+/*Async/animated button style*/
+
+.theme-entry .grid-header a.toolbar-button.loading,
+.theme-entry .panel-header a.toolbar-button.loading,
+.theme-entry .grid-header a.toolbar-button.loading:hover,
+.theme-entry .panel-header a.toolbar-button.loading:hover {
+  background-color: transparent;
+  border-color: transparent;
+  /*make sure the border or background don't spin with css animation*/
+
+}
+/*#endregion*/
+
+/*#endregion TOOLBAR BUTTON ICONS */
+
+/*#region TOOLBAR BUTTON*/
+
+.theme-entry a.toolbar-button {
+  border-width: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  color: #c2ccdb;
+  font-family: "Segoe UI", "HelveticaNeue-Medium", Helvetica, sans-serif;
+}
+.theme-entry a.toolbar-button span,
+.theme-entry a.toolbar-button.toolbar-button-inline span {
+  display: inline-block;
+  color: #636e7e;
+  vertical-align: middle;
+  font-family: "Segoe UI", "HelveticaNeue-Medium", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 2.8rem;
+}
+.theme-entry #filterNameList a.toolbar-button span.button-c span.button-text,
+.theme-entry #FilterTab_Content a.toolbar-button span.button-c span.button-text,
+.theme-entry #OrderTab_Content a.toolbar-button span.button-c span.button-text,
+.theme-entry #ConditionGrid a.toolbar-button span.button-c span.button-text {
+  margin-top: 0;
+}
+.theme-entry a.toolbar-button span.button-c,
+.theme-entry a.toolbar-button.disabled span.button-c,
+.theme-entry a.toolbar-button.disabled:hover span.button-c {
+  border-width: 0;
+  /* override core/base styling */
+  padding-right: 0;
+  /* override core/base styling */
+
+}
+.theme-entry a.toolbar-button span.button-text {
+  padding: 0 0.3rem;
+  white-space: pre;
+}
+.theme-entry a.toolbar-button span.button-text,
+.theme-entry a.toolbar-button span.button-c span.button-icon {
+  display: inline-block;
+}
+.theme-entry a.toolbar-button span.button-c span.button-text {
+  margin-top: 0;
+  line-height: 3rem;
+}
+.theme-entry a.toolbar-button span.button-c span.button-text:empty {
+  display: none;
+}
+.theme-entry a.toolbar-button * + span.button-text {
+  margin-left: 0.6rem;
+}
+.theme-entry a.toolbar-button:focus {
+  outline: 0px dotted #3cb0df;
+}
+.theme-entry a.toolbar-button.selected,
+.theme-entry a.toolbar-button:hover,
+.theme-entry a.toolbar-button:focus,
+.theme-entry a.toolbar-button:active,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:hover,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:focus,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:active {
+  border-color: #f9f9f9;
+  background-color: #f9f9f9;
+  color: #343e41;
+  /* whitish */
+
+  /*#7f8c9e;*/
+
+}
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.disabled:hover,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.disabled:focus,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.disabled:active {
+  border-color: transparent;
+  background: transparent;
+}
+/*#endregion TOOLBAR BUTTON*/
+
+/*#region VIEW*/
+
+.theme-entry .view .innerpanel > .grid,
+.theme-entry .view .innerpanel > .panel,
+.theme-entry .view-canvas > .grid,
+/* Design time grid */ .theme-entry .view-canvas > .panel/* Design time panel */ {
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.theme-entry .view-canvas > .panel .panel-header-wrapper {
+  /*top align the view title - item view only, list views use grids and are already top aligned*/
+  align-items: flex-start;
+}
+/*#endregion VIEW*/
+
+/*#region LABEL CONTROL*/
+
+.theme-entry span.SourceCode-Forms-Controls-Web-Label,
+.theme-entry h1.SourceCode-Forms-Controls-Web-Label,
+.theme-entry h2.SourceCode-Forms-Controls-Web-Label,
+.theme-entry h3.SourceCode-Forms-Controls-Web-Label,
+.theme-entry h4.SourceCode-Forms-Controls-Web-Label,
+.theme-entry label.SourceCode-Forms-Controls-Web-Label,
+.theme-entry p.SourceCode-Forms-Controls-Web-Label,
+.theme-entry span.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry h1.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry h2.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry h3.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry h4.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry label.SourceCode-Forms-Controls-Web-DataLabel,
+.theme-entry p.SourceCode-Forms-Controls-Web-DataLabel {
+  padding: 0.4rem 0;
+  /* override core css */
+
+}
+/*#endregion LABEL CONTROL*/
+
+/*#region TABLE CONTROL*/
+
+/*view designer, table control cell, mostly design-time only?*/
+
+.theme-entry .editor-cell {
+  overflow: hidden;
+  padding: 1rem;
+  vertical-align: top;
+}
+/*#endregion TABLE CONTROL*/
+
+/*#region DATEPICKER*/
+
+.theme-entry .input-control.select-box .input-control-buttons a.date > span span {
+  display: block;
+  padding-top: 0;
+  text-indent: -9999px;
+}
+/*#endregion DATEPICKER*/
+
+/*#region ELLIPSIS BUTTON*/
+
+.theme-entry .input-control.select-box .input-control-buttons a.ellipsis > span span,
+.theme-entry .input-control.select-box .input-control-buttons a.ellipsis:active > span span,
+.theme-entry .input-control.select-box.active .input-control-buttons a.ellipsis > span span,
+.theme-entry .input-control.select-box.read-only .input-control-buttons a.ellipsis:hover > span span,
+.theme-entry .input-control.select-box.read-only .input-control-buttons a.ellipsis:focus > span span,
+.theme-entry .input-control.select-box.disabled .input-control-buttons a.ellipsis:hover > span span,
+.theme-entry .input-control.select-box.disabled .input-control-buttons a.ellipsis:focus > span span {
+  /*background-image:url(Date20.png);*/
+  color: #636f80;
+}
+.theme-entry .input-control.select-box .input-control-buttons a.ellipsis:hover > span span,
+.theme-entry .input-control.select-box .input-control-buttons a.ellipsis:focus > span span {
+  color: white;
+}
+/*#endregion ELLIPSIS BUTTON*/
+
+/*#region DROPDOWN POPOVER*/
+
+/*appears under a drop-down control*/
+
+.theme-entry .drop-menu {
+  border: none;
+  background-color: white;
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  z-index: 2 !important;
+  /*override - inline - only in worklist control dialog - BUG logged*/
+
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu {
+  background-color: transparent;
+}
+.theme-entry .drop-menu ul.drop-menu li {
+  height: auto;
+}
+.theme-entry .drop-menu ul.drop-menu li a {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto;
+  padding: 0.5rem;
+}
+.theme-entry .drop-menu ul.drop-menu a span {
+  color: #343e41;
+  height: auto;
+  line-height: normal;
+  padding: 0;
+}
+.theme-entry .drop-menu ul.drop-menu a:hover {
+  background-color: #bfeafb;
+  /*hover color*/
+
+}
+.theme-entry .drop-menu ul.drop-menu a.selected,
+.theme-entry .drop-menu ul.drop-menu a.selected:hover,
+.theme-entry .drop-menu ul.drop-menu li.selected,
+.theme-entry .drop-menu ul.drop-menu li.selected a:hover {
+  background-color: #3cb0df;
+  /*selected color*/
+
+}
+.theme-entry .drop-menu ul.drop-menu a.selected span,
+.theme-entry .drop-menu ul.drop-menu li.selected span {
+  color: white;
+}
+.theme-entry .drop-menu ul.drop-menu a.disabled,
+.theme-entry .drop-menu ul.drop-menu a.disabled:hover {
+  background-color: transparent;
+}
+.theme-entry .input-control.token-input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.theme-entry .input-control.token-input .input-control-content {
+  border-radius: 2px;
+}
+.theme-entry .input-control.token-input.active .input-control-content {
+  border-color: #00abf0;
+  border-width: 1px/* override theme global definition */;
+}
+/*drop down list item*/
+
+.theme-entry .drop-item,
+.theme-entry .token-input .entity .entity-text {
+  background-color: #7fd5f7;
+  color: white;
+  height: auto;
+}
+/*#endregion DROPDOWN STYLES*/
+
+/*#region DROPDOWN  CONTROL*/
+
+/*#region Toolbar*/
+
+.theme-entry .toolbar-wrapper td div.dropdown-box {
+  vertical-align: baseline;
+}
+/*#endregion Toolbar*/
+
+/*All drop down controls*/
+
+.theme-entry .dropdown-box.input-control .input-control-wrapper > a {
+  position: relative;
+  padding-top: 0;
+  line-height: 3.2rem;
+  /*needed for vertically centering the chosen item */
+
+}
+.theme-entry .dropdown-box.input-control .input-control-wrapper > a > span {
+  position: relative;
+  /*makes the box size to contents when there is no width set - list view filter bug in FF*/
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 100%;
+}
+.theme-entry .drop-menu.icon-control ul.drop-menu a {
+  padding-left: 2.5rem;
+}
+/*#endregion DROPDOWN  STYLES*/
+
+/*#region TREE CONTROL */
+
+.theme-entry .tree li {
+  height: auto;
+}
+.theme-entry .tree li a {
+  border: 0.1rem solid transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+/*hover style*/
+
+.theme-entry .tree li a:hover,
+.theme-entry .tree li a:focus,
+.theme-entry .tree li a.hover {
+  background-color: #bfeafb;
+}
+/*selection style*/
+
+.theme-entry .tree li.selected > a,
+.theme-entry .tree li.selected > a:hover,
+.theme-entry .tree li.selected > span {
+  background-color: #7fd5f7;
+  border-color: #00abf0;
+}
+/* Collapsed Root Styling */
+
+.theme-entry .tree.collapsed-root li.root {
+  background: none;
+  padding-left: 0;
+}
+.theme-entry .tree.collapsed-root li.root > a,
+.theme-entry .tree.collapsed-root li.root > span {
+  display: none;
+}
+.theme-entry .tree li.children.open {
+  /*background: url("../Platinum/Images/Tree/minus_alt.gif") 0 0 no-repeat;*/
+  background-position: 1px 3px;
+}
+.theme-entry .tree li.children.closed {
+  /*background: url("../Platinum/Images/Tree/plus_alt.gif") 0 0 no-repeat;*/
+  background-position: 1px 3px;
+}
+/*#endregion TREE CONTROL */
+
+/*#region VIEW PANEL*/
+
+/*reset*/
+
+.theme-entry .grid-header {
+  height: auto;
+}
+/*reset end*/
+
+.theme-entry .panel.with-toolbar > .panel-header {
+  border-bottom-width: 0;
+}
+/*view header styles*/
+
+.ie8 .theme-entry .grid-header-wrapper,
+.ie9 .theme-entry .grid-header-wrapper {
+  filter: none;
+  /* IE6-9 */
+
+}
+.theme-entry .panel-header,
+.theme-entry .grid-header-wrapper {
+  -moz-border-radius: 4px 4px 0px 0;
+  -ms-border-radius: 4px 4px 0px 0;
+  -webkit-border-radius: 4px 4px 0px 0;
+  border-radius: 4px 4px 0px 0;
+  background: #636f80;
+  /* Old browsers */
+
+}
+.theme-entry .panel-header div,
+.theme-entry .grid-header-wrapper div {
+  color: #c2ccdb;
+  background: #636f80;
+  border-radius: inherit;
+}
+.theme-entry .grid-header-wrapper {
+  border: none;
+}
+.theme-entry .grid-header-wrapper .grid-header-text,
+.theme-entry .panel-header-wrapper .panel-header-text {
+  background: transparent;
+  padding-right: 4rem;
+  width: 100%;
+}
+.theme-entry .panel-header-wrapper .panel-header-controls {
+  height: 100%;
+  padding: 0;
+}
+.theme-entry .panel-header-c {
+  border-width: 0;
+  border-style: none;
+  border-radius: 2px 2px 0px 0;
+  background: transparent;
+  background-color: transparent;
+  /*design time*/
+
+}
+.theme-entry .collapsed.panel {
+  height: auto;
+  /*overrides the 24px*/
+
+}
+.theme-entry .panel-header-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /*removed - change the message box header style if this is changed*/
+
+  /*why?*/
+
+}
+#pgWizard .theme-entry .grid-header-wrapper .inline-editable,
+#pgWizard .theme-entry .panel-header-wrapper .inline-editable,
+.theme-entry .grid-header-wrapper .grid-header-text,
+.theme-entry .panel-header-wrapper .panel-header-text {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-left: 1rem;
+  color: #c2ccdb;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  font-family: Segoe UI Semibold, Gulim, Lucida Sans Unicode, Arial;
+  float: none;
+  /*override - base*/
+  display: inline-block;
+  text-shadow: 0rem 0.2rem #535c6b;
+}
+.theme-entry .dialog.runtime-message .panel-header-text/*Message box override*/ {
+  width: auto;
+  color: #313841;
+  padding-left: 0.3rem;
+}
+.theme-entry .panel-header {
+  border-width: 0;
+  border-style: solid;
+}
+.theme-entry .grid-header-wrapper .grid-header-text > span,
+.theme-entry .panel-header-wrapper .panel-header-text > span {
+  color: #c2ccdb;
+  font-size: inherit;
+  display: block;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/*Panel Structure*/
+
+.theme-entry .grid > .grid-body,
+.theme-entry .panel > .panel-body {
+  margin-top: 0;
+  /*override*/
+
+}
+.theme-entry .panel > .panel-body {
+  padding: 0;
+}
+/*#endregion VIEW PANEL*/
+
+/*#region GENERIC TOOLBAR*/
+
+/*#region reset*/
+
+.theme-entry .with-header.grid .grid-toolbars .double.toolbars .toolbar:first-child .toolbar-wrapper,
+.theme-entry .double.toolbars .toolbar:first-child .toolbar-wrapper,
+.theme-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars.single .toolbar-wrapper,
+.theme-entry .toolbars.single .toolbar .toolbar-wrapper,
+.theme-entry .toolbars.double .toolbar .toolbar-wrapper {
+  background-image: none;
+  /*removes the gradients!*/
+
+}
+/*#endregion reset end*/
+
+/*SingleToolbar*/
+
+.theme-entry .panel.with-header.with-toolbar > .panel-toolbars .toolbars .toolbar-wrapper,
+.theme-entry .panel.with-header.with-double-toolbar > .panel-toolbars .toolbars .toolbar-wrapper {
+  background-color: #dedfde;
+}
+.theme-entry .toolbars.single {
+  height: auto;
+  border-width: 0;
+  border-style: none;
+}
+.theme-entry .toolbars.single .toolbar {
+  padding-bottom: 0;
+  /*override*/
+
+}
+.theme-entry .toolbar-wrapper/*generic control*/ {
+  overflow: hidden;
+  height: auto;
+  border-width: 0;
+  border-style: none;
+}
+/*DoubleToolbar*/
+
+.theme-entry .toolbars.double .toolbar .toolbar-wrapper,
+.theme-entry .grid.with-header .grid-toolbars .toolbars.double .toolbar:first-child .toolbar-wrapper,
+.theme-entry .panel.with-header.with-header.with-double-toolbar > .panel-toolbars .toolbar:first-child .toolbar-wrapper {
+  background-color: #dedfde;
+}
+.theme-entry .panel > .panel-body {
+  border: none;
+  border-radius: 0 0 4px 4px;
+  /* round only the bottom corners */
+  background-color: #efefef;
+}
+.theme-entry .panel.with-header.without-toolbar > .panel-body,
+.theme-entry .panel.without-header.with-toolbar > .panel-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.theme-entry .panel.with-footer > .panel-body {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.theme-entry .panel.collapsed > .panel-header,
+.theme-entry .grid.collapsed > .grid-header {
+  border-radius: 4px;
+}
+.theme-entry .grid-header-wrapper .grid-header-controls {
+  height: auto;
+  /*override - base - hardcoded 20px*/
+
+}
+.theme-entry .grid-header-wrapper .grid-header-controls a,
+.theme-entry .panel-header-wrapper .panel-header-controls a {
+  display: block;
+  float: left;
+  background-repeat: no-repeat;
+}
+.theme-entry .grid-header-wrapper .grid-header-controls a.collapse-vertical,
+.theme-entry .panel-header-wrapper .panel-header-controls a.collapse-vertical {
+  outline: none;
+}
+/*#endregion GENERIC TOOLBAR*/
+
+/*#region GRID CONTROL*/
+
+/*#region reset*/
+
+.theme-entry .grid .grid-body,
+.theme-entry .grid-header,
+.theme-entry .grid .grid-column-headers,
+.theme-entry .grid .grid-column-headers-wrapper,
+.theme-entry .grid .grid-column-header-divider {
+  border: none;
+}
+.theme-entry .grid table.grid-content-table > tbody > tr,
+.theme-entry .grid table.grid-content-table > tr,
+.theme-entry .grid table.grid-content-table tr.nowrap td {
+  height: auto;
+  /*override - base*/
+
+}
+/*when wrpping is turned on on the column header text*/
+
+.theme-entry div.grid-column-header-text.LabelWrap {
+  height: auto;
+  /*override - base*/
+
+  /*this selector does not need div in it!*/
+
+}
+.theme-entry .grid .grid-column-header-text {
+  line-height: normal;
+  /*override - base - 19px*/
+
+  /*BUG FIX: Needed to prevent the bottom of "g" or "q" characters from being cut off in chrome*/
+
+}
+/*#endregion*/
+
+/*#region main structure*/
+
+.theme-entry .grid .grid-body-content {
+  background-color: transparent;
+  /*override - base*/
+  border-color: transparent;
+  border-width: 0;
+}
+/*#endregion*/
+
+/*#region grid headers - header row style*/
+
+.theme-entry .grid .grid-column-headers {
+  background-color: #e6e6e6;
+}
+.theme-entry .grid .grid-column-headers div,
+.theme-entry .grid .grid-column-headers span {
+  color: #6b7785;
+  /*light blue - darker*/
+  text-transform: uppercase;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.theme-entry .grid .grid-column-headers-wrapper {
+  background: transparent;
+  /* Old browsers */
+
+}
+/*header divider*/
+
+.theme-entry .grid .grid-column-header-divider {
+  width: 0.3rem;
+  background-color: white;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-transition: opacity linear 0.15s;
+  -ms-transition: opacity linear 0.15s;
+  -o-transition: opacity linear 0.15s;
+  -webkit-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+}
+.theme-entry .grid .grid-column-header-divider:hover,
+.theme-entry .grid .grid-column-header-divider.ui-draggable-dragging {
+  width: 0.3rem;
+  background-color: white;
+  opacity: 0.5;
+  filter: alpha(opacity=0.5);
+  -moz-transition: opacity linear 0.15s;
+  -ms-transition: opacity linear 0.15s;
+  -o-transition: opacity linear 0.15s;
+  -webkit-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+}
+.theme-entry .grid .grid-column-header-table {
+  border-collapse: separate;
+  /*so that focus green dotted isn't missing an edge*/
+
+}
+.theme-entry .grid table.grid-column-header-table td {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px dotted transparent;
+}
+.theme-entry .grid table.grid-column-header-table td.focus {
+  border-color: #3cb0df;
+}
+.theme-entry .grid table.grid-column-header-table td:hover {
+  background-image: none;
+}
+/*The text gets cut off when the column header has text that's wrapping on a listview.*/
+
+.theme-entry .grid .grid-column-header-cell,
+.theme-entry .grid .grid-column-header-cell .grid-column-header-cell-wrapper {
+  height: auto;
+  position: relative;
+}
+.ie8 .theme-entry .grid .grid-column-header-cell,
+.ie9 .theme-entry .grid .grid-column-header-cell,
+.ie10 .theme-entry .grid .grid-column-header-cell,
+.ie11 .theme-entry .grid .grid-column-header-cell {
+  padding-top: 0;
+}
+/*#endregion */
+
+/*#region grid header - sorting/hover*/
+
+/*sorting indicator*/
+
+.theme-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper,
+.theme-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper {
+  background-image: none;
+  width: 100%;
+}
+/*.theme-entry .radgrid-grid-column-header-text tr th,*/
+
+.theme-entry .grid .grid-column-header-cell .grid-column-header-text {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -moz-transition: opacity linear 0.15s;
+  -ms-transition: opacity linear 0.15s;
+  -o-transition: opacity linear 0.15s;
+  -webkit-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+}
+/*.theme-entry .radgrid-grid-column-header-text tr th,*/
+
+.theme-entry .grid .grid-column-header-cell:hover .grid-column-header-text {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -moz-transition: opacity linear 0.15s;
+  -ms-transition: opacity linear 0.15s;
+  -o-transition: opacity linear 0.15s;
+  -webkit-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+}
+.theme-entry .grid .grid-column-header-cell.asc .grid-column-header-text,
+.theme-entry .grid .grid-column-header-cell.desc .grid-column-header-text {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 3rem;
+  background-repeat: no-repeat;
+  /*make space for the up/down arrow, while allowing the ellipsis to show*/
+
+}
+.theme-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper:before,
+.theme-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper:before {
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+/*#endregion*/
+
+/*#region action item*/
+
+.theme-entry .grid-content-table a.action-row:focus,
+.theme-entry .runtime-list-item a:focus {
+  outline: 1px dotted #3cb0df;
+}
+/*#endregion*/
+
+/*#region grid Filter*/
+
+.theme-entry .grid.with-header .grid-toolbars .filterContainer .filter {
+  display: inline-block;
+  margin-left: 1rem;
+  /*same as view indent*/
+
+}
+.theme-entry .filterContainer {
+  line-height: 5.2rem;
+  /*ensures inline-controls wrap on smaller*/
+
+}
+.theme-entry .filterContainer .searchDdl {
+  width: auto;
+  /*override - base*/
+
+}
+.theme-entry .filterContainer .quickSearch,
+.theme-entry .filterContainer .filterChosen {
+  min-width: 0px !important;
+  line-height: normal;
+  /*filter large*/
+
+  /*override - inline*/
+
+}
+.theme-entry .filterContainer .filterLabel {
+  margin-left: 0;
+  /* override custom control styling*/
+  margin-right: 0.5rem;
+}
+/*BUG FIX: set the minimum width to something sensible, otherwise the dropdown collapses to the size of the selected item which might be small*/
+
+.theme-entry .filterContainer .input-control.dropdown-box {
+  min-width: 12rem;
+  /*override - base - 40px hardcoded*/
+
+}
+/*#endregion*/
+
+/*#region rows - content*/
+
+/*content cells*/
+
+.theme-entry .grid .grid-body-content-wrapper {
+  background-color: white;
+  /*background to all rows*/
+
+}
+.theme-entry .grid.without-footer.without-summary .grid-body-content-wrapper {
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+.theme-entry .grid .grid-content-cell {
+  width: 100%;
+  min-height: 2.2rem;
+}
+/*content cell - text truncation*/
+
+/*ensure that ellipsis are used for non-wrapping overflowing cells*/
+
+/*override - should be in base*/
+
+.theme-entry span.runtime-list-item {
+  overflow: hidden;
+  width: 100%;
+  -moz-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.theme-entry.runtime-form span.runtime-list-item-wrap,
+.theme-entry.runtime-form span.runtime-list-item {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5rem 0.6rem;
+  /*the headers have a 2px border and a 6px padding moved from .theme-entry .grid .grid-content-cell-wrapper to ensure highlight shadow doesn't get cut off*/
+
+}
+/*#region row state - even/odd rows*/
+
+.theme-entry .grid table.grid-content-table tr.even > td {
+  background-color: whitesmoke;
+}
+/*#endregion*/
+
+/*#region row state - normal*/
+
+.theme-entry .grid-content-table tbody tr > td {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  box-sizing: border-box;
+  /*make sure all rows (even non-selected) have border width, so that text doesn't jump when selected*/
+
+}
+/*#endregion*/
+
+/*#region row state - hover */
+
+.theme-entry .grid table.grid-content-table tr:hover > td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover > td {
+  background-color: #bfeafb;
+}
+/*override other special rows, which have a different hover state*/
+
+.theme-entry .grid .grid-content-table tr.action-row:hover > td.action-row,
+.theme-entry .grid .grid-content-table tr.empty-grid:hover > td,
+.theme-entry .grid table.grid-content-table tr.empty-grid > td {
+  /*override - core */
+  background-color: transparent;
+}
+/*#endregion*/
+
+/*#region row state - selected*/
+
+/*note:  .WorklistItemGridRow is used to get the row, as the rows contain further tables in simple worklist mode */
+
+.theme-entry .grid table.grid-content-table tr.selected > td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row) > td {
+  background-color: #7fd5f7;
+  color: #00abf0;
+}
+.theme-entry .grid-content-table tbody tr.highlighted > td,
+.theme-entry .grid-content-table tbody tr.highlighted > td.first,
+.theme-entry .grid-content-table tbody tr.highlighted > td.last {
+  border-style: dotted;
+  border-top-color: #3cb0df;
+  border-bottom-color: #3cb0df;
+}
+.theme-entry .grid-content-table tbody tr.highlighted > td {
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+.theme-entry .grid-content-table tbody tr.highlighted > td.first,
+.theme-entry .grid-content-table tbody tr.highlighted > td:first-child {
+  border-left-color: #3cb0df;
+}
+.theme-entry .grid-content-table tbody tr.highlighted > td.last,
+.theme-entry .grid-content-table tbody tr.highlighted > td:last-child {
+  border-right-color: #3cb0df;
+}
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region Count/Sum rows*/
+
+/*Row containing count or sum information*/
+
+.theme-entry .grid.with-summary .grid-summary {
+  border: none;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+  /*hide the parts of the box-shadow overlapping the view box-shadow*/
+
+}
+.theme-entry .grid-summary .grid-summary-item {
+  background-color: #dedfde;
+  border-color: transparent;
+  border-bottom-color: #bcc4cd;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.theme-entry .grid-summary .grid-summary-item-wrapper {
+  border: none;
+  /*override - base*/
+
+}
+.theme-entry.runtime-form .grid .grid-summary-item .grid-content-cell-wrapper > .SourceCode-Forms-Controls-Web-Label,
+.theme-entry.runtime-form .grid .grid-summary-item .grid-content-cell-wrapper > .SourceCode-Forms-Controls-Web-DataLabel {
+  padding: 0.5rem 0.6rem;
+}
+/*#endregion*/
+
+/*#region empty grid item */
+
+/*must come after all row item state rules*/
+
+.theme-entry .grid-content-table tbody tr.highlighted.empty-grid td.empty-grid {
+  border-color: transparent;
+  background-color: transparent;
+}
+.theme-entry td.empty-grid {
+  text-align: center;
+  font-style: italic;
+}
+/*#endregion*/
+
+/*#region Grid Footer */
+
+.theme-entry .grid .grid-footer .toolbar {
+  border-radius: 0 0 4px 4px;
+}
+/*#endregion*/
+
+/*#region paging control structure*/
+
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button {
+  position: relative;
+}
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-right {
+  float: right;
+}
+.theme-entry .grid-footer .grid-paging-control {
+  position: absolute;
+  bottom: 0;
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.theme-entry .grid-footer .grid-paging-control > *,
+.theme-entry .grid .grid-paging-control .text-input.input-control,
+html[dir=rtl] .theme-entry .grid-footer .grid-paging-control .text-input.input-control {
+  display: inline-block;
+  float: none;
+}
+.theme-entry .grid .grid-paging-control .text-input.input-control {
+  width: auto;
+}
+.theme-entry .grid-footer .grid-paging-control .grid-paging-control-text {
+  display: none;
+}
+.theme-entry .grid .grid-paging-control .text-input.input-control input,
+html[dir=rtl] .theme-entry .grid .grid-paging-control .text-input.input-control input {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  padding-right: 0;
+  padding-left: 0;
+  width: 4rem;
+  border-radius: 4px;
+  vertical-align: top;
+  text-align: center;
+}
+/*#endregion*/
+
+/*#region add new row button*/
+
+.theme-entry .grid table.grid-content-table td.action-row .grid-content-cell-wrapper {
+  text-align: center;
+}
+.theme-entry .grid table.grid-content-table td.action-row a.action-row {
+  display: inline-block;
+  padding: 0.7rem 1.5rem 0.9rem 1.5rem;
+  border-radius: 4px;
+  background-color: #e6e6e6;
+}
+.theme-entry .grid table.grid-content-table td.action-row:hover a.action-row,
+/*the click event is on the cell*/ .theme-entry .grid table.grid-content-table td.action-row a.action-row:hover,
+.theme-entry .grid table.grid-content-table td.action-row a.action-row:focus {
+  background-color: #3cb0df;
+  color: white;
+}
+/*#endregion*/
+
+/*#region specific grid instances */
+
+.theme-entry #filterNameList.grid {
+  height: 100%;
+}
+.theme-entry #filterNameList .grid-column-headers {
+  display: none;
+}
+.theme-entry #filterNameList .grid-body-content {
+  top: 0;
+}
+.theme-entry #filterNameList table.grid-content-table td .grid-content-cell {
+  display: table-cell;
+}
+/*#endregion*/
+
+/*#endregion GRID*/
+
+/*#region FORM FIELDS*/
+
+.theme-entry .panel-body-wrapper > div > .wrapper {
+  display: table;
+  /*BUG FIX: The rows/cells will not be full width otherwise - ie/ff*/
+  border-collapse: separate;
+}
+.theme-entry .dialog.id-hyperlink-config .panel-body-wrapper > div > .wrapper {
+  border-spacing: 2px;
+  /*allow necessary spacing to be added between hyperlink form field rows*/
+
+}
+.theme-entry .form-field {
+  display: table-row;
+}
+.theme-entry .form-field:first-child {
+  margin-top: 0;
+  /* override base theme */
+
+}
+.theme-entry .form-field > label.form-field-label,
+html[dir=rtl] .theme-entry .form-field > label.form-field-label,
+.theme-entry .form-field > .form-field-element-wrapper,
+html[dir=rtl] .theme-entry .form-field > .form-field-element-wrapper {
+  display: table-cell;
+  float: none;
+  margin: 0;
+}
+.theme-entry .form-field > label.form-field-label {
+  margin: 0 0.2rem 0 0;
+}
+/*#endregion FORM FIELDS*/
+
+/*#region POPUP / DIALOG */
+
+/*#region resets*/
+
+.theme-entry .popup-header,
+.theme-entry .popup-footer,
+.theme-entry .popup-body,
+.theme-entry .popup-body .popup-body-c,
+.theme-entry .popup-footer .popup-footer-c {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  border: none;
+  background-color: transparent;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.theme-entry .popup-header-c,
+.theme-entry .popup-header-wrapper {
+  height: auto;
+  /*override - base*/
+
+}
+.theme-entry .popup .panel:not(.full) .panel-body,
+.theme-entry .popup .panel:not(.full) .panel-body-m {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+/*#endregion resets - end*/
+
+/*#region messagebox override*/
+
+.theme-entry .popup.dialog.error-message:not(.runtime-message) .panel .panel-body,
+.theme-entry .popup.dialog.error-message:not(.runtime-message) .panel .panel-body-m,
+.theme-entry .popup.dialog.error-message:not(.runtime-message) .panel.full .panel-body-m,
+.theme-entry .popup.dialog.warning-message:not(.runtime-message) .panel .panel-body,
+.theme-entry .popup.dialog.warning-message:not(.runtime-message) .panel .panel-body-m,
+.theme-entry .popup.dialog.warning-message:not(.runtime-message) .panel.full .panel-body-m,
+.theme-entry .popup.dialog.info-message:not(.runtime-message) .panel .panel-body,
+.theme-entry .popup.dialog.info-message:not(.runtime-message) .panel .panel-body-m,
+.theme-entry .popup.dialog.info-message:not(.runtime-message) .panel.full .panel-body-m,
+.theme-entry .popup.dialog.confirmation-message:not(.runtime-message) .panel .panel-body,
+.theme-entry .popup.dialog.confirmation-message:not(.runtime-message) .panel .panel-body-m,
+.theme-entry .popup.dialog.confirmation-message:not(.runtime-message) .panel.full .panel-body-m {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+/*#endregion*/
+
+/*#region main structure*/
+
+.theme-entry .popup,
+.theme-entry .dialog {
+  z-index: 2;
+  background-color: #efefef;
+  -moz-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  /*above any other z-indexes, like the paging control*/
+
+}
+.theme-entry .dialog {
+  display: block;
+}
+.theme-entry .dialog .popup-header,
+.theme-entry .dialog .popup-body,
+.theme-entry .dialog .popup-footer {
+  display: block;
+}
+.theme-entry .dialog .popup-header > *,
+.theme-entry .dialog .popup-body > *,
+.theme-entry .dialog .popup-footer > * {
+  display: inline-block;
+}
+.theme-entry .dialog .popup-header > .popup-header-c,
+.theme-entry .dialog .popup-footer > .popup-footer-c {
+  width: 100%;
+  height: auto;
+}
+.ie9 .theme-entry .dialog .popup-footer > .popup-footer-c {
+  width: 100% !important;
+}
+.theme-entry .dialog .popup-body > .popup-body-c {
+  width: 100%;
+  height: 100%;
+}
+.theme-entry .dialog .popup-header > .popup-header-c {
+  vertical-align: middle;
+  /*title and control button vertically middle of header*/
+
+}
+.theme-entry .dialog .popup-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.theme-entry .dialog.no-buttons .popup-body {
+  bottom: 1rem;
+}
+.theme-entry .popup-header,
+.theme-entry .popup-footer {
+  position: absolute;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: auto;
+  left: 1rem;
+  right: 1rem;
+}
+.theme-entry .popup-header {
+  top: 0;
+}
+.theme-entry .popup-footer {
+  bottom: 0;
+}
+/*#endregion*/
+
+/*#region dialog overrides for message boxes - height of popup will expand with content to a max height and then a scrollbar will appear*/
+
+.theme-entry .dialog.error-message:not(.runtime-message) .popup-body,
+.theme-entry .dialog.warning-message:not(.runtime-message) .popup-body,
+.theme-entry .dialog.info-message:not(.runtime-message) .popup-body,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-body {
+  position: relative;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+}
+.theme-entry .dialog.error-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.error-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.warning-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.warning-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.info-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.info-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-footer {
+  position: relative;
+  left: auto;
+  right: auto;
+  margin: 0 1rem;
+}
+.theme-entry .dialog.error-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.warning-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.info-message:not(.runtime-message) .popup-header,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-header {
+  top: auto;
+}
+.theme-entry .dialog.error-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.warning-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.info-message:not(.runtime-message) .popup-footer,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-footer {
+  bottom: auto;
+}
+/*#endregion*/
+
+/*#region header*/
+
+.theme-entry .dialog .popup-header,
+.theme-entry .dialog .popup-footer {
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+.theme-entry .dialog .popup-header-c,
+.theme-entry .dialog .popup-header-wrapper {
+  height: 100%;
+  cursor: default;
+  /*to fill the 5.2rem hieght of the header*/
+
+}
+.theme-entry .dialog .popup-header-c {
+  line-height: normal;
+}
+.theme-entry .dialog .popup-header-wrapper {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.theme-entry .dialog .popup-header-wrapper > .wrapper {
+  display: table-row;
+}
+.theme-entry .dialog .popup-header-wrapper > .wrapper > div {
+  position: static;
+  right: auto;
+  left: auto;
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+  /*override - base*/
+
+}
+.theme-entry .dialog .popup-header-text {
+  right: auto !important;
+  display: inline;
+  float: none;
+  padding-left: 0;
+  padding-top: 0.1rem;
+  color: #313841;
+  line-height: normal;
+  -moz-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  width: auto;
+  /*override - base*/
+
+  /*override - inline*/
+
+  /*very dark blue/black*/
+
+}
+.theme-entry .dialog .popup-header-buttons {
+  width: 30px;
+}
+.theme-entry .dialog.sub-view .popup-header-buttons,
+.theme-entry .dialog.sub-form .popup-header-buttons {
+  width: 52px;
+}
+/*#endregion*/
+
+/*#region content*/
+
+.theme-entry .dialog .panel > .panel-body {
+  padding: 0;
+  /*not text related*/
+
+}
+.theme-entry .dialog.id-hyperlink-config .panel > .panel-body {
+  padding: 0.8rem 0;
+}
+.theme-entry .dialog.sub-view iframe.runtime-popup {
+  background: #efefef;
+}
+/*#endregion*/
+
+/*#region footer*/
+
+.theme-entry .dialog .popup-footer {
+  margin-top: 1rem;
+  /*spacer between horiz rule and popup content*/
+
+}
+.theme-entry .dialog .popup-footer {
+  background-position: top;
+}
+.theme-entry .dialog .popup-footer .popup-footer-c {
+  float: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 0;
+  vertical-align: middle;
+  /*bug - 3px was  being added to the bottom of this*/
+
+  /*not font dependent*/
+
+  /*override 3px around the buttons*/
+
+}
+.theme-entry .dialog .popup-footer-c {
+  float: none;
+  padding: 0;
+  border-color: #0e1213;
+  background-color: transparent;
+  text-align: right;
+  /*override - base*/
+
+}
+html[dir=rtl] .theme-entry .dialog .popup-footer-c {
+  text-align: left;
+}
+.theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button {
+  display: inline-block;
+  float: none;
+  margin-left: 3px;
+}
+html[dir=rtl] .theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button {
+  margin-right: 3px;
+  margin-left: 0;
+}
+.theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button.help {
+  float: left;
+  margin-left: 0;
+}
+html[dir=rtl] .theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button.help {
+  float: right;
+  margin-right: 0;
+}
+/*#endregion*/
+
+/*#region controlbox*/
+
+.theme-entry .dialog .popup-header-buttons a {
+  margin-left: 1rem;
+}
+html[dir="rtl"] .theme-entry .dialog .popup-header-buttons a {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+/*#endregion*/
+
+/*#region specific popups */
+
+/*override assigned sizes on dialogs*/
+
+/* User Filters List Dialog */
+
+.theme-entry .dialog#listFilterNamePopup {
+  /*min-height:100px;*/
+  height: auto !important;
+  /*override - inline*/
+
+}
+/* Filter & Sort Configuration Dialog*/
+
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog .form-field {
+  display: block;
+}
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog .form-field > label.form-field-label {
+  display: block;
+  float: left;
+}
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog .form-field > .form-field-element-wrapper {
+  display: block;
+  margin-left: 14.7rem;
+}
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog .tab-box.full .tab-box-body-m,
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog #FilterPanel .panel-body-m {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog .grid.full,
+.theme-entry .dialog#ConditionWidgetDialog .grid.full {
+  height: 100%;
+}
+.theme-entry .dialog#RuntimeFilterOrderWidgetDialog #FilterTopPane {
+  position: relative !important;
+  /*override - inline*/
+
+}
+.theme-entry .dialog#ConditionWidgetDialog .grouping-button {
+  text-align: center;
+}
+.theme-entry .dialog#ConditionWidgetDialog .expression-dropdown-container {
+  width: 8rem;
+}
+/* Picker Search Dialog */
+
+.theme-entry .dialog#PickerSearchDialog .form-field + .form-field .form-field-element-wrapper > *:first-child {
+  margin-top: 0.5rem;
+}
+.theme-entry .dialog#PickerSearchDialog .form-field > label.form-field-label {
+  display: none;
+  /*cheeky change - remove the labels*/
+
+}
+.theme-entry .dialog#PickerSearchDialog .input-control.select-box.picker-input .input-control-body {
+  width: 100%;
+}
+.theme-entry .dialog#PickerSearchDialog .picker-input .editable-area span.entity,
+.theme-entry .dialog#PickerSearchDialog .picker-input .editable-area span.spacer {
+  white-space: normal;
+}
+.theme-entry .dialog#PickerSearchDialog .picker-input .editable-area {
+  line-height: normal;
+}
+/* Hyperlink Configuration Dialog */
+
+.theme-entry .dialog.id-hyperlink-config .input-control .input-control-m-c {
+  margin-left: 0.1rem;
+  /*space between required label border and textfield*/
+
+}
+/* Message Box Dialogs */
+
+.theme-entry .dialog.error-message:not(.runtime-message),
+.theme-entry .dialog.warning-message:not(.runtime-message),
+.theme-entry .dialog.info-message:not(.runtime-message),
+.theme-entry .dialog.confirmation-message:not(.runtime-message) {
+  height: auto !important;
+}
+/*Confirmation message box - override panel header style when in a message box*/
+
+.theme-entry .message-box-content .panel {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 1.2rem;
+}
+.theme-entry .dialog.error-message .message-box-content .panel,
+/*runtime-message override*/ .theme-entry .dialog.warning-message .message-box-content .panel,
+.theme-entry .dialog.info-message .message-box-content .panel,
+.theme-entry .dialog.confirmation-message .message-box-content .panel,
+.theme-entry .dialog.runtime-message .message-box-content .panel {
+  padding-top: 0;
+}
+html[dir=rtl] .theme-entry .message-box-content > .panel.full {
+  margin-left: 49px;
+  margin-right: 0px;
+}
+.theme-entry .message-box-content .panel-header {
+  height: auto;
+  background-color: transparent;
+}
+.theme-entry .message-box-content .panel-header-c {
+  min-height: 0;
+}
+.theme-entry .message-box-content .panel-header-wrapper {
+  height: auto;
+  line-height: normal;
+  /*override the base 5.2*/
+
+}
+.theme-entry .message-box-content .panel-header-text {
+  padding: 0;
+  color: black;
+  font-weight: bold;
+}
+.theme-entry .message-box-content .panel-header-wrapper,
+.theme-entry .message-box-content .panel-header-wrapper .panel-header-text {
+  overflow: visible;
+  /*override - theme*/
+
+}
+.theme-entry .popup .message-box-content .panel-body,
+.theme-entry .message-box-content .panel.full .panel-body/*override - core*/ {
+  top: 4rem;
+  padding-top: 0;
+  background-color: transparent;
+}
+.theme-entry .popup.dialog.runtime-message .message-box-content .scroll-wrapper {
+  padding-right: 0.5rem;
+}
+.theme-entry .dialog.runtime-message.size-large .message-box-content .panel.full:not(.without-header) .panel-body {
+  margin-bottom: 0.8rem;
+  background-color: transparent;
+}
+.theme-entry .dialog.runtime-message.size-medium .message-box-content .panel.full:not(.without-header) .panel-body {
+  margin-bottom: 0.8rem;
+  background-color: transparent;
+}
+.theme-entry .dialog.runtime-message.size-small .message-box-content .panel.full:not(.without-header) .panel-body {
+  margin-bottom: 0.8rem;
+  background-color: transparent;
+}
+.theme-entry .dialog.runtime-message .message-box-content .panel.full.without-header .panel-body {
+  top: 1.2rem;
+  margin-bottom: 0.8rem;
+  background-color: transparent;
+}
+.theme-entry .popup .message-box-content .panel-body-m-c {
+  padding: 0.2rem 0.2rem 0 0;
+}
+.theme-entry .dialog .message-box-content .panel-header div {
+  background: none;
+}
+.theme-entry .dialog .message-box-content .panel-header-text {
+  padding-top: 1.2rem;
+}
+.theme-entry .dialog.runtime-message .panel-header-text,
+/*Message box override*/ .theme-entry .dialog.error-message .panel-header-text,
+.theme-entry .dialog.info-message .panel-header-text {
+  text-shadow: none;
+}
+.theme-entry .popup.dialog.error-message:not(.runtime-message) .message-box-content .panel-body-m-c,
+/*override for message boxes*/ .theme-entry .popup.dialog.warning-message:not(.runtime-message) .message-box-content .panel-body-m-c,
+.theme-entry .popup.dialog.info-message:not(.runtime-message) .message-box-content .panel-body-m-c,
+.theme-entry .popup.dialog.confirmation-message:not(.runtime-message) .message-box-content .panel-body-m-c {
+  margin: 1.6rem 0 0.6rem;
+  max-height: 16rem;
+  overflow: auto;
+}
+/*messagebox icon positioning*/
+
+.theme-entry .message-box-content > .panel.full,
+.theme-entry .message-box-content.confirmation > .panel.full {
+  margin-left: 4.9rem;
+  /*linked to image size*/
+
+}
+.theme-entry .message-box-content:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  top: 0.5rem;
+  left: 0;
+}
+.theme-entry .dialog.error-message:not(.runtime-message) .message-box-content,
+/*override for message boxes*/ .theme-entry .dialog.warning-message:not(.runtime-message) .message-box-content,
+.theme-entry .dialog.info-message:not(.runtime-message) .message-box-content,
+.theme-entry .dialog.confirmation-message:not(.runtime-message) .message-box-content {
+  min-height: 4.9rem;
+}
+.theme-entry .dialog.credentialsPopupDialog {
+  height: 244px;
+}
+.theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-label {
+  width: 140px;
+}
+.theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-element-wrapper {
+  margin-left: 147px;
+}
+html[dir=rtl] .theme-entry .dialog.credentialsPopupDialog #CacheCredentialsField .form-field-element-wrapper {
+  margin-right: 147px;
+}
+.theme-entry .dialog.credentialsPopupDialog .SignInForm {
+  height: 186px;
+}
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field:first-child {
+  margin-top: 0.5rem;
+}
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > label.form-field-label {
+  display: block;
+  float: left;
+}
+html[dir=rtl] .theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > label.form-field-label {
+  float: right;
+}
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > .form-field-element-wrapper {
+  display: block;
+  margin-left: 147px;
+}
+html[dir=rtl] .theme-entry .dialog.credentialsPopupDialog .SignInForm .form-field > .form-field-element-wrapper {
+  margin-left: 0;
+  margin-right: 147px;
+}
+.theme-entry .dialog.credentialsPopupDialog .credentialsRequiredReason {
+  margin-top: 12px;
+  overflow: hidden;
+}
+.theme-entry .dialog.credentialsPopupDialog .credentialsRequiredReason.loginFailed {
+  color: #b21e28;
+}
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .SourceCode-Forms-Controls-Web-Button .button-text {
+  color: rgba(255, 255, 255, 0.7);
+  -moz-transition: color linear 0.15s;
+  -o-transition: color linear 0.15s;
+  -webkit-transition: color linear 0.15s;
+  transition: color linear 0.15s;
+}
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .SourceCode-Forms-Controls-Web-Button:hover .button-text,
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .SourceCode-Forms-Controls-Web-Button:hover:focus .button-text,
+.theme-entry .dialog.credentialsPopupDialog .SignInForm .SourceCode-Forms-Controls-Web-Button:hover:active .button-text {
+  color: white;
+  -moz-transition: color linear 0.15s;
+  -o-transition: color linear 0.15s;
+  -webkit-transition: color linear 0.15s;
+  transition: color linear 0.15s;
+  /*white*/
+
+}
+/*#endregion*/
+
+/*as the popups are now fluid height, set the grid height */
+
+.theme-entry .dialog .full.grid {
+  height: auto;
+}
+/*#endregion POPUP*/
+
+/*#region iBUTTON  - info button*/
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help {
+  padding: 0;
+  padding-right: 0;
+  padding-left: 0;
+  min-width: 0;
+  font-family: monospace;
+  /*ensures the image is vertically centered using line-height*/
+
+  /*override - generic button style*/
+
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover {
+  /* override - base background gradient style */
+  background: -moz-linear-gradient(top, #598ca9 0%, #43728c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #598ca9), color-stop(100%, #43728c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #598ca9 0%, #43728c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #598ca9 0%, #43728c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #598ca9 0%, #43728c 100%);
+  /* IE10+ */
+  background: linear-gradient(#598ca9 0%, #43728c 100%);
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help .Button-Image {
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+  /*override - base*/
+
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help .Button-Image {
+  opacity: 0.7;
+  -moz-transition: opacity linear 0.15s;
+  -o-transition: opacity linear 0.15s;
+  -webkit-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover .Button-Image {
+  opacity: 1;
+  -moz-transition: opacity linear 0.15s;
+  -o-transition: opacity linear 0.15s;
+  -webkit-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+}
+html[dir=ltr] #SessionExpirationWarningDialog label.input-control.checkbox .input-control-text {
+  margin-left: 3px;
+}
+html[dir=rtl] #SessionExpirationWarningDialog label.input-control.checkbox .input-control-text {
+  margin-right: 3px;
+}
+html[dir=ltr] .theme-entry #SessionExpirationWarningDialog label.input-control.checkbox {
+  margin-left: -1px;
+  /*lithium checkbox image has less whitespace*/
+
+}
+html[dir=rtl] .theme-entry #SessionExpirationWarningDialog label.input-control.checkbox {
+  margin-right: 0;
+  /*lithium checkbox image has less whitespace*/
+
+}
+/*#endregion*/
+
+/*#region MENU */
+
+.theme-entry .menu {
+  border-color: #aaaaaa;
+  background-color: white;
+  background-position: -23px 0;
+  background-repeat: repeat-y;
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  /*background-image: url("menu_bg.png");*/
+
+}
+.theme-entry .menu li:hover,
+.theme-entry .menu li.active {
+  border-color: transparent;
+  background: #3cb0df;
+}
+.theme-entry .menu li:hover span,
+.theme-entry .menu li.active span {
+  color: white;
+}
+.theme-entry .menu li.seperator span {
+  border-color: #e0e0e0 #e0e0e0 white white;
+  background-color: #e0e0e0;
+}
+.theme-entry .menu a.menu-item {
+  padding: 0.9rem 2.3rem 1rem 0.3rem;
+  color: #222222;
+}
+/*#endregion MENU */
+
+/*#region TABS */
+
+/*#region resets*/
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.selected.tab:hover .tab-wrapper {
+  height: auto;
+  border: none;
+  background: none;
+  -ms-filter: "none";
+  filter: none;
+}
+/*these values are set by the page author*/
+
+html .theme-entry .tab-box .tab-content,
+html .theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper,
+html .theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-wrapper {
+  border-color: transparent !important;
+  /*override the hard coded white in design time*/
+
+}
+/*#endregion resets*/
+
+/*design time */
+
+.theme-entry .tab-box-body {
+  position: relative;
+  top: auto;
+  bottom: auto;
+}
+.theme-entry .tab-box-body .form {
+  background-color: transparent;
+  /*override above color*/
+
+}
+/*design time */
+
+.theme-entry .tab-box ul.tab-box-tabs {
+  height: auto;
+  border: none;
+  border-width: 0;
+}
+.theme-entry .tab-box ul.tab-box-tabs li {
+  display: inline-block;
+  vertical-align: top;
+}
+.theme-entry .tab-box ul.tab-box-tabs li a.tab {
+  display: inline-block;
+  border: none;
+  background: transparent;
+  color: #343e41;
+  vertical-align: top;
+  /*expand to fit the li's fixed height*/
+
+}
+.theme-entry .tab-box ul.tab-box-tabs li a.tab,
+.theme-entry .tab-box ul.tab-box-tabs li a.tab.selected {
+  height: auto;
+}
+.theme-entry .tab-box ul.tab-box-tabs li a.tab .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs li a.tab.selected .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus:hover .tab-wrapper {
+  height: auto;
+  position: relative;
+  padding: 0 1.2rem;
+  /*design time - so remove-tab button can be placed*/
+
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-text,
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon {
+  display: inline-block;
+  float: none;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon {
+  vertical-align: text-bottom;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab.disabled .tab-wrapper {
+  color: #cccccc;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper {
+  background-color: transparent;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-text {
+  color: #c2ccdb;
+  /*tab text color*/
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+  float: none;
+  height: auto;
+  -moz-transition: opacity linear 0.15s;
+  -ms-transition: opacity linear 0.15s;
+  -o-transition: opacity linear 0.15s;
+  -webkit-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+}
+.theme-entry #FilterTabBox.tab-box ul.tab-box-tabs a.tab .tab-text {
+  margin-left: 0;
+  margin-right: 0.6rem;
+}
+.theme-entry #FilterTabBox.tab-box ul.tab-box-tabs a.tab .tab-icon {
+  margin-top: 0;
+}
+/*tab text in a tab control embedded on a dialog*/
+
+.theme-entry .popup .tab-box ul.tab-box-tabs a.tab .tab-text {
+  color: rgba(0, 0, 0, 0.5);
+  /*tab text color*/
+
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-text {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -moz-transition: opacity linear 0.15s;
+  -ms-transition: opacity linear 0.15s;
+  -o-transition: opacity linear 0.15s;
+  -webkit-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-text,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-text {
+  color: #313841;
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
+/*selected tab and body - same color */
+
+.theme-entry .tab-box .tab-box-body,
+.theme-entry .tab-box.full.tabs-top .tab-box-body,
+/*tabs.css override*/ .theme-entry .tab-box ul.tab-box-tabs a.tab.selected {
+  background-color: white;
+  /*override - core*/
+
+}
+/*selected tab and body - same color - tab control embedded in a dialog (e.g. worklist filters dialog) */
+
+.theme-entry .dialog .tab-box .tab-box-body,
+.theme-entry .dialog .tab-box.full.tabs-top .tab-box-body,
+/*tabs.css override*/ .theme-entry .dialog .tab-box ul.tab-box-tabs a.tab.selected,
+.theme-entry .dialog .tab-box ul.tab-box-tabs a.tab.selected:hover {
+  background-color: #e6e6e6;
+}
+.theme-entry .dialog .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper {
+  background-color: transparent !important;
+}
+/*tab body, when inside a dialog (i.e. on a light background) */
+
+.theme-entry .dialog .tab-box .tab-box-body,
+.theme-entry .dialog .tab-box.full.tabs-top .tab-box-body {
+  padding: 0.5rem;
+}
+/*override when tabs should not be showing at all - design-time*/
+
+.theme-entry .tab-box.hide-tabs .tab-box-body,
+.theme-entry .tab-box.full.tabs-top.hide-tabs .tab-box-body/*tabs.css override*/ {
+  background-color: transparent;
+}
+/*tabs buttons - focus states*/
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab.focus .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus:hover .tab-wrapper {
+  border-color: #3cb0df;
+  /*green - presumably*/
+
+}
+.theme-entry .tab-box.full.tabs-top.hide-tabs .tab-box-body {
+  top: 0;
+}
+.theme-entry .tab-box.with-header .tab-box-header-c {
+  border-color: white;
+  background: #f9f9f9;
+  /* Old browsers */
+
+}
+/*tab remove button - design time */
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-remove.tab-control {
+  margin-left: 1rem;
+  /*design time*/
+
+}
+/*tab body*/
+
+.theme-entry .tab-box .tab-box-body {
+  border: none;
+}
+/*#endregion TABS */
+
+/*#region SPINNER CONTROL */
+
+/*Found in the datetime picker (calendar) - an up/down textbox*/
+
+.theme-entry .spinner {
+  background: white;
+  display: table;
+  width: 100%;
+}
+.theme-entry .spinner .spinner-inputs,
+.theme-entry .spinner .spinner-buttons {
+  right: auto;
+  /*override - base*/
+  display: table-cell;
+  vertical-align: middle;
+  white-space: nowrap;
+  /*make sure the buttons are inline*/
+
+  /*override - base*/
+
+}
+.theme-entry .spinner .spinner-inputs {
+  border-width: 0;
+  /* override - base */
+  width: auto;
+  /*push the buttons right - cannot be 100% otherwise ie will stretch to max-width*/
+
+}
+.theme-entry .spinner.active .spinner-inputs {
+  border-color: #3cb0df;
+}
+.theme-entry .spinner .spinner-inputs .spinner-input-wrapper,
+.theme-entry .calendar-outline .timepicker-content .spinner .spinner-input-wrapper {
+  border: none;
+  /* override - base */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*auto height will respect the line-height, setting the height to 3.2rem will stop the top border from showing*/
+  overflow: hidden;
+  /*BUG FIX: when the control was active the top border wasn't showing*/
+  width: 100%;
+  /* override - base */
+
+}
+.theme-entry .spinner .spinner-inputs .spinner-text-input {
+  height: inherit;
+  padding: 0;
+  width: 1.9rem;
+}
+.theme-entry .spinner .spinner-inputs .spinner-text-input:last-child {
+  width: 2.5rem;
+}
+.theme-entry .spinner .spinner-inputs .spinner-delimiter {
+  height: inherit;
+  position: static;
+  /* override - base */
+  top: auto;
+  /* override - base */
+
+}
+html[dir=rtl] .theme-entry .spinner .spinner-inputs .spinner-input-wrapper {
+  display: inherit;
+  padding-right: 3px;
+}
+.theme-entry .spinner .spinner-buttons button {
+  background-color: white;
+  border: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: inherit;
+  width: 100%;
+}
+.theme-entry .spinner .spinner-buttons .spinner-up-button {
+  border-top-right-radius: 2px;
+}
+.theme-entry .spinner .spinner-buttons .spinner-down-button {
+  border-bottom-right-radius: 2px;
+}
+.theme-entry .spinner .spinner-buttons .spinner-up-button:focus,
+.theme-entry .spinner .spinner-buttons .spinner-down-button:focus {
+  background-color: #3cb0df;
+  outline: none;
+}
+/*#endregion SPINNER CONTROL */
+
+/*#region CALENDAR POPUP*/
+
+/*#region resets*/
+
+.theme-entry .popup.id-calendar-control-popup,
+.theme-entry .calendar-outline,
+.theme-entry .calendar-content-outside,
+.theme-entry .top-calendar {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+/*#endregion resets end*/
+
+.theme-entry .popup.id-calendar-control-popup {
+  width: 28.4rem !important;
+  z-index: 100000;
+  /* ensures the calendar popup will show over any validation tooltips */
+
+}
+.theme-entry .popup.id-calendar-control-popup.type-date-time {
+  min-height: 46.1rem;
+}
+.theme-entry .calendar-outline {
+  width: 100%;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #636f7e;
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  color: #eceef0;
+}
+/*top calendar*/
+
+.theme-entry .top-calendar a {
+  margin-top: 1.4rem;
+}
+.theme-entry .top-calendar a.today-title {
+  border: solid 1px transparent;
+  border-radius: 3px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 1rem;
+  /*push the cal contents down */
+
+}
+.theme-entry .calendar-content,
+.theme-entry .calendar-content .week:first-child {
+  border-bottom: solid 1px #5a6472;
+}
+.theme-entry .popup.id-calendar-control-popup.mode-year .calendar-content .week:first-child,
+.theme-entry .popup.id-calendar-control-popup.mode-month .calendar-content .week:first-child {
+  border-bottom-width: 0;
+}
+.theme-entry .top-calendar-left,
+.theme-entry .top-calendar-right {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.theme-entry .top-calendar-left {
+  left: 0.7rem;
+}
+.theme-entry .top-calendar-right {
+  right: 0.7rem;
+}
+.theme-entry .calendar-content {
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+}
+/*days area*/
+
+.theme-entry .today-title,
+.theme-entry .today-title:visited,
+.theme-entry .today-text-value,
+.theme-entry .dayname,
+.theme-entry .day,
+.theme-entry .month,
+.theme-entry .year,
+.theme-entry .timepicker-spinner-label {
+  -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  -ms-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/*day normal color*/
+
+.theme-entry a.day,
+.theme-entry a.day:visited,
+.theme-entry a.month,
+.theme-entry a.month:visited,
+.theme-entry a.year,
+.theme-entry a.year:visited {
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: whitesmoke;
+}
+/*day disabled color*/
+
+.theme-entry .dayname,
+.theme-entry .not-of-current-month.day,
+.theme-entry .not-of-current-month.day:visited,
+.theme-entry .timepicker-spinner-label {
+  color: #9ea8b4;
+}
+.theme-entry .today-title,
+.theme-entry .today-title:visited,
+.theme-entry .today-text-value {
+  color: #c2ccdb;
+}
+/*day sizing*/
+
+.theme-entry .dayname {
+  color: #c2ccdb;
+}
+.theme-entry .dayname,
+.theme-entry a.day,
+.theme-entry a.day:hover {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid transparent;
+  text-align: center;
+  line-height: 4rem;
+}
+/*month and year view*/
+
+.theme-entry .month,
+.theme-entry .year,
+.theme-entry .month:hover,
+.theme-entry .year:hover {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 7rem;
+  height: 9.4rem;
+  border: 1px solid transparent;
+  line-height: 9.4rem;
+}
+.theme-entry .week {
+  position: relative;
+  min-width: 0;
+  white-space: nowrap;
+}
+.theme-entry .today-text .today-text-label,
+.theme-entry .today-text br {
+  display: none;
+}
+.theme-entry .day.today {
+  border-color: #7d8696;
+}
+/*standard hover styles in calendar picker*/
+
+.theme-entry .day:hover,
+.theme-entry .month:hover,
+.theme-entry .year:hover {
+  background-color: #7d8696;
+  /*grey*/
+
+}
+.theme-entry .day.selected,
+.theme-entry .month.selected,
+.theme-entry .year.selected,
+.theme-entry .day.selected:hover,
+.theme-entry .month.selected:hover,
+.theme-entry .year.selected:hover,
+.theme-entry .day.active,
+.theme-entry .month.active,
+.theme-entry .year.active {
+  border-color: #3cb0df;
+  background-color: #3cb0df;
+}
+.theme-entry .today-title:hover {
+  background-color: #3cb0df;
+  color: white;
+}
+/*datetime popup extras*/
+
+.theme-entry .popup.id-calendar-control-popup .timepicker-content {
+  padding: 0 0.8rem;
+}
+.theme-entry .popup.id-calendar-control-popup .timepicker-content .timepicker-spinner-label {
+  display: none;
+}
+.theme-entry .popup.id-calendar-control-popup .timepicker-content .spinner {
+  margin-left: 0;
+}
+.theme-entry .timepicker-buttons {
+  text-align: center;
+}
+.theme-entry .calendar-outline .timepicker-content .timepicker-ok-button,
+.theme-entry .calendar-outline .timepicker-content .timepicker-cancel-button,
+.mozilla .theme-entry .calendar-outline .timepicker-content .timepicker-ok-button,
+.mozilla .theme-entry .calendar-outline .timepicker-content .timepicker-cancel-button {
+  margin: 0.8rem 0;
+  width: 13rem;
+}
+.theme-entry .calendar-outline .timepicker-content .timepicker-ok-button {
+  margin-right: 0.8rem;
+}
+/*#endregion CALENDAR POPUP*/
+
+/*#region RATING CONTROL */
+
+.theme-entry .ratingWrapper {
+  padding: 0.3rem 0 0 0.3rem;
+  /* keeps spacing in line with margin between stars */
+
+}
+.theme-entry .ratingStar {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 0 0.3rem 0.3rem 0 !important;
+  /* override base - keeps spacing for wrapping rating controls */
+
+}
+.theme-entry .ratingWrapper.disabled *,
+.theme-entry .ratingWrapper.read-only * {
+  cursor: default;
+}
+/*#endregion RATING CONTROL */
+
+/*#region SLIDER */
+
+/*slider value box display*/
+
+.theme-entry .dragdealer .handle {
+  min-width: 2rem;
+  min-height: 2rem;
+}
+.theme-entry .slider_value_display {
+  font-family: "Open Sans", "Segoe UI", Helvetica;
+  font-size: 1.2em;
+  color: #313841;
+  background: #f8f8f8;
+}
+.theme-entry .slider_value_display.bottom:after {
+  border-color: transparent transparent #f8f8f8 #f8f8f8;
+}
+.theme-entry .slider_value_display.top:after {
+  border-color: #f8f8f8 #f8f8f8 transparent transparent;
+}
+/*rail start/end point*/
+
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_start,
+.theme-entry .Slider-rail .Slider-rail-start,
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_end,
+.theme-entry .Slider-rail .Slider-rail-end {
+  position: absolute;
+  top: 0;
+  width: 0.8rem;
+  height: 2rem;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  filter: inherit;
+}
+/*rail start*/
+
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_start,
+.theme-entry .Slider-rail .Slider-rail-start {
+  left: 0.6rem;
+}
+/*rail end*/
+
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_end,
+.theme-entry .Slider-rail .Slider-rail-end {
+  right: 0.6rem;
+}
+/*rail*/
+
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_inner,
+.theme-entry .Slider-rail .Slider-rail-inner {
+  left: 0.6rem;
+  right: 0.6rem;
+  background-repeat: repeat-x;
+  height: 2rem;
+}
+/*thumb*/
+
+.theme-entry .ajax__slider_h_handle,
+.theme-entry .Slider-rail a.Slider {
+  width: 2rem;
+  height: 2rem;
+  filter: inherit;
+  cursor: default;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+/*state - hover*/
+
+.theme-entry .ajax__slider_h_handle:hover,
+.theme-entry .Slider-rail a.Slider:hover {
+  border-color: #56606f;
+  background: -webkit-linear-gradient(top, #7b8797 0%, #657182 100%);
+  background: -moz-linear-gradient(top, #7b8797 0%, #657182 100%);
+  background: -ms-linear-gradient(top, #7b8797 0%, #657182 100%);
+  background: -o-linear-gradient(top, #7b8797 0%, #657182 100%);
+  background: linear-gradient(top, #7b8797 0%, #657182 100%);
+}
+/*state - focus*/
+
+.theme-entry .ajax__slider_h_handle:focus,
+.theme-entry .Slider-rail a.Slider:focus,
+.theme-entry .ajax__slider_h_handle:active,
+.theme-entry .Slider-rail a.Slider:active {
+  border-color: #00abf0;
+  background: -webkit-linear-gradient(top, #41c0f3 0%, #3cb0df 100%);
+  background: -moz-linear-gradient(top, #41c0f3 0%, #3cb0df 100%);
+  background: -ms-linear-gradient(top, #41c0f3 0%, #3cb0df 100%);
+  background: -o-linear-gradient(top, #41c0f3 0%, #3cb0df 100%);
+  background: linear-gradient(top, #41c0f3 0%, #3cb0df 100%);
+  /*pulsing*/
+  -moz-animation: button_active ease-in-out infinite 0.7s alternate-reverse;
+  -o-animation: button_active ease-in-out infinite 0.7s alternate-reverse;
+  -webkit-animation: button_active ease-in-out infinite 0.7s alternate-reverse;
+  animation: button_active ease-in-out infinite 0.7s alternate-reverse;
+}
+/*State - normal/disabled*/
+
+.theme-entry .ajax__slider_h_handle,
+.theme-entry .Slider-rail a.Slider,
+.theme-entry .ajax__slider_h_handle.disabled:hover,
+.theme-entry .ajax__slider_h_handle.disabled:focus,
+.theme-entry .ajax__slider_h_handle.disabled:active,
+.theme-entry .Slider-rail.disabled a.Slider:hover,
+.theme-entry .Slider-rail.disabled a.Slider:focus,
+.theme-entry .Slider-rail.disabled a.Slider:active {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b5b5b5;
+  background-color: #e5e4e4;
+  background: -webkit-linear-gradient(top, #fcfcfc 0%, #e5e4e4 100%);
+  background: -moz-linear-gradient(top, #fcfcfc 0%, #e5e4e4 100%);
+  background: -ms-linear-gradient(top, #fcfcfc 0%, #e5e4e4 100%);
+  background: -o-linear-gradient(top, #fcfcfc 0%, #e5e4e4 100%);
+  background: linear-gradient(top, #fcfcfc 0%, #e5e4e4 100%);
+}
+.theme-entry .Slider-rail.disabled a.Slider,
+.theme-entry .ajax__slider_h_handle.disabled:hover,
+.theme-entry .ajax__slider_h_handle.read-only:hover,
+.theme-entry .ajax__slider_h_handle.disabled:focus,
+.theme-entry .ajax__slider_h_handle.read-only:focus,
+.theme-entry .ajax__slider_h_handle.disabled:active,
+.theme-entry .ajax__slider_h_handle.read-only:active,
+.theme-entry .Slider-rail.disabled a.Slider:hover,
+.theme-entry .Slider-rail.read-only a.Slider:hover,
+.theme-entry .Slider-rail.disabled a.Slider:focus,
+.theme-entry .Slider-rail.read-only a.Slider:focus,
+.theme-entry .Slider-rail.disabled a.Slider:active,
+.theme-entry .Slider-rail.read-only a.Slider:active {
+  -moz-animation: 0s ease 0s normal none 1 none;
+  -o-animation: 0s ease 0s normal none 1 none;
+  -webkit-animation: 0s ease 0s normal none 1 none;
+  animation: 0s ease 0s normal none 1 none;
+}
+/*State - read-only */
+
+.theme-entry .ajax__slider_h_handle.read-only,
+.theme-entry .ajax__slider_h_handle.read-only:hover,
+.theme-entry .ajax__slider_h_handle.read-only:focus,
+.theme-entry .ajax__slider_h_handle.read-only:active,
+.theme-entry .ajax__slider_h_handle.read-only.disabled,
+.theme-entry .ajax__slider_h_handle.read-only.disabled:hover,
+.theme-entry .ajax__slider_h_handle.read-only.disabled:focus,
+.theme-entry .ajax__slider_h_handle.read-only.disabled:active,
+.theme-entry .slider-control.read-only a.Slider,
+.theme-entry .slider-control.read-only a.Slider:hover,
+.theme-entry .slider-control.read-only a.Slider:focus {
+  background-image: none;
+  background-color: #636f80;
+  border-color: #636f80;
+  border-width: 2px;
+  opacity: 1;
+  filter: Alpha(opacity=100);
+}
+/*State - disabled */
+
+.theme-entry .ajax__slider_h_handle.disabled,
+.theme-entry .ajax__slider_h_handle.disabled:hover,
+.theme-entry .ajax__slider_h_handle.disabled:focus,
+.theme-entry .ajax__slider_h_handle.disabled:active,
+.theme-entry .slider-control .Slider-rail.disabled a.Slider,
+.theme-entry .slider-control .Slider-rail.disabled a.Slider:hover,
+.theme-entry .slider-control .Slider-rail.disabled a.Slider:focus {
+  opacity: 0.7;
+  filter: Alpha(opacity=70);
+}
+/* stops the cursor from showing the I-bar when hover & doesn't add to the height of the slider*/
+
+.theme-entry .ajax__slider_textbox {
+  display: none;
+}
+.theme-entry .editor-cell > .sliderWrapper {
+  height: 2rem;
+}
+.theme-entry .ajax__slider_h_rail,
+.theme-entry .Slider-rail/* Designtime specific */ {
+  height: 2rem;
+}
+/*#endregion SLIDER */
+
+/*#region HYPERLINK CONTROL */
+
+.theme-entry .hyperlinkTopLeftPanel.hide-browser-highlight {
+  border-width: 0;
+}
+.theme-entry a.Hyperlink,
+.theme-entry a.Hyperlink-NotSet,
+.theme-entry a.Hyperlink-NotSet.disabled {
+  border-width: 0;
+  color: #31657b;
+  text-decoration: underline;
+}
+.theme-entry a.Hyperlink-NotSet.disabled {
+  color: #9c9ea5;
+  cursor: default;
+}
+.theme-entry .hyperlinkTopCenterPanel,
+.theme-entry .hyperlinkTopRightPanel {
+  top: -0.1rem;
+  /*align hyperlink edit and delete buttons with hyperlink*/
+
+}
+.theme-entry .hyperlinkTopLeftPanel {
+  margin-right: 0.2rem;
+}
+/*#endregion HYPERLINK CONTROL */
+
+/*#region TOOLTIP */
+
+.theme-entry .tooltip {
+  border-color: #00abf0;
+  background-color: white;
+}
+.theme-entry .tooltip.pointer-down .tooltip-pointer {
+  border-top-color: #00abf0;
+}
+.theme-entry .tooltip.pointer-down .tooltip-pointer-inner {
+  border-top-color: white;
+}
+.theme-entry .tooltip.pointer-up .tooltip-pointer {
+  border-bottom-color: #00abf0;
+}
+.theme-entry .tooltip.pointer-left .tooltip-pointer {
+  border-right-color: #00abf0;
+}
+.theme-entry .tooltip.pointer-left .tooltip-pointer-inner {
+  border-right-color: white;
+}
+.theme-entry .tooltip.pointer-right .tooltip-pointer {
+  border-left-color: #00abf0;
+}
+.theme-entry .tooltip.pointer-right .tooltip-pointer-inner {
+  border-left-color: white;
+}
+.theme-entry .tooltip.validation {
+  background-color: #b21e28;
+  border-color: #b21e28;
+  border-radius: 0;
+}
+.theme-entry .tooltip.validation * {
+  color: white;
+}
+.theme-entry .tooltip.validation.pointer-down .tooltip-pointer,
+.theme-entry .tooltip.validation.pointer-down .tooltip-pointer-inner {
+  border-top-color: #b21e28;
+}
+.theme-entry .tooltip.validation.pointer-up .tooltip-pointer,
+.theme-entry .tooltip.validation.pointer-up .tooltip-pointer-inner {
+  border-bottom-color: #b21e28;
+}
+.theme-entry .tooltip.validation.pointer-left .tooltip-pointer,
+.theme-entry .tooltip.validation.pointer-left .tooltip-pointer-inner {
+  border-right-color: #b21e28;
+}
+.theme-entry .tooltip.validation.pointer-right .tooltip-pointer,
+.theme-entry .tooltip.validation.pointer-right .tooltip-pointer-inner {
+  border-left-color: #b21e28;
+}
+/*#endregion TOOLTIP */
+
+/*#region ATTACHMENT / PICTURE ATTACHMENT */
+
+/*#region resets*/
+
+.theme-entry .file-wrapper {
+  height: auto !important;
+  /*override - inline*/
+
+}
+/*#endregion*/
+
+/*file progress control */
+
+.theme-entry .file-progress {
+  fill: #98dc28;
+}
+/*state - normal*/
+
+.theme-entry .file-wrapper {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: rgba(0, 0, 0, 0.25);
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.webkit.safari .theme-entry .file-wrapper {
+  box-sizing: content-box;
+}
+/*state - uploading*/
+
+.theme-entry .file-progress-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: auto !important;
+  /*override - inline*/
+
+}
+.theme-entry .file-progress-wrapper > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1rem;
+  margin-left: -1rem;
+}
+.theme-entry .file-progress-wrapper > svg circle {
+  fill: #3cb0df !important;
+}
+.theme-entry .file-tn-cell img {
+  display: block;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+}
+/*state - uploaded*/
+
+.theme-entry .file-wrapper.uploaded {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.25);
+  -moz-transition: height linear 0.15s;
+  -ms-transition: height linear 0.15s;
+  -o-transition: height linear 0.15s;
+  -webkit-transition: height linear 0.15s;
+  transition: height linear 0.15s;
+  /*when changing between states*/
+
+}
+.theme-entry .file-wrapper.borderless,
+.theme-entry .file-wrapper.uploaded.borderless {
+  border-color: transparent;
+}
+.theme-entry .file-info.file-ellipsis {
+  color: #6b7785;
+}
+/*state - active*/
+
+.theme-entry .file-wrapper.active {
+  border-color: #3cb0df !important;
+}
+/*state - error*/
+
+.theme-entry td.file-tn-cell {
+  overflow: hidden;
+  position: relative;
+}
+.theme-entry .file-error:before {
+  content: '';
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: calc(50% - 2rem);
+  top: calc(50% - 2rem);
+  /*for error icon*/
+
+}
+.theme-entry .file-error .file-thumbnail-error {
+  display: none !important;
+  /*override - inline*/
+
+  /*this is a hard-coded image!!*/
+
+}
+/*IE cannot absolutely position an element inside a parent td cell - Revert to old styling*/
+
+.theme-entry .file-error {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ie9 .theme-entry .file-error:before,
+.ie10 .theme-entry .file-error:before,
+.ie11 .theme-entry .file-error:before {
+  display: none;
+}
+/*Editable List Display */
+
+.theme-entry a.fileImage.static {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  -moz-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.5rem 0.6rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*#endregion ATTACHMENT / PICTURE ATTACHMENT */
+
+/*#region DATA LABEL*/
+
+.theme-entry .SourceCode-Forms-Controls-Web-DataLabel {
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  -moz-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: pre;
+  -ms-word-wrap: normal;
+  word-wrap: normal;
+  cursor: default;
+}
+/*#endregion DATA LABEL*/
+
+/*#region TEXTBOX */
+
+.theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+.mozilla .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+.webkit.safari .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox {
+  padding-top: 0;
+  padding-bottom: 0.1rem;
+  padding-left: 0.5rem;
+}
+/*#endregion TEXTBOX*/
+
+/*#region SEARCH TEXT HIGHLIGHTING */
+
+.theme-entry .wrapAround {
+  background: #fff200;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  margin-left: -0.1rem;
+  margin-right: -0.1rem;
+  border-radius: 0.2rem;
+  background: linear-gradient(to bottom, #fff200 0%, #ffdb00 100%);
+  /*color: #ffdb00;*/
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.6);
+}
+.ie9 .theme-entry .wrapAround {
+  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.4);
+}
+/*#endregion*/
+
+/*#region LOADING ICONS */
+
+.theme-entry .ajaxLoader/* General AJAX Loader Spinner */ {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.theme-entry .base2.base1.modalizer/* Form Level Modalizer */ {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: none;
+  /* override core styling */
+  z-index: 2;
+}
+.theme-entry .base0.modal-element.ajaxLoader/* View Level Modalizer & Spinner */ {
+  background-color: rgba(239, 239, 239, 0.7);
+}
+.theme-entry .control-loading,
+.theme-entry .input-control.icon-control.loading .input-control-wrapper {
+  background-image: url(RuntimeTheme/LoadingAnimation_Dark16.gif) !important;
+  -moz-background-size: 16px;
+  background-size: 16px;
+}
+/*#endregion LOADING ICONS */
+
+/*#region Workflow Strip*/
+
+#WorkflowStrip.theme-entry {
+  margin-bottom: 1.2rem !important;
+  /* override inline */
+
+}
+.runtime-form.theme-entry + #WorkflowStrip.theme-entry {
+  margin-top: 1.2rem !important;
+  /* override inline */
+  margin-bottom: 0 !important;
+  /* override inline */
+
+}
+/*#endregion*/
+
+/*#region CONTEXT TREE DRAGGABLES */
+
+.theme-entry > a.ui-draggable-dragging {
+  height: 2.2rem;
+  padding: 0.1rem 0.4rem 0.1rem 2.7rem;
+  background-repeat: no-repeat;
+  background-position: 0.55rem center;
+  background-color: #bfeafb;
+  border-radius: 2px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  color: black;
+  text-decoration: none;
+  line-height: 2.2rem;
+}
+/*#endregion CONTEXT TREE DRAGGABLES */
+
+/* ***** DESIGN TIME OVERRIDES ***** */
+
+/*#region TABS - DESIGN TIME */
+
+#pgWizard .view-canvas {
+  border-color: transparent;
+}
+#pgOuterPanel.theme-entry #pgTabControl {
+  overflow: visible;
+}
+#pgWizard .theme-entry #pgTabControl .tab-box ul.tab-box-tabs a.tab .tab-control.tab-remove {
+  display: inline-block;
+  float: none;
+  margin-top: 0;
+  /* vertically align close button */
+
+}
+/*content area of tab*/
+
+/*#endregion TABS - DESIGN TIME */
+
+/*#region VIEW - DESIGN TIME */
+
+#pgOuterPanel.theme-entry .panel-canvas > .grid,
+#pgOuterPanel.theme-entry .panel-canvas > .panel {
+  border-width: 0;
+  /* override designtime */
+
+}
+#pgOuterPanel.theme-entry .theme-entry .panel-header-wrapper,
+#pgOuterPanel.theme-entry .grid-header-wrapper > .wrapper {
+  overflow: visible;
+  line-height: 5.2rem;
+  /*needed for when there is no view title set (the expand button must show) */
+
+}
+#pgOuterPanel.theme-entry .view-canvas table.editor-table {
+  border-width: 0;
+  /* override designer scoped styling */
+
+}
+/* view content - apply same padding of cells in preview */
+
+#pgOuterPanel.theme-entry .view-canvas .editor-cell {
+  padding: 1rem;
+}
+/* view content - removing padding from toolbar editor cells */
+
+#pgOuterPanel.theme-entry .view-canvas .editor-cell.toolbar {
+  padding: 0;
+}
+/* Remove gradient from the designtime styling */
+
+#pgOuterPanel.theme-entry .grid .grid-toolbars .toolbars .toolbar .toolbar-wrapper {
+  background: transparent !important;
+  border-bottom-width: 0;
+}
+/*#endregion VIEW - DESIGN TIME */
+

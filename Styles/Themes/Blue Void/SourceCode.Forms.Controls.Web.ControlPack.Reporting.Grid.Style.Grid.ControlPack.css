@@ -1,0 +1,1626 @@
+/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    /* #region IMAGE DESKTOP */
+    .theme-entry .StandardGrid .rgSortAsc
+    {
+        background-image: url(SortAscendingNormal.png);
+    }
+
+    .theme-entry .StandardGrid .rgSortDesc
+    {
+        background-image: url(SortDescendingNormal.png);
+    }
+
+    .theme-entry .StandardGrid .buttonFirstPage
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Normal16.png);
+    }
+
+    .theme-entry .StandardGrid .buttonFirstPage:hover,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Hover16.png);
+    }
+
+    .theme-entry .StandardGrid .buttonFirstPage.disabled,
+    .theme-entry .StandardGrid .buttonFirstPage.disabled:hover,
+    .theme-entry .StandardGrid .buttonFirstPage.disabled:active,
+    .theme-entry .StandardGrid .buttonFirstPage.disabled:focus,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst .buttonFirstPage.disabled,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage.disabled
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Disabled_16.png);
+    }
+
+    .theme-entry .StandardGrid .buttonPrev, /* reporting control - footer */
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnPrev .buttonPrev /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Normal16.png);
+    }
+
+    .theme-entry .StandardGrid .buttonPrev:hover, /* reporting control - footer */
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Hover16.png);
+    }
+
+    .theme-entry .StandardGrid .buttonPrev.disabled,
+    .theme-entry .StandardGrid .buttonPrev.disabled:hover, /* reporting control - footer */
+    .theme-entry .StandardGrid .buttonPrev.disabled:active,
+    .theme-entry .StandardGrid .buttonPrev.disabled:focus,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst .buttonPrev.disabled,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev.disabled /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Disabled16.png);
+    }
+
+    .theme-entry .StandardGrid .buttonNext 
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Normal16.png);
+    }
+
+    .theme-entry .StandardGrid .buttonNext:hover,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Hover16.png);
+    }
+
+    .theme-entry .StandardGrid .buttonNext.disabled,
+    .theme-entry .StandardGrid .buttonNext.disabled:hover,
+    .theme-entry .StandardGrid .buttonNext.disabled:active,
+    .theme-entry .StandardGrid .buttonNext.disabled:focus,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnNext .buttonNext.disabled,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext.disabled
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Disabled16.png);
+    }
+    
+    .theme-entry .StandardGrid .buttonLastPage:hover
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Double_Hover16.png);
+    }
+
+    .theme-entry .StandardGrid .buttonLastPage.disabled,
+    .theme-entry .StandardGrid .buttonLastPage.disabled:hover,
+    .theme-entry .StandardGrid .buttonLastPage.disabled:active,
+    .theme-entry .StandardGrid .buttonLastPage.disabled:focus
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Double_Disabled16.png);
+    }
+
+    .theme-entry .StandardGrid .view-flow-wrapper > .view-flow-icon 
+    {
+        background-image: url(Management/ViewFlow16.png);
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry .StandardGrid tr.radgrid-selectedItem .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Selected16.png');
+    }
+
+    .theme-entry .StandardGrid tr:hover .view-flow-wrapper > .view-flow-icon,
+    .theme-entry .StandardGrid tr.radgrid-selectedItem:hover .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Hover16.png');
+    }
+
+    .theme-entry .StandardGrid.disabled .view-flow-wrapper > .view-flow-icon, 
+    .theme-entry .StandardGrid.disabled tr:hover .view-flow-wrapper > .view-flow-icon,
+    .theme-entry .StandardGrid.disabled tr.radgrid-selectedItem .view-flow-wrapper > .view-flow-icon,
+    .theme-entry .StandardGrid.disabled tr.radgrid-selectedItem:hover .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Disabled16.png');
+    }
+
+    /* #region Design Time View Flow Icon*/
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-WorkflowInstancesGrid-WorkflowInstancesGrid.StandardGrid .RadGrid tbody img
+    {
+        height: 0px;
+        width: 16px;
+        padding: 16px 0 0 0;
+        overflow: hidden;
+        background-image: url(Management/ViewFlow16.png);
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-WorkflowInstancesGrid-WorkflowInstancesGrid.StandardGrid.disabled .RadGrid tbody img
+    {
+        background-image: url('Management/ViewFlow_Disabled16.png');
+    }
+
+    /* #endregion Design Time View Flow Icon*/
+
+    /* #endregion IMAGE DESKTOP */
+
+    /* #region IMAGE MOBILE */
+
+    
+
+    .mobile .theme-entry .StandardGrid .rgSortAsc
+    {
+        background-image: url(SortAscendingNormal.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .rgSortDesc
+    {
+        background-image: url(SortDescendingNormal.png);
+    }
+    /* #endregion IMAGE MOBILE */
+
+    /*#region paging button icons */
+    .mobile .theme-entry .StandardGrid .buttonFirstPage
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Normal22.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonFirstPage:hover,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Hover22.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonFirstPage.disabled,
+    .mobile .theme-entry .StandardGrid .buttonFirstPage.disabled:hover,
+    .mobile .theme-entry .StandardGrid .buttonFirstPage.disabled:active,
+    .mobile .theme-entry .StandardGrid .buttonFirstPage.disabled:focus,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst .buttonFirstPage.disabled,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage.disabled
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Disabled_22.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonPrev, /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Normal22.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonPrev:hover, /* reporting control - footer */
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Hover22.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonPrev.disabled,
+    .mobile .theme-entry .StandardGrid .buttonPrev.disabled:hover, /* reporting control - footer */
+    .mobile .theme-entry .StandardGrid .buttonPrev.disabled:active,
+    .mobile .theme-entry .StandardGrid .buttonPrev.disabled:focus,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst .buttonPrev.disabled,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev.disabled /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Disabled22.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonNext 
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Normal22.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonNext:hover,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Hover22.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonNext.disabled,
+    .mobile .theme-entry .StandardGrid .buttonNext.disabled:hover,
+    .mobile .theme-entry .StandardGrid .buttonNext.disabled:active,
+    .mobile .theme-entry .StandardGrid .buttonNext.disabled:focus,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnNext .buttonNext.disabled,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext.disabled
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Disabled22.png);
+    }
+    
+    .mobile .theme-entry .StandardGrid .buttonLastPage:hover
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Double_Hover22.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonLastPage.disabled,
+    .mobile .theme-entry .StandardGrid .buttonLastPage.disabled:hover,
+    .mobile .theme-entry .StandardGrid .buttonLastPage.disabled:active,
+    .mobile .theme-entry .StandardGrid .buttonLastPage.disabled:focus
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Double_Disabled22.png);
+    }
+
+    .mobile .theme-entry .StandardGrid .view-flow-wrapper > .view-flow-icon 
+    {
+        background-image: url(Management/ViewFlow20.png);
+        background-repeat: no-repeat;
+    }
+
+    .mobile .theme-entry .StandardGrid tr.radgrid-selectedItem .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Selected20.png');
+    }
+
+    .mobile .theme-entry .StandardGrid tr:hover .view-flow-wrapper > .view-flow-icon,
+    .mobile .theme-entry .StandardGrid tr.radgrid-selectedItem:hover .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Hover20.png');
+    }
+
+    .mobile .theme-entry .StandardGrid.disabled .view-flow-wrapper > .view-flow-icon, 
+    .mobile .theme-entry .StandardGrid.disabled tr:hover .view-flow-wrapper > .view-flow-icon,
+    .mobile .theme-entry .StandardGrid.disabled tr.radgrid-selectedItem .view-flow-wrapper > .view-flow-icon,
+    .mobile .theme-entry .StandardGrid.disabled tr.radgrid-selectedItem:hover .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Disabled20.png');
+    }
+
+    /* #endregion IMAGE MOBILE */
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    /* #region IMAGE DESKTOP */
+    .theme-entry .StandardGrid .rgSortAsc
+    {
+        background-image: url(SortAscendingNormal@2x.png);
+    }
+
+    .theme-entry .StandardGrid .rgSortDesc
+    {
+        background-image: url(SortDescendingNormal@2x.png);
+    }
+
+    .theme-entry .StandardGrid .buttonFirstPage
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Normal16@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .StandardGrid .buttonFirstPage:hover,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Hover16@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .StandardGrid .buttonFirstPage.disabled,
+    .theme-entry .StandardGrid .buttonFirstPage.disabled:hover,
+    .theme-entry .StandardGrid .buttonFirstPage.disabled:active,
+    .theme-entry .StandardGrid .buttonFirstPage.disabled:focus,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst .buttonFirstPage.disabled,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage.disabled
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Disabled_16@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .StandardGrid .buttonPrev /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Normal16@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .StandardGrid .buttonPrev:hover, /* reporting control - footer */
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Hover16@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .StandardGrid .buttonPrev.disabled,
+    .theme-entry .StandardGrid .buttonPrev.disabled:hover, /* reporting control - footer */
+    .theme-entry .StandardGrid .buttonPrev.disabled:active,
+    .theme-entry .StandardGrid .buttonPrev.disabled:focus,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst .buttonPrev.disabled,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev.disabled /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Disabled16@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .StandardGrid .buttonNext 
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Normal16@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .StandardGrid .buttonNext:hover,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Hover16@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .StandardGrid .buttonNext.disabled,
+    .theme-entry .StandardGrid .buttonNext.disabled:hover,
+    .theme-entry .StandardGrid .buttonNext.disabled:active,
+    .theme-entry .StandardGrid .buttonNext.disabled:focus,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnNext .buttonNext.disabled,
+    .theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext.disabled
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Disabled16@2x.png);
+        background-size: 16px;
+    }
+    
+    .theme-entry .StandardGrid .buttonLastPage:hover
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Double_Hover16@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .StandardGrid .buttonLastPage.disabled,
+    .theme-entry .StandardGrid .buttonLastPage.disabled:hover,
+    .theme-entry .StandardGrid .buttonLastPage.disabled:active,
+    .theme-entry .StandardGrid .buttonLastPage.disabled:focus
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Double_Disabled16@2x.png);
+        background-size: 16px;
+    }
+
+    .theme-entry .StandardGrid .view-flow-wrapper > .view-flow-icon 
+    {
+        background-image: url(Management/ViewFlow16@2x.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry .StandardGrid tr.radgrid-selectedItem .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Selected16@2x.png');
+    }
+
+    .theme-entry .StandardGrid tr:hover .view-flow-wrapper > .view-flow-icon,
+    .theme-entry .StandardGrid tr.radgrid-selectedItem:hover .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Hover16@2x.png');
+    }
+
+    .theme-entry .StandardGrid.disabled .view-flow-wrapper > .view-flow-icon, 
+    .theme-entry .StandardGrid.disabled tr:hover .view-flow-wrapper > .view-flow-icon,
+    .theme-entry .StandardGrid.disabled tr.radgrid-selectedItem .view-flow-wrapper > .view-flow-icon,
+    .theme-entry .StandardGrid.disabled tr.radgrid-selectedItem:hover .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Disabled16@2x.png');
+    }
+
+    /* #region Design Time View Flow Icon*/
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-WorkflowInstancesGrid-WorkflowInstancesGrid.StandardGrid .RadGrid tbody img
+    {
+        height: 0px;
+        width: 16px;
+        padding: 16px 0 0 0;
+        overflow: hidden;
+        background-image: url(Management/ViewFlow16@2x.png);
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Reporting-WorkflowInstancesGrid-WorkflowInstancesGrid.StandardGrid.disabled .RadGrid tbody img
+    {
+        background-image: url('Management/ViewFlow_Disabled16@2x.png');
+    }
+
+    /* #endregion Design Time View Flow Icon*/
+
+    /* #endregion IMAGE DESKTOP */
+
+    /* #region IMAGE MOBILE */
+    .mobile .theme-entry .StandardGrid .rgSortAsc
+    {
+        background-image: url(SortAscendingNormal@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .rgSortDesc
+    {
+        background-image: url(SortDescendingNormal@2x.png); 
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonFirstPage
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Normal22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonFirstPage:hover,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Hover22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonFirstPage.disabled,
+    .mobile .theme-entry .StandardGrid .buttonFirstPage.disabled:hover,
+    .mobile .theme-entry .StandardGrid .buttonFirstPage.disabled:active,
+    .mobile .theme-entry .StandardGrid .buttonFirstPage.disabled:focus,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst .buttonFirstPage.disabled,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage.disabled
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Double_Disabled_22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonPrev, /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Normal22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonPrev:hover, /* reporting control - footer */
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Hover22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonPrev.disabled,
+    .mobile .theme-entry .StandardGrid .buttonPrev.disabled:hover, /* reporting control - footer */
+    .mobile .theme-entry .StandardGrid .buttonPrev.disabled:active,
+    .mobile .theme-entry .StandardGrid .buttonPrev.disabled:focus,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnFirst .buttonPrev.disabled,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev.disabled /* reporting control - footer */
+    {
+        background-image: url(RuntimeTheme/Paging_Left_Disabled22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonNext 
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Normal22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonNext:hover,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Hover22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonNext.disabled,
+    .mobile .theme-entry .StandardGrid .buttonNext.disabled:hover,
+    .mobile .theme-entry .StandardGrid .buttonNext.disabled:active,
+    .mobile .theme-entry .StandardGrid .buttonNext.disabled:focus,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnNext .buttonNext.disabled,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext.disabled
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Disabled22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+    
+    .mobile .theme-entry .StandardGrid .buttonLastPage:hover
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Double_Hover22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .buttonLastPage.disabled,
+    .mobile .theme-entry .StandardGrid .buttonLastPage.disabled:hover,
+    .mobile .theme-entry .StandardGrid .buttonLastPage.disabled:active,
+    .mobile .theme-entry .StandardGrid .buttonLastPage.disabled:focus
+    {
+        background-image: url(RuntimeTheme/Paging_Right_Double_Disabled22@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+    }
+
+    .mobile .theme-entry .StandardGrid .view-flow-wrapper > .view-flow-icon 
+    {
+        background-image: url(Management/ViewFlow20@2x.png);
+        -moz-background-size: 22px;
+        background-size: 22px;
+        background-repeat: no-repeat;
+    }
+
+    .mobile .theme-entry .StandardGrid tr.radgrid-selectedItem .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Selected20@2x.png');
+    }
+
+    .mobile .theme-entry .StandardGrid tr:hover .view-flow-wrapper > .view-flow-icon,
+    .mobile .theme-entry .StandardGrid tr.radgrid-selectedItem:hover .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Hover20@2x.png');
+    }
+
+    .mobile .theme-entry .StandardGrid.disabled .view-flow-wrapper > .view-flow-icon, 
+    .mobile .theme-entry .StandardGrid.disabled tr:hover .view-flow-wrapper > .view-flow-icon,
+    .mobile .theme-entry .StandardGrid.disabled tr.radgrid-selectedItem .view-flow-wrapper > .view-flow-icon,
+    .mobile .theme-entry .StandardGrid.disabled tr.radgrid-selectedItem:hover .view-flow-wrapper > .view-flow-icon
+    {
+        background-image: url('Management/ViewFlow_Disabled20@2x.png');
+    }
+   
+    .mobile .theme-entry .toolbar-wrapper a.reportGridFooterIconWrapper,
+    .mobile .theme-entry .toolbar-wrapper .reportGridFooterIconWrapper div.pager-buttongeneric
+    {
+        width: 4.0rem;
+    }
+
+    .mobile .theme-entry .rgDetailTable .toolbar-wrapper
+    {
+        width: 4.0rem;
+    }
+
+    .mobile .theme-entry .rgDetailTable .detailTableFirstButton
+    {
+        right: 10.5rem;
+    }
+
+    .mobile .theme-entry .rgDetailTable .detailTablePrevButton
+    {
+        right: 6.2rem;
+    }
+
+    .mobile .theme-entry .rgDetailTable .detailTableNextButton
+    {
+        left: 2.0rem;
+    }
+
+    /* #endregion IMAGE MOBILE */
+}
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+
+.theme-entry .StandardGrid
+{
+    box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.25);
+}
+
+.theme-entry .StandardGrid .stylewrapper 
+{
+    overflow: hidden;
+}
+
+.theme-entry .report-grid-detail-table-wrapper
+{
+    padding:0.2rem
+}
+
+.theme-entry .StandardGrid .rgDetailTable
+{
+    box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.25);
+    border-width: 0px !important;
+    padding: 0.5rem;
+}
+
+/* grid header */
+.theme-entry .RadGrid .rgHeader,
+.theme-entry .RadGrid th.rgResizeCol
+{
+    height: 3.0rem;
+}
+
+/* #region Header */
+
+/* blue element containing the title, and subtitle elements */
+.theme-entry .StandardGrid .stylewrapper > div
+{
+    line-height: 5.2rem;
+}
+
+/* #endregion Header */
+
+/* #region Grid Header */
+.theme-entry .StandardGrid .radgrid-gridheader,
+.theme-entry .StandardGrid .radgrid-gridheader > a,
+.theme-entry .StandardGrid .radgrid-gridheader > div > a
+{
+    color: #6b7785;
+}
+
+/* grid header text */
+.theme-entry .radgrid-gridheader > div
+{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-transition: opacity linear .15s;
+    -ms-transition: opacity linear .15s;
+    -o-transition: opacity linear .15s;
+    -webkit-transition: opacity linear .15s;
+    transition: opacity linear .15s;
+}
+
+/* grid header text (hover) */
+.theme-entry .radgrid-gridheader:hover > div
+{
+    opacity: 1;
+}
+
+.theme-entry .StandardGrid .report-grid-header-wrapper
+{
+    height: 4.4rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.mozilla .theme-entry .StandardGrid .report-grid-header-wrapper,
+.msie .theme-entry .StandardGrid .report-grid-header-wrapper
+{
+    height: 4.1rem;
+}
+
+.theme-entry .RadGrid.radgrid-tableMain /* Activity Instance Grid - grid body part*/
+{
+    padding-top: 0;
+    margin-top: 0;
+    height: 100% !important; /* override -- inline */
+}
+
+.theme-entry .StandardGrid .UserPerfHeader
+{
+    color: #868686;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0;
+}
+
+.msie .theme-entry .StandardGrid .UserPerfHeader
+{
+    padding-top: 0.3rem;
+}
+
+.theme-entry .StandardGrid .UserPerfSubHeader
+{
+    display: block;
+    color: #c7c7c7;
+    padding-top: 0;
+    margin-bottom: 0px; /*override - base*/
+    height: auto;
+    opacity: 1;
+    font-size: 1.2rem;
+}
+
+.theme-entry .StandardGrid.disabled .UserPerfSubHeader,
+.theme-entry .StandardGrid.disabled .UserPerfHeader
+{
+    color: #c7c7c7;
+}
+
+.theme-entry .StandardGrid .radgrid-grid-column-headers-wrapper
+{
+    border-style: solid;
+    border-width: 0px;
+}
+
+/*loading overlay - just under the header*/
+.theme-entry .StandardGrid .GridruntimeLoad
+{
+    height: 100%;
+    padding-top: 0;
+}
+
+.theme-entry .RadGrid .rgHeader,
+.RadGrid th.rgResizeCol
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* #endregion Grid Header */
+
+/* #region Grid Label Header */
+
+.theme-entry .StandardGrid .radgrid-gridheader 
+{
+    background: #f1f0f0;
+    height: 3.0rem;
+    color: #abaaaa;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.theme-entry .StandardGrid.disabled .radgrid-gridheader div
+{
+    color: #c7c7c7;
+}
+
+.theme-entry .StandardGrid .rgHeader
+{
+    padding-left: 2.0rem;
+    padding-right: 2.0rem;
+}
+
+/*#endregion Grid Label Header */
+
+/*#region Grid Rows */
+.theme-entry .StandardGrid .rgAltRow td,
+.theme-entry .StandardGrid .rgRow td
+{
+    padding-left: 2.0rem;
+    padding-right: 1.0rem;
+    color: #363636;
+}
+
+.theme-entry .StandardGrid .rgDetailTable .rgAltRow td,
+.theme-entry .StandardGrid .rgDetailTable .rgRow td
+{
+    padding-left: 0.5rem;
+}
+
+.theme-entry .StandardGrid .radgrid-altrowLayout,
+.theme-entry .StandardGrid .radgrid-rowLayout
+{
+    background-color: #f5f5f5;
+    line-height: 3.0rem;
+    height: 3.0rem;
+    border-bottom: none;
+    font-size: 1.2rem;
+}
+
+/*state - active*/
+.theme-entry .StandardGrid .radgrid-rowLayout:active,
+.theme-entry .StandardGrid .radgrid-altrowLayout:active
+{
+    background-color: #7fd5f7;
+}
+
+.theme-entry .StandardGrid .radgrid-rowLayout > td,
+.theme-entry .StandardGrid .radgrid-altrowLayout > td
+{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+/*state - selected */
+/* using very specific selector to prevent hover color to override */
+.theme-entry .StandardGrid tr.rgSelectedRow.radgrid-selectedItem
+{
+    background-color: #5d9eea;
+}
+
+.theme-entry .StandardGrid tr.rgSelectedRow.radgrid-selectedItem .rgDetailTable .innerRow td,
+.theme-entry .StandardGrid tr.rgSelectedRow.radgrid-selectedItem .rgDetailTable .rgNoRecords td
+{
+    color: #363636;
+}
+
+.theme-entry .StandardGrid tr.rgSelectedRow.radgrid-selectedItem .rgDetailTable .innerRow:hover td
+{
+    color: #ffffff;
+}
+
+
+.theme-entry .StandardGrid .radgrid-selectedItem > td
+{
+    border-top: 1px dotted transparent;
+    border-bottom: 1px dotted transparent;
+}
+
+/*state - hover*/
+.theme-entry .StandardGrid .radgrid-rowLayout:hover,
+.theme-entry .StandardGrid .radgrid-altrowLayout:hover,
+.theme-entry .StandardGrid .radgrid-selectedItem:hover,
+.theme-entry .StandardGrid tr.rgSelectedRow.radgrid-selectedItem:hover
+{
+    background-color: #0070ff;
+}
+
+.theme-entry .StandardGrid tr.rgSelectedRow.radgrid-selectedItem td,
+.theme-entry .StandardGrid .radgrid-rowLayout:hover td,
+.theme-entry .StandardGrid .radgrid-altrowLayout:hover td,
+.theme-entry .StandardGrid .radgrid-selectedItem:hover td
+{
+    color: #ffffff;
+}
+
+/*state - disabled*/
+.theme-entry .StandardGrid.disabled .radgrid-altrowLayout,
+.theme-entry .StandardGrid.disabled .radgrid-altrowLayout:hover,
+.theme-entry .StandardGrid.disabled .radgrid-altrowLayout:active
+{
+    background-color: #f5f5f5;
+}
+
+.theme-entry .StandardGrid.disabled .radgrid-rowLayout,
+.theme-entry .StandardGrid.disabled .radgrid-rowLayout:hover,
+.theme-entry .StandardGrid.disabled .radgrid-rowLayout:active
+{
+    background-color: #ffffff;
+}
+
+.theme-entry .StandardGrid.disabled .rgAltRow td,
+.theme-entry .StandardGrid.disabled .rgRow td,
+.theme-entry .StandardGrid.disabled tr.rgSelectedRow.radgrid-selectedItem td,
+.theme-entry .StandardGrid.disabled .radgrid-rowLayout:hover td,
+.theme-entry .StandardGrid.disabled .radgrid-altrowLayout:hover td,
+.theme-entry .StandardGrid.disabled .radgrid-selectedItem:hover td,
+.theme-entry .StandardGrid.disabled .radgrid-rowLayout:active td,
+.theme-entry .StandardGrid.disabled .radgrid-altrowLayout:active td
+{
+    color: #c7c7c7 ;
+}
+
+/*#endregion GRID ROWS*/
+
+/*#region GRID FOOTER*/
+
+/* report grid footer */
+.theme-entry .StandardGrid div.report-grid-footer-container
+{
+    height: 3.0rem;
+}
+
+.theme-entry div.StandardGrid div.report-grid-navigation-wrapper
+{
+    display: table;
+    width: 100%;
+}
+
+.theme-entry div.StandardGrid div.report-grid-navigation-inner-wrapper
+{
+    position: relative;
+    left: 50%;
+    width: 0;
+    overflow: visible;
+    display: block;
+}
+
+.theme-entry div.StandardGrid div.report-grid-navigation-wrapper-prev
+{
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    height: 2.7rem;
+    width: 4rem;
+    top: 0.2rem;
+    bottom: 0;
+    left: -6.3rem;
+    right: 0;
+}
+
+.theme-entry div.StandardGrid div.report-grid-navigation-wrapper-first
+{
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    height: 2.7rem;
+    width: 4rem;
+    top: 0.2rem;
+    bottom: 0;
+    left: -11.5rem;
+    right: 0;
+}
+
+.theme-entry div.StandardGrid div.report-grid-navigation-wrapper-next
+{
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    height: 2.7rem;
+    width: 4rem;
+    top: 0.2rem;
+    bottom: 0;
+    left: 2.3rem;
+    right: 0;
+}
+
+.theme-entry div.StandardGrid div.report-grid-navigation-wrapper-last
+{
+    display: none;
+}
+
+/* input label text */
+.theme-entry div.StandardGrid div.report-grid-navigation-wrapper-page-label
+{
+    display: table-cell;
+    width: 3.5rem;
+    vertical-align: middle;
+}
+/* input text for page display (wrapper) */
+.theme-entry div.StandardGrid div.report-grid-navigation-wrapper-page-input
+{
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    left: -2.1rem;
+    top: 0.4rem;
+}
+
+/* input text for page display */
+.theme-entry .StandardGrid .report-grid-navigation-page-input-box
+{
+    width: 4.0rem;
+    height: 2.0rem;
+    line-height: 2.0rem;
+    text-align: center;
+    color: #313841;
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+/* detail table */
+.theme-entry .StandardGrid div.report-grid-detail-footer-navigation-inner-wrapper
+{
+    position: relative;
+    left: 50%;
+    width: 0;
+    overflow: visible;
+    display: block;
+    margin-top: 4px;
+}
+
+.theme-entry div.StandardGrid div.report-grid-detail-navigation-wrapper-prev
+{
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    height: 2.7rem;
+    width: 4rem;
+    top: 0;
+    bottom: 0;
+    left: -4.2rem;
+    right: 0;
+}
+
+.theme-entry div.StandardGrid div.report-grid-detail-navigation-wrapper-first
+{
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    height: 2.7rem;
+    width: 4rem;
+    top: 0;
+    bottom: 0;
+    left: -8.2rem;
+    right: 0;
+}
+
+.theme-entry div.StandardGrid div.report-grid-detail-navigation-wrapper-next
+{
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    height: 2.7rem;
+    width: 4rem;
+    top: 0;
+    bottom: 0;
+    left: 4.4rem;
+    right: 0;
+}
+
+.theme-entry div.StandardGrid div.report-grid-detail-navigation-wrapper-last
+{
+    display: none;
+}
+
+/* input label text */
+.theme-entry div.StandardGrid div.report-grid-detail-navigation-wrapper-page-label
+{
+    display: table-cell;
+    width: 3.5rem;
+    vertical-align: middle;
+}
+/* input text for page display (wrapper) */
+.theme-entry div.StandardGrid div.report-grid-detail-navigation-wrapper-page-input
+{
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    top: 0.1rem;
+}
+/* input text for page display */
+.theme-entry .StandardGrid .report-grid-detail-navigation-page-input
+{
+    width: 4.0rem;
+    height: 2.0rem;
+    line-height: 2.0rem;
+    text-align: center;
+    color: #313841;
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+
+/* */
+
+.theme-entry .StandardGrid .buttonFirstPage,
+.theme-entry .StandardGrid .buttonPrev,
+.theme-entry .StandardGrid .buttonNext,
+.theme-entry .StandardGrid .buttonLast
+{
+    padding: 0;
+}
+
+.theme-entry .StandardGrid .radgrid-footer,
+.theme-entry .radgrid1-footer /* designer grid footer */
+{
+    background: white;
+    width: 100%;
+    min-height: 0;
+    -webkit-box-shadow: inset 0rem 0.1rem 0rem 0rem #d2d2d2;
+    -moz-box-shadow: inset 0rem 0.1rem 0rem 0rem #d2d2d2;
+    box-shadow: inset 0rem 0.1rem 0rem 0rem #d2d2d2;
+}
+
+
+.theme-entry .StandardGrid .radgrid-footer > td > .radgrid-footer, /* grid footer (runtime) */
+.theme-entry .StandardGrid .radgrid1-footer > .toolbar-wrapper /* grid footer (designer) */
+{
+    position: relative;
+    height: 3.0rem;
+}
+
+/* footer icon last is not available i.e. leave it invisible */
+.theme-entry .toolbar-wrapper .reportGridFooterBtnLast.reportGridFooterIconWrapper
+{
+    display: none;
+}
+
+/* footer icon wrapper (common) */
+.theme-entry .toolbar-wrapper .reportGridFooterIconWrapper
+{
+    height: 5.2rem; /* override -- inline */
+    width: 7.0rem; /* override -- inline */
+    display: inline-block;
+    position: absolute;
+}
+
+
+/* footer icons hover */
+.theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage, /* button first */
+.theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev, /* button prev */
+.theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext /* button next */
+{
+    opacity: 1.0;
+    border-color: #f9f9f9;
+    background-color: #f9f9f9;
+}
+
+.theme-entry .StandardGrid .buttonFirstPage:hover,
+.theme-entry .StandardGrid .buttonPrev:hover,
+.theme-entry .StandardGrid .buttonNext:hover
+{
+    opacity: 1.0;
+    border: 1px dotted #5d9eea;
+    background-color: #0070ff;
+    color: #363636;
+    text-decoration-color: #363636;
+}
+
+
+/* footer icons hover (disabled) */
+.theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage.disabled, /* button first */
+.theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev.disabled, /* button prev */
+.theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext.disabled /* button next */
+{
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.theme-entry .StandardGrid .buttonFirstPage.disabled:hover,
+.theme-entry .StandardGrid .buttonPrev.disabled:hover,
+.theme-entry .StandardGrid .buttonNext.disabled:hover
+{
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    border: none;
+}
+
+.theme-entry .radgrid1-footer .toolbar-wrapper
+{
+    height: 6.0rem;
+}
+
+
+/* position the arrows*/
+.theme-entry .StandardGrid .radgrid-footer a.reportGridFooterBtnFirst,
+.theme-entry .StandardGrid .radgrid1-footer a.reportGridFooterBtnFirst /*Go to first page.*/
+{
+    left: -10.8rem;
+}
+
+.theme-entry .StandardGrid .radgrid-footer a.reportGridFooterBtnPrev,
+.theme-entry .StandardGrid .radgrid1-footer a.reportGridFooterBtnPrev /*Go to previous page.*/
+{
+    left: -6rem;
+}
+
+.theme-entry .StandardGrid .radgrid-footer a.reportGridFooterBtnNext,
+.theme-entry .StandardGrid .radgrid1-footer a.reportGridFooterBtnNext /*Go to next page.*/
+{
+    left: 2rem;
+}
+
+
+.theme-entry .StandardGrid .radgrid-footer .radgrid-divPage.pageDiv, /* footer page text node (runtime) */
+.theme-entry .StandardGrid .radgrid1-footer .radgrid1-divPage.pageDiv, /* footer page text node (designer) */
+.theme-entry .rgDetailTable .radgrid-footer .radgrid-divPage /* footer page text node for expanded footer */
+{
+    display: none;
+}
+
+
+/* paging textbox expanded footer */
+.theme-entry .StandardGrid div.report-grid-detail-footer-navigation-wrapper
+{
+    display: block;
+}
+
+.theme-entry .rgDetailTable .radgrid-divPage + div
+{
+    border: 1px solid transparent !important; /* override -- inline */
+    margin-top: 0;
+    padding-top: 0 !important; /* override -- inline */
+    height: 2.2rem !important; /* override -- inline */
+    line-height: 2.2rem;
+    position: absolute;
+    right: 50%;
+    top: 0.3rem;
+    text-align: center !important; /* override -- inline */
+}
+
+.theme-entry .radgrid-footer .toolbar-wrapper .reportGridFooterIconWrapper.reportGridFooterBtnPrev,
+.theme-entry .rgDetailTable .radgrid-footer .detailTablePrevButton,
+.theme-entry .rgDetailTable .radgrid-footer .buttonPrev,
+.theme-entry .radgrid-footer .toolbar-wrapper .reportGridFooterIconWrapper.reportGridFooterBtnFirst,
+.theme-entry .rgDetailTable .radgrid-footer .detailTableFirstButton,
+.theme-entry .rgDetailTable .radgrid-footer .buttonFirstPage,
+.theme-entry .radgrid-footer .toolbar-wrapper .reportGridFooterIconWrapper.reportGridFooterBtnNext,
+.theme-entry .rgDetailTable .radgrid-footer .detailTableNextButton,
+.theme-entry .rgDetailTable .radgrid-footer .buttonNext
+{
+    height: 3.0rem;
+    width: 4.0rem;
+}
+
+.theme-entry .StandardGrid .toolbar-wrapper .buttonPrev,
+.theme-entry .StandardGrid .toolbar-wrapper .buttonFirstPage,
+.theme-entry .StandardGrid .toolbar-wrapper .buttonNext
+{
+    height: 2.5rem;
+    width: 3.8rem;
+}
+
+/* pading button (previous) wrapper - expand footer */
+.theme-entry .rgDetailTable .detailTablePrevButton
+{
+    right: 4.2rem;
+}
+
+/* paging button (previous) */
+.theme-entry .StandardGrid .buttonPrev,
+.theme-entry .rgDetailTable .buttonPrev
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* pading button (first) wrapper - expand footer */
+.theme-entry .rgDetailTable .detailTableFirstButton
+{
+    right: 9.0rem;
+}
+
+/* paging button (first) */
+.theme-entry .StandardGrid .buttonFirstPage,
+.theme-entry .rgDetailTable .buttonFirstPage
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* pading button (next) wrapper - expand footer */
+.theme-entry .rgDetailTable .detailTableNextButton
+{
+    left: 0;
+}
+
+/* paging button (next) */
+.theme-entry .StandardGrid .buttonNext,
+.theme-entry .rgDetailTable .buttonNext
+{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage,
+.theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev,
+.theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext,
+.theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage.disabled,
+.theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev.disabled,
+.theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext.disabled
+{
+    height: 3.0rem;
+    width: 4.0rem;
+}
+
+.theme-entry .toolbar-wrapper .reportGridFooterBtnFirst:hover .buttonFirstPage.disabled,
+.theme-entry .toolbar-wrapper .reportGridFooterBtnPrev:hover .buttonPrev.disabled,
+.theme-entry .toolbar-wrapper .reportGridFooterBtnNext:hover .buttonNext.disabled,
+.theme-entry .toolbar-wrapper .reportGridFooterBtnFirst .buttonFirstPage.disabled:hover,
+.theme-entry .toolbar-wrapper .reportGridFooterBtnPrev .buttonPrev.disabled:hover,
+.theme-entry .toolbar-wrapper .reportGridFooterBtnNext .buttonNext.disabled:hover
+{
+    background-color: transparent;
+    cursor: default;
+}
+
+/* below the footer */
+.theme-entry .StandardGrid .GridruntimeLoad + .RadGrid.RadGrid_Default.radgrid-tableMain
+{
+    display: none;
+}
+
+/*#region MAIN CONTENT*/
+
+.theme-entry .RadGrid .rgRow td,
+.theme-entry .RadGrid .rgAltRow td,
+.theme-entry .RadGrid .rgEditRow td,
+.theme-entry .RadGrid .rgFooter td
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.theme-entry .StandardGrid .radgrid-tableMain
+{
+    border-style: solid;
+    border-width: 0px;
+}
+
+.theme-entry .StandardGrid .rgNoRecords
+{
+    background-color: #ffffff;
+    height: 4.8rem;
+}
+
+.theme-entry .StandardGrid .rgNoRecords > td
+{
+    padding-left: 1.0rem;
+}
+
+.theme-entry .StandardGrid .rgNoRecords > td div
+{
+    padding-left: 2.0rem;
+    color: #b1b6bc;
+    font-style: italic;
+}
+
+.theme-entry .StandardGrid .stylewrapper
+{
+    padding: 0px !important; /*override - default control property*/
+}
+
+/*#endregion MAIN CONTENT*/
+
+/*#region PAGING */
+
+.theme-entry .StandardGrid .radgrid-divPage,
+.theme-entry .StandardGrid .pageDiv
+{
+    float: left !important;
+    margin-top: 0.1rem !important;
+    padding: 0rem 1.0rem !important; /*override - inline*/
+    color: #838383 !important;
+}
+
+/*#endregion*/
+
+/*#region FONTS*/
+.theme-entry .StandardGrid .pagerPage,
+.theme-entry .StandardGrid .radgrid-gridheader,
+.theme-entry .StandardGrid .radgrid-divPage,
+.theme-entry .StandardGrid .pageDiv,
+.theme-entry .StandardGrid .rgNoRecords > td div
+{
+    font-family: "Open Sans", "Segoe UI Regular", Helvetica !important;
+    font-style: inherit;
+    font-size: 1.2rem;
+}
+
+.theme-entry .StandardGrid .rgRow
+{
+    background-color: #ffffff;
+}
+
+.theme-entry .StandardGrid .UserPerfHeader,
+.theme-entry .StandardGrid .UserPerfSubHeader
+{
+    padding-left: 2.0rem;
+    float: left;
+    clear: left;
+    line-height: normal;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    word-break: break-all; 
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+.theme-entry .StandardGrid .radgrid-gridheader,
+.theme-entry .StandardGrid .radgrid-divPage,
+.theme-entry .StandardGrid .pageDiv,
+.theme-entry .StandardGrid .rgNoRecords > td div
+{
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+/*#endregion FONTS*/
+
+
+/* #region SF OVERRIDE */
+.grid .theme-entry table.grid-content-table td .condtional-format-preview .StandardGrid .rgRow td
+{
+    padding: 0 1rem 0 2rem;
+}
+
+/* #endregion SF OVERRIDE */
+
+/* #endregion DESKTOP */
+
+/* #region TOUCH */
+
+/* navigation page number box */
+.mobile .theme-entry .StandardGrid .pagerPage
+{
+    font-size: 1.6rem;
+}
+
+.mobile .theme-entry .StandardChart .header-wrapper
+{
+    height: 5.2rem;
+}
+
+.mobile .theme-entry .StandardGrid .UserPerfHeader
+{
+    font-size: 1.6rem;
+}
+
+.mobile .theme-entry .StandardGrid .UserPerfSubHeader
+{
+    font-size: 1.4rem;
+}
+
+/* grid header */
+.mobile .theme-entry .StandardGrid .report-grid-header-wrapper
+{
+    height: 5.2rem;
+}
+
+/* grid footer */
+.mobile .theme-entry .StandardGrid div.report-grid-footer-container
+{
+    height: 5.2rem;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-navigation-inner-wrapper
+{
+    height: auto;
+    left: auto;
+    width: 100%;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-navigation-wrapper-first
+{
+    position: relative;
+    float: left;
+    right: auto;
+    left: 0;
+    box-sizing: border-box;
+    margin: 1.0rem 0;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-navigation-wrapper-prev
+{
+    position: relative;
+    float: left;
+    right: auto;
+    left: auto;
+    box-sizing: border-box;
+    margin: 1.0rem 0.9rem;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-navigation-wrapper-next
+{
+    position: relative;
+    float: right;
+    right: auto;
+    left: 0;
+    box-sizing: border-box;
+    margin: 1.0rem 0.5rem;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-navigation-wrapper-page-input
+{
+    bottom: 0;
+    float: none;
+    left: 25%;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    top: 0px;
+}
+
+.safari.mobile .theme-entry div.StandardGrid div.report-grid-navigation-wrapper-page-input
+{
+    top: -1.0rem;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-navigation-page-input-box
+{
+    float: none;
+    box-sizing: border-box;
+    width: 4.0rem;
+    height: 3rem;
+    line-height: 3rem;
+    display: inline-block;
+}
+
+/* detail table */
+.mobile .theme-entry .StandardGrid div.report-grid-detail-footer-container
+{
+    height: 5.2rem;
+}
+
+.mobile .theme-entry div.report-grid-detail-footer-navigation-wrapper
+{
+    width: 100%;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-detail-footer-navigation-inner-wrapper
+{
+    height: auto;
+    left: auto;
+    width: 100%;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-detail-navigation-wrapper-first
+{
+    position: relative;
+    float: left;
+    right: auto;
+    left: 0;
+    box-sizing: border-box;
+    margin: 1.0rem 0;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-detail-navigation-wrapper-prev
+{
+    position: relative;
+    float: left;
+    right: auto;
+    left: auto;
+    box-sizing: border-box;
+    margin: 1.0rem 0;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-detail-navigation-wrapper-next
+{
+    position: relative;
+    float: right;
+    right: auto;
+    left: 0;
+    box-sizing: border-box;
+    margin: 1.0rem 0;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-detail-navigation-wrapper-page-input
+{
+    bottom: 0;
+    float: none;
+    left: 25%;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    top: 0px;
+}
+
+.mobile .theme-entry div.StandardGrid div.report-grid-detail-navigation-page-input
+{
+    float: none;
+    box-sizing: border-box;
+    width: 4.0rem;
+    height: 3rem;
+    line-height: 3rem;
+    display: inline-block;
+}
+
+.mobile .theme-entry .StandardGrid .radgrid-footer a
+{
+    margin-top: 1.1rem;
+}
+
+.mobile .theme-entry .StandardGrid .radgrid-footer a.reportGridFooterBtnFirst
+{
+    left: 0;
+}
+
+.mobile .theme-entry .StandardGrid .radgrid-footer a.reportGridFooterBtnPrev
+{
+    left: 4rem;
+}
+
+.mobile .theme-entry .StandardGrid .radgrid-footer a.reportGridFooterBtnNext
+{
+    left: initial;
+    right: 0;
+}
+
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+    .mobile .theme-entry div.StandardGrid div.report-grid-navigation-wrapper-next
+    {
+        margin: 1.0rem 1.0rem;
+    }
+
+    .mobile .theme-entry div.StandardGrid div.report-grid-navigation-wrapper-prev
+    {
+        margin: 1.0rem 1.3rem;
+    }
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */
+
+/* footer (design time) */
+.theme-entry .StandardGrid.designtime .report-grid-footer-container
+{
+    border-color: transparent;
+    border-top: 1px solid #e5e5e5;
+}

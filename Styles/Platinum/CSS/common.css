@@ -1,0 +1,248 @@
+﻿
+html, body, form
+{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+html, body
+{
+	overflow: hidden;
+}
+
+body
+{
+	width: 100%;
+	cursor: default;
+	background: #f6f8f1 url(../Images/MainContentBorders/main_canvas_background.png) repeat-x 0 0;
+	position: absolute;
+}
+
+.wrapper
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.clear
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.scroll-wrapper
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+html[dir=rtl] .scroll-wrapper
+{
+	direction:rtl;
+}
+
+div.reportView
+{
+	height: 60px;
+	border: solid 1px #c6c3bd;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-image: url(../Images/Icons/MatrixReports32angl_2.png);
+	padding-top: 2px;
+	text-align: center;
+}
+
+.intro-content
+{
+	bottom: 30px;
+	overflow: auto;
+	padding-left: 160px;
+	position: absolute;
+	top: 0;
+}
+
+.intro-content.appstudio
+{
+	background: url(../Images/Icons/AppStudio128Reflected.png) no-repeat 10px 10px;
+}
+
+.intro-content.smartobject
+{
+	background: url(../Images/Icons/SmartObject128Reflected.png) no-repeat 10px 10px;
+}
+
+.intro-content.view
+{
+	background: url(../Images/Icons/View128Reflected.png) no-repeat 10px 10px;
+}
+
+.intro-content.form
+{
+	background: url(../Images/Icons/Form128Reflected.png) no-repeat 10px 10px;
+}
+
+.intro-content.report
+{
+	background: url(../Images/Icons/Report128Reflected.png) no-repeat 10px 10px;
+}
+
+.intro-content.application
+{
+	background: url(../Images/Icons/Application128_Reflected.png) no-repeat 10px 10px;
+}
+
+.intro-content.error
+{
+	background: url(../Images/Icons/Error64.png) no-repeat 10px 10px;
+}
+
+.token-box
+{
+	clear: both;
+}
+
+.token
+{
+	line-height: 19px;
+	height: 20px;
+	display: inline-block;
+	padding: 0 3px;
+	float: left;
+}
+
+.token-bold
+{
+	font-weight: bold;
+}
+
+.token-no-padding
+{
+	padding: 0;
+}
+
+.token-no-padding-left
+{
+	padding-left: 0;
+}
+
+.token-no-padding-right
+{
+	padding-right: 0;
+}
+
+.token-control
+{
+	float: left;
+	display: inline-block;
+}
+
+.about-link
+{
+	cursor: pointer;
+	text-decoration: none !important;
+	color: #000 !important;
+}
+
+.about-outer-body
+{
+	background: url(../Images/Icons/K2Designer128.png) no-repeat 10px 10px;
+}
+
+html[dir=rtl] .about-outer-body
+{
+	background-position: 100% 10px;
+}
+
+.about-body
+{
+	height: 140px;
+	width: 480px;
+}
+
+.about-normaltext
+{
+	padding-left: 170px;
+}
+
+html[dir=rtl] .about-normaltext
+{
+	padding-left:0;
+	padding-right: 170px;
+}
+
+.about-graytext
+{
+	padding-left: 150px;
+	padding-top: 10px;
+	color:#808080;
+}
+
+html[dir=rtl] .about-graytext
+{
+	padding-left: 0; 
+	padding-right: 150px;
+	padding-top: 34px;
+}
+
+.inline-validation-text
+{
+	display: block;
+	font-size: 11px;
+	color: #b22222;
+}
+
+.highlight-text
+{
+	background-color:#ff0;
+}
+
+table
+{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-style: none;
+}
+
+td, th
+{
+	padding: 0;
+}
+
+hr
+{
+	border-width:1px 0 0 0;
+	border-style:solid;
+	border-color:#ACAF9E;
+	clear:both;
+	height:0;
+}
+
+.caret 
+{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	border-bottom: 0;
+	border-top: 5px dashed;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+
+.caret.up 
+{
+	border-top: 0;
+	border-bottom: 5px dashed;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}

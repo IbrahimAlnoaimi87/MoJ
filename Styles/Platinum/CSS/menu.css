@@ -1,0 +1,1186 @@
+﻿.menu-bar
+{
+	height: 24px;
+	padding-left: 5px;
+	background: transparent url("../Images/Toolbar/toolbar_left_corner.png") no-repeat 0 100%;
+}
+
+.menu-bar-wrapper
+{
+	padding-right: 5px;
+	height: 24px;
+	background: transparent url("../Images/Toolbar/toolbar_right_slide.png") no-repeat 100% 100%;
+	vertical-align: middle;	
+	overflow: hidden;
+}
+
+.menu-bar a.menu-bar-button
+{
+	display: block;
+	margin: 1px 0;
+	width: auto;
+	height: 22px;
+	background: transparent url("../Images/Toolbar/toolbar_button_left_corner.png") no-repeat 0 22px;
+	text-decoration: none;
+	padding-left: 5px;
+	float: left;
+	color: #343e41;
+	cursor: pointer;
+}
+
+.menu-bar a.menu-bar-button > span
+{
+	background: transparent url("../Images/Toolbar/toolbar_button_right_slide.png") no-repeat 100% 22px;
+	padding-right: 5px;
+	height: 22px;
+	display: block;
+	cursor: pointer;
+}
+
+a.menu-bar-button span.menu-bar-button-text
+{
+	display: block;
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	padding: 0 2px;
+	cursor: pointer;
+}
+
+.menu-bar a.menu-bar-button:hover,
+.menu-bar a.menu-bar-button:focus,
+.menu-bar a.menu-bar-button.active
+{
+	background-position: 0 0;
+}
+
+.menu-bar a.menu-bar-button:hover > span,
+.menu-bar a.menu-bar-button:focus > span,
+.menu-bar a.menu-bar-button.active > span
+{
+	background-position: 100% 0;
+}
+
+.menu
+{
+	background:#f0f0f0 url("../Images/Menu/menu_bg.gif") repeat-y 0 0;
+	background-attachment: local;
+	border: 1px solid #aaa;
+	-moz-box-shadow:5px 5px 5px #888;
+	-webkit-box-shadow:5px 5px 5px #888;
+	box-shadow:5px 5px 5px #888;
+	box-sizing: border-box;
+	max-width: 85%; /* Allow for space either side of menus to accept user click for hiding */
+	padding: 2px;
+	position: absolute;
+	visibility: hidden;
+}
+
+html[dir=rtl] .menu
+{
+	background-position:103% 0;
+}
+
+.menu-shadow
+{
+	background-color: #000;
+	opacity: 0.1;
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu ul
+{
+	list-style: none outside none;
+	background: transparent none repeat scroll 0;
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li
+{
+	display: block;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 100%;
+	padding: 1px;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+}
+
+.menu li:hover,
+.menu li.active
+{
+	background: #fff;
+	border: 1px solid #d2d2d2;
+	padding: 0;
+}
+
+.menu li.disabled,
+.menu li.disabled:hover
+{
+	background-color:transparent;
+	border:none;
+	color:#aaa;
+	cursor:default;
+	opacity: 0.3;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)"; /*IE8*/
+	padding: 1px;
+}
+
+.menu li.seperator
+{
+	font-size: 1px;
+	line-height: 1px;
+	margin-left:23px;
+}
+
+.menu li.seperator:hover
+{
+	background: none;
+	border: none;
+	padding: 1px;
+}
+
+.menu li.seperator span
+{
+	background-color: #E0E0E0;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #fff;
+	display: block;
+	font-size: 1px;
+	line-height: 1px;
+	margin: 2px 3px;
+	overflow: hidden;
+}
+
+.menu a.menu-item
+{
+	color: #222;
+	cursor: pointer;
+	display: block;
+	line-height: 16px;
+	outline: 0 none invert;
+	padding: 3px 21px 3px 3px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+html[dir=rtl] .menu a.menu-item
+{
+	padding: 3px 3px 3px 21px;
+}
+
+.menu a.checkmenu-item
+{
+	color: #222;
+	cursor: pointer;
+	display: block;
+	line-height: 16px;
+	outline: 0 none invert;
+	padding: 3px 21px 3px 1px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+html[dir=rtl] .menu a.checkmenu-item
+{
+	padding: 3px 1px 3px 21px;
+}
+
+.menu a.checkmenu-item label.input-control.checkbox .input-control-text
+{
+	margin-left:10px;
+}
+
+html[dir=rtl] .menu a.checkmenu-item label.input-control.checkbox .input-control-text
+{
+	margin-left:1px; /* reset */
+	margin-right:10px;
+}
+
+.menu a.menu-item.children
+{
+	background: transparent url(../Images/Arrows/black_arrow_right.png) no-repeat scroll right center;
+}
+
+.menu a.menu-item.checked
+{
+	background: url(../Images/Icons/Yes16.png) no-repeat scroll right center;
+}
+
+.menu a.menu-item span.menu-item-icon
+{
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 0 none;
+	height: 16px;
+	margin: 0 8px 0 0;
+	padding: 0;
+	vertical-align: top;
+	width: 16px;
+	display: block;
+	float: left;
+}
+
+html[dir=rtl] .menu a.menu-item span.menu-item-icon
+{
+	float:right;
+	margin: 0 0 0 8px;
+}
+
+.menu a.menu-item .menu-item-text
+{
+	padding-left:3px;	
+}
+
+html[dir=rtl] .menu a.menu-item .menu-item-text
+{
+	padding-left:0;
+	padding-right:3px;
+}
+
+.menu li.disabled a.menu-item,
+.menu li.disabled:hover a.menu-item
+{
+	cursor:default;
+}
+
+.menu a.menu-item.disabled
+{
+	opacity: 0.3;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)"; /*IE8*/
+	cursor:default;
+}
+
+/* Menu Item Icons */
+.menu a.menu-item.favourite span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Favourites16.png);
+}
+
+.menu a.menu-item.add span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Add16.png);
+}
+
+.menu a.menu-item.edit span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Edit16.png);
+}
+
+.menu a.menu-item.move-up span.menu-item-icon
+{
+	background-image: url(../Images/Icons/MoveUp16.png);
+}
+
+.menu a.menu-item.move-down span.menu-item-icon
+{
+	background-image: url(../Images/Icons/MoveDown16.png);
+}
+
+.menu a.menu-item.drill-down span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Link16.png);
+}
+
+.menu a.menu-item.delete-drill-down span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DeleteDrillThrough16.png);
+}
+
+.menu a.menu-item.delete span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Delete16.png);
+}
+
+.menu a.menu-item.delete-all span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DeleteAll16.png);
+}
+
+.menu a.menu-item.remove span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Remove16.png);
+}
+
+.menu a.menu-item.remove-all span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RemoveAll16.png);
+}
+
+.menu a.menu-item.lock span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Lock16.png);
+}
+
+.menu a.menu-item.load span.menu-item-icon
+{
+	background-image: url(../Images/Icons/LoadFlat16.png);
+}
+
+.menu a.menu-item.play span.menu-item-icon
+{
+	background-image: url(../Images/Icons/play16flat.png);
+}
+
+.menu a.menu-item.refresh span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Refresh16.png);
+}
+
+.menu a.menu-item.analyze span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Default16px.png);
+	/* [TODO] Replace with icon below when it is available
+	Analyze16.png
+	*/
+}
+
+.menu a.menu-item.publish span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Publish16.png);
+}
+
+.menu a.menu-item.properties span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Properties16.png);
+}
+
+.menu a.menu-item.auto-generate span.menu-item-icon
+{
+	background-image: url(../Images/Icons/AutoGenerate16.png);
+}
+
+.menu a.menu-item.generate-smartobject span.menu-item-icon
+{
+	background-image: url(../Images/Icons/GenerateSmartObject16.png);
+}
+
+.menu a.menu-item.generate-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/GenerateView16.png);
+}
+
+.menu a.menu-item.generate-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/GenerateForm16.png);
+}
+
+.menu a.menu-item.generate-report span.menu-item-icon
+{
+	background-image: url(../Images/Icons/GenerateReport16.png);
+}
+
+.menu a.menu-item.checkin span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CheckIn16.png);
+}
+
+.menu a.menu-item.checkout span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CheckOut16.png);
+}
+
+.menu a.menu-item.undocheckout span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CancelCheckOut_Generic_16.png);
+}
+
+.menu a.menu-item.play span.menu-item-icon,
+.menu a.menu-item.run span.menu-item-icon
+{
+	background-image: url(../Images/Icons/play16flat.png);
+}
+
+.menu a.menu-item.preview span.menu-item-icon,
+.menu a.menu-item.preview-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/FormPreview16.png);
+}
+
+.menu a.menu-item.preview-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Default16px.png);
+}
+
+.menu a.menu-item.run-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RunView16.png);
+}
+
+.menu a.menu-item.runas-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RunWithParametersView16.png);
+}
+
+.menu a.menu-item.run-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RunForm16.png);
+}
+
+.menu a.menu-item.copy span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Copy16.png);
+}
+
+.menu a.menu-item.clone span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Copy16.png);
+}
+
+.menu a.menu-item.save span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Save16.png);
+}
+
+.menu a.menu-item.save-as span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SaveAs16.png);
+}
+
+/* Rules Wizard Items */
+.menu a.menu-item.view-capture span.menu-item-icon,
+.menu a.menu-item.control-areaitem span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ItemView16.png);
+}
+
+.menu a.menu-item.formparameter-datetime span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DateTime16.png);
+}
+
+.menu a.menu-item.formparameter-number span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Number16.png);
+}
+
+.menu a.menu-item.formparameter-text span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Text16.png);
+}
+
+.menu a.menu-item.formparameter-boolean span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Boolean16.png);
+}
+
+/* view parameter icons in conditions */
+.menu a.menu-item.viewparameter-datetime span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DateTime16.png);
+}
+
+.menu a.menu-item.viewparameter-number span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Number16.png);
+}
+
+.menu a.menu-item.viewparameter-text span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Text16.png);
+}
+
+.menu a.menu-item.viewparameterevent span.menu-item-icon,
+.menu a.menu-item.formparameterevent span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Parametermethod16.png);
+}
+
+.menu a.menu-item.viewparameter-boolean span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Boolean16.png);
+}
+
+
+.menu a.menu-item.view-list span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ListView16.png);
+}
+
+.menu a.menu-item.view-capturelist span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CaptureList16.png);
+}
+
+.menu a.menu-item.viewmethod span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ViewMethod16.png);
+}
+
+.menu a.menu-item.rendermode span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RenderMode16.png);
+}
+
+.menu a.menu-item.viewevent span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ViewEvent16.png);
+}
+
+.menu a.menu-item.formevent span.menu-item-icon
+{
+	background-image: url(../Images/Icons/FormEvent16.png);
+}
+
+.menu a.menu-item.method-create span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SmartObjectMethod16.png);
+}
+
+.menu a.menu-item.method-delete span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SmartObjectMethod16.png);
+}
+
+.menu a.menu-item.method-read span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SmartObjectMethod16.png);
+}
+
+.menu a.menu-item.method-list span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SmartObjectMethod16.png);
+}
+
+.menu a.menu-item.method-update span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SmartObjectMethod16.png);
+}
+
+.menu a.menu-item.control span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Default16px.png);
+}
+
+.menu a.menu-item.control-button span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ButtonControl16.png);
+}
+
+.menu a.menu-item.control-table span.menu-item-icon
+{
+	background-image: url(../Images/Icons/TableControl16.png);
+}
+
+.menu a.menu-item.control-toolbartable span.menu-item-icon
+{
+	background-image: url(../Images/Icons/TableControl16.png);
+}
+
+.menu a.menu-item.control-listtable span.menu-item-icon
+{
+	background-image: url(../Images/Icons/TableControl16.png);
+}
+
+.menu a.menu-item.control-column span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Column16.png);
+}
+
+.menu a.menu-item.control-checkbox span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CheckBoxControl16.png);
+}
+
+.menu a.menu-item.control-textbox span.menu-item-icon
+{
+	background-image: url(../Images/Icons/TextBoxControl16.png);
+}
+
+.menu a.menu-item.control-calendar span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CalendarControl16.png);
+}
+
+.menu a.menu-item.control-multiselectcheckbox span.menu-item-icon
+{
+	background-image: url(../Images/Icons/MultiSelectCheckboxes16.png);
+}
+
+.menu a.menu-item.control-datalabel span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DataLabelControl16.png);
+}
+
+.menu a.menu-item.control-dropdown span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DropDownList16.png);
+}
+
+.menu a.menu-item.control-hyperlink span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Hyperlink.png);
+}
+
+.menu a.menu-item.control-filepostback span.menu-item-icon,
+.menu a.menu-item.control-file span.menu-item-icon
+{
+	background-image: url(../Images/Icons/File16.png);
+}
+
+.menu a.menu-item.control-imagepostback span.menu-item-icon,
+.menu a.menu-item.control-image span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Picture16_02.png);
+}
+
+.menu a.menu-item.control-listdisplay span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ListDisplay16.png);
+}
+
+.menu a.menu-item.control-lookup span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Lookup16.png);
+}
+
+.menu a.menu-item.control-picture span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Picture16.png);
+}
+
+.menu a.menu-item.control-radiobutton span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RadioButton.png);
+}
+
+.menu a.menu-item.control-radiobuttongroup span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RadioButtonGroup.png);
+}
+
+.menu a.menu-item.control-radiobuttonlist span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RadioButtonList16.png);
+}
+
+.menu a.menu-item.control-rating span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Rating16.png);
+}
+
+.menu a.menu-item.control-slider span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SliderControl16.png);
+}
+
+.menu a.menu-item.control-listheading span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ListHeadings16.png);
+}
+
+.menu a.menu-item.control-associationheading span.menu-item-icon
+{
+	background-image: url(../Images/Icons/AssociationHeading16_2.png);
+}
+
+.menu a.menu-item.control-textarea span.menu-item-icon
+{
+	background-image: url(../Images/Icons/TextBoxControl16.png);
+}
+
+.menu a.menu-item.control-toolbarbutton span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ToolbarButtonControl16.png);
+}
+
+.menu a.menu-item.control-tree span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Tree16.png);
+}
+
+.menu a.menu-item.controlevent span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ControlEvent16.png);
+}
+.menu a.menu-item.control-label span.menu-item-icon
+{
+	background-image: url("../Images/Icons/Label16_02.png");
+}
+
+.menu a.menu-item.controlmethod span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ControlMethod16.png);
+}
+
+.menu a.menu-item.controlmethod-none span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ControlMethod16.png);
+}
+
+.menu a.menu-item.controlmethod-text span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ControlMethod16.png);
+}
+
+.menu a.menu-item.controlmethod-boolean span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ControlMethod16.png);
+}
+
+.menu a.menu-item.controlmethod-datetime span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ControlMethod16.png);
+}
+
+.menu a.menu-item.controlmethod-number span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ControlMethod16.png);
+}
+
+.menu a.menu-item.control-panel span.menu-item-icon
+{
+	background-image: url("../Images/Icons/GenericTab16.png");
+}
+
+.menu a.menu-item.panel span.menu-item-icon
+{
+	background-image: url("../Images/Icons/GenericTab16.png");
+}
+.menu a.menu-item.actionitemstate span.menu-item-icon
+{
+	background-image: url("../Images/Icons/ActionItemState16.png");
+}
+.menu a.menu-item.actionexecutiontype span.menu-item-icon
+{
+	background-image: url("../Images/Icons/ActionExecution16.png");
+}
+
+.menu a.menu-item.rule span.menu-item-icon
+{
+	background-image: url("../Images/Icons/ViewEvent16.png");
+}
+
+/* AppStudio Menu Items */
+.menu a.menu-item.new-workflow span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CreateProcess16.png);
+}
+
+.menu a.menu-item.new-smartobject span.menu-item-icon
+{
+	background-image: url(../Images/Icons/NewSmartObject16.png);
+}
+
+.menu a.menu-item.new-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/NewView16.png);
+}
+
+.menu a.menu-item.new-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/NewForm16.png);
+}
+
+.menu a.menu-item.new-report span.menu-item-icon
+{
+	background-image: url(../Images/Icons/NewReport16.png);
+}
+
+.menu a.menu-item.new-application span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CreateNewApplication16.png);
+}
+
+.menu a.menu-item.new-category span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CreateFolder16.png);
+}
+
+.menu a.menu-item.edit-smartobject span.menu-item-icon
+{
+	background-image: url(../Images/Icons/EditSmartObject16.png);
+}
+
+.menu a.menu-item.edit-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/EditView16.png);
+}
+
+.menu a.menu-item.edit-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/EditForm16.png);
+}
+
+.menu a.menu-item.edit-report span.menu-item-icon
+{
+	background-image: url(../Images/Icons/EditReport16.png);
+}
+
+.menu a.menu-item.edit-application span.menu-item-icon
+{
+	background-image: url(../Images/Icons/EditApplication16.png);
+}
+
+.menu a.menu-item.edit-workflow span.menu-item-icon
+{
+	background-image: url(../Images/Icons/EditProcess16.png);
+}
+
+.menu a.menu-item.unlock-workflow span.menu-item-icon
+{
+	background-image: url(../Images/Icons/UnlockProcess16.png);
+}
+
+.menu a.menu-item.delete-smartobject span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DeleteSmartObject16.png);
+}
+
+.menu a.menu-item.delete-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DeleteView16.png);
+}
+
+.menu a.menu-item.delete-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DeleteForm16.png);
+}
+
+.menu a.menu-item.delete-report span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DeleteReport16.png);
+}
+
+.menu a.menu-item.delete-application span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DeleteApplication16.png);
+}
+
+.menu a.menu-item.delete-workflow span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DeleteProcess16.png);
+}
+
+.menu a.menu-item.checkin-smartobject span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CheckInSmartObject16.png);
+}
+
+.menu a.menu-item.checkin-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CheckInView16.png);
+}
+
+.menu a.menu-item.checkin-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CheckInForm16.png);
+}
+
+.menu a.menu-item.checkin-application span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Default16px.png);
+}
+
+.menu a.menu-item.checkout-smartobject span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CheckOutSmartObject16.png);
+}
+
+.menu a.menu-item.checkout-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CheckOutView16.png);
+}
+
+.menu a.menu-item.checkout-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CheckOutForm16.png);
+}
+
+.menu a.menu-item.checkout-application span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Default16px.png);
+}
+
+.menu a.menu-item.undocheckout-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/UndoCheckOutView16.png);
+}
+
+.menu a.menu-item.undocheckout-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/UndoCheckOutForm16.png);
+}
+
+.menu a.menu-item.undocheckout-application span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Default16px.png);
+}
+
+.menu a.menu-item.save-as-smartobject span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SaveAsSmartObject16.png);
+}
+
+.menu a.menu-item.save-as-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SaveAsView16.png);
+}
+
+.menu a.menu-item.save-as-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SaveAsForm16.png);
+}
+
+.menu a.menu-item.save-as-application span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Default16px.png);
+}
+
+.menu a.menu-item.save-as-workflow span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SaveAsProcess16.png);
+}
+
+.menu a.menu-item.reuse-workflow span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ReuseProcess16.png);
+}
+
+.menu a.menu-item.runas-form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RunFormParameter16.png);
+}
+
+.menu a.menu-item.run-application span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RunApplication16.png);
+}
+
+.menu a.menu-item.application span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Application16.png);
+}
+
+.menu a.menu-item.view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/View16.png);
+}
+
+.menu a.menu-item.smartobject span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SmartObject16.png);
+}
+
+.menu a.menu-item.report span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Report16.png);
+}
+
+.menu a.menu-item.form span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SmartForm16.png);
+}
+
+.menu a.menu-item.workflow span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Process16.png);
+}
+
+.menu a.menu-item.category span.menu-item-icon
+{
+	background-image: url(../Images/Icons/FolderOpen16.png);
+}
+
+.menu a.menu-item.rename span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Rename16.png);
+}
+
+.menu a.menu-item.moveto span.menu-item-icon,
+.menu a.menu-item.move-to span.menu-item-icon
+{
+	background-image: url(../Images/Icons/MoveBetweenFolders16.png);
+}
+
+.menu a.menu-item.run-new-tab span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RunInNewTab16.png);
+}
+
+.menu a.menu-item.run-new-window span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RunInNewWindow16.png);
+}
+
+/* Form Design Layout Overflow */
+.menu a.menu-item.add-view span.menu-item-icon
+{
+	background-image: url(../Images/Icons/AddView16.png);
+}
+
+.menu a.menu-item.insert-tab span.menu-item-icon
+{
+	background-image: url(../Images/Icons/InsertTab16.png);
+}
+
+.menu a.menu-item.rename-tab span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RenameTab16.png);
+}
+
+.menu a.menu-item.remove-tab span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RemoveTab16.png);
+}
+
+.menu a.menu-item.move-tab-left span.menu-item-icon
+{
+	background-image: url(../Images/Icons/MoveTabLeft16.png);
+}
+
+.menu a.menu-item.move-tab-right span.menu-item-icon
+{
+	background-image: url(../Images/Icons/MoveTabRight16.png);
+}
+
+.menu a.menu-item.row-layout span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RowLayout16.png);
+}
+
+.menu a.menu-item.column-layout span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ColumnLayout16.png);
+}
+
+.menu a.menu-item.align-left span.menu-item-icon
+{
+	background-image: url(../Images/Icons/AlignLeft16.png);
+}
+
+.menu a.menu-item.align-right span.menu-item-icon
+{
+	background-image: url(../Images/Icons/AlignRight16.png);
+}
+
+.menu a.menu-item.align-top span.menu-item-icon
+{
+	background-image: url(../Images/Icons/AlignTop16.png);
+}
+
+.menu a.menu-item.align-bottom span.menu-item-icon
+{
+	background-image: url(../Images/Icons/AlignBottom16.png);
+}
+
+.menu a.menu-item.align-middle span.menu-item-icon
+{
+	background-image: url(../Images/Icons/AlignMiddel16.png);
+}
+
+.menu a.menu-item.align-center span.menu-item-icon
+{
+	background-image: url(../Images/Icons/AlignCenter16.png);
+}
+
+.menu a.menu-item.clear-table span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ClearTable16.png);
+}
+
+.menu a.menu-item.clear-row span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ClearRow16.png);
+}
+
+.menu a.menu-item.clear-column span.menu-item-icon
+{
+	background-image: url(../Images/Icons/ClearColumn16.png);
+}
+
+.menu a.menu-item.insert-column-left span.menu-item-icon
+{
+	background-image: url(../Images/Icons/InsertTableColumnsToLeft16.png);
+}
+
+.menu a.menu-item.insert-column-right span.menu-item-icon
+{
+	background-image: url(../Images/Icons/InsertTableColumnsToRight16.png);
+}
+
+.menu a.menu-item.insert-row-above span.menu-item-icon
+{
+	background-image: url(../Images/Icons/InsertTableRowAbove16.png);
+}
+
+.menu a.menu-item.insert-row-below span.menu-item-icon
+{
+	background-image: url(../Images/Icons/InsertTableRowBelow16.png);
+}
+
+.menu a.menu-item.remove-column span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RemoveColumn16.png);
+}
+
+.menu a.menu-item.remove-row span.menu-item-icon
+{
+	background-image: url(../Images/Icons/RemoveRow16.png);
+}
+
+.menu a.menu-item.merge-cell-right span.menu-item-icon
+{
+	background-image: url(../Images/Icons/MergeCellRight16.png);
+}
+
+.menu a.menu-item.merge-cell-below span.menu-item-icon
+{
+	background-image: url(../Images/Icons/MergeCellBelow16.png);
+}
+
+.menu a.menu-item.sort-by-name span.menu-item-icon,
+.menu a.menu-item.sort-by-name-asc span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Sort_AtoZ16.png);
+}
+
+.menu a.menu-item.sort-by-name-desc span.menu-item-icon
+{
+	background-image: url(../Images/Icons/Sort_ZtoA16.png);
+}
+
+.menu a.menu-item.sort-by-type span.menu-item-icon,
+.menu a.menu-item.sort-by-type-asc span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SortByTypeDown16.png);
+}
+
+.menu a.menu-item.sort-by-type-desc span.menu-item-icon
+{
+	background-image: url(../Images/Icons/SortByTypeUp16.png);
+}
+
+.menu a.menu-item.control-picker span.menu-item-icon 
+{
+	background-image: url("../Images/Icons/PickerToolBar16.png");
+}
+
+.menu a.menu-item.view-flow span.menu-item-icon 
+{
+	background-image: url("../Images/Icons/ViewFlow16.png");
+}
+
+/* SP Package menu items */
+.menu a.menu-item.create-package span.menu-item-icon
+{
+	background-image: url(../Images/Icons/CreateNewPackage16.png);
+}
+
+.menu a.menu-item.deploy-package span.menu-item-icon
+{
+	background-image: url(../Images/Icons/DeployPackage16.png);
+}
+

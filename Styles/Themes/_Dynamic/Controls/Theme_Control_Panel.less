@@ -1,0 +1,185 @@
+//#region RESETS
+
+
+.theme-entry .panel > .panel-body{
+    //override core.less default to white
+    //TODO: move the white out of core.less into corelegacy.less.
+    background-color: transparent;
+}
+
+
+.theme-entry .panel-header-c {
+    //override core.less default to 1px
+    border-color: transparent;
+}
+
+.theme-entry .grid-header-text
+{
+    font-weight: normal; //override platinum2 styles bleeding into canvas in design time (font-weight: bold)
+}
+
+//#endregion RESETS
+
+
+.theme-entry .panel > .panel-body
+{
+    border: none;
+    border-radius: 0 0 @View-Rounding @View-Rounding; /* round only the bottom corners */
+}
+
+.theme-entry .panel.with-header.without-toolbar > .panel-body,
+.theme-entry .panel.without-header.with-toolbar > .panel-body
+{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.theme-entry .panel.with-footer > .panel-body
+{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.theme-entry .panel.collapsed > .panel-header,
+.theme-entry .grid.collapsed > .grid-header
+{
+    border-radius: @View-Rounding;
+}
+
+.theme-entry .grid-header-wrapper,
+.theme-entry .panel-header-wrapper 
+{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+
+    .inline-editable{
+        flex-grow:1; //this is the textbox that replaces .panel-header-text in design time when editing the view header.
+    }
+
+    .grid-header-text, 
+    .panel-header-text
+    {
+        flex-grow:1;
+        overflow-x: hidden;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        width: 1px; //this seems to make sure the text gets clipped with elipsis when the view is too thin.
+
+        html[dir=ltr] &
+        {
+            padding-left: @Block-Inset-Horizontal-Spacing;
+        }
+        html[dir=rtl] &
+        {
+            padding-right: @Block-Inset-Horizontal-Spacing;
+        }
+    }
+
+    .grid-header-controls, 
+    .panel-header-controls
+    {
+        height: auto; /*override - base - hardcoded 20px*/
+        position: relative; //override - core.less
+        top:auto;           //override - core.less
+        right: auto;        //override - core.less
+
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+
+        flex-shrink:0;
+
+        //buttons themselves.
+        a
+        {
+            float:none; //override - core.less
+            display: block;
+            background-repeat: no-repeat;
+        }
+
+        html[dir=ltr] &
+        {
+            padding-right: @Block-Inset-Horizontal-Spacing;
+        }
+        html[dir=rtl] &
+        {
+            padding-left: @Block-Inset-Horizontal-Spacing;
+        }
+    }
+
+}
+
+
+.theme-entry .grid-header-wrapper .grid-header-controls a.collapse-vertical,
+.theme-entry .panel-header-wrapper .panel-header-controls a.collapse-vertical
+{
+    outline: none;
+}
+
+
+#pgWizard .theme-entry .grid-header-wrapper .inline-editable,  //designtime
+#pgWizard .theme-entry .panel-header-wrapper .inline-editable, //designtime
+.theme-entry .grid-header-wrapper .grid-header-text,           //runtime
+.theme-entry .panel-header-wrapper .panel-header-text          //runtime
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    float: none; /*override - base*/
+
+    padding-left: @Block-Inset-Horizontal-Spacing; 
+}
+
+.theme-entry 
+{
+    .panel-body-t, 
+    .panel-body-b
+    {
+        display:none; //these are hidden in modern themes, as these elements were used for rounded corner images in IE10 days.
+    }
+
+
+    .panel-header-c 
+    {
+        //this was causing misalignment in the message dialogs between heading and body text.
+        border-width: 0px; //override core.less 1px;
+    }
+
+    //This was causing a problem with alignment in message dialogs. 
+    //Make this selector more specific to that case if its creating issues elsewhere.
+    .panel.full > .panel-body > .panel-body-m {
+        bottom: 0px; //override 3px in core.less
+        left: 0px; //override 3px in core.less
+        right: 0px; //override 3px in core.less
+        top: 0px; //override 3px in core.less
+      }
+}
+
+
+//#region DIALOG AREA HEADINGS
+// Note: In a dialog we use the .panel classes for layout, but sometimes we have headings for each area of a dialog
+//      like "Context Browser" or "Filters" etc.
+// Look for these headings in
+// Note: the .panel classes SHOULD NOT have any colors associated with them normally, they are layout classes only, 
+//       this is the only exception as we couldn't change these headers to be a <h2></h2> in c# at the time.
+
+.theme-entry .dialog
+{
+    .grid-header-wrapper .grid-header-text,        
+    .panel-header-wrapper .panel-header-text
+    {     
+
+        color: @Heading4-Text-Color;
+        font-size: @Heading4-Text-Size;
+        //font-family: @Heading-Font-Family;
+    }
+}

@@ -1,0 +1,200 @@
+﻿//#region ControlPackBase Legacy
+
+
+//Like CoreLegacy.less, the colors found in ControlPackBase.less were moved out so that Dynamic themes could overrride them.
+//Legacy themes like this one rely on these base colors, whereas new themes (non legacy themes) do not.
+
+//The Control developer can choose to import these or not, depending on whether they need them.
+@import (reference) "@{SourceCode-Designer-Variables-File}";
+
+.theme-entry .SFC div,
+.theme-entry .SFC td {
+    color: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+    text-align: inherit;
+}
+
+.theme-entry .SFC .disable-overlay {
+    background-color: #EEEEEE; /*Because IE does not render what is not shown and we do not want it to be seen*/
+}
+
+.theme-entry .SFC.disabled {
+    border-color: #ADAEDA !important;
+}
+//Highlight for designer search in the activity picker in the properties grid
+//for the report header and reporting controls
+.workflowTreeContainer .highlight {
+    background-color: @Search-Highlight-Color;
+}
+//Runtime
+//Highlight for search in the activity picker
+//for the report header
+//Note this color is only correct for platinum
+//This cannot (only) be added per theme since custom themes eg platinum 2 will render incorrectly / have no color
+//The color should move to an all themes file in future
+.theme-entry .workflowTreeContainer .highlight {
+    background-color: #FFFF00;
+}
+
+//#endregion ControlPackBase Legacy
+
+
+
+
+/*RadGrid Styling */
+.theme-entry .radgrid-grid-column-header-text
+{
+    line-height: 20px;
+    overflow: hidden;
+    padding: 0 4px 0 2px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -icab-text-overflow: ellipsis;
+    -khtml-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
+.theme-entry .radhtmlcharttitle
+{
+    min-height: 18px;
+    margin-left: 2px;
+}
+
+.theme-entry .radhtmlchartsubtitle
+{
+    margin-top: -4px;
+    margin-left: 2px;
+}
+
+.theme-entry .UserPerfSubHeader
+{
+    margin-top: -0.1rem;
+    margin-left: 0.2rem;
+}
+
+.theme-entry .UserPerfHeader
+{
+    margin-left: 2px;
+}
+
+.theme-entry .users-complex-search-options
+{
+    margin: 0px 0px 0px 0px;
+}
+
+.theme-entry .indented
+{
+    margin-left: 17px;
+}
+
+.theme-entry .users-complex-search-options.indented
+{
+    margin-left: 15px;
+}
+
+.theme-entry .radgrid-grid-column-header-text
+{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.theme-entry .StandardChart .stylewrapper
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#textBoxDiv
+{
+    width: 286px;
+    margin-left: 5px;
+}
+
+.theme-entry .radgrid-grid-column-headers-wrapper
+{
+    border-style: solid;
+    border-width: 1px;
+}
+
+.theme-entry .radgrid-tableMain
+{
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 0;
+}
+
+.theme-entry .radgrid-checkbox
+{
+    text-align: center;
+}
+
+.theme-entry .pager-buttongeneric
+{
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    float: left;
+}
+
+.theme-entry .StandardGrid .buttonFirstPage,
+.theme-entry .StandardGrid .buttonPrev,
+.theme-entry .StandardGrid .buttonNext,
+.theme-entry .StandardGrid .buttonLast
+{
+    padding: 3px 3px;
+}
+
+.theme-entry .StandardGrid .pagerPage
+{
+    margin-top: 1px;
+}
+
+#display-reportheader-dropdown
+{
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 9px;
+}
+
+/* only found in core*/
+.theme-entry .ActivityInstancesChart
+{
+    background-color: #FFFFFF;
+    margin-right: 10px;
+}
+
+/* RichTextThemeStart */
+
+.RadEditor .reToolbarWrapper .reGrip.grip_last
+{
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+.Default.reWrapper,
+.Default.RadEditor .reContentCell,
+.Default.reColorPicker,
+.Default.reInsertTable,
+.Default.reDropDownBody,
+.Default.reCustomLinks a:hover
+{
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* space between each tool group */
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reWrapper ul.reToolbar
+{
+    margin-right: 2px !important; /* override telerik's important */
+}

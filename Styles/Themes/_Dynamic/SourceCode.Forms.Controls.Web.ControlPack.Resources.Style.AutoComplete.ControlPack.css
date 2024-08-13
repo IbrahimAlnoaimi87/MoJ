@@ -1,0 +1,88 @@
+/*Theme@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  
+}
+/*Images - normal*/
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  
+}
+/* #region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+
+.theme-entry .input-control .input-control-m-c {
+  min-height: calc(var(--main-text-size) + (2 * var(--control-inset-vertical-spacing)));
+}
+.SourceCode-Forms-Controls-Web-ControlPack-AutoComplete .input-control-watermark {
+  padding-left: var(--control-inset-horizontal-spacing);
+}
+/* dropdown menu */
+
+.theme-entry ul.autocomplete-menu {
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 0;
+  border-radius: 0;
+  background-color: var(--menu-background-color);
+  backdrop-filter: var(--menu-background-effect);
+  box-shadow: var(--menu-shadow);
+  outline: 1px solid var(--menu-border-color);
+  border-color: var(--menu-border-color);
+  border-radius: var(--menu-rounding);
+  color: var(--menu-text-color);
+}
+.theme-entry .autocomplete-menu .ui-menu-item,
+.theme-entry .autocomplete-menu .ui-menu-item a {
+  color: inherit !important;
+}
+/* item in a menu row */
+
+.theme-entry .autocomplete-menu .ui-menu-item a {
+  min-height: 2.4rem;
+  padding: var(--control-inset-vertical-spacing) var(--control-inset-horizontal-spacing);
+  line-height: normal;
+  min-height: var(--main-text-size);
+  border-radius: 0;
+  border: 1px solid var(--menu-border-color);
+}
+/* dropdown menu row (hover) */
+
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-hover {
+  background-color: var(--menu-item-hover-background-color);
+  color: var(--menu-item-hover-text-color) !important;
+}
+/* dropdown menu row (selected) */
+
+.theme-entry .autocomplete-menu .ui-menu-item.selected {
+  background-color: var(--menu-item-selected-background-color);
+  color: var(--menu-item-selected-text-color) !important;
+}
+.theme-entry .autocomplete-menu .ui-menu-item a.ui-state-focus {
+  border-color: var(--menu-item-focus-border-color);
+}
+.theme-entry .autocomplete-menu .ui-menu-item.selected a,
+.theme-entry .autocomplete-menu .ui-menu-item.selected span {
+  color: inherit;
+}
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-AutoComplete .input-control.text-input .input-control-wrapper input[type=text] {
+  vertical-align: top;
+  min-height: var(--main-text-size);
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.msie .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-AutoComplete input.ui-autocomplete-loading {
+  background-position: calc(98.2%) center;
+}
+/* #region validation */
+
+/* #endregion validation */
+
+/* #endregion DESKTOP*/
+

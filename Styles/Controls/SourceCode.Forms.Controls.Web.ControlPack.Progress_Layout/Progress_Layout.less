@@ -1,0 +1,185 @@
+﻿@_stepContainerMinWidth: 136px;
+
+@_stepSize: 16px;
+@_stepBorderWidth: 2px;
+
+@_imageSize: 10px;
+
+@_connectorHeight: 6px;
+@_connectorWidth: auto;
+@_connectorMinWidth: 61px;
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl
+{
+    overflow: hidden;
+
+    .stylewrapper
+    {
+        width: 100%;
+        height: 100%;
+
+        .container.metro
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+
+            .step-container
+            {
+                flex-grow: 1;
+                min-width: @_stepContainerMinWidth;
+                list-style: none;
+
+                .step-area
+                {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    align-items: center;
+                    text-decoration: none;
+                    cursor: default;
+
+                    .step-item
+                    {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        width: 100%;
+
+                        .connector-left,
+                        .connector-right
+                        {
+                            width: @_connectorWidth;
+                            min-width: @_connectorMinWidth;
+                            height: @_connectorHeight;
+                            flex-grow: 1;
+                        }
+
+                        .step
+                        {
+                            width: @_stepSize;
+                            min-width: @_stepSize;
+                            height: @_stepSize;
+                            background-size: @_imageSize;
+                            -moz-background-size: @_imageSize;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            border-radius: calc((@_stepSize + (@_stepBorderWidth * 2)) / 2);
+                            border-width: @_stepBorderWidth;
+                            border-style: solid;
+                            flex-grow: 0;
+                            margin-left: -1px;
+                            margin-right: -1px;
+                        }
+                    }
+
+                    .step-title
+                    {
+                        width: 100%;
+                        margin-top: calc((@_stepSize / 2) - 2);
+                    }
+                }
+
+                &.first
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .connector-left
+                            {
+                                visibility: hidden;
+                            }
+                        }
+                    }
+                }
+
+                &.last
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .connector-right
+                            {
+                                visibility: hidden;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.clickable
+            {
+                .step-container
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .step
+                            {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.disabled
+    {
+        .stylewrapper
+        {
+            .container.metro
+            {
+                .step-container
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .step
+                            {
+                                cursor: initial;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.hidden
+    {
+        display: none;
+    }
+
+    &:not(.designtime)
+    {
+        .stylewrapper
+        {
+            .container.metro
+            {
+                .step-container
+                {
+                    .step-area
+                    {
+                        .step-item
+                        {
+                            .step
+                            {
+                                z-index: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

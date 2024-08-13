@@ -1,0 +1,492 @@
+/* Theme: Lithium */
+/* Author: Lewis Garmston */
+/* Date: 20/02/2014 */
+/* purpose: both orientations*/
+
+/*#region MAIN STRUCTURE*/
+
+/*#region SINGLE COLUMN VIEWS*/
+.mobile .theme-entry .panel-body-wrapper > div > table,
+.mobile .theme-entry .panel-body-wrapper > div > table > tbody,
+.mobile .theme-entry .panel-body-wrapper > div > table > tbody > tr,
+.mobile .theme-entry .panel-body-wrapper > div > table > tbody > tr > td
+{
+	display: block !important;
+	width: auto!important;
+}
+
+.mobile .theme-entry .form .row .view
+{
+	display: block;
+	width: auto !important;
+}
+
+.mobile .theme-entry .form > .row > .view .innerpanel
+{
+	margin-bottom: 1.2rem !important; /*hardcoded as I can't get what was set in the designer for form padding*/
+}
+
+.mobile .theme-entry .form > .row:last-child > .view .innerpanel
+{
+	margin-bottom: 0 !important;
+}
+
+.mobile .theme-entry .form .row .formcontrol
+{
+	display: block !important;
+	width: auto !important;
+	margin-bottom: 1.2rem !important;
+}
+
+.mobile .theme-entry .form > .row > .formcontrol > *
+{
+	margin-left: 0.6rem !important;
+	margin-right: 0.6rem !important;
+}
+
+/*#endregion SINGLE COLUMN VIEWS*/
+
+/*#region Responsive CSS grid Table */
+.mobile .theme-entry .panel-body-wrapper > div > .Grid-Layout //Canvas table should always be responsive
+{
+    display: block;
+    width: auto;
+    // override inline styles
+    grid-template-columns: unset !important;
+    grid-template-rows: unset !important;
+    -ms-grid-columns: unset !important;
+    -ms-grid-rows: unset !important;
+
+    & > .editor-cell
+    {
+        // override inline styles
+        grid-column-start: unset !important;
+        grid-column-end: unset !important;
+        grid-row-start: unset !important;
+        grid-row-end: unset !important;
+        -ms-grid-column: unset !important;
+        -ms-grid-column-span: unset !important;
+        -ms-grid-row: unset !important;
+        -ms-grid-row-span: unset !important;
+    }
+}
+/*#endregion Responsive CSS grid Table */
+
+/*#endregion MAIN STRUCTURE*/
+
+/*#region FORM OVERRIDES*/
+
+.mobile .theme-entry .runtime-form > .form
+{
+	padding: 0!important; /*override -inline - authored form padding*/
+}
+
+.mobile .theme-entry .runtime-content
+{
+	padding-left: 0!important; /*override -inline - authored form padding*/
+	padding-right: 0!important; /*override -inline - authored form padding*/
+}
+
+/*#region ROW LAYOUT */
+.mobile body.theme-entry .form > .row > .view > *
+{
+	margin-left:0!important; /*override - inline authored by form renderer */
+	margin-right:0!important; /*override - inline authored by form renderer */
+}
+/*#endregion*/
+
+/*#region COLUMN LAYOUT */
+.mobile body.theme-entry .form > .col
+{
+	width:100% !important; /* override inline */
+}
+
+.mobile body.theme-entry .form > .col > .view,
+.mobile body.theme-entry .form > .col > .formcontrol
+{
+	margin: 0 !important; /* override scoped/embedded */
+}
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region PAGE/DIALOG SCROLLING behaviour*/
+/*As all popups will appear fixed to the edges of the screen, rather than scrolling with the document...
+  We change the behaviour so that the body can no longer scroll (popups are direct children of the body node)   */
+
+body
+{
+	overflow: hidden !important;
+	min-height: 100%;
+	-webkit-overflow-scrolling: auto;
+	/*test*/
+	/*background-color: red;*/
+}
+
+body > form
+{
+	overflow: auto !important;
+	height: 100%;
+	min-height: 0;
+	-webkit-overflow-scrolling: touch;
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+body > form.file-input
+{
+	height:0;
+	width:0;
+}
+
+/*#endregion*/
+
+/*#region TOOLBARS */
+
+/*#region TOOLBAR BUTTONS - icon only*/
+
+.mobile .theme-entry a.toolbar-button 
+{
+	padding-right: 1.6rem; /* Making the toolbar button square */
+	padding-left: 1.6rem;
+}
+
+.mobile .theme-entry a.toolbar-button span.button-text
+{
+	display: none;
+}
+
+.mobile .theme-entry a.toolbar-button span.button-c span.button-icon
+{
+	margin-right: 0;
+}
+
+.mobile .theme-entry a.toolbar-button span.button-text:only-child
+{
+	display:inline-block;
+}
+
+/*#endregion*/
+
+/*#endregion TOOLBARS */
+
+/*#region DIALOGS*/
+/*Make them full screen and scroll the content area*/
+
+/*hack - these are identified by a ui-draggable for now*/
+.mobile .theme-entry .dialog
+{
+	position: absolute!important;
+	left: 0!important;
+	right: 0!important;
+	top: 0!important;
+	bottom: 0!important;
+	display: block;
+	height: 100%!important;
+	width: 100%!important;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mobile .theme-entry .dialog .popup-body
+{
+}
+
+.mobile .theme-entry .dialog .popup-body-content
+{
+	position: absolute; /*make the body area scrollable*/
+}
+
+/*#region message box dialogs override*/
+
+.mobile .theme-entry .dialog.error-message:not(.runtime-message) .popup-body-content,
+.mobile .theme-entry .dialog.warning-message:not(.runtime-message) .popup-body-content,
+.mobile .theme-entry .dialog.info-message:not(.runtime-message) .popup-body-content,
+.mobile .theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-body-content
+{
+	position: absolute; /*make the body area scrollable*/
+}
+
+.mobile .theme-entry .dialog.error-message:not(.runtime-message) .popup-body,
+.mobile .theme-entry .dialog.warning-message:not(.runtime-message) .popup-body,
+.mobile .theme-entry .dialog.info-message:not(.runtime-message) .popup-body,
+.mobile .theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-body
+{
+	position: absolute;
+	top: 5.2rem;
+	bottom: 7.2rem;
+	left: 0;
+	right: 0;
+	padding-left: 1.0rem;
+	padding-right: 1.0rem;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mobile .theme-entry .popup.dialog.error-message:not(.runtime-message) .message-box-content .panel-body-m-c,
+.mobile .theme-entry .popup.dialog.warning-message:not(.runtime-message) .message-box-content .panel-body-m-c,
+.mobile .theme-entry .popup.dialog.info-message:not(.runtime-message) .message-box-content .panel-body-m-c,
+.mobile .theme-entry .popup.dialog.confirmation-message:not(.runtime-message) .message-box-content .panel-body-m-c
+{
+	max-height:100%;
+}
+
+.mobile .theme-entry .dialog.error-message:not(.runtime-message) .popup-header,
+.mobile .theme-entry .dialog.error-message:not(.runtime-message) .popup-footer,
+.mobile .theme-entry .dialog.warning-message:not(.runtime-message) .popup-header,
+.mobile .theme-entry .dialog.warning-message:not(.runtime-message) .popup-footer,
+.mobile .theme-entry .dialog.info-message:not(.runtime-message) .popup-header,
+.mobile .theme-entry .dialog.info-message:not(.runtime-message) .popup-footer,
+.mobile .theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-header,
+.mobile .theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-footer
+{
+	position: absolute;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: auto;
+	left: 0;
+	right: 0;
+}
+
+.mobile .theme-entry .dialog.error-message:not(.runtime-message) .popup-header,
+.mobile .theme-entry .dialog.warning-message:not(.runtime-message) .popup-header,
+.mobile .theme-entry .dialog.info-message:not(.runtime-message) .popup-header,
+.mobile .theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-header
+{
+	top: 0;
+}
+
+.mobile .theme-entry .dialog.error-message:not(.runtime-message) .popup-footer,
+.mobile .theme-entry .dialog.warning-message:not(.runtime-message) .popup-footer,
+.mobile .theme-entry .dialog.info-message:not(.runtime-message) .popup-footer,
+.mobile .theme-entry .dialog.confirmation-message:not(.runtime-message) .popup-footer
+{
+	bottom: 0;
+}
+
+.mobile .theme-entry .dialog.credentialsPopupDialog
+{
+	height: auto;
+}
+
+.mobile .theme-entry .dialog.credentialsPopupDialog .SignInForm
+{
+	height: auto;
+}
+
+.mobile .theme-entry .dialog.credentialsPopupDialog .credentialsRequiredReason
+{
+	height: auto;
+}
+/*endregion*/
+
+/*#region specific dialogs*/
+
+.mobile .theme-entry .dialog#PickerSearchDialog
+{
+	height: 100%!important; /*override the desktop size, for this specific dialog*/
+	width: 100%!important; /*override the desktop size, for this specific dialog*/
+	min-height: 32.0rem; /* Minimum height supported for viewport*/
+	min-width: 32.0rem; /* Minimum width supported for viewport*/
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .panel,
+.mobile .theme-entry .dialog#PickerSearchDialog .panel-body,
+.mobile .theme-entry .dialog#PickerSearchDialog .panel-body-m,
+.mobile .theme-entry .dialog#PickerSearchDialog .panel-body-m-c,
+.mobile .theme-entry .dialog#PickerSearchDialog .panel-body-wrapper > *
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .panel-body-wrapper > * > .wrapper
+{
+	display:block;
+	height:100%;
+	position:relative;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .form-field
+{
+	bottom:5.1rem;
+	left:0;
+	position:absolute;
+	top:4.1rem;
+	width:100%;
+	margin:0!important;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .form-field:first-child
+{
+	top:0;
+	bottom:auto;
+	height:3.6rem;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .form-field:last-child
+{
+	top:auto;
+	bottom:0;
+	height:4.8rem;
+	overflow: hidden;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .form-field + .form-field .form-field-element-wrapper > *:first-child
+{
+	margin-top: 0;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .form-field .form-field-element-wrapper
+{
+	height:100%;
+	display: block;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .full.grid
+{
+	min-height:100px!important;
+	height:100%!important;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .grid-column-headers
+{
+	/*remove headers for more screen real-estate - means losing sorting functionality*/
+	display: none;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .full.grid .grid-body-content
+{
+	/*remove headers for more screen real-estate - means losing sorting functionality*/
+	top: 0;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control,
+.mobile .theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box div.editable-area,
+.mobile .theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control .input-control-wrapper,
+.mobile .theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box .input-control-m-c
+{
+	height: 4.6rem !important;
+}
+
+.mobile .theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box .input-control-m-c
+{
+	box-sizing: content-box;
+}
+
+.mobile .theme-entry #SessionExpirationWarningDialog label.input-control.checkbox span.input-control-text 
+{
+	white-space: normal;
+	display: inline-block;
+}
+
+.mobile .theme-entry #SessionExpirationWarningDialog label.input-control.checkbox
+{
+	overflow:hidden;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region DIALOGS - REMOVE MAXIMIZE BUTTON*/
+/*note - all phone dialogs will be full screen*/
+
+.mobile .theme-entry .dialog .popup-header-buttons .restore,
+.mobile .theme-entry .dialog .popup-header-buttons .maximize
+{
+	display: none;
+}
+
+.mobile .theme-entry .dialog.sub-view .popup-header-buttons,
+.mobile .theme-entry .dialog.sub-form .popup-header-buttons
+{
+	width: 30px;
+}
+
+/*#endregion*/
+
+.mobile .theme-entry .dialog.id-hyperlink-config
+{
+	height: 100%!important; /* override desktop dimensions set with !important */
+}
+
+/*#endregion DIALOGS */
+
+/*#region CALENDAR POPUPS */
+
+.mobile .theme-entry .popup.id-calendar-control-popup
+{
+	position: absolute !important;
+	top: auto !important;
+	left: 0 !important;
+	bottom: 0!important;
+	right: 0!important;
+	height: auto !important;
+	min-height: 0 !important;
+	max-height: none !important;
+	width: 100%!important; /*for calendar and color pickers etc*/
+	display: block!important; /*for calendar and color pickers etc*/
+}
+
+.mobile .theme-entry .calendar-outline
+{
+	border-radius:0; /* reset theme - popups always full width on phone */
+}
+
+.mobile .theme-entry .top-calendar a
+{
+	margin-top:0.7rem; /* override - theme */
+}
+
+.mobile .theme-entry .top-calendar a.today-title
+{
+	padding:0 1.0rem; /* override - theme */
+}
+
+.mobile .theme-entry .calendar-content-outside
+{
+	text-align:center;
+}
+
+.mobile .theme-entry .dayname, 
+.mobile .theme-entry a.day,
+.mobile .theme-entry a.day:hover
+{
+	height:3.2rem;
+	line-height: 3.2rem;
+}
+
+.mobile .theme-entry .popup.id-calendar-control-popup .timepicker-content
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mobile .theme-entry .popup.id-calendar-control-popup.type-time-only .timepicker-content
+{
+	width:100%;
+}
+
+/*#endregion*/
+
+/*#region grid Filter*/
+.mobile .theme-entry .filterContainer .quickSearch.filter .filterTxt
+{
+	clear: both;
+	padding-left: 0;
+}
+/*#endregion grid Filter*/
+
+
+

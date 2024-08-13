@@ -1,0 +1,716 @@
+﻿/*  don't override body please */
+.LandingContent .PageText
+{
+    padding-left:9px;
+    color:#232d33;
+    font-size:11px;
+    min-height:64px;
+    padding-top:9px;
+    padding-right:9px;
+}
+
+.LandingContent .PageText .PageIcon
+{
+    padding-right:10px;
+}
+
+.LandingContent
+{
+    min-height: 100%;
+}
+
+.LandingContent .DiagramIntro,
+#AppStudioIntroPanel .LandingContent .PageHelpLink
+{
+    padding-left:9px;
+    color:#232d33;
+    font-size:11px;
+}
+
+html[dir=rtl] .LandingContent .DiagramIntro
+{
+    padding-right:9px;
+}
+
+.LandingContent .PageHeader,
+.SessionContent .PageHeader,
+.SignInContent .PageHeader
+{
+    font-weight:bold;
+    font-size:16px;
+    color:#517513;
+    padding-bottom:8px;
+    font-family:Verdana,arial;
+}
+
+.SignInContent .PageHeader,
+.SessionContent .PageHeader
+{
+    padding-bottom: 0;
+}
+
+.LandingContent .PageHelpLink
+{
+    line-height:18px;
+}
+
+html[dir=rtl] .LandingContent .PageHelpLink
+{
+    padding-right:9px;
+}
+
+.wizard-step-content .LandingContent .PageHelpLink
+{
+    padding-left:9px;
+    margin-bottom:30px;
+}
+
+.LandingContent .PopupText
+{
+    color:#232d33;
+    font-size:11px;
+    line-height:20px;
+}
+
+.LandingContent .PopupControl
+{
+    margin-left:9px;
+    position:relative;
+    clear:both;
+}
+
+html[dir=rtl] .LandingContent .PopupControl
+{
+    margin-left:0;
+    margin-right:9px;
+    right:0;
+}
+
+.LandingContent .RoundCorners5px
+{
+    width:100%;
+    clear:both;
+    position:relative;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+
+.LandingContent .RoundCorners5px.grey
+{
+    background:#f0f0f0;
+    border:solid 1px #acacac;
+}
+
+.LandingContent .RoundCorners5px.green
+{
+    background:#88b46b;
+    border:solid 1px #526343;
+}
+
+.LandingContent .RoundCorners5px.blue
+{
+    background:#72aeb6;
+    border:solid 1px #3a7c6e;
+}
+
+.LandingContent .RoundCorners5px.orange
+{
+    background:#deb407;
+    border:solid 1px #b99219;
+}
+
+
+.LandingContent .SectionHead
+{
+    clear:both;
+    font-size:16px;
+    font-weight:bold;
+    vertical-align:top;
+    margin-top:9px;
+    margin-left:9px;
+    line-height:28px;
+    width:160px;
+}
+
+.LandingContent .SectionHead div
+{
+    float:left;
+    padding-left:5px;
+}
+
+.LandingContent .SectionHead img
+{
+    float:left;
+}
+
+.LandingContent .RoundCorners5px.grey .SectionHead
+{
+    color:#232d33;
+}
+
+.LandingContent .RoundCorners5px.blue .SectionHead
+{
+    color:#FFFFFF;
+}
+
+.LandingContent .RoundCorners5px.green .SectionHead
+{
+    color:#FFFFFF;
+}
+
+.LandingContent .RoundCorners5px.orange .SectionHead
+{
+    color:#FFFFFF;
+}
+
+.LandingContent .Buttons
+{
+    clear:both;
+    position:absolute;
+    font-size:11px;
+    vertical-align:middle;
+    line-height:18px;
+    left:9px;
+    bottom:4px;
+    cursor:pointer;
+    color:#232d33;
+}
+
+.LandingContent .Button
+{
+    position:relative;
+    height:22px;
+    padding:0 3px 0 3px;
+    margin-bottom:5px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+
+.LandingContent .Button .Popup
+{
+    background:url(../images/introduction/blocksections/_pop-up/pointer.png);
+    background-repeat:no-repeat;
+    width:350px;
+}
+
+.LandingContent .Button .Contents
+{
+    margin-left:7px;
+    padding:5px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    background:#ffffff;
+    border:solid 1px #c2c2c2;
+    border-right:solid 2px #c2c2c2;
+    border-bottom:solid 2px #c2c2c2;
+    color:#232d33;
+}
+
+.LandingContent .Button .ContentsLeft
+{
+    margin-Right:7px;
+    padding:5px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    background:#ffffff;
+    border:solid 1px #c2c2c2;
+    border-left:solid 2px #c2c2c2;
+    border-bottom:solid 2px #c2c2c2;
+    color:#232d33;
+}
+
+.LandingContent .Button .Icon
+{
+    vertical-align:middle;
+}
+
+
+.LandingContent .Button.grey
+{
+    background:#f8f8f8;
+    border:solid 1px #acacac;
+    height:24px;
+    line-height:22px;
+    width:90px;
+}
+
+.LandingContent .Button.green
+{
+    background:#deedc2;
+    border:solid 1px #526343;
+    height:27px;
+    line-height:24px;
+    width:90px;
+}
+
+.LandingContent .Button.blue
+{
+    background:#cce1e4;
+    border:solid 1px #3a7c6e;
+    height:22px;
+    line-height:20px;
+    width:145px;
+}
+
+.LandingContent .Button.orange
+{
+    background:#ffe88a;
+    border:solid 1px #b99219;
+    height:24px;
+    line-height:22px;
+    width:150px;
+}
+
+
+.LandingContent .Off
+{
+    display:none;
+}
+
+.LandingContent .MaskBack
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#ffffff;
+    filter: alpha(opacity=70);
+    -moz-opacity:.7;
+    -khtml-opacity: .7;
+    opacity: .7;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    border:solid 1px #ffffff;
+    cursor:pointer;
+}
+
+.LandingContent .MaskFront
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    border:solid 1px transparent;
+    cursor:pointer;
+}
+
+.LandingContent .NoMask
+{
+    filter: alpha(opacity=100) !important;
+    -moz-opacity:1.0 !important;
+    -khtml-opacity: 1.0 !important;
+    opacity: 1.0 !important;
+}
+
+.LandingContent .Mask2Back
+{
+    position:absolute;
+    top:-1px;
+    left:-1px;
+    height:100%;
+    width:100%;
+    background:#e2e2e2;
+    filter: alpha(opacity=70);
+    -moz-opacity:.7;
+    -khtml-opacity: .7;
+    opacity: .7;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    border:solid 1px #e2e2e2;
+    cursor:default;
+}
+
+.LandingContent .Mask2Front
+{
+    position:absolute;
+    top:-1px;
+    left:-1px;
+    height:100%;
+    width:100%;
+    background:#e2e2e2;
+    filter: alpha(opacity=70);
+    -moz-opacity:.7;
+    -khtml-opacity: .7;
+    opacity: .7;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    border:solid 1px #e2e2e2;
+    cursor:default;
+}
+
+/* proposed fix for 536505 */
+.LandingContent .Button .ButtonContent
+{
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*AppStudio Introduction page*/
+
+#AppStudioIntroPanel .LandingContentWrapper /*To set max width and heights - Safari does not allow max-width and heights on display:table elements*/
+{
+    height: 100%;
+    width: 80%;
+    min-width: 600px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#AppStudioIntroPanel .LandingContent
+{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+#AppStudioIntroPanel .DiagramContent
+{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    min-height: 208px;
+}
+
+#AppStudioIntroPanel .DiagramContent .IntroLogo
+{
+    background: url(../images/introduction/K2_Logo80.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+#AppStudioIntroPanel .DiagramContent h1.IntroHeading
+{
+    color: #5e9833;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#AppStudioIntroPanel .DiagramContent .IntroLogoShadow
+{
+    background: url(../images/introduction/K2Logo_Shadow.png);
+    background-repeat: no-repeat;
+    background-size: 176px;
+    width: 176px;
+    height: 27px;
+    margin: 0 auto 15px auto;
+}
+
+#AppStudioIntroPanel .DiagramContent .IntroHeaderText
+{
+    width: 100%;
+    height: 17px;
+}
+
+#AppStudioIntroPanel .DiagramContent .IntroHeaderText span.intro-header-text
+{
+    color: #adae9c;
+    font-size: 11px;
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+
+#AppStudioIntroPanel .DiagramContent .IntroHeaderBar
+{
+    width: 100%;
+    height: 1px;
+    background-color: #adae9c;
+    margin-bottom: 3px;
+    clear: both;
+}
+
+#AppStudioIntroPanel .option-select-box-column
+{
+    min-height: 130px;
+    min-width: 300px;
+}
+
+#AppStudioIntroPanel .option-select-box .desc
+{
+    max-height: 15px;
+    max-width: 265px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#AppStudioIntroPanel .recent-box-column,
+#AppStudioIntroPanel .more-box-column
+{
+    width: 49%;
+    display: inline-block;
+    float: left; /*necessary to clear extra margin that inline-block adds - alternative solution is to use negative margins*/
+    min-height: 130px;
+    margin-bottom: 30px;
+}
+
+#AppStudioIntroPanel .recent-box-column
+{
+    margin-right: 1%;
+
+}
+
+#AppStudioIntroPanel .recent-box-column + .recent-box-column
+{
+    margin-left: 1%;
+    margin-right: 0;
+}
+
+#AppStudioIntroPanel .recent-box-watermark
+{
+    color: #adae9c;
+    display: block;
+    font-size: 9pt;
+    font-style: italic;
+    height: 20px;
+    margin: 63px auto;
+    width: 105px;
+}
+
+#AppStudioIntroPanel .IntroFooter
+{
+    border-top: 1px solid #adae9c;
+    bottom: 0;
+    left: 0;
+    min-height: 18px;
+    position: absolute;
+    width: 100%;
+}
+
+#AppStudioIntroPanel ul.IntroFooterLinks
+{
+    list-style: none;
+    width: 80%;
+    min-width: 600px;
+    max-width: 700px;
+    margin: 10px auto 20px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#AppStudioIntroPanel ul.IntroFooterLinks li
+{
+    margin: auto;
+}
+
+#AppStudioIntroPanel .IntroFooterText
+{
+    width: 80%;
+    min-width: 600px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-copyright-text a,
+.intro-copyright-text a:visited
+{
+    color: #adae9c;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+#AppStudioIntroPanel.panel > .panel-body
+{
+    background-color: transparent;
+}
+
+#AppStudioIntroPanel .LandingContent .SectionHead
+{
+    clear: both;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: top;
+    margin-top: 9px;
+    margin-left: 9px;
+    line-height: 28px;
+    width: 160px;
+}
+
+#AppStudioIntroPanel .LandingContent .SectionHead div
+{
+    float: left;
+    padding-left: 5px;
+}
+
+#AppStudioIntroPanel .LandingContent .SectionHead img
+{
+    float: left;
+}
+
+#AppStudioIntroPanel .LandingContent .PageHelpLink
+{
+    line-height: 14px;
+    max-height: 15px;
+    max-width: 295px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#AppStudioIntroPanel .recentitems, 
+#AppStudioIntroPanel .recentitems ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#AppStudioIntroPanel .recentitems li > a
+{
+    background-color: transparent;
+    background-image: url("../Images/Icons/Document16flat.png");
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+    color: #000;
+    display: inline;
+    line-height: 16px;
+    margin: 0;
+    padding: 2px 4px 2px 23px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+html[dir="rtl"] #AppStudioIntroPanel .recentitems li > a
+{
+    background-position: 99% 1px;
+    padding: 2px 23px 2px 4px;
+}
+
+#AppStudioIntroPanel .LandingContent .recent-box-column ul.recentitems li
+{
+    clear: both;
+    display: block;
+    line-height: 18px;
+    margin: 0;
+    min-height: 18px;
+    padding-left: 5px;
+    padding-top: 7px;
+    max-width: 295px;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#AppStudioIntroPanel .recentitems li a:hover,
+#AppStudioIntroPanel .recentitems li a:focus,
+#AppStudioIntroPanel .recentitems li a.hover
+{
+    text-decoration: underline;
+}
+
+#AppStudioIntroPanel .recentitems li.folder > a
+{
+    background-image: url(../Images/Icons/FolderClosed16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.smartobject > a
+{
+    background-image: url(../Images/Icons/SmartObject16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.view > a,
+#AppStudioIntroPanel .recentitems li.views > a
+{
+    background-image: url(../Images/Icons/View16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.item-view > a
+{
+    background-image: url(../Images/Icons/ItemView16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.list-view > a
+{
+    background-image: url(../Images/Icons/ListView16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.item-view.checked-out > a
+{
+    background-image: url(../Images/Icons/ItemViewCheckOut16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.list-view.checked-out > a
+{
+    background-image: url(../Images/Icons/ListCheckOut16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.item-view.checked-out-user > a
+{
+    background-image: url(../Images/Icons/ItemViewCheckOutUser16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.list-view.checked-out-user > a
+{
+    background-image: url(../Images/Icons/ListCheckOutByOtherUser16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.form > a,
+#AppStudioIntroPanel .recentitems li.forms > a
+{
+    background-image: url(../Images/Icons/SmartForm16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.form.checked-out > a
+{
+    background-image: url(../Images/Icons/FormCheckOut16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.form.checked-out-user > a
+{
+    background-image: url(../Images/Icons/FormCheckOutUser16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.capturelist-view > a
+{
+    background-image: url(../Images/Icons/CaptureList16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.content-view > a
+{
+    background-image: url(../Images/Icons/ContentView16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.capturelist-view.checked-out > a
+{
+    background-image: url(../Images/Icons/CaptureListCheckOut16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.capturelist-view.checked-out-user > a
+{
+    background-image: url(../Images/Icons/CaptureListCheckOutByOtherUser16.png);
+}
+
+#AppStudioIntroPanel .recentitems li.workflow > a
+{
+    background-image: url(../Images/Icons/Process16.png) ! important;
+}
+
+#AppStudioIntroPanel .recentitems li.workflow.workflow-shared > a
+{
+    background-image: url(../Images/Icons/ProcessShared16.png) ! important;
+}
+
+#AppStudioIntroPanel .recentitems li.workflow.workflow-locked > a
+{
+    background-image: url(../Images/Icons/UnlockProcess16.png) ! important;
+}
+
+#AppStudioIntroPanel .recentitems li.workflow.workflow-deployed > a
+{
+    background-image: url(../Images/Icons/DeployedWorkflow16.png) ! important;
+}

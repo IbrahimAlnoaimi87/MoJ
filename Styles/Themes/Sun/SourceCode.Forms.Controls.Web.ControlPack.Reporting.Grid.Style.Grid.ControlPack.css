@@ -1,0 +1,211 @@
+/* RadGrid Styling */
+/* footer (design time) */
+.theme-entry .StandardGrid.designtime .radgrid1-footer .toolbar-wrapper
+{
+	border-color: transparent;
+}
+
+/* footer (design time) */
+.theme-entry .StandardGrid.designtime .report-grid-footer-container
+{
+	background: #fff0c0; /* Old browsers */
+	background: -moz-linear-gradient(top, #fff0c0 0%, #fecf40 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff0c0), color-stop(100%,#fecf40)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fff0c0 0%,#fecf40 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fff0c0 0%,#fecf40 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fff0c0 0%,#fecf40 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fff0c0 0%,#fecf40 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff0c0', endColorstr='#fecf40',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #f0ac00;
+}
+
+.theme-entry .StandardGrid .report-grid-footer-container,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-first,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-prev,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-next,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-last,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-page-input,
+.theme-entry .StandardGrid div.report-grid-navigation-wrapper-page-label,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-first,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-prev,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-first,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-next,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-last,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-page-label,
+.theme-entry .StandardGrid div.report-grid-detail-navigation-wrapper-page-input
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff0c0', endColorstr='#fecf40',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry .UserPerfHeader
+{
+	font-weight: bold !important;
+}
+
+.theme-entry .UserPerfSubHeader 
+{
+	color: #CCCCCC !important;
+}
+
+.theme-entry .radgrid-grid-column-header-text
+{
+	color: #000000;
+}
+
+.theme-entry .radgrid-gridheader a,
+.theme-entry .radgrid-tableMain .radgrid-divPage,
+.theme-entry .radgrid-tableMain tr.radgrid-footer .radgrid-footer .toolbar-wrapper
+{
+	color: #000000;
+}
+
+.theme-entry .StandardGrid .rgDetailTable .rgAltRow td,
+.theme-entry .StandardGrid .rgDetailTable .rgRow td
+{
+	padding-left: 6px;
+}
+
+.theme-entry .radgrid-gridheader
+{
+	background: #fff0c0; /* Old browsers */
+	background: -moz-linear-gradient(top, #fff0c0 0%, #fecf40 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff0c0), color-stop(100%,#fecf40)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fff0c0 0%,#fecf40 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fff0c0 0%,#fecf40 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fff0c0 0%,#fecf40 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fff0c0 0%,#fecf40 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff0c0', endColorstr='#fecf40',GradientType=0 ); /* IE6-9 */
+	border-color: #fff0c0 #fecf40 #fecf40 #fff0c0;
+}
+
+.theme-entry .radgrid-footer
+{
+	background: #fff0c0; /* Old browsers */
+	background: -moz-linear-gradient(top, #fff0c0 0%, #fecf40 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff0c0), color-stop(100%,#fecf40)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fff0c0 0%,#fecf40 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fff0c0 0%,#fecf40 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fff0c0 0%,#fecf40 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fff0c0 0%,#fecf40 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff0c0', endColorstr='#fecf40',GradientType=0 ); /* IE6-9 */
+	border-color: #fff0c0 #fecf40 #fecf40 #fff0c0;
+}
+
+.theme-entry .radgrid-grid-column-header-cell.sorting:hover
+{
+	background: #f9e08e; /* Old browsers */
+	background: -moz-linear-gradient(top, #f9e08e 0%, #e5b31a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9e08e), color-stop(100%,#e5b31a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f9e08e 0%,#e5b31a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f9e08e 0%,#e5b31a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f9e08e 0%,#e5b31a 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f9e08e 0%,#e5b31a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e08e', endColorstr='#e5b31a',GradientType=0 ); /* IE6-9 */
+	border-color: #f0ac00;
+}
+
+.theme-entry .radgrid-altrowLayout
+{
+	background-color: #fff1c8;
+}
+
+.theme-entry .radgrid-rowLayout
+{
+	background-color: #ffffff;
+}
+
+.theme-entry .radgrid-grid-column-headers-wrapper
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #fff0c0 #fecf40 #fecf40 #fff0c0;
+}
+
+.theme-entry .StandardGrid .rgDetailTable 
+{
+	border-color: #fecf40;
+}
+
+.theme-entry .radgrid-rowLayout:active,
+.theme-entry .radgrid-rowLayout:hover,
+.theme-entry .radgrid-altrowLayout:active,
+.theme-entry .radgrid-altrowLayout:hover
+{
+	background-color: #feebaf;
+}
+
+.theme-entry .radgrid-rowLayout:hover.radgrid-selectedItem,
+.theme-entry .radgrid-altrowLayout:hover.radgrid-selectedItem
+{
+	background-color: #fedc76;
+}
+
+.theme-entry .radgrid-selectedItem 
+{
+	background-color: #fedc76;
+	outline: 1px dotted #f0ac00;
+}
+
+.theme-entry .radgrid-tableMain
+{
+	border-color: #f0ac00;
+}
+
+.theme-entry .radgrid a
+{
+	color: #ffffff;
+}
+
+.theme-entry .StandardGrid .buttonPrev:hover
+{
+	background-image: url(paging_arrows_single_left_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonPrev,
+.theme-entry .StandardGrid .buttonPrev.disabled:hover
+{
+	background-image: url(paging_arrows_single_left_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonFirstPage:hover
+{
+	background-image: url(paging_arrows_double_left_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonFirstPage,
+.theme-entry .StandardGrid .buttonFirstPage.disabled:hover
+{
+	background-image: url(paging_arrows_double_left_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonLastPage,
+.theme-entry .StandardGrid .buttonLastPage.disabled:hover
+{
+	background-image: url(paging_arrows_double_right_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonNext:hover
+{
+	background-image: url(paging_arrows_single_right_hover.png);
+}
+
+.theme-entry .StandardGrid .buttonNext,
+.theme-entry .StandardGrid .buttonNext.disabled:hover
+{
+	background-image: url(paging_arrows_single_right_normal.png);
+}
+
+.theme-entry .StandardGrid .buttonLastPage:hover
+{
+	background-image: url(paging_arrows_double_right_hover.png);
+}
+
+.theme-entry .StandardGrid .rgSortAsc
+{
+	background-image: url(sort_ascending_normal.png);
+}
+
+.theme-entry .StandardGrid .rgSortDesc
+{
+	background-image: url(sort_descending_normal.png);
+}

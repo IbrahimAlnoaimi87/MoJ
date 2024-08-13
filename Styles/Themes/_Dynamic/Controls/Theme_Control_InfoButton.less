@@ -1,0 +1,78 @@
+/*#region iBUTTON  - info button*/
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help
+{
+    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
+    min-width: 0;
+    font-family: monospace;
+    /*ensures the image is vertically centered using line-height*/
+    /*override - generic button style*/
+    /*override - generic button style*/
+    /*override - generic button style*/
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover
+{
+    /* override - base background gradient style */
+    background-image: none;
+    background-color: @Help-Button-Background-Color;
+    border-color:  @Help-Button-Border-Color;
+}
+
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus{
+    background-color: @Help-Button-Focus-Background-Color;
+    border-color:  @Help-Button-Focus-Border-Color;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help .Button-Image
+{
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    /*override - base*/
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help .Button-Image
+{
+    opacity: 0.7;
+    -moz-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover .Button-Image
+{
+    opacity: 1.0;
+    -moz-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+}
+
+html[dir=ltr] #SessionExpirationWarningDialog label.input-control.checkbox .input-control-text
+{
+    margin-left: 3px;
+}
+
+html[dir=rtl] #SessionExpirationWarningDialog label.input-control.checkbox .input-control-text
+{
+    margin-right: 3px;
+}
+
+html[dir=ltr] .theme-entry #SessionExpirationWarningDialog label.input-control.checkbox
+{
+    margin-left: -1px; /*lithium checkbox image has less whitespace*/
+}
+
+html[dir=rtl] .theme-entry #SessionExpirationWarningDialog label.input-control.checkbox
+{
+    margin-right: 0; /*lithium checkbox image has less whitespace*/
+}
+
+/*#endregion*/

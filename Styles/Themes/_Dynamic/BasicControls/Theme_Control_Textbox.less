@@ -1,0 +1,108 @@
+/*#region TEXTBOX CONTROL */
+
+//#region RESETS
+
+.theme-entry .input-control textarea
+{
+    //override core.less default to white
+    //TODO: move the white out of core.less into corelegacy.less.
+    background-color: @Input-Background-Color;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .input-control textarea, 
+.theme-entry input.input-control{
+    font-family: inherit; //make sure this is not Arial (browser default)
+    color: @Input-Text-Color;
+}
+
+
+//#endregion RESETS
+
+
+.theme-entry .input-control.text-input:not(.control-group-container) .input-control-m-c
+{
+    background-color: @Input-Background-Color;
+    border-radius: 2px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.theme-entry input[type=text].input-control,
+.theme-entry input[type=password].input-control
+{
+    background-color: @Input-Background-Color;
+    color: @Input-Text-Color;
+}
+
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox
+{
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.theme-entry .input-control textarea,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry input[type=text].input-control, /*covers the list view filter searchbox also*/
+.theme-entry input[type=password].input-control /*covers the password field on SSO login also*/
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    /*override - inline*/
+    /*ready for focus color etc*/
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry input[type=text].input-control, /*covers the list view filter searchbox also*/
+.theme-entry input[type=password].input-control /*covers the password field on SSO login also*/
+{
+    border: solid 1px @Input-Border-Color;
+
+    &.readonly{
+        border-color: @Input-ReadOnly-Border-Color;
+        color: @Input-ReadOnly-Text-Color;
+    }
+
+    &.disabled{
+        border-color: @Input-Disabled-Border-Color;
+        color: @Input-Disabled-Text-Color;
+    }
+}
+
+.theme-entry .input-control textarea
+{
+    border-width: 0;
+}
+
+.webkit .theme-entry .input-control textarea
+{
+    vertical-align: top; /*necessary to remove additional spacing below textarea in chrome*/
+}
+
+/* Legacy textbox control styling */
+.theme-entry .input-control.text-input .input-control-wrapper input[type=text].input-control,
+.theme-entry .input-control.text-input .input-control-wrapper input[type=password].input-control
+{
+    border-width: 0;
+}
+
+/*#endregion TEXTBOX */
+
+
+/*#region TEXTBOX */
+
+.theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+.mozilla .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+.webkit.safari .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox
+{
+    padding-top: 0;
+    padding-bottom: 0.1rem;
+    padding-left: 0.5rem;
+}
+
+/*#endregion TEXTBOX*/

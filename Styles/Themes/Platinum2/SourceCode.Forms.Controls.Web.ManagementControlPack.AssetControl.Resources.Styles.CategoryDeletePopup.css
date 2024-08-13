@@ -1,0 +1,84 @@
+﻿
+html.management.category-delete-form-popup span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlCategoryDeleteIcon"]
+{
+    background-image: url("K2Sites_Management/Images/DeleteCategory32.png");
+    width:34px;
+    height:32px;
+    margin-left: 4px;
+    margin-top: 7px;
+}
+
+html.management.category-delete-form-popup .Grid-Layout > .editor-cell[row='4'],
+html.management.category-delete-form-popup .Grid-Layout > .editor-cell[row='5']
+{
+    background-color: #f9e9cf;
+}
+
+html.management.category-delete-form-popup span[name="lblDeleteCategoryViewPopup_Description"]
+{
+    margin-top:-6px;
+}
+
+html.management.category-delete-form-popup span[name="lblCategoryDeletePopupViewPopup_Description2"]
+{
+    margin-top:-9px;
+}
+
+html.management.category-delete-form-popup span[name="lblCategoryDeleteViewPopup_ActionCannotBeUndone"]
+{
+    margin-top:-5px;
+}
+
+html.management.category-delete-form-popup .hyperlinkTopPanel a
+{
+    margin-top:-5px;
+}
+
+html.management.category-delete-form-popup label.input-control.checkbox > span.input-control-text
+{
+    /* the generated html from the checkbox control doesn't contain anything that ismore specific*/
+    padding-left: 5px !important; 
+    margin-top: -1px;
+}
+
+html.management.category-delete-form-popup span.textbox-dimensions-wrapper > span.textbox-style-wrapper > input.SFC.SourceCode-Forms-Controls-Web-TextBox.SFE
+{
+    margin-top: 3px;
+}
+
+/* nested table */
+html.management.category-delete-form-popup .Grid-Layout .Grid-Layout
+{
+    border: 1px solid #b21e26;
+    width: 500px;
+}
+
+/* override style from management tree */
+
+html.management.category-delete-form-popup .SourceCode-Forms-Controls-Web-ControlPack-TreeView
+{
+    margin-left: -24px;
+    margin-top: -10px;
+}
+
+html.management.category-delete-form-popup .SourceCode-Forms-Controls-Web-ControlPack-TreeView span.text
+{
+    font-size: 1.2rem !important;
+}
+
+html.management.category-delete-form-popup .SourceCode-Forms-Controls-Web-ControlPack-TreeView li.node
+{
+    padding-bottom: 4px;
+}
+
+html.management.category-delete-form-popup .SourceCode-Forms-Controls-Web-ControlPack-TreeView li.node span.text
+{
+    padding-left: 6px;
+}
+
+html.management.category-delete-form-popup span[name='lblDependencyCountInfo']
+{
+    color: rgba(107, 119, 133, 0.5);
+    font-size: 1.2rem !important;
+}
+

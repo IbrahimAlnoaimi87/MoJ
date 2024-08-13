@@ -1,0 +1,333 @@
+﻿.view.workspace-tasklist {
+  /* custom view styling to override fluid height styling.  Beware: importants everywhere */
+  /* Control Wide */
+  /* Close Button */
+  /* Search Bar */
+  /* Worklist Items*/
+  /* ScrollBar */
+  /* .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListItemTableSimple td.shadedCol {
+	padding-right: 0;
+}*/
+  /* Bottom Toolbar */
+  /* worklist table padding */
+}
+.view.workspace-tasklist > div.innerpanel > .panel > .panel-body {
+  background-color: #eeeeee;
+}
+
+
+.workspace-worklist-table
+{
+    -ms-grid-columns: 1fr !important;
+    grid-template-columns: 1fr !important;
+}
+
+.view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div .workspace-worklist-table .workspace-worklist-searchrow
+{
+    width: 100% !important;
+    height: auto !important;
+}
+.view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div .workspace-worklist-table .workspace-worklist-searchrow[col='1'] {
+  /*display: table-cell;*/
+  padding-left: 20px;
+  height: auto !important;
+  width: 100% !important;
+  position: relative;
+}
+.view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div .workspace-worklist-table .workspace-worklist-searchrow[col='2'] {
+  display: none !important;
+}
+.view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div .workspace-worklist-table .workspace-worklist-controlrow {
+  height: 100% !important;
+}
+.view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div .workspace-worklist-table .workspace-worklist-controlrow {
+  /*display: table-cell;*/
+}
+.view.workspace-tasklist > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div .workspace-worklist-table .workspace-worklist-hiddenrow {
+  display: none !important;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist,
+.view.workspace-tasklist .SFC .stylewrapper {
+  overflow: hidden;
+}
+.view.workspace-tasklist .grey-background {
+  background-color: #302e31;
+}
+.view.workspace-tasklist .searchAdvBtn
+{
+  -webkit-user-drag: none;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorklistTableFolio > span,
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorklistTableWorkflowName > span {
+    color: #858a8a;
+}
+
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow:hover .WorklistTableFolio > span,
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow:hover .WorklistTableWorkflowName > span
+{
+    color: #2196f3;
+    opacity: 0.75;
+}
+
+.view.workspace-tasklist  .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow.SelectedDivBackground .WorklistTableFolio > span,
+.view.workspace-tasklist  .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow.SelectedDivBackground:hover .WorklistTableFolio > span,
+.view.workspace-tasklist  .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow.SelectedDivBackground:hover .WorklistTableWorkflowName > span,
+.view.workspace-tasklist  .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow.SelectedDivBackground .WorklistTableWorkflowName > span
+{
+    color: #ffffff;
+    opacity: 0.75;
+}
+
+    html.workspace-main.safari .view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow.ActionedWorklistItem {
+        display: none !important; /* Overrides inline style */
+    }
+
+.view.workspace-tasklist .WorklistTableEventName > span,    
+.view.workspace-tasklist .WorklistTableEventName > span .selectedSearchText,
+.view.workspace-tasklist .WorklistTableEventDate > span,
+.view.workspace-tasklist .WorklistTableEventDate > span .selectedSearchText,
+.theme-entry .view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorklistTableEventDate > span {
+  font-size: 1.5rem;
+  font-family: 'Segoe UI Semibold', "HelveticaNeue-Medium", "Helvetica", "sans-serif" !important;
+}
+.view.workspace-tasklist .WorklistTableFolio > span,
+.view.workspace-tasklist .WorklistTableFolio > span .selectedSearchText,
+.view.workspace-tasklist .WorklistTableWorkflowName > span,
+.view.workspace-tasklist .WorklistTableWorkflowName > span .selectedSearchText,
+.theme-entry .view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorklistTableWorkflowName > span {
+  font-size: 1.3rem;
+  font-family: Open-Sans, 'Segoe UI', "Helvetica" !important;
+}
+.view.workspace-tasklist .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistItemSectionCell {
+  background-color: transparent;
+}
+.view.workspace-tasklist .SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist td.WorklistTableWorkflowName {
+  color: #ADACAD;
+}
+.view.workspace-tasklist .SFC.SourceCode-Forms-Controls-Web-Label[name="lblAllTasks"] {
+  font-family: "Open-Sans", "Segoe UI", "Helvetica";
+  font-size: 1.8rem;
+}
+.view.workspace-tasklist .SFC.SourceCode-Forms-Controls-Web-Button[name="CloseTaskList"] {
+  background-image: url(worklist/CloseTaskList/CloseTaskList16_Sprite.png);
+  background-repeat: no-repeat;
+  background-size: 48px 96px;
+  width: 16px;
+  height: 16px;
+  /* overwrite styles */
+  min-width: 16px;
+  min-height: 16px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  /* Hide the text. */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position: -16px -16px;
+}
+.view.workspace-tasklist .SFC.SourceCode-Forms-Controls-Web-Button[name="CloseTaskList"]:active,
+.view.workspace-tasklist .SFC.SourceCode-Forms-Controls-Web-Button[name="CloseTaskList"]:focus {
+  /* Remove the blue border on focus */
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+.view.workspace-tasklist .SFC.SourceCode-Forms-Controls-Web-Button[name="CloseTaskList"]:hover {
+  background-position: -16px -64px;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.worklist-execute-search-icon {
+  width: 0;
+}
+.view.workspace-tasklist .searchBar .input-control input[type="text"] {
+  padding-left: 5px;
+  color: #8e8c8f;
+  font-family: "Open-Sans", "Segoe UI", "Helvetica";
+  font-size: 1.5rem;
+  height: 3rem !important; /* Override long base selector */
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist > .searchBar > table {
+  margin-right: 14px !important;
+  margin-bottom: 12px !important; /* Override inline style */
+  width: auto !important;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .searchBar tr > td:first-child {
+  display: none !important;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn {
+  background-image: url(worklist/Search/Search16_Sprite.png);
+  background-repeat: no-repeat;
+  background-size: 48px 96px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: -16px -16px;
+  top: 3px;
+  left: -22px;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn:hover {
+  background-position: -16px -64px;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn.hasText {
+  background-image: url(worklist/ClearSearch/ClearSearch16_Sprite.png);
+  background-repeat: no-repeat;
+  background-size: 48px 96px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: -16px -16px;
+  top: 3px;
+  left: -22px;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn.hasText:hover {
+  background-position: -16px -64px;
+}
+.view.workspace-tasklist ::-webkit-input-placeholder {
+  opacity: 0.40;
+  font-style: italic;
+}
+.view.workspace-tasklist :-moz-placeholder {
+  /* Firefox 18- */
+  opacity: 0.40;
+  font-style: italic;
+}
+.view.workspace-tasklist ::-moz-placeholder {
+  /* Firefox 19+ */
+  opacity: 0.40;
+}
+.view.workspace-tasklist :-ms-input-placeholder {
+  opacity: 0.40;
+  font-style: italic;
+}
+.view.workspace-tasklist div.WorkListDateGrouping {
+  font-family: "Open-Sans", "Segoe UI", "Helvetica";
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #717171;
+  padding: 17px 0 17px 20px;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorkListItemTable {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorklistTableOverdue,
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorklistTablePriority {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 20px;
+}
+.view.workspace-tasklist .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListItemTableSimple tr > td:first-of-type,
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist td.WorklistTableOverdue,
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist td.WorklistTablePriority {
+  width: 20px;
+}
+.view.workspace-tasklist .ControlPack-Worklist .WorkListGridTableBody {
+  overflow-y: auto;
+}
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .simplebar-content {
+  margin-right: 0;
+}
+/*TODO with SimpleBar not sure how to check for no scrollbar*/
+.view.workspace-tasklist .SourceCodeFormsControlsWorklist .WorkListItemTableRowTwo td {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.view.workspace-tasklist .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListItemTableSimple tr > td:last-of-type,
+.view.workspace-tasklist .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListItemTableSimple td.right-col {
+  padding: 3px 20px;
+  text-align: right;
+}
+.view.workspace-tasklist .SourceCode-Forms-Controls-Web-ControlPack-Worklist .SimpleLayoutCell {
+  width: 100%;
+}
+.view.workspace-tasklist .SourceCode-Forms-Controls-Web-ControlPack-Worklist .SimpleArrow {
+  display: none !important;
+  /* overriding fluid-height display, we don't want the arrow visible */
+}
+.view.workspace-tasklist .ControlPack-Worklist .nav-container {
+  height: 60px;
+  position: relative;
+}
+.view.workspace-tasklist .ControlPack-Worklist .nav-container .worklistToolbarHeaderTextWrapper,
+.view.workspace-tasklist .ControlPack-Worklist .nav-container .OOFInput,
+.view.workspace-tasklist .ControlPack-Worklist .nav-container .SearchInput,
+.view.workspace-tasklist .ControlPack-Worklist .nav-container .CheckboxInput,
+.view.workspace-tasklist .ControlPack-Worklist .nav-container .FilterInput {
+  display: none !important;
+}
+.view.workspace-tasklist .ControlPack-Worklist .nav-container .nav {
+  background: #dfdfdf;
+  text-align: left;
+  height: 100%;
+  border-radius:1px;
+}
+.view.workspace-tasklist .ControlPack-Worklist .nav-container .worklistToolbarIconWrapper {
+  float: inherit;
+  text-align: center;
+}
+.view.workspace-tasklist .ControlPack-Worklist .nav-container input.RefreshInput {
+  background: none;
+  background-image: url(worklist/Refresh/Refresh32.png);
+  background-size: 3.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: none;
+  margin-bottom: 0px;
+  margin-top: 1px;
+}
+.view.workspace-tasklist .ControlPack-Worklist .nav-container .nav:hover input.RefreshInput,
+.view.workspace-tasklist .ControlPack-Worklist .nav-container input.RefreshInput:hover {
+  background-image: url(worklist/Refresh/Refresh_Hover32.png);
+  cursor: pointer;
+}
+.view.workspace-tasklist .SourceCode-Forms-Controls-Web-ControlPack-Worklist .nav .worklistToolbarIconWrapper {
+  padding-right: initial;
+}
+.view.workspace-tasklist .ControlPack-Worklist.Refreshing .WorklistItemSectionCell::after {
+  content: " ";
+  position: absolute;
+  background-color: #FFF;
+  opacity: 0.5;
+  bottom: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+}
+.view.workspace-tasklist .ControlPack-Worklist.Refreshing .WorklistItemSectionCell{
+  position: relative;
+}
+.view.workspace-tasklist .ControlPack-Worklist.Refreshing input.RefreshInput{
+  -moz-animation: initial;
+  -o-animation: initial;
+  -webkit-animation: initial;
+  animation: initial;
+  background-image: url(worklist/Refresh/Refresh_Animated32.gif) !important; /*without important this reverts to Refresh32.png*/
+}
+.view.workspace-tasklist .editor-cell[row='2'][col='1'] {
+  padding: 0;
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  .view.workspace-tasklist .SFC.SourceCode-Forms-Controls-Web-Button[name="CloseTaskList"] {
+    background-image: url(worklist/CloseTaskList/CloseTaskList16_Sprite@2x.png);
+  }
+  .view.workspace-tasklist .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn {
+    background-image: url(worklist/Search/Search16_Sprite@2x.png);
+  }
+  .view.workspace-tasklist .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn.hasText {
+    background-image: url(worklist/ClearSearch/ClearSearch16_Sprite@2x.png);
+  }
+  .view.workspace-tasklist .ControlPack-Worklist .nav-container input.RefreshInput {
+    background-image: url(worklist/Refresh/Refresh32@2x.png);
+  }
+  .view.workspace-tasklist .SourceCodeFormsControlsWorklist .RefreshInputLoading {
+    background-image: url(worklist/Refresh/Refresh_Animated32@2x.gif)  !important; /*without important this reverts to Refresh32@2x.png*/ 
+  }
+  .view.workspace-tasklist .ControlPack-Worklist .nav-container input.RefreshInput:hover {
+    background-image: url(worklist/Refresh/Refresh_Hover32@2x.png);
+  }
+}

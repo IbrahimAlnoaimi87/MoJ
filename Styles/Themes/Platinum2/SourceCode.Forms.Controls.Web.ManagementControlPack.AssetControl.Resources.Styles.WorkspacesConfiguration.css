@@ -1,0 +1,420 @@
+﻿/* #region LAYOUT */
+
+.workspaces-config .base0.modal-element.ajaxLoader
+{
+    background-color: transparent !important; /* Ensure modalizer is not visible */
+}
+
+.workspaces-config .base2.base1.modalizer
+{
+    background-color: transparent !important;   /* Ensure modalizer is not visible */
+    opacity: 0;                                 /* Ensures there's no flash on Report Refresh*/
+}
+
+/* This table is located on the following View: com.K2.System.Workspace.View.WorkspacesConfiguration */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Workspace.Form.TaskCardConfiguration */
+.workspaces-config .editor-cell,
+.workspaces-config .editor-cell[col='1'],
+.workspaces-config .editor-cell.lastcellinrow,
+.workspaces-config .Grid-Layout > .editor-cell[row='1'],
+.workspaces-config .Grid-Layout > .editor-cell.lastcellinrow
+{
+    padding: 0;
+}
+
+.workspaces-config .form
+{
+    padding: 0;
+}
+
+    .workspaces-config .form .config-header
+    {
+        height: 4rem;
+        border-bottom: 1px solid #dddddd;
+        padding: 1rem 0 0 1rem;
+    }
+
+    .workspaces-config .form .config-body
+    {
+        padding: 0 0 0 1rem;
+    }
+
+.workspaces-config .settings-content
+{
+    -ms-grid-columns: 4.5rem 1fr !important;
+    grid-template-columns: 4.5rem 1fr !important;
+}
+
+
+    /* This table is located on the following View: com.K2.System.Workspace.View.WorkspacesConfiguration */
+    /* Styling is applied where this View has been used on: com.K2.System.Management.Workspace.Form.TaskCardConfiguration */
+    .workspaces-config .settings-content > .editor-cell[row='1']
+    {
+        padding-top: 1.1rem;
+    }
+
+        /* Same table control as referenced in above comments */
+        .workspaces-config .settings-content > .editor-cell.lastrow
+        {
+            padding-top: 1rem;
+        }
+
+    /* Same table controls as referenced in above comments */
+    .workspaces-config .settings-content > .editor-cell.lastcellinrow
+    {
+        padding-left: 0.5rem;
+    }
+
+.workspaces-config .button-content
+{
+    margin-top: .6rem;
+}
+
+    .workspaces-config .button-content .editor-cell[col='1']
+    {
+        border-right: 1px solid #dddddd;
+    }
+
+.workspaces-config .button-content
+{
+    /*display: flex;
+    flex-flow: column nowrap;
+    width: 40rem;*/
+    -ms-grid-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
+
+    border: 1px solid #dddddd!important;
+    background-color: #f8f8f8;
+    width: 40rem;
+}
+
+           
+
+                .workspaces-config .button-content > .editor-cell
+                {                    
+                    height: 2.6rem;
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 0;
+                    padding: .6rem 0;
+                }
+
+                    /* This table is located on the following View: com.K2.System.Workspace.View.WorkspacesConfiguration */
+                    /* Styling is applied where this View has been used on: com.K2.System.Management.Workspace.Form.TaskCardConfiguration */
+                    .workspaces-config .button-content > .editor-cell[row='1']
+                    {
+                        margin: 1.7rem 0 0 0;
+                        padding: 0 0 .6rem 0;
+                    }
+
+                    /* Same table control as referenced in above comments */
+                    .workspaces-config .button-content > .editor-cell.lastrow
+                    {
+                        margin: 0 0 1.5rem 0;
+                        padding: .6rem 0 0 0;
+                    }
+
+.workspaces-config .theme-entry .checkbox-outer-panel .input-control.checkbox,
+.workspaces-config .theme-entry .checkbox-outer-panel .input-control.checkbox.focus
+{
+    outline: 0;
+}
+
+/* #endregion */
+
+/* #region CONTROL STYLING */
+
+.workspaces-config span[name="lblHeading"] h1,
+.workspaces-config span[name="lblActionBar"],
+.workspaces-config span[name="lblButtons"],
+.workspaces-config span[name="lblActionBarDesc"],
+.workspaces-config span[name="lblButtonsDesc"],
+.workspaces-config span[name="lblActions"],
+.workspaces-config span[name="lblRedirect"],
+.workspaces-config span[name="lblShare"],
+.workspaces-config span[name="lblSleep"],
+.workspaces-config span[name="lblRelease"],
+.workspaces-config span[name="lblViewflow"],
+.workspaces-config span[name="lblEmail"],
+.workspaces-config span[name="lblCopy"],
+.workspaces-config span[name="lblOpen"]
+{
+    padding: 0;
+    font-family: 'Open Sans Regular', 'Segoe UI', 'Helvetica';
+}
+
+    .workspaces-config span[name="lblHeading"] h1
+    {
+        font-size: 1.4rem;
+        color: rgb(107, 119, 133);
+        font-weight: bold;
+    }
+
+    .workspaces-config span[name="lblActionBar"],
+    .workspaces-config span[name="lblButtons"]
+    {        
+        color: rgb(107, 119, 133);
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .workspaces-config span[name="lblActionBarDesc"],
+    .workspaces-config span[name="lblButtonsDesc"]
+    {
+        color: rgb(107, 119, 133);
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+
+    .workspaces-config span[name="lblActions"],
+    .workspaces-config span[name="lblRedirect"],
+    .workspaces-config span[name="lblShare"],
+    .workspaces-config span[name="lblSleep"],
+    .workspaces-config span[name="lblRelease"],
+    .workspaces-config span[name="lblViewflow"],
+    .workspaces-config span[name="lblEmail"],
+    .workspaces-config span[name="lblCopy"],
+    .workspaces-config span[name="lblOpen"]
+    {
+        color: rgb(78, 87, 88);
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+
+/* #endregion CONTROL STYLING */
+
+/* #region ICONS */
+
+.workspaces-config .theme-entry label.input-control.checkbox .input-control-img, 
+.workspaces-config input[type=checkbox]
+{
+    background-image: url(K2Sites_Management/Images/checkbox18_Sprite.png);
+    margin: 0 0 0 2rem;
+    padding: 0;
+}
+
+.workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar .input-control-img
+{
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    background-image: url(K2Sites_Management/Images/ToggleNormal32.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    -moz-background-size: 32px;    
+    background-position: center center;
+    margin: 0 .6rem 0 .9rem;
+}
+
+    .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar:hover .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleHover32.png);
+        background-position: center center;
+    }
+
+    .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.focus .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleFocus32.png);
+        background-position: center center;
+    }
+
+        .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.focus:hover .input-control-img
+        {
+            background-image: url(K2Sites_Management/Images/ToggleHoverFocus32.png);
+            background-position: center center;
+        }
+
+    .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleSelected32.png);
+        background-position: center center;
+    }
+
+        .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.checked:hover .input-control-img
+        {
+            background-image: url(K2Sites_Management/Images/ToggleSelectedHover32.png);
+            background-position: center center;
+        }
+
+    .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.focus.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleSelectedFocus32.png);
+        background-position: center center;
+    }
+
+        .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.focus.checked:hover .input-control-img
+        {
+            background-image: url(K2Sites_Management/Images/ToggleSelectedHoverFocus32.png);
+            background-position: center center;
+        }
+
+.workspaces-config span[name="imgActions"],
+.workspaces-config span[name="imgRedirect"],
+.workspaces-config span[name="imgShare"],
+.workspaces-config span[name="imgSleep"],
+.workspaces-config span[name="imgRelease"],
+.workspaces-config span[name="imgViewflow"],
+.workspaces-config span[name="imgEmail"],
+.workspaces-config span[name="imgCopy"],
+.workspaces-config span[name="imgOpen"]
+{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    -moz-background-size: 16px;    
+    background-position: center center;
+    margin: 0 .7rem 0 1rem;
+}
+
+    .workspaces-config span[name="imgActions"]
+    {
+        background-image: url(K2Sites_Management/Images/Actions_Alt16.png);
+    }
+
+    .workspaces-config span[name="imgRedirect"]
+    {
+        background-image: url(K2Sites_Management/Images/Redirect_Alt16.png);
+    }
+
+    .workspaces-config span[name="imgShare"]
+    {
+        background-image: url(K2Sites_Management/Images/Share_Alt16.png);
+    }
+
+    .workspaces-config span[name="imgSleep"]
+    {
+        background-image: url(K2Sites_Management/Images/Sleep_Alt16.png);
+    }
+
+    .workspaces-config span[name="imgRelease"]
+    {
+        background-image: url(K2Sites_Management/Images/Release_Alt16.png);
+    }
+
+    .workspaces-config span[name="imgViewflow"]
+    {
+        background-image: url(K2Sites_Management/Images/ViewFlow_Alt16.png);
+    }
+
+    .workspaces-config span[name="imgEmail"]
+    {
+        background-image: url(K2Sites_Management/Images/Email_Alt16.png);
+    }
+
+    .workspaces-config span[name="imgCopy"]
+    {
+        background-image: url(K2Sites_Management/Images/Copy_Alt16.png);
+    }
+
+    .workspaces-config span[name="imgOpen"]
+    {
+        background-image: url(K2Sites_Management/Images/Open_Alt16.png);
+    }
+
+/* #endregion ICONS */
+
+/* #region MEDIA QUERY */
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .workspaces-config .theme-entry label.input-control.checkbox .input-control-img, 
+    .workspaces-config input[type=checkbox]
+    {
+        background-image: url(K2Sites_Management/Images/checkbox18_Sprite@2x.png);
+    }
+
+    .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleNormal32@2x.png);
+    }
+
+        .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar:hover .input-control-img
+        {
+            background-image: url(K2Sites_Management/Images/ToggleHover32@2x.png);
+            background-position: center center;
+        }
+
+        .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.focus .input-control-img
+        {
+            background-image: url(K2Sites_Management/Images/ToggleFocus32@2x.png);
+            background-position: center center;
+        }
+
+            .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.focus:hover .input-control-img
+            {
+                background-image: url(K2Sites_Management/Images/ToggleHoverFocus32@2x.png);
+                background-position: center center;
+            }
+
+        .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.checked .input-control-img
+        {
+            background-image: url(K2Sites_Management/Images/ToggleSelected32@2x.png);
+        }
+
+            .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.checked:hover .input-control-img
+            {
+                background-image: url(K2Sites_Management/Images/ToggleSelectedHover32@2x.png);
+            }
+
+        .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.focus.checked .input-control-img
+        {
+            background-image: url(K2Sites_Management/Images/ToggleSelectedFocus32@2x.png);
+        }
+
+            .workspaces-config .theme-entry label.input-control.checkbox.checkbox-actionbar.focus.checked:hover .input-control-img
+            {
+                background-image: url(K2Sites_Management/Images/ToggleSelectedHoverFocus32@2x.png);
+            }
+    
+    .workspaces-config span[name="imgActions"]
+    {
+        background-image: url(K2Sites_Management/Images/Actions_Alt16@2x.png);
+    }
+
+    .workspaces-config span[name="imgRedirect"]
+    {
+        background-image: url(K2Sites_Management/Images/Redirect_Alt16@2x.png);
+    }
+
+    .workspaces-config span[name="imgShare"]
+    {
+        background-image: url(K2Sites_Management/Images/Share_Alt16@2x.png);
+    }
+
+    .workspaces-config span[name="imgSleep"]
+    {
+        background-image: url(K2Sites_Management/Images/Sleep_Alt16@2x.png);
+    }
+
+    .workspaces-config span[name="imgRelease"]
+    {
+        background-image: url(K2Sites_Management/Images/Release_Alt16@2x.png);
+    }
+
+    .workspaces-config span[name="imgViewflow"]
+    {
+        background-image: url(K2Sites_Management/Images/ViewFlow_Alt16@2x.png);
+    }
+
+    .workspaces-config span[name="imgEmail"]
+    {
+        background-image: url(K2Sites_Management/Images/Email_Alt16@2x.png);
+    }
+
+    .workspaces-config span[name="imgCopy"]
+    {
+        background-image: url(K2Sites_Management/Images/Copy_Alt16@2x.png);
+    }
+
+    .workspaces-config span[name="imgOpen"]
+    {
+        background-image: url(K2Sites_Management/Images/Open_Alt16@2x.png);
+    }
+}
+
+/* #endregion */

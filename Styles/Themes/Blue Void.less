@@ -1,0 +1,59 @@
+/* Theme: Blue Void */
+/* Author: Shawn Dippenaar */
+/* Date: 15/11/2017 */
+
+/* Breaking Points
+	- 480 x 736 width/height - Phones
+	- 800 width - Phablets, Tablets (Touch devices)
+	- 800+ Desktop etc.
+ */
+
+//font-size, font-family, text color related styling are defined in the Core_Legacy.less
+@import url('Core_Legacy.less');
+
+@import url('Blue Void/Theme.less');
+
+@import url('Blue Void/Theme_Animations.less');
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @import (multiple) url('Blue Void/Theme_Images.less');
+    @import (multiple) url('Blue Void/Theme_Images_Mobile.less');
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @import (multiple) url('Blue Void/Theme@2x.less');
+    @import (multiple) url('Blue Void/Theme_Images@2x.less');
+    @import (multiple) url('Blue Void/Theme_Images_Mobile@2x.less');
+}
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* Large devices, Desktop */
+@import url('Blue Void/Theme_Desktop.less'); /*only screen and (min-width : 800px);*/
+
+/* Mobile (touch) devices, phones & tablets  - .mobile selector targets touch devices */
+@import url('Blue Void/Theme_Touch.less'); 
+
+/* Extra Small Devices, Phones and Smart Phones */
+@media only screen and (max-device-width : 480px) and (orientation:portrait), only screen and (max-device-width : 736px) and (orientation:landscape)
+{
+    @import (multiple) url('Blue Void/Theme_Phone.less');
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-device-width : 480px) and (orientation:portrait)
+{
+    @import (multiple) url('Blue Void/Theme_Phone_Portrait.less');
+}
+
+@media only screen and (max-device-width : 736px) and (orientation:landscape)
+{
+    @import (multiple) url('Blue Void/Theme_Phone_Landscape.less');
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */
+
+

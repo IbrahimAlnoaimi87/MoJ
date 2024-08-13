@@ -1,0 +1,152 @@
+// These Variable names ARE actually used in less files
+// Darken/Lighten/Etc - Use this tool to help! http://sassme.arc90.com/
+// Overlays to get resulting colors:
+//      Use this: 
+//      mix(fadein(@TopColor,100%), @BottomColor, alpha(@TopColor)*100%);
+//      rather than: 
+//      overlay(@TopColor, @BottomColor);
+
+
+//Parameter passed in from Variables_Dynamic.less. This is the color these Container controls will be ontop of.
+//This is guaranteed to be an opaque color (not a transparency of any kind)
+@_Background-Color : @___Background-Color;
+
+
+//#region PANELS
+
+    // Panels include anything that is a logical, full-width group of content that is "on-top" of the form.
+    // this includes controls that had a "header bar" that was purple-blue in Lithium.
+    // Views, list Views, Grids, Charts
+
+    @Panel-Background-Color: @UD-Panel-Background-Color; 
+    @_Actual_Panel-Background-Color: mix(fadein(@Panel-Background-Color,100%), @_Background-Color, alpha(@Panel-Background-Color)*100%);
+    @_darkbg_Panel-Border-Color: lighten(@Panel-Background-Color, 20%);
+    @_lightbg_Panel-Border-Color: darken(@Panel-Background-Color, 20%);
+    @Panel-Border-Color: contrast(@_Actual_Panel-Background-Color, @_darkbg_Panel-Border-Color, @_lightbg_Panel-Border-Color, 43%);
+
+
+//#endregion PANELS
+
+//#region VIEWS
+
+    @View-Background-Color: @UD-Panel-Background-Color;
+    @_Actual_View-Background-Color: mix(fadein(@View-Background-Color,100%), @_Background-Color, alpha(@View-Background-Color)*100%);
+    @_lightbg_View-Text-Color: darken(@_Actual_View-Background-Color,60%);
+    @_darkbg_View-Text-Color: lighten(@_Actual_View-Background-Color,60%);
+    @View-Text-Color: contrast(@_Actual_View-Background-Color,  @_darkbg_View-Text-Color, @_lightbg_View-Text-Color, 43%);
+
+    //View Header
+    @_lightbg_View-Header-Background-Color: darken(@_Actual_View-Background-Color,20%);
+    @_darkbg_View-Header-Background-Color: lighten(@_Actual_View-Background-Color,20%);
+    @View-Header-Background-Color: contrast(@_Actual_View-Background-Color,  @_darkbg_View-Header-Background-Color, @_lightbg_View-Header-Background-Color, 43%);
+    @_Actual_View-Header-Background-Color: mix(fadein(@View-Header-Background-Color,100%), @_Actual_View-Background-Color, alpha(@View-Header-Background-Color)*100%);
+    @_darkbg_View-Header-Text-Color: lighten(@_Actual_View-Header-Background-Color,60%); 
+    @_lightbg_View-Header-Text-Color: darken(@_Actual_View-Header-Background-Color,60%);   
+    @View-Header-Text-Color: contrast(@_Actual_View-Header-Background-Color, @_darkbg_View-Header-Text-Color, @_lightbg_View-Header-Text-Color, 43% );
+    
+    //View Header Description
+    @View-Header-Text-Size: inherit; 
+
+    //Expand/Collapse Button
+    //Normal
+    @View-Header-Button-Background-Color: @_Transparent;
+    @View-Header-Button-Border-Color: @View-Header-Button-Background-Color;
+  
+    //Hover
+    @View-Header-Button-Hover-Background-Color: @View-Header-Button-Background-Color;
+    @View-Header-Button-Hover-Border-Color: @View-Header-Button-Hover-Background-Color;
+
+    //Checked - when the view is collapsed.
+    @View-Header-Button-ToggleOn-Background-Color: @View-Header-Button-Background-Color; 
+    @View-Header-Button-ToggleOn-Border-Color: @View-Header-Button-ToggleOn-Background-Color; 
+    
+    @View-Shadow: @_Shadow-level-3;
+
+//#endregion VIEWS
+
+//#region TOOLBARS
+
+    @Toolbar-Background-Color: @_Transparent; //#f8f8f8
+    @_Actual_Toolbar-Background-Color: mix(fadein(@Toolbar-Background-Color,100%), @_Background-Color, alpha(@Toolbar-Background-Color)*100%);
+
+
+    @_darkbg_Toolbar-Border-Color: lighten(@_Actual_Toolbar-Background-Color, 8%);
+    @_lightbg_Toolbar-Border-Color: darken(@_Actual_Toolbar-Background-Color, 8%);
+    @Toolbar-Border-Color: contrast(@_Actual_Toolbar-Background-Color, @_darkbg_Toolbar-Border-Color, @_lightbg_Toolbar-Border-Color, 43%);
+    
+    @_darkbg_Toolbar-Text-Color: lighten(@_Actual_Toolbar-Background-Color, 60%);
+    @_lightbg_Toolbar-Text-Color: darken(@_Actual_Toolbar-Background-Color, 60%);
+    @Toolbar-Text-Color: contrast(@_Actual_Toolbar-Background-Color, @_darkbg_Toolbar-Text-Color, @_lightbg_Toolbar-Text-Color, 43%);
+    
+
+    @_darkbg_Toolbar-Separator-Line-Color: lighten(@_Actual_Toolbar-Background-Color, 8%);
+    @_lightbg_Toolbar-Separator-Line-Color: darken(@_Actual_Toolbar-Background-Color, 8%);
+    @Toolbar-Separator-Line-Color: contrast(@_Actual_Toolbar-Background-Color, @_darkbg_Toolbar-Separator-Line-Color, @_lightbg_Toolbar-Separator-Line-Color, 43%);
+
+//#endregion TOOLBARS
+
+//#region MENUS
+
+    //Menus are Popups with a single-select list of options, like a dropdown menu, context menu (right click). 
+    //This wouldn't cover a calendar popup as the calendar popup isn't a single-select list, and has specific grid layout of days, rather than a vert list.
+    
+    //Menu's are considered containers, as they sometimes contain radiobuttons or checkboxes. 
+    //...And because, their color is not affected by where they spawn, they are "ontop" of the content.
+
+    @Menu-Background-Color: @Popover-Background-Color; // RGB(255,255,255)
+    @_Actual_Menu-Background-Color: @Menu-Background-Color; 
+    
+    @Menu-Border-Color: @_Transparent;
+    @Menu-Text-Color: @Input-Text-Color;
+
+    //Menu Item - Normal
+    //Just normal text color and see-through background
+
+    //Menu Item - Selected
+    @Menu-Item-Selected-Background-Color: @UD-Main-Accent-Color;
+    @_darkbg_Menu-Item-Selected-Background-Color: lighten(@Menu-Item-Selected-Background-Color, 70%);
+    @_lightbg_Menu-Item-Selected-Background-Color: darken(@Menu-Item-Selected-Background-Color, 70%);
+    @Menu-Item-Selected-Text-Color: contrast(@Menu-Item-Selected-Background-Color, @_darkbg_Menu-Item-Selected-Background-Color, @_lightbg_Input-Text-Highlight-Background-Color, 43%);
+
+    
+    //Menu-Item - Hover
+    @Menu-Item-Hover-Background-Color: fadeout(@UD-Main-Accent-Color, 80%);
+    
+
+
+    @_darkbg_Menu-Item-Hover-Text-Color: lighten(@UD-Main-Accent-Color, @_CONTRAST_TEXT_ON_DARK);
+    @_lightbg_Menu-Item-Hover-Text-Color: darken(@UD-Main-Accent-Color, @_CONTRAST_TEXT_ON_LIGHT);
+    @Menu-Item-Hover-Text-Color: contrast(@_Actual_Menu-Background-Color, @_darkbg_Menu-Item-Hover-Text-Color,  @_lightbg_Menu-Item-Hover-Text-Color, 43%);
+    
+    //Menu Item - Focus
+    @Menu-Item-Focus-Background-Color: fadeout(@UD-Main-Accent-Color, 50%); //only used in Choice and AutoComplete controls
+    @_Actual_Menu-Item-Focus-Background-Color: mix(fadein(@Menu-Item-Focus-Background-Color,100%), @_Background-Color, alpha(@Menu-Item-Focus-Background-Color)*100%);
+    @Menu-Item-Focus-Border-Color: @UD-Main-Accent-Color;
+
+    @_darkbg_Menu-Item-Focus-Text-Color: lighten(@_Actual_Menu-Item-Focus-Background-Color, @_CONTRAST_TEXT_ON_DARK);
+    @_lightbg_Menu-Item-Focus-Text-Color: darken(@_Actual_Menu-Item-Focus-Background-Color, @_CONTRAST_TEXT_ON_LIGHT);
+    @Menu-Item-Focus-Text-Color: contrast(@_Actual_Menu-Item-Focus-Background-Color, @_darkbg_Menu-Item-Focus-Text-Color, @_lightbg_Menu-Item-Focus-Text-Color, 43%);
+    
+    //Menu Item - Other 
+    //used for separators between groups of menu items, also cheekily used as a the border around colors in the color picker (rich text)
+    @_darkbg_Menu-Item-Separator-Line-Color: darken(@_Actual_Menu-Background-Color,20%); 
+    @_lightbg_Menu-Item-Separator-Line-Color: lighten(@_Actual_Menu-Background-Color,10%); 
+    @Menu-Item-Separator-Line-Color: contrast(@_Actual_Menu-Background-Color, @_darkbg_Menu-Item-Separator-Line-Color, @_lightbg_Menu-Item-Separator-Line-Color, 43%); 
+    
+
+    //Menu Item - Disabled
+    @Menu-Item-Disabled-Background-Color: @_Transparent;
+    @_Actual_Menu-Item-Disabled-Background-Color: mix(fadein(@Menu-Item-Disabled-Background-Color,100%), @_Actual_Menu-Background-Color, alpha(@Menu-Item-Disabled-Background-Color)*100%);
+    @_darkbg_Menu-Item-Disabled-Text-Color: lighten(@_Actual_Menu-Item-Disabled-Background-Color, @_CONTRAST_TEXT_DISABLED_ON_DARK);
+    @_lightbg_Menu-Item-Disabled-Text-Color: darken(@_Actual_Menu-Item-Disabled-Background-Color, @_CONTRAST_TEXT_DISABLED_ON_LIGHT);
+    @Menu-Item-Disabled-Text-Color: contrast(@_Actual_Menu-Item-Disabled-Background-Color,  @_darkbg_Menu-Item-Disabled-Text-Color,  @_lightbg_Menu-Item-Disabled-Text-Color, 43%);
+    
+
+    //Misc
+    @Menu-Shadow: @_Shadow-level-1;
+
+//#endregion MENUS
+
+
+
+

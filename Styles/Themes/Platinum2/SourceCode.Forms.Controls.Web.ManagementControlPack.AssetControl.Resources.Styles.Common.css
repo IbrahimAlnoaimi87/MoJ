@@ -1,0 +1,2753 @@
+html,
+html body.theme-entry,
+html body
+{
+    /* For our management pages we want overflow hidden on the html element to stop scrollbars from appearing inside the iframe */
+    /*overflow: hidden !important;*/
+    overflow-y: auto;
+    overflow-x: hidden !important;
+}
+
+    body.theme-entry,
+    html .theme-entry div,
+    html .theme-entry span,
+    html .theme-entry td,
+    html .theme-entry li,
+    html .theme-entry p,
+    html .theme-entry h1,
+    html .theme-entry h2,
+    html .theme-entry textarea,
+    html .theme-entry input[type=text],
+    html .theme-entry input.text,
+    html .theme-entry select,
+    html .theme-entry option,
+    html .theme-entry label.input-control .input-control-text,
+    html .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark, /*override - core*/
+    html .theme-entry .input-control-watermark, /*override - core*/
+    html .theme-entry a.Hyperlink,
+    html .theme-entry a.Hyperlink-NotSet,
+    html .theme-entry a.Hyperlink-NotSet.disabled
+    {
+        font-family: 'Open-Sans Regular', 'Segoe UI Regular', 'Helvetica';
+    }
+
+form
+{
+    overflow: hidden;
+}
+
+/* Re-enable overflow on tables */
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-Table
+{
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+.view .toolbars > .toolbar .filterContainer
+{
+    padding: 0 1rem;
+}
+
+/* Override core css */
+/* Form labels have width in exact px when input control is using rem */
+/* 14.7rem does not always fit with 140px + margin, change this width to 14rem to make all units the same */
+div.theme-entry .form-field label.form-field-label
+{
+    width: 14rem;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid[name='sgridProcessSchedules'] div.grid-column-headers td
+{
+    overflow: hidden;
+}
+
+/* Set vertical align on all toolbar elements */
+
+/* This table is located on the following View: com.K2.System.Management.View.ProcessInstanceList */
+/* Styling is applied where this View has been used on: */
+/* - com.K2.System.Management.Form.ProcessSet */
+/* - com.K2.System.Management.Form.Process */
+[id="5fceef6c-babc-3c78-26f7-d692dc33d91f_8a9ac7cd-89d4-4518-89a0-87b51273757b"] > .editor-cell > *,
+[id="9d6ca404-6d68-7a23-1ac4-a25246889eca_8a9ac7cd-89d4-4518-89a0-87b51273757b"] > .editor-cell > *
+{
+    vertical-align: middle !important; /* overrides inline style */
+}
+
+/* Same table control as referenced in above comments */
+[id="5fceef6c-babc-3c78-26f7-d692dc33d91f_8a9ac7cd-89d4-4518-89a0-87b51273757b"] .checkbox-outer-panel > .input-control.checkbox > .input-control-text,
+[id="9d6ca404-6d68-7a23-1ac4-a25246889eca_8a9ac7cd-89d4-4518-89a0-87b51273757b"] .checkbox-outer-panel > .input-control.checkbox > .input-control-text
+{
+    font-family: "Segoe UI Semibold","HelveticaNeue-Medium","Helvetica","sans-serif";
+}
+
+/*Mobile mode*/
+div.runtime-content > div.hide-for-mobile
+{
+    display: none;
+}
+
+div.mobile-mode
+{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    position: relative;
+}
+
+    div.mobile-mode > table.mobile-selection
+    {
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+    div.mobile-mode td.mobile-mode-logo
+    {
+        height: 50px;
+        width: 50px;
+        background-image: url('K2Sites_Management/Images/WindowsLogo50.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    div.mobile-mode span.mobile-title
+    {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #ffffff;
+        padding-right: 20px;
+    }
+
+    div.mobile-mode table.mobile-title-region
+    {
+        width: auto;
+        position: relative;
+        margin: auto;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #414141;
+    }
+
+    div.mobile-mode div.mobile-text
+    {
+        font-weight: bold;
+        color: #ffffff;
+        padding: 5px;
+    }
+
+table.mobile-app-table div.mobile-bullit-container
+{
+    background-image: url('RuntimeTheme/Default20.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    margin: 5px 20px 5px 6px;
+}
+/*end mobile mode*/
+
+/* Process.Main Tabs */
+.theme-entry div.tab-box ul.tab-box-tabs
+{
+    height: 40px;
+    padding-left: 8px !important;
+    border-bottom: 1px #e9e9e9 solid !important;
+}
+
+    .theme-entry div.tab-box ul.tab-box-tabs > li,
+    .theme-entry div.tab-box ul.tab-box-tabs > a.tab,
+    .theme-entry div.tab-box ul.tab-box-tabs > li > a.tab > span.tab-wrapper[title]
+    {
+        height: 100% !important;
+    }
+
+        /* tab text*/
+        .theme-entry div.tab-box ul.tab-box-tabs > li > a.tab > span.tab-wrapper[title] > span.tab-text
+        {
+            color: #1D1D1D;
+            height: 40px;
+            border-bottom-style: none;
+            line-height: 40px;
+        }
+
+        /* Selected tab text*/
+        .theme-entry div.tab-box ul.tab-box-tabs > li > a.tab.selected > span.tab-wrapper[title] > span.tab-text
+        {
+            color: #0288d1;
+            height: 38px;
+            border-bottom: 2px #0288d1 solid;
+            font-weight: bold;
+        }
+
+        /* disabled tab text*/
+        .theme-entry div.tab-box ul.tab-box-tabs > li > a.tab.disabled > span.tab-wrapper[title] > span.tab-text
+        {
+            color: #c5c7cb;
+        }
+
+*[id="5cf66073-eb89-4a4a-8eb8-478fe8d0cc66_tabbox"]:before
+{
+    content: "Process Details";
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*SmartObjects.Admin.Main*/
+*[id="2cfcf386-6011-4f34-a564-ff7842a3c2f0"].form,
+*[id="97ad86e3-4512-4bd8-bac2-733a058cfc97"].form,
+*[id="1513e534-cab1-4729-93b4-ce6f6e0ce103"].form /*SmartObjects.Admin.Main*/
+{
+    padding: 0;
+}
+
+.form[id="3724ddd9-a8a7-4ba6-a129-ae17d3c1ee27"],
+.form[id="7b01f08f-dc3c-4064-b2b9-352020eb03de"],
+.form[id="4af93a5e-916e-4b6e-a270-b54e49786eaf"],
+.form[id="d44d5946-a144-4b05-b342-5c08f86531a9"]
+{
+    margin: 0 .5rem;
+}
+
+/*header row*/
+*[id="59307f6c-60f1-b09c-a5b3-5580ea96e7f9"],
+*[id="a37b5940-433b-4198-82ff-92d904d41a28"],
+*[id="fddc4b8e-90db-34e3-f364-fb846dadb388"],
+*[id="7096ac08-624e-4d4b-a96b-ed7cf9def5c5"], /*Category Form header*/
+*[id="ed84a468-f02a-4e9d-af4c-5f3a219c0964"], /*Category Form header*/
+*[id="a67031ed-25df-47cb-939e-fab1a2f9bcdb"] /*Category Form header*/
+{
+    background-color: #f5f5f5;
+}
+
+*[id="59307f6c-60f1-b09c-a5b3-5580ea96e7f9"],
+*[id="7096ac08-624e-4d4b-a96b-ed7cf9def5c5"],
+*[id="c21e6696-9904-4ea1-aa4f-9dd75e7ad441"]
+{
+    height: 84px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 20px !important;
+}
+
+
+/*dividers in header row*/
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-Label[Title="|"]
+{
+    color: #bababa !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.theme-entry a.toolbar-button[id="12b037b7-fabb-7ce4-53ae-feba5b2458ab_6d095d4e-aad7-494c-af4d-183429dc67c4_ToolbarButton"],
+.theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_93d213c6-cbbf-cb82-35e9-181bcc6f3853_ToolbarButton"]
+{
+    margin-right: 12px;
+}
+
+    .theme-entry a.toolbar-button[id="12b037b7-fabb-7ce4-53ae-feba5b2458ab_6d095d4e-aad7-494c-af4d-183429dc67c4_ToolbarButton"]:after,
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_93d213c6-cbbf-cb82-35e9-181bcc6f3853_ToolbarButton"]:after
+    {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-size: 16px;
+        background-image: url(K2Sites_Management/Images/Edit16.png);
+        position: absolute;
+        top: 18px;
+        right: 20px;
+    }
+
+/*right two header cells*/
+#a37b5940-433b-4198-82ff-92d904d41a28,
+#fddc4b8e-90db-34e3-f364-fb846dadb388
+{
+    padding-right: 20px;
+}
+
+#be285324-7d99-4062-8dce-6b80d8d9df47
+{
+    border-bottom: #e9e9e9 1px solid;
+}
+
+/* This table is located on the following View: com.K2.System.Management.View.SmartObjectInfo */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.FormsAdmin */
+*[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_8702bb28-ceb9-f9c4-e8ae-5ea861ca1ad6_Table"]
+{
+    margin-left: 10px;
+    width: calc(100% - 5px);
+}
+
+/* This table is located on the following View: com.K2.System.Management.View.SmartObjectInfo */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.FormsAdmin */
+*[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_dda50a96-b305-b5dd-129a-7502d2634188_Table"]
+{
+    width: calc(100% - 10px);
+}
+
+    /* Same table controls as referenced in above comments */
+    *[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_8702bb28-ceb9-f9c4-e8ae-5ea861ca1ad6_Table"] .editor-cell,
+    *[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_dda50a96-b305-b5dd-129a-7502d2634188_Table"] .editor-cell
+    {
+        border: solid #e9e9e9 1px;
+        text-align: left;
+        justify-content: flex-start;
+        justify-items:flex-start;
+    }
+
+/* This td is located on the following View: com.K2.System.Management.View.SmartObjectInfo */
+[id='146056fb-caac-ad08-e6c8-db2638ffc241']
+{
+    text-align: right;
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+/* Same table controls as referenced in above comments */
+*[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_8702bb28-ceb9-f9c4-e8ae-5ea861ca1ad6_Table"] .editor-cell,
+*[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_dda50a96-b305-b5dd-129a-7502d2634188_Table"] .editor-cell
+{
+    background-color: #fdfdfd;
+}
+
+    /* Same table controls as referenced in above comments */
+    *[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_8702bb28-ceb9-f9c4-e8ae-5ea861ca1ad6_Table"] .editor-cell[col='1'],
+    *[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_dda50a96-b305-b5dd-129a-7502d2634188_Table"] .editor-cell[col='1']
+    {
+        background-color: #f8f8f8;
+    }
+
+.theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_9ed9d7c8-3c71-5f82-4f4a-027bf4afef7c_ToolbarButton"] .button-text,
+.theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_4a7af419-c7a4-5204-123b-3f854bca6713_ToolbarButton"] .button-text,
+.theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_80ff6b55-48d1-fbba-e858-eb1169993669_ToolbarButton"] .button-text
+{
+    font-size: 1.5rem;
+    color: #5b595d;
+    text-decoration: underline;
+}
+
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_9ed9d7c8-3c71-5f82-4f4a-027bf4afef7c_ToolbarButton"] .button-text:after,
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_4a7af419-c7a4-5204-123b-3f854bca6713_ToolbarButton"] .button-text:after,
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_80ff6b55-48d1-fbba-e858-eb1169993669_ToolbarButton"] .button-text:after
+    {
+        text-decoration: none;
+        display: block;
+        line-height: 15px;
+        position: absolute;
+    }
+
+/*first cell in run link table*/
+.theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_9ed9d7c8-3c71-5f82-4f4a-027bf4afef7c_ToolbarButton"]
+{
+    min-height: 52px;
+}
+
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_9ed9d7c8-3c71-5f82-4f4a-027bf4afef7c_ToolbarButton"].load .button-icon,
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_4a7af419-c7a4-5204-123b-3f854bca6713_ToolbarButton"].load .button-icon,
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_80ff6b55-48d1-fbba-e858-eb1169993669_ToolbarButton"].load .button-icon
+    {
+        background-size: 32px;
+        width: 32px;
+        height: 32px;
+        margin-top: 10px;
+        float: left;
+    }
+
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_9ed9d7c8-3c71-5f82-4f4a-027bf4afef7c_ToolbarButton"].load .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/Run32.png');
+    }
+
+.theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_4a7af419-c7a4-5204-123b-3f854bca6713_ToolbarButton"].load .button-icon
+{
+    background-image: url('K2Sites_Management/Images/RunWithParameters32.png');
+}
+
+.theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_80ff6b55-48d1-fbba-e858-eb1169993669_ToolbarButton"].load .button-icon
+{
+    background-image: url('K2Sites_Management/Images/RunDebug32.png');
+}
+
+
+*[id="5779e772-b70c-2ed4-4974-54ba5821fb7d"]
+{
+    padding: 0;
+    max-height: 6px;
+    min-height: 0px;
+    line-height: 6px;
+}
+
+
+*[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_c1dca85b-6e6f-fc03-39ab-cecf86cfbfd7"],
+span[Name="smoDisplayName"],
+span[name='categoryDisplayName']
+{
+    font-size: 3rem !important;
+    color: #717171 !important;
+}
+
+span[name="ProjectHeading"] h1
+{
+    font-size: 1.5rem !important;
+    font-family: 'Open Sans Regular', 'Segoe UI', 'Helvetica' !important;
+    color: #717171 !important;
+    font-weight: bold !important;
+}
+
+/*Properties grid*/
+*[id="2cfcf386-6011-4f34-a564-ff7842a3c2f0_33d73d6b-b43d-311b-ad30-9822da41b7c8_0f2b7373-1196-b237-a278-d0971794d2fb_b5520bc7-eefc-4d3d-9c60-74058ed8cb85"],
+*[id="2cfcf386-6011-4f34-a564-ff7842a3c2f0_33d73d6b-b43d-311b-ad30-9822da41b7c8_effb3d9e-9640-42c4-8a1a-cdf181634a0e_b97e0f8b-234f-40c4-a98e-06f4b5fbfd9c"],
+*[id="2cfcf386-6011-4f34-a564-ff7842a3c2f0_33d73d6b-b43d-311b-ad30-9822da41b7c8_96b841dc-9dff-afb0-c917-e23774f43714_1453e2c4-1312-441b-be9a-87bafd70af48"],
+*[id="2cfcf386-6011-4f34-a564-ff7842a3c2f0_33d73d6b-b43d-311b-ad30-9822da41b7c8_c1c671c9-0fad-29a4-c0c8-91640601026e_5a3ffe70-26a9-463f-8bb8-f091696b83c1"],
+*[id="1513e534-cab1-4729-93b4-ce6f6e0ce103_9b4204d0-1c17-5d35-9280-0ca46ec6c08e_7634271f-69d7-4f25-3d04-657e20ed0fc2_ee9bc9d0-36d8-456f-a257-7b054fe3576c"],
+*[id="97ad86e3-4512-4bd8-bac2-733a058cfc97_141352a5-ea2e-4085-8ca1-bab4d15d7e8d_6d1bab04-c871-437f-af12-114bc623c305_b5520bc7-eefc-4d3d-9c60-74058ed8cb85"],
+*[id="97ad86e3-4512-4bd8-bac2-733a058cfc97_141352a5-ea2e-4085-8ca1-bab4d15d7e8d_5a53f0fa-2baa-45d9-a519-c528a63ec715_b97e0f8b-234f-40c4-a98e-06f4b5fbfd9c"],
+*[id="97ad86e3-4512-4bd8-bac2-733a058cfc97_141352a5-ea2e-4085-8ca1-bab4d15d7e8d_b7b5cd89-57c3-483d-8926-fbfe1016eb18_641eab2f-4a4f-43ad-a5a6-9139b66e3ad8"],
+*[id="97ad86e3-4512-4bd8-bac2-733a058cfc97_141352a5-ea2e-4085-8ca1-bab4d15d7e8d_bbcacb8c-053e-4137-8d1d-8132c51cfca2_2c116198-2f85-43e6-9e30-dee7bf18cea0"]
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: inherit !important;
+}
+
+/*Remove padding around serialization grid to be consistent with toolbar*/
+#d281acdf-12f7-7eb2-df15-c9af3e1dfa4a, /*User Management > Roles > Edit Roles Popover*/
+*[id="864ea5b8-e7ad-873b-1861-7794ba77c2f1"], /*Working Hours Popover*/
+#f9280077-ebc8-6eb2-a0e8-7f5a75e79c9c, /*Working Hours Popover*/
+#b15e8b09-08e2-3175-88db-a6a5c91eb8c2, /*Working Hours Popover*/
+*[id="38013d43-1630-4120-99bc-9de473015a74"], /*Add User Groups SmartObject Security*/
+#af48cff6-c9a1-8983-b3dd-7df8bbf7aa46, /*Add Project Roles*/
+*[id="9fcef3cb-d979-39d2-6335-5a34b55d9c63"], /*Add Project Roles*/
+#b7644744-4161-4496-97be-038335261416 /*ErrorLog.Main*/
+{
+    padding: 0 !important;
+}
+
+/*List Icons*/
+/*Categories*/
+
+.theme-entry .grid .grid-content-cell.icon,
+.SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid.multiselect tr td div.grid-content-cell.icon div.grid-content-cell-wrapper:before,
+/* Line up background icons with the rest of the row */
+.SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid.multiselect tr td div.grid-content-cell.icon div.grid-content-cell-wrapper:before,
+/* Single select serialization grid icon fix */
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid.singleselect div.grid-content-cell.icon div.grid-content-cell-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid.multiselect tr td div.grid-content-cell.rowselectcheckbox div.grid-content-cell-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid .grid-content-cell.icon .grid-content-cell-wrapper
+{
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: top 50% left 0px;
+}
+
+html[dir=rtl] .theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid .grid-content-cell.icon .grid-content-cell-wrapper {
+    background-position: top 50% right 0px;
+    text-align: right !important; /* !imporant required to override hardcoded html values */
+}
+
+/* List views have a bit different background position requirements*/
+.theme-entry .grid .grid-content-cell.icon div.grid-content-cell-wrapper
+{
+    background-position: top 50% left 3px;
+    background-repeat: no-repeat;
+}
+
+/* Grid header cells must be border-box to avoid overflow into another cell */
+.theme-entry .grid .grid-column-header-cell
+{
+    box-sizing: border-box;
+    position: relative;
+}
+
+.theme-entry .grid td:last-child .grid-column-header-cell
+{
+    padding-right: 0px !important; /* override inline style */
+    width: 100% !important; /* override inline style */
+}
+
+/* Override grid content cell wrapper to use full cell width */
+.theme-entry .grid .grid-content-cell-wrapper
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.theme-entry .grid .asc.grid-column-header-cell div.grid-column-header-text,
+.theme-entry .grid .desc.grid-column-header-cell div.grid-column-header-text
+{
+    padding-right: 2rem;
+}
+
+.theme-entry .grid .grid-column-header-cell-wrapper
+{
+    display: flex;
+    align-items: center;
+}
+
+.msie .theme-entry .grid .grid-column-header-cell-wrapper .grid-column-header-cell-content
+{
+    display: block;
+    position: relative;
+}
+
+.theme-entry .grid .grid-column-header-cell div.grid-column-header-text
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+html[dir=rtl] .theme-entry .grid .grid-column-header-cell div.grid-column-header-text {
+    text-align: right !important; /* !imporant required to override hardcoded html values */
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid .grid-content-cell-wrapper
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid[name="sgridErrorLogs"] .grid .grid-content-cell-wrapper
+{
+    white-space: normal;
+    overflow: visible;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid[name="sgridProjectRoles"] .grid .grid-content-cell.icon .grid-content-cell-wrapper
+{
+    background-position: top 50% left 3px;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid[name="sgridProjectRoles"] .grid .grid-column-header-cell-content
+{
+    padding-left: 3px;
+}
+
+div.theme-entry .grid .grid-content-cell.icon .grid-content-cell-wrapper:before
+{
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: 0 0;
+    background-size: 16px;
+}
+
+div.theme-entry.runtime-form span.runtime-list-item-wrap,
+div.theme-entry.runtime-form span.runtime-list-item
+{
+    padding-top: .6rem;
+}
+
+/* Firefox override for when the icon cell of the serialization grid has multiple lines of text, this stops cells from overridding each other */
+/* This is because height: 100% in firefox with cascading divs doesn't work well if they are in a td */
+.firefox .grid div.grid-content-cell
+{
+    height: auto;
+}
+
+.theme-entry .grid span.textbox-style-wrapper.focus,
+.theme-entry .grid .SFC.SourceCode-Forms-Controls-Web-TextBox.focus,
+.theme-entry .grid .input-control.active .input-control-m-c,
+.theme-entry .grid .input-control.active .input-control-content,
+.theme-entry .grid .hide-browser-highlight.active,
+.theme-entry .grid .input-control.select-box.active .input-control-buttons
+{
+    border-color: #e6e6e6;
+}
+
+
+.theme-entry .grid-content-cell.icon.smartobject .grid-content-cell-wrapper:before
+{
+    background-image: url('FileTypes/SmartObject16.png');
+}
+
+.theme-entry .grid .grid-content-cell.icon.view-flow .grid-content-cell-wrapper
+{
+    background-image: url('FileTypes/Workflow16.png');
+}
+
+
+.managementListIcon
+{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+}
+
+    .managementListIcon.iconSmartObject
+    {
+        background-image: url('FileTypes/SmartObject16.png');
+    }
+
+    .managementListIcon.iconWorkflow
+    {
+        background-image: url('FileTypes/Workflow16.png');
+    }
+
+    .managementListIcon.iconCategory
+    {
+        background-image: url('AssetBrowser/FolderOpen16.png');
+    }
+
+    .managementListIcon.iconForm
+    {
+        background-image: url('FileTypes/Form16.png');
+    }
+
+    .managementListIcon.iconView
+    {
+        background-image: url('FileTypes/View16.png');
+    }
+
+    .managementListIcon.iconAutoGuid
+    {
+        background-image: url("DataTypes/AutoGUID16.png");
+    }
+
+    .managementListIcon.iconText
+    {
+        background-image: url("DataTypes/Text16.png");
+    }
+
+    .managementListIcon.iconAutonumber
+    {
+        background-image: url("DataTypes/AutoNumber16.png");
+    }
+
+    .managementListIcon.iconDate
+    {
+        background-image: url("RuntimeTheme/Date16.png");
+    }
+
+    .managementListIcon.iconDateTime
+    {
+        background-image: url("DataTypes/DateTime16.png");
+    }
+
+    .managementListIcon.iconDecimal
+    {
+        background-image: url("DataTypes/Decimal16.png");
+    }
+
+    .managementListIcon.iconFile
+    {
+        background-image: url("DataTypes/FolderOpen16.png");
+    }
+
+    .managementListIcon.iconGuid
+    {
+        background-image: url("DataTypes/GUID16.png");
+    }
+
+    .managementListIcon.iconHyperLink
+    {
+        background-image: url("DataTypes/Hyperlink16.png");
+    }
+
+    .managementListIcon.iconImage
+    {
+        background-image: url("DataTypes/Image16.png");
+    }
+
+    .managementListIcon.iconMemo
+    {
+        background-image: url("DataTypes/Memo16.png");
+    }
+
+    .managementListIcon.iconMultiValue
+    {
+        background-image: url("DataTypes/MultiValue16.png");
+    }
+
+    .managementListIcon.iconNumber
+    {
+        background-image: url("DataTypes/Number16.png");
+    }
+
+    .managementListIcon.iconTime
+    {
+        background-image: url("RuntimeTheme/Time16.png");
+    }
+
+    .managementListIcon.iconYesNo
+    {
+        background-image: url("DataTypes/YesNo16.png");
+    }
+
+    .managementListIcon.iconBoolean
+    {
+        background-image: url("DataTypes/YesNo16.png");
+    }
+
+    .managementListIcon.iconMethod
+    {
+        background-image: url("K2Sites_Management/Images/Method16.png");
+    }
+
+    .managementListIcon.iconMethodError
+    {
+        background-image: url("K2Sites_Management/Images/MethodError16.png");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_DocuSign
+    {
+        background-image: url("K2Sites_Management/Images/Docusign16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_DocuSign
+    {
+        background-image: url("K2Sites_Management/Images/DocusignInstance16@2x.png");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Endpoints_Salesforce_Broker
+    {
+        background-image: url("K2Sites_Management/Images/Salesforce16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Endpoints_Salesforce_Broker
+    {
+        background-image: url("K2Sites_Management/Images/SalesforceInstance16@2x.png");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Exchange_Broker
+    {
+        background-image: url("K2Sites_Management/Images/Exchange16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Exchange_Broker
+    {
+        background-image: url("K2Sites_Management/Images/ExchangeInstance16@2x.png ");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_Box
+    {
+        background-image: url("K2Sites_Management/Images/Box16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_Box
+    {
+        background-image: url("K2Sites_Management/Images/BoxInstance16@2x.png ");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_GoogleDrive
+    {
+        background-image: url("K2Sites_Management/Images/GoogleDrive16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_GoogleDrive
+    {
+        background-image: url("K2Sites_Management/Images/GoogleDriveInstance16@2x.png ");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_Dropbox
+    {
+        background-image: url("K2Sites_Management/Images/Dropbox16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_Dropbox
+    {
+        background-image: url("K2Sites_Management/Images/DropboxInstance16@2x.png ");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_OneDrive
+    {
+        background-image: url("K2Sites_Management/Images/OneDrive16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_OneDrive
+    {
+        background-image: url("K2Sites_Management/Images/OneDriveInstance16@2x.png ");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_MicrosoftDynamics365forSales_ServiceBroker
+    {
+        background-image: url("K2Sites_Management/Images/Dynamics16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_MicrosoftDynamics365forSales_ServiceBroker
+    {
+        background-image: url("K2Sites_Management/Images/DynamicsInstance16@2x.png ");
+    }
+
+    /* Temporary place-holders until we get final icons */
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_SharePointFeature_Broker
+    {
+        background-image: url("K2Sites_Management/Images/Sharepoint16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_SharePointFeature_Broker
+    {
+        background-image: url("K2Sites_Management/Images/Sharepoint16@2x.png ");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_SharePoint_SharePointService
+    {
+        background-image: url("K2Sites_Management/Images/Sharepoint16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_SharePoint_SharePointService
+    {
+        background-image: url("K2Sites_Management/Images/Sharepoint16@2x.png ");
+    }
+
+    .managementListIcon.iconUser
+    {
+        background-image: url("K2Sites_Management/Images/User16.png");
+    }
+
+    .managementListIcon.iconGroup
+    {
+        background-image: url("K2Sites_Management/Images/Groups16.png");
+    }
+
+    .managementListIcon.iconURL
+    {
+        background-image: url("K2Sites_Management/Images/WebUrl16.png") !important;
+    }
+
+    .managementListIcon.iconServer
+    {
+        background-image: url("K2Sites_Management/Images/Server16.png") !important;
+    }
+
+    .managementListIcon.iconActivity
+    {
+        background-image: url("K2Sites_Management/Images/Activity16.png");
+    }
+
+    .managementListIcon.iconLicense
+    {
+        background-image: url("K2Sites_Management/Images/Licenses16.png");
+    }
+
+    .managementListIcon.iconWorkflowStep
+    {
+        background-image: url("K2Sites_Management/Images/WizardSteps16.png");
+    }
+
+.theme-entry .grid-content-cell.icon.oauthresourcetype .grid-content-cell-wrapper:before
+{
+    background-image: url(K2Sites_Management/Images/ResourceTypes16.png) !important;
+}
+
+[name='Manage Resource Types Area Item1'] .icon.oauthresourcetype .grid-content-cell-wrapper:before
+{
+    background-image: url(K2Sites_Management/Images/ResourceTypesParameters16.png) !important;
+}
+
+[name='Manage OAuth Resources Area Item'] .icon.oauthresourcetype .grid-content-cell-wrapper:before
+{
+    background-image: url(K2Sites_Management/Images/Resources16.png) !important;
+}
+
+.theme-entry .grid-content-cell.icon.oauthresourceparameter .grid-content-cell-wrapper:before
+{
+    background-image: url(K2Sites_Management/Images/ResourceTypesParameters16.png) !important;
+}
+
+.theme-entry .grid .grid-content-cell.icon.oauthissuers .grid-content-cell-wrapper:before
+{
+    background-image: url(K2Sites_Management/Images/ClaimsIssuers16.png);
+}
+
+.theme-entry .grid .grid-content-cell.icon.securitylabels .grid-content-cell-wrapper:before
+{
+    background-image: url(K2Sites_Management/Images/SecurityProvider16.png);
+}
+
+[name='Manage Claims Area Item1'] .icon.securitylabels .grid-content-cell-wrapper:before
+{
+    background-image: url(K2Sites_Management/Images/Claims16.png) !important;
+}
+
+.theme-entry .grid .grid-content-cell.icon.realms .grid-content-cell-wrapper:before
+{
+    background-image: url(K2Sites_Management/Images/Realms16.png);
+}
+
+.theme-entry .grid .grid-content-cell.icon.audiences .grid-content-cell-wrapper:before
+{
+    background-image: url(K2Sites_Management/Images/Audience16.png);
+}
+
+.theme-entry .grid-content-cell.icon.servicetype .grid-content-cell-wrapper:before
+{
+    background-image: url("K2Sites_Management/Images/ServiceTypes16.png") !important;
+}
+
+.theme-entry .grid-content-cell.icon.serviceinstance .grid-content-cell-wrapper:before
+{
+    background-image: url("K2Sites_Management/Images/ServiceInstance16.png") !important;
+}
+
+.theme-entry .grid .grid-content-cell.icon.processinstance .grid-content-cell-wrapper:before
+{
+    background-image: url("K2Sites_Management/Images/Workflow16.png") !important;
+}
+
+.theme-entry .grid .grid-content-cell.icon.workinghourzone .grid-content-cell-wrapper:before
+{
+    background-image: url("K2Sites_Management/Images/WorkingHours16.png");
+}
+
+.theme-entry .grid .grid-content-cell.icon.processschedule .grid-content-cell-wrapper:before
+{
+    background-image: url("K2Sites_Management/Images/WorkflowSchedules16.png");
+}
+
+
+.theme-entry .grid .grid-content-cell.icon.processversion .grid-content-cell-wrapper:before
+{
+    background-image: url("K2Sites_Management/Images/WorkflowInstance16.png") !important;
+}
+
+.theme-entry [name='Process.Main Area Item9'] .grid-content-cell.icon.processversion .grid-content-cell-wrapper:before
+{
+    background-image: url("K2Sites_Management/Images/ProcessVersion16.png") !important;
+}
+
+.theme-entry .grid .grid-content-cell.icon.errorprofile .grid-content-cell-wrapper:before
+{
+    background-image: url("K2Sites_Management/Images/ErrorGrouping16.png") !important;
+}
+
+.theme-entry .grid .grid-content-cell.icon.processerror .grid-content-cell-wrapper:before
+{
+    background-image: url("K2Sites_Management/Images/Error16.png") !important;
+}
+
+div[name="sgridErrorLogs"] .grid-content-cell.icon.processerror .grid-content-cell-wrapper:before
+{
+    background-image: url("K2Sites_Management/Images/Error16.png") !important;
+    background-position: top 50% left 0 !important;
+}
+
+
+/* Exchange Feature */
+
+form[action*='Exchange.Main'],
+[id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .panel-body
+{
+    background-color: #f5f5f5 !important;
+}
+
+    /* This table is located on the following View: Exchange.Details */
+    /* Styling is applied where this View has been used on: Exchange.Main */
+    form[action*='Exchange.Main'] [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_fb34cc9a-3c7b-b641-946d-e7362c4c44ed_Table']
+    {
+        margin-top: -15px;
+    }
+
+[id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button
+{
+    margin-right: 10px;
+    height: 34px;
+    min-width: 80px;
+    padding: 0 50px 0 50px;
+    background-color: #2196f3;
+    border-color: none;
+    border-style: none;
+    font-family: 'Open Sans', 'Segoe UI Regular', 'Helvetica', 'sans-serif';
+    font-size: 1.2rem;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    background-image: none;
+}
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button:hover
+    {
+        background-color: #29b6f6;
+        border-color: none;
+        border-style: none;
+        border: 0;
+    }
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button:focus
+    {
+        background-color: #2196f3;
+        border-color: #1b7ecd;
+        border-style: solid;
+    }
+
+        [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button:focus:hover
+        {
+            background-color: #29b6f6;
+            border-color: #1b7ecd;
+            border-style: solid;
+            border: 1px;
+        }
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button.disabled,
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button[name*='-Reopen'].disabled,
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button[name='btnBack'].disabled
+    {
+        height: 34px;
+        min-width: 80px;
+        padding: 0 50px 0 50px;
+        background-color: #2196f3;
+        border-color: none;
+        border-style: none;
+        border: 0;
+        font-family: 'Open Sans', 'Segoe UI Regular', 'Helvetica', 'sans-serif';
+        font-size: 1.2rem;
+        color: #f0f0f1;
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+        background-image: none;
+    }
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button[name*='-Reopen'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button[name='btnBack']
+    {
+        background-color: transparent;
+        color: #4e5758;
+    }
+
+        [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button[name*='-Reopen']:hover,
+        [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button[name='btnBack']:hover
+        {
+            background-color: #29b6f6;
+            color: #FFF;
+        }
+
+        [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button[name*='-Reopen']:focus,
+        [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button[name='btnBack']:focus
+        {
+            background-color: transparent;
+            border-color: #1b7ecd;
+            border-style: solid;
+            border: 1px;
+            color: #4e5758;
+        }
+
+        [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button[name*='-Reopen']:hover:focus,
+        [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form .SFC.SourceCode-Forms-Controls-Web-Button[name='btnBack']:hover:focus
+        {
+            background-color: #29b6f6;
+            border-color: #1b7ecd;
+            border: solid 1px;
+            color: #FFF;
+        }
+
+[id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form
+{
+    height: 694px;
+}
+
+    /* This table is located on the following View: Exchange.Progress */
+    /* Styling is applied where this View has been used on: Exchange.Main */
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='30ce976f-7b36-4fd8-a811-89667d265de1_1f1d14fb-9161-48f6-b4df-25462f96ec6d_Table']
+    {
+        height: 690px;
+    }
+
+    /* This table is located on the following View: Exchange.Progress */
+    /* Styling is applied where this View has been used on: Exchange.Main */
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='30ce976f-7b36-4fd8-a811-89667d265de1_23fa9c39-733c-431f-aa89-a670aa0ed595_Table']
+    {
+        margin-top: -35px;
+    }
+
+    /* This table is located on the following View: Exchange.Progress */
+    /* Styling is applied where this View has been used on: Exchange.Main */
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='30ce976f-7b36-4fd8-a811-89667d265de1_65a50961-eec0-44ed-805b-aea739afaff9_Table']
+    {
+        margin-top: 20px;
+    }
+
+    /* This table is located on the following View: Exchange.Progress */
+    /* Styling is applied where this View has been used on: Exchange.Main */
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='30ce976f-7b36-4fd8-a811-89667d265de1_d5bb15c4-81cf-4d36-a3f9-7a95829ee3aa_Table']
+    {
+        margin-top: 20px;
+    }
+
+    /* This table is located on the following View: Exchange.Progress */
+    /* Styling is applied where this View has been used on: Exchange.Main */
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='30ce976f-7b36-4fd8-a811-89667d265de1_99e13adb-ccbd-d79d-5b89-c76301ba05c6_Table']
+    {
+        top: 630px;
+        position: absolute;
+    }
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [name*=-Reopen],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [name*=-Continue]
+    {
+        margin-top: 10px;
+    }
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [name='btnDone'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [name='btnOK'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [name='btnUpdate'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [name='btnClose']
+    {
+        margin-right: 20px;
+    }
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [name='lblOAuthMessage'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [name='lblExchangeOAuthDomainDescription'] a,
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [name='lblExchangeOAuthEmailDescription'] a
+    {
+        color: #2196f3;
+        font-weight: bold;
+    }
+
+    /* This table is located on the following View: Exchange.Details */
+    /* Styling is applied where this View has been used on: Exchange.Main */
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_bf305bc6-4c24-4207-92b5-4498fa35dd18_Table']
+    {
+        height: 720px;
+    }
+
+    /* This table is located on the following View: Exchange.Details */
+    /* Styling is applied where this View has been used on: Exchange.Main */
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_e055347d-eac1-b667-324d-1a4848edcd97_Table']
+    {
+        top: 630px;
+        position: absolute;
+    }
+
+    /* These tables are located on the following View: Exchange.Details */
+    /* Styling is applied where this View has been used on: Exchange.Main */
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_bf305bc6-4c24-4207-92b5-4498fa35dd18_Table'] [id='247eaeb3-051b-73f8-a7f0-335911e3141e'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_bf305bc6-4c24-4207-92b5-4498fa35dd18_Table'] [id='8d558c5b-b621-c2ea-6aac-129178580ab1'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_dbb586dc-c3a8-b68d-4635-d6781a1759ca_Table'] [id='c9bd499d-a7ba-cf47-7321-0d2e40a1d430'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_dbb586dc-c3a8-b68d-4635-d6781a1759ca_Table'] [id='aa33a402-877e-e1ae-507e-c31380ca956f'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_dbb586dc-c3a8-b68d-4635-d6781a1759ca_Table'] [id='18f80b83-fed1-550e-868d-a98d5bbf4b91'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_dbb586dc-c3a8-b68d-4635-d6781a1759ca_Table'] [id='e45008cb-bac5-10fd-efe4-a60302b4db96'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_dbb586dc-c3a8-b68d-4635-d6781a1759ca_Table'] [id='76d40e4e-1b0e-7e0a-8a3f-39ad9d338f2f']
+    {
+        padding-right: 0px;
+    }
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_34221448-e513-6837-5a4f-09a1f612224a'] > label > span.input-control-text,
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_97733df7-e89e-01d1-4966-f930ee3b0eca'] > label > span.input-control-text,
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_5842adae-1d30-c694-0c13-f846ccb07ddf'] > label > span.input-control-text
+    {
+        padding-left: 9px;
+    }
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='18f80b83-fed1-550e-868d-a98d5bbf4b91'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='76d40e4e-1b0e-7e0a-8a3f-39ad9d338f2f']
+    {
+        padding-left: 3px;
+    }
+
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='247eaeb3-051b-73f8-a7f0-335911e3141e'],
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='8d558c5b-b621-c2ea-6aac-129178580ab1']
+    {
+        padding-left: 7px;
+    }
+
+
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_51733cc5-1a9e-4555-555f-f1016f77ddb3'] a,
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_51733cc5-1a9e-4555-555f-f1016f77ddb3'] a:visited,
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_e9b9bf6e-0330-4704-1f22-bd7177a01eac'] a,
+    [id='70cd445c-a50d-4cc8-8916-68f707ead83a'].form [id='4e456b51-76ac-4f79-aac5-d8e36a7021f8_e9b9bf6e-0330-4704-1f22-bd7177a01eac'] a:visited
+    {
+        color: #2196f3;
+    }
+
+/********************/
+
+[name='Hosting.Client.Domain Editable List'] .first span.runtime-list-item:before
+{
+    content: "";
+    background-image: url("K2Sites_Management/Images/Domains16.png");
+    width: 16px;
+    height: 16px;
+    display: inherit;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.theme-entry [name='Licenses Area Item4'].grid .grid-content-cell.icon.user .grid-content-cell-wrapper,
+.theme-entry .grid .grid-content-cell.icon.user .grid-content-cell-wrapper
+{
+    background-image: url("K2Sites_Management/Images/User16.png") !important;
+}
+
+.managementListIcon.iconThinClientProcess
+{
+    background-image: url("K2Sites_Management/Images/Workflow16.png") !important;
+}
+
+.managementListIcon.iconWorkspace
+{
+    background-image: url("Workspace/Workspace16.png") !important;
+}
+
+
+/*Prevent icon from getting clipped in cell with no text content*/
+.theme-entry .grid td:not(:only-child) .grid-content-cell.icon
+{
+    overflow: visible !important;
+}
+
+*[id="057883f1-687d-4c94-a6b6-703ed813d05e_52365d1f-93f0-4abe-3a57-eff256086973_0ea99be0-3e48-9dd2-4d5e-1dcf7e3b678d_447400c9-f3cf-41ba-a042-0c8653d7a483"] .grid-content-cell.icon.document-generic .grid-content-cell-wrapper
+{
+    background-image: url("K2Sites_Management/Images/ServiceObject16.png") !important;
+}
+
+
+/*End List icons*/
+
+
+/**TOOLBAR ICONS**/
+.theme-entry a.toolbar-button span.button-icon
+{
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+.theme-entry a.toolbar-button.load .button-icon
+{
+}
+
+.theme-entry a.toolbar-button.load .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/FolderOpen16.png');
+}
+
+#c1c671c9-0fad-29a4-c0c8-91640601026e_fe06ddd1-bbb0-02a6-baf7-e0dcf9f72ffe_ToolbarButton .button-icon,
+.theme-entry a.toolbar-button.generic .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/StartProcess16.png');
+}
+
+*[id="170a9af3-a326-4744-8c38-c7d772743b27_fe06ddd1-bbb0-02a6-baf7-e0dcf9f72ffe_ToolbarButton"] .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/StartProcess16.png') !important;
+}
+
+/*moveto*/
+.theme-entry *[id="37e0277f-4765-ffb2-f77c-b003171eb6d0_828b0a29-4ef7-e75b-2d43-acbab6dfc9b6_ToolbarButton"] .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/MoveFolder16.png');
+}
+
+.theme-entry #f70c2fa3-a718-4cba-842e-b69b0bf9cd81_fc821a37-d5a5-92c4-0165-eee67db36076_ToolbarButton .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/MoveFolder16.png');
+}
+
+.theme-entry a.toolbar-button.delete .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/Delete16.png');
+}
+
+.theme-entry a.toolbar-button.executesmartobject .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/StartProcess16.png');
+}
+
+.theme-entry a.toolbar-button.processinstances .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/WorkflowInstance16.png');
+}
+
+.theme-entry a.toolbar-button.processrights .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/WorkflowRights16.png');
+}
+
+.theme-entry a.toolbar-button.roles .button-icon
+{
+    background-image: url('Management/Roles16.png');
+}
+
+.theme-entry a.toolbar-button.startprocess .button-icon,
+.theme-entry a.toolbar-button.startprocessinstance .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/StartProcess16.png');
+}
+
+.theme-entry a.toolbar-button.stopprocessinstance .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/StopProcess16.png');
+}
+
+
+.theme-entry a.toolbar-button.properties .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/Properties16.png');
+}
+
+*[id="5024d6e1-89ba-406f-84a0-7525c14d53c5_a9f33e95-6024-286b-02d9-2542e99f88fd_ToolbarButton"] .button-icon
+{
+    background-image: url('K2Sites_Management/Images/toolbar/GenerateSmartObject16.png');
+}
+
+.theme-entry a.toolbar-button.gotoactivity .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/GoToActivity16.png);
+}
+
+.theme-entry a.toolbar-button.viewflow .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/ViewFlow16.png);
+}
+
+.theme-entry a.toolbar-button.save .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/Save16.png);
+}
+
+
+*[id="9d6ca404-6d68-7a23-1ac4-a25246889eca_40dcdf02-2a4e-c40d-b2d2-aa92fb0b30a8_ToolbarButton"] .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/StartNewProcess16.png);
+}
+
+.theme-entry a.toolbar-button.worklistdelegateitem .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/Share16.png);
+}
+
+.theme-entry a.toolbar-button.worklistredirect .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/Redirect16.png);
+}
+
+.theme-entry a.toolbar-button.worklistrelease .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/ReleaseTask16.png);
+}
+
+.theme-entry a.toolbar-button.retryinstance .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/StartProcess16.png);
+}
+
+.theme-entry a.toolbar-button.errorfulldetail .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/ShowDetails16.png);
+}
+
+*[id="0798e6bd-b883-b9c4-0e96-845d6c625421_ccb265a1-b24c-f239-a9f0-ea2312fc70b2_ToolbarButton"] .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/Copy16.png);
+}
+
+*[id="0798e6bd-b883-b9c4-0e96-845d6c625421_a4efb28e-ee5f-57f1-76b9-91afce44fbb5_ToolbarButton"] .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/SetAsDefault16.png);
+}
+
+*[id="0798e6bd-b883-b9c4-0e96-845d6c625421_441af942-3381-fa65-4f96-cf52318a8cba_ToolbarButton"].checkout .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/NotVisible16.png);
+}
+
+*[id="0798e6bd-b883-b9c4-0e96-845d6c625421_441af942-3381-fa65-4f96-cf52318a8cba_ToolbarButton"].checkin .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/Visible16.png);
+}
+
+*[id="450e65f2-f391-434b-8f45-73f0f5d8f342_9aa6ce95-c493-7a4c-a19b-5ad4636336d6_ToolbarButton"] .button-icon
+{
+    background-image: url(K2Sites_Management/Images/toolbar/ResetExceededLicense16.png);
+}
+/**END TOOLBAR ICONS**/
+
+/* hover background color */
+.theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row):hover td,
+.theme-entry .grid table.grid-content-table tr:not(.selected):hover > td
+{
+    background-color: #e5f3fa;
+}
+
+.theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(even):not(.action-row):hover td,
+.theme-entry .grid table.grid-content-table tr:not(.selected):hover > td
+{
+    background-color: #e5f3fa;
+}
+
+/* last cell in row border */
+.theme-entry .grid-content-table tbody tr.highlighted > td.last, .theme-entry .grid-content-table tbody tr.highlighted > td:last-child
+{
+    border-right-color: #bfeafb;
+}
+
+/*all cells border top and bottom*/
+.theme-entry .grid-content-table tbody tr.highlighted > td,
+.theme-entry .grid-content-table tbody tr.highlighted > td.first,
+.theme-entry .grid-content-table tbody tr.highlighted > td.last,
+.theme-entry .grid table.grid-content-table tr.even.highlighted td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr.highlighted:nth-child(odd):not(.action-row) td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr.highlighted:nth-child(even):not(.action-row) td /*Overriding Core*/
+{
+    border-style: dotted;
+    border-top-color: #bfeafb;
+    border-bottom-color: #bfeafb;
+    background-color: #bfeafb;
+}
+
+    /*first cell left border*/
+    .theme-entry .grid-content-table tbody tr.highlighted > td.first, 
+    .theme-entry .grid-content-table tbody tr.highlighted > td:first-child
+    {
+        border-left-color: #bfeafb;
+    }
+
+/* process download button*/
+a#ebbf735f-51ba-ada5-a54e-74f8480f974c_cd96d102-6c93-4d5a-bfa2-03cd960090b3_ToolbarButton .button-icon
+{
+    background-image: url('K2Sites_Management/Images/Download16.png');
+}
+/* Hide the existing File icon*/
+*[id="9f0d9385-cbc7-d42d-030f-913f2ad9f495_5320e612-b1b0-5384-77f4-23b38d3b54b0_FilePanel"] img.file-thumbnail
+{
+    visibility: hidden;
+}
+/* Show kprx icon for process download*/
+*[id="5cf66073-eb89-4a4a-8eb8-478fe8d0cc66_06552f88-aa75-3d60-e18d-1e3fb0da7249_9f0d9385-cbc7-d42d-030f-913f2ad9f495_611e9b9f-7652-4ff8-894f-de18011cbb4e"] label
+{
+    background-image: url('K2Sites_Management/Images/Workflows32.png');
+    background-repeat: no-repeat;
+    background-position-x: 13px;
+    background-position-y: 50%;
+}
+
+html.management-smartwizard-main .theme-entry .grid .grid-content-cell.icon.user .grid-content-cell-wrapper
+{
+    background-image: url("K2Sites_Management/Images/WizardSteps16.png") !important;
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_9ed9d7c8-3c71-5f82-4f4a-027bf4afef7c_ToolbarButton"] .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/Run32@2x.png');
+    }
+
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_4a7af419-c7a4-5204-123b-3f854bca6713_ToolbarButton"] .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/RunWithParameters32@2x.png');
+    }
+
+    .theme-entry a.toolbar-button[id="040c2c7e-218c-4772-b69d-63db3d5e2ddb_80ff6b55-48d1-fbba-e858-eb1169993669_ToolbarButton"] .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/RunDebug32@2x.png');
+    }
+
+    /* The below span is located on the following view: Management Permission Error */
+    /* Unable to locate preceding div selector at runtime  */
+    /*div[name="com.K2.System.Management.Form.Management Permission Denied"] span[name="dlK2brandingLogo"]
+    {
+        background-image: url(K2Sites_Management/Images/K2Branding64@2x.png) !important;
+    }*/
+
+    /* The below span is located on the following view: Management Permission Error */
+    /* Unable to locate preceding div selector at runtime  */
+    /*div[name="com.K2.System.Management.Form.Management Permission Denied"] td > table tr span[name="dlK2LogoNoPermissions"]
+    {
+        background-image: url(K2Sites_Management/Images/K2LogoPermissions64@2x.png) !important;
+    }*/
+
+    html.management-smartwizard-main .theme-entry .grid .grid-content-cell.icon.user .grid-content-cell-wrapper
+    {
+        background-image: url("K2Sites_Management/Images/WizardSteps16@2x.png") !important;
+    }
+
+
+
+
+
+    /*List Icons*/
+    /*Categories*/
+    .theme-entry .grid-content-cell.icon.smartobject .grid-content-cell-wrapper:before
+    {
+        background-image: url('FileTypes/SmartObject16@2x.png');
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.view-flow .grid-content-cell-wrapper
+    {
+        background-image: url('FileTypes/Workflow16@2x.png');
+    }
+
+
+    .managementListIcon.iconSmartObject
+    {
+        background-image: url('FileTypes/SmartObject16@2x.png');
+    }
+
+    .managementListIcon.iconWorkflow
+    {
+        background-image: url('FileTypes/Workflow16@2x.png');
+    }
+
+    .managementListIcon.iconCategory
+    {
+        background-image: url('AssetBrowser/FolderOpen16@2x.png');
+    }
+
+    .managementListIcon.iconForm
+    {
+        background-image: url('FileTypes/Form16@2x.png');
+    }
+
+    .managementListIcon.iconView
+    {
+        background-image: url('FileTypes/View16@2x.png');
+    }
+
+    .managementListIcon.iconAutoGuid
+    {
+        background-image: url("DataTypes/AutoGUID16@2x.png");
+    }
+
+    .managementListIcon.iconText
+    {
+        background-image: url("DataTypes/Text16@2x.png");
+    }
+
+    .managementListIcon.iconAutonumber
+    {
+        background-image: url("DataTypes/AutoNumber16@2x.png");
+    }
+
+    .managementListIcon.iconDate
+    {
+        background-image: url("RuntimeTheme/Date16@2x.png");
+    }
+
+    .managementListIcon.iconDateTime
+    {
+        background-image: url("DataTypes/DateTime16@2x.png");
+    }
+
+    .managementListIcon.iconDecimal
+    {
+        background-image: url("DataTypes/Decimal16@2x.png");
+    }
+
+    .managementListIcon.iconFile
+    {
+        background-image: url("DataTypes/FolderOpen16@2x.png");
+    }
+
+    .managementListIcon.iconGuid
+    {
+        background-image: url("DataTypes/GUID16@2x.png");
+    }
+
+    .managementListIcon.iconHyperLink
+    {
+        background-image: url("DataTypes/Hyperlink16@2x.png");
+    }
+
+    .managementListIcon.iconImage
+    {
+        background-image: url("DataTypes/Image16@2x.png");
+    }
+
+    .managementListIcon.iconMemo
+    {
+        background-image: url("DataTypes/Memo16@2x.png");
+    }
+
+    .managementListIcon.iconMultiValue
+    {
+        background-image: url("DataTypes/MultiValue16@2x.png");
+    }
+
+    .managementListIcon.iconNumber
+    {
+        background-image: url("DataTypes/Number16@2x.png");
+    }
+
+    .managementListIcon.iconTime
+    {
+        background-image: url("RuntimeTheme/Time16@2x.png");
+    }
+
+    .managementListIcon.iconYesNo
+    {
+        background-image: url("DataTypes/YesNo16@2x.png");
+    }
+
+    .managementListIcon.iconBoolean
+    {
+        background-image: url("DataTypes/YesNo16@2x.png");
+    }
+
+    .managementListIcon.iconMethod
+    {
+        background-image: url("K2Sites_Management/Images/Method16@2x.png");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_DocuSign
+    {
+        background-image: url("K2Sites_Management/Images/Docusign16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_DocuSign
+    {
+        background-image: url("K2Sites_Management/Images/DocusignInstance16@2x.png");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Endpoints_Salesforce_Broker
+    {
+        background-image: url("K2Sites_Management/Images/Salesforce16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Endpoints_Salesforce_Broker
+    {
+        background-image: url("K2Sites_Management/Images/SalesforceInstance16@2x.png");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_Box
+    {
+        background-image: url("K2Sites_Management/Images/Box16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_Box
+    {
+        background-image: url("K2Sites_Management/Images/BoxInstance16@2x.png");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_GoogleDrive
+    {
+        background-image: url("K2Sites_Management/Images/GoogleDrive16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_GoogleDrive
+    {
+        background-image: url("K2Sites_Management/Images/GoogleDriveInstance16@2x.png ");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_Dropbox
+    {
+        background-image: url("K2Sites_Management/Images/Dropbox16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_Dropbox
+    {
+        background-image: url("K2Sites_Management/Images/DropboxInstance16@2x.png ");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_OneDrive
+    {
+        background-image: url("K2Sites_Management/Images/OneDrive16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_Endpoints_CloudStorage_OneDrive
+    {
+        background-image: url("K2Sites_Management/Images/OneDriveInstance16@2x.png ");
+    }
+
+    .managementListIcon.icon-SourceCode_SmartObjects_Services_MicrosoftDynamics365forSales_ServiceBroker
+    {
+        background-image: url("K2Sites_Management/Images/Dynamics16@2x.png");
+    }
+
+    .managementListIcon.iconInstance-SourceCode_SmartObjects_Services_MicrosoftDynamics365forSales_ServiceBroker
+    {
+        background-image: url("K2Sites_Management/Images/DynamicsInstance16@2x.png ");
+    }
+
+    .managementListIcon.iconUser
+    {
+        background-image: url("K2Sites_Management/Images/User16@2x.png");
+    }
+
+    .managementListIcon.iconGroup
+    {
+        background-image: url("K2Sites_Management/Images/Groups16@2x.png");
+    }
+
+    .managementListIcon.iconURL
+    {
+        background-image: url("K2Sites_Management/Images/WebUrl16@2x.png") !important;
+    }
+
+    .managementListIcon.iconServer
+    {
+        background-image: url("K2Sites_Management/Images/Server16@2x.png") !important;
+    }
+
+    .managementListIcon.iconActivity
+    {
+        background-image: url("K2Sites_Management/Images/Activity16@2x.png");
+    }
+
+    .managementListIcon.iconLicense
+    {
+        background-image: url("K2Sites_Management/Images/Licenses16@2x.png");
+    }
+
+    .theme-entry .grid-content-cell.icon.oauthresourcetype .grid-content-cell-wrapper:before
+    {
+        background-image: url(K2Sites_Management/Images/ResourceTypes16@2x.png) !important;
+    }
+
+    [name='Manage Resource Types Area Item1'] .icon.oauthresourcetype .grid-content-cell-wrapper:before
+    {
+        background-image: url(K2Sites_Management/Images/ResourceTypesParameters16@2x.png) !important;
+    }
+
+    [name='Manage OAuth Resources Area Item'] .icon.oauthresourcetype .grid-content-cell-wrapper:before
+    {
+        background-image: url(K2Sites_Management/Images/Resources16@2x.png) !important;
+    }
+
+    .theme-entry .grid-content-cell.icon.oauthresourceparameter .grid-content-cell-wrapper:before
+    {
+        background-image: url(K2Sites_Management/Images/ResourceTypesParameters16@2x.png) !important;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.oauthissuers .grid-content-cell-wrapper:before
+    {
+        background-image: url(K2Sites_Management/Images/ClaimsIssuers16@2x.png);
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.securitylabels .grid-content-cell-wrapper:before
+    {
+        background-image: url(K2Sites_Management/Images/SecurityProvider16@2x.png);
+    }
+
+    [name='Manage Claims Area Item1'] .icon.securitylabels .grid-content-cell-wrapper:before
+    {
+        background-image: url(K2Sites_Management/Images/Claims16@2x.png) !important;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.realms .grid-content-cell-wrapper:before
+    {
+        background-image: url(K2Sites_Management/Images/Realms16@2x.png);
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.audiences .grid-content-cell-wrapper:before
+    {
+        background-image: url(K2Sites_Management/Images/Audience16@2x.png);
+    }
+
+    .theme-entry .grid-content-cell.icon.servicetype .grid-content-cell-wrapper:before
+    {
+        background-image: url("K2Sites_Management/Images/ServiceTypes16@2x.png") !important;
+    }
+
+    .theme-entry .grid-content-cell.icon.serviceinstance .grid-content-cell-wrapper:before
+    {
+        background-image: url("K2Sites_Management/Images/ServiceInstance16@2x.png") !important;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.processinstance .grid-content-cell-wrapper:before
+    {
+        background-image: url("K2Sites_Management/Images/Workflow16@2x.png") !important;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.workinghourzone .grid-content-cell-wrapper:before
+    {
+        background-image: url("K2Sites_Management/Images/WorkingHours16@2x.png");
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.processschedule .grid-content-cell-wrapper:before
+    {
+        background-image: url("K2Sites_Management/Images/WorkflowSchedules16@2x.png");
+    }
+
+
+    .theme-entry .grid .grid-content-cell.icon.processversion .grid-content-cell-wrapper:before
+    {
+        background-image: url("K2Sites_Management/Images/WorkflowInstance16@2x.png") !important;
+    }
+
+    .theme-entry [name='Process.Main Area Item9'] .grid-content-cell.icon.processversion .grid-content-cell-wrapper:before
+    {
+        background-image: url("K2Sites_Management/Images/ProcessVersion16@2x.png") !important;
+    }
+
+    .theme-entry .grid .grid-content-cell.icon.errorprofile .grid-content-cell-wrapper:before
+    {
+        background-image: url("K2Sites_Management/Images/ErrorGrouping16@2x.png") !important;
+    }
+
+    div[name="sgridErrorLogs"] .grid-content-cell.icon.processerror .grid-content-cell-wrapper:before
+    {
+        background-image: url("K2Sites_Management/Images/Error16@2x.png") !important;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+    }
+
+    [name='Hosting.Client.Domain Editable List'] .first span.runtime-list-item:before
+    {
+        background-image: url("K2Sites_Management/Images/Domains16@2x.png");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry [name='Licenses Area Item4'].grid .grid-content-cell.icon.user .grid-content-cell-wrapper,
+    .theme-entry .grid .grid-content-cell.icon.user .grid-content-cell-wrapper
+    {
+        background-image: url("K2Sites_Management/Images/User16@2x.png") !important;
+    }
+
+    .managementListIcon.iconThinClientProcess
+    {
+        background-image: url("K2Sites_Management/Images/Workflow16@2x.png") !important;
+    }
+
+    .managementListIcon.iconWorkspace
+    {
+        background-image: url("Workspace/Workspace16@2x.png") !important;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+    }
+
+    *[id="057883f1-687d-4c94-a6b6-703ed813d05e_52365d1f-93f0-4abe-3a57-eff256086973_0ea99be0-3e48-9dd2-4d5e-1dcf7e3b678d_447400c9-f3cf-41ba-a042-0c8653d7a483"] .grid-content-cell.icon.document-generic .grid-content-cell-wrapper
+    {
+        background-image: url("K2Sites_Management/Images/ServiceObject16@2x.png") !important;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+    }
+
+    /*End List Icons*/
+
+    /**TOOLBAR ICONS**/
+
+    .theme-entry a.toolbar-button.load .button-icon
+    {
+    }
+
+    .theme-entry a.toolbar-button.load .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/FolderOpen16@2x.png');
+    }
+
+    .theme-entry a.toolbar-button.generic .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/StartProcess16@2x.png');
+    }
+
+    /*moveto*/
+    .theme-entry *[id="37e0277f-4765-ffb2-f77c-b003171eb6d0_828b0a29-4ef7-e75b-2d43-acbab6dfc9b6_ToolbarButton"] .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/MoveFolder16@2x.png');
+    }
+
+    .theme-entry #f70c2fa3-a718-4cba-842e-b69b0bf9cd81_fc821a37-d5a5-92c4-0165-eee67db36076_ToolbarButton .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/MoveFolder16@2x.png');
+    }
+
+    .theme-entry a.toolbar-button.delete .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/Delete16@2x.png');
+    }
+
+    #c1c671c9-0fad-29a4-c0c8-91640601026e_fe06ddd1-bbb0-02a6-baf7-e0dcf9f72ffe_ToolbarButton .button-icon,
+    .theme-entry a.toolbar-button.executesmartobject .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/StartProcess16@2x.png');
+    }
+
+    .theme-entry a.toolbar-button.processinstances .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/WorkflowInstance16@2x.png');
+    }
+
+    .theme-entry a.toolbar-button.processrights .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/WorkflowRights16@2x.png');
+    }
+
+    .theme-entry a.toolbar-button.roles .button-icon
+    {
+        background-image: url('Management/Roles16@2x.png');
+    }
+
+    .theme-entry a.toolbar-button.startprocess .button-icon,
+    .theme-entry a.toolbar-button.startprocessinstance .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/StartProcess16@2x.png');
+    }
+
+    .theme-entry a.toolbar-button.stopprocessinstance .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/StopProcess16@2x.png');
+    }
+
+
+    .theme-entry a.toolbar-button.properties .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/Properties16@2x.png');
+    }
+
+    *[id="5024d6e1-89ba-406f-84a0-7525c14d53c5_a9f33e95-6024-286b-02d9-2542e99f88fd_ToolbarButton"] .button-icon
+    {
+        background-image: url('K2Sites_Management/Images/toolbar/GenerateSmartObject16@2x.png');
+    }
+
+    .theme-entry a.toolbar-button.gotoactivity .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/GoToActivity16@2x.png);
+    }
+
+    .theme-entry a.toolbar-button.viewflow .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/ViewFlow16@2x.png);
+    }
+
+    .theme-entry a.toolbar-button.save .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/Save16@2x.png);
+    }
+
+
+    *[id="9d6ca404-6d68-7a23-1ac4-a25246889eca_40dcdf02-2a4e-c40d-b2d2-aa92fb0b30a8_ToolbarButton"] .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/StartNewProcess16@2x.png);
+    }
+
+    .theme-entry a.toolbar-button.worklistdelegateitem .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/Share16@2x.png);
+    }
+
+    .theme-entry a.toolbar-button.worklistredirect .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/Redirect16@2x.png);
+    }
+
+    .theme-entry a.toolbar-button.worklistrelease .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/ReleaseTask16@2x.png);
+    }
+
+    .theme-entry a.toolbar-button.retryinstance .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/StartProcess16@2x.png);
+    }
+
+    .theme-entry a.toolbar-button.errorfulldetail .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/ShowDetails16@2xdesign.png);
+    }
+
+    *[id="0798e6bd-b883-b9c4-0e96-845d6c625421_ccb265a1-b24c-f239-a9f0-ea2312fc70b2_ToolbarButton"] .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/Copy16@2x.png);
+    }
+
+    *[id="0798e6bd-b883-b9c4-0e96-845d6c625421_a4efb28e-ee5f-57f1-76b9-91afce44fbb5_ToolbarButton"] .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/SetAsDefault16@2x.png);
+    }
+
+    *[id="0798e6bd-b883-b9c4-0e96-845d6c625421_441af942-3381-fa65-4f96-cf52318a8cba_ToolbarButton"].checkout .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/NotVisible16@2x.png);
+    }
+
+    *[id="0798e6bd-b883-b9c4-0e96-845d6c625421_441af942-3381-fa65-4f96-cf52318a8cba_ToolbarButton"].checkin .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/Visible16@2x.png);
+    }
+
+    *[id="450e65f2-f391-434b-8f45-73f0f5d8f342_9aa6ce95-c493-7a4c-a19b-5ad4636336d6_ToolbarButton"] .button-icon
+    {
+        background-image: url(K2Sites_Management/Images/toolbar/ResetExceededLicense16@2x.png);
+    }
+    /**END TOOLBAR ICONS**/
+}
+
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationOAuth .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationOAuth .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row .PART_TitleDiv.title.table-cell
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationOAuth .PART_GenericExpenseGridItemMain.table.STYLE_fontfamily
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationOAuth .PART_GenericExpenseGridItemMainRow.item-row.table-row .PART_ImageCell.image-cell.table-cell
+{
+    float: left;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationOAuth .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell
+{
+    float: left;
+    width: 86%;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationOAuth .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesTitleProperty1Table.table
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationOAuth .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table
+{
+    display: block;
+}
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationOAuth .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row
+    {
+        display: block;
+    }
+
+        .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationOAuth .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell
+        {
+            display: block;
+            width: 100%;
+        }
+
+            .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationOAuth .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell span
+            {
+                white-space: normal;
+            }
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationClaims .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationClaims .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row .PART_TitleDiv.title.table-cell
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationClaims .PART_GenericExpenseGridItemMain.table.STYLE_fontfamily
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationClaims .PART_GenericExpenseGridItemMainRow.item-row.table-row .PART_ImageCell.image-cell.table-cell
+{
+    float: left;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationClaims .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell
+{
+    float: left;
+    width: 86%;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationClaims .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesTitleProperty1Table.table
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationClaims .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table
+{
+    display: block;
+}
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationClaims .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row
+    {
+        display: block;
+    }
+
+        .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationClaims .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell
+        {
+            display: block;
+            width: 100%;
+        }
+
+            .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.AuthenticationClaims .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell span
+            {
+                white-space: normal;
+            }
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row .PART_TitleDiv.title.table-cell
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PART_ImageCell.image-cell.table-cell
+{
+    float: left;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell
+{
+    float: left;
+    width: 86%;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesTitleProperty1Table.table
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table
+{
+    display: block;
+}
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row
+    {
+        display: block;
+    }
+
+        .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell
+        {
+            display: block;
+            width: 100%;
+        }
+
+            .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell span
+            {
+                white-space: normal;
+            }
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.Authentication .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.Authentication .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row .PART_TitleDiv.title.table-cell
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.Authentication .PART_GenericExpenseGridItemMainRow.item-row.table-row .PART_ImageCell.image-cell.table-cell
+{
+    float: left;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.Authentication .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell
+{
+    float: left;
+    width: 86%;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.Authentication .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesTitleProperty1Table.table
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.Authentication .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table
+{
+    display: block;
+}
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.Authentication .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row
+    {
+        display: block;
+    }
+
+        .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.Authentication .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell
+        {
+            display: block;
+            width: 100%;
+        }
+
+            .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.Authentication .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell span
+            {
+                white-space: normal;
+            }
+
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.WorkflowServer .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.WorkflowServer .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row .PART_TitleDiv.title.table-cell
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.WorkflowServer .PART_GenericExpenseGridItemMainRow.item-row.table-row .PART_ImageCell.image-cell.table-cell
+{
+    float: left;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.WorkflowServer .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell
+{
+    float: left;
+    width: 86%;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.WorkflowServer .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesTitleProperty1Table.table
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.WorkflowServer .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table
+{
+    display: block;
+}
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.WorkflowServer .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row
+    {
+        display: block;
+    }
+
+        .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.WorkflowServer .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell
+        {
+            display: block;
+            width: 100%;
+        }
+
+            .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.WorkflowServer .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell span
+            {
+                white-space: normal;
+            }
+
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PART_ImageCell.image-cell.table-cell
+{
+    float: left;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell
+{
+    float: left;
+    width: 86%;
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesTitleProperty1Table.table
+{
+    display: block;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table
+{
+    display: block;
+}
+
+    .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row
+    {
+        display: block;
+    }
+
+        .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell
+        {
+            display: block;
+            width: 100%;
+        }
+
+            .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesDescriptionProperty2Table.table .PART_PropertiesTitleProperty1TableRow.table-row .PART_DescriptionDiv.description.table-cell span
+            {
+                white-space: normal;
+            }
+
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row,
+.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.SmartObjectSecurityCategory .PART_GenericExpenseGridItemMainRow.item-row.table-row .PropertiesMain.table-cell .PART_PropertiesTitleProperty1TableRow.table-row .PART_TitleDiv.title.table-cell
+{
+    display: block;
+}
+
+/*do not attempt this at home*/
+/*This CSS needs to be gone for a better control manipulation. just a hotfix for release.*/
+
+/* This table is located on the following View: com.K2.System.Management.View.SmartObjectInfo */
+/* Styling is applied where this View has been used on: */
+/* - com.K2.System.Management.Form.FormsAdmin */
+/* - com.K2.System.Management.Form.SmartObjectsAdmin */
+div[name='SmartObjects.Admin.Main Area Item'] > div > div > div > div > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell > .SourceCode-Forms-Controls-Web-Table > .editor-cell > .SourceCode-Forms-Controls-Web-Table > .editor-cell > a.toolbar-button.toolbar-button-inline.load > span.button-c
+{
+    width: 100%;
+}
+
+    /* Same table control as referenced in above comments */
+    div[name='SmartObjects.Admin.Main Area Item'] > div > div > div > div > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell > .SourceCode-Forms-Controls-Web-Table > .editor-cell > .SourceCode-Forms-Controls-Web-Table > .editor-cell > a.toolbar-button.toolbar-button-inline.load > span.button-c > span.button-text
+    {
+        width: 70%;
+        white-space: normal;
+    }
+
+/* Same table control as referenced in above comments */
+div[name='SmartObjects.Admin.Main Area Item'] > div > div > div > div > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell > .SourceCode-Forms-Controls-Web-Table > .editor-cell > .SourceCode-Forms-Controls-Web-Table > .editor-cell > a.toolbar-button.toolbar-button-inline.load
+{
+    width: 100%;
+}
+
+/*==============================================================================================*/
+/*right align buttons in confirmation dialog*/
+.theme-entry div.popupManager div.popup-footer-c
+{
+    text-align: right !important;
+}
+
+    .theme-entry div.popupManager div.popup-footer-c > a
+    {
+        display: inline-block !important;
+        margin-left: 5px !important;
+        float: none !important;
+    }
+        /*Hide the help button that is intended for the designer*/
+        .theme-entry div.popupManager div.popup-footer-c > a.button.help
+        {
+            visibility: collapse;
+        }
+
+/* Serialization grid selectable checkbox forced alignment */
+.SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid.multiselect .grid-column-header-table tr:first-child td:first-child .grid-column-header-cell
+{
+    width: 100% !important; /* override inline style set by control*/
+    text-align: inherit;
+    padding-left: .1rem !important; /* override inline style set by control */
+}
+
+/*alignment for both the header checkbox and the content checkbox*/
+.SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid.multiselect tr td:first-child .input-control.checkbox
+{
+    vertical-align: middle;
+    padding-left: 2px !important;
+}
+
+
+/* Spacing for checkbox */
+.SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid.multiselect tr td div.grid-content-cell.rowselectcheckbox div.grid-content-cell-wrapper
+{
+    padding: 0;
+    padding-left: .1rem;
+}
+
+/* This table is located on the following View: com.K2.System.Management.View.ManagementTaskListSearch */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.ManagementTaskList */
+.management-worklistsearch-view.view .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table .editor-cell[row='1'] > .SourceCode-Forms-Controls-Web-Table
+{
+    -ms-grid-columns: 2rem 1fr !important;
+    grid-template-columns: 2rem 1fr !important;
+}
+
+/* This table is located on the following View: com.K2.System.Management.View.ManagementTaskListSearch */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.ManagementTaskList */
+.management-worklistsearch-view.view .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='1'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='1']
+{
+    padding-left: 0 !important; /* override inline styles */
+}
+
+/* This table is located on the following View: com.K2.System.Management.View.ManagementTaskListSearch */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.ManagementTaskList */
+.management-worklistsearch-view.view .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'] > .SourceCode-Forms-Controls-Web-Table
+{
+    max-width: 635px;
+}
+
+    /* This table is located on the following View: com.K2.System.Management.View.ManagementTaskListSearch */
+    /* Styling is applied where this View has been used on: com.K2.System.Management.Form.ManagementTaskList */
+.management-worklistsearch-view.view .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'] > .SourceCode-Forms-Controls-Web-Table .editor-cell
+{
+    padding-left: 0 !important; /* override inline styles */
+}
+
+    /* This table is located on the following View: com.K2.System.Management.View.ManagementTaskListSearch */
+    /* Styling is applied where this View has been used on: com.K2.System.Management.Form.ManagementTaskList */
+.management-worklistsearch-view.view .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'] > .SourceCode-Forms-Controls-Web-Table
+{
+    -ms-grid-columns: 11rem 1fr !important;
+    grid-template-columns: 11rem 1fr !important;
+}
+
+    
+.management-worklistsearch-view.view .SFC[name="lblInstructions"]
+{
+    padding: 0px !important;
+}
+
+.theme-entry div.tab-box.tabs-top
+{
+    height: calc(100% - 1px) !important;
+    margin-bottom: 1px;
+}
+
+
+.theme-entry div[name='vwCommon.UserSearchResults'] tr.selected,
+.theme-entry div[name='vwCommon.UserSearchResults'] tr.selected td,
+.theme-entry div[name='vwCommon.UserSearchresults'] tr.selected,
+.theme-entry div[name='vwCommon.UserSearchresults'] tr.selected td,
+.theme-entry div[name='vwManagementWorklist.Delegate'] tr.selected,
+.theme-entry div[name='vwManagementWorklist.Delegate'] tr.selected td,
+.theme-entry div[name='vwManagementWorkListItem.List'] tr.selected,
+.theme-entry div[name='vwManagementWorkListItem.List'] tr.selected td,
+.theme-entry div[name='vwSmartObject.List'] tr.selected,
+.theme-entry div[name='vwSmartObject.List'] tr.selected td,
+.theme-entry .SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid table.grid-content-table tr.even.selected td,
+.theme-entry .SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid table.grid-content-table.zebra-stripes tr.selected:nth-child(odd):not(.action-row) td,
+.theme-entry .SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid table.grid-content-table tr.selected > td
+{
+    background-color: #BFEAFB !important;
+}
+
+/* This table is located on the following View: com.K2.System.Management.View.SmartObjectGenerationItem */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.SmartObjectGeneration */
+.theme-entry .visible.panel.scroll-contents.without-header.with-toolbar.without-footer .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='1']
+{
+    padding-bottom: 1.12rem !important;
+}
+
+/*Styling for Method Execute error display*/
+html.management-executemethod div.executemethod-container
+{
+    font-size: 1.2rem;
+    color: #717171;
+    font-family: 'Open-Sans Regular', 'Segoe UI Regular', 'Helvetica';
+    line-height: 1.4rem;
+}
+
+html.management-executemethod div.executemethod-header
+{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #717171;
+    font-family: 'Open-Sans Regular', 'Segoe UI Regular', 'Helvetica';
+    line-height: 1.4rem;
+    padding-bottom: 12px;
+}
+
+    html.management-executemethod div.executemethod-header h2
+    {
+        margin-bottom: 5px;
+        color: #5b595d;
+        font-size: 1.4rem;
+        font-family: 'Open-Sans Bold', 'Segoe UI Regular', 'Helvetica';
+    }
+
+    html.management-executemethod div.executemethod-header hr
+    {
+        width: 235px;
+        color: #e6e6e6;
+    }
+
+html.management-executemethod .executemethod-icon
+{
+    height: 48px;
+    width: 48px;
+    margin: auto;
+    background-image: url('K2Sites_Management\Images\MethodError48.png');
+    background-repeat: no-repeat;
+    background-size: 48px;
+    margin-bottom: 10px;
+}
+
+html.management-executemethod ul
+{
+    padding-left: 1.5rem;
+}
+
+    html.management-executemethod ul ul
+    {
+        list-style-type: none;
+    }
+
+html.management-executemethod div.methoderror-container
+{
+    font-size: 1.2rem;
+    color: #5b595d;
+    font-family: 'Open-Sans Regular', 'Segoe UI Regular', 'Helvetica';
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+html.management-executemethod div.methoderror-header h2
+{
+    margin-bottom: 5px;
+    color: #5b595d;
+    font-size: 1.4rem;
+    font-family: 'Open-Sans Bold', 'Segoe UI Regular', 'Helvetica';
+}
+
+html.management-executemethod div.methoderror-header hr
+{
+    width: 260px;
+    color: #e6e6e6;
+}
+
+html.management-executemethod .methoderror-icon
+{
+    height: 48px;
+    width: 48px;
+    margin: auto;
+    background-image: url('K2Sites_Management\Images\Error48.png');
+    background-repeat: no-repeat;
+    background-size: 48px;
+    margin-bottom: 10px;
+}
+
+html.management-executemethod div.methoderror-message
+{
+    text-align: left;
+}
+
+div[name="Categrories.Select Area Item"] div[name="Tree"] li.selected > div.content > div > span.text.with-image,
+div[name="Categrories.Select Area Item"] div[name="Tree"] li > div.content > div.header:hover > span.text.with-image
+{
+    color: #FFF;
+}
+
+/* BEGIN: Management Permissions Error*/
+div[name="com.K2.System.Management.Form.Management Permission Denied"]
+{
+    position: fixed !important;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+    div[name="com.K2.System.Management.Form.Management Permission Denied"] span[name="dlK2brandingLogo"]
+    {
+        position: fixed;
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        left: 50%;
+        top: 0;
+        width: 64px;
+        height: 64px;
+        background-size: 64px;
+        background-image: url(K2Sites_Management/Images/K2Branding64.png);
+        background-repeat: no-repeat;
+        color: transparent;
+    }
+
+    /* This table is located on the following view: Management Permission Error */
+    div[name="com.K2.System.Management.Form.Management Permission Denied"] .editor-cell > .SourceCode-Forms-Controls-Web-Table
+    {
+        position: absolute !important;
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 277px;
+        height: 220px !important;
+        vertical-align: middle;
+    }
+
+  
+
+        /* This table is located on the following view: Management Permission Error */
+        div[name="com.K2.System.Management.Form.Management Permission Denied"] .editor-cell > .SourceCode-Forms-Controls-Web-Table .editor-cell
+        {
+            padding: 0 !important;
+        }
+
+    div[name="com.K2.System.Management.Form.Management Permission Denied"] span
+    {
+        white-space: normal !important;
+    }
+
+    /* This table is located on the following view: Management Permission Error */
+    div[name="com.K2.System.Management.Form.Management Permission Denied"] .editor-cell > .SourceCode-Forms-Controls-Web-Table .editor-cell[row='2']
+    {
+        border-bottom: 1px solid #cccccc;
+    }
+
+    /* This table is located on the following view: Management Permission Error */
+    div[name="com.K2.System.Management.Form.Management Permission Denied"] span[name="dlK2LogoNoPermissions"]
+    {
+        background-image: url(K2Sites_Management/Images/K2LogoPermissions64.png);
+        background-repeat: no-repeat;
+        background-size: 64px;
+        color: transparent;
+        width: 64px;
+        height: 64px;
+    }
+
+    /* This table is located on the following view: Management Permission Error */
+    div[name="com.K2.System.Management.Form.Management Permission Denied"] .editor-cell > .SourceCode-Forms-Controls-Web-Table .editor-cell[row='2'] span
+    {
+        font-family: 'Open-Sans Regular', 'Segoe UI Regular', 'Helvetica';
+        font-size: 1.8rem;
+        color: #5b595d;
+    }
+
+    /* This table is located on the following view: Management Permission Error */
+    div[name="com.K2.System.Management.Form.Management Permission Denied"] .editor-cell > .SourceCode-Forms-Controls-Web-Table .editor-cell[row='3'] span,
+    div[name="com.K2.System.Management.Form.Management Permission Denied"] .editor-cell > .SourceCode-Forms-Controls-Web-Table .editor-cell[row='4'] span
+    {
+        font-family: 'Open-Sans Regular', 'Segoe UI Regular', 'Helvetica';
+        font-size: 1.2rem !important;
+        color: #717171 !important;
+    }
+
+    /* This table is located on the following view: Management Permission Error */
+    div[name="com.K2.System.Management.Form.Management Permission Denied"] .editor-cell > .SourceCode-Forms-Controls-Web-Table .editor-cell.lastrow a
+    {
+        font-family: 'Open-Sans Regular', 'Segoe UI Regular', 'Helvetica';
+        font-size: 1.2rem;
+        color: #0288d1;
+        text-decoration: none;
+    }
+
+.SFC.SourceCode-Forms-Controls-Web-Label[name='lblManagementPermissionsErrorDescription']
+{
+    width: 221px !important;
+}
+
+/* This table is located on the following view: Management Permission Error */
+div[name="com.K2.System.Management.Form.Management Permission Denied"] .editor-cell > .SourceCode-Forms-Controls-Web-Table .editor-cell[row='4'] .hyperlinkTopPanel
+{
+    line-height: 22px;
+    padding-left: 3px;
+}
+
+/* This table is located on the following view: Management Permission Error */
+div[name="com.K2.System.Management.Form.Management Permission Denied"] .editor-cell > .SourceCode-Forms-Controls-Web-Table .editor-cell[row='4'] a
+{
+    color: #717171 !important
+}
+
+/* This table is located on the following view: Management Permission Error */
+div[name="com.K2.System.Management.Form.Management Permission Denied"] .editor-cell > .SourceCode-Forms-Controls-Web-Table .editor-cell[row='5'] span[name='hlLoginAsDifferentUser']
+{
+    margin-right: .2rem;
+    padding-top: 8px;
+}
+
+/* END: Management Permissions Error*/
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid[name='sgridSelectedUserGroups'] .grid td:not(:first-child) .grid-content-cell-wrapper
+{
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+/*SMO generation dialog size fix for IE */
+
+/* This table is located on the following View: com.K2.System.Management.View.SmartObjectGenerationItem */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.SmartObjectGeneration */
+html.management-smogen .theme-entry .visible.panel.scroll-contents.without-header.with-toolbar.without-footer .SourceCode-Forms-Controls-Web-Table .editor-cell[row='1'],
+html.management-smogen .theme-entry div.panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table .editor-cell[row='1'][col='1']
+{
+    padding: 0 !important; /* override inline styles */
+    padding-bottom: 0 !important; /* override inline styles */
+}
+
+html.msie.management-smogen body.theme-entry form,
+html.management-smogen body.theme-entry form
+{
+    overflow: hidden;
+}
+
+/*Smartwizards user search results view has unneeded padding */
+/* This UI has been deprecated */
+/*.management-smartwizard-usersview.view table tbody tr td.editor-cell
+{
+    padding: 0;
+}*/
+
+/* Process Schedule screen needs a small amount of padding on serialization grid cells */
+html.management-processschedule .theme-entry .grid .grid-content-cell
+{
+    padding-left: .2rem;
+    box-sizing: border-box;
+}
+
+
+/* Some subform/subview popups in the site have popups within them.
+    Whenever this happens the overflow needs to be set right in order to avoid scrollbars
+    So far this affects:
+        Working Hours Configuration
+        Process Set Instance List
+        Process Schedule Edit
+*/
+html.management-procsetinstlist body.theme-entry,
+html.management-procsetrights body.theme-entry,
+html.msie.management-processscheduleedit body.theme-entry
+{
+    overflow: hidden !important; /* override inline style */
+    position: relative;
+}
+
+/* Overflow for working hours configuration page needs to allow scrolling as well as playing nice with calendar popup */
+html.management-workinghoursconfiguration body.theme-entry
+{
+    position: initial;
+}
+
+html.management-workinghoursconfiguration div.runtime-form.theme-entry
+{
+    overflow-y: auto;
+}
+
+html.management-worklistdelegate
+{
+    overflow: hidden;
+}
+
+
+html.management-smartwizard-main .SFC[name='lblDesignerSettings'] h1,
+html.management-smartwizard-main .SFC[name='lblSmartWizardSecurity'] h1
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+html.management-smartwizard-main .SFC[name='lblUnrestrictedWizards'] h2,
+html.management-smartwizard-main .SFC[name='lblRestrictedWizards'] h2
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Large form in a subview, need to conserve space as much as we can */
+html.management-errorprofileconfig .SFC[name="ConfigureErrorProfileHeading"]
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* This table are located on the following View: com.K2.System.Management.View.SmartWizards.Users */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.SmartWizards.UserSearch */
+/* This UI has been deprecated */
+/*html.management-smartwizard-usersearch .row:nth-child(4) .panel-body-wrapper > div > table > tbody > tr > td:first-child
+{
+    padding: 0;
+}*/
+
+html.management-smartwizard-usersearch h1
+{
+    margin: 0;
+}
+
+/*Edit process schedule needs a reduction in white space and to play nice with the popup manager */
+html.management-processscheduleedit h2
+{
+    margin-bottom: 0;
+}
+/* if body is relative position then popup manager will render below page contents causing excessive white space */
+html.management-processscheduleedit body.theme-entry
+{
+    position: initial;
+}
+
+/*Bug fix for the smartwizard's tab in order to apply UI standards to text results in the serialization grid*/
+html.management-smartwizard-edit .SerializationGrid .grid-content-cell
+{
+    padding: .5rem;
+    box-sizing: border-box;
+}

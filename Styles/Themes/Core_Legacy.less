@@ -1,0 +1,879 @@
+// Purpose: Core_Legacy.less is a partial file for each legacy themes where the styles that are only used by the legacy themes are defined in here.
+//          The idea is to move the styling that should not be defined in Core.less so that the dynamic theme won't inherit these legacy stylings.
+//          The following styles are defined in this file:
+//          - font-size, font-family, color.
+//          - table cell padding
+
+//Variables
+@Disabled-button-color: #bfc1c2;
+@Destructive-Button-Color-1: #b71c1c;
+@Destructive-Button-Color-2: #c4374c;
+@Destructive-Button-Color-3: #6a0909;
+
+.theme-entry
+{
+    body&, div, span, td, li, p, textarea, input[type=text], input.text, select, option
+    {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #343e41;
+        font-size: 11px;
+    }
+
+    h1, h2, h3, h4, label
+    {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        margin-top: 0;
+    }
+
+    h1
+    {
+        font-size: 14px;
+    }
+}
+
+.theme-entry
+{
+    //#region Form Runtime Styling
+    a.action-row:focus
+    {
+        outline-color: #cccccc;
+    }
+
+    .wrapAround
+    {
+        background-color: #ff0;
+        font: inherit;
+        color: inherit;
+    }
+
+    .SFC.SourceCode-Forms-Controls-Web-TextBox,
+    .input-control .input-control-m-c,
+    .input-control .input-control-content
+    {
+        background-color: White;
+        border-color: #aaad9c;
+    }
+
+    .input-control.active .input-control-content
+    {
+        border-color: #98dc28;
+    }
+
+    div.parameterPrompt
+    {
+        background: #fff;
+    }
+
+    img.fileImage
+    {
+        border-color: #adae9c;
+        background: white;
+    }
+
+    //#endregion Form Runtime Styling
+    //#region Divider Styling
+    .ghost
+    {
+        background-color: #86be58;
+    }
+
+    .divider.ui-draggable-dragging
+    {
+        background-color: #86be58;
+    }
+
+    .theme-entry .button-dimensions-wrapper
+    {
+        line-height: normal;
+    }
+    //#endregion Divider Styling
+    a.SourceCode-Forms-Controls-Web-Button
+    {
+        //This styling needs to remain here so that custom themes have a default destructive styling (destructive styling can be overwritten in custom theme using !important property)
+        /*#region Button Style - Destructive*/
+        &.button-destructive
+        {
+            color: #fff;
+            background-color: @Destructive-Button-Color-1;
+            border-color: @Destructive-Button-Color-1;
+            background-image: none;
+
+            &.designtime, &.preview
+            {
+                background-color: @Destructive-Button-Color-1;
+                border-color: @Destructive-Button-Color-1;
+            }
+
+            &:hover
+            {
+                background-color: @Destructive-Button-Color-2;
+                border-color: @Destructive-Button-Color-2;
+            }
+
+            &:focus
+            {
+                background-color: @Destructive-Button-Color-1;
+                border-color: @Destructive-Button-Color-3;
+            }
+
+            &:hover:focus
+            {
+                background-color: @Destructive-Button-Color-2;
+                border-color: @Destructive-Button-Color-3;
+            }
+        }
+        /*#endregion Button Style - destructive */
+        //This styling needs to remain here so that custom themes have a default disabled styling (disabled styling can be overwritten in custom theme using !important property)
+        &.disabled,
+        &.disabled.designtime,
+        &.disabled.preview,
+        &.disabled:hover,
+        &.disabled:hover:focus,
+        &.disabled:focus
+        {
+            color: #fff;
+            background-image: none;
+            background-color: @Disabled-button-color;
+            border-color: @Disabled-button-color;
+            box-shadow: none;
+
+            &.button-quiet,
+            &.button-quiet.designtime
+            {
+                color: #bfc1c2;
+                background-color: #fff;
+                border-color: @Disabled-button-color;
+                background-image: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    a.SourceCode-Forms-Controls-Web-Button.help
+    {
+        color: #fff;
+        background: #7aa4e0; /* Old browsers */
+        background: -moz-linear-gradient(top, #7aa4e0 0%, #114095 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7aa4e0), color-stop(100%,#114095)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #7aa4e0 0%,#114095 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #7aa4e0 0%,#114095 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #7aa4e0 0%,#114095 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #7aa4e0 0%,#114095 100%); /* W3C */
+        border-color: #4778c7;
+    }
+
+    a.SourceCode-Forms-Controls-Web-Button.help:focus,
+    a.SourceCode-Forms-Controls-Web-Button.help:active,
+    a.SourceCode-Forms-Controls-Web-Button.help:hover
+    {
+        background: #021d4b; /* Old browsers */
+        background: -moz-linear-gradient(top, #608fd2 0%, #021d4b 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#608fd2), color-stop(100%,#021d4b)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #608fd2 0%,#021d4b 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #608fd2 0%,#021d4b 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #608fd2 0%,#021d4b 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #608fd2 0%,#021d4b 100%); /* W3C */
+    }
+}
+
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:active
+{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7aa4e0', endColorstr='#114095',GradientType=0 ); /* IE6-9 */
+}
+
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:active
+{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#608fd2', endColorstr='#021d4b',GradientType=0 ); /* IE6-9 */
+}
+
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:active,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:active
+{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7aa4e0', endColorstr='#114095',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-entry a.toolbar-button.disabled,
+.theme-entry a.toolbar-button.disabled:hover,
+.theme-entry a.toolbar-button.disabled:focus,
+.theme-entry a.toolbar-button.disabled:active
+{
+    border-color: transparent;
+}
+
+.theme-entry .form
+{
+    /*876757 - Default form background color is set to white so that when the page color is set, it does not bleed through to the form color*/
+    background-color: #FFFFFF;
+}
+
+.theme-entry .input-control input[type=text],
+.theme-entry .input-control input[type=password]
+{
+    background-color: #fff;
+}
+
+.theme-entry .input-control a.input-control
+{
+    color: #343e41;
+    line-height: 1.2;
+}
+
+.theme-entry .input-control textarea
+{
+    background-color: #fff;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox
+{
+    &.watermark
+    {
+        color: #c5c5c5 !important;
+        font-family: Verdana, Arial, Helvetica, sans-serif !important;
+        font-style: italic !important;
+        font-weight: normal !important;
+        text-decoration: none !important;
+    }
+
+    &.disabled
+    {
+        color: #999;
+    }
+}
+
+.theme-entry .input-control-watermark
+{
+    color: #c5c5c5 !important;
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    line-height: 20px;
+
+    a.input-control,
+    a.input-control span
+    {
+        font-style: italic;
+        color: #c5c5c5;
+    }
+}
+
+.theme-entry .input-control.watermark
+{
+    a.input-control,
+    a.input-control span
+    {
+        font-style: italic;
+        color: #c5c5c5;
+    }
+}
+
+.theme-entry .input-control .input-control-wrapper
+{
+    min-height: 0px; //reset from Appstudio
+    line-height: normal; //reset from AppStudio
+}
+
+
+.theme-entry .slider_value_display.bottom:after
+{
+    border-color: #fff;
+    border-color: transparent transparent #ffffff #ffffff;
+}
+
+
+.theme-entry .slider_value_display.top:after
+{
+    border-color: #fff;
+    border-color: #ffffff #ffffff transparent transparent;
+}
+
+.theme-entry label.input-control.disabled .input-control-text,
+.theme-entry .preview label.input-control .input-control-text
+{
+    color: #999;
+}
+
+.theme-entry .styling-outer-wrapper .input-control-m,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper input,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper a
+{
+    background-color: inherit;
+}
+
+/*#region Form Styling */
+.theme-entry
+{
+    .input-control.select-box
+    {
+        background: #FFF;
+    }
+
+    .input-control-buttons
+    {
+        background-color: #fff;
+    }
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a
+{
+    border-color: #aaad9c;
+}
+
+.theme-entry .drop-menu .drop-menu-m
+{
+    border-color: #fff;
+}
+
+.theme-entry .drop-menu ul.drop-menu a {
+    line-height: 19px;
+    color: #343e41;
+}
+
+.theme-entry .token-input .token-input-editor-area
+{
+    background-color: white;
+}
+
+.theme-entry .token-input.active .token-input-editor-area
+{
+    border-color: #160005;
+}
+
+.theme-entry .drop-text.watermark
+{
+    font-style: italic;
+    color: #c5c5c5;
+}
+
+.theme-entry .panel-watermark
+{
+    color: #c5c5c5;
+}
+
+.theme-entry .drop-text.watermark:focus
+{
+    color: #343e41;
+    font-style: normal;
+}
+
+.theme-entry .drop-textbox .drop-item
+{
+    color: #fff;
+}
+
+.theme-entry .tree li a,
+.theme-entry .tree li span
+{
+    line-height: 16px;
+    color: #000;
+}
+
+/*#endregion Form Styling */
+
+/*#region Dragging helper styling*/
+.theme-entry .tree li a input,
+.theme-entry .tree li span input
+{
+    border-color: #fff;
+    background: #fff;
+}
+
+.theme-entry .panel > .panel-body
+{
+    background-color: #fff;
+}
+
+.theme-entry .grid .grid-body-content
+{
+    background: #fff;
+    border-color:  #fff;
+}
+
+.theme-entry .grid table.grid-content-table tr.even td,
+.theme-entry
+    .grid
+    table.grid-content-table.zebra-stripes
+    tr:nth-child(odd):not(.action-row)
+    td {
+    background-color: #f5f5f5;
+}
+
+.theme-entry .grid.with-rownumbering .grid-content-table td:first-child,
+.theme-entry .grid-aggregation-content-table td:first-child
+{
+    background-color: #dcded8;
+}
+
+.theme-entry .grid table.grid-content-table td.empty-grid,
+.theme-entry .grid table.grid-content-table td.empty-grid *,
+.theme-entry .grid table.grid-content-table td.action-row
+{
+    color: #aaa;
+}
+
+.theme-entry .grid table.grid-content-table td.action-row a.action-row
+{
+    color: #aaa;
+    text-decoration: none;
+}
+
+.theme-entry .grid table.grid-content-table td.action-row,
+.theme-entry .grid table.grid-content-table td.empty-grid
+{
+    background-color: inherit;
+}
+
+.theme-entry .grid-aggregation-content-m
+{
+    border-color: #fff;
+}
+
+.theme-entry .grid-aggregation-content-table
+{
+    background-color: #FFF;
+}
+
+.theme-entry .grid.with-summary .grid-summary
+{
+    background-color: #fff;
+    border-color: #adae9c;
+}
+
+.theme-entry .grid-summary .grid-summary-item
+{
+    border-top-color: #adae9c;
+}
+
+.theme-entry .grid-summary .grid-summary-item-wrapper
+{
+    border-color:  #fff;
+}
+
+.theme-entry .dialog.sub-view iframe.runtime-popup
+{
+    background-color: #fff;
+}
+
+.theme-entry .menu li:hover,
+.theme-entry .menu li.active
+{
+    background: #fff;
+}
+
+.theme-entry .menu li.disabled,
+.theme-entry .menu li.disabled:hover
+{
+    color: #aaa;
+}
+
+.theme-entry .day.selected,
+.theme-entry .month.selected,
+.theme-entry .year.selected
+{
+    background-color: #e4efc3;
+    border-color: #98dc28;
+}
+
+.theme-entry .today-title
+{
+    color: inherit;
+}
+
+.theme-entry .today-title.disabled,
+.theme-entry .today-title.disabled:hover,
+.theme-entry .today-title.disabled:active
+{
+    color: inherit;
+    background-color: inherit;
+}
+
+.theme-entry .today-title.selected
+{
+    border-color: #98dc28;
+}
+
+.theme-entry .dayname,
+.theme-entry .day,
+.theme-entry .day:hover
+{
+    line-height: 17px;
+    color: inherit;
+}
+
+.theme-entry .month,
+.theme-entry .year,
+.theme-entry .month:hover,
+.theme-entry .year:hover
+{
+    line-height: 43px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.theme-entry .day:hover,
+.theme-entry .month:hover,
+.theme-entry .year:hover,
+.theme-entry .today-title:hover
+{
+    text-decoration: none;
+}
+
+.theme-entry .tooltip
+{
+    background-color: #e3ecd2;
+}
+
+.theme-entry .tooltip.pointer-up .tooltip-pointer
+{
+    border-bottom-color: #6a9b12;
+}
+
+/*#region Modalizer Styling */
+.base0.modal-element.ajaxLoader /* View Level Modalizer & Spinner */
+{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.theme-entry .expressions-watermark
+{
+    color: #c5c5c5;
+}
+
+.token-input-watermark
+{
+    font-style: italic;
+    color: #c5c5c5;
+    line-height: 19px;
+}
+
+/*#region Tokenbox Styling */
+.theme-entry
+{
+    .token-input
+    {
+        .entity .entity-text
+        {
+            background-color: #7bb625;
+            color: #fff;
+            line-height: 17px;
+        }
+
+        .text-node.empty
+        {
+            line-height: 18px;
+        }
+
+        .active-caret.ie8
+        {
+            border-right-color: #000;
+        }
+    }
+
+    .token-input-editor-area {
+        line-height: 18px;
+    }
+}
+
+/*#endregion Tokenbox Styling */
+
+.input-control-wrapper.token-input-editor-area
+{
+    background-color: White;
+}
+
+/*#region Column dragging*/
+
+/*#region Column dragging*/
+div.drag-column
+{
+    &.ui-draggable
+    {
+
+        &.ui-draggable-dragging
+        {
+            &.hover,
+            &.hover:hover
+            {
+                background-color: #ddd;
+            }
+        }
+    }
+}
+/*#endregion Column dragging*/
+.toolbar span.SourceCode-Forms-Controls-Web-Label,
+.toolbar span.SourceCode-Forms-Controls-Web-DataLabel
+{
+    padding: 3px 5px;
+}
+.theme-entry .form-field label.form-field-label
+{
+    line-height: 20px;
+}
+
+.theme-entry .toolbar .form-field label.form-field-label
+{
+    line-height: 20px;
+}
+
+.theme-entry .form-field-content-label
+{
+    line-height: 20px;
+}
+/*#endregion Form Styling */
+/*#region Panel Styling */
+.theme-entry .panel-header-wrapper .panel-header-text
+{
+    line-height: 19px;
+    font-weight: bold;
+}
+/*#endregion Panel Styling */
+/*#region Grid Styling */
+.theme-entry .grid-header-wrapper .grid-header-text
+{
+    line-height: 19px;
+    font-weight: bold;
+}
+
+.theme-entry .grid .grid-column-header-text
+{
+    line-height: 19px;
+}
+
+.theme-entry div.grid-column-header-text.LabelWrap
+{
+    line-height: normal;
+}
+
+.theme-entry .grid-aggregation-header-text
+{
+    line-height: 20px;
+}
+/*#endregion Grid Styling */
+/*#region Popup Styling */
+.theme-entry .popup-header-text
+{
+    line-height: 22px;
+    font-weight: bold;
+}
+/*#endregion Popup Styling */
+/*#region Table Cell Styling */
+.theme-entry .editor-cell
+{
+    padding: 2px 3px 2px 2px; /* padding right is not needed if control overlay is corrected on controls */
+}
+
+.theme-entry .editor-cell.empty
+{
+    padding: 0;
+}
+
+.theme-entry .editor-cell.toolbar
+{
+    padding: 0;
+}
+/* Design time only styling */
+#pgWizard {
+    .control-canvas .editor-cell
+    {
+        padding: 3px;
+    }
+
+    .view-canvas .editor-cell
+    {
+        padding: 2px;
+    }
+}
+/*#endregion Table Cell Styling */
+/*#region DropTextbox Styling */
+.theme-entry .drop-item,
+.theme-entry .drop-object,
+.theme-entry .drop-text
+{
+    font-size: 11px;
+}
+
+.theme-entry .tree li
+{
+    line-height: 18px;
+}
+
+.theme-entry .tree li a input,
+.theme-entry .tree li span input
+{
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+.theme-entry .grid .grid-content-cell-wrapper .multiline-cell-icon
+{
+    line-height: 16px;
+}
+
+.theme-entry .menu li
+{
+    line-height: 100%;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+.theme-entry .menu li.seperator
+{
+    font-size: 1px;
+    line-height: 1px;
+}
+
+.theme-entry .menu li.seperator span
+{
+    font-size: 1px;
+    line-height: 1px;
+}
+
+.theme-entry .menu a.menu-item
+{
+    line-height: 16px;
+}
+
+.theme-entry
+{
+    a.tab
+    {
+        text-decoration: none;
+        line-height: 20px;
+
+        &:hover
+        {
+            background-color: inherit; //override of designer tab styles
+        }
+    }
+
+    .tab-box.with-header
+    {
+        .tab-box-header-wrapper
+        {
+            line-height: 19px;
+            font-weight: bold;
+        }
+    }
+}
+
+.theme-entry label.input-control .input-control-text
+{
+    line-height: 19px;
+}
+
+.theme-entry
+{
+    .input-control-buttons.twisty-button
+    {
+        line-height: auto;
+    }
+
+    .input-control.select-box
+    {
+        line-height: 1.2;
+
+        .input-control-buttons a.ellipsis > span span
+        {
+            line-height: inherit;
+        }
+    }
+
+    .input-control-buttons
+    {
+        a
+        {
+            line-height: auto;
+        }
+    }
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a
+{
+    text-decoration: none;
+    line-height: 18px;
+}
+
+#pgWizard .form-control {
+    border: 1px solid transparent;
+}
+
+.theme-entry span.SFC.SourceCode-Forms-Controls-Web-TextBox
+{
+    line-height: 1.2; /*Golden Ratio for all supported browsers (IE8,9,10 & FF & Chrome) for default font size (8pt)*/
+}
+
+.no-border-box-support .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.no-border-box-support
+.theme-entry
+.SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+.ie-document-mode-8 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.ie-document-mode-8
+.theme-entry
+.SFC.SourceCode-Forms-Controls-Web-TextBox.watermark
+{
+    line-height: 1.2;
+}
+
+.theme-entry .input-control textarea
+{
+    line-height: 1.2;
+}
+
+/*Unsets the display changes made when toggling from Core to Core_legacy*/
+.theme-entry label.input-control.radio .input-control-img,
+.theme-entry label.input-control.checkbox .input-control-img
+{
+    display: unset;
+    width: 20px;
+    height: 20px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+/*Unsets the display changes made when toggling from Core to Core_legacy*/
+.theme-entry a.toolbar-button span.button-c span.button-icon
+{
+    width: 16px;
+    height: 16px;
+    float: none;
+    display: inline-block;
+}
+
+/*#region Style Aware Controls */
+.theme-entry .style-aware svg
+{
+    display: none;
+}
+
+/* Bring back checkbox img element now that svg is not being displayed */
+.theme-entry label.style-aware.input-control.radio .input-control-img,
+.theme-entry label.style-aware.input-control.checkbox .input-control-img
+{
+    display: unset;
+}
+/*#endregion Style Aware Controls */

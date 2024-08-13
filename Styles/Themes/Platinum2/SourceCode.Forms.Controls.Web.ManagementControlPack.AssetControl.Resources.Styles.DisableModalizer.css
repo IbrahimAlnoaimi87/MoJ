@@ -1,0 +1,5 @@
+.theme-entry .modalizer,
+.theme-entry .modalizer.modal-element
+{
+    background-color: rgba(0, 0, 0, 0) !important;
+}

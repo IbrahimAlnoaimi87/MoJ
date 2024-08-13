@@ -1,0 +1,71 @@
+// Purpose: 1) The Core.less is for resetting styles made in the designer's css
+//          (Styles/Platinum2/*.less) as otherwise these will affect forms/views in the canvas.
+//          2) These styles are what the runtime themes are expecting as a baseline. Avoid long
+//          selectors here, as the runtime theme css will have to have even longer selectors.
+//          3) Everything in this file should be preceded with .theme-entry as these styles are
+//          loaded in designer, and they should not override designer styles accidentally.
+//          4) Core_Table.less is a partial file for Core.less where the table related style should be move in here gradually.
+
+/*#region Table control - Responsive property */
+/* [922403] When Responsive is Checked, and the Viewport < 450px width,  the Table will stack its cells on top of each other.
+            Note: Responsive break point is based on common widths for Phones, but also common break points for window resizing on desktop browsers. 
+            Example of research: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+*/
+@media only screen and (max-width:450px)
+{
+    /* override high specificity selector defined in Core.less [891769] to display the table as stacked */
+    .formcontrol .innerpanel > *.SourceCode-Forms-Controls-Web-Table.Grid-Layout.with-responsive
+    {
+        display: flex;
+    }
+    /* override high specificity selector defined in Core.less to display to display the table as stacked */
+    .theme-entry .editor-cell > .Grid-Layout.with-responsive
+    {
+        display: flex;
+    }
+
+    /* Table controls should be responsive only depend on the control's Responsive property */
+    .theme-entry .Grid-Layout.with-responsive
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* This should match to the .Grid-Layout width */
+        // override inline styles
+        grid-template-columns: unset !important;
+        grid-template-rows: unset !important;
+        -ms-grid-columns: unset !important;
+        -ms-grid-rows: unset !important;
+
+        & > .editor-cell
+        {
+            /* When stacked, the padding left/right of the cells will be overridden with 0px (will need "important"). [922403] */
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            // override inline styles
+            grid-column-start: unset !important;
+            grid-column-end: unset !important;
+            grid-row-start: unset !important;
+            grid-row-end: unset !important;
+            -ms-grid-column: unset !important;
+            -ms-grid-column-span: unset !important;
+            -ms-grid-row: unset !important;
+            -ms-grid-row-span: unset !important;
+            // override inline border styles
+            border-left: 0px !important;
+            border-top: 0px !important;
+            border-right: 0px !important;
+            border-bottom: inherit !important;
+
+            &.lastrow
+            {
+                border-bottom: inherit !important;
+
+                &.lastcellinrow
+                {
+                    border-bottom: 0px !important;
+                }
+            }
+        }
+    }
+}
+/*#endregion Table control - Responsive property */

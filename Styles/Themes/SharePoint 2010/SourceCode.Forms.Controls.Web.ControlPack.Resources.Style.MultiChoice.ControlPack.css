@@ -1,0 +1,49 @@
+﻿.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected
+{
+	background-color: #c4e9f5 !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:hover
+{
+	background-color: #d3eef7;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:focus
+{
+	border-color: #91cdf2;
+	border-width: 1px;
+	border-style: dotted;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .multiSelectSelect
+{
+	border: 1px solid #999999;
+	background-color: white;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .optionwrapper
+{
+	background: #fff;
+	background: -moz-linear-gradient(top,#f8f3f7 0%,#fff 10px,#fff 11px,#fff 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f8f3f7),color-stop(10px,#fff),color-stop(11px,#fff),color-stop(100%,#fff));
+	background: -webkit-linear-gradient(top,#f8f3f7 0%,#fff 10px,#fff 11px,#fff 100%);
+	background: -o-linear-gradient(top,#f8f3f7 0%,#fff 10px,#fff 11px,#fff 100%);
+	background: -ms-linear-gradient(top,#f8f3f7 0%,#fff 10px,#fff 11px,#fff 100%);
+	background: linear-gradient(to bottom,#f8f3f7 0%,#fff 10px,#fff 11px,#fff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f3f7',endColorstr='#ffffff',GradientType=0);
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle
+{
+	color: #0f0a06;
+	background: #fff;
+	background: -moz-linear-gradient(top,#fff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(50%,#fcfcfc),color-stop(51%,#f8f6f9),color-stop(100%,#f7f7f5));
+	background: -webkit-linear-gradient(top,#fff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	background: -o-linear-gradient(top,#fff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	background: -ms-linear-gradient(top,#fff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	background: linear-gradient(to bottom,#fff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#f7f7f5',GradientType=0);
+	border: solid 1px #e9e4e8;
+}

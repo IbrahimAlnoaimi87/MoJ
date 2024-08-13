@@ -1,0 +1,8 @@
+<div class='navigation-topbar'>
+  <a class='PART-toplogo-header PART-clickable navigationlogo-clickable navigation-logo-clickarea' data-clickmode='{ClickMode}'>
+    <span class='PART-topbar-logo navigation-toplogo {CustomClass}'></span>
+  </a>
+  <a class='PART-main-header PART-clickable navigation-clickable navigation-topbar-clickarea' data-id='{HeaderMenuItemID}' href='{NavigationUrl}' data-clickmode='{ClickMode}'>
+   <span class='PART-header-display navigation-topbar-display'>{HeaderDisplay}</span>
+  </a>
+</div>

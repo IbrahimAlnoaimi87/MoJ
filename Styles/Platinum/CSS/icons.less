@@ -1,0 +1,994 @@
+﻿@icon-base-size: 16px;
+
+// The .ico class will be used until the .icon class' previous implementation is removed
+// Usage: <i class="ico icon-{name} {optional-size}"></i>
+.ico
+{
+    background-image: url("../Images/Icons/Default16px.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: @icon-base-size;
+    position: relative;
+    width: @icon-base-size;
+
+    &.medium
+    {
+        background-image: url("../Images/Icons/Default32px.png");
+        height: @icon-base-size * 2;
+        width: @icon-base-size * 2;
+    }
+
+    &.large
+    {
+        background-image: url("../Images/Icons/Default64px.png");
+        height: @icon-base-size * 4;
+        width: @icon-base-size * 4;
+    }
+    // - Common Actions -
+    &.icon-add
+    {
+        background-image: url("../Images/Icons/Add16.png");
+    }
+
+    &.icon-delete
+    {
+        background-image: url("../Images/Icons/Delete16.png");
+    }
+
+    &.icon-delete-all
+    {
+        background-image: url("../Images/Icons/DeleteAll16.png");
+    }
+
+    &.icon-edit
+    {
+        background-image: url("../Images/Icons/Edit16.png");
+    }
+
+    &.icon-refresh
+    {
+        background-image: url("../Images/Icons/Refresh16.png");
+    }
+
+    &.icon-remove
+    {
+        background-image: url("../Images/Icons/Remove16.png");
+    }
+
+    &.icon-remove-all
+    {
+        background-image: url("../Images/Icons/RemoveAll16.png");
+    }
+    // - Common Symbols -
+    &.icon-error
+    {
+        background-image: url("../Images/Icons/Error16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Error32.png");
+        }
+
+        &.large
+        {
+            background-image: url("../Images/Icons/Error64.png");
+        }
+    }
+
+    &.icon-info
+    {
+        background-image: url("../Images/Icons/Info16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Info32.png");
+        }
+
+        &.large
+        {
+            background-image: url("../Images/Icons/Info64.png");
+        }
+    }
+
+    &.icon-question
+    {
+        background-image: url("../Images/Icons/Question16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Question32.png");
+        }
+
+        &.large
+        {
+            background-image: url("../Images/Icons/Question64.png");
+        }
+    }
+
+    &.icon-warning
+    {
+        background-image: url("../Images/Icons/Warning16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Warning32.png");
+        }
+
+        &.large
+        {
+            background-image: url("../Images/Icons/Warning64.png");
+        }
+    }
+    // - SmartForms Components -
+    &.icon-action
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/Actions16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/Action32.png");
+        }
+    }
+
+    &.icon-condition
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/Conditions16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/Condition32.png");
+        }
+    }
+
+    &.icon-conditional-style
+    {
+        background-image: url("../Images/Icons/ConditionalStyle16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ConditionalStyle32.png");
+        }
+    }
+
+    &.icon-control
+    {
+        background-image: url("../Images/Icons/Control16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Control32.png");
+        }
+    }
+
+    &.icon-control-event
+    {
+        background-image: url("../Images/Icons/ControlEvent16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/ControlEvent32.png");
+        }
+    }
+
+    &.icon-control-method
+    {
+        background-image: url("../Images/Icons/ControlMethod16.png");
+
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ControlMethod32.png");
+        }
+    }
+
+    &.icon-control-method-parameter
+    {
+        background-image: url("../Images/Icons/ControlMethodParameter16.png");
+
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ControlMethodParameter32.png");
+        }
+    }
+
+    &.icon-control-property
+    {
+        background-image: url("../Images/Icons/ControlProperty16.png");
+
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ControlProperty32.png");
+        }
+    }
+
+    &.icon-event
+    {
+        background-image: url("../Images/Icons/Event16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Event32.png");
+        }
+    }
+
+    &.icon-expression
+    {
+        background-image: url("../Images/Icons/Expression16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Expression32.png");
+        }
+    }
+
+    &.icon-field
+    {
+        background-image: url("../Images/Icons/Field16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/Field32.png");
+        }
+    }
+
+    &.icon-filter
+    {
+        background-image: url("../Images/Icons/Filter16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/Filter32.png");
+        }
+    }
+
+    &.icon-form
+    {
+        background-image: url("../Images/Icons/Form16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Form32.png");
+        }
+    }
+
+    &.icon-process
+    {
+        background-image: url("../Images/Icons/Process16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Process32.png");
+        }
+    }
+
+    &.icon-smartobject
+    {
+        background-image: url("../Images/Icons/SmartObject16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/SmartObject32.png");
+        }
+    }
+
+    &.icon-view
+    {
+        background-image: url("../Images/Icons/View16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/View32.png");
+        }
+    }
+    // - SmartForms component errors -
+    &.icon-conditional-style-error
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/ConditionalStyle_Error16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ConditionalStyleError32.png");
+        }
+    }
+
+    &.icon-expression-error
+    {
+        background-image: url("../Images/Icons/ExpressionError16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ExpressionError32.png");
+        }
+    }
+
+    &.icon-sub-form
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/SubFormGeneric16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/SubForm32.png");
+        }
+    }
+    // - Control Types -
+    &.icon-calendar-control
+    {
+        background-image: url("../Images/Icons/CalendarControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/CalendarControl32.png");
+        }
+    }
+
+    &.icon-checkbox-control
+    {
+        background-image: url("../Images/Icons/CheckBoxControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/CheckBoxControl32.png");
+        }
+    }
+
+    &.icon-checkboxlist-control
+    {
+        background-image: url("../Images/Icons/CheckBoxListControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/CheckBoxListControl32.png");
+        }
+    }
+
+    &.icon-content-control
+    {
+        background-image: url("../Images/Icons/ContentControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/ContentControl32.png");
+        }
+    }
+
+    &.icon-picker-control
+    {
+        background-image: url("../Images/Icons/PickerToolbarControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/PickerToolbarControl32.png");
+        }
+    }
+
+    &.icon-toolbar-button-control
+    {
+        background-image: url("../Images/Icons/ToolbarButtonControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/ToolbarButtonControl32.png");
+        }
+    }
+
+    &.icon-button-control
+    {
+        background-image: url("../Images/Icons/ButtonControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/ButtonControl32.png");
+        }
+    }
+
+    &.icon-hyperlink-control
+    {
+        background-image: url("../Images/Icons/HyperlinkControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/HyperlinkControl32.png");
+        }
+    }
+
+    &.icon-multiselect-control
+    {
+        background-image: url("../Images/Icons/MultiSelectControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/MultiSelectControl32.png");
+        }
+    }
+
+    &.icon-image-attachment-control
+    {
+        background-image: url("../Images/Icons/ImageAttachmentControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/ImageAttachmentControl32.png");
+        }
+    }
+
+    &.icon-file-attachment-control
+    {
+        background-image: url("../Images/Icons/FileAttachmentControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/FileAttachmentControl32.png");
+        }
+    }
+
+    &.icon-tree-control
+    {
+        background-image: url("../Images/Icons/TreeControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/TreeControl32.png");
+        }
+    }
+
+    &.icon-datalabel-control
+    {
+        background-image: url("../Images/Icons/DataLabelControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/DataLabelControl32.png");
+        }
+    }
+
+    &.icon-label-control
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/Label16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Label32.png");
+        }
+    }
+
+    &.icon-lookup-control
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/Lookup16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Lookup32.png");
+        }
+    }
+
+    &.icon-pdf-control
+    {
+        background-image: url("../Images/Icons/PDFcontrol16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/PDFcontrol32.png");
+        }
+    }
+
+    &.icon-table-control
+    {
+        background-image: url("../Images/Icons/TableControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/TableControl32.png");
+        }
+    }
+
+    &.icon-toolbar-control
+    {
+        background-image: url("../Images/Icons/ToolbarControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ToolbarControl32.png");
+        }
+    }
+
+    &.icon-textbox-control
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/TextBox16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/TextBox32.png");
+        }
+    }
+
+    &.icon-textarea-control
+    {
+        background-image: url("../Images/Icons/TextAreaControl16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/TextAreaControl32.png");
+        }
+    }
+
+    &.icon-radiobutton-control
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/RadioButton.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/RadioButton32.png");
+        }
+    }
+
+    &.icon-slider-control
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/Slider16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Slider32.png");
+        }
+    }
+
+    &.icon-rating-control
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/Rating16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Rating32.png");
+        }
+    }
+
+    &.icon-dropdown-control
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/DropDownList16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/DropdownList32.png");
+        }
+    }
+    // - SmartObject specific -
+    &.icon-smartobject-method
+    {
+        background-image: url("../Images/Icons/SmartObjectMethod16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/SmartObjectMethod32.png");
+        }
+    }
+
+    &.icon-smartobject-property
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/SmartObjectProperties16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/SmartObjectProperty32.png");
+        }
+    }
+
+    &.icon-smartobject-method-parameter
+    {
+        background-image: url("../Images/Icons/SmartObjectMethodParameter16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/SmartObjectMethodParameter32.png");
+        }
+    }
+    // - Service Instance specific -
+    &.icon-service-instance
+    {
+        background-image: url("../Images/Icons/ServiceInstance16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ServiceInstance32.png");
+        }
+    }
+
+    &.icon-service-object
+    {
+        background-image: url("../Images/Icons/ServiceObject16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ServiceObject32.png");
+        }
+    }
+
+    &.icon-service-object-browser
+    {
+        background-image: url("../Images/Icons/ServiceObjectBrowser16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ServiceObjectBrowser32.png");
+        }
+    }
+
+    &.icon-service-object-method
+    {
+        background-image: url("../Images/Icons/ServiceMethod16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ServiceMethod32.png");
+        }
+    }
+
+    &.icon-service-object-method-parameter
+    {
+        background-image: url("../Images/Icons/ServiceObjectMethodParameter16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ServiceObjectMethodParameter32.png");
+        }
+    }
+
+    &.icon-service-object-method-property
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/ServiceObjectMethodProperties16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ServiceObjectMethodParameter32.png");
+        }
+    }
+
+    &.icon-service-object-servicetype
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/SmartObjectServiceType16px.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/SmartObjectServiceType32.png");
+        }
+    }
+    // - Form specific -
+    &.icon-form-event
+    {
+        background-image: url("../Images/Icons/FormEvent16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/FormEvent32.png");
+        }
+    }
+
+    &.icon-form-error
+    {
+        background-image: url("../Images/Icons/FormError16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/FormError32.png");
+        }
+    }
+
+    &.icon-form-parameter
+    {
+        background-image: url("../Images/Icons/FormParameter16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/FormParameter32.png");
+        }
+    }
+
+    &.icon-form-state
+    {
+        background-image: url("../Images/Icons/FormState16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/FormState32.png");
+        }
+    }
+
+    &.icon-form-state-error
+    {
+        background-image: url("../Images/Icons/FormStateError16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/FormStateError32.png");
+        }
+    }
+    // - View specific -
+    &.icon-view-event
+    {
+        background-image: url("../Images/Icons/ViewEvent16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/ViewEvent32.png");
+        }
+    }
+
+    &.icon-view-error
+    {
+        // TODO: File to be renamed to proper name duplicates should be removed
+        background-image: url("../Images/Icons/ViewsError16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ViewMethod32.png");
+        }
+    }
+
+    &.icon-view-method
+    {
+        background-image: url("../Images/Icons/ViewMethod16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ViewMethod32.png");
+        }
+    }
+
+    &.icon-content-view
+    {
+        background-image: url("../Images/Icons/ContentView16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/ContentView32.png");
+        }
+    }
+
+    &.icon-item-view
+    {
+        background-image: url("../Images/Icons/ItemView16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/ItemView32.png");
+        }
+    }
+
+    &.icon-list-view
+    {
+        background-image: url("../Images/Icons/ListView16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/ListView32.png");
+        }
+    }
+
+    &.icon-workflow-view
+    {
+        background-image: url("../Images/Icons/WorkflowView16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/WorkflowView32.png");
+        }
+    }
+    // - Workflow & Process specific -
+    &.icon-process-instance
+    {
+        background-image: url("../Images/Icons/ProcessInstance16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ProcessInstance32.png");
+        }
+    }
+
+    &.icon-process-data-field
+    {
+        background-image: url("../Images/Icons/ProcessDataField16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ProcessDataField32.png");
+        }
+    }
+
+    &.icon-process-xml-field
+    {
+        background-image: url("../Images/Icons/ProcessXmlField16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ProcessXmlField32.png");
+        }
+    }
+
+    &.icon-workflow-actions
+    {
+        background-image: url("../Images/Icons/WorkflowActions16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/WorkflowActions32.png");
+        }
+    }
+    // - SmartForms Sandboxing -
+    &.icon-form-checked-out
+    {
+        background-image: url("../Images/Icons/FormCheckOut16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/FormCheckOut32.png");
+        }
+    }
+
+    &.icon-form-checked-out-user
+    {
+        background-image: url("../Images/Icons/FormCheckOutUser16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/FormCheckOutUser32.png");
+        }
+    }
+
+    &.icon-view-checked-out
+    {
+        //TODO: Request 16x16 generic view check-out icon
+        background-image: url("../Images/Icons/Default16px.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ListCheckOut32.png");
+        }
+    }
+
+    &.icon-view-checked-out-user
+    {
+        //TODO: Request 16x16 generic view check-out-user icon
+        background-image: url("../Images/Icons/Default16px.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ListCheckOut32.png");
+        }
+    }
+
+    &.icon-list-view-checked-out
+    {
+        background-image: url("../Images/Icons/ListCheckOut16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ListCheckOut32.png");
+        }
+    }
+
+    &.icon-list-view-checked-out-user
+    {
+        background-image: url("../Images/Icons/ListCheckOutByOtherUser16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ListCheckOutByOtherUser32.png");
+        }
+    }
+
+    &.icon-item-view-checked-out
+    {
+        background-image: url("../Images/Icons/ItemViewCheckOut16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ItemViewCheckOut32.png");
+        }
+    }
+
+    &.icon-item-view-checked-out-user
+    {
+        background-image: url("../Images/Icons/ItemViewCheckOutUser16.png");
+
+        &.medium
+        {
+            background-image: url("../Images/Icons/Default32px.png");
+            //TODO: Request 32x32 version
+            //background-image: url("../Images/Icons/ItemViewCheckOutUser32.png");
+        }
+    }
+}

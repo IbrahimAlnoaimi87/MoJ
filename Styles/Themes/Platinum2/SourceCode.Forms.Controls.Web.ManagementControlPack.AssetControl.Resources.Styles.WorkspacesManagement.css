@@ -1,0 +1,862 @@
+﻿/* #region FLUID LAYOUT */
+
+html.workspaces-management,
+.workspaces-management body,
+.workspaces-management #form1,
+.workspaces-management .runtime-content,
+.workspaces-management .runtime-form,
+.workspaces-management .tab-box,
+.workspaces-management .tabs-top.tab-box ul.tab-box-tabs,
+.workspaces-management .tab-box .tab-box-body,
+.workspaces-management .tab-box .tab-box-body .tab-box-body-m,
+.workspaces-management .tab-box .tab-box-body .tab-box-body-m-c,
+.workspaces-management .tab-box .tab-box-body .tab-box-body-wrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+    /* Overrides overflow on body element to avoid double scrollbar forming in IE due to modalizer element */
+    .workspaces-management body
+    {
+        overflow: hidden !important; /* Overrides inline style */
+    }
+
+        .workspaces-management .tabs-top.tab-box ul.tab-box-tabs
+        {
+            height: 3.5rem;
+            bottom: auto;
+        }
+
+        .workspaces-management .tab-box .tab-box-body
+        {
+            top: 3.5rem;
+        }
+
+    .workspaces-management .tab-box
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .workspaces-management .tabs-top.tab-box ul.tab-box-tabs
+    {
+        flex-grow: 0;
+    }
+
+    .workspaces-management .tab-box .tab-box-body
+    {
+        flex-grow: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        }
+
+            .workspaces-management .tab-box .tab-box-body .scroll-wrapper,
+            .workspaces-management .tab-box .tab-box-body .formpanel
+            {
+                height: 100%;
+            }
+
+            .workspaces-management .tab-box .tab-box-body .form
+            {
+                height: 100%;
+                overflow-y: auto;
+    }
+
+/* #endregion */
+
+/* #region LAYOUT */
+
+.workspaces-management .base0.modal-element.ajaxLoader
+{
+    background-color: transparent !important; /* Ensure modalizer is not visible */
+}
+
+.workspaces-management .base2.base1.modalizer
+{
+    background-color: transparent !important;   /* Ensure modalizer is not visible */
+    opacity: 0;                                 /* Ensures there's no flash on Report Refresh*/
+}
+
+        .workspaces-management .tab-box .tab-box-body-m
+        {
+            margin: 0;
+        }
+
+.workspaces-management .menu.control-popup.id-picker-menu
+{
+    z-index: 2;
+}
+
+/*#region Workspaces Management modal*/
+
+.workspaces-management .theme-entry .SFC.SourceCode-Forms-Controls-Web-Table
+{
+    position: static;
+}
+
+.workspaces-management .col .view .grid .grid-body .grid-column-headers
+{
+    display: none;
+}
+
+.workspaces-management .btmWorkspaceDetailsFtr
+{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #ececec;
+    bottom: 0;
+    left: 0;
+}
+
+.workspaces-management .grid[name='Workspaces.Details Area Item'] .grid-toolbars
+{
+    display: none;
+}
+
+.workspaces-management .formpanel:nth-child(2) .col:nth-child(1)
+{
+    height: calc(100% - 88px);
+}
+.workspaces-management .formpanel:nth-child(2) .col:nth-child(1) .view,
+.workspaces-management .formpanel:nth-child(2) .col:nth-child(1) .view .innerpanel,
+.workspaces-management .formpanel:nth-child(2) .col:nth-child(1) .view .innerpanel .grid,
+.workspaces-management .formpanel:nth-child(2) .col:nth-child(1) .view .innerpanel .grid .grid-body
+{
+    height: 100%;
+}
+
+.workspaces-management a[name='btnAddBtm'],
+.workspaces-management a[name='btnMvUpBtm'],
+.workspaces-management a[name='btnMvDnBtm'],
+.workspaces-management a[name='btnRfrshBtm'],
+.workspaces-management a[name='btnDeleteBtm'],
+.workspaces-management a[name='btnAddBtm'].disabled,
+.workspaces-management a[name='btnMvUpBtm'].disabled,
+.workspaces-management a[name='btnMvDnBtm'].disabled,
+.workspaces-management a[name='btnRfrshBtm'].disabled,
+.workspaces-management a[name='btnDeleteBtm'].disabled,
+.workspaces-management a[name='btnAddBtm']:focus,
+.workspaces-management a[name='btnMvUpBtm']:focus,
+.workspaces-management a[name='btnMvDnBtm']:focus,
+.workspaces-management a[name='btnRfrshBtm']:focus,
+.workspaces-management a[name='btnDeleteBtm']:focus,
+.workspaces-management a[name='btnAddBtm'].disabled:hover,
+.workspaces-management a[name='btnMvUpBtm'].disabled:hover,
+.workspaces-management a[name='btnMvDnBtm'].disabled:hover,
+.workspaces-management a[name='btnRfrshBtm'].disabled:hover,
+.workspaces-management a[name='btnDeleteBtm'].disabled:hover,
+
+.workspaces-management a[name='btnAddBtm'].disabled:focus,
+.workspaces-management a[name='btnMvUpBtm'].disabled:focus,
+.workspaces-management a[name='btnMvDnBtm'].disabled:focus,
+.workspaces-management a[name='btnRfrshBtm'].disabled:focus,
+.workspaces-management a[name='btnDeleteBtm'].disabled:focus,
+
+.workspaces-management a[name='btnAddBtm'].disabled:active,
+.workspaces-management a[name='btnMvUpBtm'].disabled:active,
+.workspaces-management a[name='btnMvDnBtm'].disabled:active,
+.workspaces-management a[name='btnRfrshBtm'].disabled:active,
+.workspaces-management a[name='btnDeleteBtm'].disabled:active
+
+.workspaces-management a[name='btnAddBtm'].disabled:active:hover,
+.workspaces-management a[name='btnMvUpBtm'].disabled:active:hover,
+.workspaces-management a[name='btnMvDnBtm'].disabled:active:hover,
+.workspaces-management a[name='btnRfrshBtm'].disabled:active:hover,
+.workspaces-management a[name='btnDeleteBtm'].disabled:active:hover,
+
+.workspaces-management a[name='btnAddBtm'].disabled:focus:hover,
+.workspaces-management a[name='btnMvUpBtm'].disabled:focus:hover,
+.workspaces-management a[name='btnMvDnBtm'].disabled:focus:hover,
+.workspaces-management a[name='btnRfrshBtm'].disabled:focus:hover,
+.workspaces-management a[name='btnDeleteBtm'].disabled:focus:hover
+
+{
+    width: 16px;
+    height: 16px;
+    background-size: 16px !important;
+    background-color: transparent;
+    content: " ";
+    background-repeat: no-repeat !important;
+    padding: 0px;
+    border: none;
+    min-width: 1.6rem;
+    min-height: 1.6rem;
+    outline: none;
+    box-shadow: none;
+    margin-right: 2.0rem;
+    background: none;
+}
+
+.workspaces-management a[name='btnAddBtm']:active,
+.workspaces-management a[name='btnAddBtm']:focus
+.workspaces-management a[name='btnMvUpBtm']:active,
+.workspaces-management a[name='btnMvUpBtm']:focus,
+.workspaces-management a[name='btnMvDnBtm']:active,
+.workspaces-management a[name='btnMvDnBtm']:focus,
+.workspaces-management a[name='btnRfrshBtm']:active,
+.workspaces-management a[name='btnRfrshBtm']:focus,
+.workspaces-management a[name='btnDeleteBtm']:active,
+.workspaces-management a[name='btnDeleteBtm']:focus
+{
+    background: none;
+}
+
+.workspaces-management a[name='btnAddBtm'],
+.workspaces-management a[name='btnAddBtm'].disabled,
+.workspaces-management a[name='btnAddBtm'].disabled:focus,
+.workspaces-management a[name='btnAddBtm'].disabled:focus:hover,
+.workspaces-management a[name='btnAddBtm'].disabled:hover,
+.workspaces-management a[name='btnAddBtm']:focus
+{
+    background-image: url("K2Sites_Management/Images/Add16.png");
+}
+.workspaces-management a[name='btnAddBtm']:hover,
+.workspaces-management a[name='btnAddBtm']:active
+{
+    background-image: url("K2Sites_Management/Images/Add_Hover16.png");
+}
+
+.workspaces-management a[name='btnMvUpBtm'],
+.workspaces-management a[name='btnMvUpBtm'].disabled,
+.workspaces-management a[name='btnMvUpBtm'].disabled:focus,
+.workspaces-management a[name='btnMvUpBtm'].disabled:focus:hover,
+.workspaces-management a[name='btnMvUpBtm'].disabled:hover,
+.workspaces-management a[name='btnMvUpBtm']:focus
+{
+    background-image: url("K2Sites_Management/Images/MoveUp16.png");
+}
+
+.workspaces-management a[name='btnMvUpBtm']:hover,
+.workspaces-management a[name='btnMvUpBtm']:active
+{
+    background-image: url("K2Sites_Management/Images/MoveUp_Hover16.png");
+}
+
+.workspaces-management a[name='btnMvDnBtm'],
+.workspaces-management a[name='btnMvDnBtm'].disabled,
+.workspaces-management a[name='btnMvDnBtm'].disabled:focus,
+.workspaces-management a[name='btnMvDnBtm'].disabled:focus:hover,
+.workspaces-management a[name='btnMvDnBtm'].disabled:hover,
+.workspaces-management a[name='btnMvDnBtm']:focus
+{
+    background-image: url("K2Sites_Management/Images/MoveDown16.png");
+}
+
+.workspaces-management a[name='btnMvDnBtm']:hover,
+.workspaces-management a[name='btnMvDnBtm']:active
+{
+    background-image: url("K2Sites_Management/Images/MoveDown_Hover16.png");
+}
+
+.workspaces-management a[name='btnRfrshBtm'],
+.workspaces-management a[name='btnRfrshBtm'].disabled,
+.workspaces-management a[name='btnRfrshBtm'].disabled:focus,
+.workspaces-management a[name='btnRfrshBtm']:focus
+{
+    background-image: url("K2Sites_Management/Images/Refresh16.png");
+}
+
+.workspaces-management a[name='btnRfrshBtm']:hover,
+.workspaces-management a[name='btnRfrshBtm']:active
+{
+    background-image: url("K2Sites_Management/Images/Refresh_Hover16.png") !important;
+}
+
+.workspaces-management a[name='btnDeleteBtm']:hover,
+.workspaces-management a[name='btnDeleteBtm']:active,
+.workspaces-management a[name='btnDeleteBtm']:focus
+{
+    background-image: url("K2Sites_Management/Images/Remove_Hover16.png");
+    position: absolute;
+    right: 0px;
+    width: 3.2rem;
+    background-position: center;
+    margin-right: 5px;
+    background-color: transparent;
+    content: " ";
+    background-repeat: no-repeat;
+    padding: 0px;
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+    outline: none;
+    box-shadow: none;
+    border-left: 1px solid #cecece;
+}
+
+.workspaces-management a[name='btnDeleteBtm'],
+.workspaces-management a[name='btnDeleteBtm'].disabled,
+.workspaces-management a[name='btnDeleteBtm'].disabled:focus,
+.workspaces-management a[name='btnDeleteBtm']:focus,
+.workspaces-management a[name='btnDeleteBtm']:focus:hover,
+.workspaces-management a[name='btnDeleteBtm'].disabled:focus:hover,
+.workspaces-management a[name='btnDeleteBtm'].disabled:hover
+{
+    background-image: url("K2Sites_Management/Images/Remove16.png");
+    position: absolute;
+    right: 0px;
+    border-left: 1px solid #cccccc;
+    width: 3.2rem;
+    background-position: center;
+    margin-right: 5px;
+    background-color: transparent;
+    content: " ";
+    background-repeat: no-repeat;
+    padding: 0px;
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+    outline: none;
+    box-shadow: none;
+    border-left: 1px solid #cecece;
+}
+
+.workspaces-management label.input-control.checkbox .input-control-img,
+input[type=checkbox]
+{
+    background-image: url("K2Sites_Management/Images/checkbox18_Sprite.png");
+}
+
+.workspaces-management .grid-summary .grid-content-cell-wrapper
+{
+    background-color: #f8f8f8;
+    position: relative;
+    padding: 5px !important;
+    border-top: 1px solid #cccccc;
+    padding-left: 15px !important;
+}
+
+.workspaces-management .grid[name='Workspaces.Details Area Item'] .grid-body
+{
+    background-color: #f8f8f8;
+    padding-top: 10px;
+}
+
+.workspaces-management .grid[name='Workspaces.Details Area Item'] .grid-body
+{
+    overflow-y: auto;
+}
+
+.workspaces-management td.empty-grid
+{
+    display: none;
+}
+
+.workspaces-management #aa7d459f-ffdc-4060-a5d8-6a166e605cc7_e6606eaa-c5ef-e690-e7f6-c0bac6957767_ImagePanel::before
+{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+.workspaces-management form[name='form1'] .scroll-wrapper .formpanel:nth-child(1) .form
+{
+    overflow-x: hidden;
+}
+
+.workspaces-management .grid[name='Workspaces.Details Area Item'] tr.empty-grid::before
+{
+    content: "Add menu item";
+    width: 150px;
+    height: 23px;
+    background-color: transparent;
+    position: fixed;
+    top: 250px;
+    color: inherit;
+    left: 70px;
+    cursor: pointer;
+}
+
+.workspaces-management .grid[name='Workspaces.Details Area Item'] tr.empty-grid 
+{
+    color: #2196f3;
+}
+
+.workspaces-management .grid[name='Workspaces.Details Area Item'] tr.empty-grid:hover
+{
+    color: #29b6f6;
+}
+
+.workspaces-management .tab-box ul.tab-box-tabs a.tab.selected .tab-text
+{
+    position: relative;
+	color: #2196f3 !important;
+    font-weight: bold;
+}
+
+.workspaces-management .tab-box ul.tab-box-tabs a.tab.selected .tab-text::before
+{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #2196f3;
+    bottom: 2px;
+    z-index: 3;
+}
+
+.workspaces-management .tab-box.tabs-top ul.tab-box-tabs a.tab.selected
+{
+    position: relative;
+}
+
+.workspaces-management .input-control.text-input .input-control-watermark
+{
+ -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+.workspaces-management .grid[name='Workspaces.Details Area Item'] table.grid-content-table
+{
+    background-color: #f8f8f8;
+}
+
+.workspaces-management .grid[name="Workspaces.Main Area Item"] .grid-content-table tr td:nth-child(3) .grid-content-cell-wrapper span,
+.workspaces-management .grid[name="Workspaces.Main Area Item"] .grid-content-table tr td:nth-child(4) .grid-content-cell-wrapper span
+{
+    /*need to override base theme style*/
+    display: none !important;
+}
+
+.workspaces-management .grid[name="Workspaces.Main Area Item"] .grid-content-table tr td:nth-child(3) .grid-content-cell-wrapper[title='true']::before
+{
+    content: " ";
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url("K2Sites_Management/Images/Toolbar/SetAsDefault16.png");
+    background-size: 16px;
+    position: fixed;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+.workspaces-management .grid[name="Workspaces.Main Area Item"] .grid-content-table tr td:nth-child(4) .grid-content-cell-wrapper[title='true']::before
+{
+    content: " ";
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url("K2Sites_Management/Images/Toolbar/Visible_Alt16.png");
+    background-size: 16px;
+    position: fixed;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+.workspaces-management .grid[name="Workspaces.Main Area Item"] .grid-content-table tr td:nth-child(4) .grid-content-cell-wrapper[title='false']::before
+{
+    content: " ";
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url("K2Sites_Management/Images/Toolbar/NotVisible_Alt16.png");
+    background-size: 16px;
+    position: fixed;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+.workspaces-management .grid-toolbars .toolbar-button[title='Copy'] span.button-icon
+{
+    background-image: url("K2Sites_Management/Images/Toolbar/Copy_Alt16.png");
+}
+
+.workspaces-management .grid-toolbars .toolbar-button[title='Hide/Show'] span.button-icon
+{
+    background-image: url("K2Sites_Management/Images/Toolbar/Visible_Alt16.png");
+}
+
+.workspaces-management .grid-toolbars .toolbar-button[title='Set As Default'] span.button-icon
+{
+    background-image: url("K2Sites_Management/Images/Toolbar/SetAsDefault16.png");
+}
+
+.workspaces-management .grid[name="Workspaces.Details Area Item"] .IconTableWrapper
+{
+    display: flex;
+}
+
+.workspaces-management .grid[name='Workspaces.Details Area Item'] table.grid-content-table tr:hover > td,
+.workspaces-management .grid[name='Workspaces.Details Area Item'] table.grid-content-table tr.selected > td,
+.workspaces-management .grid[name='Workspaces.Details Area Item'] table.grid-content-table tr.edit-template-row > td
+{
+    background-color: #2196f3;
+    border:1px solid #2196f3;
+}
+
+.workspaces-management .grid .grid-content-cell.edit-mode .grid-content-cell-wrapper
+{
+    padding: 0px;
+}
+
+.workspaces-management .tab-box .tab-box-body,
+.workspaces-management .tab-box-body
+{
+    /*need to override theme css here*/
+    border-top: 1px solid #ececec !important;
+}
+
+.workspaces-management .grid[name='Workspaces.Details Area Item'] table.grid-content-table tr:hover > td span.runtime-list-item,
+.workspaces-management .grid[name='Workspaces.Details Area Item'] table.grid-content-table tr:hover > td span,
+.workspaces-management .grid[name='Workspaces.Details Area Item'] table.grid-content-table tr.selected > td span.runtime-list-item,
+.workspaces-management .grid[name='Workspaces.Details Area Item'] table.grid-content-table tr.edit-template-row > td span.runtime-list-item
+{
+    color: #ffffff;
+}
+
+.workspaces-management .grid[name='Workspaces.Details Area Item'] table.grid-content-table tr.selected > td span.IconTableText
+{
+    color: #ffffff !important;
+}
+
+.workspaces-management .SourceCode-Forms-Controls-Web-Button[name="btnSaveScheme"],
+.workspaces-management .SourceCode-Forms-Controls-Web-Button[name="btnSchemaFinish"],
+.workspaces-management .SourceCode-Forms-Controls-Web-Button[name="btnMenuFinish"]
+{
+    width: 80px;
+    position: fixed;
+    z-index: 2;
+    right: 15px;
+    bottom: 4px;
+}
+
+.workspaces-management .checkbox-outer-panel .input-control.checkbox.focus
+{
+    outline: 1px dotted transparent;
+}
+
+.workspaces-management .SourceCode-Forms-Controls-Web-Button[name="btnSaveLink"]
+{
+    width: 80px;
+    position: fixed;
+    z-index: 2;
+    right: 15px;
+    bottom: 59px;
+}
+
+.workspaces-management .SourceCode-Forms-Controls-Web-Button[name="btnMenuCancel"],
+.workspaces-management .SourceCode-Forms-Controls-Web-Button[name="btnSchemaCancel"]
+{
+    width: 80px;
+    position: fixed;
+    z-index: 2;
+    right: 15px;
+    bottom: 4px;
+}
+
+.workspaces-management .SourceCode-Forms-Controls-Web-Button[name="btnMenuBack"],
+.workspaces-management .SourceCode-Forms-Controls-Web-Button[name="btnSchemaNext"]
+{
+    width: 80px;
+    position: fixed;
+    z-index: 2;
+    right: 205px;
+    bottom: 4px;
+}
+
+.workspaces-management .grid .iconStateContainer
+{
+    height: 100%;
+    position: relative;
+}
+
+.workspaces-management .grid .IconTableImg
+{
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+    content: " ";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("K2Sites_Management/Images/Placeholder16.png");
+    min-width: 16px;
+}
+
+.workspaces-management .grid .IconTableImg.emptyIcon
+{
+    display: none;
+}
+
+.workspaces-management .grid .IconTableText
+{
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.workspaces-management #aa7d459f-ffdc-4060-a5d8-6a166e605cc7_f048f7c0-9f79-ca64-3109-47ccc8fe652b 
+{
+    background-position-x: 5px;
+    background-position-y: 3px;
+}
+
+.workspaces-management #aa7d459f-ffdc-4060-a5d8-6a166e605cc7_f048f7c0-9f79-ca64-3109-47ccc8fe652b.watermark
+{
+    background-image: none !important;
+}
+
+.workspaces-management #aa7d459f-ffdc-4060-a5d8-6a166e605cc7_e6606eaa-c5ef-e690-e7f6-c0bac6957767_ImagePanel
+{
+    position: fixed;
+    top: 234px;
+    left: 50%;
+    padding-left: 12px;
+}
+
+.workspaces-management #aa7d459f-ffdc-4060-a5d8-6a166e605cc7_e6606eaa-c5ef-e690-e7f6-c0bac6957767_ImagePanel.file-wrapper:hover
+{
+    cursor: default;
+    background: none;
+}
+
+.workspaces-management #aa7d459f-ffdc-4060-a5d8-6a166e605cc7_e6606eaa-c5ef-e690-e7f6-c0bac6957767_ImagePanel.file-wrapper.active
+{
+    border: 1px solid transparent !important;
+}
+
+.workspaces-management #aa7d459f-ffdc-4060-a5d8-6a166e605cc7_f048f7c0-9f79-ca64-3109-47ccc8fe652b_droplist ul.drop-menu li
+{
+    background-image: none !important;
+}
+
+.workspaces-management .tab-box .view .checkbox-outer-panel
+{
+    width: 100%;
+    padding: 0.3rem 0;
+}
+
+/* This table is located on the following View: com.K2.System.Management.Workspace.View.NavigationTargetDetails */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Workspace.Form.WorkspaceDetails */
+.workspaces-management .tab-box .row:nth-child(2) .panel-body-wrapper > div > .Grid-Layout > .editor-cell
+{
+    padding: 0 !important; /* !important used as td styling is very convoluted */
+}
+
+.workspaces-management .tab-box .col:nth-child(2) .view:nth-child(2) .panel-body-wrapper > div > .Grid-Layout > .editor-cell
+{
+    padding-top: 0;
+}
+
+/* This table is located on the following View: com.K2.System.Management.Workspace.View.NavigationTargetDetails */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Workspace.Form.WorkspaceDetails */
+.workspaces-management .tab-box .view .Grid-Layout > .editor-cell.lastrow
+{
+    padding-bottom: 0;
+}
+
+.workspaces-management label.input-control.radio .input-control-img
+{
+    height: 1.9rem;
+}
+
+.workspaces-management .input-control.select-box .input-control-buttons a.picker-resolve,
+.workspaces-management .input-control.select-box .input-control-buttons a.picker-search
+{
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+/* #endregion */
+
+/* #region ICONS */
+
+/* #region WORKSPACE SCHEME LIST VIEW */
+
+.workspaces-management .panel[name="Navigation Link"] .file-delete
+{
+    display: none !important; /* Overrides inline style */
+}
+
+.workspaces-management .workspace-scheme
+{
+    display: flex;
+}
+
+    .workspaces-management .workspace-scheme .scheme-icon
+    {
+        height: 16px;
+        width: 16px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px !important;
+        margin-right: 0.5rem;
+        display: inline-block;
+        min-width: 16px;
+    }
+
+    .workspaces-management .workspace-scheme .scheme-name
+    {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+        .workspaces-management .workspace-scheme .scheme-icon.scheme-icon-default
+        {
+            background-color: #003870; /* --globalNav-background-color */
+            background-image: url('Workspace/WorkspacesK2Logo16.png');
+        }
+
+        .workspaces-management .workspace-scheme .scheme-icon.scheme-icon-custom
+        {
+            background: url('Workspace/Workspace16.png');
+        }
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region MEDIA QUERY */
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .workspaces-management .workspace-scheme .scheme-icon.scheme-icon-default
+    {
+        background-image: url('Workspace/WorkspacesK2Logo16@2x.png');
+    }
+
+    .workspaces-management .workspace-scheme .scheme-icon.scheme-icon-custom
+    {
+        background: url('Workspace/Workspace16@2x.png');
+    }
+
+    .workspaces-management .grid[name="Workspaces.Main Area Item"] .grid-content-table tr td:nth-child(3) .grid-content-cell-wrapper[title='true']::before
+    {
+        background-image: url("K2Sites_Management/Images/Toolbar/SetAsDefault16@2x.png");
+    }
+
+    .workspaces-management .grid[name="Workspaces.Main Area Item"] .grid-content-table tr td:nth-child(4) .grid-content-cell-wrapper[title='true']::before
+    {
+        background-image: url("K2Sites_Management/Images/Toolbar/Visible_Alt16@2x.png");
+    }
+
+    .workspaces-management .grid[name="Workspaces.Main Area Item"] .grid-content-table tr td:nth-child(4) .grid-content-cell-wrapper[title='false']::before
+    {
+        background-image: url("K2Sites_Management/Images/Toolbar/NotVisible_Alt16@2x.png");
+    }
+
+    .workspaces-management .grid-toolbars .toolbar-button[title='Copy'] span.button-icon
+    {
+        background-image: url("K2Sites_Management/Images/Toolbar/Copy_Alt16@2x.png");
+    }
+
+    .workspaces-management .grid-toolbars .toolbar-button[title='Hide/Show'] span.button-icon
+    {
+        background-image: url("K2Sites_Management/Images/Toolbar/Visible_Alt16@2x.png");
+    }
+
+    .workspaces-management .grid-toolbars .toolbar-button[title='Set As Default'] span.button-icon
+    {
+        background-image: url("K2Sites_Management/Images/Toolbar/SetAsDefault16@2x.png");
+    }
+
+    .workspaces-management a[name='btnAddBtm'],
+    .workspaces-management a[name='btnAddBtm'].disabled,
+    .workspaces-management a[name='btnAddBtm'].disabled:focus,
+    .workspaces-management a[name='btnAddBtm']:focus
+    {
+        background-image: url("K2Sites_Management/Images/Add16@2x.png");
+    }
+    .workspaces-management a[name='btnAddBtm']:hover,
+    .workspaces-management a[name='btnAddBtm']:active
+    {
+        background-image: url("K2Sites_Management/Images/Add_Hover16@2x.png") !important;
+    }
+
+    .workspaces-management a[name='btnMvUpBtm'],
+    .workspaces-management a[name='btnMvUpBtm'].disabled,
+    .workspaces-management a[name='btnMvUpBtm'].disabled:focus,
+    .workspaces-management a[name='btnMvUpBtm']:focus
+    {
+        background-image: url("K2Sites_Management/Images/MoveUp16@2x.png");
+    }
+
+    .workspaces-management a[name='btnMvUpBtm']:hover,
+    .workspaces-management a[name='btnMvUpBtm']:active
+    {
+        background-image: url("K2Sites_Management/Images/MoveUp_Hover16@2x.png") !important;
+    }
+
+    .workspaces-management a[name='btnMvDnBtm'],
+    .workspaces-management a[name='btnMvDnBtm'].disabled,
+    .workspaces-management a[name='btnMvDnBtm'].disabled:focus,
+    .workspaces-management a[name='btnMvDnBtm']:focus
+    {
+        background-image: url("K2Sites_Management/Images/MoveDown16@2x.png");
+    }
+
+    .workspaces-management a[name='btnMvDnBtm']:hover,
+    .workspaces-management a[name='btnMvDnBtm']:active
+    {
+        background-image: url("K2Sites_Management/Images/MoveDown_Hover16@2x.png") !important;
+    }
+
+    .workspaces-management a[name='btnRfrshBtm'],
+    .workspaces-management a[name='btnRfrshBtm'].disabled,
+    .workspaces-management a[name='btnRfrshBtm'].disabled:focus,
+    .workspaces-management a[name='btnRfrshBtm']:focus
+    {
+        background-image: url("K2Sites_Management/Images/Refresh16@2x.png");
+    }
+
+    .workspaces-management a[name='btnRfrshBtm']:hover,
+    .workspaces-management a[name='btnRfrshBtm']:active
+    {
+        background-image: url("K2Sites_Management/Images/Refresh_Hover16@2x.png") !important;
+    }
+
+    .workspaces-management a[name='btnDeleteBtm'],
+    .workspaces-management a[name='btnDeleteBtm'].disabled,
+    .workspaces-management a[name='btnDeleteBtm'].disabled:focus,
+    .workspaces-management a[name='btnDeleteBtm']:focus,
+    .workspaces-management a[name='btnDeleteBtm']:focus:hover,
+    .workspaces-management a[name='btnDeleteBtm'].disabled:focus:hover,
+    .workspaces-management a[name='btnDeleteBtm'].disabled:hover
+    {
+        background-image: url("K2Sites_Management/Images/Remove16@2x.png");
+    }
+
+    .workspaces-management a[name='btnDeleteBtm']:hover,
+    .workspaces-management a[name='btnDeleteBtm']:active,
+    .workspaces-management a[name='btnDeleteBtm']:focus
+    {
+        background-image: url("K2Sites_Management/Images/Remove_Hover16@2x.png") !important;
+    }
+
+    .workspaces-management .grid .IconTableImg
+    {
+        background-image: url("K2Sites_Management/Images/Placeholder16@2x.png");
+    }
+
+}
+
+/* #endregion */

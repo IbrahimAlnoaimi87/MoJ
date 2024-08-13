@@ -1,0 +1,382 @@
+
+
+//#region resets
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.selected.tab:hover .tab-wrapper
+{
+    height: auto;
+    background: none;
+}
+
+.theme-entry .tab-wrapper{
+    line-height: inherit; //overrides Platinum2's hardcoded 18px in design time.
+}
+
+//overriding core.less weird margins.
+.theme-entry
+{
+    .tab-text
+    {
+        margin-left: 0px;
+        html[dir=rtl] &
+        {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        &:first-child
+        {
+            margin-left: 0px;
+            html[dir=rtl] &
+            {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+.theme-entry .tab{
+    line-height: normal; //override PLatinum2 base in designer.
+}
+
+//#endregion resets
+
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab 
+//.theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper, 
+//.theme-entry .tab-box ul.tab-box-tabs a.selected.tab:hover .tab-wrapper
+{
+	//line-height:3.0rem;
+	padding-top: @Control-Inset-Vertical-Spacing;
+	padding-bottom: @Control-Inset-Vertical-Spacing;
+
+	min-height: @Main-Text-Size; //for the "Add Tab" tab in design time, it doesn't have text content, so this min height will fix that.
+}
+
+.theme-entry .tab-box ul.tab-box-tabs li a.tab .tab-wrapper
+{
+	padding:0 1.2rem;
+}
+
+.theme-entry .tab-box.tabs-top ul.tab-box-tabs a.tab.selected .tab-wrapper{
+    margin-bottom: 0px;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon
+{
+	height:1.6rem;
+	width:1.6rem;
+	
+
+	html[dir=ltr] &
+	{
+		margin-left: @Between-Control-Spacing;
+	}
+
+	html[dir=rtl] &
+	{
+		margin-right: @Between-Control-Spacing;
+	}
+
+    &.tab-add
+    {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+
+.theme-entry .tab-box.full.tabs-top .tab-wrapper .inline-editable
+{
+	line-height: 3.0rem;
+	margin: 0!important;
+	height: 3.0rem!important;
+}
+
+.theme-entry .tab-box.full.tabs-top .tab-box-body
+{
+	top:3.0rem;
+}
+
+/*#endregion*/
+
+/*design time */
+.theme-entry .tab-box-body
+{
+    position: relative;
+    top: auto;
+    bottom: auto;
+}
+
+.theme-entry .tab-box-body .form
+{
+    background-color: transparent; /*override above color*/
+}
+
+/*design time */
+.theme-entry .tab-box ul.tab-box-tabs
+{
+    height: auto;
+    border: none;
+    border-width: 0;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs li
+{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+//#region Tabs Layout
+//this long selector is required to override the Core.less selector :(
+.theme-entry .tab-box ul.tab-box-tabs li a.tab
+{
+    display: inline-flex;
+    border: none;
+    vertical-align: top;
+    
+    
+    .tab-wrapper 
+    {
+        display: flex;
+        flex-direction: row;
+        html[dir=rtl] &
+        {
+            flex-direction: row-reverse;
+        }
+        
+        color:inherit;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+        box-sizing: border-box;
+
+        border-top-left-radius: @Tab-Rounding;
+        border-top-right-radius: @Tab-Rounding;
+    }
+
+    border-top-left-radius: @Tab-Rounding;
+    border-top-right-radius: @Tab-Rounding;
+
+    transition: color 0.15s linear, background-color 0.15s linear, border-color 0.15s linear;
+
+}
+
+//#endregion Tabs Layout
+
+
+//#region Form Tabs
+//at the top of a form only.
+//this long selector is required to override the Core.less selector :(
+.theme-entry .form-tabs.tab-box 
+{
+    ul.tab-box-tabs 
+    {
+        li a.tab
+        {
+            background: @Tab-Background-Color;
+            color: @Tab-Text-Color;
+        
+            &:hover
+            {
+                background: @Tab-Hover-Background-Color;
+                color: @Tab-Hover-Text-Color;
+            }
+
+            &.selected
+            {
+                background: @Main-Tab-Selected-Background-Color;
+                color: @Main-Tab-Selected-Text-Color;
+                font-weight: bold; //to make sure the selected tab is obvious when the form color = page color.
+            }
+
+            //focus border must always beat selected, hover, states.
+            &.focus    
+            {
+                .tab-wrapper
+                {
+                    border-color: @Tab-Focus-Border-Color;
+                }
+            }
+
+            &.disabled 
+            {
+                background: @Tab-Disabled-Background-Color;
+                color: @Tab-Disabled-Text-Color;
+            }
+        }
+    }
+}
+//#endregion Form Tabs
+
+
+//#region General Tabs (not form tabs)
+//anywhere else in a dialog, or other places other than the top of the form.
+//this long selector is required to override the Core.less selector :(
+.theme-entry .tab-box:not(.form-tabs) 
+{
+    .tab-box-body
+    {
+        border-top-style: solid;
+        border-top-width: 3px;
+        border-top-color: @Tab-Body-Background-Color;
+    }
+
+    ul.tab-box-tabs 
+    {
+        li a.tab
+        {
+            background: @Tab-Background-Color;
+            color: @Tab-Text-Color;
+            
+            &:hover
+            {
+                background: @Tab-Hover-Background-Color;
+                color: @Tab-Hover-Text-Color;
+            }
+
+            &.selected
+            {
+                background: @Tab-Selected-Background-Color;
+                color: @Tab-Selected-Text-Color;
+            }
+
+            //focus border must always beat selected, hover, states.
+            &.focus    
+            {
+                .tab-wrapper
+                {
+                    border-color: @Tab-Focus-Border-Color;
+                }
+            }
+
+            &.disabled 
+            {
+                background: @Tab-Disabled-Background-Color;
+                color: @Tab-Disabled-Text-Color;
+            }
+        }
+    }
+}
+//#rendegion General Tabs (not form tabs)
+    
+
+
+.theme-entry .tab-box ul.tab-box-tabs li a.tab,
+.theme-entry .tab-box ul.tab-box-tabs li a.tab.selected
+{
+    height: auto;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs li a.tab .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs li a.tab.selected .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected.focus:hover .tab-wrapper
+{
+    height: auto;
+    position: relative;
+    padding: 0 @Control-Inset-Horizontal-Spacing;
+    /*design time - so remove-tab button can be placed*/
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-text,
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon
+{
+    display: inline-block;
+    float: none;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon
+{
+    vertical-align: text-bottom;
+}
+
+
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper
+{
+    background-color: transparent;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-text
+{
+    color: inherit; //tab text color should inherit from .tab element
+    float: none;
+    height: auto;
+
+    // -moz-transition: color linear 0.15s;
+    // -ms-transition: color linear 0.15s;
+    // -o-transition: color linear 0.15s;
+    // -webkit-transition: color linear 0.15s;
+    // transition: color linear 0.15s;
+}
+
+/*tab text in a tab control embedded on a dialog*/
+/* Unsure this is being used anymore - tabs only appear on forms, not within popups 2020/10 */
+.theme-entry .popup .tab-box ul.tab-box-tabs a.tab .tab-text
+{
+    color: inherit;
+}
+
+//#region DIALOG TABS
+
+.theme-entry .dialog
+{
+    //selected tab and body - same color - tab control embedded in a dialog (e.g. worklist filters dialog) 
+    .tab-box .tab-box-body,
+    .tab-box.full.tabs-top .tab-box-body /*tabs.css override*/
+    {
+        background-color: @Tab-Body-Background-Color;
+    }
+
+    .tab-box ul.tab-box-tabs a.tab.selected,
+    .tab-box ul.tab-box-tabs a.tab.selected:hover
+    {
+        background-color: @Tab-Selected-Background-Color;
+    }
+
+    .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper
+    {
+        background-color: transparent !important;
+    }
+
+    /*tab body, when inside a dialog (i.e. on a light background) */
+    .tab-box .tab-box-body,
+    .tab-box.full.tabs-top .tab-box-body
+    {
+        padding: 0.5rem;
+    }
+
+
+}
+
+//#endregion Dialog Tabs
+
+/*override when tabs should not be showing at all - design-time*/
+.theme-entry .tab-box.hide-tabs .tab-box-body,
+.theme-entry .tab-box.full.tabs-top.hide-tabs .tab-box-body /*tabs.css override*/
+{
+    background-color: transparent;
+}
+
+
+
+
+.theme-entry .tab-box.full.tabs-top.hide-tabs .tab-box-body
+{
+    top: 0;
+}
+
+/*tab remove button - design time */
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-remove.tab-control
+{
+    margin-left: 1.0rem;
+    /*design time*/
+}
+
+/*tab body*/
+.theme-entry .tab-box .tab-box-body
+{
+    border: none;
+}
+
+/*#endregion TABS */

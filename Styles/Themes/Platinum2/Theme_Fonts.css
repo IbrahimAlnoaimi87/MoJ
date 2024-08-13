@@ -1,0 +1,26 @@
+/* Theme: Platinum2 */
+/* Author: John */
+/* Date: 22/07/2015 */
+
+@font-face {
+    font-family: 'Open-Sans Regular';
+    src: url('Fonts/OpenSans-Regular-webfont.eot');
+    src: url('Fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('Fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('Fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Fonts/roboto-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('Fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('Fonts/roboto-regular-webfont.woff') format('woff'), /* Modern Browsers */
+         url('Fonts/roboto-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Fonts/roboto-regular-webfont.svg#robotoregular') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}

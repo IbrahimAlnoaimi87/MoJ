@@ -1,0 +1,48 @@
+﻿/* #region FLUID LAYOUT */
+
+html.workspaces-main,
+.workspaces-main body,
+.workspaces-main #form1,
+.workspaces-main .runtime-content,
+.workspaces-main .runtime-form,
+.workspaces-main .runtime-form > .form,
+.workspaces-main .runtime-form > .form > .row:nth-child(1),
+.workspaces-main .runtime-form > .form > .row:nth-child(1) > .formcontrol,
+.workspaces-main .runtime-form > .form > .row:nth-child(1) > .formcontrol > .innerpanel,
+.workspaces-main .runtime-form > .form > .row:nth-child(1) > .formcontrol > .innerpanel > .SFC.SourceCode-Forms-Controls-Web-ControlPack-StackedContent[Name="scMain"]
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+.workspaces-main .runtime-form > .form > .row
+{
+    display: none;
+}
+
+    .workspaces-main .runtime-form > .form > .row:nth-child(1)
+    {
+        display: block;
+    }
+
+/* #endregion */
+
+/* #region LAYOUT */
+
+.workspaces-main .base0.modal-element.ajaxLoader
+{
+    background-color: transparent !important; /* Ensure modalizer is not visible */
+}
+
+.workspaces-main .base2.base1.modalizer
+{
+    background-color: transparent !important;   /* Ensure modalizer is not visible */
+    opacity: 0;                                 /* Ensures there's no flash on Report Refresh*/
+}
+
+/* #endregion */

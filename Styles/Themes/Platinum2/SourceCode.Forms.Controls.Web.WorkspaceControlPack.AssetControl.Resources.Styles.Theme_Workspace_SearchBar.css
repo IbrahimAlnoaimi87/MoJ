@@ -1,0 +1,233 @@
+﻿.theme-entry .workspace-redirect-view,
+html.workspace-taskcard .theme-entry {
+  /*#region USER SEARCH  */
+  /* Search/Cancel Search buttons */
+  /* Search button */
+  /* Cancel Search button */
+  /* Search button - loading */
+  /*#endregion */
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .redirect-search-bar,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .redirect-search-bar,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .redirect-search-bar,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .redirect-search-bar {
+  width: 100%;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .redirect-search-bar.hidden,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .redirect-search-bar.hidden,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .redirect-search-bar.hidden,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .redirect-search-bar.hidden {
+  display: none;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .redirect-search-buttons,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .redirect-search-buttons,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .redirect-search-buttons,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .redirect-search-buttons {
+  padding-right: 3px;
+  height: 100%;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"],
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"],
+.theme-entry .workspace-redirect-view .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"],
+html.workspace-taskcard .theme-entry .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"],
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnCancelSearch"],
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnCancelSearch"],
+.theme-entry .workspace-redirect-view .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnCancelSearch"],
+html.workspace-taskcard .theme-entry .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnCancelSearch"] {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 48px 96px;
+  width: 18px;
+  height: 16px;
+  background-position: -16px -16px;
+  border-color: transparent;
+  padding: 0;
+  min-height: 0;
+  min-width: 0;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"],
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"],
+.theme-entry .workspace-redirect-view .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"],
+html.workspace-taskcard .theme-entry .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"] {
+  background-image: url(worklist/Search/Search16_Sprite.png);
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnCancelSearch"],
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnCancelSearch"],
+.theme-entry .workspace-redirect-view .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnCancelSearch"],
+html.workspace-taskcard .theme-entry .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnCancelSearch"] {
+  background-image: url(worklist/CloseTaskList/CloseTaskList16_Sprite.png);
+  box-shadow: none;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"].loading,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"].loading,
+.theme-entry .workspace-redirect-view .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"].loading,
+html.workspace-taskcard .theme-entry .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnSearch"].loading {
+  background-position: center;
+  background-image: url(workspace/SearchLoader16.gif);
+  background-size: 16px;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .redirect-search-buttons a,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .redirect-search-buttons a,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .redirect-search-buttons a,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .redirect-search-buttons a {
+  display: block;
+  border: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .redirect-search-buttons a.hidden,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .redirect-search-buttons a.hidden,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .redirect-search-buttons a.hidden,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .redirect-search-buttons a.hidden {
+  display: none;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box .input-control-buttons a.dropdown > span span,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box .input-control-buttons a.dropdown > span span,
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box .input-control-buttons a.dropdown:hover > span span,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box .input-control-buttons a.dropdown:hover > span span,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box .input-control-buttons a.dropdown > span span,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box .input-control-buttons a.dropdown > span span,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box .input-control-buttons a.dropdown:hover > span span,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box .input-control-buttons a.dropdown:hover > span span {
+  background-image: none;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box .input-control-buttons a.dropdown,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box .input-control-buttons a.dropdown,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box .input-control-buttons a.dropdown,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box .input-control-buttons a.dropdown {
+  width: 1.2rem;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control > span,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control > span,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control > span,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control > span {
+  float: right;
+  color: #c5c5c5;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box .input-control-buttons a.dropdown > span,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box .input-control-buttons a.dropdown > span,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box .input-control-buttons a.dropdown > span,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box .input-control-buttons a.dropdown > span {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  padding-top: .6rem;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box .input-control-buttons a.dropdown > span span,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box .input-control-buttons a.dropdown > span span,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box .input-control-buttons a.dropdown > span span,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box .input-control-buttons a.dropdown > span span {
+  width: 0;
+  height: 0;
+  display: block;
+  border-style: solid;
+  border-width: .6rem .6rem 0 .6rem;
+  border-color: #c5c5c5 transparent transparent transparent;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper,
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control {
+  line-height: 2.4rem;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-buttons a:hover,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-buttons a:hover,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-buttons a:hover,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-buttons a:hover {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: default;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .redirect-search-input-wrapper input,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .redirect-search-input-wrapper input,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .redirect-search-input-wrapper input,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .redirect-search-input-wrapper input {
+  background-color: transparent;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .redirect-search-buttons,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .redirect-search-buttons,
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .redirect-search-buttons,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .redirect-search-buttons,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box {
+  float: right;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .redirect-search-input-wrapper,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .redirect-search-input-wrapper,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .redirect-search-input-wrapper,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .redirect-search-input-wrapper {
+  overflow: hidden;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .redirect-search-input-wrapper input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .redirect-search-input-wrapper input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-m-c,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-m-c,
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-buttons,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-buttons,
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .redirect-search-input-wrapper input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .redirect-search-input-wrapper input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-m-c,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-m-c,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-buttons,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-buttons,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box {
+  border: none;
+  border-radius: 0;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box .styling-outer-wrapper,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box .styling-outer-wrapper,
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box .styling-outer-wrapper > .input-control-body,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box .styling-outer-wrapper > .input-control-body,
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box .styling-outer-wrapper > .input-control-body > .input-control-m,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box .styling-outer-wrapper > .input-control-body > .input-control-m,
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box .styling-outer-wrapper,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box .styling-outer-wrapper,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box .styling-outer-wrapper > .input-control-body,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box .styling-outer-wrapper > .input-control-body,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box .styling-outer-wrapper > .input-control-body > .input-control-m,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box .styling-outer-wrapper > .input-control-body > .input-control-m,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper > a.input-control {
+  width: auto;
+}
+.theme-entry .workspace-redirect-view .panel[name="Redirect"] .redirect-search-bar .redirect-search-filter-dropdown,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .redirect-search-bar .redirect-search-filter-dropdown,
+.theme-entry .workspace-redirect-view .panel[name="Share"] .redirect-search-bar .redirect-search-filter-dropdown,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .redirect-search-bar .redirect-search-filter-dropdown {
+  margin-right: .3rem;
+}
+.theme-entry .workspace-redirect-view ul.drop-menu li span.redirect-search-option-icon,
+html.workspace-taskcard .theme-entry ul.drop-menu li span.redirect-search-option-icon {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  background-image: url('workspace/SecurityLabel16@2x.png');
+  background-size: 16px;
+}
+.theme-entry .workspace-redirect-view .redirect-search-bar-bordercontainer,
+html.workspace-taskcard .theme-entry .redirect-search-bar-bordercontainer {
+  width: 100%;
+}
+.theme-entry .workspace-redirect-view ul.drop-menu li.selected span.redirect-search-option-icon,
+html.workspace-taskcard .theme-entry ul.drop-menu li.selected span.redirect-search-option-icon {
+  background-image: url('workspace/SecurityLabel16_White@2x.png');
+}

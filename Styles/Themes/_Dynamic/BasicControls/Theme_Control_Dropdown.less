@@ -1,0 +1,120 @@
+/*#region DROPDOWN */
+
+.theme-entry .input-control.select-box.dropdown-box .input-control-buttons
+{
+    overflow: inherit;
+}
+
+/*#endregion DROPDOWN */
+
+/*#region DROPDOWN POPOVER*/
+/*appears under a drop-down control*/
+
+.theme-entry .drop-menu
+{
+    border: none;
+    background-color: @Menu-Background-Color;
+    -moz-box-shadow: @Menu-Shadow;
+    -webkit-box-shadow: @Menu-Shadow;
+    box-shadow: @Menu-Shadow;
+    z-index: 2 !important; /*override - inline - only in worklist control dialog - BUG logged*/
+}
+
+.theme-entry .drop-menu.icon-control ul.drop-menu
+{
+    background-color: @Menu-Icon-Background-Color;
+}
+
+.theme-entry .drop-menu ul.drop-menu li
+{
+    height: auto;
+}
+
+.theme-entry .drop-menu ul.drop-menu li a
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.theme-entry .drop-menu ul.drop-menu a span
+{
+    color: @Menu-Item-Text-Color;
+    height: auto;
+    line-height: normal;
+    padding: 0;
+}
+
+.theme-entry .drop-menu ul.drop-menu a:hover
+{
+    background-color: @Menu-Item-Hover-Text-Color; /*hover color*/
+}
+
+.theme-entry .drop-menu ul.drop-menu a.selected,
+.theme-entry .drop-menu ul.drop-menu a.selected:hover,
+.theme-entry .drop-menu ul.drop-menu li.selected,
+.theme-entry .drop-menu ul.drop-menu li.selected a:hover
+{
+    background-color: @Menu-Item-Selected-Background-Color; /*selected color*/
+}
+
+.theme-entry .drop-menu ul.drop-menu a.selected span,
+.theme-entry .drop-menu ul.drop-menu li.selected span
+{
+    color: @Menu-Item-Selected-Text-Color;
+}
+
+.theme-entry .drop-menu ul.drop-menu a.disabled,
+.theme-entry .drop-menu ul.drop-menu a.disabled:hover
+{
+    background-color: @Menu-Item-Disabled-Background-Color;
+}
+
+.theme-entry .input-control.token-input
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.theme-entry .input-control.token-input .input-control-content
+{
+    border-radius: 2px;
+}
+
+.theme-entry .input-control.token-input.active .input-control-content
+{
+    border-color: @Input-Focus-Border-Color;
+    border-width: 1px /* override theme global definition */
+}
+/*#endregion DROPDOWN STYLES*/
+
+/*#region DROPDOWN  CONTROL*/
+
+/*All drop down controls*/
+.theme-entry .dropdown-box.input-control .input-control-wrapper > a
+{
+    position: relative;
+    padding-top: 0;
+    line-height: 3.2rem; /*needed for vertically centering the chosen item */
+}
+
+.theme-entry .dropdown-box.input-control .input-control-wrapper > a > span
+{
+    position: relative; /*makes the box size to contents when there is no width set - list view filter bug in FF*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 100%;
+}
+
+.theme-entry .drop-menu.icon-control ul.drop-menu a
+{
+    padding-left: 2.5rem;
+}
+
+/*#endregion DROPDOWN  STYLES*/

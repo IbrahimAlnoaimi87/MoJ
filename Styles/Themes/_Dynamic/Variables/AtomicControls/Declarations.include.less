@@ -1,0 +1,572 @@
+
+
+
+ //#region TYPOGRAPHY
+
+    @Error-Text-Color: var(--error-text-color);
+
+ //#endregion TYPOGRAPHY
+
+//#region TEXT STYLES 
+
+    //Normal
+    @Normal-Text-Color: var(--normal-text-color);
+    @Description-Text-Color: var(--description-text-color);
+    @Paragraph-Text-Color: var(--paragraph-text-color);
+
+    //Page Title
+    @Page-Title-Text-Color: var(--page-title-text-color);
+
+    //Page Sub-Title
+    @Page-Subtitle-Text-Color: var(--page-subtitle-text-color);
+
+    //Headings
+    @Heading1-Text-Color: var(--heading1-text-color);
+    @Heading2-Text-Color: var(--heading2-text-color);
+    @Heading3-Text-Color: var(--heading3-text-color);
+    @Heading4-Text-Color: var(--heading4-text-color);
+    
+//#endregion TEXT STYLES 
+
+//#region INPUTS 
+    // this includes textboxes, dropdowns, lists, tile-lists etc - 
+    // i.e. any (traditionally) white box the user has to input or select something within
+
+    //Normal
+    @Input-Background-Color: var(--input-background-color);
+    @Input-Border-Color: var(--input-border-color);
+    @Input-Text-Color: var(--input-text-color);
+    @Input-Watermark-Text-Color: var(--input-watermark-text-color);
+
+    //Disabled
+    @Input-Disabled-Background-Color: var(--input-disabled-background-color);
+    @Input-Disabled-Border-Color: var(--input-disabled-border-color);
+    @Input-Disabled-Text-Color: var(--input-disabled-text-color);
+    
+    //Readonly
+    @Input-ReadOnly-Background-Color: var(--input-readonly-background-color);
+    @Input-ReadOnly-Border-Color: var(--input-readonly-border-color);
+    @Input-ReadOnly-Text-Color: var(--input-readonly-text-color);
+
+    //Labels
+    @Input-Label-Text-Color: var(--input-label-text-color);
+    @Input-Label-Disabled-Text-Color: var(--input-label-disabled-text-color);
+    
+    //Error
+    @Input-Error-Watermark-Text-Color: var(--input-error-watermark-text-color);
+    @Input-Error-Background-Color: var(--input-error-background-color);
+    @Input-Error-Border-Color: var(--input-error-border-color);
+    @Input-Error-Text-Color: var(--input-error-text-color);
+
+
+    //Highlights
+    @Input-Text-Highlight-Background-Color: var(--input-text-highlight-background-color);
+    @Input-Text-Highlight-Text-Color: var(--input-text-highlight-text-color);
+    
+    //BUG - check how much duplication is in worklistpickers for @input-border-color - terrible css!
+    @Input-Focus-Border-Color: var(--input-focus-border-color);
+    
+    //note: "input button" is the button at the end of a textbox or the dropdown arrow button at the end of a dropdown.
+    // or the series of buttons at the end of a picker control.
+    @Input-Button-Background-Color: var(--input-button-background-color);
+    @Input-Button-Border-Color: var(--input-button-border-color);
+    @Input-Button-Text-Color: var(--input-button-text-color);
+
+    //Hover
+    @Input-Button-Hover-Background-Color: var(--input-button-hover-background-color);
+    @Input-Button-Hover-Border-Color: var(--input-button-hover-border-color);
+    @Input-Button-Hover-Text-Color: var(--input-button-hover-text-color);
+    
+    //Focus
+    @Input-Button-Focus-Background-Color: var(--input-button-focus-background-color);
+    @Input-Button-Focus-Border-Color: var(--input-button-focus-border-color);
+    @Input-Button-Focus-Text-Color: var(--input-button-focus-text-color);
+
+    //ToggleOn
+    @Input-Button-ToggleOn-Background-Color: var(--input-button-toggleon-background-color);
+    @Input-Button-ToggleOn-Text-Color: var(--input-button-toggleon-text-color);
+
+    //misc
+    @Required-Indicator-Background-Color: var( --required-indicator-background-color);
+   
+//#endregion INPUTS 
+
+//#region TOOLBARS
+
+    //Normal
+    @Toolbar-Button-Background-Color: var(--toolbar-button-background-color);    
+    @Toolbar-Button-Text-Color: var(--toolbar-button-text-color);
+    @Toolbar-Button-Border-Color: var(--toolbar-button-border-color);
+    
+    //Hover
+    @Toolbar-Button-Hover-Background-Color: var(--toolbar-button-hover-background-color);
+    @Toolbar-Button-Hover-Text-Color: var(--toolbar-button-hover-text-color);
+    @Toolbar-Button-Hover-Border-Color: var(--toolbar-button-hover-border-color);
+
+    //Focus
+    @Toolbar-Button-Focus-Background-Color: var(--toolbar-button-focus-background-color);
+    @Toolbar-Button-Focus-Border-Color: var(--toolbar-button-focus-border-color);
+    @Toolbar-Button-Focus-Text-Color: var(--toolbar-button-focus-text-color);
+
+    //Selected
+    @Toolbar-Button-Toggle-Background-Color: var(--toolbar-button-toggle-background-color);
+
+    //Disabled
+    @Toolbar-Button-Disabled-Background-Color: var(--toolbar-button-disabled-background-color);
+    @Toolbar-Button-Disabled-Border-Color: var(--toolbar-button-disabled-border-color);
+    @Toolbar-Button-Disabled-Text-Color: var(--toolbar-button-disabled-text-color);
+
+
+//#endregion TOOLBARS
+
+//#region SLIDERS
+
+    @Slider-Handle-Background-Color: var(--slider-handle-background-color);
+    @Slider-Handle-Border-Color: var(--slider-handle-border-color);
+   
+    @Slider-Handle-Hover-Background-Color: var(--slider-handle-hover-background-color);
+    @Slider-Handle-Hover-Border-Color: var(--slider-handle-hover-border-color);
+    
+    @Slider-Handle-Disabled-Background-Color: var(--slider-handle-disabled-background-color);
+    @Slider-Handle-Disabled-Border-Color: var(--slider-handle-disabled-border-color);
+
+    @Slider-Handle-ReadOnly-Background-Color: var(--slider-handle-readonly-background-color);
+    @Slider-Handle-ReadOnly-Border-Color: var(--slider-handle-readonly-border-color);
+    
+   
+    @Slider-Handle-Focus-Background-Color: var(--slider-handle-focus-background-color);
+    @Slider-Handle-Focus-Border-Color: var(--slider-handle-focus-border-color);
+
+   
+    @Slider-Rail-Border-Color: var(--slider-rail-border-color);
+    @Slider-Rail-Background-Color: var(--slider-rail-background-color);
+   
+   
+
+    @Slider-Handle-Shadow: var(--slider-handle-shadow);
+
+//#endregion SLIDERS
+
+//#region UPLOADERS
+    //note these variables should be used for any control where you have to drop/onto or fill in with a file.
+
+    //Normal
+    @File-Upload-Background-Color: var(--file-upload-background-color);
+    @File-Upload-Border-Color: var(--file-upload-border-color);
+    @File-Upload-Text-Color: var(--file-upload-text-color);
+
+
+    //Empty (Normal)
+    @File-Upload-Empty-Background-Color: var(--file-upload-empty-background-color);
+    @File-Upload-Empty-Border-Color: var(--file-upload-empty-border-color);
+    @File-Upload-Empty-Text-Color: var(--file-upload-empty-text-color);
+    @File-Upload-Watermark-Text-Color:var(--file-upload-watermark-text-color);
+    @File-Upload-Empty-Hover-Background-Color: var(--file-upload-empty-hover-background-color);
+
+    //Focus
+    @File-Upload-Focus-Border-Color: var(--file-upload-focus-border-color);
+
+    //Hover
+    @File-Upload-Hover-Background-Color: var(--file-upload-hover-background-color);
+    @File-Upload-Hover-Border-Color: var(--file-upload-hover-border-color);
+    @File-Upload-Hover-Text-Color: var(--file-upload-hover-text-color);
+
+    //Disabled
+    @File-Upload-Disabled-Background-Color: var(--file-upload-disabled-background-color);
+    @File-Upload-Disabled-Border-Color: var(--file-upload-disabled-border-color);
+    @File-Upload-Disabled-Text-Color: var(--file-upload-disabled-text-color);
+
+//#endregion UPLOADERS
+
+//#region PROGRESS LOADERS
+
+    @Loader-Track-Background-Color: var(--loader-track-background-color);
+    @Loader-Progress-Background-Color: var(--loader-progress-background-color);
+
+//#endregion PROGRESS LOADERS
+
+//#region BUTTON - NORMAL
+
+    @Button-Background-Color: var(--button-background-color);
+    @Button-Border-Color: var(--button-border-color);
+    @Button-Text-Color: var(--button-text-color);
+    
+    //Hover
+    @Button-Hover-Background-Color: var(--button-hover-background-color);
+    @Button-Hover-Border-Color: var(--button-hover-border-color);
+    @Button-Hover-Text-Color: var(--button-hover-text-color);
+
+    //Focus
+    @Button-Focus-Background-Color: var(--button-focus-background-color);
+    @Button-Focus-Border-Color: var(--button-focus-border-color);
+    @Button-Focus-Text-Color: var(--button-focus-text-color);
+    @Button-Focus-Shadow-Color: var(--button-focus-shadow-color);
+    
+    //Focus+Hover
+    //these shouldn't be needed, as the border should only change on focus, and background should only change on hover.
+    @Button-Hover-Focus-Background-Color: var(--button-hover-focus-background-color);
+    @Button-Hover-Focus-Border-Color: var(--button-hover-focus-border-color);
+    
+    //Disabled
+    @Button-Disabled-Background-Color: var(--button-disabled-background-color);
+    @Button-Disabled-Border-Color: var(--button-disabled-border-color);
+    @Button-Disabled-Text-Color: var(--button-disabled-text-color);
+
+    //Overall
+    @Button-Shadow-Color: var(--button-shadow-color);
+    
+//#endregion BUTTON - NORMAL
+
+//#region BUTTON - PRIMARY
+
+    @Primary-Button-Background-Color: var(--primary-button-background-color);
+    @Primary-Button-Border-Color: var(--primary-button-border-color);
+    @Primary-Button-Text-Color: var(--primary-button-text-color);
+
+    //Hover
+    @Primary-Button-Hover-Background-Color: var(--primary-button-hover-background-color);
+    @Primary-Button-Hover-Border-Color: var(--primary-button-hover-border-color);
+    @Primary-Button-Hover-Text-Color: var(--primary-button-hover-text-color);
+
+    //Focus
+    @Primary-Button-Focus-Background-Color: var(--primary-button-focus-background-color);
+    @Primary-Button-Focus-Border-Color: var(--primary-button-focus-border-color);
+    @Primary-Button-Focus-Text-Color: var(--primary-button-focus-text-color);
+
+//#endregion BUTTON - PRIMARY
+
+//#region BUTTON - QUIET
+
+    @Quiet-Button-Background-Color: var(--quiet-button-background-color);
+    @Quiet-Button-Border-Color: var(--quiet-button-border-color);
+    @Quiet-Button-Text-Color: var(--quiet-button-text-color);
+
+    //Hover
+    @Quiet-Button-Hover-Background-Color: var(--quiet-button-hover-background-color);
+    @Quiet-Button-Hover-Border-Color: var(--quiet-button-hover-border-color);
+    @Quiet-Button-Hover-Text-Color: var(--quiet-button-hover-text-color);
+
+    //Focus
+    @Quiet-Button-Focus-Background-Color: var(--quiet-button-focus-background-color);
+    @Quiet-Button-Focus-Border-Color: var(--quiet-button-focus-border-color);
+    @Quiet-Button-Focus-Text-Color: var(--quiet-button-focus-text-color);
+
+    //Disabled
+    @Quiet-Button-Disabled-Background-Color: var(--quiet-button-disabled-background-color);
+    @Quiet-Button-Disabled-Border-Color: var(--quiet-button-disabled-border-color);
+    @Quiet-Button-Disabled-Text-Color: var(--quiet-button-disabled-text-color);
+
+//#endregion BUTTON - QUIET
+
+//#region BUTTON - DESTRUCTIVE
+
+    @Destructive-Button-Background-Color: var(--destructive-button-background-color);
+    @Destructive-Button-Border-Color: var(--destructive-button-border-color);
+    @Destructive-Button-Text-Color: var(--destructive-button-text-color);
+    
+    //Hover
+    @Destructive-Button-Hover-Background-Color: var(--destructive-button-hover-background-color);
+    @Destructive-Button-Hover-Border-Color: var(--destructive-button-hover-border-color);
+    @Destructive-Button-Hover-Text-Color: var(--destructive-button-hover-text-color);
+
+    //Focus
+    @Destructive-Button-Focus-Background-Color: var(--destructive-button-focus-background-color);
+    @Destructive-Button-Focus-Border-Color: var(--destructive-button-focus-border-color);
+    @Destructive-Button-Focus-Text-Color: var(--destructive-button-focus-text-color);
+
+//#endregion BUTTON - DESTRUCTIVE
+
+//#region BUTTON - HELP
+    //these are specific "i" buttons that appear at the bottom of dialogs (mostly in design time) 
+    //that link to web help documents
+
+    @Help-Button-Background-Color: var(--help-button-background-color);
+    @Help-Button-Border-Color: var(--help-button-border-color);
+
+    //Focus
+    @Help-Button-Focus-Background-Color: var(--help-button-focus-background-color);
+    @Help-Button-Focus-Border-Color: var(--help-button-focus-border-color);
+
+//#endregion BUTTON - HELP
+
+//#region ICON BUTTON
+
+    // note: an Icon button is a just an icon by itself which is a button (no border or background)
+    // think of buttons in android and iOS that are just a button, or the hamburger or undo/redo buttons in workflow designer.
+
+    @Icon-Button-Hover-Background-Color-2: var(--icon-button-hover-background-color-2);
+    @Icon-Button-Hover-Background-Color: var(--icon-button-hover-background-color);
+
+
+//#endregion ICON BUTTON
+
+//#region HYPERLINKS
+
+    @Hyperlink-Text-Color: var(--hyperlink-text-color);
+    @Hyperlink-Disabled-Text-Color: var(--hyperlink-disabled-text-color);
+    @Hyperlink-Focus-Border-Color: var(--hyperlink-focus-border-color);
+
+//#endregion HYPERLINKS
+
+//#region SMARTFIELDS
+
+    @SmartField-Background-Color: var(--smartfield-background-color);
+    @SmartField-Text-Color: var(--smartfield-text-color);
+
+//#endregion SMARTFIELDS
+
+//#region CALENDAR
+
+    @Calendar-Background-Color: var(--calendar-background-color);
+    @Calendar-Text-Color: var(--calendar-text-color);
+    @Calendar-Shadow: var(--calendar-shadow);
+    
+    //separator lines in calendar view
+    @Calendar-Separator-Line-Color: var(--calendar-separator-line-color);
+    
+    //Item
+    @Calendar-Item-Background-Color: var(--calendar-item-background-color);
+    @Calendar-Item-Border-Color: var(--calendar-item-border-color);
+    @Calendar-Item-Text-Color: var(--calendar-item-text-color);
+
+    //item - Disabled
+    @Calendar-Item-Disabled-Text-Color: var(--calendar-item-disabled-text-color);
+
+    //Item - Hover
+    @Calendar-Item-Hover-Background-Color: var(--calendar-item-hover-background-color);
+    @Calendar-Item-Hover-Border-Color: var(--calendar-item-hover-border-color);
+    @Calendar-Item-Hover-Text-Color: var(--calendar-item-hover-text-color);
+
+    
+    //Header
+    @Calendar-Day-Header-Text-Color: var(--calendar-day-header-text-color);
+
+    //Navigation Button
+    @Calendar-Navigation-Button-Background-Color: var(--calendar-navigation-button-background-color);
+    @Calendar-Navigation-Button-Border-Color: var(--calendar-navigation-button-border-color);
+    @Calendar-Navigation-Button-Text-Color: var(--calendar-navigation-button-text-color);
+    @Calendar-Navigation-Button-Hover-Background-Color: var(--calendar-navigation-button-hover-background-color);
+    @Calendar-Navigation-Button-Hover-Border-Color: var(--calendar-navigation-button-hover-border-color);
+    @Calendar-Navigation-Button-Hover-Text-Color: var(--calendar-navigation-button-hover-text-color);
+
+    //today state
+    @Calendar-Today-Border-Color: var(--calendar-today-border-color);
+
+    //Selected
+    @Calendar-Selected-Item-Background-Color: var(--calendar-selected-item-background-color);
+    @Calendar-Selected-Item-Border-Color: var(--calendar-selected-item-border-color);
+    @Calendar-Selected-Item-Text-Color: var(--calendar-selected-item-text-color);
+
+    //Navigation
+    @Calendar-Navigation-Button-Background-Color: var(--calendar-navigation-button-background-color);
+    @Calendar-Navigation-Button-Hover-Background-Color: var(--calendar-navigation-button-hover-background-color);
+    @Calendar-Navigation-Button-Hover-Text-Color: var(--calendar-navigation-button-hover-text-color);
+
+
+//#endregion CALENDAR
+
+//#region PILLS
+
+    @Pill-Background-Color: var(--pill-background-color);
+    @Pill-Text-Color: var(--pill-text-color);
+    
+    @Pill-Selected-Background-Color: var(--pill-selected-background-color);
+    @Pill-Selected-Text-Color: var(--pill-selected-text-color);
+
+    @Pill-Error-Background-Color: var(--pill-error-background-color);
+    @Pill-Error-Text-Color: var(--pill-error-text-color);
+
+
+//#endregion PILLS
+
+//#region TOOLTIPS
+
+    //Normal
+    @Tooltip-Background-Color: var(--tooltip-background-color);
+    @Tooltip-Border-Color: var(--tooltip-border-color);
+    @Tooltip-Text-Color: var(--tooltip-text-color);
+
+    //Error
+    @Tooltip-Error-Background-Color: var(--tooltip-error-background-color);
+    @Tooltip-Error-Border-Color: var(--tooltip-error-border-color);
+    @Tooltip-Error-Text-Color: var(--tooltip-error-text-color);
+
+    //Misc
+    @Tooltip-Shadow: var(--tooltip-shadow);
+
+//#endregion TOOLTIPS
+
+//#region TREE ITEMS
+
+    @Tree-Item-Hover-Background-Color: var(--tree-item-hover-background-color);
+    @Tree-Item-Hover-Border-Color: var(--tree-item-hover-border-color);
+    @Tree-Item-Hover-Text-Color: var(--tree-item-hover-text-color);
+
+
+    @Tree-Item-Selected-Background-Color: var(--tree-item-selected-background-color);
+    @Tree-Item-Selected-Border-Color: var(--tree-item-selected-border-color);
+    @Tree-Item-Selected-Text-Color: var(--tree-item-selected-text-color);
+    
+
+     //Focus
+     @Tree-Item-Focus-Border-Color: var(--tree-item-focus-border-color);
+
+
+//#endregion TREE ITEMS
+
+//#region CHARTS
+
+    
+    @Chart-Background-Color: var(--chart-background-color);
+    @Chart-Border-Color: var(--chart-border-color);
+    
+    @Chart-Header-Background-Color: var(--chart-header-background-color);
+    @Chart-Title-Text-Color: var(--chart-title-text-color);
+
+    @Chart-Label-Text-Color: var(--chart-label-text-color);
+
+    @Chart-Series-0: var(--chart-series-0);
+    @Chart-Series-1: var(--chart-series-1);
+    @Chart-Series-2: var(--chart-series-2);
+    @Chart-Series-3: var(--chart-series-3);
+    @Chart-Series-4: var(--chart-series-4);
+    @Chart-Series-5: var(--chart-series-5);
+    @Chart-Series-6: var(--chart-series-6);
+    @Chart-Series-7: var(--chart-series-7);
+    @Chart-Series-8: var(--chart-series-8);
+    @Chart-Series-9: var(--chart-series-9);
+    @Chart-Series-10: var(--chart-series-10);
+    @Chart-Series-11: var(--chart-series-11);
+
+ 
+
+//#endregion CHARTS
+
+//#region BADGES
+
+@Badge-Error-Background-Color: var(--badge-error-background-color);
+@Badge-Warning-Background-Color: var(--badge-warning-background-color);
+
+//#endregion BADGES
+
+//#region SEARCH
+
+@Search-Highlight-Background-Color: var(--search-highlight-background-color);
+@Search-Highlight-Background-Color-1: var(--search-highlight-background-color-1);
+@Search-Highlight-Text-Color: var(--search-highlight-text-color);
+
+//#endregion SEARCH
+
+//#region LISTS
+
+@List-Background-Color: var(--list-background-color);
+@List-Border-Color: var(--list-border-color);
+
+//error
+@List-Error-Background-Color: var(--list-error-background-color);
+@List-Error-Border-Color: var(--list-error-border-color);
+@List-Error-Text-Color: var(--list-error-text-color);
+
+
+//readonly
+@List-ReadOnly-Background-Color: var(--list-readonly-background-color);
+@List-ReadOnly-Border-Color: var(--list-readonly-border-color);
+@List-ReadOnly-Text-Color: var(--list-readonly-text-color);
+
+//column headers
+@List-Column-Header-Background-Color: var(--list-column-header-background-color);
+@List-Column-Header-Text-Color: var(--list-column-header-text-color);
+@List-Column-Header-Border-Color: var(--list-column-header-border-color);
+@List-Column-Header-Divider-Color: var(--list-column-header-divider-color);
+@List-Column-Header-Focus-Border-Color: var(--list-column-header-focus-border-color);
+
+@List-Add-Row-Background-Color: var(--list-add-row-background-color);
+
+//List Item - Normal
+@List-Item-Background-Color: var(--list-item-background-color);
+@List-Item-Background-Color-Odd-Zebra: var(--list-item-background-color-odd-zebra);
+@List-Item-Background-Color-Even-Zebra: var(--list-item-background-color-even-zebra);
+@List-Item-Text-Color: var(--list-item-text-color);
+@List-Item-Description-Text-Color: var(--list-item-description-text-color);
+
+//list item  - hover
+@List-Item-Hover-Background-Color: var(--list-item-hover-background-color);
+@List-Item-Hover-Border-Color: var(--list-item-hover-border-color);
+@List-Item-Hover-Text-Color: var(--list-item-hover-text-color);
+
+//List Item - Focus
+@List-Item-Focus-Border-Color: var(--list-item-focus-border-color);
+
+//List Item - Error
+@List-Item-Error-Border-Color: var(--list-item-error-border-color);
+
+//List Item - Selected
+@List-Item-Selected-Border-Color: var(--list-item-selected-border-color);
+
+//list item  - selected
+@List-Item-Selected-Background-Color: var(--list-item-selected-background-color);
+@List-Item-Selected-Text-Color: var(--list-item-selected-text-color);
+
+//Action Button
+@List-Action-Button-Background-Color: var(--list-action-button-background-color);
+@List-Action-Button-Text-Color: var(--list-action-button-text-color);
+@List-Action-Button-Hover-Background-Color: var(--list-action-button-hover-background-color);
+@List-Action-Button-Hover-Text-Color: var(--list-action-button-hover-text-color);
+
+//Footer/Summary info
+@List-Footer-Inset-Shadow-Color: var(--list-footer-inset-shadow-color);
+@List-Summary-Background-Color: var(--list-summary-background-color);
+@List-Summary-Separator-Line-Color: var(--list-summary-separator-line-color);
+
+//#endregion LISTS
+
+//#region TABS - NORMAL
+
+@Tab-Background-Color: var(--tab-background-color);
+@Tab-Text-Color: var(--tab-text-color);
+
+
+
+@Tab-Focus-Border-Color: var(--tab-focus-border-color);
+
+@Tab-Hover-Background-Color: var(--tab-hover-background-color);
+@Tab-Hover-Text-Color: var(--tab-hover-text-color);
+
+@Tab-Disabled-Background-Color: var(--tab-disabled-background-color);
+@Tab-Disabled-Text-Color: var(--tab-disabled-text-color);
+
+@Tab-Selected-Background-Color: var(--tab-selected-background-color);
+@Tab-Selected-Text-Color: var(--tab-selected-text-color);
+
+@Main-Tab-Selected-Background-Color: var(--main-tab-selected-background-color);
+@Main-Tab-Selected-Text-Color: var(--main-tab-selected-text-color);
+
+
+@Tab-Body-Background-Color : var(--tab-body-background-color);
+
+
+//#endregion TABS - NORMAL
+
+//#region TABS - SEGMENTED
+
+@Segmented-Tab-Bar-Background-Color: var(--segmented-tab-bar-background-color);
+@Segmented-Tab-Bar-Border-Color: var(--segmented-tab-bar-border-color);
+
+@Segmented-Tab-Background-Color: var(--segmented-tab-background-color);
+@Segmented-Tab-Text-Color: var(--segmented-tab-text-color);
+
+@Segmented-Tab-Selected-Text-Color: var(--segmented-tab-selected-text-color);
+
+@Segmented-Tab-Hover-Background-Color: var(--segmented-tab-hover-background-color);
+@Segmented-Tab-Hover-Text-Color: var(--segmented-tab-hover-text-color);
+
+@Segmented-Tab-Disabled-Background-Color: var(--segmented-tab-disabled-background-color);
+@Segmented-Tab-Disabled-Text-Color: var(--segmented-tab-disabled-text-color);
+
+@Segmented-Tab-Selected-Background-Color: var(--segmented-tab-selected-background-color);
+@Segmented-Tab-Selected-Border-Color: var(--segmented-tab-selected-border-color);
+
+
+
+
+//#endregion TABS - SEGMENTED

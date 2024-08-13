@@ -1,0 +1,24 @@
+﻿/*Purpose: */
+
+
+/*OK button*/
+[id="00000000-0000-0000-0000-000000000000_6193e486-f013-7f89-6850-dae66e9143c1"]
+{
+	margin-right: -10px;
+}
+
+/*Serialization grid padding*/
+/* This table is located on the following View: com.K2.System.Security.View.SelectedUsers */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.Security.AddIdentities */
+[id="7f5a94af-5028-414f-3a5d-12e3d001e2a4_2c0efad5-609f-1a1f-3cb6-997e014017ab_Table"] .editor-cell,
+[id="34fd680c-e49f-3306-b367-987dabfc9d5d_e6d5d504-a180-2c61-da3e-928a428f7265_Table"] .editor-cell,
+[id="808c7e33-00cd-404f-82fd-d9e453d0a4db_2c0efad5-609f-1a1f-3cb6-997e014017ab_Table"] .editor-cell
+{
+    padding: 0px !important;
+}
+
+/*Form Background Colour*/
+html body.theme-entry
+{
+	background-color: #FFF !important;
+}

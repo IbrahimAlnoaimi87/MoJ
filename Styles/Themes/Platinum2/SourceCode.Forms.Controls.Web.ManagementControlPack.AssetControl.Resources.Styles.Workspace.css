@@ -1,0 +1,159 @@
+﻿/* This entire file seems to be redundant as I'm unable to locate the control IDs in the K2 DB */
+/* and additionally, the file is not included within the AssetControl.cs bundles, meaning that */
+/* nothing can call it in order to use it. */
+
+/* undo Management_Popup.css overflow */
+body > form > .runtime-content > .runtime-form
+{
+    overflow: hidden;
+}
+
+/* fluid height */
+html,
+html > body,
+html > body > form,
+html > body > form > .runtime-content,
+html > body > form > .runtime-content > .runtime-form
+{
+    height: 100% !important;
+}
+
+/* apply fluid height styling */
+.tab-box,
+.tab-box > .tab-box-body,
+.tab-box > .tab-box-body > .tab-box-body-m,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col > .view,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col > .view > .innerpanel,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col > .view > .innerpanel > .panel,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col > .view > .innerpanel > .panel > .panel-body,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col > .view > .innerpanel > .panel > .panel-body > .panel-body-m,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col > .view > .innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col > .view > .innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col > .view > .innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div,
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col > .view > .innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > [id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_5b2e87e0-bb55-5c50-6f85-2b595dbacdd9_Table"],
+.tab-box > .tab-box-body > .tab-box-body-m > .tab-box-body-m-c > .tab-box-body-wrapper > .scroll-wrapper > .formpanel > .form > .col > .view > .innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > [id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_5b2e87e0-bb55-5c50-6f85-2b595dbacdd9_Table"] > tbody
+{
+    height: 100% !important;
+}
+
+/* set breadcrumb styling */
+span[id="00000000-0000-0000-0000-000000000000_1be3709f-cecc-283a-9502-f2bfa2ac44ac"],
+span[id="00000000-0000-0000-0000-000000000000_b1c31f5d-2742-3bca-839d-af20498c80ba"]
+{
+    font-size: 1.5rem;
+}
+
+/* set generalized tr styling */
+[id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_5b2e87e0-bb55-5c50-6f85-2b595dbacdd9_Table"] > .editor-cell
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+    /* set 1st tr specific styling */
+    [id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_5b2e87e0-bb55-5c50-6f85-2b595dbacdd9_Table"] .editor-cell[row='1']
+    {
+        top: 0px;
+        bottom: 130px;
+    }
+
+        /* set 1st tr child specific styling */
+[id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_5b2e87e0-bb55-5c50-6f85-2b595dbacdd9_Table"] > .editor-cell[row='1'] > .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView,
+[id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_5b2e87e0-bb55-5c50-6f85-2b595dbacdd9_Table"] > .editor-cell[row='1'] > .SFC.SourceCode-Forms-Controls-Web-ControlPack-TreeView > .stylewrapper .tree-body
+{
+    height: 100% !important;
+}
+
+    /* set 2nd tr specific styling */
+[id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_5b2e87e0-bb55-5c50-6f85-2b595dbacdd9_Table"] > .editor-cell[row='2']
+{
+    bottom: 0px;
+}
+
+    /* set generalized tr child styling */
+    [id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_5b2e87e0-bb55-5c50-6f85-2b595dbacdd9_Table"] > .editor-cell
+    {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 0px !important;
+    }
+
+/* tab styling */
+div[id="c80424e6-47d2-45a1-9ac8-916e7287e534_tabbox"] > ul
+{
+    height: 40px !important;
+    padding-left: 8px !important;
+    border-bottom: 1px #e9e9e9 solid !important;
+}
+
+    div[id="c80424e6-47d2-45a1-9ac8-916e7287e534_tabbox"] > ul > li,
+    div[id="c80424e6-47d2-45a1-9ac8-916e7287e534_tabbox"] > ul > li > a.tab,
+    div[id="c80424e6-47d2-45a1-9ac8-916e7287e534_tabbox"] > ul > li > a.tab > span.tab-wrapper[title]
+    {
+        height: 100% !important;
+    }
+
+        /* tab text */
+        div[id="c80424e6-47d2-45a1-9ac8-916e7287e534_tabbox"] > ul > li > a.tab > span.tab-wrapper[title] > span.tab-text
+        {
+            color: #8e8c8f !important;
+            height: 40px !important;
+            border-bottom-style: none !important;
+            line-height: 40px !important;
+        }
+
+        /* selected tab text */
+        div[id="c80424e6-47d2-45a1-9ac8-916e7287e534_tabbox"] > ul > li > a.tab.selected > span.tab-wrapper[title] > span.tab-text
+        {
+            color: #0288d1 !important;
+            height: 38px !important;
+            border-bottom: 2px #0288d1 solid !important;
+            font-weight: bold !important;
+        }
+
+        /* disabled tab text */
+        div[id="c80424e6-47d2-45a1-9ac8-916e7287e534_tabbox"] > ul > li > a.tab.disabled > span.tab-wrapper[title] > span.tab-text
+        {
+            color: #c5c7cb !important;
+        }
+
+/* toolbar button icon orverrides */
+a[id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_fd2772d0-1d65-762e-5e43-9c1ba6bb16e3_ToolbarButton"] > .button-c > .button-icon
+{
+    background-image: url(Workspace/ArrowUp16.png) !important;
+}
+
+a[id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_a986c128-9505-bb4a-1b94-9c506f96ea43_ToolbarButton"] > .button-c > .button-icon
+{
+    background-image: url(Workspace/ArrowDown16.png) !important;
+}
+
+a[id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_80adcd50-988f-ffee-f305-e7c131c5b463_ToolbarButton"] > .button-c > .button-icon
+{
+    background-image: url(Workspace/ArrowLeft16.png) !important;
+}
+
+a[id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_9a704d3e-b4b7-51e6-f827-4a18ecf59ada_ToolbarButton"] > .button-c > .button-icon
+{
+    background-image: url(Workspace/ArrowRight16.png) !important;
+}
+
+a[id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_8dacfd71-b050-4819-8a0d-0dd543e5716b_ToolbarButton"] > .button-c > .button-icon
+{
+    background-image: url(Workspace/Add16.png) !important;
+}
+
+a[id="15202b5b-ec21-3f4d-e20c-4c2ed054310d_61afcca2-eee5-197b-d35c-b2265e754adf_ToolbarButton"] > .button-c > .button-icon
+{
+    background-image: url(Workspace/Remove16.png) !important;
+}

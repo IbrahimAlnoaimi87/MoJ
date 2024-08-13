@@ -1,0 +1,38 @@
+﻿.history-icon 
+{
+  background-image: url(./workspace/History20_White.png); 
+}
+
+.tasks-icon 
+{
+  background-image: url(./workspace/Tasks20_White.png); 
+}
+
+.apps-icon 
+{
+  background-image: url(./workspace/Apps20_White.png); 
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) 
+{
+  /* ^.theme-entry .... for desktop devices */
+  .history-icon 
+  {
+    background-image: url(./workspace/History20_White@2x.png); 
+
+  }
+
+  .tasks-icon 
+  {
+    background-image: url(./workspace/Tasks20_White@2x.png); 
+
+  }
+
+  .apps-icon 
+  {
+    background-image: url(./workspace/Apps20_White@2x.png); 
+
+  }
+
+ }

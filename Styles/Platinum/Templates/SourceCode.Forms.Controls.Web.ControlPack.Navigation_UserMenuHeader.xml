@@ -1,0 +1,17 @@
+<a class="PART-usermenu-header usermenu-header">
+	<span class="usermenu-section-container">
+		<span class="dropdown-container">
+			<span class="PART-userpicture-parent layout-cell {UserPictureHiddenMarker}">
+				<span class="usermenu-picture-container">
+					<span class="PART-usermenu-picture usermenu-picture"></span>
+				</span>
+			</span>
+			<span class="layout-cell-full-width">
+				<span class="PART-usermenu-username usermenu-username"></span>
+			</span>
+			<span class="layout-cell">
+				<span class="PART-dropdown-arrow dropdown-icon navigation-expand-collapse-sprite Expand"></span>
+			</span>
+		</span>
+	</span>
+</a>

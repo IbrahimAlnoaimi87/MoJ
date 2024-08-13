@@ -1,0 +1,40 @@
+/*#region FORM FIELDS*/
+
+.theme-entry .panel-body-wrapper > div > .wrapper
+{
+    display: table; /*BUG FIX: The rows/cells will not be full width otherwise - ie/ff*/
+    border-collapse: separate;
+}
+
+.theme-entry .dialog.id-hyperlink-config .panel-body-wrapper > div > .wrapper
+{
+    border-spacing: 2px;
+    /*allow necessary spacing to be added between hyperlink form field rows*/
+}
+
+.theme-entry .form-field
+{
+    display: table-row;
+}
+
+.theme-entry .form-field:first-child
+{
+    margin-top: 0; /* override base theme */
+}
+
+.theme-entry .form-field > label.form-field-label,
+html[dir=rtl] .theme-entry .form-field > label.form-field-label,
+.theme-entry .form-field > .form-field-element-wrapper,
+html[dir=rtl] .theme-entry .form-field > .form-field-element-wrapper
+{
+    display: table-cell;
+    float: none;
+    margin: 0;
+}
+
+.theme-entry .form-field > label.form-field-label
+{
+    margin: 0 0.2rem 0 0;
+}
+
+/*#endregion FORM FIELDS*/

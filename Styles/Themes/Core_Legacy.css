@@ -1,0 +1,639 @@
+body.theme-entry,
+.theme-entry div,
+.theme-entry span,
+.theme-entry td,
+.theme-entry li,
+.theme-entry p,
+.theme-entry textarea,
+.theme-entry input[type=text],
+.theme-entry input.text,
+.theme-entry select,
+.theme-entry option {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #343e41;
+  font-size: 11px;
+}
+.theme-entry h1,
+.theme-entry h2,
+.theme-entry h3,
+.theme-entry h4,
+.theme-entry label {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin-top: 0;
+}
+.theme-entry h1 {
+  font-size: 14px;
+}
+.theme-entry a.action-row:focus {
+  outline-color: #cccccc;
+}
+.theme-entry .wrapAround {
+  background-color: yellow;
+  font: inherit;
+  color: inherit;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .input-control .input-control-m-c,
+.theme-entry .input-control .input-control-content {
+  background-color: White;
+  border-color: #aaad9c;
+}
+.theme-entry .input-control.active .input-control-content {
+  border-color: #98dc28;
+}
+.theme-entry div.parameterPrompt {
+  background: white;
+}
+.theme-entry img.fileImage {
+  border-color: #adae9c;
+  background: white;
+}
+.theme-entry .ghost {
+  background-color: #86be58;
+}
+.theme-entry .divider.ui-draggable-dragging {
+  background-color: #86be58;
+}
+.theme-entry .theme-entry .button-dimensions-wrapper {
+  line-height: normal;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive {
+  color: white;
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+  background-image: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive.preview {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive:hover {
+  background-color: #c4374c;
+  border-color: #c4374c;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive:focus {
+  background-color: #b71c1c;
+  border-color: #6a0909;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive:hover:focus {
+  background-color: #c4374c;
+  border-color: #6a0909;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.preview,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus {
+  color: white;
+  background-image: none;
+  background-color: #bfc1c2;
+  border-color: #bfc1c2;
+  box-shadow: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.designtime.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.preview.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus.button-quiet,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.designtime.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled.preview.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus.button-quiet.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus.button-quiet.designtime {
+  color: #bfc1c2;
+  background-color: white;
+  border-color: #bfc1c2;
+  background-image: none;
+  box-shadow: none;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help {
+  color: white;
+  background: #7aa4e0;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7aa4e0 0%, #114095 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7aa4e0), color-stop(100%, #114095));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7aa4e0 0%, #114095 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7aa4e0 0%, #114095 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7aa4e0 0%, #114095 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7aa4e0 0%, #114095 100%);
+  /* W3C */
+  border-color: #4778c7;
+}
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover {
+  background: #021d4b;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #608fd2 0%, #021d4b 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #608fd2), color-stop(100%, #021d4b));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #608fd2 0%, #021d4b 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #608fd2 0%, #021d4b 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #608fd2 0%, #021d4b 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #608fd2 0%, #021d4b 100%);
+  /* W3C */
+
+}
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7aa4e0', endColorstr='#114095', GradientType=0);
+  /* IE6-9 */
+
+}
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#608fd2', endColorstr='#021d4b', GradientType=0);
+  /* IE6-9 */
+
+}
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:active,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:focus,
+.ie8 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:active,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:focus,
+.ie9 .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled:hover:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7aa4e0', endColorstr='#114095', GradientType=0);
+  /* IE6-9 */
+
+}
+.theme-entry a.toolbar-button.disabled,
+.theme-entry a.toolbar-button.disabled:hover,
+.theme-entry a.toolbar-button.disabled:focus,
+.theme-entry a.toolbar-button.disabled:active {
+  border-color: transparent;
+}
+.theme-entry .form {
+  /*876757 - Default form background color is set to white so that when the page color is set, it does not bleed through to the form color*/
+  background-color: white;
+}
+.theme-entry .input-control input[type=text],
+.theme-entry .input-control input[type=password] {
+  background-color: white;
+}
+.theme-entry .input-control a.input-control {
+  color: #343e41;
+  line-height: 1.2;
+}
+.theme-entry .input-control textarea {
+  background-color: white;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark {
+  color: #c5c5c5 !important;
+  font-family: Verdana, Arial, Helvetica, sans-serif !important;
+  font-style: italic !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.disabled {
+  color: #999999;
+}
+.theme-entry .input-control-watermark {
+  color: #c5c5c5 !important;
+  font-family: Verdana, Arial, Helvetica, sans-serif !important;
+  font-style: italic !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  line-height: 20px;
+}
+.theme-entry .input-control-watermark a.input-control,
+.theme-entry .input-control-watermark a.input-control span {
+  font-style: italic;
+  color: #c5c5c5;
+}
+.theme-entry .input-control.watermark a.input-control,
+.theme-entry .input-control.watermark a.input-control span {
+  font-style: italic;
+  color: #c5c5c5;
+}
+.theme-entry .input-control .input-control-wrapper {
+  min-height: 0px;
+  line-height: normal;
+}
+.theme-entry .slider_value_display.bottom:after {
+  border-color: white;
+  border-color: transparent transparent white white;
+}
+.theme-entry .slider_value_display.top:after {
+  border-color: white;
+  border-color: white white transparent transparent;
+}
+.theme-entry label.input-control.disabled .input-control-text,
+.theme-entry .preview label.input-control .input-control-text {
+  color: #999999;
+}
+.theme-entry .styling-outer-wrapper .input-control-m,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper input,
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper a {
+  background-color: inherit;
+}
+/*#region Form Styling */
+
+.theme-entry .input-control.select-box {
+  background: white;
+}
+.theme-entry .input-control-buttons {
+  background-color: white;
+}
+.theme-entry .input-control.select-box .input-control-buttons a {
+  border-color: #aaad9c;
+}
+.theme-entry .drop-menu .drop-menu-m {
+  border-color: white;
+}
+.theme-entry .drop-menu ul.drop-menu a {
+  line-height: 19px;
+  color: #343e41;
+}
+.theme-entry .token-input .token-input-editor-area {
+  background-color: white;
+}
+.theme-entry .token-input.active .token-input-editor-area {
+  border-color: #160005;
+}
+.theme-entry .drop-text.watermark {
+  font-style: italic;
+  color: #c5c5c5;
+}
+.theme-entry .panel-watermark {
+  color: #c5c5c5;
+}
+.theme-entry .drop-text.watermark:focus {
+  color: #343e41;
+  font-style: normal;
+}
+.theme-entry .drop-textbox .drop-item {
+  color: white;
+}
+.theme-entry .tree li a,
+.theme-entry .tree li span {
+  line-height: 16px;
+  color: black;
+}
+/*#endregion Form Styling */
+
+/*#region Dragging helper styling*/
+
+.theme-entry .tree li a input,
+.theme-entry .tree li span input {
+  border-color: white;
+  background: white;
+}
+.theme-entry .panel > .panel-body {
+  background-color: white;
+}
+.theme-entry .grid .grid-body-content {
+  background: white;
+  border-color: white;
+}
+.theme-entry .grid table.grid-content-table tr.even td,
+.theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row) td {
+  background-color: whitesmoke;
+}
+.theme-entry .grid.with-rownumbering .grid-content-table td:first-child,
+.theme-entry .grid-aggregation-content-table td:first-child {
+  background-color: #dcded8;
+}
+.theme-entry .grid table.grid-content-table td.empty-grid,
+.theme-entry .grid table.grid-content-table td.empty-grid *,
+.theme-entry .grid table.grid-content-table td.action-row {
+  color: #aaaaaa;
+}
+.theme-entry .grid table.grid-content-table td.action-row a.action-row {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+.theme-entry .grid table.grid-content-table td.action-row,
+.theme-entry .grid table.grid-content-table td.empty-grid {
+  background-color: inherit;
+}
+.theme-entry .grid-aggregation-content-m {
+  border-color: white;
+}
+.theme-entry .grid-aggregation-content-table {
+  background-color: white;
+}
+.theme-entry .grid.with-summary .grid-summary {
+  background-color: white;
+  border-color: #adae9c;
+}
+.theme-entry .grid-summary .grid-summary-item {
+  border-top-color: #adae9c;
+}
+.theme-entry .grid-summary .grid-summary-item-wrapper {
+  border-color: white;
+}
+.theme-entry .dialog.sub-view iframe.runtime-popup {
+  background-color: white;
+}
+.theme-entry .menu li:hover,
+.theme-entry .menu li.active {
+  background: white;
+}
+.theme-entry .menu li.disabled,
+.theme-entry .menu li.disabled:hover {
+  color: #aaaaaa;
+}
+.theme-entry .day.selected,
+.theme-entry .month.selected,
+.theme-entry .year.selected {
+  background-color: #e4efc3;
+  border-color: #98dc28;
+}
+.theme-entry .today-title {
+  color: inherit;
+}
+.theme-entry .today-title.disabled,
+.theme-entry .today-title.disabled:hover,
+.theme-entry .today-title.disabled:active {
+  color: inherit;
+  background-color: inherit;
+}
+.theme-entry .today-title.selected {
+  border-color: #98dc28;
+}
+.theme-entry .dayname,
+.theme-entry .day,
+.theme-entry .day:hover {
+  line-height: 17px;
+  color: inherit;
+}
+.theme-entry .month,
+.theme-entry .year,
+.theme-entry .month:hover,
+.theme-entry .year:hover {
+  line-height: 43px;
+  text-decoration: none;
+  color: inherit;
+}
+.theme-entry .day:hover,
+.theme-entry .month:hover,
+.theme-entry .year:hover,
+.theme-entry .today-title:hover {
+  text-decoration: none;
+}
+.theme-entry .tooltip {
+  background-color: #e3ecd2;
+}
+.theme-entry .tooltip.pointer-up .tooltip-pointer {
+  border-bottom-color: #6a9b12;
+}
+/*#region Modalizer Styling */
+
+.base0.modal-element.ajaxLoader/* View Level Modalizer & Spinner */ {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.theme-entry .expressions-watermark {
+  color: #c5c5c5;
+}
+.token-input-watermark {
+  font-style: italic;
+  color: #c5c5c5;
+  line-height: 19px;
+}
+/*#region Tokenbox Styling */
+
+.theme-entry .token-input .entity .entity-text {
+  background-color: #7bb625;
+  color: white;
+  line-height: 17px;
+}
+.theme-entry .token-input .text-node.empty {
+  line-height: 18px;
+}
+.theme-entry .token-input .active-caret.ie8 {
+  border-right-color: black;
+}
+.theme-entry .token-input-editor-area {
+  line-height: 18px;
+}
+/*#endregion Tokenbox Styling */
+
+.input-control-wrapper.token-input-editor-area {
+  background-color: White;
+}
+/*#region Column dragging*/
+
+/*#region Column dragging*/
+
+div.drag-column.ui-draggable.ui-draggable-dragging.hover,
+div.drag-column.ui-draggable.ui-draggable-dragging.hover:hover {
+  background-color: #dddddd;
+}
+/*#endregion Column dragging*/
+
+.toolbar span.SourceCode-Forms-Controls-Web-Label,
+.toolbar span.SourceCode-Forms-Controls-Web-DataLabel {
+  padding: 3px 5px;
+}
+.theme-entry .form-field label.form-field-label {
+  line-height: 20px;
+}
+.theme-entry .toolbar .form-field label.form-field-label {
+  line-height: 20px;
+}
+.theme-entry .form-field-content-label {
+  line-height: 20px;
+}
+/*#endregion Form Styling */
+
+/*#region Panel Styling */
+
+.theme-entry .panel-header-wrapper .panel-header-text {
+  line-height: 19px;
+  font-weight: bold;
+}
+/*#endregion Panel Styling */
+
+/*#region Grid Styling */
+
+.theme-entry .grid-header-wrapper .grid-header-text {
+  line-height: 19px;
+  font-weight: bold;
+}
+.theme-entry .grid .grid-column-header-text {
+  line-height: 19px;
+}
+.theme-entry div.grid-column-header-text.LabelWrap {
+  line-height: normal;
+}
+.theme-entry .grid-aggregation-header-text {
+  line-height: 20px;
+}
+/*#endregion Grid Styling */
+
+/*#region Popup Styling */
+
+.theme-entry .popup-header-text {
+  line-height: 22px;
+  font-weight: bold;
+}
+/*#endregion Popup Styling */
+
+/*#region Table Cell Styling */
+
+.theme-entry .editor-cell {
+  padding: 2px 3px 2px 2px;
+  /* padding right is not needed if control overlay is corrected on controls */
+
+}
+.theme-entry .editor-cell.empty {
+  padding: 0;
+}
+.theme-entry .editor-cell.toolbar {
+  padding: 0;
+}
+/* Design time only styling */
+
+#pgWizard .control-canvas .editor-cell {
+  padding: 3px;
+}
+#pgWizard .view-canvas .editor-cell {
+  padding: 2px;
+}
+/*#endregion Table Cell Styling */
+
+/*#region DropTextbox Styling */
+
+.theme-entry .drop-item,
+.theme-entry .drop-object,
+.theme-entry .drop-text {
+  font-size: 11px;
+}
+.theme-entry .tree li {
+  line-height: 18px;
+}
+.theme-entry .tree li a input,
+.theme-entry .tree li span input {
+  font-family: Verdana;
+  font-size: 11px;
+}
+.theme-entry .grid .grid-content-cell-wrapper .multiline-cell-icon {
+  line-height: 16px;
+}
+.theme-entry .menu li {
+  line-height: 100%;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+.theme-entry .menu li.seperator {
+  font-size: 1px;
+  line-height: 1px;
+}
+.theme-entry .menu li.seperator span {
+  font-size: 1px;
+  line-height: 1px;
+}
+.theme-entry .menu a.menu-item {
+  line-height: 16px;
+}
+.theme-entry a.tab {
+  text-decoration: none;
+  line-height: 20px;
+}
+.theme-entry a.tab:hover {
+  background-color: inherit;
+}
+.theme-entry .tab-box.with-header .tab-box-header-wrapper {
+  line-height: 19px;
+  font-weight: bold;
+}
+.theme-entry label.input-control .input-control-text {
+  line-height: 19px;
+}
+.theme-entry .input-control-buttons.twisty-button {
+  line-height: auto;
+}
+.theme-entry .input-control.select-box {
+  line-height: 1.2;
+}
+.theme-entry .input-control.select-box .input-control-buttons a.ellipsis > span span {
+  line-height: inherit;
+}
+.theme-entry .input-control-buttons a {
+  line-height: auto;
+}
+.theme-entry .input-control.select-box .input-control-buttons a {
+  text-decoration: none;
+  line-height: 18px;
+}
+#pgWizard .form-control {
+  border: 1px solid transparent;
+}
+.theme-entry span.SFC.SourceCode-Forms-Controls-Web-TextBox {
+  line-height: 1.2;
+  /*Golden Ratio for all supported browsers (IE8,9,10 & FF & Chrome) for default font size (8pt)*/
+
+}
+.no-border-box-support .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.no-border-box-support .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+.ie-document-mode-8 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.ie-document-mode-8 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark {
+  line-height: 1.2;
+}
+.theme-entry .input-control textarea {
+  line-height: 1.2;
+}
+/*Unsets the display changes made when toggling from Core to Core_legacy*/
+
+.theme-entry label.input-control.radio .input-control-img,
+.theme-entry label.input-control.checkbox .input-control-img {
+  display: unset;
+  width: 20px;
+  height: 20px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+/*Unsets the display changes made when toggling from Core to Core_legacy*/
+
+.theme-entry a.toolbar-button span.button-c span.button-icon {
+  width: 16px;
+  height: 16px;
+  float: none;
+  display: inline-block;
+}
+/*#region Style Aware Controls */
+
+.theme-entry .style-aware svg {
+  display: none;
+}
+/* Bring back checkbox img element now that svg is not being displayed */
+
+.theme-entry label.style-aware.input-control.radio .input-control-img,
+.theme-entry label.style-aware.input-control.checkbox .input-control-img {
+  display: unset;
+}
+/*#endregion Style Aware Controls */
+

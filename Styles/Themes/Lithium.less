@@ -1,0 +1,58 @@
+/* Theme: Lithium */
+/* Author: Lewis Garmston */
+/* Date: 20/02/2014 */
+
+/* Breaking Points
+	- 480 x 736 width/height - Phones
+	- 800 width - Phablets, Tablets (Touch devices)
+	- 800+ Desktop etc.
+ */
+
+//font-size, font-family, text color related styling are defined in the Core_Legacy.less
+@import url('Core_Legacy.less');
+
+@import url('Lithium/Theme.less');
+
+@import url('Lithium/Theme_Animations.less');
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    @import (multiple) url('Lithium/Theme_Images.css');
+    @import (multiple) url('Lithium/Theme_Images_Mobile.css');
+}
+
+/*Images@2x - hi-dpi*/
+/*this is for retina graphics, apple/samsung devices*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    @import (multiple) url('Lithium/Theme@2x.css');
+    @import (multiple) url('Lithium/Theme_Images@2x.css');
+    @import (multiple) url('Lithium/Theme_Images_Mobile@2x.css');
+}
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* Large devices, Desktop */
+@import url('Lithium/Theme_Desktop.less'); /*only screen and (min-width : 800px);*/
+
+/* Mobile (touch) devices, phones & tablets  - .mobile selector targets touch devices */
+@import url('Lithium/Theme_Touch.less'); 
+
+/* Extra Small Devices, Phones and Smart Phones */
+@media only screen and (max-device-width : 480px) and (orientation:portrait), only screen and (max-device-width : 736px) and (orientation:landscape)
+{
+    @import (multiple) url('Lithium/Theme_Phone.less');
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-device-width : 480px) and (orientation:portrait)
+{
+    @import (multiple) url('Lithium/Theme_Phone_Portrait.less');
+}
+
+@media only screen and (max-device-width : 736px) and (orientation:landscape)
+{
+    @import (multiple) url('Lithium/Theme_Phone_Landscape.less');
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */

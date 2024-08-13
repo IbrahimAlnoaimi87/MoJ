@@ -1,0 +1,547 @@
+﻿.view.workspace-historyList
+{
+	/* custom view styling to override fluid height styling.  Beware: importants everywhere */
+	/* Control Wide */
+	/* Close Button */
+	/* Search Bar */
+	/* Worklist Items*/
+	/* ScrollBar */
+	/* .SourceCode-Forms-Controls-Web-ControlPack-Worklist-Worklist-Worklist .WorkListItemTableSimple td.shadedCol {
+	padding-right: 0;
+}*/
+	/* Bottom Toolbar */
+	/* worklist table padding */
+}
+
+	.view.workspace-historyList /*> div table.workspace-historylist-table*/ .menu-header
+	{
+		padding: 0;
+	}
+
+	.view.workspace-historyList /*> div table.workspace-historylist-table*/ .menu-title
+	{
+		padding: 0 0 0 20px !important;
+	}
+
+	.view.workspace-historyList /*> div table.workspace-historylist-table*/ .menu-filter
+	{
+		padding: 10px 20px 0 0 !important;
+	}
+
+	.view.workspace-historyList /*> div table.workspace-historylist-table*/ .menu-search
+	{
+		padding: 10px 0 0 5px;
+	}
+
+	.view.workspace-historyList .input-control.select-box.dropdown-box .input-control-buttons,
+	.view.workspace-historyList /*> div table.workspace-historylist-table*/ .filter-border
+	{
+		border: none;
+		border-radius: 0;
+	}
+
+	.view.workspace-historyList .SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid .watermark
+	{
+		height: 3.5rem !important;
+		line-height: 3.5rem;
+		padding: 0 !important;
+		display: block;
+		font-style: italic;
+		font-size: 1.2rem;
+		font-family: 'Segoe UI Semibold', HelveticaNeue-Medium, Helvetica, sans-serif;
+		background-color: #302E31 !important;
+		margin: 2px 0 0 0 !important;
+		color: #aaa;
+		border: none !important;
+	}
+
+	.view.workspace-historyList .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark
+	{
+		background-image: url(worklist/Search/Search16_Sprite.png);
+		background-repeat: no-repeat;
+		background-size: 48px 96px;
+		background-position: 245px -13px;
+		color: #8e8c8f !important;
+		font-family: "Open-Sans", "Segoe UI", "Helvetica" !important;
+		font-size: 1.5rem !important;
+	}
+
+	.view.workspace-historyList > div table.workspace-historylist-table tr
+	{
+		height: auto !important;
+	}
+
+	.view.workspace-historyList > div table.workspace-historylist-table:nth-child(2)
+	{
+		padding: 0 10px 10px 10px;
+	}
+
+	.view.workspace-historyList > div table.workspace-historylist-table tr.workspace-historylist-searchrow
+	{
+		width: 100% !important;
+		height: auto !important;
+	}
+
+		.view.workspace-historyList > div table.workspace-historylist-table tr.workspace-historylist-searchrow td:first-child
+		{
+			display: table-cell;
+			padding-left: 20px;
+			height: auto !important;
+		}
+
+		.view.workspace-historyList > div table.workspace-historylist-table tr.workspace-historylist-searchrow td:nth-child(2)
+		{
+			display: none !important;
+		}
+
+	.view.workspace-historyList > div table.workspace-historylist-table tr.workspace-historylist-controlrow
+	{
+		height: 100% !important;
+	}
+
+		.view.workspace-historyList > div table.workspace-historylist-table tr.workspace-historylist-controlrow td
+		{
+			display: table-cell;
+		}
+
+	.view.workspace-historyList > div table.workspace-historylist-table tr.workspace-historylist-hiddenrow
+	{
+		display: none !important;
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist,
+	.view.workspace-historyList .SFC .stylewrapper
+	{
+		overflow: hidden;
+	}
+
+	.view.workspace-historyList .workspace-historylist-table table td.dropdown
+	{
+		width: 50%;
+		padding-right: 23px;
+		padding-top: 15px;
+	}
+
+	.view.workspace-historyList .grey-background
+	{
+		background-color: #302e31 !important;
+	}
+
+	.view.workspace-historyList .light-grey-background
+	{
+		background-color: #5A575B !important;
+	}
+
+	.view.workspace-historyList .lblHistoryTitle
+	{
+		font-family: "Open-Sans", "Segoe UI", "Helvetica" !important;
+		font-size: 1.8rem !important;
+		color: #ffffff !important;
+	}
+
+	.view.workspace-historyList .txtSearch
+	{
+		margin: 3px 14px 10px 16px;
+		width: 87%;
+		background-color: rgb(90, 87, 91);
+		border-bottom-color: rgba(0, 0, 0, 0);
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		border-bottom-style: solid;
+		border-bottom-width: 0px;
+		border-collapse: collapse;
+		border-image-outset: 0px;
+		border-image-repeat: stretch;
+		border-image-slice: 100%;
+		border-image-source: none;
+		border-image-width: 1;
+		border-left-color: rgba(0, 0, 0, 0);
+		border-left-style: solid;
+		border-left-width: 0px;
+		border-right-color: rgba(0, 0, 0, 0);
+		border-right-style: solid;
+		border-right-width: 0px;
+		border-top-color: rgba(0, 0, 0, 0);
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		border-top-style: solid;
+		border-top-width: 0px;
+		box-sizing: border-box;
+		color: rgb(142, 140, 143) !important;
+		cursor: text;
+		display: inline-block;
+		font-family: Open-Sans, 'Segoe UI', Helvetica !important;
+		font-size: 13px;
+		font-stretch: normal;
+		font-style: italic !important;
+		font-variant: normal;
+		font-weight: normal !important;
+		height: 22px;
+		letter-spacing: normal;
+		line-height: normal;
+		min-height: 17px;
+		padding-bottom: 1px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 0px;
+		position: relative;
+		text-align: start;
+		text-indent: 0px;
+		text-rendering: auto;
+		text-shadow: none;
+		text-transform: none;
+		vertical-align: middle;
+		/* width: 282px; */
+		word-spacing: 0px;
+		writing-mode: lr-tb !important;
+		-webkit-writing-mode: horizontal-tb !important;
+		zoom: 1;
+	}
+
+	.view.workspace-historyList .genericitem
+	{
+		background-color: #302e31 !important;
+	}
+
+		.view.workspace-historyList .genericitem.selected,
+		.view.workspace-historyList .genericitem.grgSelected /*.PART_GenericExpenseGridItemMainRow*/
+		{
+			background-color: #3E7390 !important;
+		}
+
+		.view.workspace-historyList .genericitem:focus
+		{
+			border: 1px solid #0288d1 !important;
+		}
+
+		.view.workspace-historyList .genericitem.evenRow.historyItem
+		{
+			background-color: #5A575B;
+		}
+
+	.view.workspace-historyList .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid .genericitem
+	{
+		border: 1px solid transparent;
+		margin: 1px 0 1px 0;
+	}
+
+		.view.workspace-historyList .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid .genericitem.dateGroupRow
+		{
+			background-color: transparent !important;
+			font-family: "Open-Sans", "Segoe UI", "Helvetica";
+			font-weight: bold;
+			color: #717171;
+		}
+
+			.view.workspace-historyList .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid .genericitem.dateGroupRow .PART_DescriptionDiv.description span
+			{
+				font-weight: bold;
+				color: #717171;
+			}
+
+	.view.workspace-historyList .PART_GenericExpenseGridItemMain.table
+	{
+		width: 100%;
+	}
+
+	.view.workspace-historyList div.PART_GenericExpenseGridItemMainRow.item-row.table-row > div.PropertiesMain.table-cell > div.PropertiesTitleProperty1Table.table > div > div.PART_TitleDiv.title.table-cell > span,
+	.view.workspace-historyList div.PART_GenericExpenseGridItemMainRow.item-row.table-row > div.PropertiesMain.table-cell > div.PropertiesTitleProperty1Table.table > div > div.PART_TitleDiv.title.table-cell
+	{
+		/*font-family: "Open-Sans Regular, Segoe UI Regular, Helvetica" !important;*/
+		font-size: 1.5rem !important;
+		color: #ffffff !important;
+	}
+
+	.view.workspace-historyList div.PART_GenericExpenseGridItemMainRow.item-row.table-row > div.PropertiesMain.table-cell > div.PropertiesTitleProperty1Table.table > div > div.PART_Property1Div.property1.table-cell > span,
+	.view.workspace-historyList div.PART_GenericExpenseGridItemMainRow.item-row.table-row > div.PropertiesMain.table-cell > div.PropertiesTitleProperty1Table.table > div > div.PART_Property1Div.property1.table-cell
+	{
+		/*font-family: "Segoe UI Semibold, HelveticaNeue-Medium, Helvetica, sans-serif" !important;*/ /*"Open-Sans Regular, Segoe UI Regular, Helvetica" !important;*/
+		font-size: 1.5rem !important;
+		color: #6594ae !important;
+	}
+
+	.view.workspace-historyList div.PART_GenericExpenseGridItemMainRow.item-row.table-row > div.PropertiesMain.table-cell > div.PropertiesDescriptionProperty2Table.table > div > div.PART_DescriptionDiv.description.table-cell > span,
+	.view.workspace-historyList div.PART_GenericExpenseGridItemMainRow.item-row.table-row > div.PropertiesMain.table-cell > div.PropertiesDescriptionProperty2Table.table > div > div.PART_DescriptionDiv.description.table-cell,
+	.view.workspace-historyList div.PART_GenericExpenseGridItemMainRow.item-row.table-row > div.PropertiesMain.table-cell > div.PropertiesDescriptionProperty2Table.table > div > div.PART_Property2Div.property2.table-cell > span,
+	.view.workspace-historyList div.PART_GenericExpenseGridItemMainRow.item-row.table-row > div.PropertiesMain.table-cell > div.PropertiesDescriptionProperty2Table.table > div > div.PART_Property2Div.property2.table-cell
+	{
+		/*font-family: "Open-Sans Regular, Segoe UI Regular, Helvetica" !important;*/
+		font-size: 1.3rem !important;
+		color: #adacad !important;
+	}
+
+
+
+	.view.workspace-historyList .SFC.SourceCode-Forms-Controls-Web-Button[name="CloseTaskList"]
+	{
+		background-image: url(worklist/CloseTaskList/CloseTaskList16_Sprite.png);
+		background-repeat: no-repeat;
+		background-size: 48px 96px;
+		width: 16px;
+		height: 16px;
+		/* overwrite styles */
+		min-width: 16px;
+		min-height: 16px;
+		padding: 0;
+		margin: 0;
+		outline: none;
+		border: none;
+		box-shadow: none;
+		/* Hide the text. */
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		background-position: -16px -16px;
+	}
+
+		.view.workspace-historyList .SFC.SourceCode-Forms-Controls-Web-Button[name="CloseTaskList"]:active,
+		.view.workspace-historyList .SFC.SourceCode-Forms-Controls-Web-Button[name="CloseTaskList"]:focus
+		{
+			/* Remove the blue border on focus */
+			-webkit-animation: none;
+			-moz-animation: none;
+			-o-animation: none;
+			animation: none;
+		}
+
+		.view.workspace-historyList .SFC.SourceCode-Forms-Controls-Web-Button[name="CloseTaskList"]:hover
+		{
+			background-position: -16px -64px;
+		}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.worklist-execute-search-icon
+	{
+		width: 0;
+	}
+
+	.view.workspace-historyList .searchBar .input-control input[type="text"]
+	{
+		padding-left: 5px;
+		color: #8e8c8f;
+		font-family: "Open-Sans", "Segoe UI", "Helvetica";
+		font-size: 1.5rem;
+		height: 24px;
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist > .searchBar > table
+	{
+		margin-right: 18px !important;
+		width: auto !important;
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .searchBar tr > td:first-child
+	{
+		display: none !important;
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn
+	{
+		background-image: url(worklist/Search/Search16_Sprite.png);
+		background-repeat: no-repeat;
+		background-size: 48px 96px;
+		display: block;
+		width: 16px;
+		height: 16px;
+		background-position: -16px -16px;
+		top: 3px;
+		left: -22px;
+	}
+
+		.view.workspace-historyList .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn:hover
+		{
+			background-position: -16px -64px;
+		}
+
+		.view.workspace-historyList .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn.hasText
+		{
+			background-image: url(worklist/ClearSearch/ClearSearch16_Sprite.png);
+			background-repeat: no-repeat;
+			background-size: 48px 96px;
+			display: block;
+			width: 16px;
+			height: 16px;
+			background-position: -16px -16px;
+			top: 3px;
+			left: -22px;
+		}
+
+			.view.workspace-historyList .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn.hasText:hover
+			{
+				background-position: -16px -64px;
+			}
+
+	.view.workspace-historyList ::-webkit-input-placeholder
+	{
+		opacity: 0.40;
+		font-style: italic;
+	}
+
+	.view.workspace-historyList :-moz-placeholder
+	{
+		/* Firefox 18- */
+		opacity: 0.40;
+		font-style: italic;
+	}
+
+	.view.workspace-historyList ::-moz-placeholder
+	{
+		/* Firefox 19+ */
+		opacity: 0.40;
+	}
+
+	.view.workspace-historyList :-ms-input-placeholder
+	{
+		opacity: 0.40;
+		font-style: italic;
+	}
+
+	.view.workspace-historyList div.WorkListDateGrouping
+	{
+		font-family: "Open-Sans", "Segoe UI", "Helvetica";
+		font-weight: bold;
+		font-size: 1.3rem;
+		color: #717171;
+		padding: 24px 0 10px 20px;
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .WorkListItemTable
+	{
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .WorklistTableOverdue,
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .WorklistTablePriority
+	{
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 20px;
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist td.WorklistTableOverdue,
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist td.WorklistTablePriority
+	{
+		width: 20px;
+	}
+
+	.view.workspace-historyList .ControlPack-Worklist .WorkListGridTableBody
+	{
+		overflow: hidden;
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .WorkListItemTableRowOne td > span,
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .WorkListItemTableRowTwo td > span
+	{
+		font-family: "Open-Sans", "Segoe UI", "Helvetica";
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .WorkListItemTableRowTwo td
+	{
+		padding-top: 3px;
+		padding-bottom: 3px;
+		font-size: 1.3rem;
+	}
+
+	.view.workspace-historyList .SourceCode-Forms-Controls-Web-ControlPack-Worklist-Worklist-Worklist .WorkListItemTableSimple td.shadedCol
+	{
+		padding: 3px 20px;
+	}
+
+	.view.workspace-historyList .SourceCode-Forms-Controls-Web-ControlPack-Worklist-Worklist-Worklist .SimpleLayoutCell
+	{
+		width: 100%;
+	}
+
+	.view.workspace-historyList .SourceCode-Forms-Controls-Web-ControlPack-Worklist-Worklist-Worklist .SimpleArrow
+	{
+		display: none !important;
+		/* overriding fluid-height display, we don't want the arrow visible */
+	}
+
+	.view.workspace-historyList .ControlPack-Worklist .nav-container
+	{
+		height: 60px;
+		background-color: #302e31;
+		box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+		position: relative;
+	}
+
+		.view.workspace-historyList .ControlPack-Worklist .nav-container .worklistToolbarHeaderTextWrapper,
+		.view.workspace-historyList .ControlPack-Worklist .nav-container .OOFInput,
+		.view.workspace-historyList .ControlPack-Worklist .nav-container .SearchInput,
+		.view.workspace-historyList .ControlPack-Worklist .nav-container .CheckboxInput,
+		.view.workspace-historyList .ControlPack-Worklist .nav-container .FilterInput
+		{
+			display: none !important;
+		}
+
+		.view.workspace-historyList .ControlPack-Worklist .nav-container .nav
+		{
+			background: none;
+			text-align: left;
+			height: 100%;
+		}
+
+		.view.workspace-historyList .ControlPack-Worklist .nav-container .worklistToolbarIconWrapper
+		{
+			float: inherit;
+			text-align: center;
+		}
+
+		.view.workspace-historyList .ControlPack-Worklist .nav-container input.RefreshInput
+		{
+			background: none;
+			background-image: url(worklist/Refresh/Refresh32_Sprite.png);
+			background-size: 72px 144px;
+			background-repeat: no-repeat;
+			width: 24px;
+			height: 24px;
+			background-position: -24px -24px;
+			outline: none;
+			border: none;
+			margin: 0;
+		}
+
+			.view.workspace-historyList .ControlPack-Worklist .nav-container input.RefreshInput:hover
+			{
+				background-position: -24px -96px;
+				background-color: transparent;
+				cursor: pointer;
+			}
+
+	.view.workspace-historyList .SourceCode-Forms-Controls-Web-ControlPack-Worklist-Worklist-Worklist .nav .worklistToolbarIconWrapper
+	{
+		padding-right: initial;
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .RefreshInputLoading
+	{
+		-moz-animation: none;
+		-o-animation: none;
+		-webkit-animation: none;
+		animation: none;
+	}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+	.view.workspace-historyList .SFC.SourceCode-Forms-Controls-Web-Button[name="CloseTaskList"]
+	{
+		background-image: url(worklist/CloseTaskList/CloseTaskList16_Sprite@2x.png);
+	}
+
+	.view.workspace-historyList .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn
+	{
+		background-image: url(worklist/Search/Search16_Sprite@2x.png);
+	}
+
+		.view.workspace-historyList .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn.hasText
+		{
+			background-image: url(worklist/ClearSearch/ClearSearch16_Sprite@2x.png);
+		}
+
+	.view.workspace-historyList .ControlPack-Worklist .nav-container input.RefreshInput
+	{
+		background-image: url(worklist/Refresh/Refresh32_Sprite@2x.png);
+	}
+}

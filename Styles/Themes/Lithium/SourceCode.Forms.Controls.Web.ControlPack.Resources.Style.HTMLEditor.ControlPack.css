@@ -1,0 +1,1445 @@
+﻿/*
+	region is categorized as below:
+
+	GENERAL - style for main UI, control itself and common parts
+	TOOLBAR - tool item bar section
+	CONTENT ROW - edit area section
+	EDIT MODE ROW - edit mode row where design/html/preview button is located
+	VALIDATION - control validation rule
+	OVERFLOW TOOL ITEM - overflow dropdown item section
+	SMARTFORM OVERRIDE - overrides SmartForms styling
+	TELERIK OVERRIDE - style that overrides Telerik inline or CSS
+	STYLE BUILDER - style builder related
+	RTL - style for right to left layout
+*/
+
+.placeholder{ }
+
+/* #region DESKTOP */
+
+
+/*#region GENERAL */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .stylewrapper
+{
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+	-ms-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+}
+
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor
+{
+	background-color: #dfdfdf;
+	-moz-border-radius: 0.4rem;
+	-webkit-border-radius: 0.4rem;
+	border-radius: 0.4rem;
+	width: 100% !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default.reWrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default.RadEditor .reContentCell,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default.reColorPicker,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default.reInsertTable,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default.reDropDownBody,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default.reCustomLinks a:hover
+{
+	border-color: transparent;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .stylewrapper.rich-text-stylewrapper
+{
+	overflow: hidden !important;
+	width: auto !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row
+{
+	background-color: #dfdfdf;
+}
+
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor table.control-table-row
+{
+	border-spacing: 1.2rem !important;
+	border-color: gray !important;
+}
+
+/*#endregion GENERAL */
+
+
+/* #region TOOLBAR */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie .reWrapper.RadEditor .reToolCell
+{
+	padding: 0px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor tr.rich-text-row-toolbar > td
+{
+	width: 100%;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .tool-disabled,
+.theme-entry .rich-text-dropdown-item-container .tool-disabled
+{
+	display: none !important; /* override Telerik */
+}
+
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper span.InsertTable:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reSplitButton.insert-table-link:hover .split_arrow:hover
+{
+	background-color: #fff;
+}
+
+/* specifically styled for InsertTable tool as it cannot have sub wrapper div like font color, bg color tool */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper .insert-table-link span.InsertTable
+{
+	margin-top: 0px;
+	margin-right: 0px;
+	padding: 0.4rem;
+	padding-top: 0.4rem;
+	background-position: -4px -51px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper .insert-table-link span.split_arrow
+{
+	left: 2.4rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a:focus
+{
+	border-color: #3cb0df;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.split_arrow,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper .sub-wrapper
+{
+	background-color: transparent;
+}
+
+/*hover style for icon buttons*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-dropdown-item-container .rich-text-overflow-item-arrow:hover
+{
+	background-color: #E1E1E1;
+}
+
+/*state - hover*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reTlbVertical .reTool_text:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reDropDownBody .reTlbVertical ul li a:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reTool_selected
+{
+	background-color: #e6e6e6; /*light Grey - Toolbar hover*/
+}
+
+/* tool item divider */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper .reGrip.grip_last
+{
+	border-color: #E1E1E1;
+}
+
+/* toolbar - button groups (ul) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar
+{
+	margin-top: 0rem !important; /*override - inline - js*/
+	margin-left: 0.5rem !important; /*override - inline - js*/
+	width: auto;
+	line-height: 3.3rem;
+	vertical-align: middle; /*CSS Vertical alignment method*/
+	font-family: monospace;
+	font-size: 0.0rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie .RadEditor .reToolbar
+{
+	line-height: 3.0rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbar,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbar li
+{
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li
+{
+	height: auto; /*override - inline - 26px in the rad control*/
+	vertical-align: middle; /*CSS Vertical alignment method*/
+	font-family: monospace;
+	font-size: 0.0rem;
+}
+
+/* tool item dropdown (font name, font family) designer, preview ONLY */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime .RadEditor .reToolbar li a.reDropdown,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.preview .RadEditor .reToolbar li a.reDropdown
+{
+	width: 10.0rem;
+}
+
+/* tool item node */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a
+{
+	margin: 0;
+	width: 2.4rem;
+	height: 2.4rem;
+	border-width: 0;
+	vertical-align: middle; /*line-height is bigger than these controls, so this will center items vertically in the toolbar*/
+}
+
+/* font name dropdown */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a[data-tool="FontName"]
+{
+	width: 13.4rem;
+}
+/* font name dropdown text */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a[data-tool="FontName"] .FontName
+{
+	width: 100%;
+}
+
+/* font size dropdown */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a[data-tool="RealFontSize"]
+{
+	width: 7.0rem;
+}
+/* font size dropdown text */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a[data-tool="RealFontSize"] .RealFontSize
+{
+	width: 100%;
+}
+
+/* background color when hovering tool item icons */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reTool:hover
+{
+	background-color: #f9f9f9;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor a[data-tool='ImageUploader']:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor a[data-tool='Hyperlink']:hover
+{
+	background-color: #f9f9f9;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor a[data-tool='ImageUploader'],
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor a[data-tool='Hyperlink']
+{
+	
+}
+
+.theme-entry #sfc-rt-image-uploader-url-popup .urlInput:focus,
+.theme-entry #sfc-rt-hyperlink-popup .linkText:focus,
+.theme-entry #sfc-rt-hyperlink-popup .linkHref:focus
+{
+	border: 1px solid #00abf0;
+}
+
+
+
+/* state - active/focus */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a:focus,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a.active
+{
+	border-style: dotted;
+	border-color: #00abf0;
+}
+
+/* state - selected/toggled */
+.theme-entry .RadEditor .reToolbar .reTool.reTool_selected,
+.theme-entry .RadEditor .reToolbar .reTool.reTool_selected:hover
+{
+	background-color: #ffffff; /*White - toolbar toggle on*/
+}
+
+.theme-entry .RadEditor .reToolbar .reTool.reTool_selected > span
+{
+	top: 50%;
+}
+
+/* lithium does not have tool group divider so this margin equalize the distance for each tool item */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbar li
+{
+	margin-right: 0.2rem !important; /* override Telerik css !important */
+	margin-left: 0.1rem !important; /* override Telerik css !important */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reWrapper ul.reToolbar
+{
+	margin-left: 0 !important; /* override Telerik css !important */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbar.hidden
+{
+	display: none;
+}
+
+/* tool item (font name, font size) design time only */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime .RadEditor .reToolbar a.reDropdown
+{
+	background-position: 90px 6px;
+	width: 10.0rem;
+	height: 2.4rem;
+}
+
+/* Font name dropdown */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar span.FontName
+{
+	height: 2.4rem;
+	line-height: 2.4rem;
+	font-size: 1.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-tool-arrow
+{
+	margin-top: 0.3rem !important; /* override -- base */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a.reSplitButton
+{
+	margin-right: 0.5rem;
+}
+
+
+/* Font size dropdown */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar span.RealFontSize
+{
+	height: 2.4rem;
+	line-height: 2.4rem;
+	width: 7.0rem !important; /*Override - Inline*/
+	font-size: 1.2rem;
+}
+
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar a.reDropdown.toolItemFontSizeLink,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar a.reDropdown.toolItemFontNameLink
+{
+	position: relative;
+	top: 0;
+	/*margin-top:1.2rem;*/ /*The items are centered vertically using line-height*/
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 2.4rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar a.reDropdown.toolItemFontNameLink
+{
+	width: 18.0rem;
+	background-position: 172px 6px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar a.reDropdown.toolItemFontSizeLink
+{
+	width: 6.5rem;
+	background-position: 5.5rem 0.6rem;
+	margin-left: 0.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reWrapper .reToolCell
+{
+	padding-top: 0rem; /*overrides*/
+	padding-bottom: 0rem; /*overrides*/
+	text-align: left;
+}
+
+/*don't show grips inside toolbar*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper .reGrip
+{
+	display: none !important;
+}
+
+/*Dropdown select boxes*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default .reDropdown,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default .reDropdown.reTool_disabled,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default .reDropdown.reTool_disabled:hover
+{
+	border: 0rem none;
+	-moz-border-radius: 0.2rem;
+	-ms-border-radius: 0.2rem;
+	-webkit-border-radius: 0.2rem;
+	border-radius: 0.2rem;
+	margin-top: 0.2rem; /*exception, as text drop downs are shorter than buttons*/
+	min-width: 3.6rem;
+	width: auto;
+}
+
+/*Dropdown select boxes - disabled */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default .reDropdown.reTool_disabled,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .Default .reDropdown.reTool_disabled:hover
+{
+	background-color: transparent;
+	opacity: 0.7;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor a.reTool
+{
+	display: inline-block;
+	width: 3rem;
+	height: 5.2rem;
+	margin: 0rem 0rem;
+	text-decoration: none !important;
+	cursor: default;
+	text-align: center;
+	border: dotted 2px transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor a.reTool span,
+html .form .row *:last-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reTool span
+{
+	float: none;
+	display: inline-block;
+	margin: 0;
+	margin-top: 0.4rem;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.split_arrow:hover,
+.theme-entry .RadEditor .reToolbarWrapper .sub-wrapper:hover
+{
+	background-color: #fff;
+}
+
+.theme-entry .rich-text-dropdown-item-container .rich-text-overflow-item-arrow
+{
+    height: 3.0rem;
+}
+
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color:hover,
+.theme-entry .rich-text-dropdown-item-container .rich-text-overflow-item-arrow:hover
+{
+    background-color: #E1E1E1;
+}
+
+.theme-entry .rich-text-overflow-item-icon-wrapper
+{
+	top: 0.6rem;
+}
+
+.theme-entry .rich-text-tool-item-name
+{
+	top: 0.6rem;
+}
+
+/* #endregion TOOLBAR */
+
+
+/* #region CONTENT ROW */
+
+/* text selection (override lithium core) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea::selection,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea *::selection
+{
+	background: #3cb0df;
+	color: #fff;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reContentArea
+{
+	padding: 0px; /* override - base */
+	margin-right: 0 !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reWrapper td.reContentCell
+{
+	border-width: 0rem;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 0rem;
+	padding-top: 0rem;
+	padding-right: 0 !important; /*override - inline */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime .reContentCell .richtext-watermark-overlay
+{
+	font-size: 1.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentCell .richtext-watermark-overlay,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentArea.editable-area
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentCell
+{
+	top: 0rem;
+	bottom: 0rem;
+	left: 0.5rem;
+	right: 0.5rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentCell iframe
+{
+	position: absolute !important; /* override -- inline */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100% !important /* override -- inline */;
+	width: 100% !important /* override -- inline */;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime .RadEditor.reWrapper td.reContentCell
+{
+	-moz-box-shadow: inset 0 0 1px 1px #e6e6e6;
+	-webkit-box-shadow: inset 0 0 1px 1px #e6e6e6;
+	box-shadow: inset 0 0 1px 1px #e6e6e6; /* mimic border at design time*/
+}
+
+/*main cell contents*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor td.reContentCell > textarea,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor td.reContentCell > .editable-area,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor td.reContentCell > iframe
+{
+	padding-top: 0.1rem;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor td.reContentCell > .editable-area
+{
+	border-color: #e6e6e6;
+	border-style: solid;
+	border-width: 0.1rem; /* border all round for all editable configurations */
+	/*WI 499801 - Rich text control adds width incorrectly to inline style only on Safari/IOS/MAC.  Override width but remove this entry when the JS has been fixed.*/
+	width: 100% !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.is-html-mode td.reContentCell iframe
+{
+	border: 0.1rem solid #e6e6e6;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolCell
+{
+	height: 3rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.toolbar-showing .RadEditor .reToolbarWrapper
+{
+	display: block;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+	padding-left: 0.3rem;
+	background-color: #dfdfdf;
+	height: 3.4rem !important; /* override -- inline from Telerik */
+	-moz-border-radius: 0.2rem 0.2rem 0rem 0rem;
+	-webkit-border-radius: 0.2rem 0.2rem 0rem 0rem;
+	border-radius: 0.2rem 0.2rem 0rem 0rem;
+	border: 0rem solid #000000;
+}
+
+/* #endregion CONTENT ROW */
+
+
+/* #region EDIT MODE ROW */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor tr.rich-text-row-edit-mode > td
+{
+	height: 3.0rem !important; /*override js set values*/
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor td.emptyMode
+{
+	display: none;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModes a
+{
+	margin-left: 0rem !important;
+}
+
+/* modes toolbar container table */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolZone table
+{
+	background-color: #dfdfdf;
+}
+
+/* edit mode area */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModes ul li a:hover
+{
+	background-color: #FFFFFF;
+}
+/* selected edit mode highlighted */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_selected
+{
+	background-color: #FFFFFF;
+	margin-left: 0rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModesCell
+{
+	width: 100%;
+	height: 3.0rem;
+	background-color: #dfdfdf;
+	padding-left: 0px;
+}
+
+/* text node for edit modes */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModes li > a > span.reMode_text
+{
+	color: #7f7f7f; /*for text node*/
+	line-height: 2.4rem;
+	height: 100%;
+	width: auto;
+	padding-top: 0.3rem;
+	vertical-align: middle;
+	font-size: 1.2rem;
+}
+
+.msie .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModes li > a > span.reMode_text,
+.mozilla .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModes li > a > span.reMode_text
+{
+	padding-top: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_selected.reMode_hover span,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_hover span
+{
+	color: #343e41;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reMode_selected.reMode_hover:hover
+{
+	background-color: transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reWrapper .reEditorModes
+{
+	margin: 0;
+	height: 3.0rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModes ul li a
+{
+	height: 3.0rem;
+	line-height: 3.0rem;
+	width: auto;
+	margin-left: 0.3rem;
+	margin-top: 0;
+	padding-left: 1.0rem;
+	padding-right: 1.0rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModes ul li a.reMode_selected
+{
+	background-color: #f7f7f7;
+}
+
+/*icons*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_design_icon,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_html_icon,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_preview_icon
+{
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 0;
+}
+
+/* #endregion EDIT MODE ROW */
+
+
+/* #region VALIDATION */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentCell.invalid,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentCell.invalid .html-mode-value-holder
+{
+	background-color: #fff3f4;
+	-moz-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	-o-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	-webkit-animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	animation: field_validation_pulse linear infinite 2s alternate-reverse;
+	border: 1px solid rgba(178,30,40,0.4);
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentCell.invalid .reContentArea,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reContentCell.invalid .html-mode-value-holder
+{
+	border: 1px solid rgba(178, 30, 40, 0.4) !important; /* override -- base */
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* #endregion VALIDATION */
+
+
+/* #region OVERFLOW TOOL ITEM */
+
+.rich-text-overflow-tool-item-position-base:hover
+{
+	background-color: #E1E1E1;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-overflow-dropdown-wrapper
+{
+	position: absolute;
+	top: 0.6rem;
+	right: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.ie .RadEditor .rich-text-overflow-dropdown-icon-container,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .rich-text-overflow-dropdown-icon-container
+{
+	height: 2.4rem;
+	width: 2.4rem;
+	margin-top: 0rem;
+	border: 1px solid transparent;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-overflow-dropdown-icon-container.richtext-element-clicked
+{
+	border-style: dotted !important; /*override - webresource - bug*/
+	border-color: #00abf0 !important; /*override - webresource - bug*/
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .rich-text-overflow-dropdown-icon
+{
+	width: 2.4rem;
+	height: 2.4rem;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-left,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-center,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-right,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-ordered-list,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-unordered-list,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-outdent,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-indent,
+.theme-entry .rich-text-dropdown-item-container .rich-text-overflow-item-back-color,
+.theme-entry .rich-text-dropdown-item-container .rich-text-overflow-item-fore-color,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-insert-paragraph
+{
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-bold,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-italic,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-underline,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-font-name,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-font-size,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-left,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-center,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-right,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-ordered-list,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-unordered-list,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-outdent
+{
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+/*overflow popup menu - list item height*/
+.theme-entry .rich-text-dropdown-item-container .rich-text-tool-item-wrapper,
+.theme-entry .rich-text-dropdown-item-container .rich-text-overflow-tool-item-position-base,
+.theme-entry .rich-text-tool-item-name
+{
+	height: 3.0rem;
+}
+
+/* #endregion OVERFLOW TOOL ITEM */
+
+
+/* #region SMARTFORM OVERRIDE */
+
+.theme-entry .form .row *:last-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor,
+.form .row *:first-child > * .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor
+{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* #endregion SMARTFORM OVERRIDE */
+
+
+/* #region TELERIK OVERRIDE */
+.theme-entry .reColorPicker
+{
+	-ms-box-shadow: 0px -1px 15px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px -1px 15px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0px -1px 15px rgba(0,0,0,0.4);
+	box-shadow: 0px -1px 15px rgba(0,0,0,0.4);
+}
+
+.theme-entry .reColorPicker table td
+{
+	text-align: center;
+}
+
+.theme-entry .reColorPicker table div
+{
+	width: 2.1rem;
+	height: 2.1rem;
+	line-height: 1.1rem;
+	font-size: 0.1rem;
+	margin: 0.2rem;
+	display: inline-block;
+}
+
+/* #endregion TELERIK OVERRIDE */
+
+
+/* #region STYLE BUILDER */
+.theme-entry #StyleBuilderPreviewPanelContent .RadEditor .reContentCell
+{
+	height: 9.3rem !important; /* override -- base */
+}
+
+/* style builder */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.style-builder-content
+{
+    background-color: #CACCBE;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.style-builder-content .stylewrapper
+{
+    box-shadow: none;
+}
+
+.msie .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.style-builder-content .rt-row-content.control-table-row
+{
+    top: 3.5rem;
+}
+
+/* conditional format builder */
+.theme-entry .condtional-format-preview .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor
+{
+	height: 16.0rem !important; /* override -- inline */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content .rich-text-overflow-dropdown-wrapper
+{
+    top: 0.3rem;
+}
+
+#conditionalFormattingGrid .theme-entry .conditional-style-preview
+{
+    background-color: #dfdfdf;
+}
+
+.theme-entry .condtional-format-preview .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row.rt-row-mode
+{
+    left: 0.4rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.conditional-style-builder-content
+{
+    box-shadow: none;
+}
+
+/* #endregion STYLE BUILDER */
+
+
+/* #region RTL */
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_design_icon
+{
+	background-position: -156px -16px; /* override base css */
+}
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_html_icon
+{
+	background-position: -156px -64px; /* override base css */
+}
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_preview_icon
+{
+	background-position: -108px -160px; /* override base css */
+}
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a[data-tool="RealFontSize"]
+{
+	text-align: right;
+}
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar li a[data-tool="FontName"]
+{
+	width: 17rem;
+	text-align: right;
+	padding-right: 0.5rem;
+}
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor.reRtl .reEditorModes li a span
+{
+	padding: 0.7rem 0 0 1rem; /* override base RTL */
+}
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .rich-text-overflow-dropdown-icon-container
+{
+	padding-top: 0.5rem;
+}
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-overflow-dropdown-wrapper
+{
+	position: static; /* override non-RTL absolute position */
+}
+
+/* #endregion RTL */
+
+/* #region custom tool */
+.theme-entry #sfc-rt-custom-tool-popup.tool-image-upload
+{
+	/* override popupManager inline height */
+	height: 155px !important;
+}
+
+.theme-entry #sfc-rt-custom-tool-popup.tool-hyperlink
+{
+	/* override popupManager inline height */
+	height: 245px !important;
+}
+
+/* #endregion custom tool */
+
+
+/* #endregion DESKTOP */
+
+
+
+/* #region TOUCH */
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor 
+{
+	/* override 300px defined for Desktop */
+	min-width: 0;
+}
+
+/* hide the overflow dropdown on mobile device as mouse oriented event handling would break */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-overflow-dropdown-wrapper
+{
+	display: none;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.BackColor,
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color,
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.ForeColor,
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-fore-color
+{
+	height: 1.4rem;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row.rt-row-mode
+{
+    bottom: 0.4rem;
+}
+
+/* content area in HTML mode */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor td.reContentCell > textarea
+{
+	font-size: 2rem !important; /* override - inline from Telerik */
+}
+
+/* font family dropdown text */
+.mobile .theme-entry .reDropDownBody td > span
+{
+	font-size: 1.5rem !important; /* override - inline from Telerik */
+	padding-left: 0.3rem;
+}
+
+/* #endregion TOUCH */
+
+/*Theme@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+	/* #region IMAGE DESKTOP */
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-font-name,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-font-size,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertTable,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-insert-table,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Print,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-print,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertParagraph,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-insert-paragraph,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.BackColor,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.ForeColor,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-fore-color,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Indent,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-indent,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Outdent,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-outdent,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertUnorderedList,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-unordered-list,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertOrderedList,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-ordered-list,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyCenter,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-center,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyRight,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-right,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyLeft,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-left,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Underline,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-underline,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Italic,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-italic,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Bold,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-bold
+	{
+		background-image: url(RuntimeTheme/richTextToolItemSprite_Dark16.png);
+		width: 16px;
+		height: 16px;
+		background-size: auto;
+		background-repeat: no-repeat;
+		display: inline-block;
+	}
+
+	/* edit mode row */
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_design_icon,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_html_icon,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_preview_icon
+	{
+		background-image: url(RuntimeTheme/richTextToolItemSprite_Dark16.png);
+		width: 16px;
+		height: 16px;
+	}
+
+	/* tool items */
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Bold,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-bold,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-bold
+	{
+		background-position: -8px -8px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Italic,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-italic,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-italic
+	{
+		background-position: -32px -80px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Underline,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-underline,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-underline
+	{
+		background-position: -32px -248px;
+	}
+
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-font-name,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-fontname
+	{
+		background-position: -8px -248px;
+	}
+
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-font-size,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-fontsize
+	{
+		background-position: -32px -8px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyLeft,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-left,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-leftalign
+	{
+		background-position: -32px -104px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyCenter,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-center,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-centrealign
+	{
+		background-position: -8px -80px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyRight,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-right,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-rightalign
+	{
+		background-position: -32px -224px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertOrderedList,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-ordered-list,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-numberlist
+	{
+		background-position: -32px -128px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertUnorderedList,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-unordered-list,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-bulletlist
+	{
+		background-position: -8px -32px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Outdent,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-outdent,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-decreaseindent
+	{
+		background-position: -8px -128px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Indent,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-indent,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-increaseindent
+	{
+		background-position: -32px -56px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.ForeColor,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-fore-color,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-fontcolour
+	{
+		background-position: -8px -224px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.BackColor,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-highlighttext
+	{
+		background-position: -32px -32px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertParagraph,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-insert-paragraph,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-paragraph
+	{
+		background-position: -32px -152px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertTable,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-insert-table,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-inserttable
+	{
+		background-position: -8px -56px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Print,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-print,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-print
+	{
+		background-position: -32px -200px;
+	}
+
+	/* edit mode row */
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_design_icon
+	{
+		background-position: -8px -152px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_html_icon
+	{
+		background-position: -8px -104px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_preview_icon
+	{
+		background-position: -32px -176px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .rich-text-overflow-dropdown-icon
+	{
+		background-image: url(RuntimeTheme/DropdownArrow16.png);
+		background-position: 0 0;
+		width: 16px;
+		height: 16px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar a.reDropdown.toolItemFontSizeLink,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar a.reDropdown.toolItemFontNameLink,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime .RadEditor .reToolbar a.reDropdown
+	{
+		background-image: url(RuntimeTheme/DropdownArrow16.png);
+	}
+
+	/* Image uploader tool */
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper .imageUploader
+	{
+		
+	}
+	
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reToolbarWrapper .hyperlink
+	{
+		
+	}
+	/* #endregion IMAGE DESKTOP */
+	
+
+
+	/* #region IMAGE MOBILE */
+
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .rich-text-overflow-dropdown-icon
+	{
+		background-image: url(RuntimeTheme/DropdownArrow20.png);
+		background-position: 0px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar a.reDropdown.toolItemFontSizeLink,
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar a.reDropdown.toolItemFontNameLink,
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime .RadEditor .reToolbar a.reDropdown
+	{
+		background-image: url(RuntimeTheme/DropdownArrow20.png);
+	}
+
+	/* #endregion IMAGE MOBILE */
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+	/* #region IMAGE DESKTOP */
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-font-name,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-font-size,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertTable,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-insert-table,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Print,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-print,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertParagraph,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-insert-paragraph,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.BackColor,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.ForeColor,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-fore-color,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Indent,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-indent,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Outdent,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-outdent,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertUnorderedList,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-unordered-list,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertOrderedList,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-ordered-list,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyCenter,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-center,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyRight,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-right,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyLeft,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-left,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Underline,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-underline,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Italic,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-italic,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Bold,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-bold
+	{
+		background-image: url(RuntimeTheme/richTextToolItemSprite_Dark16@2x.png) !important; /* override Theme_image_mobile */
+		background-size: auto !important; /* override Theme_image_mobile */
+		width: 16px;
+		height: 16px;
+	}
+
+	/* tool items */
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Bold,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-bold,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-bold
+	{
+		background-position: -8px -8px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Italic,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-italic,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-italic
+	{
+		background-position: -32px -80px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Underline,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-underline,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-underline
+	{
+		background-position: -32px -248px;
+	}
+
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-font-name,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-fontname
+	{
+		background-position: -8px -248px;
+	}
+
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-font-size,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-fontsize
+	{
+		background-position: -32px -8px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyLeft,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-left,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-leftalign
+	{
+		background-position: -32px -104px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyCenter,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-center,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-centrealign
+	{
+		background-position: -8px -80px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.JustifyRight,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-justify-right,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-rightalign
+	{
+		background-position: -32px -224px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertOrderedList,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-ordered-list,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-numberlist
+	{
+		background-position: -32px -128px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertUnorderedList,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-unordered-list,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-bulletlist
+	{
+		background-position: -8px -32px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Outdent,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-outdent,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-decreaseindent
+	{
+		background-position: -8px -128px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Indent,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-indent,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-increaseindent
+	{
+		background-position: -32px -56px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.ForeColor,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-fore-color,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-fontcolour
+	{
+		background-position: -8px -224px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.BackColor,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-highlighttext
+	{
+		background-position: -32px -32px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertParagraph,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-insert-paragraph,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-paragraph
+	{
+		background-position: -32px -152px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.InsertTable,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-insert-table,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-inserttable
+	{
+		background-position: -8px -56px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbarWrapper span.Print,
+	.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-print,
+	.theme-entry .icon.icon-set-richtexttool.icon-size16.ic-print
+	{
+		background-position: -32px -200px;
+	}
+
+	/* edit mode row */
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_design_icon
+	{
+		background-position: -8px -152px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_html_icon
+	{
+		background-position: -8px -104px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_preview_icon
+	{
+		background-position: -32px -176px;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .rich-text-overflow-dropdown-icon
+	{
+		background-image: url(RuntimeTheme/DropdownArrow16@2x.png);
+		-moz-background-size: 16px;
+		background-size: 16px;
+		background-position: center;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_design_icon,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_html_icon,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModesCell .reMode_preview_icon
+	{
+		background-image: url(RuntimeTheme/richTextToolItemSprite_Dark16@2x.png);
+		background-size: auto;
+	}
+
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar a.reDropdown.toolItemFontSizeLink,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reToolbar a.reDropdown.toolItemFontNameLink,
+	.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.designtime .RadEditor .reToolbar a.reDropdown
+	{
+		background-image: url(RuntimeTheme/DropdownArrow16@2x.png);
+		-moz-background-size: 16px;
+		background-size: 16px;
+	}
+
+	/* #endregion IMAGE DESKTOP */
+
+	/* #region IMAGE MOBILE */
+	/* #endregion IMAGE MOBILE */
+
+}
+
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+	/* edit mode row button text */
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModes li > a > span.reMode_text
+	{
+		padding-top: 0.5rem;
+		margin-left: 0.6rem;
+		margin-right: 0.5rem;
+	}
+
+	/* overflow dropodown icon */
+	.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .rich-text-overflow-dropdown-icon
+	{
+		width: 24px;
+		height: 24px;
+		background-position: center;
+	}
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */

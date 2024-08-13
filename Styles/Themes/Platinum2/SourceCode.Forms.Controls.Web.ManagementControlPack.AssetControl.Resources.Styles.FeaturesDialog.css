@@ -1,0 +1,17 @@
+﻿/* #region FLUID HEIGHT */
+
+html.management.management-features-content,
+html.management.management-features-content > body,
+html.management.management-features-content > body > form,
+html.management.management-features-content > body > form > .runtime-content,
+html.management.management-features-content > body > form > .runtime-content > .runtime-form,
+html.management.management-features-content > body > form > .runtime-content > .runtime-form > .form,
+html.management.management-features-content > body > form > .runtime-content > .runtime-form > .form > .row,
+html.management.management-features-content > body > form > .runtime-content > .runtime-form > .form > .row > .formcontrol,
+html.management.management-features-content > body > form > .runtime-content > .runtime-form > .form > .row > .formcontrol > .innerpanel,
+html.management.management-features-content > body > form > .runtime-content > .runtime-form > .form > .row > .formcontrol > .innerpanel > .SFC.SourceCode-Forms-Controls-Web-ControlPack-StackedContent
+{
+    height: 100% !important; /* Force fluid height */
+}
+
+/* #endregion */

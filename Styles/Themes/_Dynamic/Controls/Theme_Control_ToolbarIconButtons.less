@@ -1,0 +1,177 @@
+
+.theme-entry a.toolbar-button span.button-icon
+{
+    left: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/*used by worklist control, and others*/
+/* Lewis & Nazz unable to verify where these toolbar-button classes are used 2020/10 */
+.theme-entry .grid-header a.toolbar-button,
+.theme-entry .panel-header a.toolbar-button
+{
+    border-style: dotted;
+    border-width: 1px;
+    border-color: @View-Header-Button-Border-Color;
+    -moz-background-size: 16px 16px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+
+    border-radius: @Button-Rounding;
+    overflow:hidden;
+
+    &:hover{
+        background-color: @View-Header-Button-Hover-Background-Color;
+    }
+
+    //toggle style
+    &.selected, 
+    &.selected:hover{
+        background-color: @View-Header-Button-ToggleOn-Background-Color;
+    }
+
+    //Async/animated button style
+    &.loading, 
+    &.loading:hover
+    {
+        background-color: transparent;
+        border-color: transparent; /*make sure the border or background don't spin with css animation*/
+    }
+}
+
+/*region STYLE AWARE SVG ICONS */
+.theme-entry a.toolbar-button {
+    svg .toolbar-btn {
+        display: none;
+    }
+
+    &.disabled svg {
+        opacity: 0.5;
+    }
+    /**region hide/show of SVG Icons*/
+    &.add {
+        svg .toolbar-btn.add {
+            display: block;
+        }
+    }
+
+    &.checkin {
+        svg .toolbar-btn.checkin {
+            display: block;
+        }
+    }
+
+    &.checkout {
+        svg .toolbar-btn.checkout {
+            display: block;
+        }
+    }
+
+    &.delete {
+        svg .toolbar-btn.delete {
+            display: block;
+        }
+    }
+
+    &.delete-all {
+        svg .toolbar-btn.delete-all {
+            display: block;
+        }
+    }
+
+    &.edit {
+        svg .toolbar-btn.edit {
+            display: block;
+        }
+    }
+
+    &.exceldocument {
+        svg .toolbar-btn.excel-doc {
+            display: block;
+        }
+    }
+
+    &.filter {
+        svg .toolbar-btn.filter {
+            display: block;
+        }
+    }
+
+    &.generic {
+        svg .toolbar-btn.generic {
+            display: block;
+        }
+    }
+
+    &.load {
+        svg .toolbar-btn.load {
+            display: block;
+        }
+    }
+
+    &.pdfdocument {
+        svg .toolbar-btn.pdf-doc {
+            display: block;
+        }
+    }
+
+    &.refresh {
+        svg .toolbar-btn.refresh {
+            display: block;
+        }
+    }
+
+    &.save {
+        svg .toolbar-btn.save {
+            display: block;
+        }
+    }
+
+    &.undocheckout {
+        svg .toolbar-btn.undo-checkout {
+            display: block;
+        }
+    }
+
+    &.configure-filter {
+        svg .toolbar-btn.configure-filter {
+            display: block;
+        }
+    }
+
+    &.setasdefault {
+        svg .toolbar-btn.setasdefault {
+            display: block;
+        }
+    }
+    /**endregion hide/show of SVG Icons*/
+
+    svg {
+        vertical-align: middle;
+
+        .icon-highlight-color {
+            fill: var(--toolbar-button-icon-highlight-color);
+        }
+
+        .icon-destructive-color {
+            fill: var(--toolbar-button-icon-destructive-color);
+        }
+
+        .icon-base-secondary-color {
+            fill: var(--toolbar-button-icon-base-secondary-color);
+        }
+
+        .icon-base-color {
+            fill: var(--toolbar-button-icon-base-color);
+        }
+    }
+}
+/*endregion STYLE AWARE SVG ICONS */
+
+

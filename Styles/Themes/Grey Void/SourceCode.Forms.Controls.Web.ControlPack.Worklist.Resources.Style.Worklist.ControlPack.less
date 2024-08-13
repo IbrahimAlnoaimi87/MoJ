@@ -1,0 +1,4162 @@
+@import (multiple) url("Theme_Variables.less");
+
+/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.worklist-control > a,
+    .theme-entry .tree li.worklist-control > span,
+    .theme-entry .tree li.worklist-control.children.open > a,
+    .theme-entry .tree li.worklist-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.WorkList/Images/WorklistControl16.png');
+    }
+
+    .theme-entry .tree li.worklist-control > a:hover,
+    .theme-entry .tree li.worklist-control > span:hover,
+    .theme-entry .tree li.worklist-control.selected > a,
+    .theme-entry .tree li.worklist-control.selected > span,
+    .theme-entry .tree li.worklist-control > a:focus,
+    .theme-entry .tree li.worklist-control > span:focus,
+    .theme-entry .tree li.worklist-control.children.open > a:hover,
+    .theme-entry .tree li.worklist-control.children.open > span:hover,
+    .theme-entry .tree li.worklist-control.children.open.selected > a,
+    .theme-entry .tree li.worklist-control.children.open.selected > span,
+    .theme-entry .tree li.worklist-control.children.open > a:focus,
+    .theme-entry .tree li.worklist-control.children.open > span:focus,
+    .theme-entry .tree li.worklist-control.children.closed > a:hover,
+    .theme-entry .tree li.worklist-control.children.closed > span:hover,
+    .theme-entry .tree li.worklist-control.children.closed.selected > a,
+    .theme-entry .tree li.worklist-control.children.closed.selected > span,
+    .theme-entry .tree li.worklist-control.children.closed > a:focus,
+    .theme-entry .tree li.worklist-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.WorkList/Images/WorklistControl_Selected14.png');
+    }
+
+    /* #region IMAGE DESKTOP */
+
+    .theme-entry .oof-delegated-user-list-row-user-image
+    {
+        background-image: url(Management/User16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
+    }
+
+    /*list item arrow*/
+    .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectArrowImageDiv
+    {
+        background-image: url(RuntimeTheme/Back_Forward16.png);
+        background-position: -16px 0px;
+        -moz-background-size: auto 16px;
+        background-size: auto 16px;
+        height: 16px; /*size of individual icon in sprite*/
+        width: 16px; /*size of individual icon in sprite*/
+    }
+
+
+
+    .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectArrowImageDiv:hover
+    {
+        background-image: url(RuntimeTheme/Back_Forward16.png);
+        background-position: -16px 0px;
+        -moz-background-size: auto 16px;
+        background-size: auto 16px;
+        height: 16px; /*size of individual icon in sprite*/
+        width: 16px; /*size of individual icon in sprite*/
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .SelectArrowImageDiv
+    {
+        background-position: 0 0;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .FilterInput
+    {
+        background: url(RuntimeTheme/Filter_Dark16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .FilterInput:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .FilterInput:focus
+    {
+        background: url(RuntimeTheme/Filter_Hover16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .FilterInputOff
+    {
+        background: url(RuntimeTheme/Filter_Dark16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput.RefreshInputError,
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .force-refresh-error-cache
+    {
+        background: url(RuntimeTheme/RefreshErrorWL16Dark.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchIcon
+    {
+        background: url(Toolbar/Search16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .multiselectIcon
+    {
+        background: url(RuntimeTheme/Multi-SelectWL20Dark.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .filterIcon
+    {
+        background: url(RuntimeTheme/FilterWL_Dark16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .refreshIcon
+    {
+        background: url(ContextBrowser/RefreshWL20Dark.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-open-form
+    {
+        background-image: url(Management/OpenForm16.png) !important;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .searchButton,
+    .theme-entry .SourceCodeFormsControlsWorklist .searchAdvBtn
+    {
+        background-image: url(Toolbar/Search16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon:focus,
+    .theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon:focus .searchAdvBtn,
+    .theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon:hover .searchAdvBtn
+    {
+        background-image: url(Toolbar/Search16White.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchSelect,
+    .theme-entry .SourceCodeFormsControlsWorklist .searchselect
+    {
+        background-image: url(RuntimeTheme/PDExpand16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchClear
+    {
+        background-image: url(Toolbar/ClearIcon16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchBoxTD.WorklistThemeIconContainer:focus,
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchBoxTD.WorklistThemeIconContainer:hover,
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchBoxTD.WorklistThemeIconContainer:focus a.SearchClear,
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchBoxTD.WorklistThemeIconContainer:hover a.SearchClear
+    {
+        background-image: url(Toolbar/ClearIconsWhite16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .OOFInput
+    {
+        background: url(worklist/OOF_Dark16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+    .theme-entry .SourceCodeFormsControlsWorklist .OOFInput:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .OOFInput:focus
+    {
+        background: url(worklist/OOF_Hover16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchInput
+    {
+        background: url(Toolbar/Search_Dark16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchInput:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchInput:focus
+    {
+        background: url(Toolbar/Search_Hover16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchInputOff
+    {
+        background: url(Toolbar/Search_Hover16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput
+    {
+        background: url(RuntimeTheme/Multi-Select_Dark16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+    .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput:focus
+    {
+        background: url(RuntimeTheme/Multi-Select_Hover16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInputOff
+    {
+        background: url(RuntimeTheme/Multi-Select_Hover16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput
+    {
+        background: url(ContextBrowser/Refresh_Dark16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput:focus
+    {
+        background: url(ContextBrowser/Refresh_Hover16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput.RefreshInputLoading
+    {
+        background: url(ContextBrowser/Refresh_Dark16.png) no-repeat transparent center;
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .SearchSelectExpanded
+    {
+        background-image: url(RuntimeTheme/PDCollapse16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-view-flow
+    {
+        background-image: url(Management/ViewFlow16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-release
+    {
+        background-image: url(Management/Release16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-release:hover,
+    .theme-entry .worklist-action-icon-release:focus
+    {
+        background-image: url(Management/Release_Hover16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-release.disabled
+    {
+        background-image: url(Management/Release16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-sleep
+    {
+        background-image: url(Management/Sleep16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-sleep:hover,
+    .theme-entry .worklist-action-icon-sleep:focus
+    {
+        background-image: url(Management/Sleep_Hover16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-redirect
+    {
+        background-image: url(Management/Redirect16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-redirect:hover,
+    .theme-entry .worklist-action-icon-redirect:focus
+    {
+        background-image: url(Management/Redirect_Hover16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-share
+    {
+        background-image: url(Management/Share16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .worklist-action-icon-share:hover,
+    .theme-entry .worklist-action-icon-share:focus
+    {
+        background-image: url(Management/Share_Hover16.png);
+        -moz-background-size: 16px;
+        background-size: 16px;
+    }
+
+    .theme-entry .ControlPack.Worklist .SourceCodeFormsControlsWorklist .SelectArrowImageDiv
+    {
+        background: url(Arrow_WL8.png) no-repeat 0 0 transparent;
+        -moz-background-size: 7px;
+        background-size: 7px;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon11.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:hover .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon_Hover11.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:focus .PriorityImageDiv,
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow.SelectedDivBackground .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon_Selected11.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator10.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:hover .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator_Hover10.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:focus .OverdueImageDiv,
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow.SelectedDivBackground .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator_Selected10.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+
+    /*#region worklist checkbox styling */
+    .webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:after,
+    html:not(.webkit) .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes
+    {
+        background-image: url(RuntimeTheme/checkbox18_Sprite.png);
+        -moz-background-size: 18px;
+        background-size: 18px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:hover:after
+    {
+        background-position: 0 -44px;
+    }
+
+    .webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:checked:after
+    {
+        background-position: 0 -88px;
+    }
+
+    .webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:checked:hover:after
+    {
+        background-position: 0 -110px;
+    }
+    /*#endregion worklist checkbox styling */
+
+    .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-asc
+    {
+        background-image: url(RuntimeTheme/ExpandCollapse16_Blue.png);
+        width: 16px;
+        height: 16px;
+        background-position: 0 -15px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-desc
+    {
+        background-image: url(RuntimeTheme/ExpandCollapse16_Blue.png);
+        width: 16px;
+        height: 16px;
+        background-position: 0 -49px;
+    }
+
+    .theme-entry .tree a.process-activity,
+    .theme-entry .tree li.children > a.process-activity,
+    .theme-entry .tree li.children.closed > a.process-activity,
+    .theme-entry .tree li.children.open > a.process-activity,
+    .theme-entry .tree li.process-activity > a,
+    .theme-entry .tree li.process-activity.closed > a,
+    .theme-entry .tree li.process-activity.open > a
+    {
+        /* Activitiy icon when configuring out of office popup where you can select a process from a tree */
+        background-image: url(ContextBrowser/WorkflowActivity16.png);
+        height: 16px;
+    }
+
+    .theme-entry .tree a.process-activity:hover,
+    .theme-entry .tree li.children > a.process-activity:hover,
+    .theme-entry .tree li.children.closed > a.process-activity:hover,
+    .theme-entry .tree li.children.open > a.process-activity:hover,
+    .theme-entry .tree li.process-activity > a:hover,
+    .theme-entry .tree li.process-activity.closed > a:hover,
+    .theme-entry .tree li.process-activity.open > a:hover
+    {
+        /* Activitiy icon when configuring out of office popup where you can select a process from a tree */
+        background-image: url(ContextBrowser/WorkflowActivity_Hover16.png);
+        height: 16px;
+    }
+
+    .theme-entry .tree a.process-activity:focus,
+    .theme-entry .tree li.children > a.process-activity:focus,
+    .theme-entry .tree li.children.closed > a.process-activity:focus,
+    .theme-entry .tree li.children.open > a.process-activity:focus,
+    .theme-entry .tree li.process-activity > a:focus,
+    .theme-entry .tree li.process-activity.closed > a:focus,
+    .theme-entry .tree li.process-activity.open > a:focus,
+    .theme-entry .tree a.process-activity.selected,
+    .theme-entry .tree li.children.selected > a.process-activity,
+    .theme-entry .tree li.children.closed.selected > a.process-activity,
+    .theme-entry .tree li.children.open.selected > a.process-activity,
+    .theme-entry .tree li.process-activity.selected > a,
+    .theme-entry .tree li.process-activity.closed.selected > a,
+    .theme-entry .tree li.process-activity.open.selected > a
+    {
+        /* Activitiy icon when configuring out of office popup where you can select a process from a tree */
+        background-image: url(ContextBrowser/WorkflowActivity_Selected16.png);
+        height: 16px;
+    }
+
+    /* #endregion IMAGE DESKTOP */
+
+    /* #region IMAGE MOBILE */
+
+    /*list item arrow*/
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .SelectArrowImageDiv,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectArrowImageDiv
+    {
+        background-image: url(RuntimeTheme/Back_Forward22.png);
+        background-position: -22px 0px;
+        -moz-background-size: auto 22px;
+        background-size: auto 22px;
+        height: 22px;
+        width: 22px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .SelectArrowImageDiv
+    {
+        background-position: -0px 0px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .FilterInput
+    {
+        background: url(RuntimeTheme/FilterWL_Light20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .FilterInput:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .FilterInput:focus
+    {
+        background: url(RuntimeTheme/FilterWL_Hover20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .FilterInputOff
+    {
+        background: url(RuntimeTheme/FilterWL_Dark20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput.RefreshInputError,
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .force-refresh-error-cache
+    {
+        background: url(RuntimeTheme/RefreshErrorWL20Dark.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchIcon
+    {
+        background: url(Toolbar/Search20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .multiselectIcon
+    {
+        background: url(RuntimeTheme/Multi-SelectWL20Dark.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .filterIcon
+    {
+        background: url(RuntimeTheme/FilterWL_Dark20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .refreshIcon
+    {
+        background: url(ContextBrowser/RefreshWL20Dark.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-open-form
+    {
+        background-image: url(Management/OpenForm20.png) !important;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .searchButton,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .searchAdvBtn
+    {
+        background-image: url(Toolbar/Search20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist a.searchAdvBtn:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist a.searchAdvBtn:focus
+    {
+        background-image: url(Toolbar/Search20White.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchSelect,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .searchselect
+    {
+        background-image: url(RuntimeTheme/PDExpand20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchClear
+    {
+        background-image: url(Toolbar/ClearIcon20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist a.SearchClear:hover,
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist a.SearchClear:focus
+    {
+        background-image: url(Toolbar/ClearIconsWhite20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .OOFInput
+    {
+        background: url(worklist/OOF_Dark20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .OOFInput:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .OOFInput:focus
+    {
+        background: url(worklist/OOF_Hover20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchInput
+    {
+        background: url(Toolbar/SearchWLDark20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchInput:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchInput:focus
+    {
+        background: url(Toolbar/SearchWL_Hover20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchInputOff
+    {
+        background: url(Toolbar/SearchWL_White20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput
+    {
+        background: url(RuntimeTheme/Multi-SelectWL20Dark.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput:focus
+    {
+        background: url(RuntimeTheme/Multi-SelectWL_Hover20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInputOff
+    {
+        background: url(RuntimeTheme/Multi-SelectWL20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput
+    {
+        background: url(ContextBrowser/RefreshWL20Dark.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput:focus
+    {
+        background: url(ContextBrowser/RefreshWL_Hover20.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput.RefreshInputLoading
+    {
+        background: url(ContextBrowser/RefreshWL20Light.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SearchSelectExpanded
+    {
+        background-image: url(RuntimeTheme/PDCollapse20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-view-flow
+    {
+        background-image: url(Management/ViewFlow20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-release
+    {
+        background-image: url(Management/Release20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .worklist-action-icon-release:hover,
+    .mobile .theme-entry .worklist-action-icon-release:focus
+    {
+        background-image: url(Management/Release_Hover20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .worklist-action-icon-release.disabled
+    {
+        background-image: url(Management/Release20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-sleep
+    {
+        background-image: url(Management/Sleep20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .worklist-action-icon-sleep:hover,
+    .mobile .theme-entry .worklist-action-icon-sleep:focus
+    {
+        background-image: url(Management/Sleep_Hover20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-redirect
+    {
+        background-image: url(Management/Redirect20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .worklist-action-icon-redirect:hover,
+    .mobile .theme-entry .worklist-action-icon-redirect:focus
+    {
+        background-image: url(Management/Redirect_Hover20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-share
+    {
+        background-image: url(Management/Share20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .worklist-action-icon-share:hover,
+    .mobile .theme-entry .worklist-action-icon-share:focus
+    {
+        background-image: url(Management/Share_Hover20.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .ControlPack.Worklist .SourceCodeFormsControlsWorklist .SelectArrowImageDiv
+    {
+        background: url(Arrow_WL8.png) no-repeat 0 0 transparent;
+        -moz-background-size: 7px;
+        background-size: 7px;
+    }
+
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon11.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:hover .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon_Hover11.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:focus .PriorityImageDiv,
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow.SelectedDivBackground .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon_Selected11.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator10.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:hover .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator_Hover10.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:focus .OverdueImageDiv,
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow.SelectedDivBackground .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator_Selected10.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+
+    .mobile .theme-entry .tree a.process-activity,
+    .mobile .theme-entry .tree li.children > a.process-activity,
+    .mobile .theme-entry .tree li.children.closed > a.process-activity,
+    .mobile .theme-entry .tree li.children.open > a.process-activity,
+    .mobile .theme-entry .tree li.process-activity > a,
+    .mobile .theme-entry .tree li.process-activity.closed > a,
+    .mobile .theme-entry .tree li.process-activity.open > a
+    {
+        /* Activitiy icon when configuring out of office popup where you can select a process from a tree */
+        background-image: url(ContextBrowser/WorkflowActivity20.png);
+        background-size: 20px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .mobile .theme-entry .tree a.process-activity:hover,
+    .mobile .theme-entry .tree li.children > a.process-activity:hover,
+    .mobile .theme-entry .tree li.children.closed > a.process-activity:hover,
+    .mobile .theme-entry .tree li.children.open > a.process-activity:hover,
+    .mobile .theme-entry .tree li.process-activity > a:hover,
+    .mobile .theme-entry .tree li.process-activity.closed > a:hover,
+    .mobile .theme-entry .tree li.process-activity.open > a:hover
+    {
+        /* Activitiy icon when configuring out of office popup where you can select a process from a tree */
+        background-image: url(ContextBrowser/WorkflowActivityHover20.png);
+        background-size: 20px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .mobile .theme-entry .tree a.process-activity:focus,
+    .mobile .theme-entry .tree li.children > a.process-activity:focus,
+    .mobile .theme-entry .tree li.children.closed > a.process-activity:focus,
+    .mobile .theme-entry .tree li.children.open > a.process-activity:focus,
+    .mobile .theme-entry .tree li.process-activity > a:focus,
+    .mobile .theme-entry .tree li.process-activity.closed > a:focus,
+    .mobile .theme-entry .tree li.process-activity.open > a:focus,
+    .mobile .theme-entry .tree a.process-activity.selected,
+    .mobile .theme-entry .tree li.children.selected > a.process-activity,
+    .mobile .theme-entry .tree li.children.closed.selected > a.process-activity,
+    .mobile .theme-entry .tree li.children.open.selected > a.process-activity,
+    .mobile .theme-entry .tree li.process-activity.selected > a,
+    .mobile .theme-entry .tree li.process-activity.closed.selected > a,
+    .mobile .theme-entry .tree li.process-activity.open.selected > a
+    {
+        /* Activitiy icon when configuring out of office popup where you can select a process from a tree */
+        background-image: url(ContextBrowser/WorkflowActivity_Selected20.png);
+        background-size: 20px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .LoadMoreHyperlink
+    {
+        border-radius: 0rem !important;
+    }
+    /*#region worklist checkbox styling */
+    .mobile.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:after
+    {
+        background-image: url(RuntimeTheme/checkbox24_Sprite.png);
+        -moz-background-size: 24px;
+        background-size: 24px;
+    }
+
+    .mobile.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:hover:after
+    {
+        background-position: 0 -60px;
+    }
+
+    .mobile.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:checked:after
+    {
+        background-position: 0px -120px;
+    }
+
+    .mobile.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:checked:hover:after
+    {
+        background-position: 0px -150px;
+    }
+    /* #endregion worklist checkbox styling */
+
+    /* #endregion IMAGE MOBILE */
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    .theme-entry .tree li.worklist-control > a,
+    .theme-entry .tree li.worklist-control > span,
+    .theme-entry .tree li.worklist-control.children.open > a,
+    .theme-entry .tree li.worklist-control.children.closed > a
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.WorkList/Images/WorklistControl16@2x.png');
+    }
+
+    .theme-entry .tree li.worklist-control > a:hover,
+    .theme-entry .tree li.worklist-control > span:hover,
+    .theme-entry .tree li.worklist-control.selected > a,
+    .theme-entry .tree li.worklist-control.selected > span,
+    .theme-entry .tree li.worklist-control > a:focus,
+    .theme-entry .tree li.worklist-control > span:focus,
+    .theme-entry .tree li.worklist-control.children.open > a:hover,
+    .theme-entry .tree li.worklist-control.children.open > span:hover,
+    .theme-entry .tree li.worklist-control.children.open.selected > a,
+    .theme-entry .tree li.worklist-control.children.open.selected > span,
+    .theme-entry .tree li.worklist-control.children.open > a:focus,
+    .theme-entry .tree li.worklist-control.children.open > span:focus,
+    .theme-entry .tree li.worklist-control.children.closed > a:hover,
+    .theme-entry .tree li.worklist-control.children.closed > span:hover,
+    .theme-entry .tree li.worklist-control.children.closed.selected > a,
+    .theme-entry .tree li.worklist-control.children.closed.selected > span,
+    .theme-entry .tree li.worklist-control.children.closed > a:focus,
+    .theme-entry .tree li.worklist-control.children.closed > span:focus
+    {
+        background-size: 16px 16px;
+        background-image: url('../../Controls/SourceCode.Forms.Controls.Web.ControlPack.WorkList/Images/WorklistControl_Selected14@2x.png');
+    }
+
+    /* #region IMAGE DESKTOP */
+    .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectArrowImageDiv
+    {
+        background-image: url(RuntimeTheme/Back_Forward22@2x.png);
+        background-position: -22px 0px;
+        -moz-background-size: auto 22px;
+        background-size: auto 22px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:focus .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .SelectArrowImageDiv
+    {
+        background-position: 0 0;
+        height: 20px;
+        width: 20px;
+        background-size: 80px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .FilterInput
+    {
+        background: url(RuntimeTheme/FilterWL_Light20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .theme-entry .SourceCodeFormsControlsWorklist .FilterInput:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .FilterInput:focus
+    {
+        background: url(RuntimeTheme/FilterWL_Hover20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .FilterInputOff
+    {
+        background: url(RuntimeTheme/FilterWL_Dark20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput.RefreshInputError,
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .force-refresh-error-cache
+    {
+        background: url(RuntimeTheme/RefreshErrorWL20Dark@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px 20px;
+        background-size: 20px 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchIcon
+    {
+        background: url(Toolbar/Search20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .multiselectIcon
+    {
+        background: url(RuntimeTheme/Multi-SelectWL20Dark@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .filterIcon
+    {
+        background: url(RuntimeTheme/FilterWL_Dark20@2x.png)no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .refreshIcon
+    {
+        background: url(ContextBrowser/RefreshWL20Dark@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .worklist-action-icon-open-form
+    {
+        background-image: url(Management/OpenForm20@2x.png) !important;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchButton,
+    .theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn
+    {
+        background-image: url(Toolbar/Search20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist a.searchAdvBtn:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist a.searchAdvBtn:focus
+    {
+        background-image: url(Toolbar/Search20White@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchSelect,
+    .theme-entry .SourceCodeFormsControlsWorklist .searchselect
+    {
+        background-image: url(RuntimeTheme/PDExpand20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchClear
+    {
+        background-image: url(Toolbar/ClearIcon20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist a.SearchClear:hover,
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist a.SearchClear:focus
+    {
+        background-image: url(Toolbar/ClearIconsWhite20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .OOFInput
+    {
+        background: url(worklist/OOF_Dark20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .theme-entry .SourceCodeFormsControlsWorklist .OOFInput:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .OOFInput:focus
+    {
+        background: url(worklist/OOF_Hover20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchInput
+    {
+        background: url(Toolbar/SearchWL_Dark20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchInput:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchInput:focus
+    {
+        background: url(Toolbar/SearchWL_Hover20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+
+    .theme-entry .SourceCodeFormsControlsWorklist .SearchInputOff
+    {
+        background: url(Toolbar/SearchWL_White20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput
+    {
+        background: url(RuntimeTheme/Multi-SelectWL20Dark@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput:focus
+    {
+        background: url(RuntimeTheme/Multi-SelectWL_Hover20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInputOff
+    {
+        background: url(RuntimeTheme/Multi-SelectWL20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput
+    {
+        background: url(ContextBrowser/RefreshWL20Dark@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput:hover,
+    .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput:focus
+    {
+        background: url(ContextBrowser/RefreshWL_Hover20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput.RefreshInputLoading
+    {
+        background: url(ContextBrowser/RefreshWL20Light@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .SearchSelectExpanded
+    {
+        background-image: url(RuntimeTheme/PDCollapse20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .worklist-action-icon-view-flow
+    {
+        background-image: url(Management/ViewFlow20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .worklist-action-icon-release
+    {
+        background-image: url(Management/Release20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .theme-entry .worklist-action-icon-release:hover,
+    .theme-entry .worklist-action-icon-release:focus
+    {
+        background-image: url(Management/Release_Hover20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .theme-entry .worklist-action-icon-release.disabled
+    {
+        background-image: url(Management/Release20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .worklist-action-icon-sleep
+    {
+        background-image: url(Management/Sleep20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .theme-entry .worklist-action-icon-sleep:hover,
+    .theme-entry .worklist-action-icon-sleep:focus
+    {
+        background-image: url(Management/Sleep_Hover20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .worklist-action-icon-redirect
+    {
+        background-image: url(Management/Redirect20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .theme-entry .worklist-action-icon-redirect:hover,
+    .theme-entry .worklist-action-icon-redirect:focus
+    {
+        background-image: url(Management/Redirect_Hover20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .worklist-action-icon-share
+    {
+        background-image: url(Management/Share20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .theme-entry .worklist-action-icon-share:hover,
+    .theme-entry .worklist-action-icon-share:focus
+    {
+        background-image: url(Management/Share_Hover20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .theme-entry .ControlPack.Worklist .SourceCodeFormsControlsWorklist .SelectArrowImageDiv
+    {
+        background: url(Arrow_WL8@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 7px;
+        background-size: 7px;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon11@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:hover .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon_Hover11@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:focus .PriorityImageDiv,
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow.SelectedDivBackground .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon_Selected11@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator10@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:hover .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator_Hover10@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:focus .OverdueImageDiv,
+    .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow.SelectedDivBackground .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator_Selected10@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-asc,
+    .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-desc
+    {
+        background-image: url(RuntimeTheme/ExpandCollapse20_Blue@2x.png);
+        -moz-background-size: 22px 88px;
+        background-size: 22px 88px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-asc
+    {
+        background-position: right -44px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-asc:hover
+    {
+        background-position: right -66px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-desc
+    {
+        background-position: right -0px;
+    }
+
+    .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-desc:hover
+    {
+        background-position: right -22px;
+    }
+
+    /*#region Worklist Checkbox Styling */
+    .webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:after
+    {
+        background-image: url(RuntimeTheme/checkbox24_Sprite@2x.png);
+        -moz-background-size: 24px;
+        background-size: 24px;
+    }
+
+    .webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:hover:after
+    {
+        background-position: 0 -60px;
+    }
+
+    .webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:checked:after
+    {
+        background-position: 0 -120px;
+    }
+
+    .webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:checked:hover:after
+    {
+        background-position: 0 -150px;
+    }
+
+    .theme-entry .tree a.process-activity,
+    .theme-entry .tree li.children > a.process-activity,
+    .theme-entry .tree li.children.closed > a.process-activity,
+    .theme-entry .tree li.children.open > a.process-activity,
+    .theme-entry .tree li.process-activity > a,
+    .theme-entry .tree li.process-activity.closed > a,
+    .theme-entry .tree li.process-activity.open > a
+    {
+        /* Activitiy icon when configuring out of office popup where you can select a process from a tree */
+        background-image: url(ContextBrowser/WorkflowActivity20@2x.png);
+        background-size: 20px;
+        height: 20px;
+    }
+
+    .theme-entry .tree a.process-activity:hover,
+    .theme-entry .tree li.children > a.process-activity:hover,
+    .theme-entry .tree li.children.closed > a.process-activity:hover,
+    .theme-entry .tree li.children.open > a.process-activity:hover,
+    .theme-entry .tree li.process-activity > a:hover,
+    .theme-entry .tree li.process-activity.closed > a:hover,
+    .theme-entry .tree li.process-activity.open > a:hover
+    {
+        /* Activitiy icon when configuring out of office popup where you can select a process from a tree */
+        background-image: url(ContextBrowser/WorkflowActivity_Hover20@2x.png);
+        background-size: 20px;
+        height: 20px;
+    }
+
+    .theme-entry .tree a.process-activity:focus,
+    .theme-entry .tree li.children > a.process-activity:focus,
+    .theme-entry .tree li.children.closed > a.process-activity:focus,
+    .theme-entry .tree li.children.open > a.process-activity:focus,
+    .theme-entry .tree li.process-activity > a:focus,
+    .theme-entry .tree li.process-activity.closed > a:focus,
+    .theme-entry .tree li.process-activity.open > a:focus,
+    .theme-entry .tree a.process-activity.selected,
+    .theme-entry .tree li.children.selected > a.process-activity,
+    .theme-entry .tree li.children.closed.selected > a.process-activity,
+    .theme-entry .tree li.children.open.selected > a.process-activity,
+    .theme-entry .tree li.process-activity.selected > a,
+    .theme-entry .tree li.process-activity.closed.selected > a,
+    .theme-entry .tree li.process-activity.open.selected > a
+    {
+        /* Activitiy icon when configuring out of office popup where you can select a process from a tree */
+        background-image: url(ContextBrowser/WorkflowActivity_Selected20@2x.png);
+        background-size: 20px;
+        height: 20px;
+    }
+
+    /* #endregion IMAGE DESKTOP */
+
+    /* #region IMAGE MOBILE */
+    /*list item arrow*/
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectArrowImageDiv
+    {
+        background-image: url(RuntimeTheme/Back_Forward22@2x.png);
+        background-position: -22px 0px;
+        -moz-background-size: auto 22px;
+        background-size: auto 22px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .SelectArrowImageDiv
+    {
+        background-position: 0 0;
+        height: 20px;
+        width: 20px;
+        background-size: 80px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .FilterInput
+    {
+        background: url(RuntimeTheme/FilterWL_Light20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .FilterInput:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .FilterInput:focus
+    {
+        background: url(RuntimeTheme/FilterWL_Hover20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .FilterInputOff
+    {
+        background: url(RuntimeTheme/FilterWL_Dark20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput.RefreshInputError,
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .force-refresh-error-cache
+    {
+        background: url(RuntimeTheme/RefreshErrorWL20Dark@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px 20px;
+        background-size: 20px 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchIcon
+    {
+        background: url(Toolbar/Search20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .multiselectIcon
+    {
+        background: url(RuntimeTheme/Multi-SelectWL20Dark@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .filterIcon
+    {
+        background: url(RuntimeTheme/FilterWL_Dark20@2x.png)no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .refreshIcon
+    {
+        background: url(ContextBrowser/RefreshWL20Dark@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-open-form
+    {
+        background-image: url(Management/OpenForm20@2x.png) !important;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchButton,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn
+    {
+        background-image: url(Toolbar/Search20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist a.searchAdvBtn:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist a.searchAdvBtn:focus
+    {
+        background-image: url(Toolbar/Search20White@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchSelect,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .searchselect
+    {
+        background-image: url(RuntimeTheme/PDExpand20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchClear
+    {
+        background-image: url(Toolbar/ClearIcon20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist a.SearchClear:hover,
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist a.SearchClear:focus
+    {
+        background-image: url(Toolbar/ClearIconsWhite20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .OOFInput
+    {
+        background: url(worklist/OOF_Dark20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .OOFInput:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .OOFInput:focus
+    {
+        background: url(worklist/OOF_Hover20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchInput
+    {
+        background: url(Toolbar/SearchWL_Dark20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchInput:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchInput:focus
+    {
+        background: url(Toolbar/Search_Hover20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchInputOff
+    {
+        background: url(Toolbar/SearchWL_White20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput
+    {
+        background: url(RuntimeTheme/Multi-SelectWL20Dark@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput:focus
+    {
+        background: url(RuntimeTheme/Multi-SelectWL_Hover20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .CheckboxInputOff
+    {
+        background: url(RuntimeTheme/Multi-SelectWL20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput
+    {
+        background: url(ContextBrowser/RefreshWL20Dark@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput:hover,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput:focus
+    {
+        background: url(ContextBrowser/RefreshWL_Hover20@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .RefreshInput.RefreshInputLoading
+    {
+        background: url(ContextBrowser/RefreshWL20Light@2x.png) no-repeat transparent center;
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .SearchSelectExpanded
+    {
+        background-image: url(RuntimeTheme/PDCollapse20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-view-flow
+    {
+        background-image: url(Management/ViewFlow20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-release
+    {
+        background-image: url(Management/Release20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .worklist-action-icon-release:hover,
+    .mobile .theme-entry .worklist-action-icon-release:focus
+    {
+        background-image: url(Management/Release_Hover20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .worklist-action-icon-release.disabled
+    {
+        background-image: url(Management/Release20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+
+    .mobile .theme-entry .worklist-action-icon-sleep
+    {
+        background-image: url(Management/Sleep20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .worklist-action-icon-sleep:hover,
+    .mobile .theme-entry .worklist-action-icon-sleep:focus
+    {
+        background-image: url(Management/Sleep_Hover20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-redirect
+    {
+        background-image: url(Management/Redirect20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .worklist-action-icon-redirect:hover,
+    .mobile .theme-entry .worklist-action-icon-redirect:focus
+    {
+        background-image: url(Management/Redirect_Hover20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .worklist-action-icon-share
+    {
+        background-image: url(Management/Share20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+    .mobile .theme-entry .worklist-action-icon-share:hover,
+    .mobile .theme-entry .worklist-action-icon-share:focus
+    {
+        background-image: url(Management/Share_Hover20@2x.png);
+        -moz-background-size: 20px;
+        background-size: 20px;
+    }
+
+    .mobile .theme-entry .ControlPack.Worklist .SourceCodeFormsControlsWorklist .SelectArrowImageDiv
+    {
+        background: url(Arrow_WL8@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 7px;
+        background-size: 7px;
+    }
+
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon11@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:hover .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon_Hover11@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:focus .PriorityImageDiv,
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow.SelectedDivBackground .PriorityImageDiv
+    {
+        background: url(RuntimeTheme/ExclamationIcon_Selected11@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 11px;
+        background-size: 11px;
+    }
+
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator10@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:hover .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator_Hover10@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow:focus .OverdueImageDiv,
+    .mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .WorklistItemGridRow.SelectedDivBackground .OverdueImageDiv
+    {
+        background: url(RuntimeTheme/BlueIndicator_Selected10@2x.png) no-repeat 0 0 transparent;
+        -moz-background-size: 10px;
+        background-size: 10px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-asc,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-desc
+    {
+        background-image: url(RuntimeTheme/ExpandCollapse20_Blue@2x.png);
+        -moz-background-size: 22px 88px;
+        background-size: 22px 88px;
+    }
+
+    /* mobile has no hover so always display highlighted version of icon */
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-asc
+    {
+        background-position: right -66px;
+    }
+
+    /* mobile has no hover so always display highlighted version of icon */
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-desc
+    {
+        background-position: right -22px;
+    }
+
+
+    /*#region Worklist Checkbox Styling */
+    .mobile.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:after
+    {
+        background-image: url(RuntimeTheme/checkbox24_Sprite@2x.png);
+        -moz-background-size: 24px;
+        background-size: 24px;
+    }
+
+    .mobile.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:hover:after
+    {
+        background-position: 0 -60px;
+    }
+
+    .mobile.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:checked:after
+    {
+        background-position: 0 -120px;
+    }
+
+    .mobile.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:checked:hover:after
+    {
+        background-position: 0 -150px;
+    }
+    /* #endregion Worklist Checkbox Styling */
+
+    /* #endregion IMAGE MOBILE */
+}
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListItemTableSimple td.shadedCol
+{
+    background-color: @Background-Color-0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout .SelectAllMainTable
+{
+    display: inline-block !important; /* override - inline */
+    height: 3.0rem;
+    position: relative;
+}
+
+.ie9 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.ie.simple-layout .SelectAllMainTable
+{
+    display: table !important; /* override -- inline */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static .WorklistItemSectionCell
+{
+    position: absolute;
+    top: 3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+/* when multi select mode is on & static height */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static.worklist-multiselect-mode .WorklistItemSectionCell
+{
+    top: 6.3rem;
+}
+
+/* when multi select mode is on & static height (Mozilla) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.moz.simple-layout.height-static.worklist-multiselect-mode .WorklistItemSectionCell
+{
+    top: 6.1rem;
+}
+
+/* when search section is visible & static height */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static.search-section-active .WorklistItemSectionCell
+{
+    top: 6.4rem;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static.search-section-active.search-options-expanded .WorklistItemSectionCell
+{
+    top: 9.8rem;
+}
+
+/* when multi select mode is on & search section visible & static height */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.search-section-active.height-static.worklist-multiselect-mode .WorklistItemSectionCell
+{
+    top: 9.9rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static.search-section-active.worklist-multiselect-mode.search-options-expanded .WorklistItemSectionCell
+{
+    top: 12.6rem;
+}
+
+/* when multi select mode is on & search section visible & static height (Mozilla) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.moz.simple-layout.search-section-active.height-static.worklist-multiselect-mode .WorklistItemSectionCell
+{
+    top: 9.7rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.moz.simple-layout.height-static.search-section-active.worklist-multiselect-mode.search-options-expanded .WorklistItemSectionCell
+{
+    top: 12.4rem;
+}
+
+/* static height (Grid layout) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.grid-layout.height-static .WorkListGridTableBody
+{
+    position: absolute;
+    top: 3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+}
+
+/* static height (Simple layout) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static .WorkListGridTableBody
+{
+    position: absolute;
+    top: 0.1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+}
+
+/* select all checkbox text (simple layout) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout .searchHeaderText
+{
+    white-space: nowrap;
+    line-height: normal;
+    position: absolute;
+    top: 0.4rem; /*B563581*/
+    left: 4rem;
+}
+
+/* select all checkbox text (simple layout) IE */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.ie.simple-layout .searchHeaderText
+{
+    position: absolute;
+    top: 0.4rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout td.SelectAllTD
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* select all checkbox position */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout .smartform-checkbox_selectall
+{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.8rem;
+}
+
+
+.theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button],
+.theme-entry .SourceCodeFormsControlsWorklist .nav a.toolbar-button
+{
+    border: 1px dotted @Border-Color-0;
+    -moz-background-size: 16px 16px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button]:hover,
+.theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button]:focus
+{
+    background-color: @Background-Color-4;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button].CheckboxInputOff,
+.theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button].SearchInputOff
+{
+    background-color: @Background-Color-5;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button].CheckboxInputOff:hover,
+.theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button].SearchInputOff:hover
+{
+    background-color: @Background-Color-4;
+}
+
+/*Async/animated button style*/
+.theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button].RefreshInputLoading,
+.theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button].RefreshInputLoading:hover
+{
+    background-color: @Background-Color-0;
+    border-color: @Border-Color-0; /*make sure the border or background don't spin with css animation*/
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist
+{
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -moz-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+    -ms-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .headerTxt
+{
+    color: @Text-Color-2;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-family: "Open Sans", "Segoe UI Regular", Helvetica;
+    font-weight: 700;
+    float: none; /*override - base*/
+    display: inline-block;
+    line-height: normal;
+    height: 2.4rem;
+    font-size: 1.4rem;
+    padding-left: 2.0rem;
+    margin: 0.5rem;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableHeader
+{
+    background-color: @Background-Color-2;
+}
+
+/* grid column header */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklist-grid-column-header
+{
+    position: relative;
+    outline: none;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist span.worklist-grid-column-header-cell-text
+{
+    color: #6b7785;
+    text-transform: uppercase;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader th
+{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-transition: opacity linear 0.15s;
+    -ms-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+}
+
+/*.theme-entry .radgrid-grid-column-header-text tr th,*/
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader th:hover,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader th:focus
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -moz-transition: opacity linear 0.15s;
+    -ms-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+}
+
+.theme-entry .worklist-grid-even /*non-standard classes*/
+{
+    background-color: @Background-Color-3;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow > td
+{
+    border: 1px solid transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 3.2rem; /*table cell min height*/
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistItemGridRow.SelectedDivBackground td,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistItemGridRow:focus > td,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistItemGridRow.SelectedDivBackground:focus td
+{
+    background-color: @Background-Color-5;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistItemGridRow:hover > td,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistItemGridRow.ShowMenu > td,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistItemGridRow.SelectedDivBackground:hover td
+/*.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistItemGridRow:focus > td,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistItemGridRow.SelectedDivBackground:focus td*/
+{
+    background-color: @Background-Color-4;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow.SelectedDivBackground > td
+{
+    border-style: dotted;
+    border-color: @Border-Color-4 @Border-Color-0 @Border-Color-4 @Border-Color-0;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow.SelectedDivBackground > td.first,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow.SelectedDivBackground > td:first-child,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow.SelectedDivBackground > td.last,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow.SelectedDivBackground > td:last-child
+{
+    border-left-color: @Border-Color-0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklist-search-more:hover, /* serach more link */
+.theme-entry .SourceCodeFormsControlsWorklist .LoadMoreHyperlink:hover /* load more link */
+{
+    background-color: @Background-Color-4;
+    color: @Text-Color-5;
+}
+
+/* search text highlighting */
+.theme-entry .SourceCodeFormsControlsWorklist span.selectedSearchText .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableSimple span.selectedSearchText
+{
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    margin-left: -0.1rem;
+    margin-right: -0.1rem;
+    border-radius: 0.2rem;
+    background: linear-gradient(to bottom, #fff200 0%,#ffdb00 100%);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.6);
+}
+
+.ie9 .theme-entry .SourceCodeFormsControlsWorklist span.selectedSearchText,
+.ie9 .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableSimple span.selectedSearchText,
+.ie10 .theme-entry .SourceCodeFormsControlsWorklist span.selectedSearchText,
+.ie10 .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableSimple span.selectedSearchText
+{
+    box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.4);
+}
+
+html:not(.webkit) .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes
+{
+    background-image: none;
+    background-color: @Background-Color-0;
+    border-radius: 2px;
+}
+
+.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:after
+{
+    content: ' ';
+    display: inline-block;
+    margin: -4px 0px 2px -4px;
+}
+
+/*note: this rule ".theme-entry .SFC div, .theme-entry .SFC td" defines inherit, which means center was being applied somewhere else*/
+.theme-entry .SourceCodeFormsControlsWorklist
+{
+    text-align: left; /*override - base*/
+    border-width: 0;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistTableOverdue /* simple view - over due icon */
+{
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+}
+
+/*indicator reset*/
+.theme-entry .SourceCodeFormsControlsWorklist .OverdueImageDivOpen,
+.theme-entry .SourceCodeFormsControlsWorklist .PriorityImageDivNotHigh
+{
+    float: none; /*override - base*/
+    padding: 0px; /*override - base*/
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .loadmore,
+.theme-entry .SourceCodeFormsControlsWorklist .LoadMoreHyperlink,
+.theme-entry .SourceCodeFormsControlsWorklist .nav,
+.theme-entry .SourceCodeFormsControlsWorklist .searchBar tr > td,
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistTableEventDate > span, /* Event date section  */
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistTableWorkflowName > span, /* Workflow name section  */
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-column-header-cell
+{
+    font-family: "Open Sans", "Segoe UI Regular", Helvetica !important; /*override - inline - why separate styles?*/
+    font-style: normal;
+    font-size: 1.2rem;
+    overflow: hidden; /*this makes the .headerExt slightly off vertical center*/
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background-color: @Background-Color-0;
+}
+
+.theme-entry .loadmore,
+.theme-entry .LoadMoreHyperlink
+{
+    color: @Text-Color-3;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist span
+{
+    color: @Text-Color-1; /* overrode -- base */
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItemSectionCell tbody tr.selected span,
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItemSectionCell tbody tr:hover span,
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItemSectionCell tbody tr:focus span,
+.theme-entry .SourceCodeFormsControlsWorklist tbody tr.ShowMenu span,
+.theme-entry .SourceCodeFormsControlsWorklist tbody tr.SelectedDivBackground span
+{
+    color: @Text-Color-5; /* overrode -- base */
+}
+
+/*search and advanced search labels*/
+.theme-entry .SourceCodeFormsControlsWorklist .searchBar tr > td:first-child
+{
+    color: #6b7584 !important;
+    text-transform: uppercase;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistTableFolio
+{
+    opacity: 0.6; /*shade of black or whatever the color is*/
+}
+
+.webkit.safari .theme-entry .SourceCodeFormsControlsWorklist td.WorklistTableFolio
+{
+    padding-left: 1.3rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.out-of-office .OOF
+{
+    border-radius: 0.2rem;
+    background-color: @Background-Color-0;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .nav
+{
+    background-color: @Background-Color-1 !important;
+    color: #bcc6d5;
+    border: 0px !important;
+    -moz-border-radius: 0 0 0 0rem;
+    -webkit-border-radius: 0 0 0 0rem;
+    border-radius: 0 0 0 0rem;
+}
+
+/*title cell*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .nav .worklistToolbarHeaderTextWrapper
+{
+    text-align: left;
+    height: 3.0rem;
+    top: 50%;
+    padding: 0;
+    background-color: @Background-Color-1 !important;
+}
+
+/* toolbar icons cell */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .nav .worklistToolbarIconWrapper
+{
+    height: 3.0rem;
+    top: 50%;
+    padding: 0;
+    text-align: right;
+    padding-right: 0.6rem;
+}
+
+/* OOF message cell */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklistOOFMessageWrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklistOOFTurnOffButtonWrapper
+{
+    height: 3.0rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .nav .worklistOOFCell
+{
+    height: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.designtime .WorkListGridHeader th
+{
+    height: 3.0rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.designtime
+{
+    font-size: 1.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.designtime .WorklistItemIcons
+{
+    width: 3.0rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SimpleLayoutCell .PriorityImageDiv
+{
+    position: relative;
+    left: 1.0rem;
+}
+
+
+/* Select All Checkbox text */
+/* override .form .row *:first-child > * (SF selector) */
+.theme-entry .form .row *:first-child > * .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchHeaderText
+{
+    margin-right: 0.5rem;
+}
+
+/* Select All Checkbox for Simple Layout (Firefox) */
+/* Workaround position absolute solution since !important does not override SF universal selectors (.form .row *:first-child > *) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.moz .searchHeaderText
+{
+    position: absolute;
+    top: 0.6rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.moz .SelectAllSimpleSectionRow
+{
+    height: 3.2rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.moz .SelectAllTD
+{
+    position: relative;
+}
+
+/* checkbox image - this is image node so use px for sizing */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .smartform-checkbox span.input-control-img,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .smartform-checkbox_selectall span.input-control-img
+{
+    height: 18px;
+    width: 18px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.designtime .searchBar .input-control.text-input
+{
+    height: 2.6rem;
+    line-height: 2.6rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.worklist-layout-simple .WorklistItemGridRow .PriorityImageDiv
+{
+    margin-left: 1rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchHeaderText
+{
+    line-height: 3.0rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchAreaExpanded
+{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchAreaHidden
+{
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist .shadedCol
+{
+    padding-right: 0rem; /*override - base*/
+}
+
+.theme-entry .WorkListItemTableSimple
+{
+    margin-left: 0rem !important; /*override - inline*/
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SelectAllSimpleSectionRow
+{
+    background-color: #e6e6e6; /*toolbar holding "Select-All" checkbox */
+    height: 3.3rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist div.WorkListGridTableBody
+{
+    border-top: none;
+    background-color: @Background-Color-1;
+}
+
+/* search more row */
+.theme-entry .SourceCodeFormsControlsWorklist div.WorkListGridTableBody + a, /* grid layout */
+.theme-entry .SourceCodeFormsControlsWorklist .loadmore + a /* simple layout */
+{
+    background-color: #e7e7e7 !important; /* override -- inline */
+    color: rgb(49, 56, 65);
+    font-size: 1.2rem !important; /* override -- inline */
+    height: 3.0rem !important; /* override -- inline */
+    line-height: 3.0rem;
+    padding: 0 !important; /* override -- inline */
+    box-shadow: inset 0rem 0.1rem 0rem 0rem #d6d3d6;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableHeader
+{
+    text-align: left; /*override - base - center*/
+    border-bottom: 1px solid @Border-Color-7;
+    border-top: 1px solid @Border-Color-7;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable
+{
+    border-collapse: separate; /*BUG-FIX: needed to prevent white spaces between cells*/
+    width: 100%;
+    overflow-y: auto;
+    padding: 0px;
+    margin: 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    table-layout: fixed;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectArrowImageDiv
+{
+    background-repeat: no-repeat;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:focus .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .SelectArrowImageDiv
+{
+    background-repeat: no-repeat;
+    background-color: @Background-Color-0;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover td.WorklistTableSelectGridArrow,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu td.WorklistTableSelectGridArrow,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:focus td.WorklistTableSelectGridArrow
+{
+    background-color: @Background-Color-5;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistTableSelectGridArrow
+{
+    background-color: @Background-Color-2;
+    width: 5.2rem;
+    cursor: pointer;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .WorklistTableSelectGridArrow
+{
+    background-color: @Background-Color-5 !important;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistTableSelectGridArrow:hover,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorklistTableSelectGridArrow,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .ShowMenu .WorklistTableSelectGridArrow
+{
+    background-color: @Background-Color-4 !important;
+}
+
+.theme-entry .LastRowWhiteSpace,
+.theme-entry .LastRowWhiteSpace:hover,
+.theme-entry .BlankCheckBox,
+.theme-entry .BlankCheckBox:hover
+{
+    background: @Background-Color-1;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SearchBoxTD
+{
+    width: 100%;
+}
+
+
+.theme-entry .WorklistThemeIconContainer
+{
+    background-color: @Background-Color-0;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-color: @Border-Color-0;
+}
+
+.theme-entry .WorklistThemeIconContainer:hover
+{
+    background-color: #636d84;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .iconContainer
+{
+    margin-top: 0.2rem;
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchIconWrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .multiselectIconWrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .filterIconWrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .refreshIconWrapper
+{
+    border: 1px solid @Border-Color-0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchIcon,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .multiselectIcon,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .filterIcon,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .refreshIcon,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .RefreshInputError
+{
+    background-color: @Background-Color-0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme-entry .worklist-action-popup
+{
+    border: 1px solid @Border-Color-0;
+    background-color: #efefef;
+    -webkit-box-shadow: 0rem 0.2rem 0.3rem 0rem rgba(0,0,0,0.5);
+    -moz-box-shadow: 0rem 0.2rem 0.3rem 0rem rgba(0,0,0,0.5);
+    box-shadow: 0rem 0.2rem 0.3rem 0rem rgba(0,0,0,0.5);
+    width: 160px;
+    height: 165px;
+    position: absolute;
+}
+
+.theme-entry .menu.control-popup.id-picker-menu
+{
+    z-index: 10;
+}
+
+.theme-entry .worklist-action-menu-right-cell.last:hover
+{
+    background-color: @Background-Color-1;
+}
+
+.theme-entry .worklist-action-menu-right-cell:hover,
+.theme-entry .worklist-action-menu-right-cell:focus,
+.theme-entry .worklist-action-menu-right-cell.enhanced-color:hover,
+.theme-entry .worklist-action-menu-right-cell.enhanced-color:focus,
+.theme-entry .worklist-action-icon:hover,
+.theme-entry .worklist-action-icon:focus
+{
+    background-color: @Background-Color-4;
+}
+
+.theme-entry .worklist-action-icon.disabled:hover,
+.theme-entry .worklist-action-icon.disabled:focus
+{
+    background-color: @Background-Color-1;
+}
+
+.theme-entry .worklist-action-menu-right-cell:hover .worklist-action-text,
+.theme-entry .worklist-action-menu-right-cell:focus .worklist-action-text,
+.theme-entry .worklist-action-menu-right-cell.enhanced-color:hover .worklist-action-text,
+.theme-entry .worklist-action-menu-right-cell.enhanced-color:focus .worklist-action-text,
+.theme-entry .worklist-action-icon:hover .worklist-action-text,
+.theme-entry .worklist-action-icon:focus .worklist-action-text
+{
+    color: @Text-Color-5;
+}
+
+.theme-entry .worklist-action-menu-right-cell.worklist-action-open-form
+{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.theme-entry .worklist-action-menu-right-cell.worklist-action-view-flow
+{
+    border-top: 1px solid #e0e0e0;
+}
+
+.theme-entry .worklist-action-menu-right-cell .worklist-action-text
+{
+    top: 2px;
+}
+
+.theme-entry .worklist-action-icon-open-form
+{
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+    width: 20px !important;
+    height: 20px !important;
+    display: inline-block;
+    position: absolute !important;
+    top: 8px !important;
+    left: -25px !important;
+    /*background-image: url(Management/OpenForm20.png) !important;*/
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+    border-top-color: gray;
+    background: @Background-Color-3;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox
+{
+    outline-color: #00abf0;
+    width: 100%;
+    height: 18px;
+    border: none;
+    padding-left: 0.3rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox::-webkit-input-placeholder,
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox:-moz-placeholder,
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox::-moz-placeholder,
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox:-ms-input-placeholder
+{
+    color: @Text-Color-5;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchAreaExpanded,
+.theme-entry .worklist-search-outer-wrapper .SearchBoxTD
+{
+    border-color: @Border-Color-6;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchButton,
+.theme-entry .SourceCodeFormsControlsWorklist .searchAdvBtn
+{
+    /*background-image: url(../Mobile/worklist/Search16.png);*/
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchSelect,
+.theme-entry .SourceCodeFormsControlsWorklist .searchselect,
+.theme-entry .SourceCodeFormsControlsWorklist .SearchClear
+{
+    height: 16px;
+    width: 16px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+}
+
+
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchClearTD
+{
+    padding-left: 0px; /*override - base*/
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .LoadMoreHyperlink,
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-search-more
+{
+    padding: 0.7rem 1.5rem 0.9rem 1.5rem;
+    color: @Text-Color-3;
+    text-decoration: none;
+    border-radius: 0px;
+    background-color: @Background-Color-6;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .loadmore
+{
+    height: 3.5rem !important; /* override -- inline */
+    line-height: 3.5rem;
+    padding: 0.2rem 0 0.2rem 0 !important; /* override -- inline */
+    display: block;
+    border-top: 1px solid @Border-Color-7;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WatermarkText
+{
+    height: 3.5rem !important; /* override -- inline */
+    line-height: 3.5rem;
+    padding: 0 !important; /* override - inline */
+    display: block;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-family: @Main-Font-Family;
+    background-color: @Background-Color-1 !important; /* override -- inline */
+    margin: 0 !important; /* override -- inline */
+    color: #aaaaaa;
+    text-align: center;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItemGridCell
+{
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-sort-indicator-column-header
+{
+    position: relative;
+}
+
+.theme-entry table.WorkListItemTableSimple td.shadedCol
+{
+    text-align: right;
+    width: 30%;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist td.SimpleArrow
+{
+    width: 5.2rem !important; /* override -- core */
+}
+
+/*worklist item indicator cell*/
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistItemIcons
+{
+    padding-left: 0.8rem;
+}
+
+/*worklist item indicators*/
+.theme-entry .SourceCodeFormsControlsWorklist div.OverdueImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist div.PriorityImageDiv
+{
+    background-size: 11px;
+    height: 11px;
+    width: 11px;
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.theme-entry .WorklistTableEventName
+{
+    padding-left: 0;
+}
+
+.webkit.safari .theme-entry .WorklistTableEventName
+{
+    padding-left: 1.3rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistMainTable tr.SelectAllSimpleSectionRow
+{
+    width: 100%;
+    height: 32px;
+}
+
+/*Simple View - indicator cell*/
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTablePriority,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.WorkListItemTableRowTwo td.WorklistTableOverdue
+{
+    padding-left: 0.4rem;
+}
+
+/*Main List Item Table*/
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItemGridRow
+{
+    background-color: @Background-Color-1;
+}
+
+/* end simple layout */
+
+/* Grid layout */
+.theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button],
+.theme-entry .SourceCodeFormsControlsWorklist .nav a.toolbar-button
+{
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-even
+{
+    background-color: @Background-Color-1;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-odd
+{
+    background-color: @Background-Color-3;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .OptionSelectBorder
+{
+    border-style: solid;
+    border-width: 1px;
+}
+
+.theme-entry .WorklistColumnHeaderDivider
+{
+    height: 15px;
+    border: 1px solid @Border-Color-6;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistTableSelectGridArrow div.SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.SelectedDivBackground div.SelectArrowImageDiv /*override - base*/
+{
+    margin: 0 auto !important;
+    display: block;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow > td
+{
+    height: 3.2rem; /*table cell min height*/
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox
+{
+    padding-left: 0.8rem;
+    width: 3.2rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox.GridCheckbox
+{
+    padding-left: 1.1rem;
+}
+
+.ie8 .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox,
+.ie10 .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox
+{
+    padding-left: 0.7rem;
+}
+
+.ie9 .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox
+{
+    padding-left: 0.66rem;
+}
+
+.ie11 .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox
+{
+    padding-left: 0.59rem;
+}
+
+.firefox .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox.GridCheckbox,
+.firefox .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox
+{
+    padding-left: 0.57rem;
+}
+
+.ie8 .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox.GridCheckbox,
+.ie9 .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox.GridCheckbox,
+.ie10 .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox.GridCheckbox
+{
+    padding-left: 0.68rem;
+}
+
+.ie11 .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox.GridCheckbox
+{
+    padding-left: 0.58rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.WorklistItemGridCell
+{
+    vertical-align: top;
+}
+
+/* action menu popup arrow image (hover) */
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover td.WorklistTableSelectGridArrow div.SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu td.WorklistTableSelectGridArrow div.SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:focus td.WorklistTableSelectGridArrow div.SelectArrowImageDiv
+{
+    background-size: 60px 16px;
+    height: 16px;
+    width: 16px;
+    background-position: 0 0;
+}
+
+/* action menu popup arrow image (selected state) */
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.SelectedDivBackground div.SelectArrowImageDiv
+{
+    background-size: 60px 16px;
+    height: 16px;
+    width: 16px;
+}
+
+/* end grid layout */
+
+/*select-all toolbar*/
+.theme-entry .SourceCodeFormsControlsWorklist .SelectAllMainTable td
+{
+    padding: 0;
+}
+
+.theme-entry .worklist-search-outer-wrapper .SearchBoxTD
+{
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    float: left;
+    height: 18px;
+    width: 100%;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchClearTD
+{
+    position: relative;
+    right: 2px;
+}
+
+.theme-entry table.SearchSectionMainTable tr.SearchBar td
+{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.theme-entry table.SearchSectionMainTable tr.MatchBar td
+{
+    padding-bottom: 0.5rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableRowTwo td
+{
+    padding-top: 0.4rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItem:hover
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItem
+{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchSectionMainTable td.SearchBoxTD
+{
+    width: 100%;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .RefreshInputLoading
+{
+    -moz-animation: rotateControl linear infinite 1s;
+    -o-animation: rotateControl linear infinite 1s;
+    -webkit-animation: rotateControl linear infinite 1s;
+    animation: rotateControl linear infinite 1s;
+}
+
+.theme-entry .worklist-search-expander
+{
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    top: 1px;
+    position: relative;
+}
+
+.theme-entry #worklist-control-search-table .worklist-search-clear-outer-wrapper
+{
+    margin-left: 0.5rem;
+}
+
+.theme-entry .worklist-search-outer-wrapper
+{
+    position: relative;
+}
+
+.theme-entry #worklist-control-search-table .worklist-filter-dropdown-outer-wrapper
+{
+    margin-right: 0.2rem;
+}
+
+.theme-entry .SearchSelectExpanded
+{
+    height: 3.2rem;
+    width: 32px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+}
+
+.theme-entry .SearchSectionMainTable
+{
+    position: relative;
+    left: -2px;
+}
+
+.theme-entry .WorklistSearchIconContainer
+{
+    width: 18px;
+    height: 18px;
+}
+
+.theme-entry .WorklistSearchIconContainer .SearchBoxTD
+{
+    position: relative;
+    left: 1px;
+}
+
+.theme-entry div.navigation-panel-header-c
+{
+    min-height: 22px;
+    padding: 0 5px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchMatchText
+{
+    cursor: default;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SearchTD div.SearchLabel
+{
+    padding-left: 1.2rem;
+    width: 10px;
+    display: table-cell;
+    cursor: default;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistMainTable tr.WorklistItemSectionRow
+{
+    width: 100%;
+    background: @Background-Color-1;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+/* pop up */
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDLeftImage,
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDLeftImageViewFlow,
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDLeftImageComments,
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDReleaseImage,
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDRedirectImage,
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDSleepImage,
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDDelegateImage
+{
+    text-align: center;
+    background-size: 16px 16px;
+    width: 30px;
+    height: 30px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDRight,
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDRightAction
+{
+    width: 130px;
+    border-width: 1px;
+    border-style: solid;
+    vertical-align: middle;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDRightTextAction:hover
+{
+    padding-left: 1.0rem;
+    display: table-cell !important;
+    vertical-align: middle;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .toolbarImage
+{
+    background-size: 16px 16px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist .SelectWorklistOptions
+{
+    margin-top: 1px;
+}
+
+.theme-entry #SortBody
+{
+    top: 22px;
+}
+
+/* action popup worklist menu popup */
+
+.theme-entry .worklist-action-popup.multi
+{
+    width: 160px;
+    height: 99px;
+    border-width: 1px;
+    border-style: solid;
+    position: absolute;
+}
+
+.theme-entry .worklist-action-menu-container
+{
+    position: relative;
+    height: 100%;
+    background-color: @Background-Color-1 !important;
+}
+
+.theme-entry .worklist-action-menu-right-cell
+{
+    float: right;
+    border-left-width: 1px;
+    border-left-style: solid;
+    height: 33px;
+    width: 130px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left-color: #e0e0e0;
+    border-bottom-color: #e0e0e0;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.theme-entry .worklist-action-menu-right-cell.last
+{
+    border-bottom-width: 0;
+    position: relative;
+    background-color: @Background-Color-1 !important;
+}
+
+/* action popup - normal list items*/
+.theme-entry .worklist-action-icon-view-flow,
+.theme-entry .worklist-action-icon-open-form
+{
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: -25px;
+}
+
+/*action popup - bottom icons*/
+.theme-entry .worklist-action-icon-sleep,
+.theme-entry .worklist-action-icon-release,
+.theme-entry .worklist-action-icon-redirect,
+.theme-entry .worklist-action-icon-share
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.theme-entry .worklist-action-menu-right-cell .disabled
+{
+    opacity: 0.3;
+}
+
+.theme-entry .worklist-action-menu-right-cell:hover
+{
+    cursor: pointer;
+}
+
+.theme-entry .worklist-action-open-form,
+.theme-entry .worklist-action-view-flow
+{
+    position: relative;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistTableEventDate,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorklistTableWorkflowName
+{
+    color: rgb(99, 111, 128);
+    font-size: 1.2rem;
+    padding: 0.3rem; /*works well on phone*/
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .column-arow
+{
+    height: auto !important; /*override - inline*/
+    margin-top: -0.8rem; /* centers vertically */
+    position: absolute !important; /*override - inline*/
+    right: 0.3rem; /* allows for space next to column divider */
+    top: 50%;
+    width: 1.6rem !important; /*override - inline*/
+}
+
+.theme-entry .ie .SourceCodeFormsControlsWorklist .column-arow
+{
+    margin-top: 0; /* centers vertically IE only */
+}
+
+/*the actual arrow element*/
+.theme-entry .SourceCodeFormsControlsWorklist .column-arrow-asc,
+.theme-entry .SourceCodeFormsControlsWorklist .column-arrow-desc
+{
+    background-repeat: no-repeat;
+    display: block;
+    height: 1.6rem; /*size of icon*/
+    left: auto; /*override - base*/
+    vertical-align: middle;
+    width: 1.6rem; /*size of icon*/
+}
+
+.theme-entry .RefreshErrorTooltip
+{
+    display: none;
+}
+
+/* override core table styling */
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableHeader,
+.theme-entry .SourceCodeFormsControlsWorklist td.WorklistItemSectionCell
+{
+    border-collapse: separate;
+    position: relative;
+}
+
+/* remove extra right border from last grid header cell */
+.theme-entry .SourceCodeFormsControlsWorklist th.WorklistGridHeaderLast
+{
+    border-right-width: 0px;
+}
+
+/* IE8 prevent filter to hide the borders */
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader.IE8 th,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader.IE9 th
+{
+    position: relative;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist td.FilterCell
+{
+    border: 1px solid @Border-Color-0;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-column-divider:hover
+{
+    width: 0.3rem;
+    background-color: @Background-Color-1;
+    opacity: 0.5;
+    filter: alpha(opacity=0);
+    -moz-transition: opacity linear 0.15s;
+    -ms-transition: opacity linear 0.15s;
+    -o-transition: opacity linear 0.15s;
+    -webkit-transition: opacity linear 0.15s;
+    transition: opacity linear 0.15s;
+    border: 0.0rem solid @Border-Color-0;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-column-divider
+{
+    border: 0.1rem solid @Border-Color-0;
+    cursor: col-resize;
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-column-divider.ui-draggable-dragging
+{
+    border: 0 solid @Border-Color-0;
+    cursor: col-resize;
+    display: initial;
+    height: 18px;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    z-index: 9999;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader .worklist-grid-column-header-cell
+{
+    border-bottom-width: 0;
+    border-color: @Border-Color-0;
+    border-top-color: @Border-Color-0;
+    border-top-style: solid;
+    border-top-width: 0;
+    height: auto;
+    line-height: normal;
+    margin-top: 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+/* Select All checkbox (Grid layout & Simple layout) focused */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListGridHeader .smartform-checkbox_selectall .checkbox.focus,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .SelectAllSimpleSectionRow .smartform-checkbox_selectall .checkbox.focus
+{
+    outline: none;
+}
+
+/* Select All checkbox (Grid layout) */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListGridHeader .smartform-checkbox_selectall
+{
+    position: absolute;
+    top: 0.4rem;
+    left: 1.1rem;
+}
+
+/* Select All checkbox (Grid layout) Mozilla */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.moz .WorkListGridHeader .smartform-checkbox_selectall
+{
+    left: 0.5rem;
+}
+
+/* Select All checkbox (Grid layout) IE */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.ie .WorkListGridHeader .smartform-checkbox_selectall
+{
+    left: 0.8rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist span.worklist-grid-column-header-cell-text
+{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: normal; /* override the default TH element behaviour */
+    overflow: hidden;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: relative;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    top: 0;
+    vertical-align: middle;
+    width: ~"calc(100% - 20px)"; /* prevents sort indicator icon overlap with header text */
+    font-style: normal;
+}
+
+.mobile .theme-entry .SourceCodeFormsControlsWorklist span.worklist-grid-column-header-cell-text
+{
+    font-size: 1.6rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-column-header-icon-cell .worklist-grid-column-header-cell
+{
+    width: 33px;
+}
+
+/* Worklist Images */
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorklistTableSelectGridArrow .SelectArrowImageDiv, /*override - base*/
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:focus .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .SelectArrowImageDiv, /*override - base*/
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SelectArrowImageDiv,
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .PriorityImageDiv,
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .OverdueImageDiv
+{
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .OverdueImageDiv
+{
+    height: 10px;
+    width: 10px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.ie .checkboxheader
+{
+    padding-left: 0.8rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.moz .checkboxheader
+{
+    padding-top: 0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .checkboxheader
+{
+    padding-left: 1.1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .GridCheckbox
+{
+    padding-left: 0.9rem;
+    width: 32px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist span.selectedSearchText,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableSimple span.selectedSearchText
+{
+    width: 100%;
+    height: 100%;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchBar
+{
+    background-color: #efefef !important;
+    border-top: 1px solid @Border-Color-7;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableHeader th
+{
+    height: 3.0rem; /*override - inline*/
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableHeader th:focus
+{
+    outline: 0;
+}
+
+.theme-entry .form .row *:first-child > * .AllWorklistCheckBoxes,
+.theme-entry .SourceCodeFormsControlsWorklist .AllWorklistCheckBoxes
+{
+    margin-top: 0.7rem !important; /* override -- base */
+}
+
+.ie11 .theme-entry .form .row *:first-child > * .AllWorklistCheckBoxes,
+.ie11 .theme-entry .SourceCodeFormsControlsWorklist .AllWorklistCheckBoxes
+{
+    margin-top: 0rem !important; /* override -- base */
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes.ie
+{
+    margin-top: -0.3rem !important; /* override -- base */
+}
+
+.mozilla .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes
+{
+    margin-top: 0.1rem !important; /* override -- base */
+}
+
+.mozilla .theme-entry .SourceCodeFormsControlsWorklist .WorklistTableCheckbox.GridCheckbox input[type=checkbox].AllWorklistCheckBoxes,
+.mozilla .theme-entry .SourceCodeFormsControlsWorklist .WorklistTableCheckbox input[type=checkbox].AllWorklistCheckBoxes
+{
+    margin-top: 0.5rem !important; /* override -- base */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .checkboxheader.ie-header
+{
+    padding-top: 0 !important;
+    padding-left: 0.8rem !important;
+}
+
+.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:after
+{
+    width: 18px;
+    height: 18px;
+}
+
+/* search & search clear button */
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchButton,
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-search-expander.SearchSelect /* expander icon */
+{
+    height: 24px;
+    width: 24px;
+    background-position: center;
+    background-color: @Background-Color-0 !important;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-search-expander
+{
+    background-position: center;
+    background-color: @Background-Color-0 !important;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchBoxTD .SearchClear /* clear icon */
+{
+    height: 22px;
+    width: 22px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn /* search icon */
+{
+    height: 22px;
+    width: 22px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/*.msie .theme-entry .SourceCodeFormsControlsWorklist .input-control.text-input {
+    right:0px;
+}*/
+
+.theme-entry .SourceCodeFormsControlsWorklist .input-control.text-input .input-control-m-c
+{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    background-color: @Background-Color-0 !important;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.worklist-execute-search-icon,
+.theme-entry .SourceCodeFormsControlsWorklist .SearchClearTD .worklist-search-clear-outer-wrapper
+{
+    border-top: solid 1px @Border-Color-0;
+    border-bottom: solid 1px @Border-Color-1;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchClearTD .worklist-search-clear-outer-wrapper
+{
+    border-right: solid 1px @Border-Color-0;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist tbody.active .worklist-execute-search-icon,
+.theme-entry .SourceCodeFormsControlsWorklist tbody.active .SearchClearTD .worklist-search-clear-outer-wrapper
+{
+    border-top: solid 1px @Border-Color-0;
+    border-bottom: solid 1px @Border-Color-3;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist tbody.active .SearchClearTD .worklist-search-clear-outer-wrapper
+{
+    border-right: solid 1px @Border-Color-0;
+}
+
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .searchBar .SearchClearTD
+{
+    padding-left: 0px;
+    right: 0px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.worklist-execute-search-icon /* search icon wrapper */
+{
+    height: 22px;
+    width: 24px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.designtime .worklist-execute-search-icon 
+{
+    height: 20px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.SearchBoxTD /* search clear icon wrapper */
+{
+    height: 22px;
+    width: 22px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.designtime .SearchBoxTD 
+{
+    height: 20px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchBar tr > td:first-child, /* search label text */
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-filter-dropdown-outer-wrapper /* match dropdown text */
+{
+    font-size: 1.2rem;
+}
+
+/* expander icon (expanded)*/
+.theme-entry .SourceCodeFormsControlsWorklist .SearchSelectExpanded
+{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.out-of-office .SourceCodeFormsControlsWorklist .OOFInput
+{
+    border: 1px solid @Border-Color-0;
+}
+
+/* #region RTL layout */
+
+/*worklist item indicator cell*/
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistItemIcons
+{
+    padding-left: 0rem;
+    padding-right: 0.8rem;
+}
+
+/* Select All checkbox (Grid layout) */
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListGridHeader .smartform-checkbox_selectall
+{
+    left: 0rem;
+    right: 1.2rem;
+}
+
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox.GridCheckbox
+{
+    padding-left: 0rem;
+    padding-right: 1rem;
+}
+
+/* toolbar icons cell */
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .nav .worklistToolbarIconWrapper
+{
+    text-align: left;
+    padding-right: 0rem;
+    padding-left: 0.6rem;
+}
+
+/*title cell*/
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .nav .worklistToolbarHeaderTextWrapper
+{
+    text-align: right;
+}
+
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .headerTxt
+{
+    padding-right: 2.0rem;
+    padding-left: 0rem;
+}
+
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .SearchClearTD
+{
+    left: 2px;
+    right: 0px;
+}
+
+html[dir=rtl] .picker-collection-search-criteria-cell #picker-collection-add-user-advanced-search-dropdown-match-wrapper
+{
+    margin-right: inherit;
+    margin-left: inherit;
+}
+
+html[dir=rtl] .picker-collection-search-criteria-cell #picker-collection-add-user-advanced-search-dropdown-label-wrapper
+{
+    margin-right: inherit;
+    margin-left: inherit;
+}
+
+html[dir=rtl] .theme-entry .worklist-action-menu-right-cell
+{
+    float: left;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #e0e0e0;
+    border-left-width: 0;
+}
+
+html[dir=rtl] .theme-entry .worklist-action-icon-view-flow
+{
+    right: -25px;
+}
+
+html[dir=rtl] .theme-entry .worklist-action-icon-open-form
+{
+    right: -25px;
+}
+
+/* #endregion RTL layout */
+
+
+
+/* #region Folio Watermark */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .watermark .text-underline
+{
+    font-family: "Open Sans", "Segoe UI Regular", Helvetica;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.grid-layout .SourceCodeFormsControlsWorklist .watermark span
+{
+    color: #636f80 !important; /* override base worklist style & watermark style should be persisted */
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout .SourceCodeFormsControlsWorklist .watermark span
+{
+    color: #5b6777 !important; /* override base worklist style & watermark style should be persisted */
+}
+
+/* #endregion Folio Watermark */
+
+/* #endregion DESKTOP */
+
+/* #region TOUCH */
+
+/* grid layout sort indicator arrow */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .column-arow
+{
+    margin-top: -0.8rem; /* centers vertically */
+    width: 2.2rem !important; /*override - inline*/
+}
+
+/* select all checkbox row */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .SelectAllSimpleSectionRow
+{
+    height: 4.1rem;
+}
+
+/* select all checkbox (simple layout) */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout .smartform-checkbox_selectall
+{
+    left: 0.6rem;
+}
+
+/* select all checkbox text */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout .searchHeaderText
+{
+    top: 1rem;
+}
+
+/* select all checkbox section + static height (simple layout) */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static .WorkListGridTableBody
+{
+    top: 1.3rem;
+}
+
+/* default body position - static height (simple layout) */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static.simple-layout .WorklistItemSectionCell
+{
+    position: absolute;
+    top: 2.3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+/* default body position - static height (grid layout) */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static .WorklistItemSectionCell
+{
+    position: absolute;
+    top: 3.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+/* multi select mode is on & static height */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static.worklist-multiselect-mode .WorklistItemSectionCell
+{
+    top: 6.4rem;
+}
+
+/* search section is visible & static height */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static.search-section-active .WorklistItemSectionCell
+{
+    top: 6.6rem;
+}
+
+/* multi select mode is on & search section visible & static height */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.search-section-active.height-static.worklist-multiselect-mode .WorklistItemSectionCell
+{
+    top: 10.6rem;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.grid-layout.height-static .WorkListGridTableBody
+{
+    top: 4.4rem;
+}
+
+/* #region Header */
+.mobile .theme-entry .form .row *:first-child > * .SourceCode-Forms-Controls-Web-ControlPack-Worklist .SelectAllSimpleSectionRow .smartform-checkbox_selectall
+{
+    margin-left: 0.5rem;
+    margin-top: 0.7rem;
+}
+
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .searchBar .input-control /* search textbox */
+{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+/* #endregion Header */
+
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button],
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .nav a.toolbar-button
+{
+    width: 3.6rem;
+    height: 3.6rem;
+    line-height: 3.6rem;
+}
+
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .headerTxt
+{
+    height: 2.4rem; /*needed for perfect vertical middle*/
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    display: none;
+}
+
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableHeader th
+{
+    height: 4.4rem; /*override - inline*/
+}
+
+/* worklist main - header */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist table.nav
+{
+    line-height: 3.6rem;
+    height: 3.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .nav .worklistToolbarIconWrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding-right: 0;
+}
+
+/* header search text */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .searchBar > table > tbody > tr > td:first-child
+{
+    display: none;
+}
+
+/* search more text */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist div.WorkListGridTableBody + a, /* grid layout */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .loadmore + a /* simple layout */
+{
+    font-size: 1.2rem !important; /* override -- inline */
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchBar > table
+{
+    width: 100% !important; /* override -- inline */
+    float: none !important; /* override -- inline */
+    margin: 0.5rem 0 0.5rem 0 !important; /* override -- inline */
+}
+
+/* search row and search criteria row */
+.mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchClearTD,
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .worklist-filter-dropdown-outer-wrapper
+{
+    padding-right: 0.5rem;
+}
+
+/* worklist main - overdue icon */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .WorklistTableOverdue
+{
+    padding-right: 0;
+    padding-left: 0.5rem;
+}
+
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .SimpleLayoutCell .PriorityImageDiv
+{
+    left: 0;
+}
+
+/* worklist main - high priority work item icon wrapper cell */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .WorklistTablePriority
+{
+    padding-left: 0.5rem;
+}
+
+/* activity name and folio (simple layout) */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .wlsimple .WorklistTableEventName,
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .wlsimple .WorklistTableFolio
+{
+    padding-left: 0.5rem;
+}
+
+/* worklist main search text icon wrappers */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.SearchBoxTD,
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.worklist-execute-search-icon
+{
+    height: 3.0rem;
+    width: 3.1rem;
+}
+
+/* worklist main search icon and search remove icon */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .worklist-execute-search-icon .searchAdvBtn,
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .SearchBoxTD .SearchClear
+{
+    height: 30px;
+    width: 30px;
+    top: 0px;
+    left: 0px;
+}
+
+.mobile .theme-entry .form .row *:first-child > * .AllWorklistCheckBoxes,
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .AllWorklistCheckBoxes
+{
+    width: 0px;
+    height: 0px;
+}
+
+/* worklist checkbox header (Grid layout) */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .checkboxheader
+{
+    height: auto;
+    width: auto;
+}
+
+/* CheckAll checkbox (Grid layout) */
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListGridHeader .smartform-checkbox_selectall
+{
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+}
+
+.mobile.webkit .theme-entry .SourceCodeFormsControlsWorklist input[type=checkbox].AllWorklistCheckBoxes:after
+{
+    width: 24px;
+    height: 24px;
+}
+
+/* worklist main select all checkbox (grid layout) */
+
+.mobile .theme-entry .form .row *:first-child > * .GridSelectAllCheckboxCell .AllWorklistCheckBoxes
+{
+    height: 24px;
+    position: relative;
+    right: 0.2rem;
+}
+
+/* worklist main individual row checkbox (grid layout) */
+.mobile .theme-entry .form .row *:first-child > * .GridCheckbox .AllWorklistCheckBoxes
+{
+    right: 0.7rem;
+}
+
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox.GridCheckbox
+{
+    padding-left: 0.5rem;
+}
+
+/* worklist main select all checkbox (simple layout) */
+.mobile .theme-entry .form .row * :first-child > * .SelectAllSimpleSectionRow .SelectAllTD .AllWorklistCheckBoxes
+{
+    margin-left: 1.3rem !important;
+}
+
+/* worklist main individual row checkbox (simple layout) */
+.mobile .theme-entry .form .row * :first-child > * .WorklistTableCheckbox > .AllWorklistCheckBoxes
+{
+    position: relative;
+    bottom: 1.3rem;
+}
+
+/* checkbox in each row (simple layout) */
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox
+{
+    padding-left: 0.4rem;
+}
+
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistItemGridRow > td
+{
+    height: 4.8rem; /*table cell min height*/
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .oofmsg
+{
+    display: none;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklistOOFMessageWrapper
+{
+    position: absolute;
+    line-height: normal;
+    top: 3.0rem;
+    bottom: 0;
+    right: auto;
+    left: 0.7rem;
+    width: auto;
+    height: 4.5rem;
+}
+
+.mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .OOF
+{
+    margin-bottom: 2.3rem;
+}
+
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-asc,
+.mobile .theme-entry .SourceCodeFormsControlsWorklist .column-arrow-desc
+{
+    height: 2.2rem; /*size of icon*/
+    width: 2.2rem; /*size of icon*/
+}
+
+/* #region RTL Touch layout */
+
+html[dir=rtl].mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .nav .worklistToolbarIconWrapper
+{
+    text-align: center;
+    padding-right: 0;
+}
+
+/* Select All checkbox (Grid layout) */
+html[dir=rtl].mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListGridHeader .smartform-checkbox_selectall
+{
+    left: initial;
+    right: 1.3rem;
+}
+
+/* search row and search criteria row */
+html[dir=rtl].mobile .theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchClearTD,
+html[dir=rtl].mobile .theme-entry .SourceCodeFormsControlsWorklist .worklist-filter-dropdown-outer-wrapper
+{
+    padding-left: .5rem;
+    padding-right: 0rem;
+}
+
+/* #endregion RTL Touch layout */
+
+/*#region TABS SCROLLING */
+html[dir=rtl].mobile .theme-entry #FilterConfig_secondPageInternal .tab-box.tabs-top ul.tab-box-tabs
+{
+    overflow-x: none;
+}
+
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+    /* default body position - static height (simple layout) */
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static.simple-layout .WorklistItemSectionCell
+    {
+        top: 2.7rem;
+    }
+
+    /* body position - static height */
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.height-static.search-section-active .WorklistItemSectionCell
+    {
+        top: 8.2rem;
+    }
+
+    /* body position - static height, search visible (simple layout) */
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.height-static.search-section-active .WorkListGridTableBody
+    {
+        top: 0;
+    }
+
+    /* body position - static height, search visible, multi select mode on (simple layout) */
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.simple-layout.search-section-active.height-static.worklist-multiselect-mode .WorklistItemSectionCell
+    {
+        top: 12.3rem;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .nav input[type=button],
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .nav a.toolbar-button
+    {
+        width: 3.0rem;
+        height: 3.0rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .wlsimple .text-underline
+    {
+        padding-left: 0;
+    }
+
+    /* hide the filter icon on phone device */
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist input.FilterInput
+    {
+        display: none;
+    }
+
+    /* high priority icon (simple layout) */
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .SimpleLayoutCell .PriorityImageDiv
+    {
+        left: 0;
+    }
+
+    /* header section */
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist table.nav
+    {
+        height: 4.0rem;
+    }
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist table.nav
+    {
+        padding-left: 0;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.SearchBoxTD, /* clear icon wrapper */
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.worklist-execute-search-icon /* search icon wrapper */
+    {
+        width: 3.2rem;
+        height: 3.0rem;
+    }
+
+    /*make the list items full width inside the half-screen popover*/
+    .mobile .theme-entry .worklist-action-menu-right-cell
+    {
+        float: none !important;
+        width: auto !important;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .searchBar > table
+    {
+        width: auto !important;
+    }
+
+    /*remove "search" label*/
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .searchBar > table > tbody > tr > td:first-child
+    {
+        display: none;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover td.WorklistTableSelectGridArrow div.SelectArrowImageDiv, /* hover*/
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu td.WorklistTableSelectGridArrow div.SelectArrowImageDiv,
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.SelectedDivBackground div.SelectArrowImageDiv /* selected row */
+    {
+        background-position: 0 0 !important; /* override -- base */
+        -moz-background-size: auto 22px !important; /* override -- base */
+        background-size: auto 22px !important; /* override -- base */
+        height: 22px !important; /* override -- base */
+        width: 22px !important; /* override -- base */
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .WorkListItemTable tr:hover td.WorklistTableSelectGridArrow div.SelectArrowImageDiv
+    {
+        height: 22px;
+        width: 22px;
+        background-size: auto 22px;
+    }
+
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist td.SimpleArrow.WorklistTableSelectGridArrow
+    {
+        width: 2.5rem !important; /* override -- core */
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklistToolbarHeaderTextWrapper .headerTxt
+    {
+        display: none;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .offmsg-with-detail
+    {
+        color: #fff;
+        display: block;
+        margin-left: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklistOOFMessageWrapper
+    {
+        top: 2.5rem;
+        bottom: 0;
+        right: auto;
+        left: 14.5rem;
+    }
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.SearchBoxTD, /* search clear icon wrapper */
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .WorklistThemeIconContainer.worklist-execute-search-icon /* search icon wrapper */
+    {
+        height: 3.0rem;
+        width: 3.2rem;
+    }
+
+    /* match dropdown text */
+    .mobile .theme-entry .SourceCodeFormsControlsWorklist .worklist-filter-dropdown-outer-wrapper .input-control.styling-font span
+    {
+        font-size: 1.6rem;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.out-of-office .OOF
+    {
+        text-align: right;
+        display: table;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist.out-of-office .oof-turn-off
+    {
+        bottom: 1.0rem;
+    }
+
+    .mobile .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklistOOFMessageWrapper
+    {
+        top: 3.6rem;
+        bottom: 0;
+        right: auto;
+        left: 26.0rem;
+    }
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */
+
+/*B563676
+    This fixed should apply for all browsers
+*/
+.mozilla .SourceCodeFormsControlsWorklist .WorklistItemGridRow:nth-child(even)
+{
+    background-color: @Background-Color-3;
+}
+
+.mozilla .SourceCodeFormsControlsWorklist .WorklistItemGridRow:nth-child(odd)
+{
+    background-color: @Background-Color-1;
+}
+/*End of B563676*/
+
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectArrowImageDiv
+{
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

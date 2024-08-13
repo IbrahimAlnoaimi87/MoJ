@@ -1,0 +1,26 @@
+﻿.msie #form1 > div.runtime-content > div.runtime-form > div.form > div:nth-child(7)
+{
+    display: none;
+}
+
+.theme-entry .grid .grid-content-cell.icon .grid-content-cell-wrapper
+{
+    padding-left: 22px;
+    padding-top: 5px;
+}
+
+.theme-entry.runtime-form .grid .grid-content-cell-wrapper
+{
+    padding-top: 4px;
+}
+
+.theme-entry .grid table.grid-content-table > tbody > tr > td:first-child
+{
+    padding-left: 7px;
+}
+
+div[name="sgridAdminPermissions"] > div > div > div.grid-body > div.grid-column-headers > div > table > tbody > tr > td:nth-child(3), div[name="sgridAdminPermissions"] > div > div > div.grid-body > div.grid-column-headers > div > table > tbody > tr > td:nth-child(4), 
+div[name="sgridAdminPermissions"] > div > div > div.grid-body > div.grid-column-headers > div > table > tbody > tr > td:nth-child(5)
+{
+    text-align: center;
+}

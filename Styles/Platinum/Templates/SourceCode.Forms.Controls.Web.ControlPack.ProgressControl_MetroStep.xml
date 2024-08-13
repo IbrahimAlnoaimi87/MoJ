@@ -1,0 +1,12 @@
+﻿<li class="step-container {position}">
+  <a href="javascript:;" class="step-area">
+    <div class="step-item">
+      <div class="connector-left"></div>
+      <div class="step" title="{stepNumber}"></div>
+      <div class="connector-right"></div>
+    </div>
+    <div class="step-title">
+      <div class="title" title="{title}">{title}</div>
+    </div>
+  </a>
+</li>

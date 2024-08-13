@@ -1,0 +1,30 @@
+﻿#ErrorMainPanel .pane-container vertical
+{
+	width: 100%;
+	cursor: default;
+	background: #f9f9f9;
+}
+
+#ErrorMainPanel td
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #343e41;
+	font-size: 12px;
+}
+
+.intro-content.error
+{
+	background: url(../Images/Icons/Error64.png) no-repeat 10px 10px;
+	padding-left: 80px;
+}
+
+h2.error
+{
+	color: #e9310d;
+}
+
+h1.error
+{
+	color: #343e41;
+	font-size: 14px;
+}

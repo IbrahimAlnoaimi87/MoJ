@@ -1,0 +1,370 @@
+/* This table is located on the following View: com.K2.System.Management.View.TreeNodeLandingPage */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.TreeNodeLandingPage */
+html.management-fluidform > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > .Grid-Layout
+{
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+html.management-fluidform
+{
+    /*Make any form fluid height - add "worskape-fluidlayout" to html tag*/
+    /*#region FORM FLUID HEIGHT */
+    display: block;
+    height: 100% !important;
+    overflow: hidden;
+    margin: 0 !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    html.management-fluidform > body,
+    html.management-fluidform > body > form,
+    html.management-fluidform > body > form > .runtime-content,
+    html.management-fluidform > body > form > .runtime-content > .runtime-form,
+    html.management-fluidform > body > form > .runtime-content > .runtime-form > .form
+    {
+        display: block;
+        height: 100% !important;
+        overflow: hidden;
+        margin: 0 !important;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper,
+html.management-fluidview > body > form > .runtime-content > .runtime-form > .form > .row > .view > div.innerpanel > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    overflow: hidden;
+}
+/*region items List */
+
+/* This table is located on the following View: com.K2.System.Management.View.TreeNodeLandingPage */
+/* Styling is applied where this View has been used on: com.K2.System.Management.Form.TreeNodeLandingPage */
+html.management-treenodelandingpage .theme-entry .editor-cell,
+html.management-treenodelandingpage .theme-entry .editor-cell[col='1'],
+html.management-treenodelandingpage .theme-entry .editor-cell.lastcellinrow,
+html.management-treenodelandingpage .theme-entry .Grid-Layout > .editor-cell[row='1'],
+html.management-treenodelandingpage .theme-entry .Grid-Layout > .editor-cell.lastrow
+{
+    padding: 0;
+}
+
+html.management-treenodelandingpage div.SourceCode-Forms-Controls-Web-ControlPack-GenericList,
+html.management-treenodelandingpage div.SourceCode-Forms-Controls-Web-ControlPack-GenericList .scrollWrapperDiv
+{
+    height: auto !important;
+    /*override inline style height */
+}
+
+html.management-treenodelandingpage div.SourceCode-Forms-Controls-Web-ControlPack-GenericList
+{
+    padding: 2rem 0;
+    border-top: 1px solid #959595;
+}
+
+html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover
+{
+    display: none;
+}
+
+html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem
+{
+    border: none;
+    margin-bottom: 2.5rem;
+    margin-right: 0;
+}
+
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .deleteItem
+{
+    display:none;
+}
+
+html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList span,
+html.management-treenodelandingpage .SFC.SourceCode-Forms-Controls-Web-Button[name="btnMakeDefault"],
+html.management-treenodelandingpage span,
+html.management-treenodelandingpage a
+{
+    font-size: 1.5rem;
+}
+
+/* Update Generic List styling in Management */
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .title,
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .description,
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .property1,
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .property2
+{
+    text-align: left;
+}
+
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .title > span,
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .description > span,
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .property1 > span,
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .property2 > span
+{
+    position: relative;
+}
+
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .title:before,
+html.management-treenodelandingpage .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .description:before
+{
+    display: none;
+}
+
+html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .title span
+{
+    text-decoration: underline;
+    right: auto;
+    color: #5b595d;
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Segoe UI';
+}
+
+html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .description span
+{
+    color: #717171;
+    display: block;
+    /*display: -webkit-box;*/
+    /* width: 155px; */
+    /*max-height: 4.5rem;
+    line-height: 2.0rem;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+    position: relative;
+    white-space: initial;
+}
+
+html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .description:before
+{
+    display: none;
+}
+
+html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell
+{
+    width: 32px;
+    padding: .4rem;
+    vertical-align: top;
+}
+
+    html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell .item-image,
+    html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .indicator1
+    {
+        display: block;
+        height: 32px;
+        width: 32px;
+        background-position: center;
+        background-size: 32px;
+        background-repeat: no-repeat;
+    }
+
+    html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell .item-image
+    {
+        padding: 0;
+    }
+
+html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .indicator1
+{
+    padding: 0 .5rem;
+}
+
+html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PropertiesMain
+{
+    padding: 0;
+    padding-left: .5rem;
+    width: 100%;
+}
+
+html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem:hover
+{
+    /* background-color: #bfeafb; */
+}
+/*endregion*/
+
+html.management-treenodelandingpage .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList
+{
+    width: 80rem !important;
+}
+
+    html.management-treenodelandingpage .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem
+    {
+        width: 50%;
+        float: left;
+    }
+    html.management-treenodelandingpage .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.evenRow
+    {
+        clear:left;
+    }
+
+html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageTitle"]
+{
+    padding: 0;
+    padding-bottom: 2.0rem;
+}
+/*#region icon */
+
+html.management-treenodelandingpage .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"]
+{
+    display: block;
+    height: 75px;
+    width: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75px;
+    padding: 1rem;
+    /* margin: auto; */ /* [902999] margin:auto is not necessary anymore and it is causing the icons not aligned to center in IE */
+    margin-bottom: .8rem;
+}
+/*#endregion*/
+/*region Page specific logos */
+
+/* TODO: Move all image declarations to Management_Common.css */
+
+html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].Authentication
+{
+    background-image: url('K2Sites_Management/Images/AuthenticationBlankPage75.png');
+}
+
+html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].AuthenticationOAuth
+{
+    background-image: url('K2Sites_Management/Images/ClaimsBlankPage75.png');
+}
+
+html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].AuthenticationClaims
+{
+    background-image: url('K2Sites_Management/Images/OAuthBlankPage75.png');
+}
+
+html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].SmartObjectSecurityCategory
+{
+    background-image: url('K2Sites_Management/Images/SecurityBlankPage75.png');
+}
+
+html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].WorkflowServer
+{
+    background-image: url('K2Sites_Management/Images/WorkflowServerBlankPage75.png');
+}
+
+html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].Environments
+{
+    background-image: url('K2Sites_Management/Images/EnvironmentLibraryBlankPage75.png');
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+/* Portrait */
+only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2),
+/* Portrait */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+/* Landscape */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
+/* Portrait */
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+/* Landscape */
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3),
+/* Portrait */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait),
+/* Landscape */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
+/* ----------- Galaxy S3 ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2),
+/* Portrait */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait),
+/* Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape),
+/* ----------- Galaxy S4 ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+/* Portrait */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+/* Landscape */
+screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape),
+/* ----------- Galaxy S5 ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+/* Portrait */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+/* Landscape */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape),
+/* ----------- HTC One ----------- */
+/* Portrait and Landscape */
+screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3), screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait), screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) only screen and (min-device-width: 320px) and (max-device-width: 480px),
+/*only screen and (min-width : 321px), only screen and (max-width : 320px),*/
+only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+/*only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2),*/
+/*only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)*/
+{
+    html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].Authentication
+    {
+        background-image: url('K2Sites_Management/Images/AuthenticationBlankPage75@2x.png');
+    }
+
+    html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].AuthenticationOAuth
+    {
+        background-image: url('K2Sites_Management/Images/ClaimsBlankPage75@2x.png');
+    }
+
+    html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].AuthenticationClaims
+    {
+        background-image: url('K2Sites_Management/Images/OAuthBlankPage75@2x.png');
+    }
+
+    html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].SmartObjectSecurityCategory
+    {
+        background-image: url('K2Sites_Management/Images/SmartObjectSecurityBlankPage75@2x.png');
+    }
+
+    html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].WorkflowServer
+    {
+        background-image: url('K2Sites_Management/Images/WorkflowServerBlankPage75@2x.png');
+    }
+
+    html.management-treenodelandingpage span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlPageLogo"].Environments
+    {
+        background-image: url('K2Sites_Management/Images/EnvironmentLibraryBlankPage75@2x.png');
+    }
+}
+
+@media all and (max-width: 787px) and (min-width: 0)
+{
+    html.management-treenodelandingpage .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList,
+    html.management-treenodelandingpage .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.WorkflowServer,
+    html.management-environments div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="cltEnvironmentsList"]
+    {
+        width: 35rem !important;
+    }
+
+    html.management-treenodelandingpage div.SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem
+    {
+        border: none;
+        margin-bottom: 2.5rem;
+    }
+}
+/*endregion*/

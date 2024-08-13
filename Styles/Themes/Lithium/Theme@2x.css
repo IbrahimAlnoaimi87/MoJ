@@ -1,0 +1,111 @@
+/*#region RATING CONTROL */
+
+.theme-entry .ratingStar {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+.theme-entry .filledRatingStar {
+  margin-top: 0.6rem;
+  margin-left: 0.3rem !important;
+  margin-right: 0.3rem !important;
+}
+.theme-entry .emptyRatingStar {
+  margin-top: 0.6rem;
+  margin-left: 0.3rem !important;
+  margin-right: 0.3rem !important;
+}
+.theme-entry .savedRatingStar {
+  margin-top: 0.6rem;
+  margin-left: 0.3rem !important;
+  margin-right: 0.3rem !important;
+}
+.theme-entry .hoveredRatingStar {
+  margin-top: 0.6rem;
+  margin-left: 0.3rem !important;
+  margin-right: 0.3rem !important;
+}
+/*#endregion RATING CONTROL */
+
+/*#region SLIDER */
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-Slider {
+  margin: 1.5rem 0 1.5rem 0;
+}
+.theme-entry .dragdealer .handle {
+  top: -2rem;
+  left: 0;
+  min-width: 6rem;
+  min-height: 6rem;
+}
+.theme-entry .dragdealer .handle-icon {
+  top: 2rem;
+  left: 2rem;
+}
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_inner,
+.theme-entry .Slider-rail .Slider-rail-inner {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  height: 2rem;
+  background-position: 0 50%;
+  background-repeat: repeat-x;
+  right: 2rem;
+  filter: inherit;
+}
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_start,
+.theme-entry .Slider-rail .Slider-rail-start {
+  /*background-image: url("slider_bar_left_corners.png");*/
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  height: 2rem;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  width: 0.8rem;
+  filter: inherit;
+}
+.theme-entry .ajax__slider_h_rail .ajax_slider_rail_end,
+.theme-entry .Slider-rail .Slider-rail-end {
+  /*background-image: url("slider_bar_right_corners.png");*/
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  height: 2rem;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  width: 0.8rem;
+  filter: inherit;
+}
+.theme-entry .ajax__slider_h_handle,
+.theme-entry .Slider-rail a.Slider {
+  height: 2rem;
+  width: 2rem;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  filter: inherit;
+  cursor: default;
+}
+/*focus state*/
+
+.theme-entry .ajax__slider_h_handle:focus,
+.theme-entry .Slider-rail a.Slider:focus {
+  background-image: none;
+  background-color: #3cb0df;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+}
+.theme-entry .editor-cell > .sliderWrapper {
+  height: 2rem;
+}
+.theme-entry .ajax__slider_h_rail {
+  height: 2rem;
+}
+/*#endregion SLIDER */
+

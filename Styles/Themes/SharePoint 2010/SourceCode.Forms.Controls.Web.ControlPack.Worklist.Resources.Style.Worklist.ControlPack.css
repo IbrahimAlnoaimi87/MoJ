@@ -1,0 +1,1419 @@
+/* start simple layout */
+.theme-entry table.WorkListItemTableSimple td.shadedCol
+{
+	background: #f5f5f5;
+	color: #4f7216;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist
+{
+	border-color: #acaf9c;
+	background: #f7f7f7;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WatermarkText
+{
+	color: #aaaaaa;
+	text-align: center;
+}
+
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorkListItemTableSimple,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorkListItemTableSimple
+{
+	background: #d3eef7 !important;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorkListItemTableSimple td.shadedCol,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorkListItemTableSimple td.shadedCol,
+.theme-entry .SourceCodeFormsControlsWorklist .SelectedDivBackground .WorkListItemTableSimple td.shadedCol
+{
+	background: #C6DFE7 !important;
+}
+
+.theme-entry .WorkListItemTableSimple div.PriorityImageDiv
+{
+	background: url(../platinum/worklist/BlueIndicator.png) no-repeat 0 0 transparent;
+}
+
+.theme-entry .WorkListItemTableSimple div.OverdueImageDiv
+{
+	background: url(../platinum/worklist/ExclimationIcon.png) no-repeat 0 0 transparent;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SelectAllSimpleSectionRow
+{
+	background-color: #f5f5f5;
+}
+
+/*B555076,B556281*/
+html[dir='rtl'] .theme-entry .SourceCodeFormsControlsWorklist .WorkListGridTableBody
+{
+	float:right;
+}
+html[dir='ltr'] .theme-entry .SourceCodeFormsControlsWorklist .WorkListGridTableBody
+{
+	float:left;
+}
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridTableBody
+{
+	width:100%;
+	display:inline-block;
+	border-top: 1px solid #acaf9c;	
+	padding:0 0 1px 0;	
+}
+.ie9 .theme-entry .SourceCodeFormsControlsWorklist .WorkListGridTableBody
+{
+	margin-top:auto;	
+}
+/*END B555076*/
+/* end simple layout */
+
+/* start grid layout */
+.theme-entry .worklist-grid-odd
+{
+	background-color: #f5f5f5;
+}
+
+.theme-entry .worklist-grid-even
+{
+	background-color: #fff;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader th
+{
+	background: #fff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 50%, #f8f6f9 51%, #f7f7f5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#fcfcfc), color-stop(51%,#f8f6f9), color-stop(100%,#f7f7f5));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f5',GradientType=0 );	
+	color: #676767;
+	text-align: left;
+	font-weight: normal;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader th.worklist-grid-column-header-icon-cell:hover,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader th.worklist-grid-column-header-icon-cell:focus,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader th.worklist-grid-column-header:hover,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader th.worklist-grid-column-header:focus,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader th.GridSelectAllCheckboxCell:hover,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader th.GridSelectAllCheckboxCell:focus
+{
+	background: #eaf6ff;
+	background: -moz-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaf6ff), color-stop(100%,#bfe4fc));
+	background: -webkit-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+	background: -o-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+	background: -ms-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+	background: linear-gradient(to bottom, #eaf6ff 0%,#bfe4fc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf6ff', endColorstr='#bfe4fc',GradientType=0 );
+	outline:0;/*B556462*/
+}
+
+.theme-entry .WorklistColumnHeaderDivider
+{
+	border-color: #fff #adae9c #adae9c #fff;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SelectedDivBackground
+{
+	background-color: #c4e9f5 !important;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu
+{
+	background-color: #d3eef7 !important;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .SelectArrowImageDiv
+{
+	background: url(../platinum/worklist/Arrow.png) no-repeat 0 0 transparent;
+}
+
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover td.WorklistTableSelectGridArrow,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu td.WorklistTableSelectGridArrow
+{
+	background-color: #C6DFE7;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistTableSelectGridArrow
+{
+	background-color: #f5f5f5;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .WorklistTableSelectGridArrow
+{
+	background-color: #C6DFE7 !important;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.WorklistItemGridCell
+{
+	color: red;
+}
+
+.theme-entry .LastRowWhiteSpace,
+.theme-entry .LastRowWhiteSpace:hover,
+.theme-entry .BlankCheckBox,
+.theme-entry .BlankCheckBox:hover
+{
+	background: white;
+}
+
+/* General */
+.theme-entry .SourceCodeFormsControlsWorklist table.SelectAllMainTable td
+{
+	border-top-color: #acaf9c;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItem:hover
+{
+	background-color: #d3eef7;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItem
+{
+	border-top-color: #d5d6ce;
+	border-bottom-color: #d5d6ce;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SearchBoxTD
+{
+	width: 100%;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .FilterInput
+{
+	border-color: transparent;
+	background: url(../platinum/worklist/Filter16.png) no-repeat transparent center;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .FilterInputOff
+{
+	border-color: transparent;
+	background: url(../platinum/worklist/Filter16.png) no-repeat transparent center;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .RefreshInputError,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .force-refresh-error-cache
+{
+	border-color: transparent;
+	background: url(../platinum/worklist/RefreshOffline.png) no-repeat transparent center !important;
+}
+
+.theme-entry .WorklistThemeIconContainer:hover,
+.theme-entry .WorklistThemeIconContainer:focus
+{
+	background: #eaf6ff;
+	background: -moz-linear-gradient(top, #eaf6ff 0%, #bfe4fc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaf6ff), color-stop(100%,#bfe4fc));
+	background: -webkit-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+	background: -o-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+	background: -ms-linear-gradient(top, #eaf6ff 0%,#bfe4fc 100%);
+	background: linear-gradient(to bottom, #eaf6ff 0%,#bfe4fc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf6ff', endColorstr='#bfe4fc',GradientType=0 );
+}
+
+.theme-entry .WorklistThemeIconContainer
+{
+	background: #f8f4f8;
+	background: -moz-linear-gradient(top, #f8f4f8 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f4f8), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #f8f4f8 0%,#ffffff 100%);
+	background: -o-linear-gradient(top, #f8f4f8 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #f8f4f8 0%,#ffffff 100%);
+	background: linear-gradient(to bottom, #f8f4f8 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f4f8', endColorstr='#ffffff',GradientType=0 );
+	border: 1px solid #e9e4e8;
+	width: 18px;
+	height: 18px;
+	border-width: 1px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	border-top-color: gray;
+	background: #f5f5f5;
+	border-style: none;
+	border-width: 0px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .OptionSelectBorder
+{
+	border-color: #acaf9c;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .OptionSelectBorderRefresh
+{
+	border-color: transparent;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .OptionSelectBorderOff
+{
+	border-color: transparent !important;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox
+{
+	outline-color: #98dc28;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox::-webkit-input-placeholder,
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox:-moz-placeholder,
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox::-moz-placeholder,
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox:-ms-input-placeholder
+{
+	color: white;
+}
+/* end General */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchIcon
+{
+	background: url(../platinum/worklist/Search16.png) no-repeat transparent center;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .multiselectIcon
+{
+	background: url(../platinum/worklist/MultiSelect16_3.png) no-repeat transparent center;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .filterIcon
+{
+	background: url(../platinum/worklist/Filter16.png)no-repeat transparent center;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .refreshIcon
+{
+	background: url(../platinum/worklist/SyncToned_2.png) no-repeat transparent center;
+}
+
+
+/* worklist menu popup */
+.theme-entry .worklist-action-popup
+{
+	border-color: #aaaaaa;
+	background-color: #fff;
+}
+
+.theme-entry .worklist-action-icon:focus,
+.theme-entry .worklist-action-icon:hover,
+.theme-entry .worklist-action-menu-right-cell:focus,
+.theme-entry .worklist-action-menu-right-cell:hover,
+.theme-entry .worklist-action-menu-right-cell.enhanced-color:focus,
+.theme-entry .worklist-action-menu-right-cell.enhanced-color:hover
+{
+	background-color: #d3eef7;
+}
+
+.theme-entry .worklist-action-menu-right-cell.last:hover
+{
+	background-color: #fff;
+}
+
+.theme-entry .loadmore
+{
+	color: #98DC28;
+}
+
+.theme-entry .worklist-search-outer-wrapper .SearchBoxTD
+{
+	border-color: #acaf9c;
+}
+
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchAreaExpanded
+{
+	border-bottom-color: #acaf9c;
+}
+
+.theme-entry .searchButton,
+.theme-entry .searchAdvBtn
+{
+	background-image: url(../platinum/worklist/Search16.png);
+	height: 16px;
+	width: 16px;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	display: inline-block;
+	vertical-align: top;
+	background-position: 1px 1px;
+}
+
+/* EndofWorklistGridStyling */
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-column-divider
+{
+	border-color: #fff #e8e3e7 #e8e3e7 #fff;
+}
+
+
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchSelect,
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .searchselect
+{
+	background-image: url(../platinum/worklist/PDExpand.png);
+}
+
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchClear
+{
+	background-image: url(../platinum/worklist/ClearIcon.png);
+	height: 16px;
+	width: 16px;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .SearchClearTD
+{
+	padding-left: 4px;
+}
+
+.theme-entry .SearchSelect,
+.theme-entry .searchselect
+{
+	background-image: url(../platinum/worklist/PDExpand.png);
+	height: 16px;
+	width: 16px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	display: inline-block;
+}
+
+
+.theme-entry .SourceCodeFormsControlsWorklist .nav
+{
+	background: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 50%, #f8f6f9 51%, #f7f7f5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#fcfcfc), color-stop(51%,#f8f6f9), color-stop(100%,#f7f7f5));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#fcfcfc 50%,#f8f6f9 51%,#f7f7f5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f5',GradientType=0 );
+	border-color: transparent;
+	color: #676767;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItemGridCell
+{
+	padding-left: 6px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+
+
+/* WorkListGridStyling */
+
+.worklist-sort-indicator-column-header
+{
+	position: relative;
+}
+
+/* start simple layout */
+
+.theme-entry .SourceCodeFormsControlsWorklist div.SelectAllTD
+{
+	padding-left: 4px;
+	padding-right: 8px;
+	float: left;
+}
+
+.theme-entry table.WorkListItemTableSimple td.shadedCol
+{
+	text-align: right;
+	width: 30%;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist td.SimpleArrow
+{
+	width: 25px !important;
+}
+
+.theme-entry .WorkListItemTableSimple div.PriorityImageDiv
+{
+	background-size: 11px 11px;
+	height: 11px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.theme-entry .WorkListItemTableSimple div.OverdueImageDiv
+{
+	background-size: 11px 11px;
+	height: 11px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist
+{
+	border-width: 1px;
+	border-style: solid;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistMainTable tr.SelectAllSimpleSectionRow
+{
+	width: 100%;
+	height: 32px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.WorkListItemTableRowOne td
+{
+	padding-top: 9px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.WorkListItemTableRowTwo td
+{
+	padding-top: 4px;
+	padding-bottom: 7px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.WorkListItemTableRowOne td.WorklistTablePriority
+{
+	padding-left: 4px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist div.WorkListGridTableBody
+{
+	background: white;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.WorkListItemTableRowTwo td.WorklistTableOverdue
+{
+	padding-left: 4px;
+}
+/* end simple layout */
+
+/* start grid layout */
+.theme-entry .SourceCodeFormsControlsWorklist .OptionSelectBorder
+{
+	border-style: solid;
+	border-width: 1px;
+}
+
+.theme-entry .WorklistColumnHeaderDivider
+{
+	height: 15px;
+	border-color: #fff #adae9c #adae9c #fff;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable
+{
+	width: 100%;
+	overflow-y: auto;
+	padding: 0px;
+	margin: 0px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	table-layout: fixed;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover td.WorklistTableSelectGridArrow div.SelectArrowImageDiv,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu td.WorklistTableSelectGridArrow div.SelectArrowImageDiv
+{
+	background-size: 7px 7px;
+	height: 7px;
+	width: 7px;
+	margin: 0 auto !important;
+	display: block;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr
+{
+	height: 30px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .WorklistTableCheckbox
+{
+	width: 32px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistTableSelectGridArrow
+{
+	width: 53px;
+	cursor: pointer;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.SelectedDivBackground div.SelectArrowImageDiv
+{
+	background-size: 7px 7px;
+	height: 7px;
+	width: 7px;
+	margin: 0 auto !important;
+	display: block;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.WorklistItemGridCell
+{
+	vertical-align: top;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistItemIcons div.PriorityImageDiv
+{
+	height: 11px;
+	width: 11px;
+	float: left;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistItemIcons div.OverdueImageDiv
+{
+	height: 11px;
+	width: 11px;
+	float: left;
+	padding-left: 1px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable td.WorklistItemIcons
+{
+	width: 30px;
+	padding-left: 4px;
+}
+
+/* end grid layout */
+
+.theme-entry .SourceCodeFormsControlsWorklist .SelectAllMainTable td
+{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-top: solid;
+	border-top-width: 1px;
+}
+
+.theme-entry .worklist-search-outer-wrapper .SearchBoxTD
+{
+	border-width: 1px;
+	border-style: solid;
+	position: relative;
+	float: left;
+	height: 18px;
+	width: 100%;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchClearTD
+{
+	position: relative;
+	right: 2px;
+}
+
+.theme-entry table.SearchSectionMainTable tr.SearchBar td
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.theme-entry table.SearchSectionMainTable tr.MatchBar td
+{
+	padding-bottom: 5px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTableRowTwo td
+{
+	padding-top: 4px;
+	padding-bottom: 7px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItem:hover
+{
+	width: 100%;
+	cursor: pointer;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistItem
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchSectionMainTable td.SearchBoxTD
+{
+	width: 100%;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .FilterInput
+{
+	border-width: 1px;
+	border-style: solid;
+	background-size: 16px 16px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	outline: none;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .FilterInputOff
+{
+	border-width: 1px;
+	border-style: solid;
+	background-size: 16px 16px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	outline: none;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .OOFInput
+{
+	border-width: 1px;
+	border-style: solid;
+	background-size: 16px 16px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	outline: none;
+	background: url(../platinum/worklist/OOF16.png) no-repeat transparent center;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInput
+{
+	border-width: 1px;
+	border-style: solid;
+	background-size: 16px 16px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	outline: none;
+	border-color: transparent;
+	background: url(../platinum/worklist/Search16.png) no-repeat transparent center;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputOff
+{
+	border-width: 1px;
+	border-style: solid;
+	background-size: 16px 16px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	outline: none;
+	border-color: #acaf9c;
+	background: url(../platinum/worklist/Search16.png) no-repeat transparent center;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .CheckboxInput
+{
+	border-width: 1px;
+	border-style: solid;
+	background-size: 16px 16px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	outline: none;
+	border-color: transparent;
+	background: url(../platinum/worklist/MultiSelect16_3.png) no-repeat transparent center;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .CheckboxInputOff
+{
+	border-width: 1px;
+	border-style: solid;
+	background-size: 16px 16px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	outline: none;
+	border-color: #acaf9c;
+	background: url(../platinum/worklist/MultiSelect16_3.png) no-repeat transparent center;
+}
+
+
+.theme-entry .SourceCodeFormsControlsWorklist .RefreshInput
+{
+	border-width: 1px;
+	border-style: solid;
+	background-size: 16px 16px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	outline: none;
+	border-color: transparent;
+	background: url(../platinum/worklist/SyncToned_2.png) no-repeat transparent center;
+}
+
+
+.theme-entry .SourceCodeFormsControlsWorklist .RefreshInputLoading
+{
+	border-width: 1px;
+	border-style: solid;
+	background-size: 16px 16px;
+	width: 20px;
+	height: 20px;
+	outline: none;
+	border-color: transparent;
+	background: url(../platinum/worklist/loading.gif) no-repeat transparent center;
+}
+
+.theme-entry #worklist-control-search-table .worklist-search-clear-outer-wrapper
+{
+	margin-left: 5px;
+}
+
+.theme-entry .worklist-search-outer-wrapper
+{
+	position: relative;
+}
+
+.theme-entry #worklist-control-search-table .worklist-filter-dropdown-outer-wrapper
+{
+	margin-right: 2px;
+}
+
+.theme-entry .SearchSelectExpanded
+{
+	height: 16px;
+	width: 16px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	display: inline-block;
+	background-image: url(../platinum/worklist/PDCollapse.png);
+}
+
+.theme-entry .SearchSectionMainTable
+{
+	position: relative;
+	left: -2px;
+}
+
+.theme-entry .WorklistSearchIconContainer
+{
+	/*padding-right: 2px;*/
+	width: 18px;
+	height: 18px;
+}
+
+.theme-entry .WorklistSearchIconContainer .SearchBoxTD
+{
+	position: relative;
+	left: 1px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist table.WorklistMainTable tr.SearchSectionRow
+{
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchMatchText
+{
+	cursor: default;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist table.SearchSectionMainTable td.SearchTD div.SearchLabel
+{
+	padding-left: 12px;
+	width: 10px;
+	display: table-cell;
+	cursor: default;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist
+{
+	height: 100%;
+	text-align: left;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .WorklistMainTable tr.WorklistItemSectionRow
+{
+	width: 100%;
+	background: White;
+	padding: 0px;
+	margin: 0px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .SearchInputBox
+{
+	width: 100%;
+	height: 18px;
+	border: none;
+	padding-left: 3px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	vertical-align: top;
+}
+/* end General */
+
+
+/* pop up */
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDLeftImage
+{
+	text-align: center;
+	background-size: 16px 16px;
+	width: 30px;
+	height: 30px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDLeftImageViewFlow
+{
+	text-align: center;
+	background-size: 16px 16px;
+	width: 30px;
+	height: 30px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDLeftImageComments
+{
+	text-align: center;
+	background-size: 16px 16px;
+	width: 30px;
+	height: 30px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDReleaseImage
+{
+	background-size: 16px 16px;
+	width: 30px;
+	height: 30px;
+	display: table-cell;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDSleepImage
+{
+	background-position-y: center;
+	background-size: 16px 16px;
+	width: 30px;
+	height: 27px;
+	display: table-cell;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDRedirectImage
+{
+	background-size: 16px 16px;
+	width: 30px;
+	height: 30px;
+	display: table-cell;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDDelegateImage
+{
+	background-size: 16px 16px;
+	width: 30px;
+	height: 30px;
+	display: table-cell;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDRight
+{
+	width: 130px;
+	border-width: 1px;
+	border-style: solid;
+	vertical-align: middle;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDRightAction
+{
+	width: 130px;
+	vertical-align: middle;
+	border-left: 1px solid;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .PopupWorklistTableTDRightTextAction:hover
+{
+	padding-left: 10px;
+	display: table-cell !important;
+	vertical-align: middle;
+	width: 130px;
+	height: 30px;
+	cursor: pointer;
+}
+/* end popup */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .toolbarImage
+{
+	background-size: 16px 16px;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .iconContainer
+{
+	margin-top: 2px;
+	float: right;
+	display: inline-block;
+	position: relative;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .searchIconWrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .multiselectIconWrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .filterIconWrapper,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .refreshIconWrapper
+{
+	border: 1px solid transparent;
+	/*float: right;*/
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-Worklist .SelectWorklistOptions
+{
+	margin-top: 1px;
+}
+
+#SortBody
+{
+	top: 22px;
+}
+
+/* worklist menu popup */
+.theme-entry .worklist-action-popup
+{
+	width: 160px;
+	height: 165px;
+	border-width: 1px;
+	border-style: solid;
+	position: absolute;
+}
+
+.theme-entry .worklist-action-popup.multi
+{
+	width: 160px;
+	height: 99px;
+	border-width: 1px;
+	border-style: solid;
+	position: absolute;
+}
+
+.theme-entry .worklist-action-menu-container
+{
+	position: relative;
+	height: 100%;
+}
+
+.theme-entry .worklist-action-menu-right-cell
+{
+	float: right;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #e0e0e0;
+	border-bottom-color: #e0e0e0;
+	height: 33px;
+	width: 130px;
+	box-sizing: border-box;
+	text-overflow: ellipsis;
+}
+
+.theme-entry .worklist-action-menu-right-cell.last
+{
+	border-bottom-width: 0;
+	position: relative;
+}
+
+
+.theme-entry .worklist-action-icon-open-form
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	top: 8px;
+	left: -25px;
+	background-image: url(../platinum/worklist/OpenForm16.png);
+}
+
+.theme-entry .worklist-action-icon-view-flow
+{
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	top: 8px;
+	left: -25px;
+	background-image: url(../platinum/worklist/ViewFlow16.png);
+}
+
+.theme-entry .worklist-action-icon-release
+{
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-image: url(../platinum/worklist/release16.png);
+}
+
+.theme-entry .worklist-action-icon-sleep
+{
+	background-repeat: no-repeat;
+	background-position: 9px 9px;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-image: url(../platinum/worklist/sleep16.png);
+}
+
+.theme-entry .worklist-action-icon-redirect
+{
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-image: url(../platinum/worklist/Redirect16.png);
+}
+
+.theme-entry .worklist-action-icon-share
+{
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-image: url(../platinum/worklist/Share16.png);
+}
+
+.theme-entry .worklist-action-open-form,
+.theme-entry .worklist-action-view-flow
+{
+	position: relative;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .column-arrow-asc
+{
+	background-image: url("../Platinum/sort_ascending_normal.png");
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+	left: 50%;
+	width: 7px;
+	height: 4px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .column-arrow-desc
+{
+	background-image: url("../Platinum/sort_descending_normal.png");
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+	left: 50%;
+	width: 7px;
+	height: 4px;
+}
+
+.theme-entry .RefreshErrorTooltip
+{
+	display: none;
+}
+
+/* override core table styling */
+.theme-entry td.WorklistItemSectionCell
+{
+	border-collapse: separate;
+}
+
+.theme-entry .WorkListItemTableHeader
+{
+	border-collapse: separate;
+	position: relative;
+	border-top: 1px solid #acaf9c;
+}
+
+/* remove extra right border from last grid header cell */
+.theme-entry .SourceCodeFormsControlsWorklist th.WorklistGridHeaderLast
+{
+	border-right-width: 0px;
+}
+
+/* IE8 prevent filter to hide the borders */
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader.IE8 th,
+.theme-entry .SourceCodeFormsControlsWorklist .WorkListGridHeader.IE9 th
+{
+	position: relative;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchHeaderText
+{
+	padding-top: 2px;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchAreaExpanded
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchAreaHidden
+{
+	border-bottom-width: 0px;
+	border-bottom-style: none;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist td.FilterCell
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-column-divider
+{
+	border-style: solid;
+	border-width: 0 1px;
+	cursor: col-resize;
+	display: inline-block;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0;
+}
+
+.worklist-grid-column-divider.ui-draggable-dragging
+{
+	border-style: solid;
+	border-width: 0 1px;
+	border-color: #fff #e8e3e7 #e8e3e7 #fff;
+	cursor: col-resize;
+	display: initial;
+	/*display: inline-block;*/
+	height: 18px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 0;
+	z-index: 9999;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-column-header-cell
+{
+	position: relative;
+	text-overflow: ellipsis;
+	overflow: hidden;	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist span.worklist-grid-column-header-cell-text
+{
+	margin-left: 5px !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	line-height: 181%;
+	color: #168bac;
+	font-weight: bold;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-grid-column-header-icon-cell .worklist-grid-column-header-cell
+{
+	width: 33px;
+}
+/* EndofWorklistGridStyling */
+
+
+
+/*Worklist Images*/
+
+.theme-entry .ControlPack.Worklist .SourceCodeFormsControlsWorklist .SelectArrowImageDiv
+{
+	background: url("../platinum/worklist/Arrow.png") no-repeat 0 0 transparent;
+}
+
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .PriorityImageDiv
+{
+	background: url(../platinum/worklist/ExclimationIcon.png) no-repeat 0 0 transparent;
+}
+
+.theme-entry .ControlPack-Worklist .SourceCodeFormsControlsWorklist .OverdueImageDiv
+{
+	background: url(../platinum/worklist/BlueIndicator.png) no-repeat 0 0 transparent;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .headerTxt
+{
+	margin: 8px !important;
+	display: inline-block;
+	font-style: inherit;
+	color: inherit;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+}
+
+
+.theme-entry .SourceCodeFormsControlsWorklist .searchBar
+{
+	border-bottom-color: #acaf9c;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	color: #343e41;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .msie
+{
+	padding-left: 0px;
+}
+
+
+/*This section caused alignment issue between header and item*/
+/*
+.theme-entry .SourceCodeFormsControlsWorklist .ie-header
+{
+	padding-left: 6px;
+}
+*/
+
+.theme-entry .SourceCodeFormsControlsWorklist div.SelectAllIE
+{
+	padding-left: 9px;
+	padding-right: 8px;
+	float: left;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .OptionSelectBorderOff:focus,
+.theme-entry .SourceCodeFormsControlsWorklist .nav input:focus,
+.theme-entry .SourceCodeFormsControlsWorklist .worklist-search-expander:focus,
+.theme-entry .SourceCodeFormsControlsWorklist tr:focus,
+.theme-entry .LoadMoreHyperlink:focus
+{
+	outline: 1px dotted #bcc2d2;
+}
+
+/* checkbox input element to select all worklist items */
+.form .row *:first-child > * .SourceCodeFormsControlsWorklist .worklist-grid-column-system-header-selection-checkbox > .worklist-grid-column-header-cell > .AllWorklistCheckBoxes
+{
+	margin-left: 1px;
+	margin-top: 4px;
+}
+
+/* checkbox input element to select all worklist items (IE) */
+.form .row *:first-child > * .SourceCodeFormsControlsWorklist .worklist-grid-column-system-header-selection-checkbox > .worklist-grid-column-header-cell > .AllWorklistCheckBoxes.ie
+{
+	margin-left: 1px;
+	margin-top: 2px;
+}
+
+/* checkbox input for each item row */
+.form .row *:first-child > * .SourceCodeFormsControlsWorklist .WorklistItemCheckbox
+{
+	margin-top: 3px;
+	margin-left: 0;
+}
+
+/* Conditional Format Preview - used to override grid.css styles */
+.theme-entry .condtional-format-preview table.WorkListItemTable tr td
+{
+	background-color: white;
+	vertical-align: middle;
+}
+
+/* #region Folio Watermark */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .watermark .text-underline
+{
+	font-Family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-style: italic;
+}
+
+.theme-entry .SourceCodeFormsControlsWorklist .watermark span
+{
+	color:#638089 !important; /* override base worklist style & watermark style should be persisted */
+}
+
+/* #endregion Folio Watermark */
+
+/* #region RTL layout */
+
+html[dir=rtl] .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .worklist-grid-column-header-cell .input-control-img 
+
+{
+	left: 2px;
+}
+
+html[dir=rtl] .theme-entry .worklist-action-menu-right-cell
+{
+	float: left;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #e0e0e0;
+	border-left-width: 0;
+}
+
+html[dir=rtl] .theme-entry .worklist-action-icon-view-flow
+{
+	right: -25px;
+}
+
+html[dir=rtl] .theme-entry .worklist-action-icon-open-form
+{
+	right: -25px;
+}
+
+/* #endregion RTL layout */
+
+/*B563676
+	This fixed should apply for all browsers
+*/
+.mozilla .SourceCodeFormsControlsWorklist .WorklistItemGridRow:nth-child(even)
+{
+	background-color:#f5f5f5;
+}
+
+.mozilla .SourceCodeFormsControlsWorklist .WorklistItemGridRow:nth-child(odd)
+{
+	background-color:#fff;	
+}
+/*End of B563676*/
+
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr:hover .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable tr.ShowMenu .WorklistTableSelectGridArrow .SelectArrowImageDiv,
+html[dir=rtl] .theme-entry .SourceCodeFormsControlsWorklist .WorkListItemTable .SelectedDivBackground .SelectArrowImageDiv
+{
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Worklist .watermark .text-underline
+{
+	color: #c5c5c5 !important;
+    font-family: Verdana,Arial,Helvetica,sans-serif !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+}

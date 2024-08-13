@@ -1,0 +1,143 @@
+﻿/*RichTextThemeStart*/
+.theme-entry .richtext-tool-item-name
+{
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	color: #c5c5c5;
+	font-size: 10px;
+	position: absolute;
+	left: 50px;
+}
+
+.theme-entry .richtext-tool-item-wrapper
+{
+	width: 180px;
+	height: 25px;
+	border-left: 1px solid #c5c5c5;
+	border-right: 1px solid #c5c5c5;
+	position: absolute;
+	background-color: #fff;
+	color: #1a2329;
+	display: none;
+	z-index: 1000;
+}
+
+.theme-entry .richtext-overflow-tool-item-top-row
+{
+	border-top: 1px solid #c5c5c5;
+}
+
+.theme-entry .richtext-overflow-tool-item-bottom-row
+{
+	border-bottom: 1px solid #c5c5c5;
+}
+
+.theme-entry .richtext-overflow-tool-item-position-base
+{
+	position: relative;
+}
+/* color for hover over the overflow items */
+.theme-entry .rich-text-overflow-tool-item-position-base:hover
+{
+	background-color: #DDE3FA;
+}
+
+/* edit mode hover */
+.theme-entry .reEditorModes ul li a:hover
+{
+	background-color: #DDE3FA;
+}
+
+/* selected edit mode highligted */
+.theme-entry .RadEditor .reEditorModesCell .reMode_selected
+{
+	background-color: #DDE3FA;
+}
+
+.theme-entry .Default.RadEditor,
+.theme-entry .Default.RadEditor .reModule,
+.theme-entry .Default.RadEditor .reWrapper
+{
+	border-color: #adae9c;
+	background-color: #fff;
+	color: #343e41;
+}
+
+.theme-entry .Default.RadEditor div table
+{
+	border-color: #ababab;
+	background-color: #fff;
+}
+
+.theme-entry .Default.RadEditor div table .reToolZone table
+{
+	background: #fff;
+}
+
+.theme-entry .Default.reWrapper, 
+.theme-entry .Default.RadEditor .reContentCell, 
+.theme-entry .Default.reColorPicker, 
+.theme-entry .Default.reInsertTable, 
+.theme-entry .Default.reDropDownBody, 
+.theme-entry .Default.reCustomLinks a:hover
+{
+	border: 1px solid #ababab;
+}
+
+.theme-entry .reMode_selected.reMode_hover span, /* selected edit mode text color */
+.theme-entry .reMode_hover span
+{
+	color: #0f0a06;
+}
+
+.theme-entry .reMode_hover:hover
+{
+	background-color: #E6F2FA;
+	border-color: #92C0E0;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor.expanded .stylewrapper
+{
+	border-color: #ababab;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper .reTool_selected
+{
+	background-color: #DDE3FA;
+}
+
+/* item group separator */
+.theme-entry .RadEditor .reToolbarWrapper .reGrip.grip_last
+{
+	border-right-color: #c5c5c5;
+}
+
+.theme-entry .RadEditor .reToolbarWrapper span.split_arrow:hover,
+.theme-entry .RadEditor .reToolbarWrapper .sub-wrapper:hover,
+.theme-entry .rich-text-overflow-tool-item-position-base .rich-text-overflow-item-back-color:hover,
+.theme-entry .rich-text-dropdown-item-container .rich-text-overflow-item-arrow:hover
+{
+	background-color: #DDE3FA;
+}
+
+/* background color when hovering tool item icons */
+.theme-entry .RadEditor .reToolbarWrapper a:hover
+{
+	background-color: #DDE3FA;
+}
+
+/* #region custom tool */
+.theme-entry #sfc-rt-custom-tool-popup.tool-image-upload
+{
+	/* override popupManager inline height */
+	height: 170px !important;
+}
+
+.theme-entry #sfc-rt-custom-tool-popup.tool-hyperlink
+{
+	/* override popupManager inline height */
+	height: 260px !important;
+}
+
+/* #endregion custom tool */

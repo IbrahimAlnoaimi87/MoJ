@@ -1,0 +1,2116 @@
+﻿/* #region LAYOUT */
+
+/* fluid height */
+html.management.management.data-access,
+html.management.management.data-access > body,
+html.management.management.data-access > body > form,
+html.management.management.data-access > body > form > .runtime-content,
+html.management.management.data-access > body > form > .runtime-content > .runtime-form,
+html.management.management.data-access > body > form > .runtime-content > .runtime-form > .form
+{
+    height: 100% !important; /* Force fluid height */
+}
+
+    html.management.management.data-access,
+    html.management.management.data-access > body
+    {
+        overflow-y: hidden
+    }
+
+        html.management.management.data-access > body > form
+        {
+            overflow-y: auto;
+        }
+
+            html.management.management.data-access > body > form > .runtime-content > .runtime-form > .form > .row.feature-evaluation
+            {
+                height: 100% !important; /* Force fluid height */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            html.management.management.data-access > body > form > .runtime-content > .runtime-form > .form > .row.feature-evaluation > .view
+            {
+                height: 210px;
+            }
+
+                html.management.management.data-access .row.feature-evaluation > .view .editor-cell[row='1']
+                {
+                    max-height: 116px;
+                    height: 116px;
+                }
+
+                html.management.management.data-access .row.feature-evaluation > .view .editor-cell[row='2']
+                {
+                    max-height: 30px;
+                    height: 30px;
+                }
+
+            html.management.management.data-access > body > form > .runtime-content > .runtime-form > .form > .row.item-access-footer,
+            html.management.management.data-access > body > form > .runtime-content > .runtime-form > .form > .row:last-child
+            {
+                display: none !important; /* Force hide this element until actual implementation of UI is approved */
+            }
+
+/* Disable modalizer */
+html.management .theme-entry .ajaxLoader.modal-element
+{
+    display: none !important; /* force hide modalizer */
+    background-color: transparent !important; /* force hide modalizer */
+}
+
+html.management .base0.modal-element.ajaxLoader
+{
+    background-color: transparent !important; /* Ensure modalizer is not visible */
+}
+
+html.management .base2.base1.modalizer
+{
+    background-color: transparent !important; /* Ensure modalizer is not visible */
+    opacity: 0; /* Ensures there's no flash on Report Refresh*/
+}
+
+html.management.data-access .theme-entry .form
+{
+    padding: 0;
+    margin: 0;
+}
+
+html.management.data-access .theme-entry .view
+{
+    padding: 0;
+    margin: 0 !important; /* Overrides inline style */
+}
+
+    html.management.data-access .theme-entry .view .innerpanel
+    {
+        margin: 0rem 2rem 1.0rem 0.8rem !important; /* Overrides inline style */
+    }
+
+    html.management.data-access .theme-entry .view.item-access .innerpanel
+    {
+        margin-top: 2rem !important; /* Overrides inline style */
+    }
+
+html.management.data-access .theme-entry .view.limited-access > .innerpanel:before,
+html.management.data-access .theme-entry .view.smartbox-objects > .innerpanel:before
+{
+    content: "";
+    width: calc(100% - 1.5rem);
+    display: block;
+    border-top: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin: 0 0.5rem 0 1.5rem;
+}
+
+html.management.data-access .theme-entry .view.limited-access .innerpanel > div,
+html.management.data-access .theme-entry .view.smartbox-objects .innerpanel > div
+{
+    margin-top: 1rem;
+}
+
+html.management.data-access .theme-entry .form .view > .innerpanel > .panel,
+html.management.data-access .theme-entry .form .view > .innerpanel > .panel > .panel-header,
+html.management.data-access .theme-entry .form .view > .innerpanel > .panel > .panel-header > div,
+html.management.data-access .theme-entry .form .view > .innerpanel > .panel > .panel-header > div > div,
+html.management.data-access .theme-entry .form .view > .innerpanel > .panel > .panel-header > div > div > div,
+html.management.data-access .theme-entry .form .view > .innerpanel > .grid,
+html.management.data-access .theme-entry .form .view > .innerpanel > .grid > .grid-header,
+html.management.data-access .theme-entry .form .view > .innerpanel > .grid > .grid-header > div,
+html.management.data-access .theme-entry .form .view > .innerpanel > .grid > .grid-header > div > div
+{
+    color: transparent;
+    background-color: transparent;
+    border: 0;
+    padding-left: 0;
+}
+
+    html.management.data-access .theme-entry .form .view > .innerpanel > .panel > .panel-header > .panel-header-c > .panel-header-wrapper > .panel-header-text
+    {
+        height: 4.8rem;
+        padding-left: 0;
+    }
+
+    html.management.data-access .theme-entry .form .view > .innerpanel > .grid,
+    html.management.data-access .theme-entry .form .view > .innerpanel > .grid .grid-toolbars
+    {
+        background-color: transparent;
+    }
+
+        html.management.data-access .theme-entry .form .view > .innerpanel > .grid > div:not(.grid-header)
+        {
+            padding-left: 5.5rem;
+        }
+
+html.management.data-access .theme-entry .form .view .panel-body
+{
+    padding-left: 5rem;
+}
+
+html.management.data-access .theme-entry .form .view.form-header .panel-body
+{
+    padding-left: 0;
+}
+
+html.management.data-access .theme-entry .view > .innerpanel > .grid > .grid-header > .grid-header-wrapper,
+html.management.data-access .theme-entry .view > .innerpanel > .grid > .grid-header > .grid-header-wrapper .grid-header-text,
+html.management.data-access .theme-entry .view > .innerpanel > .panel > .panel-header,
+html.management.data-access .theme-entry .view > .innerpanel > .panel > .panel-header > .panel-header-c,
+html.management.data-access .theme-entry .view > .innerpanel > .panel > .panel-header > .panel-header-c > .panel-header-wrapper
+{
+    height: 3.2rem;
+    line-height: 3.2rem;
+}
+
+html.management.data-access .theme-entry .editor-cell:first-child
+{
+    padding: 0.5rem 0 0.5rem 0.2rem; /* Override base platinum 2 theme as this messes up aligment */
+}
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Label[Name="lblNoneDescription"],
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Label[Name="lblSelfDescription"],
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Label[name="lblAnotherSmartObjectDescription1"]
+{
+    width: 100%;
+    padding-left: 2.7rem;
+}
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Label[name="lblAnotherSmartObjectDescription2"]
+{
+    display: inline-block;
+    padding-left: 2.7rem;
+}
+
+/* #endregion */
+
+/* #region GENERAL CONTROL STYLING */
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Table
+{
+    overflow: visible;
+    border-collapse: separate;
+}
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnState"],
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnDelete"],
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSmartObject"]
+{
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    line-height: normal;
+    min-height: 20px;
+    color: #2196f3;
+    text-decoration: none;
+    text-align: left;
+}
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnState"],
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnDelete"]
+{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSmartObject"]
+{
+    padding: 0.4rem 0;
+}
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnState"]
+{
+    padding-left: 0.5rem;
+}
+
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnState"]:active,
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnState"]:focus,
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnDelete"]:active,
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnDelete"]:focus,
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSmartObject"]:active,
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSmartObject"]:focus
+    {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        animation: unset;
+    }
+
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnState"]:hover,
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnDelete"]:hover,
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSmartObject"]:hover
+    {
+        color: #29b6f6;
+    }
+
+html.management.data-access .theme-entry .formcontrol .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlCreatorLink"] a
+{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-decoration: none;
+    color: #2196f3;
+    padding-left: 0.5rem;
+}
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-DataLabel[name='dlRLSFeatureDisabledImage']
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px;
+    width: 64px;
+    height: 64px;
+}
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-DataLabel[name='dlRLSFeatureWarningImage']
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px;
+    width: 64px;
+    height: 64px;
+}
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[name='btnCreatePolicyForRowLevelSecurity']
+{
+    border: none !important; /* override forces styling from SmartForms */
+}
+
+/* #endregion */
+
+/* #region HEADER VIEW */
+
+html.management.data-access .theme-entry .view.form-header
+{
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafa;
+    height: 6rem;
+    max-height: 6rem;
+}
+
+    html.management.data-access .theme-entry .view.form-header .Grid-Layout.SourceCode-Forms-Controls-Web-Table
+    {
+        grid-template-columns: 6.4rem 40rem 1fr !important;
+        -ms-grid-columns: 6.4rem 40rem 1fr !important;
+    }
+
+
+    html.management.data-access .theme-entry .view.form-header .Grid-Layout .editor-cell[row='1'][col='3'],
+    html.management.data-access .theme-entry .view.form-header .Grid-Layout .editor-cell[row='2'][col='3']
+    {
+        width: auto !important; /* Overrides inline style */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 2rem;
+    }
+
+    html.management.data-access .theme-entry .view.form-header.enabled
+    {
+        background-color: #edfce7;
+    }
+
+    html.management.data-access .theme-entry .view.form-header .innerpanel
+    {
+        border-top: 0;
+        margin: 0 !important; /* Overrides inline style */
+    }
+
+    html.management.data-access .theme-entry .view.form-header .Grid-Layout
+    {
+        background-color: #fafafa;
+    }
+
+    html.management.data-access .theme-entry .view.form-header.enabled .Grid-Layout
+    {
+        background-color: #edfce7;
+    }
+
+
+        html.management.data-access .theme-entry .view.form-header .editor-cell
+        {
+            padding: 0;
+        }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox
+    {
+        padding: 0 1rem 0 2rem;
+    }
+
+        html.management.data-access .theme-entry .view.form-header label.input-control.checkbox .input-control-img
+        {
+            display: block;
+            width: 32px;
+            height: 32px;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 32px;
+            -moz-background-size: 32px;
+            background-position: center center;
+            padding: 0;
+        }
+
+    html.management.data-access .theme-entry .view.form-header .checkbox-outer-panel label.input-control.checkbox.focus
+    {
+        outline: none;
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox:hover .input-control-img,
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus .input-control-img,
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus:hover .input-control-img,
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.checked .input-control-img,
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.checked:hover .input-control-img,
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus.checked .input-control-img,
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus.checked:hover .input-control-img
+    {
+        background-position: center center;
+    }
+
+    html.management.data-access .theme-entry .view.form-header .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlHeader"]
+    {
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.6rem;
+        color: #4e5758;
+    }
+
+    html.management.data-access .theme-entry .view.form-header .SFC.SourceCode-Forms-Controls-Web-Label,
+    html.management.data-access .theme-entry .view.form-header .SFC.SourceCode-Forms-Controls-Web-Button
+    {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    html.management.data-access .theme-entry .view.form-header span,
+    html.management.data-access .theme-entry .view.form-header a
+    {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+
+    html.management.data-access .theme-entry .view.form-header .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlCreatedBy"],
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnDelete"]
+    {
+        padding-right: 0;
+    }
+
+/* #endregion */
+
+/* #region ITEM ACCESS VIEW */
+
+html.management.data-access .theme-entry .view.item-access .innerpanel
+{
+    border-top: 0;
+}
+
+html.management.data-access .theme-entry .view.item-access > .innerpanel > .grid .grid-toolbars table .Grid-Layout .editor-cell[row='1']
+{
+    background-color: #fff;
+}
+
+html.management.data-access .theme-entry .view.item-access > .innerpanel > .grid .grid-toolbars table .Grid-Layout .editor-cell
+{
+    padding: 0;
+    height: auto;
+}
+
+html.management.data-access .theme-entry .view.item-access .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlItemAccessHeading"]
+{
+    font-weight: bold;
+}
+
+html.management.data-access .theme-entry .view.item-access .grid-body table colgroup col:nth-child(1)
+{
+    width: 30px !important; /* Overrides inline style */
+}
+
+html.management.data-access .theme-entry .view.item-access .grid-body table colgroup col:nth-child(2)
+{
+    width: calc(50% - 30px) !important; /* Overrides inline style */
+}
+
+html.management.data-access .theme-entry .view.item-access .grid-body table colgroup col:nth-child(3),
+html.management.data-access .theme-entry .view.item-access .grid-body table colgroup col:nth-child(4)
+{
+    width: 25% !important; /* Overrides inline style */
+}
+
+/* #endregion */
+
+/* #region ITEM ACCESS FOOTER TABLE */
+
+html.management.data-access .theme-entry .row.item-access-footer .formcontrol
+{
+    margin: 0 2rem 0 6rem !important; /* Overrides inline style */
+    width: calc(100% - 8rem) !important; /* Overrides inline style */
+}
+
+html.management.data-access .theme-entry .row.item-access-footer .Grid-Layout .editor-cell
+{
+    padding: 0;
+}
+
+    html.management.data-access .theme-entry .row.item-access-footer .Grid-Layout .editor-cell span
+    {
+        font-size: 1.2rem;
+    }
+
+/* #endregion */
+
+/* #region LIMITED ACCESS VIEW */
+
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout > .editor-cell[row='2'],
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout > .editor-cell[row='3']
+{
+    padding-top: 0;
+}
+
+html.management.data-access .theme-entry .view.limited-access .content-header tr
+{
+    padding: 0;
+}
+
+    html.management.data-access .theme-entry .view.limited-access .content-header .editor-cell
+    {
+        height: 3.4rem;
+        max-height: 3.4rem;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+html.management.data-access .theme-entry .view.limited-access .panel-body-wrapper .Grid-Layout.content-header .dropdown-box
+{
+    padding-left: 0.5rem;
+}
+
+html.management.data-access .theme-entry .view.limited-access .panel-body-wrapper > div > .Grid-Layout > .editor-cell > .Grid-Layout.content-header,
+html.management.data-access .theme-entry .view.limited-access .panel-body-wrapper > div > .Grid-Layout > .editor-cell .Grid-Layout.content-body
+{
+    grid-template-columns: 40% 60% !important;
+    -ms-grid-columns: 40% 60% !important;
+}
+
+
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout.content-body > .editor-cell[row='1']
+{
+    height: 38rem;
+    padding: 0;
+}
+
+    html.management.data-access .theme-entry .view.limited-access .Grid-Layout.content-body > .editor-cell[row='1'] > span
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout.content-body .editor-cell[row='2']
+{
+    padding: 1rem;
+}
+
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout.content-body > .editor-cell[row='2'] .editor-cell
+{
+    padding: 0;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlSmoDispName"]
+{
+    padding-right: 0.5rem;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlSelfName"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlSmoDispName"]
+{
+    font-weight: bold;
+}
+
+html.management.data-access .limited-access .input-control.select-box
+{
+    background: transparent;
+    height: 3.4rem;
+    float: left;
+}
+
+    html.management.data-access .limited-access .input-control.select-box div.input-control-m-c
+    {
+        border: 0;
+    }
+
+    html.management.data-access .limited-access .input-control.select-box div.input-control-buttons.styling-right.styling-inner-wrapper
+    {
+        background: transparent;
+        border: 0;
+    }
+
+        html.management.data-access .limited-access .input-control.select-box div.input-control-buttons.styling-right.styling-inner-wrapper a:hover
+        {
+            background: transparent;
+        }
+
+html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnDisplayProperties"],
+html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnDisplayProperties2"],
+html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnGrantGrid2"],
+html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnRevokeGrid2"]
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent !important; /* override inherited important from base class */
+    color: #2196f3;
+    background-color: transparent;
+    background-image: url();
+    box-shadow: none;
+}
+
+html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnDisplayProperties"],
+html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnDisplayProperties2"]
+{
+    float: right;
+}
+
+html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnGrantGrid2"],
+html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnRevokeGrid2"]
+{
+    padding: 0;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    min-height: 2.4rem;
+}
+
+    html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnDisplayProperties"]:hover,
+    html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnDisplayProperties2"]:hover,
+    html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnGrantGrid2"]:hover,
+    html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnRevokeGrid2"]:hover
+    {
+        color: #29b6f6;
+    }
+
+    html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnDisplayProperties"]:focus,
+    html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnDisplayProperties2"]:focus,
+    html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnGrantGrid2"]:focus,
+    html.management.data-access .limited-access .SFC.SourceCode-Forms-Controls-Web-Button[name="btnRevokeGrid2"]:focus
+    {
+        border-color: transparent !important; /* override browser focus styling */
+        box-shadow: none !important; /* override browser focus styling */
+        animation: none;
+    }
+
+html.management.data-access .limited-access .input-control-wrapper > a > span
+{
+    Color: #2196f3;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtListSearch"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtGridSearch"]
+{
+    height: 3.6rem;
+    border-color: transparent;
+    width: calc(100% - 26px) !important; /* override inline style */
+}
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtListSearch"].disabled,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtGridSearch"].disabled
+    {
+        border-color: transparent !important; /* overrides inherited important */
+    }
+
+html.management.data-access.msie .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtListSearch"]::-ms-clear,
+html.management.data-access.msie .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtGridSearch"]::-ms-clear
+{
+    display: none;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtListSearch"].focus,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtGridSearch"].focus
+{
+    border-color: transparent;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnListSearch"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnListSearchCancel"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGridSearch"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGridSearchCancel"]
+{
+    width: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    border: none;
+    padding: 0;
+    margin: 10px 5px;
+    background-repeat: no-repeat;
+    border-color: transparent;
+    animation: initial;
+    box-shadow: none;
+}
+
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout:nth-child(1) .editor-cell[row='4']
+{
+    padding: 0;
+}
+
+html.management.data-access .theme-entry .view.limited-access .content-header .editor-cell
+{
+    background-color: #f5f5f5;
+    border: 1px solid #d5d5d5;
+}
+
+    html.management.data-access .theme-entry .view.limited-access .content-header .editor-cell:not([col='1'])
+    {
+        background-color: #fdfdfd;
+        border-left: none;
+    }
+
+html.management.data-access .theme-entry .view.limited-access .content-header .editor-cell[row='2']
+{
+    border-top: none;
+    background-color: #fff;
+}
+
+html.management.data-access .theme-entry .view.limited-access .content-header .editor-cell[col='3']
+{
+    border-right: 1px solid #d5d5d5;
+}
+
+html.management.data-access .theme-entry .view.limited-access .content-body .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlEmptyList"],
+html.management.data-access .theme-entry .view.limited-access .content-body .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlEmptyGrid"]
+{
+    padding: 0;
+}
+
+html.management.data-access .theme-entry .view.limited-access .content-body .SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlEmptyList"]
+{
+    border-right: 1px solid #d5d5d5;
+}
+
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout.content-body > .editor-cell[col='1']
+{
+    background-color: #ececec;
+}
+
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout.content-body > .editor-cell:not([col='1'])
+{
+    background-color: #fdfdfd;
+    border-right: 1px solid #d5d5d5;
+}
+
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout.content-body > .editor-cell[row='2'].lastcellinrow
+{
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #d5d5d5;
+    border-top: 1px solid #d5d5d5;
+}
+
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout.content-body > .editor-cell[row='1'][col='1']
+{
+    border-left: 1px solid #d5d5d5;
+}
+
+html.management.data-access .theme-entry .view.limited-access .Grid-Layout.content-body > .editor-cell[row='2'][col='1']
+{
+    border: 1px solid #d5d5d5;
+}
+
+html.management.data-access .theme-entry .limited-access .SFC.SourceCode-Forms-Controls-Web-Table > .editor-cell[row='4'][col='1']
+{
+    padding-left: 2.7rem;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList
+{
+    background-color: #ececec;
+    margin: 0;
+    height: 100%;
+}
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper
+    {
+        height: 100%;
+        max-height: 38rem;
+    }
+
+        html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .scrollWrapperDiv
+        {
+            height: 100% !important; /* Overrides inline style */
+            border-right: 1px solid #d5d5d5;
+        }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem
+    {
+        border-top: none;
+        border-bottom: 1px solid #d5d5d5;
+        background-color: #f5f5f5;
+    }
+
+        html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.selected
+        {
+            background-color: #fdfdfd;
+            margin-right: -1px;
+            padding-right: 1px;
+        }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList span.PART_ClickTitle
+    {
+        color: #4e5758;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Div.property1.table-cell,
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList span.PART_ClickProperty1
+    {
+        color: #47a54a;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.selected .PART_Property1Div.property1.table-cell,
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem.selected .PART_ClickProperty1
+    {
+        display: none !important; /* overrides inline style */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList span.PART_ClickDescription
+    {
+        color: #858a8a;
+        font-size: 1.1rem;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList span.PART_ClickProperty2
+    {
+        color: #858a8a;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_GenericExpenseGridItemMainRow .deleteItem
+    {
+        display: none;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell
+    {
+        width: 24px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .item-image
+    {
+        padding: 0;
+        height: 24px;
+        width: 24px;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList[Name="lstRole"] .PropertiesMain
+    {
+        padding: .5rem 1rem .5rem 0;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList[Name="lstItem"] .PropertiesMain
+    {
+        padding: .5rem 0 .5rem 1rem;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Property2DynamicRight
+    {
+        padding: .5rem 1rem .5rem 0;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover.loaded
+    {
+        height: 42px !important; /* overrides inline style */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #f5f5f5;
+    }
+
+        html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover.loaded > .toolbaradditems
+        {
+            display: none;
+        }
+
+        html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover.loaded > .buttonMore
+        {
+            background-image: none;
+            border: none;
+            box-shadow: none;
+            color: #2196f3;
+            background-color: transparent;
+            font-size: 1.2rem;
+            font-family: "Open-Sans Regular","Segoe UI Regular","Helvetica",Helvetica,sans-serif;
+            font-weight: bold;
+        }
+
+            html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover.loaded > .buttonMore:active,
+            html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover.loaded > .buttonMore:focus,
+            html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .toolbarhover.loaded > .buttonMore::selection
+            {
+                border-width: 0;
+                border-color: transparent;
+                outline-color: transparent;
+            }
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid[Name="grdRole"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid[Name="grdItem"]
+{
+    height: 100%;
+    max-height: 38rem;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid-column-header-table
+{
+    width: 100% !important; /* Overrides inline style */
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid
+{
+    height: 100%;
+}
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid .grid-body
+    {
+        height: calc(100% - 30px);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid .grid-footer .toolbar
+    {
+        border-radius: 0;
+    }
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row td
+{
+    background-color: transparent;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .grid-content-cell-wrapper
+{
+    background-color: transparent !important; /* overrides base theme !important */
+    color: #2196f3;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected td
+{
+    background-color: #2196f3 !important; /* overrides base theme !important */
+    border-top: 0;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .grid-content-cell-wrapper
+{
+    color: #fff;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid-column-headers,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .grid-body-content
+{
+    padding: 0 1rem;
+}
+
+/* serialization grid sprite positioning */
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row label.input-control.checkbox .input-control-img
+{
+    background-position: 50% 0;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row label.input-control.checkbox.checked .input-control-img
+{
+    background-position: 50% -88px;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover label.input-control.checkbox .input-control-img
+{
+    background-position: 50% -22px;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover label.input-control.checkbox.checked .input-control-img
+{
+    background-position: 50% -110px;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected label.input-control.checkbox .input-control-img,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected:hover label.input-control.checkbox .input-control-img
+{
+    background-position: 50% -44px;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected label.input-control.checkbox.checked .input-control-img,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected:hover label.input-control.checkbox.checked .input-control-img
+{
+    background-position: 50% -132px;
+}
+
+/* item grid checkbox override */
+/* TODO: verify post update 4 when item grid is implemented that this styling is still applied correctly */
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .serializationGridColumn label.input-control.checkbox .input-control-img
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    -moz-background-size: 24px;
+    background-position: center center;
+}
+
+html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .serializationGridColumn label.input-control.checkbox
+{
+    outline: none;
+}
+
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .serializationGridColumn label.input-control.checkbox .input-control-img,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .serializationGridColumn label.input-control.checkbox.checked .input-control-img,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .serializationGridColumn label.input-control.checkbox .input-control-img,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .serializationGridColumn label.input-control.checkbox.checked .input-control-img,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .serializationGridColumn label.input-control.checkbox .input-control-img,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .serializationGridColumn label.input-control.checkbox.checked .input-control-img,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected:hover .serializationGridColumn label.input-control.checkbox .input-control-img,
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected:hover .serializationGridColumn label.input-control.checkbox.checked .input-control-img
+{
+    background-position: center center;
+}
+
+/* list & grid interact buttons */
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnAddList"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRemoveList"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnAddGrid"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRemoveGrid"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGrantGrid1"],
+html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRevokeGrid1"]
+{
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    background-size: 24px 24px;
+    min-width: 24px;
+    min-height: 24px;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-position: center;
+}
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnAddList"]:active,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnAddList"]:focus,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRemoveList"]:active,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRemoveList"]:focus,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnAddGrid"]:active,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnAddGrid"]:focus,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRemoveGrid"]:active,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRemoveGrid"]:focus,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGrantGrid1"]:active,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGrantGrid1"]:focus,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRevokeGrid1"]:active,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRevokeGrid1"]:focus
+    {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        animation: unset;
+    }
+
+
+/* #endregion */
+
+/* #region EXTENDED OBJECTS VIEW */
+
+html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout .editor-cell[row='1']
+{
+    background-color: #fff;
+    padding: 0 0.5rem;
+}
+
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout .editor-cell[row='1'] span
+    {
+        padding: 0 0 0.3rem 0.5rem;
+    }
+
+html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout .editor-cell[row='2']
+{
+    padding: 0;
+}
+
+html.management.data-access .theme-entry .view.smartbox-objects > .innerpanel > .grid .grid-toolbars
+{
+    padding-top: 0;
+}
+
+html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox .checkbox-outer-panel
+{
+    height: 30px;
+}
+
+html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox .input-control-img
+{
+    display: block;
+    width: 32px;
+    height: 30px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 32px 30px;
+    -moz-background-size: 32px;
+    background-position: center center;
+    padding: 0;
+    margin: 0;
+}
+
+html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.focus
+{
+    outline: none;
+}
+
+/* #endregion */
+
+/* #region EXTENDABLE DIALOG */
+
+/* Override inherted base theme styling on tr highlight */
+html.management.extendto .theme-entry .grid-content-table tbody tr.locked.highlighted > td,
+html.management.extendto .theme-entry .grid-content-table tbody tr.locked.highlighted > td.first,
+html.management.extendto .theme-entry .grid-content-table tbody tr.locked.highlighted > td.last,
+html.management.extendto .theme-entry .grid table.grid-content-table tr.locked.even.highlighted td,
+html.management.extendto .theme-entry .grid table.grid-content-table.zebra-stripes tr.locked.highlighted:nth-child(odd):not(.action-row) td,
+html.management.extendto .theme-entry .grid table.grid-content-table.zebra-stripes tr.locked.highlighted:nth-child(even):not(.action-row) td
+{
+    border-top: 1px solid transparent;
+    border-left-style: solid;
+}
+
+html.management.extendto .theme-entry .form .row:not(:first-child)
+{
+    display: none;
+}
+
+html.management.extendto .theme-entry .grid-toolbars .Grid-Layout
+{
+    grid-template-columns: 30% 50% 20% !important;
+    -ms-grid-columns: 30% 50% 20% !important;
+}
+
+
+html.management.extendto .theme-entry .grid-body col:nth-child(1)
+{
+    width: 30% !important; /* overrides inherited important */
+}
+
+
+html.management.extendto .theme-entry .grid-body col:nth-child(2)
+{
+    width: 50px !important; /* overrides inherited important */
+}
+
+html.management.extendto .theme-entry .grid-body col:nth-child(3)
+{
+    width: calc(70% - 50px) !important; /* overrides inherited important */
+}
+
+html.management.extendto .theme-entry .grid-toolbars table .Grid-Layout
+{
+    margin-left: -1px;
+}
+
+    html.management.extendto .theme-entry .grid-toolbars table .Grid-Layout .editor-cell
+    {
+        height: 3.4rem;
+        max-height: 3.4rem;
+        box-sizing: border-box;
+        padding: 0;
+        background-color: #f5f5f5;
+        border-top: 1px solid #d5d5d5;
+    }
+
+    html.management.extendto .theme-entry .grid-toolbars table .Grid-Layout .editor-cell[row='1']
+    {
+        border-top: 0;
+    }
+
+        html.management.extendto .theme-entry .grid-toolbars table .Grid-Layout .editor-cell[row='2']
+        {
+            border-bottom: 1px solid #d5d5d5;
+        }
+
+            html.management.extendto .theme-entry .grid-toolbars table .Grid-Layout .editor-cell[row='2'][col='1']
+            {
+                background-color: #fff;
+                border-right: 1px solid #d5d5d5;
+            }
+
+    html.management.extendto .theme-entry .grid-body table tr td
+    {
+        border-right: 1px solid #d5d5d5;
+        border-bottom: 1px solid #d5d5d5;
+    }
+
+    html.management.extendto .theme-entry .grid-body .grid-body-content table tr td
+    {
+        background-color: #f5f5f5;
+    }
+
+    html.management.extendto .theme-entry .grid-body .grid-body-content table tr:last-child td
+    {
+        border-bottom: 0;
+    }
+
+    html.management.extendto .theme-entry .grid-body .grid-body-content table tr td:last-child
+    {
+        border-right: 0;
+    }
+
+    html.management.extendto .theme-entry .grid-body .grid-body-content table tr td:first-child
+    {
+        background-color: #fff;
+    }
+
+    html.management.extendto .theme-entry .grid-body table tr.related td:first-child
+    {
+            background-color: #e5f3fa;
+    }
+
+html.management.extendto .theme-entry .grid-body .grid-body-content table tr:not(.locked):hover td
+{
+    background-color: #e5f3fa;
+}
+
+html.management.extendto .theme-entry .grid-body .grid-body-content table tr.selected:not(.locked) td
+{
+    background-color: #bfeafb;
+}
+
+    html.management.extendto .theme-entry .grid-body .grid-body-content table tr.locked td span,
+    html.management.extendto .theme-entry .grid-body .grid-body-content table tr.locked td a
+    {
+        opacity: 0.5;
+    }
+
+html.management.extendto .theme-entry .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtSearch"]
+{
+    height: 3.6rem;
+    border-color: transparent;
+    width: calc(100% - 26px) !important; /* overrides inherited important */
+}
+
+    html.management.extendto .theme-entry .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtSearch"].disabled
+    {
+        border-color: transparent !important; /* overrides inherited important */
+    }
+
+        html.management.extendto.msie .theme-entry .grid-toolbars SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtSearch"]::-ms-clear
+        {
+            display: none;
+        }
+
+        html.management.extendto .theme-entry .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-TextBox[Name="txtSearch"].focus
+        {
+            border-color: transparent;
+        }
+
+html.management.extendto .theme-entry .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSearch"],
+html.management.extendto .theme-entry .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSearchCancel"]
+{
+    width: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    border: none;
+    padding: 0;
+    margin: 10px 5px;
+    background-repeat: no-repeat;
+    border-color: transparent;
+    animation: initial;
+    box-shadow: none;
+}
+
+html.management.extendto .theme-entry .grid-toolbars .input-control.select-box
+{
+    background: transparent;
+    height: 3.4rem;
+    float: right;
+}
+
+    html.management.extendto .theme-entry .grid-toolbars .input-control.select-box div.input-control-m-c
+    {
+        border: 0;
+    }
+
+    html.management.extendto .theme-entry .grid-toolbars .input-control.select-box div.input-control-buttons.styling-right.styling-inner-wrapper
+    {
+        background: transparent;
+        border: 0;
+    }
+
+        html.management.extendto .theme-entry .grid-toolbars .input-control.select-box div.input-control-buttons.styling-right.styling-inner-wrapper a:hover
+        {
+            background: transparent;
+        }
+
+    html.management.extendto .theme-entry .grid-toolbars .input-control.select-box div.input-control-body.styling-left.styling-inner-wrapper a
+    {
+        text-align: right;
+    }
+
+html.management.extendto .theme-entry .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Label[Name="lblLevel"]
+{
+    padding: 0.7rem 0;
+}
+
+html.management.extendto .theme-entry .grid-toolbars .input-control-buttons.styling-right.styling-inner-wrapper a > span > span
+{
+    opacity: 1;
+}
+
+    html.management.extendto .theme-entry .grid-toolbars .input-control-buttons.styling-right.styling-inner-wrapper a > span > span:hover
+    {
+        opacity: 0.8;
+    }
+
+/* #region SMARTBOX OBJECT COLUMN */
+
+html.management.extendto .smartobject-displayname .smartobject-path
+{
+    display: none;
+}
+
+html.management.extendto .smartobject-displayname .smartobject-name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+    html.management.extendto .smartobject-displayname .smartobject-name span
+    {
+        vertical-align: top;
+    }
+
+    html.management.extendto .smartobject-displayname .smartobject-name .smo-ellipses
+    {
+        padding-right: 0.5rem;
+    }
+
+    html.management.extendto .smartobject-displayname .smartobject-name .smo-name
+    {
+        padding-left: 0.5rem;
+    }
+
+    html.management.extendto .smartobject-displayname .smartobject-name .smo-icon
+    {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 16px;
+        -moz-background-size: 16px;
+        background-position: center;
+    }
+
+/* #endregion */
+
+/* #region ASSOCIATIONS COLUMN */
+
+html.management.extendto .templates,
+html.management.data-access .templates
+{
+    display: none;
+}
+
+html.management.extendto .theme-entry .associations-tree ul,
+html.management.data-access .theme-entry .view.smartbox-objects .associations-tree ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    html.management.extendto .theme-entry li.associations-tree-item,
+    html.management.data-access .theme-entry .view.smartbox-objects li.associations-tree-item
+    {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+        html.management.extendto .theme-entry .associations-tree-item,
+        html.management.data-access .theme-entry .view.smartbox-objects .associations-tree-item
+        {
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        html.management.extendto .theme-entry .associations-tree-item .name,
+        html.management.data-access .theme-entry .view.smartbox-objects .associations-tree-item .name
+        {
+            background-color: transparent;
+            padding: 0 5px 0 1px;
+            flex-grow: 1;
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+            html.management.extendto .theme-entry .needstobeshorter li:first-child .name,
+            html.management.data-access .theme-entry .view.smartbox-objects .needstobeshorter li:first-child .name
+            {
+                width: 30px;
+                content: '';
+                overflow: hidden;
+            }
+
+        html.management.extendto .theme-entry .associations-tree-item .shape,
+        html.management.data-access .theme-entry .view.smartbox-objects .associations-tree-item .shape
+        {
+            margin-bottom: 6px;
+            width: 10px;
+            height: 10px;            
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+            html.management.extendto .theme-entry li.associations-tree-item:last-child .shape,
+            html.management.data-access .theme-entry .view.smartbox-objects li.associations-tree-item:last-child .shape
+            {
+                display: none;
+            }
+
+        html.management.extendto .theme-entry .associations-tree-item .guid,
+        html.management.data-access .theme-entry .view.smartbox-objects .associations-tree-item .guid
+        {
+            display: none;
+        }
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region HEADER BOX */
+
+html.management.data-access .theme-entry .header-box
+{
+    text-shadow: none;
+    display: flex;
+    flex-direction: row;
+    height: 3.2rem;
+    max-height: 3.2rem;
+}
+
+    html.management.data-access .theme-entry .header-box,
+    html.management.data-access .theme-entry .header-box div
+    {
+        background: transparent;
+    }
+
+        html.management.data-access .theme-entry .header-box .header-col
+        {
+            max-height: 3.2rem;
+        }
+
+            html.management.data-access .theme-entry .header-box .header-col:nth-child(1)
+            {
+                width: 5.5rem;
+                flex-grow: 0;
+            }
+
+            html.management.data-access .theme-entry .header-box .header-col:nth-child(2)
+            {
+                flex-grow: 1;
+            }
+
+        html.management.data-access .theme-entry .header-box .header-row,
+        html.management.data-access .theme-entry .header-box .header-row div
+        {
+            max-height: 1.6rem;
+            height: 1.6rem;
+            line-height: 1.6rem;
+        }
+
+            html.management.data-access .theme-entry .header-box .header-row span
+            {
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+            }
+
+                html.management.data-access .theme-entry .header-box .header-row span.header-title
+                {
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    line-height: 1.6rem;
+                    color: #4e5758;
+                }
+
+            html.management.data-access .theme-entry .header-box .header-row a.header-link,
+            html.management.data-access .theme-entry .SourceCode-Forms-Controls-Web-DataLabel[Name="dlLinkLearn"] a,
+            html.management.data-access .theme-entry .row.feature-evaluation a.Hyperlink
+            {
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                text-decoration: none;
+                color: #2196f3 !important; /* Overrides inlines styles */
+                padding-left: 0.5rem;
+            }
+
+                html.management.data-access .theme-entry .header-box .header-row a.header-link:hover,
+                html.management.data-access .theme-entry .SourceCode-Forms-Controls-Web-DataLabel[Name="dlLinkLearn"] a:hover,
+                html.management.data-access .theme-entry .row.feature-evaluation a.Hyperlink:hover
+                {
+                    color: #29b6f6 !important; /* Overrides inlines styles */
+                }
+
+        html.management.data-access .theme-entry .header-box .header-col .header-icon
+        {
+            display: block;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 24px;
+            -moz-background-size: 24px;
+            background-position: 70% 50%;
+            padding: 0.4rem 1.0rem 0.4rem 2rem;
+        }
+
+/* #endregion */
+
+/* #region EMPTY BOX */
+
+html.management.data-access .theme-entry .access-box
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    html.management.data-access .theme-entry .access-box .access-box-row
+    {
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    html.management.data-access .theme-entry .access-box .access-box-icon
+    {
+        display: block;
+        width: 48px;
+        height: 48px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 48px;
+        -moz-background-size: 48px;
+        background-position: center center;
+    }
+
+    html.management.data-access .theme-entry .access-box .access-box-row a.access-box-link
+    {
+        color: #2196f3;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    html.management.data-access .theme-entry .access-box .access-box-row a.access-box-link
+    {
+        color: #29b6f6;
+    }
+
+/* #endregion */
+
+/* #region FLUID DIALOG */
+
+html.management.data-access.fluid-height,
+html.management.data-access.fluid-height > body,
+html.management.data-access.fluid-height > body > form,
+html.management.data-access.fluid-height > body > form > .runtime-content,
+html.management.data-access.fluid-height > body > form > .runtime-content > .panel,
+html.management.data-access.fluid-height > body > form > .runtime-content > .panel > .panel-body,
+html.management.data-access.fluid-height > body > form > .runtime-content > .panel > .panel-body > .panel-body-m,
+html.management.data-access.fluid-height > body > form > .runtime-content > .panel > .panel-body > .panel-body-m > .panel-body-m-c,
+html.management.data-access.fluid-height > body > form > .runtime-content > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper,
+html.management.data-access.fluid-height > body > form > .runtime-content > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div,
+html.management.data-access.fluid-height > body > form > .runtime-content > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > table,
+html.management.data-access.fluid-height > body > form > .runtime-content > .panel > .panel-body > .panel-body-m > .panel-body-m-c > .panel-body-wrapper > div > table > tbody
+{
+    height: 100%;
+}
+
+    html.management.data-access.fluid-height .panel .SFC.SourceCode-Forms-Controls-Web-Table tbody
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+        html.management.data-access.fluid-height .panel .SFC.SourceCode-Forms-Controls-Web-Table tbody tr:nth-child(1)
+        {
+            flex-grow: 1;
+        }
+
+            html.management.data-access.fluid-height .panel .SFC.SourceCode-Forms-Controls-Web-Table tbody tr:nth-child(1) td
+            {
+                width: auto;
+                height: auto;
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 50px;
+                left: 0;
+                right: 0;
+            }
+
+    html.management.data-access.fluid-height .panel table tbody tr:nth-child(1) td .SourceCode-Forms-Controls-Web-ControlPack-TreeView,
+    html.management.data-access.fluid-height .panel table tbody tr:nth-child(1) td .SourceCode-Forms-Controls-Web-ControlPack-TreeView .tree-body
+    {
+        height: 100% !important; /* Overrides inline style */
+    }
+
+    html.management.data-access.fluid-height .panel .SFC.SourceCode-Forms-Controls-Web-Table tbody tr:nth-child(2)
+    {
+        flex-grow: 0;
+        height: 5rem;
+        background-color: #ececec;
+    }
+
+        html.management.data-access.fluid-height .panel .SFC.SourceCode-Forms-Controls-Web-Table tbody tr:nth-child(2) td
+        {
+            text-align: right;
+            padding: 1.5rem;
+            float: right;
+        }
+
+            html.management.data-access.fluid-height .panel .SFC.SourceCode-Forms-Controls-Web-Table tbody tr:nth-child(2) td a
+            {
+                margin-left: 1rem;
+            }
+
+html.management.data-access .limited-access .input-control-buttons.styling-right.styling-inner-wrapper a > span > span
+{
+    opacity: 1;
+}
+
+    html.management.data-access .limited-access .input-control-buttons.styling-right.styling-inner-wrapper a > span > span:hover
+    {
+        opacity: 0.8;
+    }
+
+/* #endregion */
+
+/* #region ICONS */
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table table label.input-control.checkbox .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleNormal32.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox:hover .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox:hover .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleHover32.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.focus .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleFocus32.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus:hover .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.focus:hover .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleHoverFocus32.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.checked .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleSelected32.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.checked:hover .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.checked:hover .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleSelectedHover32.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus.checked .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.focus.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleSelectedFocus32.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus.checked:hover .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.focus.checked:hover .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleSelectedHoverFocus32.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .serializationGridColumn label.input-control.checkbox .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggle24.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .serializationGridColumn label.input-control.checkbox .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggle_Hover24.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .serializationGridColumn label.input-control.checkbox .input-control-img,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected:hover .serializationGridColumn label.input-control.checkbox .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggle_Focus24.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .serializationGridColumn label.input-control.checkbox.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggleSelected24.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .serializationGridColumn label.input-control.checkbox.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggleSelected_Hover24.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .serializationGridColumn label.input-control.checkbox.checked .input-control-img,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected:hover .serializationGridColumn label.input-control.checkbox.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggleSelected_Focus24.png);
+    }
+
+    html.management.data-access .theme-entry .view.item-access .header-box .header-col .header-icon
+    {
+        background-image: url(K2Sites_Management/Images/Access24.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .header-box .header-col .header-icon
+    {
+        background-image: url(K2Sites_Management/Images/DataAccess24.png);
+    }
+
+    html.management.data-access .theme-entry .view.smartbox-objects .header-box .header-col .header-icon
+    {
+        background-image: url(K2Sites_Management/Images/SmartBoxObject24.png);
+    }
+
+    html.management.data-access .theme-entry .access-box .access-box-icon.item
+    {
+        background-image: url(K2Sites_Management/Images/DataAccessWarning_Disabled48.png);
+    }
+
+    html.management.data-access .theme-entry .access-box .access-box-icon.role
+    {
+        background-image: url(K2Sites_Management/Images/Groups_Disabled48.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnAddList"],
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnAddGrid"]
+    {
+        background-image: url(K2Sites_Management/Images/AddButton24.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRemoveList"],
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRemoveGrid"]
+    {
+        background-image: url(K2Sites_Management/Images/Bin24.png);
+    }
+
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-DataLabel[name='dlRLSFeatureDisabledImage']
+    {
+        background-image: url('K2Sites_Management/Images/DataAccess_Disabled64.png');
+    }
+
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-DataLabel[name='dlRLSFeatureWarningImage']
+    {
+        background-image: url('K2Sites_Management/Images/DataAccessWarning_Disabled64.png');
+    }
+
+    html.management.data-access .limited-access .input-control-buttons.styling-right.styling-inner-wrapper a > span > span,
+    html.management.data-access .limited-access .input-control-buttons.styling-right.styling-inner-wrapper a > span > span:hover,
+    html.management.extendto .select-box .styling-right.styling-inner-wrapper a > span > span,
+    html.management.extendto .select-box.active .styling-right.styling-inner-wrapper a > span > span,
+    html.management.extendto .select-box .styling-right.styling-inner-wrapper a > span > span:hover
+    {
+        background-image: url(K2Sites_Management/Images/Dropdown_Hover16.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnListSearch"],
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGridSearch"],
+    html.management.extendto .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSearch"]
+    {
+        background: url(K2Sites_Management/Images/Search/Search16_Sprite.png) no-repeat -16px -16px;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnListSearchCancel"],
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGridSearchCancel"],
+    html.management.extendto .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSearchCancel"]
+    {
+        background: url(K2Sites_Management/Images/Search/CancelSearch16_Sprite.png) no-repeat -16px -16px;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .grid-content-cell.icon.user .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/UserManagement16.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .grid-content-cell.icon.user .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/UserManagement_Hover16.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .grid-content-cell.icon.user .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/UserManagement_Selected16.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .grid-content-cell.icon.group .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Groups16.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .grid-content-cell.icon.group .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Groups_Hover16.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .grid-content-cell.icon.group .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Groups_Selected16.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .grid-content-cell.icon.role .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Roles16.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .grid-content-cell.icon.role .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Roles_Hover16.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .grid-content-cell.icon.role .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Roles_Selected16.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid label.input-control.checkbox .input-control-img,
+    html.management.data-access .theme-entry label.input-control.checkbox .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/checkbox18_plat2_Sprite.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .item-image.Role
+    {
+        background-image: url('K2Sites_Management/Images/Roles32.png');
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .item-image.User
+    {
+        background-image: url('K2Sites_Management/Images/User32.png');
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .item-image.Group
+    {
+        background-image: url('K2Sites_Management/Images/Groups32.png');
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGrantGrid1"]
+    {
+        background-image: url(K2Sites_Management/Images/GiveAccess24.png);
+    }
+
+        html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGrantGrid1"]:not(.disabled):hover
+        {
+            background-image: url(K2Sites_Management/Images/GiveAccess_Hover24.png);
+        }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRevokeGrid1"]
+    {
+        background-image: url(K2Sites_Management/Images/Access24.png);
+    }
+
+        html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRevokeGrid1"]:not(.disabled):hover
+        {
+            background-image: url(K2Sites_Management/Images/Access_Hover24.png);
+        }
+
+    html.management.extendto .smartobject-displayname .smartobject-name .smo-icon,
+    html.management.extendto tr:hover .smartobject-displayname .smartobject-name .smo-icon,
+    html.management.extendto tr.selected .smartobject-displayname .smartobject-name .smo-icon
+    {
+        background-image: url(K2Sites_Management/Images/ServiceObject16.png);
+    }
+
+    html.management.extendto .smartobject-displayname.locked .smartobject-name .smo-icon,
+    html.management.extendto tr:hover .smartobject-displayname.locked .smartobject-name .smo-icon,
+    html.management.extendto tr.selected .smartobject-displayname.locked .smartobject-name .smo-icon
+    {
+        background-image: url(K2Sites_Management/Images/Locked16.png);
+    }
+}
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+    html .management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-DataLabel[name='dlRLSFeatureDisabledImage']
+    {
+        background-image: url('K2Sites_Management/Images/DataAccess_Disabled64@2x.png');
+    }
+
+    html.management.data-access .theme-entry .SFC.SourceCode-Forms-Controls-Web-DataLabel[name='dlRLSFeatureWarningImage']
+    {
+        background-image: url('K2Sites_Management/Images/DataAccessWarning_Disabled64@2x.png');
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleNormal32@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox:hover .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox:hover .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleHover32@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.focus .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleFocus32@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus:hover .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.focus:hover .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleHoverFocus32@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.checked .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleSelected32@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.checked:hover .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.checked:hover .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleSelectedHover32@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus.checked .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.focus.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleSelectedFocus32@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.form-header label.input-control.checkbox.focus.checked:hover .input-control-img,
+    html.management.data-access .theme-entry .view.smartbox-objects .grid-toolbars table .Grid-Layout label.input-control.checkbox.focus.checked:hover .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/ToggleSelectedHoverFocus32@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .serializationGridColumn label.input-control.checkbox .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggle24@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .serializationGridColumn label.input-control.checkbox .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggle_Hover24@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .serializationGridColumn label.input-control.checkbox .input-control-img,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected:hover .serializationGridColumn label.input-control.checkbox .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggle_Focus24@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .serializationGridColumn label.input-control.checkbox.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggleSelected24@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .serializationGridColumn label.input-control.checkbox.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggleSelected_Hover24@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .serializationGridColumn label.input-control.checkbox.checked .input-control-img,
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected:hover .serializationGridColumn label.input-control.checkbox.checked .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/SecurityToggleSelected_Focus24@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.item-access .header-box .header-col .header-icon
+    {
+        background-image: url(K2Sites_Management/Images/Access24@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .header-box .header-col .header-icon
+    {
+        background-image: url(K2Sites_Management/Images/DataAccess24@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.smartbox-objects .header-box .header-col .header-icon
+    {
+        background-image: url(K2Sites_Management/Images/SmartBoxObject24@2x.png);
+    }
+
+    html.management.data-access .theme-entry .access-box .access-box-icon.item
+    {
+        background-image: url(K2Sites_Management/Images/DataAccessWarning_Disabled48@2x.png);
+    }
+
+    html.management.data-access .theme-entry .access-box .access-box-icon.role
+    {
+        background-image: url(K2Sites_Management/Images/Groups_Disabled48@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnAddList"],
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnAddGrid"]
+    {
+        background-image: url(K2Sites_Management/Images/AddButton24@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRemoveList"],
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRemoveGrid"]
+    {
+        background-image: url(K2Sites_Management/Images/Bin24@2x.png);
+    }
+
+    html.management.data-access .limited-access .input-control-buttons.styling-right.styling-inner-wrapper a > span > span,
+    html.management.data-access .limited-access .input-control-buttons.styling-right.styling-inner-wrapper a > span > span:hover,
+    html.management.extendto .select-box .styling-right.styling-inner-wrapper a > span > span,
+    html.management.extendto .select-box.active .styling-right.styling-inner-wrapper a > span > span,
+    html.management.extendto .select-box .styling-right.styling-inner-wrapper a > span > span:hover
+    {
+        background-image: url(K2Sites_Management/Images/Dropdown_Hover16@2x.png)
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnListSearch"],
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGridSearch"],
+    html.management.extendto .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSearch"]
+    {
+        background: url(K2Sites_Management/Images/Search/Search16_Sprite@2x.png) no-repeat -16px -16px;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnListSearchCancel"],
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGridSearchCancel"],
+    html.management.extendto .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnSearchCancel"]
+    {
+        background: url(K2Sites_Management/Images/Search/CancelSearch16_Sprite@2x.png) no-repeat -16px -16px;
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .grid-content-cell.icon.user .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/UserManagement16@2x.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .grid-content-cell.icon.user .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/UserManagement_Hover16@2x.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .grid-content-cell.icon.user .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/UserManagement_Selected16@2x.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .grid-content-cell.icon.group .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Groups16@2x.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .grid-content-cell.icon.group .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Groups_Hover16@2x.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .grid-content-cell.icon.group .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Groups_Selected16@2x.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row .grid-content-cell.icon.role .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Roles16@2x.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row:hover .grid-content-cell.icon.role .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Roles_Hover16@2x.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid .edit-row.selected .grid-content-cell.icon.role .grid-content-cell-wrapper
+    {
+        background-image: url(K2Sites_Management/Images/Roles_Selected16@2x.png) !important; /* overrides inherited important */
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-ManagementControlPack-SerializationGrid-SerializationGrid label.input-control.checkbox .input-control-img,
+    html.management.data-access .theme-entry label.input-control.checkbox .input-control-img
+    {
+        background-image: url(K2Sites_Management/Images/checkbox18_plat2_Sprite@2x.png);
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .item-image.Role
+    {
+        background-image: url('K2Sites_Management/Images/Roles32@2x.png');
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .item-image.User
+    {
+        background-image: url('K2Sites_Management/Images/User32@2x.png');
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SourceCode-Forms-Controls-Web-ControlPack-GenericList .item-image.Group
+    {
+        background-image: url('K2Sites_Management/Images/Groups32@2x.png');
+    }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGrantGrid1"]
+    {
+        background-image: url(K2Sites_Management/Images/GiveAccess24@2x.png);
+    }
+
+        html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnGrantGrid1"]:not(.disabled):hover
+        {
+            background-image: url(K2Sites_Management/Images/GiveAccess_Hover24@2x.png);
+        }
+
+    html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRevokeGrid1"]
+    {
+        background-image: url(K2Sites_Management/Images/Access24@2x.png);
+    }
+
+        html.management.data-access .theme-entry .view.limited-access .SFC.SourceCode-Forms-Controls-Web-Button[Name="btnRevokeGrid1"]:not(.disabled):hover
+        {
+            background-image: url(K2Sites_Management/Images/Access_Hover24@2x.png);
+        }
+
+    html.management.extendto .smartobject-displayname .smartobject-name .smo-icon,
+    html.management.extendto tr:hover .smartobject-displayname .smartobject-name .smo-icon,
+    html.management.extendto tr.selected .smartobject-displayname .smartobject-name .smo-icon
+    {
+        background-image: url(K2Sites_Management/Images/ServiceObject16@2x.png);
+    }
+
+    html.management.extendto .smartobject-displayname.locked .smartobject-name .smo-icon,
+    html.management.extendto tr:hover .smartobject-displayname.locked .smartobject-name .smo-icon,
+    html.management.extendto tr.selected .smartobject-displayname.locked .smartobject-name .smo-icon
+    {
+        background-image: url(K2Sites_Management/Images/Locked16@2x.png);
+    }
+}
+
+/* #endregion */

@@ -1,0 +1,199 @@
+/*#region VIEW PANEL*/
+
+/*reset*/
+.theme-entry .grid-header
+{
+    height: auto;
+}
+
+
+.theme-entry  .panel.collapsed > .panel-header
+{
+    border-bottom-width: 0px; //reset core.less
+}
+/*reset end*/
+
+.theme-entry .panel.with-toolbar > .panel-header
+{
+    border-bottom-width: 0;
+}
+
+/*view header styles*/
+.theme-entry 
+{
+    .view,       //runtime
+    .view-canvas //designtime
+    {
+        .panel-header-wrapper,
+        .grid-header-wrapper
+        {
+            border-radius: @View-Rounding @View-Rounding 0px 0px;
+            background-color: @View-Header-Background-Color;
+        }
+
+        .grid-header, 
+        .panel-header
+        {
+            background: @View-Header-Background-Color;
+            color: @View-Header-Text-Color;
+            border-radius: @View-Rounding @View-Rounding 0px 0px;
+        }
+
+        .panel.collapsed
+        {
+            .panel-header-wrapper,
+            .grid-header-wrapper
+            {
+                border-radius: @View-Rounding;
+               
+            }
+
+            .grid-header, 
+            .panel-header
+            {
+                border-radius: @View-Rounding;
+            }
+        }
+
+        .grid-header-wrapper  .grid-header-text,
+        .panel-header-wrapper .panel-header-text
+        {
+            color: inherit;
+            background: transparent;
+            width: 100%;
+            font-size: @View-Header-Text-Size;
+        }
+
+        .panel-header-c 
+        {
+            border-width: 0;
+            border-style: none;
+            border-radius: @View-Rounding @View-Rounding 0px 0px;
+        
+        }
+    }
+}
+
+
+//Expand/Collapse button
+.theme-entry
+{
+    .view,       //runtime
+    .view-canvas //designtime
+    {
+        .panel-header-wrapper,
+        .grid-header-wrapper
+        {
+            .panel-header-controls, 
+            .grid-header-controls
+            {
+                a //expand+collapse button
+                {
+
+                    background-color: @View-Header-Button-Background-Color;
+                    border-color: @View-Header-Button-Border-Color;
+
+                    border-radius: @Button-Rounding;
+
+                    &:hover
+                    {
+                        background-color: @View-Header-Button-Hover-Background-Color;
+                        border-color: @View-Header-Button-Hover-Border-Color;
+                    }
+                }
+            }
+        }
+
+        .panel.collapsed,
+        .grid.collapsed
+        {
+            .panel-header-wrapper,
+            .grid-header-wrapper
+            {
+                .panel-header-controls, 
+                .grid-header-controls
+                {
+                    a //expand+collapse button
+                    {
+                        background-color: @View-Header-Button-ToggleOn-Background-Color;
+                        border-color: @View-Header-Button-ToggleOn-Border-Color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.theme-entry .grid-header-wrapper
+{
+    border: none;
+}
+
+
+.theme-entry .panel-header-wrapper .panel-header-controls
+{
+    height: 100%;
+    padding: 0;
+}
+
+
+.theme-entry .collapsed.panel
+{
+    height: auto; /*overrides the 24px*/
+}
+
+.theme-entry .panel-header-wrapper
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /*removed - change the message box header style if this is changed*/
+    /*why?*/
+}
+
+//Unknown usage: #pgWizard implies designtime, but ".view" doesn't exist at designtime, .view-canvas does. 
+#pgWizard .theme-entry .view .grid-header-wrapper .inline-editable,
+#pgWizard .theme-entry .view .panel-header-wrapper .inline-editable
+{
+    color: @View-Header-Text-Color;
+    font-size: @View-Header-Text-Size;
+}
+
+.theme-entry .dialog.runtime-message .panel-header-text /*Message box override*/
+{
+    width: auto;
+    color: @Dialog-Header-Text-Color;
+    padding-left: 0.3rem;
+}
+
+.theme-entry .panel-header
+{
+    border-width: 0;
+    border-style: solid;
+}
+
+.theme-entry .grid-header-wrapper .grid-header-text > span,
+.theme-entry .panel-header-wrapper .panel-header-text > span
+{
+    font-size: inherit;
+    display: block;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+/*Panel Structure*/
+.theme-entry .grid > .grid-body,
+.theme-entry .panel > .panel-body
+{
+    margin-top: 0; /*override*/
+}
+
+.theme-entry .panel > .panel-body
+{
+    padding: 0;
+}
+
+/*#endregion VIEW PANEL*/

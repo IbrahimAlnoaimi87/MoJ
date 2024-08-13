@@ -1,0 +1,31 @@
+/*#region LABEL*/
+// List view - configure filter - add filter - Name label uses this class
+.theme-entry .form-field .form-field-label
+{
+    /*text-transform: uppercase;*/ /*LG: We can't do this - it is not reverseable in the format builder (Format)*/
+    color: @Input-Label-Text-Color;
+}
+
+/*#endregion LABEL*/
+
+/*#region DATA LABEL*/
+
+.theme-entry .SourceCode-Forms-Controls-Web-DataLabel
+{
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: pre;
+    -ms-word-wrap: normal;
+    word-wrap: normal;
+    cursor: default;
+}
+
+/*#endregion DATA LABEL*/

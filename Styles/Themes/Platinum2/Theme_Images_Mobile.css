@@ -1,0 +1,1863 @@
+/* Theme: Lithium */
+/* Author: Shawn Dipenaar */
+/* Date: 20/02/2014 */
+
+
+
+
+
+
+/*#region DROPDOWN*/
+
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.dropdown > span span,
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.dropdown:active > span span,
+.mobile .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown > span span,
+.mobile .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:focus > span span,
+.mobile .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover > span span,
+.mobile .theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:hover > span span,
+.mobile .theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:focus > span span
+{
+	background-image: url(RuntimeTheme/DropdownArrow_Down20.png);
+}
+
+
+.mobile .theme-entry .input-control.select-box.disabled .input-control-buttons a.dropdown:hover > span span,
+.mobile .theme-entry .input-control.select-box.disabled .input-control-buttons a.dropdown:focus > span span
+{
+	background-image: url(RuntimeTheme/DropdownArrow_Down20.png);
+}
+
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.dropdown:hover > span span,
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.dropdown:focus > span span,
+.mobile .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:focus > span span,
+.mobile .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover > span span
+{
+	background-image: url(RuntimeTheme/DropdownArrow_Up20.png);
+}
+/*#endregion DROPDOWN*/
+
+/*#region PICKER */
+
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.picker-search > span span,
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.picker-search:active > span span,
+.mobile .theme-entry .input-control.select-box.active .input-control-buttons a.picker-search > span span,
+.mobile .theme-entry .input-control.select-box.read-only .input-control-buttons a.picker-search:hover > span span,
+.mobile .theme-entry .input-control.select-box.read-only .input-control-buttons a.picker-search:focus > span span,
+.mobile .theme-entry .input-control.select-box.disabled .input-control-buttons a.picker-search:hover > span span,
+.mobile .theme-entry .input-control.select-box.disabled .input-control-buttons a.picker-search:focus > span span
+{
+	background-image: url(Toolbar/Search20.png);
+}
+
+
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.picker-search:hover > span span,
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.picker-search:focus > span span
+{
+	background-image: url(Toolbar/Search20White.png);
+}
+
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.picker-resolve > span span,
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.picker-resolve:active > span span,
+.mobile .theme-entry .input-control.select-box.active .input-control-buttons a.picker-resolve > span span,
+/*.theme-entry .input-control.select-box.active .input-control-buttons a.picker-resolve:focus > span span,
+	.theme-entry .input-control.select-box.active .input-control-buttons a.picker-resolve:hover > span span,*/
+.mobile .theme-entry .input-control.select-box.read-only .input-control-buttons a.picker-resolve:hover > span span,
+.mobile .theme-entry .input-control.select-box.read-only .input-control-buttons a.picker-resolve:focus > span span,
+.mobile .theme-entry .input-control.select-box.disabled .input-control-buttons a.picker-resolve:hover > span span,
+.mobile .theme-entry .input-control.select-box.disabled .input-control-buttons a.picker-resolve:focus > span span
+{
+	background-image: url(RuntimeTheme/Picker20.png);
+}
+
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.picker-resolve:hover > span span,
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.picker-resolve:focus > span span
+{
+	background-image: url(RuntimeTheme/Picker_White20.png);
+}
+
+/*#endregion PICKER*/
+
+/*#region CHECKBOX / RADIO*/
+
+.mobile .theme-entry label.input-control.checkbox .input-control-img,
+input[type=checkbox]
+{
+	background-image: url(RuntimeTheme/checkbox24_Sprite.png);
+	-moz-background-size: 24px;
+	background-size: 24px;
+}
+
+.mobile .theme-entry label.input-control.radio .input-control-img,
+input[type=radio]
+{
+	background-image: url(RuntimeTheme/RadioButtons18.png);
+	-moz-background-size: 24px;
+	background-size: 24px;
+}
+
+/*State - checked - normal*/
+.mobile .theme-entry label.input-control.checked .input-control-img,
+.mobile .theme-entry input[type=checkbox]:checked + label,
+.mobile .theme-entry input[type=radio]:checked + label
+{
+	background-position: 0 -120px;
+}
+
+/*State - unchecked - normal*/
+.mobile .theme-entry label.input-control:hover .input-control-img,
+.mobile .theme-entry input[type=checkbox]:hover + label,
+.mobile .theme-entry input[type=radio]:hover + label
+{
+	background-position: 0 -60px;
+}
+
+/*State - unchecked - Disabled/Readonly*/
+.mobile .theme-entry label.input-control.disabled .input-control-img,
+.mobile .theme-entry .preview label.input-control .input-control-img,
+.mobile .theme-entry label.input-control.read-only .input-control-img,
+.mobile .theme-entry input[type=checkbox].disabled + label,
+.mobile .theme-entry input[type=checkbox].read-only + label,
+.mobile .theme-entry input[type=radio].disabled + label,
+.mobile .theme-entry input[type=radio].read-only + label
+{
+	background-position: 0 -90px;
+}
+
+/*State - Checked + hover*/
+.mobile .theme-entry label.input-control.checked:hover .input-control-img,
+.mobile .theme-entry input[type=checkbox]:checked:hover + label,
+.mobile .theme-entry input[type=radio]:checked:hover + label
+{
+	background-position: 0 -150px;
+}
+
+/*State - Checked + Disabled/Readonly*/
+.mobile .theme-entry label.input-control.checked.disabled .input-control-img,
+.mobile .theme-entry label.input-control.checked.read-only .input-control-img,
+.mobile .theme-entry input[type=checkbox].disabled:checked + label,
+.mobile .theme-entry input[type=checkbox].read-only:checked + label,
+.mobile .theme-entry input[type=radio].disabled:checked + label,
+.mobile .theme-entry input[type=radio].read-only:checked + label
+{
+	background-position: 0 -210px;
+}
+
+/*#endregion CHECKBOX*/
+
+/*#region TOOLBAR BUTTONS*/
+
+.mobile .theme-entry a.toolbar-button.generic .button-icon
+{
+	background-image: url(RuntimeTheme/Generic20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.add .button-icon
+{
+	background-image: url(Toolbar/Add20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.edit .button-icon
+{
+	background-image: url(Toolbar/Edit20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.delete .button-icon,
+.mobile .theme-entry a.toolbar-button.remove .button-icon
+{
+	background-image: url(Toolbar/Remove20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.delete-all .button-icon,
+.mobile .theme-entry a.toolbar-button.remove-all .button-icon
+{
+	background-image: url(Toolbar/RemoveAll20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.load .button-icon
+{
+	background-image: url(RuntimeTheme/Load20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.save .button-icon
+{
+	background-image: url(Toolbar/Save20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.refresh .button-icon
+{
+	background-image: url(ContextBrowser/Refresh20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.checkin .button-icon
+{
+	background-image: url(Toolbar/CheckIn20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.checkout .button-icon
+{
+	background-image: url(Toolbar/CheckOut20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.undocheckout .button-icon
+{
+	background-image: url(Toolbar/CancelCheckOut20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.filter .button-icon
+{
+	background-image: url(RuntimeTheme/Filter20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.advanced-filter .button-icon
+{
+	background-image: url(RuntimeTheme/AdvancedFilter20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.pdfdocument .button-icon
+{
+	background-image: url(RuntimeTheme/PDF20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.configure-filter .button-icon
+{
+	background-image: url(RuntimeTheme/FilterSpanner20.png);
+}
+
+.mobile .theme-entry #defaultFilterName .button-icon
+{
+	background-image:url(Toolbar/SetAsDefault20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.search .button-icon
+{
+	background-image: url(Toolbar/Search20.png);
+}
+
+.mobile .theme-entry a.toolbar-button.setasdefault .button-icon
+{
+	background-image: url(Toolbar/SetAsDefault20.png);
+}
+/*#endregion TOOLBAR BUTTONS*/
+
+/*#region DATEPICKER*/
+
+/*date normal*/
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.date > span span,
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.date:active > span span,
+.mobile .theme-entry .input-control.select-box.active .input-control-buttons a.date > span span,
+.mobile .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:hover > span span,
+.mobile .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:focus > span span,
+.mobile .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:hover > span span,
+.mobile .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:focus > span span
+{
+	background-image: url(RuntimeTheme/Date20.png);
+}
+
+/*date-time normal*/
+.mobile .theme-entry .input-control.select-box.datetimepicker .input-control-buttons a.date > span span,
+.mobile .theme-entry .input-control.select-box.datetimepicker .input-control-buttons a.date:active > span span,
+.mobile .theme-entry .input-control.select-box.active.datetimepicker .input-control-buttons a.date > span span,
+.mobile .theme-entry .input-control.select-box.read-only.datetimepicker .input-control-buttons a.date:hover > span span,
+.mobile .theme-entry .input-control.select-box.read-only.datetimepicker .input-control-buttons a.date:focus > span span,
+.mobile .theme-entry .input-control.select-box.disabled.datetimepicker .input-control-buttons a.date:hover > span span,
+.mobile .theme-entry .input-control.select-box.disabled.datetimepicker .input-control-buttons a.date:focus > span span
+{
+	background-image: url(RuntimeTheme/DateTime20.png);
+}
+
+/*time normal*/
+.mobile .theme-entry .input-control.select-box.timepicker .input-control-buttons a.date > span span,
+.mobile .theme-entry .input-control.select-box.timepicker .input-control-buttons a.date:active > span span,
+.mobile .theme-entry .input-control.select-box.active.timepicker .input-control-buttons a.date > span span,
+.mobile .theme-entry .input-control.select-box.read-only.timepicker .input-control-buttons a.date:hover > span span,
+.mobile .theme-entry .input-control.select-box.read-only.timepicker .input-control-buttons a.date:focus > span span,
+.mobile .theme-entry .input-control.select-box.disabled.timepicker .input-control-buttons a.date:hover > span span,
+.mobile .theme-entry .input-control.select-box.disabled.timepicker .input-control-buttons a.date:focus > span span
+{
+	background-image: url(RuntimeTheme/Time20.png);
+}
+
+
+/*date hover*/
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.date:hover > span span,
+.mobile .theme-entry .input-control.select-box .input-control-buttons a.date:focus > span span
+{
+	background-image: url(RuntimeTheme/Date_White20.png);
+}
+
+/*date-time hover*/
+.mobile .theme-entry .input-control.select-box.datetimepicker .input-control-buttons a.date:hover > span span,
+.mobile .theme-entry .input-control.select-box.datetimepicker .input-control-buttons a.date:focus > span span
+{
+	background-image: url(RuntimeTheme/DateTime20_White.png);
+}
+
+/*time hover*/
+.mobile .theme-entry .input-control.select-box.timepicker .input-control-buttons a.date:hover > span span,
+.mobile .theme-entry .input-control.select-box.timepicker .input-control-buttons a.date:focus > span span
+{
+	background-image: url(RuntimeTheme/Time20_White.png);
+}
+
+/*#endregion DATEPICKER*/
+
+/*#region SORTING INDICATOR - any grid*/
+
+.mobile .theme-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper:before,
+.mobile .theme-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper:before
+{
+	background-image: url(RuntimeTheme/ExpandCollapse20_Blue.png);
+}
+
+.mobile .theme-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper:before
+{
+	background-position: 50% -44px;
+}
+
+.mobile .theme-entry .grid .grid-column-header-cell.asc:hover .grid-column-header-cell-wrapper:before
+{
+	background-position: 50% -66px;
+}
+
+.mobile .theme-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper:before
+{
+	background-position: 50% 0;
+}
+
+.mobile .theme-entry .grid .grid-column-header-cell.desc:hover .grid-column-header-cell-wrapper:before
+{
+	background-position: 50% -22px;
+}
+
+.mobile .theme-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper
+{
+	background-position: right -44px;
+}
+
+.mobile .theme-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper:hover
+{
+	background-position: right -66px;
+}
+
+.mobile .theme-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper
+{
+	background-position: right -0px;
+}
+
+.mobile .theme-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper:hover
+{
+	background-position: right -22px;
+}
+
+/*#endregion SORTING INDICATOR*/
+
+/*#region Grid Cell Icons */
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-pdf .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/Acrobat20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-mp3 .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/AudioMp320.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-wav .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/AudioWav20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-wma .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/AudioWma20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-csv .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/Csv20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-chm .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/Help20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-xls .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/Xls20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-generic .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/Unknown20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.group .grid-content-cell-wrapper
+{
+	background-image: url(Management/Groups20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-html .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/HtmlDoc20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-bmp .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/Bmp20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-xsn .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/Xsn20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-one .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/One20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-ppt .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/Ppt20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.role .grid-content-cell-wrapper
+{
+	background-image: url(Management/Roles20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.user .grid-content-cell-wrapper
+{
+	background-image: url(Management/User20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-avi .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/VideoAvi20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-mov .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/VideoMov20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-wmv .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/VideoWmv20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.document-doc .grid-content-cell-wrapper
+{
+	background-image: url(FileTypes/Doc20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon.view-flow .grid-content-cell-wrapper
+{
+	background-image: url(Management/Viewflow20.png);
+}
+
+.mobile .theme-entry .grid .grid-content-cell.icon .grid-content-cell-wrapper
+{
+	background-position: 0.3rem 1.05rem;
+}
+
+/*#endregion Grid Cell Icons */
+
+/*#region COLUMN HEADER TABLE*/
+
+.mobile .theme-entry .grid table.grid-column-header-table td:hover
+{
+	background-image: none;
+}
+
+/*#endregion COLUMN HEADER TABLE*/
+
+/*#region PAGING BUTTON ICONS*/
+.mobile .theme-entry a.toolbar-button.paging-first .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Left_Double_Normal22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-first:hover .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-first:active .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-first:focus .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Left_Double_Hover22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-first.disabled:hover .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-first.disabled:active .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-first.disabled:focus .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Left_Double_Normal22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-left .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Left_Normal22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-left:hover .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-left:active .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-left:focus .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Left_Hover22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-left.disabled:hover .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-left.disabled:active .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-left.disabled:focus .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Left_Normal22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-right .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Right_Normal22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-right:hover .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-right:active .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-right:focus .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Right_Hover22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-right.disabled:hover .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-right.disabled:active .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-right.disabled:focus .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Right_Normal22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-last .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Right_Double_Normal22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-last:hover .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-last:active .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-last:focus .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Right_Double_Hover22.png);
+}
+
+.mobile .theme-entry a.toolbar-button.paging-last.disabled:hover .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-last.disabled:active .button-icon,
+.mobile .theme-entry a.toolbar-button.paging-last.disabled:focus .button-icon
+{
+	background-image: url(RuntimeTheme/Paging_Right_Double_Normal22.png);
+}
+/*#endregion PAGING BUTTON ICONS*/
+
+/*#region MENU */
+.mobile .theme-entry .menu
+{
+	background-image: url(RuntimeTheme/menu_bg.png);
+}
+
+.mobile .theme-entry .menu a.menu-item.children
+{
+	background-image: url(RuntimeTheme/Paging_Right_Normal22.png);
+}
+
+.mobile .theme-entry a.picker-delete.menu-item
+{
+	background-image: url(Toolbar/Remove20.png);
+}
+
+.mobile .theme-entry a.picker-search.menu-item
+{
+	background-image: url(Toolbar/Search20White.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.unknown,
+.mobile .theme-entry .input-control.icon-control.unknown .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.unknown .input-control-wrapper
+{
+	background-image: url(RuntimeTheme/Default20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.smartobject,
+.mobile .theme-entry .input-control.icon-control.smartobject .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.smartobject .input-control-wrapper
+{
+	background-image: url(FileTypes/SmartObject20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.workflow,
+.mobile .theme-entry .input-control.icon-control.workflow .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.workflow .input-control-wrapper
+{
+	background-image: url(FileTypes/Workflows20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.view,
+.mobile .theme-entry .input-control.icon-control.view .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.view .input-control-wrapper
+{
+	background-image: url(FileTypes/View20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.form,
+.mobile .theme-entry .input-control.icon-control.form .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.form .input-control-wrapper
+{
+	background-image: url(FileTypes/Form20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.auto-guid,
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.autoguid,
+.mobile .theme-entry .input-control.icon-control.auto-guid .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.autoguid .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.auto-guid .input-control-wrapper,
+.mobile .theme-entry .input-control.icon-control.autoguid .input-control-wrapper
+{
+	background-image: url(DataTypes/AutoGUID20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.auto-number,
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.autonumber,
+.mobile .theme-entry .input-control.icon-control.auto-number .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.autonumber .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.auto-number .input-control-wrapper,
+.mobile .theme-entry .input-control.icon-control.autonumber .input-control-wrapper
+{
+	background-image: url(DataTypes/AutoNumber20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.date-time,
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.datetime,
+.mobile .theme-entry .input-control.icon-control.date-time .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.datetime .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.date-time .input-control-wrapper,
+.mobile .theme-entry .input-control.icon-control.datetime .input-control-wrapper
+{
+	background-image: url(DataTypes/DateTime20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.date,
+.mobile .theme-entry .input-control.icon-control.date .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.date .input-control-wrapper
+{
+	background-image: url(RuntimeTheme/Date20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.time,
+.mobile .theme-entry .input-control.icon-control.time .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.time .input-control-wrapper
+{
+	background-image: url(RuntimeTheme/Time20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.decimal,
+.mobile .theme-entry .input-control.icon-control.decimal .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.decimal .input-control-wrapper
+{
+	background-image: url(DataTypes/Decimal20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.file,
+.mobile .theme-entry .input-control.icon-control.file .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.file .input-control-wrapper
+{
+	background-image: url(Toolbox/File20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.guid,
+.mobile .theme-entry .input-control.icon-control.guid .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.guid .input-control-wrapper
+{
+	background-image: url(DataTypes/GUID20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.hyperlink,
+.mobile .theme-entry .input-control.icon-control.hyperlink .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.hyperlink .input-control-wrapper
+{
+	background-image: url(DataTypes/Hyperlink20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.image,
+.mobile .theme-entry .input-control.icon-control.image .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.image .input-control-wrapper
+{
+	background-image: url(DataTypes/Image20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.memo,
+.mobile .theme-entry .input-control.icon-control.memo .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.memo .input-control-wrapper
+{
+	background-image: url(DataTypes/Memo20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.multi-value,
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.multivalue,
+.mobile .theme-entry .input-control.icon-control.multi-value .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.multi-value .input-control-wrapper,
+.mobile .theme-entry .input-control.icon-control.multivalue .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.multivalue .input-control-wrapper
+{
+	background-image: url(DataTypes/MultiValue20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.number,
+.mobile .theme-entry .input-control.icon-control.number .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.number .input-control-wrapper
+{
+	background-image: url(DataTypes/Number20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.text,
+.mobile .theme-entry .input-control.icon-control.text .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.text .input-control-wrapper
+{
+	background-image: url(DataTypes/Text20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.yesno,
+.mobile .theme-entry .input-control.icon-control.yesno .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.yesno .input-control-wrapper,
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.boolean,
+.mobile .theme-entry .input-control.icon-control.boolean .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.boolean .input-control-wrapper
+{
+	background-image: url(DataTypes/YesNo20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.equals,
+.mobile .theme-entry .input-control.icon-control.equals .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.equals .input-control-wrapper
+{
+	background-image: url(Dropdown/Equals20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.not-equals,
+.mobile .theme-entry .input-control.icon-control.not-equals .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.not-equals .input-control-wrapper
+{
+	background-image: url(Dropdown/NotEquals20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.greater-than,
+.mobile .theme-entry .input-control.icon-control.greater-than .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.greater-than .input-control-wrapper
+{
+	background-image: url(Dropdown/GreaterThan20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.less-than,
+.mobile .theme-entry .input-control.icon-control.less-than .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.less-than .input-control-wrapper
+{
+	background-image: url(Dropdown/LessThan20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.greater-than-equals,
+.mobile .theme-entry .input-control.icon-control.greater-than-equals .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.greater-than-equals .input-control-wrapper
+{
+	background-image: url(Dropdown/GreaterThanEqual20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.less-than-equals,
+.mobile .theme-entry .input-control.icon-control.less-than-equals .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.less-than-equals .input-control-wrapper
+{
+	background-image: url(Dropdown/LessThanEqual20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.contains,
+.mobile .theme-entry .input-control.icon-control.contains .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.contains .input-control-wrapper
+{
+	background-image: url(Dropdown/Contains20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.starts-with,
+.mobile .theme-entry .input-control.icon-control.starts-with .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.starts-with .input-control-wrapper
+{
+	background-image: url(Dropdown/StartsWith20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.ends-with,
+.mobile .theme-entry .input-control.icon-control.ends-with .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.ends-with .input-control-wrapper
+{
+	background-image: url(Dropdown/EndsWith20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.text-blank,
+.mobile .theme-entry .input-control.icon-control.text-blank .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.text-blank .input-control-wrapper
+{
+	background-image: url(Dropdown/IsBlank20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.text-not-blank,
+.mobile .theme-entry .input-control.icon-control.text-not-blank .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.text-not-blank .input-control-wrapper
+{
+	background-image: url(Dropdown/IsNotBlank20Bl.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.sort-ascending,
+.mobile .theme-entry .input-control.icon-control.sort-ascending .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.sort-ascending .input-control-wrapper
+{
+	background-image: url(Dropdown/Ascending20.png);
+}
+
+.mobile .theme-entry .drop-menu.icon-control ul.drop-menu a.sort-descending,
+.mobile .theme-entry .input-control.icon-control.sort-descending .input-control-icon,
+.mobile .theme-entry .input-control.icon-control.sort-descending .input-control-wrapper
+{
+	background-image: url(Dropdown/Descending20.png);
+}
+
+/*#endregion MENU */
+
+/*#region CALENDER POP-UP*/
+
+.mobile .theme-entry .top-calendar-left,
+.mobile .theme-entry .top-calendar-right
+{
+	background-image: url(RuntimeTheme/BackForward22.png);
+	-moz-background-size: auto 22px;
+	background-size: auto 22px;
+}
+
+.mobile .theme-entry .top-calendar-left
+{
+	background-position: -66px 0px;
+}
+
+.mobile .theme-entry .top-calendar-left:hover
+{
+	background-position: -44px 0px;
+}
+
+.mobile .theme-entry .top-calendar-right
+{
+	background-position: -22px 0px;
+}
+
+.mobile .theme-entry .top-calendar-right:hover
+{
+	background-position: -0px 0px;
+}
+
+/*#endregion CALENDER POP-UP*/
+
+/*#region RATING CONTROL */
+
+.mobile .theme-entry .filledRatingStar
+{
+	background-image: url(RuntimeTheme/RatingSaved20.png);
+}
+
+.mobile .theme-entry .emptyRatingStar
+{
+	background-image: url(RuntimeTheme/RatingEmpty20.png);
+}
+
+.mobile .theme-entry .savedRatingStar
+{
+	background-image: url(RuntimeTheme/RatingFilled20.png);
+}
+
+.mobile .theme-entry .hoveredRatingStar
+{
+	background-image: url(RuntimeTheme/RatingFilled20.png);
+}
+
+/*#endregion RATING CONTROL */
+
+/*#region SLIDER */
+.mobile .theme-entry .ajax__slider_h_rail .ajax_slider_rail_inner,
+.mobile .theme-entry .Slider-rail .Slider-rail-inner
+{
+	background-image: url(RuntimeTheme/slider_bar_repeater.png);
+}
+
+.mobile .theme-entry .ajax__slider_h_rail .ajax_slider_rail_start,
+.mobile .theme-entry .Slider-rail .Slider-rail-start
+{
+	background-image: url(RuntimeTheme/slider_bar_left_corners.png);
+}
+
+.mobile .theme-entry .ajax__slider_h_rail .ajax_slider_rail_end,
+.mobile .theme-entry .Slider-rail .Slider-rail-end
+{
+	background-image: url(RuntimeTheme/slider_bar_right_corners.png);
+}
+
+/*#endregion SLIDER */
+
+/*#region DIALOG*/
+
+/*#region ibutton*/
+.mobile .theme-entry a.SourceCode-Forms-Controls-Web-Button.help span.Button-Image
+{ /*span had to be added*/
+	background-image: url(RuntimeTheme/InfoButton_Sprite20.png)!important; /*override - core*/
+	width: 20px;
+	height: 20px;
+	-moz-background-size: 60px;
+	background-size: 60px;
+}
+
+/*normal*/
+.mobile .theme-entry a.SourceCode-Forms-Controls-Web-Button.help .Button-Image
+{
+	background-position: -20px -140px;
+}
+
+/*hover*/
+.mobile .theme-entry a.SourceCode-Forms-Controls-Web-Button.help:hover .Button-Image
+{
+	background-position: -20px -80px;
+}
+
+/*disabled*/
+.mobile .theme-entry a.SourceCode-Forms-Controls-Web-Button.help.disabled .Button-Image
+{
+	background-position: -20px -20px;
+}
+
+/*#endregion*/
+
+.mobile .theme-entry .popup-header,
+.mobile .theme-entry .popup-footer
+{
+	background-image: url(RuntimeTheme/DialogSeparator.png);
+}
+
+/*#region control toolbox*/
+
+.mobile .theme-entry .popup-header-buttons a.close,
+.mobile .theme-entry .popup-header-buttons a.close:hover,
+.mobile .theme-entry .popup-header-buttons a.close:focus,
+.mobile .theme-entry .popup-header-buttons a.close:active,
+.mobile .theme-entry .popup-header-buttons a.maximize,
+.mobile .theme-entry .popup-header-buttons a.maximize:hover,
+.mobile .theme-entry .popup-header-buttons a.maximize:focus,
+.mobile .theme-entry .popup-header-buttons a.maximize:active,
+.mobile .theme-entry .popup-header-buttons a.restore,
+.mobile .theme-entry .popup-header-buttons a.restore:hover,
+.mobile .theme-entry .popup-header-buttons a.restore:focus,
+.mobile .theme-entry .popup-header-buttons a.restore:active
+{
+	background-image: url(RuntimeTheme/DialogButtons20_Sprite.png);
+	width: 20px;
+	height: 20px;
+}
+
+
+.mobile .theme-entry .popup-header-buttons a.close
+{
+	background-position: -65px -5px;
+}
+
+.mobile .theme-entry .popup-header-buttons a.close:hover
+{
+	background-position: -35px -5px;
+}
+
+.mobile .theme-entry .popup-header-buttons a.close.disabled,
+.mobile .theme-entry .popup-header-buttons a.close.disabled:hover,
+.mobile .theme-entry .popup-header-buttons a.close.disabled:focus,
+.mobile .theme-entry .popup-header-buttons a.close.disabled:active
+{
+	background-position: -5px -5px;
+}
+
+/*maximize*/
+.mobile .theme-entry .popup-header-buttons a.maximize
+{
+	background-position: -65px -35px;
+}
+
+.mobile .theme-entry .popup-header-buttons a.maximize:hover
+{
+	background-position: -35px -35px;
+}
+
+.mobile .theme-entry .popup-header-buttons a.maximize.disabled,
+.mobile .theme-entry .popup-header-buttons a.maximize.disabled:hover,
+.mobile .theme-entry .popup-header-buttons a.maximize.disabled:focus,
+.mobile .theme-entry .popup-header-buttons a.maximize.disabled:active
+{
+	background-position: -5px -35px;
+}
+
+
+/*minimize*/
+.mobile .theme-entry .popup-header-buttons a.minimize
+{
+	background-position: -65px -65px;
+}
+
+.mobile .theme-entry .popup-header-buttons a.minimize:hover
+{
+	background-position: -35px -65px;
+}
+
+.mobile .theme-entry .popup-header-buttons a.minimize.disabled,
+.mobile .theme-entry .popup-header-buttons a.minimize.disabled:hover,
+.mobile .theme-entry .popup-header-buttons a.minimize.disabled:focus,
+.mobile .theme-entry .popup-header-buttons a.minimize.disabled:active
+{
+	background-position: -5px -65px;
+}
+
+/*restore*/
+.mobile .theme-entry .popup-header-buttons a.restore
+{
+	background-position: -96px -65px;
+}
+
+.mobile .theme-entry .popup-header-buttons a.restore:hover
+{
+	background-position: -95px -35px;
+}
+
+.mobile .theme-entry .popup-header-buttons a.restore.disabled,
+.mobile .theme-entry .popup-header-buttons a.restore.disabled:hover,
+.mobile .theme-entry .popup-header-buttons a.restore.disabled:focus,
+.mobile .theme-entry .popup-header-buttons a.restore.disabled:active
+{
+	background-position: -95px -5px;
+}
+
+/*#endregion*/
+
+/*#endregion DIALOG*/
+
+/*#region DIALOG MESSAGEBOX */
+
+/*standard positioning*/
+
+.mobile .theme-entry .message-box-content.error
+{
+	background-image: url(RuntimeTheme/Error40.png);
+}
+
+.mobile .theme-entry .message-box-content.info
+{
+	background-image: url(RuntimeTheme/Info40.png);
+}
+
+.mobile .theme-entry .message-box-content.warning
+{
+	background-image: url(RuntimeTheme/Warning40.png);
+}
+
+.mobile .theme-entry .message-box-content.confirmation
+{
+	background-image: url(RuntimeTheme/Confirmation40.png);
+}
+
+.mobile .theme-entry .message-box-content.default
+{
+	background-image: url(RuntimeTheme/Default40.png);
+}
+
+.mobile .theme-entry .message-box-content.message 
+{
+	background-image: url(RuntimeTheme/Default40.png);
+}
+
+.mobile .theme-entry .message-box-content.sign-in
+{
+	background-image: url(RuntimeTheme/Lock32@2x.png);
+	background-position: 0px 4px;
+	background-size: 40px 40px;
+}
+
+/*#endregion*/
+
+/*#region ATTACHMENT CONTROL*/
+
+.mobile .theme-entry .file-tn-cell.file-error
+{
+	background-image: url(RuntimeTheme/Error40.png);
+}
+
+/*#endregion ATTACHEMENT CONTROL*/
+
+/*#region VIEW PANEL*/
+
+.mobile .theme-entry .grid-header-wrapper .grid-header-controls a,
+.mobile .theme-entry .panel-header-wrapper .panel-header-controls a
+{
+	background-image: url(RuntimeTheme/ExpandCollapse20_Blue.png);
+	-moz-background-size: 22px;
+	background-size: 22px; /*sprite is non-standard*/
+	background-position: 0% -22px;
+}
+
+.mobile .theme-entry .grid-header-wrapper .grid-header-controls a.collapse-vertical,
+.mobile .theme-entry .panel-header-wrapper .panel-header-controls a.collapse-vertical,
+.mobile .theme-entry .grid-header-wrapper .grid-header-controls a.collapse-vertical:focus,
+.mobile .theme-entry .panel-header-wrapper .panel-header-controls a.collapse-vertical:focus
+{
+	background-position: 0% -66px;
+}
+
+.mobile .theme-entry .grid-header-wrapper .grid-header-controls a.collapse-vertical:hover,
+/*.theme-entry .grid-header-wrapper .grid-header-controls a.collapse-vertical:focus,*/
+.mobile .theme-entry .panel-header-wrapper .panel-header-controls a.collapse-vertical:hover
+/*.theme-entry .panel-header-wrapper .panel-header-controls a.collapse-vertical:focus*/
+{
+	background-position: 0% -44px;
+}
+
+.mobile .theme-entry .grid-header-wrapper .grid-header-controls a.expand-vertical,
+.mobile .theme-entry .panel-header-wrapper .panel-header-controls a.expand-vertical,
+.mobile .theme-entry .grid-header-wrapper .grid-header-controls a.expand-vertical:focus,
+.mobile .theme-entry .panel-header-wrapper .panel-header-controls a.expand-vertical:focus
+{
+	background-position: 0% -22px;
+}
+
+.mobile .theme-entry .grid-header-wrapper .grid-header-controls a.expand-vertical:hover,
+/*.theme-entry .grid-header-wrapper .grid-header-controls a.expand-vertical:focus,*/
+.mobile .theme-entry .panel-header-wrapper .panel-header-controls a.expand-vertical:hover
+/*.theme-entry .panel-header-wrapper .panel-header-controls a.expand-vertical:focus*/
+{
+	background-position: 0% 0px;
+}
+
+
+/*#endregion*/
+
+/*#region SPINNER CONTROL*/
+.mobile .theme-entry .spinner .spinner-buttons .spinner-up-button,
+.mobile .theme-entry .spinner .spinner-buttons .spinner-down-button
+{
+	background-image:url(RuntimeTheme/DateTime_Arrows20_Sprite.png);
+}
+
+.mobile .theme-entry .spinner .spinner-buttons .spinner-up-button
+{
+	background-position:50% -68px;
+}
+
+.mobile .theme-entry .spinner .spinner-buttons .spinner-up-button:hover
+{
+	background-position:50% -90px;
+}
+
+.mobile .theme-entry .spinner .spinner-buttons .spinner-up-button:focus
+{
+	background-position:50% -112px;
+}
+
+.mobile .theme-entry .spinner .spinner-buttons .spinner-down-button
+{
+	background-position:50% -3px;
+}
+
+.mobile .theme-entry .spinner .spinner-buttons .spinner-down-button:hover
+{
+	background-position:50% -25px;
+}
+
+.mobile .theme-entry .spinner .spinner-buttons .spinner-down-button:focus
+{
+	background-position:50% -47px;
+}
+/*#endregion*/
+
+/*#region REQUIRED FIELDS*/
+.mobile .theme-entry .form-field.required label.form-field-label
+{
+	background: url(RuntimeTheme/RequiredField.png) no-repeat transparent right center;
+}
+/*#endregion*/
+
+/*#region TREE CONTROL*/
+.mobile .theme-entry .tree li a,
+.mobile .theme-entry .tree li span
+{
+	background-position: 4px 50%;
+}
+
+/*tree node icons*/
+.mobile .theme-entry .tree li.children.closed > a, 
+.mobile .theme-entry .tree li.children.closed > span
+{
+	background-image: url(AssetBrowser/FolderClosed20.png);
+}
+
+.mobile .theme-entry .tree li.children.open > a, 
+.mobile .theme-entry .tree li.children.open > span
+{
+	background-image: url(AssetBrowser/FolderOpen20.png);
+}
+
+.mobile .theme-entry .tree li.smartobject > a,
+.mobile .theme-entry .tree li.smartobject > span
+{
+	background-image: url(FileTypes/SmartObject20.png) !important;
+}
+
+.mobile .theme-entry .tree li.view > a,
+.mobile .theme-entry .tree li.view > span
+{
+	background-image: url(FileTypes/View20.png) !important;
+}
+
+.mobile .theme-entry .tree li.form > a,
+.mobile .theme-entry .tree li.form > span
+{
+	background-image: url(FileTypes/Form20.png) !important;
+}
+
+.mobile .theme-entry .tree li.workflow > a,
+.mobile .theme-entry .tree li.workflow > span
+{
+	background-image: url(FileTypes/Workflows20.png) !important;
+}
+
+.mobile .theme-entry .tree li.error > a,
+.mobile .theme-entry .tree li.error > span
+{
+	background-image: url(RuntimeTheme/Error20.png) !important;
+}
+
+.mobile .theme-entry .tree li.auto-guid > a,
+.mobile .theme-entry .tree li.auto-guid > span
+{
+	background-image: url(DataTypes/AutoGUID20.png);
+}
+
+.mobile .theme-entry .tree li.auto-number > a,
+.mobile .theme-entry .tree li.auto-number > span
+{
+	background-image: url(DataTypes/AutoNumber20.png);
+}
+
+.mobile .theme-entry .tree li.date-time > a,
+.mobile .theme-entry .tree li.date-time > span
+{
+	background-image: url(DataTypes/DateTime20.png);
+}
+
+.mobile .theme-entry .tree li.date > a,
+.mobile .theme-entry .tree li.date > span
+{
+	background-image: url(RuntimeTheme/Date20.png);
+}
+
+.mobile .theme-entry .tree li.time > a,
+.mobile .theme-entry .tree li.time > span
+{
+	background-image: url(RuntimeTheme/Time20.png);
+}
+
+.mobile .theme-entry .tree li.decimal > a,
+.mobile .theme-entry .tree li.decimal > span
+{
+	background-image: url(DataTypes/Decimal20.png);
+}
+
+.mobile .theme-entry .tree li.file > a,
+.mobile .theme-entry .tree li.file > span
+{
+	background-image: url(Toolbox/File20.png);
+}
+
+.mobile .theme-entry .tree li.guid > a,
+.mobile .theme-entry .tree li.guid > span
+{
+	background-image: url(DataTypes/GUID20.png);
+}
+
+.mobile .theme-entry .tree li.hyperlink-control > a,
+.mobile .theme-entry .tree li.hyperlink-control > span
+{
+	background-image: url(DataTypes/Hyperlink20.png);
+}
+
+.mobile .theme-entry .tree li.image > a,
+.mobile .theme-entry .tree li.image > span
+{
+	background-image: url(DataTypes/Image20.png);
+}
+
+.mobile .theme-entry .tree li.memo > a,
+.mobile .theme-entry .tree li.memo > span
+{
+	background-image: url(DataTypes/Memo20.png);
+}
+
+.mobile .theme-entry .tree li.multivalue-control > a,
+.mobile .theme-entry .tree li.multivalue-control > span
+{
+	background-image: url(DataTypes/MultiValue20.png);
+}
+
+.mobile .theme-entry .tree li.number > a,
+.mobile .theme-entry .tree li.number > span
+{
+	background-image: url(DataTypes/Number20.png);
+}
+
+.mobile .theme-entry .tree li.text > a,
+.mobile .theme-entry .tree li.text > span
+{
+	background-image: url(DataTypes/Text20.png);
+}
+
+.mobile .theme-entry .tree li.yesno > a,
+.mobile .theme-entry .tree li.yesno > span
+{
+	background-image: url(DataTypes/YesNo20.png);
+}
+
+.mobile .theme-entry .tree li.category > a,
+.mobile .theme-entry .tree li.category > span
+{
+	background-image: url(AssetBrowser/FolderClosed20.png);
+}
+
+.mobile .theme-entry .tree li.open.category > a,
+.mobile .theme-entry .tree li.open.category > span
+{
+	background-image: url(AssetBrowser/FolderOpen20.png);
+}
+
+.mobile .theme-entry .tree li.closed.category > a,
+.mobile .theme-entry .tree li.closed.category > span
+{
+	background-image: url(AssetBrowser/FolderClosed20.png);
+}
+
+.mobile .theme-entry .tree li.closed.user > a,
+.mobile .theme-entry .tree li.closed.user > span,
+.mobile .theme-entry .tree li.open.user > a,
+.mobile .theme-entry .tree li.open.user > span
+{
+	background-image: url(Management/User20.png);
+}
+
+.mobile .theme-entry .tree li.datetime-now > a,
+.mobile .theme-entry .tree li.datetime-now.open > a,
+.mobile .theme-entry .tree li.datetime-now.closed > a,
+.mobile .theme-entry .tree li.datetime-now > span,
+.mobile .theme-entry .tree li.datetime-now.open > span,
+.mobile .theme-entry .tree li.datetime-now.closed > span
+{
+	background-image: url(ContextBrowser/CurrentDate20.png);
+}
+
+.mobile .theme-entry .tree li.field > a, 
+.mobile .theme-entry .tree li.field.open > a, 
+.mobile .theme-entry .tree li.field.closed > a, 
+.mobile .theme-entry .tree li.field > span, 
+.mobile .theme-entry .tree li.field.open > span, 
+.mobile .theme-entry .tree li.field.closed > span
+{
+	background-image: url(ContextBrowser/EnvironmentField20.png);
+}
+
+.mobile .theme-entry .tree li.client > a, 
+.mobile .theme-entry .tree li.client.open > a, 
+.mobile .theme-entry .tree li.client.closed > a, 
+.mobile .theme-entry .tree li.client > span, 
+.mobile .theme-entry .tree li.client.open > span, 
+.mobile .theme-entry .tree li.client.closed > span
+{
+	background-image: url(ContextBrowser/Screen20.png);
+}
+
+.mobile .theme-entry .tree li.environmentField > a, 
+.mobile .theme-entry .tree li.environmentField > span
+{
+	background-image: url(ContextBrowser/EnvironmentField20.png);
+}
+
+.mobile .theme-entry .tree li.controls > a,
+.mobile .theme-entry .tree li.controls > span
+{
+	background-image: url(ContextBrowser/ControlGroup20.png);
+}
+
+.mobile .theme-entry .tree li.open.controls > a,
+.mobile .theme-entry .tree li.open.controls > span
+{
+	background-image: url(ContextBrowser/ControlGroup20.png);
+}
+
+.mobile .theme-entry .tree li.closed.controls > a,
+.mobile .theme-entry .tree li.closed.controls > span
+{
+	background-image: url(ContextBrowser/ControlGroup20.png);
+}
+
+.mobile .theme-entry .tree li.button-control > a,
+.mobile .theme-entry .tree li.button-control.children.open > a,
+.mobile .theme-entry .tree li.button-control.children.closed > a,
+.mobile .theme-entry .tree li.button-control > span
+{
+	background-image: url(Toolbox/Button20.png);
+}
+
+.mobile .theme-entry .tree li.toolbarbutton-control > a,
+.mobile .theme-entry .tree li.toolbarbutton-control.children.open > a,
+.mobile .theme-entry .tree li.toolbarbutton-control.children.closed > a,
+.mobile .theme-entry .tree li.toolbarbutton-control > span,
+.mobile .theme-entry .tree li.toolbar-button-control > a,
+.mobile .theme-entry .tree li.toolbar-button-control.children.open > a,
+.mobile .theme-entry .tree li.toolbar-button-control.children.closed > a,
+.mobile .theme-entry .tree li.toolbar-button-control > span
+{
+	background-image: url(Toolbox/ToolbarButton20.png);
+}
+
+.mobile .theme-entry .tree li.calendar-control > a,
+.mobile .theme-entry .tree li.calendar-control.children.open > a,
+.mobile .theme-entry .tree li.calendar-control.children.closed > a,
+.mobile .theme-entry .tree li.calendar-control > span
+{
+	background-image: url(Toolbox/Date20.png);
+}
+
+.mobile .theme-entry .tree li.checkbox-control > a,
+.mobile .theme-entry .tree li.checkbox-control.children.open > a,
+.mobile .theme-entry .tree li.checkbox-control.children.closed > a,
+.mobile .theme-entry .tree li.checkbox-control > span
+{
+	background-image: url(Toolbox/Checkbox_Toolbox20.png);
+}
+
+.mobile .theme-entry .tree li.dropdown-control > a,
+.mobile .theme-entry .tree li.dropdown-control.children.open > a,
+.mobile .theme-entry .tree li.dropdown-control.children.closed > a,
+.mobile .theme-entry .tree li.dropdown-control > span
+{
+	background-image: url(Toolbox/DropdownList20.png);
+}
+
+.mobile .theme-entry .tree li.file-control > a,
+.mobile .theme-entry .tree li.file-control.children.open > a,
+.mobile .theme-entry .tree li.file-control.children.closed > a,
+.mobile .theme-entry .tree li.file-control > span,
+.mobile .theme-entry .tree li.filepostback-control > a,
+.mobile .theme-entry .tree li.filepostback-control.children.open > a,
+.mobile .theme-entry .tree li.filepostback-control.children.closed > a,
+.mobile .theme-entry .tree li.filepostback-control > span
+{
+	background-image: url(Toolbox/File20.png);
+}
+
+.mobile .theme-entry .tree li.listbox-control > a,
+.mobile .theme-entry .tree li.listbox-control.children.open > a,
+.mobile .theme-entry .tree li.listbox-control.children.closed > a,
+.mobile .theme-entry .tree li.listbox-control > span
+{
+	background-image: url(Toolbox/ListDisplay20.png);
+}
+
+.mobile .theme-entry .tree li.radiobutton-control > a,
+.mobile .theme-entry .tree li.radiobutton-control.children.open > a,
+.mobile .theme-entry .tree li.radiobutton-control.children.closed > a,
+.mobile .theme-entry .tree li.radiobutton-control > span
+{
+	background-image: url(Toolbox/RadioButton_Toolbox20.png);
+}
+
+.mobile .theme-entry .tree li.radiobuttongroup-control > a,
+.mobile .theme-entry .tree li.radiobuttongroup-control.children.open > a,
+.mobile .theme-entry .tree li.radiobuttongroup-control.children.closed > a,
+.mobile .theme-entry .tree li.radiobuttongroup-control > span
+{
+	background-image: url(Toolbox/RadioButtonList20.png);
+}
+
+.mobile .theme-entry .tree li.textbox-control > a,
+.mobile .theme-entry .tree li.textbox-control.children.open > a,
+.mobile .theme-entry .tree li.textbox-control.children.closed > a,
+.mobile .theme-entry .tree li.textbox-control > span,
+.mobile .theme-entry .tree li.textarea-control > a,
+.mobile .theme-entry .tree li.textarea-control.children.open > a,
+.mobile .theme-entry .tree li.textarea-control.children.closed > a,
+.mobile .theme-entry .tree li.textarea-control > span
+{
+	background-image: url(Toolbox/TextArea20.png);
+}
+
+.mobile .theme-entry .tree li.picker-control > a,
+.mobile .theme-entry .tree li.picker-control.children.open > a,
+.mobile .theme-entry .tree li.picker-control.children.closed > a,
+.mobile .theme-entry .tree li.picker-control > span
+{
+	background-image: url(Toolbox/Picker20.png);
+}
+
+.mobile .theme-entry .tree li.image-control > a,
+.mobile .theme-entry .tree li.image-control.children.open > a,
+.mobile .theme-entry .tree li.image-control.children.closed > a,
+.mobile .theme-entry .tree li.image-control > span,
+.mobile .theme-entry .tree li.imagepostback-control > a,
+.mobile .theme-entry .tree li.imagepostback-control.children.open > a,
+.mobile .theme-entry .tree li.imagepostback-control.children.closed > a,
+.mobile .theme-entry .tree li.imagepostback-control > span
+{
+	background-image: url(Toolbox/Image20.png);
+}
+
+.mobile .theme-entry .tree li.datalabel-control > a,
+.mobile .theme-entry .tree li.datalabel-control.children.open > a,
+.mobile .theme-entry .tree li.datalabel-control.children.closed > a,
+.mobile .theme-entry .tree li.datalabel-control > span
+{
+	background-image: url(Toolbox/DataLabel20.png);
+}
+
+.mobile .theme-entry .tree li.label-control > a,
+.mobile .theme-entry .tree li.label-control.children.open > a,
+.mobile .theme-entry .tree li.label-control.children.closed > a,
+.mobile .theme-entry .tree li.label-control > span
+{
+	background-image: url(Toolbox/Label20.png);
+}
+
+.mobile .theme-entry .tree li.lookup-control > a,
+.mobile .theme-entry .tree li.lookup-control.children.open > a,
+.mobile .theme-entry .tree li.lookup-control.children.closed > a,
+.mobile .theme-entry .tree li.lookup-control > span
+{
+	background-image: url(Toolbox/Lookup20.png);
+}
+
+.mobile .theme-entry .tree li.rating-control > a,
+.mobile .theme-entry .tree li.rating-control.children.open > a,
+.mobile .theme-entry .tree li.rating-control.children.closed > a,
+.mobile .theme-entry .tree li.rating-control > span
+{
+	background-image: url(Toolbox/RatingToolbox20.png);
+}
+
+.mobile .theme-entry .tree li.slider-control > a,
+.mobile .theme-entry .tree li.slider-control.children.open > a,
+.mobile .theme-entry .tree li.slider-control.children.closed > a,
+.mobile .theme-entry .tree li.slider-control > span
+{
+	background-image: url(Toolbox/Slider20.png);
+}
+
+.mobile .theme-entry .tree li.table-control > a,
+.mobile .theme-entry .tree li.table-control.children.open > a,
+.mobile .theme-entry .tree li.table-control.children.closed > a,
+.mobile .theme-entry .tree li.table-control > span
+{
+	background-image: url(Toolbox/Table20.png);
+}
+/*#endregion*/
+
+/*#region TAB CONTROL */
+.mobile .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon
+{
+	height:20px;
+	width:20px;
+}
+
+/*
+.mobile .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.tab-add
+{
+	background-image: url(../Platinum/Images/Icons/InsertTab16.png);
+}
+*/
+
+.mobile .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.filter
+{
+	background-image: url(RuntimeTheme/Filter20.png);
+}
+
+.mobile .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon.ordering
+{
+	background-image: url(RuntimeTheme/Sort20.png);
+}
+
+/*#endregion*/
+
+/*#region DROPTEXTBOX & TOKENBOX */
+
+.mobile .theme-entry .drop-item.auto-guid,
+.mobile .theme-entry .token-input .entity.icon.auto-guid .entity-text
+{
+	background-image: url(DataTypes/AutoGUID20.png);
+}
+
+.mobile .theme-entry .drop-item.auto-number,
+.mobile .theme-entry .token-input .entity.icon.auto-number .entity-text
+{
+	background-image: url(DataTypes/AutoNumber20.png);
+}
+
+.mobile .theme-entry .drop-item.date-time,
+.mobile .theme-entry .token-input .entity.icon.date-time .entity-text
+{
+	background-image: url(DataTypes/DateTime20.png);
+}
+
+.mobile .theme-entry .drop-item.date,
+.mobile .theme-entry .token-input .entity.icon.date .entity-text
+{
+	background-image: url(RuntimeTheme/Date20.png);
+}
+
+.mobile .theme-entry .drop-item.time,
+.mobile .theme-entry .token-input .entity.icon.time .entity-text
+{
+	background-image: url(RuntimeTheme/Time20.png);
+}
+
+.mobile .theme-entry .drop-item.decimal,
+.mobile .theme-entry .token-input .entity.icon.decimal .entity-text
+{
+	background-image: url(DataTypes/Decimal20.png);
+}
+
+.mobile .theme-entry .drop-item.file,
+.mobile .theme-entry .token-input .entity.icon.file .entity-text
+{
+	background-image: url(Toolbox/File20.png);
+}
+
+.mobile .theme-entry .drop-item.guid,
+.mobile .theme-entry .token-input .entity.icon.guid .entity-text
+{
+	background-image: url(DataTypes/GUID20.png);
+}
+
+.mobile .theme-entry .drop-item.hyperlink-control,
+.mobile .theme-entry .token-input .entity.icon.hyperlink-control .entity-text
+{
+	background-image: url(DataTypes/Hyperlink20.png);
+}
+
+.mobile .theme-entry .drop-item.memo,
+.mobile .theme-entry .token-input .entity.icon.memo .entity-text
+{
+	background-image: url(DataTypes/Memo20.png);
+}
+
+.mobile .theme-entry .drop-item.multivalue-control,
+.mobile .theme-entry .token-input .entity.icon.multivalue-control .entity-text
+{
+	background-image: url(DataTypes/MultiValue20.png);
+}
+
+.mobile .theme-entry .drop-item.number,
+.mobile .theme-entry .token-input .entity.icon.number .entity-text
+{
+	background-image: url(DataTypes/Number20.png);
+}
+
+.mobile .theme-entry .drop-item.text,
+.mobile .theme-entry .token-input .entity.icon.text .entity-text
+{
+	background-image: url(DataTypes/Text20.png);
+}
+
+.mobile .theme-entry .drop-item.yesno,
+.mobile .theme-entry .token-input .entity.icon.yesno .entity-text
+{
+	background-image: url(DataTypes/YesNo20.png);
+}
+
+.mobile .theme-entry .drop-item.button-control,
+.mobile .theme-entry .token-input .entity.icon.button-control .entity-text
+{
+	background-image: url(Toolbox/Button20.png);
+}
+
+.mobile .theme-entry .drop-item.calendar-control,
+.mobile .theme-entry .token-input .entity.icon.calendar-control .entity-text
+{
+	background-image: url(RuntimeTheme/Date20.png);
+}
+
+.mobile .theme-entry .drop-item.checkbox-control,
+.mobile .theme-entry .token-input .entity.icon.checkbox-control .entity-text
+{
+	background-image: url(Toolbox/Checkbox_Toolbox20.png);
+}
+
+.mobile .theme-entry .drop-item.dropdown-control,
+.mobile .theme-entry .token-input .entity.icon.dropdown-control .entity-text
+{
+	background-image: url(Toolbox/DropdownList20.png);
+}
+
+.mobile .theme-entry .drop-item.file-control,
+.mobile .theme-entry .drop-item.filepostback-control,
+.mobile .theme-entry .token-input .entity.icon.file-control .entity-text,
+.mobile .theme-entry .token-input .entity.icon.filepostback-control .entity-text
+{
+	background-image: url(Toolbox/File20.png);
+}
+
+.mobile .theme-entry .drop-item.listbox-control,
+.mobile .theme-entry .token-input .entity.icon.listbox-control .entity-text
+{
+	background-image: url(Toolbox/ListDisplay20.png);
+}
+
+.mobile .theme-entry .drop-item.radiobutton-control,
+.mobile .theme-entry .token-input .entity.icon.radiobutton-control .entity-text
+{
+	background-image: url(Toolbox/RadioButton_Toolbox20.png);
+}
+
+.mobile .theme-entry .drop-item.radiobuttongroup-control,
+.mobile .theme-entry .token-input .entity.icon.radiobuttongroup-control .entity-text
+{
+	background-image: url(Toolbox/RadioButtonList20.png);
+}
+
+.mobile .theme-entry .drop-item.textbox-control,
+.mobile .theme-entry .token-input .entity.icon.textbox-control .entity-text
+{
+	background-image: url(Toolbox/TextBox20.png);
+}
+
+.mobile .theme-entry .drop-item.picker-control,
+.mobile .theme-entry .token-input .entity.icon.picker-control .entity-text
+{
+	background-image: url(Toolbox/Picker20.png);
+}
+
+.mobile .theme-entry .drop-item.datalabel-control,
+.mobile .theme-entry .token-input .entity.icon.datalabel-control .entity-text
+{
+	background-image: url(Toolbox/DataLabel20.png);
+}
+
+.mobile .theme-entry .drop-item.label-control,
+.mobile .theme-entry .token-input .entity.icon.label-control .entity-text
+{
+	background-image: url(Toolbox/Label20.png);
+}
+
+.mobile .theme-entry .drop-item.lookup-control,
+.mobile .theme-entry .token-input .entity.icon.lookup-control .entity-text
+{
+	background-image: url(Toolbox/Lookup20.png);
+}
+
+.mobile .theme-entry .drop-item.rating-control,
+.mobile .theme-entry .token-input .entity.icon.rating-control .entity-text
+{
+	background-image: url(Toolbox/RatingToolbox20.png);
+}
+
+.mobile .theme-entry .drop-item.slider-control,
+.mobile .theme-entry .token-input .entity.icon.slider-control .entity-text
+{
+	background-image: url(Toolbox/Slider20.png);
+}
+
+.mobile .theme-entry .drop-item.table-control,
+.mobile .theme-entry .token-input .entity.icon.table-control .entity-text
+{
+	background-image: url(Toolbox/Table20.png);
+}
+
+.mobile .theme-entry .drop-item.user,
+.mobile .theme-entry .token-input .entity.icon.user .entity-text
+{
+	background-image: url(Management/User20.png);
+}
+
+.mobile .theme-entry .drop-item.toolbar-button-control,
+.mobile .theme-entry .token-input .entity.icon.toolbar-button-control .entity-text
+{
+	background-image: url(Toolbox/ToolbarButton20.png);
+}
+ 
+.mobile .theme-entry .drop-item.image,
+.mobile .theme-entry .drop-item.image-control,
+.mobile .theme-entry .drop-item.imagepostback-control,
+.mobile .theme-entry .token-input .entity.icon.image .entity-text,
+.mobile .theme-entry .token-input .entity.icon.image-control .entity-text,
+.mobile .theme-entry .token-input .entity.icon.imagepostback-control .entity-text
+{
+	background-image: url(DataTypes/Image20.png);
+}
+
+.mobile .theme-entry .drop-item.field,
+.mobile .theme-entry .drop-item.environmentField,
+.mobile .theme-entry .token-input .entity.icon.field .entity-text,
+.mobile .theme-entry .token-input .entity.icon.environmentField .entity-text
+{
+	background-image: url(ContextBrowser/EnvironmentField20.png);
+}
+
+.mobile .theme-entry .drop-item.datetime-now,
+.mobile .theme-entry .token-input .entity.icon.datetime-now .entity-text
+{
+	background-image: url(ContextBrowser/CurrentDate20.png);
+}
+
+/*#endregion*/
+
+
+/*#region Filter Selector Grid */
+
+.mobile .theme-entry #filterNameList table.grid-content-table td:last-child label:not(:empty)
+{
+	background-image: url(Toolbar/SetAsDefault20.png);
+	background-position: 50%;
+	background-size:20px;
+}
+
+/*#endregion*/
+
+/*#region LOADING SPINNERS */
+
+.mobile .theme-entry .ajaxLoader /* View Level Modalizer & Spinner */
+{
+	background-image: url(RuntimeTheme/LoadingAnimation_Dark40.gif);
+	-moz-background-size: 40px;
+	background-size:40px;
+}
+
+.mobile .theme-entry .base2.base1.modalizer .ajaxLoader, /* Form Level Spinner */
+.mobile .theme-entry .base2.base1.modalizer .base0.base1.ajaxLoader
+{
+	background-image: url(RuntimeTheme/LoadingAnimation_Light40.gif);
+	-moz-background-size: 40px;
+	background-size:40px;
+}
+
+/*#endregion*/
+
+/*#region HYPERLINK CONTROL */
+
+.mobile .theme-entry .hyperlinkTopCenterPanel
+{
+	background-image:url(Toolbar/Edit20.png);
+	-moz-background-size:2.0rem;
+	background-size:2.0rem;
+	height:2.0rem;
+	width:2.0rem;
+}
+
+.mobile .theme-entry .hyperlinkTopRightPanel
+{
+	background-image:url(Toolbar/ClearIcon20.png);
+	-moz-background-size:2.0rem;
+	background-size:2.0rem;
+	height:2.0rem;
+	width:2.0rem;
+}
+
+/*#endregion*/

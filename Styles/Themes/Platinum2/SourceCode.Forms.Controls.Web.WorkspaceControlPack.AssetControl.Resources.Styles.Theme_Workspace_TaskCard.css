@@ -1,0 +1,1618 @@
+/* The form within the task card gets box shadow and indent of 15px */
+html.workspace-taskcard > body > form > .runtime-content > .runtime-form > .form {
+    background-color: transparent;
+    background-image: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    min-height: inherit;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.2);
+}
+
+    /* Each view on the task card needs to have the background overriden otherwise we get a black */
+    html.workspace-taskcard .form > .row > .view > div.innerpanel > .panel > .panel-body {
+        background-color: transparent;
+    }
+
+    html.workspace-taskcard .form > .row {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 5.6rem;
+        right: 0;
+    }
+
+        html.workspace-taskcard .form > .row > .formcontrol,
+        html.workspace-taskcard .form > .row > .formcontrol > .innerpanel,
+        html.workspace-taskcard .form > .row > .formcontrol > .innerpanel > .SFC.SourceCode-Forms-Controls-Web-ControlPack-StackedContent[Name="stkWorklistItem"]
+        {
+            height: 100%;
+        }
+
+        html.workspace-taskcard .form > .row.taskcard-body.taskcard-body-with-footer {
+            bottom: 5.6rem;
+        }
+    
+        html.workspace-taskcard .form > .row.taskcard-body.taskcard-body-no-footer {
+            bottom: 0;
+        }
+
+html.workspace-taskcard .SourceCode-Forms-Controls-Web-ControlPack-StackedContent[Name="stkWorklistItem"].blurred
+{
+    filter: blur(3px);
+}
+
+html.workspace-taskcard .blurOverlay.active
+{
+    background-color: #222c32;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/*#region ALL PANELS*/
+html.workspace-taskcard .panel[name="Action"],
+html.workspace-taskcard .panel[name="Redirect"],
+html.workspace-taskcard .panel[name="Share"],
+html.workspace-taskcard .panel[name="Sleep"],
+html.workspace-taskcard .panel[name="Release"] {
+    /*Jan: TODO: needs media query for low/high res, and images*/
+    background-size: 739px 699px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+    /* Custom layout of the View table */
+    html.workspace-taskcard .panel[name="Action"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table,
+    html.workspace-taskcard .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table,
+    html.workspace-taskcard .panel[name="Share"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table,
+    html.workspace-taskcard .panel[name="Sleep"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table,
+    html.workspace-taskcard .panel[name="Release"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table,
+    html.workspace-taskcard .panel[name="Action"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'],
+    html.workspace-taskcard .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'],
+    html.workspace-taskcard .panel[name="Share"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'],
+    html.workspace-taskcard .panel[name="Sleep"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'],
+    html.workspace-taskcard .panel[name="Release"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2']
+    {
+        height: 100%;
+    }
+
+        html.workspace-taskcard .panel[name="Action"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow,
+        html.workspace-taskcard .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow,
+        html.workspace-taskcard .panel[name="Share"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow,
+        html.workspace-taskcard .panel[name="Sleep"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow,
+        html.workspace-taskcard .panel[name="Release"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow
+        {
+            position: absolute;
+        }
+
+        html.workspace-taskcard .panel[name="Action"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow,
+        html.workspace-taskcard .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow,
+        html.workspace-taskcard .panel[name="Share"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow,
+        html.workspace-taskcard .panel[name="Sleep"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow,
+        html.workspace-taskcard .panel[name="Release"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow
+        {
+            bottom: 0;
+            left: 0;
+        }
+
+        html.workspace-taskcard .panel[name="Action"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'][col='2'],
+        html.workspace-taskcard .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'][col='2'],
+        html.workspace-taskcard .panel[name="Share"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'][col='2'],
+        html.workspace-taskcard .panel[name="Sleep"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'][col='2'],
+        html.workspace-taskcard .panel[name="Release"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'][col='2']
+        {
+            display: block;
+            width: 100%;
+        }
+        /* All rows and tds - clear/reset padding*/
+        html.workspace-taskcard .panel[name="Action"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table .editor-cell,
+        html.workspace-taskcard .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table .editor-cell,
+        html.workspace-taskcard .panel[name="Share"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table .editor-cell,
+        html.workspace-taskcard .panel[name="Sleep"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table .editor-cell,
+        html.workspace-taskcard .panel[name="Release"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table .editor-cell
+        {
+            padding: 0;
+        }
+    /*  Vertical Align*/
+    html.workspace-taskcard .panel[name="Action"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table,
+    html.workspace-taskcard .panel[name="Redirect"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table,
+    html.workspace-taskcard .panel[name="Share"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table,
+    html.workspace-taskcard .panel[name="Sleep"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table,
+    html.workspace-taskcard .panel[name="Release"] .panel-body-wrapper > div > .SourceCode-Forms-Controls-Web-Table
+    {
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        overflow-y: scroll;
+    }
+
+/* Close Panel Button*/
+html.workspace-taskcard .SFC.SourceCode-Forms-Controls-Web-Label[name="lblClose"] {
+    display: block;
+    width: 36px;
+    height: 36px;
+    overflow: visible;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-image: url(workspace/close16.png);
+    background-repeat: no-repeat;
+    -moz-background-size: 16px;
+    background-size: 16px;
+    background-position: center center;
+    cursor: pointer;
+}
+
+html.workspace-taskcard .SFC.SourceCode-Forms-Controls-Web-Label[name="lblClose"]:hover 
+{
+        background-image: url(workspace/close_Hover16.png);
+}
+
+/* Position */
+html.workspace-taskcard .task-card-overlay-container {
+    position: absolute;
+    display: block;
+    width: 530px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/* Borders */
+html.workspace-taskcard .task-card-overlay-container {
+    border: none;
+    border-radius: 1px;
+    border-collapse: separate;
+    background-color: #ffffff;
+}
+/* Margins */
+html.workspace-taskcard .task-card-overlay-body {
+    margin: 0 20px 20px 20px;
+    height: 510px !important;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .task-card-overlay-body::before,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .task-card-overlay-body::before
+{
+    width: 100%;
+    height: 1px;
+    content: " ";
+    position: absolute;
+    top: 24px;
+    border-bottom: 1px solid #dddddd;
+    left: 0;
+    z-index: 10;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .task-card-overlay-body::after,
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .task-card-overlay-body::after 
+{
+    content: " ";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 349px;
+    border-bottom: 1px solid #dddddd;
+    left: 0;
+}
+
+html.workspace-taskcard .task-card-overlay-footer
+{
+    height: 54px;
+    width: 100%;
+    background-color:#f2f0f0;
+}
+
+html.workspace-taskcard .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlSleepIcon"],
+html.workspace-taskcard .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlRedirectIcon"],
+html.workspace-taskcard .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlShareIcon"],
+html.workspace-taskcard .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlReleaseIcon"],
+html.workspace-taskcard .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlActionsIcon"] {
+    width: 18px;
+    display: inline-block;
+    line-height: 65px;
+    height: 20px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    right: 12px;
+    background-size: 18px 20px;
+}
+
+/*Panel title, "Share" or "Sleep" etc*/
+
+html.workspace-taskcard .task-card-overlay-title {
+    background-color: #f2f0f0;
+}
+
+html.workspace-taskcard .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlTitle"] {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0;
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+    html.workspace-taskcard .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlTitle"] h1.action-title {
+        font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+        font-size: 1.6rem;
+        color: rgba(55,71,79,1);
+        margin-bottom: 0px; /*override - browser default*/
+        font-weight: normal; /*override - base*/
+        line-height: 54px;
+        height: 54px;
+        margin-left: 5px;
+    }
+
+    /*Release Dialog description*/
+html.workspace-taskcard .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlReleaseDescription"] {
+    font-size: 1.3rem;
+    padding: 0;
+    line-height: 54px;
+    position: relative;
+    left: -25px;
+    vertical-align: top;
+}
+
+html.workspace-taskcard .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlReleaseDescription"]::before
+{
+    content: " ";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: -34px;
+    top: -3px;
+    background-repeat:no-repeat;
+    background-image: url("workspace/Release_Alt24.png");
+    background-size: 24px;
+}
+
+html.workspace-taskcard table#f99e7b1b-6c46-94c0-9f7c-94fd75c85dbb_47d88c78-50ef-e757-07a6-c0f4462910b3_Table .editor-cell {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+
+/*Panel List title, "Recents" seen on redirect page*/
+html.workspace-taskcard .task-card-overlay-body h3.list-title {
+    font-size: 1.4rem;
+    color: rgba(255,255,255,1);
+    margin-bottom: 0px; /*override - browser default*/
+    font-weight: normal; /*override - base*/
+}
+/*Item title, condensed list title, like "Breakfast tomorrow"*/
+html.workspace-taskcard .task-card-overlay-body .item-title {
+    font-size: 1.2rem;
+}
+/*Item title, condensed list title, like "8am"*/
+html.workspace-taskcard .task-card-overlay-body .item-description {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.6);
+}
+
+html.workspace-taskcard .view .panel a.command-button {
+    color: #FFFFFF;
+    border-color: transparent;
+    background-color: #2196f3;
+    vertical-align: 2px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    min-width: 8rem;
+    min-height: 3.2rem;
+    line-height: 3.0rem;
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+html.workspace-taskcard .view .panel a.secondary-command-button{
+    display: block;
+    text-align: center;
+    height: 34px !important;
+    background-color: transparent !important;
+    vertical-align: middle;
+    line-height: 34px !important;
+    color: #4e5758 !important;
+    min-width: 80px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    cursor: pointer;
+    position: relative;
+    width: 80px !important;
+    left: calc(100% - 140px);
+    top: 10px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 2rem !important;
+    text-transform: uppercase;
+}
+
+html.workspace-taskcard .view .panel a.command-button.disabled 
+{
+    background-color: #bfc1c2;
+    color: #f0f0f1;
+}
+
+html.workspace-taskcard .view .panel a.command-button.disabled:active,
+html.workspace-taskcard .view .panel a.command-button.disabled:focus
+{
+    opacity: 0.5 !important;
+}
+
+html.workspace-taskcard .view .panel a.command-button:not(.disabled):not(.ViewFormButton):hover
+{
+    background-color: #29b6f6;
+}
+
+html.workspace-taskcard .view .panel a.secondary-command-button.ftrBtnClose
+{
+    width: 80px !important;
+    margin-top: 0px !important;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.25);
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.25);
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.25);
+}
+
+html.workspace-taskcard .view .panel a.secondary-command-button:hover
+{
+    background-color: #29b6f6 !important;
+    border: none !important;
+    color: #ffffff !important;
+}
+
+/*#endregion*/
+
+/*#region ACTIONS PANEL */
+/* Layout */
+html.workspace-taskcard .panel[name="Action"] .task-card-overlay-body {
+    margin: 0 0 40px 0;
+}
+
+html.workspace-taskcard .panel[name="Action"] .scrollWrapperActions {
+    height: 446px;
+    margin-top: 20px;
+}
+
+html.workspace-taskcard .panel[name="Action"] a.command-button {
+    line-height: 4.35rem;
+    width: 250px;
+    height: 43px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 1rem;
+}
+
+html.workspace-taskcard a.command-button.hidden {
+    display: none;
+}
+
+html.workspace-taskcard .panel[name="Action"] a.command-button {
+    text-transform: uppercase;
+    color: rgba(255,255,255,1);
+    height: 3.4rem;
+    line-height: 3.4rem;
+    box-shadow: none;
+}
+
+html.workspace-taskcard .panel[name="Action"] a.command-button.ActionButton {
+    background-color: #2196f3;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+html.workspace-taskcard .panel[name="Action"] a.command-button.ViewFormButton {
+    background-color: transparent;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #4e5758;
+    box-shadow: none;
+    border: 1px solid #b1b1b1;
+    width: 200px;
+    height: 3.4rem;
+    line-height: 3.4rem;
+}
+html.workspace-taskcard .panel[name="Action"] a.command-button.ViewFormButton:hover
+{
+    background-color: #2196f3;
+    color: #ffffff;
+    border: 1px solid #b1b1b1 !important;
+
+}
+
+html.workspace-taskcard .panel[name="Action"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlTitle"] {
+    text-align: center;
+}
+/* Show Actions while Form loads */
+html.workspace-taskcard .panel[name="Action"] .checkbox-outer-panel {
+    margin: 15px;
+    bottom: 51px;
+    position: absolute;
+}
+
+    html.workspace-taskcard .panel[name="Action"] .checkbox-outer-panel .input-control-text {
+        margin-left: 10px;
+        font-size: 1.4rem;
+        padding: 0;
+    }
+/*#endregion*/
+
+/*#region SLEEP PANEL */
+html.workspace-taskcard a.SleepSelectButton {
+    background-color: rgba(80,88,88,1);
+}
+
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions
+{
+    padding-top: 2rem;
+}
+
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table:first-child > .editor-cell[row='2'][col='1'] > .SourceCode-Forms-Controls-Web-Table:first-child
+{
+    border: 1px solid #dddddd!important;
+}
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table:first-child > .editor-cell[row='2'][col='1'] > .SourceCode-Forms-Controls-Web-Table:first-child > .editor-cell
+{
+    border-bottom: 1px solid #dddddd!important;
+    height: 54px;
+}
+
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table:first-child > .editor-cell[row='2'][col='1'] > .SourceCode-Forms-Controls-Web-Table:first-child > .editor-cell
+{
+    background-color: #f8f8f8;
+}
+/* Spacing for Rows */
+
+    /* Group Breakfast/Lunch/Next Monday */
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2']
+{
+    background-color: rgba(255,255,255,.75);
+    border-radius: 3px;
+    /*padding: 0 10px 0 10px;*/
+}
+/* Table col - holds icons for breakfast, lunch, next week - set to static */
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'] > .SourceCode-Forms-Controls-Web-Table
+{
+    -ms-grid-columns: 52px 1fr 140px !important;
+    grid-template-columns: 52px 1fr 140px !important;
+}
+
+/* Add padding for each row of Sleep selection table */
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell[col='1']
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell[col='1'] > img
+{
+    float: left;
+}
+
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell[col='2']
+{
+    padding: 0;
+}
+
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastcellinrow
+{
+    padding-right: 10px;
+}
+
+html.workspace-taskcard .panel[name="Sleep"] .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='3']
+{
+    padding-top: 10px;
+}
+
+html.workspace-taskcard .panel[name="Sleep"] a.command-button[name="btnSetDate"],
+html.workspace-taskcard .panel[name="Sleep"] a.command-button[name="btnSetFuture"] {
+    margin-right: 1rem;
+}
+
+/* Text within the Sleep selection table */
+html.workspace-taskcard .runtime-form > div > div > .view > .innerpanel > .panel[name="Sleep"] .SFC.SourceCode-Forms-Controls-Web-DataLabel .item-title {
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    font-size: 14px;
+    color: rgba(80, 88, 88, 1);
+}
+
+html.workspace-taskcard .runtime-form > div > div > .view > .innerpanel > .panel[name="Sleep"] .SFC.SourceCode-Forms-Controls-Web-DataLabel .item-description {
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    font-size: 12px;
+    color: rgba(161, 172, 178, 1);
+}
+
+html.workspace-taskcard .runtime-form > div > div > .view > .innerpanel > .panel[name="Sleep"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlSleepUntil"],
+html.workspace-taskcard .runtime-form > div > div > .view > .innerpanel > .panel[name="Sleep"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlSleepFor"] {
+    float: left;
+}
+/* Sleep buttons within padding - fix bottom margin*/
+html.workspace-taskcard .panel[name="Sleep"] .overlay-content > .editor-cell[row='2'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell a.command-button
+{
+    margin-bottom: 0;
+}
+/* Add white dividers in Sleep selection table*/
+html.workspace-taskcard .panel[name="Sleep"] .overlay-content > .editor-cell[row='2'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2']
+{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 1);
+}
+
+/* Sleep Button */
+html.workspace-taskcard .panel[name="Sleep"] a.command-button {
+    background-color: #2196f3;
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    vertical-align: middle;
+    border-radius: 1px;
+    width: 120px !important;
+    margin-top: 0px;
+}
+
+html.workspace-taskcard .panel[name="Sleep"] input[name='txtDays'],
+html.workspace-taskcard .panel[name="Sleep"] input[name='txtHours'],
+html.workspace-taskcard .panel[name="Sleep"] input[name='txtMin'],
+html.workspace-taskcard .panel[name="Sleep"] .input-control.select-box input[type=text],
+html.workspace-taskcard .panel[name="Sleep"] .input-control.select-box .input-control-watermark
+{
+    height: 3.2rem;
+    line-height: 3.2rem;
+    border-radius: 1px !important;
+}
+
+/* Round the inputs */
+html.workspace-taskcard .panel[name="Sleep"] input {
+    border-radius: 4px;
+}
+
+/*#endregion */
+
+/*#region SHARE PANEL */
+
+
+html.workspace-taskcard .panel[name="Sleep"] .input-control.select-box .input-control-buttons a
+{
+    height: 3.2rem;
+    line-height: 3.2rem;
+}
+
+html.workspace-taskcard .panel[name="Sleep"] .input-control.select-box .input-control-buttons a:hover,
+html.workspace-taskcard .panel[name="Sleep"] .input-control.select-box .input-control-buttons a:focus
+{
+    background-color: #2196f3;
+    border-color: #2196f3;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Sleep"] .SFC.SourceCode-Forms-Controls-Web-Table .SourceCode-Forms-Controls-Web-Table:first-of-type
+{
+    position: static;
+}
+
+/*CSS Spinner for Share dialog*/
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.loading:not(.empty):not(.nosearch) .scrollWrapperDiv::after { 
+    border: 3px solid rgba(0,0,0,0);
+    border-top: 3px solid rgba(0,0,0,0.25);
+    border-right: 3px solid rgba(0,0,0,0.25);
+    border-left: 3px solid rgba(0,0,0,0.25);
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    animation: workflow-panel-spinner-spin 2s linear infinite;
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    content: " ";
+    z-index: 5;
+} 
+
+@keyframes workflow-panel-spinner-spin
+{ 
+  0% { transform: rotate(0deg); } 
+  100% { transform: rotate(360deg); } 
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.empty,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch
+{
+    border-color: transparent;
+}
+
+.theme-entry div.workspace-redirect-view .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell.hide ~ .PropertiesMain,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell.hide ~ .PropertiesMain,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList  .PropertiesMain 
+{
+  padding: 0;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .shared-user-selection
+{
+    background-image: url(workspace/Share24.png);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    line-height: 24px;
+    padding-top: 0px;
+    margin-top: 6px
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .stylewrapper.runtime::before
+
+{
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    top: 106px;
+    left: 150px;
+    content: "Search for a user";
+    z-index: 10;
+    width: 200px;
+    color: #4e5758;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.loading .scrollWrapperDiv::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.loading:not(.empty):not(.nosearch) .scrollWrapperDiv::after
+{ 
+    border: 3px solid rgba(0,0,0,0);
+    border-top: 3px solid rgba(0,0,0,0.25);
+    border-right: 3px solid rgba(0,0,0,0.25);
+    border-left: 3px solid rgba(0,0,0,0.25);
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    animation: workflow-panel-spinner-spin 2s linear infinite;
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    content: " ";
+    z-index: 5;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .scrollWrapperDiv::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .scrollWrapperDiv::after
+{
+    content: " ";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: calc(50% - 48px);
+    left: calc(50% - 24px);
+    z-index: 4;
+    background-image: url("workspace/User48.png");
+    background-size: 48px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .stylewrapper.runtime::after
+{
+    content: " ";
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    z-index: 10;
+    width: 200px;
+    color: #4e5758;
+    text-align: center;
+    padding-bottom: 10px
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSharedUsers"].empty .stylewrapper.runtime::before
+{
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    top: 106px;
+    left: 150px;
+    content: "Search for a user";
+    z-index: 10;
+    width: 200px;
+    color: #4e5758;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSharedUsers"].empty .scrollWrapperDiv::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSharedUsers"].empty .scrollWrapperDiv::after
+{
+    content: " ";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: calc(50% - 48px);
+    left: calc(50% - 24px);
+    z-index: 4;
+    background-image: url("workspace/User48.png");
+    background-size: 48px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSharedUsers"].empty .stylewrapper.runtime::after
+{
+    content: "No users selected to share with";
+    white-space: nowrap;
+    position: absolute;
+    top: 146px;
+    left: 220px;
+    margin-left: -80px;
+    z-index: 10;
+    width: 200px;
+    color: #4e5758;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Remove generic expense grid footer*/
+html.workspace-taskcard .panel[name="Share"] .genericitemsfooter {
+    display: none !important;
+}
+/* Generic List Text */
+html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .title span {
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    font-size: 1.4rem;
+    color: rgba(80, 88, 88, 1);
+}
+
+html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .description span {
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    font-size: 1.2rem;
+    color: rgba(161, 172, 178, 1);
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSharedUsers"],
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSearchResult"]
+{
+    margin-top: 21px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"]
+{
+    margin-top: 126px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"]:not(.empty)::before
+{
+    content: "Recent";
+    color: grey;
+    position: absolute;
+    top: -27px;
+    z-index: 10;
+    text-transform: uppercase;
+    left: calc(50% - 24px);
+    font-size: 1.3rem;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSearchResult"]:not(.nosearch) .lnkCancelSearch,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSearchResult"] .lnkCancelSearch
+{
+    color: #2196f3;
+    position: absolute;
+    top: 221px;
+    left: calc(50% - 42px);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSearchResult"].nosearch .lnkCancelSearch
+{
+    display: none;
+}
+
+
+/* Generic List Spacing */
+    html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList
+    {
+        border:1px solid #dddddd;
+        box-sizing:border-box;
+    }
+
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name='glRecentUsers']
+{
+    margin-top: 26px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Redirect"] .SFC.SourceCode-Forms-Controls-Web-Table table:first-of-type
+{
+   position: static;
+}
+
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem {
+    padding: 7px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SourceCode-Forms-Controls-Web-ControlPack-GenericList .image-cell.hide ~ .PropertiesMain {
+    padding: 0px;
+}
+
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .scrollWrapperDiv::after
+{
+    content: " ";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: calc(50% - 48px);
+    left: calc(50% - 24px);
+    z-index: 4;
+    background-image: url("workspace/Recent48.png");
+    background-size: 48px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .stylewrapper.runtime::after
+{
+    content: "There are no recent items available to choose from";
+    white-space: nowrap;
+    position: absolute;
+    top: 83px;
+    left: 150px;
+    margin-left: -80px;
+    z-index: 10;
+    width: 200px;
+    color: #4e5758;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .scrollWrapperDiv::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .stylewrapper.runtime::before
+{
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    top: 51px;
+    left: 150px;
+    content: "Recent Items";
+    z-index: 10;
+    width: 200px;
+    color: #4e5758;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Share Button */
+html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .PART_Property1Div.property1 span {
+    display: none;
+}
+
+html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody {
+    border-radius: 3px;
+    overflow: hidden !important;
+}
+
+html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody .genericitem 
+{
+    background-color: #f8f8f8;
+    border-color: #ffffff;
+    border-top:1px solid #dddddd;
+}
+
+html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody .genericitem:first-child 
+{
+    border-top: none;
+}
+
+html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .itemsbody.mainItemsBody .genericitem:last-child 
+{
+    border-bottom: none;
+}
+
+html.workspace-taskcard .SourceCode-Forms-Controls-Web-ControlPack-GenericList .watermark {
+    background-color: transparent;
+    border: none;
+    font-family: "Open-Sans", "Segoe UI", "Helvetica";
+    font-size: 18px;
+    color: rgba(161, 172, 178, 1);
+}
+/* Share Button (on user) */
+html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.PART_Property1Div.property1 span {
+    display: none;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSearchResult"] .PART_Property1Div.property1:before,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"] .PART_Property1Div.property1:before {
+    content: "SHARE";
+    visibility: visible;
+    position: relative;
+    display: inline;
+    padding-left: 3px;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSearchResult"] .PART_Property1Div.property1,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"] .PART_Property1Div.property1 {
+    display: block;
+    float: right;
+    background-color: #2196f3;
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+    vertical-align: 0;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    min-width: 8rem;
+    min-height: 3.2rem;
+    line-height: 3.0rem;
+    width: 120px;
+    text-align: center !important;
+    margin-right: 1.5rem;
+}
+
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSearchResult"] .PART_Property1Div.property1:hover,
+html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"] .PART_Property1Div.property1:hover 
+{
+    background-color: #29b6f6 !important; 
+}
+
+/* Issue with height being added to a table row */
+html.workspace-taskcard .panel[name="Share"] .panel-body-wrapper .task-card-overlay-body .scrollWrapperActions > .SourceCode-Forms-Controls-Web-Table > .editor-cell[row='2'][col='1'] > .SourceCode-Forms-Controls-Web-Table > .editor-cell.lastrow
+{
+    font-size: 0;
+}
+/* Add User / Cancel Add User Button */
+html.workspace-taskcard .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnAddUser"],
+html.workspace-taskcard .panel[name="Share"] a.SourceCode-Forms-Controls-Web-Button.SourceCode-Forms-Controls-Web-Button[name="btnCancelAddUser"] {
+    text-transform: uppercase;
+    border: none;
+    background-color: #2196f3;
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    min-width: 8rem;
+    min-height: 3.2rem;
+    line-height: 3.0rem;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+/* "Recent" */
+html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlRecentTitle"] {
+    width: 100%;
+    text-align: center;
+}
+
+html.workspace-taskcard .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlRecentTitle"] .list-title 
+{
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    font-size: 18px;
+    color: rgba(161, 172, 178, 1);
+}
+/*#endregion */
+
+/*#region RELEASE PANEL */
+html.workspace-taskcard a.ReleaseSelectButton {
+    background-color: rgba(80,88,88,1);
+}
+
+html.workspace-taskcard .panel[name="Release"] .releaseContainer
+{
+    width: 488px;
+    height: 54px;
+    border: 1px solid #dddddd;
+    margin-top: 2rem;
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+html.workspace-taskcard .panel[name="Release"] a.command-button[name="btnRelease"] {
+    background-color: #2196f3;
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    vertical-align: 0;
+    width: 125px;
+    position: relative;
+    left: 55px;
+    top: 11px;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+/* Release Button */
+html.workspace-taskcard .panel[name="Release"] a.command-button {
+    background-color: #2196f3;
+    font-family: "Open-Sans Regular", "Segoe UI", "Helvetica";
+    vertical-align: 0;
+}
+/* Round the inputs */
+html.workspace-taskcard .panel[name="Release"] input
+{
+    border-radius: 4px;
+}
+/*#endregion */
+
+/*#region ACTION BAR */
+/* Container spacing */
+html.workspace-taskcard .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .controlWrapper .stackContainer {
+    display: block;
+}
+
+    html.workspace-taskcard .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .controlWrapper .stack.toggle-button {
+        padding: 0;
+        display: block;
+        float: left;
+        margin-left: .5rem;
+    }
+
+        html.workspace-taskcard .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .controlWrapper .stack.toggle-button.hide-button {
+            display: none;
+        }
+
+html.workspace-taskcard .form > .taskcard-footer {
+    top: auto; /*override for footer toolbar only*/
+    display: table-cell;
+    position: absolute;
+    bottom: 0px;
+    height: 5.6rem;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+html.workspace-taskcard .form > .taskcard-footer .stackContainer {
+    overflow-y: hidden;
+}
+
+    html.workspace-taskcard .form > .taskcard-footer.taskcard-footer-hidden {
+        display: none;
+    }
+
+/* Action Bar - Remove table padding from the surrounding action bar buttons */
+html.workspace-taskcard .panel[name="ActionBar"] .panel-body-wrapper .editor-cell,
+html.workspace-taskcard .panel[name="ActionBar"] .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control-img {
+    padding: 0;
+}
+/* Remove margin being set by CP / ensure spacing has an extra 5px */
+html.workspace-taskcard .panel[name="ActionBar"] .SourceCode-Forms-Controls-Web-ControlPack-Choice.horizontal .choice-control-item-row {
+    margin: 0 0 0 5px;
+}
+/* Action Bar - Button Text */
+html.workspace-taskcard .panel[name="ActionBar"] .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control-text,
+html.workspace-taskcard .panel[name="ActionBar"] .SFC.SourceCode-Forms-Controls-Web-Label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    overflow: visible;
+}
+
+/* Action Bar - Remove Action Bar Padding */
+html.workspace-taskcard .panel[name="ActionBar"] .SourceCode-Forms-Controls-Web-ControlPack-Choice .choice-control-item-row {
+    padding: 0;
+}
+
+/* Action Bar - Ensure all tables elements span their parents */
+html.workspace-taskcard .panel[name="ActionBar"] .SourceCode-Forms-Controls-Web-Table
+{
+    width: 100% !important; /* Overrides inline style */
+}
+
+/*#endregion */
+
+/*#region TASK CARD - BUTTONS*/
+/* Button Text */
+html.workspace-taskcard label.input-control .input-control-text,
+html.workspace-taskcard input[type=radio] + label {
+    color: #505858;
+    text-align: center;
+}
+
+/*Action Bar Button Main */
+html.workspace-taskcard .SourceCode-Forms-Controls-Web-ControlPack-Choice > .stylewrapper > .controlWrapper label.input-control.radio {
+    position: relative;
+    height: 5.6rem;
+    line-height: 5.6rem;
+    width: 6.2rem;
+    text-align: center; /*so that icon will stay center*/
+    display: block; /*ie issue, was inheriting table-row from core css*/
+}
+
+/* Action Bar Buttons Main - Checked */
+html.workspace-taskcard .SourceCode-Forms-Controls-Web-ControlPack-Choice > .stylewrapper > .controlWrapper label.input-control.checked,
+html.workspace-taskcard .SourceCode-Forms-Controls-Web-ControlPack-Choice > .stylewrapper > .controlWrapper label.input-control.checked {
+    background-color: #0288d1;
+    /*border-radius: 2px;
+    -moz-box-shadow: inset 0px 0px 3px rgba(11, 25, 33, 0.5);
+    -webkit-box-shadow: inset 0px 0px 3px rgba(11, 25, 33, 0.5);
+    box-shadow: inset 0px 0px 3px rgba(11, 25, 33, 0.5);*/
+}
+
+/* Action Bar Buttons - Text */
+html.workspace-taskcard .SourceCode-Forms-Controls-Web-ControlPack-Choice > .stylewrapper > .controlWrapper label.input-control.radio .input-control-text {
+    display: block;
+    border: none;
+    position: absolute;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    line-height: 1.3rem;
+    top: 3.9rem;
+}
+
+/* Action Bar Buttons - Icon */
+html.workspace-taskcard .SourceCode-Forms-Controls-Web-ControlPack-Choice > .stylewrapper > .controlWrapper label.input-control.radio .input-control-img {
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: 216px;
+    float: none;
+    margin: 1rem auto 0.5rem auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/* Actions - The panel in which the actions sit */
+html.workspace-taskcard .runtime-form > div > div:nth-child(4) > .view,
+html.workspace-taskcard .runtime-form > div > div:nth-child(4) > .view > .innerpanel > .panel > .panel-body,
+html.workspace-taskcard .runtime-form > div > div:nth-child(4) > .view > .innerpanel > .panel > .panel-body > .panel-body-m {
+    background-color: transparent;
+}
+
+/* Action Buttons - Remove the blue dotted selection border */
+html.workspace-taskcard .runtime-form > div > div:last-child .SourceCode-Forms-Controls-Web-ControlPack-Choice label.input-control,
+html.workspace-taskcard .runtime-form > div > div:last-child .SourceCode-Forms-Controls-Web-ControlPack-Choice label.input-control.focus {
+    border: none;
+}
+
+/* Action Buttons - Place margin around buttons */
+html.workspace-taskcard .runtime-form > div > div:last-child .SourceCode-Forms-Controls-Web-ControlPack-Choice .controlWrapper label {
+    margin: 0;
+    width: 6.2rem;
+}
+
+html.workspace-taskcard label.input-control.checked .input-control-text,
+html.workspace-taskcard label.input-control.checked:hover .input-control-text,
+html.workspace-taskcard input[type=radio]:checked + label,
+html.workspace-taskcard input[type=radio]:checked:hover + label {
+    color: #FFFFFF;
+}
+
+html.workspace-taskcard label.input-control:hover .input-control-text,
+html.workspace-taskcard input[type=radio]:hover + label {
+    color: #0288d1;
+}
+
+/* Command Buttons - View Flow */
+/* Command Buttons - Email */
+/* Command Buttons - Copy */
+/* Command Buttons - Open */
+html.workspace-taskcard .panel[name="ActionBar"] .command-buttons .SourceCode-Forms-Controls-Web-Table
+{
+    display: block !important; /* Overrides inline style */
+    width: 100%;
+}
+
+    html.workspace-taskcard .panel[name="ActionBar"] .command-buttons .SourceCode-Forms-Controls-Web-Table 
+    {
+        display: block;
+        width: 100%;
+    }
+
+/*html.workspace-taskcard .panel[name="ActionBar"] .command-buttons tr {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}*/
+
+html.workspace-taskcard .panel[name="ActionBar"] .command-buttons .SourceCode-Forms-Controls-Web-Button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 1rem auto 0.1rem auto;
+    border-style: none;
+    padding: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -webkit-animation: none;
+    animation: none;
+    min-width: 0;
+    min-height: 0;
+}
+
+    html.workspace-taskcard .panel[name="ActionBar"] .command-buttons .SourceCode-Forms-Controls-Web-Button.hidden {
+        display: none;
+    }
+
+html.workspace-taskcard .panel[name="ActionBar"] .command-buttons .SourceCode-Forms-Controls-Web-Label {
+    padding: 0;
+    color: rgb(80, 88, 88);
+    line-height: 1.3rem;
+    height: 1.2rem;
+}
+
+/* Table, rows and TD - holding the command buttons - remove margin and padding*/
+html.workspace-taskcard .panel[name="ActionBar"] .command-button {
+    margin: 0px;
+    padding: 0px;
+    overflow: visible;
+    min-width: 6.7rem;
+    width: 6.7rem !important; /* Overrides inline style */
+    display: inline-block;
+    flex-grow: 0;
+}
+
+    html.workspace-taskcard .panel[name="ActionBar"] .command-button.hide-button {
+        display: none;
+    }
+
+/* Command Buttons - ViewFlow - Label Hover */
+html.workspace-taskcard .command-button:hover .SourceCode-Forms-Controls-Web-Label[name="lblViewFlow"] {
+    color: #0288d1;
+}
+
+/* Command Buttons - ViewFlow - Label Active */
+html.workspace-taskcard .command-button:active .SourceCode-Forms-Controls-Web-Label[name="lblViewFlow"] {
+    color: #29b6f6;
+}
+
+/* Command Buttons - Email - Label Hover */
+html.workspace-taskcard .command-button:hover .SourceCode-Forms-Controls-Web-Label[name="lblEmail"] {
+    color: #0288d1;
+}
+
+/* Command Buttons - Email - Label Active */
+html.workspace-taskcard .command-button:active .SourceCode-Forms-Controls-Web-Label[name="lblEmail"] {
+    color: #29b6f6;
+}
+
+/* Command Buttons - Copy - Label Hover */
+html.workspace-taskcard .command-button:hover .SourceCode-Forms-Controls-Web-Label[name="lblCopy"] {
+    color: #0288d1;
+}
+
+/* Command Buttons - Copy - Label Active */
+html.workspace-taskcard .command-button:active .SourceCode-Forms-Controls-Web-Label[name="lblCopy"] {
+    color: #29b6f6;
+}
+
+/* Command Buttons - Open - Label Hover */
+html.workspace-taskcard .command-button:hover .SourceCode-Forms-Controls-Web-Label[name="lblOpen"] {
+    color: #0288d1;
+}
+
+/* Command Buttons - Open - Label Active */
+html.workspace-taskcard .command-button:active .SourceCode-Forms-Controls-Web-Label[name="lblOpen"] {
+    color: #29b6f6;
+}
+
+/*#endregion*/
+
+/*Calendar*/
+
+html.workspace-taskcard .calendar-outline
+{
+    background: #f2f0f0;
+}
+
+html.workspace-taskcard .timepicker-content .timepicker-ok-button
+{
+    color: #FFFFFF;
+    border-color: transparent;
+    background: none;
+    background-color: #2196f3;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+html.workspace-taskcard .timepicker-content .timepicker-cancel-button
+{
+    background: none;
+    background-color: transparent !important;
+    color: #4e5758 !important;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    border:none;
+}
+
+html.workspace-taskcard .timepicker-content .timepicker-ok-button:hover,
+html.workspace-taskcard .timepicker-content .timepicker-cancel-button:hover
+{
+    background: none;
+    background-color: #29b6f6 !important;
+} 
+
+html.workspace-taskcard .timepicker-content .timepicker-cancel-button:hover
+{
+    color: #ffffff !important;
+}
+ 
+
+html.workspace-taskcard .today-title, 
+html.workspace-taskcard .today-title:visited, 
+html.workspace-taskcard .today-text-value, 
+html.workspace-taskcard .dayname, 
+html.workspace-taskcard .day, 
+html.workspace-taskcard .month, 
+html.workspace-taskcard .year, 
+html.workspace-taskcard .timepicker-spinner-label
+{
+    text-shadow: none !important;
+}
+
+html.workspace-taskcard .today-title, 
+html.workspace-taskcard .today-title:visited, 
+html.workspace-taskcard .today-text-value
+{
+    color: #4e5758; 
+}
+html.workspace-taskcard .calendar-content, 
+html.workspace-taskcard .calendar-content .week:first-child
+{
+    border-bottom: #e2e2e2;
+}
+
+html.workspace-taskcard .dayname
+{
+    color: #4e5758; 
+}
+
+html.workspace-taskcard a.day, 
+html.workspace-taskcard a.day:visited, 
+html.workspace-taskcard a.month, 
+html.workspace-taskcard a.month:visited, 
+html.workspace-taskcard a.year, 
+html.workspace-taskcard a.year:visited
+{
+    color: #4e5758;
+}
+
+html.workspace-taskcard .day.selected, 
+html.workspace-taskcard .month.selected, 
+html.workspace-taskcard .year.selected, 
+html.workspace-taskcard .day.selected:hover, 
+html.workspace-taskcard .month.selected:hover, 
+html.workspace-taskcard .year.selected:hover, 
+html.workspace-taskcard .day.active, 
+html.workspace-taskcard .month.active, 
+html.workspace-taskcard .year.active
+{
+    border-color: #2196f3; 
+    background-color: #2196f3;
+    color: #ffffff !important;
+}
+
+html.workspace-taskcard a.day:hover
+{
+    background-color: #ffffff;
+    color: #2196f3;
+}
+
+
+html.workspace-taskcard a.day:focus
+{
+    border-color: #2196f3;
+}
+
+html.workspace .spinner .spinner-buttons .spinner-up-button:focus, 
+html.workspace .spinner .spinner-buttons .spinner-down-button:focus
+{
+    background-color: #2196f3;
+}
+
+html.workspace .day.today
+{
+    border-color: #2196f3;
+}
+
+/*End Region*/
+
+/*Copeid Url*/
+
+html.workspace .maximize
+{
+    display: none;
+}
+
+html.workspace .copiedUrl-frame .popup-header
+{
+    height: 5.4rem;
+    line-height: 5.4rem;
+}
+
+html.workspace .copiedUrl-frame .popup-body
+{
+    top: 5.4rem;
+    bottom: 0 !important;
+}
+
+.SourceCode-Forms-Controls-Web-DataLabel[name='dlFooter'] .UrlCopied-Confirmation-Footer
+{
+    position: fixed;
+    bottom: 0;
+    height: 5.4rem;
+    width: 100%;
+    left: 0;
+    background-color: #ececec;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-Button[name='btnUrlCopiedDialogOK']
+{
+    position: fixed;
+    bottom: 11px;
+    z-index: 3;
+    right: 2rem;
+    width: 120px;
+    background: none;
+    border-radius: 1px;
+    border: none;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    background-color: #2196f3 !important;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-Button[name='btnUrlCopiedDialogOK']:hover
+{
+    background-color: #29b6f6 !important;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-Button[name='btnUrlCopiedDialogOK']:focus
+{
+    background: none !important;
+    border-color: #1b7ecd !important;
+    background-color: #2196f3 !important;
+}
+
+.SourceCode-Forms-Controls-Web-DataLabel[name='dlUrlImg'] .copiedurlImg
+{
+    width: 32px;
+    height: 32px;
+    top: 30px;
+    left: 27px;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-image: url("workspace/copyurl32.png");
+    background-size: 32px;
+}
+
+.SourceCode-Forms-Controls-Web-DataLabel[name='dlUrlCopiedDescription']
+{
+    left: 75px;
+    position: fixed;
+}
+
+/*End Region*/
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) 
+{
+    html.workspace-taskcard .SFC.SourceCode-Forms-Controls-Web-Label[name="lblClose"] 
+    {
+        background-image: url(workspace/close16@2x.png);
+    }
+
+    html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList .shared-user-selection
+    {
+        background-image: url(workspace/Share24@2x.png);
+    }
+
+    html.workspace-taskcard .SFC.SourceCode-Forms-Controls-Web-Label[name="lblClose"]:hover 
+    {
+        background-image: url(workspace/close_Hover16@2x.png);
+    }
+
+    html.workspace-taskcard .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlReleaseDescription"]::before
+    {
+        background-image: url("workspace/Release_Alt24@2x.png");
+    }
+
+    html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glRecentUsers"].empty .scrollWrapperDiv::after
+    {
+
+        background-image: url("workspace/Recent48@2x.png");
+    }
+
+    html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList.nosearch .scrollWrapperDiv::after
+    {
+        background-image: url("workspace/User48@2x.png");
+    }
+
+    html.workspace-taskcard .theme-entry .panel[name="Share"] .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericList[name="glSharedUsers"].empty .scrollWrapperDiv::after
+    {
+        background-image: url("workspace/User48@2x.png");
+    }
+
+    .SourceCode-Forms-Controls-Web-DataLabel[name='dlUrlImg'] .copiedurlImg
+    {
+
+        background-image: url("workspace/copyurl32@2x.png");
+    }
+}

@@ -1,0 +1,101 @@
+﻿/* ^.theme-entry .... for desktop devices */
+/* ^.mobile .theme-entry .... for touch devices */
+
+//A relative path to the Theme_Variables.less file inside the specific theme folder
+@import (reference) "@{SourceCode-Runtime-Theme-Variables-File}";
+
+/*Theme@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+}
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2)
+{
+}
+
+/*Images@2x - hi-dpi*/
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2)
+{
+}
+
+/*#region RESPONSIVE BREAKING POINTS */
+
+/* #region DESKTOP */
+
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .input-control input[type=text]
+{
+    border: 0px solid @Input-Border-Color;
+    background-color: @Input-Background-Color;
+    border-radius: @Input-Rounding;
+}
+
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .textboxurl
+{
+    margin-bottom: @Between-Control-Spacing;
+}
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .addresstitle,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .descriptiontitle
+{
+    margin-bottom: @Between-Control-Spacing;
+}
+
+/* validation */
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.invalid {
+    .text-input,
+    .input-control,
+    .input-control-watermark
+    {
+        background-color: @Input-Error-Background-Color !important;
+        color: @Input-Error-Text-Color !important; /* override -- Core.css watermark style with !important */
+    }
+
+    .input-control-m-c
+    {
+        background-color: @Input-Error-Background-Color;
+        border-color: @Input-Error-Border-Color !important;  /*important will overide user configured styles */
+        color: @Input-Error-Text-Color;
+    }
+}
+
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .Hyperlink.disabled {
+    color: @Hyperlink-Disabled-Text-Color;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink .Hyperlink:focus
+{
+    outline: 1px dotted @Hyperlink-Focus-Border-Color;
+}
+
+
+//Picture
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-SharePointHyperLink.picture img.disabled{
+    opacity: 0.5;
+}
+
+/* #endregion DESKTOP */
+
+
+/* #region TOUCH */
+
+/* #endregion TOUCH */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) and (orientation:portrait), only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/* Extra Small Devices - Orientation Targetting */
+@media only screen and (max-width : 360px) and (orientation:portrait)
+{
+}
+
+@media only screen and (max-width : 640px) and (orientation:landscape)
+{
+}
+
+/*#endregion RESPONSIVE BREAKING POINTS */

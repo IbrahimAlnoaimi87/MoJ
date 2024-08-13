@@ -1,0 +1,128 @@
+
+/*Images - normal*/
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), (-o-max-device-pixel-ratio: 3/2) {
+  /* View Designer: While dragging and dropping control on to the canvas*/
+  
+  a.ui-draggable-dragging.sfcbarcode-control,
+  /* Runtime: List View filter dragging*/ .theme-entry a.icon.ui-draggable-dragging.sfcbarcode-control,
+  /* View Designer: Configure Data Source popup for list controls the 'Parent Control' dropdown*/ .drop-menu.icon-control ul.drop-menu a.sfcbarcode-control,
+  /* Rule Designer: Action configuration target mappings tree*/ .input-control.icon-control.sfcbarcode-control .input-control-icon,
+  .input-control.icon-control.sfcbarcode-control .input-control-wrapper,
+  /* View/Form Designer: Droppable control's list on the left and the change control popup list*/ .toolboxitem.sfcbarcode-control,
+  /* Rules Designer: Popup of Specify edit state for controls action*/ .grid .grid-content-cell.icon.sfcbarcode-control,
+  /* Rule Designer: Action hot spot context menu*/ .menu a.menu-item.sfcbarcode-control span.menu-item-icon,
+  /* Rules Designer:  Action configuration mappings screens context trees*/ .tree li.sfcbarcode-control > a,
+  .tree li.sfcbarcode-control > span,
+  .tree li.sfcbarcode-control.children > a,
+  .tree li.sfcbarcode-control.children.open > a,
+  .tree li.sfcbarcode-control.children.closed > a,
+  .tree li.sfcbarcode-control.children > span,
+  .tree li.sfcbarcode-control.children.open > span,
+  .tree li.sfcbarcode-control.children.closed > span,
+  /* Runtime: List View filter context tree*/ .theme-entry .tree li.sfcbarcode-control > a.sfcbarcode-control,
+  .theme-entry .tree li.sfcbarcode-control.children.open > a.sfcbarcode-control,
+  .theme-entry .tree li.sfcbarcode-control.children.closed > a.sfcbarcode-control,
+  /* Rules Designer: Select controls to validate popup of the View passes validation condition*/ .grid .grid-content-cell.icon.control-sfcbarcode,
+  .input-control.checkbox .icon-control .sfcbarcode-control > span,
+  /* View/Form Designer: Dependencies popup when deleting a control that is referenced*/ .ico.icon-sfcbarcode-control {
+    background-image: url('Images/Barcode16.png');
+  }
+  /* Form Designer: While dragging and dropping control on to the canvas*/
+  
+  a.ui-draggable-dragging.canvasDragGhost.sfcbarcode-control,
+  /* View/Form Designer: At top of properties panel when control is selected on the canvas*/ .icon.icon-size32.sfcbarcode-control,
+  .ico.icon-sfcbarcode-control.medium {
+    background-image: url('Images/Barcode32.png');
+  }
+  /* Form Designer: Selection tree when control is in error*/
+  
+  .tree li a.sfcbarcode-control.error {
+    background-image: url('Images/Barcode_Error16.png') !important;
+  }
+  /* View/Form Designer: Conditional Styles popup where control has been dropped in a condition*/
+  
+  /* Runtime: List View Advanced Filter Drop items */
+  
+  .input-control .drop-object.drop-item.sfcbarcode-control,
+  /* View/Form Designer:  Conditional Styles Left side of expression*/ .input-control .drop-item.sfcbarcode-control,
+  /* Rules Designer: Action configuration target mappings screens where the control has been dropped*/ .token-input .entity.icon.sfcbarcode-control,
+  /* Runtime: List View Filter Drop items*/ .theme-entry .token-input .entity.icon.sfcbarcode-control span.entity-text,
+  /* Rules Designer: Navigate to Form action in the URL preview*/ #FormNavigatePreviewPanel .token.sfcbarcode-control,
+  /* Rules Designer: Navigate to URL action widget tokens*/ #BrowserNavigatePC .token.sfcbarcode-control {
+    background-image: url('Images/Barcode_Selected14.png');
+  }
+  /* Runtime: List View Advanced Filter Drop items */
+  
+  .theme-entry .input-control .drop-object.drop-item.sfcbarcode-control,
+  /* Runtime: List View Filter Drop items */ .theme-entry .token-input .entity.icon.sfcbarcode-control span.entity-text,
+  /* Runtime: List View filter context tree *//* Runtime: List View filter dragging*/ .theme-entry a.icon.ui-draggable-dragging.sfcbarcode-control,
+  .theme-entry .tree li.sfcbarcode-control > a.sfcbarcode-control,
+  .theme-entry .tree li.sfcbarcode-control.children.open > a.sfcbarcode-control,
+  .theme-entry .tree li.sfcbarcode-control.children.closed > a.sfcbarcode-control {
+    background-position-y: 50%;
+  }
+}
+/*Images@2x - hi-dpi*/
+
+@media only screen and (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+  /* View Designer: While dragging and dropping control on to the canvas*/
+  
+  a.ui-draggable-dragging.sfcbarcode-control,
+  /* Runtime: List View filter dragging*/ .theme-entry a.icon.ui-draggable-dragging.sfcbarcode-control,
+  /* View Designer: Configure Data Source popup for list controls the 'Parent Control' dropdown*/ .drop-menu.icon-control ul.drop-menu a.sfcbarcode-control,
+  /* Rule Designer: Action configuration target mappings tree*/ .input-control.icon-control.sfcbarcode-control .input-control-icon,
+  .input-control.icon-control.sfcbarcode-control .input-control-wrapper,
+  /* View/Form Designer: Droppable control's list on the left and the change control popup list*/ .toolboxitem.sfcbarcode-control,
+  /* Rules Designer: Popup of Specify edit state for controls action*/ .grid .grid-content-cell.icon.sfcbarcode-control,
+  /* Rule Designer: Action hot spot context menu*/ .menu a.menu-item.sfcbarcode-control span.menu-item-icon,
+  /* Rules Designer:  Action configuration mappings screens context trees*/ .tree li.sfcbarcode-control > a,
+  .tree li.sfcbarcode-control > span,
+  .tree li.sfcbarcode-control.children > a,
+  .tree li.sfcbarcode-control.children.open > a,
+  .tree li.sfcbarcode-control.children.closed > a,
+  .tree li.sfcbarcode-control.children > span,
+  .tree li.sfcbarcode-control.children.open > span,
+  .tree li.sfcbarcode-control.children.closed > span,
+  /* Runtime: List View filter context tree*/ .theme-entry .tree li.sfcbarcode-control > a.sfcbarcode-control,
+  .theme-entry .tree li.sfcbarcode-control.children.open > a.sfcbarcode-control,
+  .theme-entry .tree li.sfcbarcode-control.children.closed > a.sfcbarcode-control,
+  /* Rules Designer: Select controls to validate popup of the View passes validation condition*/ .grid .grid-content-cell.icon.control-sfcbarcode,
+  .input-control.checkbox .icon-control .sfcbarcode-control > span,
+  /* View/Form Designer: Dependencies popup when deleting a control that is referenced*/ .ico.icon-sfcbarcode-control {
+    background-image: url('Images/Barcode16@2x.png');
+  }
+  /* Form Designer: While dragging and dropping control on to the canvas*/
+  
+  a.ui-draggable-dragging.canvasDragGhost.sfcbarcode-control,
+  /* View/Form Designer: At top of properties panel when control is selected on the canvas*/ .icon.icon-size32.sfcbarcode-control,
+  .ico.icon-sfcbarcode-control.medium {
+    background-image: url('Images/Barcode32@2x.png');
+  }
+  /* Form Designer: Selection tree when control is in error*/
+  
+  .tree li a.sfcbarcode-control.error {
+    background-image: url('Images/Barcode_Error16@2x.png') !important;
+  }
+  /* View/Form Designer: Conditional Styles popup where control has been dropped in a condition*/
+  
+  /* Runtime: List View Advanced Filter Drop items */
+  
+  .input-control .drop-object.drop-item.sfcbarcode-control,
+  /* View/Form Designer:  Conditional Styles Left side of expression*/ .input-control .drop-item.sfcbarcode-control,
+  /* Rules Designer: Action configuration target mappings screens where the control has been dropped*/ .token-input .entity.icon.sfcbarcode-control,
+  /* Runtime: List View Filter Drop items*/ .theme-entry .token-input .entity.icon.sfcbarcode-control span.entity-text,
+  /* Rules Designer: Navigate to Form action in the URL preview*/ #FormNavigatePreviewPanel .token.sfcbarcode-control,
+  /* Rules Designer: Navigate to URL action widget tokens*/ #BrowserNavigatePC .token.sfcbarcode-control {
+    background-image: url('Images/Barcode_Selected14@2x.png');
+  }
+  /* Runtime: List View Advanced Filter Drop items */
+  
+  .theme-entry .input-control .drop-object.drop-item.sfcbarcode-control,
+  /* Runtime: List View Filter Drop items */ .theme-entry .token-input .entity.icon.sfcbarcode-control span.entity-text,
+  /* Runtime: List View filter context tree *//* Runtime: List View filter dragging*/ .theme-entry a.icon.ui-draggable-dragging.sfcbarcode-control,
+  .theme-entry .tree li.sfcbarcode-control > a.sfcbarcode-control,
+  .theme-entry .tree li.sfcbarcode-control.children.open > a.sfcbarcode-control,
+  .theme-entry .tree li.sfcbarcode-control.children.closed > a.sfcbarcode-control {
+    background-position-y: 50%;
+  }
+}

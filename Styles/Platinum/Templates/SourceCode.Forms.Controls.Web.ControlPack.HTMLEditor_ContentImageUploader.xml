@@ -1,0 +1,10 @@
+﻿<div class='toolContainer'>
+	<div class='toolWrapper'>
+		<ul class='toolList'>
+			<li class='urlRow urlLabelRow'>
+				<span class='urlLabel'>{urlLabel}</span>
+			</li>
+			<li class='urlRow urlInputRow'></li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,65 @@
+﻿.view.workspace-historyCard .grey-background,
+.view.workspace-historyCard table tr .grey-background,
+.grey-background,
+html.workspace-historyCard
+{
+	background-color: #eeeeee !important;
+}
+
+.view.workspace-historyCard .main-form-position
+{
+	bottom: 10px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	left: 10px;
+}
+
+.view.workspace-historyCard .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid,
+.view.workspace-historyCard .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid .spacerdiv
+{
+	background-color: #1E1D1F;
+}
+
+	.view.workspace-historyCard .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid .genericitem
+	{
+		background-color: #302E31 !important;
+		border-top: 1px solid #1E1D1F;
+	}
+
+.view.workspace-historyCard tr.header1,
+.view.workspace-historyCard tr.header2,
+.view.workspace-historyCard tr.footer
+{
+	background-color: #302e31;
+}
+
+.view.workspace-historyCard .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="dlWorkflowType"]
+{
+	font-size: 1.5rem !important;
+	color: #ffffff !important;
+}
+
+.view.workspace-historyCard .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid .PART_TitleDiv.table-cell
+{
+	/*font-family: "Open-Sans Regular, Segoe UI Regular, Helvetica" !important;*/
+	font-size: 1.5rem !important;
+	color: #ffffff !important;
+}
+
+.view.workspace-historyCard tr.header1 span,
+.view.workspace-historyCard .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid .PART_Property1Div.table-cell
+{
+	/*font-family: "Segoe UI Semibold, HelveticaNeue-Medium, Helvetica, sans-serif" !important;*/ /*"Open-Sans Regular, Segoe UI Regular, Helvetica" !important;*/
+	font-size: 1.5rem !important;
+	color: #6594ae !important;
+}
+
+.view.workspace-historyCard tr.header2 span,
+.view.workspace-historyCard .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid .PART_DescriptionDiv.table-cell,
+.view.workspace-historyCard .SFC.SourceCode-Forms-Controls-Web-ControlPack-GenericExpenseGrid .PART_Property2Div.table-cell
+{
+	/*font-family: "Open-Sans Regular, Segoe UI Regular, Helvetica" !important;*/
+	font-size: 1.3rem !important;
+	color: #adacad !important;
+}

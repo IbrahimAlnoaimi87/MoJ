@@ -1,0 +1,929 @@
+/* Theme: Lithium */
+
+/* Author: Neil Craig */
+
+/* Date: 20/02/2014 */
+
+/*#region FONTS*/
+
+body.theme-entry,
+.theme-entry div,
+.theme-entry span,
+.theme-entry td,
+.theme-entry li,
+.theme-entry p,
+.theme-entry textarea,
+.theme-entry input[type=text],
+.theme-entry input.text,
+.theme-entry select,
+.theme-entry option,
+.theme-entry label.input-control .input-control-text,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+/*override - core*/ .theme-entry .input-control-watermark,
+/*override - core*/ .theme-entry a.Hyperlink,
+.theme-entry a.Hyperlink-NotSet,
+.theme-entry a.Hyperlink-NotSet.disabled {
+  font-size: 1.2rem;
+}
+/*#endregion FONTS */
+
+/*#region GENERIC CONTROL STYLES */
+
+/*Generic TextBox dimensions and watermarks for all types of control*/
+
+.theme-entry .input-control a.input-control,
+.theme-entry .spinner/*non-standard*/ {
+  height: 2.2rem;
+  /*affects the dropdown control watermark*/
+
+}
+.theme-entry .input-control.watermark a.input-control,
+.theme-entry .input-control.watermark a.input-control span {
+  font-size: 1.2rem;
+}
+/*#endregion GENERIC CONTROL STYLES */
+
+/*#region ALL INPUT CONTROLS*/
+
+/*#region resets*/
+
+/*#endregion*/
+
+/*single row height items*/
+
+.theme-entry span.textbox-style-wrapper,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .spinner/*non-standard*/ {
+  min-height: 2.4rem;
+}
+/* vertically centered text to checkbox/radio button */
+
+.theme-entry label.input-control .input-control-text {
+  line-height: 2.2rem;
+}
+/*Checkbox/Radiobutton list designtime issue: WI 503853*/
+
+.theme-entry .stack-container .stack label.input-control {
+  clear: both;
+}
+/*Watermark*/
+
+.theme-entry .input-control-watermark {
+  line-height: 2.4rem;
+  /*desktop.height*/
+
+}
+/*Prevent IE9 & IE10 from clipping the bottom of the text.*/
+
+.ie10 .theme-entry .input-control textarea,
+.ie9 .theme-entry .input-control textarea {
+  line-height: normal;
+}
+/*#endregion ALL INPUT CONTROLS*/
+
+/* ***** SPECIFIC CONTROLS ***** */
+
+/*#region BUTTON */
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:active,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:focus,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:active {
+  padding: 0 1.5rem;
+  min-width: 8rem;
+  min-height: 3.2rem;
+  line-height: 3rem;
+  /* centers text vertically */
+
+}
+/*#endregion BUTTON */
+
+/*#region LABEL*/
+
+.theme-entry .form-field .form-field-label {
+  line-height: 2.4rem;
+}
+/*#endregion LABEL*/
+
+/*#region TEXTBOX CONTROL */
+
+.theme-entry input[type=text].input-control,
+.theme-entry input[type=password].input-control {
+  height: 2.4rem;
+}
+/* Legacy textbox control styling */
+
+.theme-entry .input-control.text-input .input-control-wrapper input[type=text].input-control,
+.theme-entry .input-control.text-input .input-control-wrapper input[type=password].input-control {
+  height: 2.2rem;
+}
+/*#endregion TEXTBOX */
+
+/*#region DROPTEXTBOX CONTROL */
+
+.theme-entry .drop-textbox {
+  padding: 0.1rem 0.5rem;
+  height: 2.2rem;
+}
+.theme-entry .drop-item,
+.theme-entry .drop-object,
+.theme-entry .drop-text {
+  font-size: 1.2rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+}
+.theme-entry .drop-textbox .drop-item {
+  height: 1.8rem;
+  /* override core styling selector */
+
+}
+/*#endregion DROPTEXTBOX*/
+
+/*#region RADIO BUTTON*/
+
+.theme-entry label.input-control.radio .input-control-img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0.1rem 0;
+  padding-left: 0.1rem;
+}
+.ie8 .theme-entry label.input-control.radio .input-control-img,
+.ie9 .theme-entry label.input-control.radio .input-control-img,
+.ie10 .theme-entry label.input-control.radio .input-control-img,
+.ie8 .theme-entry label.input-control.checkbox .input-control-img,
+.ie9 .theme-entry label.input-control.checkbox .input-control-img,
+.ie10 .theme-entry label.input-control.checkbox .input-control-img {
+  height: 1.87rem;
+  width: 1.87rem;
+}
+/*#endregion RADIO BUTTON*/
+
+/*#region SELECT BOX */
+
+/*this element has the focus border*/
+
+.theme-entry .input-control.select-box .input-control-m-c {
+  min-height: 2.4rem !important;
+  /*override - inline style*/
+
+}
+.theme-entry .input-control.select-box .input-control-watermark,
+.theme-entry .input-control.select-box div.editable-area,
+.theme-entry .input-control.select-box input[type=text] {
+  height: 2.2rem;
+  line-height: 2.2rem;
+}
+.theme-entry .input-control.select-box .input-control-buttons a {
+  width: 2.4rem;
+  height: 2.2rem;
+  line-height: 1.2rem;
+}
+.theme-entry .input-control.select-box .input-control-buttons a span {
+  font-size: 2rem;
+}
+/*#endregion SELECT BOX */
+
+/*#region DROPDOWN */
+
+/*#endregion DROPDOWN */
+
+/*#region PICKER */
+
+.theme-entry .input-control.select-box.double-buttons .input-control-m-c {
+  min-height: 2.2rem !important;
+  /*override - inline style*/
+
+}
+.theme-entry .input-control.select-box .input-control-buttons a.picker-resolve {
+  width: 2.4rem;
+}
+.theme-entry .dialog#PickerSearchDialog {
+  min-height: 48.8rem;
+  /*necessary for bundling*/
+
+}
+.theme-entry .picker-search-grid.grid.full {
+  min-height: 28.2rem;
+  /*necessary for bundling*/
+
+}
+.theme-entry .dialog#PickerSearchDialog .popup-body {
+  top: 4.6rem;
+}
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control .input-control-wrapper,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box input[type=text],
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box .input-control-m-c,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box .input-control-watermark,
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker .input-control.select-box div.editable-area {
+  height: 6.4rem !important;
+}
+.theme-entry .dialog#PickerSearchDialog .form-field .form-field-element-wrapper .ps-choice-wrapper .ps-choice-button {
+  width: 8.3rem;
+}
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper .picker {
+  width: calc(100% - 8.3rem);
+}
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper > .picker .input-control.select-box .input-control-watermark {
+  line-height: 3rem !important;
+}
+.theme-entry .dialog#PickerSearchDialog a.toolbar-button span {
+  line-height: 2.6rem;
+}
+.theme-entry .dialog#PickerSearchDialog .form-field:last-child > .form-field-element-wrapper > .picker .input-control.select-box div.editable-area {
+  line-height: 2rem;
+}
+.theme-entry .input-control.select-box.picker-input .input-control-watermark,
+.theme-entry .input-control.select-box.picker-input div.editable-area,
+.theme-entry .input-control.select-box.picker-input input[type=text],
+.theme-entry .id-picker-search .input-control.select-box input[type=text] {
+  height: 2.1rem;
+  line-height: 2.1rem;
+}
+.theme-entry .id-picker-search .input-control.select-box .input-control-watermark {
+  line-height: 2.4rem;
+}
+/*#endregion PICKER*/
+
+/*#region CHECKBOX*/
+
+.theme-entry label.input-control.checkbox .input-control-img,
+.theme-entry input[type=checkbox] + label {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0.1rem 0;
+  padding-left: 0.1rem;
+}
+.theme-entry .grid-content-cell-wrapper .checkbox-outer-panel .input-control.checkbox {
+  min-width: 2.2rem;
+}
+/*#endregion*/
+
+/*#region TOOLBAR */
+
+/*default height*/
+
+.theme-entry .toolbar,
+.theme-entry .toolbars.single .toolbar/*override - base*/ {
+  min-height: 2.4rem;
+}
+.theme-entry .toolbar table td {
+  height: 3rem;
+}
+/*#endregion TOOLBAR */
+
+/*#region TOOLBAR ICON BUTTONS*/
+
+.theme-entry a.toolbar-button span.button-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+/*#region dark icon-buttons*/
+
+/*used by worklist control, and others*/
+
+.theme-entry .grid-header a.toolbar-button,
+.theme-entry .panel-header a.toolbar-button {
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+}
+.ie8 .theme-entry #filterNameList a.toolbar-button,
+.ie9 .theme-entry #filterNameList a.toolbar-button,
+.ie10 .theme-entry #filterNameList a.toolbar-button,
+.ie11 .theme-entry #filterNameList a.toolbar-button {
+  line-height: 2.6rem;
+}
+/*#endregion*/
+
+/*#endregion TOOLBAR BUTTON ICONS */
+
+/*#region TOOLBAR BUTTON*/
+
+.theme-entry a.toolbar-button,
+.theme-entry a.toolbar-button span.button-text {
+  padding: 0;
+  min-height: 3rem;
+  line-height: 2.6rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.theme-entry a.toolbar-button {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.ie8 .theme-entry a.toolbar-button,
+.ie9 .theme-entry a.toolbar-button,
+.ie10 .theme-entry a.toolbar-button,
+.ie11 .theme-entry a.toolbar-button {
+  line-height: 2.4rem;
+  /*necessary to avoid jumping toolbar buttons in ie*/
+
+}
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button {
+  min-height: 4rem;
+}
+.theme-entry a.toolbar-button .button-icon,
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button .button-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  float: none;
+  display: inline-block;
+}
+/*#endregion TOOLBAR BUTTON*/
+
+/*#region TABLE CONTROL*/
+
+/*view designer, table control cell, mostly design-time only?*/
+
+.theme-entry .editor-cell {
+  padding: 0.5rem;
+}
+/*first for css grid, 2nd for <table> (listview) */
+
+.theme-entry .editor-cell[col='1'],
+.theme-entry .editor-cell:first-child {
+  padding-left: 1rem;
+}
+/*first for css grid, 2nd for <table> (listview) */
+
+.theme-entry .editor-cell.lastcellinrow,
+.theme-entry .editor-cell:last-child {
+  padding-right: 1rem;
+}
+.theme-entry .Grid-Layout > .editor-cell[row='1'],
+.theme-entry table > tbody > tr:first-child > td.editor-cell {
+  padding-top: 1rem;
+}
+.theme-entry .Grid-Layout > .editor-cell.lastrow,
+.theme-entry table > tbody > tr:last-child > td.editor-cell {
+  padding-bottom: 1rem;
+}
+/*#endregion TABLE CONTROL*/
+
+/*#region DROPDOWN  CONTROL*/
+
+/*All drop down controls*/
+
+.theme-entry .drop-menu ul.drop-menu li a {
+  min-height: 2.4rem;
+  padding: 0.5rem;
+}
+.theme-entry .dropdown-box.input-control .input-control-wrapper > a {
+  line-height: 2.2rem;
+  /*needed for vertically centering the chosen item */
+
+}
+.mozilla .theme-entry .dropdown-box.input-control .input-control-wrapper > a {
+  line-height: 2.1rem;
+  /*needed for vertically centering the chosen item */
+
+}
+.mozilla .theme-entry .filterContainer .dropdown-box.input-control .input-control-wrapper > a {
+  line-height: 2.4rem;
+  /*needed for vertically centering the chosen item */
+
+}
+.ie8 .theme-entry .dropdown-box.input-control .input-control-wrapper > a,
+.ie9 .theme-entry .dropdown-box.input-control .input-control-wrapper > a,
+.ie10 .theme-entry .dropdown-box.input-control .input-control-wrapper > a {
+  line-height: 2rem;
+  /*needed for vertically centering the chosen item */
+
+}
+/*#endregion DROPDOWN  STYLES*/
+
+/*#region TOKENBOX */
+
+.theme-entry .input-control.token-input,
+.theme-entry .input-control.token-input .input-control-content,
+.theme-entry .token-input .token-input-editor-area {
+  min-height: 2.2rem;
+}
+.theme-entry .token-input .token-input-editor-area {
+  line-height: 2.2rem;
+}
+.theme-entry .drop-item,
+.theme-entry .token-input .entity .entity-text {
+  line-height: 2rem;
+}
+/*#endregion TOKENBOX */
+
+/*#region TREE CONTROL */
+
+.theme-entry .tree li {
+  min-height: 2.2rem;
+  line-height: 2.2rem;
+}
+.theme-entry .tree li a,
+.theme-entry .tree li span {
+  min-height: 2.2rem;
+  line-height: 2.2rem;
+  padding-left: 2.7rem;
+}
+/*#endregion TREE CONTROL */
+
+/*#region CONTEXT TREE DRAGGABLES */
+
+.theme-entry .ui-draggable-dragging {
+  font-size: 1.2rem;
+}
+.theme-entry .tree.ui-draggable-dragging li {
+  padding-left: 0;
+}
+/*#endregion CONTEXT TREE DRAGGABLES */
+
+/*#region VIEW PANEL*/
+
+.theme-entry .grid-header-wrapper,
+.theme-entry .panel-header,
+.theme-entry .panel-header-c,
+.theme-entry .panel-header-wrapper {
+  height: 3rem;
+  line-height: 3rem;
+  min-height: 3rem;
+}
+#pgWizard .theme-entry .grid-header-wrapper .inline-editable,
+#pgWizard .theme-entry .panel-header-wrapper .inline-editable,
+.theme-entry .grid-header-wrapper .grid-header-text,
+.theme-entry .panel-header-wrapper .panel-header-text {
+  height: 2.4rem;
+  /*needed for perfect vertical middle*/
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+.theme-entry .panel-header-wrapper .panel-header-text {
+  padding-left: 1rem;
+  /* aligns to left most control eg. label in a view's panel table */
+
+}
+.theme-entry .dialog.error-message:not(.runtime-message) .panel-header-text,
+/*Error Message dialog override */ .theme-entry .dialog.info-message:not(.runtime-message) .panel-header-text {
+  padding-left: 0.1rem;
+}
+.theme-entry .dialog.runtime-message .panel-header-text,
+/*Message box override*/ .theme-entry .dialog.error-message .panel-header-text,
+.theme-entry .dialog.info-message .panel-header-text {
+  font-size: 1.5rem;
+}
+.theme-entry .panel-header-wrapper .panel-header-controls,
+.theme-entry .grid-header-wrapper .grid-header-controls {
+  padding-right: 0.7rem;
+  /* Align the expand/collapse arrow with the icon of the first control */
+
+}
+/*#endregion VIEW PANEL*/
+
+/*#region GENERIC TOOLBAR*/
+
+/*SingleToolbar*/
+
+.theme-entry .toolbars.single,
+.theme-entry .toolbar-wrapper/*generic control*/ {
+  min-height: 3rem;
+}
+.theme-entry .panel.with-header.without-toolbar.full > .panel-body,
+.theme-entry .panel.without-header.with-toolbar.full > .panel-body {
+  top: 3rem;
+}
+/*DoubleToolbar*/
+
+.theme-entry .panel.with-header.with-toolbar.full > .panel-body,
+.theme-entry .panel.without-header.with-double-toolbar.full > .panel-body {
+  top: 6rem;
+}
+.theme-entry .grid-header-wrapper .grid-header-controls a,
+.theme-entry .panel-header-wrapper .panel-header-controls a {
+  margin: 0.7rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+/*#endregion GENERIC TOOLBAR*/
+
+/*#region GRID CONTROL*/
+
+/*#region main structure*/
+
+.theme-entry .grid.with-aggregation.full .grid-body,
+.theme-entry .grid.with-footer.full .grid-body {
+  bottom: 3rem;
+  /*body needs to make space for footer*/
+
+}
+.theme-entry .grid.full .grid-body-content {
+  top: 3rem;
+  /*make room for the grid headers*/
+
+}
+/*#endregion*/
+
+/*#region grid headers - header row style*/
+
+/* grid header row */
+
+.theme-entry .grid table.grid-column-header-table td {
+  height: 3rem !important;
+  /*override - inline*/
+
+}
+/*Grid sort indicator CSS element.*/
+
+.theme-entry .grid .grid-column-header-cell.asc .grid-column-header-cell-wrapper:before,
+.theme-entry .grid .grid-column-header-cell.desc .grid-column-header-cell-wrapper:before {
+  height: 1.6rem;
+  margin-top: -0.8rem;
+  width: 1.6rem;
+}
+.mozilla .theme-entry .grid .grid-column-header-text {
+  line-height: 20px;
+}
+/*#endregion */
+
+/*#region grid body */
+
+.theme-entry .grid.with-header.with-toolbar.full .grid-body,
+.theme-entry .grid.without-header.with-double-toolbar.full .grid-body {
+  top: 6.1rem;
+}
+/*#endregion*/
+
+/*#region toolbar sizes*/
+
+.theme-entry .full.without-toolbar.with-header.grid .grid-body,
+.theme-entry .full.with-toolbar.without-header.grid .grid-body {
+  top: 3rem;
+  /*make room for the toolbar*/
+
+}
+/*#endregion*/
+
+/*#region grid Filter*/
+
+.theme-entry .filterContainer {
+  line-height: 3rem;
+  /*ensures inline-controls wrap on smaller*/
+  margin-top: -0.1rem;
+  /* ensure vertical alignment */
+
+}
+.theme-entry .filterContainer .quickSearch,
+.theme-entry .filterContainer .filterChosen {
+  min-height: 3rem;
+}
+.theme-entry .filterContainer .filterLabel {
+  line-height: 3rem;
+}
+/*BUG FIX: set the minimum width to something sensible, otherwise the dropdown collapses to the size of the selected item which might be small*/
+
+.theme-entry .filterContainer .input-control.dropdown-box {
+  min-width: 12rem;
+  /*override - base - 40px hardcoded*/
+
+}
+/*BUG FIX: Make the search criteria text input behave/display like all other textboxes (Techincal Debt warning: Item logged) */
+
+.theme-entry .filterContainer .quickSearch .filterTxt .input-control .input-control-wrapper {
+  min-height: 2.2rem;
+}
+.theme-entry .filterContainer .quickSearch .filterTxt .input-control .input-control-m-c {
+  background-color: white;
+  border-radius: 2px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.theme-entry .filterContainer .quickSearch .filterTxt .input-control input[type=text].input-control {
+  background-color: transparent;
+  height: 2.2rem;
+  padding-bottom: 0;
+}
+.theme-entry .filterContainer .filterTxt {
+  width: 9.8rem;
+}
+/*#endregion*/
+
+/*#region rows - content*/
+
+/*content cells*/
+
+.theme-entry .grid .grid-content-cell-wrapper {
+  padding: 0.5rem 0.6rem;
+  /*the headers have a 2px border and a 4px padding*/
+
+}
+.theme-entry.runtime-form .grid .grid-content-cell-wrapper {
+  padding: 0;
+  /*moved padding to span to avoid highlight shadows from being cut off*/
+
+}
+/*#endregion*/
+
+/*#region paging control structure*/
+
+.theme-entry .grid .grid-footer .toolbar {
+  text-align: center;
+}
+.theme-entry .grid .grid-footer .toolbar .toolbar-wrapper {
+  position: relative;
+  top: 0;
+  left: 50%;
+  height: 3rem;
+  overflow: visible;
+  width: 0;
+}
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbar .toolbar-wrapper {
+  left: auto;
+  right: 50%;
+}
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button {
+  position: absolute;
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-first {
+  right: 7rem;
+}
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-left {
+  right: 2.2rem;
+}
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-first {
+  left: 7rem;
+  right: auto;
+}
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-left {
+  left: 2.2rem;
+  right: auto;
+}
+.theme-entry .grid-footer .grid-paging-control {
+  line-height: 2.2rem;
+  /* hack to make footer paging control to be centered vertically*/
+  display: inline-block;
+  left: -2.1rem;
+  padding: 2px 0;
+  width: auto;
+  height: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+.theme-entry .grid .grid-footer .grid-paging-control .text-input.input-control {
+  margin-top: 0.1rem;
+  /* ensure vertical alignment */
+
+}
+.theme-entry .grid-footer .grid-paging-control .text-input.input-control .input-control-wrapper {
+  min-height: 2.2rem;
+}
+.theme-entry .grid-footer .grid-paging-control .text-input.input-control input {
+  height: 2.2rem;
+}
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-right {
+  left: 2.2rem;
+}
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-last {
+  left: 7rem;
+}
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-right {
+  left: auto;
+  right: 2.2rem;
+}
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-last {
+  left: auto;
+  right: 7rem;
+}
+html[dir=rtl] .theme-entry .grid .grid-footer .toolbars a.toolbar-button {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: "FlipH";
+  filter: FlipH;
+}
+/*#endregion*/
+
+/*#region add new row button*/
+
+.theme-entry .grid table.grid-content-table td.action-row a.action-row {
+  padding: 0.7rem 1.5rem 0.9rem 1.5rem;
+}
+/*#endregion*/
+
+/*#region specific grid instances */
+
+.theme-entry #filterNameList table.grid-content-table td {
+  height: 3.2rem;
+  vertical-align: middle;
+}
+/* Replace the 'x' text with an icon to indicate current default filter */
+
+.theme-entry #filterNameList table.grid-content-table td:last-child label {
+  display: inline-block;
+  height: 1.6rem;
+  margin-top: 0.2rem;
+  /* help vertically align icon */
+  width: 1.6rem;
+}
+/*#endregion*/
+
+/*#endregion GRID CONTROL*/
+
+/*#region FORM FIELDS*/
+
+.theme-entry .form-field > label.form-field-label {
+  line-height: 2.4rem;
+}
+/*#endregion FORM FIELDS*/
+
+/*#region POPUP / DIALOG */
+
+/*#region header*/
+
+.theme-entry .dialog .popup-header {
+  height: 3.6rem;
+  line-height: 3.6rem;
+}
+.theme-entry .dialog .popup-header-buttons a {
+  margin-top: 0.2rem;
+  /* better alignment with header text */
+
+}
+.theme-entry .popup-header-button-bar,
+.theme-entry .popup-header-button-bar-wrapper {
+  height: 20px;
+  /* override core */
+  width: inherit;
+  /* override core */
+
+}
+.theme-entry .popup-header-buttons a span {
+  height: 17px;
+  /* override core */
+
+}
+/*#endregion*/
+
+/*#region main structure*/
+
+.theme-entry .dialog .popup-body {
+  top: 3.6rem;
+  bottom: 5.2rem;
+}
+/*#endregion*/
+
+/*#region footer*/
+
+.theme-entry .dialog .popup-footer {
+  height: 5.2rem;
+  /*3.2 + 10px bottom and top*/
+  line-height: 5.2rem;
+}
+/*#endregion*/
+
+/*#region specific dialogs */
+
+.theme-entry .dialog#ConditionWidgetDialog .grouping-button {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  width: 2.4rem;
+}
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region iBUTTON  - info button*/
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.help {
+  width: 3.2rem;
+}
+/*#endregion*/
+
+/*#region HYPERLINK CONTROL */
+
+.theme-entry .grid .edit-template-row a.Hyperlink,
+.theme-entry .grid .edit-template-row a.Hyperlink-NotSet,
+.theme-entry .grid .edit-template-row a.Hyperlink-NotSet.disabled {
+  line-height: 2.4rem;
+}
+.theme-entry .grid .edit-template-row .hyperlinkTopCenterPanel,
+.theme-entry .grid .edit-template-row .hyperlinkTopRightPanel {
+  top: 0.3rem;
+}
+/*#endregion*/
+
+/*#region RATING CONTROL */
+
+.theme-entry .ratingStar {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+/*#endregion RATING CONTROL */
+
+/*#region TABS */
+
+.theme-entry .tab-box ul.tab-box-tabs li {
+  height: 3rem;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab,
+.theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper,
+.theme-entry .tab-box ul.tab-box-tabs a.selected.tab:hover .tab-wrapper {
+  line-height: 3rem;
+}
+.theme-entry .tab-box ul.tab-box-tabs li a.tab .tab-wrapper {
+  padding: 0 1.2rem;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab .tab-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-top: 0.7rem;
+}
+.theme-entry .tab-box.full.tabs-top .tab-wrapper .inline-editable {
+  line-height: 3rem;
+  margin: 0 !important;
+  height: 3rem !important;
+}
+.theme-entry .tab-box.full.tabs-top .tab-box-body {
+  top: 3rem;
+}
+/*#endregion*/
+
+/*#region SPINNER CONTROL */
+
+/*Found in the datetime picker (calendar) - an up/down textbox*/
+
+.theme-entry .spinner .spinner-inputs .spinner-input-wrapper,
+.theme-entry .calendar-outline .timepicker-content .spinner .spinner-input-wrapper {
+  height: 2.4rem !important;
+  /*override - inline style*/
+
+}
+.theme-entry .spinner .spinner-inputs .spinner-text-input {
+  line-height: 2rem;
+}
+.theme-entry .spinner .spinner-inputs .spinner-delimiter {
+  line-height: 2rem;
+}
+.theme-entry .spinner .spinner-buttons {
+  width: 2.4rem;
+}
+.theme-entry .spinner .spinner-buttons .spinner-down-button-wrapper,
+.theme-entry .spinner .spinner-buttons .spinner-up-button-wrapper {
+  height: 1.2rem;
+}
+/*#endregion SPINNER CONTROL */
+
+/*#region CALENDAR POPUP*/
+
+.theme-entry .popup.id-calendar-control-popup.type-date-time {
+  min-height: 42.8rem;
+}
+.theme-entry .top-calendar-left,
+.theme-entry .top-calendar-right {
+  width: 1.6rem;
+}
+/*#endregion*/
+
+/*#region VIEW - DESIGN TIME */
+
+/* view name hoverable */
+
+#pgOuterPanel.theme-entry .theme-entry .panel-header-wrapper,
+#pgOuterPanel.theme-entry .grid-header-wrapper > .wrapper {
+  line-height: 3rem;
+  /*needed for when there is no view title set (the expand button must show) */
+
+}
+/* view collapse button alignment */
+
+#pgOuterPanel.theme-entry .panel-header-wrapper .panel-header-controls,
+#pgOuterPanel.theme-entry .grid-header-wrapper .grid-header-controls {
+  padding-right: 0.2rem;
+}
+/* view content - apply same padding of cells in preview */
+
+#pgOuterPanel.theme-entry .view-canvas .editor-cell {
+  padding: 0.5rem;
+}
+/*#endregion VIEW - DESIGN TIME */
+

@@ -1,0 +1,561 @@
+﻿/*Main View*/
+*[id="1513e534-cab1-4729-93b4-ce6f6e0ce103_9b4204d0-1c17-5d35-9280-0ca46ec6c08e_816fb4b9-e372-532a-e56b-bf1869a68d47_2c116198-2f85-43e6-9e30-dee7bf18cea0"],
+*[id="9fa4ba79-fb59-455e-a315-5dba2fcb0416_0588b8bc-3729-cdca-56f8-da418ae7b414_63dcd3fd-8502-fef2-65c4-8ce3ac93644e_2c116198-2f85-43e6-9e30-dee7bf18cea0"],
+*[id="97ad86e3-4512-4bd8-bac2-733a058cfc97_141352a5-ea2e-4085-8ca1-bab4d15d7e8d_bbcacb8c-053e-4137-8d1d-8132c51cfca2_2c116198-2f85-43e6-9e30-dee7bf18cea0"]
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: inherit !important;
+	border: 1px #d5d5d5 solid;
+}
+
+*[id="3417db14-5df7-428c-9a7f-b59c955fa7d1_0f2108aa-72a2-5fcc-0042-81b82ecae4b5_fba07926-2cd5-a5aa-72f2-2b21936c218b_2c116198-2f85-43e6-9e30-dee7bf18cea0"],
+*[id="d93a5254-9ecb-478d-8483-4c62a1c54d52_5d68d7ee-2177-48ae-bc1d-16b552103971_1a58b432-d846-4a85-ae50-93796c168ebc_2c116198-2f85-43e6-9e30-dee7bf18cea0"],
+*[id="bd814f35-7688-4cf3-91a3-56f9fa306f5e_22912a94-318f-4668-9a54-37b1d9c50b36_3a17bdae-c8a1-4839-9bc1-7d55245f8354_2c116198-2f85-43e6-9e30-dee7bf18cea0"]
+{
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: inherit !important;
+	border: 1px #d5d5d5 solid;
+}
+
+*[id="33bfb488-cc20-48f3-a946-6ebdb547c584_f43f5593-9e63-4be4-8ef4-35630b73bcaa_e92080a5-105f-ed28-45de-0143a183b17f_2c116198-2f85-43e6-9e30-dee7bf18cea0"],
+*[id="d44d5946-a144-4b05-b342-5c08f86531a9_9ca61154-b02f-4b99-9349-dd0a0b48c3a9_e9416e22-ca04-4bfa-a79a-8cbd6a339404_2c116198-2f85-43e6-9e30-dee7bf18cea0"]
+{
+	width: inherit !important;
+	border: 1px #d5d5d5 solid;
+}
+
+/*Subform cancel button*/
+[id="00000000-0000-0000-0000-000000000000_a0040946-9df4-e941-f511-ec2356ee0c3f"]
+{
+	margin-right: -10px;
+}
+
+/*GenericList width*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_70eb8a3d-4a27-7597-18f7-eaac836395b6"],
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_70eb8a3d-4a27-7597-18f7-eaac836395b6"],
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_70eb8a3d-4a27-7597-18f7-eaac836395b6"],
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_70eb8a3d-4a27-7597-18f7-eaac836395b6"],
+[id="e92080a5-105f-ed28-45de-0143a183b17f_70eb8a3d-4a27-7597-18f7-eaac836395b6"],
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_70eb8a3d-4a27-7597-18f7-eaac836395b6"],
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_70eb8a3d-4a27-7597-18f7-eaac836395b6"],
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_70eb8a3d-4a27-7597-18f7-eaac836395b6"]
+{
+	width: 82% !important;
+	height: inherit !important;
+}
+
+/*GernericList span*/
+[id="3417db14-5df7-428c-9a7f-b59c955fa7d1_0f2108aa-72a2-5fcc-0042-81b82ecae4b5_fba07926-2cd5-a5aa-72f2-2b21936c218b_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout .editor-cell > span,
+[id="d93a5254-9ecb-478d-8483-4c62a1c54d52_5d68d7ee-2177-48ae-bc1d-16b552103971_1a58b432-d846-4a85-ae50-93796c168ebc_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout .editor-cell > span,
+[id="bd814f35-7688-4cf3-91a3-56f9fa306f5e_22912a94-318f-4668-9a54-37b1d9c50b36_3a17bdae-c8a1-4839-9bc1-7d55245f8354_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout .editor-cell > span,
+[id="33bfb488-cc20-48f3-a946-6ebdb547c584_f43f5593-9e63-4be4-8ef4-35630b73bcaa_e92080a5-105f-ed28-45de-0143a183b17f_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout .editor-cell > span,
+[id="1513e534-cab1-4729-93b4-ce6f6e0ce103_9b4204d0-1c17-5d35-9280-0ca46ec6c08e_816fb4b9-e372-532a-e56b-bf1869a68d47_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout .editor-cell > span,
+[id="9fa4ba79-fb59-455e-a315-5dba2fcb0416_0588b8bc-3729-cdca-56f8-da418ae7b414_63dcd3fd-8502-fef2-65c4-8ce3ac93644e_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout .editor-cell > span
+{
+    margin-left: -3px;
+}
+
+/*Button table*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_6565871a-e006-4c89-b8b6-94e958caee74_Table"],
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_6565871a-e006-4c89-b8b6-94e958caee74_Table"],
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_6565871a-e006-4c89-b8b6-94e958caee74_Table"],
+[id="e92080a5-105f-ed28-45de-0143a183b17f_6565871a-e006-4c89-b8b6-94e958caee74_Table"],
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_6565871a-e006-4c89-b8b6-94e958caee74_Table"],
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_6565871a-e006-4c89-b8b6-94e958caee74_Table"],
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_6565871a-e006-4c89-b8b6-94e958caee74_Table"],
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_6565871a-e006-4c89-b8b6-94e958caee74_Table"]
+{
+	background-color: #ececec;
+	height: 62px;
+	width: 82% !important;
+	overflow: visible !important;
+}
+
+/*Main table*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"],
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"],
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"],
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"],
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"],
+[id="e92080a5-105f-ed28-45de-0143a183b17f_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"],
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"],
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"]
+{
+	background-color: #fdfdfd;
+}
+
+
+/*Button table border*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_6565871a-e006-4c89-b8b6-94e958caee74_Table"] .editor-cell,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_6565871a-e006-4c89-b8b6-94e958caee74_Table"] .editor-cell,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_6565871a-e006-4c89-b8b6-94e958caee74_Table"] .editor-cell,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_6565871a-e006-4c89-b8b6-94e958caee74_Table"] .editor-cell,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_6565871a-e006-4c89-b8b6-94e958caee74_Table"] .editor-cell,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_6565871a-e006-4c89-b8b6-94e958caee74_Table"] .editor-cell,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_6565871a-e006-4c89-b8b6-94e958caee74_Table"] .editor-cell,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_6565871a-e006-4c89-b8b6-94e958caee74_Table"] .editor-cell
+{
+    border-right: 1px #d5d5d5 solid;
+    border-top: 1px #d5d5d5 solid;
+}
+
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /*width: inherit !important;*/
+    margin-top: 4px;
+}
+
+
+.ie11 [id="fba07926-2cd5-a5aa-72f2-2b21936c218b_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+.ie11 [id="1a58b432-d846-4a85-ae50-93796c168ebc_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+.ie11 [id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+.ie11 [id="e92080a5-105f-ed28-45de-0143a183b17f_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+.ie11 [id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+.ie11 [id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+.ie11 [id="816fb4b9-e372-532a-e56b-bf1869a68d47_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell,
+.ie11 [id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell
+{
+    justify-content: flex-start !important;
+}
+
+    [id="fba07926-2cd5-a5aa-72f2-2b21936c218b_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell > .toolbar-button.add,
+    [id="1a58b432-d846-4a85-ae50-93796c168ebc_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell > .toolbar-button.add,
+    [id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell > .toolbar-button.add,
+    [id="e92080a5-105f-ed28-45de-0143a183b17f_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell > .toolbar-button.add,
+    [id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell > .toolbar-button.add,
+    [id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell > .toolbar-button.add,
+    [id="816fb4b9-e372-532a-e56b-bf1869a68d47_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell > .toolbar-button.add,
+    [id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_6565871a-e006-4c89-b8b6-94e958caee74_Table"] > .editor-cell > .toolbar-button.add
+    {
+        margin: auto;
+    }
+    /*Last row background*/
+    [id="3417db14-5df7-428c-9a7f-b59c955fa7d1_0f2108aa-72a2-5fcc-0042-81b82ecae4b5_fba07926-2cd5-a5aa-72f2-2b21936c218b_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+    [id="d93a5254-9ecb-478d-8483-4c62a1c54d52_5d68d7ee-2177-48ae-bc1d-16b552103971_1a58b432-d846-4a85-ae50-93796c168ebc_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+    [id="bd814f35-7688-4cf3-91a3-56f9fa306f5e_22912a94-318f-4668-9a54-37b1d9c50b36_3a17bdae-c8a1-4839-9bc1-7d55245f8354_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+    [id="1513e534-cab1-4729-93b4-ce6f6e0ce103_9b4204d0-1c17-5d35-9280-0ca46ec6c08e_816fb4b9-e372-532a-e56b-bf1869a68d47_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+    [id="33bfb488-cc20-48f3-a946-6ebdb547c584_f43f5593-9e63-4be4-8ef4-35630b73bcaa_e92080a5-105f-ed28-45de-0143a183b17f_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+    [id="97ad86e3-4512-4bd8-bac2-733a058cfc97_141352a5-ea2e-4085-8ca1-bab4d15d7e8d_bbcacb8c-053e-4137-8d1d-8132c51cfca2_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+    [id="d44d5946-a144-4b05-b342-5c08f86531a9_9ca61154-b02f-4b99-9349-dd0a0b48c3a9_e9416e22-ca04-4bfa-a79a-8cbd6a339404_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+    [id="9fa4ba79-fb59-455e-a315-5dba2fcb0416_0588b8bc-3729-cdca-56f8-da418ae7b414_63dcd3fd-8502-fef2-65c4-8ce3ac93644e_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow
+    {
+        background-color: #f5f5f5;
+        border-top: 1px #d5d5d5 solid;
+    }
+
+
+/*Last row padding*/
+[id="3417db14-5df7-428c-9a7f-b59c955fa7d1_0f2108aa-72a2-5fcc-0042-81b82ecae4b5_fba07926-2cd5-a5aa-72f2-2b21936c218b_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+[id="d93a5254-9ecb-478d-8483-4c62a1c54d52_5d68d7ee-2177-48ae-bc1d-16b552103971_1a58b432-d846-4a85-ae50-93796c168ebc_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+[id="bd814f35-7688-4cf3-91a3-56f9fa306f5e_22912a94-318f-4668-9a54-37b1d9c50b36_3a17bdae-c8a1-4839-9bc1-7d55245f8354_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+[id="1513e534-cab1-4729-93b4-ce6f6e0ce103_9b4204d0-1c17-5d35-9280-0ca46ec6c08e_816fb4b9-e372-532a-e56b-bf1869a68d47_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+[id="33bfb488-cc20-48f3-a946-6ebdb547c584_f43f5593-9e63-4be4-8ef4-35630b73bcaa_e92080a5-105f-ed28-45de-0143a183b17f_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+[id="97ad86e3-4512-4bd8-bac2-733a058cfc97_141352a5-ea2e-4085-8ca1-bab4d15d7e8d_bbcacb8c-053e-4137-8d1d-8132c51cfca2_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+[id="d44d5946-a144-4b05-b342-5c08f86531a9_9ca61154-b02f-4b99-9349-dd0a0b48c3a9_e9416e22-ca04-4bfa-a79a-8cbd6a339404_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow,
+[id="9fa4ba79-fb59-455e-a315-5dba2fcb0416_0588b8bc-3729-cdca-56f8-da418ae7b414_63dcd3fd-8502-fef2-65c4-8ce3ac93644e_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow
+{
+    padding: 0px !important;
+}
+
+/*Button Margins*/
+    [id="3417db14-5df7-428c-9a7f-b59c955fa7d1_0f2108aa-72a2-5fcc-0042-81b82ecae4b5_fba07926-2cd5-a5aa-72f2-2b21936c218b_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow > a,
+    [id="d93a5254-9ecb-478d-8483-4c62a1c54d52_5d68d7ee-2177-48ae-bc1d-16b552103971_1a58b432-d846-4a85-ae50-93796c168ebc_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow > a,
+    [id="bd814f35-7688-4cf3-91a3-56f9fa306f5e_22912a94-318f-4668-9a54-37b1d9c50b36_3a17bdae-c8a1-4839-9bc1-7d55245f8354_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow > a,
+    [id="33bfb488-cc20-48f3-a946-6ebdb547c584_f43f5593-9e63-4be4-8ef4-35630b73bcaa_e92080a5-105f-ed28-45de-0143a183b17f_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow > a,
+    [id="1513e534-cab1-4729-93b4-ce6f6e0ce103_9b4204d0-1c17-5d35-9280-0ca46ec6c08e_816fb4b9-e372-532a-e56b-bf1869a68d47_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow > a,
+    [id="97ad86e3-4512-4bd8-bac2-733a058cfc97_141352a5-ea2e-4085-8ca1-bab4d15d7e8d_bbcacb8c-053e-4137-8d1d-8132c51cfca2_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow > a,
+    [id="d44d5946-a144-4b05-b342-5c08f86531a9_9ca61154-b02f-4b99-9349-dd0a0b48c3a9_e9416e22-ca04-4bfa-a79a-8cbd6a339404_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow > a,
+    [id="9fa4ba79-fb59-455e-a315-5dba2fcb0416_0588b8bc-3729-cdca-56f8-da418ae7b414_63dcd3fd-8502-fef2-65c4-8ce3ac93644e_2c116198-2f85-43e6-9e30-dee7bf18cea0"] div > .Grid-Layout > .editor-cell.lastrow > a
+    {
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+/*Rights labels size*/
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"] > .editor-cell > .Grid-Layout > .editor-cell > span,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"] > .editor-cell > .Grid-Layout > .editor-cell > span,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"] > .editor-cell > .Grid-Layout > .editor-cell > span,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"] > .editor-cell > .Grid-Layout > .editor-cell > span,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_d7698ac8-a4ad-f126-da7e-d974e1df79dd_Table"] > .editor-cell > .Grid-Layout > .editor-cell > span
+{
+    font-family: 'Open-Sans Regular';
+    font-size: 1.2rem;
+    color: #717171 !important;
+}
+
+/*EditRights label size*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_ef64ee68-4810-d8fe-7423-a23d58027350"],
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_ef64ee68-4810-d8fe-7423-a23d58027350"],
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_ef64ee68-4810-d8fe-7423-a23d58027350"],
+[id="e92080a5-105f-ed28-45de-0143a183b17f_ef64ee68-4810-d8fe-7423-a23d58027350"],
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_ef64ee68-4810-d8fe-7423-a23d58027350"],
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_ef64ee68-4810-d8fe-7423-a23d58027350"],
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_ef64ee68-4810-d8fe-7423-a23d58027350"],
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_ef64ee68-4810-d8fe-7423-a23d58027350"]
+{
+	font-family: 'Open-Sans Regular' !important;
+	font-size: 1.4rem !important;
+	color: #37474f !important;
+}
+
+/*WaterMark styling*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_70eb8a3d-4a27-7597-18f7-eaac836395b6"] .watermarkwrapper .middleText,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_70eb8a3d-4a27-7597-18f7-eaac836395b6"] .watermarkwrapper .middleText,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_70eb8a3d-4a27-7597-18f7-eaac836395b6"] .watermarkwrapper .middleText,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_70eb8a3d-4a27-7597-18f7-eaac836395b6"] .watermarkwrapper .middleText,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_70eb8a3d-4a27-7597-18f7-eaac836395b6"] .watermarkwrapper .middleText,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_70eb8a3d-4a27-7597-18f7-eaac836395b6"] .watermarkwrapper .middleText,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_70eb8a3d-4a27-7597-18f7-eaac836395b6"] .watermarkwrapper .middleText,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_70eb8a3d-4a27-7597-18f7-eaac836395b6"] .watermarkwrapper .middleText
+{
+	line-height: 37.7Rem !important;
+	font-size: 1.2Rem;
+	color: #0288d1 !important;
+	cursor: default;
+}
+
+/*Genericlist background*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper
+{
+	background-color: #ececec;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .PropertiesMain
+{
+	padding: 0.5rem 1rem;
+	width: 18.6rem;
+	padding-left: 0px;
+}
+
+/*Genericlist items*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem
+{
+	height:62px;
+	background-color: #f5f5f5;
+	border-top: none !important;
+	border-bottom: 1px #d5d5d5 solid;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .genericitem:last-child 
+{
+	border-bottom: 1px solid #d5d5d5 !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem .title > span,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem.selected .title > span,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem:hover .title > span
+{
+	font-family: 'Open-Sans Regular';
+	font-size: 1.4rem;
+	color: #37474f;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem .PropertiesDescriptionProperty2Table span
+{
+	font-family: 'Open-Sans Regular';
+	font-size: 1.2rem;
+	color: #717171;
+	text-transform: uppercase;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem .PropertiesTitleProperty1Table span 
+{
+	top: -3px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem.selected,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem.selected:hover
+{
+	background-color: #fdfdfd;
+	border: none;
+	border-top: 1px #d5d5d5 solid; 
+	border-bottom: 1px #d5d5d5 solid;
+	margin-right: -1px;
+}
+
+/*Generic list item states*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem:hover
+{
+	background-color: #fdfdfd;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem:focus
+{
+	border: 1px #0288d1 solid !important;
+}
+
+/*Genericlist Properties*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem .PropertiesDescriptionProperty2Table
+{
+	display: table;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem .Property1Property2DynamicRightTable
+{
+	display: none;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem.selected .indicator1.selected-row-indicator
+{
+	display: block;
+	height: 16px;
+	width: 16px;
+	background-image: url('Reports/Images/SelectedRowIndicator16.png');
+	background-position: center;
+	background-size: 16px;
+	background-repeat: no-repeat;
+}
+
+/*Add button*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon
+{
+	background-image: url('K2Sites_Management/Images/Buttons24.png') !important;
+	background-size: 216px 108px !important;
+	background-position: -12px -8px !important;
+	width: 24px !important;
+}
+
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"],
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"],
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"],
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"],
+[id="e92080a5-105f-ed28-45de-0143a183b17f_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"],
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"],
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"],
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]
+{
+	padding-right: 15px !important;
+}
+
+
+/*Hover Add Button*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:hover,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:hover,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:hover,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:hover,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:hover,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:hover,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:hover,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:hover
+{
+	background-color: #ececec !important;
+}
+
+/*Focus Add Button*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:focus,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:focus,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:focus,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:focus,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:focus,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:focus,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:focus,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:focus
+{
+	background-color: #ececec !important;
+}
+
+/*Active Add Button*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:active,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:active,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:active,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:active,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:active,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:active,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:active,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"]:active
+{
+	background-color: #ececec !important;
+}
+
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon:hover,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon:hover,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon:hover,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon:hover,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon:hover,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon:hover,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon:hover,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_4a74eb23-dd3f-c95a-a495-b1451f015e62_ToolbarButton"] .button-icon:hover
+{
+	background-position: -12px -44px !important;
+	background-color: transparent;
+}
+
+/*Remove Button*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon 
+{
+	background-image: url('K2Sites_Management/Images/Buttons24.png') !important;
+	background-size: 216px 108px !important;
+	background-position: -86px -8px !important;
+	width: 24px !important;
+}
+
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+[id="e92080a5-105f-ed28-45de-0143a183b17f_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]
+{
+	padding-left: 15px !important;
+	right: 2% !important;
+	position: absolute !important;
+}
+
+.ie11 [id="fba07926-2cd5-a5aa-72f2-2b21936c218b_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+.ie11 [id="1a58b432-d846-4a85-ae50-93796c168ebc_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+.ie11 [id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+.ie11 [id="816fb4b9-e372-532a-e56b-bf1869a68d47_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+.ie11 [id="e92080a5-105f-ed28-45de-0143a183b17f_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+.ie11 [id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+.ie11 [id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"],
+.ie11 [id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]
+{
+    /*force vertical align middle using absolute positioning in ie11*/
+    top:50%;
+    margin-top: -1.2rem; 
+    display:block;
+    position:absolute;
+}
+    /*Hover Remove Button*/
+    [id="fba07926-2cd5-a5aa-72f2-2b21936c218b_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:hover,
+    [id="1a58b432-d846-4a85-ae50-93796c168ebc_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:hover,
+    [id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:hover,
+    [id="816fb4b9-e372-532a-e56b-bf1869a68d47_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:hover,
+    [id="e92080a5-105f-ed28-45de-0143a183b17f_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:hover,
+    [id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:hover,
+    [id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:hover,
+    [id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:hover
+    {
+        background-color: #ececec !important;
+    }
+
+/*Focus Remove Button*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:focus,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:focus,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:focus,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:focus,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:focus,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:focus,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:focus,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:focus
+
+{
+	background-color: #ececec !important;
+}
+
+/*Active Remove Button*/
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:active,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:active,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:active,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:active,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:active,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:active,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:active,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"]:active
+
+{
+	background-color: #ececec !important;
+}
+
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon:hover,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon:hover,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon:hover,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon:hover,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon:hover,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon:hover,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon:hover,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"] .button-icon:hover
+
+{
+	background-position: -86px -44px !important;
+	background-color: transparent;
+}
+
+[id="fba07926-2cd5-a5aa-72f2-2b21936c218b_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"].disabled .button-icon:hover,
+[id="1a58b432-d846-4a85-ae50-93796c168ebc_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"].disabled .button-icon:hover,
+[id="3a17bdae-c8a1-4839-9bc1-7d55245f8354_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"].disabled .button-icon:hover,
+[id="e92080a5-105f-ed28-45de-0143a183b17f_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"].disabled .button-icon:hover,
+[id="816fb4b9-e372-532a-e56b-bf1869a68d47_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"].disabled .button-icon:hover,
+[id="bbcacb8c-053e-4137-8d1d-8132c51cfca2_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"].disabled .button-icon:hover,
+[id="e9416e22-ca04-4bfa-a79a-8cbd6a339404_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"].disabled .button-icon:hover,
+[id="63dcd3fd-8502-fef2-65c4-8ce3ac93644e_24d7a821-c166-7490-deba-276061ba1389_ToolbarButton"].disabled .button-icon:hover 
+{
+	background-position: -86px -8px !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .stylewrapper .genericitem .indicator1.selected-row-indicator
+{
+	display: none;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-GenericList .watermarkwrapper .middleText
+{
+	line-height: 74rem;
+}
+
+.theme-entry span.SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlLinkAuth"] > a,
+.theme-entry span.SFC.SourceCode-Forms-Controls-Web-DataLabel[Name="dlLinkSmartBox"] > a
+{
+    color: rgb(2, 136, 209);
+    text-decoration: none;
+}
+
+/*Identity Icons in genericlist*/
+.genericitem .item-image
+{
+	width: 32px !important;
+	padding: 0px !important;
+	height: 32px !important;
+	margin: 15px !important;
+}
+
+.genericitem .item-image.Role
+{
+	background-image: url('K2Sites_Management/Images/Roles32.png') !important
+}
+
+.genericitem .item-image.User
+{
+	background-image: url('K2Sites_Management/Images/User32.png') !important
+}
+
+.genericitem .item-image.Group
+{
+	background-image: url('K2Sites_Management/Images/Groups32.png') !important
+}
+
+*[id="33bfb488-cc20-48f3-a946-6ebdb547c584"] 
+{
+	padding-top: 32px !important;
+	overflow: hidden;
+}
